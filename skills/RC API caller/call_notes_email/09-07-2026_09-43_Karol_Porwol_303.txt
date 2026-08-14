@@ -1,0 +1,19 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  09/07/2026  09:43
+============================================================
+With:         Karol Porwol 303
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved coordinating the setup of a new laptop for Steve, including software installations and remote access configurations, with discussions about hardware specifications and alternative remote desktop tools. The overall outcome was the preparation of credentials and confirmation of hardware readiness.
+
+--- RECAP --------------------------------------------------
+Giles Hugo informed Karol Porwol that Steve's new computer has arrived and is being set up, requesting not to use Teams for calls today.Giles Hugo mentioned that Finn is using his computer at home for assessments and discussed logging in remotely via TeamViewer or alternative tools like RustDesk, with a preference for the latter due to restrictions.Karol Porwol advised on installing the full version of TeamViewer for home use and provided credentials to Giles Hugo for remote access, which he will use to complete setup
+
+--- TASKS --------------------------------------------------
+including Dropbox configuration.Giles Hugo inquired about the laptop's condition, and Karol Porwol confirmed it looks good with an excellent display, suitable for professional use.The laptop's specifications were detailed: Ryzen 9X HX CPU, Nvidia RTX 5080 GPU, 2TB hard drive, and 64GB RAM, indicating it is a high-performance device expected to last many years.Giles Hugo agreed to receive the credentials from Karol Porwol once the setup is complete.
+Tasks
+Giles Hugo will text Karol Porwol once he has the login credentials to proceed with remote setup.Karol Porwol will send the login credentials and password to Giles Hugo for remote access setup.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  15/07/2026  12:39
+============================================================
+With:         +441619388080 0161 938 8080
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo discussing a quote for laser-cut steel parts with a supplier, confirming specifications, stock availability, and next steps for order processing and account setup.
+
+--- RECAP --------------------------------------------------
+Giles Hugo received a quote for 16mm mild steel laser-cut parts, specifically S275 grade, with a length of 3000mm, and confirmed the material specifications and stock availability.The supplier has 16mm stock in S355 grade, which they can offer as an alternative to S275, and will amend the quote accordingly.Giles Hugo inquired about the tolerances, confirming a plus/minus 0.25mm tolerance, which is acceptable, and discussed the machining and finishing options included in the quote.The order requires setting up a new account with the supplier, with an initial proforma invoice for the first order, and subsequent account setup for future orders.The supplier noted that the stock in S355 grade will be slightly amended in the quote, and they will send over the updated proforma invoice for the laser-cut parts.
+
+--- TASKS --------------------------------------------------
+The supplier will amend the quote to specify S355 grade steel and send the updated proforma invoice to Giles Hugo.Giles Hugo will review the amended quote and proceed with the order once received.
+
+(Full transcript: RC web portal only — no RingSense API)

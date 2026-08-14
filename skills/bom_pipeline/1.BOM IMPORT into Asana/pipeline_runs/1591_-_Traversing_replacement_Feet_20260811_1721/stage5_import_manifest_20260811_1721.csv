@@ -1,0 +1,53 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1591 - Traversing replacement Feet,"Master task for all BOMs related to 1591 - Traversing replacement Feet
+Dropbox: https://www.dropbox.com/scl/fo/if2vdj2tnadt643cmbeuj/AHSxdOxZMOQb4OyrqIAmycA?rlkey=5oucplprq1dljg585hqyx9i67&dl=0
+Project: https://app.asana.com/1/357939803556123/project/1207196303096568/task/1217189841489443?focus=true",,,,,,,,,,
+Laser Cut/Machining BOM - 1591 - Traversing replacement Feet,,ALL BOMS - 1591 - Traversing replacement Feet,,Laser Cut/Machining,,,,,,,
+Laser Cut/Machining - 1591 - Traversing replacement Feet,,Laser Cut/Machining BOM - 1591 - Traversing replacement Feet,,Laser Cut/Machining,,,,,,,
+1 off 1591. 7003.E.224 - Support Leg 304/HR Laser Cut/Machining,"1591.7003.E.224
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut/Machining
+Link to BOM: https://www.dropbox.com/scl/fo/if2vdj2tnadt643cmbeuj/AHSxdOxZMOQb4OyrqIAmycA?rlkey=5oucplprq1dljg585hqyx9i67&dl=0
+Mass: 0.125 kg
+Volume: 15659.068 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1207196303096568/task/1217189841489443?focus=true",Laser Cut/Machining - 1591 - Traversing replacement Feet,1,Laser Cut/Machining,,,,ORDER,PROJECT ORDER,1217374576972651,https://app.asana.com/0/848657415032331/1217374576972651
+1 off 1591. 7003.E.224_MIR - Support Leg 304/HR Laser Cut/Machining,"1591.7003.E.224_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut/Machining
+Link to BOM: https://www.dropbox.com/scl/fo/if2vdj2tnadt643cmbeuj/AHSxdOxZMOQb4OyrqIAmycA?rlkey=5oucplprq1dljg585hqyx9i67&dl=0
+Mass: 0.125 kg
+Volume: 15659.068 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1207196303096568/task/1217189841489443?focus=true",Laser Cut/Machining - 1591 - Traversing replacement Feet,1,Laser Cut/Machining,,,,ORDER,PROJECT ORDER,1217374545242269,https://app.asana.com/0/848657415032331/1217374545242269
+Laser Cut BOM - 1591 - Traversing replacement Feet,,ALL BOMS - 1591 - Traversing replacement Feet,,Laser Cut,,,,,,,
+Laser Cut - 1591 - Traversing replacement Feet,,Laser Cut BOM - 1591 - Traversing replacement Feet,,Laser Cut,,,,,,,
+2 off 1591. 7003.E.242 - Leg Supprt Plate 304/HR Laser Cut,"1591.7003.E.242
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/if2vdj2tnadt643cmbeuj/AHSxdOxZMOQb4OyrqIAmycA?rlkey=5oucplprq1dljg585hqyx9i67&dl=0
+Mass: 0.015 kg
+Volume: 1903.789 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1207196303096568/task/1217189841489443?focus=true",Laser Cut - 1591 - Traversing replacement Feet,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217374628718760,https://app.asana.com/0/848657415032331/1217374628718760
+1 off 1591. 7003.E.224 - Support Leg 304/HR Laser Cut/Machining,"1591.7003.E.224
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut/Machining
+Link to BOM: https://www.dropbox.com/scl/fo/if2vdj2tnadt643cmbeuj/AHSxdOxZMOQb4OyrqIAmycA?rlkey=5oucplprq1dljg585hqyx9i67&dl=0
+Mass: 0.125 kg
+Volume: 15659.068 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1207196303096568/task/1217189841489443?focus=true",Laser Cut/Machining - 1591 - Traversing replacement Feet,1,Laser Cut/Machining,,,,ORDER,PROJECT ORDER,1217374533449647,https://app.asana.com/0/848657415032331/1217374533449647
+1 off 1591. 7003.E.224_MIR - Support Leg 304/HR Laser Cut/Machining,"1591.7003.E.224_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut/Machining
+Link to BOM: https://www.dropbox.com/scl/fo/if2vdj2tnadt643cmbeuj/AHSxdOxZMOQb4OyrqIAmycA?rlkey=5oucplprq1dljg585hqyx9i67&dl=0
+Mass: 0.125 kg
+Volume: 15659.068 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1207196303096568/task/1217189841489443?focus=true",Laser Cut/Machining - 1591 - Traversing replacement Feet,1,Laser Cut/Machining,,,,ORDER,PROJECT ORDER,1217374268972565,https://app.asana.com/0/848657415032331/1217374268972565

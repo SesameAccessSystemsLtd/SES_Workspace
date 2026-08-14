@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  03/08/2026  15:15
+============================================================
+With:         +447795049702 07795 049702
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a call between Fatima from Sesame Access and Mark, where they discussed the invoice amount and VAT status. Fatima will confirm the details with Steve before finalising.
+
+--- RECAP --------------------------------------------------
+Fatima from Sesame Access contacted Mark to confirm if the amount of £2,860 includes VAT for a job that is not VAT registered.Mark confirmed that the amount of £2,860 is the final amount and that there is no VAT on this job.Fatima stated she would speak with Steve to confirm the details and would get back to Mark.
+
+--- TASKS --------------------------------------------------
+Fatima will speak with Steve to confirm whether the amount of £2,860 includes VAT and will follow up accordingly.
+
+(Full transcript: RC web portal only — no RingSense API)

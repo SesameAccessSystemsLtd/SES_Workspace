@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  14/08/2026  09:08
+============================================================
+With:         - Purchasing 07512 541133
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call between Giles Hugo and Eric from Lawtronic Panel PLC focused on the progress of two prototype lift control panels, upcoming launch plans, and the need for component cost information to evaluate manufacturing options. They discussed timelines, current challenges, and future follow-up actions.
+
+--- RECAP --------------------------------------------------
+Giles Hugo reported that two prototypes of lift control panels are being developed, with a launch delayed to September to include both flagship and simpler models, aiming to generate market excitement.The team is waiting for Peter to provide a bill of materials (BOM) to determine component costs and assess whether to manufacture in-house or outsource to Lawtronic Panel PLC, with an expected delivery of the BOM by mid-next week.Giles mentioned that internal delays and holiday schedules are affecting the BOM delivery, but it is likely to be received by Monday, after which the cost evaluation can proceed.Lawtronic Panel PLC offered to assist with PCB manufacturing and component cost analysis once the BOM is available, supporting efforts to reduce production costs.Both parties agreed to reconnect in September to review the BOM, discuss cost strategies, and potentially arrange an on-site visit to Giles's operation in Kings.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will follow up with Peter to obtain the bill of materials by Monday.Giles Hugo will send the BOM to Lawtronic Panel PLC once received for cost analysis.Lawtronic Panel PLC will prepare to assist with PCB manufacturing and component cost evaluation after receiving the BOM.Both parties will reconnect in September to review progress, costs, and plan further steps, including possible site visits.
+
+(Full transcript: RC web portal only — no RingSense API)

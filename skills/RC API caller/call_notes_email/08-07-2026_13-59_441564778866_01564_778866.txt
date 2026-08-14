@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  08/07/2026  13:59
+============================================================
+With:         +441564778866 01564 778866
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles from Sesame Access inquiring about the availability and pricing of a specific anodized powder coat from the supplier, with discussions about stock, minimum order quantities, and payment terms. The outcome was that the supplier confirmed stock of 20-kilo boxes at a price of 27.38 per kilo, with a minimum order of 20 kilos, and payment on a pro forma basis.
+
+--- RECAP --------------------------------------------------
+Giles from Sesame Access requested information about a specific anodized powder coat with reference 68/6516, which is a made-to-order product not listed on the supplier's website.The supplier confirmed the price as 27.38 GBP per kilo, with powder supplied in 20-kilo boxes and a minimum order quantity of 20 kilos, totaling at least 100 kilos for a full order.The supplier indicated they have some stock of 20-kilo boxes and can supply smaller quantities if stock is available, with payment required on a pro forma basis before shipment.Giles inquired about the cost for a small order sufficient to paint two face plates measuring 100mm by 100mm, which would require at least 20 kilos of powder.The call concluded with Giles thanking the supplier and confirming his name as Giles from Sesame Access.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

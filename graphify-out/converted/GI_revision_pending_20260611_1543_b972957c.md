@@ -1,0 +1,6 @@
+<!-- converted from GI_revision_pending_20260611_1543.xlsx -->
+
+## Sheet: Sheet1
+| Override / Reorder QTY | Low Stock Alert | BOM QTY | BOM Description | vendor | ORDER_PICK | Remaining after BOM | Mapped KAN | Asana Task Name | Part Number | Matched Stock_Number | Stock QTY | min Stock QTY | Asana Task URL | Order reference | Order Status | cost center | material | thickness | stock number | web link | notes | mass | volume | source bom file | rev | authority | item | location | Asana Stock Name | Asana URL (Golden) | Match Confidence | Match Type | Index Match Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | NO | 1 | Ram tufnol pad | Plastics Supplier | PICK | 89.0 | KAN-288 | 100 off NBSS129 (Frame Load - Washer) | 1291.1003.085 | 129 | 90.0 | 20.0 | Open in Asana |  | PICK | Machining | Tufnol | 5.000 mm | this tufnol can only be bought in 1200mm long sheets  | https://www.directplastics.co.uk/tufnol-sheet |  | 0.499 kg | 498782.507 mm^3 | 1291.BOM.5.Stairs tufnol replacement.Machining.xlsx | 1 |  | 1 |  | 100 off NBSS129 (Frame Load - Washer) | https://app.asana.com/1/357939803556123/929000000000000.0 | 90 | Substring | MATCHED |

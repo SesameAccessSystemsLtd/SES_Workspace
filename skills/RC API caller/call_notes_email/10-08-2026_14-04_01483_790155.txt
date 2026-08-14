@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  10/08/2026  14:04
+============================================================
+With:         01483 790155
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo discussing vehicle service and collection details with a representative, including scheduling and vehicle classification issues. The outcome was that the vehicle will be dropped off locally for servicing, with no collection scheduled at this time.
+
+--- RECAP --------------------------------------------------
+Giles Hugo confirmed his vehicle is a Class 7 and discussed booking it in for servicing, which the service team confirmed they can handle.The representative apologized for a previous communication error regarding the vehicle's classification and mentioned this will be addressed in training.Giles Hugo plans to get his MOT done by the end of the week but clarified he will not be collecting the vehicle himself as it is not ready for collection yet.The vehicle will be dropped off locally for servicing, and no collection is scheduled at this time.
+
+--- TASKS --------------------------------------------------
+The representative will mention the vehicle classification issue in upcoming training sessions.Giles Hugo will ensure his MOT is completed by the end of the week.
+
+(Full transcript: RC web portal only — no RingSense API)

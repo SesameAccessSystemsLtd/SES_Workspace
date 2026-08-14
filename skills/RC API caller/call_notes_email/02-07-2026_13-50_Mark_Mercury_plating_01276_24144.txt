@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  02/07/2026  13:50
+============================================================
+With:         Mark Mercury plating 01276 24144
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This is a voicemail confirmation call where Giles Hugo from Sesame Access inquires about dropping off parts for anodizing at Mercury Plating, which confirms their closing time as 4:45 PM and mentions that Giles will send a purchase request shortly.
+
+--- RECAP --------------------------------------------------
+Giles Hugo from Sesame Access calls Mercury Plating to confirm the drop-off time for parts for anodizing, asking if they are open until 5 PM.Mark Mercury Plating confirms their closing time as 4:45 PM and states they are available to receive the parts until then.Giles Hugo plans to send a purchase request (PR) for the parts during the call.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send the purchase request (PR) over to Mercury Plating as normal.
+
+(Full transcript: RC web portal only — no RingSense API)

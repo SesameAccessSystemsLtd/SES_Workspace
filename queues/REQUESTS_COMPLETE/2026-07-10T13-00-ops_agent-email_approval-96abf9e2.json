@@ -1,0 +1,14 @@
+{
+  "request_id": "8e18123f-f2d2-4120-a449-f7ed3276f8c0",
+  "source": "email_approval_sheet",
+  "row_index": 32,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAABnJ7JfAACfKjgQkWRhS42xGA6fMW2cAAkAYbFeAAA=",
+  "subject": "Order Notification",
+  "task_gid": "1216242582077298",
+  "task_name": "21144-1588 - RS Components - 1588 - America 1 Scissor BOM -  3019042629",
+  "asana_url": "https://app.asana.com/0/0/1216242582077298",
+  "action": "(Matched via PO Number in Local DB); Update delivery date to 2026-07-17; Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043); Note added to description: Order_Confirmation from Rswww - £160.74 (2026-07-07)",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-07-07T11:59:34Z\nEmail: Order Notification\n- Update delivery date to 2026-07-17\n- Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043)\n- Note added to description: Order_Confirmation from Rswww - £160.74 (2026-07-07)",
+  "decision": "A",
+  "created_at": "2026-07-10T13:00:07.613963+00:00"
+}

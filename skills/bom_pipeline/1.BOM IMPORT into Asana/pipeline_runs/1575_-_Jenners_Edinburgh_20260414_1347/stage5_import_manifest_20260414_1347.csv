@@ -1,0 +1,65 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date
+ALL BOMS - 1575 - Jenners Edinburgh,1575 - Jenners Edinburgh,,,,,,
+PICKING BOM,0,ALL BOMS - 1575 - Jenners Edinburgh,,,,,
+Long Leading BOM - 1575 - Jenners Edinburgh,,ALL BOMS - 1575 - Jenners Edinburgh,,Long Leading,,,
+Bes - 1575 - Jenners Edinburgh,,Long Leading BOM - 1575 - Jenners Edinburgh,,Bes,,,
+"1 off 1575. 1008.D.120 - Drain Cock Type A - 3/4"" BSP Brass 3/4"" BSP Bes","1575.1008.D.120
+Stock Number: 3/4"" BSP
+Material: Brass, Soft Yellow
+Web Link: https://www.bes.co.uk/drain-cock-type-a-3-4in-bsp-brass-7496/?srsltid=AfmBOopiSwmvu2xg6-awSWh6goCllN-njqrkEp1XNkmdCSXU4uyE7jHg
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/uf10ct6nhlce2rpq2z4gq/AP4mPPtuq3Bp18SCdR0dMJs?rlkey=lotwtnx7319h2wn7katk5fgzq&dl=0
+Mass: 0.316 kg
+Volume: 37283.251 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1213587365685012?focus=true",Bes - 1575 - Jenners Edinburgh,1,Bes,,,
+JAJO - 1575 - Jenners Edinburgh,,Long Leading BOM - 1575 - Jenners Edinburgh,,JAJO,,,
+1 off 1575. 1008.D.MachineRoomCabinet - Machine Room Cabinet JAJO,"1575.1008.D.MachineRoomCabinet
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/uf10ct6nhlce2rpq2z4gq/AP4mPPtuq3Bp18SCdR0dMJs?rlkey=lotwtnx7319h2wn7katk5fgzq&dl=0
+Mass: 64.883 kg
+Volume: 32553373.300 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1213587365685012?focus=true",JAJO - 1575 - Jenners Edinburgh,1,JAJO,,,
+Hydraulic Supplier - 1575 - Jenners Edinburgh,,Long Leading BOM - 1575 - Jenners Edinburgh,,Hydraulic Supplier,,,
+1 off 1575. 1008.D.MotorPumpUnit - TBC by Karol - Spec as per PLC BOM Hydraulic Supplier,"1575.1008.D.MotorPumpUnit
+Material: Generic
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/uf10ct6nhlce2rpq2z4gq/AP4mPPtuq3Bp18SCdR0dMJs?rlkey=lotwtnx7319h2wn7katk5fgzq&dl=0
+Mass: 14.000 kg
+Volume: 14000247.356 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1213587365685012?focus=true",Hydraulic Supplier - 1575 - Jenners Edinburgh,1,Hydraulic Supplier,,,
+1 off 1575. 1008.H3(RF SES4473) - Emergency barrier lower valve assembly RF SES4473 Related Fluid,"1575.1008.H3(RF SES4473)
+Stock Number: RF SES4473
+KAN: KAN-41
+KAN Stock Link: https://app.asana.com/0/632603478911321/523333842528555
+Material: Generic
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/uf10ct6nhlce2rpq2z4gq/AP4mPPtuq3Bp18SCdR0dMJs?rlkey=lotwtnx7319h2wn7katk5fgzq&dl=0
+Mass: 0.646 kg
+Volume: 646085.064 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1213587365685012?focus=true",PICKING BOM,,Related Fluid,purchasing@sesameaccess.com,,
+Related Fluid - 1575 - Jenners Edinburgh,,Long Leading BOM - 1575 - Jenners Edinburgh,,Related Fluid,,,
+1 off 1575. 1008.H6(RF SES447424) - Valve Block (2 function) RF SES447424 Related Fluid,"1575.1008.H6(RF SES447424)
+Stock Number: RF SES447424
+Material: Generic
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/uf10ct6nhlce2rpq2z4gq/AP4mPPtuq3Bp18SCdR0dMJs?rlkey=lotwtnx7319h2wn7katk5fgzq&dl=0
+Mass: 1.927 kg
+Volume: 1927464.015 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1213587365685012?focus=true",Related Fluid - 1575 - Jenners Edinburgh,1,Related Fluid,,,
+ABCO - 1575 - Jenners Edinburgh,,Long Leading BOM - 1575 - Jenners Edinburgh,,ABCO,,,
+"1 off 1575. 1010.B.Actuator - CC:435.5 mm / Stroke: 252.5 mm, Single act. Ram ABCO","1575.1010.B.Actuator
+Web Link: www.abcohydraulics.co.uk
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/uf10ct6nhlce2rpq2z4gq/AP4mPPtuq3Bp18SCdR0dMJs?rlkey=lotwtnx7319h2wn7katk5fgzq&dl=0
+Mass: 2.557 kg
+Volume: 2557178.873 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1213587365685012?focus=true",ABCO - 1575 - Jenners Edinburgh,1,ABCO,,,
+"1 off 1575. 1010.B.Actuator_MIR - CC:435.5 mm / Stroke: 252.5 mm, single act. Ram ABCO","1575.1010.B.Actuator_MIR
+KAN: KAN-94
+KAN Stock Link: https://app.asana.com/0/632603478911321/1152474097617842
+Web Link: www.abcohydraulics.co.uk
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/uf10ct6nhlce2rpq2z4gq/AP4mPPtuq3Bp18SCdR0dMJs?rlkey=lotwtnx7319h2wn7katk5fgzq&dl=0
+Mass: 2.557 kg
+Volume: 2557178.873 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1213587365685012?focus=true",PICKING BOM,,ABCO,purchasing@sesameaccess.com,,

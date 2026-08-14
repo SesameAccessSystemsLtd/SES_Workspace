@@ -1,0 +1,269 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1037 - Langley Street Refirb,"Master task for all BOMs related to 1037 - Langley Street Refirb
+Dropbox: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Project: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",,,,,,,,,,
+Laser Cut BOM - 1037 - Langley Street Refirb,,ALL BOMS - 1037 - Langley Street Refirb,,Laser Cut,,,,,,,
+Laser Cut - 1037 - Langley Street Refirb,,Laser Cut BOM - 1037 - Langley Street Refirb,,Laser Cut,,,,,,,
+1 off 1037. 1014.M.032 - Plate Laser Cut,"1037.1014.M.032
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 3.611 kg
+Volume: 460000.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216068688184251,https://app.asana.com/0/848657415032331/1216068688184251
+1 off 1037. 1014.M.033 - Teethed_Plate Laser Cut,"1037.1014.M.033
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 4.161 kg
+Volume: 530000.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216068550542211,https://app.asana.com/0/848657415032331/1216068550542211
+1 off 1037. 1014.M.034 - Teethed_Plate Laser Cut,"1037.1014.M.034
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 1.973 kg
+Volume: 251274.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216068748087756,https://app.asana.com/0/848657415032331/1216068748087756
+8 off 1037. 1014.M.035 - Vertical bracing Laser Cut,"1037.1014.M.035
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 4.136 kg
+Volume: 526919.600 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,8,Laser Cut,,,,ORDER,PROJECT ORDER,1216068688525352,https://app.asana.com/0/848657415032331/1216068688525352
+1 off 1037. 1014.M.038 - Teethed_Plate Laser Cut,"1037.1014.M.038
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 2.426 kg
+Volume: 309000.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216068688642654,https://app.asana.com/0/848657415032331/1216068688642654
+1 off 1037. 1014.M.039 - Slotted_Plate Laser Cut,"1037.1014.M.039
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 3.603 kg
+Volume: 458977.032 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216068702209410,https://app.asana.com/0/848657415032331/1216068702209410
+1 off 1037. 1014.M.040 - Tapped Plate Laser Cut,"1037.1014.M.040
+KAN: KAN-298
+KAN Stock Link: https://app.asana.com/0/632603478911321/1200317103586535
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 1.078 kg
+Volume: 137317.477 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,,Laser Cut,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216068702343621,https://app.asana.com/0/848657415032331/1216068702343621
+1 off 1037. 1014.M.041 - Flat Laser Cut,"1037.1014.M.041
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 4.239 kg
+Volume: 540000.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216068702301577,https://app.asana.com/0/848657415032331/1216068702301577
+1 off 1037. 1014.M.042 - Flat Laser Cut,"1037.1014.M.042
+KAN: KAN-297
+KAN Stock Link: https://app.asana.com/0/632603478911321/1200490434802064
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 0.364 kg
+Volume: 46409.250 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,,Laser Cut,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216068551232890,https://app.asana.com/0/848657415032331/1216068551232890
+1 off 1037. 1014.M.043 - Slotted Flat Laser Cut,"1037.1014.M.043
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 0.775 kg
+Volume: 98679.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216068702438388,https://app.asana.com/0/848657415032331/1216068702438388
+2 off 1037. 1014.M.044 - Flat Laser Cut,"1037.1014.M.044
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 2.527 kg
+Volume: 321900.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216068748275852,https://app.asana.com/0/848657415032331/1216068748275852
+1 off 1037. 1014.M.045 - Flat Laser Cut,"1037.1014.M.045
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 0.294 kg
+Volume: 37409.250 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216068551384217,https://app.asana.com/0/848657415032331/1216068551384217
+1 off 1037. 1014.M.051 - Base Plate Laser Cut,"1037.1014.M.051
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 0.557 kg
+Volume: 70976.107 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216068837312551,https://app.asana.com/0/848657415032331/1216068837312551
+1 off 1037. 1014.M.062 - Striker Laser Cut,"1037.1014.M.062
+Material: Steel, Mild
+Thickness: 8.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 0.360 kg
+Volume: 45876.389 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216068688982438,https://app.asana.com/0/848657415032331/1216068688982438
+2 off 1037. 1014.M.102 - Bottom support Laser Cut,"1037.1014.M.102
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 0.104 kg
+Volume: 13200.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216068748345783,https://app.asana.com/0/848657415032331/1216068748345783
+1 off 1037. 1014.M.103 - Teethed_Plate Laser Cut,"1037.1014.M.103
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 4.215 kg
+Volume: 536919.600 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216068837445973,https://app.asana.com/0/848657415032331/1216068837445973
+1 off 1037. 1014.M.104 - Flat Laser Cut,"1037.1014.M.104
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 4.227 kg
+Volume: 538431.658 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216068688922765,https://app.asana.com/0/848657415032331/1216068688922765
+1 off 1037. 1014.M.108 - Top bracing Laser Cut,"1037.1014.M.108
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 2.426 kg
+Volume: 308995.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216068748287022,https://app.asana.com/0/848657415032331/1216068748287022
+1 off 1037. 1014.M.109 - Teethed_Plate Laser Cut,"1037.1014.M.109
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 1.972 kg
+Volume: 251239.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216068837289837,https://app.asana.com/0/848657415032331/1216068837289837
+1 off 1037. 1014.M.114 - Packer 304/HR Laser Cut,"1037.1014.M.114
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 0.261 kg
+Volume: 32572.832 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216068551570269,https://app.asana.com/0/848657415032331/1216068551570269
+1 off 1037. 1014.M.115 - Packer 304/2B Laser Cut,"1037.1014.M.115
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 0.104 kg
+Volume: 13029.133 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216068689133400,https://app.asana.com/0/848657415032331/1216068689133400
+2 off 1037. 1014.M.116 - Packer 304/2B Laser Cut,"1037.1014.M.116
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 0.052 kg
+Volume: 6514.566 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216068551654581,https://app.asana.com/0/848657415032331/1216068551654581
+1 off 1037. 1014.N.010 - Gate Stopper Laser Cut,"1037.1014.N.010
+Material: Steel, Mild
+Thickness: 20.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 0.785 kg
+Volume: 99971.379 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Laser Cut - 1037 - Langley Street Refirb,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216068748600608,https://app.asana.com/0/848657415032331/1216068748600608
+Machining BOM - 1037 - Langley Street Refirb,,ALL BOMS - 1037 - Langley Street Refirb,,Machining,,,,,,,
+Machining - 1037 - Langley Street Refirb,,Machining BOM - 1037 - Langley Street Refirb,,Machining,,,,,,,
+1 off 1037. 1014.M.061 - Square Gate Post Machining,"1037.1014.M.061
+Material: Steel, Mild
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 20.595 kg
+Volume: 2623510.048 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Machining - 1037 - Langley Street Refirb,1,Machining,,,,ORDER,PROJECT ORDER,1216068748287036,https://app.asana.com/0/848657415032331/1216068748287036
+1 off 1037. 1014.M19 - Top support bar Machining,"1037.1014.M19
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 1.052 kg
+Volume: 134065.405 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Machining - 1037 - Langley Street Refirb,1,Machining,,,,ORDER,PROJECT ORDER,1216068837707304,https://app.asana.com/0/848657415032331/1216068837707304
+Sesame BOM - 1037 - Langley Street Refirb,,ALL BOMS - 1037 - Langley Street Refirb,,Sesame,,,,,,,
+onlinebearings.co.uk - 1037 - Langley Street Refirb,,Sesame BOM - 1037 - Langley Street Refirb,,onlinebearings.co.uk,,,,,,,
+"1 off 1037. 1014.M.050 - Bearing,TopBracket) FMB142020 onlinebearings.co.uk","1037.1014.M.050
+Stock Number: FMB142020
+Material: Brass
+Web Link: http://www.onlinebearings.co.uk/Flanged-Oilube-Bearing-Bush-8-20mm-Inside-Diameter.html
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 0.037 kg
+Volume: 4382.522 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",onlinebearings.co.uk - 1037 - Langley Street Refirb,1,onlinebearings.co.uk,,,,ORDER,PROJECT ORDER,1216068702920399,https://app.asana.com/0/848657415032331/1216068702920399
+Sesame - 1037 - Langley Street Refirb,,Sesame BOM - 1037 - Langley Street Refirb,,Sesame,,,,,,,
+2 off 1037. 1014.M.064 - Levelling foot flat non tilt Steel Zinc plated 673-702 Sesame,"1037.1014.M.064
+Stock Number: 673-702
+Material: Generic
+Web Link: https://www.wdscomponents.com/en-gb/levelling-foot-flat-non-tilt-steel-zinc-plated
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 0.008 kg
+Volume: 8243.616 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Sesame - 1037 - Langley Street Refirb,2,Sesame,,,,ORDER,PROJECT ORDER,1216068927546276,https://app.asana.com/0/848657415032331/1216068927546276
+Rubber Supplier - 1037 - Langley Street Refirb,,Sesame BOM - 1037 - Langley Street Refirb,,Rubber Supplier,,,,,,,
+1 off 1037. 1014.M.117 - Rubber Pad Rubber Supplier,"1037.1014.M.117
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 0.001 kg
+Volume: 984.549 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Rubber Supplier - 1037 - Langley Street Refirb,1,Rubber Supplier,,,,ORDER,PROJECT ORDER,1216068551706582,https://app.asana.com/0/848657415032331/1216068551706582
+Surface Finish BOM - 1037 - Langley Street Refirb,,ALL BOMS - 1037 - Langley Street Refirb,,Surface Finish BOM,,,,,,,
+Powder Coating - 1037 - Langley Street Refirb,,Surface Finish BOM - 1037 - Langley Street Refirb,,Powder Coating,,,,,,,
+1 off Powder Coating 1037. 1014.M14w - Welded Assembly - gate support,"1037.1014.M14w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 21.020 kg
+Volume: 2677703.044 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Powder Coating - 1037 - Langley Street Refirb,1,Powder Coating,,,,ORDER,PROJECT ORDER,1216068833295903,https://app.asana.com/0/848657415032331/1216068833295903
+1 off Powder Coating 1037. 1014.M17w - Gate with square post,"1037.1014.M17w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 74.216 kg
+Volume: 9454228.269 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Powder Coating - 1037 - Langley Street Refirb,1,Powder Coating,,,,ORDER,PROJECT ORDER,1216068927645978,https://app.asana.com/0/848657415032331/1216068927645978
+5 off Powder Coating ISO 4762 - M4 x 25 - Hexagon Socket Head Cap Screw,"ISO 4762 - M4 x 25
+Material: Stainless Steel, 440C
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 0.003 kg
+Volume: 447.669 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Powder Coating - 1037 - Langley Street Refirb,5,Powder Coating,,,,ORDER,PROJECT ORDER,1216068748615053,https://app.asana.com/0/848657415032331/1216068748615053
+4 off Powder Coating ISO 10642 - M8 x  20 - Hexagon socket countersunk head cap screws,"ISO 10642 - M8 x  20
+Material: Stainless Steel
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/nlrp98bj01i1pf7i2pl7x/AB5lTE9A33RaQ-9GKZ7ksGY?rlkey=5qitcknei1cb4h2x3v0juyu2s&dl=0
+Mass: 0.010 kg
+Volume: 1253.417 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1216065040033665?focus=true",Powder Coating - 1037 - Langley Street Refirb,4,Powder Coating,,,,ORDER,PROJECT ORDER,1216068748930225,https://app.asana.com/0/848657415032331/1216068748930225

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  09/07/2026  10:26
+============================================================
+With:         Martin | Gemac 01753 686464
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo requesting validation and pricing updates for various hydraulic parts from Martin at Gemac. They discussed specific items, their descriptions, and quantities, with Giles aiming to restock and update system prices, and Martin preparing the necessary quotes.
+
+--- RECAP --------------------------------------------------
+Giles Hugo requested validation of stock items and their descriptions, including bulkheads, hose fittings, and adapters, with specific measurements and details discussed for accuracy.They identified duplicate listings and clarified product specifications, such as BSP and BSP taper fittings, to ensure correct categorization and pricing.Giles Hugo asked Martin to prepare quotes for the items, including multiple adapters, and to provide prices for restocking, considering potential overstocking or diligence in inventory.Martin confirmed he would update the system with the correct prices and quantities, including the price for pairs of adapters where applicable.
+
+--- TASKS --------------------------------------------------
+Martin at Gemac will prepare and send the updated price quotes for the specified hydraulic parts, including the two adapters, by the end of the day.Martin will verify the product specifications, especially for the 38 BSP taper fittings, and confirm the correct descriptions before finalizing the quotes.Giles Hugo will review the quotes upon receipt and determine if further adjustments or orders are necessary based on the updated pricing and stock validation.
+
+(Full transcript: RC web portal only — no RingSense API)

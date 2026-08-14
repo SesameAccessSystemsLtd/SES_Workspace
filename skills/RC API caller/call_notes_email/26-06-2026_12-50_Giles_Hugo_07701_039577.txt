@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  26/06/2026  12:50
+============================================================
+With:         Giles Hugo 07701 039577
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a test call from Fatima Barros to verify email receipt in her inbox. The call was a brief confirmation of the testing purpose.
+
+--- RECAP --------------------------------------------------
+Fatima Barros conducted a test call to confirm that emails are arriving in her inbox, indicating a focus on email receipt verification.The call was brief, with Fatima expressing gratitude at the end, and no further actions or issues discussed.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

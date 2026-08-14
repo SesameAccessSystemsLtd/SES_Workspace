@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  12/08/2026  13:46
+============================================================
+With:         Jamie Craske 07837 281494
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a phone call where Jamie Craske informed Giles Hugo that a shipment valued at approximately 1.2 million and measuring about 2 meters by 2,800 millimeters was dispatched on the 6th but has not yet been received. Jamie plans to contact the carrier to investigate the delay.
+
+--- RECAP --------------------------------------------------
+Jamie Craske checked the Mitchell's portal and confirmed that the shipment has not been delivered to Giles Hugo, despite being dispatched on the 6th.The shipment is valued at approximately 1.2 million and measures about 2 meters by 2,800 millimeters, on a single pallet.Jamie Craske is planning to call the carrier to determine the reason for the delay and will update Giles Hugo accordingly.
+
+--- TASKS --------------------------------------------------
+Jamie Craske will call the carrier to investigate the status of the shipment and determine why it has not been received.Jamie Craske will inform Giles Hugo of any updates once the investigation is complete.
+
+(Full transcript: RC web portal only — no RingSense API)

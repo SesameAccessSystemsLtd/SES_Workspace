@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  11/08/2026  15:27
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo and Adam/Nikki from Thameside discussing modifications to technical drawings, material requirements, and delivery details for various parts and components. The main outcome was clarification on part specifications and confirmation of upcoming deliveries.
+
+--- RECAP --------------------------------------------------
+Giles Hugo explained that the drawings for certain parts had not been updated to reflect recent modifications, specifically changing the hole size from 18 mil to 20 mil, due to a clash identified in the design.Thameside requested clarification on the drawings and confirmed the need for 20 mil holes, with the parts to be delivered with the updated specifications.Giles Hugo confirmed that the attribute part numbers are 1594 1010 L 084, with initial hole sizes of 18 mil, now to be changed to 20 mil, and noted that the design had not yet been updated in the drawings.Thameside discussed the delivery of tubes, specifying a need for more than 200 meters plus an additional 200 mil on the end, due to long job lengths, and confirmed that the tubes for the jobs are being dropped off today.Giles Hugo mentioned the need to finish a specific 18 mil bar with a slip-through feature, and discussed the supply of clevis pins, including 2 clevis pins that are free issue with a 10 mil material and 1 mil wall, and stainless steel 8 by 50 clevis pins to be machined on Friday.Thameside confirmed the material lengths for clevis pins, indicating they have already cut the required lengths, and discussed ensuring enough material (approximately 250 mil) is available, with an extra 50-80 mil for safety.Giles Hugo agreed to drop off the clevis pins and the alloy form bit, which has not yet arrived, later that evening.Both parties acknowledged the busy schedule and confirmed the upcoming deliveries and actions to be taken.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will update the drawings to reflect the 20 mil hole size and ensure the design is current.Giles Hugo will drop off the clevis pins, including the stainless steel 8 by 50 pins and the free issue clevis pins, later this evening.Giles Hugo will arrange for the alloy form bit to be delivered once it arrives.
+
+(Full transcript: RC web portal only — no RingSense API)

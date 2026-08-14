@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  24/07/2026  14:10
+============================================================
+With:         Phill - Delen Tooling Wire Erosion 01483 487033
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call between Giles Hugo and Phil from Delen Tooling Wire Erosion focused on assessing the repair and manufacturing options for wire erosion tooling parts, discussing material specifications, machining methods, and potential costs, with plans to exchange drawings and pricing details soon.
+
+--- RECAP --------------------------------------------------
+Giles Hugo inquired about repairing existing tooling parts to correct taper and about manufacturing new parts from raw material, specifically mild steel in soft state needing hardening.They discussed the current parts, with an order of 12, needing 6 immediately, and considering future orders if the approach proves successful.Giles Hugo explained the parts' dimensions, material condition, and the possibility of shimming or machining to adjust height and fitment, including the impact of angles and deflections.The conversation covered manufacturing methods such as water jetting, EDM, and wire erosion, with considerations of accuracy, cost, and surface finish, including buffing and surface quality.Giles Hugo plans to send drawings and specifications to Phil for pricing and feasibility assessment, including potential sourcing of raw 40 mil mild steel plates and the need for detailed geometry files like DXF or STEP.They agreed to exchange drawings and pricing information by Monday, with Giles Hugo to follow up with the design team and provide the necessary files, and Phil to evaluate the options based on received data.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send the detailed drawings and specifications to Phil by Monday for pricing and feasibility assessment.Phil will review the received drawings, evaluate manufacturing options, and provide a quote by Monday.
+
+(Full transcript: RC web portal only — no RingSense API)

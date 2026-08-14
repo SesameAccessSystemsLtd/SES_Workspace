@@ -1,0 +1,39 @@
+<!-- converted from stage4_staging_review.xlsx -->
+
+## Sheet: BOM Review
+| Override / Reorder QTY | Low Stock Alert | BOM QTY | BOM Description | vendor | ORDER_PICK | Remaining after BOM | Mapped KAN | Asana Task Name | Part Number | Matched Stock_Number | Stock QTY | min Stock QTY | Asana Task URL | Order reference | Order Status | cost center | material | thickness | stock number | web link | notes | mass | volume | source bom file | rev | authority | item | location | qty | info / link | length | zip | d | b | t | a | Asana Stock Name | Asana URL (Golden) | Match Confidence | Match Type | Index Match Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  | 2 | Barrier Clamp | Laser Cut | ORDER |  |  |  | 1005.B.014 |  |  |  |  |  | To Order | Laser Cut | Stainless Steel | 3.000 mm | 304/2B |  |  | 0.691 kg | 86376.627 mm^3 | BOM.7.New Jam Mechanism Replacement.Laser Cut.xlsx |  |  | 1 |  |  |  |  |  |  |  |  |  |  |  | 0 |  | UNMATCHED |
+|  |  | 4 | SafetyStrip Top Stopper | Laser Cut | ORDER |  |  |  | 1005.B.050 |  |  |  |  |  | To Order | Laser Cut | Stainless Steel | 3.000 mm | 304/2B |  |  | 0.087 kg | 10823.153 mm^3 | BOM.7.New Jam Mechanism Replacement.Laser Cut.xlsx |  |  | 2 |  |  |  |  |  |  |  |  |  |  |  | 0 |  | UNMATCHED |
+|  |  | 2 | SafetyStrip Cover | Laser Cut | ORDER |  |  |  | 1005.B.052 |  |  |  |  |  | To Order | Laser Cut | Stainless Steel | 2.000 mm | 304/2B |  |  | 0.080 kg | 9998.605 mm^3 | BOM.7.New Jam Mechanism Replacement.Laser Cut.xlsx |  |  | 3 |  |  |  |  |  |  |  |  |  |  |  | 0 |  | UNMATCHED |
+|  |  | 2 | SafetyStrip Middle | Laser Cut | ORDER |  |  |  | 1005.B.053 |  |  |  |  |  | To Order | Laser Cut | Stainless Steel | 3.000 mm | 304/2B |  |  | 0.068 kg | 8471.038 mm^3 | BOM.7.New Jam Mechanism Replacement.Laser Cut.xlsx |  |  | 4 |  |  |  |  |  |  |  |  |  |  |  | 0 |  | UNMATCHED |
+|  |  | 4 | SafetyStrip Bottom | Laser Cut | ORDER |  |  |  | 1005.B.055 |  |  |  |  |  | To Order | Laser Cut | Stainless Steel | 3.000 mm | 304/2B |  |  | 0.099 kg | 12417.856 mm^3 | BOM.7.New Jam Mechanism Replacement.Laser Cut.xlsx |  |  | 5 |  |  |  |  |  |  |  |  |  |  |  | 0 |  | UNMATCHED |
+|  |  | 4 | SafetyStrip Top | Laser Cut | ORDER |  |  |  | 1005.B.056 |  |  |  |  |  | To Order | Laser Cut | Stainless Steel | 3.000 mm | 304/2B |  |  | 0.042 kg | 5194.716 mm^3 | BOM.7.New Jam Mechanism Replacement.Laser Cut.xlsx |  |  | 6 |  |  |  |  |  |  |  |  |  |  |  | 0 |  | UNMATCHED |
+|  |  | 4 | NBSS.026 Tapped Bar | NBSS/Machining | ORDER |  |  |  | 26.0 |  |  |  |  |  | To Order | NBSS | Stainless Steel |  |  |  |  | 0.067 kg | 8317.367 mm^3 | BOM.7.New Jam Mechanism Replacement.NBSS.xlsx |  |  | 1 |  |  |  |  |  |  |  |  |  |  |  | 0 |  | UNMATCHED |
+|  |  | 4 | NBSS.027 Tapped Bar Short | NBSS/Machining | ORDER |  |  |  | 27.0 |  |  |  |  |  | To Order | NBSS | Stainless Steel |  |  |  |  | 0.039 kg | 4853.761 mm^3 | BOM.7.New Jam Mechanism Replacement.NBSS.xlsx |  |  | 2 |  |  |  |  |  |  |  |  |  |  |  | 0 |  | UNMATCHED |
+|  |  | 12 | NBSS.045.2 (3RBarrier TS Packers) | NBSS/Laser Cut | ORDER |  |  |  | 45.2 |  |  |  |  |  | To Order | NBSS | Stainless Steel | 1.000 mm | 304/2B |  |  | 0.006 kg | 688.296 mm^3 | BOM.7.New Jam Mechanism Replacement.NBSS.xlsx |  |  | 3 |  |  |  |  |  |  |  |  |  |  |  | 0 |  | UNMATCHED |
+|  |  | 4 | NBSS.046 TS3 (TYPE D) (Sesame to add resistor) | NBSS/Sesame | ORDER |  |  |  | 46.0 |  |  |  |  |  | To Order | NBSS | Generic |  | TS3 - TYPE D - 43mm -0,7m cable length | http://www.tapeswitch.com |  | 0.005 kg | 4554.657 mm^3 | BOM.7.New Jam Mechanism Replacement.NBSS.xlsx |  |  | 4 |  |  |  |  |  |  |  |  |  |  |  | 0 |  | UNMATCHED |
+|  |  | 8 | NBSS.776 Spring -  rising barrier jam device - 14.77 n/mm - painted RED | NBSS/Sesame | ORDER |  |  |  | 776.0 |  |  |  |  |  | To Order | NBSS | Steel, Mild |  | FC-A180-380-512M  14.77 n/mm |  |  | 0.002 kg | 194.109 mm^3 | BOM.7.New Jam Mechanism Replacement.NBSS.xlsx |  |  | 5 |  |  |  |  |  |  |  |  |  |  |  | 0 |  | UNMATCHED |
+|  |  | 8 | NBSS.777 Spring -  rising barrier jam device - 11.52 n/mm -  painted BLUE | NBSS/Sesame | ORDER |  |  |  | 777.0 |  |  |  |  |  | To Order | NBSS | Steel, Mild |  | FC-A180-380-493M  11.52 n/mm |  |  | 0.002 kg | 194.109 mm^3 | BOM.7.New Jam Mechanism Replacement.NBSS.xlsx |  |  | 6 |  |  |  |  |  |  |  |  |  |  |  | 0 |  | UNMATCHED |
+|  |  | 2 | Raytech Happy Gel Box IPX8 41 x 28 x 19mm | Sesame | ORDER |  |  |  | 1005.B.134 |  |  |  |  |  | To Order | Sesame | Generic |  |  | https://www.toolstation.com/ |  | 0.018 kg | 18046.966 mm^3 | BOM.7.New Jam Mechanism Replacement.Sesame.xlsx |  |  | 1 |  |  |  |  |  |  |  |  |  |  |  | 0 |  | UNMATCHED |
+|  | NO | 2 | Female 4 way M8 to Unterminated Sensor Actuator Cable | RS Components | PICK | 6.0 | KAN-330 | 10 off NBSS002 (Emergency Stop Angle Bracket) Rev_2 | 1008.A10.002 | 002 | 8.0 | 5.0 | Open in Asana |  | PICK | Sesame | Generic |  | RS Stock No 724-2677 | https://uk.rs-online.com/web/p/sensor-actuator-cables/7242677 |  | 0.003 kg | 2764.422 mm^3 | BOM.7.New Jam Mechanism Replacement.Sesame.xlsx |  |  | 2 |  |  |  |  |  |  |  |  |  | 10 off NBSS002 (Emergency Stop Angle Bracket) Rev_2 | https://app.asana.com/1/357939803556123/929000000000000.0 | 90 | Substring | MATCHED |
+|  |  | 2 | Magnetic Non-Contact Safety Switch, Part 1/2, operating distance 8mm | RS Components | ORDER |  |  |  | 1008.A10.Sensor |  |  |  |  |  | To Order | Sesame |  |  | RS Stock No 619-2830 | https://uk.rs-online.com/web/p/non-contact-safety-switches/6192830 |  | 0.060 kg | 31754.475 mm^3 | BOM.7.New Jam Mechanism Replacement.Sesame.xlsx |  |  | 3 |  |  |  |  |  |  |  |  |  |  |  | 0 |  | UNMATCHED |
+|  |  | 16 | E - Clip 6mm Shaft Diameter, 4mm Groove Diameter | RS Components | ORDER |  |  |  | DIN 6799.6mm Shaft.5mm Groove |  |  |  |  |  | To Order | Sesame | Stainless Steel |  | RS Stock No: 2096851 - PUT ME ON BOM ! | https://www.rs-online.id/p/e-type-s-steel-circlip4-0mm-groove/2096851/ |  | 0.000 kg | 34.222 mm^3 | BOM.7.New Jam Mechanism Replacement.Sesame.xlsx |  |  | 4 | Sesame Rack 2, Shelf A |  |  |  |  |  |  |  |  |  |  | 0 |  | UNMATCHED |
+## Sheet: Summary
+| ORDER_PICK | Count |  |
+| --- | --- | --- |
+| ORDER | 15 |  |
+| PICK | 1 |  |
+| Total rows | 16 |  |
+| HOW TO OVERRIDE  —  edit Column A on the BOM Review sheet |  |  |
+| Override Value | Effect | When to use |
+| FORCE_ORDER | Force to ORDER | Part matched Golden Index as PICK but is bespoke / must be ordered. Use for any Substring match where the stock name looks unrelated to this part. |
+| SKIP | Exclude entirely | Part should not appear in Asana at all (duplicate, error row, or not needed for this job). |
+| HOLD | Exclude (same as SKIP) | Part deferred — not required yet. Treated identically to SKIP in Stage 5. |
+| {number}  e.g. 12 | Override order quantity | Force a specific reorder qty instead of BOM qty. Leave ORDER_PICK column unchanged. |
+| (leave blank) | No change | Pipeline uses the ORDER_PICK result as-is. Default for most rows. |
+| MATCH TYPE WARNING — verify Column K (Matched Stock_Number) on BOM Review |  |  |
+| Match Type | Risk | Action |
+| Substring | HIGH — false positive likely | Does Column I (Asana Task Name) make sense for this part? If unrelated → enter FORCE_ORDER in Column A immediately. |
+| Exact / Token | Low | Part number matched precisely. Spot-check but usually safe to leave. |
+| No match → ORDER | None (expected) | Bespoke part with no Golden Index entry. Routed to ORDER automatically. No action needed unless you want to add it to the index for future runs. |

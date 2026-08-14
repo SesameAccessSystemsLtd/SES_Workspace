@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  29/06/2026  14:12
+============================================================
+With:         +448000431515 0800 043 1515
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+Giles Hugo from access discussed potential site visits and panel commissioning with Richard, who represents a client interested in external panel manufacturing and supply. They explored project locations, costs, and the possibility of collaboration, with Richard considering obtaining a quote from Giles's company.
+
+--- RECAP --------------------------------------------------
+Giles Hugo contacted Richard to discuss site visits for panel commissioning around London, primarily in central and large public buildings accessible by tube and train.Richard mentioned he would review costs and get back to Giles with a quote, after checking some details and sending a picture of a panel they have.Giles confirmed that their company can supply panel manufacturing, programming, and possibly components, emphasizing flexibility and cost considerations.Richard inquired about qualifications needed for panel builders; Giles explained that electrical qualifications and understanding standards are sufficient, as their company trains in-house electricians.They discussed the potential for Richard's company to order components through Giles's company or to have Giles's company supply assembled panels, with a note that bulk purchasing might be more cost-effective.Richard expressed interest in receiving a quote and possibly collaborating further, with both parties agreeing to follow up.
+
+--- TASKS --------------------------------------------------
+Richard will review the discussed costs and send Giles a quote once prepared.Richard will send a picture of a panel they have to Giles for reference.Giles will wait for Richard's quote and follow up if needed.
+
+(Full transcript: RC web portal only — no RingSense API)

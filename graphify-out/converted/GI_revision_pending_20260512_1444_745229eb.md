@@ -1,0 +1,6 @@
+<!-- converted from GI_revision_pending_20260512_1444.xlsx -->
+
+## Sheet: Sheet1
+| Override / Reorder QTY | Low Stock Alert | BOM QTY | BOM Description | vendor | ORDER_PICK | Remaining after BOM | Mapped KAN | Asana Task Name | Part Number | Matched Stock_Number | Stock QTY | min Stock QTY | Asana Task URL | Order reference | Order Status | cost center | material | thickness | stock number | web link | notes | mass | volume | source bom file | rev | authority | item | location | qty | info / link | length | zip | d | b | t | a | Asana Stock Name | Asana URL (Golden) | Match Confidence | Match Type | Index Match Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | NO | 2 | NBSS.414 Limit Switch Angle | NBSS/Laser Cut | PICK | 47.0 | KAN-282 | 60 off NBSS414 (LimitSwitchAngle) | 1670.414 | 414 | 49.0 | 10.0 | Open in Asana |  | PICK | NBSS | Stainless Steel | 3.000 mm | 304/2B |  |  | 0.188 kg | 23520.852 mm^3 | 1670.BOM.4.ScissorLift.NBSS.xlsx |  |  | 1 | RACK A SHELF F2 |  |  |  |  |  |  |  |  | 60 off NBSS414 (LimitSwitchAngle) | https://app.asana.com/1/357939803556123/929000000000000.0 | 90 | Substring | MATCHED |

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  03/07/2026  11:28
+============================================================
+With:         AMY - AALCO 01296 461718
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Amy from AALCO seeking clarification from Giles Hugo about the specifics of a quote involving 200 million units, confirming whether it refers to three lengths of 200 mil each or as many as possible, with Giles confirming it is for three lengths totaling 600 mil. The discussion focused on the cutting process and quantities involved.
+
+--- RECAP --------------------------------------------------
+Amy from AALCO asked Giles Hugo whether the quote for 200 million units refers to three lengths of 200 mil each or as many as possible, seeking clarification.Giles Hugo confirmed that the quote is for three lengths totaling 600 mil, indicating the units will be cut into three pieces of 200 mil each.The conversation clarified that the task involves cutting a total of 600 mil into three parts, each 200 mil long, and Amy acknowledged this understanding.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

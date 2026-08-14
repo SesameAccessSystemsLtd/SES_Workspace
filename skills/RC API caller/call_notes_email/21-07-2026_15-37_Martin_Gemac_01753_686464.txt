@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  21/07/2026  15:37
+============================================================
+With:         Martin | Gemac 01753 686464
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo and Martin from Gemac discussing technical specifications and potential adjustments for fittings, with Giles attempting to include John in the conversation for further input.
+
+--- RECAP --------------------------------------------------
+Giles Hugo and Martin discussed issues with two fittings, questioning whether the current specifications align with the intended requirements.Martin explained that the fittings involve either 10lb or 38mm BSP bulkheads, or 8L or quarter BSP bulkheads, and suggested using adapters if necessary.Giles Hugo expressed a preference for metric to BSP conversions and attempted to add John to the call for additional input.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will try to add John to the call to obtain further input on the fittings specifications.
+
+(Full transcript: RC web portal only — no RingSense API)

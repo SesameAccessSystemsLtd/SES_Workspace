@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  09/07/2026  14:15
+============================================================
+With:         +441158760862 0115 876 0862
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Fatima booking multiple hotel stays for students at the Jubilee Hotel, confirming details and making arrangements for various dates in January, April, May, and June 2027, with all bookings successfully confirmed and sent via email.
+
+--- RECAP --------------------------------------------------
+Fatima requested to book hotel rooms at the Jubilee Hotel for students on specific dates in January, May, April, and June 2027, with each booking confirmed and confirmation emails sent to the provided university email addresses.For the January 2027 booking, a room was reserved from the 17th to the 22nd for one student, with a rate of £80.34 per night including breakfast, and the total cost was £41.70, cancellable free of charge before 2:00 p.m. on the day of arrival.Additional bookings were made for a student from 23rd to 28th May 2027, and for another student from 17th to 22nd January 2027, with confirmation emails sent for each reservation.Further bookings were arranged for a student arriving on 11th April 2027 for five nights (11th to 16th April) and another for 6th to 11th June 2027, both at the same rate and confirmed successfully.All bookings were for single rooms, with contact details and payment information collected, and confirmation emails sent to the respective university email addresses.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

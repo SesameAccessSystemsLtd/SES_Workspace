@@ -1,0 +1,14 @@
+{
+  "request_id": "f389a3f8-f659-4211-8a06-2e392d0b8101",
+  "source": "email_approval_sheet",
+  "row_index": 42,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkAYSmWAAA=",
+  "subject": "Amazon Invoice Available for 21139-60726 (Invoice No. GB61PPIRABEY)",
+  "task_gid": "1216298898397328",
+  "task_name": "21139-60726 - Amazon - Steves plug socket",
+  "asana_url": "https://app.asana.com/0/0/1216298898397328",
+  "action": "(Matched via PO Number in Local DB); Note added to description: Invoice from Amazon - £8.28 (2026-07-07)",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-07-07T15:54:23Z\nEmail: Amazon Invoice Available for 21139-60726 (Invoice No. GB61PPIRABEY)\n- Note added to description: Invoice from Amazon - £8.28 (2026-07-07)",
+  "decision": "A",
+  "created_at": "2026-07-10T13:00:07.669913+00:00"
+}

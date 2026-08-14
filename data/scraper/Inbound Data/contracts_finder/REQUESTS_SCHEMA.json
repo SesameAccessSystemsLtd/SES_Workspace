@@ -1,0 +1,72 @@
+{
+  "_comment": "Drop a file named contracts_finder_YYYYMMDD_HHMMSS.json into the REQUESTS/ folder to trigger the pipeline from any OpenClaw agent or external process. The orchestrator polls this folder and processes the oldest pending file.",
+
+  "schema": {
+    "request_id": {
+      "type": "string",
+      "required": true,
+      "description": "Unique ID for this request — used to correlate the RESPONSE_ file",
+      "example": "SAD_20260327_083000"
+    },
+    "requested_by": {
+      "type": "string",
+      "required": true,
+      "description": "Which agent or process is triggering the pipeline",
+      "example": "SAD",
+      "values": ["SAD", "SAM", "SESAL", "COWORK", "CRON", "MANUAL"]
+    },
+    "mode": {
+      "type": "string",
+      "required": false,
+      "default": "incremental",
+      "values": ["incremental", "full", "date"],
+      "description": "incremental=since last run, full=last 180 days, date=use since field"
+    },
+    "since": {
+      "type": "string",
+      "required": false,
+      "description": "ISO date string — only used when mode=date",
+      "example": "2026-01-01"
+    },
+    "dry_run": {
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "description": "If true, scrape and enrich but do NOT push to HubSpot"
+    },
+    "skip_apollo": {
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "description": "If true, skip Apollo contact enrichment (faster, no API cost)"
+    },
+    "notes": {
+      "type": "string",
+      "required": false,
+      "description": "Human-readable context for why this run was triggered"
+    }
+  },
+
+  "example_request": {
+    "request_id": "SAD_20260327_083000",
+    "requested_by": "SAD",
+    "mode": "incremental",
+    "dry_run": false,
+    "skip_apollo": false,
+    "notes": "Daily heartbeat trigger from SAD agent"
+  },
+
+  "response_format": {
+    "_comment": "The orchestrator writes a RESPONSE_{request_id}_{date}.json file to REQUESTS/ when done",
+    "request_id": "SAD_20260327_083000",
+    "status": "complete",
+    "completed_at": "2026-03-27T08:35:42",
+    "leads_found": 12,
+    "hubspot_stats": {
+      "pushed": 8,
+      "skipped_cooldown": 2,
+      "skipped_no_email": 2,
+      "enrolled_in_sequence": 5
+    }
+  }
+}

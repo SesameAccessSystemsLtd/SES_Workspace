@@ -1,0 +1,1940 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1595 - St Georges House Entire system,"Master task for all BOMs related to 1595 - St Georges House Entire system
+Dropbox: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Project: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",,,,,,,,,,
+Engraving BOM - 1595 - St Georges House Entire system,,ALL BOMS - 1595 - St Georges House Entire system,,Engraving,,,,,,,
+Engraving - 1595 - St Georges House Entire system,,Engraving BOM - 1595 - St Georges House Entire system,,Engraving,,,,,,,
+1 off 1595. 1016.1.2 - Vertical 4 Buttons Face Plate Engraving,"1595.1016.1.2
+From Cost Centre Engraving
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.327 kg
+Volume: 40992.479 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Engraving - 1595 - St Georges House Entire system,1,Engraving,,,,ORDER,PROJECT ORDER,1217486646581442,https://app.asana.com/0/848657415032331/1217486646581442
+1 off 1595. 1016.1.4 - Vertical 4 Buttons Face Plate Engraving,"1595.1016.1.4
+From Cost Centre Engraving
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.327 kg
+Volume: 40977.821 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Engraving - 1595 - St Georges House Entire system,1,Engraving,,,,ORDER,PROJECT ORDER,1217486567627496,https://app.asana.com/0/848657415032331/1217486567627496
+1 off 1595. 1016.A3w - On.Lift Button Station Engraving,"1595.1016.A3w
+From Cost Centre Engraving
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 1.535 kg
+Volume: 190171.224 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Engraving - 1595 - St Georges House Entire system,1,Engraving,,,,ORDER,PROJECT ORDER,1217486646581455,https://app.asana.com/0/848657415032331/1217486646581455
+Surface Finish BOM - 1595 - St Georges House Entire system,,ALL BOMS - 1595 - St Georges House Entire system,,Surface Finish BOM,,,,,,,
+Yellow Zinc Plating - 1595 - St Georges House Entire system,,Surface Finish BOM - 1595 - St Georges House Entire system,,Yellow Zinc Plating,,,,,,,
+"2 off Yellow Zinc Plating 1595. 1000.F.Winkel.Bearing_(4.053+PL00) - Winkel bearing, welded by Supplier + extra finish","1595.1000.F.Winkel.Bearing_(4.053+PL00)
+Stock Number: 4.053
+KAN: KAN-143
+KAN Stock Link: https://app.asana.com/0/632603478911321/1200245783073488
+Web Link: http://www.euro-bearings.com/cr1.htm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.660 kg
+Volume: 84083.099 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Yellow Zinc Plating - 1595 - St Georges House Entire system,,Yellow Zinc Plating,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217486642343717,https://app.asana.com/0/848657415032331/1217486642343717
+Anodising - 1595 - St Georges House Entire system,,Surface Finish BOM - 1595 - St Georges House Entire system,,Anodising,,,,,,,
+4 off Anodising 1595. 1000.H.001 - Aluminum End Cap,"1595.1000.H.001
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.043 kg
+Volume: 16052.588 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Anodising - 1595 - St Georges House Entire system,4,Anodising,,,,ORDER,PROJECT ORDER,1217486419830140,https://app.asana.com/0/848657415032331/1217486419830140
+3 off Yellow Zinc Plating 1595. 1011.B19w - Welded assembly,"1595.1011.B19w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 7.864 kg
+Volume: 1001824.701 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Yellow Zinc Plating - 1595 - St Georges House Entire system,3,Yellow Zinc Plating,,,,ORDER,PROJECT ORDER,1217486419830152,https://app.asana.com/0/848657415032331/1217486419830152
+3 off Anodising 1595. 1014.F.067 - Tube 14.9 OD  2 mm wall,"1595.1014.F.067
+Material: Aluminum 6061
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.003 kg
+Volume: 1215.796 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Anodising - 1595 - St Georges House Entire system,3,Anodising,,,,ORDER,PROJECT ORDER,1217486295395628,https://app.asana.com/0/848657415032331/1217486295395628
+3 off Anodising 1595. 1014.P.011 - Tube 10.9 ID 2 mm wall,"1595.1014.P.011
+Material: Aluminum 6061
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.003 kg
+Volume: 1215.796 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Anodising - 1595 - St Georges House Entire system,3,Anodising,,,,ORDER,PROJECT ORDER,1217486646613997,https://app.asana.com/0/848657415032331/1217486646613997
+Laser Cut BOM - 1595 - St Georges House Entire system,,ALL BOMS - 1595 - St Georges House Entire system,,Laser Cut,,,,,,,
+Laser Cut - 1595 - St Georges House Entire system,,Laser Cut BOM - 1595 - St Georges House Entire system,,Laser Cut,,,,,,,
+4 off 1595. 1000.H.001 - Aluminum End Cap Laser Cut,"1595.1000.H.001
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.043 kg
+Volume: 16052.588 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,4,Laser Cut,,,,ORDER,PROJECT ORDER,1217486647121450,https://app.asana.com/0/848657415032331/1217486647121450
+1 off 1595. 1002.H.010 - Pit Trim Front Panel 304/DP1 Laser Cut,"1595.1002.H.010
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 7.358 kg
+Volume: 919712.481 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486567132267,https://app.asana.com/0/848657415032331/1217486567132267
+1 off 1595. 1002.H.011 - Pit Trim Side Panel 304/DP1 Laser Cut,"1595.1002.H.011
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 10.690 kg
+Volume: 1336223.414 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486567297505,https://app.asana.com/0/848657415032331/1217486567297505
+1 off 1595. 1002.H.011_MIR - Pit Trim Side Panel 304/DP1 Laser Cut,"1595.1002.H.011_MIR
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 10.690 kg
+Volume: 1336223.414 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486547822824,https://app.asana.com/0/848657415032331/1217486547822824
+2 off 1595. 1002.H.018 - Rear Pit Trim Panel 304/DP1 Laser Cut,"1595.1002.H.018
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 3.598 kg
+Volume: 449758.985 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486566072553,https://app.asana.com/0/848657415032331/1217486566072553
+1 off 1595. 1002.H.019 - Rear Pit Trim Panel Laser Cut,"1595.1002.H.019
+Material: Aluminium 5083
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 4.094 kg
+Volume: 1545489.778 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486647142385,https://app.asana.com/0/848657415032331/1217486647142385
+1 off 1595. 1002.H.021 - Rear Pit Trim Panel Laser Cut,"1595.1002.H.021
+Material: Aluminium 5083
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 4.094 kg
+Volume: 1545489.778 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486419302628,https://app.asana.com/0/848657415032331/1217486419302628
+8 off 1595. 1002.H.022 - Fixing plate Laser Cut,"1595.1002.H.022
+Material: Steel, Mild
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.520 kg
+Volume: 66210.038 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,8,Laser Cut,,,,ORDER,PROJECT ORDER,1217486418093194,https://app.asana.com/0/848657415032331/1217486418093194
+12 off 1595. 1004.D.005 - Gusset Laser Cut,"1595.1004.D.005
+Material: Steel, Mild
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.153 kg
+Volume: 19450.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,12,Laser Cut,,,,ORDER,PROJECT ORDER,1217486646808305,https://app.asana.com/0/848657415032331/1217486646808305
+4 off 1595. 1004.D.006 - Gusset Laser Cut,"1595.1004.D.006
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 1.744 kg
+Volume: 222164.492 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,4,Laser Cut,,,,ORDER,PROJECT ORDER,1217486566667022,https://app.asana.com/0/848657415032331/1217486566667022
+1 off 1595. 1004.D.007 - E-Stop Bracket 304/2B Laser Cut,"1595.1004.D.007
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.240 kg
+Volume: 29943.105 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486647049421,https://app.asana.com/0/848657415032331/1217486647049421
+2 off 1595. 1004.D.008 - Bellows catch long 304/2B Laser Cut,"1595.1004.D.008
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.711 kg
+Volume: 88841.779 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486567057772,https://app.asana.com/0/848657415032331/1217486567057772
+2 off 1595. 1004.D.009 - Bellows catch short 304/2B Laser Cut,"1595.1004.D.009
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.536 kg
+Volume: 67023.977 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486568098509,https://app.asana.com/0/848657415032331/1217486568098509
+4 off 1595. 1004.D.010 - Bellows catch angle 304/2B Laser Cut,"1595.1004.D.010
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.241 kg
+Volume: 30103.601 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,4,Laser Cut,,,,ORDER,PROJECT ORDER,1217486548557558,https://app.asana.com/0/848657415032331/1217486548557558
+1 off 1595. 1006.G.001 - Platform Plate 304/HR Laser Cut,"1595.1006.G.001
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 30.551 kg
+Volume: 3818852.889 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486568187917,https://app.asana.com/0/848657415032331/1217486568187917
+1 off 1595. 1006.G.018 - Platform Lift Panel 304/DP1 Laser Cut,"1595.1006.G.018
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 5.235 kg
+Volume: 654353.636 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486420591454,https://app.asana.com/0/848657415032331/1217486420591454
+1 off 1595. 1006.G.019 - Platform Lift Panel 304/DP1 Laser Cut,"1595.1006.G.019
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 5.609 kg
+Volume: 701133.434 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486647489036,https://app.asana.com/0/848657415032331/1217486647489036
+1 off 1595. 1006.G.024 - Gate Fixing Plate Laser Cut,"1595.1006.G.024
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 16.835 kg
+Volume: 2144565.926 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486567057789,https://app.asana.com/0/848657415032331/1217486567057789
+1 off 1595. 1006.G.039 - Platform Lift Panel 304/DP1 Laser Cut,"1595.1006.G.039
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 3.348 kg
+Volume: 418543.717 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486675057767,https://app.asana.com/0/848657415032331/1217486675057767
+2 off 1595. 1006.G.048 - (ServiceTrimS) 304/2B Laser Cut,"1595.1006.G.048
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 1.812 kg
+Volume: 224238.668 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486567258936,https://app.asana.com/0/848657415032331/1217486567258936
+2 off 1595. 1006.G.049 - (ServiceTrimL) 304/2B Laser Cut,"1595.1006.G.049
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 1.471 kg
+Volume: 182082.258 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486420317401,https://app.asana.com/0/848657415032331/1217486420317401
+1 off 1595. 1006.G.050 - (ServiceHatches_3) 304/2B Laser Cut,"1595.1006.G.050
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 11.103 kg
+Volume: 1374094.447 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486646983542,https://app.asana.com/0/848657415032331/1217486646983542
+3 off 1595. 1006.G.052 - Chanel 304/2B Laser Cut,"1595.1006.G.052
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.792 kg
+Volume: 98981.568 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,3,Laser Cut,,,,ORDER,PROJECT ORDER,1217486643049091,https://app.asana.com/0/848657415032331/1217486643049091
+1 off 1595. 1006.G.058 - Platform Plate 304/HR Laser Cut,"1595.1006.G.058
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 30.398 kg
+Volume: 3799755.075 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486392648879,https://app.asana.com/0/848657415032331/1217486392648879
+1 off 1595. 1006.G.062 - GateShaft BasePlate 304/HR Laser Cut,"1595.1006.G.062
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.256 kg
+Volume: 31668.281 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486548015993,https://app.asana.com/0/848657415032331/1217486548015993
+2 off 1595. 1006.G.063 - Gate Shaft Packers 304/2B Laser Cut,"1595.1006.G.063
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.071 kg
+Volume: 8848.707 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486546575628,https://app.asana.com/0/848657415032331/1217486546575628
+2 off 1595. 1006.G.064 - Gate Shaft Packers 304/2B Laser Cut,"1595.1006.G.064
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.036 kg
+Volume: 4424.353 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486568433777,https://app.asana.com/0/848657415032331/1217486568433777
+1 off 1595. 1006.G.074 - Skirt Bracket 304/HR Laser Cut,"1595.1006.G.074
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 4.724 kg
+Volume: 590481.494 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486642452068,https://app.asana.com/0/848657415032331/1217486642452068
+1 off 1595. 1006.G.074_MIR - Skirt Bracket 304/HR Laser Cut,"1595.1006.G.074_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 4.724 kg
+Volume: 590481.494 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486643262201,https://app.asana.com/0/848657415032331/1217486643262201
+1 off 1595. 1006.G.075 - Skirt Bracket 304/HR Laser Cut,"1595.1006.G.075
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 3.165 kg
+Volume: 395652.949 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486675179959,https://app.asana.com/0/848657415032331/1217486675179959
+1 off 1595. 1006.G.114 - Bellows fixing plate Laser Cut,"1595.1006.G.114
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.102 kg
+Volume: 12935.235 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486566391289,https://app.asana.com/0/848657415032331/1217486566391289
+1 off 1595. 1006.G.116 - Bellows bracket 304/HR Laser Cut,"1595.1006.G.116
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.144 kg
+Volume: 18044.670 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486548730121,https://app.asana.com/0/848657415032331/1217486548730121
+1 off 1595. 1006.G.126 - Bellows bracket 304/HR Laser Cut,"1595.1006.G.126
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.184 kg
+Volume: 23024.066 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486566780451,https://app.asana.com/0/848657415032331/1217486566780451
+5 off 1595. 1006.G.138 - Packer 304/2B Laser Cut,"1595.1006.G.138
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.081 kg
+Volume: 10169.715 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,5,Laser Cut,,,,ORDER,PROJECT ORDER,1217486567323557,https://app.asana.com/0/848657415032331/1217486567323557
+1 off 1595. 1006.G.139 - Packer 304/HR Laser Cut,"1595.1006.G.139
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.407 kg
+Volume: 50848.575 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486567489319,https://app.asana.com/0/848657415032331/1217486567489319
+1 off 1595. 1006.G.140 - Stabilisation bracket plate 304/HR Laser Cut,"1595.1006.G.140
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 8.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.310 kg
+Volume: 38702.142 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486388821588,https://app.asana.com/0/848657415032331/1217486388821588
+1 off 1595. 1006.G.141 - Stabilisation bracket plate 304/HR Laser Cut,"1595.1006.G.141
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 8.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.626 kg
+Volume: 78287.505 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486548559568,https://app.asana.com/0/848657415032331/1217486548559568
+1 off 1595. 1006.G.142 - Stablisation bracket plate 304/HR Laser Cut,"1595.1006.G.142
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 8.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.956 kg
+Volume: 119490.046 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486549371994,https://app.asana.com/0/848657415032331/1217486549371994
+1 off 1595. 1006.G.145 - Platform Lift Panel 304/DP1 Laser Cut,"1595.1006.G.145
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 8.202 kg
+Volume: 1025207.272 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486643395579,https://app.asana.com/0/848657415032331/1217486643395579
+12 off 1595. 1006.G.150 - Packers Laser Cut,"1595.1006.G.150
+Material: Steel, Mild
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.061 kg
+Volume: 7755.929 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,12,Laser Cut,,,,ORDER,PROJECT ORDER,1217486567744576,https://app.asana.com/0/848657415032331/1217486567744576
+1 off 1595. 1008.D1.112 - Valve Plate No Ext. 304/HR Laser Cut,"1595.1008.D1.112
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.828 kg
+Volume: 103454.377 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486567323570,https://app.asana.com/0/848657415032331/1217486567323570
+1 off 1595. 1008.R.001 - GateControlBracket 304/2B Laser Cut,"1595.1008.R.001
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.099 kg
+Volume: 12349.890 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486643579407,https://app.asana.com/0/848657415032331/1217486643579407
+1 off 1595. 1011.B.030 - TopPlate Laser Cut,"1595.1011.B.030
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 36.244 kg
+Volume: 4617006.553 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486549206964,https://app.asana.com/0/848657415032331/1217486549206964
+1 off 1595. 1011.B.031 - TopPlate.Side Laser Cut,"1595.1011.B.031
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 4.594 kg
+Volume: 585165.601 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486675289826,https://app.asana.com/0/848657415032331/1217486675289826
+1 off 1595. 1011.B.032 - TopPlate.Front Laser Cut,"1595.1011.B.032
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 2.946 kg
+Volume: 375313.965 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486647761042,https://app.asana.com/0/848657415032331/1217486647761042
+1 off 1595. 1011.B.040 - SupportPlate Laser Cut,"1595.1011.B.040
+Material: Steel, Mild
+Thickness: 15.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 5.821 kg
+Volume: 741568.693 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486977611348,https://app.asana.com/0/848657415032331/1217486977611348
+1 off 1595. 1011.B.058 - SupportPlate Laser Cut,"1595.1011.B.058
+Material: Steel, Mild
+Thickness: 15.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 6.622 kg
+Volume: 843600.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486977703453,https://app.asana.com/0/848657415032331/1217486977703453
+1 off 1595. 1011.B.086 - TopPlate.Front Laser Cut,"1595.1011.B.086
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 2.877 kg
+Volume: 366511.570 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486647560319,https://app.asana.com/0/848657415032331/1217486647560319
+1 off 1595. 1011.B.109 - Limit Switch Angle 304/2B Laser Cut,"1595.1011.B.109
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.140 kg
+Volume: 17509.590 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486675533812,https://app.asana.com/0/848657415032331/1217486675533812
+2 off 1595. 1011.B.114 - LimitSwitch.Plate dia 100 x 102 304/2B Laser Cut,"1595.1011.B.114
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.231 kg
+Volume: 28815.120 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486567296267,https://app.asana.com/0/848657415032331/1217486567296267
+1 off 1595. 1011.B.117 - Actuator.Bracket Template Laser Cut,"1595.1011.B.117
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.471 kg
+Volume: 60041.482 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486643186838,https://app.asana.com/0/848657415032331/1217486643186838
+1 off 1595. 1011.B.119 - Easy chain bracket Laser Cut,"1595.1011.B.119
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.435 kg
+Volume: 55445.576 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486549474430,https://app.asana.com/0/848657415032331/1217486549474430
+1 off 1595. 1011.B.120 - Easy chain bracket Laser Cut,"1595.1011.B.120
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 2.608 kg
+Volume: 332292.537 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486643245122,https://app.asana.com/0/848657415032331/1217486643245122
+1 off 1595. 1011.B.121 - Junction box bracket Laser Cut,"1595.1011.B.121
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.246 kg
+Volume: 31281.921 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486977783131,https://app.asana.com/0/848657415032331/1217486977783131
+1 off 1595. 1011.B.122 - TopPlate.Side Laser Cut,"1595.1011.B.122
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 4.598 kg
+Volume: 585694.142 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486675681153,https://app.asana.com/0/848657415032331/1217486675681153
+1 off 1595. 1014.A.001 - GateActuatorTop Laser Cut,"1595.1014.A.001
+Material: Aluminum 5083
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 2.868 kg
+Volume: 1062217.960 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486643694216,https://app.asana.com/0/848657415032331/1217486643694216
+1 off 1595. 1014.A.010 - GateActuatorSupport Laser Cut,"1595.1014.A.010
+Material: Aluminum 5083
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 3.207 kg
+Volume: 1187860.468 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486675432587,https://app.asana.com/0/848657415032331/1217486675432587
+1 off 1595. 1014.A.012 - GateActuatorSide Laser Cut,"1595.1014.A.012
+Material: Aluminum 5083
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 5.381 kg
+Volume: 1992967.291 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486648319271,https://app.asana.com/0/848657415032331/1217486648319271
+1 off 1595. 1014.A.032 - Gusset Laser Cut,"1595.1014.A.032
+Material: Aluminum 5083
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.469 kg
+Volume: 173755.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486648419925,https://app.asana.com/0/848657415032331/1217486648419925
+8 off 1595. 1014.A.035 - GateBracket Packer 304/2B Laser Cut,"1595.1014.A.035
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.289 kg
+Volume: 35808.850 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,8,Laser Cut,,,,ORDER,PROJECT ORDER,1217486675531859,https://app.asana.com/0/848657415032331/1217486675531859
+1 off 1595. 1014.A.036 - GateBracket Packer 304/HR Laser Cut,"1595.1014.A.036
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 1.447 kg
+Volume: 179044.248 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217502426066652,https://app.asana.com/0/848657415032331/1217502426066652
+1 off 1595. 1014.A.058 - GateActuatorSide Laser Cut,"1595.1014.A.058
+Material: Aluminum 5083
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 1.183 kg
+Volume: 438067.496 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486567481820,https://app.asana.com/0/848657415032331/1217486567481820
+1 off 1595. 1014.A.059 - GateActuatorSide Laser Cut,"1595.1014.A.059
+Material: Aluminum 5083
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.951 kg
+Volume: 352338.949 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486549825525,https://app.asana.com/0/848657415032331/1217486549825525
+1 off 1595. 1014.A.066 - GateBracket Packer 304/HR Laser Cut,"1595.1014.A.066
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 2.893 kg
+Volume: 358088.496 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486977869524,https://app.asana.com/0/848657415032331/1217486977869524
+1 off 1595. 1014.A.067 - Flat Laser Cut,"1595.1014.A.067
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.238 kg
+Volume: 30274.407 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486977839956,https://app.asana.com/0/848657415032331/1217486977839956
+1 off 1595. 1014.A.069 - Flat Laser Cut,"1595.1014.A.069
+Material: Steel, Mild
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.194 kg
+Volume: 24758.518 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486643485825,https://app.asana.com/0/848657415032331/1217486643485825
+16 off 1595. 1014.A.077 - Bearing Packer 304/2B Laser Cut,"1595.1014.A.077
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.021 kg
+Volume: 2655.615 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,16,Laser Cut,,,,ORDER,PROJECT ORDER,1217486977933213,https://app.asana.com/0/848657415032331/1217486977933213
+2 off 1595. 1014.A.080 - Washer 304/HR Laser Cut,"1595.1014.A.080
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.281 kg
+Volume: 35161.527 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486675775427,https://app.asana.com/0/848657415032331/1217486675775427
+2 off 1595. 1014.A.083 - Packers 304/HR Laser Cut,"1595.1014.A.083
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.697 kg
+Volume: 87146.637 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486977966530,https://app.asana.com/0/848657415032331/1217486977966530
+4 off 1595. 1014.A.084 - Bearing Packer 304/HR Laser Cut,"1595.1014.A.084
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.129 kg
+Volume: 15933.690 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,4,Laser Cut,,,,ORDER,PROJECT ORDER,1217486549898102,https://app.asana.com/0/848657415032331/1217486549898102
+1 off 1595. 1014.A.085 - Gate Stopper Laser Cut,"1595.1014.A.085
+Material: Steel, Mild
+Thickness: 20.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.503 kg
+Volume: 64099.264 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486977566431,https://app.asana.com/0/848657415032331/1217486977566431
+1 off 1595. 1014.A.088 - GateActuatorPlate 304/HR Laser Cut,"1595.1014.A.088
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 2.917 kg
+Volume: 364644.539 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486648472706,https://app.asana.com/0/848657415032331/1217486648472706
+1 off 1595. 1014.A.097 - Support 304/HR Laser Cut,"1595.1014.A.097
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.032 kg
+Volume: 4031.449 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486648193508,https://app.asana.com/0/848657415032331/1217486648193508
+2 off 1595. 1014.F.038 - GateStopper.Plate 304/DP1 Laser Cut,"1595.1014.F.038
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.093 kg
+Volume: 11514.792 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486648128121,https://app.asana.com/0/848657415032331/1217486648128121
+2 off 1595. 1014.F.039 - GateStopper.BackPlate 304/DP1 Laser Cut,"1595.1014.F.039
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.056 kg
+Volume: 6951.784 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486644076952,https://app.asana.com/0/848657415032331/1217486644076952
+2 off 1595. 1014.F.041 - GateStopper-Spine 304/DP1 Laser Cut,"1595.1014.F.041
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.023 kg
+Volume: 2800.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486977549330,https://app.asana.com/0/848657415032331/1217486977549330
+1 off 1595. 1014.F.068 - Glass template Laser Cut,"1595.1014.F.068
+Material: Steel, Mild
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 2.505 kg
+Volume: 319165.841 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486978119733,https://app.asana.com/0/848657415032331/1217486978119733
+2 off 1595. 1014.F.082 - Glass clamp 304/HR Laser Cut,"1595.1014.F.082
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 2.476 kg
+Volume: 309560.703 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486643947554,https://app.asana.com/0/848657415032331/1217486643947554
+1 off 1595. 1014.P.001 - Flat Laser Cut,"1595.1014.P.001
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 16.195 kg
+Volume: 2062996.730 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486977839971,https://app.asana.com/0/848657415032331/1217486977839971
+1 off 1595. 1014.P.002 - Flat 304/HR Laser Cut,"1595.1014.P.002
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.463 kg
+Volume: 57842.081 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486648311834,https://app.asana.com/0/848657415032331/1217486648311834
+1 off 1595. 1014.P.006 - Glass template Laser Cut,"1595.1014.P.006
+Material: Steel, Mild
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 1.641 kg
+Volume: 209005.841 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486648429316,https://app.asana.com/0/848657415032331/1217486648429316
+1 off 1595. 1014.P.010 - Gate Stopper Laser Cut,"1595.1014.P.010
+Material: Steel, Mild
+Thickness: 20.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.625 kg
+Volume: 79561.407 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486676058660,https://app.asana.com/0/848657415032331/1217486676058660
+1 off 1595. 1014.P.014 - GateShaft BasePlate 304/HR Laser Cut,"1595.1014.P.014
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.346 kg
+Volume: 42797.121 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486550091678,https://app.asana.com/0/848657415032331/1217486550091678
+1 off 1595. 1014.P.017 - Flat Laser Cut,"1595.1014.P.017
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 3.477 kg
+Volume: 442883.936 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486648905162,https://app.asana.com/0/848657415032331/1217486648905162
+2 off 1595. 1014.P.021 - Service hatch Angle 304/2B Laser Cut,"1595.1014.P.021
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.842 kg
+Volume: 105223.909 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486963345900,https://app.asana.com/0/848657415032331/1217486963345900
+2 off 1595. 1014.P.024 - Service hatch Angle 304/2B Laser Cut,"1595.1014.P.024
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.457 kg
+Volume: 57180.250 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486963364558,https://app.asana.com/0/848657415032331/1217486963364558
+1 off 1595. 1014.P.025 - ServiceHatches Plate 304/2B Laser Cut,"1595.1014.P.025
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 4.064 kg
+Volume: 507937.827 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486978539329,https://app.asana.com/0/848657415032331/1217486978539329
+1 off 1595. 1014.P.032 - Cover Plate 304/HR Laser Cut,"1595.1014.P.032
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 8.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 2.686 kg
+Volume: 335727.973 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486549898128,https://app.asana.com/0/848657415032331/1217486549898128
+1 off 1595. 1014.P.045 - Folded angle Laser Cut,"1595.1014.P.045
+Material: Steel, Mild
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 1.054 kg
+Volume: 134262.343 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486978457205,https://app.asana.com/0/848657415032331/1217486978457205
+1 off 1595. 1014.P.049 - Cover Plate 304/HR Laser Cut,"1595.1014.P.049
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 8.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 2.238 kg
+Volume: 279782.296 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486649103619,https://app.asana.com/0/848657415032331/1217486649103619
+1 off 1595. 1014.P.053 - Chanel 304/2B Laser Cut,"1595.1014.P.053
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.626 kg
+Volume: 78201.002 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486978543149,https://app.asana.com/0/848657415032331/1217486978543149
+1 off 1595. 1015.C.002 - Support Channel Plate 304/HR Laser Cut,"1595.1015.C.002
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 27.449 kg
+Volume: 3431151.692 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486676446802,https://app.asana.com/0/848657415032331/1217486676446802
+1 off 1595. 1015.C.003 - Support Channel Plate 304/2B Laser Cut,"1595.1015.C.003
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.405 kg
+Volume: 50651.497 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486649027041,https://app.asana.com/0/848657415032331/1217486649027041
+3 off 1595. 1015.C.004 - Packer 304/2B Laser Cut,"1595.1015.C.004
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.554 kg
+Volume: 69247.807 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,3,Laser Cut,,,,ORDER,PROJECT ORDER,1217486963396441,https://app.asana.com/0/848657415032331/1217486963396441
+1 off 1595. 1015.C.006 - Packer 304/2B Laser Cut,"1595.1015.C.006
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 3.421 kg
+Volume: 427594.323 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486978542120,https://app.asana.com/0/848657415032331/1217486978542120
+3 off 1595. 1015.C.007 - Packer 304/2B Laser Cut,"1595.1015.C.007
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 1.140 kg
+Volume: 142531.441 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,3,Laser Cut,,,,ORDER,PROJECT ORDER,1217486644722962,https://app.asana.com/0/848657415032331/1217486644722962
+1 off 1595. 1015.C.008 - Support Channel Angle 304/HR Laser Cut,"1595.1015.C.008
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 4.780 kg
+Volume: 597462.980 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486963504897,https://app.asana.com/0/848657415032331/1217486963504897
+1 off 1595. 1015.C.009 - Packer 304/2B Laser Cut,"1595.1015.C.009
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 1.662 kg
+Volume: 207743.422 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486643508877,https://app.asana.com/0/848657415032331/1217486643508877
+1 off 1595. 1015.C.012 - fixing plate 304/HR Laser Cut,"1595.1015.C.012
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.036 kg
+Volume: 4502.832 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486644828856,https://app.asana.com/0/848657415032331/1217486644828856
+2 off 1595. 1015.C.014 - flat 304/2B Laser Cut,"1595.1015.C.014
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.007 kg
+Volume: 823.573 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486977830350,https://app.asana.com/0/848657415032331/1217486977830350
+1 off 1595. 1015.C.015 - Support Channel Angle 304/HR Laser Cut,"1595.1015.C.015
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 7.124 kg
+Volume: 890498.687 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486978676920,https://app.asana.com/0/848657415032331/1217486978676920
+2 off 1595. 1015.C.016 - Fixing angle 304/HR Laser Cut,"1595.1015.C.016
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.333 kg
+Volume: 41591.313 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486963491157,https://app.asana.com/0/848657415032331/1217486963491157
+1 off 1595. 1015.C.022 - Cover 304/DP1 Laser Cut,"1595.1015.C.022
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 1.500 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.012 kg
+Volume: 1495.744 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486978960893,https://app.asana.com/0/848657415032331/1217486978960893
+1 off 1595. 1015.C.023 - fixing plate 304/HR Laser Cut,"1595.1015.C.023
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.068 kg
+Volume: 8502.832 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486644929635,https://app.asana.com/0/848657415032331/1217486644929635
+2 off 1595. 1016.1.007 - Vertical 4 Buttons - Laser Cut 304/DP1 Laser Cut,"1595.1016.1.007
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.328 kg
+Volume: 40990.918 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486644878872,https://app.asana.com/0/848657415032331/1217486644878872
+1 off 1595. 1016.2.002 - BackingBox 304/2B Laser Cut,"1595.1016.2.002
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.500 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.578 kg
+Volume: 72205.807 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486963651996,https://app.asana.com/0/848657415032331/1217486963651996
+1 off 1595. 1016.A.001 - On-Lift Button Plate 304/DP1 Laser Cut,"1595.1016.A.001
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 1.198 kg
+Volume: 148252.865 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486676395563,https://app.asana.com/0/848657415032331/1217486676395563
+1 off 1595. 1016.A.002 - Bottom Cap 304/DP1 Laser Cut,"1595.1016.A.002
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.098 kg
+Volume: 12164.149 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486649555366,https://app.asana.com/0/848657415032331/1217486649555366
+1 off 1595. 1016.A.006 - ButtonStationBackPlate 304/2B Laser Cut,"1595.1016.A.006
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.463 kg
+Volume: 57321.281 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486979077880,https://app.asana.com/0/848657415032331/1217486979077880
+1 off 1595. 1016.A.007 - Plate 304/2B Laser Cut,"1595.1016.A.007
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.056 kg
+Volume: 6982.577 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486963498751,https://app.asana.com/0/848657415032331/1217486963498751
+4 off 1595. 1016.A.010 - Tube_Cap 304/2B Laser Cut,"1595.1016.A.010
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.001 kg
+Volume: 100.531 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,4,Laser Cut,,,,ORDER,PROJECT ORDER,1217486676987767,https://app.asana.com/0/848657415032331/1217486676987767
+1 off 1595. 1016.A.012 - BackPlate 304/DP1 Laser Cut,"1595.1016.A.012
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 1.228 kg
+Volume: 151920.898 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486649594070,https://app.asana.com/0/848657415032331/1217486649594070
+1 off 1595. 1016.A.013 - Back Cover 304/2B Laser Cut,"1595.1016.A.013
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.448 kg
+Volume: 55405.627 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486677010171,https://app.asana.com/0/848657415032331/1217486677010171
+1 off 1595. 1016.A.015 - Plate 304/2B Laser Cut,"1595.1016.A.015
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.066 kg
+Volume: 8167.577 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486649587867,https://app.asana.com/0/848657415032331/1217486649587867
+1 off 1595. 1016.A.016 - Top Cap 304/DP1 Laser Cut,"1595.1016.A.016
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.099 kg
+Volume: 12281.959 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486677046101,https://app.asana.com/0/848657415032331/1217486677046101
+1 off 1595. 1020.A.002 - ButtonPost - TopCap 304/DP1 Laser Cut,"1595.1020.A.002
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3,000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.121 kg
+Volume: 14976.823 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486979148064,https://app.asana.com/0/848657415032331/1217486979148064
+1 off 1595. 1020.A.004 - ButtonPost - Base Plate 304/HR Laser Cut,"1595.1020.A.004
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.834 kg
+Volume: 104192.478 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486964134923,https://app.asana.com/0/848657415032331/1217486964134923
+1 off 1595. 1020.A.010 - Channel Connector 304/2B Laser Cut,"1595.1020.A.010
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.058 kg
+Volume: 7257.207 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486978505907,https://app.asana.com/0/848657415032331/1217486978505907
+1 off 1595. 1020.A.011 - Drilling Template Laser Cut,"1595.1020.A.011
+Material: Steel, Mild
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.342 kg
+Volume: 43566.146 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486649589726,https://app.asana.com/0/848657415032331/1217486649589726
+1 off 1595. 1020.A.012 - Cutout Cover 304/DP1 Laser Cut,"1595.1020.A.012
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.170 kg
+Volume: 21277.593 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486645372970,https://app.asana.com/0/848657415032331/1217486645372970
+1 off 1595. 1020.A.014 - Angle 304/2B Laser Cut,"1595.1020.A.014
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.062 kg
+Volume: 7707.490 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217486964175547,https://app.asana.com/0/848657415032331/1217486964175547
+2 off 1595. 1020.A.016 - ButtonPost - Channel 304/HR Laser Cut,"1595.1020.A.016
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 2.004 kg
+Volume: 250477.198 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Laser Cut - 1595 - St Georges House Entire system,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217486677390792,https://app.asana.com/0/848657415032331/1217486677390792
+Machining BOM - 1595 - St Georges House Entire system,,ALL BOMS - 1595 - St Georges House Entire system,,Machining,,,,,,,
+Machining - 1595 - St Georges House Entire system,,Machining BOM - 1595 - St Georges House Entire system,,Machining,,,,,,,
+1 off 1595. 1006.G8 - GateShaft Bracket With bearing Machining,"1595.1006.G8
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.906 kg
+Volume: 112951.826 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Machining - 1595 - St Georges House Entire system,1,Machining,,,,ORDER,PROJECT ORDER,1217486677480710,https://app.asana.com/0/848657415032331/1217486677480710
+1 off 1595. 1006.G30 - Machined tube Machining,"1595.1006.G30
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.429 kg
+Volume: 53101.740 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Machining - 1595 - St Georges House Entire system,1,Machining,,,,ORDER,PROJECT ORDER,1217486964410204,https://app.asana.com/0/848657415032331/1217486964410204
+1 off 1595. 1014.A.086 - ^Rod Machining,"1595.1014.A.086
+Material: Steel, Mild
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.033 kg
+Volume: 4249.408 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Machining - 1595 - St Georges House Entire system,1,Machining,,,,ORDER,PROJECT ORDER,1217486645142569,https://app.asana.com/0/848657415032331/1217486645142569
+1 off 1595. 1014.A.094 - Bush Machining,"1595.1014.A.094
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.176 kg
+Volume: 21969.157 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Machining - 1595 - St Georges House Entire system,1,Machining,,,,ORDER,PROJECT ORDER,1217486645618130,https://app.asana.com/0/848657415032331/1217486645618130
+1 off 1595. 1014.A14 - Machined tube Machining,"1595.1014.A14
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.210 kg
+Volume: 26036.457 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Machining - 1595 - St Georges House Entire system,1,Machining,,,,ORDER,PROJECT ORDER,1217486645641947,https://app.asana.com/0/848657415032331/1217486645641947
+2 off 1595. 1014.F.040 - Bush Machining,"1595.1014.F.040
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.009 kg
+Volume: 1130.322 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Machining - 1595 - St Georges House Entire system,2,Machining,,,,ORDER,PROJECT ORDER,1217486964537853,https://app.asana.com/0/848657415032331/1217486964537853
+1 off 1595. 1014.F.070 - Gate Drive Shaft Machining,"1595.1014.F.070
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 34.593 kg
+Volume: 4281327.739 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Machining - 1595 - St Georges House Entire system,1,Machining,,,,ORDER,PROJECT ORDER,1217486650000384,https://app.asana.com/0/848657415032331/1217486650000384
+3 off 1595. 1014.F.071 - GlassClamp.Shaft - LowerLanding Machining,"1595.1014.F.071
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.464 kg
+Volume: 57477.959 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Machining - 1595 - St Georges House Entire system,3,Machining,,,,ORDER,PROJECT ORDER,1217486964262009,https://app.asana.com/0/848657415032331/1217486964262009
+1 off 1595. 1014.P.008 - Gate Drive Shaft Machining,"1595.1014.P.008
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 29.777 kg
+Volume: 3685285.932 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Machining - 1595 - St Georges House Entire system,1,Machining,,,,ORDER,PROJECT ORDER,1217486677613522,https://app.asana.com/0/848657415032331/1217486677613522
+1 off 1595. 1014.P.040 - Bush Machining,"1595.1014.P.040
+Material: Steel, Mild
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.143 kg
+Volume: 18228.463 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Machining - 1595 - St Georges House Entire system,1,Machining,,,,ORDER,PROJECT ORDER,1217486979849170,https://app.asana.com/0/848657415032331/1217486979849170
+3 off 1595. 1014.P.043 - GlassClamp.Shaft - UpperLanding Machining,"1595.1014.P.043
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.213 kg
+Volume: 26373.624 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Machining - 1595 - St Georges House Entire system,3,Machining,,,,ORDER,PROJECT ORDER,1217486645647351,https://app.asana.com/0/848657415032331/1217486645647351
+1 off 1595. 1014.P2 - Shaft Bracket With bearing Machining,"1595.1014.P2
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.699 kg
+Volume: 87368.689 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Machining - 1595 - St Georges House Entire system,1,Machining,,,,ORDER,PROJECT ORDER,1217486645823881,https://app.asana.com/0/848657415032331/1217486645823881
+1 off 1595. 1014.P8 - GateShaft Bracket With bearing Machining,"1595.1014.P8
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.994 kg
+Volume: 123874.221 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Machining - 1595 - St Georges House Entire system,1,Machining,,,,ORDER,PROJECT ORDER,1217486979742797,https://app.asana.com/0/848657415032331/1217486979742797
+1 off 1595. 1014.P16 - Machined tube Machining,"1595.1014.P16
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.153 kg
+Volume: 18996.893 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Machining - 1595 - St Georges House Entire system,1,Machining,,,,ORDER,PROJECT ORDER,1217486650176390,https://app.asana.com/0/848657415032331/1217486650176390
+Marine Lacquer - 1595 - St Georges House Entire system,,Surface Finish BOM - 1595 - St Georges House Entire system,,Marine Lacquer,,,,,,,
+1 off Marine Lacquer 1595. 1002.H.019 - Rear Pit Trim Panel,"1595.1002.H.019
+Material: Aluminium 5083
+Thickness: 10.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 4.094 kg
+Volume: 1545489.778 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Marine Lacquer - 1595 - St Georges House Entire system,1,Marine Lacquer,,,,ORDER,PROJECT ORDER,1217486650024333,https://app.asana.com/0/848657415032331/1217486650024333
+1 off Marine Lacquer 1595. 1002.H.021 - Rear Pit Trim Panel,"1595.1002.H.021
+Material: Aluminium 5083
+Thickness: 10.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 4.094 kg
+Volume: 1545489.778 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Marine Lacquer - 1595 - St Georges House Entire system,1,Marine Lacquer,,,,ORDER,PROJECT ORDER,1217486677491266,https://app.asana.com/0/848657415032331/1217486677491266
+1 off Marine Lacquer 1595. 1014.A3w - Welded SubAssembly,"1595.1014.A3w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 14.059 kg
+Volume: 5207207.165 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Marine Lacquer - 1595 - St Georges House Entire system,1,Marine Lacquer,,,,ORDER,PROJECT ORDER,1217486964520497,https://app.asana.com/0/848657415032331/1217486964520497
+MayTec BOM - 1595 - St Georges House Entire system,,ALL BOMS - 1595 - St Georges House Entire system,,MayTec,,,,,,,
+MayTec - 1595 - St Georges House Entire system,,MayTec BOM - 1595 - St Georges House Entire system,,MayTec,,,,,,,
+1 off 1595. 1002.H1 - Side frame MayTec,"1595.1002.H1
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 3.656 kg
+Volume: 1245675.681 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",MayTec - 1595 - St Georges House Entire system,1,MayTec,,,,ORDER,PROJECT ORDER,1217486650219071,https://app.asana.com/0/848657415032331/1217486650219071
+1 off 1595. 1002.H1_MIR - Side frame MayTec,"1595.1002.H1_MIR
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 3.656 kg
+Volume: 1245675.681 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",MayTec - 1595 - St Georges House Entire system,1,MayTec,,,,ORDER,PROJECT ORDER,1217487051451042,https://app.asana.com/0/848657415032331/1217487051451042
+1 off 1595. 1002.H2 - Front frame MayTec,"1595.1002.H2
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 2.704 kg
+Volume: 930501.798 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",MayTec - 1595 - St Georges House Entire system,1,MayTec,,,,ORDER,PROJECT ORDER,1217486964887194,https://app.asana.com/0/848657415032331/1217486964887194
+NBSS BOM - 1595 - St Georges House Entire system,,ALL BOMS - 1595 - St Georges House Entire system,,NBSS,,,,,,,
+NBSS/Sesame - 1595 - St Georges House Entire system,,NBSS BOM - 1595 - St Georges House Entire system,,NBSS/Sesame,,,,,,,
+8 off 1595. 003 - NBSS.003 15mm Shock Mount M8 25.5mm Diameter 60daN Compression Load 3.5mm 295-1477 / 511270 NBSS/Sesame,"1595.003
+Stock Number: 295-1477 / 511270
+KAN: KAN-15
+KAN Stock Link: https://app.asana.com/0/632603478911321/1118821443005241
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/stud-mounts/2951477/
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.008 kg
+Volume: 8665.887 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",NBSS/Sesame - 1595 - St Georges House Entire system,,NBSS/Sesame,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217486980197740,https://app.asana.com/0/848657415032331/1217486980197740
+NBSS/Laser Cut - 1595 - St Georges House Entire system,,NBSS BOM - 1595 - St Georges House Entire system,,NBSS/Laser Cut,,,,,,,
+6 off 1595. 021 - NBSS.021 WinkelBearingShims 304/2B NBSS/Laser Cut,"1595.021
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.033 kg
+Volume: 4097.018 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",NBSS/Laser Cut - 1595 - St Georges House Entire system,6,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1217486645954971,https://app.asana.com/0/848657415032331/1217486645954971
+1 off 1595. 022 - NBSS 022 HydraulicBulkheadPlate 304/2B NBSS/Laser Cut,"1595.022
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.579 kg
+Volume: 71702.921 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",NBSS/Laser Cut - 1595 - St Georges House Entire system,1,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1217486979402599,https://app.asana.com/0/848657415032331/1217486979402599
+NBSS/Welded by Sesame - 1595 - St Georges House Entire system,,NBSS BOM - 1595 - St Georges House Entire system,,NBSS/Welded by Sesame,,,,,,,
+8 off 1595. 040.02 - NBSS 040 Welded Assembly NBSS/Welded by Sesame,"1595.040.02
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.110 kg
+Volume: 13853.362 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",NBSS/Welded by Sesame - 1595 - St Georges House Entire system,8,NBSS/Welded by Sesame,,,,ORDER,PROJECT ORDER,1217486677516063,https://app.asana.com/0/848657415032331/1217486677516063
+1 off 1595. 049 - NBSS.049 Dripping Tray NBSS/Welded by Sesame,"1595.049
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 7.853 kg
+Volume: 981587.109 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",NBSS/Welded by Sesame - 1595 - St Georges House Entire system,1,NBSS/Welded by Sesame,,,,ORDER,PROJECT ORDER,1217486646178151,https://app.asana.com/0/848657415032331/1217486646178151
+4 off 1595. 050 - NBSS.050 Leveling Feet Welded Bolt NBSS/Welded by Sesame,"1595.050
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.318 kg
+Volume: 40545.057 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",NBSS/Welded by Sesame - 1595 - St Georges House Entire system,4,NBSS/Welded by Sesame,,,,ORDER,PROJECT ORDER,1217486677353574,https://app.asana.com/0/848657415032331/1217486677353574
+8 off 1595. 051 - NBSS.051 Pit Trim Installation Bracket 304/HR NBSS/Laser Cut,"1595.051
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.115 kg
+Volume: 14350.411 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",NBSS/Laser Cut - 1595 - St Georges House Entire system,8,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1217486980306854,https://app.asana.com/0/848657415032331/1217486980306854
+8 off 1595. 129 - NBSS.129 Loading Point Washer dia 50 x 50 304/HR NBSS/Laser Cut,"1595.129
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.185 kg
+Volume: 23151.593 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",NBSS/Laser Cut - 1595 - St Georges House Entire system,8,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1217486964980430,https://app.asana.com/0/848657415032331/1217486964980430
+2 off 1595. 134 - NBSS.134 Accumulator bracket H500 304/HR NBSS/Laser Cut,"1595.134
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.411 kg
+Volume: 51375.038 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",NBSS/Laser Cut - 1595 - St Georges House Entire system,2,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1217486645466875,https://app.asana.com/0/848657415032331/1217486645466875
+1 off 1595. 768 - NBSS.768 Machine Room Cabinet Frame NBSS/Sesame,"1595.768
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 24.659 kg
+Volume: 3141298.763 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",NBSS/Sesame - 1595 - St Georges House Entire system,1,NBSS/Sesame,,,,ORDER,PROJECT ORDER,1217486964876637,https://app.asana.com/0/848657415032331/1217486964876637
+4 off 1595. 1000.L.WDS674-216 - Swivel Pad M16 674-216 NBSS/Sesame,"1595.1000.L.WDS674-216
+Stock Number: 674-216
+KAN: KAN-264
+KAN Stock Link: https://app.asana.com/0/632603478911321/1202312166676506
+Web Link: https://www.wdscomponents.com/en-gb/swivel-pad-steel-with-chemical-black-finish-674-216
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.189 kg
+Volume: 24055.574 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",NBSS/Sesame - 1595 - St Georges House Entire system,,NBSS/Sesame,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217486646308730,https://app.asana.com/0/848657415032331/1217486646308730
+2 off 1595. 1008.T.8ID_Grommet - 8mm ID Grommet 666-4603 NBSS/Sesame,"1595.1008.T.8ID_Grommet
+Stock Number: 666-4603
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/cable-grommets/6664603
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.001 kg
+Volume: 677.640 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",NBSS/Sesame - 1595 - St Georges House Entire system,2,NBSS/Sesame,,,,ORDER,PROJECT ORDER,1217486979820367,https://app.asana.com/0/848657415032331/1217486979820367
+Sesame BOM - 1595 - St Georges House Entire system,,ALL BOMS - 1595 - St Georges House Entire system,,Sesame,,,,,,,
+RS Components - 1595 - St Georges House Entire system,,Sesame BOM - 1595 - St Georges House Entire system,,RS Components,,,,,,,
+4 off 1595. 1000.B.30x17_F_M8_98.6daN - M8 x 30 female vibration mount 257-8763 RS Components,"1595.1000.B.30x17_F_M8_98.6daN
+Stock Number: 257-8763
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/anti-vibration-mounts/2578763/?relevancy-data=636F3D3126696E3D4931384E525353746F636B4E756D626572266C753D656E266D6D3D6D61746368616C6C26706D3D5E2828282872737C5253295B205D3F293F285C647B337D5B5C2D5C735D3F5C647B332C347D5B705061415D3F29297C283235285C647B387D7C5C647B317D5C2D5C647B377D2929292426706F3D3126736E3D592673723D2673743D52535F53544F434B5F4E554D4245522677633D4E4F4E45267573743D3235372D38373633267374613D3235373837363326&searchHistory=%7B%22enabled%22%3Atrue%7D
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.011 kg
+Volume: 11797.192 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",RS Components - 1595 - St Georges House Entire system,4,RS Components,,,,ORDER,PROJECT ORDER,1217487051458890,https://app.asana.com/0/848657415032331/1217487051458890
+4 off 1595. 1000.B.50x25_M_M10_300daN - Shock Mount M10 50mm Diameter 300daN Compression Load 6mm deflection 385-1586 / 511525 RS Components,"1595.1000.B.50x25_M_M10_300daN
+Stock Number: 385-1586 / 511525
+KAN: KAN-968
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/stud-mounts/3851586/?sra=pstk
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.047 kg
+Volume: 51050.881 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",RS Components - 1595 - St Georges House Entire system,4,RS Components,,,,ORDER,PROJECT ORDER,1217486980447233,https://app.asana.com/0/848657415032331/1217486980447233
+Bearing Supplier - 1595 - St Georges House Entire system,,Sesame BOM - 1595 - St Georges House Entire system,,Bearing Supplier,,,,,,,
+"2 off 1595. 1000.F.Winkel.Bearing_(4.053+PL00) - Winkel bearing, welded by Supplier + extra finish 4.053 Bearing Supplier","1595.1000.F.Winkel.Bearing_(4.053+PL00)
+Stock Number: 4.053
+KAN: KAN-143
+KAN Stock Link: https://app.asana.com/0/632603478911321/1200245783073488
+Web Link: http://www.euro-bearings.com/cr1.htm
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.660 kg
+Volume: 84083.099 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Bearing Supplier - 1595 - St Georges House Entire system,,Bearing Supplier,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217486980033209,https://app.asana.com/0/848657415032331/1217486980033209
+F.H. BRUNDLE - 1595 - St Georges House Entire system,,Sesame BOM - 1595 - St Georges House Entire system,,F.H. BRUNDLE,,,,,,,
+1 off 1595. 1000.H.Glass Channel 0.74kN Long - Glass Channel 12-21.5 mm glass Code: 1805440BSA 1805440BSA F.H. BRUNDLE,"1595.1000.H.Glass Channel 0.74kN Long
+Stock Number: 1805440BSA
+Material: Aluminum 6061
+Web Link: https://www.fhbrundle.co.uk/products/1805440BSA__2.5m_Aluminium_Channel_Pro_Slim_Base_Fix_for_12_to_21.5mm_Glass_(Satin,_Anodised)
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 7.934 kg
+Volume: 2938359.557 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",F.H. BRUNDLE - 1595 - St Georges House Entire system,1,F.H. BRUNDLE,,,,ORDER,PROJECT ORDER,1217486979523650,https://app.asana.com/0/848657415032331/1217486979523650
+1 off 1595. 1000.H.Glass Channel 0.74kN Short - Glass Channel 12-21.5 mm glass Code: 1805440BSA 1805440BSA F.H. BRUNDLE,"1595.1000.H.Glass Channel 0.74kN Short
+Stock Number: 1805440BSA
+Material: Aluminum 6061
+Web Link: https://www.fhbrundle.co.uk/products/1805440BSA__2.5m_Aluminium_Channel_Pro_Slim_Base_Fix_for_12_to_21.5mm_Glass_(Satin,_Anodised)
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 7.007 kg
+Volume: 2595342.388 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",F.H. BRUNDLE - 1595 - St Georges House Entire system,1,F.H. BRUNDLE,,,,ORDER,PROJECT ORDER,1217486677480478,https://app.asana.com/0/848657415032331/1217486677480478
+1 off 1595. 1000.H.Gusket Set Long - Gusket Set for 15 mm Glass 180554115 F.H. BRUNDLE,"1595.1000.H.Gusket Set Long
+Material: ABS Plastic
+Web Link: https://www.fhbrundle.co.uk/products/180544115__Gasket_set_for_15mm_Glass_-_Slim_Includes_Rubbers_&_Wedges_for_2.5m_Lgth
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.657 kg
+Volume: 706735.239 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",F.H. BRUNDLE - 1595 - St Georges House Entire system,1,F.H. BRUNDLE,,,,ORDER,PROJECT ORDER,1217486645212570,https://app.asana.com/0/848657415032331/1217486645212570
+1 off 1595. 1000.H.Gusket Set Short - Gusket Set for 15 mm Glass 180554115 F.H. BRUNDLE,"1595.1000.H.Gusket Set Short
+Material: ABS Plastic
+Web Link: https://www.fhbrundle.co.uk/products/180544115__Gasket_set_for_15mm_Glass_-_Slim_Includes_Rubbers_&_Wedges_for_2.5m_Lgth
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.556 kg
+Volume: 597412.812 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",F.H. BRUNDLE - 1595 - St Georges House Entire system,1,F.H. BRUNDLE,,,,ORDER,PROJECT ORDER,1217486964876509,https://app.asana.com/0/848657415032331/1217486964876509
+Glass Supplier - 1595 - St Georges House Entire system,,Sesame BOM - 1595 - St Georges House Entire system,,Glass Supplier,,,,,,,
+1 off 1595. 1006.G.003 - Platform Glass Side Glass Supplier,"1595.1006.G.003
+Material: Glass
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 59.049 kg
+Volume: 27086605.177 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Glass Supplier - 1595 - St Georges House Entire system,1,Glass Supplier,,,,ORDER,PROJECT ORDER,1217486646057582,https://app.asana.com/0/848657415032331/1217486646057582
+2 off 1595. 1006.G.004 - Platform Glass Buttons Glass Supplier,"1595.1006.G.004
+Material: Glass
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 25.271 kg
+Volume: 11592030.272 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Glass Supplier - 1595 - St Georges House Entire system,2,Glass Supplier,,,,ORDER,PROJECT ORDER,1217487052034019,https://app.asana.com/0/848657415032331/1217487052034019
+Sesame - 1595 - St Georges House Entire system,,Sesame BOM - 1595 - St Georges House Entire system,,Sesame,,,,,,,
+1 off 1595. 1006.G.090 - Lighting Supports - Trolley Assemblies P2949 Sesame,"1595.1006.G.090
+Stock Number: P2949
+Material: Steel, Mild
+Web Link: http://www.unistrut.co.uk/index.php?part=P2949
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.149 kg
+Volume: 18958.511 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Sesame - 1595 - St Georges House Entire system,1,Sesame,,,,ORDER,PROJECT ORDER,1217486980366094,https://app.asana.com/0/848657415032331/1217486980366094
+Orbital Fasteners - 1595 - St Georges House Entire system,,Sesame BOM - 1595 - St Georges House Entire system,,Orbital Fasteners,,,,,,,
+"1 off 1595. 1006.G.095 - DEEP PLAIN CHANNEL HEAVY GAUGE X 3 METRE, 41MM X 41MM X 2.5MM. 316/A4 STAINLESS STEEL. UNISTRUT COMPATIBLE SKU Number: 5028420 Orbital Fasteners","1595.1006.G.095
+Stock Number: SKU Number: 5028420
+KAN: KAN-560
+KAN Stock Link: https://app.asana.com/0/632603478911321/1204962170974231
+Material: Stainless Steel
+Web Link: https://www.orbitalfasteners.co.uk/products/deep-plain-channel-heavy-gauge-x-3m-41x41x2-5-316-a4-stainless-steel-unistrut-compatible-p1000x3-sc400-3m
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 2.005 kg
+Volume: 250574.486 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Orbital Fasteners - 1595 - St Georges House Entire system,,Orbital Fasteners,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217487051752332,https://app.asana.com/0/848657415032331/1217487051752332
+Tape Switch - 1595 - St Georges House Entire system,,Sesame BOM - 1595 - St Georges House Entire system,,Tape Switch,,,,,,,
+1 off 1595. 1006.G.098 - TS6 Sensing Edge With Resistor TS6/Resistor Fitted/+End caps/ Tape Switch,"1595.1006.G.098
+Stock Number: TS6/Resistor Fitted/+End caps/
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.317 kg
+Volume: 316736.981 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Tape Switch - 1595 - St Georges House Entire system,1,Tape Switch,,,,ORDER,PROJECT ORDER,1217486980029623,https://app.asana.com/0/848657415032331/1217486980029623
+1 off 1595. 1006.G.127 - Split bearing bush MB6060BX Bearing Supplier,"1595.1006.G.127
+Stock Number: MB6060BX
+Material: Steel
+Web Link: https://www.bearingboys.co.uk/BX-Type-Bearings--Metric/MB6060BX-Dunlop-Split-Bearing-Bush-17128-p
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.228 kg
+Volume: 29052.325 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463
+---
+NOTES: Send to machining",Bearing Supplier - 1595 - St Georges House Entire system,1,Bearing Supplier,,,,ORDER,PROJECT ORDER,1217486964669405,https://app.asana.com/0/848657415032331/1217486964669405
+Bellows Supplier - 1595 - St Georges House Entire system,,Sesame BOM - 1595 - St Georges House Entire system,,Bellows Supplier,,,,,,,
+1 off 1595. 1006.G.Bellows - Bellows Bellows Supplier,"1595.1006.G.Bellows
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 13.691 kg
+Volume: 2558411.222 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Bellows Supplier - 1595 - St Georges House Entire system,1,Bellows Supplier,,,,ORDER,PROJECT ORDER,1217486980437235,https://app.asana.com/0/848657415032331/1217486980437235
+3 off 1595. 1008.A14 - Standard LimitSwitch: LRC5A54 LRC5A54 Sesame,"1595.1008.A14
+Stock Number: LRC5A54
+KAN: KAN-125
+KAN Stock Link: https://app.asana.com/0/632603478911321/1200095926382602
+Web Link: https://uk.farnell.com/imo-precision-controls/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.854 kg
+Volume: 162337.453 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Sesame - 1595 - St Georges House Entire system,,Sesame,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217486980712881,https://app.asana.com/0/848657415032331/1217486980712881
+1 off 1595. 1008.C.002 - E.Stop - Big 330-8587 RS Components,"1595.1008.C.002
+Stock Number: 330-8587
+KAN: KAN-919
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/emergency-stop-push-buttons/3308587/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.298 kg
+Volume: 298073.368 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",RS Components - 1595 - St Georges House Entire system,1,RS Components,,,,ORDER,PROJECT ORDER,1217486678473751,https://app.asana.com/0/848657415032331/1217486678473751
+Bes - 1595 - St Georges House Entire system,,Sesame BOM - 1595 - St Georges House Entire system,,Bes,,,,,,,
+"1 off 1595. 1008.D1.120 - Drain Cock Type A - 3/4"" BSP Brass 3/4"" BSP Bes","1595.1008.D1.120
+Stock Number: 3/4"" BSP
+Material: Brass, Soft Yellow
+Web Link: https://www.bes.co.uk/drain-cock-type-a-3-4in-bsp-brass-7496/?srsltid=AfmBOopiSwmvu2xg6-awSWh6goCllN-njqrkEp1XNkmdCSXU4uyE7jHg
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.316 kg
+Volume: 37283.251 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Bes - 1595 - St Georges House Entire system,1,Bes,,,,ORDER,PROJECT ORDER,1217486980444953,https://app.asana.com/0/848657415032331/1217486980444953
+Amazon - 1595 - St Georges House Entire system,,Sesame BOM - 1595 - St Georges House Entire system,,Amazon,,,,,,,
+1 off 1595. 1008.D1.128 - Hexagon Locknut G3/4 Lock Nut Amazon,"1595.1008.D1.128
+Stock Number: G3/4 Lock Nut
+Material: Brass, Soft Yellow
+Web Link: https://www.amazon.co.uk/dp/B09NQ44G6X?ref=cm_sw_r_cso_cp_apin_dp_EHREW6PZASZW4VTSNFJX&ref_=cm_sw_r_cso_cp_apin_dp_EHREW6PZASZW4VTSNFJX&social_share=cm_sw_r_cso_cp_apin_dp_EHREW6PZASZW4VTSNFJX&th=1
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.106 kg
+Volume: 12511.587 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Amazon - 1595 - St Georges House Entire system,1,Amazon,,,,ORDER,PROJECT ORDER,1217486678485144,https://app.asana.com/0/848657415032331/1217486678485144
+VUBA - 1595 - St Georges House Entire system,,Sesame BOM - 1595 - St Georges House Entire system,,VUBA,,,,,,,
+"2 off 1595. 1008.H8.VUBA DIN T10L - Hydraulic Adjustment Hose Burst Valve DIN 2353, VUBA 3/8"" DIN T10L, max flow 50l/min, max pressure 350 Bar V0784 VUBA","1595.1008.H8.VUBA DIN T10L
+Stock Number: V0784
+Material: Stainless Steel
+Web Link: https://www.flowfitonline.com/categories/hydraulic-cartridge-valves/hose-burst-valves/hydraulic-hose-burst-valve-vuba-3-8-to-t10l-m16x1-5-din-2353
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.052 kg
+Volume: 6490.960 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",VUBA - 1595 - St Georges House Entire system,2,VUBA,,,,ORDER,PROJECT ORDER,1217486678215213,https://app.asana.com/0/848657415032331/1217486678215213
+23 off 1595. 1008.T.13ID_P_Clip - Rubber-lined clamp; 13mm ID 298-8097 RS Components,"1595.1008.T.13ID_P_Clip
+Stock Number: 298-8097
+KAN: KAN-1156
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/p-clips/2988097/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.002 kg
+Volume: 1949.773 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",RS Components - 1595 - St Georges House Entire system,23,RS Components,,,,ORDER,PROJECT ORDER,1217486964959443,https://app.asana.com/0/848657415032331/1217486964959443
+1 off 1595. 1008.T.PG9 - PG9 CableGland / or M16 NBSS/Sesame,"1595.1008.T.PG9
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.016 lbmass
+Volume: 0.448 in^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",NBSS/Sesame - 1595 - St Georges House Entire system,1,NBSS/Sesame,,,,ORDER,PROJECT ORDER,1217486979924644,https://app.asana.com/0/848657415032331/1217486979924644
+1 off 1595. 1008.U.01 - 85x85x51 Wiska Junction Box 700-0802 Sesame,"1595.1008.U.01
+Stock Number: 700-0802
+Material: PET Plastic
+Web Link: https://uk.rs-online.com/web/p/junction-boxes/7000802?searchId=f4dce812-75bb-4641-9814-24dc7daf85be&gb=s
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.000 kg
+Volume: 45249.084 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Sesame - 1595 - St Georges House Entire system,1,Sesame,,,,ORDER,PROJECT ORDER,1217486980771584,https://app.asana.com/0/848657415032331/1217486980771584
+IGUS - 1595 - St Georges House Entire system,,Sesame BOM - 1595 - St Georges House Entire system,,IGUS,,,,,,,
+1 off 1595. 1008.Y.EasyChain[50mm] - Easy Chain [38mm inner] Length: 1830 Z14.3.028.0 with ends 2x 114.3.12P IGUS,"1595.1008.Y.EasyChain[50mm]
+Stock Number: Z14.3.028.0 with ends 2x 114.3.12P
+KAN: KAN-59
+KAN Stock Link: https://app.asana.com/0/632603478911321/1141905481380334
+Web Link: https://www.igus.co.uk/iPro/iPro_01_0009_0005_GBen.htm?ArtNr=Z14.4.028.0&c=GB&l=en
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.700 kg
+Volume: 700448.918 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",IGUS - 1595 - St Georges House Entire system,1,IGUS,,,,ORDER,PROJECT ORDER,1217486678768720,https://app.asana.com/0/848657415032331/1217486678768720
+8 off 1595. 1011.B.105 - Thrust washer 40x60x1 INA AS4060 Bearing Supplier,"1595.1011.B.105
+Stock Number: INA AS4060
+KAN: KAN-427
+KAN Stock Link: https://app.asana.com/0/632603478911321/1203089124665243
+Material: Stainless Steel
+Web Link: https://simplybearings.co.uk/shop/p8863/AS4060-Pack-of-2-Major-Brand-Thrust-Washer-Series-AS-40x60x1mm/product_info.html
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.013 kg
+Volume: 1570.796 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Bearing Supplier - 1595 - St Georges House Entire system,,Bearing Supplier,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217487039993940,https://app.asana.com/0/848657415032331/1217487039993940
+"24 off 1595. 1011.B.106 - Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm AS3047 Bearing Supplier","1595.1011.B.106
+Stock Number: AS3047
+KAN: KAN-1216
+Material: Stainless Steel
+Web Link: https://www.bearingsrus.co.uk/review/product/list/id/23450/category/208/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.008 kg
+Volume: 1028.086 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Bearing Supplier - 1595 - St Georges House Entire system,24,Bearing Supplier,,,,ORDER,PROJECT ORDER,1217487039665982,https://app.asana.com/0/848657415032331/1217487039665982
+"8 off 1595. 1011.B.111 - Thrust washer (ID 20 mm OD >35 mm), thickness 1-1.5 mm AS2035 Bearing Supplier","1595.1011.B.111
+Stock Number: AS2035
+KAN: KAN-457
+KAN Stock Link: https://app.asana.com/0/632603478911321/1202176466620565
+Material: Stainless Steel
+Web Link: https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as2035-skf
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.005 kg
+Volume: 647.953 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Bearing Supplier - 1595 - St Georges House Entire system,,Bearing Supplier,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217486678884667,https://app.asana.com/0/848657415032331/1217486678884667
+simply bearings - 1595 - St Georges House Entire system,,Sesame BOM - 1595 - St Georges House Entire system,,simply bearings,,,,,,,
+2 off 1595. 1014.A.076 - Cast Iron small footprint pillow block USPA200 simply bearings,"1595.1014.A.076
+Stock Number: USPA200
+Material: Generic
+Web Link: https://simplybearings.co.uk/shop/p20706412/SNR-USPA212-Threaded-Base-Small-Footprint-Metric-Pillow-/-Plummer-Block-Housing-Supplied-with-60mm-Bore-Insert-Allow-2-3-Days/product_info.html
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.571 kg
+Volume: 571245.482 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",simply bearings - 1595 - St Georges House Entire system,2,simply bearings,,,,ORDER,PROJECT ORDER,1217486979924657,https://app.asana.com/0/848657415032331/1217486979924657
+2 off 1595. 1014.A.087 - Levelling foot flat non tilt Steel Zinc plated 673-702 Sesame,"1595.1014.A.087
+Stock Number: 673-702
+KAN: KAN-661
+KAN Stock Link: https://app.asana.com/0/632603478911321/1208669430714093
+Material: Generic
+Web Link: https://www.wdscomponents.com/en-gb/levelling-foot-flat-non-tilt-steel-zinc-plated
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.008 kg
+Volume: 8243.616 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Sesame - 1595 - St Georges House Entire system,,Sesame,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217487052555543,https://app.asana.com/0/848657415032331/1217487052555543
+1 off 1595. 1014.A.091 - Split bearing bush - SEND TO MACHINING MB6030BX Bearing Supplier,"1595.1014.A.091
+Stock Number: MB6030BX
+Material: Steel
+Web Link: https://www.bearingboys.co.uk/BX-Type-Bearings--Metric/MB6030BX-Dunlop-Split-Bearing-Bush-17126-p
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.114 kg
+Volume: 14476.136 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463
+---
+NOTES: Send to machining",Bearing Supplier - 1595 - St Georges House Entire system,1,Bearing Supplier,,,,ORDER,PROJECT ORDER,1217487040222520,https://app.asana.com/0/848657415032331/1217487040222520
+1 off 1595. 1014.A.092 - sleeve bearing MSM-1218-08 IGUS,"1595.1014.A.092
+Stock Number: MSM-1218-08
+Material: Acetal Resin, White
+Web Link: https://www.igus.co.uk/iglidur-ibh/sleeve-bearings/product-details/iglidur-m250-m?artnr=MSM-1218-08#dimensions=d1%3A12-b1%3A8
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.002 kg
+Volume: 1272.345 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",IGUS - 1595 - St Georges House Entire system,1,IGUS,,,,ORDER,PROJECT ORDER,1217486678444179,https://app.asana.com/0/848657415032331/1217486678444179
+Cement Board Supplier - 1595 - St Georges House Entire system,,Sesame BOM - 1595 - St Georges House Entire system,,Cement Board Supplier,,,,,,,
+1 off 1595. 1014.CB.002 - 6 mm Cement Board Size 1.2x2.4m Cement Board Supplier,"1595.1014.CB.002
+Stock Number: Size 1.2x2.4m
+Material: Concrete
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.928 kg
+Volume: 385325.452 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Cement Board Supplier - 1595 - St Georges House Entire system,1,Cement Board Supplier,,,,ORDER,PROJECT ORDER,1217486981326751,https://app.asana.com/0/848657415032331/1217486981326751
+Rubber Supplier - 1595 - St Georges House Entire system,,Sesame BOM - 1595 - St Georges House Entire system,,Rubber Supplier,,,,,,,
+4 off 1595. 1014.F.042 - Rubber Pad Rubber Supplier,"1595.1014.F.042
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.001 kg
+Volume: 1548.317 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Rubber Supplier - 1595 - St Georges House Entire system,4,Rubber Supplier,,,,ORDER,PROJECT ORDER,1217487073943488,https://app.asana.com/0/848657415032331/1217487073943488
+2 off 1595. 1014.F.043 - Rubber Pad Rubber Supplier,"1595.1014.F.043
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.001 kg
+Volume: 565.500 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Rubber Supplier - 1595 - St Georges House Entire system,2,Rubber Supplier,,,,ORDER,PROJECT ORDER,1217487039677052,https://app.asana.com/0/848657415032331/1217487039677052
+2 off 1595. 1014.F.044 - Rubber Pad Rubber Supplier,"1595.1014.F.044
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.001 kg
+Volume: 1144.549 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Rubber Supplier - 1595 - St Georges House Entire system,2,Rubber Supplier,,,,ORDER,PROJECT ORDER,1217487040360033,https://app.asana.com/0/848657415032331/1217487040360033
+MacLellan Rubber - 1595 - St Georges House Entire system,,Sesame BOM - 1595 - St Georges House Entire system,,MacLellan Rubber,,,,,,,
+6 off 1595. 1014.F.054 - Glass gate rubber washer MacLellan Rubber,"1595.1014.F.054
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.002 kg
+Volume: 1714.524 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",MacLellan Rubber - 1595 - St Georges House Entire system,6,MacLellan Rubber,,,,ORDER,PROJECT ORDER,1217486980841271,https://app.asana.com/0/848657415032331/1217486980841271
+1 off 1595. 1014.F.069 - Glass Gate - Platform Glass Supplier,"1595.1014.F.069
+Material: Glass
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 32.591 kg
+Volume: 14950198.752 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Glass Supplier - 1595 - St Georges House Entire system,1,Glass Supplier,,,,ORDER,PROJECT ORDER,1217486964728238,https://app.asana.com/0/848657415032331/1217486964728238
+2 off 1595. 1014.F.083 - Glass gate rubber washer MacLellan Rubber,"1595.1014.F.083
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.048 kg
+Volume: 51235.998 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",MacLellan Rubber - 1595 - St Georges House Entire system,2,MacLellan Rubber,,,,ORDER,PROJECT ORDER,1217486981013893,https://app.asana.com/0/848657415032331/1217486981013893
+1 off 1595. 1014.P.004 - Split bearing bush - SEND TO MACHINING MB6040X Bearing Supplier,"1595.1014.P.004
+Stock Number: MB6040X
+Material: Steel
+Web Link: https://simplybearings.co.uk/shop/p142971/MB6040X-Bronze-Backed-Steel-Bush-60x65x40mm/product_info.html
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.083 kg
+Volume: 10589.152 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463
+---
+NOTES: Send to machining",Bearing Supplier - 1595 - St Georges House Entire system,1,Bearing Supplier,,,,ORDER,PROJECT ORDER,1217486645993330,https://app.asana.com/0/848657415032331/1217486645993330
+simplybearings - 1595 - St Georges House Entire system,,Sesame BOM - 1595 - St Georges House Entire system,,simplybearings,,,,,,,
+2 off 1595. 1014.P.005 - Budget Single Thrust Ball Bearing 35x52x12mm 51107-EU simplybearings,"1595.1014.P.005
+Stock Number: 51107-EU
+Material: Generic
+Web Link: https://www.simplybearings.co.uk/products/51107-eu?_gl=1*li0f3v*_up*MQ..*_ga*MTA4ODc1NzMyNi4xNzg2NDM1MzI2*_ga_9MPVFZW38K*czE3ODY0MzUzMjUkbzEkZzEkdDE3ODY0MzYyMzckajM5JGwwJGgxNDcwNjMyOA
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.010 kg
+Volume: 10431.173 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",simplybearings - 1595 - St Georges House Entire system,2,simplybearings,,,,ORDER,PROJECT ORDER,1217487051916640,https://app.asana.com/0/848657415032331/1217487051916640
+1 off 1595. 1014.P.007 - Glass Gate - Upper Glass Supplier,"1595.1014.P.007
+Material: Glass
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 35.892 kg
+Volume: 16464444.752 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Glass Supplier - 1595 - St Georges House Entire system,1,Glass Supplier,,,,ORDER,PROJECT ORDER,1217487236877328,https://app.asana.com/0/848657415032331/1217487236877328
+1 off 1595. 1014.P.009 - UCF212 (Also Known As: SF60) UCF212 Bearing Supplier,"1595.1014.P.009
+Stock Number: UCF212
+Material: Generic
+Web Link: http://simplybearings.co.uk
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.905 kg
+Volume: 904681.973 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Bearing Supplier - 1595 - St Georges House Entire system,1,Bearing Supplier,,,,ORDER,PROJECT ORDER,1217487052988374,https://app.asana.com/0/848657415032331/1217487052988374
+1 off 1595. 1014.P.012 - Split bearing bush - SEND TO MACHINING MB6060X Bearing Supplier,"1595.1014.P.012
+Stock Number: MB6060X
+Material: Steel
+Web Link: https://simplybearings.co.uk/shop/p142973/MB6060X-Bronze-Backed-Steel-Bush-60x65x60mm/product_info.html
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.228 kg
+Volume: 29052.325 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463
+---
+NOTES: Send to machining",Bearing Supplier - 1595 - St Georges House Entire system,1,Bearing Supplier,,,,ORDER,PROJECT ORDER,1217487040602467,https://app.asana.com/0/848657415032331/1217487040602467
+2 off 1595. 1014.P.035 - Levelling foot flat non tilt Steel Zinc plated 673-702 Sesame,"1595.1014.P.035
+Stock Number: 673-702
+KAN: KAN-661
+KAN Stock Link: https://app.asana.com/0/632603478911321/1208669430714093
+Material: Generic
+Web Link: https://www.wdscomponents.com/en-gb/levelling-foot-flat-non-tilt-steel-zinc-plated
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.008 kg
+Volume: 8243.616 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Sesame - 1595 - St Georges House Entire system,,Sesame,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217486966131240,https://app.asana.com/0/848657415032331/1217486966131240
+1 off 1595. 1014.P.046 - 18mm Cement Board Cement Board Supplier,"1595.1014.P.046
+Material: Concrete
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 5.016 kg
+Volume: 2083648.847 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Cement Board Supplier - 1595 - St Georges House Entire system,1,Cement Board Supplier,,,,ORDER,PROJECT ORDER,1217487074129228,https://app.asana.com/0/848657415032331/1217487074129228
+1 off 1595. 1014.P.047 - 18mm Cement Board Cement Board Supplier,"1595.1014.P.047
+Material: Concrete
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 2.513 kg
+Volume: 1043760.979 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Cement Board Supplier - 1595 - St Georges House Entire system,1,Cement Board Supplier,,,,ORDER,PROJECT ORDER,1217486979702731,https://app.asana.com/0/848657415032331/1217486979702731
+1 off 1595. 1014.P.052 - 18mm Cement Board Cement Board Supplier,"1595.1014.P.052
+Material: Concrete
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.793 kg
+Volume: 329615.135 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Cement Board Supplier - 1595 - St Georges House Entire system,1,Cement Board Supplier,,,,ORDER,PROJECT ORDER,1217486646124288,https://app.asana.com/0/848657415032331/1217486646124288
+1 off 1595. 1015.C.011 - Tape Switch TS6 (TYPE C) TS6 - TYPE C - 43mm -750 mm cable length Tape Switch,"1595.1015.C.011
+Stock Number: TS6 - TYPE C - 43mm -750 mm cable length
+KAN: KAN-116
+KAN Stock Link: https://app.asana.com/0/632603478911321/1199511692795556
+Material: Generic
+Web Link: http://www.tapeswitch.co.uk
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.011 kg
+Volume: 10572.492 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Tape Switch - 1595 - St Georges House Entire system,,Tape Switch,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217487040375356,https://app.asana.com/0/848657415032331/1217487040375356
+EAO - 1595 - St Georges House Entire system,,Sesame BOM - 1595 - St Georges House Entire system,,EAO,,,,,,,
+6 off 1595. 1016.3.001 - Lift UP.Down Button 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066 EAO,"1595.1016.3.001
+Stock Number: 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066
+KAN: KAN-131
+KAN Stock Link: https://app.asana.com/0/632603478911321/1199599450492469
+Material: Generic
+Web Link: http://eao.com/en
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.014 kg
+Volume: 13547.123 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",EAO - 1595 - St Georges House Entire system,,EAO,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217487052758649,https://app.asana.com/0/848657415032331/1217487052758649
+"1 off 1595. 1016.3.002 - Call for assistance (Bell), CFA + Doorbell 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066 EAO","1595.1016.3.002
+Stock Number: 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066
+KAN: KAN-131
+KAN Stock Link: https://app.asana.com/0/632603478911321/1199599450492469
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.014 kg
+Volume: 13546.262 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",EAO - 1595 - St Georges House Entire system,,EAO,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217487053071598,https://app.asana.com/0/848657415032331/1217487053071598
+2 off 1595. 1016.3.003 - E-Stop Mushroom Head 61-3440.4/5 EAO,"1595.1016.3.003
+Stock Number: 61-3440.4/5
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.014 kg
+Volume: 13538.346 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",EAO - 1595 - St Georges House Entire system,2,EAO,,,,ORDER,PROJECT ORDER,1217486966603717,https://app.asana.com/0/848657415032331/1217486966603717
+1 off 1595. 1016.3.007 - Flush E.Stop Button 51-151.0252F / 61-9933.0 / 61-9642.2 / 10-2j09.1062 EAO,"1595.1016.3.007
+Stock Number: 51-151.0252F / 61-9933.0 / 61-9642.2 / 10-2j09.1062
+KAN: KAN-131
+KAN Stock Link: https://app.asana.com/0/632603478911321/1199599450492469
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.014 kg
+Volume: 13756.802 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",EAO - 1595 - St Georges House Entire system,,EAO,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217486966673091,https://app.asana.com/0/848657415032331/1217486966673091
+1 off 1595. 1016.3.009(3Way-Spr) - Key Switch. 3PositionSpringReturn (VERIFY!) 51-374.F22DF EAO,"1595.1016.3.009(3Way-Spr)
+Stock Number: 51-374.F22DF
+KAN: KAN-132
+KAN Stock Link: https://app.asana.com/0/632603478911321/1198507094515473
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.011 kg
+Volume: 10542.114 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",EAO - 1595 - St Georges House Entire system,,EAO,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217487074440604,https://app.asana.com/0/848657415032331/1217487074440604
+1 off 1595. 1016.3.011(2Way-Mai) - Key Switch.2WayMaintained 51-135.022DF EAO,"1595.1016.3.011(2Way-Mai)
+Stock Number: 51-135.022DF
+KAN: KAN-393
+KAN Stock Link: https://app.asana.com/0/632603478911321/1202938492958592
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.011 kg
+Volume: 10542.114 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",EAO - 1595 - St Georges House Entire system,,EAO,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217487053256492,https://app.asana.com/0/848657415032331/1217487053256492
+2 off 1595. 1016.A.018 - Rubber pad Rubber Supplier,"1595.1016.A.018
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.003 kg
+Volume: 3628.567 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Rubber Supplier - 1595 - St Georges House Entire system,2,Rubber Supplier,,,,ORDER,PROJECT ORDER,1217487052988702,https://app.asana.com/0/848657415032331/1217487052988702
+4 off 1595. 1016.A.019 - Rubber pad Rubber Supplier,"1595.1016.A.019
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.004 kg
+Volume: 4624.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Rubber Supplier - 1595 - St Georges House Entire system,4,Rubber Supplier,,,,ORDER,PROJECT ORDER,1217487052776143,https://app.asana.com/0/848657415032331/1217487052776143
+2 off 1595. 1016.A.020 - Rubber pad Rubber Supplier,"1595.1016.A.020
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.003 kg
+Volume: 3073.567 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Rubber Supplier - 1595 - St Georges House Entire system,2,Rubber Supplier,,,,ORDER,PROJECT ORDER,1217487074358429,https://app.asana.com/0/848657415032331/1217487074358429
+1 off 1595. 1016.A.021 - Rubber pad Rubber Supplier,"1595.1016.A.021
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.003 kg
+Volume: 3760.514 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Rubber Supplier - 1595 - St Georges House Entire system,1,Rubber Supplier,,,,ORDER,PROJECT ORDER,1217487236815829,https://app.asana.com/0/848657415032331/1217487236815829
+2 off 1595. 1016.A.022 - Rubber pad Rubber Supplier,"1595.1016.A.022
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.004 kg
+Volume: 4600.242 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Rubber Supplier - 1595 - St Georges House Entire system,2,Rubber Supplier,,,,ORDER,PROJECT ORDER,1217487053223456,https://app.asana.com/0/848657415032331/1217487053223456
+1 off 1595. 1016.A.023 - Rubber pad Rubber Supplier,"1595.1016.A.023
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.003 kg
+Volume: 3205.514 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Rubber Supplier - 1595 - St Georges House Entire system,1,Rubber Supplier,,,,ORDER,PROJECT ORDER,1217487237230742,https://app.asana.com/0/848657415032331/1217487237230742
+1 off 1595. 1016.F.012 - Honeywell Doorbell Wireless DC313N - USE ONLY ONE PER JOB Series 3 DC313N Sesame,"1595.1016.F.012
+Stock Number: Series 3 DC313N
+Material: Generic
+Web Link: https://www.amazon.co.uk/Honeywell-Home-DC313N-150-Doorbell/dp/B01L4P3R2M/ref=sr_1_3?crid=K2FBX62O91O6&keywords=Honeywell%2BDC915S%2B200%2Bm%2B9%2BSeries%2BLED&qid=1700493795&sprefix=honeywell%2Bdc915s%2B200%2Bm%2B9%2Bseries%2Bled%2Caps%2C60&sr=8-3&th=1&qty=6
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.030 kg
+Volume: 29599.249 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Sesame - 1595 - St Georges House Entire system,1,Sesame,,,,ORDER,PROJECT ORDER,1217487074853681,https://app.asana.com/0/848657415032331/1217487074853681
+4 off 1595. BRH-M4-16-GS (RivetBush) - Round M4 rivet bush BRH-M4-16-GS Sesame,"1595.BRH-M4-16-GS (RivetBush)
+Stock Number: BRH-M4-16-GS
+Material: Stainless Steel
+Web Link: http://www.npfasteners.com/rivetbush/brh.htm
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.002 kg
+Volume: 212.110 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Sesame - 1595 - St Georges House Entire system,4,Sesame,,,,ORDER,PROJECT ORDER,1217487074317617,https://app.asana.com/0/848657415032331/1217487074317617
+6 off 1595. DIN 71412 - M 6 - Greasing Nipple Sesame,"1595.DIN 71412 - M 6
+Material: Steel
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.004 kg
+Volume: 471.462 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Sesame - 1595 - St Georges House Entire system,6,Sesame,,,,ORDER,PROJECT ORDER,1217487040940548,https://app.asana.com/0/848657415032331/1217487040940548
+2 off 1595. Shoulder screw ISO 7379-12-M10-40 - Shoulder screw ISO 7379-12-M10-40 Sesame,"1595.Shoulder screw ISO 7379-12-M10-40
+Stock Number: ISO 7379-12-M10-40
+Material: Stainless Steel
+Web Link: https://www.berger-tools.co.uk/Iso7379_Hexagon_Socket_Head_Shoulder_Screw_Ssb_Stainless/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/3f4snuiwz65dy1g264cl5/AOhoryGIRcBXS280hcgUfqw?rlkey=lc8uzvz8t6vdpp29aulvgr33e&dl=0
+Mass: 0.062 kg
+Volume: 7737.947 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/850066254549317/task/1217451597572463",Sesame - 1595 - St Georges House Entire system,2,Sesame,,,,ORDER,PROJECT ORDER,1217487074933120,https://app.asana.com/0/848657415032331/1217487074933120

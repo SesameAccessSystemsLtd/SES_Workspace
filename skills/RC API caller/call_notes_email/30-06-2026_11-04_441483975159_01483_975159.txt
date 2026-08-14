@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  30/06/2026  11:04
+============================================================
+With:         +441483975159 01483 975159
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This is a voicemail from Group 1 Toyota Maid Stones, informing the recipient about their vehicle's upcoming routine maintenance and requesting a callback to schedule the appointment.
+
+--- RECAP --------------------------------------------------
+Giles Hugo from Sesame Access called to inform the recipient about their vehicle's scheduled routine maintenance.The caller identified themselves and provided a contact number for callback.The caller requested the recipient to call back on the provided number to speak with an advisor and book the maintenance appointment.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

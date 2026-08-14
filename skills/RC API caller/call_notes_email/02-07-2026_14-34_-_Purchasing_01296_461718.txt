@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  02/07/2026  14:34
+============================================================
+With:         - Purchasing 01296 461718
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo and Amy from AALCO discussing quotes and specifications for steel components, including flat and angle pieces, with some clarification needed on product codes and stock availability. Giles plans to confirm details and possibly replenish stock.
+
+--- RECAP --------------------------------------------------
+Amy from AALCO informed Giles Hugo about the available sizes for the flat and angle steel components, specifically 40x5 and 38.1x3.18, and discussed which options would work best.Giles Hugo and Amy reviewed product codes and specifications, clarifying that 40x3 steel is available and confirming the correct items for their needs, including stainless steel and galv. options.Giles Hugo requested Amy to send over the quote for the flat and angle steel in 40x30 size, in stock, with two lengths of each, to confirm stock replenishment and clarify the purpose of the order.Giles Hugo mentioned that he would visit the supplier to confirm the necessity of the order and indicated that the current stock appears sufficient, with some ongoing work and parts being correctly stainless steel.
+
+--- TASKS --------------------------------------------------
+Amy from AALCO will send over the quote for the flat and angle steel in 40x30 size, in stock, with two lengths of each.Giles Hugo will visit the supplier to confirm the purpose of the order and verify stock availability.
+
+(Full transcript: RC web portal only — no RingSense API)

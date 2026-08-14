@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  22/07/2026  15:22
+============================================================
+With:         Alison Lyons 306
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a call between Giles Hugo and Alison Lyons regarding retrieving an OTP code from a burner phone and confirming a purchase for service contracts on vans. The call concluded with confirmation of payment and service coverage details.
+
+--- RECAP --------------------------------------------------
+Giles Hugo asked Alison Lyons to retrieve an OTP code from a black Samsung burner phone located on a desk between Giles and Richard.Alison Lyons confirmed the phone's location and provided the OTP code "795364" after verifying the device.Giles Hugo confirmed the payment of 920 pounds for the purchase, which was completed successfully.The purchase covers a two-year service contract for the vans, which includes the Toyota Service Pack that covers all issues and has been effective in the past.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

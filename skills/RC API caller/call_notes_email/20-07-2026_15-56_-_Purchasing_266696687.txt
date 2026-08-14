@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  20/07/2026  15:56
+============================================================
+With:         - Purchasing 266696687
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo discussing vehicle maintenance and MOT scheduling with a representative from Kinto, confirming upcoming MOT and service dates, and clarifying vehicle classification requirements.
+
+--- RECAP --------------------------------------------------
+Giles Hugo confirmed that their vehicle, a van, is due for an MOT on August 3rd, which is not a Class 7 vehicle, so it can be taken to a local garage for inspection.The vehicle has been owned for approximately three years and is a new vehicle, thus not requiring an MOT before August 3rd.Giles Hugo inquired whether they could use a local garage for the MOT instead of Toyota, and the representative confirmed this is acceptable if the garage has Class 7 capabilities.The vehicle is a van that requires a Class 7 ramp for MOT testing, and Giles Hugo was advised to book the MOT with a capable local garage.Giles Hugo asked about the vehicle's service agreement and maintenance schedule; the representative confirmed the vehicle is covered under a maintenance plan with service intervals approximately every 12,500 miles or annually.The next scheduled service is confirmed for July 25, 2025, which aligns with the annual service interval, and Giles Hugo was advised to proceed with this booking.
+
+--- TASKS --------------------------------------------------
+Giles Hugo to book the vehicle's MOT with a local garage that has Class 7 capabilities before August 3rd.Giles Hugo to confirm and proceed with the scheduled service appointment on July 25, 2025.
+
+(Full transcript: RC web portal only — no RingSense API)

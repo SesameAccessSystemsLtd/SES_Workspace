@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  21/07/2026  14:58
+============================================================
+With:         IGUS 01604 677240
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a follow-up call between Giles Hugo and Dan from igus to clarify the status of a quote and order process related to new contracts and vendor assessments. The issue with the quote's SQ number was resolved, and the order was confirmed to be processed.
+
+--- RECAP --------------------------------------------------
+Dan from igus contacted Giles Hugo to discuss a quote sent on the 17th, which did not initially appear under the correct SQ number; the issue was clarified during the call.Giles explained that the quote was related to new contracts and vendor assessments involving three desks and 46 vendors, with some orders being in progress.The quote was sent on the 17th at 10:25 AM to the UD purchasing email, managed by Molly Jackson.Giles confirmed he was not in the office on Friday and had missed the initial receipt of the quote, but verified the correct quote number as 16884462.Giles instructed to email back the order and press the order button, confirming the process is now clear and on track.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will email the order confirmation and press the order button to finalize the purchase.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,80 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,Asana Task GID,Asana Task URL
+ALL BOMS - 1366 - British Library Bellow Support,"Master task for all BOMs related to 1366 - British Library Bellow Support
+Dropbox: https://www.dropbox.com/scl/fo/9gf0p8iamug2r2ub53x3e/AA5BoRNJiYZRMoVffEoUehw?rlkey=pfelu3p0gq7w3hanr5o5bywap&dl=0
+Project: https://app.asana.com/1/357939803556123/project/848657415032331/task/1215500972324334?focus=true",,,,,,,,
+Laser Cut BOM - 1366 - British Library Bellow Support,,ALL BOMS - 1366 - British Library Bellow Support,,Laser Cut,,,,,
+Laser Cut - 1366 - British Library Bellow Support,,Laser Cut BOM - 1366 - British Library Bellow Support,,Laser Cut,,,,,
+1 off 1366. 1015.E.221 - Cover plate Alu 5152 Laser Cut,"1366.1015.E.221
+Stock Number: Alu 5152
+Material: Aluminum 5152
+Thickness: 1.200 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9gf0p8iamug2r2ub53x3e/AA5BoRNJiYZRMoVffEoUehw?rlkey=pfelu3p0gq7w3hanr5o5bywap&dl=0
+Mass: 1.456 kg
+Volume: 539383.763 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1215500972324334?focus=true",Laser Cut - 1366 - British Library Bellow Support,1,Laser Cut,,,,1215624018523936,https://app.asana.com/0/848657415032331/1215624018523936
+2 off 1366. 1015.E.222 - Cover plate Alu 5152 Laser Cut,"1366.1015.E.222
+Stock Number: Alu 5152
+Material: Aluminum 5152
+Thickness: 1.200 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9gf0p8iamug2r2ub53x3e/AA5BoRNJiYZRMoVffEoUehw?rlkey=pfelu3p0gq7w3hanr5o5bywap&dl=0
+Mass: 1.958 kg
+Volume: 725148.850 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1215500972324334?focus=true",Laser Cut - 1366 - British Library Bellow Support,2,Laser Cut,,,,1215624018486180,https://app.asana.com/0/848657415032331/1215624018486180
+1 off 1366. 1015.E.223 - Cover plate Alu 5152 Laser Cut,"1366.1015.E.223
+Stock Number: Alu 5152
+Material: Aluminum 5152
+Thickness: 1.200 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9gf0p8iamug2r2ub53x3e/AA5BoRNJiYZRMoVffEoUehw?rlkey=pfelu3p0gq7w3hanr5o5bywap&dl=0
+Mass: 1.635 kg
+Volume: 605620.567 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1215500972324334?focus=true",Laser Cut - 1366 - British Library Bellow Support,1,Laser Cut,,,,1215623914496303,https://app.asana.com/0/848657415032331/1215623914496303
+1 off 1366. 1015.E.225 - Cover plate Alu 5152 Laser Cut,"1366.1015.E.225
+Stock Number: Alu 5152
+Material: Aluminum 5152
+Thickness: 1.200 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9gf0p8iamug2r2ub53x3e/AA5BoRNJiYZRMoVffEoUehw?rlkey=pfelu3p0gq7w3hanr5o5bywap&dl=0
+Mass: 2.643 kg
+Volume: 978948.643 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1215500972324334?focus=true",Laser Cut - 1366 - British Library Bellow Support,1,Laser Cut,,,,1215624030132109,https://app.asana.com/0/848657415032331/1215624030132109
+Surface Finish BOM - 1366 - British Library Bellow Support,,ALL BOMS - 1366 - British Library Bellow Support,,Surface Finish BOM,,,,,
+Marine Lacquer - 1366 - British Library Bellow Support,,Surface Finish BOM - 1366 - British Library Bellow Support,,Marine Lacquer,,,,,
+1 off Marine Lacquer 1366. 1015.E.221 - Cover plate,"1366.1015.E.221
+Stock Number: Alu 5152
+Material: Aluminum 5152
+Thickness: 1.200 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/9gf0p8iamug2r2ub53x3e/AA5BoRNJiYZRMoVffEoUehw?rlkey=pfelu3p0gq7w3hanr5o5bywap&dl=0
+Mass: 1.456 kg
+Volume: 539383.763 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1215500972324334?focus=true",Marine Lacquer - 1366 - British Library Bellow Support,1,Marine Lacquer,,,,1215624030505594,https://app.asana.com/0/848657415032331/1215624030505594
+2 off Marine Lacquer 1366. 1015.E.222 - Cover plate,"1366.1015.E.222
+Stock Number: Alu 5152
+Material: Aluminum 5152
+Thickness: 1.200 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/9gf0p8iamug2r2ub53x3e/AA5BoRNJiYZRMoVffEoUehw?rlkey=pfelu3p0gq7w3hanr5o5bywap&dl=0
+Mass: 1.958 kg
+Volume: 725148.850 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1215500972324334?focus=true",Marine Lacquer - 1366 - British Library Bellow Support,2,Marine Lacquer,,,,1215623914615556,https://app.asana.com/0/848657415032331/1215623914615556
+1 off Marine Lacquer 1366. 1015.E.223 - Cover plate,"1366.1015.E.223
+Stock Number: Alu 5152
+Material: Aluminum 5152
+Thickness: 1.200 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/9gf0p8iamug2r2ub53x3e/AA5BoRNJiYZRMoVffEoUehw?rlkey=pfelu3p0gq7w3hanr5o5bywap&dl=0
+Mass: 1.635 kg
+Volume: 605620.567 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1215500972324334?focus=true",Marine Lacquer - 1366 - British Library Bellow Support,1,Marine Lacquer,,,,1215624030641773,https://app.asana.com/0/848657415032331/1215624030641773
+1 off Marine Lacquer 1366. 1015.E.225 - Cover plate,"1366.1015.E.225
+Stock Number: Alu 5152
+Material: Aluminum 5152
+Thickness: 1.200 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/9gf0p8iamug2r2ub53x3e/AA5BoRNJiYZRMoVffEoUehw?rlkey=pfelu3p0gq7w3hanr5o5bywap&dl=0
+Mass: 2.643 kg
+Volume: 978948.643 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1215500972324334?focus=true",Marine Lacquer - 1366 - British Library Bellow Support,1,Marine Lacquer,,,,1215624099179855,https://app.asana.com/0/848657415032331/1215624099179855

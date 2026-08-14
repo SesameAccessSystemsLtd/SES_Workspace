@@ -1,0 +1,254 @@
+# SES_Workspace SYSTEM_MANIFEST.yaml
+# Machine-readable registry of all agents, bots, and automations in the SAS platform.
+# Hermes reads this at startup. Update when adding/retiring components.
+
+manifest_version: "1.0"
+updated: "2026-06-30"
+updated_by: "giles"
+
+# ── Harnesses ──────────────────────────────────────────────────────────────
+harnesses:
+  hermes:
+    name: "Hermes"
+    role: "Primary orchestration — cron scheduler, Telegram gateway, VPS always-on"
+    status: active
+    environment: local_windows   # migrate to: vps_linux
+    config: "C:/Users/GilesHugo/AppData/Local/hermes"
+    model_primary: deepseek-chat
+    telegram_chat: "8551261362"
+    workspace: "C:/Users/GilesHugo/SES_Workspace"
+    notes: "Migration from OpenClaw in progress"
+
+  openclaw:
+    name: "OpenClaw"
+    role: "Legacy multi-agent harness — retiring"
+    status: retiring
+    environment: local_windows
+    config: "C:/Users/GilesHugo/.openclaw"
+    model_primary: gemini-2.5-flash-lite
+    gateway_port: 18789
+    notes: "Running in parallel during Hermes migration. Shut down when all crons validated."
+
+  sesame_ai:
+    name: "Sesame AI (CoWork-OS)"
+    role: "Fleet LAN harness — interactive GUI for all SAS employees"
+    status: deploying
+    environment: local_windows_fleet
+    config: "C:/Users/GilesHugo/sesame-ai"
+    model_primary: deepseek
+    notes: "Champion package built. Employee deployment pending."
+
+# ── Agents (OpenClaw) ──────────────────────────────────────────────────────
+agents:
+  sesal:
+    name: "Commander Claw (SESAL)"
+    harness: openclaw
+    dir: ".openclaw/agents/main"
+    role: "Orchestrator — read-only, delegates to other agents"
+    telegram_bot_id: null   # uses default gateway bot
+    status: active
+    permissions: [read_workspace, read_db]
+    dependencies: [ops_db, asana_mirror]
+
+  sap:
+    name: "SAP (asana_agent)"
+    harness: openclaw
+    dir: ".openclaw/agents/asana_agent"
+    role: "Sole Asana writer — processes REQUESTS/ queue"
+    telegram_bot_id: "8036334348"
+    status: active
+    permissions: [read_workspace, write_asana, write_ops_db, process_requests]
+    dependencies: [ops_db, requests_queue]
+
+  sad:
+    name: "SAD (scraper)"
+    harness: openclaw
+    dir: ".openclaw/agents/scraper"
+    role: "Data ingestion, HubSpot sync, DATAMAP writer"
+    telegram_bot_id: "8480740272"
+    status: active
+    permissions: [read_workspace, write_crm_db, write_datamap]
+    dependencies: [crm_db, hubspot_api]
+
+  sam:
+    name: "SAM (sesame_marketing)"
+    harness: openclaw
+    dir: ".openclaw/agents/sesame_marketing"
+    role: "Marketing campaigns, CRM, lead pipeline"
+    telegram_bot_id: "8610936540"
+    status: active
+    permissions: [read_workspace, write_crm_db]
+    dependencies: [crm_db]
+
+  forge:
+    name: "Forge (dev_agent)"
+    harness: openclaw
+    dir: ".openclaw/agents/dev_agent"
+    role: "Code builds, nightly audit at 23:00"
+    telegram_bot_id: null
+    status: active
+    permissions: [read_workspace, read_skills, write_plans]
+    dependencies: [skills_root]
+
+  navigator:
+    name: "Navigator (personal_planner)"
+    harness: openclaw
+    dir: ".openclaw/agents/personal_planner"
+    role: "Personal tasks — isolated from main system"
+    telegram_bot_id: "7799362695"
+    status: active
+    permissions: [read_workspace]
+    dependencies: []
+
+# ── Cron jobs (Hermes) ─────────────────────────────────────────────────────
+cron_jobs:
+  - id: "02f75e6f8c82"
+    name: "Nightly Asana Mirror Sync"
+    script: "asana_mirror_sync.py"
+    schedule: "0 1 * * *"
+    pipeline: purchasing
+    status: active
+    last_validated: null
+
+  - id: "75e173a5ac10"
+    name: "Purchasing Email Parser"
+    script: "email_pipeline.py"
+    schedule: "0 9-16 * * 1-5"
+    pipeline: purchasing
+    status: active
+    known_issues: ["02_llm_parser.py hardcodes Gemini — tech debt"]
+    last_validated: "2026-06-30"
+
+  - id: "5253b0ca584d"
+    name: "Nightly Codebase Audit"
+    script: "nightly_audit.py"
+    schedule: "0 23 * * *"
+    pipeline: dev
+    status: active
+    last_validated: null
+
+  - id: "0d81d0a0897b"
+    name: "Email Approval Sheet Processor"
+    script: "sheet_approver.py"
+    schedule: "*/30 9-17 * * 1-5"
+    pipeline: purchasing
+    status: active
+    last_validated: "2026-06-30"
+
+  - id: "5316c57ffbe5"
+    name: "Parts Control Propagator"
+    script: "parts_control_propagator.py"
+    schedule: "*/30 8-18 * * 1-5"
+    pipeline: purchasing
+    status: active
+    last_validated: "2026-06-30"
+
+  - id: "eb59aca7658d"
+    name: "REQUESTS Processor"
+    script: "execute_requests.py"
+    schedule: "30 9-17 * * 1-5"
+    pipeline: purchasing
+    status: active
+    last_validated: "2026-06-30"
+
+  - id: "fcdffdd011f5"
+    name: "RingCentral Email Notes Sync"
+    script: "rc_email_notes.py"
+    schedule: "0 8-18 * * 1-5"
+    pipeline: operations
+    status: active
+    last_validated: "2026-06-30"
+
+  - id: "d3a3719dfd3b"
+    name: "Ordering - Audit Parts Control Routing"
+    script: "audit_parts_control_routing.py"
+    schedule: "30 1 * * *"
+    pipeline: ordering
+    status: active
+    last_validated: null
+
+  - id: "dd9fe4ed4a74"
+    name: "Ordering - Compile and Create Order Tasks"
+    script: "ordering_compile.py"
+    schedule: "0 8 * * 1-5"
+    pipeline: ordering
+    status: active
+    last_validated: null
+
+  - id: "2643ab11e841"
+    name: "Ordering - Arrived Stock Processor"
+    script: "arrived_stock_processor.py"
+    schedule: "0 8-18 * * 1-5"
+    pipeline: ordering
+    status: active
+    last_validated: "2026-06-30"
+
+  - id: "d7b6d25a21f0"
+    name: "Navigator Daily Brief"
+    script: "daily_brief.py"
+    schedule: "0 7 * * *"
+    pipeline: personal
+    status: active
+    known_issues: ["hardcodes Gemini API — tech debt"]
+    last_validated: null
+
+  - id: "ceed0bf46bec"
+    name: "Nightly System Maintenance"
+    script: "nightly_maintenance.sh"
+    schedule: "0 2 * * *"
+    pipeline: ops
+    status: active
+    last_validated: null
+
+  - id: "4133be14b0f8"
+    name: "Nightly Memory Log"
+    script: "nightly_memory_log.sh"
+    schedule: "0 22 * * *"
+    pipeline: ops
+    status: active
+    last_validated: null
+
+# ── Session history / build context ───────────────────────────────────────
+# Load these when a new harness needs to understand what was built and why.
+context_files:
+  build_log:
+    path: "SES_Workspace/memory/LOG_OF_PROGRESS.txt"
+    description: "Chronological build log May–Jun 2026. All fixes, DB changes, architectural decisions."
+    origin: ".openclaw/agents/personal_planner — migrated 2026-07-02"
+  cli_sessions:
+    path: "SES_Workspace/memory/cli_sessions/"
+    description: "Claude Code CLI session records. Named YYYY-MM-DD_slug.md."
+
+# ── Systems of record ──────────────────────────────────────────────────────
+systems_of_record:
+  tasks_projects:   asana
+  stock_parts:      ops_db
+  crm:              crm_db
+  purchasing_email: ops_db
+  bom_mrp:          golden_index_csv + asana
+  knowledge_giles:  ses_brain_obsidian
+  knowledge_shared: sesame_brain_sharepoint
+  file_index:       ses_workspace_copilot_graph
+
+# ── External integrations ──────────────────────────────────────────────────
+integrations:
+  asana:
+    writer: sap_agent_only
+    reader: any_agent_via_ops_db
+    protocol: requests_queue_for_writes
+
+  microsoft_graph:
+    mailbox: purchasing@sesameaccess.com
+    auth: msal_client_credentials
+    secret_manager: doppler
+    project: openclaw
+    config: dev
+
+  hubspot:
+    writer: sad_scraper
+    reader: crm_db
+
+  doppler:
+    project: openclaw
+    config: dev
+    managed_secrets: [PURCHASING_EMAIL_API_KEY, GEMINI_API_KEY, GEMINI_API_KEY_AGENTS]

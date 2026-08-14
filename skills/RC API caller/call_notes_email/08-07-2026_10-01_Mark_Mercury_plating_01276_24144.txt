@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  08/07/2026  10:01
+============================================================
+With:         Mark Mercury plating 01276 24144
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo from Sesame discussing anodizing specifications and sample requests with Mark Mercury Plating, clarifying the differences between standard and hard anodizing, and arranging sample processing and future orders.
+
+--- RECAP --------------------------------------------------
+Giles Hugo from Sesame contacted Mark Mercury Plating to confirm the anodizing specifications for their panels, requesting standard clear anodizing instead of the previously used AA 25 hard anodizing.Mark Mercury Plating explained that AA 25 is a hard, sealed anodizing of approximately 25 microns, suitable for underwater use, whereas standard clear anodizing is about 6-8 microns and less durable, and clarified that these are distinct processes with different thicknesses and properties.Giles Hugo indicated that their previous supplier provided a harder finish, but Mark Mercury Plating confirmed that only one type of anodizing can be applied per order, either hard or standard, not a semi-hard or intermediate option.Mark Mercury Plating advised that for increased thickness beyond 8 microns, the process must be hard anodizing, which is not clear in color, and suggested that future orders should specify the desired finish upfront.The purpose of the panels is for installation inside a platform lift wall, and AA 25 hard anodizing offers additional sealing for underwater durability, which their current process does not provide.Giles Hugo requested samples of previous finishes for comparison, but Mark Mercury Plating explained that they require parts to be sent in for sample processing, as they do not keep a standard range of samples.They agreed to process the current order with standard clear anodizing and to follow up via email with detailed specifications to ensure clarity for future orders.Mark Mercury Plating will schedule the processing once the specifications are confirmed and will notify Giles Hugo when the samples are ready.
+
+--- TASKS --------------------------------------------------
+Giles Hugo from Sesame will send an email with detailed specifications for the current order to Mark Mercury Plating's quality email address.Mark Mercury Plating will confirm the order details and process the panels with standard clear anodizing, then notify Giles Hugo when they are ready.Giles Hugo will send parts to Mark Mercury Plating for sample processing to establish reference finishes for future comparison.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  30/06/2026  15:05
+============================================================
+With:         Main Number 01252 810995
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo seeking assistance from Ben at CV Library to access a library resource after setting up a new subscription, which was confirmed but not yet functional. The issue was escalated to Amy, his account manager, but she was unavailable at the moment.
+
+--- RECAP --------------------------------------------------
+Giles Hugo contacted Ben at CV Library to resolve access issues with the library after confirming a new subscription, but he still cannot use the library resources.Giles's account manager is Amy, who is responsible for assisting with access; Amy was unavailable during the call.Ben attempted to reach Amy to facilitate the access but was unable to connect with her at that time.Giles emphasized the urgency of the issue, as he needs access before his workday ends at 4:00 PM, and expressed frustration over the delay.Ben assured Giles that he would pass the message to Amy to call back as soon as possible and acknowledged the urgency due to Giles's limited remaining time.
+
+--- TASKS --------------------------------------------------
+Ben at CV Library will inform Amy about Giles Hugo's access issue and request her to call him back as soon as possible.Amy will follow up with Giles to resolve the library access problem before 4:00 PM today.
+
+(Full transcript: RC web portal only — no RingSense API)

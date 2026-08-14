@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  07/07/2026  12:50
+============================================================
+With:         +447904524337 07904 524337
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved DNA maintenance requesting urgent lift repairs at a crematorium, with confirmation that the service contract covers both lifts starting from 1st July, and arrangements to speak with a colleague about servicing details.
+
+--- RECAP --------------------------------------------------
+DNA maintenance contacted Fatima Barros to request urgent repair for a lift at the crematorium, which has stopped working and requires immediate attention this afternoon.Fatima confirmed that the service contract covers both lifts and that the start date is likely 1st July, using the provided PO number for both lifts.Fatima attempted to contact Natalie multiple times to confirm details but was unable to reach her; she then arranged to speak with Sean regarding servicing arrangements.
+
+--- TASKS --------------------------------------------------
+Fatima to speak with Sean about servicing arrangements for the lifts.
+
+(Full transcript: RC web portal only — no RingSense API)

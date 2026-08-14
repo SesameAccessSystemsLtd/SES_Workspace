@@ -1,0 +1,349 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1555 - Fifth Av Tesla Handrail,"Master task for all BOMs related to 1555 - Fifth Av Tesla Handrail
+Dropbox: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Project: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",,,,,,,,,,
+Laser Cut BOM - 1555 - Fifth Av Tesla Handrail,,ALL BOMS - 1555 - Fifth Av Tesla Handrail,,Laser Cut,,,,,,,
+Laser Cut - 1555 - Fifth Av Tesla Handrail,,Laser Cut BOM - 1555 - Fifth Av Tesla Handrail,,Laser Cut,,,,,,,
+1 off 1555. 1009.P.001 - Backplate 304/DP1 Laser Cut,"1555.1009.P.001
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 12.956 kg
+Volume: 1619556.161 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Laser Cut - 1555 - Fifth Av Tesla Handrail,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216754895115181,https://app.asana.com/0/848657415032331/1216754895115181
+2 off 1555. 1009.P.002 - Stiffening rib 304/HR Laser Cut,"1555.1009.P.002
+Stock Number: 304/HR
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.185 kg
+Volume: 23092.505 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Laser Cut - 1555 - Fifth Av Tesla Handrail,,Laser Cut,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216754849164877,https://app.asana.com/0/848657415032331/1216754849164877
+1 off 1555. 1009.P.003 - Handrail cover 304/DP1 Laser Cut,"1555.1009.P.003
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 1.437 kg
+Volume: 179621.576 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Laser Cut - 1555 - Fifth Av Tesla Handrail,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216755220364601,https://app.asana.com/0/848657415032331/1216755220364601
+4 off 1555. 1009.P.006 - Actuator arm 304/HR Laser Cut,"1555.1009.P.006
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.109 kg
+Volume: 13586.108 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Laser Cut - 1555 - Fifth Av Tesla Handrail,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216754994353450,https://app.asana.com/0/848657415032331/1216754994353450
+2 off 1555. 1009.P.007 - Actuator mount 304/HR Laser Cut,"1555.1009.P.007
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.105 kg
+Volume: 13143.673 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Laser Cut - 1555 - Fifth Av Tesla Handrail,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216754994353324,https://app.asana.com/0/848657415032331/1216754994353324
+1 off 1555. 1009.P.008 - Front plate 304/2B Laser Cut,"1555.1009.P.008
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 9.101 kg
+Volume: 1137663.145 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Laser Cut - 1555 - Fifth Av Tesla Handrail,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216754895961242,https://app.asana.com/0/848657415032331/1216754895961242
+12 off 1555. 1009.P.009 - Arm bracket 304/2B Laser Cut,"1555.1009.P.009
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.005 kg
+Volume: 662.894 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Laser Cut - 1555 - Fifth Av Tesla Handrail,12,Laser Cut,,,,ORDER,PROJECT ORDER,1216754838488064,https://app.asana.com/0/848657415032331/1216754838488064
+2 off 1555. 1009.P.019 - End flat 304/DP1 Laser Cut,"1555.1009.P.019
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.022 kg
+Volume: 2708.655 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Laser Cut - 1555 - Fifth Av Tesla Handrail,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216754894450125,https://app.asana.com/0/848657415032331/1216754894450125
+1 off 1555. 1009.P.021 - Limit switch bracket 304/2B Laser Cut,"1555.1009.P.021
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.075 kg
+Volume: 9430.562 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Laser Cut - 1555 - Fifth Av Tesla Handrail,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216754849255324,https://app.asana.com/0/848657415032331/1216754849255324
+1 off 1555. 1009.P.022 - Limit switch arm 304/HR Laser Cut,"1555.1009.P.022
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.123 kg
+Volume: 15375.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Laser Cut - 1555 - Fifth Av Tesla Handrail,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216754849400634,https://app.asana.com/0/848657415032331/1216754849400634
+1 off 1555. 1009.P.022_MIR - Limit switch arm 304/HR Laser Cut,"1555.1009.P.022_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.123 kg
+Volume: 15375.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Laser Cut - 1555 - Fifth Av Tesla Handrail,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216754848222755,https://app.asana.com/0/848657415032331/1216754848222755
+1 off 1555. 1009.P.024 - Limit switch bracket support 304/2B Laser Cut,"1555.1009.P.024
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.075 kg
+Volume: 9317.588 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Laser Cut - 1555 - Fifth Av Tesla Handrail,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216754895560939,https://app.asana.com/0/848657415032331/1216754895560939
+6 off 1555. 1009.P.026 - Eye bolt mount 304/2B Laser Cut,"1555.1009.P.026
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.019 kg
+Volume: 2404.634 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Laser Cut - 1555 - Fifth Av Tesla Handrail,6,Laser Cut,,,,ORDER,PROJECT ORDER,1216755221541987,https://app.asana.com/0/848657415032331/1216755221541987
+12 off 1555. 1009.P.027 - Gusset 304/2B Laser Cut,"1555.1009.P.027
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.016 kg
+Volume: 1942.500 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Laser Cut - 1555 - Fifth Av Tesla Handrail,12,Laser Cut,,,,ORDER,PROJECT ORDER,1216754839580277,https://app.asana.com/0/848657415032331/1216754839580277
+2 off 1555. 1009.P.030 - Actuator mount with grommet hole 304/HR Laser Cut,"1555.1009.P.030
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.101 kg
+Volume: 12668.507 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Laser Cut - 1555 - Fifth Av Tesla Handrail,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216754994321212,https://app.asana.com/0/848657415032331/1216754994321212
+4 off 1555. 1009.P.031 - Stiffening rib with grommet hole 304/HR Laser Cut,"1555.1009.P.031
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.257 kg
+Volume: 32132.720 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Laser Cut - 1555 - Fifth Av Tesla Handrail,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216754839713785,https://app.asana.com/0/848657415032331/1216754839713785
+2 off 1555. 1009.P.034 - Washer 304/2B Laser Cut,"1555.1009.P.034
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.002 kg
+Volume: 271.257 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Laser Cut - 1555 - Fifth Av Tesla Handrail,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216754850249602,https://app.asana.com/0/848657415032331/1216754850249602
+1 off 1555. 1092.N.052 - Cable grommet mount 304/2B Laser Cut,"1555.1092.N.052
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.024 kg
+Volume: 3033.993 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Laser Cut - 1555 - Fifth Av Tesla Handrail,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216754994986019,https://app.asana.com/0/848657415032331/1216754994986019
+Machining BOM - 1555 - Fifth Av Tesla Handrail,,ALL BOMS - 1555 - Fifth Av Tesla Handrail,,Machining,,,,,,,
+Machining - 1555 - Fifth Av Tesla Handrail,,Machining BOM - 1555 - Fifth Av Tesla Handrail,,Machining,,,,,,,
+6 off 1555. 1009.P.032 - Tube (10 mm OD 1 mm wall) Machining,"1555.1009.P.032
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.004 kg
+Volume: 452.389 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Machining - 1555 - Fifth Av Tesla Handrail,6,Machining,,,,ORDER,PROJECT ORDER,1216754895927582,https://app.asana.com/0/848657415032331/1216754895927582
+2 off 1555. 1009.P.033 - Modified clevis pin Machining,"1555.1009.P.033
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.017 kg
+Volume: 2163.065 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Machining - 1555 - Fifth Av Tesla Handrail,2,Machining,,,,ORDER,PROJECT ORDER,1216755364022894,https://app.asana.com/0/848657415032331/1216755364022894
+4 off 1555. 1009.P.035 - Tube (10 mm OD 1 mm wall) Machining,"1555.1009.P.035
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.002 kg
+Volume: 226.195 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Machining - 1555 - Fifth Av Tesla Handrail,4,Machining,,,,ORDER,PROJECT ORDER,1216754994682734,https://app.asana.com/0/848657415032331/1216754994682734
+1 off 1555. 1009.P.036 - Limit switch striker Machining,"1555.1009.P.036
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.012 kg
+Volume: 1559.367 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Machining - 1555 - Fifth Av Tesla Handrail,1,Machining,,,,ORDER,PROJECT ORDER,1216755221138377,https://app.asana.com/0/848657415032331/1216755221138377
+6 off 1555. 1009.P.037 - Handrail support Machining,"1555.1009.P.037
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.033 kg
+Volume: 4182.597 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Machining - 1555 - Fifth Av Tesla Handrail,6,Machining,,,,ORDER,PROJECT ORDER,1216754995161602,https://app.asana.com/0/848657415032331/1216754995161602
+NBSS BOM - 1555 - Fifth Av Tesla Handrail,,ALL BOMS - 1555 - Fifth Av Tesla Handrail,,NBSS,,,,,,,
+NBSS/Sesame - 1555 - Fifth Av Tesla Handrail,,NBSS BOM - 1555 - Fifth Av Tesla Handrail,,NBSS/Sesame,,,,,,,
+6 off 1555. 1008.T.8ID_Grommet - 8mm ID Grommet 666-4603 NBSS/Sesame,"1555.1008.T.8ID_Grommet
+Stock Number: 666-4603
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/cable-grommets/6664603
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.001 kg
+Volume: 677.640 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",NBSS/Sesame - 1555 - Fifth Av Tesla Handrail,6,NBSS/Sesame,,,,ORDER,PROJECT ORDER,1216755324072677,https://app.asana.com/0/848657415032331/1216755324072677
+1 off 1555. 1008.T.PG9 - PG9 CableGland / or M16 NBSS/Sesame,"1555.1008.T.PG9
+Material: Generic
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.016 lbmass
+Volume: 0.448 in^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",NBSS/Sesame - 1555 - Fifth Av Tesla Handrail,1,NBSS/Sesame,,,,ORDER,PROJECT ORDER,1216755221721782,https://app.asana.com/0/848657415032331/1216755221721782
+Sesame BOM - 1555 - Fifth Av Tesla Handrail,,ALL BOMS - 1555 - Fifth Av Tesla Handrail,,Sesame,,,,,,,
+Boneham - 1555 - Fifth Av Tesla Handrail,,Sesame BOM - 1555 - Fifth Av Tesla Handrail,,Boneham,,,,,,,
+6 off 1555. 1000.C.ClevisPin 4x20mm - Clevis pin Stainless Steel CPSS-04-020 Boneham,"1555.1000.C.ClevisPin 4x20mm
+Stock Number: CPSS-04-020
+Material: Stainless Steel
+Web Link: https://www.boneham.co.uk/4mm-dia-x-20mm-long-stainless-steel-clevis-pin-310834
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.002 kg
+Volume: 270.973 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Boneham - 1555 - Fifth Av Tesla Handrail,6,Boneham,,,,ORDER,PROJECT ORDER,1216755364455509,https://app.asana.com/0/848657415032331/1216755364455509
+2 off 1555. 1000.C.ClevisPin 8x40mm - Clevis Pin Stainless Steel CPSS-08-040 Boneham,"1555.1000.C.ClevisPin 8x40mm
+Stock Number: CPSS-08-040
+Material: Stainless Steel
+Web Link: https://www.boneham.co.uk/8mm-dia-x-40mm-long-stainless-steel-clevis-pin-310583
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.019 kg
+Volume: 2435.154 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Boneham - 1555 - Fifth Av Tesla Handrail,2,Boneham,,,,ORDER,PROJECT ORDER,1216754839295556,https://app.asana.com/0/848657415032331/1216754839295556
+2 off 1555. 1000.C.ClevisPin 8x50mm - Clevis Pin Stainless Steel CPSS-08-050 Boneham,"1555.1000.C.ClevisPin 8x50mm
+Stock Number: CPSS-08-050
+Material: Stainless Steel
+Web Link: https://www.boneham.co.uk/clevis-pins/mhttps://www.boneham.co.uk/8mm-dia-x-50mm-long-stainless-steel-clevis-pin-311135
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.024 kg
+Volume: 2937.809 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Boneham - 1555 - Fifth Av Tesla Handrail,2,Boneham,,,,ORDER,PROJECT ORDER,1216755221573600,https://app.asana.com/0/848657415032331/1216755221573600
+6 off 1555. 1000.C.R-Clip 1.0x20 - R CLIP 1mm x 20mm Stainless Steel RC1.0SS Boneham,"1555.1000.C.R-Clip 1.0x20
+Stock Number: RC1.0SS
+Material: Stainless Steel
+Web Link: https://www.boneham.co.uk/r-clip-1mm-x-20mm-stainless-for-cp-3-5mm-pack-of-10-321804
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.000 kg
+Volume: 37.920 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Boneham - 1555 - Fifth Av Tesla Handrail,6,Boneham,,,,ORDER,PROJECT ORDER,1216754839836289,https://app.asana.com/0/848657415032331/1216754839836289
+2 off 1555. 1000.C.R-Clip 1.2x22 - R CLIP 1.2mm Dia x 22mm Stainless Steel RC1.2SS Boneham,"1555.1000.C.R-Clip 1.2x22
+Stock Number: RC1.2SS
+Material: Stainless Steel
+Web Link: https://www.boneham.co.uk/r-clip-1-2mm-dia-x-22mm-stainless-steel-for-cp-5-8mm-pack-of-10-315965
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.000 kg
+Volume: 58.917 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Boneham - 1555 - Fifth Av Tesla Handrail,2,Boneham,,,,ORDER,PROJECT ORDER,1216755324456612,https://app.asana.com/0/848657415032331/1216755324456612
+Concens - 1555 - Fifth Av Tesla Handrail,,Sesame BOM - 1555 - Fifth Av Tesla Handrail,,Concens,,,,,,,
+2 off 1555. 1000.N.Driver - conXion DIN Driver (one per actuator) conXion DIN Concens,"1555.1000.N.Driver
+Stock Number: conXion DIN
+Material: Generic
+Web Link: concens.com
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.209 kg
+Volume: 209308.730 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Concens - 1555 - Fifth Av Tesla Handrail,2,Concens,,,,ORDER,PROJECT ORDER,1216755324498461,https://app.asana.com/0/848657415032331/1216755324498461
+GappAutomation - 1555 - Fifth Av Tesla Handrail,,Sesame BOM - 1555 - Fifth Av Tesla Handrail,,GappAutomation,,,,,,,
+2 off 1555. 1000.N.Linear Actuator25 - Linear actuator con-25 50mm stroke 24V DC 3m cable 110N 25:1 Ratio with Hall Sensor 250050-254010+500000---(0-0) GappAutomation,"1555.1000.N.Linear Actuator25
+Stock Number: 250050-254010+500000---(0-0)
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.300 kg
+Volume: 98969.632 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",GappAutomation - 1555 - Fifth Av Tesla Handrail,2,GappAutomation,,,,ORDER,PROJECT ORDER,1216754849858224,https://app.asana.com/0/848657415032331/1216754849858224
+RS Components - 1555 - Fifth Av Tesla Handrail,,Sesame BOM - 1555 - Fifth Av Tesla Handrail,,RS Components,,,,,,,
+1 off 1555. 1008.A4.001 - Limit Switch with roller 440P-M18001 RS Components,"1555.1008.A4.001
+Stock Number: 440P-M18001
+Material: Generic
+Web Link: http://uk.rs-online.com/web/p/safety-limit-switches/0323511/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.021 kg
+Volume: 20886.288 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",RS Components - 1555 - Fifth Av Tesla Handrail,1,RS Components,,,,ORDER,PROJECT ORDER,1216755480886475,https://app.asana.com/0/848657415032331/1216755480886475
+Bearing Supplier - 1555 - Fifth Av Tesla Handrail,,Sesame BOM - 1555 - Fifth Av Tesla Handrail,,Bearing Supplier,,,,,,,
+4 off 1555. 1009.P.012 - Flanged bearing GFM-04050-06 Bearing Supplier,"1555.1009.P.012
+Stock Number: GFM-04050-06
+Material: Generic
+Web Link: https://www.igus.co.uk/iglidur-ibh/flanged-bearings/product-details/iglidur-g-m?artnr=GFM-04050-06#dimensions=d1%3A4-d2%3A5
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.000 kg
+Volume: 109.223 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Bearing Supplier - 1555 - Fifth Av Tesla Handrail,4,Bearing Supplier,,,,ORDER,PROJECT ORDER,1216755222839328,https://app.asana.com/0/848657415032331/1216755222839328
+Flexosprings - 1555 - Fifth Av Tesla Handrail,,Sesame BOM - 1555 - Fifth Av Tesla Handrail,,Flexosprings,,,,,,,
+6 off 1555. 1009.P.015 - Extension Spring AQ 3328 Flexosprings,"1555.1009.P.015
+Stock Number: AQ 3328
+Material: Generic
+Web Link: https://www.flexosprings.com/search-products?sku=AQ+3328
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.003 kg
+Volume: 2786.620 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Flexosprings - 1555 - Fifth Av Tesla Handrail,6,Flexosprings,,,,ORDER,PROJECT ORDER,1216755324453014,https://app.asana.com/0/848657415032331/1216755324453014
+12 off 1555. 1009.P.020 - Flanged bearing GFM-0405-0255 Bearing Supplier,"1555.1009.P.020
+Stock Number: GFM-0405-0255
+Material: Generic
+Web Link: https://www.igus.com/iglide-ibh/flange-bearings/product-details/iglide-g-m?artnr=GFM-0405-0255#dimensions=d1%3A4&sortingBy=ascending-d3
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.000 kg
+Volume: 61.293 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Bearing Supplier - 1555 - Fifth Av Tesla Handrail,12,Bearing Supplier,,,,ORDER,PROJECT ORDER,1216755481363020,https://app.asana.com/0/848657415032331/1216755481363020
+Orbital fasteners - 1555 - Fifth Av Tesla Handrail,,Sesame BOM - 1555 - Fifth Av Tesla Handrail,,Orbital fasteners,,,,,,,
+6 off 1555. 1009.P.025 - Lifting eyebolt M5x40 3140985 Orbital fasteners,"1555.1009.P.025
+Stock Number: 3140985
+Material: Stainless Steel
+Web Link: https://www.orbitalfasteners.co.uk/products/m5x40mm-shank-folded-eye-bolt-8mm-eye-steel-zinc?queryID=bd3c71a19b30db0023c4c519c694661e
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.012 kg
+Volume: 1524.599 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Orbital fasteners - 1555 - Fifth Av Tesla Handrail,6,Orbital fasteners,,,,ORDER,PROJECT ORDER,1216755222991795,https://app.asana.com/0/848657415032331/1216755222991795
+Vital-Parts - 1555 - Fifth Av Tesla Handrail,,Sesame BOM - 1555 - Fifth Av Tesla Handrail,,Vital-Parts,,,,,,,
+3 off 1555. 1009.P.029 - Push-in rubber feet PIF001 Vital-Parts,"1555.1009.P.029
+Stock Number: PIF001
+Material: Generic
+Web Link: https://www.vital-parts.co.uk/push-in-feet/16522-pif001
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/zlhq0116t7n05tf2476oq/ANfQhsovBYabKtrQ77Z_epg?rlkey=gxlj41bt3gu8vp09oxwbnf281&dl=0
+Mass: 0.000 lbmass
+Volume: 121.211 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1209579262386360/task/1216706728688508?focus=true",Vital-Parts - 1555 - Fifth Av Tesla Handrail,3,Vital-Parts,,,,ORDER,PROJECT ORDER,1216755481966870,https://app.asana.com/0/848657415032331/1216755481966870

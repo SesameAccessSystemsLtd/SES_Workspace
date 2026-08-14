@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>America One (1588) — Production Status &amp; Build Pack Impact</title>
+<style>
+  :root {
+    --bg: #f4f6fa;
+    --card: #ffffff;
+    --ink: #1a1a2e;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --brand: #0f766e;
+    --amber: #d97706;
+    --red: #dc2626;
+    --green: #16a34a;
+    --blue: #2563eb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    margin: 0; padding: 0; line-height: 1.5;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 24px 20px 60px; }
+  header.hero {
+    background: linear-gradient(135deg, #0f172a 0%, #134e4a 100%);
+    color: #fff; border-radius: 16px; padding: 28px 30px; margin-bottom: 24px;
+  }
+  header.hero h1 { margin: 0 0 6px; font-size: 26px; letter-spacing: .3px; }
+  header.hero .sub { opacity: .85; font-size: 15px; }
+  .badges { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .badge { background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.22);
+    padding: 4px 12px; border-radius: 20px; font-size: 12.5px; }
+  .badge.alert { background: #dc2626; border-color: #dc2626; font-weight: 600; }
+  .badge.ok { background: #16a34a; border-color: #16a34a; }
+
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 20px 22px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(16,24,40,.06); }
+  .card h2 { margin: 0 0 14px; font-size: 18px; display: flex; align-items: center; gap: 8px; }
+  .card h2 .num { background: var(--brand); color: #fff; width: 26px; height: 26px;
+    display: inline-flex; align-items: center; justify-content: center; border-radius: 7px;
+    font-size: 13px; }
+
+  .callout { border-left: 5px solid var(--red); background: #fef2f2;
+    padding: 14px 18px; border-radius: 0 10px 10px 0; margin-bottom: 20px; }
+  .callout .t { font-weight: 700; color: var(--red); margin-bottom: 4px; font-size: 15px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin-top: 6px; }
+  th { text-align: left; color: var(--muted); font-weight: 600; font-size: 12px;
+    text-transform: uppercase; letter-spacing: .4px; padding: 8px 10px; border-bottom: 2px solid var(--line);
+    white-space: nowrap; }
+  td { padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:hover td { background: #f9fafb; }
+  .pack { font-weight: 600; }
+  .pack a { color: var(--blue); text-decoration: none; }
+  .pack a:hover { text-decoration: underline; }
+
+  .chg { display: inline-block; font-weight: 700; padding: 3px 10px; border-radius: 6px; white-space: nowrap; }
+  .chg.move { background: #ffedd5; color: var(--amber); }
+  .chg.hold { background: #dcfce7; color: var(--green); }
+  .chg.crit { background: #fee2e2; color: var(--red); }
+  .pill { display: inline-block; padding: 2px 9px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+  .pill.open { background: #e0f2fe; color: #0369a1; }
+  .pill.arrive { background: #dcfce7; color: #15803d; }
+
+  ul.clean { margin: 6px 0 0 20px; padding: 0; }
+  ul.clean li { margin: 6px 0; }
+  .muted { color: var(--muted); font-size: 12.5px; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 760px) { .grid2 { grid-template-columns: 1fr; } }
+  .big { font-size: 30px; font-weight: 700; line-height: 1; }
+  .stat { text-align: center; }
+  .stat .lbl { color: var(--muted); font-size: 12px; margin-top: 4px; text-transform: uppercase; letter-spacing: .4px; }
+  footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 28px; }
+  section.note { background: #fffbeb; border: 1px solid #fde68a; border-radius: 10px; padding: 12px 16px; }
+</style>
+</head>
+<body>
+<!-- SAS-OS-NAV -->
+<a href="nav.html" style="position:fixed;top:16px;right:16px;z-index:9999;background:#0f172a;color:#fff;font:600 13px -apple-system,'Segoe UI',Roboto,sans-serif;text-decoration:none;padding:8px 16px;border-radius:20px;box-shadow:0 2px 8px rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.25)">&larr; SAS OS portal</a>
+
+<div class="wrap">
+
+  <header class="hero">
+    <h1>🇺🇸 America One (1588) — Production Status &amp; Build Pack Impact</h1>
+    <div class="sub">Project: 1588 America Street No.1 &nbsp;·&nbsp; Generated 3 Aug 2026 &nbsp;·&nbsp; Data: live from Asana + ops.db</div>
+    <div class="badges">
+      <span class="badge">15 build packs open</span>
+      <span class="badge">0 packs completed</span>
+      <span class="badge alert">⚠ All packs due before parts arrive</span>
+      <span class="badge">Lead: Andy</span>
+    </div>
+  </header>
+
+  <div class="callout">
+    <div class="t">⚠ The core problem</div>
+    All 15 build packs are currently due <strong>10 Aug 2026</strong>. Every open supplier order for 1588 delivers on or
+    after that date — so the packs are scheduled to be built <strong>before their parts arrive</strong>.
+    Build packs need their due dates pushed out to match part deliveries. Realistic production window:
+    <strong>15–27 Aug 2026</strong>.
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="stat"><div class="big" style="color:var(--amber);">15</div>
+        <div class="lbl">Build packs open</div></div>
+    </div>
+    <div class="card">
+      <div class="stat"><div class="big" style="color:var(--green);">4 days</div>
+        <div class="lbl">until earliest due date (10 Aug)</div></div>
+    </div>
+  </div>
+
+  <!-- Build Pack Table -->
+  <div class="card">
+    <h2><span class="num">1</span> Build Packs — Due Dates &amp; Impact (<a href="https://app.asana.com/0/852956628490855" style="color:var(--blue);font-size:12px">open in Asana ↗</a>)</h2>
+    <p class="muted" style="margin-top:-6px">Live due date = 10 Aug 2026 for all packs. "Advise" column = move pack due date to match the part delivery that gates it.</p>
+    <table>
+      <thead>
+        <tr><th>Build Pack</th><th>Assignee</th><th>Gating part(s)</th><th>Parts arrive</th><th>Current due</th><th>Advise →</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="pack"><a href="https://app.asana.com/0/852956628490855/1216586336317363">1588.1025.A Low Profile ScissorLift 🚨</a></td><td>Andy</td><td>Re‑machined low‑profile cams (Erodatool) + laser cut</td><td><span class="pill arrive">24 Aug</span></td><td>10 Aug</td><td><span class="chg crit">27 Aug</span></td></tr>
+        <tr><td class="pack"><a href="https://app.asana.com/0/852956628490855/1216446237404675">1588.1004.B MainStairFrame</a></td><td>Andy</td><td>Laser cut (14 parts)</td><td><span class="pill arrive">13 Aug</span></td><td>10 Aug</td><td><span class="chg move">15 Aug</span></td></tr>
+        <tr><td class="pack"><a href="https://app.asana.com/0/852956628490855/1216586378957146">1588.1006.A WheelStopPlatform</a></td><td>Andy</td><td>Bellows (DQR) + laser cut (18)</td><td><span class="pill arrive">13 Aug</span></td><td>10 Aug</td><td><span class="chg move">15 Aug</span></td></tr>
+        <tr><td class="pack"><a href="https://app.asana.com/0/852956628490855/1216586378957126">1588.1001.C ServiceHatches</a></td><td>Andy</td><td>Laser cut (9 parts)</td><td><span class="pill arrive">13 Aug</span></td><td>10 Aug</td><td><span class="chg move">15 Aug</span></td></tr>
+        <tr><td class="pack"><a href="https://app.asana.com/0/852956628490855/1216586336317368">1588.1055.A HandHeld Post</a></td><td>Andy</td><td>Laser cut (6 parts)</td><td><span class="pill arrive">13 Aug</span></td><td>10 Aug</td><td><span class="chg move">15 Aug</span></td></tr>
+        <tr><td class="pack"><a href="https://app.asana.com/0/852956628490855/1216586378957136">1588.1003.A HorizontalStairs</a></td><td>Andy</td><td>On‑order parts (4)</td><td><span class="pill arrive">11–13 Aug</span></td><td>10 Aug</td><td><span class="chg move">15 Aug</span></td></tr>
+        <tr><td class="pack"><a href="https://app.asana.com/0/852956628490855/1216586378957131">1588.1002.G MT PitTrimSmall</a></td><td>Andy</td><td>Laser cut (5 parts)</td><td><span class="pill arrive">13 Aug</span></td><td>10 Aug</td><td><span class="chg move">15 Aug</span></td></tr>
+        <tr><td class="pack"><a href="https://app.asana.com/0/852956628490855/1216451232823973">1588.1004.S BellowScissorFrame</a></td><td>Andy</td><td>Laser cut (4 parts)</td><td><span class="pill arrive">13 Aug</span></td><td>10 Aug</td><td><span class="chg move">15 Aug</span></td></tr>
+        <tr><td class="pack"><a href="https://app.asana.com/0/852956628490855/1216586378957151">1588.1008.D1 MachineRoomCabinet</a></td><td>Andy</td><td>Laser cut (2 parts)</td><td><span class="pill arrive">13 Aug</span></td><td>10 Aug</td><td><span class="chg move">15 Aug</span></td></tr>
+        <tr><td class="pack"><a href="https://app.asana.com/0/852956628490855/1216586336317358">1588.1016.BS.1</a></td><td>Andy</td><td>On‑order part</td><td><span class="pill arrive">13 Aug</span></td><td>10 Aug</td><td><span class="chg move">15 Aug</span></td></tr>
+        <tr><td class="pack"><a href="https://app.asana.com/0/852956628490855/1216586378957156">1588.1008.Q1 DoubleLiftingJig</a></td><td>Andy</td><td>Tooling — in‑house</td><td><span class="pill ok">In‑house</span></td><td>10 Aug</td><td><span class="chg hold">Hold 10 Aug</span></td></tr>
+        <tr><td class="pack"><a href="https://app.asana.com/0/852956628490855/1216586336317353">1588.1008.Q1 DoubleLiftingJig_2</a></td><td>Andy</td><td>Tooling — in‑house</td><td><span class="pill ok">In‑house</span></td><td>10 Aug</td><td><span class="chg hold">Hold 10 Aug</span></td></tr>
+      </tbody>
+    </table>
+    <p class="muted" style="margin-top:10px">Note: 1588.1004.B MainStairFrame_MOD1 (Danny) and a legacy Low Profile rev1 task sit alongside the main packs.</p>
+  </div>
+
+  <!-- Supplier Orders Table -->
+  <div class="card">
+    <h2><span class="num">2</span> Open 1588 Supplier Orders — Delivery Dates</h2>
+    <p class="muted" style="margin-top:-6px">All open purchase orders for America One. Delivery dates from the order tasks (expected arrival, not confirmed).</p>
+    <table>
+      <thead>
+        <tr><th>Order</th><th>Supplier</th><th>Covers</th><th>Status</th><th>Delivery</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="https://app.asana.com/0/854650811917168" style="color:var(--blue)">21194</a></td><td>Lasershape (Laser Cut)</td><td>Laser‑cut parts across all build packs</td><td><span class="pill open">Awaiting Delivery</span></td><td><strong>13 Aug</strong> <span class="pill arrive">revised £3,963.58</span></td></tr>
+        <tr><td><a href="https://app.asana.com/0/854650811917168" style="color:var(--blue)">21175</a></td><td>DQR Bellows</td><td>Bellows parts (11‑wk lead)</td><td><span class="pill open">Awaiting Delivery</span></td><td><strong>12 Aug</strong></td></tr>
+        <tr><td><a href="https://app.asana.com/0/854650811917168" style="color:var(--blue)">21225</a></td><td>Cement Board</td><td>Cement board — needs 3× 18mm + 2× 6mm sheets</td><td><span class="pill open">Awaiting Delivery</span></td><td><strong>12 Aug</strong></td></tr>
+        <tr><td><a href="https://app.asana.com/0/854650811917168" style="color:var(--blue)">21206</a></td><td>Alexander Pollock Engraving</td><td>Engraved plates</td><td><span class="pill open">Awaiting Delivery</span></td><td><strong>11 Aug</strong></td></tr>
+        <tr><td><a href="https://app.asana.com/0/854650811917168" style="color:var(--blue)">21223</a></td><td>Erodatool (re‑machine)</td><td>Low‑profile cams (±12 off)</td><td><span class="pill open">On Order</span></td><td><strong>24 Aug</strong> ⚠️</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Parts Impact -->
+  <div class="card">
+    <h2><span class="num">3</span> Parts Impact Summary (live from parts_control)</h2>
+    <p class="muted" style="margin-top:-6px">Where 1588 parts sit by supplier order status — the stock that gates each pack.</p>
+    <table>
+      <thead>
+        <tr><th>Build Pack</th><th>Laser‑cut awaiting (21194)</th><th>On‑order (not yet in stock)</th><th>Blocker</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1588.1025.A Low Profile ScissorLift</td><td>42 (linked) + 248 (unlinked)*</td><td>6</td><td>Erodatool cams due 24 Aug + phantom GIDs</td></tr>
+        <tr><td>1588.1004.B MainStairFrame</td><td>14</td><td>2</td><td>Laser cut</td></tr>
+        <tr><td>1588.1006.A WheelStopPlatform</td><td>18</td><td>2</td><td>Bellows + laser cut</td></tr>
+        <tr><td>1588.1001.C ServiceHatches</td><td>9</td><td>2</td><td>Laser cut</td></tr>
+        <tr><td>1588.1003.A HorizontalStairs</td><td>0</td><td>4</td><td>On‑order parts</td></tr>
+        <tr><td>1588.1055.A HandHeld Post</td><td>6</td><td>0</td><td>Laser cut</td></tr>
+        <tr><td>1588.1002.G / 1004.S / 1008.D1 / 1016.BS</td><td>5 / 4 / 2 / 0</td><td>1 each</td><td>Laser cut</td></tr>
+        <tr><td>1588.1008.Q1 DoubleLiftingJig (+_2)</td><td>—</td><td>—</td><td>Tooling — in‑house</td></tr>
+      </tbody>
+    </table>
+    <p class="muted" style="margin-top:10px">*248 Low Profile laser‑cut parts have no pack link due to the known phantom‑GID issue (day 13) — the true mapping is understated until the GIDs are corrected.</p>
+  </div>
+
+  <!-- Blockers -->
+  <div class="card">
+    <h2><span class="num">4</span> Blockers to Clear</h2>
+    <ul class="clean">
+      <li><strong>Erodatool low‑profile cams</strong> — re‑machined, not due until <strong>24 Aug</strong>. This is the critical path for the Low Profile pack.</li>
+      <li><strong>Phantom GIDs (1588, day 13)</strong> — 44 parts can't receive assembly pack references until their Asana tasks exist. Affects Low Profile pack mapping.</li>
+      <li><strong>Email fetcher offline (day 10)</strong> — no procurement emails being ingested, so delivery confirmations/arrivals aren't auto‑tracked. Delivery dates here are the order-task expectations.</li>
+      <li><strong>Cement board stock</strong> — no 18mm, little 6mm; order needed (3× 18mm, 2× 6mm sheets).</li>
+    </ul>
+  </div>
+
+  <section class="note">
+    <strong>📌 Note:</strong> Delivery dates on order tasks are <em>expected arrival</em>, not confirmed. This static report is the first iteration —
+    the next step is to hold this data live for every project, with buttons and Asana task click‑throughs to source data.
+  </section>
+
+  <footer>Generated 3 Aug 2026 · America One (1588) Production Status &amp; Build Pack Impact · Data: Asana (Build Schedule, Order Numbers, Parts Control) + ops.db</footer>
+
+</div>
+</body>
+</html>

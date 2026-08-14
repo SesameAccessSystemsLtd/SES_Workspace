@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  23/07/2026  15:39
+============================================================
+With:         +441483975159 01483 975159
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo requesting to amend a vehicle booking, specifically canceling an existing reservation and creating a new one with different vehicle details, and confirming appointment details for vehicle servicing on August 3rd and 4th. The representative confirmed the changes and scheduled the MOT and drop-off arrangements.
+
+--- RECAP --------------------------------------------------
+Giles Hugo initially booked a van with registration Bravo X-ray 18 Oscar Golf Lima but requested to change the vehicle to a different van with registration Lemur Foxtrot 69 Oscar Lima Victor, requiring cancellation of the original booking and a new reservation.The representative explained that the existing booking could not be amended directly and would need to be canceled and a new booking made, which would be scheduled for August 4th, with confirmation that the slot would be available.Giles Hugo provided the new vehicle registration details, confirmed the address as Sesame Access Unit, 1 Cumberland Works, Kilo Tango 1 147 Lima Foxtrot, and the contact number as the 1 engineers, with email address purchasing@sesameaccess.com.The call confirmed that the vehicle's MOT was due, but the service was likely covered under the existing agreement, and the vehicle had 66,000 miles, with no lease company involved.Giles Hugo requested to schedule the MOT appointment on August 3rd, with drop-off on August 3rd and pickup on August 4th, and was informed that the drop-off could be arranged for the day before, on August 3rd, at 8:00 am, which he agreed to.The representative confirmed the appointment details and assured that the booking for the MOT and vehicle drop-off on August 4th was scheduled accordingly.
+
+--- TASKS --------------------------------------------------
+The representative will cancel the existing booking for Bravo X-ray 18 Oscar Golf Lima and create a new booking for Lemur Foxtrot 69 Oscar Lima Victor on August 4th.The representative will send an email confirming the new booking details, including drop-off on August 3rd at 8:00 am and the MOT appointment.
+
+(Full transcript: RC web portal only — no RingSense API)

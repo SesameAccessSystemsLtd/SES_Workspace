@@ -1,0 +1,101 @@
+2026-03-27 16:32:10,300 [INFO] ============================================================
+2026-03-27 16:32:10,300 [INFO] SesameAccess × Contracts Finder scrape starting
+2026-03-27 16:32:10,300 [INFO] Since: 2026-02-25 | Respect seen: True
+2026-03-27 16:32:10,300 [INFO] ============================================================
+2026-03-27 16:32:10,300 [INFO] 
+Searching: 'disability lift'
+2026-03-27 16:32:32,635 [INFO]   Running unique total: 1000
+2026-03-27 16:32:34,136 [INFO] 
+Searching: 'platform lift accessibility'
+2026-03-27 16:32:57,250 [INFO]   Running unique total: 1000
+2026-03-27 16:32:58,759 [INFO] 
+Searching: 'disabled facilities grant'
+2026-03-27 16:33:21,787 [INFO]   Running unique total: 1000
+2026-03-27 16:33:23,288 [INFO] 
+Searching: 'DFG disabled access'
+2026-03-27 16:33:46,050 [INFO]   Running unique total: 1000
+2026-03-27 16:33:47,550 [INFO] 
+Searching: 'step free access works'
+2026-03-27 16:34:10,466 [INFO]   Running unique total: 1000
+2026-03-27 16:34:11,966 [INFO] 
+Searching: 'wheelchair access lift'
+2026-03-27 16:34:34,852 [INFO]   Running unique total: 1000
+2026-03-27 16:34:36,353 [INFO] 
+Searching: 'accessibility platform lift'
+2026-03-27 16:37:51,784 [INFO] ============================================================
+2026-03-27 16:37:51,784 [INFO] SesameAccess × Contracts Finder scrape starting
+2026-03-27 16:37:51,784 [INFO] Since: 2026-02-25 | Respect seen: True
+2026-03-27 16:37:51,784 [INFO] ============================================================
+2026-03-27 16:37:51,784 [INFO] 
+Searching: 'disability lift'
+2026-03-27 16:38:14,291 [INFO]   Running unique total: 1000
+2026-03-27 16:38:15,792 [INFO] 
+Searching: 'platform lift accessibility'
+2026-03-27 16:38:38,229 [INFO]   Running unique total: 1000
+2026-03-27 16:38:39,730 [INFO] 
+Searching: 'disabled facilities grant'
+2026-03-27 16:39:02,729 [INFO]   Running unique total: 1000
+2026-03-27 16:39:04,230 [INFO] 
+Searching: 'DFG disabled access'
+2026-03-27 16:39:27,447 [INFO]   Running unique total: 1000
+2026-03-27 16:39:28,947 [INFO] 
+Searching: 'step free access works'
+2026-03-27 16:39:52,172 [INFO]   Running unique total: 1000
+2026-03-27 16:39:53,673 [INFO] 
+Searching: 'wheelchair access lift'
+2026-03-27 16:40:16,640 [INFO]   Running unique total: 1001
+2026-03-27 16:40:18,141 [INFO] 
+Searching: 'accessibility platform lift'
+2026-03-27 16:40:41,233 [INFO]   Running unique total: 1002
+2026-03-27 16:40:42,734 [INFO] 
+Total unique notices from API: 1002
+2026-03-27 16:40:42,750 [INFO]   DUP EMAIL: iain.peverall@durham.gov.uk — duplicate across contracts, keeping first
+2026-03-27 16:40:42,750 [INFO]   DUP EMAIL: iain.peverall@durham.gov.uk — duplicate across contracts, keeping first
+2026-03-27 16:40:42,750 [INFO]   DUP EMAIL: chloe.sharpe@reading.gov.uk — duplicate across contracts, keeping first
+2026-03-27 16:40:42,751 [INFO] 
+============================================================
+2026-03-27 16:40:42,751 [INFO] SCRAPE SUMMARY
+2026-03-27 16:40:42,751 [INFO]   Total unique from API : 1002
+2026-03-27 16:40:42,751 [INFO]   Already seen (skip)   : 277
+2026-03-27 16:40:42,751 [INFO]   Keyword filtered out  : 497
+2026-03-27 16:40:42,751 [INFO]   Buyer filtered out    : 218
+2026-03-27 16:40:42,751 [INFO]   Duplicate email (skip): 3
+2026-03-27 16:40:42,752 [INFO] ============================================================
+2026-03-27 16:40:42,763 [INFO] Checking HubSpot custom contact properties…
+2026-03-27 16:40:43,400 [INFO] 
+Processing: james.fletcher@walsall.gov.uk (Walsall Council)
+2026-03-27 16:40:44,572 [INFO]   Company created: Walsall Council (id=53437529407)
+2026-03-27 16:40:46,057 [ERROR]   Contact create/update error for james.fletcher@walsall.gov.uk: 400 Client Error: Bad Request for url: https://api.hubapi.com/crm/v3/objects/contacts
+2026-03-27 16:40:46,058 [INFO] 
+Processing: colin.moss@huntingdonshire.gov.uk (Huntingdonshire District Council)
+2026-03-27 16:40:47,262 [INFO]   Company created: Huntingdonshire District Council (id=53432419687)
+2026-03-27 16:40:48,820 [ERROR]   Contact create/update error for colin.moss@huntingdonshire.gov.uk: 400 Client Error: Bad Request for url: https://api.hubapi.com/crm/v3/objects/contacts
+2026-03-27 16:40:48,821 [INFO] 
+Processing: iain.peverall@durham.gov.uk (Durham County Council)
+2026-03-27 16:40:49,408 [INFO]   Company found: Durham County Council (id=53436754708)
+2026-03-27 16:40:51,059 [ERROR]   Contact create/update error for iain.peverall@durham.gov.uk: 400 Client Error: Bad Request for url: https://api.hubapi.com/crm/v3/objects/contacts
+2026-03-27 16:40:51,061 [INFO] 
+Processing: derjamieson@aberdeencity.gov.uk (Aberdeen City Council)
+2026-03-27 16:40:51,720 [INFO]   Company found: Aberdeen City Council (id=50998998359)
+2026-03-27 16:40:53,166 [ERROR]   Contact create/update error for derjamieson@aberdeencity.gov.uk: 400 Client Error: Bad Request for url: https://api.hubapi.com/crm/v3/objects/contacts
+2026-03-27 16:40:53,167 [INFO] 
+Processing: natalie.vanden@cheshirewestandchester.gov.uk (Cheshire West & Chester Council)
+2026-03-27 16:40:54,451 [INFO]   Company created: Cheshire West & Chester Council (id=53421952061)
+2026-03-27 16:40:55,917 [ERROR]   Contact create/update error for natalie.vanden@cheshirewestandchester.gov.uk: 400 Client Error: Bad Request for url: https://api.hubapi.com/crm/v3/objects/contacts
+2026-03-27 16:40:55,918 [INFO] 
+Processing: chloe.sharpe@reading.gov.uk (Reading Borough Council)
+2026-03-27 16:40:56,467 [INFO]   Company found: Reading Borough Council (id=53431086712)
+2026-03-27 16:40:58,026 [ERROR]   Contact create/update error for chloe.sharpe@reading.gov.uk: 400 Client Error: Bad Request for url: https://api.hubapi.com/crm/v3/objects/contacts
+2026-03-27 16:40:58,027 [INFO] 
+Processing: contracts@milton-keynes.gov.uk (Milton Keynes Council)
+2026-03-27 16:40:59,258 [INFO]   Company created: Milton Keynes Council (id=53437219692)
+2026-03-27 16:41:00,918 [ERROR]   Contact create/update error for contracts@milton-keynes.gov.uk: 400 Client Error: Bad Request for url: https://api.hubapi.com/crm/v3/objects/contacts
+2026-03-27 16:41:00,923 [INFO] 
+==================================================
+2026-03-27 16:41:00,923 [INFO] HUBSPOT PUSH SUMMARY
+2026-03-27 16:41:00,923 [INFO]   pushed: 0
+2026-03-27 16:41:00,923 [INFO]   skipped_cooldown: 0
+2026-03-27 16:41:00,923 [INFO]   skipped_no_email: 0
+2026-03-27 16:41:00,923 [INFO]   errors: 7
+2026-03-27 16:41:00,924 [INFO]   enrolled_in_sequence: 0
+2026-03-27 16:41:00,924 [INFO] ==================================================

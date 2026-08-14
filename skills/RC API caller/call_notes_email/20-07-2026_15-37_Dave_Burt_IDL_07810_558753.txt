@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  20/07/2026  15:37
+============================================================
+With:         Dave Burt IDL 07810 558753
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+Giles Hugo contacted Dave Burt to discuss achieving a gray matte finish on a 1.2 mm aluminum sheet, aiming for a look similar to anodizing. They plan to exchange samples to determine the best approach.
+
+--- RECAP --------------------------------------------------
+Giles Hugo inquired about obtaining a gray, metallic matte finish on a 1.2 mm aluminum sheet, as an alternative to anodizing, which has previously caused issues.Dave Burt confirmed they can provide a gray matte color but needs a sample or reference to match the desired anodized appearance.Giles Hugo agreed to send a sample of a similar finish along with the panel for evaluation.The next step involves Dave Burt assessing the sample to determine if they can replicate the anodized look with a matte gray finish.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send a sample of a similar anodized finish along with the panel to Dave Burt for evaluation.
+
+(Full transcript: RC web portal only — no RingSense API)

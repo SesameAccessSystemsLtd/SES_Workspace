@@ -1,0 +1,19 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  09/07/2026  12:03
+============================================================
+With:         Karol Porwol 303
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved discussions about upgrading a computer from Windows Home to Pro, clarifications on aluminum and stainless steel panel matching, and details about key fob and receiver quantities for a project. The participants also touched on establishing a single source of truth for data updates.
+
+--- RECAP --------------------------------------------------
+Giles Hugo and Karol Porwol discussed the computer setup, confirming that the current Windows 11 Home edition cannot be upgraded to Pro without a fresh installation, which they plan to do by side-loading the Pro version via USB after purchasing it separately.They clarified that the aluminum panels are intended to match stainless steel, and that the current samples do not match, so they plan to send a water test sample to confirm the correct material.There was confusion over the number of key fobs and receivers needed for the Brooks theater project, with the understanding that 10 key fobs per lift are required, and that each receiver can handle up to 8 key fobs, necessitating 2 receivers per lift to accommodate 10 key fobs.Participants emphasized the importance of establishing a single source of truth for data updates to avoid conflicting information across
+
+--- TASKS --------------------------------------------------
+and communications.
+Tasks
+Giles Hugo will verify with CTM the process and cost of purchasing and installing Windows 11 Pro via USB and proceed with the upgrade.Karol Porwol will send a water test sample of the aluminum panel to confirm whether it matches stainless steel, as per client requirements.Giles Hugo will review the key fob and receiver counts, confirm the total quantities needed, and ensure the correct setup for the Brooks theater project.Both participants will work towards establishing a single source of truth for data management to prevent conflicting information in future communications.
+
+(Full transcript: RC web portal only — no RingSense API)

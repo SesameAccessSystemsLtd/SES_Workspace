@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  22/07/2026  11:29
+============================================================
+With:         Andy Easton 307
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo confirming details about machined lifting pins and discussing in-house manufacturing options, as well as coordinating procurement of timber and screws for a decking project. The overall outcome was the decision to cancel the order for the pins and proceed with in-house production, and to purchase timber and screws as needed.
+
+--- RECAP --------------------------------------------------
+Giles Hugo confirmed that the machining lifting PID pins, specifically the bar with an M10 hole and low profile lift, will be produced in-house instead of ordering from the supplier, removing the need to order threaded pins at 20 pounds each, totaling approximately 600-650 pounds for 32 units.Andy Easton discussed the possibility of manufacturing the pins in-house by cutting, facing, drilling, and tapping, estimating they could produce 30 units per day, which would be more cost-effective than purchasing from the supplier.Giles Hugo instructed Andy Easton to remove the pin order from the procurement list.Andy Easton also mentioned purchasing additional timber and screws for a decking project, suggesting they can expense the materials or have Andy collect them directly from Champion, with the understanding that the orders are delayed and require administrative updates.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will update the procurement list to remove the order for the threaded pins.Andy Easton will purchase the timber and screws for the decking project, either by expensing or collecting directly from Champion.
+
+(Full transcript: RC web portal only — no RingSense API)

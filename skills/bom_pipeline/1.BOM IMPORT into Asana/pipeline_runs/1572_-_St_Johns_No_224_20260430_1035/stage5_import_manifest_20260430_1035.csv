@@ -1,0 +1,47 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date
+ALL BOMS - 1572 - St Johns No.224,1572 - St Johns No.224,,,,,,
+PICKING BOM,0,ALL BOMS - 1572 - St Johns No.224,,,,,
+Surface Finish BOM - 1572 - St Johns No.224,,ALL BOMS - 1572 - St Johns No.224,,Surface Finish BOM,,,
+Anodising - 1572 - St Johns No.224,,Surface Finish BOM - 1572 - St Johns No.224,,Anodising,,,
+1 off 1572. 1002.G.013.01 - Pit Trim Side Panel Anodising,"1572.1002.G.013.01
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 3.634 kg
+Volume: 1346075.590 mm^3
+Project Task: ",Anodising - 1572 - St Johns No.224,1,Anodising,,,
+1 off 1572. 1002.G.017.01 - Pit Trim Side Panel Anodising,"1572.1002.G.017.01
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 3.714 kg
+Volume: 1375655.303 mm^3
+Project Task: ",Anodising - 1572 - St Johns No.224,1,Anodising,,,
+Laser Cut BOM - 1572 - St Johns No.224,,ALL BOMS - 1572 - St Johns No.224,,Laser Cut,,,
+Laser Cut - 1572 - St Johns No.224,,Laser Cut BOM - 1572 - St Johns No.224,,Laser Cut,,,
+1 off 1572. 1002.G.013.01 - Pit Trim Side Panel Laser Cut,"1572.1002.G.013.01
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 3.634 kg
+Volume: 1346075.590 mm^3
+Project Task: ",Laser Cut - 1572 - St Johns No.224,1,Laser Cut,,,
+1 off 1572. 1002.G.017.01 - Pit Trim Side Panel Laser Cut,"1572.1002.G.017.01
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 3.714 kg
+Volume: 1375655.303 mm^3
+Project Task: ",Laser Cut - 1572 - St Johns No.224,1,Laser Cut,,,

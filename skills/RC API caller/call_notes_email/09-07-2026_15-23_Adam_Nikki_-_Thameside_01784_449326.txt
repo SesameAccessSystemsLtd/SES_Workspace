@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  09/07/2026  15:23
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo discussing order discrepancies and stock updates with Adam/Nikki from Thameside, including issues with material delivery, order status, and upcoming stock replenishments.
+
+--- RECAP --------------------------------------------------
+Adam/Nikki reported that the material intended for the square bar arrived as round bar instead, and they plan to source it elsewhere at a higher cost, aiming to pick it up by Tuesday or possibly Monday.Giles Hugo identified an outstanding item from a recent order, initially thought to be missing, but discovered it was unsent due to being in the outbox; he clarified that three items seem to be missed and needs to reorder them.There was confusion regarding email metadata showing orders from July 2022, but Adam/Nikki confirmed that all orders are up to date from now onward, and Giles will send an email regarding the old order.Giles discussed stock items, specifically lift bushes and safety bushes, noting the need to add these to the stock replenishment order, which is expected to arrive tomorrow after a meeting.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send an email regarding the old order to clarify the missing items.Adam/Nikki will review the stock order and confirm the arrival of the upcoming stock replenishment, including lift bushes and safety bushes.
+
+(Full transcript: RC web portal only — no RingSense API)

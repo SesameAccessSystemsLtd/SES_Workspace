@@ -1,0 +1,82 @@
+{
+  "_description": "Growing knowledge base of council contacts, context, and engagement history. Update this manually as relationships develop. The richer this gets, the better Apollo scoring and HubSpot notes will be.",
+  "_last_updated": "2026-03-27",
+
+  "councils": {
+    "Telford & Wrekin Council": {
+      "status": "engaged",
+      "first_contact_date": "2026-03",
+      "entry_point": "clare.barnett@telford.gov.uk (found on Contracts Finder notice)",
+      "notes": "Clare Barnett led to Clare Turner (Portfolio Project Manager) via Apollo. Clare Turner provided significant council insight and introduced us to the DFG team and central procurement.",
+      "contacts": [
+        {
+          "name": "Clare Barnett",
+          "email": "clare.barnett@telford.gov.uk",
+          "role": "unknown",
+          "found_via": "contracts_finder_notice",
+          "status": "initial_contact"
+        },
+        {
+          "name": "Clare Turner",
+          "email": "clare.turner@telford.gov.uk",
+          "role": "Portfolio Project Manager",
+          "found_via": "apollo_lookup",
+          "status": "warm — introductions made",
+          "notes": "Provided council insight and intro to DFG officers and central procurement. Key relationship contact."
+        }
+      ],
+      "dfg_contacts": [
+        {
+          "name": "TBC — introduced by Clare Turner",
+          "role": "Disabled Facilities Grant Officer",
+          "email": "TBC",
+          "notes": "One of three DFG officers introduced by Clare Turner. Fill in once confirmed."
+        },
+        {
+          "name": "TBC — introduced by Clare Turner",
+          "role": "Disabled Facilities Grant Officer",
+          "email": "TBC"
+        },
+        {
+          "name": "TBC — introduced by Clare Turner",
+          "role": "Disabled Facilities Grant Officer",
+          "email": "TBC"
+        }
+      ],
+      "procurement_contacts": [
+        {
+          "name": "TBC — introduced by Clare Turner",
+          "role": "Central Procurement Team",
+          "email": "TBC",
+          "notes": "Introduced by Clare Turner. Key for any formal tender submissions."
+        }
+      ],
+      "procurement_approach": "Central procurement handles formal tenders. DFG officers can recommend preferred suppliers for grant-funded adaptations.",
+      "hubspot_company_name": "Telford & Wrekin Council"
+    }
+  },
+
+  "council_procurement_patterns": {
+    "_note": "General intelligence gathered about how councils procure accessibility works. Update as you learn more.",
+    "dfg_route": "Disabled Facilities Grants (DFG) are means-tested grants provided by local councils to help disabled people make adaptations to their homes. Occupational Therapists (OTs) assess needs; HIA (Home Improvement Agencies) and housing officers manage the grant. Suppliers often work via approved supplier lists.",
+    "approved_supplier_list": "Many councils maintain an approved supplier list for DFG works. Getting on this list is the priority — it removes the need to win individual tenders.",
+    "direct_award": "Below ~£25k many councils can direct-award without tender. Building relationships with DFG officers and OTs creates referral opportunities.",
+    "framework_contracts": "Some councils use NEPO, YPO, or Crown Commercial Service frameworks. Worth investigating if SesameAccess qualifies."
+  },
+
+  "outreach_learnings": {
+    "what_works": [
+      "Personal contact via named person from Contracts Finder notice → warm introduction",
+      "Apollo enrichment to find Portfolio/Project Managers who have broader council visibility",
+      "DFG officers as primary target — they directly specify adaptations",
+      "OTs as secondary target — they write adaptation reports that specify equipment"
+    ],
+    "what_to_avoid": [
+      "Generic procurement inboxes — low response rate",
+      "Emailing the same person multiple times within 90 days",
+      "Pitching passenger lift / shaft lift capability — not what SesameAccess does",
+      "Maintenance contract notices — not relevant to SesameAccess product offering"
+    ],
+    "product_positioning": "SesameAccess supplies disability access platform lifts, threshold lifts, and step-free access solutions — specifically for DFG-funded residential adaptations and public building accessibility works. NOT passenger elevator / shaft lift maintenance."
+  }
+}

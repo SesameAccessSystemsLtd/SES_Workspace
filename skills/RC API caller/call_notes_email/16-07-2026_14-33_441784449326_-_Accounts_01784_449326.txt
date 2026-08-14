@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  16/07/2026  14:33
+============================================================
+With:         441784449326 - Accounts 01784 449326
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a voicemail from Fatima Barros explaining that Alison is working on automating a process and that payment is expected tomorrow, apologising for the delay. Adam from Thameside acknowledged the update and ended the call politely.
+
+--- RECAP --------------------------------------------------
+Fatima Barros informed Adam from Thameside that Alison is currently working on implementing a new automated system for processing payments, which is expected to result in the payment being made tomorrow.Fatima apologised for the delay and explained that Alison's workload includes apprenticeship interviews and system development, which has contributed to the delay.Adam acknowledged the update, expressed understanding, and concluded the call politely.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  23/07/2026  13:31
+============================================================
+With:         +441372230456 01372 230456
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Fatima from Sesame Access requesting bank details to verify payment information with Claire from Worldmet. The call was brief and concluded with Claire agreeing to send the bank details via email.
+
+--- RECAP --------------------------------------------------
+Fatima from Sesame Access contacted Claire at Worldmet to verify bank account details for a payment invoice that did not go through, suspecting incorrect information.Fatima provided the email address accounts@sesameaccess.com for sending the bank details.Claire confirmed she would send the bank details to the provided email address and ended the call politely.
+
+--- TASKS --------------------------------------------------
+Claire from Worldmet will send the bank account details to accounts@sesameaccess.com as requested.
+
+(Full transcript: RC web portal only — no RingSense API)

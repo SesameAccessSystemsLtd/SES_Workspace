@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  02/07/2026  08:43
+============================================================
+With:         +447976058725 07976 058725
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo discussing logistics and cost estimation for same-day delivery of a plated item with Tom from Silver Lining, aiming to coordinate shipment before a Tuesday client visit.
+
+--- RECAP --------------------------------------------------
+Giles Hugo and Tom discussed arranging same-day delivery of a plated item via a trusted courier service, with the goal of meeting a Tuesday client visit.Giles Hugo explained that the courier is experienced and capable of handling plated items securely, and that the item will be protected and dispatched directly from their location.Tom requested Giles Hugo to obtain a cost estimate for the courier service, which he will review with the logistics team to see if adjustments can be made.They agreed to proceed with the shipment as soon as the cost is approved, aiming for either same-day or next-morning delivery to meet the Tuesday deadline.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will get a cost estimate from the courier for same-day delivery and send it to Tom for approval.
+
+(Full transcript: RC web portal only — no RingSense API)

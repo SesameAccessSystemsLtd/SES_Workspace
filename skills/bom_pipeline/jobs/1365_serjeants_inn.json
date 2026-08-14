@@ -1,0 +1,13 @@
+{
+  "job_id": "1365_serjeants_inn",
+  "project_name": "1365 - Serjeants Inn",
+  "control_task_gid": "1217161966835154",
+  "asana_url": "https://app.asana.com/1/357939803556123/task/1217161966835154",
+  "dropbox_url": "https://www.dropbox.com/scl/fo/ffexwa6zm15suet93jj9v/AGP88yonzbdrgWl8gn-VC0s?rlkey=4ifbhfibf1tb3ozcgn1cwouhu&dl=0",
+  "parts_folder": "C:\\Users\\GilesHugo\\SAS Dropbox\\3. Projects\\Sergeants Inn\\Design\\2.3. Order\\2.Entire System",
+  "target_project_gid": "848657415032331",
+  "job_project_gid": null,
+  "assignee_gid": "1142108324926610",
+  "excluded_cost_centres": ["Steel Profile"],
+  "notes": "Source control = control task 1217161966835154. Steel Profile subfolder is intentionally excluded (managed separately). target_project_gid is Build Orders (standard). job_project_gid stays null = per-job membership handled manually, matching the current pipeline; set a GID here only to auto-add the ALL BOMS root to a job project."
+}

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  20/07/2026  16:32
+============================================================
+With:         +443330443846 0333 044 3846
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call was a preliminary discussion between Giles Hugo and Sabina from Alan Anderson Manufacturing about potential PCB assembly projects and future follow-up meetings. Giles expressed interest in outsourcing PCB work and related projects, and agreed to receive further emails and schedule follow-up calls.
+
+--- RECAP --------------------------------------------------
+Sabina from Alan Anderson Manufacturing contacted Giles Hugo to inquire about potential PCB assembly, cable assembly, and PCBLOOM projects, offering their services and requesting a quote.Giles confirmed he is the appropriate contact and suggested sending an email to purchasing@sesameaccess.com, noting that previous sales emails may have been misdirected.Sabina asked about upcoming projects, and Giles mentioned interest in building standardized PLCs and lifts, with plans to specify requirements and seek market quotes in the future.Giles indicated he is off for two weeks starting next Monday, proposing a follow-up email around August 11th and a scheduled call with Craig Lowe, sales director, on August 19th at 11:00 a.m.Sabina agreed to send a reminder email on August 11th and to place a calendar invite for the call on August 19th, confirming the time and details.Giles provided his contact details, confirmed the project scope involving PLCs and lifts, and discussed current supplier arrangements, including in-house manufacturing of Arduino-based systems.
+
+--- TASKS --------------------------------------------------
+Sabina will send a follow-up email to Giles on August 11th to nudge for further discussion.Sabina will send a calendar invite to Giles for a call with Craig Lowe on August 19th at 11:00 a.m.Giles will respond to Sabina with current project plans and specifications once received.
+
+(Full transcript: RC web portal only — no RingSense API)

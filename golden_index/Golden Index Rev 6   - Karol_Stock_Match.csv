@@ -1,0 +1,683 @@
+KAN,Stock Number,Vendor (BOM),Description (BOM),Asana Task Name,Supplier URL,Asana Sesame PN,Asana Vendors Part No,Asana Vendor,MATCH
+KAN-329,NBSS.011,Laser Cut,(BackingBox) 138x138x50,10 off NBSS011 (Button Station Box) Rev3,,1016.2.001,NBSS.011,,vendor
+KAN-244,BZH8570WPTBJM20,BIL Casters,"(BottomStepWheels) 85mm OD, 70mm Width,",70mm Orange Casters - BZH8570WPTBJM20 or ( P0759 at Technica) - OBSOLETE,,1003.B.013,BZH8570WPTBJM20,,vendor
+KAN-48,NBSS.431,NBSS/Varley-Castors,(Rising Barrier Sliding Wheel) - NBSS.431,30 off NBSS431 - Varley Casters - the plastic part,,"1004.B3.108   ,   431",NBSS.431,,vendor
+KAN-48,NBSS.431,Varley-Castors,(Rising Barrier Sliding Wheel) - NBSS.431,30 off NBSS431 - Varley Casters - the plastic part,,"1009.B.005   ,   431",NBSS.431,,vendor
+KAN-43,MS5SSU,Magnetic Solutions,100mm long maglock,MS20SSU Maglocks long 24V – 10m Fly lead – extra plating          £ 89.00,,"1005.B.020   ,   1009.A.032",MS20SSU,,description
+KAN-545,F102N-10,First4magnets,10mm dia x 2mm thick x 3mm c/sink Neodymium Magnet,10mm magnet - F102N-10,,1008.A3.006,F102N-10,First4Magnets,vendor
+KAN-1073,455-065,RS Components,160x135x77 Junction Box,"RS 455-065 - Junction Box, IP65, 160 x 135 x 77mm",https://uk.rs-online.com/web/p/junction-boxes/0455065?searchId=accec890-52d8-428a-a614-3a691755a82b&gb=s,1008.U.03,455-065,RS components,vendor
+KAN-167,CTDE - 25050080 - 845,Steerforth,2 stage double acting hydraulic telescopic cylinder,NBSS767 - 1555mm stroke double acting stair rams,,"2100.Telesco   ,   767",R04061 / NBSS.767,Hydraulic supplier,description
+KAN-167,CTDE - 25050080 - 845,Steerforth,2 stage double acting hydraulic telescopic cylinder,NBSS767 - 1555mm stroke double acting stair rams,,2100.Telesco,,Hydraulic supplier,description
+KAN-167,CTDE - 25050080 - 845,Steerforth,2 stage double acting hydraulic telescopic cylinder,NBSS767 - 1555mm stroke double acting stair rams,,2100.Telesco,,Hydraulic supplier,description
+KAN-27,EVC078,ifm,20m drag chain cables  -  4 core M12,5m drag chains cables -  4 core M12  - EVC077,,1000.R2.002,EVC078,,vendor
+KAN-547,F315N-2,First4magnets,20mm dia x 4mm thick x 5.2mm c/sink Neodymium Magnet - 6.7kg Pull,20mm magnet - F315N-20,,1006.E.014,F315N-20  / MS202CSK,,name
+KAN-409,WTM_2036_015_2,IGUS,20mm ID Plain Washer,"4	off	1010.A.077.02     Plain washer	MILD Steel, 	4.000 mm",,1005.A.050,1010.A.077,,description
+KAN-409,WTM_2036_015_2,IGUS,20mm ID Plain Washer,"4	off	1010.A.077.02     Plain washer	MILD Steel, 	4.000 mm",,1005.B.086,1010.A.077,,description
+KAN-1327,302-4087,RS Components,20x5x5mm Steel Feather Key,5x5x20mm key steel 302-4087,https://uk.rs-online.com/web/p/keys/3024087,"1009.F.020   ,   1009.F.020",5x5x20mm key steel 302,,name
+KAN-1327,302-4087,RS Components,20x5x5mm Steel Feather Key,5x5x20mm key steel 302-4087,https://uk.rs-online.com/web/p/keys/3024087,"1009.F.020   ,   1009.F.020",,,name
+KAN-968,385-1586,RS Components,25mm Shock Mount M10 50mm Diameter 300daN Compression Load 6mm,Male M10 50x25mm with x25 stud 60 ShA  - Rubber AV mount  (RS-385-1586),,"S3.1008.D.06   ,   1000.B.50x25_M_M10_300daN",D5025M1030-2,RS components,name
+KAN-580,415-0682,RS Components,40x30mm Shock Mount M8 20mm studd,Male M8 40x30mm with x30 stud 60 ShA  - Rubber AV mount  RS COMPONENTS ONLY,,"1000.B.40x30   ,   1000.B.40x30_M_M8_120daN",415-0682,RS components,vendor
+KAN-580,415-0682,RS Components,40x30mm Shock Mount M8 20mm studd,Male M8 40x30mm with x30 stud 60 ShA  - Rubber AV mount  RS COMPONENTS ONLY,,"1000.B.40x30_M_M8_120daN   ,   1000.B.40x30_M_M8_120daN",415-0682,RS components,vendor
+KAN-1324,8 X 7 X 50 2RE KEY,KeysAndPins,50x8x7mm Steel Feather Key,5x5x20mm key steel 302-4087,https://www.keysandpins.com/products/feather-keys/8-x-7-x-50-2re-key-detail,"1009.F.021   ,   1009.F.020",5x5x20mm key steel 302,,description
+KAN-1324,8 X 7 X 50 2RE KEY,KeysAndPins,50x8x7mm Steel Feather Key,5x5x20mm key steel 302-4087,https://www.keysandpins.com/products/feather-keys/8-x-7-x-50-2re-key-detail,"1009.F.021   ,   1009.F.020",5x5x20mm key steel 302,,description
+KAN-1324,8 X 7 X 50 2RE KEY,KeysAndPins,50x8x7mm Steel Feather Key,5x5x25mm key steel,https://www.keysandpins.com/products/feather-keys/8-x-7-x-50-2re-key-detail,1009.F.021,,,description
+KAN-1324,8 X 7 X 50 2RE KEY,KeysAndPins,50x8x7mm Steel Feather Key,8x7x25 key steel,https://www.keysandpins.com/products/feather-keys/8-x-7-x-50-2re-key-detail,1009.F.021,,,description
+KAN-1324,8 X 7 X 50 2RE KEY,KeysAndPins,50x8x7mm Steel Feather Key,5x5x25mm key steel,https://www.keysandpins.com/products/feather-keys/8-x-7-x-50-2re-key-detail,1009.F.021,,,description
+KAN-1324,8 X 7 X 50 2RE KEY,KeysAndPins,50x8x7mm Steel Feather Key,8x7x25 key steel,https://www.keysandpins.com/products/feather-keys/8-x-7-x-50-2re-key-detail,1009.F.021,,,description
+KAN-1325,8 X 8 X 50 2RE KEY,KeysAndPins,50x8x8mm Steel Feather Key,5x5x20mm key steel 302-4087,https://www.keysandpins.com/products/feather-keys/8-x-8-x-50-2re-key-detail,"1009.F.022   ,   1009.F.020",5x5x20mm key steel 302,,description
+KAN-1325,8 X 8 X 50 2RE KEY,KeysAndPins,50x8x8mm Steel Feather Key,5x5x20mm key steel 302-4087,https://www.keysandpins.com/products/feather-keys/8-x-8-x-50-2re-key-detail,"1009.F.022   ,   1009.F.020",5x5x20mm key steel 302,,description
+KAN-1325,8 X 8 X 50 2RE KEY,KeysAndPins,50x8x8mm Steel Feather Key,5x5x25mm key steel,https://www.keysandpins.com/products/feather-keys/8-x-8-x-50-2re-key-detail,1009.F.022,,,description
+KAN-1325,8 X 8 X 50 2RE KEY,KeysAndPins,50x8x8mm Steel Feather Key,8x7x25 key steel,https://www.keysandpins.com/products/feather-keys/8-x-8-x-50-2re-key-detail,1009.F.022,,,description
+KAN-1325,8 X 8 X 50 2RE KEY,KeysAndPins,50x8x8mm Steel Feather Key,5x5x25mm key steel,https://www.keysandpins.com/products/feather-keys/8-x-8-x-50-2re-key-detail,1009.F.022,,,description
+KAN-1325,8 X 8 X 50 2RE KEY,KeysAndPins,50x8x8mm Steel Feather Key,8x7x25 key steel,https://www.keysandpins.com/products/feather-keys/8-x-8-x-50-2re-key-detail,1009.F.022,,,description
+KAN-1393,474-577,RS Components,5mm ID P clips,"RS 474-577   5mm Black, Polyamide P Clip",,1008.W.004,,RS components,name
+KAN-244,BZH8570WPTBJM20,BIL Casters,"85mm OD, 70mm Width,",70mm Orange Casters - BZH8570WPTBJM20 or ( P0759 at Technica) - OBSOLETE,,1006.J.080,BZH8570WPTBJM20,,vendor
+KAN-1345,10060610,CPC,85x85x51 Wiska Junction Box,OB11  junction box,,1008.U.01,CN20133,CPC,description
+KAN-1345,700-0802,RS Components,85x85x51 Wiska Junction Box,RS 700-0802 - wiska box 85x85x51,https://uk.rs-online.com/web/p/junction-boxes/7000802?searchId=f4dce812-75bb-4641-9814-24dc7daf85be&gb=s,"1008.U.01   ,   1008.U.01",,RS components,name
+KAN-1345,10060610,RS Components,85x85x51 Wiska Junction Box,RS 700-0802 - wiska box 85x85x51,,"1008.U.01   ,   1008.U.01",,RS components,description
+KAN-1345,10060610,Sesame Stock,85x85x51 Wiska Junction Box,"RS 455071 - Junction Box, IP65, 200 x 170 x 80mm",,1008.U.01,,,description
+KAN-1345,10060610,CPC,85x85x52 Junction Box,OB11  junction box,,1034.B.087,CN20133,CPC,description
+KAN-1345,10060610,NBSS/ Sesame,85x85x52 Junction Box,"RS 455065 - Junction Box, IP65, 160 x 135 x 77mm",,1034.B.087,,,description
+KAN-1345,10060610,NBSS/ Sesame,85x85x52 Junction Box,"RS 455071 - Junction Box, IP65, 200 x 170 x 80mm",,1034.B.087,,,description
+KAN-126,LRC5A55,IMO,Adjustable actuator LimitSwitch: LRC5A55,LRC5A55 - the long arm  limit switch (Buy ARMS ONLY),https://uk.farnell.com/imo-precision-controls,"L.1008.A1   ,   1008.A1",LRC5A55,LRC5A55,vendor
+KAN-126,LRC5A55,IMO,Adjustable actuator LimitSwitch: LRC5A55,LRC5A55 - the long arm  limit switch (Buy ARMS ONLY),https://uk.farnell.com/imo-precision-controls,"1008.A1   ,   1008.A1",LRC5A55,LRC5A55,vendor
+KAN-568,AP-C3,Bearing Supplier,AP-C3 weld plates (100x30x8 -  M10),AP-C3 weld plates (100x30x8 -  M10)  - 1025.A.004,,1024.004,AP-C3,,vendor
+KAN-324,NBSS.012,Laser Cut,BackingBox,10 off NBSS012 (Call for Assistance Box) REV 3 (legacy stock to use first),,"1016.F.005   ,   12",NBSS.012,,vendor
+KAN-63,MMFS32C,MS Hydraulic,BarrierMotor - 32CC,32cc Barrier motor - MMFS32C (raising barrier),,1005.A17,MMS32C,Hydraulic supplier,name
+KAN-61,MHM50A0L,Hydraulic Supplier,BarrierMotor - 50CC,50cc  MHM50A0L - 16mm Straight Keyed Shaft Side Ports Barrier Motor Danfoss,,"1009.B.058   ,   1009.A.022",MHM50A0L,Hydraulic supplier,vendor
+KAN-61,MHM50A0L,Hydraulic Supplier,BarrierMotor - 50CC,50cc  MHM50A0L - 16mm Straight Keyed Shaft Side Ports Barrier Motor Danfoss,,"1005.B.005   ,   1009.A.022",MHM50A0L,Hydraulic supplier,vendor
+KAN-61,MHM50A0L,Hydraulic Supplier,BarrierMotor - 50CC,50cc  MHM50A0L - 16mm Straight Keyed Shaft Side Ports Barrier Motor Danfoss,,"1009.A.022   ,   1009.A.022",MHM50A0L,Hydraulic supplier,vendor
+KAN-61,MHM50A0L,Hydraulic Supplier,BarrierMotor - 50CC,50cc  MHM50A0L - 16mm Straight Keyed Shaft Side Ports Barrier Motor Danfoss,,"1009.F.007   ,   1009.A.022",MHM50A0L,Hydraulic supplier,vendor
+KAN-168,NUTR 30,Bearing Supplier,Bearing,24 off Stock NUTR 30 62mm roller bearings for LOW PROFILE scissors - Plated,,"1024.021   ,   1024.A.021",24 off Stock NUTR 30 62mm roller bearings for LOW PROFILE scissors,Bearing Supplier,name
+KAN-168,NUTR 30,Bearing Supplier,Bearing,24 off Stock NUTR 30 62mm roller bearings for LOW PROFILE scissors - Plated,,"1024.021   ,   1010.B.025",NUTR 30-72,Bearing Supplier,name
+KAN-195,FMB081216,Bearing Supplier,Bearing 12OD 8ID 16mm Length,8x12x16 flanged Metric oil lite Bush,https://www.onlinebearings.co.uk/Flanged-Oilube-Bearing-Bush-8-20mm-Inside-Diameter.html,"1004.G.137   ,   6000.A.122  / 6000.A.072",FMB081216,Bearing Supplier,vendor
+KAN-380,MB1415DU,Bearing Supplier,Bearing Bush (14X16X13) (CUT FOR 13mm),100 off NBSS014 Glacier Bearing Bush 14X16X15  WMU141615  MB1415DU,,"6000.A.001   ,   14",NBSS.014,Bearing Supplier,name
+KAN-380,NBSS.014 (MB1415DU),NBSS/ Bearing Supplier,Bearing Bush (14x16x15),40x46x30   8 off 1011.B.043  - Plain bearing bush (20 in stock) - KAN-453,,1003.B.070,,Bearing Supplier,description
+KAN-380,NBSS.014 (MB1415DU),NBSS/ Bearing Supplier,Bearing Bush (14x16x15),"4	off	1010.A.031	Bearing Bush	Stainless Steel		MC101",,1003.B.070,15170,Bearing Supplier,description
+KAN-380,NBSS.014 (MB1415DU),NBSS/ Bearing Supplier,Bearing Bush (14x16x15),"16x20x20 Plain Bearing Bush_		PMB162020",,1003.B.070,PMB107,Bearing Supplier,description
+KAN-380,NBSS.014 (MB1415DU),NBSS/ Bearing Supplier,Bearing Bush (14x16x15),40x46x30   8 off 1011.B.043  - Plain bearing bush (20 in stock) - KAN-453,,1005.A.046,,Bearing Supplier,description
+KAN-380,NBSS.014 (MB1415DU),NBSS/ Bearing Supplier,Bearing Bush (14x16x15),"4	off	1010.A.031	Bearing Bush	Stainless Steel		MC101",,1005.A.046,15170,Bearing Supplier,description
+KAN-380,NBSS.014 (MB1415DU),NBSS/ Bearing Supplier,Bearing Bush (14x16x15),"16x20x20 Plain Bearing Bush_		PMB162020",,1005.A.046,PMB107,Bearing Supplier,description
+KAN-251,NUTR 30-72,Bearing Supplier,"Bearing: 72 +0/-0,1 x 30 +0/-0,03",NUTR 3072 - 4 off 1011.B.016  - PLATED NUTR 30 - 72mm Roller bearings,,"1011.D.016   ,   1010.B.025",NUTR 30-72,Bearing Supplier,vendor
+KAN-251,NUTR 30-72,Euro Bearings,"Bearing: 72 +0/-0,1 x 30 +0/-0,03",NUTR 3072 - 4 off 1011.B.016  - PLATED NUTR 30 - 72mm Roller bearings,,"1010.C.025   ,   1010.B.025",NUTR 30-72,Bearing Supplier,vendor
+KAN-251,NUTR 30-72,Euro Bearings,"Bearing: 72 +0/-0,1 x 30 +0/-0,03",NUTR 3072 - 4 off 1011.B.016  - PLATED NUTR 30 - 72mm Roller bearings,,"1010.EB.25   ,   1010.B.025",NUTR 30-72,Bearing Supplier,vendor
+KAN-251,NUTR 30-72,Euro-Bearings,"Bearing: 72 +0/-0,1 x 30 +0/-0,03",NUTR 3072 - 4 off 1011.B.016  - PLATED NUTR 30 - 72mm Roller bearings,,"1011.A.016   ,   1010.B.025",NUTR 30-72,Bearing Supplier,vendor
+KAN-251,NUTR 30-72,Euro-Bearings,"Bearing: 72 +0/-0,1 x 30 +0/-0,03",NUTR 3072 - 4 off 1011.B.016  - PLATED NUTR 30 - 72mm Roller bearings,,"1021.A.016   ,   1010.B.025",NUTR 30-72,Bearing Supplier,vendor
+KAN-251,NUTR 30-72,Euro-Bearings,"Bearing: 72 +0/-0,1 x 30 +0/-0,03",NUTR 3072 - 4 off 1011.B.016  - PLATED NUTR 30 - 72mm Roller bearings,,"1010.B.025   ,   1010.B.025",NUTR 30-72,Bearing Supplier,vendor
+KAN-251,NUTR 30-72,Euro-Bearings,"Bearing: 72 +0/-0,1 x 30 +0/-0,03",NUTR 3072 - 4 off 1011.B.016  - PLATED NUTR 30 - 72mm Roller bearings,,"1011.A.016   ,   1010.B.025",NUTR 30-72,Bearing Supplier,vendor
+KAN-251,NUTR 30-72,Euro Bearings,Bearing_NUTR 30-72,NUTR 3072 - 4 off 1011.B.016  - PLATED NUTR 30 - 72mm Roller bearings,,"3000.1005.00   ,   1010.B.025",NUTR 30-72,Bearing Supplier,vendor
+KAN-251,NUTR 30-72,Euro Bearings,Bearing_NUTR 30-72,NUTR 3072 - 4 off 1011.B.016  - PLATED NUTR 30 - 72mm Roller bearings,,"3000.1005.006   ,   1010.B.025",NUTR 30-72,Bearing Supplier,vendor
+KAN-418,P0051 - 85/60/65/20,Technica wheels,Bottom Step Wheel (85mm OD 60mm Width ),"2	off	1010.A.036    Bottom_WheelTrack		Stainless Steel, 304/2B	3.000 mm",https://www.technicawheels.co.uk/p0051-85-60-65-20-polyurethane-roller-with-6204-2rs-ball-bearings-shields.html#,1003.A.013,1010.A.036,,description
+KAN-418,P0051 - 85/60/65/20,Technica wheels,Bottom Step Wheel (85mm OD 60mm Width ),"2	off	1010.A.036    Bottom_WheelTrack		Stainless Steel, 304/2B	3.000 mm",https://www.technicawheels.co.uk/p0051-85-60-65-20-polyurethane-roller-with-6204-2rs-ball-bearings-shields.html#,1003.B.013,1010.A.036,,description
+KAN-418,P0032 - 85/60/65/20,Technica wheels,"Bottom Step Wheel (85mm OD, 60mm Width, )","2	off	1010.A.036    Bottom_WheelTrack		Stainless Steel, 304/2B	3.000 mm",,1003.013,1010.A.036,,description
+KAN-418,P0032 - 85/60/65/20,Technica wheels,"Bottom Step Wheel (85mm OD, 60mm Width, )","2	off	1010.A.036    Bottom_WheelTrack		Stainless Steel, 304/2B	3.000 mm",,S1.1003.A.01,1010.A.036,,description
+KAN-1015,LS1226,Bearing Supplier,Budget Raceway Washer Series LS 12x26x2.75mm,32 off LS1226 Raceway Washer Series LS 12x26x2.75mm,,1001.B.036,,,name
+KAN-1376,798-9414,RS Components,"Cable Tray, Pre-Galvanised Steel 3m x 50 mm x 12mm, length=846mm","RS 798-9414 Light Duty Tray, Pre-Galvanised Steel 3m x 50 mm x 12mm",,1008.W.005,,RS components,name
+KAN-1376,798-9414,RS Components,"Cable Tray, Pre-Galvanised Steel 3m x 50 mm x 12mm, length=846mm",RS 798-9414 cable tray 50x12x3m,,1008.W.005,,RS components,name
+KAN-978,DC915N,Amazon,Call for Assistance reciever,Honeywell Wireless Doorbell DC915S 9 Series,,1016.F.010,NBSS.041,,description
+KAN-978,DC915N,Amazon,Call for Assistance reciever,Honeywell Wireless Doorbell DC915S 9 Series,,1016.F.010,,,description
+KAN-978,DC915N,Amazon,Call for Assistance reciever,Honeywell Wireless Doorbell DC915S 9 Series,,"1016.F.010   ,   12",NBSS.012,,description
+KAN-925,CPSS-12-060,Boneham,Clevis Pin 12x60mm,12x60 Clevis pins  CPSS-12-60 ,,1000.ClevisP,,Boneham,description
+KAN-925,CPSS-12-060,Boneham,Clevis Pin 12x60mm,12x60 Clevis pins  CPSS-12-60 ,,1000.ClevisP,,,description
+KAN-925,CPSS-12-060,Boneham,Clevis Pin 12x60mm,12x60 Clevis pins  CPSS-12-60 ,,1000.ClevisP,WF63198,,description
+KAN-1396,CPSS-16-050,Boneham,Clevis Pin Stainless Steel,16x50 Clevis pins CPSS-16-050,http://www.boneham.co.uk/Products/clevis-pins/clevis-pins-metric,1000.C.ClevisPin 16x50mm,,,name
+KAN-925,CPSS-12-060,Boneham,Clevis Pin Stainless Steel,12x60 Clevis pins  CPSS-12-60 ,http://www.boneham.co.uk/Products/clevis-pins/clevis-pins-metric,"1000.C.ClevisPin 12x60mm   ,   1014.D.004",,,description
+KAN-925,CPSS-12-060,Boneham,Clevis Pin Stainless Steel,12x60 Clevis pins  CPSS-12-60 ,http://www.boneham.co.uk/Products/clevis-pins/clevis-pins-metric,1000.C.ClevisPin 12x60mm,1010.A.013.03,,description
+KAN-925,CPSS-12-060,Boneham,Clevis Pin Stainless Steel,12x60 Clevis pins  CPSS-12-60 ,http://www.boneham.co.uk/Products/clevis-pins/clevis-pins-metric,1000.C.ClevisPin 12x60mm,,,description
+KAN-982,CPSS-06-050,Boneham,Clevis pin Stainless Steel,6x50 Clevis pins  CPSS-06-050,http://www.boneham.co.uk/Products/clevis-pins/clevis-pins-metric,1000.C.ClevisPin 6x50mm,,,name
+KAN-982,CPSS-06-050,Boneham,Clevis pin Stainless Steel,6x50 Clevis pins  CPSS-06-050,http://www.boneham.co.uk/Products/clevis-pins/clevis-pins-metric,1000.C.ClevisPin 6x45mm,,,name
+KAN-269,SA3D250-G18,Conforti,Comepi reed switch for hydraulic actuator groove,30 off Magnetic Reed Switch for conforti hydraulic actuators,www.confortinet.com,"1008.V1.003   ,   1008.V1.003",SP Conforti Reed switch,,description
+KAN-269,SA3D250-G18,Conforti,Comepi reed switch for hydraulic actuator groove,30 off Magnetic Reed Switch for conforti hydraulic actuators,www.confortinet.com,1008.V1.003,MP2518A50S - FRONT,,description
+KAN-269,SA3D250-G18,Conforti,Comepi reed switch for hydraulic actuator groove,30 off Magnetic Reed Switch for conforti hydraulic actuators,www.confortinet.com,"1008.V1.003   ,   1008.A6.EP1G12Z020U",,,description
+KAN-269,SA3D250-G18,Steerforth,Comepi reed switch for hydraulic actuator groove,30 off Magnetic Reed Switch for conforti hydraulic actuators,www.confortinet.com,"1008.V1.003   ,   1008.V1.003",SP Conforti Reed switch,,description
+KAN-269,SA3D250-G18,Steerforth,Comepi reed switch for hydraulic actuator groove,30 off Magnetic Reed Switch for conforti hydraulic actuators,www.confortinet.com,"2100.F.001   ,   1008.V1.003",SP Conforti Reed switch,,description
+KAN-269,SA3D250-G18,Steerforth,Comepi reed switch for hydraulic actuator groove,30 off Magnetic Reed Switch for conforti hydraulic actuators,www.confortinet.com,1008.V1.003,MP2518A50S - FRONT,,description
+KAN-269,SA3D250-G18,Steerforth,Comepi reed switch for hydraulic actuator groove,30 off Magnetic Reed Switch for conforti hydraulic actuators,www.confortinet.com,2100.F.001,MP2518A50S - FRONT,,description
+KAN-269,SA3D250-G18,Steerforth,Comepi reed switch for hydraulic actuator groove,30 off Magnetic Reed Switch for conforti hydraulic actuators,www.confortinet.com,"1008.V1.003   ,   1008.A6.EP1G12Z020U",,,description
+KAN-269,SA3D250-G18,Steerforth,Comepi reed switch for hydraulic actuator groove,30 off Magnetic Reed Switch for conforti hydraulic actuators,www.confortinet.com,"2100.F.001   ,   1008.A6.EP1G12Z020U",,,description
+KAN-990,B4-3443-2M,Flexosprings,"Compress spring 7,62N/mm - PLATED",B4-3443-2M  - 7.62N  - plated,,Compress Spring1,,,name
+KAN-990,B4-3443-2M,Flexosprings,"Compress spring 7,62N/mm - PLATED",B4-3443-2M  - 7.62N  - plated,,Compress Spring1,,,name
+KAN-569,92906,Flexosprings,Compression Springs,92906 compression springs - 1006.A.124,,1006.A.124,,,name
+KAN-569,92906,Flexosprings,Compression Springs,92906 compression springs - 1006.A.124,,1006.A.124,,,name
+KAN-569,92906,Flexosprings,Compression Springs,92906 compression springs - 1006.A.124,,1006.B.129,,,name
+KAN-560,SKU Number: 5028420,Orbital Fasteners,"DEEP PLAIN CHANNEL HEAVY GAUGE X 3 METRE, 41MM X 41MM X 2.5MM. 316/A4 STAINLESS STEEL. UNISTRUT COMPATIBLE",40 off  NBSS775 - Stainless 41mm long spacer,,"1006.A.103   ,   775",NBSS.775,,description
+KAN-560,SKU Number: 5028420,Flexosprings,"DEEP PLAIN CHANNEL HEAVY GAUGE X 3 METRE, 41MM X 41MM X 2.5MM. 316/A4 STAINLESS STEEL. UNISTRUT COMPATIBLE",40 off  NBSS775 - Stainless 41mm long spacer,,"1006.B.103   ,   775",NBSS.775,,description
+KAN-712,DM805-AI,Motion Controls,DM805-AI - Digital Microstepping Driver,Digital Micro stepper Driver DM805-AI (supplied in the PLC),,6000.A.081,,,name
+KAN-360,ST4DRI4,Transmission Development,Double Sprocket,20 off NBSS123 Double Sprocket -  O8B-2 14T - SKU CS4SR14,,1005.A.040,NBSS.123,,description
+KAN-360,ST4DRI4,Transmission Development,Double Sprocket,20 off NBSS123 Double Sprocket -  O8B-2 14T - SKU CS4SR14,,1005.B.076,NBSS.123,,description
+KAN-360,ST4DRI4,Transmission Development,Double Sprocket,Plating Double sprockets,,1005.A.040,,,description
+KAN-360,ST4DRI4,Transmission Development,Double Sprocket,Plating Double sprockets,,1005.B.076,,,description
+KAN-1292,RS Stock No: 2096851 - PUT ME ON BOM !,RS Components,"E - Clip 6mm Shaft Diameter, 4mm Groove Diameter","E Type Circlip, 4mm Shaft ",https://www.rs-online.id/p/e-type-s-steel-circlip4-0mm-groove/2096851/,DIN 6799.6mm Shaft.5mm Groove,,,description
+KAN-1292,RS Stock No: 2096851 - PUT ME ON BOM !,RS Components,"E - Clip 6mm Shaft Diameter, 4mm Groove Diameter","E Type Circlip, 4mm Shaft ",https://www.rs-online.id/p/e-type-s-steel-circlip4-0mm-groove/2096851/,DIN 6799.6mm Shaft.5mm Groove,,,description
+KAN-1292,RS Stock No: 2096851 - PUT ME ON BOM !,RS Components,"E - Clip 6mm Shaft Diameter, 4mm Groove Diameter","E Type Circlip, 4mm Shaft ",https://www.rs-online.id/p/e-type-s-steel-circlip4-0mm-groove/2096851/,DIN 6799.6mm Shaft.5mm Groove,,,description
+KAN-1293,209-6918,RS Components,E - type circlip,"E Type Circlip, 12mm Shaft S/S - 209-6918",https://uk.rs-online.com/web/p/circlips/2096918/,E-Clip_15.5mmShaft_12mmGroove,,RS components,name
+KAN-919,330-8587,RS Components,E.Stop - Big,Big E-Stop button Harmony  - Onlift RS 330-8587 Emergency Em Stop,,"S1.1008.C.00   ,   1008.C.002",,Big E,name
+KAN-919,330-8587,RS Components,E.Stop - Big,Big E-Stop button Harmony  - Onlift RS 330-8587 Emergency Em Stop,,"1008.C.002   ,   1008.C.002",,Big E,name
+KAN-54,Z14.1.028.0 with ends 2x 114.1.12P,IGUS,Easy Chain [15mm inner] Length: XXXX,15mm ID Easy Chain 14.1.028,,1008.Y.EasyChain[15mm]6000.2,2400.07.0750,,description
+KAN-54,Z14.1.028.0 with ends 2x 114.1.12P,IGUS,Easy Chain [15mm inner] Length: XXXX,15mm ID Easy Chain 14.1.028,,1008.Y.EasyChain[15mm]6000,2400.07.0750,,description
+KAN-54,Z14.1.028.0 with ends 2x 114.1.12P,IGUS,Easy Chain [15mm inner] Length: XXXX,15mm ID Easy Chain 14.1.028,,1008.Y.EasyChain[15mm]6000.3,2400.07.0750,,description
+KAN-54,Z14.1.028.0 with ends 2x 114.1.12P,IGUS,Easy Chain [15mm inner] Length: XXXX,15mm ID Easy Chain 14.1.028,,1008.Y.EasyChain[15mm] DoubleRB,2400.07.0750,,description
+KAN-54,Z14.1.028.0 with ends 2x 114.1.12P,IGUS,Easy Chain [15mm inner] Length: XXXX,15mm ID Easy Chain 14.1.028,,"1008.Y.EasyChain[15mm]6000.2   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-54,Z14.1.028.0 with ends 2x 114.1.12P,IGUS,Easy Chain [15mm inner] Length: XXXX,15mm ID Easy Chain 14.1.028,,"1008.Y.EasyChain[15mm]6000   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-54,Z14.1.028.0 with ends 2x 114.1.12P,IGUS,Easy Chain [15mm inner] Length: XXXX,15mm ID Easy Chain 14.1.028,,"1008.Y.EasyChain[15mm]6000.3   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-54,Z14.1.028.0 with ends 2x 114.1.12P,IGUS,Easy Chain [15mm inner] Length: XXXX,15mm ID Easy Chain 14.1.028,,"1008.Y.EasyChain[15mm] DoubleRB   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-54,Z14.1.028.0 with ends 2x 114.1.12P,IGUS,Easy Chain [15mm inner] Length: XXXX,15mm ID Easy Chain 14.1.028,,1008.Y.EasyChain[15mm]6000.2,06.10.018.0,,description
+KAN-54,Z14.1.028.0 with ends 2x 114.1.12P,IGUS,Easy Chain [15mm inner] Length: XXXX,15mm ID Easy Chain 14.1.028,,1008.Y.EasyChain[15mm]6000,06.10.018.0,,description
+KAN-54,Z14.1.028.0 with ends 2x 114.1.12P,IGUS,Easy Chain [15mm inner] Length: XXXX,15mm ID Easy Chain 14.1.028,,1008.Y.EasyChain[15mm]6000.3,06.10.018.0,,description
+KAN-54,Z14.1.028.0 with ends 2x 114.1.12P,IGUS,Easy Chain [15mm inner] Length: XXXX,15mm ID Easy Chain 14.1.028,,1008.Y.EasyChain[15mm] DoubleRB,06.10.018.0,,description
+KAN-56,Z14.2.028.0 with ends 2x 114.2.12P,IGUS,Easy Chain [25mm inner] Length: XXXX,25mm ID Easy Chain 14.2.028,,1009.EasyChain[25mm],2400.07.0750,,description
+KAN-56,Z14.2.028.0 with ends 2x 114.2.12P,IGUS,Easy Chain [25mm inner] Length: XXXX,25mm ID Easy Chain 14.2.028,,1009.EasyChain[25mm].Front.Electric,2400.07.0750,,description
+KAN-56,Z14.2.028.0 with ends 2x 114.2.12P,IGUS,Easy Chain [25mm inner] Length: XXXX,25mm ID Easy Chain 14.2.028,,1009.EasyChain[25mm].Front,2400.07.0750,,description
+KAN-56,Z14.2.028.0 with ends 2x 114.2.12P,IGUS,Easy Chain [25mm inner] Length: XXXX,25mm ID Easy Chain 14.2.028,,"1009.EasyChain[25mm]   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-56,Z14.2.028.0 with ends 2x 114.2.12P,IGUS,Easy Chain [25mm inner] Length: XXXX,25mm ID Easy Chain 14.2.028,,"1009.EasyChain[25mm].Front.Electric   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-56,Z14.2.028.0 with ends 2x 114.2.12P,IGUS,Easy Chain [25mm inner] Length: XXXX,25mm ID Easy Chain 14.2.028,,"1009.EasyChain[25mm].Front   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-56,Z14.2.028.0 with ends 2x 114.2.12P,IGUS,Easy Chain [25mm inner] Length: XXXX,25mm ID Easy Chain 14.2.028,,1009.EasyChain[25mm],06.10.018.0,,description
+KAN-56,Z14.2.028.0 with ends 2x 114.2.12P,IGUS,Easy Chain [25mm inner] Length: XXXX,25mm ID Easy Chain 14.2.028,,1009.EasyChain[25mm].Front.Electric,06.10.018.0,,description
+KAN-56,Z14.2.028.0 with ends 2x 114.2.12P,IGUS,Easy Chain [25mm inner] Length: XXXX,25mm ID Easy Chain 14.2.028,,1009.EasyChain[25mm].Front,06.10.018.0,,description
+KAN-59,Z14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length:,38mm ID Easy Chain 14.3.028,,3000.1005.EasyChain[38mm],2400.07.0750,,description
+KAN-59,Z14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length:,38mm ID Easy Chain 14.3.028,,"3000.1005.EasyChain[38mm]   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-59,Z14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length:,38mm ID Easy Chain 14.3.028,,3000.1005.EasyChain[38mm],06.10.018.0,,description
+KAN-59,Z14.3.028.0,IGUS,Easy Chain [38mm inner] Length: 1159mm,75mm ID Easy Chain 2400.07.0750 - NOT HOLDING IN STOCK - Returning to IGUS,,1008.Y.Easy,2400.07.0750,,description
+KAN-59,Z14.3.028.0,IGUS,Easy Chain [38mm inner] Length: 1159mm,75mm ID Easy Chain 2400.07.0750 - NOT HOLDING IN STOCK - Returning to IGUS,,1009.EasyCha,2400.07.0750,,description
+KAN-59,Z14.3.028.0,IGUS,Easy Chain [38mm inner] Length: 1159mm,75mm ID easy chain E300.075.100.0 - used on rising barrier platforms,,"1008.Y.Easy   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-59,Z14.3.028.0,IGUS,Easy Chain [38mm inner] Length: 1159mm,75mm ID easy chain E300.075.100.0 - used on rising barrier platforms,,"1009.EasyCha   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-59,Z14.3.028.0,IGUS,Easy Chain [38mm inner] Length: 1159mm,10mm ID Easy chain 06.10.018.0,,1008.Y.Easy,06.10.018.0,,description
+KAN-59,Z14.3.028.0,IGUS,Easy Chain [38mm inner] Length: 1159mm,10mm ID Easy chain 06.10.018.0,,1009.EasyCha,06.10.018.0,,description
+KAN-59,Z14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length: 1260,38mm ID Easy Chain 14.3.028,,1008.Y.EasyChain[38mm],2400.07.0750,,description
+KAN-59,Z14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length: 1260,38mm ID Easy Chain 14.3.028,,"1008.Y.EasyChain[38mm]   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-59,Z14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length: 1260,38mm ID Easy Chain 14.3.028,,1008.Y.EasyChain[38mm],06.10.018.0,,description
+KAN-59,Z14.3.028.0,IGUS,"Easy Chain [38mm inner] Length: 701,5mm",75mm ID Easy Chain 2400.07.0750 - NOT HOLDING IN STOCK - Returning to IGUS,,S1.1003.A.Ea,2400.07.0750,,description
+KAN-59,Z14.3.028.0,IGUS,"Easy Chain [38mm inner] Length: 701,5mm",75mm ID easy chain E300.075.100.0 - used on rising barrier platforms,,"S1.1003.A.Ea   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-59,Z14.3.028.0,IGUS,"Easy Chain [38mm inner] Length: 701,5mm",10mm ID Easy chain 06.10.018.0,,S1.1003.A.Ea,06.10.018.0,,description
+KAN-59,Z14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length: 915mm,38mm ID Easy Chain 14.3.028,,1008.Y.EasyChain[38mm] Stairs_B,2400.07.0750,,description
+KAN-59,Z14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length: 915mm,38mm ID Easy Chain 14.3.028,,"1008.Y.EasyChain[38mm] Stairs_B   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-59,Z14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length: 915mm,38mm ID Easy Chain 14.3.028,,1008.Y.EasyChain[38mm] Stairs_B,06.10.018.0,,description
+KAN-59,Z14.3.028.0,IGUS,Easy Chain [38mm inner] Length: 915mm,75mm ID Easy Chain 2400.07.0750 - NOT HOLDING IN STOCK - Returning to IGUS,,1003.B.107,2400.07.0750,,description
+KAN-59,Z14.3.028.0,IGUS,Easy Chain [38mm inner] Length: 915mm,75mm ID Easy Chain 2400.07.0750 - NOT HOLDING IN STOCK - Returning to IGUS,,1003.107,2400.07.0750,,description
+KAN-59,Z14.3.028.0,IGUS,Easy Chain [38mm inner] Length: 915mm,75mm ID easy chain E300.075.100.0 - used on rising barrier platforms,,"1003.B.107   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-59,Z14.3.028.0,IGUS,Easy Chain [38mm inner] Length: 915mm,75mm ID easy chain E300.075.100.0 - used on rising barrier platforms,,"1003.107   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-59,Z14.3.028.0,IGUS,Easy Chain [38mm inner] Length: 915mm,10mm ID Easy chain 06.10.018.0,,1003.B.107,06.10.018.0,,description
+KAN-59,Z14.3.028.0,IGUS,Easy Chain [38mm inner] Length: 915mm,10mm ID Easy chain 06.10.018.0,,1003.107,06.10.018.0,,description
+KAN-59,14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length: mm,38mm ID Easy Chain 14.3.028,,1008.Y.EasyChain[38mm] SingleRB,2400.07.0750,,description
+KAN-59,14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length: mm,38mm ID Easy Chain 14.3.028,,"1008.Y.EasyChain[38mm] SingleRB   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-59,14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length: mm,38mm ID Easy Chain 14.3.028,,1008.Y.EasyChain[38mm] SingleRB,06.10.018.0,,description
+KAN-59,Z14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length: mm,38mm ID Easy Chain 14.3.028,,1009.EasyChain[38mm].Front,2400.07.0750,,description
+KAN-59,Z14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length: mm,38mm ID Easy Chain 14.3.028,,1009.EasyChain[38mm].SingleBarrier,2400.07.0750,,description
+KAN-59,Z14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length: mm,38mm ID Easy Chain 14.3.028,,"1009.EasyChain[38mm].Front   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-59,Z14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length: mm,38mm ID Easy Chain 14.3.028,,"1009.EasyChain[38mm].SingleBarrier   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-59,Z14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length: mm,38mm ID Easy Chain 14.3.028,,1009.EasyChain[38mm].Front,06.10.018.0,,description
+KAN-59,Z14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length: mm,38mm ID Easy Chain 14.3.028,,1009.EasyChain[38mm].SingleBarrier,06.10.018.0,,description
+KAN-59,Z14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length: XXXX,38mm ID Easy Chain 14.3.028,,1008.Y.EasyChain[38mm] Stairs_A,2400.07.0750,,description
+KAN-59,Z14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length: XXXX,38mm ID Easy Chain 14.3.028,,"1008.Y.EasyChain[38mm] Stairs_A   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-59,Z14.3.028.0 with ends 2x 114.3.12P,IGUS,Easy Chain [38mm inner] Length: XXXX,38mm ID Easy Chain 14.3.028,,1008.Y.EasyChain[38mm] Stairs_A,06.10.018.0,,description
+KAN-1093,E300.075.100.0 with ends 2x E3075.34PZ,IGUS,Easy chain [75mm] Length: 2211mm,75mm ID Easy Chain 2400.07.0750 - NOT HOLDING IN STOCK - Returning to IGUS,,1008.Y.A2.Ea,2400.07.0750,,description
+KAN-1093,E300.075.100.0 with ends 2x E3075.34PZ,IGUS,Easy chain [75mm] Length: 2211mm,75mm ID easy chain E300.075.100.0 - used on rising barrier platforms,,"1008.Y.A2.Ea   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-1093,E300.075.100.0 with ends 2x E3075.34PZ,IGUS,Easy chain [75mm] Length: 2211mm,10mm ID Easy chain 06.10.018.0,,1008.Y.A2.Ea,06.10.018.0,,description
+KAN-56,Z14.2.028.0,IGUS,Easy Chain [Inner width:25mm] 2 ends for fitting,25mm ID Easy Chain 14.2.028,,1008.Y.EasyChain[25mm] RisingButtonPost,2400.07.0750,,description
+KAN-56,Z14.2.028.0,IGUS,Easy Chain [Inner width:25mm] 2 ends for fitting,25mm ID Easy Chain 14.2.028,,"1008.Y.EasyChain[25mm] RisingButtonPost   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-56,Z14.2.028.0,IGUS,Easy Chain [Inner width:25mm] 2 ends for fitting,25mm ID Easy Chain 14.2.028,,1008.Y.EasyChain[25mm] RisingButtonPost,06.10.018.0,,description
+KAN-56,Z14.2.028.0,IGUS,Easy Chain [Inner width:25mm] 793mm length,25mm ID Easy Chain 14.2.028,,1008.Y.EasyC,2400.07.0750,,description
+KAN-56,Z14.2.028.0,IGUS,Easy Chain [Inner width:25mm] 793mm length,25mm ID Easy Chain 14.2.028,,"1008.Y.EasyC   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-56,Z14.2.028.0,IGUS,Easy Chain [Inner width:25mm] 793mm length,25mm ID Easy Chain 14.2.028,,1008.Y.EasyC,06.10.018.0,,description
+KAN-56,Z14.2.028.0,IGUS,Easy Chain [Inner width:25mm] Length: 1281mm,25mm ID Easy Chain 14.2.028,,1022.A06,2400.07.0750,,description
+KAN-56,Z14.2.028.0,IGUS,Easy Chain [Inner width:25mm] Length: 1281mm,25mm ID Easy Chain 14.2.028,,"1022.A06   ,   1009.EasyChain[75mm]",E300.075.075,,description
+KAN-56,Z14.2.028.0,IGUS,Easy Chain [Inner width:25mm] Length: 1281mm,25mm ID Easy Chain 14.2.028,,1022.A06,06.10.018.0,,description
+KAN-41,SES4473,Related Fluid,Emergency barrier lower valve assembly,10 off SES447324 Emergency Barrier Lower = £210 each,,"1008.H3(RF S   ,   1008.H3(RF SES4473)",SES447324,,name
+KAN-330,NBSS.002,Laser Cut,Emergency Stop Angle Bracket - NBSS.002,10 off NBSS002 (Emergency Stop Angle Bracket) Rev_2,,1008.C.001,NBSS.002,Lasercut,vendor
+KAN-930,EP1G12Z020U,LongVale,EP1G12Z020U 2 m PVC cable,"1	off	Roller Limit Switch (min. 2m Cable)	1008.A6.EP1G12Z020U	EP1G12Z020U	http://www.comepi.it	LongVale			SES101",,"1055.A.009   ,   1008.A6.EP1G12Z020U",,,name
+KAN-919,330-8587,EAO,E-Stop Mushroom Head,Big E-Stop button Harmony  - Onlift RS 330-8587 Emergency Em Stop,,"1016.3.003   ,   1008.C.002",,Big E,name
+KAN-1385,RS Stock No 724-2677,RS Components,Female 4 way M8 to Unterminated Sensor Actuator Cable,RS 724-2677 Lumberg Automation Right Angle Female 4 way M8 ,https://uk.rs-online.com/web/p/sensor-actuator-cables/7242677,1008.A10.002,1419690,RS components,description
+KAN-1385,RS Stock No 724-2677,RS Components,Female 4 way M8 to Unterminated Sensor Actuator Cable,RS 724-2677 Lumberg Automation Right Angle Female 4 way M8 ,https://uk.rs-online.com/web/p/sensor-actuator-cables/7242677,1008.A10.002,PNOZx2.1 / 774306,RS components,description
+KAN-1385,RS Stock No 724-2677,RS Components,Female 4 way M8 to Unterminated Sensor Actuator Cable,RS 724-2677 Lumberg Automation Right Angle Female 4 way M8 ,https://uk.rs-online.com/web/p/sensor-actuator-cables/7242677,"1008.A10.002   ,   1008.A10.002",724-2677,RS components,description
+KAN-1385,724-2677,RS Components,Female 4 way M8 to Unterminated Sensor Actuator Cable,RS 724-2677 Lumberg Automation Right Angle Female 4 way M8,,"1005.B.135   ,   1008.A10.002",724-2677,RS components,vendor
+KAN-196,FMB162225,Bearing Supplier,FlangeBearingBush_16x22x25,16x22x25 flanged Metric Bush,,1010.EB.15,FMB162225,,vendor
+KAN-559,FMB162016,Bearing Supplier,Flanged bearing bush - 16x20x16 - to be shortened,8 off  16x20x16  1010.A.081 flanged Metric Bush (104),,"1010.B.082   ,   1011.E.028",FMB404640,,description
+KAN-559,FMB162016,Bearing Supplier,Flanged bearing bush - 16x20x16 - to be shortened,8 off  16x20x16  1010.A.081 flanged Metric Bush (104),,"1010.B.082   ,   1010.E.081",,,description
+KAN-559,FMB162016,Bearing Supplier,Flanged bearing bush - 16x20x16 - to be shortened,8 off  16x20x16  1010.A.081 flanged Metric Bush (104),,1010.B.082,,,description
+KAN-398,FMB202615,Bearing Supplier,Flanged bearing bush - 20x26x15 - to be shortened,20x26x15 flanged - 8 off 1011.B.100 - Flanged Metric Bush - FMB202615 (20 in stock) - KAN-398,,1011.D.105,FMB202615,20x26x15 flanged,vendor
+KAN-398,FMB202615,Bearing Supplier,Flanged bearing bush - 20x26x15 - to be shortened,20x26x15 flanged - 8 off 1011.B.100 - Flanged Metric Bush - FMB202615 (20 in stock) - KAN-398,,1011.A.098,FMB202615,20x26x15 flanged,vendor
+KAN-483,FMB404632,Bearing Supplier,Flanged bearing bush - 40x46x32 - to be shortened,40x46x32 Flanged - 2 off 1011.B.104 - Flanged Metric Bush - FMB404632 - KAN-483,,1011.D.100,FMB404632,,vendor
+KAN-456,FMB404640,Bearing Supplier,Flanged bearing bush - 40x46x40,40x46x40 Flanged 4 off 1011.B.028 - Flanged bearing bush - AL404640 (40 in stock) - KAN-456,,"1011.D.028   ,   1011.E.028",FMB404640,,vendor
+KAN-456,FMB404640,Bearing Supplier,Flanged bearing bush - 40x46x40,40x46x40 Flanged 4 off 1011.B.028 - Flanged bearing bush - AL404640 (40 in stock) - KAN-456,,"1011.A.028   ,   1011.E.028",FMB404640,,vendor
+KAN-456,FMB404640,Bearing Supplier,Flanged bearing bush - 40x46x40,40x46x40 Flanged 4 off 1011.B.028 - Flanged bearing bush - AL404640 (40 in stock) - KAN-456,,"1021.A.028   ,   1011.E.028",FMB404640,,vendor
+KAN-456,FMB404640,Bearing Supplier,Flanged bearing bush - 40x46x40,40x46x40 Flanged 4 off 1011.B.028 - Flanged bearing bush - AL404640 (40 in stock) - KAN-456,,"1011.A.028   ,   1011.E.028",FMB404640,,vendor
+KAN-197,FMB182430,Bearing Supplier,Flanged bush 18x24x30,18x24x30 flanged Metric Bush,https://www.onlinebearings.co.uk/Flanged-Oilube-Bearing-Bush-8-20mm-Inside-Diameter.html,2100.A.091,,,description
+KAN-197,FMB182430,Bearing Supplier,Flanged bush 18x24x30,18x24x30 flanged Metric Bush,https://www.onlinebearings.co.uk/Flanged-Oilube-Bearing-Bush-8-20mm-Inside-Diameter.html,2100.A.091,,,description
+KAN-197,FMB182430,Bearing Supplier,Flanged bush 18x24x30,18x24x30 flanged Metric Bush,https://www.onlinebearings.co.uk/Flanged-Oilube-Bearing-Bush-8-20mm-Inside-Diameter.html,2100.A.091,,,description
+KAN-399,FMB405050,Bearing Supplier,FlangedBearingBush_40x50x50,"40x50x50	 Flanged   2	off	1010.A.028   -  Flanged Metric Bush    FMB405050",,"1010.C.028   ,   1010.A.028",FMB405050,,vendor
+KAN-399,FMB405050,Bearing Supplier,FlangedBearingBush_40x50x50,"40x50x50	 Flanged   2	off	1010.A.028   -  Flanged Metric Bush    FMB405050",,"1010.B.028   ,   1010.A.028",FMB405050,,vendor
+KAN-399,FMB405050,Bearing Supplier,FlangedBearingBush_40x50x50,"40x50x50	 Flanged   2	off	1010.A.028   -  Flanged Metric Bush    FMB405050",,"1010.EB.28   ,   1010.A.028",FMB405050,,vendor
+KAN-892,BF-D30L42,Motion Controls,Flexible Coupling 14mm to 12mm,Flexible Coupling 14mm to 12mm,,6000.B.MJC-3,,,description
+KAN-892,BF-D30L42,Motion Controls,Flexible Coupling 14mm to 12mm,Flexible Coupling 14mm to 12mm,,6000.B.MJC-3,,,description
+KAN-892,BF-D30L42,Motion Controls,Flexible Coupling 14mm to 12mm,Flexible Coupling 14mm to 12mm,,6000.B.MJC-3,,,description
+KAN-891,BF1 - 16x14 - D45 L66,Motion Controls,Flexible Coupling 16mm to 14mm,Flexible Coupling 16mm to 14mm,,6000.A.167,,,description
+KAN-891,BF1 - 16x14 - D45 L66,Motion Controls,Flexible Coupling 16mm to 14mm,Flexible Coupling 16mm to 14mm,,6000.A.167,,,description
+KAN-891,BF1 - 16x14 - D45 L66,Motion Controls,Flexible Coupling 16mm to 14mm,Flexible Coupling 16mm to 14mm,,6000.A.167,,,description
+KAN-131,51-151.0252F / 61-9933.0 / 61-9642.2 / 10-2j09.1062,EAO,Flush E.Stop Button,Illumination Push button flush mount - 51-151.0252F  - EAO STOCK,,"1016.3.007   ,   1016.3.001",51-151.0252F,,description
+KAN-288,NBSS.129,Laser Cut,FRAME LOAD Washer - NBSS.129,100 off NBSS129 (Frame Load - Washer),,1004.R.11,NBSS.129,,vendor
+KAN-288,NBSS.129,NBSS/ Laser Cut,FRAME LOAD Washer - NBSS.129,100 off NBSS129 (Frame Load - Washer),,1004.F.013,NBSS.129,,vendor
+KAN-288,NBSS.129,NBSS/ Laser Cut,FRAME LOAD Washer - NBSS.129,100 off NBSS129 (Frame Load - Washer),,1004.T.013,NBSS.129,,vendor
+KAN-164,CKQ59-H4-02500-ZCM-14-P-R-L010,Gapp Automation,Gapp Encoder,Stock GAPP Encoder -  C59 -H4-02500- ZCM - 14 - PT- R - L010,,CKQ59-H4-02500-ZCM-14-P-R-L010,C59-H4-02500-ZCM-14-ST-R,,description
+KAN-866,GL1-FLM,Securitron,GL1 Electromechanical Gate Lock  1/2,GATE PRESSURE REDUCING RELIEVING VALVE (PAN HEAD) INSERTRD IN TO VALVE BLOCK,,1000.W.Lock,,,description
+KAN-350,NBSS: 013,WDS,Glass Gate Nylon Insert,NBSS013 (GlassGateNylonInsert),,1014.F.056,,Thameside Eng,description
+KAN-350,NBSS: 013,NBSS/ Machining,Glass Gate Nylon Insert,NBSS013 (GlassGateNylonInsert),,1014.F.056,NBSS.013,,description
+KAN-350,NBSS: 013,NBSS/ Machining,Glass Gate Nylon Insert,NBSS013 (GlassGateNylonInsert),,1014.F.056,,,description
+KAN-350,NBSS.013,Machining,Glass Nylon Insert (NBSS.013),NBSS013 (GlassGateNylonInsert),,1014.F.007,NBSS.013,,vendor
+KAN-261,FTH 50x15/12-12K,Blickle,Glass Roller Wheel,50x15mm 12mm bore Orange caster wheels FTH 50x15/12-12K  463802,,"1001.B.029   ,   1000.A2.001",,,name
+KAN-357,NBSS.007,NBSS/ Sesame,GlassClamp - NBSS.007,NBSS007 (Glass Clamp),,1014.F.003,NBSS.007,,vendor
+KAN-461,700-1928,RS Components,"Green Indicator, S/S finish",RS PRO Green Panel Mount Indicator chrome,,1016.P.001,700-1928,,vendor
+KAN-261,FTH 50x15/12-12K,Blickle,Guide roller,50x15mm 12mm bore Orange caster wheels FTH 50x15/12-12K  463802,,"1006.A.161   ,   1000.A2.001",,,name
+KAN-261,FTH 50x15/12-12K,Blickle,Guide roller,50x15mm 12mm bore Orange caster wheels FTH 50x15/12-12K  463802,,"1006.C.144   ,   1000.A2.001",,,name
+KAN-261,FTH 50x15/12-12K,Blickle,Guide roller,50x15mm 12mm bore Orange caster wheels FTH 50x15/12-12K  463802,,"2000.E.051   ,   1000.A2.001",,,name
+KAN-261,FTH 50x15/12-12K,Blickle,Guide roller,50x15mm 12mm bore Orange caster wheels FTH 50x15/12-12K  463802,https://www.blickle.co.uk/product/FTH-50x15-12-12K-463802,"1000.A2.001   ,   1000.A2.001",,,name
+KAN-159,FPO 40x20/10-9K,Blickle,Guide roller with nylon tread,Guide roller with nylon tread  FPO 40x20/10-9K (ID 761487) - white,http://www.blickle.co.uk/product/FPO-40x20-10-9K-761487,"1003.A.061   ,   1003.B.061",761487,,name
+KAN-159,FPO 40x20/10-9K,Blickle,Guide roller with nylon tread,Guide roller with nylon tread  FPO 40x20/10-9K (ID 761487) - white,http://www.blickle.co.uk/product/FPO-40x20-10-9K-761487,"1003.B.061   ,   1003.B.061",761487,,name
+KAN-159,761487,Blickle,Guide roller with nylon tread FPO 40x20/10-9K (ID 761487),Guide roller with nylon tread  FPO 40x20/10-9K (ID 761487) - white,,"1003.061   ,   1003.B.061",761487,,vendor
+KAN-159,761488,Blickle,Guide roller with nylon tread FPO 40x20/10-9K (ID 761487),Guide roller with nylon tread  FPO 40x20/10-9K (ID 761487) - white,,"S3.1003.A.06   ,   1003.B.061",761487,,description
+KAN-159,761488,Blickle,Guide roller with nylon tread FPO 40x20/10-9K (ID 761487),Guide roller with nylon tread  FPO 40x20/10-9K (ID 761487) - white,,"S3.1003.A.06   ,   35",NBSS.035,,description
+KAN-159,761489,Blickle,Guide roller with nylon tread FPO 40x20/10-9K (ID 761487),Guide roller with nylon tread  FPO 40x20/10-9K (ID 761487) - white,,"1003.B.061   ,   1003.B.061",761487,,description
+KAN-159,761489,Blickle,Guide roller with nylon tread FPO 40x20/10-9K (ID 761487),Guide roller with nylon tread  FPO 40x20/10-9K (ID 761487) - white,,"1003.B.061   ,   35",NBSS.035,,description
+KAN-370,2720.1.5M,Harken,Harken Track - 1.5m long,16 off Harken tracks - 2720.1.5M - NO LONGER BUYNG,,"1009.B.002   ,   1005.B.002",2720.1.5M,,vendor
+KAN-370,2720.2.5,Harken,Harken Track - Cut this in half,16 off Harken tracks - 2720.1.5M - NO LONGER BUYNG,,"1005.B.002   ,   1005.B.002",2720.1.5M,,description
+KAN-370,2720.2.5,Harken,Harken Track - Cut this in half,16 off Harken tracks - 2720.1.5M - NO LONGER BUYNG,,1005.B.002,,,description
+KAN-372,DCP311G,Amazon,Honeywell Doorbell DCP311G - USE ONLY ONE PER JOB,Honeywell Doorbell Transmitter (button)  DCP311G - 6 off,https://www.amazon.co.uk/gp/product/B016OXTBD8/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&th=1,"1016.F.010   ,   1016.F.010",DCP311G,,vendor
+KAN-166,H350,ISIS,Hydraulic Accumulator - 70mm wide (60 PSI pr-charge),H350 - Accumulator 350cc- Diaphram - set to,,H350,H350,,vendor
+KAN-157,GFM-081014-05,IGUS,IGUS Flange Bearing,GFM-081014-05 - flanged (100 off),https://www.igus.co.uk/product/?artnr=GFM-081014-05,"1009.E.027   ,   1009.K.011",,,name
+KAN-157,GFM-081014-05,IGUS,IGUS Flange Bearing,GFM-081014-05 - flanged (100 off),https://www.igus.co.uk/product/?artnr=GFM-081014-05,"1009.G.027   ,   1009.K.011",,,name
+KAN-157,GFM-081014-05,IGUS,IGUS Flange Bearing,GFM-081014-05 - flanged (100 off),https://www.igus.co.uk/product/?artnr=GFM-081014-05,"1009.H.038   ,   1009.K.011",,,name
+KAN-157,GFM-081014-05,IGUS,IGUS Flange Bearing,GFM-081014-05 - flanged (100 off),https://www.igus.co.uk/product/?artnr=GFM-081014-05,"1009.I.021   ,   1009.K.011",,,name
+KAN-157,GFM-081014-05,IGUS,IGUS Flange Bearing,GFM-081014-05 - flanged (100 off),https://www.igus.co.uk/product/?artnr=GFM-081014-05,"1009.J.012   ,   1009.K.011",,,name
+KAN-157,GFM-081014-05,IGUS,IGUS Flange Bearing,GFM-081014-05 - flanged (100 off),https://www.igus.co.uk/product/?artnr=GFM-081014-05,"1009.K.011   ,   1009.K.011",,,name
+KAN-157,GFM-081014-05,IGUS,IGUS Flange Bearing,GFM-081014-05 - flanged (100 off),https://www.igus.co.uk/product/?artnr=GFM-081014-05,"1009.L.011   ,   1009.K.011",,,name
+KAN-157,GFM-081014-05,IGUS,IGUS Flange Bearing,GFM-081014-05 - flanged (100 off),https://www.igus.co.uk/product/?artnr=GFM-081014-05,"1009.J.012   ,   1009.K.011",,,name
+KAN-157,GFM-081014-05,IGUS,IGUS Flange Bearing,GFM-081014-05 - flanged (100 off),https://www.igus.co.uk/product/?artnr=GFM-081014-05,"1009.K.011   ,   1009.K.011",,,name
+KAN-157,GFM-081014-05,IGUS,IGUS Flange Bearing,GFM-081014-05 - flanged (100 off),https://www.igus.co.uk/product/?artnr=GFM-081014-05,"1009.L.011   ,   1009.K.011",,,name
+KAN-19,IQ23008BBPKG/K1/0.3M/PUR/US,Ifm,Inductive Senso,IQ2012 short cable with moulded plug 300mm lg,,1008.A8.002,NBB10-F17-E2,Peppel Fuchs,description
+KAN-19,IQ23008BBPKG/K1/0.3M/PUR/US,Ifm,Inductive Senso,IQ2012 short cable with moulded plug 300mm lg,,1008.A8.002,IS5001,,description
+KAN-19,IQ23008BBPKG/K1/0.3M/PUR/US,Ifm,Inductive Senso,IQ2012 short cable with moulded plug 300mm lg,,1008.A8.002,IFM IW5064,,description
+KAN-28,NBB4-12GM30-E2-V1,Pepperl-fuchs,Inductive sensor,2 off NBB4-12GM30-E2-V1 - Ram Sensor (£61.33 ea),https://www.pepperl-fuchs.com/great_britain/en/classid_143.htm?view=productdetails&prodid=3434,2100.B.129,NBB4-12GM30-E2-V1,,vendor
+KAN-28,NBB4-12GM30-E2-V1,Pepperl-fuchs,Inductive sensor,2 off NBB4-12GM30-E2-V1 - Ram Sensor (£61.33 ea),https://www.pepperl-fuchs.com/great_britain/en/classid_143.htm?view=productdetails&prodid=3434,2100.B.129,NBB4-12GM30-E2-V1,,vendor
+KAN-17,318595,Pepperl-fuchs,Inductive sensor NBB10-F17-E2,2 off NBB10-F17-E2 - Inductive sensor (£67.20),https://www.pepperl-fuchs.com/global/en/classid_143.htm?view=productdetails&prodid=89385#overview,6000.A.160,NBB10-F17-E2,Peppel Fuchs,description
+KAN-17,318595,Pepperl-fuchs,Inductive sensor NBB10-F17-E2,2 off NBB10-F17-E2 - Inductive sensor (£67.20),https://www.pepperl-fuchs.com/global/en/classid_143.htm?view=productdetails&prodid=89385#overview,6000.A.160,IS5001,,description
+KAN-17,318595,Pepperl-fuchs,Inductive sensor NBB10-F17-E2,2 off NBB10-F17-E2 - Inductive sensor (£67.20),https://www.pepperl-fuchs.com/global/en/classid_143.htm?view=productdetails&prodid=89385#overview,6000.A.160,IFM IW5064,,description
+KAN-1167,FEL08,Baercoil,"Internal M8 outside M12, 9mm length","RS 488-1342 PVC Clear Cable Sleeve, 19mm Length",https://www.baercoil.com/en/products_bf_inserts.html,6000.A.SelfTappInsertM8,488-1342,RS,description
+KAN-1167,FEL08,Baercoil,"Internal M8 outside M12, 9mm length","RS 488-1342 PVC Clear Cable Sleeve, 19mm Length",https://www.baercoil.com/en/products_bf_inserts.html   (http://www.thread-insert.com/self-tapping-insert/threaded-insert-with-cutting-bores/self-tapping-inserts-with-cutting-bores.html),2100.A.086,488-1342,RS,description
+KAN-1348,OB11,CPC,JunctionBox+Glands,OB11  junction box,http://cpc.farnell.com/velleman-sa/ob11/ip68-terminal-box-2-way/dp/CN20133,1008.U.11,CN20133,CPC,name
+KAN-1348,OB11,CPC,JunctionBox+Glands,OB11  junction box,http://cpc.farnell.com/velleman-sa/ob11/ip68-terminal-box-2-way/dp/CN20133,1008.U.11,CN20133,CPC,name
+KAN-134,51-141.025D2F,EAO,Key Switch. 2PositionSpringReturn (VERIFY!),Keylock 2 position 1C/O momentary - 51-141.025D2F  - EAO STOCK,https://www.anglia-live.com/Product/1421143001,1016.3.010,51-141.025D2F,Anglia Electronics,vendor
+KAN-132,51-374.F22DF,EAO,Key Switch. 3PositionSpringReturn (VERIFY!),Keylock 3 pos maint key remove centre - 51-374.F22DF  - EAO STOCK,https://www.anglia-live.com/Product/1759962001,"1016.3.009   ,   1016.3.009",51-372.022DF,Anglia Electronics,name
+KAN-393,51-135.022DF,EAO,Key Switch.2WayMaintained,Keylock 2 position Non Spring Return -  51-135.022DF  - EAO STOCK,,"1016.3.011   ,   1016.3.011",51-135.022DF,,vendor
+KAN-661,673-702,RS Components,Levelling foot flat non tilt Steel Zinc plated,20 off  M10 x25 non tilt leveling foot 35mm thread 673-702  WDS,,"1014.F.010   ,   1014.A.087",673-702,WDS,vendor
+KAN-348,NBSS.017,Machining,Lift Rod Nylon - NBSS.017,24 off NBSS017 (Lift Rod Acteal) - Rev_1,,1006.B.012,NBSS.017,,vendor
+KAN-348,NBSS.017,NBSS/ Machining,Lift Rod Nylon - NBSS.017,24 off NBSS017 (Lift Rod Acteal) - Rev_1,,1006.A.012,NBSS.017,,vendor
+KAN-282,NBSS.414,NBSS/ Laser Cut,Limit Switch Angle - NBSS.414,60 off NBSS414 (LimitSwitchAngle),,1008.N.004,NBSS.414,,vendor
+KAN-237,440P-M18001,RS Components,Limit Switch with roller,"16 off 1008.D.440P-M18001	440P-M18001	Red Limit Switch with roller	RS* 323-511	(18)",http://uk.rs-online.com/web/p/safety-limit-switches/0323511/,"1008.D.440P-   ,   1008.D.440P-M18001",440P-M18001,RS components,vendor
+KAN-237,440P-M18001,RS Components,Limit Switch with roller,"16 off 1008.D.440P-M18001	440P-M18001	Red Limit Switch with roller	RS* 323-511	(18)",http://uk.rs-online.com/web/p/safety-limit-switches/0323511/,"1008.A4.001   ,   1008.D.440P-M18001",440P-M18001,RS components,vendor
+KAN-87,LAS-2-1-50,Gapp Automation,Linear Actuator (s=50mm),LAS 2-1-50 GE 600N 24 Volts,,1034.1,,Gapp,description
+KAN-87,LAS-2-1-50,HIWIN,Linear Actuator (s=50mm),LAS 2-1-50 GE 600N 24 Volts,,1034.1,,,description
+KAN-87,LAS-2-1-50,HIWIN,Linear Actuator (s=50mm),LAS 2-1-50 GE 600N 24 Volts,,1034.1,,,description
+KAN-87,LAS-2-1-50-24,Gapp Automation,"Linear Actuator (s=50mm, v=25mm/s)",LAS 2-1-50 GE 600N 24 Volts,,1034.A11,,Gapp,description
+KAN-87,LAS-2-1-50-24,Gapp Automation,"Linear Actuator (s=50mm, v=25mm/s)",LAS 2-1-50 GE 600N 24 Volts,,1034.B.11,,Gapp,description
+KAN-87,LAS-2-1-50-24,Gapp Automation,"Linear Actuator (s=50mm, v=25mm/s)",LAS 2-1-50 GE 600N 24 Volts,,1035.A.11,,Gapp,description
+KAN-87,LAS-2-1-50-24,HIWIN,"Linear Actuator (s=50mm, v=25mm/s)",LAS 2-1-50 GE 600N 24 Volts,,1034.A11,,,description
+KAN-87,LAS-2-1-50-24,HIWIN,"Linear Actuator (s=50mm, v=25mm/s)",LAS 2-1-50 GE 600N 24 Volts,,1034.B.11,,,description
+KAN-87,LAS-2-1-50-24,HIWIN,"Linear Actuator (s=50mm, v=25mm/s)",LAS 2-1-50 GE 600N 24 Volts,,1035.A.11,,,description
+KAN-87,LAS-2-1-50-24,HIWIN,"Linear Actuator (s=50mm, v=25mm/s)",LAS 2-1-50 GE 600N 24 Volts,,1034.A11,,,description
+KAN-87,LAS-2-1-50-24,HIWIN,"Linear Actuator (s=50mm, v=25mm/s)",LAS 2-1-50 GE 600N 24 Volts,,1034.B.11,,,description
+KAN-87,LAS-2-1-50-24,HIWIN,"Linear Actuator (s=50mm, v=25mm/s)",LAS 2-1-50 GE 600N 24 Volts,,1035.A.11,,,description
+KAN-1448,LOW042,vital-parts,Low Profile Feet,Low Profile Feet  LOW042,https://www.vital-parts.co.uk/low-profile-feet-6166-p.asp,1000.B.25x6_,,RS,description
+KAN-1448,LOW042,vital-parts,Low Profile Feet,Low Profile Feet  LOW042,https://www.vital-parts.co.uk/low-profile-feet-6166-p.asp,1000.B.25x6_M_M8_26,,RS,description
+KAN-1447,LOW032,vital-parts,Low Profile Feet,Low Profile Feet  LOW032,https://www.vital-parts.co.uk/low-profile-adjustable-feet/14568-low032,6000.A.140,,RS,description
+KAN-1448,LOW042,vital-parts,Low Profile Feet,Low Profile Feet  LOW042,https://www.vital-parts.co.uk/low-profile-feet-6166-p.asp,1000.B.25x6_,,,description
+KAN-1448,LOW042,vital-parts,Low Profile Feet,Low Profile Feet  LOW042,https://www.vital-parts.co.uk/low-profile-feet-6166-p.asp,1000.B.25x6_M_M8_26,,,description
+KAN-1448,LOW042,vital-parts,Low Profile Feet,Low Profile Feet  LOW042,https://www.vital-parts.co.uk/low-profile-feet-6166-p.asp,1000.B.25x6_,LOW031,,description
+KAN-1448,LOW042,vital-parts,Low Profile Feet,Low Profile Feet  LOW042,https://www.vital-parts.co.uk/low-profile-feet-6166-p.asp,1000.B.25x6_M_M8_26,LOW031,,description
+KAN-1447,LOW032,vital-parts,Low Profile Feet,Low Profile Feet  LOW032,https://www.vital-parts.co.uk/low-profile-adjustable-feet/14568-low032,6000.A.140,,,description
+KAN-1447,LOW032,vital-parts,Low Profile Feet,Low Profile Feet  LOW032,https://www.vital-parts.co.uk/low-profile-adjustable-feet/14568-low032,6000.A.140,LOW031,,description
+KAN-317,NBSS.022,NBSS/ Laser Cut,LS_Bracket_Stairs - NBSS.022,20 off NBSS022  (HydraulicBulkheadPlate),,"1004.B3.065   ,   22",NBSS.022,,vendor
+KAN-1287,D3016M1025-2,Polymax,M10 rubber foot,Male M10 30x16mm 60 ShA 25mm shank - Rubber D3016M1025-2,,1000.B.30x16,,,name
+KAN-1014,2921065,Orbital Fasteners,M14 Form A Nylon Washer White,60 off M14 Form A Nylon Washer White - SKU 2921065,https://www.orbitalfasteners.co.uk/en/products/m14-form-a-nylon-66-washers-white-din-125-1a,1003.087,,,name
+KAN-1014,2921065,Orbital Fasteners,M14 Form A Nylon Washer White,60 off M14 Form A Nylon Washer White - SKU 2921065,https://www.orbitalfasteners.co.uk/en/products/m14-form-a-nylon-66-washers-white-din-125-1a,S1.1003.A.08,,,name
+KAN-1014,2921065,Orbital Fasteners,M14 Form A Nylon Washer White,60 off M14 Form A Nylon Washer White - SKU 2921065,https://www.orbitalfasteners.co.uk/en/products/m14-form-a-nylon-66-washers-white-din-125-1a,6000.A.014,,,name
+KAN-1014,2921065,Orbital Fasteners,M14 Form A Nylon Washer White,60 off M14 Form A Nylon Washer White - SKU 2921065,https://www.orbitalfasteners.co.uk/en/products/m14-form-a-nylon-66-washers-white-din-125-1a,1003.B.087,,,name
+KAN-1014,2921065,Orbital Fasteners,M14 Form A Nylon Washer White,60 off M14 Form A Nylon Washer White - SKU 2921065,https://www.orbitalfasteners.co.uk/en/products/m14-form-a-nylon-66-washers-white-din-125-1a,1003.A.087,,,name
+KAN-1014,2921065,Orbital Fasteners,M14 Form A Nylon Washer White,60 off M14 Form A Nylon Washer White - SKU 2921065,https://www.orbitalfasteners.co.uk/en/products/m14-form-a-nylon-66-washers-white-din-125-1a,1003.B.087,,,name
+KAN-266,151G0211,Hydraulic Supplier,M70 2 bolt flange (for MHM50A0L motor),5 off M70 2 bolt flange (for MHM50A0L motor),,"1005.B.030   ,   1009.A.022,  1005.B.030",151G0211,,vendor
+KAN-266,151G0211,Hydraulic Supplier,M70 2 bolt flange (for MHM50A0L motor),5 off M70 2 bolt flange (for MHM50A0L motor),,"1009.A.020   ,   1009.A.022,  1005.B.030",151G0211,,vendor
+KAN-266,151G0211,Hydraulic Supplier,M70 2 bolt flange (for MHM50A0L motor),5 off M70 2 bolt flange (for MHM50A0L motor),,"1009.F.008   ,   1009.A.022,  1005.B.030",151G0211,,vendor
+KAN-266,151G0211,Hydrokit LTD,M70 2 bolt flange (for MHM50A0L motor),5 off M70 2 bolt flange (for MHM50A0L motor),,"1005.B.030   ,   1009.A.022,  1005.B.030",151G0211,,vendor
+KAN-15,295-1477,RS Components,M8 Rubber Buffer,100 off NBSS003 - Male M8 25x15mm with 20mm stud 60 ShA - Rubber AV mount  - Barriers,,1005.A.003,295-1477,RS components,vendor
+KAN-15,295-1477,RS Components,M8 Rubber Buffer,100 off NBSS003 - Male M8 25x15mm with 20mm stud 60 ShA - Rubber AV mount  - Barriers,,1005.B.003,295-1477,RS components,vendor
+KAN-657,SKU: 20078.080.050,Bolts World,"M8 x 50mm Round Studding Connector Nuts, Zinc Plated",M8 x50 round Stud connector nuts,,1009.M.018,20078.080.050,,description
+KAN-657,SKU: 20078.080.050,Bolts World,"M8 x 50mm Round Studding Connector Nuts, Zinc Plated",M8 x50 round Stud connector nuts,,1009.M.018,,,description
+KAN-657,SKU: 20078.080.050,Bolts World,"M8 x 50mm Round Studding Connector Nuts, Zinc Plated",M8 x50 round Stud connector nuts,,1009.M.018,,,description
+KAN-1447,LOW032,vital-parts,M8x46 20x6 low profile adjustable feet,Low Profile Feet  LOW032,https://www.vital-parts.co.uk/low-profile-adjustable-feet/14568-low032,1000.B.20x6_M_M8_xxdaN,,RS,description
+KAN-1447,LOW032,vital-parts,M8x46 20x6 low profile adjustable feet,Low Profile Feet  LOW032,https://www.vital-parts.co.uk/low-profile-adjustable-feet/14568-low032,1000.B.20x6_M_M8_xxdaN,,,description
+KAN-1447,LOW032,vital-parts,M8x46 20x6 low profile adjustable feet,Low Profile Feet  LOW032,https://www.vital-parts.co.uk/low-profile-adjustable-feet/14568-low032,1000.B.20x6_M_M8_xxdaN,LOW031,,description
+KAN-546,F338N-2,RS Components,Magnet,15mm magnet - F338N,,"1070.013   ,   1008.A10.001",,RS components,description
+KAN-546,F338N-2,First4magnets,Magnet,15mm magnet - F338N,,"1070.013   ,   1008.V1.003",SP Conforti Reed switch,,description
+KAN-546,F338N-2,First4magnets,Magnet,15mm magnet - F338N,,1070.013,MP200702,,description
+KAN-710,619-2830,RS Components,"Magnetic Non-Contact Safety Switch, Part 1/2","Pilz PSENmag Series Magnetic Non-Contact Safety Switch, 24V dc, Plastic Housing, 2NO, M8 - RS 619-2830",,"1005.B.132   ,   1008.A10.001",,RS components,name
+KAN-710,RS Stock No 619-2830,RS Components,"Magnetic Non-Contact Safety Switch, Part 1/2, operating distance 8mm","Pilz PSENmag Series Magnetic Non-Contact Safety Switch, 24V dc, Plastic Housing, 2NO, M8 - RS 619-2830",,"1008.A10.Sensor   ,   1008.A10.001",,RS components,description
+KAN-710,RS Stock No 619-2830,RS Components,"Magnetic Non-Contact Safety Switch, Part 2/2","Pilz PSENmag Series Magnetic Non-Contact Safety Switch, 24V dc, Plastic Housing, 2NO, M8 - RS 619-2830",,"1008.A10.001   ,   1008.A10.001",,RS components,description
+KAN-46,08B-1R,Transmission Development,Middle Chain - Single X1,5 off box of 5m 08B-1R Single chain - £4.85/m,https://www.transdev.co.uk/chain/tyc/tyc-bs-08b-10b-12b-16b-20b-asa-40-50-60-80/,1009.B.044,08B-1R,,vendor
+KAN-46,08B-1R,Transmission Development,Middle Chain - Single X1,5 off box of 5m 08B-1R Single chain - £4.85/m,https://www.transdev.co.uk/chain/tyc/tyc-bs-08b-10b-12b-16b-20b-asa-40-50-60-80/,1005.B.059,08B-1R,,vendor
+KAN-46,08B-1R,Transmission Development,Middle Chain - Single X1  (Length = 3106mm),5 off box of 5m 08B-1R Single chain - £4.85/m,https://www.transdev.co.uk/chain/tyc/tyc-bs-08b-10b-12b-16b-20b-asa-40-50-60-80/,1009.B.044,08B-1R,,vendor
+KAN-46,08B-1R,Transmission Development,Middle Chain - Single X1 (Length = 2211mm) CHANGE ME,5 off box of 5m 08B-1R Single chain - £4.85/m,https://www.transdev.co.uk/chain/tyc/tyc-bs-08b-10b-12b-16b-20b-asa-40-50-60-80/,1005.B.059,08B-1R,,vendor
+KAN-607,RP2518X50S,Steerforth,Mini hydraulic actuator _ 50mm stroke,10 off MP2518A50S - 50cc 2 port on FRONT conforti hydraulic actuators ,,"3000.RP2518X50S_5199_15_10_2013_17_38_32   ,   1008.V1.1.MiniActuator[50mm]",MP SX 25/18x50 S AS,,description
+KAN-607,RP2518X50S,Steerforth,Mini hydraulic actuator _ 50mm stroke,10 off MP2518A50S - 50cc 2 port on FRONT conforti hydraulic actuators ,,"3000.RP2518X50S_5199_15_10_2013_17_38_32   ,   1008.V1.003",SP Conforti Reed switch,,description
+KAN-607,RP2518X50S,Steerforth,Mini hydraulic actuator _ 50mm stroke,10 off MP2518A50S - 50cc 2 port on FRONT conforti hydraulic actuators ,,3000.RP2518X50S_5199_15_10_2013_17_38_32,MP2518A50S - FRONT,,description
+KAN-607,RP2518X50S,Steerforth,Mini hydraulic actuator _ 50mm stroke,10 off MP2518A50S - 50cc 2 port on FRONT conforti hydraulic actuators ,,"RP2518X50S_MIR   ,   1008.V1.1.MiniActuator[50mm]",MP SX 25/18x50 S AS,,description
+KAN-607,RP2518X50S,Steerforth,Mini hydraulic actuator _ 50mm stroke,10 off MP2518A50S - 50cc 2 port on FRONT conforti hydraulic actuators ,,"RP2518X50S   ,   1008.V1.1.MiniActuator[50mm]",MP SX 25/18x50 S AS,,description
+KAN-607,RP2518X50S,Steerforth,Mini hydraulic actuator _ 50mm stroke,10 off MP2518A50S - 50cc 2 port on FRONT conforti hydraulic actuators ,,"RP2518X50S_MIR   ,   1008.V1.003",SP Conforti Reed switch,,description
+KAN-607,RP2518X50S,Steerforth,Mini hydraulic actuator _ 50mm stroke,10 off MP2518A50S - 50cc 2 port on FRONT conforti hydraulic actuators ,,"RP2518X50S   ,   1008.V1.003",SP Conforti Reed switch,,description
+KAN-607,RP2518X50S,Steerforth,Mini hydraulic actuator _ 50mm stroke,10 off MP2518A50S - 50cc 2 port on FRONT conforti hydraulic actuators ,,RP2518X50S_MIR,MP2518A50S - FRONT,,description
+KAN-607,RP2518X50S,Steerforth,Mini hydraulic actuator _ 50mm stroke,10 off MP2518A50S - 50cc 2 port on FRONT conforti hydraulic actuators ,,RP2518X50S,MP2518A50S - FRONT,,description
+KAN-175,MP2518X50S,Confortinet.com,Mini hydraulic actuator _ 50mm stroke Use loctite in pin assembly,10 off MP SX 25/18x50 SAS - 50cc 4 port conforti hydraulic actuators,https://www.confortinet.com/EN/prodotti-RPMP.asp,1008.V.MiniActuator[50mm],,,description
+KAN-175,MP2518X50S,Confortinet.com,Mini hydraulic actuator _ 50mm stroke Use loctite in pin assembly,10 off MP SX 25/18x50 SAS - 50cc 4 port conforti hydraulic actuators,https://www.confortinet.com/EN/prodotti-RPMP.asp,1008.V.MiniActuator[50mm],MP2518A50S - FRONT,,description
+KAN-175,MP2518X50S,Confortinet.com,Mini hydraulic actuator _ 50mm stroke Use loctite in pin assembly,10 off MP SX 25/18x50 SAS - 50cc 4 port conforti hydraulic actuators,https://www.confortinet.com/EN/prodotti-RPMP.asp,1008.V.MiniActuator[50mm],,,description
+KAN-175,MP SX 25/18X50 S AS,Steerforth,"Mini hydraulic actuator _ 50mm stroke, connectors on both sides",10 off MP SX 25/18x50 SAS - 50cc 4 port conforti hydraulic actuators,https://www.steerforth.co.uk/magnetic-compact-industrial-hydraulic-cylinders-p-4285.html / https://www.confortinet.com/product-rp.asp,"1008.V1.1.Mi   ,   1008.V1.1.MiniActuator[50mm]",MP SX 25/18x50 S AS,,vendor
+KAN-175,MP SX 25/18X50 S AS,Steerforth,"Mini hydraulic actuator _ 50mm stroke, connectors on both sides",10 off MP SX 25/18x50 SAS - 50cc 4 port conforti hydraulic actuators,https://www.steerforth.co.uk/magnetic-compact-industrial-hydraulic-cylinders-p-4285.html / https://www.confortinet.com/product-rp.asp,"1008.V1.1.MiniActuator[50mm]   ,   1008.V1.1.MiniActuator[50mm]",MP SX 25/18x50 S AS,,vendor
+KAN-373,765-9347,RS Components,MP200701,MP200701 - 20 off N/O Magnetic Proximity Sensor,https://uk.rs-online.com/web/p/magnetic-proximity-switches/7659347,"1006.A10.Pro   ,   1008.A3.001",MP200701,RS components,description
+KAN-373,765-9347,RS Components,MP200701 - Magnetic Proximity Sensor,MP200701 - 20 off N/O Magnetic Proximity Sensor,https://uk.rs-online.com/web/p/magnetic-proximity-switches/7659347,"1008.A3.001   ,   1008.A3.001",MP200701,RS components,description
+KAN-373,765-9347,RS Components,MP200701 - Magnetic Proximity Sensor,MP200701 - 20 off N/O Magnetic Proximity Sensor,https://uk.rs-online.com/web/p/magnetic-proximity-switches/7659347,1008.A3.001,MP200702,,description
+KAN-373,765-9347,RS Components,MP200701 - Magnetic Proximity Sensor N/O,MP200701 - 20 off N/O Magnetic Proximity Sensor,https://uk.rs-online.com/web/p/magnetic-proximity-switches/7659347,"1008.A3.001   ,   1008.A3.001",MP200701,RS components,description
+KAN-373,765-9347,RS Components,MP200701 - Magnetic Proximity Sensor N/O,MP200701 - 20 off N/O Magnetic Proximity Sensor,https://uk.rs-online.com/web/p/magnetic-proximity-switches/7659347,1008.A3.001,MP200702,,description
+KAN-155,8000-88500-0000000,Murr,Murr Base,Murr Base in stock - 8000-88500-0000000,,1008.J.SL.00,8000-88500-0000000,,vendor
+KAN-320,NBSS.020,NBSS/ Laser Cut,Murr Base Cover - NBSS.020,20 off NBSS020 (MurBaseAngle),,1008.J.MurrB,NBSS.020,,vendor
+KAN-545,F102N-10,First4magnets,Neodymium Magnet - 1.2kg Pull,10mm magnet - F102N-10,,1008.A3.005,F102N-10,First4Magnets,vendor
+KAN-43,MS20SSU,Magnetic Solutions,Non-standard Maglock,MS20SSU Maglocks long 24V – 10m Fly lead – extra plating          £ 89.00,,"1009.A.032   ,   1009.A.032",MS20SSU,,vendor
+KAN-43,MS20SSU,Magnetic Solutions,Non-standard Maglock,MS20SSU Maglocks long 24V – 10m Fly lead – extra plating          £ 89.00,,"1009.B.048   ,   1009.A.032",MS20SSU,,vendor
+KAN-43,MS20SSU,Magnetic Solutions,Non-standard Maglock,MS20SSU Maglocks long 24V – 10m Fly lead – extra plating          £ 89.00,,"1005.A.032   ,   1009.A.032",MS20SSU,,vendor
+KAN-784,DNFPM160,Orbital Fasteners,Nylon 66 washer white M16x30x3,"10	off	1010.EB.044	Nylon 66 washer black M16x30x3	DNFPM160	Nylon 6/6	Orbitalfasteners	https://www.orbitalfasteners.co.uk/en/search/q/2921070",,1010.EB.44,,,name
+KAN-352,NBSS.009,NBSS/ Machining,NylonRing - NBSS: 009 - held by Machining,10 off NBSS009 (Black Acetal inner Post),,1055.A.006,NBSS.009,,vendor
+KAN-352,NBSS.009,NBSS/ Machining,NylonRing - NBSS: 009 - held by Machining,10 off NBSS009 (Black Acetal inner Post),,1055.A.026,NBSS.009,,vendor
+KAN-355,NBSS.008,NBSS/ Machining,NylonStairWheel,100 off NBSS008 Rev 1 (Stair Wheels),,1003.B.008,NBSS.008,,vendor
+KAN-355,NBSS.008,NBSS/ Machining,NylonStairWheel - NBSS.008,100 off NBSS008 Rev 1 (Stair Wheels),,1003.008,NBSS.008,,vendor
+KAN-213,AL3038-30,Bearing Supplier,Oil Filled Bronze Flanged Bush,30x38x30 flanged Metric Bush - Low profile scissors - 1024.A.011 - 4 off ,,"1024.011   ,   6000.A.122  / 6000.A.072",FMB081216,,description
+KAN-213,AL3038-30,Bearing Supplier,Oil Filled Bronze Flanged Bush,30x38x30 flanged Metric Bush - Low profile scissors - 1024.A.011 - 4 off ,,1024.011,,,description
+KAN-213,AL3038-30,Bearing Supplier,Oil Filled Bronze Flanged Bush,30x38x30 flanged Metric Bush - Low profile scissors - 1024.A.011 - 4 off ,,1024.011,,,description
+KAN-456,AL4046-40,Bearing Supplier,Oil Filled Bronze Flanged Bush Bearing,40x46x40 Flanged 4 off 1011.B.028 - Flanged bearing bush - AL404640 (40 in stock) - KAN-456,https://simplybearings.co.uk/shop/p120794/AL4046-40-Oil-Filled-Bronze-Flanged-Bush-Bearing-40x46x40mm/product_info.html,"1019.A.028   ,   6000.A.122  / 6000.A.072",FMB081216,,description
+KAN-456,AL4046-40,Bearing Supplier,Oil Filled Bronze Flanged Bush Bearing,40x46x40 Flanged 4 off 1011.B.028 - Flanged bearing bush - AL404640 (40 in stock) - KAN-456,https://simplybearings.co.uk/shop/p120794/AL4046-40-Oil-Filled-Bronze-Flanged-Bush-Bearing-40x46x40mm/product_info.html,1019.A.028,,,description
+KAN-456,AL4046-40,Bearing Supplier,Oil Filled Bronze Flanged Bush Bearing,40x46x40 Flanged 4 off 1011.B.028 - Flanged bearing bush - AL404640 (40 in stock) - KAN-456,https://simplybearings.co.uk/shop/p120794/AL4046-40-Oil-Filled-Bronze-Flanged-Bush-Bearing-40x46x40mm/product_info.html,1019.A.028,,,description
+KAN-673,AL4050-25,Bearing Supplier,Oil Filled Bronze Flanged Bush Bearing 40x50x25mm - to be shortened to 15 mm!,40x50x25  Flanged Metric Bush ,,"1018.03   ,   6000.A.122  / 6000.A.072",FMB081216,,description
+KAN-673,AL4050-25,Bearing Supplier,Oil Filled Bronze Flanged Bush Bearing 40x50x25mm - to be shortened to 15 mm!,40x50x25  Flanged Metric Bush ,,1018.03,,,description
+KAN-673,AL4050-25,Bearing Supplier,Oil Filled Bronze Flanged Bush Bearing 40x50x25mm - to be shortened to 15 mm!,40x50x25  Flanged Metric Bush ,,1018.03,,,description
+KAN-559,FMB162016,Bearing Supplier,Oilube flange bearing,8 off  16x20x16  1010.A.081 flanged Metric Bush (104),,"2000.A.009   ,   1011.E.028",FMB404640,,description
+KAN-559,FMB162016,Bearing Supplier,Oilube flange bearing,8 off  16x20x16  1010.A.081 flanged Metric Bush (104),,"2000.A.009   ,   1011.E.028",FMB404640,,description
+KAN-559,FMB162016,Bearing Supplier,Oilube flange bearing,8 off  16x20x16  1010.A.081 flanged Metric Bush (104),,2000.A.009,FMB 16x20x12,,description
+KAN-559,FMB162016,Bearing Supplier,Oilube flange bearing,8 off  16x20x16  1010.A.081 flanged Metric Bush (104),,2000.A.009,FMB 16x20x12,,description
+KAN-669,FMB081212,Bearing Supplier,Oilube flange bush (8x12x12),8x12x12 flanged Metric Bush,,6000.A.072,,,description
+KAN-669,FMB081212,Bearing Supplier,Oilube flange bush (8x12x12),8x12x12 flanged Metric Bush,,6000.A.072,,,description
+KAN-669,FMB081212,Bearing Supplier,Oilube flange bush (8x12x12),8x12x12 flanged Metric Bush,,6000.A.072,,,description
+KAN-195,FMB081216,Bearing Supplier,Oilube flange bush (8x12x16),8x12x16 flanged Metric oil lite Bush,https://www.onlinebearings.co.uk/Flanged-Oilube-Bearing-Bush-8-20mm-Inside-Diameter.html,"6000.A.122   ,   6000.A.122  / 6000.A.072",FMB081216,,vendor
+KAN-194,FMB081208,Bearing Supplier,Oilube flange bush (8x12x8),8x12x8 flanged Metric Bush,,6000.A.072,,,description
+KAN-194,FMB081208,Bearing Supplier,Oilube flange bush (8x12x8),8x12x8 flanged Metric Bush,,6000.A.072,,,description
+KAN-194,FMB081208,Bearing Supplier,Oilube flange bush (8x12x8),8x12x8 flanged Metric Bush,,6000.A.072,,,description
+KAN-341,NBSS.105,NBSS/ Machining,OrangeWheel_Rod 20mm,20 off NBSS105 Rev1 (OrangeWheel_Rod 20mm),,1003.B.027,NBSS.105,,vendor
+KAN-341,NBSS.105,NBSS/ Machining,OrangeWheel_Rod 20mm NBSS.105,20 off NBSS105 Rev1 (OrangeWheel_Rod 20mm),,1003.027,NBSS.105,,vendor
+KAN-894,DIN 6885 - A 5 x 5 x 20,RS Components,Parallel Key,5mm x 5mm Parallel Key,,DIN 6885 - A 5 x 5 x 20,,,description
+KAN-894,DIN 6885 - A 5 x 5 x 20,RS Components,Parallel Key,5mm x 5mm Parallel Key,,DIN 6885 - A 5 x 5 x 20,,,description
+KAN-32,62 - 05 - P.M. BRAKE - B - C.C. - 24 - E2(14mm keyway),SG Transmission,PERMANENT MAGNET BRAKE type 62,Permanent magnetic brake Type 62 Stock (2 off),,6000.A.TD765,,SG Transmission,description
+KAN-32,62 - 05 - P.M. BRAKE - B - C.C. - 24 - E2(14mm keyway),SG Transmission,PERMANENT MAGNET BRAKE type 62,Permanent magnetic brake Type 62 Stock (2 off),,6000.A.TD765,,SG Transmission,description
+KAN-32,62 - 05 - P.M. BRAKE - B - C.C. - 24 - E2(14mm keyway),SG Transmission,PERMANENT MAGNET BRAKE type 62,Permanent magnetic brake Type 62 Stock (2 off),,6000.A.TD765,Type 62 - 09*62-FM(A)-CC-Ø14-24Vdc,Stephanson,description
+KAN-21,OGP500,Ifm,Photocell,2 off IFM OGP500  (£84ea) see commit,,1008.A7.002.,OGP500,,vendor
+KAN-21,OGP500,Ifm,Photocell,2 off IFM OGP500  (£84ea) see commit,,1008.A7.002.ipt,OGP500,,vendor
+KAN-698,STS20/15B,automationshop,Pinion STS20/15B   CUT 7MM (CHANGED from 16 to 15 teeths),Engneer to Cut this from inhouse stock bar - 50 to 100 off,https://www.automationshop.co.uk/spur-gears-2-0mod-20-p-a-stainless-steel.html,6000.A.161,,,description
+KAN-439,PMB192,Bearing Supplier,Plain bearing bush - 30x38x40,30x38x40 4 off 1011.b.039 - Plain Metric Bush - KAN-439,,1011.D.039,30x38x40 4 off 1011.b.039,,description
+KAN-439,PMB192,Bearing Supplier,Plain bearing bush - 30x38x40,30x38x40 4 off 1011.b.039 - Plain Metric Bush - KAN-439,,1011.A.039,30x38x40 4 off 1011.b.039,,description
+KAN-439,PMB192,Bearing Supplier,Plain bearing bush - 30x38x40,30x38x40 4 off 1011.b.039 - Plain Metric Bush - KAN-439,,1021.A.039,30x38x40 4 off 1011.b.039,,description
+KAN-439,PMB192,Bearing Supplier,Plain bearing bush - 30x38x40,30x38x40 4 off 1011.b.039 - Plain Metric Bush - KAN-439,,1019.A.039,30x38x40 4 off 1011.b.039,,description
+KAN-439,PMB192,Bearing Supplier,Plain bearing bush - 30x38x40,30x38x40 4 off 1011.b.039 - Plain Metric Bush - KAN-439,,1011.D.039,,,description
+KAN-439,PMB192,Bearing Supplier,Plain bearing bush - 30x38x40,30x38x40 4 off 1011.b.039 - Plain Metric Bush - KAN-439,,1011.D.039,PMB107,,description
+KAN-439,PMB192,Bearing Supplier,Plain bearing bush - 30x38x40,30x38x40 4 off 1011.b.039 - Plain Metric Bush - KAN-439,,1011.A.039,,,description
+KAN-439,PMB192,Bearing Supplier,Plain bearing bush - 30x38x40,30x38x40 4 off 1011.b.039 - Plain Metric Bush - KAN-439,,1021.A.039,,,description
+KAN-439,PMB192,Bearing Supplier,Plain bearing bush - 30x38x40,30x38x40 4 off 1011.b.039 - Plain Metric Bush - KAN-439,,1019.A.039,,,description
+KAN-439,PMB192,Bearing Supplier,Plain bearing bush - 30x38x40,30x38x40 4 off 1011.b.039 - Plain Metric Bush - KAN-439,,1011.A.039,PMB107,,description
+KAN-439,PMB192,Bearing Supplier,Plain bearing bush - 30x38x40,30x38x40 4 off 1011.b.039 - Plain Metric Bush - KAN-439,,1021.A.039,PMB107,,description
+KAN-439,PMB192,Bearing Supplier,Plain bearing bush - 30x38x40,30x38x40 4 off 1011.b.039 - Plain Metric Bush - KAN-439,,1019.A.039,PMB107,,description
+KAN-439,PMB192,Bearing Supplier,Plain bearing bush - 30x38x40 - to be shortened,30x38x40 4 off 1011.b.039 - Plain Metric Bush - KAN-439,,1011.A.039,30x38x40 4 off 1011.b.039,,description
+KAN-439,PMB192,Bearing Supplier,Plain bearing bush - 30x38x40 - to be shortened,30x38x40 4 off 1011.b.039 - Plain Metric Bush - KAN-439,,1011.A.039,,,description
+KAN-439,PMB192,Bearing Supplier,Plain bearing bush - 30x38x40 - to be shortened,30x38x40 4 off 1011.b.039 - Plain Metric Bush - KAN-439,,1011.A.039,PMB107,,description
+KAN-455,PMB195,Bearing Supplier,Plain bearing bush - 30x40x35,30x40x45  4 off 1011.B.038 - Plain bearing bush  - KAN-455,,1011.A.038,40x46x30   8 off 1011.B.043,,description
+KAN-455,PMB195,Bearing Supplier,Plain bearing bush - 30x40x35,30x40x45  4 off 1011.B.038 - Plain bearing bush  - KAN-455,,1011.A.038,,,description
+KAN-455,PMB195,Bearing Supplier,Plain bearing bush - 30x40x35,30x40x45  4 off 1011.B.038 - Plain bearing bush  - KAN-455,,1011.A.038,PMB107,,description
+KAN-455,PMB196,Bearing Supplier,Plain bearing bush - 30x40x45,30x40x45  2 off   1010.A.027  - Plain bearing bush  PMB304045,,"1011.D.038   ,   1010.A.027",PMB304045,,description
+KAN-455,PMB196,Bearing Supplier,Plain bearing bush - 30x40x45,30x40x45  4 off 1011.B.038 - Plain bearing bush  - KAN-455,,1011.D.038,PMB304045,,description
+KAN-455,PMB196,Bearing Supplier,Plain bearing bush - 30x40x45,30x40x45  4 off 1011.B.038 - Plain bearing bush  - KAN-455,,1011.D.038,PMB107,,description
+KAN-455,PMB196,Bearing Supplier,Plain bearing bush - 30x40x45,30x40x45  4 off 1011.B.038 - Plain bearing bush  - KAN-455,,"1021.A.038   ,   1010.A.027",PMB304045,,description
+KAN-455,PMB196,Bearing Supplier,Plain bearing bush - 30x40x45,30x40x45  4 off 1011.B.038 - Plain bearing bush  - KAN-455,,"1011.A.038   ,   1010.A.027",PMB304045,,description
+KAN-455,PMB196,Bearing Supplier,Plain bearing bush - 30x40x45,30x40x45  4 off 1011.B.038 - Plain bearing bush  - KAN-455,,"1019.A.038   ,   1010.A.027",PMB304045,,description
+KAN-455,PMB196,Bearing Supplier,Plain bearing bush - 30x40x45,30x40x45  4 off 1011.B.038 - Plain bearing bush  - KAN-455,,1021.A.038,PMB304045,,description
+KAN-455,PMB196,Bearing Supplier,Plain bearing bush - 30x40x45,30x40x45  4 off 1011.B.038 - Plain bearing bush  - KAN-455,,1011.A.038,PMB304045,,description
+KAN-455,PMB196,Bearing Supplier,Plain bearing bush - 30x40x45,30x40x45  4 off 1011.B.038 - Plain bearing bush  - KAN-455,,1019.A.038,PMB304045,,description
+KAN-455,PMB196,Bearing Supplier,Plain bearing bush - 30x40x45,30x40x45  4 off 1011.B.038 - Plain bearing bush  - KAN-455,,1021.A.038,PMB107,,description
+KAN-455,PMB196,Bearing Supplier,Plain bearing bush - 30x40x45,30x40x45  4 off 1011.B.038 - Plain bearing bush  - KAN-455,,1011.A.038,PMB107,,description
+KAN-455,PMB196,Bearing Supplier,Plain bearing bush - 30x40x45,30x40x45  4 off 1011.B.038 - Plain bearing bush  - KAN-455,,1019.A.038,PMB107,,description
+KAN-453,PMB226,Bearing Supplier,Plain bearing bush - 40x46x30,40x46x30   8 off 1011.B.043  - Plain bearing bush (20 in stock) - KAN-453,,1011.D.043,40x46x30   8 off 1011.B.043,,description
+KAN-453,PMB226,Bearing Supplier,Plain bearing bush - 40x46x30,40x46x30   8 off 1011.B.043  - Plain bearing bush (20 in stock) - KAN-453,,1011.A.043,40x46x30   8 off 1011.B.043,,description
+KAN-453,PMB226,Bearing Supplier,Plain bearing bush - 40x46x30,40x46x30   8 off 1011.B.043  - Plain bearing bush (20 in stock) - KAN-453,,1021.A.043,40x46x30   8 off 1011.B.043,,description
+KAN-453,PMB226,Bearing Supplier,Plain bearing bush - 40x46x30,40x46x30   8 off 1011.B.043  - Plain bearing bush (20 in stock) - KAN-453,,1011.A.043,40x46x30   8 off 1011.B.043,,description
+KAN-453,PMB226,Bearing Supplier,Plain bearing bush - 40x46x30,40x46x30   8 off 1011.B.043  - Plain bearing bush (20 in stock) - KAN-453,,1019.A.043,40x46x30   8 off 1011.B.043,,description
+KAN-453,PMB226,Bearing Supplier,Plain bearing bush - 40x46x30,40x46x30   8 off 1011.B.043  - Plain bearing bush (20 in stock) - KAN-453,,1011.D.043,,,description
+KAN-453,PMB226,Bearing Supplier,Plain bearing bush - 40x46x30,40x46x30   8 off 1011.B.043  - Plain bearing bush (20 in stock) - KAN-453,,1011.D.043,PMB107,,description
+KAN-453,PMB226,Bearing Supplier,Plain bearing bush - 40x46x30,40x46x30   8 off 1011.B.043  - Plain bearing bush (20 in stock) - KAN-453,,1011.A.043,,,description
+KAN-453,PMB226,Bearing Supplier,Plain bearing bush - 40x46x30,40x46x30   8 off 1011.B.043  - Plain bearing bush (20 in stock) - KAN-453,,1021.A.043,,,description
+KAN-453,PMB226,Bearing Supplier,Plain bearing bush - 40x46x30,40x46x30   8 off 1011.B.043  - Plain bearing bush (20 in stock) - KAN-453,,1011.A.043,,,description
+KAN-453,PMB226,Bearing Supplier,Plain bearing bush - 40x46x30,40x46x30   8 off 1011.B.043  - Plain bearing bush (20 in stock) - KAN-453,,1019.A.043,,,description
+KAN-453,PMB226,Bearing Supplier,Plain bearing bush - 40x46x30,40x46x30   8 off 1011.B.043  - Plain bearing bush (20 in stock) - KAN-453,,1011.A.043,PMB107,,description
+KAN-453,PMB226,Bearing Supplier,Plain bearing bush - 40x46x30,40x46x30   8 off 1011.B.043  - Plain bearing bush (20 in stock) - KAN-453,,1021.A.043,PMB107,,description
+KAN-453,PMB226,Bearing Supplier,Plain bearing bush - 40x46x30,40x46x30   8 off 1011.B.043  - Plain bearing bush (20 in stock) - KAN-453,,1011.A.043,PMB107,,description
+KAN-453,PMB226,Bearing Supplier,Plain bearing bush - 40x46x30,40x46x30   8 off 1011.B.043  - Plain bearing bush (20 in stock) - KAN-453,,1019.A.043,PMB107,,description
+KAN-205,PMB119,Bearing Supplier,plain bush 18x24x18,18x24x18 Plain Metric Bush,https://www.onlinebearings.co.uk/Plain-Metric-Bush-5-20-mm-Inside-Diameter.html,2100.A.092,,,description
+KAN-205,PMB119,Bearing Supplier,plain bush 18x24x18,18x24x18 Plain Metric Bush,https://www.onlinebearings.co.uk/Plain-Metric-Bush-5-20-mm-Inside-Diameter.html,2100.A.092,,,description
+KAN-205,PMB119,Bearing Supplier,plain bush 18x24x18,18x24x18 Plain Metric Bush,https://www.onlinebearings.co.uk/Plain-Metric-Bush-5-20-mm-Inside-Diameter.html,2100.A.092,,,description
+KAN-205,PMB119,Bearing Supplier,plain bush 18x24x18,18x24x18 Plain Metric Bush,https://www.onlinebearings.co.uk/Plain-Metric-Bush-5-20-mm-Inside-Diameter.html,2100.A.092,,,description
+KAN-205,PMB119,Bearing Supplier,plain bush 18x24x18,18x24x18 Plain Metric Bush,https://www.onlinebearings.co.uk/Plain-Metric-Bush-5-20-mm-Inside-Diameter.html,2100.A.092,,,description
+KAN-205,PMB119,Bearing Supplier,plain bush 18x24x18,18x24x18 Plain Metric Bush,https://www.onlinebearings.co.uk/Plain-Metric-Bush-5-20-mm-Inside-Diameter.html,2100.A.092,,,description
+KAN-683,WSM-0810-20,IGUS,Plain Metric Bush (8X10X20),WSM-0810-20,,6000.A.033,,IGUS,name
+KAN-683,WSM-0810-20,IGUS,Plain Metric Bush (8X10X20),WSM-0810-20,,6000.A.033,,IGUS,name
+KAN-202,PMB116,Bearing Supplier,plain metric bush 18x22x18,18x22x18 Plain Metric Bush,https://www.onlinebearings.co.uk/Plain-Metric-Bush-5-20-mm-Inside-Diameter.html,2100.C.063,,,description
+KAN-202,PMB116,Bearing Supplier,plain metric bush 18x22x18,18x22x18 Plain Metric Bush,https://www.onlinebearings.co.uk/Plain-Metric-Bush-5-20-mm-Inside-Diameter.html,2100.C.063,,,description
+KAN-202,PMB116,Bearing Supplier,plain metric bush 18x22x18,18x22x18 Plain Metric Bush,https://www.onlinebearings.co.uk/Plain-Metric-Bush-5-20-mm-Inside-Diameter.html,2100.C.063,,,description
+KAN-202,PMB116,Bearing Supplier,plain metric bush 18x22x18,18x22x18 Plain Metric Bush,https://www.onlinebearings.co.uk/Plain-Metric-Bush-5-20-mm-Inside-Diameter.html,2100.C.063,,,description
+KAN-202,PMB116,Bearing Supplier,plain metric bush 18x22x18,18x22x18 Plain Metric Bush,https://www.onlinebearings.co.uk/Plain-Metric-Bush-5-20-mm-Inside-Diameter.html,2100.C.063,,,description
+KAN-202,PMB116,Bearing Supplier,plain metric bush 18x22x18,18x22x18 Plain Metric Bush,https://www.onlinebearings.co.uk/Plain-Metric-Bush-5-20-mm-Inside-Diameter.html,2100.C.063,,,description
+KAN-208,PMB354125,Bearing Supplier,Plain metric bush 35x41x25,35x41x25 Plain Metric Bush,,2100.C.088,,,description
+KAN-208,PMB354125,Bearing Supplier,Plain metric bush 35x41x25,35x41x25 Plain Metric Bush,,2100.C.088,,,description
+KAN-208,PMB354125,Bearing Supplier,Plain metric bush 35x41x25,35x41x25 Plain Metric Bush,,2100.C.088,,,description
+KAN-522,PMB107,Bearing Supplier,PlainBearingBush_16x20x20,"16x20x20 Plain Bearing Bush_		PMB162020",,1010.C.074,PMB107,,vendor
+KAN-206,PMB117,Bearing Supplier,plainBush 18x22x30; CUT OFF FOR 24mm length,18x22x30 Plain Metric Bush,https://www.onlinebearings.co.uk/Plain-Metric-Bush-5-20-mm-Inside-Diameter.html,2100.C.064,,,description
+KAN-206,PMB117,Bearing Supplier,plainBush 18x22x30; CUT OFF FOR 24mm length,18x22x30 Plain Metric Bush,https://www.onlinebearings.co.uk/Plain-Metric-Bush-5-20-mm-Inside-Diameter.html,2100.C.064,,,description
+KAN-206,PMB117,Bearing Supplier,plainBush 18x22x30; CUT OFF FOR 24mm length,18x22x30 Plain Metric Bush,https://www.onlinebearings.co.uk/Plain-Metric-Bush-5-20-mm-Inside-Diameter.html,2100.C.064,,,description
+KAN-401,PMB187,Bearing Supplier,PlainMetricBush_30x35x25,"30x35x25  2 off  1010.A.026   -  PMB187 	Brass, Soft Yellow",,"1010.C.026   ,   1010.A.026",PMB187,,vendor
+KAN-401,PMB187,Bearing Supplier,PlainMetricBush_30x35x25,"30x35x25  2 off  1010.A.026   -  PMB187 	Brass, Soft Yellow",,"1010.EB.26   ,   1010.A.026",PMB187,,vendor
+KAN-401,PMB187,Bearing Supplier,PlainMetricBush_30x35x25,"30x35x25  2 off  1010.A.026   -  PMB187 	Brass, Soft Yellow",,"1010.B.026   ,   1010.A.026",PMB187,,vendor
+KAN-241,PX86,Motion Controls,Planetary Reducer Stepper Motor Gearbox 4:1  (Check with Andrew per project!!! Delete Me!!!),4:1 gear box for Nema 34 stepper motor,https://www.oyostepper.com/goods-1426-PX86-Planetary-Gear-Speed-Reducer-for-Nema-34-Stepper-Motor--Servo-Motor.html,MotorGearbox,,Motion Controls,description
+KAN-241,PX86,Motion Control,Planetary Reducer Stepper Motor Gearbox 4:1  (Check with Andrew per project!!! Delete Me!!!),4:1 gear box for Nema 34 stepper motor,https://www.oyostepper.com/goods-1426-PX86-Planetary-Gear-Speed-Reducer-for-Nema-34-Stepper-Motor--Servo-Motor.html,MotorGearbox,,,description
+KAN-241,PX86,Motion Control,Planetary Reducer Stepper Motor Gearbox 4:1  (Check with Andrew per project!!! Delete Me!!!),4:1 gear box for Nema 34 stepper motor,https://www.oyostepper.com/goods-1426-PX86-Planetary-Gear-Speed-Reducer-for-Nema-34-Stepper-Motor--Servo-Motor.html,MotorGearbox,,,description
+KAN-463,BZH50WPTBJM17,Bil Castors,Polyurethane Cast Iron 50mm Ball Bearing,Polyurethane Cast Iron 50mm Ball Bearing Wheel 110kg Load BZH50WPTBJM17,,2000.E.029,BZH50WPTBJM17,,vendor
+KAN-463,BZH50WPTBJM17,Bil Castors,Polyurethane Cast Iron 50mm Ball Bearing 110kg Load,Polyurethane Cast Iron 50mm Ball Bearing Wheel 110kg Load BZH50WPTBJM17,,6000.A.153,BZH50WPTBJM17,,vendor
+KAN-463,BZH50WPTBJM17,Bil Castors,"Polyurethane Cast Iron 50mm Ball Bearing 110kg Load (ID measured 16,91mm)",Polyurethane Cast Iron 50mm Ball Bearing Wheel 110kg Load BZH50WPTBJM17,https://www.bilcastors.co.uk/product/bzh50wptbjm17/,1000.A3.001,BZH50WPTBJM17,,vendor
+KAN-148,BZH50WPT,Bil Castors,Polyurethane Cast Iron 50mm Plain Bore 80kg Load,50x12mm orange  caster wheels  - BZH50WPT,,1000.A.001,BZH50WPT,,vendor
+KAN-583,UMJ20-20,Misumi,Polyurethane roller 20mm,UMJ20-20 white wheel castors,,1000.A5.001,,,name
+KAN-578,UMJ20-30,Misumi,Polyurethane roller D=20 L=30,UMJ20-30 white wheel castors,,1000.A4.001,UMJ20-30,Misumi,vendor
+KAN-642,TBC,Flowfit,Poppet valve,"1/4""Bsp 24VDC 2Way Norm Closed Poppet 2/2 Valve 25L/min - Accumulator Control",,1019.A.114,EVC6-140-024DC,Flowfit,description
+KAN-642,TBC,RS Components,Poppet valve,"1/4""Bsp 24VDC 2Way Norm Closed Poppet 2/2 Valve 25L/min - Accumulator Control",,1019.A.114,EVC6-380-024DC,,description
+KAN-351,NBSS.010,Machining,PostHandle_NBSS.010,10 off NBSS010 (PostHandle),,1055.A.002,NBSS.010,,vendor
+KAN-838,PF16,Sinclair & Rush,Push in feet,Barrier rubber inserts - donks - PF16,,1005.C.021,PF16,,vendor
+KAN-1350,690-3292,RS Components,Push-Button 19mm Stainless Steel,"RS 690-3292  - Push Button Switch, Momentary,",,1016.3.008,R19FFSSTAG,,name
+KAN-252,CV88 VRSP1220,Sesame,Regenerative Valve,3 off Regeneration valves - CV88 VRSP1220,,1008.H7.(CV8,CV88 VRSP1220,,vendor
+KAN-930,EP1G12Z2U,LongVale,Roller Limit Switch (min. 2m Cable),"1	off	Roller Limit Switch (min. 2m Cable)	1008.A6.EP1G12Z020U	EP1G12Z020U	http://www.comepi.it	LongVale			SES101",,"1008.A6.EP1G12Z2U   ,   1008.D.440P-M18001",440P-M18001,RS components,description
+KAN-930,EP1G12Z2U,LongVale,Roller Limit Switch (min. 2m Cable),"1	off	Roller Limit Switch (min. 2m Cable)	1008.A6.EP1G12Z020U	EP1G12Z020U	http://www.comepi.it	LongVale			SES101",,"1008.A6.EP1G12Z2U   ,   1008.A6.EP1G12Z020U",,,description
+KAN-930,EP1G12Z2U,LongVale,Roller Limit Switch (min. 2m Cable),"1	off	Roller Limit Switch (min. 2m Cable)	1008.A6.EP1G12Z020U	EP1G12Z020U	http://www.comepi.it	LongVale			SES101",,1008.A6.EP1G12Z2U,,,description
+KAN-930,EP1G14Z020U,Comepi,Roller LimitSwitch (min. 2m Cable),"1	off	Roller Limit Switch (min. 2m Cable)	1008.A6.EP1G12Z020U	EP1G12Z020U	http://www.comepi.it	LongVale			SES101",,"1008.A6.EP1G   ,   1008.A6.EP1G12Z020U",,,description
+KAN-930,EP1G12ZA,LongVale,Roller LimitSwitch (min. 2m Cable),"1	off	Roller Limit Switch (min. 2m Cable)	1008.A6.EP1G12Z020U	EP1G12Z020U	http://www.comepi.it	LongVale			SES101",,"1008.A6.EP1G12ZA - Roller   ,   1008.A6.EP1G12Z020U",,,description
+KAN-930,EP1G14Z2U,LongVale,Roller LimitSwitch (min. 2m Cable),"1	off	Roller Limit Switch (min. 2m Cable)	1008.A6.EP1G12Z020U	EP1G12Z020U	http://www.comepi.it	LongVale			SES101",,"1008.A6.EP1G14Z2U   ,   1008.A6.EP1G12Z020U",,,description
+KAN-547,F315N-2,First4Magnets,Round Countersunk Magnet,20mm magnet - F315N-20,,1006.A.094,F315N-20  / MS202CSK,,name
+KAN-547,F315N-2,First4Magnets,Round Countersunk Magnet,20mm magnet - F315N-20,,1006.B.074,F315N-20  / MS202CSK,,name
+KAN-547,F315N-2,First4Magnets,Round Countersunk Magnet,20mm magnet - F315N-20,,1006.A.094,F315N-20  / MS202CSK,,name
+KAN-589,126-5969,WDS,"RS PRO M10 Anti Vibration Mount, Female Buffer Foot with 306kg Compression Load",Female M10 50x16mm 60 ShA  - Rubber AV mount,,"1000.B.50x15   ,   1014.A.087",673-702,WDS,description
+KAN-589,126-5969,RS Components,"RS PRO M10 Anti Vibration Mount, Female Buffer Foot with 306kg Compression Load",Female M10 50x16mm 60 ShA  - Rubber AV mount,,1000.B.50x15,,,description
+KAN-1346,526-366,RS Components,"RS PRO Vulcanised Fibre Tap Washers, M4",16mm Morse Tapper 2 Drill - For drilling sprockets only,https://uk.rs-online.com/web/p/washers/0526366?gb=a,1003.A.130,,,description
+KAN-580,415-0682,RS Components,Rubber Buffer,Male M8 40x30mm with x30 stud 60 ShA  - Rubber AV mount  RS COMPONENTS ONLY,,"1006.B.011   ,   1000.B.40x30_M_M8_120daN",415-0682,RS components,vendor
+KAN-15,295-1477,RS Components,Rubber Dong,100 off NBSS003 - Male M8 25x15mm with 20mm stud 60 ShA - Rubber AV mount  - Barriers,,1029.A.016,295-1477,RS components,vendor
+KAN-613,385-1586 / 511155,RS Components,Rubber feet for the motor pump,Motor pump offloading H-NC Solenoid Valve 2/2 Normally closed MANUAL (use LC2 Coil)  LSV2-08-2NCP-M,,1014.E.088,,,description
+KAN-263,6001200,Polymax,Rubber Stopper,40 off Cylindrical Bumper 28D x 25H - 6001200,https://www.polymax.co.uk/cylindrical-rubber-bumper,"S3.1005.C.01   ,   1005.C.014",6001200,,vendor
+KAN-263,6001200,Polymax,Rubber Stopper,40 off Cylindrical Bumper 28D x 25H - 6001200,https://www.polymax.co.uk/cylindrical-rubber-bumper,"1005.C.014   ,   1005.C.014",6001200,,vendor
+KAN-263,6001200,Polymax,Rubber Stopper,40 off Cylindrical Bumper 28D x 25H - 6001200,https://www.polymax.co.uk/cylindrical-rubber-bumper,"1005.C.014   ,   1005.C.014",6001200,,vendor
+KAN-15,295-1477,RS Components,RubberBuffer,100 off NBSS003 - Male M8 25x15mm with 20mm stud 60 ShA - Rubber AV mount  - Barriers,,1006.A.011,295-1477,RS components,vendor
+KAN-580,415-0682,RS Components,RubberBuffer,Male M8 40x30mm with x30 stud 60 ShA  - Rubber AV mount  RS COMPONENTS ONLY,,"S1.1006.A.01   ,   1000.B.40x30_M_M8_120daN",415-0682,RS components,vendor
+KAN-1156,298-8097,RS Components,Rubber-lined clamp; 13mm ID,"RS 298-8097 13mm Black, Stainless Steel P Clip",https://uk.rs-online.com/web/p/p-clips/2988097/,"1008.T.13ID_   ,   1008.T.13ID_P_Clip",298-8097,RS components,vendor
+KAN-1156,298-8097,RS Components,Rubber-lined clamp; 13mm ID,"RS 298-8097 13mm Black, Stainless Steel P Clip",https://uk.rs-online.com/web/p/p-clips/2988097/,"1008.T.13ID_P_Clip   ,   1008.T.13ID_P_Clip",298-8097,RS components,vendor
+KAN-916,122-3453,RS Components,Shaft collar,Shaft Collar 14x25x12mm,,6000.A.096,,,description
+KAN-916,122-3453,RS Components,Shaft collar,Shaft Collar 14x25x12mm,,6000.A.096,,,description
+KAN-916,122-3453,RS Components,Shaft collar,Shaft Collar 14x25x12mm,,6000.A.096,,,description
+KAN-913,122-3450,RS Components,Shaft Collar,Shaft Collar 8x16x8mm,,6000.A.181,,,description
+KAN-913,122-3450,RS Components,Shaft Collar,Shaft Collar 8x16x8mm,,6000.A.181,,,description
+KAN-913,122-3450,RS Components,Shaft Collar,Shaft Collar 8x16x8mm,,6000.A.181,,,description
+KAN-968,385-1586,RS Components,Shock Mount M10 50mm Diameter 300daN Compression Load 6mm,Male M10 50x25mm with x25 stud 60 ShA  - Rubber AV mount  (RS-385-1586),,"1008.D.068   ,   1000.B.50x25_M_M10_300daN",D5025M1030-2,RS components,name
+KAN-968,385-1586,RS Components,Shock Mount M10 50mm Diameter 300daN Compression Load 6mm deflection,Male M10 50x25mm with x25 stud 60 ShA  - Rubber AV mount  (RS-385-1586),,"1000.B.50x25   ,   1000.B.50x25_M_M10_300daN",D5025M1030-2,RS components,name
+KAN-968,385-1586 / 511525,RS Components,Shock Mount M10 50mm Diameter 300daN Compression Load 6mm deflection,Male M10 50x25mm with x25 stud 60 ShA  - Rubber AV mount  (RS-385-1586),,1000.B.50x25_M_M10_300daN,,,description
+KAN-968,385-1586 / 511525,RS Components,Shock Mount M10 50mm Diameter 300daN Compression Load 6mm deflection,Male M10 50x25mm with x25 stud 60 ShA  - Rubber AV mount  (RS-385-1586),,1000.B.50x25_M_M10_300daN,,,description
+KAN-968,385-1586 / 511525,RS Components,Shock Mount M10 50mm Diameter 300daN Compression Load 6mm deflection,Male M10 50x25mm with x25 stud 60 ShA  - Rubber AV mount  (RS-385-1586),,1000.B.50x25_M_M10_300daN,,,description
+KAN-15,295-1477,RS Components,Shock Mount M8 25.5mm Diameter 60daN Compression Load 3.5mm,100 off NBSS003 - Male M8 25x15mm with 20mm stud 60 ShA - Rubber AV mount  - Barriers,,1008.D.066,295-1477,RS components,vendor
+KAN-221,PFM-0405-04,IGUS,Side Vertical Nylon Slider Bearing,PFM-0405-04,,6000.A.155,PFM-0405-04,,vendor
+KAN-366,ST4SR14,Transmission Development,Single Sprocket with keyway,30 off NBSS125 Triple Sprocket with keyway - ST4SR14 with keyway,,1005.B.077,NBSS.124,,name
+KAN-366,ST4SR14,Transmission Development,Single Sprocket with keyway,30 off NBSS125 Triple Sprocket with keyway - ST4SR14 with keyway,,1005.B.077,NBSS.125,,name
+KAN-366,ST4SR14,Transmission Development,Single Sprocket with the keyway,30 off NBSS125 Triple Sprocket with keyway - ST4SR14 with keyway,,1005.A.044,NBSS.124,,name
+KAN-366,ST4SR14,Transmission Development,Single Sprocket with the keyway,30 off NBSS125 Triple Sprocket with keyway - ST4SR14 with keyway,,1005.A.044,NBSS.125,,name
+KAN-279,LC-08-S,Hydraulic Supplier,SOLENOID COIL,6   off SOLENOID COIL  LC-08-S 24VDC,,1008.H4.002,LC-08-S,,vendor
+KAN-613,LSV-08-2NCP,Flowfit,Solenoid poppet valve,Motor pump offloading H-NC Solenoid Valve 2/2 Normally closed MANUAL (use LC2 Coil)  LSV2-08-2NCP-M,,1008.H4.001,EVC6-140-024DC,Flowfit,description
+KAN-613,LSV-08-2NCP,Hydraulic Supplier,Solenoid poppet valve,Motor pump offloading H-NC Solenoid Valve 2/2 Normally closed MANUAL (use LC2 Coil)  LSV2-08-2NCP-M,,1008.H4.001,,,description
+KAN-613,LSV-08-2NCP,Hydraulic Supplier,Solenoid poppet valve,Motor pump offloading H-NC Solenoid Valve 2/2 Normally closed MANUAL (use LC2 Coil)  LSV2-08-2NCP-M,,1008.H4.001,EVC6-380-024DC,,description
+KAN-1031,,RS Components,"Speaker Driver, 2W, 8Ω","RS 628-4406 Speaker Driver, 2W, 8Ω",,"1016.A.014   ,   1016.A.014",628-4406,RS components,description
+KAN-1449,PM6550DX,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x50 split bearing WMX657050,,1014.A.007,15170,,description
+KAN-1449,PM6550DX,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x50 split bearing WMX657050,,1014.A.007,PMB107,,description
+KAN-1449,PM6550DX,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x50 split bearing WMX657050,,1014.A.007,,,description
+KAN-1449,BF6550,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x50 split bearing WMX657050,http://www.onlinebearings.co.uk/DX-Type.html,1014.E.104,15170,,description
+KAN-1449,BF6550,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x50 split bearing WMX657050,http://www.onlinebearings.co.uk/DX-Type.html,1001.D.019,PMB107,,description
+KAN-1449,BF6550,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x50 split bearing WMX657050,http://www.onlinebearings.co.uk/DX-Type.html,1014.E.104,PMB107,,description
+KAN-1449,BF6550,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x50 split bearing WMX657050,http://www.onlinebearings.co.uk/DX-Type.html,1001.D.019,,,description
+KAN-1449,BF6550,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x50 split bearing WMX657050,http://www.onlinebearings.co.uk/DX-Type.html,1014.E.104,,,description
+KAN-1449,BF6550,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x50 split bearing WMX657050,https://onlinebearings.co.uk/product/honeycomb-lined-type/?attribute_pa_reference=bf6550-65x70x50,1001.D.019,15170,,description
+KAN-1450,PM6540DX,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x40 split bearing  PM6540DX,https://www.thebearingcompany.co.uk/products/pm6540dx-split-bush-bearing-65x70x40mm/,1014.A.011,15170,,description
+KAN-1450,PM6540DX,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x40 split bearing  PM6540DX,https://www.thebearingcompany.co.uk/products/pm6540dx-split-bush-bearing-65x70x40mm/,1014.B.001,15170,,description
+KAN-1450,PM6540DX,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x40 split bearing  PM6540DX,https://www.thebearingcompany.co.uk/products/pm6540dx-split-bush-bearing-65x70x40mm/,1014.C.020,15170,,description
+KAN-1450,PM6540DX,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x40 split bearing  PM6540DX,https://www.thebearingcompany.co.uk/products/pm6540dx-split-bush-bearing-65x70x40mm/,1014.A.011,PMB107,,description
+KAN-1450,PM6540DX,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x40 split bearing  PM6540DX,https://www.thebearingcompany.co.uk/products/pm6540dx-split-bush-bearing-65x70x40mm/,1014.B.001,PMB107,,description
+KAN-1450,PM6540DX,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x40 split bearing  PM6540DX,https://www.thebearingcompany.co.uk/products/pm6540dx-split-bush-bearing-65x70x40mm/,1014.C.020,PMB107,,description
+KAN-1450,PM6540DX,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x40 split bearing  PM6540DX,https://www.thebearingcompany.co.uk/products/pm6540dx-split-bush-bearing-65x70x40mm/,1014.A.011,,,description
+KAN-1450,PM6540DX,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x40 split bearing  PM6540DX,https://www.thebearingcompany.co.uk/products/pm6540dx-split-bush-bearing-65x70x40mm/,1014.B.001,,,description
+KAN-1450,PM6540DX,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x40 split bearing  PM6540DX,https://www.thebearingcompany.co.uk/products/pm6540dx-split-bush-bearing-65x70x40mm/,1014.C.020,,,description
+KAN-1451,PM6560DX,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x60 split bearing PM6560DX,,1014.C.020,15170,,description
+KAN-1451,PM6560DX,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x60 split bearing PM6560DX,,1014.C.020,PMB107,,description
+KAN-1451,PM6560DX,Bearing Supplier,Split bearing bush - SEND TO MACHINING,65x70x60 split bearing PM6560DX,,1014.C.020,,,description
+KAN-479,KBST-G-16,Misumi,Split Rigid Shaft Coupling,16mm bore - KBST-G-16 (rev design 15.08.22),,KBST-G-16(0-1),,,name
+KAN-969,KBST-G-14,Misumi,Split Rigid Shaft Coupling,14mm bore - KBST-G-14,,KBST-G-14(0-1),,,name
+KAN-1081,B5-4243-2M,Flexosprings,Spring,B5-4243-2M   1001.E.021,http://www.flexosprings.com/stock-springs/compression-springs/b5-4243-2m,1001.E.021,,,name
+KAN-1009,103108,Flexosprings,Spring,103108  -  4.78N/mm,,1001.E.021,,,name
+KAN-1066,102910,Flexosprings,Spring,102910 - 1.66n/mm,,6000.B.249,,,name
+KAN-1067,103110,Flexosprings,Spring,103110 - 3.87 N/mm,,6000.B.250,,,name
+KAN-1242,113205,FlexoSprings,Spring -  rising barrier jam device,113205 - 14.04n/mm,,1005.B.088,,,name
+KAN-391,FC-A180-380-493M  11.52 n/mm,FlexoSprings,Spring -  rising barrier jam device - 11.52 n/mm -  painted BLUE,NBSS777 - Blue Jam Springs - F14613 - 11.52 N/mm,,1005.B.092,,,description
+KAN-391,FC-A180-380-493M  11.52 n/mm,FlexoSprings,Spring -  rising barrier jam device - 11.52 n/mm -  painted BLUE,NBSS777 - Blue Jam Springs - F14613 - 11.52 N/mm,,1005.B.092,F14613 Plated and Painted Blue,,description
+KAN-391,FC-A180-380-493M  11.52 n/mm,FlexoSprings,Spring -  rising barrier jam device - 11.52 n/mm -  painted BLUE,NBSS777 - Blue Jam Springs - F14613 - 11.52 N/mm,,1005.B.092,,,description
+KAN-392,FC-A180-380-512M  14.77 n/mm,FlexoSprings,Spring -  rising barrier jam device - 14.77 n/mm - painted RED,NBSS776 - Red Jam Springs - F14612 - 14.77N/mm,,S3.1005.B.08,,,description
+KAN-392,FC-A180-380-512M  14.77 n/mm,FlexoSprings,Spring -  rising barrier jam device - 14.77 n/mm - painted RED,NBSS776 - Red Jam Springs - F14612 - 14.77N/mm,,S3.1005.B.08,F14612 Plated and Painted RED,,description
+KAN-392,FC-A180-380-512M  14.77 n/mm,FlexoSprings,Spring -  rising barrier jam device - 14.77 n/mm - painted RED,NBSS776 - Red Jam Springs - F14612 - 14.77N/mm,,S3.1005.B.08,,,description
+KAN-991,344120,Flexosprings,"Spring 25.1OD, 63.5mm free length, 24,83 N/mm rate",344120  -  24.83 N/mm,,1004.G.158,,,name
+KAN-1348,CN20133,CPC,SpringCable_JunctionBox+Glands,OB11  junction box,http://cpc.farnell.com/velleman-sa/ob11/ip68-terminal-box-2-way/dp/CN20133,1008.U.05,CN20133,CPC,vendor
+KAN-1348,CN20133,CPC,SpringCable_JunctionBox+Glands,OB11  junction box,http://cpc.farnell.com/velleman-sa/ob11/ip68-terminal-box-2-way/dp/CN20133,1008.U.05,CN20133,CPC,vendor
+KAN-44,08B-2R,Transmission Development,Sprocket Chain,5 off box of 5m 08B-2R Double chain -  £12.94/m,http://www.transdev.co.uk/,"1009.A.039   ,   1009.N.039.Double",08B-2R,,vendor
+KAN-44,08B-2R,Transmission Development,Sprocket Chain - Double X2,5 off box of 5m 08B-2R Double chain -  £12.94/m,http://www.transdev.co.uk/,"1005.A.039.D   ,   1009.N.039.Double",08B-2R,,vendor
+KAN-44,08B-2R,Transmission Development,Sprocket Chain - Double X2,5 off box of 5m 08B-2R Double chain -  £12.94/m,http://www.transdev.co.uk/,"1005.B.064   ,   1009.N.039.Double",08B-2R,,vendor
+KAN-44,08B-2R,Transmission Development,Sprocket Chain - Double X2,5 off box of 5m 08B-2R Double chain -  £12.94/m,http://www.transdev.co.uk/,"1009.B.043   ,   1009.N.039.Double",08B-2R,,vendor
+KAN-44,08B-2R,Transmission Development,Sprocket Chain - Double X2 (Length = 1974mm),5 off box of 5m 08B-2R Double chain -  £12.94/m,http://www.transdev.co.uk/,"1005.A18.Double   ,   1009.N.039.Double",08B-2R,,vendor
+KAN-44,08B-2R,Transmission Development,Sprocket Chain - Double X2 (Length = 2771mm),5 off box of 5m 08B-2R Double chain -  £12.94/m,http://www.transdev.co.uk/,"1005.B34.Double   ,   1009.N.039.Double",08B-2R,,vendor
+KAN-44,08B-2R,Transmission Development,Sprocket Chain - Double X2 (Length = 2774mm),5 off box of 5m 08B-2R Double chain -  £12.94/m,http://www.transdev.co.uk/,"1009.B21.Double   ,   1009.N.039.Double",08B-2R,,vendor
+KAN-44,08B-2R,Transmission Development,Sprocket Chain - Double X2 (Length = 2774mm),5 off box of 5m 08B-2R Double chain -  £12.94/m,http://www.transdev.co.uk/,"1009.A17.Double   ,   1009.N.039.Double",08B-2R,,vendor
+KAN-338,NBSS.127,NBSS/ Machining,Sprocket Pin B,20 off NBSS127 (SprocketPlatePinB) Rev2 - 1005.b.,,"1005.A.009   ,   127",NBSS.127,,vendor
+KAN-338,NBSS.127,NBSS/ Machining,Sprocket Pin B - NBSS.127,20 off NBSS127 (SprocketPlatePinB) Rev2 - 1005.b.,,"1005.B.010   ,   127",NBSS.127,,vendor
+KAN-337,NBSS.128,NBSS/ Machining,Sprocket Pin C,20 off NBSS128 Rev 2 (SprocketPlatePinC),,1005.A.010,NBSS.128,,vendor
+KAN-337,NBSS.128,NBSS/ Machining,Sprocket Pin C - NBSS.128,20 off NBSS128 Rev 2 (SprocketPlatePinC),,1005.B.011,NBSS.128,,vendor
+KAN-339,NBSS.126,NBSS/ Machining,Sprocket Pin Motor - NBSS.126,20 off NBSS126 (SprocketPlatePinMotor),,1005.B.009,NBSS.126,,vendor
+KAN-322,NBSS.015,NBSS/ Laser Cut,Sproket Plate,30 off NBSS015_REV 1 - Rising Barrier Sprocket Plate,,1005.A.045,NBSS.015,,vendor
+KAN-322,NBSS.015,NBSS/ Laser Cut,Sproket Plate - NBSS.015,30 off NBSS015_REV 1 - Rising Barrier Sprocket Plate,,1005.B.008,NBSS.015,,vendor
+KAN-1350,RS: 690-3292,RS Components,Stainless Call for Assistance button,"RS 690-3292  - Push Button Switch, Momentary,",http://uk.rs-online.com/web/,1016.3.008,NBSS.041,,description
+KAN-1350,RS: 690-3292,RS Components,Stainless Call for Assistance button,"RS 690-3292  - Push Button Switch, Momentary,",http://uk.rs-online.com/web/,1016.3.008,,,description
+KAN-1350,RS: 690-3292,RS Components,Stainless Call for Assistance button,"RS 690-3292  - Push Button Switch, Momentary,",http://uk.rs-online.com/web/,"1016.3.008   ,   12",NBSS.012,,description
+KAN-125,LRC5A54,IMO,Standard LimitSwitch: LRC5A54,LRC5A54 - short arm limit switches,https://uk.farnell.com/imo-precision-controls/,"1008.N1.1   ,   1008.N1",LRC5A54,LRC5A54,vendor
+KAN-125,LRC5A54,IMO,Standard LimitSwitch: LRC5A54,LRC5A54 - short arm limit switches,https://uk.farnell.com/imo-precision-controls/,"1008.A14   ,   1008.N1",LRC5A54,LRC5A54,vendor
+KAN-913,CABU08Z,Simply Bearings,Steel Shaft Collar with Grub Screw,Shaft Collar 8x16x8mm,,"1012.C.022   ,   7100.E.009",7379,RS Components ,description
+KAN-914,CABU10Z,Simply Bearings,Steel Shaft Collar with Grub Screw,Shaft Collar 10x20x10mm,,"1012.C.035   ,   7100.E.009",7379,RS Components ,description
+KAN-913,CABU08Z,Simply Bearings,Steel Shaft Collar with Grub Screw,Shaft Collar 8x16x8mm,,1012.C.022,,,description
+KAN-913,CABU08Z,Simply Bearings,Steel Shaft Collar with Grub Screw,Shaft Collar 8x16x8mm,,1012.C.022,,,description
+KAN-914,CABU10Z,Simply Bearings,Steel Shaft Collar with Grub Screw,Shaft Collar 10x20x10mm,,1012.C.035,,,description
+KAN-914,CABU10Z,Simply Bearings,Steel Shaft Collar with Grub Screw,Shaft Collar 10x20x10mm,,1012.C.035,,,description
+KAN-64,SY85STH156-6204B Nema 34,Motion Controls,Stepper motor,Nema 34 Stepper motors - 4.2Amp and 6.2 Amp 34HS59-6204D ,,6000.A.023,,Motion Controls,description
+KAN-64,SY85STH156-6204B Nema 34,Motion Controls,Stepper motor,Nema 34 Stepper motors - 4.2Amp and 6.2 Amp 34HS59-6204D ,,6000.A.023,,,description
+KAN-64,SY85STH156-6204B Nema 34,Motion Controls,Stepper motor,Nema 34 Stepper motors - 4.2Amp and 6.2 Amp 34HS59-6204D ,,6000.A.023,,,description
+KAN-264,674-216,WDS,Swivel Pad M16,25 off M16 swivel leveling feet - 674-216  WDS,,"1000.L.WDS67   ,   1000.L.WDS674-216",674-216,WDS,vendor
+KAN-116,TS6 - TYPE C - 43mm,Tape Switch,Tape Switch TS6 (TYPE C),"Type C - TS6/0043/SLR/ 6K8/0600*/BLACK�""LEGACY STOCK"" - WITH RESISTOR - 72992105",,1005.B.058,,,description
+KAN-116,TS6 - TYPE C - 43mm,Tape Switch,Tape Switch TS6 (TYPE C),"Type C - TS6/0043/SLR/ 6K8/0600*/BLACK�""LEGACY STOCK"" - WITH RESISTOR - 72992105",,1015.C.011,,,description
+KAN-116,TS6 - TYPE C - 43mm,Tape Switch,Tape Switch TS6 (TYPE C),"Type C - TS6/0043/SLR/ 6K8/0600*/BLACK�""LEGACY STOCK"" - WITH RESISTOR - 72992105",,1005.B.058,NBSS.045.02,,description
+KAN-116,TS6 - TYPE C - 43mm,Tape Switch,Tape Switch TS6 (TYPE C),"Type C - TS6/0043/SLR/ 6K8/0600*/BLACK�""LEGACY STOCK"" - WITH RESISTOR - 72992105",,1015.C.011,NBSS.045.02,,description
+KAN-116,TS6 - TYPE C - 43mm,Tape Switch,Tape Switch TS6 (TYPE C),"Type C - TS6/0043/SLR/ 6K8/0600*/BLACK�""LEGACY STOCK"" - WITH RESISTOR - 72992105",,1005.B.058,NBSS.045.01,,description
+KAN-116,TS6 - TYPE C - 43mm,Tape Switch,Tape Switch TS6 (TYPE C),"Type C - TS6/0043/SLR/ 6K8/0600*/BLACK�""LEGACY STOCK"" - WITH RESISTOR - 72992105",,1015.C.011,NBSS.045.01,,description
+KAN-116,TS6 - TYPE C - 43mm,Tape Switch,Tape Switch TS6 (TYPE C) 43mm length,"Type C - TS6/0043/SLR/ 6K8/0600*/BLACK�""LEGACY STOCK"" - WITH RESISTOR - 72992105",,1009.E.011,NBSS.046,Tapeswitch,description
+KAN-116,TS6 - TYPE C - 43mm,Tape Switch,Tape Switch TS6 (TYPE C) 43mm length,"Type C - TS6/0043/SLR/ 6K8/0600*/BLACK�""LEGACY STOCK"" - WITH RESISTOR - 72992105",,1009.G.011,NBSS.046,Tapeswitch,description
+KAN-116,TS6 - TYPE C - 43mm,Tape Switch,Tape Switch TS6 (TYPE C) 43mm length,"Type C - TS6/0043/SLR/ 6K8/0600*/BLACK�""LEGACY STOCK"" - WITH RESISTOR - 72992105",,1009.H.017,NBSS.046,Tapeswitch,description
+KAN-116,TS6 - TYPE C - 43mm,Tape Switch,Tape Switch TS6 (TYPE C) 43mm length,"Type C - TS6/0043/SLR/ 6K8/0600*/BLACK�""LEGACY STOCK"" - WITH RESISTOR - 72992105",,1009.L.019,NBSS.046,Tapeswitch,description
+KAN-116,TS6 - TYPE C - 43mm,Tape Switch,Tape Switch TS6 (TYPE C) 43mm length,"Type C - TS6/0043/SLR/ 6K8/0600*/BLACK�""LEGACY STOCK"" - WITH RESISTOR - 72992105",,1009.E.011,,,description
+KAN-116,TS6 - TYPE C - 43mm,Tape Switch,Tape Switch TS6 (TYPE C) 43mm length,"Type C - TS6/0043/SLR/ 6K8/0600*/BLACK�""LEGACY STOCK"" - WITH RESISTOR - 72992105",,1009.G.011,,,description
+KAN-116,TS6 - TYPE C - 43mm,Tape Switch,Tape Switch TS6 (TYPE C) 43mm length,"Type C - TS6/0043/SLR/ 6K8/0600*/BLACK�""LEGACY STOCK"" - WITH RESISTOR - 72992105",,1009.H.017,,,description
+KAN-116,TS6 - TYPE C - 43mm,Tape Switch,Tape Switch TS6 (TYPE C) 43mm length,"Type C - TS6/0043/SLR/ 6K8/0600*/BLACK�""LEGACY STOCK"" - WITH RESISTOR - 72992105",,1009.L.019,,,description
+KAN-116,TS6 - TYPE C - 43mm,Tape Switch,Tape Switch TS6 (TYPE C) 43mm length,"Type C - TS6/0043/SLR/ 6K8/0600*/BLACK�""LEGACY STOCK"" - WITH RESISTOR - 72992105",,1009.E.011,NBSS.045.02,,description
+KAN-116,TS6 - TYPE C - 43mm,Tape Switch,Tape Switch TS6 (TYPE C) 43mm length,"Type C - TS6/0043/SLR/ 6K8/0600*/BLACK�""LEGACY STOCK"" - WITH RESISTOR - 72992105",,1009.G.011,NBSS.045.02,,description
+KAN-116,TS6 - TYPE C - 43mm,Tape Switch,Tape Switch TS6 (TYPE C) 43mm length,"Type C - TS6/0043/SLR/ 6K8/0600*/BLACK�""LEGACY STOCK"" - WITH RESISTOR - 72992105",,1009.H.017,NBSS.045.02,,description
+KAN-116,TS6 - TYPE C - 43mm,Tape Switch,Tape Switch TS6 (TYPE C) 43mm length,"Type C - TS6/0043/SLR/ 6K8/0600*/BLACK�""LEGACY STOCK"" - WITH RESISTOR - 72992105",,1009.L.019,NBSS.045.02,,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D),"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,1005.B.051,,,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D),"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,S3.1005.B.05,,,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D),"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,1005.B.051,NBSS.045.02,,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D),"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,S3.1005.B.05,NBSS.045.02,,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D),"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,1005.B.051,NBSS.045.01,,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D),"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,S3.1005.B.05,NBSS.045.01,,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D) 43mm length,"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,1009.E.012,NBSS.046,Tapeswitch,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D) 43mm length,"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,1009.G.012,NBSS.046,Tapeswitch,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D) 43mm length,"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,1009.H.018,NBSS.046,Tapeswitch,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D) 43mm length,"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,1009.I.016,NBSS.046,Tapeswitch,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D) 43mm length,"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,1009.L.018,NBSS.046,Tapeswitch,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D) 43mm length,"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,1009.E.012,,,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D) 43mm length,"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,1009.G.012,,,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D) 43mm length,"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,1009.H.018,,,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D) 43mm length,"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,1009.I.016,,,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D) 43mm length,"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,1009.L.018,,,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D) 43mm length,"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,1009.E.012,NBSS.045.02,,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D) 43mm length,"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,1009.G.012,NBSS.045.02,,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D) 43mm length,"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,1009.H.018,NBSS.045.02,,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D) 43mm length,"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,1009.I.016,NBSS.045.02,,description
+KAN-114,TS6 - Type D - 43mm,Tape Switch,Tape Switch TS6 (TYPE D) 43mm length,"Type D - TS6/0043/FS/0600*/0600*/BLACK  ""LEGACY STOCK"" - WITHOUT RESISTOR - 72992092",,1009.L.018,NBSS.045.02,,description
+KAN-723,B3-3443-2M,Flexo Springs,TapeSwitch.Spring,b3-3443-2m,,1022.007,,b3,name
+KAN-335,NBSS.132,NBSS/ Machining,Tension Pin - NBSS.132,20 off NBSS132 Tension pin Rev1,,"1005.B.032   ,   132",NBSS.132,,vendor
+KAN-336,NBSS.131,NBSS/ Machining,Tension Pin Central - NBSS.131,20 off NBSS131 Tension pin central,,1005.B.033,NBSS.131,,vendor
+KAN-1212,WTM-1224-015,IGUS,Thrust washer,WTM-1224-015  12 x 24 x 1.5 washer,,1006.A.162,,,name
+KAN-1212,WTM-1224-015,IGUS,Thrust washer,WTM-1224-015  12 x 24 x 1.5 washer,,1006.C.145,,,name
+KAN-1212,WTM-1224-015,IGUS,Thrust washer,WTM-1224-015  12 x 24 x 1.5 washer,,2000.E.050,,,name
+KAN-526,TFW2036015 DLU,Bearing Supplier,Thrust Washer - 20x36x1.5mm,20 x 36 x1.5mm thrust washers / Thrust Washer 20x36x1.5mm,,"1011.B.092   ,   1003.B.124 / 1011.E.111",TFW2036015 DLU,simply bea,vendor
+KAN-1010,AS1730,Bearing Supplier,"Thrust washer (ID 17 mm OD >30 mm), thickness 1-1.5 mm",16 x 30 x 1.5 thrust washers,https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as1730-skf,1010.A.089,,,description
+KAN-1010,AS1730,Bearing Supplier,"Thrust washer (ID 17 mm OD >30 mm), thickness 1-1.5 mm",16 x 30 x 1.5 thrust washers,https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as1730-skf,1010.B.087,,,description
+KAN-1010,AS1730,Bearing Supplier,"Thrust washer (ID 17 mm OD >30 mm), thickness 1-1.5 mm",16 x 30 x 1.5 thrust washers,https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as1730-skf,"1010.A.089   ,   1011.E.106",,,description
+KAN-1010,AS1730,Bearing Supplier,"Thrust washer (ID 17 mm OD >30 mm), thickness 1-1.5 mm",16 x 30 x 1.5 thrust washers,https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as1730-skf,"1010.B.087   ,   1011.E.106",,,description
+KAN-1010,AS1730,Bearing Supplier,"Thrust washer (ID 17 mm OD >30 mm), thickness 1-1.5 mm",16 x 30 x 1.5 thrust washers,https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as1730-skf,"1010.A.089   ,   1011.E.105",,,description
+KAN-1010,AS1730,Bearing Supplier,"Thrust washer (ID 17 mm OD >30 mm), thickness 1-1.5 mm",16 x 30 x 1.5 thrust washers,https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as1730-skf,"1010.B.087   ,   1011.E.105",,,description
+KAN-457,AS2035,Bearing Supplier,"Thrust washer (ID 20 mm OD >35 mm), thickness 1-1.5 mm","12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock)",https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as2035-skf,1011.A.105,,,description
+KAN-457,AS2035,Bearing Supplier,"Thrust washer (ID 20 mm OD >35 mm), thickness 1-1.5 mm","12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock)",https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as2035-skf,1011.B.111,,,description
+KAN-457,AS2035,Bearing Supplier,"Thrust washer (ID 20 mm OD >35 mm), thickness 1-1.5 mm","12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock)",https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as2035-skf,1011.B.112,,,description
+KAN-457,AS2035,Bearing Supplier,"Thrust washer (ID 20 mm OD >35 mm), thickness 1-1.5 mm","12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock)",https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as2035-skf,"1011.A.105   ,   1011.E.106",,,description
+KAN-457,AS2035,Bearing Supplier,"Thrust washer (ID 20 mm OD >35 mm), thickness 1-1.5 mm","12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock)",https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as2035-skf,"1011.B.111   ,   1011.E.106",,,description
+KAN-457,AS2035,Bearing Supplier,"Thrust washer (ID 20 mm OD >35 mm), thickness 1-1.5 mm","12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock)",https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as2035-skf,"1011.B.112   ,   1011.E.106",,,description
+KAN-457,AS2035,Bearing Supplier,"Thrust washer (ID 20 mm OD >35 mm), thickness 1-1.5 mm","12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock)",https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as2035-skf,"1011.A.105   ,   1011.E.105",,,description
+KAN-457,AS2035,Bearing Supplier,"Thrust washer (ID 20 mm OD >35 mm), thickness 1-1.5 mm","12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock)",https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as2035-skf,"1011.B.111   ,   1011.E.105",,,description
+KAN-457,AS2035,Bearing Supplier,"Thrust washer (ID 20 mm OD >35 mm), thickness 1-1.5 mm","12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock)",https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as2035-skf,"1011.B.112   ,   1011.E.105",,,description
+KAN-1216,AS3047,Bearing Supplier,"Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm","Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm   AS3047",https://www.bearingsrus.co.uk/review/product/list/id/23450/category/208/,"1011.B.106   ,   1011.E.106",,,name
+KAN-1216,AS3047,Bearing Supplier,"Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm","Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm   AS3047",https://www.bearingsrus.co.uk/review/product/list/id/23450/category/208/,"1011.B.106   ,   1011.E.106",,,name
+KAN-1216,AS3047,Bearing Supplier,"Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm","Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm   AS3047",https://www.bearingsrus.co.uk/review/product/list/id/23450/category/208/,"1011.D.106   ,   1011.E.106",,,name
+KAN-1216,AS3047,Bearing Supplier,"Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm","Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm   AS3047",https://www.bearingsrus.co.uk/review/product/list/id/23450/category/208/,"1010.B.086   ,   1011.E.106",,,name
+KAN-1216,AS3047,Bearing Supplier,"Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm","Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm   AS3047",https://www.bearingsrus.co.uk/review/product/list/id/23450/category/208/,"1010.A.088   ,   1011.E.106",,,name
+KAN-1216,AS3047,Bearing Supplier,"Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm","Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm   AS3047",https://www.bearingsrus.co.uk/review/product/list/id/23450/category/208/,"1011.A.104   ,   1011.E.106",,,name
+KAN-1216,AS3047,Bearing Supplier,"Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm","Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm   AS3047",https://www.bearingsrus.co.uk/review/product/list/id/23450/category/208/,"1010.A.085   ,   1011.E.106",,,name
+KAN-526,TFW2036015 DLU,Bearing Supplier,Thrust Washer 20x36x1.5mm,20 x 36 x1.5mm thrust washers / Thrust Washer 20x36x1.5mm,https://simplybearings.co.uk/shop/p20158507/TFW2036015-DLU-Thrust-Washer-20x36x1.5mm/product_info.html,"1003.A.124   ,   1003.B.124 / 1011.E.111",TFW2036015 DLU,simply bea,vendor
+KAN-526,TFW2036015 DLU,Bearing Supplier,Thrust Washer 20x36x1.5mm,20 x 36 x1.5mm thrust washers / Thrust Washer 20x36x1.5mm,https://simplybearings.co.uk/shop/p20158507/TFW2036015-DLU-Thrust-Washer-20x36x1.5mm/product_info.html,"1003.B.124   ,   1003.B.124 / 1011.E.111",TFW2036015 DLU,simply bea,vendor
+KAN-526,TFW2036015 DLU,Simply Bearings,Thrust Washer 20x36x1.5mm,20 x 36 x1.5mm thrust washers / Thrust Washer 20x36x1.5mm,,"S1.1003.A.12   ,   1003.B.124 / 1011.E.111",TFW2036015 DLU,simply bea,vendor
+KAN-526,TFW2036015 DLU,Simply Bearings,Thrust Washer 20x36x1.5mm,20 x 36 x1.5mm thrust washers / Thrust Washer 20x36x1.5mm,,"S3.1003.B.12   ,   1003.B.124 / 1011.E.111",TFW2036015 DLU,simply bea,vendor
+KAN-427,INA AS4060,Bearing Supplier,Thrust washer 40x60x1,40x60x1 Thrust washer AS4060,https://simplybearings.co.uk/shop/p8863/AS4060-Pack-of-2-Major-Brand-Thrust-Washer-Series-AS-40x60x1mm/product_info.html,1011.B.105,,,description
+KAN-427,INA AS4060,Bearing Supplier,Thrust washer 40x60x1,40x60x1 Thrust washer AS4060,https://simplybearings.co.uk/shop/p8863/AS4060-Pack-of-2-Major-Brand-Thrust-Washer-Series-AS-40x60x1mm/product_info.html,"1011.B.105   ,   1011.E.106",,,description
+KAN-427,INA AS4060,Bearing Supplier,Thrust washer 40x60x1,40x60x1 Thrust washer AS4060,https://simplybearings.co.uk/shop/p8863/AS4060-Pack-of-2-Major-Brand-Thrust-Washer-Series-AS-40x60x1mm/product_info.html,"1011.B.105   ,   1011.E.105",,,description
+KAN-427,INA AS4060,Bearing Supplier,Thrust washer 40x60x1,40x60x1 Thrust washer AS4060,,1011.B.105,,,description
+KAN-427,INA AS4060,Bearing Supplier,Thrust washer 40x60x1,40x60x1 Thrust washer AS4060,,1011.D.101,,,description
+KAN-427,INA AS4060,Bearing Supplier,Thrust washer 40x60x1,40x60x1 Thrust washer AS4060,,"1011.B.105   ,   1011.E.106",,,description
+KAN-427,INA AS4060,Bearing Supplier,Thrust washer 40x60x1,40x60x1 Thrust washer AS4060,,"1011.D.101   ,   1011.E.106",,,description
+KAN-427,INA AS4060,Bearing Supplier,Thrust washer 40x60x1,40x60x1 Thrust washer AS4060,,"1011.B.105   ,   1011.E.105",,,description
+KAN-427,INA AS4060,Bearing Supplier,Thrust washer 40x60x1,40x60x1 Thrust washer AS4060,,"1011.D.101   ,   1011.E.105",,,description
+KAN-681,GTM-1630-015,IGUS,Thrust washer iglide G300,GTM-1630-015,,1009.A.051,,,name
+KAN-681,GTM-1630-015,IGUS,Thrust washer iglide G300,GTM-1630-015,,1005.A.075,,,name
+KAN-681,GTM-1630-015,IGUS,Thrust washer iglide G300,GTM-1630-015,,1009.X.016,,,name
+KAN-681,GTM-1630-015,IGUS,Thrust washer iglide G300,GTM-1630-015,,1005.B.135,,,name
+KAN-247,A0101212-A_Sht1,Magnet Schultz,TO BE PAINTED WITH DURALUX - note on drawing - EBL-I 1515 61-GFCX 040 FC FL 24V (Power to retract),GFCX 040 X00 E23 RA 24v 100%ED  (A0100010)1m long leads- Magnetic Shultz - Shoot Bolt,,1000.W2.FlatShootbolt,A0100010  or   GFCX 040 X00 E23 R 100%ED,,description
+KAN-579,C27091-014,RS Components,"U Clip, 10.7mm x 12.7mm x 0.36mm","U Clip, 10.7mm x 12.7mm x 0.36mm EPF186-PPBLK",,6000.D.014,,,description
+KAN-579,C27091-014,RS Components,"U Clip, 10.7mm x 12.7mm x 0.36mm","U Clip, 10.7mm x 12.7mm x 0.36mm EPF186-PPBLK",,6000.D.014,,,description
+KAN-120,SES44742402,Related Fluid,Valve Block - 2 function,SES44742402 Main lift Manifold with Stairs - £421.19 DO NOT ORDER MORE,,1008.H1.1(RF,SES44742402,,vendor
+KAN-321,NBSS.019,NBSS/ Laser Cut,Valve blocks base plate - NBSS.019,10 off NBSS019 (ValveBlockPlate) not used,,1008.D.070,NBSS.019,,vendor
+KAN-347,NBSS.018,NBSS/ Sesame,Wheel Pin,40 off NBSS018 (Wheel Pin) 14x51 clevis pins S/S,,1003.B.006,33970MFG,,description
+KAN-347,NBSS.018,NBSS/ Sesame,Wheel Pin,40 off NBSS018 (Wheel Pin) 14x51 clevis pins S/S,,1003.B.006,,,description
+KAN-347,NBSS.018,NBSS/ Sesame,Wheel Pin NBSS.018,40 off NBSS018 (Wheel Pin) 14x51 clevis pins S/S,,1003.006,33970MFG,,description
+KAN-347,NBSS.018,NBSS/ Sesame,Wheel Pin NBSS.018,40 off NBSS018 (Wheel Pin) 14x51 clevis pins S/S,,1003.006,,,description
+KAN-143,4.053,Euro Bearings,Winkel Bearing + PL00(Plate) -  TDC Coating,20 off Winkle Bearings for stock ,,3000.Winkel.,NBSS.021,,description
+KAN-143,4.053,Euro-Bearings,Winkel Bearing + PL00(Plate) - send to zinc plating,20 off Winkle Bearings for stock ,,1000.F.Winke,,Corodine,description
+KAN-143,4.053,Euro-Bearings,Winkel Bearing + PL00(Plate) - send to zinc plating,20 off Winkle Bearings for stock ,,1000.F.Winke,,,description
+KAN-143,4.053,Euro-Bearings,Winkel Bearing + PL00(Plate) - send to zinc plating,20 off Winkle Bearings for stock ,,1000.F.Winke,,,description
+KAN-783,EC053,Euro-bearings,Winkel Channel (EC053) + nickel plated,2 off  Obsolete Nickel plated Ram Bottom Rod   1011.B.012 - MAKE INHOUSE,,2000.B.074,,,description
+KAN-976,R-Clip 2x48,RS Components,Zinc Plated Steel R-Clip 2x48,mild steel r clip 2.5 x 42mm ,,1000.C.R-Clip 2x48,1010.A.064,,description
+KAN-976,R-Clip 2x48,RS Components,Zinc Plated Steel R-Clip 2x48,mild steel r clip 2.5 x 42mm ,,1000.C.R-Clip 2x48,,,description
+KAN-976,R-Clip 2x48,RS Components,Zinc Plated Steel R-Clip 2x48,mild steel r clip 2.5 x 42mm ,,1000.C.R-Clip 2x48,99213374,,description

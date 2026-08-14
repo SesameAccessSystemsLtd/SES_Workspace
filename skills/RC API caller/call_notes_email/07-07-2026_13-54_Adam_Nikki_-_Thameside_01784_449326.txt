@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  07/07/2026  13:54
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo discussing machining specifications and pricing adjustments with Adam/Nikki from Thameside, focusing on wheel modifications, stock quantities, and production planning. The overall outcome was a plan to review and update pricing and production quantities, with follow-up actions assigned.
+
+--- RECAP --------------------------------------------------
+Adam/Nikki from Thameside is quoting machining services for wheels, specifically regarding adding 5mm chamfers to the corners of an 80mm diameter hardened wheel, with stock available in 3mm chamfer sizes.They discussed the quantity of wheels, noting only 6 units, and the need to increase prices due to low quantities, with specific mention of the AO 45 wheel bracket requiring only 2 units of each type.Adam/Nikki clarified that the AO 45 bracket is not the PIN but a part requiring machining, made from mild steel, which is more cost-effective than stainless steel, and they plan to make 4 units, possibly keeping 2 in stock.They also discussed making 2 sets of fork wheel bearing holders for the larger platform, totaling 4 units, to reduce costs, and agreed to finalize prices later after reviewing previous pricing details.Giles Hugo requested Adam/Nikki to send updated pricing information later, and the call concluded with mutual thanks and goodbyes.
+
+--- TASKS --------------------------------------------------
+Adam/Nikki from Thameside will review previous pricing details and send updated prices later.Adam/Nikki will confirm the quantities and specifications for the wheel brackets and bearing holders and provide the final quotes.
+
+(Full transcript: RC web portal only — no RingSense API)

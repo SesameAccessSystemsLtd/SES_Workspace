@@ -1,0 +1,178 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1580 - Admiralty Single Scissor BOM,"Master task for all BOMs related to 1580 - Admiralty Single Scissor BOM
+Dropbox: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Project: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",,,,,,,,,,
+Surface Finish BOM - 1580 - Admiralty Single Scissor BOM,,ALL BOMS - 1580 - Admiralty Single Scissor BOM,,Surface Finish BOM,,,,,,,
+Galvanising - 1580 - Admiralty Single Scissor BOM,,Surface Finish BOM - 1580 - Admiralty Single Scissor BOM,,Galvanising,,,,,,,
+1 off Galvanising 1580. 1010.A1w - Welded Assembly,"1580.1010.A1w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 48.282 kg
+Volume: 6150594.900 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",Galvanising - 1580 - Admiralty Single Scissor BOM,1,Galvanising,,,,ORDER,PROJECT ORDER,1216239417139499,https://app.asana.com/0/848657415032331/1216239417139499
+1 off Galvanising 1580. 1010.A7w - Welded Assembly,"1580.1010.A7w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 2.024 kg
+Volume: 257786.609 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",Galvanising - 1580 - Admiralty Single Scissor BOM,1,Galvanising,,,,ORDER,PROJECT ORDER,1216239504441274,https://app.asana.com/0/848657415032331/1216239504441274
+1 off Galvanising 1580. 1010.A7w_MIR - Welded Assembly,"1580.1010.A7w_MIR
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 2.024 kg
+Volume: 257786.609 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",Galvanising - 1580 - Admiralty Single Scissor BOM,1,Galvanising,,,,ORDER,PROJECT ORDER,1216239544464121,https://app.asana.com/0/848657415032331/1216239544464121
+Yellow Zinc Plating - 1580 - Admiralty Single Scissor BOM,,Surface Finish BOM - 1580 - Admiralty Single Scissor BOM,,Yellow Zinc Plating,,,,,,,
+1 off Yellow Zinc Plating 1580. 1010.A11w - Welded Assembly,"1580.1010.A11w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 6.592 kg
+Volume: 839749.936 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",Yellow Zinc Plating - 1580 - Admiralty Single Scissor BOM,1,Yellow Zinc Plating,,,,ORDER,PROJECT ORDER,1216239504442643,https://app.asana.com/0/848657415032331/1216239504442643
+Laser Cut BOM - 1580 - Admiralty Single Scissor BOM,,ALL BOMS - 1580 - Admiralty Single Scissor BOM,,Laser Cut,,,,,,,
+Laser Cut - 1580 - Admiralty Single Scissor BOM,,Laser Cut BOM - 1580 - Admiralty Single Scissor BOM,,Laser Cut,,,,,,,
+1 off 1580. 1010.A.007 - Front Table Plate 304/HR Laser Cut,"1580.1010.A.007
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 1.737 kg
+Volume: 217121.097 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",Laser Cut - 1580 - Admiralty Single Scissor BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216239417140717,https://app.asana.com/0/848657415032331/1216239417140717
+2 off 1580. 1010.A.008 - (TopFrame_Side_Plate) 304/HR Laser Cut,"1580.1010.A.008
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 2.821 kg
+Volume: 352638.549 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",Laser Cut - 1580 - Admiralty Single Scissor BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216239417207466,https://app.asana.com/0/848657415032331/1216239417207466
+1 off 1580. 1010.A.014 - Top Table Plate 304/HR Laser Cut,"1580.1010.A.014
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 29.467 kg
+Volume: 3683326.972 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",Laser Cut - 1580 - Admiralty Single Scissor BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216239504184671,https://app.asana.com/0/848657415032331/1216239504184671
+1 off 1580. 1010.A.067 - Front Table Plate 304/HR Laser Cut,"1580.1010.A.067
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 1.734 kg
+Volume: 216781.303 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",Laser Cut - 1580 - Admiralty Single Scissor BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216239544853806,https://app.asana.com/0/848657415032331/1216239544853806
+1 off 1580. 1010.A.095 - Striker 304/2B Laser Cut,"1580.1010.A.095
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 0.225 kg
+Volume: 28085.241 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",Laser Cut - 1580 - Admiralty Single Scissor BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216239545721769,https://app.asana.com/0/848657415032331/1216239545721769
+NBSS BOM - 1580 - Admiralty Single Scissor BOM,,ALL BOMS - 1580 - Admiralty Single Scissor BOM,,NBSS,,,,,,,
+NBSS/Laser Cut - 1580 - Admiralty Single Scissor BOM,,NBSS BOM - 1580 - Admiralty Single Scissor BOM,,NBSS/Laser Cut,,,,,,,
+2 off 1580. 414 - NBSS.414 Limit Switch Angle 304/2B NBSS/Laser Cut,"1580.414
+Stock Number: 304/2B
+KAN: KAN-282
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267515
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 0.188 kg
+Volume: 23520.852 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",NBSS/Laser Cut - 1580 - Admiralty Single Scissor BOM,,NBSS/Laser Cut,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216239417767976,https://app.asana.com/0/848657415032331/1216239417767976
+2 off 1580. 415 - NBSS.415 LimitSwitch.Plate dia 100 x 90 304/2B NBSS/Laser Cut,"1580.415
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 0.202 kg
+Volume: 25215.120 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",NBSS/Laser Cut - 1580 - Admiralty Single Scissor BOM,2,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1216239418108781,https://app.asana.com/0/848657415032331/1216239418108781
+Sesame BOM - 1580 - Admiralty Single Scissor BOM,,ALL BOMS - 1580 - Admiralty Single Scissor BOM,,Sesame,,,,,,,
+Sesame - 1580 - Admiralty Single Scissor BOM,,Sesame BOM - 1580 - Admiralty Single Scissor BOM,,Sesame,,,,,,,
+2 off 1580. 1008.A1 - Adjustable actuator LimitSwitch: LRC5A55 LRC5A55 Sesame,"1580.1008.A1
+Stock Number: LRC5A55
+Web Link: https://uk.farnell.com/imo-precision-controls
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 0.102 kg
+Volume: 102201.910 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",Sesame - 1580 - Admiralty Single Scissor BOM,2,Sesame,,,,ORDER,PROJECT ORDER,1216239418319635,https://app.asana.com/0/848657415032331/1216239418319635
+2 off 1580. 1008.A14 - Standard LimitSwitch: LRC5A54 LRC5A54 Sesame,"1580.1008.A14
+Stock Number: LRC5A54
+Web Link: https://uk.farnell.com/imo-precision-controls/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 0.854 kg
+Volume: 162337.453 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",Sesame - 1580 - Admiralty Single Scissor BOM,2,Sesame,,,,ORDER,PROJECT ORDER,1216239545849258,https://app.asana.com/0/848657415032331/1216239545849258
+VUBA - 1580 - Admiralty Single Scissor BOM,,Sesame BOM - 1580 - Admiralty Single Scissor BOM,,VUBA,,,,,,,
+"2 off 1580. 1008.H8.VUBA DIN T10L - Hydraulic Adjustment Hose Burst Valve DIN 2353, VUBA 3/8"" DIN T10L, max flow 50l/min, max pressure 350 Bar V0784 VUBA","1580.1008.H8.VUBA DIN T10L
+Stock Number: V0784
+Material: Stainless Steel
+Web Link: https://www.flowfitonline.com/categories/hydraulic-cartridge-valves/hose-burst-valves/hydraulic-hose-burst-valve-vuba-3-8-to-t10l-m16x1-5-din-2353
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 0.052 kg
+Volume: 6490.960 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",VUBA - 1580 - Admiralty Single Scissor BOM,2,VUBA,,,,ORDER,PROJECT ORDER,1216239546558740,https://app.asana.com/0/848657415032331/1216239546558740
+RS Components - 1580 - Admiralty Single Scissor BOM,,Sesame BOM - 1580 - Admiralty Single Scissor BOM,,RS Components,,,,,,,
+6 off 1580. 1008.T.13ID_P_Clip - Rubber-lined clamp; 13mm ID 298-8097 RS Components,"1580.1008.T.13ID_P_Clip
+Stock Number: 298-8097
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/p-clips/2988097/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 0.002 kg
+Volume: 1949.773 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",RS Components - 1580 - Admiralty Single Scissor BOM,6,RS Components,,,,ORDER,PROJECT ORDER,1216239546601179,https://app.asana.com/0/848657415032331/1216239546601179
+2 off 1580. 1008.T.25ID_Grommet - Grommet ID 18.5mm (Hole 25mm Dia.) Sesame,"1580.1008.T.25ID_Grommet
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 0.005 kg
+Volume: 5276.370 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",Sesame - 1580 - Admiralty Single Scissor BOM,2,Sesame,,,,ORDER,PROJECT ORDER,1216239505219547,https://app.asana.com/0/848657415032331/1216239505219547
+Bearing Supplier - 1580 - Admiralty Single Scissor BOM,,Sesame BOM - 1580 - Admiralty Single Scissor BOM,,Bearing Supplier,,,,,,,
+"8 off 1580. 1010.A.088 - Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm AS3047 Bearing Supplier","1580.1010.A.088
+Stock Number: AS3047
+Material: Stainless Steel
+Web Link: https://www.bearingsrus.co.uk/review/product/list/id/23450/category/208/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 0.008 kg
+Volume: 1028.086 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",Bearing Supplier - 1580 - Admiralty Single Scissor BOM,8,Bearing Supplier,,,,ORDER,PROJECT ORDER,1216239662835476,https://app.asana.com/0/848657415032331/1216239662835476
+"8 off 1580. 1010.A.089 - Thrust washer (ID 17 mm OD >30 mm), thickness 1-1.5 mm AS1730 Bearing Supplier","1580.1010.A.089
+Stock Number: AS1730
+Material: Stainless Steel
+Web Link: https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as1730-skf
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 0.004 kg
+Volume: 479.878 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",Bearing Supplier - 1580 - Admiralty Single Scissor BOM,8,Bearing Supplier,,,,ORDER,PROJECT ORDER,1216239546465111,https://app.asana.com/0/848657415032331/1216239546465111
+Long Leading BOM - 1580 - Admiralty Single Scissor BOM,,ALL BOMS - 1580 - Admiralty Single Scissor BOM,,Long Leading,,,,,,,
+1 off 1580. 1010.A.ScissorLift_Single - Scissor lift Sesame,"1580.1010.A.ScissorLift_Single
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 242.931 kg
+Volume: 34442914.202 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",Sesame - 1580 - Admiralty Single Scissor BOM,1,Sesame,,,,ORDER,PROJECT ORDER,1216239417949427,https://app.asana.com/0/848657415032331/1216239417949427
+4 off 1580. DIN 71412 - M 6 - Greasing Nipple Sesame,"1580.DIN 71412 - M 6
+Material: Steel
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/q42h3apsyrmoeam7axx69/APYpnvXVSWn9ZPFftaVAOAw?rlkey=9mh376ass2ys4lc7eih2yeh0v&dl=0
+Mass: 0.004 kg
+Volume: 471.462 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1216196127711652?focus=true",Sesame - 1580 - Admiralty Single Scissor BOM,4,Sesame,,,,ORDER,PROJECT ORDER,1216239283969031,https://app.asana.com/0/848657415032331/1216239283969031

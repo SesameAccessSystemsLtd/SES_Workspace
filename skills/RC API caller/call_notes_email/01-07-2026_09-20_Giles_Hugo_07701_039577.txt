@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  01/07/2026  09:20
+============================================================
+With:         Giles Hugo 07701 039577
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Giles Hugo requesting assistance from Fatima Barros to log into TeamViewer on his computer and discussing issues with accessing an invoice on OpenAI, while also coordinating communication methods.
+
+--- RECAP --------------------------------------------------
+Giles Hugo asked Fatima Barros to help him log into TeamViewer on his computer during the call.Fatima Barros attempted to assist Giles Hugo with logging into TeamViewer and planned to switch off and call him from her phone to facilitate the process.Giles Hugo inquired about the availability of RingCentral on Fatima Barros's phone, which she confirmed she does not have.There was a discussion about accessing an invoice on OpenAI, with Fatima Barros mentioning that the email code was not working due to personal details being removed.The call ended with both parties coordinating their communication methods and saying goodbye.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

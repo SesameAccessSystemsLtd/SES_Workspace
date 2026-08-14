@@ -1,0 +1,226 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date
+ALL BOMS - 1582 Russel Square Scissor,1582 Russel Square Scissor,,,,,,
+Surface Finish BOM - 1582 Russel Square Scissor,,ALL BOMS - 1582 Russel Square Scissor,,Surface Finish BOM,,,
+Yellow Zinc Plating - 1582 Russel Square Scissor,,Surface Finish BOM - 1582 Russel Square Scissor,,Yellow Zinc Plating,,,
+2 off 1582. 1011.B.011.04 - Rod (BRIGHT) Yellow Zinc Plating,"1582.1011.B.011.04
+Material: Bright Steel 80A15
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 0.619 kg
+Volume: 78836.806 mm^3
+Project Task: ",Yellow Zinc Plating - 1582 Russel Square Scissor,2,Yellow Zinc Plating,,,
+2 off 1582. 1011.B.012.04 - Rod (BRIGHT) Yellow Zinc Plating,"1582.1011.B.012.04
+Material: Bright Steel 80A15
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 0.952 kg
+Volume: 121243.824 mm^3
+Project Task: ",Yellow Zinc Plating - 1582 Russel Square Scissor,2,Yellow Zinc Plating,,,
+Galvanising - 1582 Russel Square Scissor,,Surface Finish BOM - 1582 Russel Square Scissor,,Galvanising,,,
+1 off 1582. 1011.B1w - Welded assembly Galvanising,"1582.1011.B1w
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 48.191 kg
+Volume: 6139009.539 mm^3
+Project Task: ",Galvanising - 1582 Russel Square Scissor,1,Galvanising,,,
+1 off 1582. 1011.B9w - Welded Assembly Galvanising,"1582.1011.B9w
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 1.953 kg
+Volume: 248739.778 mm^3
+Project Task: ",Galvanising - 1582 Russel Square Scissor,1,Galvanising,,,
+1 off 1582. 1011.B9w_MIR - Welded Assembly Galvanising,"1582.1011.B9w_MIR
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 1.953 kg
+Volume: 248739.778 mm^3
+Project Task: ",Galvanising - 1582 Russel Square Scissor,1,Galvanising,,,
+3 off 1582. 1011.B19w - Welded assembly Yellow Zinc Plating,"1582.1011.B19w
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 8.071 kg
+Volume: 1028214.080 mm^3
+Project Task: ",Yellow Zinc Plating - 1582 Russel Square Scissor,3,Yellow Zinc Plating,,,
+2 off 1582. 1011.B20w.01 - Welded assembly - Already in stock Yellow Zinc Plating,"1582.1011.B20w.01
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 0.302 kg
+Volume: 38442.748 mm^3
+Project Task: ",Yellow Zinc Plating - 1582 Russel Square Scissor,2,Yellow Zinc Plating,,,
+2 off 1582. 1011.B21w.01 - Welded assembly - Already in stock Yellow Zinc Plating,"1582.1011.B21w.01
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 0.264 kg
+Volume: 33655.606 mm^3
+Project Task: ",Yellow Zinc Plating - 1582 Russel Square Scissor,2,Yellow Zinc Plating,,,
+Laser Cut BOM - 1582 Russel Square Scissor,,ALL BOMS - 1582 Russel Square Scissor,,Laser Cut,,,
+Laser Cut - 1582 Russel Square Scissor,,Laser Cut BOM - 1582 Russel Square Scissor,,Laser Cut,,,
+1 off 1582. 1011.B.030 - TopPlate 304/HR Laser Cut,"1582.1011.B.030
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 32.514 kg
+Volume: 4064196.527 mm^3
+Project Task: ",Laser Cut - 1582 Russel Square Scissor,1,Laser Cut,,,
+2 off 1582. 1011.B.031 - TopPlate.Side 304/HR Laser Cut,"1582.1011.B.031
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 4.693 kg
+Volume: 586617.771 mm^3
+Project Task: ",Laser Cut - 1582 Russel Square Scissor,2,Laser Cut,,,
+1 off 1582. 1011.B.032 - TopPlate.Front 304/HR Laser Cut,"1582.1011.B.032
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 3.091 kg
+Volume: 386317.593 mm^3
+Project Task: ",Laser Cut - 1582 Russel Square Scissor,1,Laser Cut,,,
+1 off 1582. 1011.B.040 - SupportPlate Laser Cut,"1582.1011.B.040
+KAN: KAN-298
+KAN Stock Link: https://app.asana.com/0/632603478911321/1200317103586535
+Material: Steel, Mild
+Thickness: 15.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 5.982 kg
+Volume: 762043.693 mm^3
+Project Task: ",Laser Cut - 1582 Russel Square Scissor,1,Laser Cut,,,
+1 off 1582. 1011.B.058 - SupportPlate Laser Cut,"1582.1011.B.058
+Material: Steel, Mild
+Thickness: 15.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 6.820 kg
+Volume: 868800.000 mm^3
+Project Task: ",Laser Cut - 1582 Russel Square Scissor,1,Laser Cut,,,
+1 off 1582. 1011.B.086 - TopPlate.Front 304/HR Laser Cut,"1582.1011.B.086
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 3.086 kg
+Volume: 385807.901 mm^3
+Project Task: ",Laser Cut - 1582 Russel Square Scissor,1,Laser Cut,,,
+1 off 1582. 1011.B.109 - Limit Switch Angle 304/2B Laser Cut,"1582.1011.B.109
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.219 kg
+Volume: 27420.852 mm^3
+Project Task: ",Laser Cut - 1582 Russel Square Scissor,1,Laser Cut,,,
+2 off 1582. 1011.B.114 - LimitSwitch.Plate dia 100 x 102 304/2B Laser Cut,"1582.1011.B.114
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.223 kg
+Volume: 27915.120 mm^3
+Project Task: ",Laser Cut - 1582 Russel Square Scissor,2,Laser Cut,,,
+1 off 1582. 1011.B.117 - Actuator.Bracket Template Laser Cut,"1582.1011.B.117
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.471 kg
+Volume: 60041.482 mm^3
+Project Task: ",Laser Cut - 1582 Russel Square Scissor,1,Laser Cut,,,
+1 off 1582. 1011.B.118 - Striker 304/2B Laser Cut,"1582.1011.B.118
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.401 kg
+Volume: 50160.489 mm^3
+Project Task: ",Laser Cut - 1582 Russel Square Scissor,1,Laser Cut,,,
+NBSS BOM - 1582 Russel Square Scissor,,ALL BOMS - 1582 Russel Square Scissor,,NBSS,,,
+NBSS/Laser Cut - 1582 Russel Square Scissor,,NBSS BOM - 1582 Russel Square Scissor,,NBSS/Laser Cut,,,
+1 off 1582. 414 - NBSS.414 Limit Switch Angle 304/2B NBSS/Laser Cut,"1582.414
+Stock Number: 304/2B
+KAN: KAN-282
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267515
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 0.188 kg
+Volume: 23520.852 mm^3
+Project Task: ",NBSS/Laser Cut - 1582 Russel Square Scissor,1,NBSS/Laser Cut,,,
+Sesame BOM - 1582 Russel Square Scissor,,ALL BOMS - 1582 Russel Square Scissor,,Sesame,,,
+Sesame - 1582 Russel Square Scissor,,Sesame BOM - 1582 Russel Square Scissor,,Sesame,,,
+4 off 1582. 1008.A14 - Standard LimitSwitch: LRC5A54 LRC5A54 Sesame,"1582.1008.A14
+Stock Number: LRC5A54
+Web Link: https://uk.farnell.com/imo-precision-controls/
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.854 kg
+Volume: 162337.453 mm^3
+Project Task: ",Sesame - 1582 Russel Square Scissor,4,Sesame,,,
+VUBA - 1582 Russel Square Scissor,,Sesame BOM - 1582 Russel Square Scissor,,VUBA,,,
+"2 off 1582. 1008.H8.VUBA DIN T10L - Hydraulic Adjustment Hose Burst Valve DIN 2353, VUBA 3/8"" DIN T10L, max flow 50l/min, max pressure 350 Bar V0784 VUBA","1582.1008.H8.VUBA DIN T10L
+Stock Number: V0784
+Material: Stainless Steel
+Web Link: https://www.flowfitonline.com/categories/hydraulic-cartridge-valves/hose-burst-valves/hydraulic-hose-burst-valve-vuba-3-8-to-t10l-m16x1-5-din-2353
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.052 kg
+Volume: 6490.960 mm^3
+Project Task: ",VUBA - 1582 Russel Square Scissor,2,VUBA,,,
+RS Components - 1582 Russel Square Scissor,,Sesame BOM - 1582 Russel Square Scissor,,RS Components,,,
+12 off 1582. 1008.T.13ID_P_Clip - Rubber-lined clamp; 13mm ID 298-8097 RS Components,"1582.1008.T.13ID_P_Clip
+Stock Number: 298-8097
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/p-clips/2988097/
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.002 kg
+Volume: 1949.773 mm^3
+Project Task: ",RS Components - 1582 Russel Square Scissor,12,RS Components,,,
+Bearing Supplier - 1582 Russel Square Scissor,,Sesame BOM - 1582 Russel Square Scissor,,Bearing Supplier,,,
+8 off 1582. 1011.B.105 - Thrust washer 40x60x1 INA AS4060 Bearing Supplier,"1582.1011.B.105
+Stock Number: INA AS4060
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+Web Link: https://simplybearings.co.uk/shop/p8863/AS4060-Pack-of-2-Major-Brand-Thrust-Washer-Series-AS-40x60x1mm/product_info.html
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.013 kg
+Volume: 1570.796 mm^3
+Project Task: ",Bearing Supplier - 1582 Russel Square Scissor,8,Bearing Supplier,,,
+"24 off 1582. 1011.B.106 - Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm AS3047 Bearing Supplier","1582.1011.B.106
+Stock Number: AS3047
+Material: Stainless Steel
+Web Link: https://www.bearingsrus.co.uk/review/product/list/id/23450/category/208/
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.008 kg
+Volume: 1028.086 mm^3
+Project Task: ",Bearing Supplier - 1582 Russel Square Scissor,24,Bearing Supplier,,,
+"8 off 1582. 1011.B.111 - Thrust washer (ID 20 mm OD >35 mm), thickness 1-1.5 mm AS2035 Bearing Supplier","1582.1011.B.111
+Stock Number: AS2035
+Material: Stainless Steel
+Web Link: https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as2035-skf
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.005 kg
+Volume: 647.953 mm^3
+Project Task: ",Bearing Supplier - 1582 Russel Square Scissor,8,Bearing Supplier,,,
+4 off 1582. DIN 71412 - M 6 - Greasing Nipple Sesame,"1582.DIN 71412 - M 6
+Material: Steel
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.004 kg
+Volume: 471.462 mm^3
+Project Task: ",Sesame - 1582 Russel Square Scissor,4,Sesame,,,

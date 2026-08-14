@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  12/08/2026  09:25
+============================================================
+With:         +447837281494 07837 281494
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo and Charles Jamie discussing order discrepancies, delivery details, and upcoming shipments. They clarified order numbers, delivery dates, and parts included, resolving confusion about order processing. Jamie also confirmed that parts are on stock and ready for dispatch, and they discussed dimensions and quality checks for upcoming parts.
+
+--- RECAP --------------------------------------------------
+Giles Hugo and Charles Jamie discussed order number 211066-10100, which includes parts delivered on July 24th, such as junction boxes and other components, with some parts delivered on July 26th. They identified that multiple jobs are under the same order number, which is unusual, and clarified that the correct order number for the current job is 211133-1580, which is associated with order 211066-1010.They confirmed that all parts related to the order are on stock and located on the shelf, explaining that the parts are not missing but misclassified under the wrong order number, causing confusion. Giles expressed frustration over the processing errors, and Jamie explained that the parts are correctly on stock and ready for dispatch.Jamie confirmed that the parts needed for the upcoming shipment are being prepared and will be dispatched tonight, expected to arrive tomorrow. They also discussed the dimensions and quality of a long, 10mm thick part, which Jamie will verify upon recoil, to ensure it meets specifications before shipping.
+
+--- TASKS --------------------------------------------------
+Jamie will verify the dimensions and quality of the long, 10mm thick part upon recoil to ensure it meets specifications before dispatch.Jamie will confirm the shipment details and dispatch the parts tonight to ensure delivery tomorrow.
+
+(Full transcript: RC web portal only — no RingSense API)

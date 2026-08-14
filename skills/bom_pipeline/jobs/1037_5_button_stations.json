@@ -1,0 +1,13 @@
+{
+  "job_id": "1037_5_button_stations",
+  "project_name": "1037 - 5.Button Stations",
+  "control_task_gid": "1217311060107464",
+  "asana_url": "https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",
+  "dropbox_url": "https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0",
+  "parts_folder": "C:\\Users\\GilesHugo\\SAS Dropbox\\3. Projects\\Langley street\\Design\\2.3. Order\\5.Button Stations",
+  "target_project_gid": "848657415032331",
+  "job_project_gid": null,
+  "assignee_gid": "1142108324926610",
+  "excluded_cost_centres": ["Steel Profile"],
+  "notes": "LIVE TEST CASE (2026-08-12). New BOM '5.Button Stations' arrived as a subtask (1217311060107464) under the COMPLETED primary 'Karol Generate Entire BOM - 1037 - Langley Street' (1213147826874923). Primary closed 2026-08-12T14:11. Old sibling subtask '4.Gate and Support' (1216065040033665) was already imported as FLAT vendor groups into Build Orders with NO 'ALL BOMS' root and NO Parts Control integration. So this 5.Button Stations import creates the FIRST proper ALL BOMS root for 1037 via the current 5-stage pipeline, sitting alongside the legacy flat vendor tasks from the 4.Gate import. Source:BOM folder has cost-centre subfolders Engraving/Finishes/Laser Cut/NBSS/Sesame (no Steel Profile subfolder in this BOM). Part prefix 1037.1016.*. See edge-case task 1217366701125766."
+}

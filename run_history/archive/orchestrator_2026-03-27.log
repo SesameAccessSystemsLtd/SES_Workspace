@@ -1,0 +1,648 @@
+2026-03-27 16:06:34,937 [INFO] ======================================================================
+2026-03-27 16:06:34,938 [INFO] SesameAccess Contracts Finder Pipeline — 2026-03-27 16:06 UTC
+2026-03-27 16:06:34,938 [INFO] Mode: full | Apollo: False | HubSpot: True
+2026-03-27 16:06:34,945 [INFO] ======================================================================
+2026-03-27 16:06:34,946 [INFO] 
+Step 1: Scraping contracts since 2025-09-28
+2026-03-27 16:06:35,037 [INFO] ============================================================
+2026-03-27 16:06:35,037 [INFO] SesameAccess × Contracts Finder scrape starting
+2026-03-27 16:06:35,037 [INFO] Since: 2025-09-28 | Respect seen: True
+2026-03-27 16:06:35,037 [INFO] ============================================================
+2026-03-27 16:06:35,037 [INFO] 
+Searching: 'disability lift'
+2026-03-27 16:06:35,376 [ERROR] API error for keyword 'disability lift' page 1: 404 Client Error: Not Found for url: https://www.contractsfinder.service.gov.uk/api/rest/2/search_results/json
+2026-03-27 16:06:35,378 [INFO]   Running unique total: 0
+2026-03-27 16:06:36,878 [INFO] 
+Searching: 'platform lift accessibility'
+2026-03-27 16:06:37,203 [ERROR] API error for keyword 'platform lift accessibility' page 1: 404 Client Error: Not Found for url: https://www.contractsfinder.service.gov.uk/api/rest/2/search_results/json
+2026-03-27 16:06:37,206 [INFO]   Running unique total: 0
+2026-03-27 16:06:38,706 [INFO] 
+Searching: 'disabled facilities grant'
+2026-03-27 16:06:39,036 [ERROR] API error for keyword 'disabled facilities grant' page 1: 404 Client Error: Not Found for url: https://www.contractsfinder.service.gov.uk/api/rest/2/search_results/json
+2026-03-27 16:06:39,039 [INFO]   Running unique total: 0
+2026-03-27 16:06:40,539 [INFO] 
+Searching: 'DFG disabled access'
+2026-03-27 16:06:40,844 [ERROR] API error for keyword 'DFG disabled access' page 1: 404 Client Error: Not Found for url: https://www.contractsfinder.service.gov.uk/api/rest/2/search_results/json
+2026-03-27 16:06:40,846 [INFO]   Running unique total: 0
+2026-03-27 16:06:42,346 [INFO] 
+Searching: 'step free access works'
+2026-03-27 16:06:42,669 [ERROR] API error for keyword 'step free access works' page 1: 404 Client Error: Not Found for url: https://www.contractsfinder.service.gov.uk/api/rest/2/search_results/json
+2026-03-27 16:06:42,671 [INFO]   Running unique total: 0
+2026-03-27 16:06:44,172 [INFO] 
+Searching: 'wheelchair access lift'
+2026-03-27 16:06:44,514 [ERROR] API error for keyword 'wheelchair access lift' page 1: 404 Client Error: Not Found for url: https://www.contractsfinder.service.gov.uk/api/rest/2/search_results/json
+2026-03-27 16:06:44,515 [INFO]   Running unique total: 0
+2026-03-27 16:06:46,015 [INFO] 
+Searching: 'accessibility platform lift'
+2026-03-27 16:06:46,339 [ERROR] API error for keyword 'accessibility platform lift' page 1: 404 Client Error: Not Found for url: https://www.contractsfinder.service.gov.uk/api/rest/2/search_results/json
+2026-03-27 16:06:46,340 [INFO]   Running unique total: 0
+2026-03-27 16:06:47,841 [INFO] 
+Total unique notices from API: 0
+2026-03-27 16:06:47,843 [INFO] 
+============================================================
+2026-03-27 16:06:47,844 [INFO] SCRAPE SUMMARY
+2026-03-27 16:06:47,844 [INFO]   Total unique from API : 0
+2026-03-27 16:06:47,844 [INFO]   Already seen (skip)   : 0
+2026-03-27 16:06:47,844 [INFO]   Keyword filtered out  : 0
+2026-03-27 16:06:47,844 [INFO]   Buyer filtered out    : 0
+2026-03-27 16:06:47,844 [INFO]   ✅ Passed to pipeline : 0
+2026-03-27 16:06:47,844 [INFO] ============================================================
+2026-03-27 16:06:47,844 [INFO] No new leads found — pipeline complete
+2026-03-27 16:06:47,847 [INFO] 
+======================================================================
+2026-03-27 16:06:47,847 [INFO] PIPELINE COMPLETE
+2026-03-27 16:06:47,847 [INFO]   Status         : success
+2026-03-27 16:06:47,847 [INFO]   Scraped        : 0 new leads
+2026-03-27 16:06:47,847 [INFO]   Apollo enriched: 0
+2026-03-27 16:06:47,847 [INFO]   HubSpot pushed : 0
+2026-03-27 16:06:47,847 [INFO]   Duration       : 12.9s
+2026-03-27 16:06:47,847 [INFO] ======================================================================
+2026-03-27 16:12:54,319 [INFO] ======================================================================
+2026-03-27 16:12:54,319 [INFO] SesameAccess Contracts Finder Pipeline — 2026-03-27 16:12 UTC
+2026-03-27 16:12:54,319 [INFO] Mode: full | Apollo: False | HubSpot: True
+2026-03-27 16:12:54,320 [INFO] ======================================================================
+2026-03-27 16:12:54,321 [INFO] 
+Step 1: Scraping contracts since 2025-09-28
+2026-03-27 16:12:54,407 [INFO] ============================================================
+2026-03-27 16:12:54,407 [INFO] SesameAccess × Contracts Finder scrape starting
+2026-03-27 16:12:54,407 [INFO] Since: 2025-09-28 | Respect seen: True
+2026-03-27 16:12:54,407 [INFO] ============================================================
+2026-03-27 16:12:54,407 [INFO] 
+Searching: 'disability lift'
+2026-03-27 16:12:55,158 [INFO]   Keyword 'disability lift': page 1 → 100 releases (running total: 100)
+2026-03-27 16:12:57,437 [INFO]   Keyword 'disability lift': page 2 → 100 releases (running total: 200)
+2026-03-27 16:12:59,615 [INFO]   Keyword 'disability lift': page 3 → 100 releases (running total: 300)
+2026-03-27 16:13:01,819 [INFO]   Keyword 'disability lift': page 4 → 100 releases (running total: 400)
+2026-03-27 16:13:04,077 [INFO]   Keyword 'disability lift': page 5 → 100 releases (running total: 500)
+2026-03-27 16:13:06,315 [INFO]   Keyword 'disability lift': page 6 → 100 releases (running total: 600)
+2026-03-27 16:13:08,569 [INFO]   Keyword 'disability lift': page 7 → 100 releases (running total: 700)
+2026-03-27 16:13:10,780 [INFO]   Keyword 'disability lift': page 8 → 100 releases (running total: 800)
+2026-03-27 16:13:12,990 [INFO]   Keyword 'disability lift': page 9 → 100 releases (running total: 900)
+2026-03-27 16:13:15,208 [INFO]   Keyword 'disability lift': page 10 → 100 releases (running total: 1000)
+2026-03-27 16:13:16,711 [INFO]   Running unique total: 1000
+2026-03-27 16:13:18,212 [INFO] 
+Searching: 'platform lift accessibility'
+2026-03-27 16:13:18,910 [INFO]   Keyword 'platform lift accessibility': page 1 → 100 releases (running total: 100)
+2026-03-27 16:13:21,147 [INFO]   Keyword 'platform lift accessibility': page 2 → 100 releases (running total: 200)
+2026-03-27 16:13:23,402 [INFO]   Keyword 'platform lift accessibility': page 3 → 100 releases (running total: 300)
+2026-03-27 16:13:25,665 [INFO]   Keyword 'platform lift accessibility': page 4 → 100 releases (running total: 400)
+2026-03-27 16:13:27,860 [INFO]   Keyword 'platform lift accessibility': page 5 → 100 releases (running total: 500)
+2026-03-27 16:13:30,106 [INFO]   Keyword 'platform lift accessibility': page 6 → 100 releases (running total: 600)
+2026-03-27 16:13:32,373 [INFO]   Keyword 'platform lift accessibility': page 7 → 100 releases (running total: 700)
+2026-03-27 16:13:34,621 [INFO]   Keyword 'platform lift accessibility': page 8 → 100 releases (running total: 800)
+2026-03-27 16:13:36,840 [INFO]   Keyword 'platform lift accessibility': page 9 → 100 releases (running total: 900)
+2026-03-27 16:13:39,082 [INFO]   Keyword 'platform lift accessibility': page 10 → 100 releases (running total: 1000)
+2026-03-27 16:13:40,587 [INFO]   Running unique total: 1000
+2026-03-27 16:13:42,088 [INFO] 
+Searching: 'disabled facilities grant'
+2026-03-27 16:13:42,805 [INFO]   Keyword 'disabled facilities grant': page 1 → 100 releases (running total: 100)
+2026-03-27 16:13:45,146 [INFO]   Keyword 'disabled facilities grant': page 2 → 100 releases (running total: 200)
+2026-03-27 16:13:47,322 [INFO]   Keyword 'disabled facilities grant': page 3 → 100 releases (running total: 300)
+2026-03-27 16:13:49,582 [INFO]   Keyword 'disabled facilities grant': page 4 → 100 releases (running total: 400)
+2026-03-27 16:13:51,837 [INFO]   Keyword 'disabled facilities grant': page 5 → 100 releases (running total: 500)
+2026-03-27 16:13:54,127 [INFO]   Keyword 'disabled facilities grant': page 6 → 100 releases (running total: 600)
+2026-03-27 16:13:56,398 [INFO]   Keyword 'disabled facilities grant': page 7 → 100 releases (running total: 700)
+2026-03-27 16:13:58,662 [INFO]   Keyword 'disabled facilities grant': page 8 → 100 releases (running total: 800)
+2026-03-27 16:14:00,906 [INFO]   Keyword 'disabled facilities grant': page 9 → 100 releases (running total: 900)
+2026-03-27 16:14:03,178 [INFO]   Keyword 'disabled facilities grant': page 10 → 100 releases (running total: 1000)
+2026-03-27 16:14:04,682 [INFO]   Running unique total: 1000
+2026-03-27 16:14:06,183 [INFO] 
+Searching: 'DFG disabled access'
+2026-03-27 16:14:07,080 [INFO]   Keyword 'DFG disabled access': page 1 → 100 releases (running total: 100)
+2026-03-27 16:14:09,370 [INFO]   Keyword 'DFG disabled access': page 2 → 100 releases (running total: 200)
+2026-03-27 16:14:11,715 [INFO]   Keyword 'DFG disabled access': page 3 → 100 releases (running total: 300)
+2026-03-27 16:14:13,935 [INFO]   Keyword 'DFG disabled access': page 4 → 100 releases (running total: 400)
+2026-03-27 16:14:16,158 [INFO]   Keyword 'DFG disabled access': page 5 → 100 releases (running total: 500)
+2026-03-27 16:14:18,351 [INFO]   Keyword 'DFG disabled access': page 6 → 100 releases (running total: 600)
+2026-03-27 16:14:20,552 [INFO]   Keyword 'DFG disabled access': page 7 → 100 releases (running total: 700)
+2026-03-27 16:14:22,776 [INFO]   Keyword 'DFG disabled access': page 8 → 100 releases (running total: 800)
+2026-03-27 16:14:24,978 [INFO]   Keyword 'DFG disabled access': page 9 → 100 releases (running total: 900)
+2026-03-27 16:14:27,196 [INFO]   Keyword 'DFG disabled access': page 10 → 100 releases (running total: 1000)
+2026-03-27 16:14:28,702 [INFO]   Running unique total: 1000
+2026-03-27 16:14:30,202 [INFO] 
+Searching: 'step free access works'
+2026-03-27 16:14:31,092 [INFO]   Keyword 'step free access works': page 1 → 100 releases (running total: 100)
+2026-03-27 16:14:33,467 [INFO]   Keyword 'step free access works': page 2 → 100 releases (running total: 200)
+2026-03-27 16:14:35,814 [INFO]   Keyword 'step free access works': page 3 → 100 releases (running total: 300)
+2026-03-27 16:14:38,013 [INFO]   Keyword 'step free access works': page 4 → 100 releases (running total: 400)
+2026-03-27 16:14:40,273 [INFO]   Keyword 'step free access works': page 5 → 100 releases (running total: 500)
+2026-03-27 16:14:42,488 [INFO]   Keyword 'step free access works': page 6 → 100 releases (running total: 600)
+2026-03-27 16:14:44,713 [INFO]   Keyword 'step free access works': page 7 → 100 releases (running total: 700)
+2026-03-27 16:14:46,965 [INFO]   Keyword 'step free access works': page 8 → 100 releases (running total: 800)
+2026-03-27 16:14:49,194 [INFO]   Keyword 'step free access works': page 9 → 100 releases (running total: 900)
+2026-03-27 16:14:51,409 [INFO]   Keyword 'step free access works': page 10 → 100 releases (running total: 1000)
+2026-03-27 16:14:52,915 [INFO]   Running unique total: 1000
+2026-03-27 16:14:54,416 [INFO] 
+Searching: 'wheelchair access lift'
+2026-03-27 16:14:55,255 [INFO]   Keyword 'wheelchair access lift': page 1 → 100 releases (running total: 100)
+2026-03-27 16:14:57,536 [INFO]   Keyword 'wheelchair access lift': page 2 → 100 releases (running total: 200)
+2026-03-27 16:14:59,759 [INFO]   Keyword 'wheelchair access lift': page 3 → 100 releases (running total: 300)
+2026-03-27 16:15:02,001 [INFO]   Keyword 'wheelchair access lift': page 4 → 100 releases (running total: 400)
+2026-03-27 16:15:04,299 [INFO]   Keyword 'wheelchair access lift': page 5 → 100 releases (running total: 500)
+2026-03-27 16:15:06,595 [INFO]   Keyword 'wheelchair access lift': page 6 → 100 releases (running total: 600)
+2026-03-27 16:15:09,021 [INFO]   Keyword 'wheelchair access lift': page 7 → 100 releases (running total: 700)
+2026-03-27 16:15:11,372 [INFO]   Keyword 'wheelchair access lift': page 8 → 100 releases (running total: 800)
+2026-03-27 16:15:13,614 [INFO]   Keyword 'wheelchair access lift': page 9 → 100 releases (running total: 900)
+2026-03-27 16:15:15,862 [INFO]   Keyword 'wheelchair access lift': page 10 → 100 releases (running total: 1000)
+2026-03-27 16:15:17,367 [INFO]   Running unique total: 1001
+2026-03-27 16:15:18,867 [INFO] 
+Searching: 'accessibility platform lift'
+2026-03-27 16:15:19,693 [INFO]   Keyword 'accessibility platform lift': page 1 → 100 releases (running total: 100)
+2026-03-27 16:15:21,960 [INFO]   Keyword 'accessibility platform lift': page 2 → 100 releases (running total: 200)
+2026-03-27 16:15:24,242 [INFO]   Keyword 'accessibility platform lift': page 3 → 100 releases (running total: 300)
+2026-03-27 16:15:26,609 [INFO]   Keyword 'accessibility platform lift': page 4 → 100 releases (running total: 400)
+2026-03-27 16:15:28,866 [INFO]   Keyword 'accessibility platform lift': page 5 → 100 releases (running total: 500)
+2026-03-27 16:15:31,152 [INFO]   Keyword 'accessibility platform lift': page 6 → 100 releases (running total: 600)
+2026-03-27 16:15:33,574 [INFO]   Keyword 'accessibility platform lift': page 7 → 100 releases (running total: 700)
+2026-03-27 16:15:35,827 [INFO]   Keyword 'accessibility platform lift': page 8 → 100 releases (running total: 800)
+2026-03-27 16:15:38,015 [INFO]   Keyword 'accessibility platform lift': page 9 → 100 releases (running total: 900)
+2026-03-27 16:15:40,218 [INFO]   Keyword 'accessibility platform lift': page 10 → 100 releases (running total: 1000)
+2026-03-27 16:15:41,727 [INFO]   Running unique total: 1001
+2026-03-27 16:15:43,228 [INFO] 
+Total unique notices from API: 1001
+2026-03-27 16:15:43,240 [INFO]   ✓ PASS [North East Lincolnshire Council] DFG 14741 MW
+2026-03-27 16:15:43,241 [INFO]   ✓ PASS [North East Lincolnshire Council] DFG 12258 MW
+2026-03-27 16:15:43,258 [INFO] 
+============================================================
+2026-03-27 16:15:43,258 [INFO] SCRAPE SUMMARY
+2026-03-27 16:15:43,258 [INFO]   Total unique from API : 1001
+2026-03-27 16:15:43,258 [INFO]   Already seen (skip)   : 0
+2026-03-27 16:15:43,258 [INFO]   Keyword filtered out  : 998
+2026-03-27 16:15:43,258 [INFO]   Buyer filtered out    : 1
+2026-03-27 16:15:43,259 [INFO]   ✅ Passed to pipeline : 2
+2026-03-27 16:15:43,259 [INFO] ============================================================
+2026-03-27 16:15:43,263 [INFO] Step 3: Skipping Apollo (--no-apollo flag)
+2026-03-27 16:15:43,264 [INFO] Exported 2 leads → contracts_finder_leads.csv
+2026-03-27 16:15:43,264 [INFO] 
+Step 5: Pushing 2 leads to HubSpot
+2026-03-27 16:15:43,265 [INFO] Checking HubSpot custom contact properties…
+2026-03-27 16:15:43,606 [ERROR] Could not fetch existing properties: 401 Client Error: Unauthorized for url: https://api.hubapi.com/crm/v3/properties/contacts
+2026-03-27 16:15:43,608 [INFO] 
+Processing: procurement@nelincs.gov.uk (North East Lincolnshire Council)
+2026-03-27 16:15:43,980 [ERROR]   Company lookup/create error for 'North East Lincolnshire Council': 401 Client Error: Unauthorized for url: https://api.hubapi.com/crm/v3/objects/companies/search
+2026-03-27 16:15:44,639 [ERROR]   Contact create/update error for procurement@nelincs.gov.uk: 401 Client Error: Unauthorized for url: https://api.hubapi.com/crm/v3/objects/contacts/procurement@nelincs.gov.uk?idProperty=email&properties=email%2Ccouncil_outreach%2Ccf_last_outreach%2Ccf_outreach_count
+2026-03-27 16:15:44,641 [INFO] 
+Processing: procurement@nelincs.gov.uk (North East Lincolnshire Council)
+2026-03-27 16:15:45,007 [ERROR]   Company lookup/create error for 'North East Lincolnshire Council': 401 Client Error: Unauthorized for url: https://api.hubapi.com/crm/v3/objects/companies/search
+2026-03-27 16:15:45,642 [ERROR]   Contact create/update error for procurement@nelincs.gov.uk: 401 Client Error: Unauthorized for url: https://api.hubapi.com/crm/v3/objects/contacts/procurement@nelincs.gov.uk?idProperty=email&properties=email%2Ccouncil_outreach%2Ccf_last_outreach%2Ccf_outreach_count
+2026-03-27 16:15:45,644 [INFO] 
+==================================================
+2026-03-27 16:15:45,644 [INFO] HUBSPOT PUSH SUMMARY
+2026-03-27 16:15:45,644 [INFO]   pushed: 0
+2026-03-27 16:15:45,644 [INFO]   skipped_cooldown: 0
+2026-03-27 16:15:45,645 [INFO]   skipped_no_email: 0
+2026-03-27 16:15:45,645 [INFO]   errors: 2
+2026-03-27 16:15:45,645 [INFO]   enrolled_in_sequence: 0
+2026-03-27 16:15:45,645 [INFO] ==================================================
+2026-03-27 16:15:45,645 [INFO] 
+Step 6: Sending queued outreach emails via SMTP
+2026-03-27 16:15:45,668 [INFO] ============================================================
+2026-03-27 16:15:45,669 [INFO] SesameAccess × Elastic Email sender — 2026-03-27 16:15 UTC
+2026-03-27 16:15:45,669 [INFO] Mode: LIVE | Limit: none
+2026-03-27 16:15:45,669 [INFO] ============================================================
+2026-03-27 16:15:46,025 [ERROR]   Could not fetch send queue: 401 Client Error: Unauthorized for url: https://api.hubapi.com/crm/v3/objects/contacts/search
+2026-03-27 16:15:46,027 [INFO] Send queue is empty — no contacts with TO_EMAIL status in HubSpot
+2026-03-27 16:15:46,039 [INFO] 
+======================================================================
+2026-03-27 16:15:46,039 [INFO] PIPELINE COMPLETE
+2026-03-27 16:15:46,039 [INFO]   Status         : success
+2026-03-27 16:15:46,039 [INFO]   Scraped        : 2 new leads
+2026-03-27 16:15:46,039 [INFO]   Apollo enriched: 0
+2026-03-27 16:15:46,039 [INFO]   HubSpot pushed : 0
+2026-03-27 16:15:46,039 [INFO]   Duration       : 171.7s
+2026-03-27 16:15:46,039 [INFO] ======================================================================
+2026-03-27 16:21:13,990 [INFO] ======================================================================
+2026-03-27 16:21:13,991 [INFO] SesameAccess Contracts Finder Pipeline — 2026-03-27 16:21 UTC
+2026-03-27 16:21:13,991 [INFO] Mode: full | Apollo: False | HubSpot: True
+2026-03-27 16:21:13,991 [INFO] ======================================================================
+2026-03-27 16:21:13,991 [INFO] 
+Step 1: Scraping contracts since 2025-09-28
+2026-03-27 16:21:14,079 [INFO] ============================================================
+2026-03-27 16:21:14,079 [INFO] SesameAccess × Contracts Finder scrape starting
+2026-03-27 16:21:14,080 [INFO] Since: 2025-09-28 | Respect seen: True
+2026-03-27 16:21:14,080 [INFO] ============================================================
+2026-03-27 16:21:14,080 [INFO] 
+Searching: 'disability lift'
+2026-03-27 16:21:14,825 [INFO]   Keyword 'disability lift': page 1 → 100 releases (running total: 100)
+2026-03-27 16:21:17,052 [INFO]   Keyword 'disability lift': page 2 → 100 releases (running total: 200)
+2026-03-27 16:21:19,277 [INFO]   Keyword 'disability lift': page 3 → 100 releases (running total: 300)
+2026-03-27 16:21:21,520 [INFO]   Keyword 'disability lift': page 4 → 100 releases (running total: 400)
+2026-03-27 16:21:23,771 [INFO]   Keyword 'disability lift': page 5 → 100 releases (running total: 500)
+2026-03-27 16:21:26,026 [INFO]   Keyword 'disability lift': page 6 → 100 releases (running total: 600)
+2026-03-27 16:21:28,239 [INFO]   Keyword 'disability lift': page 7 → 100 releases (running total: 700)
+2026-03-27 16:21:30,451 [INFO]   Keyword 'disability lift': page 8 → 100 releases (running total: 800)
+2026-03-27 16:21:32,680 [INFO]   Keyword 'disability lift': page 9 → 100 releases (running total: 900)
+2026-03-27 16:21:35,069 [INFO]   Keyword 'disability lift': page 10 → 100 releases (running total: 1000)
+2026-03-27 16:21:36,571 [INFO]   Running unique total: 1000
+2026-03-27 16:21:38,072 [INFO] 
+Searching: 'platform lift accessibility'
+2026-03-27 16:21:38,762 [INFO]   Keyword 'platform lift accessibility': page 1 → 100 releases (running total: 100)
+2026-03-27 16:21:41,023 [INFO]   Keyword 'platform lift accessibility': page 2 → 100 releases (running total: 200)
+2026-03-27 16:21:43,239 [INFO]   Keyword 'platform lift accessibility': page 3 → 100 releases (running total: 300)
+2026-03-27 16:21:45,488 [INFO]   Keyword 'platform lift accessibility': page 4 → 100 releases (running total: 400)
+2026-03-27 16:21:47,730 [INFO]   Keyword 'platform lift accessibility': page 5 → 100 releases (running total: 500)
+2026-03-27 16:21:49,944 [INFO]   Keyword 'platform lift accessibility': page 6 → 100 releases (running total: 600)
+2026-03-27 16:21:52,180 [INFO]   Keyword 'platform lift accessibility': page 7 → 100 releases (running total: 700)
+2026-03-27 16:21:54,418 [INFO]   Keyword 'platform lift accessibility': page 8 → 100 releases (running total: 800)
+2026-03-27 16:21:56,699 [INFO]   Keyword 'platform lift accessibility': page 9 → 100 releases (running total: 900)
+2026-03-27 16:21:58,889 [INFO]   Keyword 'platform lift accessibility': page 10 → 100 releases (running total: 1000)
+2026-03-27 16:22:00,393 [INFO]   Running unique total: 1000
+2026-03-27 16:22:01,893 [INFO] 
+Searching: 'disabled facilities grant'
+2026-03-27 16:22:02,603 [INFO]   Keyword 'disabled facilities grant': page 1 → 100 releases (running total: 100)
+2026-03-27 16:22:04,829 [INFO]   Keyword 'disabled facilities grant': page 2 → 100 releases (running total: 200)
+2026-03-27 16:22:07,121 [INFO]   Keyword 'disabled facilities grant': page 3 → 100 releases (running total: 300)
+2026-03-27 16:22:09,363 [INFO]   Keyword 'disabled facilities grant': page 4 → 100 releases (running total: 400)
+2026-03-27 16:22:11,642 [INFO]   Keyword 'disabled facilities grant': page 5 → 100 releases (running total: 500)
+2026-03-27 16:22:13,893 [INFO]   Keyword 'disabled facilities grant': page 6 → 100 releases (running total: 600)
+2026-03-27 16:22:16,117 [INFO]   Keyword 'disabled facilities grant': page 7 → 100 releases (running total: 700)
+2026-03-27 16:22:18,385 [INFO]   Keyword 'disabled facilities grant': page 8 → 100 releases (running total: 800)
+2026-03-27 16:22:20,587 [INFO]   Keyword 'disabled facilities grant': page 9 → 100 releases (running total: 900)
+2026-03-27 16:22:22,778 [INFO]   Keyword 'disabled facilities grant': page 10 → 100 releases (running total: 1000)
+2026-03-27 16:22:24,284 [INFO]   Running unique total: 1000
+2026-03-27 16:22:25,784 [INFO] 
+Searching: 'DFG disabled access'
+2026-03-27 16:22:26,526 [INFO]   Keyword 'DFG disabled access': page 1 → 100 releases (running total: 100)
+2026-03-27 16:22:28,905 [INFO]   Keyword 'DFG disabled access': page 2 → 100 releases (running total: 200)
+2026-03-27 16:22:31,099 [INFO]   Keyword 'DFG disabled access': page 3 → 100 releases (running total: 300)
+2026-03-27 16:22:33,303 [INFO]   Keyword 'DFG disabled access': page 4 → 100 releases (running total: 400)
+2026-03-27 16:22:35,673 [INFO]   Keyword 'DFG disabled access': page 5 → 100 releases (running total: 500)
+2026-03-27 16:22:37,885 [INFO]   Keyword 'DFG disabled access': page 6 → 100 releases (running total: 600)
+2026-03-27 16:22:40,148 [INFO]   Keyword 'DFG disabled access': page 7 → 100 releases (running total: 700)
+2026-03-27 16:22:42,390 [INFO]   Keyword 'DFG disabled access': page 8 → 100 releases (running total: 800)
+2026-03-27 16:22:44,568 [INFO]   Keyword 'DFG disabled access': page 9 → 100 releases (running total: 900)
+2026-03-27 16:22:46,820 [INFO]   Keyword 'DFG disabled access': page 10 → 100 releases (running total: 1000)
+2026-03-27 16:22:48,328 [INFO]   Running unique total: 1000
+2026-03-27 16:22:49,829 [INFO] 
+Searching: 'step free access works'
+2026-03-27 16:22:50,643 [INFO]   Keyword 'step free access works': page 1 → 100 releases (running total: 100)
+2026-03-27 16:22:52,949 [INFO]   Keyword 'step free access works': page 2 → 100 releases (running total: 200)
+2026-03-27 16:22:55,287 [INFO]   Keyword 'step free access works': page 3 → 100 releases (running total: 300)
+2026-03-27 16:22:57,604 [INFO]   Keyword 'step free access works': page 4 → 100 releases (running total: 400)
+2026-03-27 16:22:59,932 [INFO]   Keyword 'step free access works': page 5 → 100 releases (running total: 500)
+2026-03-27 16:23:02,216 [INFO]   Keyword 'step free access works': page 6 → 100 releases (running total: 600)
+2026-03-27 16:23:04,500 [INFO]   Keyword 'step free access works': page 7 → 100 releases (running total: 700)
+2026-03-27 16:23:06,858 [INFO]   Keyword 'step free access works': page 8 → 100 releases (running total: 800)
+2026-03-27 16:23:09,297 [INFO]   Keyword 'step free access works': page 9 → 100 releases (running total: 900)
+2026-03-27 16:23:11,703 [INFO]   Keyword 'step free access works': page 10 → 100 releases (running total: 1000)
+2026-03-27 16:23:13,210 [INFO]   Running unique total: 1000
+2026-03-27 16:23:14,710 [INFO] 
+Searching: 'wheelchair access lift'
+2026-03-27 16:23:15,474 [INFO]   Keyword 'wheelchair access lift': page 1 → 100 releases (running total: 100)
+2026-03-27 16:23:17,743 [INFO]   Keyword 'wheelchair access lift': page 2 → 100 releases (running total: 200)
+2026-03-27 16:23:20,049 [INFO]   Keyword 'wheelchair access lift': page 3 → 100 releases (running total: 300)
+2026-03-27 16:23:22,361 [INFO]   Keyword 'wheelchair access lift': page 4 → 100 releases (running total: 400)
+2026-03-27 16:23:24,655 [INFO]   Keyword 'wheelchair access lift': page 5 → 100 releases (running total: 500)
+2026-03-27 16:23:26,922 [INFO]   Keyword 'wheelchair access lift': page 6 → 100 releases (running total: 600)
+2026-03-27 16:23:29,131 [INFO]   Keyword 'wheelchair access lift': page 7 → 100 releases (running total: 700)
+2026-03-27 16:23:31,453 [INFO]   Keyword 'wheelchair access lift': page 8 → 100 releases (running total: 800)
+2026-03-27 16:23:33,713 [INFO]   Keyword 'wheelchair access lift': page 9 → 100 releases (running total: 900)
+2026-03-27 16:23:35,977 [INFO]   Keyword 'wheelchair access lift': page 10 → 100 releases (running total: 1000)
+2026-03-27 16:23:37,485 [INFO]   Running unique total: 1000
+2026-03-27 16:23:38,986 [INFO] 
+Searching: 'accessibility platform lift'
+2026-03-27 16:23:39,684 [INFO]   Keyword 'accessibility platform lift': page 1 → 100 releases (running total: 100)
+2026-03-27 16:23:41,984 [INFO]   Keyword 'accessibility platform lift': page 2 → 100 releases (running total: 200)
+2026-03-27 16:23:44,210 [INFO]   Keyword 'accessibility platform lift': page 3 → 100 releases (running total: 300)
+2026-03-27 16:23:46,465 [INFO]   Keyword 'accessibility platform lift': page 4 → 100 releases (running total: 400)
+2026-03-27 16:23:48,715 [INFO]   Keyword 'accessibility platform lift': page 5 → 100 releases (running total: 500)
+2026-03-27 16:23:51,044 [INFO]   Keyword 'accessibility platform lift': page 6 → 100 releases (running total: 600)
+2026-03-27 16:23:53,371 [INFO]   Keyword 'accessibility platform lift': page 7 → 100 releases (running total: 700)
+2026-03-27 16:23:55,649 [INFO]   Keyword 'accessibility platform lift': page 8 → 100 releases (running total: 800)
+2026-03-27 16:23:57,948 [INFO]   Keyword 'accessibility platform lift': page 9 → 100 releases (running total: 900)
+2026-03-27 16:24:00,187 [INFO]   Keyword 'accessibility platform lift': page 10 → 100 releases (running total: 1000)
+2026-03-27 16:24:01,692 [INFO]   Running unique total: 1000
+2026-03-27 16:24:03,193 [INFO] 
+Total unique notices from API: 1000
+2026-03-27 16:24:03,193 [INFO]   ✓ PASS [Neath Port Talbot County Borough Council] GB-Neath Abbey: TPPL Neath Port Talbot County Borough Counci
+2026-03-27 16:24:03,193 [INFO]   ✓ PASS [Durham County Council] GB-Durham: TPPL Durham County Council NEPO HGV Lot 1 - 18 x 
+2026-03-27 16:24:03,193 [INFO]   ✓ PASS [Reading Borough Council] Planned and Reactive Maintenance of Mechanical and HVAC Inst
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [Durham County Council] GB-Durham: TPPL Durham County Council HCC Lot 2 - 2 x 17 Sea
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [Stafford Borough Council] GB-Stafford: TPPL Stafford Borough Council HCC Lot 2 - 2 x F
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [Chelmsford City Council] GB-Chelmsford: TPPL Chelmsford City Council HCC Lot 4 - 1 x 
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [Durham County Council] GB-Durham: TPPL Durham County Council HCC Lot 2 - 1 x 3.5t L
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [Dorset Council] GB-Dorchester: TPPL Dorset Council HCC Lot 2 - Up to 5 x VW 
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [Suffolk Coastal District Council and Waveney District Council] Structural Testing of Street light Columns
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [City of Bradford Metropolitan District Council] SaaS Respond - Corporate Complaints solution
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [Sunderland City Council] GB-Sunderland: TPPL Sunderland City Council HCC Lot 2 - 61 x
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [Denbighshire County Council] GB-Ruthin: TPPL Denbighshire County Council HCC Lot 2 - 1 x 
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [Preston City Council] GB-Preston: TPPL Preston City Council HCC Lot 2 - 1 x 4.2t R
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [Reading Borough Council] Kitchen and Bathroom Replacement Programme
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [Homes England (the name adopted by the Homes and Communities Agency)] Homes England - Property Professional and Technical Services
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [London Borough of Hounslow] Property Insurance
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [London Borough of Hounslow] Combined Liability Insurance
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [Northumberland County Council] NCC1783 - Tynedale House Structural Works
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [London Borough of Hounslow] Motor Fleet Insurance
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [North Lincolnshire Council] Lot 11 - 275 Bobcat Patching Gang No. 2 2026-2027
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [London Borough of Hounslow] Fidelity Guarantee Insurance
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [Durham County Council] Smoothwall Licencing and Support
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [North Lincolnshire Council] Lot 11 - 274  Bobcat Patching Gang Number 1 2026-2027
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [North Lincolnshire Council] L10-025 Surface Dressing 26-27 Contract 2
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [London Borough of Hounslow] Personal Accident & Travel Insurance
+2026-03-27 16:24:03,194 [INFO]   ✓ PASS [North Lincolnshire Council] L10-023 Surface Dressing 2026-2027
+2026-03-27 16:24:03,195 [INFO]   ✓ PASS [North Lincolnshire Council] Demand Responsive Transport
+2026-03-27 16:24:03,195 [INFO]   ✓ PASS [Leicester City Council] PAN2697 - Gas Supply
+2026-03-27 16:24:03,195 [INFO]   ✓ PASS [Reading Borough Council] Kitchen Supply
+2026-03-27 16:24:03,195 [INFO]   ✓ PASS [WESTMORLAND AND FURNESS COUNCIL] Cumbria Choice Based Lettings Platform
+2026-03-27 16:24:03,195 [INFO]   ✓ PASS [Reading Borough Council] Managed Store
+2026-03-27 16:24:03,195 [INFO]   ✓ PASS [Reading Borough Council] Planned and Reactive Lift Maintenance
+2026-03-27 16:24:03,195 [INFO]   ✓ PASS [Leicestershire County Council] 3360.212 Marigold Farm Air Quality Advice
+2026-03-27 16:24:03,195 [INFO]   ✓ PASS [Derbyshire County Council] PRP307 (525019) Getaway Centre,  8a Dallimore Road, Ilkeston
+2026-03-27 16:24:03,195 [INFO]   ✓ PASS [High Peak Borough Council & Staffordshire Moorlands District Council] ITMS Contract
+2026-03-27 16:24:03,195 [INFO]   ✓ PASS [Derbyshire County Council] PRP306 (525020) Ashbourne Hub and Library  Compton Street, A
+2026-03-27 16:24:03,195 [INFO]   ✓ PASS [North Yorkshire Council] Energy Performance Certificates
+2026-03-27 16:24:03,195 [INFO]   ✓ PASS [Derbyshire County Council] PRP306 (525020) Ashbourne Hub and Library - Air Source Heat 
+2026-03-27 16:24:03,195 [INFO]   ✓ PASS [North Lincolnshire Council] Carers Support Service, with Dementia Advisory Support
+2026-03-27 16:24:03,195 [INFO]   ✓ PASS [Leicestershire County Council] HVO Liquid Fuels- April -May 2026
+2026-03-27 16:24:03,195 [INFO]   ✓ PASS [Suffolk County Council Passenger Transport] 2026-03-27 09:00 - QSB403 Great Cornard, Alpheton & Brettenh
+2026-03-27 16:24:03,196 [INFO]   ✓ PASS [West Sussex County Council] Stanhope Lodge - Cherry Tree Refurbishment (2026)
+2026-03-27 16:24:03,196 [INFO]   ✓ PASS [Lancaster City Council] Property Team Consultancy
+2026-03-27 16:24:03,196 [INFO]   ✓ PASS [Reading Borough Council] Voids and Planned Maintenance
+2026-03-27 16:24:03,196 [INFO]   ✓ PASS [Reading Borough Council] Wensley Road Temporary Works
+2026-03-27 16:24:03,196 [INFO]   ✓ PASS [Reading Borough Council] Fire Safety and Compliance - Remediation Works
+2026-03-27 16:24:03,196 [INFO]   ✓ PASS [Homes England (the name adopted by the Homes and Communities Agency)] Homes England - Call-Off Contract for Microsoft Enterprise A
+2026-03-27 16:24:03,196 [INFO]   ✓ PASS [Reading Borough Council] Fire Safety and Compliance - Risk Assessments, Inspections a
+2026-03-27 16:24:03,196 [INFO]   ✓ PASS [Reading Borough Council] Fire Safety and Compliance - Risk Assessments, Inspections a
+2026-03-27 16:24:03,196 [INFO]   ✓ PASS [Bath and North East Somerset Council] PT-X(R), a cloud-based Payment service
+2026-03-27 16:24:03,196 [INFO]   ✓ PASS [Buckinghamshire Council - e-Tendering System] FSTF1803  - AWARD
+2026-03-27 16:24:03,197 [INFO]   ✓ PASS [Leicestershire County Council] Electric Stores Van
+2026-03-27 16:24:03,197 [INFO]   ✓ PASS [Rotherham Metropolitan Borough Council] St Marys View, Phase 4
+2026-03-27 16:24:03,197 [INFO]   ✓ PASS [Trafford Council] Children and Young People's Residential Placements Flexible 
+2026-03-27 16:24:03,197 [INFO]   ✓ PASS [London Borough of Merton] Wimbledon Park Primary School fire safety package
+2026-03-27 16:24:03,197 [INFO]   ✓ PASS [LONDON BOROUGH OF NEWHAM] Magic Notes
+2026-03-27 16:24:03,197 [INFO]   ✓ PASS [South Tyneside Council] Design and Build of a BMX Pump Track
+2026-03-27 16:24:03,197 [INFO]   ✓ PASS [Hull City Council] Development and Construction of 42 Properties across 3 sites
+2026-03-27 16:24:03,197 [INFO]   ✓ PASS [Tameside Metropolitan Borough Council] Tameside Council Highways Maintenance Framework Agreement
+2026-03-27 16:24:03,197 [INFO]   ✓ PASS [London Borough of Brent] Staples Corner Growth Area Infrastructure Projects - Design 
+2026-03-27 16:24:03,198 [INFO]   ✓ PASS [HAMPSHIRE COUNTY COUNCIL] Remote Application Server Software Provision
+2026-03-27 16:24:03,198 [INFO]   ✓ PASS [London Borough of Haringey] Principal Contractor - Principal contractor - Housing & resi
+2026-03-27 16:24:03,198 [INFO]   ✓ PASS [Lancashire County Council] Contract award for the provision of RGB Signs and VMS Traile
+2026-03-27 16:24:03,198 [INFO]   ✓ PASS [Wirral Borough Council] Adobe Licences 2026 - 29
+2026-03-27 16:24:03,198 [INFO]   ✓ PASS [Torbay Council] Apprenticeships Training Provision - for Torbay Council
+2026-03-27 16:24:03,198 [INFO]   ✓ PASS [Lancashire County Council] Adobe Studio and Creative Cloud Licenses
+2026-03-27 16:24:03,198 [INFO]   ✓ PASS [Lancashire County Council] Enterprise Broadband Connectivity
+2026-03-27 16:24:03,198 [INFO]   ✓ PASS [Derbyshire County Council] PLACE1115ER Ashbourne Reborn Construction Support - Suppleme
+2026-03-27 16:24:03,198 [INFO]   ✓ PASS [Ashford Borough Council] Digital Platform
+2026-03-27 16:24:03,198 [INFO]   ✓ PASS [ESSEX COUNTY COUNCIL] Sunspot Solar Panels
+2026-03-27 16:24:03,198 [INFO]   ✓ PASS [Royal Borough of Kensington and Chelsea] Refurbishment and reconfiguration works at Princess Beatrice
+2026-03-27 16:24:03,199 [INFO]   ✓ PASS [Salford City Council] Worsley Leisure Centre - AHU 3 & 4 AHU replacement
+2026-03-27 16:24:03,199 [INFO]   ✓ PASS [Sheffield City Council] Adult Social Care Implementation
+2026-03-27 16:24:03,199 [INFO]   ✓ PASS [Nottinghamshire County Council] Rushcliffe Country Park 4X Bike Track Refurbishment - Rushcl
+2026-03-27 16:24:03,199 [INFO]   ✓ PASS [Derbyshire County Council] CST249 Engagement of a Partner for Development and Implement
+2026-03-27 16:24:03,199 [INFO]   ✓ PASS [WESTMORLAND AND FURNESS COUNCIL] Recruitment Agent for Capital Programme
+2026-03-27 16:24:03,199 [INFO]   ✓ PASS [London Borough of Merton] Poplar Primary School Fire Safety Package works
+2026-03-27 16:24:03,199 [INFO]   ✓ PASS [Castle Point Borough Council] EPP0266 Warden Call System
+2026-03-27 16:24:03,199 [INFO]   ✓ PASS [KENT COUNTY COUNCIL] Concessionary Travel System
+2026-03-27 16:24:03,200 [INFO]   ✓ PASS [Knowsley Council] Purchase of four Zero Turn Ride on Mowers
+2026-03-27 16:24:03,200 [INFO]   ✓ PASS [London Borough of Bromley] New Liquid Roof and Associated Works
+2026-03-27 16:24:03,200 [INFO]   ✓ PASS [London Borough of Merton] West Wimbledon Primary School Fire Safety Package
+2026-03-27 16:24:03,200 [INFO]   ✓ PASS [Leicester City Council - 36899] 36899 Wolfdale School
+2026-03-27 16:24:03,200 [INFO]   ✓ PASS [Suffolk Coastal District Council and Waveney District Council] Development of Diss Leisure Centre
+2026-03-27 16:24:03,200 [INFO]   ✓ PASS [Redcar & Cleveland Borough Council] Supply and Install of Solar PV and Battery on Various Counci
+2026-03-27 16:24:03,200 [INFO]   ✓ PASS [Suffolk County Council Passenger Transport] QSC218 09:00 2026-03-26 Gt Cornard, Sudbury, Suffolk, to Orm
+2026-03-27 16:24:03,200 [INFO]   ✓ PASS [Leicestershire County Council] Civils Resources_2023 - Work Order 023/23
+2026-03-27 16:24:03,200 [INFO]   ✓ PASS [Leicestershire County Council] SEN17762-SEN-TAXI 8 SEATER- BIRCH WOOD VALE SCHOOL
+2026-03-27 16:24:03,201 [INFO]   ✓ PASS [South Tyneside Council] Election Management Software Renewal
+2026-03-27 16:24:03,201 [INFO]   ✓ PASS [Redcar & Cleveland Borough Council] Axiell Library Management System
+2026-03-27 16:24:03,201 [INFO]   ✓ PASS [Central Bedfordshire Council] CBC-1912-Q-PL Street Sign Contractor - AWARD
+2026-03-27 16:24:03,201 [INFO]   ✓ PASS [Central Bedfordshire Council] CBC-1912-Q-PL Street Sign Contractor - AWARD
+2026-03-27 16:24:03,201 [INFO]   ✓ PASS [North Northamptonshire Council] Provision of traffic monitoring sensors and data collection
+2026-03-27 16:24:03,201 [INFO]   ✓ PASS [Bromsgrove District Council] Contract for General Legal Services
+2026-03-27 16:24:03,201 [INFO]   ✓ PASS [Leicester City Council] 36900 - Orchard Mead Academy
+2026-03-27 16:24:03,201 [INFO]   ✓ PASS [Rotherham Metropolitan Borough Council] Biometric Cashless System
+2026-03-27 16:24:03,201 [INFO]   ✓ PASS [Sandwell Metropolitan Borough Council] Prince 2 Foundation - AWARD
+2026-03-27 16:24:03,202 [INFO]   ✓ PASS [North Somerset Council] Bristol Airport to Nailsea and Portishead Bus Service
+2026-03-27 16:24:03,202 [INFO]   ✓ PASS [Bath and North East Somerset Council] Liveable Neighbourhoods secondee - EW
+2026-03-27 16:24:03,202 [INFO]   ✓ PASS [Bath and North East Somerset Council] Liveable Neighbourhoods secondee - EW
+2026-03-27 16:24:03,202 [INFO]   ✓ PASS [Durham County Council] Direct Call Off from Provider Panel for Community Based Supp
+2026-03-27 16:24:03,202 [INFO]   ✓ PASS [Swanage Town Council] Swanage Town Council - Tender for Insurance Services
+2026-03-27 16:24:03,202 [INFO]   ✓ PASS [Bromsgrove District Council] Charford Recreation Ground & Upland Grove Open Space - ESPO 
+2026-03-27 16:24:03,202 [INFO]   ✓ PASS [Staffordshire County Council] IA2097 Staffordshire Countryside Explorer - Heritage Interpr
+2026-03-27 16:24:03,202 [INFO]   ✓ PASS [Suffolk Coastal District Council and Waveney District Council] SNC - Leisure Centre Management Information System (MIS) for
+2026-03-27 16:24:03,202 [INFO]   ✓ PASS [Suffolk County Council Passenger Transport] QOC874 2026-03-25 (0900) Beccles to Ness Point School, Great
+2026-03-27 16:24:03,203 [INFO]   ✓ PASS [West Lancashire Borough Council] Alliance Leisure Services
+2026-03-27 16:24:03,203 [INFO]   ✓ PASS [Leicester City Council] 36892 - Ellesmere
+2026-03-27 16:24:03,203 [INFO]   ✓ PASS [HAMPSHIRE COUNTY COUNCIL] Electricity and Gas for Council Assets
+2026-03-27 16:24:03,203 [INFO]   ✓ PASS [Worcestershire County Council] Hipton Hill Caravan Park - New Sewerage System PL0354 (Sewer
+2026-03-27 16:24:03,203 [INFO]   ✓ PASS [Homes England (the name adopted by the Homes and Communities Agency)] Homes England - Legal Framework land disposal
+2026-03-27 16:24:03,203 [INFO]   ✓ PASS [Worcestershire County Council] WCC 2026 2529 Worcestershire Local Transport Plan 5
+2026-03-27 16:24:03,203 [INFO]   ✓ PASS [The North Yorkshire Council] Calabrio Work Force Management  (WFM)
+2026-03-27 16:24:03,203 [INFO]   ✓ PASS [West Northamptonshire Council] School Design works
+2026-03-27 16:24:03,203 [INFO]   ✓ PASS [Kirklees Council] Specialist Works Framework - Lot 1, Woodsome Glen
+2026-03-27 16:24:03,204 [INFO]   ✓ PASS [Oxfordshire County Council] East Oxford Active Neighbourhood - Delivery
+2026-03-27 16:24:03,204 [INFO]   ✓ PASS [Kirklees Council] Specialist Works Framework - Lot 1, Hammond Street, Fartown,
+2026-03-27 16:24:03,204 [INFO]   ✓ PASS [Kirklees Council] Specialist Works Framework - Lot 1, Nether Crescent
+2026-03-27 16:24:03,204 [INFO]   ✓ PASS [Kirklees Council] Specialist Works Framework - Lot 1, Longroyd Crescent
+2026-03-27 16:24:03,204 [INFO]   ✓ PASS [The North Yorkshire Council] Estates Rates Appeals ESPO Framework 2700
+2026-03-27 16:24:03,204 [INFO]   ✓ PASS [Luton Council] AT1371 - Specialist legal services for the Luton Shareholder
+2026-03-27 16:24:03,204 [INFO]   ✓ PASS [Sandwell Metropolitan Borough Council] HPE Support Renewal 01.04.2026 to 31.03.2027 - AWARD
+2026-03-27 16:24:03,204 [INFO]   ✓ PASS [West Lancashire Borough Council] Bins - IPL
+2026-03-27 16:24:03,204 [INFO]   ✓ PASS [West Lancashire Borough Council] Bins - Contenur
+2026-03-27 16:24:03,204 [INFO]   ✓ PASS [HAMPSHIRE COUNTY COUNCIL] Footway Condition Survey
+2026-03-27 16:24:03,204 [INFO]   ✓ PASS [DERBY CITY COUNCIL] Expression of Interest for Gayton Swimming Pool
+2026-03-27 16:24:03,205 [INFO]   ✓ PASS [Hampshire County Council] LSF (DA) - Lot 1 -  Henry Tyndale School - Path Repairs - AW
+2026-03-27 16:24:03,205 [INFO]   ✓ PASS [Kirklees Council] Specialist Works Framework - Lot 2, Elland Road Batley
+2026-03-27 16:24:03,205 [INFO]   ✓ PASS [Kirklees Council] Specialist Works Framework - Lot 1 Elland Road, Batley
+2026-03-27 16:24:03,206 [INFO]   ✓ PASS [North Yorkshire Council] Legal Case Management System
+2026-03-27 16:24:03,206 [INFO]   ✓ PASS [Derbyshire County Council] PLACE979H Chapel High Culvert Design Work
+2026-03-27 16:24:03,206 [INFO]   ✓ PASS [Leicestershire County Council] Supply of Binder, Storage Tanks and Spray Tankers 2026
+2026-03-27 16:24:03,206 [INFO]   ✓ PASS [CROYDON COUNCIL] Community Service Patrol Contract
+2026-03-27 16:24:03,206 [INFO]   ✓ PASS [North Lincolnshire Council] Lot 9 - 096 Provision of 2 Person Drainage Team 2026-2027
+2026-03-27 16:24:03,206 [INFO]   ✓ PASS [North Lincolnshire Council] HCL2 - 072 Moving Bridge Inspections & Maintenance 2026-2028
+2026-03-27 16:24:03,206 [INFO]   ✓ PASS [Redcar & Cleveland Borough Council] South Tees SENDIAS Service
+2026-03-27 16:24:03,206 [INFO]   ✓ PASS [Redcar & Cleveland Borough Council] The Wizard Early Years Provider Hub
+2026-03-27 16:24:03,206 [INFO]   ✓ PASS [Hull City Council] Queens Gardens Refurbishment and Public Realm works (PHASE 2
+2026-03-27 16:24:03,206 [INFO]   ✓ PASS [Cheshire west and Chester Borough Council] 33023 Local Bus
+2026-03-27 16:24:03,207 [INFO]   ✓ PASS [Oxfordshire County Council] Insurance for OCC
+2026-03-27 16:24:03,207 [INFO]   ✓ PASS [Cornwall Council] Creative Skills Bootcamps for Wave 6 (Lot 3 Skills Bootcamps
+2026-03-27 16:24:03,207 [INFO]   ✓ PASS [Wigan Council] PSR005 - 0-19 Services: Healthy Child Programme
+2026-03-27 16:24:03,207 [INFO]   ✓ PASS [Redcar & Cleveland Borough Council] Provision of Furniture to Youth Centres
+2026-03-27 16:24:03,207 [INFO]   ✓ PASS [Cornwall Council] Digital Skills Bootcamps for Wave 6 (Lot 3 Skills Bootcamps)
+2026-03-27 16:24:03,207 [INFO]   ✓ PASS [Sheffield City Council] Modeshift STARS
+2026-03-27 16:24:03,207 [INFO]   ✓ PASS [Redcar & Cleveland Borough Council] Provision of Furniture to Youth Centres
+2026-03-27 16:24:03,207 [INFO]   ✓ PASS [Cornwall Council] Hospitality Skills Bootcamps for Wave 6 (Lot 3 Skills Bootca
+2026-03-27 16:24:03,207 [INFO]   ✓ PASS [Cornwall Council] Early Years / Childcare / Education  Skills Bootcamps for Wa
+2026-03-27 16:24:03,207 [INFO]   ✓ PASS [Cornwall Council] Health and Social Care Skills Bootcamps for Wave 6 (Lot 3 Sk
+2026-03-27 16:24:03,207 [INFO]   ✓ PASS [Cornwall Council] Professional Services Skills Bootcamps for Wave 6 (Lot 3 Ski
+2026-03-27 16:24:03,207 [INFO]   ✓ PASS [Cornwall Council] Technical Skills Bootcamps for Wave 6 (Lot 3 - Skills Bootca
+2026-03-27 16:24:03,207 [INFO]   ✓ PASS [Cornwall Council] Construction Skills Bootcamps for Wave 6 (Lot 3 - Skills Boo
+2026-03-27 16:24:03,207 [INFO]   ✓ PASS [Gedling Borough Council] Carlton Active - RIBA Stages 3 & 4
+2026-03-27 16:24:03,208 [INFO]   ✓ PASS [West Sussex County Council] WSCC Route 8301 - SEND Warnham to Queen Elizabeth II Silver 
+2026-03-27 16:24:03,208 [INFO]   ✓ PASS [West Sussex County Council] WSCC ROUTE 905 - 16 SEATS - TO IMBERHORNE SCHOOL EAST GRINST
+2026-03-27 16:24:03,208 [INFO]   ✓ PASS [Staffordshire County Council] For the provision of Transport of Service Users (Children an
+2026-03-27 16:24:03,208 [INFO]   ✓ PASS [West Sussex County Council] Route 30001 Ingfield Manor
+2026-03-27 16:24:03,208 [INFO]   ✓ PASS [City of Bradford Metropolitan District Council] CBMDC 23 - Civica APP
+2026-03-27 16:24:03,208 [INFO]   ✓ PASS [Redditch Borough Council] Contract for Void Property Cleaning and Clearing Services
+2026-03-27 16:24:03,208 [INFO]   ✓ PASS [Buckinghamshire Council - e-Tendering System] MIVR1101 - AWARD
+2026-03-27 16:24:03,208 [INFO]   ✓ PASS [Crediton Town Council] Crediton Grounds Maintenance Contract
+2026-03-27 16:24:03,208 [INFO]   ✓ PASS [Leicestershire County Council] DN720268 - The Provision of Tutoring Services for Children w
+2026-03-27 16:24:03,208 [INFO]   ✓ PASS [LONDON BOROUGH OF HAVERING] 5 ULEZ compliant buses for Passenger Transport Services
+2026-03-27 16:24:03,209 [INFO]   ✓ PASS [Liverpool City Council] Supermarket Vouchers March 2026
+2026-03-27 16:24:03,209 [INFO]   ✓ PASS [London Borough of Haringey] Resource for Family Hub Relocation refurbishment works
+2026-03-27 16:24:03,209 [INFO]   ✓ PASS [Redcar & Cleveland Borough Council] Educational Psychology Consultancy Services (Additional Capa
+2026-03-27 16:24:03,209 [INFO]   ✓ PASS [Liverpool City Council] Supermarket Vouchers for Vulnerable Families March'26
+2026-03-27 16:24:03,209 [INFO]   ✓ PASS [Redcar & Cleveland Borough Council] South Tees Sexual Violence Reduction Service
+2026-03-27 16:24:03,209 [INFO]   ✓ PASS [Lancaster City Council] Liquid Fuels
+2026-03-27 16:24:03,209 [INFO]   ✓ PASS [West Sussex County Council] WSCC Route 70005
+2026-03-27 16:24:03,209 [INFO]   ✓ PASS [London Borough of Hounslow] Insurance Lot 7 Engineering Inspection
+2026-03-27 16:24:03,209 [INFO]   ✓ PASS [Cornwall Council] Geographical Gaps (Lot 1 - Adult Skills and /or Lot 2 Fee Co
+2026-03-27 16:24:03,209 [INFO]   ✓ PASS [Bath and North East Somerset Council] MRI Qube
+2026-03-27 16:24:03,209 [INFO]   ✓ PASS [LONDON BOROUGH OF NEWHAM] Provision of CCTV Consultancy and Technical Support
+2026-03-27 16:24:03,209 [INFO]   ✓ PASS [London Borough of Hammersmith & Fulham] Courier and Specialist Movements
+2026-03-27 16:24:03,209 [INFO]   ✓ PASS [Leeds City Council] Meanwood Property Flood Resilience Surveys
+2026-03-27 16:24:03,209 [INFO]   ✓ PASS [London Borough of Hammersmith & Fulham] Foster with West London Digital Marketing 2025/26
+2026-03-27 16:24:03,209 [INFO]   ✓ PASS [Suffolk County Council Passenger Transport] QBR063 2026-03-24 (0900) Reydon to Sir John Leman High Schoo
+2026-03-27 16:24:03,209 [INFO]   ✓ PASS [Cornwall Council] Health and Social Care (Lot 1 - Adult Skills and Lot 2 - Fre
+2026-03-27 16:24:03,210 [INFO]   ✓ PASS [Leicestershire County Council] SEN17762-SEN-TAXI 8 SEATER- BIRCH WOOD VALE SCHOOL
+2026-03-27 16:24:03,210 [INFO]   ✓ PASS [Walsall Metro Borough Council] WP4187 The Provision of a Corporate Landlord Strategic Partn
+2026-03-27 16:24:03,210 [INFO]   ✓ PASS [Suffolk County Council Passenger Transport] QIP536 2026-03-24 (0900) Felixstowe to Include Ipswich (4 se
+2026-03-27 16:24:03,210 [INFO]   ✓ PASS [London Borough of Hackney] Human Resource Information System (HRIS) Payroll Hosted Appl
+2026-03-27 16:24:03,210 [INFO]   ✓ PASS [Lancashire County Council] The Collection and Recycling of Non-Domestic Waste
+2026-03-27 16:24:03,210 [INFO]   ✓ PASS [Ashford Borough Council] Election Software
+2026-03-27 16:24:03,210 [INFO]   ✓ PASS [Ashford Borough Council] Online Forms
+2026-03-27 16:24:03,210 [INFO]   ✓ PASS [Purley on Thames Parish Council] Upgrading the water main infrastructure to improve water ser
+2026-03-27 16:24:03,211 [INFO]   ✓ PASS [Central Bedfordshire Council] CBC-1212-FC-SK  - Construction Lot 2  Priory View Cladding P
+2026-03-27 16:24:03,211 [INFO]   ✓ PASS [Lichfield District Council] Revenues and Benefits System
+2026-03-27 16:24:03,211 [INFO]   ✓ PASS [Liverpool City Council] Alt Catchment Natural Flood Management
+2026-03-27 16:24:03,211 [INFO]   ✓ PASS [Derbyshire County Council] PLACE1082ET Adult Care Transport A01243/BO26
+2026-03-27 16:24:03,211 [INFO]   ✓ PASS [HAMPSHIRE COUNTY COUNCIL] Digital Resources for Adopters and Professionals
+2026-03-27 16:24:03,211 [INFO]   ✓ PASS [Hull City Council] Bedford Travellers site Project Management (PM) & Quantity S
+2026-03-27 16:24:03,211 [INFO]   ✓ PASS [Leicester City Council] 36889 - Contact to Home
+2026-03-27 16:24:03,211 [INFO]   ✓ PASS [HAMPSHIRE COUNTY COUNCIL] Holiday Activities and Food Schemes 2026 Easter & Summer Pro
+2026-03-27 16:24:03,212 [INFO]   ✓ PASS [North Lincolnshire Council] F14626 - Lot 1 Professional Services - South Axholme Academy
+2026-03-27 16:24:03,212 [INFO]   ✓ PASS [Bristol City Council] 104 Greystoke Avenue, 55 Staveley Crescent, 30 Lisburn Road 
+2026-03-27 16:24:03,212 [INFO]   ✓ PASS [HAMPSHIRE COUNTY COUNCIL] Holiday Activities with Food Schemes February 2026 (Half Ter
+2026-03-27 16:24:03,212 [INFO]   ✓ PASS [Cumberland Council] Lot 1a Closing 17 March 2026 PRU F35
+2026-03-27 16:24:03,212 [INFO]   ✓ PASS [Hull City Council] Supply of Highway Materials (tarmac) at Kingston upon Hull
+2026-03-27 16:24:03,212 [INFO]   ✓ PASS [Hull City Council] Supply of Highway Materials (Concrete) at Kingston upon Hull
+2026-03-27 16:24:03,212 [INFO]   ✓ PASS [Sandwell Metropolitan Borough Council] Street Lighting Improvements Programme 2026 - 2030  - AWARD
+2026-03-27 16:24:03,212 [INFO]   ✓ PASS [Sandwell Metropolitan Borough Council] Street Lighting Improvements Programme 2026 - 2030  - AWARD
+2026-03-27 16:24:03,212 [INFO]   ✓ PASS [Homes England (the name adopted by the Homes and Communities Agency)] Project Legal Advice
+2026-03-27 16:24:03,212 [INFO]   ✓ PASS [South Tyneside Council] Decarbonisation and Retrofit Works at Simonside Activity Cen
+2026-03-27 16:24:03,213 [INFO]   ✓ PASS [Salford City Council] Moorside & Wardley Railway Bridge Refurbishment Scheme
+2026-03-27 16:24:03,213 [INFO]   ✓ PASS [South Ribble Borough Council] Liquid Fuels & Associated Products
+2026-03-27 16:24:03,213 [INFO]   ✓ PASS [Lancashire County Council] Event Promotion
+2026-03-27 16:24:03,213 [INFO]   ✓ PASS [Westminster City Council] BT449 - Waste and Street Cleansing Dialogue programme - DA v
+2026-03-27 16:24:03,213 [INFO]   ✓ PASS [Salford City Council] Highway Design Consultancy- Principal Engineer Support
+2026-03-27 16:24:03,213 [INFO]   ✓ PASS [South Ribble Borough Council] Provision of BNG Assessment Software for Biodiversity Duty
+2026-03-27 16:24:03,213 [INFO]   ✓ PASS [North Devon District Council] NDC0077-26 - Banking Services
+2026-03-27 16:24:03,213 [INFO]   ✓ PASS [Southampton City Council] School Budgeting System
+2026-03-27 16:24:03,213 [INFO]   ✓ PASS [DERBY CITY COUNCIL] ENQ1195 - Mentoring service for the Supporting Families Prog
+2026-03-27 16:24:03,213 [INFO]   ✓ PASS [Wigan Council] Bedford High Lower School - LED Lighting & Emergency Lightin
+2026-03-27 16:24:03,213 [INFO]   ✓ PASS [Cambridgeshire County Council] 25066 CCC and PCC Individual Service Funds
+2026-03-27 16:24:03,213 [INFO]   ✓ PASS [Northumberland County Council] Northumberland Landscape Character Evidence Base
+2026-03-27 16:24:03,213 [INFO]   ✓ PASS [Wigan Council] Beech Hill Primary School - SEND Unit Refurbishment
+2026-03-27 16:24:03,213 [INFO]   ✓ PASS [Basingstoke & Deane Borough Council] Microsoft Licensing and Advice
+2026-03-27 16:24:03,213 [INFO]   ✓ PASS [Durham County Council] SolarWinds 12 month subscription
+2026-03-27 16:24:03,214 [INFO]   ✓ PASS [Oldham Council] CCS Project 70658 Cloud Networking Project Management RM1557
+2026-03-27 16:24:03,214 [INFO]   ✓ PASS [Homes England (the name adopted by the Homes and Communities Agency)] Homes England - Property Framework Lot 1 - The New Towns Pro
+2026-03-27 16:24:03,214 [INFO]   ✓ PASS [Homes England (the name adopted by the Homes and Communities Agency)] Homes England - DARTS Framework Lot 1 - The New Towns Progra
+2026-03-27 16:24:03,214 [INFO]   ✓ PASS [Westminster City Council] NW8 Heat Network - Multi-dis Support Team
+2026-03-27 16:24:03,214 [INFO]   ✓ PASS [Lancaster City Council] Lancaster City Council,Mar26,C1,6,7,13&18-LCD Support Servic
+2026-03-27 16:24:03,214 [INFO]   ✓ PASS [Salford City Council] Salford City Council,Mar26,C33-WH Good (Worsley LC AHU)
+2026-03-27 16:24:03,214 [INFO]   ✓ PASS [HAMPSHIRE COUNTY COUNCIL] CS Childcare Recruitment Marketing Campaign
+2026-03-27 16:24:03,214 [INFO]   ✓ PASS [Sefton Council] Cremator Service Agreement 2026-2027 - YPO Crematoria Soluti
+2026-03-27 16:24:03,214 [INFO]   ✓ PASS [Cambridgeshire County Council] Low code platform for online forms
+2026-03-27 16:24:03,214 [INFO]   ✓ PASS [Leicestershire County Council] Mainstream Taxi S335 Houlton School
+2026-03-27 16:24:03,214 [INFO]   ✓ PASS [Cambridgeshire County Council] Voucher printing for HAF Programme
+2026-03-27 16:24:03,214 [INFO]   ✓ PASS [Cambridgeshire County Council] Schools Attainment Data Analysis Tool
+2026-03-27 16:24:03,214 [INFO]   ✓ PASS [Homes England (the name adopted by the Homes and Communities Agency)] Homes England - DARTS Framework Lot 1 - The New Towns Progra
+2026-03-27 16:24:03,215 [INFO]   ✓ PASS [Homes England (the name adopted by the Homes and Communities Agency)] Homes England - Property Framework Lot 1 - The New Towns Pro
+2026-03-27 16:24:03,215 [INFO]   ✓ PASS [Suffolk County Council Passenger Transport] QNT068 09:00 2026-03-19 Haverhill & Gt Bradley, Suffolk to H
+2026-03-27 16:24:03,215 [INFO]   ✓ PASS [Liverpool City Council] Millstead SEN Phase 3 - Capital Works for Modular Buildings
+2026-03-27 16:24:03,215 [INFO]   ✓ PASS [Homes England (the name adopted by the Homes and Communities Agency)] Homes England - MS Unified Support (RM1557.14 G-Cloud14 Lot 
+2026-03-27 16:24:03,215 [INFO]   ✓ PASS [HYTHE TOWN COUNCIL] Refurbishment of Multi-Use Games Area
+2026-03-27 16:24:03,215 [INFO]   ✓ PASS [HYTHE TOWN COUNCIL] Resurfacing of Tennis Hard Courts
+2026-03-27 16:24:03,215 [INFO]   ✓ PASS [London Borough of Hackney] GB-London: TPPL London Borough of Hackney NEPO HGV Lot 1 - 1
+2026-03-27 16:24:03,215 [INFO]   ✓ PASS [Durham County Council] GB-Durham: TPPL Durham County Council NEPO GM & P Lot 2 - 2 
+2026-03-27 16:24:03,215 [INFO]   ✓ PASS [London Borough of Barnet Council] GB-Barnet: TPPL London Borough of Barnet Council NEPO GM & P
+2026-03-27 16:24:03,215 [INFO]   ✓ PASS [HYTHE TOWN COUNCIL] Eaton Lands - tree felling works
+2026-03-27 16:24:03,215 [INFO]   ✓ PASS [Basingstoke & Deane Borough Council] Microsoft Licensing and Advice
+2026-03-27 16:24:03,215 [INFO]   ✓ PASS [Durham County Council] GB-Durham: TPPL Durham County Council HCC Lot 2 - 4 x Vans(2
+2026-03-27 16:24:03,216 [INFO]   ✓ PASS [Walsall Metro Borough Council] WP4187 The Provision of a Corporate Landlord Strategic Partn
+2026-03-27 16:24:03,216 [INFO]   ✓ PASS [High Peak Borough Council & Staffordshire Moorlands District Council] Refurbishment Works
+2026-03-27 16:24:03,216 [INFO]   ✓ PASS [SUFFOLK COUNTY COUNCIL] QIP390 0900 2026-02-16 Stowmarket - Morland primary school, 
+2026-03-27 16:24:03,216 [INFO]   ✓ PASS [Suffolk County Council Passenger Transport] QIP390 0900 2026-02-16 Stowmarket - Morland primary school, 
+2026-03-27 16:24:03,216 [INFO]   ✓ PASS [SUFFOLK COUNTY COUNCIL] QHL109 09:00 2026-02-05 Ipswich, Suffolk to Churchill Specia
+2026-03-27 16:24:03,216 [INFO]   ✓ PASS [Suffolk County Council Passenger Transport] QOC828 2026-03-20 (0900) Ipswich - Hobart High School, Loddo
+2026-03-27 16:24:03,216 [INFO]   ✓ PASS [Lincolnshire County Council] Wide Area Network Services 2025
+2026-03-27 16:24:03,217 [INFO]   ✓ PASS [East Riding of Yorkshire Council] Registrar Customer Management Solution
+2026-03-27 16:24:03,217 [INFO]   ✓ PASS [Bristol City Council] 4-16 Filwood - Post-contract Employer's Agent Services
+2026-03-27 16:24:03,217 [INFO]   ✓ PASS [North Lincolnshire Council] NFC199 Adobe Licenses
+2026-03-27 16:24:03,217 [INFO]   ✓ PASS [East Sussex County Council] ESCC -DE- DDRT Digital Platform (a.k.a. Management System)
+2026-03-27 16:24:03,217 [INFO]   ✓ PASS [LONDON BOROUGH OF HAVERING] Tree Surveys
+2026-03-27 16:24:03,217 [INFO]   ✓ PASS [Leicester City Council] 36891 - ELLESMERE COLLEGE (AYLESTONE MEADOWS)
+2026-03-27 16:24:03,218 [INFO]   ✓ PASS [Central Bedfordshire Council] CBC-1935-Q-RM Smoking cessation - video shorts - Choose You 
+2026-03-27 16:24:03,218 [INFO]   ✓ PASS [Leighton Linslade Town Council] Christmas Lighting Contract
+2026-03-27 16:24:03,218 [INFO]   ✓ PASS [Walsall Metro Borough Council] W5005 - Virtual Engagement Solution 'Commonplace'
+2026-03-27 16:24:03,218 [INFO]   ✓ PASS [Central Bedfordshire Council] CBC-1866-LV-RM Social Media Management - AWARD
+2026-03-27 16:24:03,218 [INFO]   ✓ PASS [Derbyshire County Council] PLACE973H Long Eaton Town Deal Project - Stage 1 Early Contr
+2026-03-27 16:24:03,218 [INFO]   ✓ PASS [Central Bedfordshire Council] CBC-1866-LV-RM Social Media Management - AWARD
+2026-03-27 16:24:03,218 [INFO]   ✓ PASS [East Sussex County Council] ESCC-HP-Asbestos Surveys Refurbishment & Demolition Surveys 
+2026-03-27 16:24:03,218 [INFO]   ✓ PASS [City of Doncaster Council] G-Cloud 14 Call-Off Contract
+2026-03-27 16:24:03,218 [INFO]   ✓ PASS [Tendring District Council] EPP0213 - Southcliff and The Leas step refurbishment
+2026-03-27 16:24:03,218 [INFO]   ✓ PASS [WAKEFIELD COUNCIL] Refuse Collection Vehicles
+2026-03-27 16:24:03,218 [INFO]   ✓ PASS [SOMERSET COUNCIL] Taunton Bus Station - RTPI
+2026-03-27 16:24:03,218 [INFO]   ✓ PASS [Basingstoke & Deane Borough Council] Provision of Security Services, CCTV & VSS
+2026-03-27 16:24:03,219 [INFO]   ✓ PASS [Ipswich Borough Council] Passive fire protection works (Group 3)
+2026-03-27 16:24:03,219 [INFO]   ✓ PASS [WESTMORLAND AND FURNESS COUNCIL] Dynamic Category Solutions Homecare Services - (Homecare Ser
+2026-03-27 16:24:03,219 [INFO]   ✓ PASS [Nottinghamshire County Council] Backup as a Sevice - Broxtowe Borough Council
+2026-03-27 16:24:03,219 [INFO]   ✓ PASS [Ipswich Borough Council] Fire Safety remediation works (Group 2)
+2026-03-27 16:24:03,219 [INFO]   ✓ PASS [Ipswich Borough Council] Fire Safety remediation works (Group 1)
+2026-03-27 16:24:03,219 [INFO]   ✓ PASS [WESTMORLAND AND FURNESS COUNCIL] Printers and Papercut (Eden Area)
+2026-03-27 16:24:03,219 [INFO]   ✓ PASS [WESTMORLAND AND FURNESS COUNCIL] Printers and Papercut (South Lakeland Area)
+2026-03-27 16:24:03,220 [INFO] 
+============================================================
+2026-03-27 16:24:03,220 [INFO] SCRAPE SUMMARY
+2026-03-27 16:24:03,220 [INFO]   Total unique from API : 1000
+2026-03-27 16:24:03,220 [INFO]   Already seen (skip)   : 2
+2026-03-27 16:24:03,220 [INFO]   Keyword filtered out  : 498
+2026-03-27 16:24:03,220 [INFO]   Buyer filtered out    : 223
+2026-03-27 16:24:03,220 [INFO]   ✅ Passed to pipeline : 277
+2026-03-27 16:24:03,220 [INFO] ============================================================
+2026-03-27 16:24:03,225 [INFO] Step 3: Skipping Apollo (--no-apollo flag)
+2026-03-27 16:24:03,228 [INFO] Exported 277 leads → contracts_finder_leads.csv
+2026-03-27 16:24:03,228 [INFO] 
+Step 5: Pushing 277 leads to HubSpot
+2026-03-27 16:24:03,229 [INFO] Checking HubSpot custom contact properties…
+2026-03-27 16:24:04,544 [INFO]   Created property: cf_contract_ref
+2026-03-27 16:24:05,244 [INFO]   Created property: cf_buyer_org
+2026-03-27 16:24:05,938 [INFO]   Created property: cf_contract_title
+2026-03-27 16:24:06,640 [INFO]   Created property: cf_contract_value
+2026-03-27 16:24:07,237 [INFO]   Created property: cf_deadline
+2026-03-27 16:24:07,892 [INFO]   Created property: cf_published
+2026-03-27 16:24:08,557 [INFO]   Created property: cf_last_outreach
+2026-03-27 16:24:09,178 [INFO]   Created property: cf_outreach_count
+2026-03-27 16:24:09,783 [INFO]   Created property: cf_source
+2026-03-27 16:24:10,469 [INFO]   Created property: cf_enriched_by
+2026-03-27 16:24:10,470 [INFO] 
+Processing: m.d.jones@npt.gov.uk (Neath Port Talbot County Borough Council)
+2026-03-27 16:24:11,800 [INFO]   Company created: Neath Port Talbot County Borough Council (id=53413404433)
+2026-03-27 16:24:13,358 [ERROR]   Contact create/update error for m.d.jones@npt.gov.uk: 400 Client Error: Bad Request for url: https://api.hubapi.com/crm/v3/objects/contacts
+2026-03-27 16:24:13,360 [INFO] 
+Processing: iain.peverall@durham.gov.uk (Durham County Council)
+2026-03-27 16:24:14,507 [INFO]   Company created: Durham County Council (id=53436754708)
+2026-03-27 16:24:15,922 [ERROR]   Contact create/update error for iain.peverall@durham.gov.uk: 400 Client Error: Bad Request for url: https://api.hubapi.com/crm/v3/objects/contacts
+2026-03-27 16:24:15,923 [INFO] 
+Processing: chloe.sharpe@reading.gov.uk (Reading Borough Council)
+2026-03-27 16:24:16,961 [INFO]   Company created: Reading Borough Council (id=53431086712)
+2026-03-27 16:24:18,432 [ERROR]   Contact create/update error for chloe.sharpe@reading.gov.uk: 400 Client Error: Bad Request for url: https://api.hubapi.com/crm/v3/objects/contacts
+2026-03-27 16:24:18,434 [INFO] 
+Processing: iain.peverall@durham.gov.uk (Durham County Council)
+2026-03-27 16:24:19,569 [INFO]   Company created: Durham County Council (id=53430157652)
+2026-03-27 16:24:20,988 [ERROR]   Contact create/update error for iain.peverall@durham.gov.uk: 400 Client Error: Bad Request for url: https://api.hubapi.com/crm/v3/objects/contacts
+2026-03-27 16:24:20,989 [INFO] 
+Processing: lee.booth@staffordbc.gov.uk (Stafford Borough Council)
+2026-03-27 16:24:22,119 [INFO]   Company created: Stafford Borough Council (id=53421486858)
+2026-03-27 16:24:23,498 [ERROR]   Contact create/update error for lee.booth@staffordbc.gov.uk: 400 Client Error: Bad Request for url: https://api.hubapi.com/crm/v3/objects/contacts
+2026-03-27 16:24:23,500 [INFO] 
+Processing: Emma.TILL@chelmsford.gov.uk (Chelmsford City Council)
+2026-03-27 16:24:24,637 [INFO]   Company created: Chelmsford City Council (id=53422725525)
+2026-03-27 16:24:26,030 [ERROR]   Contact create/update error for Emma.TILL@chelmsford.gov.uk: 400 Client Error: Bad Request for url: https://api.hubapi.com/crm/v3/objects/contacts
+2026-03-27 16:24:26,031 [INFO] 
+Processing: iain.peverall@durham.gov.uk (Durham County Council)
+2026-03-27 16:24:26,547 [INFO]   Company found: Durham County Council (id=53436754708)
+2026-03-27 16:24:27,919 [ERROR]   Contact create/update error for iain.peverall@durham.gov.uk: 400 Client Error: Bad Request for url: https://api.hubapi.com/crm/v3/objects/contacts
+2026-03-27 16:24:27,921 [INFO] 
+Processing: d.d.adams@dorsetcc.gov.uk (Dorset Council)
+2026-03-27 16:24:28,579 [INFO]   Company found: Dorset Council (id=44672494365)

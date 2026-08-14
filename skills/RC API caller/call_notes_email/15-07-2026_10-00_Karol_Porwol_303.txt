@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  15/07/2026  10:00
+============================================================
+With:         Karol Porwol 303
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Karol Porwol and Giles Hugo discussing order details for Saint Mary, including the need for a job number, and coordinating on API setup for Dropbox. The overall outcome was agreement to proceed with assigning a job number and to assist with API configuration via a Teams call.
+
+--- RECAP --------------------------------------------------
+Karol Porwol inquired about placing an order for Saint Mary, asking if a job number is required for the R&D list similar to previous orders, and confirmed that a job number must be assigned for the project.Giles Hugo confirmed that a job number is necessary for the order to function properly and agreed to ensure the order is linked to the correct project with an assigned job number.Karol observed that Giles created a product status bot on Dropbox using API keys and asked if he could assist with the setup.Giles clarified that the product status bot was created by Steve and that he currently lacks API access, suggesting that Steve is responsible for the setup.Karol proposed a Teams call to go through the API setup on his screen to assist Giles, who agreed to do so after making a coffee.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will check and ensure that the order for Saint Mary has the correct project and assigned job number.Karol Porwol will coordinate with Steve to gain API access or facilitate the API setup for the Dropbox product status bot via a Teams call.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  14/08/2026  14:00
+============================================================
+With:         Sean McAllen 304
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a brief voicemail exchange where Fatima Barros inquired about expenses related to credit card payments, seeking clarification on discrepancies, and scheduled to discuss further when Sean McAllen is in the office next week.
+
+--- RECAP --------------------------------------------------
+Fatima Barros contacted Sean McAllen to discuss discrepancies between credit card charges and a screenshot he provided, related to expenses and trend line payments.Sean McAllen informed Fatima that he would be in London on Monday and would not be in the office until Tuesday, suggesting the matter could be addressed then.Fatima indicated that the issue could wait until next week and wished Sean a good weekend.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

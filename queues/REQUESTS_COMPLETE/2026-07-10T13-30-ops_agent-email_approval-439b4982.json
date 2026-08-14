@@ -1,0 +1,14 @@
+{
+  "request_id": "1c962bb6-0e41-4ae3-85e8-a72fb3a7d8ea",
+  "source": "email_approval_sheet",
+  "row_index": 8,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAABnJ7JfAACfKjgQkWRhS42xGA6fMW2cAAkAYbFXAAA=",
+  "subject": "Ordered: ‘Masterplug Single Socket...’",
+  "task_gid": "1216298898397328",
+  "task_name": "21139-60726 - Amazon - Steves plug socket",
+  "asana_url": "https://app.asana.com/0/0/1216298898397328",
+  "action": "(Matched via PO Number in Local DB); Update delivery date to 2026-07-07; Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043); Skipped price update: Extracted price matches Asana 'Price Ex VAT'.",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-07-06T13:27:58Z\nEmail: Ordered: ‘Masterplug Single Socket...’\n- Update delivery date to 2026-07-07\n- Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043)",
+  "decision": "A",
+  "created_at": "2026-07-10T13:30:08.579695+00:00"
+}

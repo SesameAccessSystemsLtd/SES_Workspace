@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  22/07/2026  11:51
+============================================================
+With:         Lasershape 0115 972 9921
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+Giles Hugo from Sesame discussed quotes, pricing, and delivery timelines with Aaron from Lasershape, aiming to optimize order placement and discounts. They agreed on prioritizing certain orders and exploring combined discounts to meet delivery needs.
+
+--- RECAP --------------------------------------------------
+Giles Hugo inquired about the status of quotes and order placements, indicating urgency due to engineering needs and potential cost savings.Lasershape confirmed that two quotes are pending feedback, with one quote (Cambridge lift) already placed and expected to have a 7-10 day lead time, prioritized by Giles Hugo.The third quote has no feedback yet and is pending further discussion; Lasershape will chase for updates.Giles Hugo expressed interest in combining orders and discounts to achieve cost savings, specifically mentioning a potential £500 reduction.They discussed delivery priorities, with the Cambridge lift order being the first to be delivered, followed by two remaining orders (St. Mary's and America).Lasershape suggested offering a combined discount across the two remaining quotes to facilitate order approval, with the understanding that America is the preferred delivery first.Giles Hugo indicated that placing both orders together might require price adjustments, and Lasershape will review options and respond within a few hours.
+
+--- TASKS --------------------------------------------------
+Lasershape will follow up with the estimation manager to obtain feedback on the third quote and explore potential combined discounts for the remaining orders.Lasershape will provide Giles Hugo with a detailed proposal, including pricing and lead times, within a few hours.
+
+(Full transcript: RC web portal only — no RingSense API)

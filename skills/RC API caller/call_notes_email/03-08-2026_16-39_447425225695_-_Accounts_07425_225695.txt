@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  03/08/2026  16:39
+============================================================
+With:         447425225695 - Accounts 07425 225695
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a voicemail call from Dignas at Paragon Fire and Security regarding scheduling an alarm service, with plans to confirm details tomorrow. The call was brief and informational.
+
+--- RECAP --------------------------------------------------
+Dignas from Paragon Fire and Security called to inform that the upcoming alarm service scheduled for May is delayed due to management issues and to propose booking an introductory service for the following morning.Fatima Barros asked to confirm the appointment by calling back on the same number tomorrow, as her colleague, who usually handles this, has left for the day.Dignas provided their name as 'Gigs' or 'Gig', with some confusion over pronunciation, and agreed to be contacted again tomorrow for confirmation.
+
+--- TASKS --------------------------------------------------
+Fatima Barros will call Dignas at the provided number tomorrow to confirm the appointment for the introductory alarm service.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,1503 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1588 - America 1 Entire,"Master task for all BOMs related to 1588 - America 1 Entire
+Dropbox: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Project: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",,,,,,,,,,
+Engraving BOM - 1588 - America 1 Entire,,ALL BOMS - 1588 - America 1 Entire,,Engraving,,,,,,,
+Engraving - 1588 - America 1 Entire,,Engraving BOM - 1588 - America 1 Entire,,Engraving,,,,,,,
+1 off 1588. 1016.1.1 - 6 Buttons Face Plate - Engraving Engraving,"1588.1016.1.1
+From Cost Centre Engraving
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.376 kg
+Volume: 46576.667 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Engraving - 1588 - America 1 Entire,1,Engraving,,,,ORDER,PROJECT ORDER,1216622345882897,https://app.asana.com/0/848657415032331/1216622345882897
+1 off 1588. 1016.H1 - SWLPlate.OneWheelchairUser- Engraved Engraving,"1588.1016.H1
+From Cost Centre Engraving
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.154 kg
+Volume: 19380.778 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Engraving - 1588 - America 1 Entire,1,Engraving,,,,ORDER,PROJECT ORDER,1216622322367469,https://app.asana.com/0/848657415032331/1216622322367469
+Surface Finish BOM - 1588 - America 1 Entire,,ALL BOMS - 1588 - America 1 Entire,,Surface Finish BOM,,,,,,,
+Anodising - 1588 - America 1 Entire,,Surface Finish BOM - 1588 - America 1 Entire,,Anodising,,,,,,,
+4 off Anodising 1588. 1006.A.126 - ^Flat,"1588.1006.A.126
+Material: Aluminum 6061
+Web Link: https://www.aluminiumwarehouse.co.uk/1-4-in-x-1-4-in-aluminium-square-bar
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.002 kg
+Volume: 724.245 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Anodising - 1588 - America 1 Entire,4,Anodising,,,,ORDER,PROJECT ORDER,1216622345522033,https://app.asana.com/0/848657415032331/1216622345522033
+4 off Anodising 1588. 1006.A.127 - Packer,"1588.1006.A.127
+Material: Aluminum 5152
+Thickness: 1.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.000 kg
+Volume: 107.891 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Anodising - 1588 - America 1 Entire,4,Anodising,,,,ORDER,PROJECT ORDER,1216622330548034,https://app.asana.com/0/848657415032331/1216622330548034
+2 off Anodising 1588. 1006.A26w - Welded assembly,"1588.1006.A26w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.036 kg
+Volume: 13156.805 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Anodising - 1588 - America 1 Entire,2,Anodising,,,,ORDER,PROJECT ORDER,1216622322392158,https://app.asana.com/0/848657415032331/1216622322392158
+Laser Cut BOM - 1588 - America 1 Entire,,ALL BOMS - 1588 - America 1 Entire,,Laser Cut,,,,,,,
+Laser Cut - 1588 - America 1 Entire,,Laser Cut BOM - 1588 - America 1 Entire,,Laser Cut,,,,,,,
+1 off 1588. 1001.C.002 - (ServiceHatches_3) 304/2B Laser Cut,"1588.1001.C.002
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 11.709 kg
+Volume: 1463585.937 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622322113753,https://app.asana.com/0/848657415032331/1216622322113753
+1 off 1588. 1001.C.004 - (ServiceTrimS) 304/2B Laser Cut,"1588.1001.C.004
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 1.834 kg
+Volume: 227000.500 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622322138101,https://app.asana.com/0/848657415032331/1216622322138101
+1 off 1588. 1001.C.004_MIR1 - (ServiceTrimS) 304/2B Laser Cut,"1588.1001.C.004_MIR1
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 1.834 kg
+Volume: 227000.500 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622187522529,https://app.asana.com/0/848657415032331/1216622187522529
+1 off 1588. 1001.C.005 - (ServiceTrimL) 304/2B Laser Cut,"1588.1001.C.005
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 2.562 kg
+Volume: 317115.050 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622331100236,https://app.asana.com/0/848657415032331/1216622331100236
+1 off 1588. 1001.C.006 - (ServiceTrim_FrontPlatet) 304/HR Laser Cut,"1588.1001.C.006
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 9.758 kg
+Volume: 1219799.039 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622345522044,https://app.asana.com/0/848657415032331/1216622345522044
+9 off 1588. 1001.C.013 - Channel 304/2B Laser Cut,"1588.1001.C.013
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 1.837 kg
+Volume: 229625.390 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,9,Laser Cut,,,,ORDER,PROJECT ORDER,1216622346215687,https://app.asana.com/0/848657415032331/1216622346215687
+2 off 1588. 1001.C.014 - (ServiceHatches_1) 304/2B Laser Cut,"1588.1001.C.014
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 11.797 kg
+Volume: 1474632.910 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622331230827,https://app.asana.com/0/848657415032331/1216622331230827
+1 off 1588. 1001.C.015 - Top step support 304/2B Laser Cut,"1588.1001.C.015
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 1.686 kg
+Volume: 210791.850 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622345667695,https://app.asana.com/0/848657415032331/1216622345667695
+1 off 1588. 1001.C.016 - (ServiceTrimL) 304/2B Laser Cut,"1588.1001.C.016
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 2.555 kg
+Volume: 316174.894 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622257094854,https://app.asana.com/0/848657415032331/1216622257094854
+4 off 1588. 1001.C.024 - Support 304/HR Laser Cut,"1588.1001.C.024
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.108 kg
+Volume: 13503.633 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216622320431931,https://app.asana.com/0/848657415032331/1216622320431931
+2 off 1588. 1001.C.025 - Support 304/HR Laser Cut,"1588.1001.C.025
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.097 kg
+Volume: 12183.633 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622331211713,https://app.asana.com/0/848657415032331/1216622331211713
+1 off 1588. 1002.G.013 - Pit Trim Side Panel 304/DP1 Laser Cut,"1588.1002.G.013
+Stock Number: 304/DP1
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 3.865 kg
+Volume: 483130.306 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622329617447,https://app.asana.com/0/848657415032331/1216622329617447
+1 off 1588. 1002.G.014 - Pit Trim Side Panel 304/DP1 Laser Cut,"1588.1002.G.014
+Stock Number: 304/DP1
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 1.250 kg
+Volume: 156290.871 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622346410832,https://app.asana.com/0/848657415032331/1216622346410832
+1 off 1588. 1002.G.014_MIR - Pit Trim Side Panel 304/DP1 Laser Cut,"1588.1002.G.014_MIR
+Stock Number: 304/DP1
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 1.250 kg
+Volume: 156290.871 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622257569463,https://app.asana.com/0/848657415032331/1216622257569463
+1 off 1588. 1002.G.015 - Pit Trim Front Panel 304/DP1 Laser Cut,"1588.1002.G.015
+Stock Number: 304/DP1
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 1.628 kg
+Volume: 203474.871 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622322880040,https://app.asana.com/0/848657415032331/1216622322880040
+1 off 1588. 1002.G.017 - Pit Trim Side Panel 304/DP1 Laser Cut,"1588.1002.G.017
+Stock Number: 304/DP1
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 4.102 kg
+Volume: 512710.019 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622346308441,https://app.asana.com/0/848657415032331/1216622346308441
+6 off 1588. 1002.G.018 - Corner bracket Laser Cut,"1588.1002.G.018
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Steel, Mild
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.631 kg
+Volume: 80383.447 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,6,Laser Cut,,,,ORDER,PROJECT ORDER,1216622449704410,https://app.asana.com/0/848657415032331/1216622449704410
+6 off 1588. 1002.G.018_MIR - Corner bracket Laser Cut,"1588.1002.G.018_MIR
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Steel, Mild
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.631 kg
+Volume: 80383.447 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,6,Laser Cut,,,,ORDER,PROJECT ORDER,1216622346522972,https://app.asana.com/0/848657415032331/1216622346522972
+1 off 1588. 1002.G.021 - SWLP support 304/2B Laser Cut,"1588.1002.G.021
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.309 kg
+Volume: 38590.751 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622331747208,https://app.asana.com/0/848657415032331/1216622331747208
+1 off 1588. 1002.G.022 - Packer 304/2B Laser Cut,"1588.1002.G.022
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.078 kg
+Volume: 9697.949 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622346680108,https://app.asana.com/0/848657415032331/1216622346680108
+2 off 1588. 1002.G.025 - Folded angle 304/2B Laser Cut,"1588.1002.G.025
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.202 kg
+Volume: 25233.514 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622346673635,https://app.asana.com/0/848657415032331/1216622346673635
+2 off 1588. 1002.G.037 - Pit Trim Side Panel 304/DP1 Laser Cut,"1588.1002.G.037
+Stock Number: 304/DP1
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.573 kg
+Volume: 71622.169 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622346658520,https://app.asana.com/0/848657415032331/1216622346658520
+1 off 1588. 1003.A.004 - Mid step riser plate 304/HR Laser Cut,"1588.1003.A.004
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 3.303 kg
+Volume: 412902.403 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622331835543,https://app.asana.com/0/848657415032331/1216622331835543
+1 off 1588. 1003.A.005 - Bott step riser plate 304/HR Laser Cut,"1588.1003.A.005
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 3.286 kg
+Volume: 410713.872 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622331863971,https://app.asana.com/0/848657415032331/1216622331863971
+1 off 1588. 1003.A.007 - Side Stairs Channel 304/HR Laser Cut,"1588.1003.A.007
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 4.831 kg
+Volume: 603909.998 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622331835554,https://app.asana.com/0/848657415032331/1216622331835554
+1 off 1588. 1003.A.007_MIR - Side Stairs Channel 304/HR Laser Cut,"1588.1003.A.007_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 4.831 kg
+Volume: 603909.998 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622257569531,https://app.asana.com/0/848657415032331/1216622257569531
+1 off 1588. 1003.A.009 - Main Bottom Channel 304/HR Laser Cut,"1588.1003.A.009
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 24.585 kg
+Volume: 3073102.522 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622450243295,https://app.asana.com/0/848657415032331/1216622450243295
+2 off 1588. 1003.A.010 - Bottom step spine 304/HR Laser Cut,"1588.1003.A.010
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 1.706 kg
+Volume: 213295.337 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622332010158,https://app.asana.com/0/848657415032331/1216622332010158
+2 off 1588. 1003.A.011 - Middle step spine 304/HR Laser Cut,"1588.1003.A.011
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 1.749 kg
+Volume: 218679.327 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622258334721,https://app.asana.com/0/848657415032331/1216622258334721
+12 off 1588. 1003.A.017 - Thread spine 304/HR Laser Cut,"1588.1003.A.017
+Stock Number: 304/HR
+KAN: KAN-348
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267457
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 1.197 kg
+Volume: 148192.531 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,12,Laser Cut,,,,ORDER,PROJECT ORDER,1216622347100700,https://app.asana.com/0/848657415032331/1216622347100700
+2 off 1588. 1003.A.018 - Thread plate 304/HR Laser Cut,"1588.1003.A.018
+Stock Number: 304/HR
+KAN: KAN-696
+KAN Stock Link: https://app.asana.com/0/632603478911321/1211647530696130
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 15.317 kg
+Volume: 1895669.332 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622450247309,https://app.asana.com/0/848657415032331/1216622450247309
+4 off 1588. 1003.A.019 - Folded angle 304/HR Laser Cut,"1588.1003.A.019
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.137 kg
+Volume: 17076.678 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216622323480890,https://app.asana.com/0/848657415032331/1216622323480890
+2 off 1588. 1003.A.020 - Folded angle 304/HR Laser Cut,"1588.1003.A.020
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.201 kg
+Volume: 24932.615 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622323601231,https://app.asana.com/0/848657415032331/1216622323601231
+4 off 1588. 1003.A.024 - Wheel Bracket 304/HR Laser Cut,"1588.1003.A.024
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.142 kg
+Volume: 17554.971 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216622258349881,https://app.asana.com/0/848657415032331/1216622258349881
+4 off 1588. 1003.A.025 - Wheel Bracket 304/HR Laser Cut,"1588.1003.A.025
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.257 kg
+Volume: 31865.279 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216622450156862,https://app.asana.com/0/848657415032331/1216622450156862
+1 off 1588. 1003.A.031 - Rear plate 304/HR Laser Cut,"1588.1003.A.031
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 1.633 kg
+Volume: 204146.263 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622347075381,https://app.asana.com/0/848657415032331/1216622347075381
+1 off 1588. 1003.A.049 - Stabilisation bracket 304/HR Laser Cut,"1588.1003.A.049
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.649 kg
+Volume: 80370.290 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622347242708,https://app.asana.com/0/848657415032331/1216622347242708
+1 off 1588. 1003.A.049_MIR - Stabilisation bracket 304/HR Laser Cut,"1588.1003.A.049_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.649 kg
+Volume: 80370.290 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622323644082,https://app.asana.com/0/848657415032331/1216622323644082
+8 off 1588. 1003.A.050 - Folded angle 304/HR Laser Cut,"1588.1003.A.050
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.322 kg
+Volume: 39809.920 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,8,Laser Cut,,,,ORDER,PROJECT ORDER,1216622258251753,https://app.asana.com/0/848657415032331/1216622258251753
+4 off 1588. 1003.A.051 - Wheel plate 304/HR Laser Cut,"1588.1003.A.051
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.494 kg
+Volume: 61176.792 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216622332283851,https://app.asana.com/0/848657415032331/1216622332283851
+16 off 1588. 1003.A.056 - Packer 304/2B Laser Cut,"1588.1003.A.056
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.018 kg
+Volume: 2190.812 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,16,Laser Cut,,,,ORDER,PROJECT ORDER,1216622258630493,https://app.asana.com/0/848657415032331/1216622258630493
+2 off 1588. 1003.A.060 - Slottet bracket 304/HR Laser Cut,"1588.1003.A.060
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.147 kg
+Volume: 18219.803 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622258486431,https://app.asana.com/0/848657415032331/1216622258486431
+2 off 1588. 1003.A.063 - Rear plate 304/HR Laser Cut,"1588.1003.A.063
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.518 kg
+Volume: 64751.519 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622450630903,https://app.asana.com/0/848657415032331/1216622450630903
+1 off 1588. 1003.A.064 - Side Channel Track 304/HR Laser Cut,"1588.1003.A.064
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 7.631 kg
+Volume: 953847.101 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622347446200,https://app.asana.com/0/848657415032331/1216622347446200
+1 off 1588. 1003.A.064_MIR - Side Channel Track 304/HR Laser Cut,"1588.1003.A.064_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 7.630 kg
+Volume: 953762.152 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622347415445,https://app.asana.com/0/848657415032331/1216622347415445
+1 off 1588. 1003.A.066 - Side Channel 304/HR Laser Cut,"1588.1003.A.066
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 7.640 kg
+Volume: 955044.534 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622332369804,https://app.asana.com/0/848657415032331/1216622332369804
+1 off 1588. 1003.A.066_MIR - Side Channel 304/HR Laser Cut,"1588.1003.A.066_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 7.640 kg
+Volume: 955044.534 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622450856788,https://app.asana.com/0/848657415032331/1216622450856788
+1 off 1588. 1003.A.113 - Rear plate 304/HR Laser Cut,"1588.1003.A.113
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 1.644 kg
+Volume: 205446.263 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622332535612,https://app.asana.com/0/848657415032331/1216622332535612
+1 off 1588. 1003.A.114 - Mid step riser plate 304/HR Laser Cut,"1588.1003.A.114
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 4.869 kg
+Volume: 608596.573 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622347676855,https://app.asana.com/0/848657415032331/1216622347676855
+1 off 1588. 1003.A.119 - Stair ram channel 304/HR Laser Cut,"1588.1003.A.119
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 6.211 kg
+Volume: 776383.369 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622511196978,https://app.asana.com/0/848657415032331/1216622511196978
+4 off 1588. 1003.A.123 - Packer replacing washers in B.012 304/HR Laser Cut,"1588.1003.A.123
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.067 kg
+Volume: 8424.319 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216622323913291,https://app.asana.com/0/848657415032331/1216622323913291
+2 off 1588. 1004.B.055 - Teethed plate Laser Cut,"1588.1004.B.055
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.663 kg
+Volume: 84437.323 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622332535623,https://app.asana.com/0/848657415032331/1216622332535623
+2 off 1588. 1004.B.056 - Teethed plate Laser Cut,"1588.1004.B.056
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.220 kg
+Volume: 28024.208 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622582374272,https://app.asana.com/0/848657415032331/1216622582374272
+2 off 1588. 1004.B.057 - TriangularGusset Laser Cut,"1588.1004.B.057
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.122 kg
+Volume: 15514.208 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622324122135,https://app.asana.com/0/848657415032331/1216622324122135
+1 off 1588. 1004.B.059 - Guide Track Plate Laser Cut,"1588.1004.B.059
+Material: Steel, Mild
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 3.906 kg
+Volume: 497582.536 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622511373405,https://app.asana.com/0/848657415032331/1216622511373405
+1 off 1588. 1004.B.059_MIR1 - Guide Track Plate Laser Cut,"1588.1004.B.059_MIR1
+Material: Steel, Mild
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 3.906 kg
+Volume: 497582.536 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622347865314,https://app.asana.com/0/848657415032331/1216622347865314
+4 off 1588. 1004.B.060 - Gusset Laser Cut,"1588.1004.B.060
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.091 kg
+Volume: 11635.912 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216622451004885,https://app.asana.com/0/848657415032331/1216622451004885
+2 off 1588. 1004.B.061 - Guide Track Base Laser Cut,"1588.1004.B.061
+Material: Steel, Mild
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 1.772 kg
+Volume: 225743.461 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622450863415,https://app.asana.com/0/848657415032331/1216622450863415
+2 off 1588. 1004.B.066 - Folded Channel Laser Cut,"1588.1004.B.066
+Material: Steel, Mild
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.354 kg
+Volume: 45133.978 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622347416927,https://app.asana.com/0/848657415032331/1216622347416927
+10 off 1588. 1004.B.091 - Packers 304/2B Laser Cut,"1588.1004.B.091
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.039 kg
+Volume: 4891.743 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,10,Laser Cut,,,,ORDER,PROJECT ORDER,1216622324365612,https://app.asana.com/0/848657415032331/1216622324365612
+4 off 1588. 1004.B.093 - Loading and Leveling Plate Laser Cut,"1588.1004.B.093
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 2.898 kg
+Volume: 369197.966 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216622511536192,https://app.asana.com/0/848657415032331/1216622511536192
+1 off 1588. 1004.B.101 - Murr Bases Plate 304/2B Laser Cut,"1588.1004.B.101
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.730 kg
+Volume: 91194.396 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622348035218,https://app.asana.com/0/848657415032331/1216622348035218
+2 off 1588. 1004.B.107 - Packers 304/HR Laser Cut,"1588.1004.B.107
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.192 kg
+Volume: 24060.089 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622348005029,https://app.asana.com/0/848657415032331/1216622348005029
+2 off 1588. 1004.B.109 - Frames connector 304/HR Laser Cut,"1588.1004.B.109
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.236 kg
+Volume: 29522.228 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622348045037,https://app.asana.com/0/848657415032331/1216622348045037
+1 off 1588. 1004.B.110 - Pin Locking Handle Laser Cut,"1588.1004.B.110
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.411 kg
+Volume: 52386.883 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622511406803,https://app.asana.com/0/848657415032331/1216622511406803
+2 off 1588. 1004.B.151 - Packers 304/HR Laser Cut,"1588.1004.B.151
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.196 kg
+Volume: 24458.717 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622582737270,https://app.asana.com/0/848657415032331/1216622582737270
+8 off 1588. 1004.S.027 - Bracket Laser Cut,"1588.1004.S.027
+Material: Steel, Mild
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.068 kg
+Volume: 8634.623 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,8,Laser Cut,,,,ORDER,PROJECT ORDER,1216622582470864,https://app.asana.com/0/848657415032331/1216622582470864
+2 off 1588. 1004.S.029 - (Frame.Angle.Bellows) 304/2B Laser Cut,"1588.1004.S.029
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.194 kg
+Volume: 24203.179 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622451203643,https://app.asana.com/0/848657415032331/1216622451203643
+4 off 1588. 1004.S.030 - (Frame.Angle.Bellows) 304/2B Laser Cut,"1588.1004.S.030
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.262 kg
+Volume: 32720.716 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216622347910847,https://app.asana.com/0/848657415032331/1216622347910847
+4 off 1588. 1004.S.031 - (Frame.Angle.Bellows.Angle) 304/2B Laser Cut,"1588.1004.S.031
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.104 kg
+Volume: 12965.518 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216622348070904,https://app.asana.com/0/848657415032331/1216622348070904
+1 off 1588. 1006.A.001 - WheelStop BasePlate 304/HR Laser Cut,"1588.1006.A.001
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 81.929 kg
+Volume: 10241187.242 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622582936382,https://app.asana.com/0/848657415032331/1216622582936382
+1 off 1588. 1006.A.004 - PlatformTray BasePlate 304/HR Laser Cut,"1588.1006.A.004
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 87.379 kg
+Volume: 10922337.231 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622348045056,https://app.asana.com/0/848657415032331/1216622348045056
+2 off 1588. 1006.A.005 - PlatformTray FrontTrim 304/2B Laser Cut,"1588.1006.A.005
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 1.843 kg
+Volume: 230313.600 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622348045067,https://app.asana.com/0/848657415032331/1216622348045067
+2 off 1588. 1006.A.006 - PlatformTray SideTrim 304/2B Laser Cut,"1588.1006.A.006
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 2.444 kg
+Volume: 305506.080 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622511725796,https://app.asana.com/0/848657415032331/1216622511725796
+2 off 1588. 1006.A.028 - Wheel Track - SS Brush 304/DP1 Laser Cut,"1588.1006.A.028
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 1.552 kg
+Volume: 194049.668 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622451233150,https://app.asana.com/0/848657415032331/1216622451233150
+2 off 1588. 1006.A.044 - Channel 304/HR Laser Cut,"1588.1006.A.044
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 3.058 kg
+Volume: 382262.625 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622451348520,https://app.asana.com/0/848657415032331/1216622451348520
+2 off 1588. 1006.A.049 - Gusset 304/2B Laser Cut,"1588.1006.A.049
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.049 kg
+Volume: 6082.274 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622451516613,https://app.asana.com/0/848657415032331/1216622451516613
+2 off 1588. 1006.A.050 - Wheel Bracket 304/2B Laser Cut,"1588.1006.A.050
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.181 kg
+Volume: 22675.461 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622511930156,https://app.asana.com/0/848657415032331/1216622511930156
+4 off 1588. 1006.A.059 - Wheel Track packer 304/2B Laser Cut,"1588.1006.A.059
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.458 kg
+Volume: 57298.407 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216622451514229,https://app.asana.com/0/848657415032331/1216622451514229
+2 off 1588. 1006.A.060 - Wheel Track packer 304/2B Laser Cut,"1588.1006.A.060
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.917 kg
+Volume: 114596.814 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622541984785,https://app.asana.com/0/848657415032331/1216622541984785
+1 off 1588. 1006.A.078 - WheelStop Front 304/DP2 Laser Cut,"1588.1006.A.078
+Stock Number: 304/DP2
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 7.348 kg
+Volume: 918561.798 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622451667523,https://app.asana.com/0/848657415032331/1216622451667523
+1 off 1588. 1006.A.079 - WheelStop Side 304/DP2 Laser Cut,"1588.1006.A.079
+Stock Number: 304/DP2
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 9.828 kg
+Volume: 1228546.435 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622451476270,https://app.asana.com/0/848657415032331/1216622451476270
+1 off 1588. 1006.A.079_MIR - WheelStop Side 304/DP2 Laser Cut,"1588.1006.A.079_MIR
+Stock Number: 304/DP2
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 9.828 kg
+Volume: 1228546.435 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622583249280,https://app.asana.com/0/848657415032331/1216622583249280
+1 off 1588. 1006.A.095 - Wheel Bracket 304/2B Laser Cut,"1588.1006.A.095
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.368 kg
+Volume: 46039.482 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622583228707,https://app.asana.com/0/848657415032331/1216622583228707
+1 off 1588. 1006.A.095_MIR - Wheel Bracket 304/2B Laser Cut,"1588.1006.A.095_MIR
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.368 kg
+Volume: 46039.482 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622511914319,https://app.asana.com/0/848657415032331/1216622511914319
+1 off 1588. 1006.A.114 - Wheelstop Stiffner Plate 304/HR Laser Cut,"1588.1006.A.114
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 2.303 kg
+Volume: 287858.296 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622348439713,https://app.asana.com/0/848657415032331/1216622348439713
+4 off 1588. 1006.A.117 - Lift Rod plate 304/HR Laser Cut,"1588.1006.A.117
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.152 kg
+Volume: 19058.241 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216622348497307,https://app.asana.com/0/848657415032331/1216622348497307
+4 off 1588. 1006.A.127 - Packer Laser Cut,"1588.1006.A.127
+Material: Aluminum 5152
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.000 kg
+Volume: 107.891 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216622348071296,https://app.asana.com/0/848657415032331/1216622348071296
+1 off 1588. 1008.D1.112 - Valve Plate No Ext. 304/HR Laser Cut,"1588.1008.D1.112
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.828 kg
+Volume: 103454.377 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622583228720,https://app.asana.com/0/848657415032331/1216622583228720
+1 off 1588. 1055.A.004 - Tube Base Plate 304/HR Laser Cut,"1588.1055.A.004
+Stock Number: 304/HR
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.112 kg
+Volume: 13804.562 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622583370818,https://app.asana.com/0/848657415032331/1216622583370818
+1 off 1588. 1055.A.005 - Base Plate 304/HR Laser Cut,"1588.1055.A.005
+Stock Number: 304/HR
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.192 kg
+Volume: 23706.601 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622348071308,https://app.asana.com/0/848657415032331/1216622348071308
+2 off 1588. 1055.A.022 - Packers 304/2B Laser Cut,"1588.1055.A.022
+Stock Number: 304/2B
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.033 kg
+Volume: 4093.609 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622583436144,https://app.asana.com/0/848657415032331/1216622583436144
+1 off 1588. 1055.A.023 - Packers 304/2B Laser Cut,"1588.1055.A.023
+Stock Number: 304/2B
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.065 kg
+Volume: 8187.218 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622512266040,https://app.asana.com/0/848657415032331/1216622512266040
+1 off 1588. 1055.A.030 - Steel plate 304/DP1 Laser Cut,"1588.1055.A.030
+Stock Number: 304/DP1
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.040 kg
+Volume: 5024.648 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216622451829478,https://app.asana.com/0/848657415032331/1216622451829478
+2 off 1588. 1055.A.031 - Lifting key 304/2B Laser Cut,"1588.1055.A.031
+Stock Number: 304/2B
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.014 kg
+Volume: 1798.214 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1588 - America 1 Entire,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216622608695209,https://app.asana.com/0/848657415032331/1216622608695209
+Machining BOM - 1588 - America 1 Entire,,ALL BOMS - 1588 - America 1 Entire,,Machining,,,,,,,
+Assembly by Machining - 1588 - America 1 Entire,,Machining BOM - 1588 - America 1 Entire,,Assembly by Machining,,,,,,,
+1 off 1588. 1055.A3 - Bracket with nylon fitted Assembly by Machining,"1588.1055.A3
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.616 kg
+Volume: 100081.508 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Assembly by Machining - 1588 - America 1 Entire,1,Assembly by Machining,,,,ORDER,PROJECT ORDER,1216622541543254,https://app.asana.com/0/848657415032331/1216622541543254
+MayTec BOM - 1588 - America 1 Entire,,ALL BOMS - 1588 - America 1 Entire,,MayTec,,,,,,,
+MayTec - 1588 - America 1 Entire,,MayTec BOM - 1588 - America 1 Entire,,MayTec,,,,,,,
+1 off 1588. 1002.G1 - Side frame MayTec,"1588.1002.G1
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 9.000 kg
+Volume: 3026580.336 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",MayTec - 1588 - America 1 Entire,1,MayTec,,,,ORDER,PROJECT ORDER,1216622542052969,https://app.asana.com/0/848657415032331/1216622542052969
+1 off 1588. 1002.G1_MIR - Side frame MayTec,"1588.1002.G1_MIR
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 8.738 kg
+Volume: 2993204.561 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",MayTec - 1588 - America 1 Entire,1,MayTec,,,,ORDER,PROJECT ORDER,1216622451516692,https://app.asana.com/0/848657415032331/1216622451516692
+1 off 1588. 1002.G2 - Front frame MayTec,"1588.1002.G2
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 5.197 kg
+Volume: 1800684.798 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",MayTec - 1588 - America 1 Entire,1,MayTec,,,,ORDER,PROJECT ORDER,1216622541862357,https://app.asana.com/0/848657415032331/1216622541862357
+NBSS BOM - 1588 - America 1 Entire,,ALL BOMS - 1588 - America 1 Entire,,NBSS,,,,,,,
+NBSS/Sesame - 1588 - America 1 Entire,,NBSS BOM - 1588 - America 1 Entire,,NBSS/Sesame,,,,,,,
+8 off 1588. 003 - NBSS.003 15mm Shock Mount M8 25.5mm Diameter 60daN Compression Load 3.5mm 295-1477 / 511270 NBSS/Sesame,"1588.003
+Stock Number: 295-1477 / 511270
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/stud-mounts/2951477/
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.008 kg
+Volume: 8665.887 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Sesame - 1588 - America 1 Entire,8,NBSS/Sesame,,,,ORDER,PROJECT ORDER,1216622608608928,https://app.asana.com/0/848657415032331/1216622608608928
+NBSS/Machining - 1588 - America 1 Entire,,NBSS BOM - 1588 - America 1 Entire,,NBSS/Machining,,,,,,,
+12 off 1588. 008 - NBSS.008 AcetalStairWheel NBSS/Machining,"1588.008
+Material: Acetal
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.050 kg
+Volume: 50346.928 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Machining - 1588 - America 1 Entire,12,NBSS/Machining,,,,ORDER,PROJECT ORDER,1216622511842618,https://app.asana.com/0/848657415032331/1216622511842618
+1 off 1588. 009 - NBSS.009 AcetalRing Standard 80mm in machining stock NBSS/Machining,"1588.009
+Stock Number: Standard 80mm in machining stock
+Material: Acetal Resin, White
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.041 kg
+Volume: 28928.600 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Machining - 1588 - America 1 Entire,1,NBSS/Machining,,,,ORDER,PROJECT ORDER,1216622609157230,https://app.asana.com/0/848657415032331/1216622609157230
+1 off 1588. 010 - NBSS.010 PostHandle NBSS/Machining,"1588.010
+Material: Stainless Steel
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 1.147 kg
+Volume: 143377.756 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Machining - 1588 - America 1 Entire,1,NBSS/Machining,,,,ORDER,PROJECT ORDER,1216622609073347,https://app.asana.com/0/848657415032331/1216622609073347
+NBSS/Laser Cut - 1588 - America 1 Entire,,NBSS BOM - 1588 - America 1 Entire,,NBSS/Laser Cut,,,,,,,
+1 off 1588. 011 - NBSS.011 Button station -  Back Box 140x140 304/2B NBSS/Laser Cut,"1588.011
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.500 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.621 kg
+Volume: 77651.885 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Laser Cut - 1588 - America 1 Entire,1,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1216622452344237,https://app.asana.com/0/848657415032331/1216622452344237
+24 off 1588. 014 - NBSS.014 Bearing Bush (14X16X15) (MB1415DU) NBSS/Sesame,"1588.014
+Stock Number: (MB1415DU)
+Material: Stainless Steel
+Web Link: www.onlinebearings.co.uk
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.006 kg
+Volume: 706.858 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Sesame - 1588 - America 1 Entire,24,NBSS/Sesame,,,,ORDER,PROJECT ORDER,1216622583407648,https://app.asana.com/0/848657415032331/1216622583407648
+4 off 1588. 017 - NBSS.017 Lift Rod Acetal NBSS/Machining,"1588.017
+KAN: KAN-348
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267457
+Material: Acetal
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.021 kg
+Volume: 14487.585 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Machining - 1588 - America 1 Entire,4,NBSS/Machining,,,,ORDER,PROJECT ORDER,1216622542899375,https://app.asana.com/0/848657415032331/1216622542899375
+4 off 1588. 018 - NBSS.018 Wheel Pin (Bespoke part - no stock number) NBSS/Sesame,"1588.018
+Stock Number: (Bespoke part - no stock number)
+KAN: KAN-696
+KAN Stock Link: https://app.asana.com/0/632603478911321/1211647530696130
+Material: Stainless Steel
+Web Link: http://technifast.co.uk/clevis-pins
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.071 kg
+Volume: 8892.521 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Sesame - 1588 - America 1 Entire,4,NBSS/Sesame,,,,ORDER,PROJECT ORDER,1216622542887537,https://app.asana.com/0/848657415032331/1216622542887537
+1 off 1588. 022 - NBSS 022 HydraulicBulkheadPlate 304/2B NBSS/Laser Cut,"1588.022
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.579 kg
+Volume: 71702.921 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Laser Cut - 1588 - America 1 Entire,1,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1216622452546850,https://app.asana.com/0/848657415032331/1216622452546850
+1 off 1588. 033 - NBSS.033 Button Plate dia 160 x 160 304/DP1 NBSS/Laser Cut,"1588.033
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.377 kg
+Volume: 46626.669 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Laser Cut - 1588 - America 1 Entire,1,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1216622542732068,https://app.asana.com/0/848657415032331/1216622542732068
+1 off 1588. 034.001 - NBSS.034.001 SafeWorkingLoadPlate: Blank NBSS/Laser Cut,"1588.034.001
+KAN: KAN-310
+KAN Stock Link: https://app.asana.com/0/632603478911321/1165239479083396
+Material: Stainless Steel
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.154 kg
+Volume: 19288.301 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Laser Cut - 1588 - America 1 Entire,1,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1216622542740943,https://app.asana.com/0/848657415032331/1216622542740943
+NBSS/Welded by Sesame - 1588 - America 1 Entire,,NBSS BOM - 1588 - America 1 Entire,,NBSS/Welded by Sesame,,,,,,,
+12 off 1588. 040.02 - NBSS 040 Welded Assembly NBSS/Welded by Sesame,"1588.040.02
+KAN: KAN-298
+KAN Stock Link: https://app.asana.com/0/632603478911321/1200317103586535
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.110 kg
+Volume: 13853.362 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Welded by Sesame - 1588 - America 1 Entire,12,NBSS/Welded by Sesame,,,,ORDER,PROJECT ORDER,1216622609229603,https://app.asana.com/0/848657415032331/1216622609229603
+1 off 1588. 047 - NBSS.047 Post Inner Rod (This part is 70mm and needs to be adjusted per job by Sesame Engineer) NBSS/Machining,"1588.047
+Material: Stainless Steel
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.562 kg
+Volume: 70203.850 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Machining - 1588 - America 1 Entire,1,NBSS/Machining,,,,ORDER,PROJECT ORDER,1216622543051693,https://app.asana.com/0/848657415032331/1216622543051693
+1 off 1588. 049 - NBSS.049 Dripping Tray NBSS/Welded by Sesame,"1588.049
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 7.853 kg
+Volume: 981587.109 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Welded by Sesame - 1588 - America 1 Entire,1,NBSS/Welded by Sesame,,,,ORDER,PROJECT ORDER,1216622452626619,https://app.asana.com/0/848657415032331/1216622452626619
+8 off 1588. 050 - NBSS.050 Leveling Feet Welded Bolt NBSS/Welded by Sesame,"1588.050
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.318 kg
+Volume: 40545.057 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Welded by Sesame - 1588 - America 1 Entire,8,NBSS/Welded by Sesame,,,,ORDER,PROJECT ORDER,1216622513085442,https://app.asana.com/0/848657415032331/1216622513085442
+4 off 1588. 105 - NBSS.105 OrangeWheel_Rod 20mm NBSS/Machining,"1588.105
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.205 kg
+Volume: 25406.461 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Machining - 1588 - America 1 Entire,4,NBSS/Machining,,,,ORDER,PROJECT ORDER,1216622452420943,https://app.asana.com/0/848657415032331/1216622452420943
+8 off 1588. 129 - NBSS.129 Loading Point Washer dia 50 x 50 304/HR NBSS/Laser Cut,"1588.129
+Stock Number: 304/HR
+KAN: KAN-288
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267503
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.185 kg
+Volume: 23151.593 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Laser Cut - 1588 - America 1 Entire,8,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1216622584306368,https://app.asana.com/0/848657415032331/1216622584306368
+2 off 1588. 414 - NBSS.414 Limit Switch Angle 304/2B NBSS/Laser Cut,"1588.414
+Stock Number: 304/2B
+KAN: KAN-282
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267515
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.188 kg
+Volume: 23520.852 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Laser Cut - 1588 - America 1 Entire,2,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1216622513149186,https://app.asana.com/0/848657415032331/1216622513149186
+1 off 1588. 445 - NBSS.445 Stairs Forward LS bracket 304/2B NBSS/Laser Cut,"1588.445
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.115 kg
+Volume: 14326.971 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Laser Cut - 1588 - America 1 Entire,1,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1216622584288813,https://app.asana.com/0/848657415032331/1216622584288813
+1 off 1588. 768 - NBSS.768 Machine Room Cabinet Frame NBSS/Sesame,"1588.768
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 24.659 kg
+Volume: 3141298.763 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Sesame - 1588 - America 1 Entire,1,NBSS/Sesame,,,,ORDER,PROJECT ORDER,1216622609624431,https://app.asana.com/0/848657415032331/1216622609624431
+8 off 1588. 774 - NBSS.774 (Stairs Wheel Bracket) NBSS/Sesame,"1588.774
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.668 kg
+Volume: 82920.709 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Sesame - 1588 - America 1 Entire,8,NBSS/Sesame,,,,ORDER,PROJECT ORDER,1216622609573103,https://app.asana.com/0/848657415032331/1216622609573103
+6 off 1588. 1000.C.R-Clip 2.5x45 - Zinc Plated Steel R-Clip 2.5x45 R-Clip 2.5x45 NBSS/Sesame,"1588.1000.C.R-Clip 2.5x45
+Stock Number: R-Clip 2.5x45
+Material: Stainless Steel
+Web Link: https://www.spaldingfasteners.co.uk/metric-zinc-plated-steel-r-clips-1-2-x-16mm-to-6-x-117mm/
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.004 kg
+Volume: 489.875 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Sesame - 1588 - America 1 Entire,6,NBSS/Sesame,,,,ORDER,PROJECT ORDER,1216622584383256,https://app.asana.com/0/848657415032331/1216622584383256
+1 off 1588. 1000.C.R-Clip 3.0x72 - R-Clip 3.0x75 RC3.0SS NBSS/Sesame,"1588.1000.C.R-Clip 3.0x72
+Stock Number: RC3.0SS
+Material: Stainless Steel
+Web Link: https://www.boneham.co.uk/clevis-pins/r-clips-stainless-steel-10-pack-rcss?returnurl=%2fclevis-pins%2f%3fcount%3d20
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.007 kg
+Volume: 933.680 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Sesame - 1588 - America 1 Entire,1,NBSS/Sesame,,,,ORDER,PROJECT ORDER,1216622608801524,https://app.asana.com/0/848657415032331/1216622608801524
+8 off 1588. 1000.L.WDS674-216 - Swivel Pad M16 674-216 NBSS/Sesame,"1588.1000.L.WDS674-216
+Stock Number: 674-216
+KAN: KAN-264
+KAN Stock Link: https://app.asana.com/0/632603478911321/1202312166676506
+Web Link: https://www.wdscomponents.com/en-gb/swivel-pad-steel-with-chemical-black-finish-674-216
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.189 kg
+Volume: 24055.574 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Sesame - 1588 - America 1 Entire,8,NBSS/Sesame,,,,ORDER,PROJECT ORDER,1216622452707201,https://app.asana.com/0/848657415032331/1216622452707201
+Sesame BOM - 1588 - America 1 Entire,,ALL BOMS - 1588 - America 1 Entire,,Sesame,,,,,,,
+Blickle - 1588 - America 1 Entire,,Sesame BOM - 1588 - America 1 Entire,,Blickle,,,,,,,
+4 off 1588. 1000.A2.001 - Guide roller FTH 50x15/12-12K Blickle,"1588.1000.A2.001
+Stock Number: FTH 50x15/12-12K
+Material: Generic
+Web Link: https://www.blickle.co.uk/product/FTH-50x15-12-12K-463802
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.025 kg
+Volume: 24770.901 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Blickle - 1588 - America 1 Entire,4,Blickle,,,,ORDER,PROJECT ORDER,1216622584466405,https://app.asana.com/0/848657415032331/1216622584466405
+RS Components - 1588 - America 1 Entire,,Sesame BOM - 1588 - America 1 Entire,,RS Components,,,,,,,
+4 off 1588. 1000.B.30x17_F_M8_98.6daN - M8 x 30 female vibration mount 257-8763 RS Components,"1588.1000.B.30x17_F_M8_98.6daN
+Stock Number: 257-8763
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/anti-vibration-mounts/2578763/?relevancy-data=636F3D3126696E3D4931384E525353746F636B4E756D626572266C753D656E266D6D3D6D61746368616C6C26706D3D5E2828282872737C5253295B205D3F293F285C647B337D5B5C2D5C735D3F5C647B332C347D5B705061415D3F29297C283235285C647B387D7C5C647B317D5C2D5C647B377D2929292426706F3D3126736E3D592673723D2673743D52535F53544F434B5F4E554D4245522677633D4E4F4E45267573743D3235372D38373633267374613D3235373837363326&searchHistory=%7B%22enabled%22%3Atrue%7D
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.011 kg
+Volume: 11797.192 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",RS Components - 1588 - America 1 Entire,4,RS Components,,,,ORDER,PROJECT ORDER,1216622584379624,https://app.asana.com/0/848657415032331/1216622584379624
+4 off 1588. 1000.B.40x30_M_M8_120daN - 40x30mm Shock Mount M8 20mm studd 415-0682 RS Components,"1588.1000.B.40x30_M_M8_120daN
+Stock Number: 415-0682
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/anti-vibration-mounts/4150682 (https://www.polymax.co.uk/anti-vibration-rubber-mount/cylindrical-vibration-bobbin-mount/)
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.039 kg
+Volume: 38704.421 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",RS Components - 1588 - America 1 Entire,4,RS Components,,,,ORDER,PROJECT ORDER,1216622513409645,https://app.asana.com/0/848657415032331/1216622513409645
+4 off 1588. 1000.B.50x25_M_M10_300daN - Shock Mount M10 50mm Diameter 300daN Compression Load 6mm deflection 385-1586 / 511525 RS Components,"1588.1000.B.50x25_M_M10_300daN
+Stock Number: 385-1586 / 511525
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/stud-mounts/3851586/?sra=pstk
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.047 kg
+Volume: 51050.881 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",RS Components - 1588 - America 1 Entire,4,RS Components,,,,ORDER,PROJECT ORDER,1216622609680154,https://app.asana.com/0/848657415032331/1216622609680154
+Boneham - 1588 - America 1 Entire,,Sesame BOM - 1588 - America 1 Entire,,Boneham,,,,,,,
+2 off 1588. 1000.C.ClevisPin 12x60mm - Clevis Pin Stainless Steel CPSS-12-060 Boneham,"1588.1000.C.ClevisPin 12x60mm
+Stock Number: CPSS-12-060
+Material: Stainless Steel
+Web Link: http://www.boneham.co.uk/Products/clevis-pins/clevis-pins-metric
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.063 kg
+Volume: 7848.832 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Boneham - 1588 - America 1 Entire,2,Boneham,,,,ORDER,PROJECT ORDER,1216636123801399,https://app.asana.com/0/848657415032331/1216636123801399
+1 off 1588. 1000.C.ClevisPin 16x50mm - Clevis Pin Stainless Steel CPSS-16-050 Boneham,"1588.1000.C.ClevisPin 16x50mm
+Stock Number: CPSS-16-050
+Material: Stainless Steel
+Web Link: http://www.boneham.co.uk/Products/clevis-pins/clevis-pins-metric
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.095 kg
+Volume: 11931.871 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Boneham - 1588 - America 1 Entire,1,Boneham,,,,ORDER,PROJECT ORDER,1216636123761432,https://app.asana.com/0/848657415032331/1216636123761432
+Cement Board Supplier - 1588 - America 1 Entire,,Sesame BOM - 1588 - America 1 Entire,,Cement Board Supplier,,,,,,,
+1 off 1588. 1001.CB.001 - Cement Board Cement Board Supplier,"1588.1001.CB.001
+Material: Cement Board
+Web Link: https://www.insulationshop.co/cement_based_boards_backer_boards.html
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 3.388 kg
+Volume: 2447804.335 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Cement Board Supplier - 1588 - America 1 Entire,1,Cement Board Supplier,,,,ORDER,PROJECT ORDER,1216622453197543,https://app.asana.com/0/848657415032331/1216622453197543
+2 off 1588. 1001.CB.002 - Cement Board Cement Board Supplier,"1588.1001.CB.002
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Cement Board
+Web Link: https://www.insulationshop.co/cement_based_boards_backer_boards.html
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 3.404 kg
+Volume: 2459420.335 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Cement Board Supplier - 1588 - America 1 Entire,2,Cement Board Supplier,,,,ORDER,PROJECT ORDER,1216622584907251,https://app.asana.com/0/848657415032331/1216622584907251
+Technica wheels - 1588 - America 1 Entire,,Sesame BOM - 1588 - America 1 Entire,,Technica wheels,,,,,,,
+4 off 1588. 1003.A.013 - Bottom Step Wheel (85mm OD 60mm Width ) P0051 - 85/60/65/20 Technica wheels,"1588.1003.A.013
+Stock Number: P0051 - 85/60/65/20
+Material: Nylon-6/6
+Web Link: https://www.technicawheels.co.uk/p0051-85-60-65-20-polyurethane-roller-with-6204-2rs-ball-bearings-shields.html#
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.348 kg
+Volume: 307731.758 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Technica wheels - 1588 - America 1 Entire,4,Technica wheels,,,,ORDER,PROJECT ORDER,1216622584940269,https://app.asana.com/0/848657415032331/1216622584940269
+Orbital Fasteners - 1588 - America 1 Entire,,Sesame BOM - 1588 - America 1 Entire,,Orbital Fasteners,,,,,,,
+4 off 1588. 1003.A.071 - Unistrut endcap 21mm x 41mm 2261250 Orbital Fasteners,"1588.1003.A.071
+Stock Number: 2261250
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.004 kg
+Volume: 4384.787 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Orbital Fasteners - 1588 - America 1 Entire,4,Orbital Fasteners,,,,ORDER,PROJECT ORDER,1216622543233845,https://app.asana.com/0/848657415032331/1216622543233845
+8 off 1588. 1003.A.087 - M14 Form A Nylon Washer White 2921065 Orbital Fasteners,"1588.1003.A.087
+Stock Number: 2921065
+Material: Nylon 6/6
+Web Link: https://www.orbitalfasteners.co.uk/en/products/m14-form-a-nylon-66-washers-white-din-125-1a
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.001 kg
+Volume: 1097.594 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Orbital Fasteners - 1588 - America 1 Entire,8,Orbital Fasteners,,,,ORDER,PROJECT ORDER,1216622610341356,https://app.asana.com/0/848657415032331/1216622610341356
+Bearing Supplier - 1588 - America 1 Entire,,Sesame BOM - 1588 - America 1 Entire,,Bearing Supplier,,,,,,,
+8 off 1588. 1003.A.124 - Thrust Washer 20x36x1.5mm TFW2036015 DLU Bearing Supplier,"1588.1003.A.124
+Stock Number: TFW2036015 DLU
+Material: Generic
+Web Link: https://simplybearings.co.uk/shop/p20158507/TFW2036015-DLU-Thrust-Washer-20x36x1.5mm/product_info.html
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.001 kg
+Volume: 1050.863 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Bearing Supplier - 1588 - America 1 Entire,8,Bearing Supplier,,,,ORDER,PROJECT ORDER,1216622513855191,https://app.asana.com/0/848657415032331/1216622513855191
+2 off 1588. 1003.CB.001 - Riser Cement Board Cement Board Supplier,"1588.1003.CB.001
+Material: Cement Board
+Web Link: https://www.insulationshop.co/cement_based_boards_backer_boards.html
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 3.025 kg
+Volume: 2185857.694 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Cement Board Supplier - 1588 - America 1 Entire,2,Cement Board Supplier,,,,ORDER,PROJECT ORDER,1216622543843250,https://app.asana.com/0/848657415032331/1216622543843250
+1 off 1588. 1003.CB.002 - Riser Cement Board Cement Board Supplier,"1588.1003.CB.002
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Cement Board
+Web Link: https://www.insulationshop.co/cement_based_boards_backer_boards.html
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 3.143 kg
+Volume: 2270961.694 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Cement Board Supplier - 1588 - America 1 Entire,1,Cement Board Supplier,,,,ORDER,PROJECT ORDER,1216622610483809,https://app.asana.com/0/848657415032331/1216622610483809
+2 off 1588. 1003.CB.003 - Tread Cement Board Cement Board Supplier,"1588.1003.CB.003
+Material: Cement Board
+Web Link: https://www.insulationshop.co/cement_based_boards_backer_boards.html
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 10.570 kg
+Volume: 7637503.678 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Cement Board Supplier - 1588 - America 1 Entire,2,Cement Board Supplier,,,,ORDER,PROJECT ORDER,1216622513554781,https://app.asana.com/0/848657415032331/1216622513554781
+2 off 1588. 1004.B.028 - M8 Levelling Foot A040/013 RS Components,"1588.1004.B.028
+Stock Number: A040/013
+Material: Stainless Steel
+Web Link: https://uk.rs-online.com/web/p/adjustable-feet/2748689
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.072 kg
+Volume: 8946.553 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",RS Components - 1588 - America 1 Entire,2,RS Components,,,,ORDER,PROJECT ORDER,1216622513982112,https://app.asana.com/0/848657415032331/1216622513982112
+Tape Switch - 1588 - America 1 Entire,,Sesame BOM - 1588 - America 1 Entire,,Tape Switch,,,,,,,
+1 off 1588. 1006.A.067 - TS6 Sensing Edge With Resistor TS6/Resistor Fitted/+End caps/ Tape Switch,"1588.1006.A.067
+Stock Number: TS6/Resistor Fitted/+End caps/
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.158 kg
+Volume: 157696.318 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Tape Switch - 1588 - America 1 Entire,1,Tape Switch,,,,ORDER,PROJECT ORDER,1216622585110026,https://app.asana.com/0/848657415032331/1216622585110026
+1 off 1588. 1006.A.068 - TS6 Sensing Edge Without Resistor TS6/+End caps/ Tape Switch,"1588.1006.A.068
+Stock Number: TS6/+End caps/
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.140 kg
+Volume: 140379.183 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Tape Switch - 1588 - America 1 Entire,1,Tape Switch,,,,ORDER,PROJECT ORDER,1216622610137818,https://app.asana.com/0/848657415032331/1216622610137818
+Sesame - 1588 - America 1 Entire,,Sesame BOM - 1588 - America 1 Entire,,Sesame,,,,,,,
+2 off 1588. 1006.A.102 - Lighting Supports - Trolley Assemblies P2949 Sesame,"1588.1006.A.102
+Stock Number: P2949
+Material: Steel, Mild
+Web Link: http://www.unistrut.co.uk/index.php?part=P2949
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.149 kg
+Volume: 18958.511 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Sesame - 1588 - America 1 Entire,2,Sesame,,,,ORDER,PROJECT ORDER,1216622713156238,https://app.asana.com/0/848657415032331/1216622713156238
+"2 off 1588. 1006.A.103 - DEEP PLAIN CHANNEL HEAVY GAUGE X 3 METRE, 41MM X 41MM X 2.5MM. 316/A4 STAINLESS STEEL. UNISTRUT COMPATIBLE, 764mm length SKU Number: 5028420 Orbital Fasteners","1588.1006.A.103
+Stock Number: SKU Number: 5028420
+Material: Stainless Steel
+Web Link: https://www.orbitalfasteners.co.uk/products/deep-plain-channel-heavy-gauge-x-3m-41x41x2-5-316-a4-stainless-steel-unistrut-compatible-p1000x3-sc400-3m
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 2.070 kg
+Volume: 258725.194 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Orbital Fasteners - 1588 - America 1 Entire,2,Orbital Fasteners,,,,ORDER,PROJECT ORDER,1216622513895473,https://app.asana.com/0/848657415032331/1216622513895473
+4 off 1588. 1006.A.124 - Compression Springs 92906 Sesame,"1588.1006.A.124
+Stock Number: 92906
+Material: Generic
+Web Link: https://www.flexosprings.com/stock-springs/compression-springs
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.000 kg
+Volume: 81.736 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Sesame - 1588 - America 1 Entire,4,Sesame,,,,ORDER,PROJECT ORDER,1216622514173970,https://app.asana.com/0/848657415032331/1216622514173970
+1 off 1588. 1006.A.125 - TS6 Sensing Edge Without Resistor TS6/+End caps/ Tape Switch,"1588.1006.A.125
+Stock Number: TS6/+End caps/
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.158 kg
+Volume: 157774.858 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Tape Switch - 1588 - America 1 Entire,1,Tape Switch,,,,ORDER,PROJECT ORDER,1216622585221866,https://app.asana.com/0/848657415032331/1216622585221866
+Bellows Supplier - 1588 - America 1 Entire,,Sesame BOM - 1588 - America 1 Entire,,Bellows Supplier,,,,,,,
+1 off 1588. 1006.A.Bellows - Bellows Bellows Supplier,"1588.1006.A.Bellows
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 18.664 kg
+Volume: 2615566.657 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Bellows Supplier - 1588 - America 1 Entire,1,Bellows Supplier,,,,ORDER,PROJECT ORDER,1216622513878705,https://app.asana.com/0/848657415032331/1216622513878705
+1 off 1588. 1006.A.CB.001 - Cement Board 18 mm Cement Board Supplier,"1588.1006.A.CB.001
+Material: Concrete
+Web Link: https://www.insulationshop.co/cement_based_boards_backer_boards.html
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 71.923 kg
+Volume: 29876787.816 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Cement Board Supplier - 1588 - America 1 Entire,1,Cement Board Supplier,,,,ORDER,PROJECT ORDER,1216622514130281,https://app.asana.com/0/848657415032331/1216622514130281
+4 off 1588. 1008.A14 - Standard LimitSwitch: LRC5A54 LRC5A54 Sesame,"1588.1008.A14
+Stock Number: LRC5A54
+Web Link: https://uk.farnell.com/imo-precision-controls/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.854 kg
+Volume: 162337.453 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Sesame - 1588 - America 1 Entire,4,Sesame,,,,ORDER,PROJECT ORDER,1216622543851542,https://app.asana.com/0/848657415032331/1216622543851542
+2 off 1588. 1008.D1.118 - Cable Mount  M12 Connector  Male  IP67  713 Series RS Stock No: 706-7476 RS Components,"1588.1008.D1.118
+Stock Number: RS Stock No: 706-7476
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/industrial-circular-connectors/7067476
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.015 kg
+Volume: 15418.632 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",RS Components - 1588 - America 1 Entire,2,RS Components,,,,ORDER,PROJECT ORDER,1216622713127457,https://app.asana.com/0/848657415032331/1216622713127457
+Bes - 1588 - America 1 Entire,,Sesame BOM - 1588 - America 1 Entire,,Bes,,,,,,,
+"1 off 1588. 1008.D1.120 - Drain Cock Type A - 3/4"" BSP Brass 3/4"" BSP Bes","1588.1008.D1.120
+Stock Number: 3/4"" BSP
+Material: Brass, Soft Yellow
+Web Link: https://www.bes.co.uk/drain-cock-type-a-3-4in-bsp-brass-7496/?srsltid=AfmBOopiSwmvu2xg6-awSWh6goCllN-njqrkEp1XNkmdCSXU4uyE7jHg
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.316 kg
+Volume: 37283.251 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Bes - 1588 - America 1 Entire,1,Bes,,,,ORDER,PROJECT ORDER,1216622543835383,https://app.asana.com/0/848657415032331/1216622543835383
+Amazon - 1588 - America 1 Entire,,Sesame BOM - 1588 - America 1 Entire,,Amazon,,,,,,,
+1 off 1588. 1008.D1.128 - Hexagon Locknut G3/4 Lock Nut Amazon,"1588.1008.D1.128
+Stock Number: G3/4 Lock Nut
+Material: Brass, Soft Yellow
+Web Link: https://www.amazon.co.uk/dp/B09NQ44G6X?ref=cm_sw_r_cso_cp_apin_dp_EHREW6PZASZW4VTSNFJX&ref_=cm_sw_r_cso_cp_apin_dp_EHREW6PZASZW4VTSNFJX&social_share=cm_sw_r_cso_cp_apin_dp_EHREW6PZASZW4VTSNFJX&th=1
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.106 kg
+Volume: 12511.587 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Amazon - 1588 - America 1 Entire,1,Amazon,,,,ORDER,PROJECT ORDER,1216622544296434,https://app.asana.com/0/848657415032331/1216622544296434
+11 off 1588. 1008.T.13ID_P_Clip - Rubber-lined clamp; 13mm ID 298-8097 RS Components,"1588.1008.T.13ID_P_Clip
+Stock Number: 298-8097
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/p-clips/2988097/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.002 kg
+Volume: 1949.773 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",RS Components - 1588 - America 1 Entire,11,RS Components,,,,ORDER,PROJECT ORDER,1216622611066652,https://app.asana.com/0/848657415032331/1216622611066652
+Pemsa - 1588 - America 1 Entire,,Sesame BOM - 1588 - America 1 Entire,,Pemsa,,,,,,,
+2 off 1588. 1008.W.008 - Wire mesh tray 35x60x4 Pemsa 60221060 Pemsa,"1588.1008.W.008
+Stock Number: Pemsa 60221060
+Material: Steel, Mild
+Web Link: http://www.pemsa-rejiband.com/wp-content/uploads/2015/10/1.1-rejiband.pdf
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.772 kg
+Volume: 98342.951 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Pemsa - 1588 - America 1 Entire,2,Pemsa,,,,ORDER,PROJECT ORDER,1216622610439709,https://app.asana.com/0/848657415032331/1216622610439709
+1 off 1588. 1008.W.009 - Wire mesh tray 35x60x4 Pemsa 60221060 Pemsa,"1588.1008.W.009
+Stock Number: Pemsa 60221060
+Material: Steel, Mild
+Web Link: http://www.pemsa-rejiband.com/wp-content/uploads/2015/10/1.1-rejiband.pdf
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 1.292 kg
+Volume: 164630.726 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Pemsa - 1588 - America 1 Entire,1,Pemsa,,,,ORDER,PROJECT ORDER,1216622585280353,https://app.asana.com/0/848657415032331/1216622585280353
+EAO - 1588 - America 1 Entire,,Sesame BOM - 1588 - America 1 Entire,,EAO,,,,,,,
+2 off 1588. 1016.3.001 - Lift UP.Down Button 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066 EAO,"1588.1016.3.001
+Stock Number: 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066
+Material: Generic
+Web Link: http://eao.com/en
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.014 kg
+Volume: 13547.123 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",EAO - 1588 - America 1 Entire,2,EAO,,,,ORDER,PROJECT ORDER,1216622514243741,https://app.asana.com/0/848657415032331/1216622514243741
+1 off 1588. 1016.3.003 - E-Stop Mushroom Head 61-3440.4/5 EAO,"1588.1016.3.003
+Stock Number: 61-3440.4/5
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.014 kg
+Volume: 13538.346 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",EAO - 1588 - America 1 Entire,1,EAO,,,,ORDER,PROJECT ORDER,1216622610589782,https://app.asana.com/0/848657415032331/1216622610589782
+1 off 1588. 1016.3.006 - Stairs push button 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066 EAO,"1588.1016.3.006
+Stock Number: 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.014 kg
+Volume: 13545.673 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",EAO - 1588 - America 1 Entire,1,EAO,,,,ORDER,PROJECT ORDER,1216622713569570,https://app.asana.com/0/848657415032331/1216622713569570
+2 off 1588. 1016.3.010 - Key Switch. 2PositionSpringReturn 51-141.025D2F EAO,"1588.1016.3.010
+Stock Number: 51-141.025D2F
+Material: Generic
+Web Link: http://eao.com/en
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.011 kg
+Volume: 10542.114 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",EAO - 1588 - America 1 Entire,2,EAO,,,,ORDER,PROJECT ORDER,1216622585825969,https://app.asana.com/0/848657415032331/1216622585825969
+1 off 1588. 1016.J.RemoteControll_RF.Sol.1(4B).04 Sesame,"1588.1016.J.RemoteControll_RF.Sol.1(4B).04
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.013 kg
+Volume: 12671.486 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Sesame - 1588 - America 1 Entire,1,Sesame,,,,ORDER,PROJECT ORDER,1216622544180040,https://app.asana.com/0/848657415032331/1216622544180040
+4 off 1588. BRH-M4-16-GS (RivetBush) - Round M4 rivet bush BRH-M4-16-GS Sesame,"1588.BRH-M4-16-GS (RivetBush)
+Stock Number: BRH-M4-16-GS
+Material: Stainless Steel
+Web Link: http://www.npfasteners.com/rivetbush/brh.htm
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/a30tpfyce8lfcg4qrblki/APtMRAU4PV9vf0ivCtTwSeA?rlkey=u3nme84y1wclg7cbsrqh8lq7u&dl=0
+Mass: 0.002 kg
+Volume: 212.110 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Sesame - 1588 - America 1 Entire,4,Sesame,,,,ORDER,PROJECT ORDER,1216622514208027,https://app.asana.com/0/848657415032331/1216622514208027

@@ -1,0 +1,4 @@
+2026-06-25 14:54:34,127 [INFO] First run — checking last 48 hours of calls
+2026-06-25 14:54:34,127 [INFO] Authenticating with RingCentral...
+2026-06-25 14:54:35,275 [INFO] Found 0 call(s) with recordings since 2026-06-23
+2026-06-25 14:54:35,277 [INFO] Complete. 0 new call note(s) saved to C:\Users\GilesHugo\.openclaw\workspace\skills\RC API caller\call_notes

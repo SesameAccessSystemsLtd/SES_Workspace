@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  09/07/2026  09:23
+============================================================
+With:         +441908696900 01908 696900
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a call from Kaye at Kian to Giles Hugo regarding an order, confirming details, pricing, and delivery, which was successfully processed with dispatch scheduled for the same day.
+
+--- RECAP --------------------------------------------------
+Kaye from Kian called Giles Hugo to inquire about an order, requesting the PO number, which Giles provided as 2147-1588.The order's new unit price is 210 pounds, with a previous price of approximately 212 pounds, and a total including carriage of 222 pounds.Kaye confirmed the order details, including the price and delivery schedule, and agreed to proceed with dispatch.The order is in stock, and delivery is scheduled for the next day, with dispatch happening on the same day.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

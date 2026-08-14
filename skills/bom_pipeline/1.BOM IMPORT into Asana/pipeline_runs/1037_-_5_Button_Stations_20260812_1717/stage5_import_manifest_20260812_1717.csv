@@ -1,0 +1,209 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1037 - 5.Button Stations,"Master task for all BOMs related to 1037 - 5.Button Stations
+Dropbox: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Project: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",,,,,,,,,,
+Engraving BOM - 1037 - 5.Button Stations,,ALL BOMS - 1037 - 5.Button Stations,,Engraving,,,,,,,
+Engraving - 1037 - 5.Button Stations,,Engraving BOM - 1037 - 5.Button Stations,,Engraving,,,,,,,
+1 off 1037. 1016.1.2 - Vertical 5 Buttons Face Plate - Engraved Engraving,"1037.1016.1.2
+From Cost Centre Engraving
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.395 kg
+Volume: 49427.996 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",Engraving - 1037 - 5.Button Stations,1,Engraving,,,,ORDER,PROJECT ORDER,1217419647121126,https://app.asana.com/0/848657415032331/1217419647121126
+1 off 1037. 1016.1.3 - Horizontal 3 Buttons Face Plate - Engraved Engraving,"1037.1016.1.3
+From Cost Centre Engraving
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.237 kg
+Volume: 29372.491 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",Engraving - 1037 - 5.Button Stations,1,Engraving,,,,ORDER,PROJECT ORDER,1217419647312362,https://app.asana.com/0/848657415032331/1217419647312362
+1 off 1037. 1016.H1 - SWLPlate.OneWheelchairUser- Engraved Engraving,"1037.1016.H1
+From Cost Centre Engraving
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.154 kg
+Volume: 19380.177 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",Engraving - 1037 - 5.Button Stations,1,Engraving,,,,ORDER,PROJECT ORDER,1217418844692843,https://app.asana.com/0/848657415032331/1217418844692843
+1 off 1037. 1016.X.1 - On-Lift Button Station Face Plate - Engraved Engraving,"1037.1016.X.1
+From Cost Centre Engraving
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.361 kg
+Volume: 45123.518 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",Engraving - 1037 - 5.Button Stations,1,Engraving,,,,ORDER,PROJECT ORDER,1217438588084644,https://app.asana.com/0/848657415032331/1217438588084644
+Surface Finish BOM - 1037 - 5.Button Stations,,ALL BOMS - 1037 - 5.Button Stations,,Surface Finish BOM,,,,,,,
+Powder Coating - 1037 - 5.Button Stations,,Surface Finish BOM - 1037 - 5.Button Stations,,Powder Coating,,,,,,,
+1 off Powder Coating 1037. 034.001 - NBSS.034.001 SafeWorkingLoadPlate: Blank,"1037.034.001
+KAN: KAN-310
+KAN Stock Link: https://app.asana.com/0/632603478911321/1165239479083396
+Material: Stainless Steel
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.154 kg
+Volume: 19288.301 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true
+---
+NOTES: RAL 9017 matt",Powder Coating - 1037 - 5.Button Stations,1,Powder Coating,,,,ORDER,PROJECT ORDER,1217419196384597,https://app.asana.com/0/848657415032331/1217419196384597
+1 off Powder Coating 1037. 1016.1.003 - Horizontal 3 Buttons Face Plate,"1037.1016.1.003
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.237 kg
+Volume: 29330.054 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true
+---
+NOTES: RAL 9017 matt",Powder Coating - 1037 - 5.Button Stations,1,Powder Coating,,,,ORDER,PROJECT ORDER,1217419145599385,https://app.asana.com/0/848657415032331/1217419145599385
+1 off Powder Coating 1037. 1016.1.007 - Vertical 5 Buttons Face Plate,"1037.1016.1.007
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.395 kg
+Volume: 49421.502 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true
+---
+NOTES: RAL 9017 matt",Powder Coating - 1037 - 5.Button Stations,1,Powder Coating,,,,ORDER,PROJECT ORDER,1217419196689294,https://app.asana.com/0/848657415032331/1217419196689294
+1 off Powder Coating 1037. 1016.X.001 - On-Lift Button Station Face Plate,"1037.1016.X.001
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.361 kg
+Volume: 45081.081 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true
+---
+NOTES: RAL 9017 matt",Powder Coating - 1037 - 5.Button Stations,1,Powder Coating,,,,ORDER,PROJECT ORDER,1217419051354128,https://app.asana.com/0/848657415032331/1217419051354128
+24 off Powder Coating 1037. SecurityScrew - M4 x 8 CS - M4x8 Countersunk Security Screw,"1037.SecurityScrew - M4 x 8 CS
+Material: Generic
+Web Link: https://www.orbitalfasteners.co.uk/en/products/m4x8-countersunk-socket-machine-screw-resistorx-stainless-steel-a2-304-tx-20h
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.000 kg
+Volume: 127.948 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true
+---
+NOTES: RAL 9017 matt",Powder Coating - 1037 - 5.Button Stations,24,Powder Coating,,,,ORDER,PROJECT ORDER,1217419655861020,https://app.asana.com/0/848657415032331/1217419655861020
+Laser Cut BOM - 1037 - 5.Button Stations,,ALL BOMS - 1037 - 5.Button Stations,,Laser Cut,,,,,,,
+Laser Cut - 1037 - 5.Button Stations,,Laser Cut BOM - 1037 - 5.Button Stations,,Laser Cut,,,,,,,
+1 off 1037. 1016.1.003 - Horizontal 3 Buttons Face Plate 304/DP1 Laser Cut,"1037.1016.1.003
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.237 kg
+Volume: 29330.054 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",Laser Cut - 1037 - 5.Button Stations,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217419655871851,https://app.asana.com/0/848657415032331/1217419655871851
+1 off 1037. 1016.1.007 - Vertical 5 Buttons Face Plate 304/DP1 Laser Cut,"1037.1016.1.007
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.395 kg
+Volume: 49421.502 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",Laser Cut - 1037 - 5.Button Stations,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217419196751141,https://app.asana.com/0/848657415032331/1217419196751141
+1 off 1037. 1016.2.002 - BackingBox Vertical 304/2B Laser Cut,"1037.1016.2.002
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 1.500 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.697 kg
+Volume: 87150.549 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",Laser Cut - 1037 - 5.Button Stations,,Laser Cut,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217438588697494,https://app.asana.com/0/848657415032331/1217438588697494
+1 off 1037. 1016.2.003 - BackingBox Horizontal 304/2B Laser Cut,"1037.1016.2.003
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.500 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.406 kg
+Volume: 50702.311 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",Laser Cut - 1037 - 5.Button Stations,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217438588524556,https://app.asana.com/0/848657415032331/1217438588524556
+1 off 1037. 1016.X.001 - On-Lift Button Station Face Plate 304/DP1 Laser Cut,"1037.1016.X.001
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.361 kg
+Volume: 45081.081 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",Laser Cut - 1037 - 5.Button Stations,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217438588658984,https://app.asana.com/0/848657415032331/1217438588658984
+NBSS BOM - 1037 - 5.Button Stations,,ALL BOMS - 1037 - 5.Button Stations,,NBSS,,,,,,,
+NBSS/Laser Cut - 1037 - 5.Button Stations,,NBSS BOM - 1037 - 5.Button Stations,,NBSS/Laser Cut,,,,,,,
+1 off 1037. 012 - NBSS.012 Call for Assistance BackingBox 304/2B NBSS/Laser Cut,"1037.012
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.500 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.335 kg
+Volume: 41919.174 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",NBSS/Laser Cut - 1037 - 5.Button Stations,1,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1217419647684975,https://app.asana.com/0/848657415032331/1217419647684975
+1 off 1037. 034.001 - NBSS.034.001 SafeWorkingLoadPlate: Blank NBSS/Laser Cut,"1037.034.001
+KAN: KAN-310
+KAN Stock Link: https://app.asana.com/0/632603478911321/1165239479083396
+Material: Stainless Steel
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.154 kg
+Volume: 19288.301 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",NBSS/Laser Cut - 1037 - 5.Button Stations,1,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1217419655951271,https://app.asana.com/0/848657415032331/1217419655951271
+Sesame BOM - 1037 - 5.Button Stations,,ALL BOMS - 1037 - 5.Button Stations,,Sesame,,,,,,,
+EAO - 1037 - 5.Button Stations,,Sesame BOM - 1037 - 5.Button Stations,,EAO,,,,,,,
+6 off 1037. 1016.3.001 - Lift UP.Down Button 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066 EAO,"1037.1016.3.001
+Stock Number: 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066
+Material: Generic
+Web Link: http://eao.com/en
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.014 kg
+Volume: 13547.123 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",EAO - 1037 - 5.Button Stations,6,EAO,,,,ORDER,PROJECT ORDER,1217438588858316,https://app.asana.com/0/848657415032331/1217438588858316
+1 off 1037. 1016.3.003 - E-Stop Mushroom Head 61-3440.4/5 EAO,"1037.1016.3.003
+Stock Number: 61-3440.4/5
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.014 kg
+Volume: 13538.346 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",EAO - 1037 - 5.Button Stations,1,EAO,,,,ORDER,PROJECT ORDER,1217419145621399,https://app.asana.com/0/848657415032331/1217419145621399
+2 off 1037. 1016.3.007 - Flush E.Stop Button 51-151.0252F / 61-9933.0 / 61-9642.2 / 10-2j09.1062 EAO,"1037.1016.3.007
+Stock Number: 51-151.0252F / 61-9933.0 / 61-9642.2 / 10-2j09.1062
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.014 kg
+Volume: 13756.802 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",EAO - 1037 - 5.Button Stations,2,EAO,,,,ORDER,PROJECT ORDER,1217419051448992,https://app.asana.com/0/848657415032331/1217419051448992
+1 off 1037. 1016.3.010(2Way-Spr) - Key Switch. 2PositionSpringReturn (VERIFY!) 51-141.025D2F EAO,"1037.1016.3.010(2Way-Spr)
+Stock Number: 51-141.025D2F
+Material: Generic
+Web Link: http://eao.com/en
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.011 kg
+Volume: 10542.114 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",EAO - 1037 - 5.Button Stations,1,EAO,,,,ORDER,PROJECT ORDER,1217419146426889,https://app.asana.com/0/848657415032331/1217419146426889
+1 off 1037. 1016.3.011(2Way-Mai) - Key Switch.2WayMaintained 51-135.022DF EAO,"1037.1016.3.011(2Way-Mai)
+Stock Number: 51-135.022DF
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.011 kg
+Volume: 10542.114 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",EAO - 1037 - 5.Button Stations,1,EAO,,,,ORDER,PROJECT ORDER,1217419051446251,https://app.asana.com/0/848657415032331/1217419051446251
+Sesame - 1037 - 5.Button Stations,,Sesame BOM - 1037 - 5.Button Stations,,Sesame,,,,,,,
+10 off 1037. BRH-M4-16-GS (RivetBush) - Round M4 rivet bush BRH-M4-16-GS Sesame,"1037.BRH-M4-16-GS (RivetBush)
+Stock Number: BRH-M4-16-GS
+Material: Stainless Steel
+Web Link: http://www.npfasteners.com/rivetbush/brh.htm
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/6wnplq98yipzanv8k98g1/AMuC2_QkcEDNkX-6SUqnt6c?rlkey=rbrtxgr9mhk78n1lj5nj8oceu&dl=0
+Mass: 0.002 kg
+Volume: 212.110 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217311060107464?focus=true",Sesame - 1037 - 5.Button Stations,10,Sesame,,,,ORDER,PROJECT ORDER,1217419146681226,https://app.asana.com/0/848657415032331/1217419146681226

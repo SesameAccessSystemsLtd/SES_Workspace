@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  29/06/2026  14:08
+============================================================
+With:         +441844852002 01844 852002
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was an automated voicemail message from Global Electrical Solutions, providing callers with options to select for sales, technical support, accounts, or other inquiries. No direct conversation or follow-up actions were discussed.
+
+--- RECAP --------------------------------------------------
+The call was an automated recorded message from Global Electrical Solutions, informing callers of the available options and that the call may be recorded for training purposes.Callers are prompted to press 1 for sales, 2 for technical support or service booking, 3 for accounts, or 4 for all other inquiries.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

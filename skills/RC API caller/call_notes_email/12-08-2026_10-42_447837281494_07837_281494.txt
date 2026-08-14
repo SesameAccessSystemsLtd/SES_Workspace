@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  12/08/2026  10:42
+============================================================
+With:         +447837281494 07837 281494
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo and Charles Jamie discussing adjustments to strip dimensions, tolerances, and related drawings for Richard, including plans to send parts and clarify specifications. Giles plans to verify details and follow up accordingly.
+
+--- RECAP --------------------------------------------------
+Charles Jamie reported adding 4 mm to the length and 1 mm to the width of 10 mil strips for Richard, resulting in a 3 mm overage in length, which is acceptable given the tolerances discussed.Charles explained that the strips are thin and expand with heat, affecting dimensions, and that the criticality of the dimension deviations depends on the drawing specifications and tolerance requirements.Giles indicated the need to review the drawings to understand the significance of the dimension changes and to verify the impact on the part's fit and function.Charles mentioned plans to send additional parts, including 2 stainless steel pieces, within the next day or two, and confirmed that only the specific drawing (242) is needed for the current order.They discussed the inclusion of certain parts (little legs, support pieces, and other components) in the system, noting that some items (like the small legs at 5 mm) were not imported correctly into the system and require further investigation.Giles explained the complexity of their system updates, including multiple data import methods, and acknowledged the need to verify the correct parts are included in the quote and system records.Both agreed that the parts will be machined after initial cutting, and Giles will verify the details before proceeding.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will verify the drawings to understand the criticality of the dimension deviations and assess their impact.Charles Jamie will send the additional parts (including the 2 stainless steel pieces and the small legs) within the next day or two.Giles Hugo will check the system to ensure all necessary parts, especially the small legs at 5 mm, are correctly imported and included in the quote.
+
+(Full transcript: RC web portal only — no RingSense API)

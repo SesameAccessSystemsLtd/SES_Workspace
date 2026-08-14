@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  08/07/2026  16:07
+============================================================
+With:         - Purchasing 020 4582 0874
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This voicemail involves a purchasing representative, Carol, discussing plans to call Karel in Poland regarding a lift for the Geography Department in Cambridge. The call confirms the timing for the call but does not specify further actions.
+
+--- RECAP --------------------------------------------------
+Carol from Purchasing plans to call Karel in Poland tomorrow to discuss a lift for the Geography Department in Cambridge.Karel is based in Poland and starts work at 6:00 AM local time, which is 7:00 AM local time for the caller's location.The call was a brief voicemail exchange confirming the plan to contact Karel the next day.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  22/07/2026  15:47
+============================================================
+With:         Andy Easton 307
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+Andy Easton and Giles Hugo discussed the order and specifications of a 1-meter length of material, confirming dimensions and quantities, and coordinated on delivery timelines. Giles Hugo noted the order is on track but missed the cutoff for tomorrow's delivery, aiming for next week instead.
+
+--- RECAP --------------------------------------------------
+Giles Hugo confirmed that a 1-meter length of material is on order, with a thickness of 26 millimeters, and approximately 30 units can be cut from a 3-meter length based on the drawing specifications.Andy Easton clarified that the order does not need to be delivered tomorrow but is scheduled for next week, as they missed the cutoff for tomorrow's delivery, and emphasized the need to plan ahead for upcoming
+
+--- TASKS --------------------------------------------------
+Giles Hugo will ensure the 1-meter order is prepared for delivery next week, coordinating with the supplier to meet the new schedule.
+
+(Full transcript: RC web portal only — no RingSense API)

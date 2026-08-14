@@ -1,0 +1,961 @@
+part_number,raw_pn,pack_reference,qty,description,vendor,reason
+1588.1001.C.003,1588.1001.C.003,1588.1001.C.ServiceHatches.,4,Square bar,Steel Profile,not_in_parts_control
+1588.1001.C.017,1588.1001.C.017,1588.1001.C.ServiceHatches.,2,Flat,Steel Profile,not_in_parts_control
+1588.1001.C.017,1588.1001.C.017,1588.1001.C.ServiceHatches.,1,Flat,Steel Profile,not_in_parts_control
+1588.1001.C.018,1588.1001.C.018,1588.1001.C.ServiceHatches.,4,Box,Steel Profile,not_in_parts_control
+1588.1001.C.018,1588.1001.C.018,1588.1001.C.ServiceHatches.,2,Box,Steel Profile,not_in_parts_control
+1588.1001.C.020,1588.1001.C.020,1588.1001.C.ServiceHatches.,2,Box,Steel Profile,not_in_parts_control
+1588.1001.C.020,1588.1001.C.020,1588.1001.C.ServiceHatches.,1,Box,Steel Profile,not_in_parts_control
+1588.1001.C.021,1588.1001.C.021,1588.1001.C.ServiceHatches.,6,Box,Steel Profile,not_in_parts_control
+1588.1001.C.021,1588.1001.C.021,1588.1001.C.ServiceHatches.,3,Box,Steel Profile,not_in_parts_control
+1588.1001.C.022,1588.1001.C.022,1588.1001.C.ServiceHatches.,1,Box,Steel Profile,not_in_parts_control
+1588.1001.C.023,1588.1001.C.023,1588.1001.C.ServiceHatches.,2,Box,Steel Profile,not_in_parts_control
+1588.1001.C2w,1588.1001.C2w,1588.1001.C.ServiceHatches.,1,Welded Assembly,"Welded by
+Sesame",not_in_parts_control
+1588.ISO7092-ST5-140HV,1588.ISO 7092 - ST 5 - 140 HV,1588.1001.C.ServiceHatches.,15,Plain washer,,not_in_parts_control
+1588.ISO7092-ST5-140HV,1588.ISO 7092 - ST 5 - 140 HV,1588.1003.A.HorizontalStairs.,6,Plain washer,,not_in_parts_control
+1588.ISO4017-M5x10-ISO,1588.ISO 4017 - M5 x 10 - ISO,1588.1001.C.ServiceHatches.,15,Hexagon head screws,,not_in_parts_control
+1588.1001.C1w,1588.1001.C1w,1588.1001.C.ServiceHatches.,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1001.C3,1588.1001.C3,1588.1001.C.ServiceHatches.,2,Assembly,Assembly by Sesame,not_in_parts_control
+1588.1001.C4,1588.1001.C4,1588.1001.C.ServiceHatches.,1,Assembly,Assembly by Sesame,not_in_parts_control
+1588.1001.C6w,1588.1001.C6w,1588.1001.C.ServiceHatches.,"2
+2","Support
+Support","Welded by Sesame
+Welded by Sesame",not_in_parts_control
+1588.1001.C6w,1588.1001.C6w,1588.1001.C.ServiceHatches.,2,Support,Welded by Sesame,not_in_parts_control
+1588.1001.C7w,1588.1001.C7w,1588.1001.C.ServiceHatches.,"2
+2","Support
+Support","Welded by Sesame
+Welded by Sesame",not_in_parts_control
+1588.1001.C7w,1588.1001.C7w,1588.1001.C.ServiceHatches.,2,Support,Welded by Sesame,not_in_parts_control
+1588.ISO4762-M6x12,1588.ISO 4762 - M6 x 12,1588.1001.C.ServiceHatches.,5,"Hexagon Socket Head
+Cap Screw",,not_in_parts_control
+1588.ISO7089-6-140HV,1588.ISO 7089 - 6 - 140 HV,1588.1001.C.ServiceHatches.,5,"Plain washers - Normal
+series - Product grade A",,not_in_parts_control
+1588.ISO7089-6-140HV,1588.ISO 7089 - 6 - 140 HV,1588.1025.A.Low.Profile.ScissorLift.,4,Plain washer,,not_in_parts_control
+1588.ISO7089-6-140HV,1588.ISO 7089 - 6 - 140 HV,1588.1025.A.Low.Profile.ScissorLift.,"2
+2","Plain washer
+Parker Fitting",,not_in_parts_control
+1588.ISO7089-6-140HV,1588.ISO 7089 - 6 - 140 HV,1588.1025.A.Low.Profile.ScissorLift.,2,Plain washer,,not_in_parts_control
+1588.ISO7089-6-140HV,1588.ISO 7089 - 6 - 140 HV,1588.1025.A.Low.Profile.ScissorLift_rev1.,4,Plain washer,,not_in_parts_control
+1588.ISO7089-6-140HV,1588.ISO 7089 - 6 - 140 HV,1588.1025.A.Low.Profile.ScissorLift_rev1.,"2
+2","Plain washer
+Parker Fitting",,not_in_parts_control
+1588.ISO7089-6-140HV,1588.ISO 7089 - 6 - 140 HV,1588.1025.A.Low.Profile.ScissorLift_rev1.,2,Plain washer,,not_in_parts_control
+1588.1002.G.020,1588.1002.G.020,1588.1002.G.MT.PitTrimSmall.,12,Studding,Steel Profile,not_in_parts_control
+1588.1002.G.020,1588.1002.G.020,1588.1002.G.MT.PitTrimSmall.,1,Studding,Steel Profile,not_in_parts_control
+1588.1002.G.023,1588.1002.G.023,1588.1002.G.MT.PitTrimSmall.,1,Angle,Steel Profile,not_in_parts_control
+1588.1.21.4E1V,1588.1.21.4E1V,1588.1002.G.MT.PitTrimSmall.,11,Connector,MayTec,not_in_parts_control
+1588.1.21.4E1V,1588.1.21.4E1V,1588.1002.G.MT.PitTrimSmall.,6,Connector,MayTec,not_in_parts_control
+1588.1.21.4E2V,1588.1.21.4E2V,1588.1002.G.MT.PitTrimSmall.,2,Connector,MayTec,not_in_parts_control
+1588.1.32.4EM4,1588.1.32.4EM4,1588.1002.G.MT.PitTrimSmall.,16,T-nut M4,MayTec,not_in_parts_control
+1588.1.32.4EM4,1588.1.32.4EM4,1588.1002.G.MT.PitTrimSmall.,5,T-nut M4,MayTec,not_in_parts_control
+1588.1.32.4EM5,1588.1.32.4EM5,1588.1002.G.MT.PitTrimSmall.,2,T-nut M5,MayTec,not_in_parts_control
+1588.1.32.4EM6,1588.1.32.4EM6,1588.1002.G.MT.PitTrimSmall.,"22
+1","T-Nut M6
+T-Nut M8","MayTec
+MayTec",not_in_parts_control
+1588.1.32.4EM6,1588.1.32.4EM6,1588.1002.G.MT.PitTrimSmall.,8,T-Nut M6,MayTec,not_in_parts_control
+1588.1.32.4EM8,1588.1.32.4EM8,1588.1002.G.MT.PitTrimSmall.,"22
+1","T-Nut M6
+T-Nut M8","MayTec
+MayTec",not_in_parts_control
+1588.1002.G.001,1588.1002.G.001,1588.1002.G.MT.PitTrimSmall.,"1
+1","Box 40x40
+Box 40x40","MayTec
+MayTec",not_in_parts_control
+1588.1002.G.002,1588.1002.G.002,1588.1002.G.MT.PitTrimSmall.,"1
+1","Box 40x40
+Box 40x40","MayTec
+MayTec",not_in_parts_control
+1588.1002.G.003,1588.1002.G.003,1588.1002.G.MT.PitTrimSmall.,1,Box 40x40,MayTec,not_in_parts_control
+1588.1002.G.007,1588.1002.G.007,1588.1002.G.MT.PitTrimSmall.,1,Box 40x40,MayTec,not_in_parts_control
+1588.1002.G.008,1588.1002.G.008,1588.1002.G.MT.PitTrimSmall.,1,Box 40x40,MayTec,not_in_parts_control
+1588.1002.G.010,1588.1002.G.010,1588.1002.G.MT.PitTrimSmall.,1,Box 40x40,MayTec,not_in_parts_control
+1588.1002.G.010,1588.1002.G.010,1588.1002.G.MT.PitTrimSmall.,3,Box 40x40,MayTec,not_in_parts_control
+1588.1002.G.012,1588.1002.G.012,1588.1002.G.MT.PitTrimSmall.,1,Box 40x40,MayTec,not_in_parts_control
+1588.1002.G.035,1588.1002.G.035,1588.1002.G.MT.PitTrimSmall.,1,Box 40x40,MayTec,not_in_parts_control
+1588.1002.G.036,1588.1002.G.036,1588.1002.G.MT.PitTrimSmall.,1,Box 40x80,MayTec,not_in_parts_control
+1588.1002.G.009,1588.1002.G.009,1588.1002.G.MT.PitTrimSmall.,2,Box 40x40,MayTec,not_in_parts_control
+1588.1002.G3,1588.1002.G3,1588.1002.G.MT.PitTrimSmall.,12,Assembly,"Assembly
+by Sesame",not_in_parts_control
+1588.1002.G.MT.PitTrimSmall.dwg,1588.1002.G.MT.PitTrimSmall.dwg,1588.1002.G.MT.PitTrimSmall.,44,,,not_in_parts_control
+1588.1003.A.012,1588.1003.A.012,1588.1003.A.HorizontalStairs.,4,"Shallow slotted channel heavy
+gauge 21x41x2.5","Orbital
+Fasteners",not_in_parts_control
+1588.1003.A.012,1588.1003.A.012,1588.1003.A.HorizontalStairs.,2,"Shallow slotted channel
+heavy gauge 21x41x2.5",Orbital Fasteners,not_in_parts_control
+1588.1003.A.012,1588.1003.A.012,1588.1003.A.HorizontalStairs.,2,"Shallow slotted channel heavy
+gauge 21x41x2.5",Orbital Fasteners,not_in_parts_control
+1588.1003.A.015,1588.1003.A.015,1588.1003.A.HorizontalStairs.,16,Tube (OD 15mm ID 8mm),Steel Profile,not_in_parts_control
+1588.1003.A.015,1588.1003.A.015,1588.1003.A.HorizontalStairs.,8,"Tube (OD 15mm
+ID 8mm)",Steel Profile,not_in_parts_control
+1588.1003.A.015,1588.1003.A.015,1588.1003.A.HorizontalStairs.,8,Tube (OD 15mm ID 8mm),Steel Profile,not_in_parts_control
+1588.1003.A.059,1588.1003.A.059,1588.1003.A.HorizontalStairs.,1,Box BRUSHED,Steel Profile,not_in_parts_control
+1588.1003.A.059_MIR,1588.1003.A.059_MIR,1588.1003.A.HorizontalStairs.,1,Box BRUSHED,Steel Profile,not_in_parts_control
+1588.1003.A.069,1588.1003.A.069,1588.1003.A.HorizontalStairs.,2,Studding,Steel Profile,not_in_parts_control
+1588.1003.A.080,1588.1003.A.080,1588.1003.A.HorizontalStairs.,4,Tube 12.7mm OD 1.5mm wall,Steel Profile,not_in_parts_control
+1588.1003.A.080,1588.1003.A.080,1588.1003.A.HorizontalStairs.,1,"Tube 12.7mm OD 1.5mm
+wall",Steel Profile,not_in_parts_control
+1588.1003.A.131,1588.1003.A.131,1588.1003.A.HorizontalStairs.,2,Studding,Steel Profile,not_in_parts_control
+1588.1003.A.098,1588.1003.A.098,1588.1003.A.HorizontalStairs.,2,Angle,Steel Profile,not_in_parts_control
+1588.1003.A.102,1588.1003.A.102,1588.1003.A.HorizontalStairs.,1,"Pipe - 21,3mm OD,
+1.65mm wall or similiar",Steel Profile,not_in_parts_control
+1588.1003.A.102,1588.1003.A.102,1588.1003.A.HorizontalStairs.,1,"Pipe - 21,3mm OD,
+1.65mm wall or similiar",Steel Profile,not_in_parts_control
+1588.1003.A.103,1588.1003.A.103,1588.1003.A.HorizontalStairs.,1,"Pipe - 21,3mm OD,
+1.65mm wall or similiar",Steel Profile,not_in_parts_control
+1588.1003.A.103,1588.1003.A.103,1588.1003.A.HorizontalStairs.,1,"Pipe - 21,3mm OD,
+1.65mm wall or similiar",Steel Profile,not_in_parts_control
+1588.1003.A.HorizontalStairs.dwg,1588.1003.A.HorizontalStairs.dwg,1588.1003.A.HorizontalStairs.,44,,,not_in_parts_control
+1588.ISO4032-M8-ISO,"1588.ISO 4032 -
+M8 - ISO",1588.1003.A.HorizontalStairs.,2,Hexagon nut,,not_in_parts_control
+1588.ISO4032-M8-ISO,"1588.ISO 4032 - M8 -
+ISO",1588.1003.A.HorizontalStairs.,2,Hexagon nut,,not_in_parts_control
+1588.ISO4032-M8-ISO,"1588.ISO 4032 - M8 -
+ISO",1588.1003.A.HorizontalStairs.,2,Hexagon nut,,not_in_parts_control
+1588.ISO4032-M8-ISO,1588.ISO 4032 - M8 - ISO,1588.1003.A.HorizontalStairs.,4,Hexagon nut,,not_in_parts_control
+1588.ISO4032-M8-ISO,1588.ISO 4032 - M8 - ISO,1588.1008.D1.MachineRoomCabinet.,4,Hexagon nuts,,not_in_parts_control
+1588.1003.A2w,1588.1003.A2w,1588.1003.A.HorizontalStairs.,1,Welded Sub-assembly,Welded by Sesame,not_in_parts_control
+1588.1003.A2w_MIR,1588.1003.A2w_MIR,1588.1003.A.HorizontalStairs.,1,Welded Sub-assembly,Welded by Sesame,not_in_parts_control
+1588.10642-M6x20,1588.10642 - M6x 20,1588.1003.A.HorizontalStairs.,4,"Hexagon socket countersunk
+head cap screws",,not_in_parts_control
+1588.1003.A5w_MIR,1588.1003.A5w_MIR,1588.1003.A.HorizontalStairs.,1,Welded Sub-assembly,Welded by Sesame,not_in_parts_control
+1588.ISO7089-14-140HV(1),1588.ISO 7089 - 14 - 140 HV(1),1588.1003.A.HorizontalStairs.,2,Plain washer Sta,,not_in_parts_control
+1588.1003.A16w,1588.1003.A16w,1588.1003.A.HorizontalStairs.,1,Sub Assembly,Assembly by Sesame,not_in_parts_control
+1588.1003.A23w,1588.1003.A23w,1588.1003.A.HorizontalStairs.,2,Welded Assembly,Welded by Assembly,not_in_parts_control
+1588.1003.A23w,1588.1003.A23w,1588.1003.A.HorizontalStairs.,2,Welded Assembly,"Welded by
+Assembly",not_in_parts_control
+1588.1003.A25w,1588.1003.A25w,1588.1003.A.HorizontalStairs.,1,Welded Sub-assembly,Welded by Sesame,not_in_parts_control
+1588.1003.A27w,1588.1003.A27w,1588.1003.A.HorizontalStairs.,2,Welded Sub-assembly,Welded by Sesame,not_in_parts_control
+1588.1003.A27w,1588.1003.A27w,1588.1003.A.HorizontalStairs.,"2
+1","Welded Sub-assembly
+Welded Sub-assembly","Welded by Sesame
+Welded by Sesame",not_in_parts_control
+1588.1003.A8,1588.1003.A8,1588.1003.A.HorizontalStairs.,4,Sub Assembly,Assembly by Sesame,not_in_parts_control
+1588.1003.A8,1588.1003.A8,1588.1003.A.HorizontalStairs.,"4
+4","Sub-assembly
+Sub Assembly","Welded by Sesame
+Assembly by Sesame",not_in_parts_control
+1588.ISO10642-M6x45,1588.ISO 10642 - M6 x 45,1588.1003.A.HorizontalStairs.,8,Countersunk Head Screw,,not_in_parts_control
+1588.ISO10642-M6x45,1588.ISO 10642 - M6 x 45,1588.1003.A.HorizontalStairs.,3 6,Countersunk Head Screw,,not_in_parts_control
+1588.ISO10642-M6x45,1588.ISO 10642 - M6 x 45,1588.1003.A.HorizontalStairs.,6,Countersunk Head Screw,,not_in_parts_control
+1588.ISO4017-M10x30ISO,1588.ISO 4017 - M10 x 30ISO,1588.1003.A.HorizontalStairs.,4,Hexagon head screw,,not_in_parts_control
+1588.ISO4017-M12x35-ISO,1588.ISO 4017 - M12 x 35 - ISO,1588.1003.A.HorizontalStairs.,6,Hexagon head screws,,not_in_parts_control
+1588.ISO4017-M12x35-ISO,1588.ISO 4017 - M12 x 35 - ISO,1588.1003.A.HorizontalStairs.,4,Hexagon head screws,,not_in_parts_control
+1588.ISO4032-M10ISONylon,1588.ISO 4032 - M10 ISO Nylon,1588.1003.A.HorizontalStairs.,4,Hexagon nuts nylon,,not_in_parts_control
+1588.ISO4032-M12-ISO,1588.ISO 4032 - M12 - ISO,1588.1003.A.HorizontalStairs.,4,Hexagon nuts,,not_in_parts_control
+1588.ISO4032-M12-ISO,1588.ISO 4032 - M12 - ISO,1588.1003.A.HorizontalStairs.,14,Hexagon nuts,,not_in_parts_control
+1588.ISO4032-M12-ISO,1588.ISO 4032 - M12 - ISO,1588.1004.B.MainStairFrame.,4,Hexagon nut,,not_in_parts_control
+1588.ISO4032-M12-ISO,1588.ISO 4032 - M12 - ISO,1588.1004.B.MainStairFrame_MOD1.,4,Hexagon nut,,not_in_parts_control
+1588.ISO4032-M12-ISO,1588.ISO 4032 - M12 - ISO,1588.1004.S.BellowScissorFrame.,4,Hexagon nut,,not_in_parts_control
+1588.ISO4032-M12-ISO,1588.ISO 4032 - M12 - ISO,1588.1008.Q1.DoubleLiftingJig.,10,Hexagon nut,,not_in_parts_control
+1588.ISO4032-M12-ISO,1588.ISO 4032 - M12 - ISO,1588.1008.Q1.DoubleLiftingJig_2.,10,Hexagon nut,,not_in_parts_control
+1588.ISO4035-M12-ISO,1588.ISO 4035 - M12 - ISO,1588.1003.A.HorizontalStairs.,2,"Hexagon thin nuts
+(chamfered)",,not_in_parts_control
+1588.ISO4035-M12-ISO,1588.ISO 4035 - M12 - ISO,1588.1003.A.HorizontalStairs.,2,Hexagon thin nuts (chamfered),,not_in_parts_control
+1588.ISO4762-M10x16ISO,1588.ISO 4762 - M10 x 16ISO,1588.1003.A.HorizontalStairs.,20,"Hexagon Socket Head
+Cap Screw",,not_in_parts_control
+1588.ISO4762-M10x20ISO,1588.ISO 4762 - M10 x 20ISO,1588.1003.A.HorizontalStairs.,4,"Hexagon Socket Head
+Cap Screw",,not_in_parts_control
+1588.ISO4762-M10x20ISO,1588.ISO 4762 - M10 x 20ISO,1588.1003.A.HorizontalStairs.,24,Hexagon Socket Head Cap Screw,,not_in_parts_control
+1588.ISO4762-M8x30ISO,1588.ISO 4762 - M8 x 30ISO,1588.1003.A.HorizontalStairs.,4,"Hexagon Socket Head
+Cap Screw",,not_in_parts_control
+1588.ISO4762-M8x30ISO,1588.ISO 4762 - M8 x 30ISO,1588.1003.A.HorizontalStairs.,"4
+20","Hexagon Socket Head Cap Screw
+Plain washers",,not_in_parts_control
+1588.ISO4762-M8x30ISO,1588.ISO 4762 - M8 x 30ISO,1588.1003.A.HorizontalStairs.,4,Hexagon Socket Head Cap Screw,,not_in_parts_control
+1588.ISO7089-10-140HV(1),1588.ISO 7089 - 10 - 140 HV(1),1588.1003.A.HorizontalStairs.,20,Plain washers,,not_in_parts_control
+1588.ISO7089-10-140HV(1),1588.ISO 7089 - 10 - 140 HV(1),1588.1003.A.HorizontalStairs.,"4
+20","Hexagon Socket Head Cap Screw
+Plain washers",,not_in_parts_control
+1588.ISO7089-8-140HV(1),1588.ISO 7089 - 8 - 140 HV(1),1588.1003.A.HorizontalStairs.,4,Plain washer,,not_in_parts_control
+1588.ISO7089-8-140HV(1),1588.ISO 7089 - 8 - 140 HV(1),1588.1003.A.HorizontalStairs.,"44
+8","Plain washers
+Plain washer",,not_in_parts_control
+1588.ISO7089-8-140HV(1),1588.ISO 7089 - 8 - 140 HV(1),1588.1003.A.HorizontalStairs.,8,Plain washer,,not_in_parts_control
+1588.ISO7092-ST12-140HV,1588.ISO 7092 - ST 12 - 140 HV,1588.1003.A.HorizontalStairs.,8,Plain washers,,not_in_parts_control
+1588.ISO7092-ST12-140HV,1588.ISO 7092 - ST 12 - 140 HV,1588.1003.A.HorizontalStairs.,2,Plain washers,,not_in_parts_control
+1588.1003.A10,1588.1003.A10,1588.1003.A.HorizontalStairs.,2,Sub-assembly,Assembly by Sesame,not_in_parts_control
+1588.1003.A10_MIR,1588.1003.A10_MIR,1588.1003.A.HorizontalStairs.,2,Sub-assembly,Assembly by Sesame,not_in_parts_control
+1588.1003.A4w,1588.1003.A4w,1588.1003.A.HorizontalStairs.,"2
+1","Welded Sub-assembly
+Welded Sub-assembly","Welded by Sesame
+Welded by Sesame",not_in_parts_control
+1588.1003.A4w,1588.1003.A4w,1588.1003.A.HorizontalStairs.,1,Welded Sub-assembly,Welded by Sesame,not_in_parts_control
+1588.1003.A7w,1588.1003.A7w,1588.1003.A.HorizontalStairs.,"4
+4","Sub-assembly
+Sub Assembly","Welded by Sesame
+Assembly by Sesame",not_in_parts_control
+1588.1003.A7w,1588.1003.A7w,1588.1003.A.HorizontalStairs.,4,Sub-assembly,Welded by Sesame,not_in_parts_control
+1588.ISO4017-M10x60-ISO,1588.ISO 4017 - M10 x 60 - ISO,1588.1003.A.HorizontalStairs.,1,Hexagon head screws,,not_in_parts_control
+1588.ISO4018-M6x12,1588.ISO 4018 - M6 x 12,1588.1003.A.HorizontalStairs.,16,Hexagon head screw,,not_in_parts_control
+1588.ISO4018-M6x16,1588.ISO 4018 - M6 x 16,1588.1003.A.HorizontalStairs.,4,Hexagon head screw,,not_in_parts_control
+1588.ISO4018-M6x20,1588.ISO 4018 - M6 x 20,1588.1003.A.HorizontalStairs.,24,Hexagon head screw,,not_in_parts_control
+1588.ISO4032-M10ISO,1588.ISO 4032 - M10ISO,1588.1003.A.HorizontalStairs.,1,Hexagon nuts,,not_in_parts_control
+1588.ISO7089-6-140HV(1),1588.ISO 7089 - 6 - 140 HV(1),1588.1003.A.HorizontalStairs.,"44
+8","Plain washers
+Plain washer",,not_in_parts_control
+1588.ISO7089-6-140HV(1),1588.ISO 7089 - 6 - 140 HV(1),1588.1003.A.HorizontalStairs.,44,Plain washers,,not_in_parts_control
+1588.ISO7089-6-140HV(1),1588.ISO 7089 - 6 - 140 HV(1),1588.1003.A.HorizontalStairs.,4,Plain washers,,not_in_parts_control
+1588.1003.A19,1588.1003.A19,1588.1003.A.HorizontalStairs.,1,Sub-assembly,Assembly by Sesame,not_in_parts_control
+1588.1003.A20,1588.1003.A20,1588.1003.A.HorizontalStairs.,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.ISO4014-M16x130-ISO,1588.ISO 4014 - M16 x 130 - ISO,1588.1003.A.HorizontalStairs.,1,Hexagon head bolt,,not_in_parts_control
+1588.ISO4017-M5x8,1588.ISO 4017 - M5 x 8,1588.1003.A.HorizontalStairs.,6,Hexagon head screws,,not_in_parts_control
+1588.ISO4034-M16ISO,1588.ISO 4034 - M16ISO,1588.1003.A.HorizontalStairs.,1,Hexagon NYLOC nut,,not_in_parts_control
+1588.ISO7089-16-140HV,1588.ISO 7089 - 16 - 140 HV,1588.1003.A.HorizontalStairs.,2,Plain washer,,not_in_parts_control
+1588.ISO7089-16-140HV,"1588.ISO 7089 - 16 -
+140 HV",1588.1004.B.MainStairFrame.,2,"Plain washers - Normal
+series - Product grade A",,not_in_parts_control
+1588.ISO7089-16-140HV,"1588.ISO 7089 - 16 -
+140 HV",1588.1004.B.MainStairFrame_MOD1.,2,"Plain washers - Normal
+series - Product grade A",,not_in_parts_control
+1588.1003.A18,1588.1003.A18,1588.1003.A.HorizontalStairs.,1 1,Sub-assembly,Sesame,not_in_parts_control
+1588.1003.A18,1588.1003.A18,1588.1003.A.HorizontalStairs.,1,Sub-assembly,Sesame,not_in_parts_control
+1588.1003.A1w,1588.1003.A1w,1588.1003.A.HorizontalStairs.,2 1,Welded Sub-assembly,Welded by Sesame,not_in_parts_control
+1588.1003.A1w,1588.1003.A1w,1588.1003.A.HorizontalStairs.,1,Welded Sub-assembly,Welded by Sesame,not_in_parts_control
+1588.1003.A17w,1588.1003.A17w,1588.1003.A.HorizontalStairs.,1,Welded Sub-assembly,Welded by Sesame,not_in_parts_control
+1588.ISO4032-M6-Nyloc,1588.ISO 4032 - M6 - Nyloc,1588.1003.A.HorizontalStairs.,4,"Hexagon nuts, Nyloc",,not_in_parts_control
+1588.ISO4032-M6-Nyloc,1588.ISO 4032 - M6 - Nyloc,1588.1003.A.HorizontalStairs.,4,"Hexagon nuts, Nyloc",,not_in_parts_control
+1588.ISO7089-12-140HV(11),1588.ISO 7089 - 12 - 140 HV(11),1588.1003.A.HorizontalStairs.,4,Plain washers,,not_in_parts_control
+1588.1003.BS.S,1588.1003.BS.S,1588.1003.A.HorizontalStairs.,1,Bottom step - single ram,Sesame,not_in_parts_control
+1588.1003.MS,1588.1003.MS,1588.1003.A.HorizontalStairs.,1,Middle Step,Assembly by Sesame,not_in_parts_control
+1588.1003.TS,1588.1003.TS,1588.1003.A.HorizontalStairs.,1,Top Step,Assembly by Sesame,not_in_parts_control
+1588.1004.B.001,1588.1004.B.001,1588.1004.B.MainStairFrame.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.001,1588.1004.B.001,1588.1004.B.MainStairFrame_MOD1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.001_MIR1,1588.1004.B.001_MIR1,1588.1004.B.MainStairFrame.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.001_MIR1,1588.1004.B.001_MIR1,1588.1004.B.MainStairFrame_MOD1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.002,1588.1004.B.002,1588.1004.B.MainStairFrame.,2,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.002,1588.1004.B.002,1588.1004.B.MainStairFrame.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.002,1588.1004.B.002,1588.1004.B.MainStairFrame_MOD1.,2,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.002,1588.1004.B.002,1588.1004.B.MainStairFrame_MOD1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.003,1588.1004.B.003,1588.1004.B.MainStairFrame.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.003,1588.1004.B.003,1588.1004.B.MainStairFrame_MOD1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.004,1588.1004.B.004,1588.1004.B.MainStairFrame.,2,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.004,1588.1004.B.004,1588.1004.B.MainStairFrame.,1,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.004,1588.1004.B.004,1588.1004.B.MainStairFrame_MOD1.,2,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.004,1588.1004.B.004,1588.1004.B.MainStairFrame_MOD1.,1,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.005,1588.1004.B.005,1588.1004.B.MainStairFrame.,1,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.005,1588.1004.B.005,1588.1004.B.MainStairFrame_MOD1.,1,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.005_MIR,1588.1004.B.005_MIR,1588.1004.B.MainStairFrame.,1,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.005_MIR,1588.1004.B.005_MIR,1588.1004.B.MainStairFrame_MOD1.,1,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.006,1588.1004.B.006,1588.1004.B.MainStairFrame.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.006,1588.1004.B.006,1588.1004.B.MainStairFrame_MOD1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.007F,1588.1004.B.007 F,1588.1004.B.MainStairFrame.,8,lat,Steel Profile,not_in_parts_control
+1588.1004.B.007F,1588.1004.B.007 F,1588.1004.B.MainStairFrame_MOD1.,8,lat,Steel Profile,not_in_parts_control
+1588.1004.B.008F,1588.1004.B.008 F,1588.1004.B.MainStairFrame.,2,lat,Steel Profile,not_in_parts_control
+1588.1004.B.008F,1588.1004.B.008 F,1588.1004.B.MainStairFrame_MOD1.,2,lat,Steel Profile,not_in_parts_control
+1588.1004.B.148,1588.1004.B.148,1588.1004.B.MainStairFrame.,2,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.148,1588.1004.B.148,1588.1004.B.MainStairFrame.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.148,1588.1004.B.148,1588.1004.B.MainStairFrame_MOD1.,2,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.148,1588.1004.B.148,1588.1004.B.MainStairFrame_MOD1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.150,1588.1004.B.150,1588.1004.B.MainStairFrame.,2,Box,Steel Profile,not_in_parts_control
+1588.1004.B.150,1588.1004.B.150,1588.1004.B.MainStairFrame.,1,Box,Steel Profile,not_in_parts_control
+1588.1004.B.150,1588.1004.B.150,1588.1004.B.MainStairFrame_MOD1.,2,Box,Steel Profile,not_in_parts_control
+1588.1004.B.150,1588.1004.B.150,1588.1004.B.MainStairFrame_MOD1.,1,Box,Steel Profile,not_in_parts_control
+1588.1004.B.009,1588.1004.B.009,1588.1004.B.MainStairFrame.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.009,1588.1004.B.009,1588.1004.B.MainStairFrame_MOD1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.010,1588.1004.B.010,1588.1004.B.MainStairFrame.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.010,1588.1004.B.010,1588.1004.B.MainStairFrame.,1,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.010,1588.1004.B.010,1588.1004.B.MainStairFrame_MOD1.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.010,1588.1004.B.010,1588.1004.B.MainStairFrame_MOD1.,1,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.011,1588.1004.B.011,1588.1004.B.MainStairFrame.,6,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.011,1588.1004.B.011,1588.1004.B.MainStairFrame.,3,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.011,1588.1004.B.011,1588.1004.B.MainStairFrame_MOD1.,6,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.011,1588.1004.B.011,1588.1004.B.MainStairFrame_MOD1.,3,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.012,1588.1004.B.012,1588.1004.B.MainStairFrame.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.012,1588.1004.B.012,1588.1004.B.MainStairFrame_MOD1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.013,1588.1004.B.013,1588.1004.B.MainStairFrame.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.013,1588.1004.B.013,1588.1004.B.MainStairFrame_MOD1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.147,1588.1004.B.147,1588.1004.B.MainStairFrame.,4,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.147,1588.1004.B.147,1588.1004.B.MainStairFrame.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.147,1588.1004.B.147,1588.1004.B.MainStairFrame_MOD1.,4,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.147,1588.1004.B.147,1588.1004.B.MainStairFrame_MOD1.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.149,1588.1004.B.149,1588.1004.B.MainStairFrame.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.149,1588.1004.B.149,1588.1004.B.MainStairFrame_MOD1.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.003_MIR,1588.1004.B.003_MIR,1588.1004.B.MainStairFrame.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.003_MIR,1588.1004.B.003_MIR,1588.1004.B.MainStairFrame_MOD1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.015,1588.1004.B.015,1588.1004.B.MainStairFrame.,1,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.015,1588.1004.B.015,1588.1004.B.MainStairFrame_MOD1.,1,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.016,1588.1004.B.016,1588.1004.B.MainStairFrame.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.016,1588.1004.B.016,1588.1004.B.MainStairFrame_MOD1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.017,1588.1004.B.017,1588.1004.B.MainStairFrame.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.017,1588.1004.B.017,1588.1004.B.MainStairFrame_MOD1.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.018,1588.1004.B.018,1588.1004.B.MainStairFrame.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.018,1588.1004.B.018,1588.1004.B.MainStairFrame_MOD1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.020,1588.1004.B.020,1588.1004.B.MainStairFrame.,2,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.020,1588.1004.B.020,1588.1004.B.MainStairFrame.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.020,1588.1004.B.020,1588.1004.B.MainStairFrame_MOD1.,2,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.020,1588.1004.B.020,1588.1004.B.MainStairFrame_MOD1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.021,1588.1004.B.021,1588.1004.B.MainStairFrame.,1,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.021,1588.1004.B.021,1588.1004.B.MainStairFrame_MOD1.,1,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.022,1588.1004.B.022,1588.1004.B.MainStairFrame.,2,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.022,1588.1004.B.022,1588.1004.B.MainStairFrame_MOD1.,2,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.029,1588.1004.B.029,1588.1004.B.MainStairFrame.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.029,1588.1004.B.029,1588.1004.B.MainStairFrame.,50,,,not_in_parts_control
+1588.1004.B.029,1588.1004.B.029,1588.1004.B.MainStairFrame_MOD1.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.029,1588.1004.B.029,1588.1004.B.MainStairFrame_MOD1.,50,,,not_in_parts_control
+1588.1004.B.018_MIR,1588.1004.B.018_MIR,1588.1004.B.MainStairFrame.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.018_MIR,1588.1004.B.018_MIR,1588.1004.B.MainStairFrame_MOD1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.019,1588.1004.B.019,1588.1004.B.MainStairFrame.,2,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.019,1588.1004.B.019,1588.1004.B.MainStairFrame.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.019,1588.1004.B.019,1588.1004.B.MainStairFrame_MOD1.,2,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.019,1588.1004.B.019,1588.1004.B.MainStairFrame_MOD1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.038,1588.1004.B.038,1588.1004.B.MainStairFrame.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.038,1588.1004.B.038,1588.1004.B.MainStairFrame_MOD1.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.053,1588.1004.B.053,1588.1004.B.MainStairFrame.,4,Studding,Steel Profile,not_in_parts_control
+1588.1004.B.053,1588.1004.B.053,1588.1004.B.MainStairFrame_MOD1.,4,Studding,Steel Profile,not_in_parts_control
+1588.1004.B.073,1588.1004.B.073,1588.1004.B.MainStairFrame.,4,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.073,1588.1004.B.073,1588.1004.B.MainStairFrame.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.073,1588.1004.B.073,1588.1004.B.MainStairFrame_MOD1.,4,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.073,1588.1004.B.073,1588.1004.B.MainStairFrame_MOD1.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.075,1588.1004.B.075,1588.1004.B.MainStairFrame.,8,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.075,1588.1004.B.075,1588.1004.B.MainStairFrame.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.075,1588.1004.B.075,1588.1004.B.MainStairFrame_MOD1.,8,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.075,1588.1004.B.075,1588.1004.B.MainStairFrame_MOD1.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.076,1588.1004.B.076,1588.1004.B.MainStairFrame.,1,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.076,1588.1004.B.076,1588.1004.B.MainStairFrame_MOD1.,1,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.077,1588.1004.B.077,1588.1004.B.MainStairFrame.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.077,1588.1004.B.077,1588.1004.B.MainStairFrame_MOD1.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.153,1588.1004.B.153,1588.1004.B.MainStairFrame.,2,Box,Steel Profile,not_in_parts_control
+1588.1004.B.153,1588.1004.B.153,1588.1004.B.MainStairFrame.,"2
+2","Box
+Welded Assembly","Steel Profile
+Welded by Sesame",not_in_parts_control
+1588.1004.B.153,1588.1004.B.153,1588.1004.B.MainStairFrame_MOD1.,2,Box,Steel Profile,not_in_parts_control
+1588.1004.B.153,1588.1004.B.153,1588.1004.B.MainStairFrame_MOD1.,"2
+2","Box
+Welded Assembly","Steel Profile
+Welded by Sesame",not_in_parts_control
+1588.1004.B.081,1588.1004.B.081,1588.1004.B.MainStairFrame.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.081,1588.1004.B.081,1588.1004.B.MainStairFrame_MOD1.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.090,1588.1004.B.090,1588.1004.B.MainStairFrame.,2,Box,Steel Profile,not_in_parts_control
+1588.1004.B.090,1588.1004.B.090,1588.1004.B.MainStairFrame.,1,Box,Steel Profile,not_in_parts_control
+1588.1004.B.090,1588.1004.B.090,1588.1004.B.MainStairFrame_MOD1.,2,Box,Steel Profile,not_in_parts_control
+1588.1004.B.090,1588.1004.B.090,1588.1004.B.MainStairFrame_MOD1.,1,Box,Steel Profile,not_in_parts_control
+1588.1004.B.092,1588.1004.B.092,1588.1004.B.MainStairFrame.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.092,1588.1004.B.092,1588.1004.B.MainStairFrame_MOD1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.094,1588.1004.B.094,1588.1004.B.MainStairFrame.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.094,1588.1004.B.094,1588.1004.B.MainStairFrame.,1,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.094,1588.1004.B.094,1588.1004.B.MainStairFrame_MOD1.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.094,1588.1004.B.094,1588.1004.B.MainStairFrame_MOD1.,1,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.074,1588.1004.B.074,1588.1004.B.MainStairFrame.,4,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.074,1588.1004.B.074,1588.1004.B.MainStairFrame.,1,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.074,1588.1004.B.074,1588.1004.B.MainStairFrame_MOD1.,4,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.074,1588.1004.B.074,1588.1004.B.MainStairFrame_MOD1.,1,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.102,1588.1004.B.102,1588.1004.B.MainStairFrame.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.102,1588.1004.B.102,1588.1004.B.MainStairFrame_MOD1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.103,1588.1004.B.103,1588.1004.B.MainStairFrame.,2,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.103,1588.1004.B.103,1588.1004.B.MainStairFrame.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.103,1588.1004.B.103,1588.1004.B.MainStairFrame_MOD1.,2,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.103,1588.1004.B.103,1588.1004.B.MainStairFrame_MOD1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1004.B.104,1588.1004.B.104,1588.1004.B.MainStairFrame.,4,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.104,1588.1004.B.104,1588.1004.B.MainStairFrame.,2,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.104,1588.1004.B.104,1588.1004.B.MainStairFrame_MOD1.,4,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.104,1588.1004.B.104,1588.1004.B.MainStairFrame_MOD1.,2,Angle,Steel Profile,not_in_parts_control
+1588.1004.B.105,1588.1004.B.105,1588.1004.B.MainStairFrame.,4,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.105,1588.1004.B.105,1588.1004.B.MainStairFrame.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.105,1588.1004.B.105,1588.1004.B.MainStairFrame_MOD1.,4,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.105,1588.1004.B.105,1588.1004.B.MainStairFrame_MOD1.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.111,1588.1004.B.111,1588.1004.B.MainStairFrame.,1,Tube (OD 10mm ID 8mm),Steel Profile,not_in_parts_control
+1588.1004.B.111,1588.1004.B.111,1588.1004.B.MainStairFrame_MOD1.,1,Tube (OD 10mm ID 8mm),Steel Profile,not_in_parts_control
+1588.1004.B.415,1588.1004.B.415,1588.1004.B.MainStairFrame.,1,Ram Support plate,Steel Profile,not_in_parts_control
+1588.1004.B.415,1588.1004.B.415,1588.1004.B.MainStairFrame_MOD1.,1,Ram Support plate,Steel Profile,not_in_parts_control
+1588.1004.B.008,1588.1004.B.008,1588.1004.B.MainStairFrame.,1,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.008,1588.1004.B.008,1588.1004.B.MainStairFrame_MOD1.,1,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.007,1588.1004.B.007,1588.1004.B.MainStairFrame.,2,Flat,Steel Profile,not_in_parts_control
+1588.1004.B.007,1588.1004.B.007,1588.1004.B.MainStairFrame_MOD1.,2,Flat,Steel Profile,not_in_parts_control
+1588.ISO10642-M8x25,1588.ISO 10642 - M8 x 25,1588.1004.B.MainStairFrame.,1,"Hexagon socket
+countersunk head cap
+screws",,not_in_parts_control
+1588.ISO10642-M8x25,1588.ISO 10642 - M8 x 25,1588.1004.B.MainStairFrame_MOD1.,1,"Hexagon socket
+countersunk head cap
+screws",,not_in_parts_control
+1588.ISO10642-M8x25,1588.ISO 10642 - M8 x 25,1588.1055.A.Hand Held Post.,1,Countersunk Head Screw,,not_in_parts_control
+1588.ISO4032-M16ISO,1588.ISO 4032 - M16ISO,1588.1004.B.MainStairFrame.,2,Hexagon nut,,not_in_parts_control
+1588.ISO4032-M16ISO,1588.ISO 4032 - M16ISO,1588.1004.B.MainStairFrame.,1,Hexagon nut,,not_in_parts_control
+1588.ISO4032-M16ISO,1588.ISO 4032 - M16ISO,1588.1004.B.MainStairFrame_MOD1.,2,Hexagon nut,,not_in_parts_control
+1588.ISO4032-M16ISO,1588.ISO 4032 - M16ISO,1588.1004.B.MainStairFrame_MOD1.,1,Hexagon nut,,not_in_parts_control
+1588.ISO4032-M16ISO,1588.ISO 4032 - M16ISO,1588.1004.S.BellowScissorFrame.,8,Hexagon nuts,,not_in_parts_control
+1588.1000.C.ClevisPinCl16x50mm,"1588.1000.C.ClevisPin Cl
+16x50mm",1588.1004.B.MainStairFrame.,1,evis Pin Stainless Steel,Boneham,not_in_parts_control
+1588.1000.C.ClevisPinCl16x50mm,"1588.1000.C.ClevisPin Cl
+16x50mm",1588.1004.B.MainStairFrame_MOD1.,1,evis Pin Stainless Steel,Boneham,not_in_parts_control
+1588.1000.C.R-ClipR-3.0x72,"1588.1000.C.R-Clip R-
+3.0x72",1588.1004.B.MainStairFrame.,1,Clip 3.0x75,NBSS Sesame,not_in_parts_control
+1588.1000.C.R-ClipR-3.0x72,"1588.1000.C.R-Clip R-
+3.0x72",1588.1004.B.MainStairFrame_MOD1.,1,Clip 3.0x75,NBSS Sesame,not_in_parts_control
+1588.1004.B.038Fl,1588.1004.B.038 Fl,1588.1004.B.MainStairFrame.,2,at,Steel Profile,not_in_parts_control
+1588.1004.B.038Fl,1588.1004.B.038 Fl,1588.1004.B.MainStairFrame_MOD1.,2,at,Steel Profile,not_in_parts_control
+1588.1004.B.091Pa,1588.1004.B.091 Pa,1588.1004.B.MainStairFrame.,10,ckers,Laser Cut,not_in_parts_control
+1588.1004.B.091Pa,1588.1004.B.091 Pa,1588.1004.B.MainStairFrame_MOD1.,10,ckers,Laser Cut,not_in_parts_control
+1588.1004.B.107Pa,1588.1004.B.107 Pa,1588.1004.B.MainStairFrame.,2,ckers,Laser Cut,not_in_parts_control
+1588.1004.B.107Pa,1588.1004.B.107 Pa,1588.1004.B.MainStairFrame_MOD1.,2,ckers,Laser Cut,not_in_parts_control
+1588.1004.B.111Tu,1588.1004.B.111 Tu,1588.1004.B.MainStairFrame.,"1
+2","be (OD 10mm ID 8mm)
+ckers","Steel Profile
+Laser Cut",not_in_parts_control
+1588.1004.B.111Tu,1588.1004.B.111 Tu,1588.1004.B.MainStairFrame_MOD1.,"1
+2","be (OD 10mm ID 8mm)
+ckers","Steel Profile
+Laser Cut",not_in_parts_control
+1588.1004.B.151Pa,1588.1004.B.151 Pa,1588.1004.B.MainStairFrame.,"1
+2","be (OD 10mm ID 8mm)
+ckers","Steel Profile
+Laser Cut",not_in_parts_control
+1588.1004.B.151Pa,1588.1004.B.151 Pa,1588.1004.B.MainStairFrame_MOD1.,"1
+2","be (OD 10mm ID 8mm)
+ckers","Steel Profile
+Laser Cut",not_in_parts_control
+1588.1004.B1_MIRLe,1588.1004.B1_MIR Le,1588.1004.B.MainStairFrame.,1,ftSideFrame_MIR,Welded by Sesame,not_in_parts_control
+1588.1004.B1_MIRLe,1588.1004.B1_MIR Le,1588.1004.B.MainStairFrame_MOD1.,1,ftSideFrame_MIR,Welded by Sesame,not_in_parts_control
+1588.1004.B1wLe,1588.1004.B1w Le,1588.1004.B.MainStairFrame.,1,ftSideFrame,Welded by Sesame,not_in_parts_control
+1588.1004.B1wLe,1588.1004.B1w Le,1588.1004.B.MainStairFrame_MOD1.,1,ftSideFrame,Welded by Sesame,not_in_parts_control
+1588.1004.B25w,1588.1004.B25w,1588.1004.B.MainStairFrame.,1,,,not_in_parts_control
+1588.1004.B25w,1588.1004.B25w,1588.1004.B.MainStairFrame_MOD1.,1,,,not_in_parts_control
+1588.1004.B25w_MIR,1588.1004.B25w_MIR,1588.1004.B.MainStairFrame.,1,,,not_in_parts_control
+1588.1004.B25w_MIR,1588.1004.B25w_MIR,1588.1004.B.MainStairFrame_MOD1.,1,,,not_in_parts_control
+1588.1004.B28wW,1588.1004.B28w W,1588.1004.B.MainStairFrame.,4,elded Assembly,Welded by Sesame,not_in_parts_control
+1588.1004.B28wW,1588.1004.B28w W,1588.1004.B.MainStairFrame_MOD1.,4,elded Assembly,Welded by Sesame,not_in_parts_control
+1588.1004.B29wW,1588.1004.B29w W,1588.1004.B.MainStairFrame.,1,elded Assembly,Welded by Sesame,not_in_parts_control
+1588.1004.B29wW,1588.1004.B29w W,1588.1004.B.MainStairFrame_MOD1.,1,elded Assembly,Welded by Sesame,not_in_parts_control
+1588.1004.B2wMi,1588.1004.B2w Mi,1588.1004.B.MainStairFrame.,1,ddleBottom,Welded by Sesame,not_in_parts_control
+1588.1004.B2wMi,1588.1004.B2w Mi,1588.1004.B.MainStairFrame_MOD1.,1,ddleBottom,Welded by Sesame,not_in_parts_control
+1588.1004.B31wMi,1588.1004.B31w Mi,1588.1004.B.MainStairFrame.,1,ddleBottom,Welded by Sesame,not_in_parts_control
+1588.1004.B31wMi,1588.1004.B31w Mi,1588.1004.B.MainStairFrame_MOD1.,1,ddleBottom,Welded by Sesame,not_in_parts_control
+1588.1004.B36wFr,1588.1004.B36w Fr,1588.1004.B.MainStairFrame.,2,ont support,Welded by Sesame,not_in_parts_control
+1588.1004.B36wFr,1588.1004.B36w Fr,1588.1004.B.MainStairFrame_MOD1.,2,ont support,Welded by Sesame,not_in_parts_control
+1588.1004.B37wW,1588.1004.B37w W,1588.1004.B.MainStairFrame.,1,elded Assembly,Welded by Sesame,not_in_parts_control
+1588.1004.B37wW,1588.1004.B37w W,1588.1004.B.MainStairFrame_MOD1.,1,elded Assembly,Welded by Sesame,not_in_parts_control
+1588.1004.B4wTr,1588.1004.B4w Tr,1588.1004.B.MainStairFrame.,1,acksSupport,Welded by Sesame,not_in_parts_control
+1588.1004.B4wTr,1588.1004.B4w Tr,1588.1004.B.MainStairFrame_MOD1.,1,acksSupport,Welded by Sesame,not_in_parts_control
+1588.1004.B5wTo,1588.1004.B5w To,1588.1004.B.MainStairFrame.,1,pStepSupport,Welded by Sesame,not_in_parts_control
+1588.1004.B5wTo,1588.1004.B5w To,1588.1004.B.MainStairFrame_MOD1.,1,pStepSupport,Welded by Sesame,not_in_parts_control
+1588.1004.B6wTr,1588.1004.B6w Tr,1588.1004.B.MainStairFrame.,1,acksSupport.Rear,Welded by Sesame,not_in_parts_control
+1588.1004.B6wTr,1588.1004.B6w Tr,1588.1004.B.MainStairFrame_MOD1.,1,acksSupport.Rear,Welded by Sesame,not_in_parts_control
+1588.1004.B7wTr,1588.1004.B7w Tr,1588.1004.B.MainStairFrame.,2,acksSupport.Middle,Welded by Sesame,not_in_parts_control
+1588.1004.B7wTr,1588.1004.B7w Tr,1588.1004.B.MainStairFrame_MOD1.,2,acksSupport.Middle,Welded by Sesame,not_in_parts_control
+1588.1004.B8wTr,1588.1004.B8w Tr,1588.1004.B.MainStairFrame.,1,acksSupport.MiddleBottom,Welded by Sesame,not_in_parts_control
+1588.1004.B8wTr,1588.1004.B8w Tr,1588.1004.B.MainStairFrame_MOD1.,1,acksSupport.MiddleBottom,Welded by Sesame,not_in_parts_control
+1588.DIN315-M8W,1588.DIN 315 - M8 W,1588.1004.B.MainStairFrame.,1,ing Nut,,not_in_parts_control
+1588.DIN315-M8W,1588.DIN 315 - M8 W,1588.1004.B.MainStairFrame_MOD1.,1,ing Nut,,not_in_parts_control
+1588.ISO4762-M8xHe16ISOSc,"1588.ISO 4762 - M8 x He
+16ISO Sc",1588.1004.B.MainStairFrame.,1,"xagon Socket Head Cap
+rew",,not_in_parts_control
+1588.ISO4762-M8xHe16ISOSc,"1588.ISO 4762 - M8 x He
+16ISO Sc",1588.1004.B.MainStairFrame_MOD1.,1,"xagon Socket Head Cap
+rew",,not_in_parts_control
+1588.ISO7089-16-Pl140HVse,"1588.ISO 7089 - 16 - Pl
+140 HV se",1588.1004.B.MainStairFrame.,2,"ain washers - Normal
+ries - Product grade A",,not_in_parts_control
+1588.ISO7089-16-Pl140HVse,"1588.ISO 7089 - 16 - Pl
+140 HV se",1588.1004.B.MainStairFrame_MOD1.,2,"ain washers - Normal
+ries - Product grade A",,not_in_parts_control
+1588.ISO7089-8-Pl140HV,"1588.ISO 7089 - 8 - Pl
+140 HV",1588.1004.B.MainStairFrame.,1,ain washer,,not_in_parts_control
+1588.ISO7089-8-Pl140HV,"1588.ISO 7089 - 8 - Pl
+140 HV",1588.1004.B.MainStairFrame_MOD1.,1,ain washer,,not_in_parts_control
+1588.1004.B.MainStairFrame.dwg,1588.1004.B.MainStairFrame.dwg,1588.1004.B.MainStairFrame.,44,,,not_in_parts_control
+1588.1004.B.MainStairFrame.dwg,1588.1004.B.MainStairFrame.dwg,1588.1004.B.MainStairFrame_MOD1.,44,,,not_in_parts_control
+1588.1004.B1_MIR,1588.1004.B1_MIR,1588.1004.B.MainStairFrame.,1,LeftSideFrame_MIR,Welded by Sesame,not_in_parts_control
+1588.1004.B1_MIR,1588.1004.B1_MIR,1588.1004.B.MainStairFrame_MOD1.,1,LeftSideFrame_MIR,Welded by Sesame,not_in_parts_control
+1588.1004.B1w,1588.1004.B1w,1588.1004.B.MainStairFrame.,1,LeftSideFrame,Welded by Sesame,not_in_parts_control
+1588.1004.B1w,1588.1004.B1w,1588.1004.B.MainStairFrame_MOD1.,1,LeftSideFrame,Welded by Sesame,not_in_parts_control
+1588.1004.B28w,1588.1004.B28w,1588.1004.B.MainStairFrame.,4,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1004.B28w,1588.1004.B28w,1588.1004.B.MainStairFrame_MOD1.,4,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1004.B29w,1588.1004.B29w,1588.1004.B.MainStairFrame.,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1004.B29w,1588.1004.B29w,1588.1004.B.MainStairFrame_MOD1.,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1004.B2w,1588.1004.B2w,1588.1004.B.MainStairFrame.,1,MiddleBottom,Welded by Sesame,not_in_parts_control
+1588.1004.B2w,1588.1004.B2w,1588.1004.B.MainStairFrame_MOD1.,1,MiddleBottom,Welded by Sesame,not_in_parts_control
+1588.1004.B31w,1588.1004.B31w,1588.1004.B.MainStairFrame.,1,MiddleBottom,Welded by Sesame,not_in_parts_control
+1588.1004.B31w,1588.1004.B31w,1588.1004.B.MainStairFrame_MOD1.,1,MiddleBottom,Welded by Sesame,not_in_parts_control
+1588.1004.B36w,1588.1004.B36w,1588.1004.B.MainStairFrame.,2,Front support,Welded by Sesame,not_in_parts_control
+1588.1004.B36w,1588.1004.B36w,1588.1004.B.MainStairFrame_MOD1.,2,Front support,Welded by Sesame,not_in_parts_control
+1588.1004.B37w,1588.1004.B37w,1588.1004.B.MainStairFrame.,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1004.B37w,1588.1004.B37w,1588.1004.B.MainStairFrame_MOD1.,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1004.B4w,1588.1004.B4w,1588.1004.B.MainStairFrame.,1,TracksSupport,Welded by Sesame,not_in_parts_control
+1588.1004.B4w,1588.1004.B4w,1588.1004.B.MainStairFrame_MOD1.,1,TracksSupport,Welded by Sesame,not_in_parts_control
+1588.1004.B5w,1588.1004.B5w,1588.1004.B.MainStairFrame.,1,TopStepSupport,Welded by Sesame,not_in_parts_control
+1588.1004.B5w,1588.1004.B5w,1588.1004.B.MainStairFrame_MOD1.,1,TopStepSupport,Welded by Sesame,not_in_parts_control
+1588.1004.B6w,1588.1004.B6w,1588.1004.B.MainStairFrame.,1,TracksSupport.Rear,Welded by Sesame,not_in_parts_control
+1588.1004.B6w,1588.1004.B6w,1588.1004.B.MainStairFrame_MOD1.,1,TracksSupport.Rear,Welded by Sesame,not_in_parts_control
+1588.1004.B7w,1588.1004.B7w,1588.1004.B.MainStairFrame.,2,TracksSupport.Middle,Welded by Sesame,not_in_parts_control
+1588.1004.B7w,1588.1004.B7w,1588.1004.B.MainStairFrame_MOD1.,2,TracksSupport.Middle,Welded by Sesame,not_in_parts_control
+1588.1004.B8w,1588.1004.B8w,1588.1004.B.MainStairFrame.,1,TracksSupport.MiddleBottom,Welded by Sesame,not_in_parts_control
+1588.1004.B8w,1588.1004.B8w,1588.1004.B.MainStairFrame_MOD1.,1,TracksSupport.MiddleBottom,Welded by Sesame,not_in_parts_control
+1588.DIN315-M8,1588.DIN 315 - M8,1588.1004.B.MainStairFrame.,1,Wing Nut,,not_in_parts_control
+1588.DIN315-M8,1588.DIN 315 - M8,1588.1004.B.MainStairFrame_MOD1.,1,Wing Nut,,not_in_parts_control
+1588.ISO4762-M8x16ISO,"1588.ISO 4762 - M8 x
+16ISO",1588.1004.B.MainStairFrame.,1,"Hexagon Socket Head Cap
+Screw",,not_in_parts_control
+1588.ISO4762-M8x16ISO,"1588.ISO 4762 - M8 x
+16ISO",1588.1004.B.MainStairFrame_MOD1.,1,"Hexagon Socket Head Cap
+Screw",,not_in_parts_control
+1588.ISO7089-8-140HV,"1588.ISO 7089 - 8 -
+140 HV",1588.1004.B.MainStairFrame.,1,Plain washer,,not_in_parts_control
+1588.ISO7089-8-140HV,1588.ISO 7089 - 8 - 140 HV,1588.1004.B.MainStairFrame.,8,Plain washer,,not_in_parts_control
+1588.ISO7089-8-140HV,"1588.ISO 7089 - 8 -
+140 HV",1588.1004.B.MainStairFrame_MOD1.,1,Plain washer,,not_in_parts_control
+1588.ISO7089-8-140HV,1588.ISO 7089 - 8 - 140 HV,1588.1004.B.MainStairFrame_MOD1.,8,Plain washer,,not_in_parts_control
+1588.1000.L.LevellingFoot,1588.1000.L.LevellingFoot,1588.1004.B.MainStairFrame.,4,Leveling foot M16 - 50mm dia.,Sesame,not_in_parts_control
+1588.1000.L.LevellingFoot,1588.1000.L.LevellingFoot,1588.1004.B.MainStairFrame_MOD1.,4,Leveling foot M16 - 50mm dia.,Sesame,not_in_parts_control
+1588.1000.L.LevellingFoot,1588.1000.L.LevellingFoot,1588.1004.S.BellowScissorFrame.,4,Leveling foot M16 - 50mm dia.,Sesame,not_in_parts_control
+1588.1000.L.LevellingFoot,1588.1000.L.LevellingFoot,1588.1004.S.BellowScissorFrame.,4,"Leveling foot M16 - 50mm
+dia.",Sesame,not_in_parts_control
+1588.1004.B13w,1588.1004.B13w,1588.1004.B.MainStairFrame.,"2
+2","Box
+Welded Assembly","Steel Profile
+Welded by Sesame",not_in_parts_control
+1588.1004.B13w,1588.1004.B13w,1588.1004.B.MainStairFrame.,2,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1004.B13w,1588.1004.B13w,1588.1004.B.MainStairFrame_MOD1.,"2
+2","Box
+Welded Assembly","Steel Profile
+Welded by Sesame",not_in_parts_control
+1588.1004.B13w,1588.1004.B13w,1588.1004.B.MainStairFrame_MOD1.,2,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1004.B14,1588.1004.B14,1588.1004.B.MainStairFrame.,"1
+1","SubAssembly
+FR554 (short arm)","Assembly by Sesame
+Assembly by Sesame",not_in_parts_control
+1588.1004.B14,1588.1004.B14,1588.1004.B.MainStairFrame.,1,SubAssembly,Assembly by Sesame,not_in_parts_control
+1588.1004.B14,1588.1004.B14,1588.1004.B.MainStairFrame_MOD1.,"1
+1","SubAssembly
+FR554 (short arm)","Assembly by Sesame
+Assembly by Sesame",not_in_parts_control
+1588.1004.B14,1588.1004.B14,1588.1004.B.MainStairFrame_MOD1.,1,SubAssembly,Assembly by Sesame,not_in_parts_control
+1588.1004.B19,1588.1004.B19,1588.1004.B.MainStairFrame.,"1
+1","SubAssembly
+FR554 (short arm)","Assembly by Sesame
+Assembly by Sesame",not_in_parts_control
+1588.1004.B19,1588.1004.B19,1588.1004.B.MainStairFrame.,1,FR554 (short arm),Assembly by Sesame,not_in_parts_control
+1588.1004.B19,1588.1004.B19,1588.1004.B.MainStairFrame_MOD1.,"1
+1","SubAssembly
+FR554 (short arm)","Assembly by Sesame
+Assembly by Sesame",not_in_parts_control
+1588.1004.B19,1588.1004.B19,1588.1004.B.MainStairFrame_MOD1.,1,FR554 (short arm),Assembly by Sesame,not_in_parts_control
+1588.1004.B21w,1588.1004.B21w,1588.1004.B.MainStairFrame.,1,Gusset,Welded by Sesame,not_in_parts_control
+1588.1004.B21w,1588.1004.B21w,1588.1004.B.MainStairFrame_MOD1.,1,Gusset,Welded by Sesame,not_in_parts_control
+1588.1004.B21w_MIR,1588.1004.B21w_MIR,1588.1004.B.MainStairFrame.,1,Gusset,Welded by Sesame,not_in_parts_control
+1588.1004.B21w_MIR,1588.1004.B21w_MIR,1588.1004.B.MainStairFrame_MOD1.,1,Gusset,Welded by Sesame,not_in_parts_control
+1588.1004.B32w,1588.1004.B32w,1588.1004.B.MainStairFrame.,2,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1004.B32w,1588.1004.B32w,1588.1004.B.MainStairFrame_MOD1.,2,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1004.B32w_MIR,1588.1004.B32w_MIR,1588.1004.B.MainStairFrame.,2,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1004.B32w_MIR,1588.1004.B32w_MIR,1588.1004.B.MainStairFrame_MOD1.,2,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1004.B35w,1588.1004.B35w,1588.1004.B.MainStairFrame.,1,WheelTrack,Welded by Sesame,not_in_parts_control
+1588.1004.B35w,1588.1004.B35w,1588.1004.B.MainStairFrame_MOD1.,1,WheelTrack,Welded by Sesame,not_in_parts_control
+1588.1004.B3w,1588.1004.B3w,1588.1004.B.MainStairFrame.,1,WheelTrack,Welded by Sesame,not_in_parts_control
+1588.1004.B3w,1588.1004.B3w,1588.1004.B.MainStairFrame_MOD1.,1,WheelTrack,Welded by Sesame,not_in_parts_control
+1588.1008.J.SL.001.MurrBase,1588.1008.J.SL.001.Murr Base,1588.1004.B.MainStairFrame.,2,Murr Base,Sesame,not_in_parts_control
+1588.1008.J.SL.001.MurrBase,"1588.1008.J.SL.001.Murr
+Base",1588.1004.B.MainStairFrame.,2,Murr Base,Sesame,not_in_parts_control
+1588.1008.J.SL.001.MurrBase,1588.1008.J.SL.001.Murr Base,1588.1004.B.MainStairFrame_MOD1.,2,Murr Base,Sesame,not_in_parts_control
+1588.1008.J.SL.001.MurrBase,"1588.1008.J.SL.001.Murr
+Base",1588.1004.B.MainStairFrame_MOD1.,2,Murr Base,Sesame,not_in_parts_control
+1588.1008.J.SL.001.MurrBase,1588.1008.J.SL.001.Murr Base,1588.1008.D1.MachineRoomCabinet.,1,Murr Base,Sesame,not_in_parts_control
+1588.ISO4017-M8x25-ISOcopy,"1588.ISO 4017 - M8 x 25 -
+ISO copy",1588.1004.B.MainStairFrame.,4,Hexagon head screws,,not_in_parts_control
+1588.ISO4017-M8x25-ISOcopy,"1588.ISO 4017 - M8 x 25 -
+ISO copy",1588.1004.B.MainStairFrame_MOD1.,4,Hexagon head screws,,not_in_parts_control
+1588.ISO4032-M8ISO,1588.ISO 4032 - M8ISO,1588.1004.B.MainStairFrame.,6,Hexagon nut,,not_in_parts_control
+1588.ISO4032-M8ISO,1588.ISO 4032 - M8ISO,1588.1004.B.MainStairFrame_MOD1.,6,Hexagon nut,,not_in_parts_control
+1588.1004.S.001,1588.1004.S.001,1588.1004.S.BellowScissorFrame.,4,Box,Steel Profile,not_in_parts_control
+1588.1004.S.002,1588.1004.S.002,1588.1004.S.BellowScissorFrame.,2,Box,Steel Profile,not_in_parts_control
+1588.1004.S.004,1588.1004.S.004,1588.1004.S.BellowScissorFrame.,4,Angle,Steel Profile,not_in_parts_control
+1588.1004.S.024,1588.1004.S.024,1588.1004.S.BellowScissorFrame.,1,Box,Steel Profile,not_in_parts_control
+1588.1004.S.024_MIR,1588.1004.S.024_MIR,1588.1004.S.BellowScissorFrame.,1,Box,Steel Profile,not_in_parts_control
+1588.1004.S.026,1588.1004.S.026,1588.1004.S.BellowScissorFrame.,1,Box,Steel Profile,not_in_parts_control
+1588.1004.S.028,1588.1004.S.028,1588.1004.S.BellowScissorFrame.,4,Studding,Steel Profile,not_in_parts_control
+1588.1004.S.032,1588.1004.S.032,1588.1004.S.BellowScissorFrame.,1,Box,Steel Profile,not_in_parts_control
+1588.1004.S.033,1588.1004.S.033,1588.1004.S.BellowScissorFrame.,4,Angle,Steel Profile,not_in_parts_control
+1588.1004.S.034,1588.1004.S.034,1588.1004.S.BellowScissorFrame.,6,^Flat,Steel Profile,not_in_parts_control
+1588.1004.S.035,1588.1004.S.035,1588.1004.S.BellowScissorFrame.,2,^Flat,Steel Profile,not_in_parts_control
+1588.1004.S1w,1588.1004.S1w,1588.1004.S.BellowScissorFrame.,1,Welded Assembly,"Welded by
+Sesame",not_in_parts_control
+1588.1006.A.057,1588.1006.A.057,1588.1006.A.WheelStopPlatform-SS.,1,Tube (OD 20mm ID 18mm),Steel Profile,not_in_parts_control
+1588.1006.A.130,1588.1006.A.130,1588.1006.A.WheelStopPlatform-SS.,1,Flat,Steel Profile,not_in_parts_control
+1588.1006.A.131,1588.1006.A.131,1588.1006.A.WheelStopPlatform-SS.,1,Flat,Steel Profile,not_in_parts_control
+1588.1006.A13w,1588.1006.A13w,1588.1006.A.WheelStopPlatform-SS.,1,Welded Assembly,"Welded by
+Sesame",not_in_parts_control
+1588.1008.A6.EP1G14Z2U,1588.1008.A6.EP1G14Z2U,1588.1006.A.WheelStopPlatform-SS.,1,Roller LimitSwitch (min. 2m Cable),LongVale,not_in_parts_control
+1588.1008.D1.019,1588.1008.D1.019,1588.1008.D1.MachineRoomCabinet.,2,Angle,Steel Profile,not_in_parts_control
+1588.1008.D1.069,1588.1008.D1.069,1588.1008.D1.MachineRoomCabinet.,4,Studding,Steel Profile,not_in_parts_control
+1588.1008.D1.116,1588.1008.D1.116,1588.1008.D1.MachineRoomCabinet.,2,Flat,Steel Profile,not_in_parts_control
+1588.1008.D1.5w,1588.1008.D1.5w,1588.1008.D1.MachineRoomCabinet.,1,Welded assembly,Welded by Sesame,not_in_parts_control
+1588.1008.D1.6,1588.1008.D1.6,1588.1008.D1.MachineRoomCabinet.,1,Tank Support,Assembly by Sesame,not_in_parts_control
+1588.1008.D1.022,1588.1008.D1.022,1588.1008.D1.MachineRoomCabinet.,1,CEE Socket,,not_in_parts_control
+1588.1008.D1.EldonCabinetFull_1mX1mX0.3m,"1588.1008.D1.EldonCabinetFull_1mX
+1mX0.3m",1588.1008.D1.MachineRoomCabinet.,1,Machine Room Cabinet + PLC,JAJO,not_in_parts_control
+1588.ISO4762-M8x70ISO,1588.ISO 4762 - M8 x 70ISO,1588.1008.D1.MachineRoomCabinet.,2,Cap Head Screw,,not_in_parts_control
+1588.1008.Q.001,1588.1008.Q.001,1588.1008.Q1.DoubleLiftingJig.,2,Channel,Steel Profile,not_in_parts_control
+1588.1008.Q.001,1588.1008.Q.001,1588.1008.Q1.DoubleLiftingJig_2.,2,Channel,Steel Profile,not_in_parts_control
+1588.1008.Q.004,1588.1008.Q.004,1588.1008.Q1.DoubleLiftingJig.,2,Studding,Steel Profile,not_in_parts_control
+1588.1008.Q.004,1588.1008.Q.004,1588.1008.Q1.DoubleLiftingJig.,"2
+2","Studding
+Channel","Steel Profile
+Steel Profile",not_in_parts_control
+1588.1008.Q.004,1588.1008.Q.004,1588.1008.Q1.DoubleLiftingJig_2.,2,Studding,Steel Profile,not_in_parts_control
+1588.1008.Q.004,1588.1008.Q.004,1588.1008.Q1.DoubleLiftingJig_2.,"2
+2","Studding
+Channel","Steel Profile
+Steel Profile",not_in_parts_control
+1588.1008.Q.006,1588.1008.Q.006,1588.1008.Q1.DoubleLiftingJig.,2,Channel,Steel Profile,not_in_parts_control
+1588.1008.Q.006,1588.1008.Q.006,1588.1008.Q1.DoubleLiftingJig.,"2
+2","Studding
+Channel","Steel Profile
+Steel Profile",not_in_parts_control
+1588.1008.Q.006,1588.1008.Q.006,1588.1008.Q1.DoubleLiftingJig_2.,2,Channel,Steel Profile,not_in_parts_control
+1588.1008.Q.006,1588.1008.Q.006,1588.1008.Q1.DoubleLiftingJig_2.,"2
+2","Studding
+Channel","Steel Profile
+Steel Profile",not_in_parts_control
+1588.1008.Q.007,1588.1008.Q.007,1588.1008.Q1.DoubleLiftingJig.,4,Studding,Steel Profile,not_in_parts_control
+1588.1008.Q.007,1588.1008.Q.007,1588.1008.Q1.DoubleLiftingJig_2.,4,Studding,Steel Profile,not_in_parts_control
+1588.1008.Q.011,1588.1008.Q.011,1588.1008.Q1.DoubleLiftingJig.,4,Box,Steel Profile,not_in_parts_control
+1588.1008.Q.011,1588.1008.Q.011,1588.1008.Q1.DoubleLiftingJig_2.,4,Box,Steel Profile,not_in_parts_control
+1588.1008.Q.016,1588.1008.Q.016,1588.1008.Q1.DoubleLiftingJig.,6,Box,Steel Profile,not_in_parts_control
+1588.1008.Q.016,1588.1008.Q.016,1588.1008.Q1.DoubleLiftingJig_2.,6,Box,Steel Profile,not_in_parts_control
+1588.1008.Q.018,1588.1008.Q.018,1588.1008.Q1.DoubleLiftingJig.,4,Box,Steel Profile,not_in_parts_control
+1588.1008.Q.018,1588.1008.Q.018,1588.1008.Q1.DoubleLiftingJig_2.,4,Box,Steel Profile,not_in_parts_control
+1588.1008.Q.002,1588.1008.Q.002,1588.1008.Q1.DoubleLiftingJig.,2,Flat Plate,Laser Cut,not_in_parts_control
+1588.1008.Q.002,1588.1008.Q.002,1588.1008.Q1.DoubleLiftingJig_2.,2,Flat Plate,Laser Cut,not_in_parts_control
+1588.1008.Q.003,1588.1008.Q.003,1588.1008.Q1.DoubleLiftingJig.,2,Flat Plate,Laser Cut,not_in_parts_control
+1588.1008.Q.003,1588.1008.Q.003,1588.1008.Q1.DoubleLiftingJig_2.,2,Flat Plate,Laser Cut,not_in_parts_control
+1588.18-631-12,1588.18-631-12,1588.1008.Q1.DoubleLiftingJig.,1,Lifting Shackle,Sesame,not_in_parts_control
+1588.18-631-12,1588.18-631-12,1588.1008.Q1.DoubleLiftingJig_2.,1,Lifting Shackle,Sesame,not_in_parts_control
+1588.ISO4017-M12x40-ISO,1588.ISO 4017 - M12 x 40 - ISO,1588.1008.Q1.DoubleLiftingJig.,8,Hexagon head screws,,not_in_parts_control
+1588.ISO4017-M12x40-ISO,1588.ISO 4017 - M12 x 40 - ISO,1588.1008.Q1.DoubleLiftingJig_2.,8,Hexagon head screws,,not_in_parts_control
+1588.ISO4017-M12x55-ISO,1588.ISO 4017 - M12 x 55 - ISO,1588.1008.Q1.DoubleLiftingJig.,2,Hexagon head screws,,not_in_parts_control
+1588.ISO4017-M12x55-ISO,1588.ISO 4017 - M12 x 55 - ISO,1588.1008.Q1.DoubleLiftingJig_2.,2,Hexagon head screws,,not_in_parts_control
+1588.ISO4032-M16-ISO,1588.ISO 4032 - M16 - ISO,1588.1008.Q1.DoubleLiftingJig.,8,Hexagon nuts,,not_in_parts_control
+1588.ISO4032-M16-ISO,1588.ISO 4032 - M16 - ISO,1588.1008.Q1.DoubleLiftingJig_2.,8,Hexagon nuts,,not_in_parts_control
+1588.ISO7089-12-140HV(1),1588.ISO 7089 - 12 - 140 HV(1),1588.1008.Q1.DoubleLiftingJig.,20,Plain washer,,not_in_parts_control
+1588.ISO7089-12-140HV(1),1588.ISO 7089 - 12 - 140 HV(1),1588.1008.Q1.DoubleLiftingJig_2.,20,Plain washer,,not_in_parts_control
+1588.ISO7089-16-140HV(1),1588.ISO 7089 - 16 - 140 HV(1),1588.1008.Q1.DoubleLiftingJig.,8,Plain washers,,not_in_parts_control
+1588.ISO7089-16-140HV(1),1588.ISO 7089 - 16 - 140 HV(1),1588.1008.Q1.DoubleLiftingJig_2.,8,Plain washers,,not_in_parts_control
+1588.1016.2.1w,1588.1016.2.1w,1588.1016.BS.1.,1,Welded part,"Welded by
+Sesame",not_in_parts_control
+1588.1016.2.1w,1588.1016.2.1w,1588.1016.BS.1.,1,Welded part,Welded by Sesame,not_in_parts_control
+1588.SecurityScrew,1588.SecurityScrew,1588.1016.BS.1.,7,,,not_in_parts_control
+1588.SecurityScrew-M4x8CS,1588.SecurityScrew - M4 x 8 CS,1588.1016.BS.1.,4,M4x8 Countersunk Security Screw,Orbital Fasteners,not_in_parts_control
+1588.1025.A.018,1588.1025.A.018,1588.1025.A.Low.Profile.ScissorLift.,2,Rod (BRIGHT),Steel Profile,not_in_parts_control
+1588.1025.A.018,1588.1025.A.018,1588.1025.A.Low.Profile.ScissorLift_rev1.,2,Rod (BRIGHT),Steel Profile,not_in_parts_control
+1588.1025.A.024,1588.1025.A.024,1588.1025.A.Low.Profile.ScissorLift.,2,Tube (OD any ID 52mm),Steel Profile,not_in_parts_control
+1588.1025.A.024,1588.1025.A.024,1588.1025.A.Low.Profile.ScissorLift.,1,Tube (OD any ID 52mm),Steel Profile,not_in_parts_control
+1588.1025.A.024,1588.1025.A.024,1588.1025.A.Low.Profile.ScissorLift_rev1.,2,Tube (OD any ID 52mm),Steel Profile,not_in_parts_control
+1588.1025.A.024,1588.1025.A.024,1588.1025.A.Low.Profile.ScissorLift_rev1.,1,Tube (OD any ID 52mm),Steel Profile,not_in_parts_control
+1588.1025.A.028,1588.1025.A.028,1588.1025.A.Low.Profile.ScissorLift.,2,Flat,Steel Profile,not_in_parts_control
+1588.1025.A.028,1588.1025.A.028,1588.1025.A.Low.Profile.ScissorLift_rev1.,2,Flat,Steel Profile,not_in_parts_control
+1588.1025.A.070,1588.1025.A.070,1588.1025.A.Low.Profile.ScissorLift.,4,Flat,Steel Profile,not_in_parts_control
+1588.1025.A.070,1588.1025.A.070,1588.1025.A.Low.Profile.ScissorLift.,2,Flat,Steel Profile,not_in_parts_control
+1588.1025.A.070,1588.1025.A.070,1588.1025.A.Low.Profile.ScissorLift_rev1.,4,Flat,Steel Profile,not_in_parts_control
+1588.1025.A.070,1588.1025.A.070,1588.1025.A.Low.Profile.ScissorLift_rev1.,2,Flat,Steel Profile,not_in_parts_control
+1588.1025.A.074,1588.1025.A.074,1588.1025.A.Low.Profile.ScissorLift.,1,Channel,Steel Profile,not_in_parts_control
+1588.1025.A.074,1588.1025.A.074,1588.1025.A.Low.Profile.ScissorLift_rev1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1025.A.074_MIR,1588.1025.A.074_MIR,1588.1025.A.Low.Profile.ScissorLift.,1,Channel,Steel Profile,not_in_parts_control
+1588.1025.A.074_MIR,1588.1025.A.074_MIR,1588.1025.A.Low.Profile.ScissorLift_rev1.,1,Channel,Steel Profile,not_in_parts_control
+1588.1025.A.093,1588.1025.A.093,1588.1025.A.Low.Profile.ScissorLift.,4,Studding M10 (BZP),Steel Profile,not_in_parts_control
+1588.1025.A.093,1588.1025.A.093,1588.1025.A.Low.Profile.ScissorLift_rev1.,4,Studding M10 (BZP),Steel Profile,not_in_parts_control
+1588.1025.A.011,1588.1025.A.011,1588.1025.A.Low.Profile.ScissorLift.,4,"Oil Filled Bronze Flanged
+Bush size 30x38x30","Bearing
+Supplier",not_in_parts_control
+1588.1025.A.011,1588.1025.A.011,1588.1025.A.Low.Profile.ScissorLift_rev1.,4,"Oil Filled Bronze Flanged
+Bush size 30x38x30","Bearing
+Supplier",not_in_parts_control
+1588.1025.A.004,1588.1025.A.004,1588.1025.A.Low.Profile.ScissorLift.,4,AP-C3 weld plates (100x30x8 - M10),"Bearing
+Supplier",not_in_parts_control
+1588.1025.A.004,1588.1025.A.004,1588.1025.A.Low.Profile.ScissorLift.,4,"AP-C3 weld plates
+(100x30x8 - M10)","Bearing
+Supplier",not_in_parts_control
+1588.1025.A.004,1588.1025.A.004,1588.1025.A.Low.Profile.ScissorLift_rev1.,4,AP-C3 weld plates (100x30x8 - M10),"Bearing
+Supplier",not_in_parts_control
+1588.1025.A.004,1588.1025.A.004,1588.1025.A.Low.Profile.ScissorLift_rev1.,4,"AP-C3 weld plates
+(100x30x8 - M10)","Bearing
+Supplier",not_in_parts_control
+1588.ISO10642-M10x20,"1588.ISO 10642 -
+M10 x 20",1588.1025.A.Low.Profile.ScissorLift.,4,Countersunk Head Screw,,not_in_parts_control
+1588.ISO10642-M10x20,1588.ISO 10642 - M10 x 20,1588.1025.A.Low.Profile.ScissorLift.,4,Countersunk Head Screw,,not_in_parts_control
+1588.ISO10642-M10x20,"1588.ISO 10642 -
+M10 x 20",1588.1025.A.Low.Profile.ScissorLift_rev1.,4,Countersunk Head Screw,,not_in_parts_control
+1588.ISO10642-M10x20,1588.ISO 10642 - M10 x 20,1588.1025.A.Low.Profile.ScissorLift_rev1.,4,Countersunk Head Screw,,not_in_parts_control
+1588.ISO10642-M8x50,1588.ISO 10642 - M8 x 50,1588.1025.A.Low.Profile.ScissorLift.,4,"Hexagon Socket
+Countersunk Screw",,not_in_parts_control
+1588.ISO10642-M8x50,"1588.ISO 10642 - M8
+x 50",1588.1025.A.Low.Profile.ScissorLift.,4,"Hexagon Socket
+Countersunk Screw",,not_in_parts_control
+1588.ISO10642-M8x50,1588.ISO 10642 - M8 x 50,1588.1025.A.Low.Profile.ScissorLift_rev1.,4,"Hexagon Socket
+Countersunk Screw",,not_in_parts_control
+1588.ISO10642-M8x50,"1588.ISO 10642 - M8
+x 50",1588.1025.A.Low.Profile.ScissorLift_rev1.,4,"Hexagon Socket
+Countersunk Screw",,not_in_parts_control
+1588.1025.A3w,1588.1025.A3w,1588.1025.A.Low.Profile.ScissorLift.,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1025.A3w,1588.1025.A3w,1588.1025.A.Low.Profile.ScissorLift_rev1.,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1025.A6w,1588.1025.A6w,1588.1025.A.Low.Profile.ScissorLift.,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1025.A6w,1588.1025.A6w,1588.1025.A.Low.Profile.ScissorLift_rev1.,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1025.A5w,1588.1025.A5w,1588.1025.A.Low.Profile.ScissorLift.,1,Top Frame,"Welded by
+Sesame",not_in_parts_control
+1588.1025.A5w,1588.1025.A5w,1588.1025.A.Low.Profile.ScissorLift_rev1.,1,Top Frame,"Welded by
+Sesame",not_in_parts_control
+1588.1025.A.087,1588.1025.A.087,1588.1025.A.Low.Profile.ScissorLift.,1,"Oleorama Hydraulic T Type Manifold, 2 Station,
+1 4"" BSP Inlet Ports 1 4"" Service Ports, ALU",Sesame,not_in_parts_control
+1588.1025.A.087,1588.1025.A.087,1588.1025.A.Low.Profile.ScissorLift.,1,"Oleorama Hydraulic T Type Manifold, 2 Station,
+1 4"" BSP Inlet Ports 1 4"" Service Ports, ALU",Sesame,not_in_parts_control
+1588.1025.A.087,1588.1025.A.087,1588.1025.A.Low.Profile.ScissorLift_rev1.,1,"Oleorama Hydraulic T Type Manifold, 2 Station,
+1 4"" BSP Inlet Ports 1 4"" Service Ports, ALU",Sesame,not_in_parts_control
+1588.1025.A.087,1588.1025.A.087,1588.1025.A.Low.Profile.ScissorLift_rev1.,1,"Oleorama Hydraulic T Type Manifold, 2 Station,
+1 4"" BSP Inlet Ports 1 4"" Service Ports, ALU",Sesame,not_in_parts_control
+1588.1025.A.089,1588.1025.A.089,1588.1025.A.Low.Profile.ScissorLift.,4,G 1 4 Steel Blanking Plug,RS Components,not_in_parts_control
+1588.1025.A.089,1588.1025.A.089,1588.1025.A.Low.Profile.ScissorLift_rev1.,4,G 1 4 Steel Blanking Plug,RS Components,not_in_parts_control
+1588.1025.A2w,1588.1025.A2w,1588.1025.A.Low.Profile.ScissorLift.,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1025.A2w,1588.1025.A2w,1588.1025.A.Low.Profile.ScissorLift.,"1
+1","Welded Assembly
+NBSS.414 Limit Switch Angle","Welded by Sesame
+NBSS Laser Cut",not_in_parts_control
+1588.1025.A2w,1588.1025.A2w,1588.1025.A.Low.Profile.ScissorLift_rev1.,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1025.A2w,1588.1025.A2w,1588.1025.A.Low.Profile.ScissorLift_rev1.,"1
+1","Welded Assembly
+NBSS.414 Limit Switch Angle","Welded by Sesame
+NBSS Laser Cut",not_in_parts_control
+1588.ISO4032-M10-ISO,"1588.ISO 4032 - M10
+- ISO",1588.1025.A.Low.Profile.ScissorLift.,4,Hexagon nut,,not_in_parts_control
+1588.ISO4032-M10-ISO,"1588.ISO 4032 - M10
+- ISO",1588.1025.A.Low.Profile.ScissorLift_rev1.,4,Hexagon nut,,not_in_parts_control
+1588.1025.A.020,1588.1025.A.020,1588.1025.A.Low.Profile.ScissorLift.,4,Oil Bearing,Bearing Supplier,not_in_parts_control
+1588.1025.A.020,1588.1025.A.020,1588.1025.A.Low.Profile.ScissorLift.,2,Oil Bearing,Bearing Supplier,not_in_parts_control
+1588.1025.A.020,1588.1025.A.020,1588.1025.A.Low.Profile.ScissorLift.,3,Oil Bearing,"Bearing
+Supplier",not_in_parts_control
+1588.1025.A.020,1588.1025.A.020,1588.1025.A.Low.Profile.ScissorLift_rev1.,4,Oil Bearing,Bearing Supplier,not_in_parts_control
+1588.1025.A.020,1588.1025.A.020,1588.1025.A.Low.Profile.ScissorLift_rev1.,2,Oil Bearing,Bearing Supplier,not_in_parts_control
+1588.1025.A.020,1588.1025.A.020,1588.1025.A.Low.Profile.ScissorLift_rev1.,3,Oil Bearing,"Bearing
+Supplier",not_in_parts_control
+1588.1025.A.021,1588.1025.A.021,1588.1025.A.Low.Profile.ScissorLift.,4,Bearing,Bearing Supplier,not_in_parts_control
+1588.1025.A.021,1588.1025.A.021,1588.1025.A.Low.Profile.ScissorLift.,2,Bearing,Bearing Supplier,not_in_parts_control
+1588.1025.A.021,1588.1025.A.021,1588.1025.A.Low.Profile.ScissorLift_rev1.,4,Bearing,Bearing Supplier,not_in_parts_control
+1588.1025.A.021,1588.1025.A.021,1588.1025.A.Low.Profile.ScissorLift_rev1.,2,Bearing,Bearing Supplier,not_in_parts_control
+1588.1025.A1w,1588.1025.A1w,1588.1025.A.Low.Profile.ScissorLift.,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1025.A1w,1588.1025.A1w,1588.1025.A.Low.Profile.ScissorLift_rev1.,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.140030EXTERNALCIRCLIPFOR30MMSHAFT,"1588.1400 30 EXTERNAL
+CIRCLIP FOR 30MM SHAFT",1588.1025.A.Low.Profile.ScissorLift.,8,"1400 30 EXTERNAL CIRCLIP
+FOR 30MM SHAFT",Bearing Revolution,not_in_parts_control
+1588.140030EXTERNALCIRCLIPFOR30MMSHAFT,"1588.1400 30 EXTERNAL
+CIRCLIP FOR 30MM SHAFT",1588.1025.A.Low.Profile.ScissorLift.,8,"1400 30 EXTERNAL
+CIRCLIP FOR 30MM SHAFT",Bearing Revolution,not_in_parts_control
+1588.140030EXTERNALCIRCLIPFOR30MMSHAFT,"1588.1400 30 EXTERNAL
+CIRCLIP FOR 30MM SHAFT",1588.1025.A.Low.Profile.ScissorLift.,4,"1400 30 EXTERNAL CIRCLIP
+FOR 30MM SHAFT",Bearing Revolution,not_in_parts_control
+1588.140030EXTERNALCIRCLIPFOR30MMSHAFT,"1588.1400 30 EXTERNAL
+CIRCLIP FOR 30MM SHAFT",1588.1025.A.Low.Profile.ScissorLift.,2,"1400 30 EXTERNAL CIRCLIP
+FOR 30MM SHAFT","Bearing
+Revolution",not_in_parts_control
+1588.140030EXTERNALCIRCLIPFOR30MMSHAFT,"1588.1400 30 EXTERNAL
+CIRCLIP FOR 30MM SHAFT",1588.1025.A.Low.Profile.ScissorLift_rev1.,8,"1400 30 EXTERNAL CIRCLIP
+FOR 30MM SHAFT",Bearing Revolution,not_in_parts_control
+1588.140030EXTERNALCIRCLIPFOR30MMSHAFT,"1588.1400 30 EXTERNAL
+CIRCLIP FOR 30MM SHAFT",1588.1025.A.Low.Profile.ScissorLift_rev1.,8,"1400 30 EXTERNAL
+CIRCLIP FOR 30MM SHAFT",Bearing Revolution,not_in_parts_control
+1588.140030EXTERNALCIRCLIPFOR30MMSHAFT,"1588.1400 30 EXTERNAL
+CIRCLIP FOR 30MM SHAFT",1588.1025.A.Low.Profile.ScissorLift_rev1.,4,"1400 30 EXTERNAL CIRCLIP
+FOR 30MM SHAFT",Bearing Revolution,not_in_parts_control
+1588.140030EXTERNALCIRCLIPFOR30MMSHAFT,"1588.1400 30 EXTERNAL
+CIRCLIP FOR 30MM SHAFT",1588.1025.A.Low.Profile.ScissorLift_rev1.,2,"1400 30 EXTERNAL CIRCLIP
+FOR 30MM SHAFT","Bearing
+Revolution",not_in_parts_control
+1588.ISO10642-M6x25Hightensile,"1588.ISO 10642 - M6 x
+25 High tensile",1588.1025.A.Low.Profile.ScissorLift.,16,"Countersunk Head Screw
+high tensile",ACCU,not_in_parts_control
+1588.ISO10642-M6x25Hightensile,"1588.ISO 10642 - M6 x 25
+High tensile",1588.1025.A.Low.Profile.ScissorLift.,16,"Countersunk Head Screw
+high tensile",ACCU,not_in_parts_control
+1588.ISO10642-M6x25Hightensile,"1588.ISO 10642 - M6 x 25
+High tensile",1588.1025.A.Low.Profile.ScissorLift.,4,"Countersunk Head Screw
+high tensile",ACCU,not_in_parts_control
+1588.ISO10642-M6x25Hightensile,"1588.ISO 10642 - M6 x
+25 High tensile",1588.1025.A.Low.Profile.ScissorLift_rev1.,16,"Countersunk Head Screw
+high tensile",ACCU,not_in_parts_control
+1588.ISO10642-M6x25Hightensile,"1588.ISO 10642 - M6 x 25
+High tensile",1588.1025.A.Low.Profile.ScissorLift_rev1.,16,"Countersunk Head Screw
+high tensile",ACCU,not_in_parts_control
+1588.ISO10642-M6x25Hightensile,"1588.ISO 10642 - M6 x 25
+High tensile",1588.1025.A.Low.Profile.ScissorLift_rev1.,4,"Countersunk Head Screw
+high tensile",ACCU,not_in_parts_control
+1588.1025.A4w,1588.1025.A4w,1588.1025.A.Low.Profile.ScissorLift.,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.1025.A4w,1588.1025.A4w,1588.1025.A.Low.Profile.ScissorLift_rev1.,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1588.ISO4014-M6x50,1588.ISO 4014 - M6 x 50,1588.1025.A.Low.Profile.ScissorLift.,4,"Hexagon head bolt -
+product grades A and B",,not_in_parts_control
+1588.ISO4014-M6x50,1588.ISO 4014 - M6 x 50,1588.1025.A.Low.Profile.ScissorLift_rev1.,4,"Hexagon head bolt -
+product grades A and B",,not_in_parts_control
+1588.ISO4026-M6x16-ISO,"1588.ISO 4026 - M6 x 16 -
+ISO",1588.1025.A.Low.Profile.ScissorLift.,2,"Hexagon socket set screws
+with flat point",,not_in_parts_control
+1588.ISO4026-M6x16-ISO,"1588.ISO 4026 - M6 x 16 -
+ISO",1588.1025.A.Low.Profile.ScissorLift_rev1.,2,"Hexagon socket set screws
+with flat point",,not_in_parts_control
+1588.1025.A.036,1588.1025.A.036,1588.1025.A.Low.Profile.ScissorLift.,2,"(Ram.Bearing.Base) ;
+25x62x22.5","Bearing
+Supplier",not_in_parts_control
+1588.1025.A.036,1588.1025.A.036,1588.1025.A.Low.Profile.ScissorLift_rev1.,2,"(Ram.Bearing.Base) ;
+25x62x22.5","Bearing
+Supplier",not_in_parts_control
+1588.1025.A.037,1588.1025.A.037,1588.1025.A.Low.Profile.ScissorLift.,2,"(Ram.Bearing.BaseTop) ;
+25x62x22.5","Bearing
+Supplier",not_in_parts_control
+1588.1025.A.037,1588.1025.A.037,1588.1025.A.Low.Profile.ScissorLift_rev1.,2,"(Ram.Bearing.BaseTop) ;
+25x62x22.5","Bearing
+Supplier",not_in_parts_control
+1588.1025.A.091,1588.1025.A.091,1588.1025.A.Low.Profile.ScissorLift.,2,"Car belt min. length
+~177mm",Sesame,not_in_parts_control
+1588.1025.A.091,1588.1025.A.091,1588.1025.A.Low.Profile.ScissorLift_rev1.,2,"Car belt min. length
+~177mm",Sesame,not_in_parts_control
+1588.1025.A.Actuator,1588.1025.A.Actuator,1588.1025.A.Low.Profile.ScissorLift.,2,"Low profile scissor lift
+hydraulic cylinder, Stroke
+141mm","Hydraulics
+Supplier",not_in_parts_control
+1588.1025.A.Actuator,1588.1025.A.Actuator,1588.1025.A.Low.Profile.ScissorLift_rev1.,2,"Low profile scissor lift
+hydraulic cylinder, Stroke
+141mm","Hydraulics
+Supplier",not_in_parts_control
+1588.1025.A10,1588.1025.A10,1588.1025.A.Low.Profile.ScissorLift.,2,Wheel Assembly,"Assembly
+by Sesame",not_in_parts_control
+1588.1025.A10,1588.1025.A10,1588.1025.A.Low.Profile.ScissorLift_rev1.,2,Wheel Assembly,"Assembly
+by Sesame",not_in_parts_control
+1588.1025.A13w,1588.1025.A13w,1588.1025.A.Low.Profile.ScissorLift.,"1
+1","Welded assembly
+Welded assembly","Welded by
+Sesame
+Welded by",not_in_parts_control
+1588.1025.A13w,1588.1025.A13w,1588.1025.A.Low.Profile.ScissorLift.,1,Welded assembly,"Welded by
+Sesame",not_in_parts_control
+1588.1025.A13w,1588.1025.A13w,1588.1025.A.Low.Profile.ScissorLift_rev1.,"1
+1","Welded assembly
+Welded assembly","Welded by
+Sesame
+Welded by",not_in_parts_control
+1588.1025.A13w,1588.1025.A13w,1588.1025.A.Low.Profile.ScissorLift_rev1.,1,Welded assembly,"Welded by
+Sesame",not_in_parts_control
+1588.1025.A13w_MIR,1588.1025.A13w_MIR,1588.1025.A.Low.Profile.ScissorLift.,"1
+1","Welded assembly
+Welded assembly","Welded by
+Sesame
+Welded by",not_in_parts_control
+1588.1025.A13w_MIR,1588.1025.A13w_MIR,1588.1025.A.Low.Profile.ScissorLift.,1,Welded assembly,"Welded by
+Sesame",not_in_parts_control
+1588.1025.A13w_MIR,1588.1025.A13w_MIR,1588.1025.A.Low.Profile.ScissorLift_rev1.,"1
+1","Welded assembly
+Welded assembly","Welded by
+Sesame
+Welded by",not_in_parts_control
+1588.1025.A13w_MIR,1588.1025.A13w_MIR,1588.1025.A.Low.Profile.ScissorLift_rev1.,1,Welded assembly,"Welded by
+Sesame",not_in_parts_control
+1588.1025.A7,1588.1025.A7,1588.1025.A.Low.Profile.ScissorLift.,1,BottomFrame,"Sesame
+Assembly
+by Sesame",not_in_parts_control
+1588.1025.A7,1588.1025.A7,1588.1025.A.Low.Profile.ScissorLift.,1,BottomFrame,"Assembly
+by Sesame",not_in_parts_control
+1588.1025.A7,1588.1025.A7,1588.1025.A.Low.Profile.ScissorLift_rev1.,1,BottomFrame,"Sesame
+Assembly
+by Sesame",not_in_parts_control
+1588.1025.A7,1588.1025.A7,1588.1025.A.Low.Profile.ScissorLift_rev1.,1,BottomFrame,"Assembly
+by Sesame",not_in_parts_control
+1588.1025.A8,1588.1025.A8,1588.1025.A.Low.Profile.ScissorLift.,1,BodyLegs.OUT,"Assembly
+by Sesame",not_in_parts_control
+1588.1025.A8,1588.1025.A8,1588.1025.A.Low.Profile.ScissorLift_rev1.,1,BodyLegs.OUT,"Assembly
+by Sesame",not_in_parts_control
+1588.1025.A9,1588.1025.A9,1588.1025.A.Low.Profile.ScissorLift.,2,BodyLegs.IN,"Assembly
+by Sesame",not_in_parts_control
+1588.1025.A9,1588.1025.A9,1588.1025.A.Low.Profile.ScissorLift_rev1.,2,BodyLegs.IN,"Assembly
+by Sesame",not_in_parts_control
+1588.ISO4017-M8x90-ISO,"1588.ISO 4017 - M8 x 90 -
+ISO",1588.1025.A.Low.Profile.ScissorLift.,4,Hexagon head screws,,not_in_parts_control
+1588.ISO4017-M8x90-ISO,"1588.ISO 4017 - M8 x 90 -
+ISO",1588.1025.A.Low.Profile.ScissorLift_rev1.,4,Hexagon head screws,,not_in_parts_control
+1588.ISO4762-M10x50ISO,"1588.ISO 4762 - M10 x
+50ISO",1588.1025.A.Low.Profile.ScissorLift.,16,"Hexagon Socket Head
+Cap Screw",,not_in_parts_control
+1588.ISO4762-M10x50ISO,"1588.ISO 4762 - M10 x
+50ISO",1588.1025.A.Low.Profile.ScissorLift_rev1.,16,"Hexagon Socket Head
+Cap Screw",,not_in_parts_control
+1588.ISO7092-ST10-140HV,"1588.ISO 7092 - ST 10 -
+140 HV",1588.1025.A.Low.Profile.ScissorLift.,4,"Plain washers-Small
+series-Product grade A",,not_in_parts_control
+1588.ISO7092-ST10-140HV,"1588.ISO 7092 - ST 10 -
+140 HV",1588.1025.A.Low.Profile.ScissorLift_rev1.,4,"Plain washers-Small
+series-Product grade A",,not_in_parts_control
+1588.1025.A.Low.Profile.ScissorLift.dwg,1588.1025.A.Low.Profile.ScissorLift.dwg,1588.1025.A.Low.Profile.ScissorLift.,44,,,not_in_parts_control
+1588.1025.A.Low.Profile.ScissorLift.dwg,1588.1025.A.Low.Profile.ScissorLift.dwg,1588.1025.A.Low.Profile.ScissorLift_rev1.,44,,,not_in_parts_control
+1588.1025.A.063,1588.1025.A.063,1588.1025.A.Low.Profile.ScissorLift.,1,"1 4 x 1 4_male - male
+fitting_drilled 1.5mm (TBC)",Sesame,not_in_parts_control
+1588.1025.A.063,1588.1025.A.063,1588.1025.A.Low.Profile.ScissorLift_rev1.,1,"1 4 x 1 4_male - male
+fitting_drilled 1.5mm (TBC)",Sesame,not_in_parts_control
+1588.1008.Y.EasyChain38mmLowProfile,"1588.1008.Y.EasyChain 38m
+m LowProfile",1588.1025.A.Low.Profile.ScissorLift.,1,"Easy Chain 38mm inner
+Length: 1400",IGUS,not_in_parts_control
+1588.1008.Y.EasyChain38mmLowProfile,"1588.1008.Y.EasyChain 38mm
+LowProfile",1588.1025.A.Low.Profile.ScissorLift.,1,"Easy Chain 38mm inner
+Length: 1400",IGUS,not_in_parts_control
+1588.1008.Y.EasyChain38mmLowProfile,"1588.1008.Y.EasyChain 38m
+m LowProfile",1588.1025.A.Low.Profile.ScissorLift_rev1.,1,"Easy Chain 38mm inner
+Length: 1400",IGUS,not_in_parts_control
+1588.1008.Y.EasyChain38mmLowProfile,"1588.1008.Y.EasyChain 38mm
+LowProfile",1588.1025.A.Low.Profile.ScissorLift_rev1.,1,"Easy Chain 38mm inner
+Length: 1400",IGUS,not_in_parts_control
+1588.1025.A.Low.Profile.ScissorLift.Stage1,"1588.1025.A.Low.Profile.Scis
+sorLift.Stage1",1588.1025.A.Low.Profile.ScissorLift.,1,,,not_in_parts_control
+1588.1025.A.Low.Profile.ScissorLift.Stage1,"1588.1025.A.Low.Profile.Scissor
+Lift.Stage1",1588.1025.A.Low.Profile.ScissorLift.,1,,,not_in_parts_control
+1588.1025.A.Low.Profile.ScissorLift.Stage1,"1588.1025.A.Low.Profile.Scis
+sorLift.Stage1",1588.1025.A.Low.Profile.ScissorLift_rev1.,1,,,not_in_parts_control
+1588.1025.A.Low.Profile.ScissorLift.Stage1,"1588.1025.A.Low.Profile.Scissor
+Lift.Stage1",1588.1025.A.Low.Profile.ScissorLift_rev1.,1,,,not_in_parts_control
+1588.1025.A14,1588.1025.A14,1588.1025.A.Low.Profile.ScissorLift.,1,Top Table,"Assembly by
+Sesame",not_in_parts_control
+1588.1025.A14,1588.1025.A14,1588.1025.A.Low.Profile.ScissorLift_rev1.,1,Top Table,"Assembly by
+Sesame",not_in_parts_control
+1588.ISO4017-M6x16-ISO,"1588.ISO 4017 - M6 x 16 -
+ISO",1588.1025.A.Low.Profile.ScissorLift.,2,Hexagon head screws,,not_in_parts_control
+1588.ISO4017-M6x16-ISO,1588.ISO 4017 - M6 x 16 - ISO,1588.1025.A.Low.Profile.ScissorLift.,2,Hexagon head screws,,not_in_parts_control
+1588.ISO4017-M6x16-ISO,"1588.ISO 4017 - M6 x 16 -
+ISO",1588.1025.A.Low.Profile.ScissorLift_rev1.,2,Hexagon head screws,,not_in_parts_control
+1588.ISO4017-M6x16-ISO,1588.ISO 4017 - M6 x 16 - ISO,1588.1025.A.Low.Profile.ScissorLift_rev1.,2,Hexagon head screws,,not_in_parts_control
+1588.ParkerFemaleThread,1588.Parker Female Thread,1588.1025.A.Low.Profile.ScissorLift.,"2
+2","Plain washer
+Parker Fitting",,not_in_parts_control
+1588.ParkerFemaleThread,1588.Parker Female Thread,1588.1025.A.Low.Profile.ScissorLift_rev1.,"2
+2","Plain washer
+Parker Fitting",,not_in_parts_control
+1588.ParkerFemaleThread-Swivel1_4x7_16-20UNF,"1588.Parker Female Thread -
+Swivel 1_4 x 7_16-20 UNF",1588.1025.A.Low.Profile.ScissorLift.,2,Parker Fitting,,not_in_parts_control
+1588.ParkerFemaleThread-Swivel1_4x7_16-20UNF,"1588.Parker Female Thread -
+Swivel 1_4 x 7_16-20 UNF",1588.1025.A.Low.Profile.ScissorLift_rev1.,2,Parker Fitting,,not_in_parts_control
+1588.1055.A.001,1588.1055.A.001,1588.1055.A.Hand Held Post.,1,"Tube (OD 50.8mm
+ID 44.8mm)",Steel Profile,not_in_parts_control
+1588.1055.A.001,1588.1055.A.001,1588.1055.A.Hand Held Post.,1,"Tube (OD 50.8mm ID
+44.8mm)",Steel Profile,not_in_parts_control
+1588.1055.A.003,1588.1055.A.003,1588.1055.A.Hand Held Post.,1,"Tube (OD 63.5mm
+ID 57.5mm)",Steel Profile,not_in_parts_control
+1588.1055.A.003,1588.1055.A.003,1588.1055.A.Hand Held Post.,1,"Tube (OD 63.5mm ID
+57.5mm)",Steel Profile,not_in_parts_control
+1588.1055.A.029,1588.1055.A.029,1588.1055.A.Hand Held Post.,1,"Tube (OD 50.8mm
+ID 44.8mm)",Steel Profile,not_in_parts_control
+1588.1055.A.029,1588.1055.A.029,1588.1055.A.Hand Held Post.,1,"Tube (OD 50.8mm ID
+44.8mm)",Steel Profile,not_in_parts_control
+1588.1055.A.029,1588.1055.A.029,1588.1055.A.Hand Held Post.,1588,,,not_in_parts_control
+1588.ISO,1588.ISO,1588.1055.A.Hand Held Post.,3,,,not_in_parts_control
+1588.1055.A11w,1588.1055.A11w,1588.1055.A.Hand Held Post.,1,HHP welded cap,Sesame,not_in_parts_control
+1588.1055.A1w,1588.1055.A1w,1588.1055.A.Hand Held Post.,1,Handle with post welded,"Welded by
+Sesame",not_in_parts_control
+1588.1055.A7,1588.1055.A7,1588.1055.A.Hand Held Post.,1,Sub Assembly,"Assembly
+by Sesame",not_in_parts_control
+1588.AmericaStreet,1588.AmericaStreet,"1588.America Street, No.1_EngineeringDrawing.",44,"wingpack:
+1588.AmericaStreet,No.1_EngineeringDrawing.dwg",,not_in_parts_control
+1588.AmericaStreet,1588.AmericaStreet,"1588.America Street, No.1_EngineeringDrawing.",44,"rawingpack:
+1588.AmericaStreet,No.1_EngineeringDrawing.dwg",,not_in_parts_control
+1588.1004.S.BellowScissorFrame,1588.1004.S.BellowScissorFrame,"1588.America Street, No.1_EngineeringDrawing.",1,SL Frame,Sesame,not_in_parts_control
+1588.1025.A.Low.Profile.ScissorLif,1588.1025.A.Low.Profile.ScissorLif,"1588.America Street, No.1_EngineeringDrawing.",1,t Scissor lift,Sesame,not_in_parts_control
+1588.1025.A.Low.Profile.ScissorLift,1588.1025.A.Low.Profile.ScissorLift,"1588.America Street, No.1_EngineeringDrawing.",1,Scissor lift,Sesame,not_in_parts_control
+1588.1008.Q1.DoubleLiftingJig,1588.1008.Q1.DoubleLiftingJig,"1588.America Street, No.1_EngineeringDrawing.",1,Four points lifting jig,Sesame,not_in_parts_control
+1588.1008.Q1.DoubleLiftingJig,1588.1008.Q1.DoubleLiftingJig,"1588.America Street, No.1_EngineeringDrawing.",1588,,,not_in_parts_control
+1588.America,1588.America,"1588.America Street, No.1_EngineeringDrawing.",1588,,,not_in_parts_control
+1588.1003.A.HorizontalStairsMai,1588.1003.A.HorizontalStairs Mai,"1588.America Street, No.1_EngineeringDrawing.",1,n Assembly,Sesame,not_in_parts_control
+"1588.AmericaStreet,No.1Sta","1588.America Street, No. 1 Sta","1588.America Street, No.1_EngineeringDrawing.",1,ge 4,Sesame,not_in_parts_control
+1588.1003.A.HorizontalStairs,1588.1003.A.HorizontalStairs,"1588.America Street, No.1_EngineeringDrawing.",1,Main Assembly,Sesame,not_in_parts_control
+"1588.AmericaStreet,No.1","1588.America Street, No. 1","1588.America Street, No.1_EngineeringDrawing.",1,Stage 4,Sesame,not_in_parts_control
+"1588.AmericaStreet,No.1","1588.America Street, No. 1","1588.America Street, No.1_EngineeringDrawing.",1,Stage 5,Sesame,not_in_parts_control
+1588.1008.Q1.DoubleLiftingJig_2,1588.1008.Q1.DoubleLiftingJig_2,"1588.America Street, No.1_EngineeringDrawing.",1,Four points lifting jig,Sesame,not_in_parts_control

@@ -1,0 +1,41 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date
+ALL BOMS - 1458.7003.Traversing Slider MOD,1458.7003.Traversing Slider MOD,,,,,,
+Machining BOM - 1458.7003.Traversing Slider MOD,,ALL BOMS - 1458.7003.Traversing Slider MOD,,Machining,,,
+Machining - 1458.7003.Traversing Slider MOD,,Machining BOM - 1458.7003.Traversing Slider MOD,,Machining,,,
+4 off 7003. E.085 - Bush Machining,"7003.E.085
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: 
+Mass: 0.013 kg
+Volume: 1590.431 mm^3
+Project Task: ",Machining - 1458.7003.Traversing Slider MOD,4,Machining,,,
+Sesame BOM - 1458.7003.Traversing Slider MOD,,ALL BOMS - 1458.7003.Traversing Slider MOD,,Sesame,,,
+IGUS - 1458.7003.Traversing Slider MOD,,Sesame BOM - 1458.7003.Traversing Slider MOD,,IGUS,,,
+4 off 7003. E.082 - Thrust Washer GTM-1018-015 IGUS,"7003.E.082
+Stock Number: GTM-1018-015
+Material: Generic
+Web Link: https://www.igus.co.uk/iglidur-ibh/thrust-washers/product-details/iglidur-g-m?artnr=GTM-1018-015
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.000 kg
+Volume: 263.894 mm^3
+Project Task: ",IGUS - 1458.7003.Traversing Slider MOD,4,IGUS,,,
+2 off 7003. E.083 - Plain Bearing GSM-1012-10 IGUS,"7003.E.083
+Stock Number: GSM-1012-10
+Material: ABS Plastic
+Web Link: https://www.igus.co.uk/iglidur-ibh/sleeve-bearings/product-details/iglidur-g-m?artnr=GSM-1012-10
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.000 kg
+Volume: 345.575 mm^3
+Project Task: ",IGUS - 1458.7003.Traversing Slider MOD,2,IGUS,,,
+berger-tools - 1458.7003.Traversing Slider MOD,,Sesame BOM - 1458.7003.Traversing Slider MOD,,berger-tools,,,
+4 off 7003. E.086 - 7379-10-M8-20-NI 7379-10-M8-20-NI berger-tools,"7003.E.086
+Stock Number: 7379-10-M8-20-NI
+Material: Generic
+Web Link: https://www.berger-tools.co.uk/Iso7379_Hexagon_Socket_Head_Shoulder_Screw_Ssb_Stainless/
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.008 lbmass
+Volume: 3439.062 mm^3
+Project Task: ",berger-tools - 1458.7003.Traversing Slider MOD,4,berger-tools,,,

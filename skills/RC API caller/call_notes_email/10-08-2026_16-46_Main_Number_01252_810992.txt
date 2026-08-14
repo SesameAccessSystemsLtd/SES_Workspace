@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  10/08/2026  16:46
+============================================================
+With:         Main Number 01252 810992
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo discussing issues with his account being on hold and blocked due to a duplicate invoice, and coordinating with the support team to resolve the matter. The account is currently inactive and on hold since July 23rd, but the duplicate invoice has been canceled, and the account should not be on hold.
+
+--- RECAP --------------------------------------------------
+Giles Hugo's account is on hold and inactive since July 23rd, due to a duplicate invoice (number 602214) that has been canceled, but the account remains blocked.The support representative confirmed the account is on hold because of a system change and asked if Giles signed a new agreement; this was unconfirmed.Giles provided his email (Giles@SesameAccess.com) and contact number (01784 944 844), and mentioned previous communication from Amy D Silva regarding the account issue.The support team needs to consult with their sales representative, Amy D Silva, to resolve the account hold, and will follow up with Giles after checking with her.Giles agreed to address the issue further tomorrow after the support team contacts Amy.
+
+--- TASKS --------------------------------------------------
+Support team representative to check with Amy D Silva regarding the account hold and resolve the issue, then follow up with Giles.Giles to follow up with the support team after they contact Amy to confirm the account status.
+
+(Full transcript: RC web portal only — no RingSense API)

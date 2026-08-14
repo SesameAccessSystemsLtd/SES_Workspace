@@ -1,0 +1,14 @@
+{
+  "request_id": "1a00c4f0-c71c-4f07-a01d-a3d5ec403b54",
+  "source": "email_approval_sheet",
+  "row_index": 30,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkAYSmBAAA=",
+  "subject": "RE: Order PO : PO24475 | Enrgtech Ref : 124475 - Partial Shipment",
+  "task_gid": "1214149950507124",
+  "task_name": "21004-270426 - Enrgtech - hand pads - gray red and yellow - 0024475",
+  "asana_url": "https://app.asana.com/0/0/1214149950507124",
+  "action": "(Domain Fallback: 'enrgtech', 3 candidate(s)); Flag issue: The supplier has cancelled the order because the parts are no longer available and have no expected return to stock date.",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-07-07T12:57:05Z\nEmail: RE: Order PO : PO24475 | Enrgtech Ref : 124475 - Partial Shipment\n- Flag issue: The supplier has cancelled the order because the parts are no longer available and have no expected return to stock date.",
+  "decision": "A",
+  "created_at": "2026-07-10T13:00:07.603519+00:00"
+}

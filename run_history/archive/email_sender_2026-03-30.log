@@ -1,0 +1,69 @@
+2026-03-30 12:49:52,475 [INFO] ============================================================
+2026-03-30 12:49:52,475 [INFO] SesameAccess × Elastic Email sender — 2026-03-30 11:49 UTC
+2026-03-30 12:49:52,475 [INFO] Mode: LIVE | Limit: 5
+2026-03-30 12:49:52,475 [INFO] ============================================================
+2026-03-30 12:49:52,989 [INFO]   Send queue: 21 contact(s) with TO_EMAIL status
+2026-03-30 12:49:52,989 [INFO] Contacts in queue: 21
+2026-03-30 12:49:52,999 [INFO]   COOLDOWN: colin.moss@huntingdonshire.gov.uk — skip (contacted within 90 days)
+2026-03-30 12:49:53,007 [INFO]   COOLDOWN: m.d.jones@npt.gov.uk — skip (contacted within 90 days)
+2026-03-30 12:49:53,007 [INFO]   COOLDOWN: iain.peverall@durham.gov.uk — skip (contacted within 90 days)
+2026-03-30 12:49:53,007 [INFO]   COOLDOWN: chloe.sharpe@reading.gov.uk — skip (contacted within 90 days)
+2026-03-30 12:49:53,007 [INFO]   COOLDOWN: lee.booth@staffordbc.gov.uk — skip (contacted within 90 days)
+2026-03-30 12:49:53,754 [INFO]   ✅ Sent → emma.till@chelmsford.gov.uk (id=4a1caa1d-cc81-8285-001d-d7b72bc43651)
+2026-03-30 12:49:54,794 [INFO]   Marked EMAILED: emma.till@chelmsford.gov.uk
+2026-03-30 12:49:56,795 [INFO]   COOLDOWN: d.d.adams@dorsetcc.gov.uk — skip (contacted within 90 days)
+2026-03-30 12:49:56,795 [INFO]   COOLDOWN: samantha.cook@eastsuffolk.gov.uk — skip (contacted within 90 days)
+2026-03-30 12:49:56,795 [INFO]   COOLDOWN: nita.patel@bradford.gov.uk — skip (contacted within 90 days)
+2026-03-30 12:49:56,795 [INFO]   COOLDOWN: chris.cummings@sunderland.gov.uk — skip (contacted within 90 days)
+2026-03-30 12:49:56,795 [INFO]   COOLDOWN: chris.brown@denbighshire.gov.uk — skip (contacted within 90 days)
+2026-03-30 12:49:57,510 [INFO]   ✅ Sent → sa.wilson@preston.gov.uk (id=4a1caa68-d081-c12f-c068-cfc25eb143c4)
+2026-03-30 12:49:58,589 [INFO]   Marked EMAILED: sa.wilson@preston.gov.uk
+2026-03-30 12:50:00,589 [INFO]   COOLDOWN: etendering@homesengland.gov.uk — skip (contacted within 90 days)
+2026-03-30 12:50:00,589 [INFO]   COOLDOWN: ruth.baker@hounslow.gov.uk — skip (contacted within 90 days)
+2026-03-30 12:50:00,589 [INFO]   COOLDOWN: ella.westerby@northumberland.gov.uk — skip (contacted within 90 days)
+2026-03-30 12:50:00,589 [INFO]   COOLDOWN: jacky.ebbatson@northlincs.gov.uk — skip (contacted within 90 days)
+2026-03-30 12:50:01,312 [INFO]   ✅ Sent → ethan.bowman@durham.gov.uk (id=4a1caa58-d381-81e6-c058-39f26e8173c8)
+2026-03-30 12:50:02,415 [INFO]   Marked EMAILED: ethan.bowman@durham.gov.uk
+2026-03-30 12:50:04,416 [INFO]   COOLDOWN: michelle.green2@northlincs.gov.uk — skip (contacted within 90 days)
+2026-03-30 12:50:04,416 [INFO]   COOLDOWN: procurement@leicester.gov.uk — skip (contacted within 90 days)
+2026-03-30 12:50:04,416 [INFO]   COOLDOWN: maxine.moran@cumbria.gov.uk — skip (contacted within 90 days)
+2026-03-30 12:50:04,416 [INFO]   COOLDOWN: etcf@leics.gov.uk — skip (contacted within 90 days)
+2026-03-30 12:50:04,419 [INFO] 
+============================================================
+2026-03-30 12:50:04,419 [INFO] SEND SUMMARY
+2026-03-30 12:50:04,419 [INFO]   queued: 21
+2026-03-30 12:50:04,419 [INFO]   sent: 3
+2026-03-30 12:50:04,419 [INFO]   skipped_cooldown: 18
+2026-03-30 12:50:04,419 [INFO]   skipped_no_email: 0
+2026-03-30 12:50:04,419 [INFO]   skipped_hs_check: 0
+2026-03-30 12:50:04,420 [INFO]   failed: 0
+2026-03-30 12:50:04,420 [INFO]   dry_run_previewed: 0
+2026-03-30 12:50:04,420 [INFO] ============================================================
+2026-03-30 13:24:47,716 [INFO] ============================================================
+2026-03-30 13:24:47,716 [INFO] SesameAccess × Elastic Email sender — 2026-03-30 12:24 UTC
+2026-03-30 13:24:47,716 [INFO] Mode: LIVE | Limit: 5
+2026-03-30 13:24:47,716 [INFO] ============================================================
+2026-03-30 13:24:48,321 [INFO]   Send queue: 100 contact(s) with TO_EMAIL status
+2026-03-30 13:24:48,322 [INFO] Contacts in queue: 100
+2026-03-30 13:24:49,090 [INFO]   ✅ Sent → colin.moss@huntingdonshire.gov.uk (id=4a1caa53-ca89-c1bf-8053-0cf9658a706d)
+2026-03-30 13:24:50,277 [INFO]   Marked EMAILED: colin.moss@huntingdonshire.gov.uk
+2026-03-30 13:24:53,014 [INFO]   ✅ Sent → m.d.jones@npt.gov.uk (id=4a1caa1e-ce89-0295-001e-72b428c73d8c)
+2026-03-30 13:24:54,067 [INFO]   Marked EMAILED: m.d.jones@npt.gov.uk
+2026-03-30 13:24:56,811 [INFO]   ✅ Sent → iain.peverall@durham.gov.uk (id=4a1caa0a-d289-014a-a00a-b6a03cd329f8)
+2026-03-30 13:24:57,808 [INFO]   Marked EMAILED: iain.peverall@durham.gov.uk
+2026-03-30 13:25:00,562 [INFO]   ✅ Sent → chloe.sharpe@reading.gov.uk (id=4a1caa3f-d589-c1f3-a03f-579509e61c37)
+2026-03-30 13:25:01,608 [INFO]   Marked EMAILED: chloe.sharpe@reading.gov.uk
+2026-03-30 13:25:04,335 [INFO]   ✅ Sent → lee.booth@staffordbc.gov.uk (id=4a1caa7e-d989-c1a2-a07e-49d448a75dda)
+2026-03-30 13:25:05,403 [INFO]   Marked EMAILED: lee.booth@staffordbc.gov.uk
+2026-03-30 13:25:07,404 [INFO] Send limit (5) reached — stopping
+2026-03-30 13:25:07,405 [INFO] 
+============================================================
+2026-03-30 13:25:07,405 [INFO] SEND SUMMARY
+2026-03-30 13:25:07,405 [INFO]   queued: 100
+2026-03-30 13:25:07,405 [INFO]   sent: 5
+2026-03-30 13:25:07,405 [INFO]   skipped_cooldown: 0
+2026-03-30 13:25:07,405 [INFO]   skipped_no_email: 0
+2026-03-30 13:25:07,405 [INFO]   skipped_hs_check: 0
+2026-03-30 13:25:07,405 [INFO]   failed: 0
+2026-03-30 13:25:07,405 [INFO]   dry_run_previewed: 0
+2026-03-30 13:25:07,405 [INFO] ============================================================

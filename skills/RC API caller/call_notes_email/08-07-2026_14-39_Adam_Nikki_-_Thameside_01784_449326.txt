@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  08/07/2026  14:39
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call between Giles Hugo and Adam/Nikki from Thameside discussed pricing adjustments for scissor legs and cams, with plans to standardize designs and consider bulk purchasing. They also touched on order quantities and upcoming material orders.
+
+--- RECAP --------------------------------------------------
+Adam/Nikki offered to reduce the price of the scissor legs to 285 pounds from 385 pounds, noting previous experience with similar pricing at 248 pounds, and acknowledged the job's complexity.They discussed the cost savings of using 16mm thick legs instead of 30mm, saving approximately 800 pounds, and considered making six additional cams to stock due to their setup costs and heat treatment expenses.Giles Hugo emphasized the importance of standardizing designs and purchasing items in bulk to control costs, noting that the overall project cost has increased from about 5,000 to 7,500 pounds due to machining and additional components.Adam/Nikki expressed concerns about the viability of continuing certain jobs, mentioning they have 12 large cams stored and are trying to reduce shelf stock, and indicated they will wait for further instructions before proceeding with material orders.Both parties agreed to stay in contact regarding the final decisions on pricing, order quantities, and material procurement.
+
+--- TASKS --------------------------------------------------
+Adam/Nikki will wait to hear from Giles Hugo before proceeding with the order for cams and will hold off on material orders until further confirmation.Giles Hugo will consider standardizing design components and discuss bulk purchasing options based on this call.
+
+(Full transcript: RC web portal only — no RingSense API)

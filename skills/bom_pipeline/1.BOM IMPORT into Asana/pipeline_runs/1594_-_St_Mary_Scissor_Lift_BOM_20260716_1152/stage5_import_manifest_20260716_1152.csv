@@ -1,0 +1,874 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1594 - St Mary Scissor Lift BOM,"Master task for all BOMs related to 1594 - St Mary Scissor Lift BOM
+Dropbox: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Project: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",,,,,,,,,,
+Surface Finish BOM - 1594 - St Mary Scissor Lift BOM,,ALL BOMS - 1594 - St Mary Scissor Lift BOM,,Surface Finish BOM,,,,,,,
+Yellow Zinc Plating - 1594 - St Mary Scissor Lift BOM,,Surface Finish BOM - 1594 - St Mary Scissor Lift BOM,,Yellow Zinc Plating,,,,,,,
+10 off Yellow Zinc Plating 1594. 1010.L.017 - Bottom Packer for Bearing Yellow Zinc Plated,"1594.1010.L.017
+KAN: KAN-348
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267457
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.034 kg
+Volume: 4344.234 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Yellow Zinc Plating - 1594 - St Mary Scissor Lift BOM,,Yellow Zinc Plating,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216623587471732,https://app.asana.com/0/848657415032331/1216623587471732
+2 off Yellow Zinc Plating 1594. 1010.L5w - Welded assembly,"1594.1010.L5w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.261 kg
+Volume: 33297.384 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Yellow Zinc Plating - 1594 - St Mary Scissor Lift BOM,2,Yellow Zinc Plating,,,,ORDER,PROJECT ORDER,1216623587567485,https://app.asana.com/0/848657415032331/1216623587567485
+2 off Yellow Zinc Plating 1594. 1010.L7w - Welded Assembly,"1594.1010.L7w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 1.594 kg
+Volume: 202993.968 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Yellow Zinc Plating - 1594 - St Mary Scissor Lift BOM,2,Yellow Zinc Plating,,,,ORDER,PROJECT ORDER,1216623557954352,https://app.asana.com/0/848657415032331/1216623557954352
+2 off Yellow Zinc Plating 1594. 1010.L9w - Welded assembly,"1594.1010.L9w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.218 kg
+Volume: 27782.084 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Yellow Zinc Plating - 1594 - St Mary Scissor Lift BOM,2,Yellow Zinc Plating,,,,ORDER,PROJECT ORDER,1216623737629480,https://app.asana.com/0/848657415032331/1216623737629480
+4 off Yellow Zinc Plating 1594. 1010.L27w - Welded Assembly,"1594.1010.L27w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.363 kg
+Volume: 46206.629 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Yellow Zinc Plating - 1594 - St Mary Scissor Lift BOM,4,Yellow Zinc Plating,,,,ORDER,PROJECT ORDER,1216623600836807,https://app.asana.com/0/848657415032331/1216623600836807
+Laser Cut BOM - 1594 - St Mary Scissor Lift BOM,,ALL BOMS - 1594 - St Mary Scissor Lift BOM,,Laser Cut,,,,,,,
+Laser Cut - 1594 - St Mary Scissor Lift BOM,,Laser Cut BOM - 1594 - St Mary Scissor Lift BOM,,Laser Cut,,,,,,,
+1 off 1594. 1008.A11.002 - Reflective plate under laser scanner 304/2B Laser Cut,"1594.1008.A11.002
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.025 kg
+Volume: 3067.133 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,,Laser Cut,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216623601144831,https://app.asana.com/0/848657415032331/1216623601144831
+4 off 1594. 1010.L.003 - (Bott_Clip_Part) Laser Cut,"1594.1010.L.003
+Material: Steel, Mild
+Thickness: 20.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.822 kg
+Volume: 104680.365 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216623587729343,https://app.asana.com/0/848657415032331/1216623587729343
+1 off 1594. 1010.L.004 - (TopFrame_Side_Plate) Laser Cut,"1594.1010.L.004
+Material: Steel, Mild
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 7.211 kg
+Volume: 918649.472 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623738308651,https://app.asana.com/0/848657415032331/1216623738308651
+1 off 1594. 1010.L.004_MIR - (TopFrame_Side_Plate) Laser Cut,"1594.1010.L.004_MIR
+Material: Steel, Mild
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 7.211 kg
+Volume: 918649.472 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623850827395,https://app.asana.com/0/848657415032331/1216623850827395
+1 off 1594. 1010.L.005 - Top_WheelTrack 304/HR Laser Cut,"1594.1010.L.005
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 1.989 kg
+Volume: 248609.617 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623558197777,https://app.asana.com/0/848657415032331/1216623558197777
+1 off 1594. 1010.L.005_MIR - Top_WheelTrack 304/HR Laser Cut,"1594.1010.L.005_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 1.989 kg
+Volume: 248609.617 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623652399623,https://app.asana.com/0/848657415032331/1216623652399623
+2 off 1594. 1010.L.006 - Hinge_Plate Laser Cut,"1594.1010.L.006
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.461 kg
+Volume: 58694.643 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623652477901,https://app.asana.com/0/848657415032331/1216623652477901
+4 off 1594. 1010.L.007 - (Top_Clip_Part) Laser Cut,"1594.1010.L.007
+Material: Steel, Mild
+Thickness: 20.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.898 kg
+Volume: 114356.219 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216623738477553,https://app.asana.com/0/848657415032331/1216623738477553
+1 off 1594. 1010.L.011 - (Lift_Leg_Lateral) Laser Cut,"1594.1010.L.011
+Material: Steel, Mild
+Thickness: 20.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 27.769 kg
+Volume: 3537485.585 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623587842852,https://app.asana.com/0/848657415032331/1216623587842852
+1 off 1594. 1010.L.011_MIR - (Lift_Leg_Lateral) Laser Cut,"1594.1010.L.011_MIR
+Material: Steel, Mild
+Thickness: 20.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 27.769 kg
+Volume: 3537485.585 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623850783280,https://app.asana.com/0/848657415032331/1216623850783280
+1 off 1594. 1010.L.012 - (Lift_Leg_Medial) Laser Cut,"1594.1010.L.012
+Material: Steel, Mild
+Thickness: 20.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 27.105 kg
+Volume: 3452929.593 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623652563503,https://app.asana.com/0/848657415032331/1216623652563503
+1 off 1594. 1010.L.012_MIR - (Lift_Leg_Medial) Laser Cut,"1594.1010.L.012_MIR
+Material: Steel, Mild
+Thickness: 20.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 27.105 kg
+Volume: 3452929.593 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623587649087,https://app.asana.com/0/848657415032331/1216623587649087
+2 off 1594. 1010.L.013 - Bottom_WheelTrack 304/2B Laser Cut,"1594.1010.L.013
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 1.005 kg
+Volume: 125607.423 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623558063125,https://app.asana.com/0/848657415032331/1216623558063125
+2 off 1594. 1010.L.014 - Scissor Lift fixing Laser Cut,"1594.1010.L.014
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.197 kg
+Volume: 25093.128 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623652454024,https://app.asana.com/0/848657415032331/1216623652454024
+10 off 1594. 1010.L.017 - Bottom Packer for Bearing Yellow Zinc Plated Laser Cut,"1594.1010.L.017
+KAN: KAN-348
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267457
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.034 kg
+Volume: 4344.234 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,,Laser Cut,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216623851169828,https://app.asana.com/0/848657415032331/1216623851169828
+2 off 1594. 1010.L.018 - Bottom Hinge Template Laser Cut,"1594.1010.L.018
+KAN: KAN-696
+KAN Stock Link: https://app.asana.com/0/632603478911321/1211647530696130
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.122 kg
+Volume: 15516.504 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623738633549,https://app.asana.com/0/848657415032331/1216623738633549
+2 off 1594. 1010.L.019 - Top Hinge Template Laser Cut,"1594.1010.L.019
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.134 kg
+Volume: 17094.903 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623811853647,https://app.asana.com/0/848657415032331/1216623811853647
+2 off 1594. 1010.L.020 - pin fixing plate Laser Cut,"1594.1010.L.020
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.118 kg
+Volume: 14983.994 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623558063140,https://app.asana.com/0/848657415032331/1216623558063140
+2 off 1594. 1010.L.023 - pin fixing plate Laser Cut,"1594.1010.L.023
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.074 kg
+Volume: 9468.693 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623652949496,https://app.asana.com/0/848657415032331/1216623652949496
+1 off 1594. 1010.L.025 - Top table Laser Cut,"1594.1010.L.025
+Material: Steel, Mild
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 101.567 kg
+Volume: 12938410.792 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623812073736,https://app.asana.com/0/848657415032331/1216623812073736
+1 off 1594. 1010.L.026 - Top table end sheet Laser Cut,"1594.1010.L.026
+Material: Steel, Mild
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 3.302 kg
+Volume: 420602.735 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623738840786,https://app.asana.com/0/848657415032331/1216623738840786
+3 off 1594. 1010.L.035 - Spine Laser Cut,"1594.1010.L.035
+Material: Steel, Mild
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 1.242 kg
+Volume: 158172.743 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,3,Laser Cut,,,,ORDER,PROJECT ORDER,1216623588225974,https://app.asana.com/0/848657415032331/1216623588225974
+3 off 1594. 1010.L.036 - Spine Laser Cut,"1594.1010.L.036
+Material: Steel, Mild
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.997 kg
+Volume: 126972.743 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,3,Laser Cut,,,,ORDER,PROJECT ORDER,1216623851004414,https://app.asana.com/0/848657415032331/1216623851004414
+2 off 1594. 1010.L.048 - Flat Laser Cut,"1594.1010.L.048
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.094 kg
+Volume: 12023.470 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623653024723,https://app.asana.com/0/848657415032331/1216623653024723
+2 off 1594. 1010.L.049 - Angle Laser Cut,"1594.1010.L.049
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.100 kg
+Volume: 12730.035 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623812231927,https://app.asana.com/0/848657415032331/1216623812231927
+2 off 1594. 1010.L.051 - Actuator Bracket Base 304/HR Laser Cut,"1594.1010.L.051
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.058 kg
+Volume: 7287.417 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623738966033,https://app.asana.com/0/848657415032331/1216623738966033
+1 off 1594. 1010.L.053 - Spine Laser Cut,"1594.1010.L.053
+Material: Steel, Mild
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 1.085 kg
+Volume: 138172.743 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623588098687,https://app.asana.com/0/848657415032331/1216623588098687
+2 off 1594. 1010.L.058 - Rubber buffer fixing plate Laser Cut,"1594.1010.L.058
+Material: Steel, Mild
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.226 kg
+Volume: 28767.172 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623588434550,https://app.asana.com/0/848657415032331/1216623588434550
+2 off 1594. 1010.L.059 - Rubber buffer flat Laser Cut,"1594.1010.L.059
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.182 kg
+Volume: 23191.261 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623739053243,https://app.asana.com/0/848657415032331/1216623739053243
+1 off 1594. 1010.L.060 - Laser sensor bracket 304/2B Laser Cut,"1594.1010.L.060
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.053 kg
+Volume: 6624.740 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623811944487,https://app.asana.com/0/848657415032331/1216623811944487
+1 off 1594. 1010.L.061 - Ramp fixing flat 304/2B Laser Cut,"1594.1010.L.061
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 6.139 kg
+Volume: 767428.832 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623851225776,https://app.asana.com/0/848657415032331/1216623851225776
+2 off 1594. 1010.L.062 - Ramp side bracket 304/2B Laser Cut,"1594.1010.L.062
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.213 kg
+Volume: 26678.972 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623738656822,https://app.asana.com/0/848657415032331/1216623738656822
+2 off 1594. 1010.L.063 - Bracket 304/HR Laser Cut,"1594.1010.L.063
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.179 kg
+Volume: 22340.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623738738281,https://app.asana.com/0/848657415032331/1216623738738281
+1 off 1594. 1010.L.064 - Ramp 304/DP1 Laser Cut,"1594.1010.L.064
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 11.112 kg
+Volume: 1388988.691 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623812073748,https://app.asana.com/0/848657415032331/1216623812073748
+7 off 1594. 1010.L.065 - Stiffener 304/HR Laser Cut,"1594.1010.L.065
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.462 kg
+Volume: 57703.805 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,7,Laser Cut,,,,ORDER,PROJECT ORDER,1216623851387990,https://app.asana.com/0/848657415032331/1216623851387990
+2 off 1594. 1010.L.069 - Aluflex bracket Laser Cut,"1594.1010.L.069
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.073 kg
+Volume: 9303.412 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216637550090923,https://app.asana.com/0/848657415032331/1216637550090923
+1 off 1594. 1010.L.070 - Scissor lift rear fold Laser Cut,"1594.1010.L.070
+Material: Steel, Mild
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 2.878 kg
+Volume: 366593.801 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623851788001,https://app.asana.com/0/848657415032331/1216623851788001
+2 off 1594. 1010.L.071 - Roller shutter blind clamp 304/2B Laser Cut,"1594.1010.L.071
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.008 kg
+Volume: 1054.875 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623652525840,https://app.asana.com/0/848657415032331/1216623652525840
+2 off 1594. 1010.L.077 - Override bracket Laser Cut,"1594.1010.L.077
+Material: Steel, Mild
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.225 kg
+Volume: 28634.061 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623738953351,https://app.asana.com/0/848657415032331/1216623738953351
+2 off 1594. 1010.L.078 - Stiffener Laser Cut,"1594.1010.L.078
+Material: Steel, Mild
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.126 kg
+Volume: 16097.073 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623588228362,https://app.asana.com/0/848657415032331/1216623588228362
+2 off 1594. 1010.L.083 - Pivot end flat Laser Cut,"1594.1010.L.083
+Material: Steel, Mild
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.127 kg
+Volume: 16188.660 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623588532392,https://app.asana.com/0/848657415032331/1216623588532392
+4 off 1594. 1010.L.085 - Scissor Lift fixing Laser Cut,"1594.1010.L.085
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.078 kg
+Volume: 9998.726 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216623588464859,https://app.asana.com/0/848657415032331/1216623588464859
+1 off 1594. 1010.L.090 - Cover sheet 304/DP1 Laser Cut,"1594.1010.L.090
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 15.111 kg
+Volume: 1888919.938 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623912165722,https://app.asana.com/0/848657415032331/1216623912165722
+1 off 1594. 1010.L.090_MIR - Cover sheet 304/DP1 Laser Cut,"1594.1010.L.090_MIR
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 15.111 kg
+Volume: 1888919.938 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623812351558,https://app.asana.com/0/848657415032331/1216623812351558
+1 off 1594. 1010.L.092 - Trim 304/DP1 Laser Cut,"1594.1010.L.092
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 1.891 kg
+Volume: 236396.912 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623588532404,https://app.asana.com/0/848657415032331/1216623588532404
+1 off 1594. 1010.L.093 - Trim 304/DP1 Laser Cut,"1594.1010.L.093
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 1.972 kg
+Volume: 246496.912 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623912304616,https://app.asana.com/0/848657415032331/1216623912304616
+2 off 1594. 1010.L.096 - Trim 304/2B Laser Cut,"1594.1010.L.096
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.433 kg
+Volume: 54167.875 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623812804600,https://app.asana.com/0/848657415032331/1216623812804600
+4 off 1594. 1010.L.099 - Wheel Bracket 304/HR Laser Cut,"1594.1010.L.099
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.200 kg
+Volume: 24967.646 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216623588524976,https://app.asana.com/0/848657415032331/1216623588524976
+4 off 1594. 1010.L.099_MIR - Wheel Bracket 304/HR Laser Cut,"1594.1010.L.099_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.200 kg
+Volume: 24967.646 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216623832180385,https://app.asana.com/0/848657415032331/1216623832180385
+1 off 1594. 1010.L.102 - Channel Packers 304/HR Laser Cut,"1594.1010.L.102
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.201 kg
+Volume: 25081.748 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623739560889,https://app.asana.com/0/848657415032331/1216623739560889
+1 off 1594. 1010.L.102_MIR - Channel Packers 304/HR Laser Cut,"1594.1010.L.102_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.201 kg
+Volume: 25081.748 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623811853778,https://app.asana.com/0/848657415032331/1216623811853778
+2 off 1594. 1010.L.107 - Channel limit plate 304/2B Laser Cut,"1594.1010.L.107
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.005 kg
+Volume: 636.566 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623912347429,https://app.asana.com/0/848657415032331/1216623912347429
+2 off 1594. 1010.L.110 - Packer 304/2B Laser Cut,"1594.1010.L.110
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.053 kg
+Volume: 6564.351 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216623812861638,https://app.asana.com/0/848657415032331/1216623812861638
+1 off 1594. 1010.L.111 - Angle Laser Cut,"1594.1010.L.111
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.260 kg
+Volume: 33101.137 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623831879819,https://app.asana.com/0/848657415032331/1216623831879819
+1 off 1594. 1010.L.111_MIR - Angle Laser Cut,"1594.1010.L.111_MIR
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.260 kg
+Volume: 33101.137 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623912359801,https://app.asana.com/0/848657415032331/1216623912359801
+8 off 1594. 1010.L.115 - Packers 304/2B Laser Cut,"1594.1010.L.115
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.021 kg
+Volume: 2686.265 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,8,Laser Cut,,,,ORDER,PROJECT ORDER,1216623832266310,https://app.asana.com/0/848657415032331/1216623832266310
+4 off 1594. 1010.L.116 - Packers 304/2B Laser Cut,"1594.1010.L.116
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.014 kg
+Volume: 1777.265 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216623911935683,https://app.asana.com/0/848657415032331/1216623911935683
+1 off 1594. 1010.L.118 - Template Laser Cut,"1594.1010.L.118
+Material: Steel, Mild
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.263 kg
+Volume: 33532.009 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623813001902,https://app.asana.com/0/848657415032331/1216623813001902
+1 off 1594. 1010.L.119 - Template Laser Cut,"1594.1010.L.119
+Material: Steel, Mild
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.225 kg
+Volume: 28719.091 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Laser Cut - 1594 - St Mary Scissor Lift BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216623812268350,https://app.asana.com/0/848657415032331/1216623812268350
+Machining BOM - 1594 - St Mary Scissor Lift BOM,,ALL BOMS - 1594 - St Mary Scissor Lift BOM,,Machining,,,,,,,
+Machining - 1594 - St Mary Scissor Lift BOM,,Machining BOM - 1594 - St Mary Scissor Lift BOM,,Machining,,,,,,,
+4 off 1594. 1010.L.010 - Tube 31.75x7.94 (after machining 30mm OD 16mm ID) Machining,"1594.1010.L.010
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.119 kg
+Volume: 14668.096 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Machining - 1594 - St Mary Scissor Lift BOM,4,Machining,,,,ORDER,PROJECT ORDER,1216623851866249,https://app.asana.com/0/848657415032331/1216623851866249
+Plastics Supplier - 1594 - St Mary Scissor Lift BOM,,Machining BOM - 1594 - St Mary Scissor Lift BOM,,Plastics Supplier,,,,,,,
+2 off 1594. 1010.L.039 - Sheet Plastics Supplier,"1594.1010.L.039
+Material: Tufnol
+Web Link: https://www.directplastics.co.uk/tufnol-sheet
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.001 kg
+Volume: 1407.434 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Plastics Supplier - 1594 - St Mary Scissor Lift BOM,2,Plastics Supplier,,,,ORDER,PROJECT ORDER,1216623912019098,https://app.asana.com/0/848657415032331/1216623912019098
+4 off 1594. 1010.L.046 - Cap Machining,"1594.1010.L.046
+Material: Aluminum 5083
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.002 kg
+Volume: 671.415 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Machining - 1594 - St Mary Scissor Lift BOM,4,Machining,,,,ORDER,PROJECT ORDER,1216637618856388,https://app.asana.com/0/848657415032331/1216637618856388
+2 off 1594. 1010.L.047 - Shear Pin Machining,"1594.1010.L.047
+Material: Aluminum 5083
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.004 kg
+Volume: 1649.596 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Machining - 1594 - St Mary Scissor Lift BOM,2,Machining,,,,ORDER,PROJECT ORDER,1216623653247333,https://app.asana.com/0/848657415032331/1216623653247333
+1 off 1594. 1010.L.067 - Acetal strip Machining,"1594.1010.L.067
+Material: Acetal Resin, Black
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.228 kg
+Volume: 160072.448 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Machining - 1594 - St Mary Scissor Lift BOM,1,Machining,,,,ORDER,PROJECT ORDER,1216623912266734,https://app.asana.com/0/848657415032331/1216623912266734
+2 off 1594. 1010.L.079 - Pivot Bearing Machining,"1594.1010.L.079
+Material: Steel, Mild
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 1.234 kg
+Volume: 157158.172 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Machining - 1594 - St Mary Scissor Lift BOM,2,Machining,,,,ORDER,PROJECT ORDER,1216623851642093,https://app.asana.com/0/848657415032331/1216623851642093
+2 off 1594. 1010.L.081 - Pivot bearing Machining,"1594.1010.L.081
+Material: Steel, Mild
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.785 kg
+Volume: 100044.018 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Machining - 1594 - St Mary Scissor Lift BOM,2,Machining,,,,ORDER,PROJECT ORDER,1216623912607526,https://app.asana.com/0/848657415032331/1216623912607526
+2 off 1594. 1010.L.084 - Pivot block Machining,"1594.1010.L.084
+Material: Steel, Mild
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 1.296 kg
+Volume: 165150.181 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Machining - 1594 - St Mary Scissor Lift BOM,2,Machining,,,,ORDER,PROJECT ORDER,1216623739800393,https://app.asana.com/0/848657415032331/1216623739800393
+2 off 1594. 1010.L.089 - Pivot block Machining,"1594.1010.L.089
+Material: Steel, Mild
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 1.195 kg
+Volume: 152166.765 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Machining - 1594 - St Mary Scissor Lift BOM,2,Machining,,,,ORDER,PROJECT ORDER,1216623812351578,https://app.asana.com/0/848657415032331/1216623812351578
+4 off 1594. 1010.L.105 - Bush Machining,"1594.1010.L.105
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Steel, Mild
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.086 kg
+Volume: 10995.574 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Machining - 1594 - St Mary Scissor Lift BOM,,Machining,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216623739677531,https://app.asana.com/0/848657415032331/1216623739677531
+2 off 1594. 1010.L15 - Bracket Machining,"1594.1010.L15
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.176 kg
+Volume: 21990.743 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Machining - 1594 - St Mary Scissor Lift BOM,2,Machining,,,,ORDER,PROJECT ORDER,1216623852255317,https://app.asana.com/0/848657415032331/1216623852255317
+1 off 1594. 1010.L35 - Aluflex top flat machined Machining,"1594.1010.L35
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 2.317 kg
+Volume: 858148.453 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Machining - 1594 - St Mary Scissor Lift BOM,1,Machining,,,,ORDER,PROJECT ORDER,1216623832190278,https://app.asana.com/0/848657415032331/1216623832190278
+Marine Lacquer - 1594 - St Mary Scissor Lift BOM,,Surface Finish BOM - 1594 - St Mary Scissor Lift BOM,,Marine Lacquer,,,,,,,
+2 off Marine Lacquer 1594. 1010.L.047 - Shear Pin,"1594.1010.L.047
+Material: Aluminum 5083
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.004 kg
+Volume: 1649.596 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Marine Lacquer - 1594 - St Mary Scissor Lift BOM,2,Marine Lacquer,,,,ORDER,PROJECT ORDER,1216623739394455,https://app.asana.com/0/848657415032331/1216623739394455
+4 off Marine Lacquer 1594. 1010.L.046 - Cap,"1594.1010.L.046
+Material: Aluminum 5083
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.002 kg
+Volume: 671.415 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Marine Lacquer - 1594 - St Mary Scissor Lift BOM,4,Marine Lacquer,,,,ORDER,PROJECT ORDER,1216623851267112,https://app.asana.com/0/848657415032331/1216623851267112
+NBSS BOM - 1594 - St Mary Scissor Lift BOM,,ALL BOMS - 1594 - St Mary Scissor Lift BOM,,NBSS,,,,,,,
+NBSS/Welded by Sesame - 1594 - St Mary Scissor Lift BOM,,NBSS BOM - 1594 - St Mary Scissor Lift BOM,,NBSS/Welded by Sesame,,,,,,,
+4 off 1594. 040.02 - NBSS.040.02 Welded Assembly NBSS/Welded by Sesame,"1594.040.02
+KAN: KAN-298
+KAN Stock Link: https://app.asana.com/0/632603478911321/1200317103586535
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.110 kg
+Volume: 13853.362 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",NBSS/Welded by Sesame - 1594 - St Mary Scissor Lift BOM,,NBSS/Welded by Sesame,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216623912860395,https://app.asana.com/0/848657415032331/1216623912860395
+Sesame BOM - 1594 - St Mary Scissor Lift BOM,,ALL BOMS - 1594 - St Mary Scissor Lift BOM,,Sesame,,,,,,,
+Blickle - 1594 - St Mary Scissor Lift BOM,,Sesame BOM - 1594 - St Mary Scissor Lift BOM,,Blickle,,,,,,,
+4 off 1594. 1000.A9.001 - Guide roller FTH 34x16/8-7K Blickle,"1594.1000.A9.001
+Stock Number: FTH 34x16/8-7K
+Material: Generic
+Web Link: https://www.blickle.co.uk/product/fth-34x16-8-7k-463737
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.011 kg
+Volume: 11273.856 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Blickle - 1594 - St Mary Scissor Lift BOM,4,Blickle,,,,ORDER,PROJECT ORDER,1216623831857754,https://app.asana.com/0/848657415032331/1216623831857754
+Norelem - 1594 - St Mary Scissor Lift BOM,,Sesame BOM - 1594 - St Mary Scissor Lift BOM,,Norelem,,,,,,,
+"2 off 1594. 1000.B.50x40_M_M10_5000N - Rubber buffers, steel type KRA spherical 26116-0500401070 Norelem","1594.1000.B.50x40_M_M10_5000N
+Stock Number: 26116-0500401070
+Material: Generic
+Web Link: https://norelem.co.uk/en/Product-overview/Systems-and-components-for-machine-and-plant-construction/26000/Rubber-buffers/Rubber-buffers-steel-type-KRA-spherical-with-external-thread/p/agid.30622?q=%3A%3A104%3AM10%3A5%3A000000000000000060%2523%252360%3A5%3A000000000000000050%2523%252350%3AallowedBaseStoresForProducts%3AN_3000_10_10_uk%3A1189%3A000000000000005000%2523%25235000
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.079 kg
+Volume: 78721.064 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Norelem - 1594 - St Mary Scissor Lift BOM,2,Norelem,,,,ORDER,PROJECT ORDER,1216623852941558,https://app.asana.com/0/848657415032331/1216623852941558
+Concens - 1594 - St Mary Scissor Lift BOM,,Sesame BOM - 1594 - St Mary Scissor Lift BOM,,Concens,,,,,,,
+2 off 1594. 1000.N.Driver - conXion DIN Driver (one per actuator) conXion DIN Concens,"1594.1000.N.Driver
+Stock Number: conXion DIN
+Material: Generic
+Web Link: concens.com
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.209 kg
+Volume: 209308.730 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Concens - 1594 - St Mary Scissor Lift BOM,2,Concens,,,,ORDER,PROJECT ORDER,1216623852973460,https://app.asana.com/0/848657415032331/1216623852973460
+CONCENS - 1594 - St Mary Scissor Lift BOM,,Sesame BOM - 1594 - St Mary Scissor Lift BOM,,CONCENS,,,,,,,
+2 off 1594. 1000.N.Linear Actuator14_100_SDP_CLEVIS_1010L - Linear actuator SDP with clevis con-35 fork 100mm stroke 24V DC 3m cable 400N 1:14 Ratio 350100-143212C030000 CONCENS,"1594.1000.N.Linear Actuator14_100_SDP_CLEVIS_1010L
+Stock Number: 350100-143212C030000
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.800 kg
+Volume: 411574.345 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",CONCENS - 1594 - St Mary Scissor Lift BOM,2,CONCENS,,,,ORDER,PROJECT ORDER,1216623740655235,https://app.asana.com/0/848657415032331/1216623740655235
+Sesame - 1594 - St Mary Scissor Lift BOM,,Sesame BOM - 1594 - St Mary Scissor Lift BOM,,Sesame,,,,,,,
+"1 off 1594. 1008.A11.001 - Detection distance 2 m, Cable with connector M12, Laser Class 2 LR-TB2000C Sesame","1594.1008.A11.001
+Stock Number: LR-TB2000C
+Material: Generic
+Web Link: https://www.keyence.com/products/sensor/photoelectric/lr-t/models/lr-tb2000c/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.036 kg
+Volume: 35734.985 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Sesame - 1594 - St Mary Scissor Lift BOM,1,Sesame,,,,ORDER,PROJECT ORDER,1216623913403297,https://app.asana.com/0/848657415032331/1216623913403297
+VUBA - 1594 - St Mary Scissor Lift BOM,,Sesame BOM - 1594 - St Mary Scissor Lift BOM,,VUBA,,,,,,,
+"2 off 1594. 1008.H8.VUBA DIN T10L - Hydraulic Adjustment Hose Burst Valve DIN 2353, VUBA 3/8"" DIN T10L, max flow 50l/min, max pressure 350 Bar V0784 VUBA","1594.1008.H8.VUBA DIN T10L
+Stock Number: V0784
+Material: Stainless Steel
+Web Link: https://www.flowfitonline.com/categories/hydraulic-cartridge-valves/hose-burst-valves/hydraulic-hose-burst-valve-vuba-3-8-to-t10l-m16x1-5-din-2353
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.052 kg
+Volume: 6490.960 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",VUBA - 1594 - St Mary Scissor Lift BOM,2,VUBA,,,,ORDER,PROJECT ORDER,1216623833204315,https://app.asana.com/0/848657415032331/1216623833204315
+RS Components - 1594 - St Mary Scissor Lift BOM,,Sesame BOM - 1594 - St Mary Scissor Lift BOM,,RS Components,,,,,,,
+10 off 1594. 1008.T.13ID_P_Clip - Rubber-lined clamp; 13mm ID 298-8097 RS Components,"1594.1008.T.13ID_P_Clip
+Stock Number: 298-8097
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/p-clips/2988097/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.002 kg
+Volume: 1949.773 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",RS Components - 1594 - St Mary Scissor Lift BOM,10,RS Components,,,,ORDER,PROJECT ORDER,1216623833266254,https://app.asana.com/0/848657415032331/1216623833266254
+2 off 1594. 1008.T.25ID_Grommet - Grommet ID 18.5mm (Hole 25mm Dia.) Sesame,"1594.1008.T.25ID_Grommet
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.005 kg
+Volume: 5276.370 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Sesame - 1594 - St Mary Scissor Lift BOM,2,Sesame,,,,ORDER,PROJECT ORDER,1216623814039574,https://app.asana.com/0/848657415032331/1216623814039574
+Euro-Bearings - 1594 - St Mary Scissor Lift BOM,,Sesame BOM - 1594 - St Mary Scissor Lift BOM,,Euro-Bearings,,,,,,,
+"4 off 1594. 1010.L.009 - Bearing: 72 +0/-0,1 x 30 +0/-0,03 NUTR 30-72 Euro-Bearings","1594.1010.L.009
+Stock Number: NUTR 30-72
+Material: Stainless Steel
+Web Link: http://www.euro-bearings.com/NUTR23.htm
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.779 kg
+Volume: 97358.321 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Euro-Bearings - 1594 - St Mary Scissor Lift BOM,4,Euro-Bearings,,,,ORDER,PROJECT ORDER,1216623833201648,https://app.asana.com/0/848657415032331/1216623833201648
+DQR - 1594 - St Mary Scissor Lift BOM,,Sesame BOM - 1594 - St Mary Scissor Lift BOM,,DQR,,,,,,,
+1 off 1594. 1010.L.030 - RollerShutterBlind - Side PE580 Matt Tarpaulin Fabric dia. 34mm when rolled DQR,"1594.1010.L.030
+Stock Number: dia. 34mm when rolled
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 2.649 kg
+Volume: 2649111.129 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",DQR - 1594 - St Mary Scissor Lift BOM,1,DQR,,,,ORDER,PROJECT ORDER,1216623814116756,https://app.asana.com/0/848657415032331/1216623814116756
+Tape Switch - 1594 - St Mary Scissor Lift BOM,,Sesame BOM - 1594 - St Mary Scissor Lift BOM,,Tape Switch,,,,,,,
+1 off 1594. 1010.L.032 - TS6 Sensing Edge With Resistor TS6/Resistor Fitted/+End caps/ Tape Switch,"1594.1010.L.032
+Stock Number: TS6/Resistor Fitted/+End caps/
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.146 kg
+Volume: 146038.003 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Tape Switch - 1594 - St Mary Scissor Lift BOM,1,Tape Switch,,,,ORDER,PROJECT ORDER,1216623853462049,https://app.asana.com/0/848657415032331/1216623853462049
+Hennig - 1594 - St Mary Scissor Lift BOM,,Sesame BOM - 1594 - St Mary Scissor Lift BOM,,Hennig,,,,,,,
+1 off 1594. 1010.L.045 - Roller Shutter Blind Aluflex(ASS 100 travel) Hennig,"1594.1010.L.045
+Material: Aluminum 5083
+Thickness: 5.500 mm
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 2.379 kg
+Volume: 880973.453 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Hennig - 1594 - St Mary Scissor Lift BOM,1,Hennig,,,,ORDER,PROJECT ORDER,1216623814251397,https://app.asana.com/0/848657415032331/1216623814251397
+Fastenright - 1594 - St Mary Scissor Lift BOM,,Sesame BOM - 1594 - St Mary Scissor Lift BOM,,Fastenright,,,,,,,
+4 off 1594. 1010.L.074 - Socket Countersunk Barrel Nut M6 x 20 SB001 Fastenright,"1594.1010.L.074
+Stock Number: SB001
+Material: Stainless Steel
+Web Link: https://www.fastenright.com/general-fixings/socket-countersunk-barrel-nuts/sb001?gad_source=1&gad_campaignid=23596438501&gbraid=0AAAAAD-rLPEO54pCo6PeaVvkArE7LwjEy&gclid=CjwKCAjwgO7RBhBKEiwAZNP85jgM-sI68idHNzDJYWX-CR9bp_wcC6hbPQGqP3UuqtDLZ5iwB4bRahoCmNQQAvD_BwE
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.005 kg
+Volume: 685.063 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Fastenright - 1594 - St Mary Scissor Lift BOM,4,Fastenright,,,,ORDER,PROJECT ORDER,1216623741078625,https://app.asana.com/0/848657415032331/1216623741078625
+Bearing Supplier - 1594 - St Mary Scissor Lift BOM,,Sesame BOM - 1594 - St Mary Scissor Lift BOM,,Bearing Supplier,,,,,,,
+"2 off 1594. 1010.L.080 - igutex® TX3, cylindrical plain bearing TX3SM-4048-60 Bearing Supplier","1594.1010.L.080
+Stock Number: TX3SM-4048-60
+Material: Acetal Resin, Black
+Web Link: https://www.igus.co.uk/iglidur-ibh/sleeve-bearings/product-details/iglidur-tx3-m?artnr=TX3SM-4048-60#dimensions=d1%3A40&page=5&sortingBy=ascending-b1
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.047 kg
+Volume: 33175.218 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Bearing Supplier - 1594 - St Mary Scissor Lift BOM,2,Bearing Supplier,,,,ORDER,PROJECT ORDER,1216623913902240,https://app.asana.com/0/848657415032331/1216623913902240
+"6 off 1594. 1010.L.082 - iglidur® W300, thrust washer WTM-4266-015 Bearing Supplier","1594.1010.L.082
+Stock Number: WTM-4266-015
+Material: Acetal Resin, Black
+Web Link: https://www.igus.co.uk/iglidur-ibh/thrust-washers/product-details/iglidur-w300-m?artnr=WTM-4266-015#dimensions=b1%3A1.5&page=3&sortingBy=ascending-d1
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.004 kg
+Volume: 3053.628 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Bearing Supplier - 1594 - St Mary Scissor Lift BOM,6,Bearing Supplier,,,,ORDER,PROJECT ORDER,1216623741151645,https://app.asana.com/0/848657415032331/1216623741151645
+"4 off 1594. 1010.L.086 - iglidur® TX1, sleeve bearing TX1SM-2025-30 Bearing Supplier","1594.1010.L.086
+Stock Number: TX1SM-2025-30
+Material: Acetal Resin, Black
+Web Link: https://www.igus.co.uk/iglidur-ibh/sleeve-bearings/product-details/iglidur-tx1-m?artnr=TX1SM-2025-30#dimensions=d1%3A20&page=8&sortingBy=ascending-d2
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.008 kg
+Volume: 5301.438 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Bearing Supplier - 1594 - St Mary Scissor Lift BOM,4,Bearing Supplier,,,,ORDER,PROJECT ORDER,1216623913644534,https://app.asana.com/0/848657415032331/1216623913644534
+"4 off 1594. 1010.L.087 - iglidur® TX1, sleeve bearing TX1SM-2025-15 Bearing Supplier","1594.1010.L.087
+Stock Number: TX1SM-2025-15
+Material: Acetal Resin, Black
+Web Link: https://www.igus.co.uk/iglidur-ibh/sleeve-bearings/product-details/iglidur-tx1-m?artnr=TX1SM-2025-15#dimensions=d1%3A20&page=8&sortingBy=ascending-d2
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.004 kg
+Volume: 2650.719 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Bearing Supplier - 1594 - St Mary Scissor Lift BOM,4,Bearing Supplier,,,,ORDER,PROJECT ORDER,1216623741070924,https://app.asana.com/0/848657415032331/1216623741070924
+"8 off 1594. 1010.L.088 - iglidur® W300, thrust washer WTM-2238-015 Bearing Supplier","1594.1010.L.088
+Stock Number: WTM-2238-015
+Material: Acetal Resin, Black
+Web Link: https://www.igus.co.uk/iglidur-ibh/thrust-washers/product-details/iglidur-w300-m?artnr=WTM-2238-015#dimensions=b1%3A1.5&page=2&sortingBy=ascending-d1
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.002 kg
+Volume: 1130.973 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Bearing Supplier - 1594 - St Mary Scissor Lift BOM,8,Bearing Supplier,,,,ORDER,PROJECT ORDER,1216623741143894,https://app.asana.com/0/848657415032331/1216623741143894
+1 off 1594. 1010.L.109 - 3D Printed guide channel Sesame,"1594.1010.L.109
+Material: Acetal Resin, White Ultra
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.039 kg
+Volume: 27253.311 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Sesame - 1594 - St Mary Scissor Lift BOM,1,Sesame,,,,ORDER,PROJECT ORDER,1216623853578470,https://app.asana.com/0/848657415032331/1216623853578470
+1 off 1594. 1010.L.109_MIR - 3D Printed guide channel Sesame,"1594.1010.L.109_MIR
+Material: Acetal Resin, White Ultra
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.039 kg
+Volume: 27253.311 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Sesame - 1594 - St Mary Scissor Lift BOM,1,Sesame,,,,ORDER,PROJECT ORDER,1216623914113767,https://app.asana.com/0/848657415032331/1216623914113767
+"8 off 1594. 1010.L.112 - iglidur® J, sleeve bearing JSM-1620-20 Bearing Supplier","1594.1010.L.112
+Stock Number: JSM-1620-20
+Material: Acetal Resin, Black
+Web Link: https://www.igus.co.uk/iglidur-ibh/sleeve-bearings/product-details/iglidur-j-m?artnr=JSM-1620-20#dimensions=d1%3A16-d2%3A20
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.003 kg
+Volume: 2261.947 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Bearing Supplier - 1594 - St Mary Scissor Lift BOM,8,Bearing Supplier,,,,ORDER,PROJECT ORDER,1216623853894129,https://app.asana.com/0/848657415032331/1216623853894129
+"16 off 1594. 1010.L.113 - iglidur® W300, thrust washer WTM-1630-015 Bearing Supplier","1594.1010.L.113
+Stock Number: WTM-1630-015
+Material: Acetal Resin, Black
+Web Link: https://www.igus.co.uk/iglidur-ibh/thrust-washers/product-details/iglidur-w300-m?artnr=WTM-1630-015#dimensions=b1%3A1.5&page=2&sortingBy=ascending-d1
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.001 kg
+Volume: 758.695 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Bearing Supplier - 1594 - St Mary Scissor Lift BOM,16,Bearing Supplier,,,,ORDER,PROJECT ORDER,1216623833444567,https://app.asana.com/0/848657415032331/1216623833444567
+ABCO - 1594 - St Mary Scissor Lift BOM,,Sesame BOM - 1594 - St Mary Scissor Lift BOM,,ABCO,,,,,,,
+"2 off 1594. 1010.L.Actuator - CC:450 / Stroke: 250 mm, Single act. Ram RKHM23300250 ABCO","1594.1010.L.Actuator
+Stock Number: RKHM23300250
+Web Link: https://www.abcohydraulics.com/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Mass: 0.995 kg
+Volume: 995060.562 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",ABCO - 1594 - St Mary Scissor Lift BOM,2,ABCO,,,,ORDER,PROJECT ORDER,1216623853978419,https://app.asana.com/0/848657415032331/1216623853978419
+2 off 1594. Elbow 3'8 BSPP Hydraulic Adaptor - Elbow 3'8 BSPP Hydraulic Adaptor Sesame,"1594.Elbow 3'8 BSPP Hydraulic Adaptor
+Material: Generic
+Web Link: https://hydraquip.co.uk/product/bspp-male-x-bspp-swivel-female-90-swept-elbow-60-cone-90-elbow-hydraulic-adaptor/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/d2t08k092k6y5jeldy59n/ALDghWa7LzC_LrlKkwKDmTg?rlkey=g17585v6hgzfjr7c966s1kwby&dl=0
+Project Task: https://app.asana.com/1/357939803556123/task/1216588901129430?focus=true",Sesame - 1594 - St Mary Scissor Lift BOM,2,Sesame,,,,ORDER,PROJECT ORDER,1216623814835365,https://app.asana.com/0/848657415032331/1216623814835365

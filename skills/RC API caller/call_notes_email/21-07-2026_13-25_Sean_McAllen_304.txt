@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  21/07/2026  13:25
+============================================================
+With:         Sean McAllen 304
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a brief call between Sean McAllen and Giles Hugo regarding the availability of a specific cable for a project. Giles confirmed that they have 7 units of the required cable in stock and will verify this with Richard. Sean expressed that the cable length is flexible, and they aim to send it back the next morning if needed.
+
+--- RECAP --------------------------------------------------
+Sean McAllen inquired about the availability of a 500mm or longer cable for a project, indicating flexibility in length and a quick turnaround to send it back if necessary.Giles Hugo confirmed that they have 7 units of the specified 3-core curly cable in stock and will confirm this stock level with Richard.Giles indicated that the stock information will be sent to Richard for confirmation, and both parties agreed on the current stock status.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send the stock confirmation of 7 units of the 3-core curly cable to Richard.
+
+(Full transcript: RC web portal only — no RingSense API)

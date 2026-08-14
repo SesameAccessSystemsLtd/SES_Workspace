@@ -1,0 +1,29 @@
+{
+  "runs": [
+    {
+      "run_date": "2026-03-27T16:06:34.937919",
+      "mode": "full",
+      "status": "success",
+      "scraped": 0,
+      "enriched": 0,
+      "hubspot_pushed": 0,
+      "errors": [],
+      "duration_seconds": 12.908015
+    },
+    {
+      "run_date": "2026-03-27T16:12:54.319276",
+      "mode": "full",
+      "status": "success",
+      "scraped": 2,
+      "enriched": 0,
+      "hubspot_pushed": 0,
+      "errors": [],
+      "hubspot_cooldown_skipped": 0,
+      "hubspot_no_email": 0,
+      "hubspot_queued_to_email": 0,
+      "emails_sent": 0,
+      "emails_failed": 0,
+      "duration_seconds": 171.70869
+    }
+  ]
+}

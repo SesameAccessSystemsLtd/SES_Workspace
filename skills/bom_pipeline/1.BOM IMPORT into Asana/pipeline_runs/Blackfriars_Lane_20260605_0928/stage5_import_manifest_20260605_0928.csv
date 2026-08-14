@@ -1,0 +1,1518 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date
+ALL BOMS - Blackfriars Lane,Blackfriars Lane,,,,,,
+Engraving BOM - Blackfriars Lane,,ALL BOMS - Blackfriars Lane,,Engraving,,,
+Engraving - Blackfriars Lane,,Engraving BOM - Blackfriars Lane,,Engraving,,,
+1 off 1670. 1016.1.1 - 6 Buttons Face Plate - Engraving Engraving,"1670.1016.1.1
+From Cost Centre Engraving
+Link to BOM: 
+Mass: 0.376 kg
+Volume: 46585.841 mm^3
+Project Task: ",Engraving - Blackfriars Lane,1,Engraving,,,
+1 off 1670. 1016.H1 - SWLPlate.OneWheelchairUser- Engraved Engraving,"1670.1016.H1
+From Cost Centre Engraving
+Link to BOM: 
+Mass: 0.159 kg
+Volume: 19892.097 mm^3
+Project Task: ",Engraving - Blackfriars Lane,1,Engraving,,,
+1 off 1670. 1016.E3 - Call For Assistance Face Plate - Engraving Engraving,"1670.1016.E3
+From Cost Centre Engraving
+Link to BOM: 
+Mass: 0.232 kg
+Volume: 29118.516 mm^3
+Project Task: 
+---
+NOTES: Rev_1 - part added",Engraving - Blackfriars Lane,1,Engraving,,,
+Surface Finish BOM - Blackfriars Lane,,ALL BOMS - Blackfriars Lane,,Surface Finish BOM,,,
+Galvanising - Blackfriars Lane,,Surface Finish BOM - Blackfriars Lane,,Galvanising,,,
+1 off Galvanising 1670. 768 - NBSS.768 Machine Room Cabinet Frame,"1670.768
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 24.659 kg
+Volume: 3141298.763 mm^3
+Project Task: ",Galvanising - Blackfriars Lane,1,Galvanising,,,
+Anodising - Blackfriars Lane,,Surface Finish BOM - Blackfriars Lane,,Anodising,,,
+1 off Anodising 1670. 1002.G.027 - Pit Trim Side Panel,"1670.1002.G.027
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 3.031 kg
+Volume: 1122749.846 mm^3
+Project Task: ",Anodising - Blackfriars Lane,,Anodising,purchasing@sesameaccess.com,,
+1 off Anodising 1670. 1002.G.032 - Pit Trim Side Panel,"1670.1002.G.032
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 3.111 kg
+Volume: 1152329.559 mm^3
+Project Task: ",Anodising - Blackfriars Lane,,Anodising,purchasing@sesameaccess.com,,
+1 off Anodising 1670. 1002.G.033 - Pit Trim Back Panel,"1670.1002.G.033
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 2.749 kg
+Volume: 1018261.336 mm^3
+Project Task: ",Anodising - Blackfriars Lane,,Anodising,purchasing@sesameaccess.com,,
+2 off Galvanising 1670. 1004.T2w - Sub Assembly,"1670.1004.T2w
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 3.409 kg
+Volume: 434304.233 mm^3
+Project Task: ",Galvanising - Blackfriars Lane,2,Galvanising,,,
+2 off Galvanising 1670. 1004.T3w - Sub Assembly,"1670.1004.T3w
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 27.011 kg
+Volume: 3440875.808 mm^3
+Project Task: ",Galvanising - Blackfriars Lane,2,Galvanising,,,
+2 off Galvanising 1670. 1004.T4w - Sub Assembly,"1670.1004.T4w
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 27.011 kg
+Volume: 3440875.808 mm^3
+Project Task: ",Galvanising - Blackfriars Lane,2,Galvanising,,,
+2 off Galvanising 1670. 1004.T5w - Sub Assembly,"1670.1004.T5w
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 6.404 kg
+Volume: 815761.809 mm^3
+Project Task: ",Galvanising - Blackfriars Lane,2,Galvanising,,,
+2 off Galvanising 1670. 1004.T6w - Welded Asembly,"1670.1004.T6w
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 9.845 kg
+Volume: 1254130.008 mm^3
+Project Task: ",Galvanising - Blackfriars Lane,2,Galvanising,,,
+4 off Galvanising 1670. 1004.T7w - Triangular bracket,"1670.1004.T7w
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 2.093 kg
+Volume: 266647.788 mm^3
+Project Task: ",Galvanising - Blackfriars Lane,4,Galvanising,,,
+4 off Galvanising 1670. 1004.T8w - Welded bracket,"1670.1004.T8w
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 1.403 kg
+Volume: 178709.381 mm^3
+Project Task: ",Galvanising - Blackfriars Lane,4,Galvanising,,,
+Yellow Zinc Plating - Blackfriars Lane,,Surface Finish BOM - Blackfriars Lane,,Yellow Zinc Plating,,,
+8 off Yellow Zinc Plating 1670. 8000.A.009 - Step leg,"1670.8000.A.009
+Material: Steel, Mild
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 7.655 kg
+Volume: 975210.633 mm^3
+Project Task: ",Yellow Zinc Plating - Blackfriars Lane,8,Yellow Zinc Plating,,,
+10 off Galvanising 1670. 8000.A.182 - Additional Weight,"1670.8000.A.182
+Material: Steel
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 11.736 kg
+Volume: 1494973.452 mm^3
+Project Task: ",Galvanising - Blackfriars Lane,10,Galvanising,,,
+1 off Galvanising 1670. 8000.B3w - Welded Assembly,"1670.8000.B3w
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 41.403 kg
+Volume: 5274232.985 mm^3
+Project Task: ",Galvanising - Blackfriars Lane,1,Galvanising,,,
+1 off Galvanising 1670. 8000.B6w - Welded Assembly,"1670.8000.B6w
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 17.139 kg
+Volume: 2183351.924 mm^3
+Project Task: ",Galvanising - Blackfriars Lane,1,Galvanising,,,
+1 off Galvanising 1670. 8000.B6w_MIR - Welded Assembly,"1670.8000.B6w_MIR
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 17.139 kg
+Volume: 2183351.924 mm^3
+Project Task: ",Galvanising - Blackfriars Lane,1,Galvanising,,,
+2 off Galvanising 1670. 8000.B7w - Welded Assembly,"1670.8000.B7w
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 6.421 kg
+Volume: 817915.233 mm^3
+Project Task: ",Galvanising - Blackfriars Lane,2,Galvanising,,,
+2 off Galvanising 1670. 8000.B7w_MIR - Welded Assembly,"1670.8000.B7w_MIR
+From Cost Centre Finishes BOM
+Link to BOM: 
+Mass: 6.421 kg
+Volume: 817915.233 mm^3
+Project Task: ",Galvanising - Blackfriars Lane,2,Galvanising,,,
+Laser Cut BOM - Blackfriars Lane,,ALL BOMS - Blackfriars Lane,,Laser Cut,,,
+Laser Cut - Blackfriars Lane,,Laser Cut BOM - Blackfriars Lane,,Laser Cut,,,
+16 off 1670. 1002.G.018 - Corner bracket 304/HR Laser Cut,"1670.1002.G.018
+Stock Number: 304/HR
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.493 kg
+Volume: 61569.679 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,16,Laser Cut,,,
+1 off 1670. 1002.G.021 - SWLP support 304/2B Laser Cut,"1670.1002.G.021
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.234 kg
+Volume: 29297.285 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,,Laser Cut,purchasing@sesameaccess.com,,
+1 off 1670. 1002.G.022 - Packer 304/2B Laser Cut,"1670.1002.G.022
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.078 kg
+Volume: 9697.949 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,,Laser Cut,purchasing@sesameaccess.com,,
+1 off 1670. 1002.G.027 - Pit Trim Side Panel Laser Cut,"1670.1002.G.027
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 3.031 kg
+Volume: 1122749.846 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,,Laser Cut,purchasing@sesameaccess.com,,
+1 off 1670. 1002.G.030 - Pit Trim Front Panel 304/2B Laser Cut,"1670.1002.G.030
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 3.078 kg
+Volume: 384811.280 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,,Laser Cut,purchasing@sesameaccess.com,,
+1 off 1670. 1002.G.031 - Pit Trim Front Plate 304/HR Laser Cut,"1670.1002.G.031
+Stock Number: 304/HR
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 16.493 kg
+Volume: 2061637.801 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,,Laser Cut,purchasing@sesameaccess.com,,
+1 off 1670. 1002.G.032 - Pit Trim Side Panel Laser Cut,"1670.1002.G.032
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 3.111 kg
+Volume: 1152329.559 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,,Laser Cut,purchasing@sesameaccess.com,,
+1 off 1670. 1002.G.033 - Pit Trim Back Panel Laser Cut,"1670.1002.G.033
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 2.749 kg
+Volume: 1018261.336 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,,Laser Cut,purchasing@sesameaccess.com,,
+4 off 1670. 1002.G.039 - Pit Trim Side Track 304/2B Laser Cut,"1670.1002.G.039
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.337 kg
+Volume: 42163.223 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,,Laser Cut,purchasing@sesameaccess.com,,
+1 off 1670. 1002.G.042 - Side small panel 304/2B Laser Cut,"1670.1002.G.042
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.230 kg
+Volume: 28718.072 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,,Laser Cut,purchasing@sesameaccess.com,,
+1 off 1670. 1002.G.042_MIR - Side small panel 304/2B Laser Cut,"1670.1002.G.042_MIR
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.230 kg
+Volume: 28718.072 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,,Laser Cut,purchasing@sesameaccess.com,,
+1 off 1670. 1002.G.048 - Magnet bracket 304/2B Laser Cut,"1670.1002.G.048
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.055 kg
+Volume: 6933.423 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,,Laser Cut,purchasing@sesameaccess.com,,
+4 off 1670. 1004.T.005 - (Plate.Bot) Laser Cut,"1670.1004.T.005
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.724 kg
+Volume: 92215.770 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,4,Laser Cut,,,
+4 off 1670. 1004.T.008 - (Box.Spine.Side.Plate) Laser Cut,"1670.1004.T.008
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 1.089 kg
+Volume: 138734.580 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,4,Laser Cut,,,
+4 off 1670. 1004.T.009 - (I-Beam.BasePlate) Laser Cut,"1670.1004.T.009
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 1.342 kg
+Volume: 170948.718 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,4,Laser Cut,,,
+4 off 1670. 1004.T.014 - (Box.Spine.Plate) Laser Cut,"1670.1004.T.014
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.582 kg
+Volume: 74156.461 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,4,Laser Cut,,,
+4 off 1670. 1004.T.019 - Gusset Laser Cut,"1670.1004.T.019
+Material: Steel, Mild
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.147 kg
+Volume: 18762.000 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,4,Laser Cut,,,
+4 off 1670. 1004.T.027 - Welded flat Laser Cut,"1670.1004.T.027
+Material: Steel, Mild
+Thickness: 8.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.314 kg
+Volume: 39974.801 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,4,Laser Cut,,,
+1 off 1670. 1008.C.003 - Plate to E-stop under lift 304/HR Laser Cut,"1670.1008.C.003
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.285 kg
+Volume: 35596.235 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+1 off 1670. 1008.D.112 - Valve Plate No Ext. 304/HR Laser Cut,"1670.1008.D.112
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.828 kg
+Volume: 103454.377 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+1 off 1670. 1016.E.001 - (BackPlate) 304/DP1 Laser Cut,"1670.1016.E.001
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.571 kg
+Volume: 71419.509 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+1 off 1670. 1016.E.002 - (BackingBoxA) 304/DP1 Laser Cut,"1670.1016.E.002
+Stock Number: 304/DP1
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 1.500 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.464 kg
+Volume: 57994.719 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,,Laser Cut,purchasing@sesameaccess.com,,
+1 off 1670. 1016.E.004 - Call for Assistance - Face Plate 304/DP1 Laser Cut,"1670.1016.E.004
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.232 kg
+Volume: 28939.801 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+1 off 1670. 1055.A.004 - Tube Base Plate 304/HR Laser Cut,"1670.1055.A.004
+Stock Number: 304/HR
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.112 kg
+Volume: 13804.562 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,,Laser Cut,purchasing@sesameaccess.com,,
+1 off 1670. 1055.A.030 - Steel plate 304/DP1 Laser Cut,"1670.1055.A.030
+Stock Number: 304/DP1
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.040 kg
+Volume: 5024.648 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,,Laser Cut,purchasing@sesameaccess.com,,
+2 off 1670. 1055.A.031 - Lifting key 304/2B Laser Cut,"1670.1055.A.031
+Stock Number: 304/2B
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.014 kg
+Volume: 1798.214 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,,Laser Cut,purchasing@sesameaccess.com,,
+1 off 1670. 1055.A.032 - Base Plate 304/HR Laser Cut,"1670.1055.A.032
+Stock Number: 304/HR
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.226 kg
+Volume: 28006.598 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,,Laser Cut,purchasing@sesameaccess.com,,
+2 off 1670. 1055.A.037 - Packers 304/2B Laser Cut,"1670.1055.A.037
+Stock Number: 304/2B
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.039 kg
+Volume: 4899.014 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,,Laser Cut,purchasing@sesameaccess.com,,
+1 off 1670. 8000.A.011 - Top Step Plate 304/HR Laser Cut,"1670.8000.A.011
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 52.081 kg
+Volume: 6510184.132 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+1 off 1670. 8000.A.023 - WheelStop BasePlate 304/HR Laser Cut,"1670.8000.A.023
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 51.472 kg
+Volume: 6434046.502 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+1 off 1670. 8000.A.024 - WheelStop Front 304/DP2 Laser Cut,"1670.8000.A.024
+Stock Number: 304/DP2
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 11.886 kg
+Volume: 1485792.000 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+1 off 1670. 8000.A.025 - WheelStop Side 304/DP2 Laser Cut,"1670.8000.A.025
+Stock Number: 304/DP2
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 15.013 kg
+Volume: 1876663.412 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+1 off 1670. 8000.A.025_MIR1 - WheelStop Side 304/DP2 Laser Cut,"1670.8000.A.025_MIR1
+Stock Number: 304/DP2
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 15.013 kg
+Volume: 1876663.412 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+8 off 1670. 8000.A.039 - Packers 304/HR Laser Cut,"1670.8000.A.039
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.023 kg
+Volume: 2898.446 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,8,Laser Cut,,,
+40 off 1670. 8000.A.040 - Packer 304/2B Laser Cut,"1670.8000.A.040
+Stock Number: 304/2B
+KAN: KAN-298
+KAN Stock Link: https://app.asana.com/0/632603478911321/1200317103586535
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.005 kg
+Volume: 579.689 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,,Laser Cut,purchasing@sesameaccess.com,,
+2 off 1670. 8000.A.043 - Bumper Bracket 304/HR Laser Cut,"1670.8000.A.043
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 3.406 kg
+Volume: 425747.726 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,2,Laser Cut,,,
+12 off 1670. 8000.A.051 - Packers 304/2B Laser Cut,"1670.8000.A.051
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.064 kg
+Volume: 7987.120 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,12,Laser Cut,,,
+4 off 1670. 8000.A.052 - Packers 304/2B Laser Cut,"1670.8000.A.052
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.128 kg
+Volume: 15974.241 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,4,Laser Cut,,,
+2 off 1670. 8000.A.059 - Wheel Bracket 304/HR Laser Cut,"1670.8000.A.059
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.225 kg
+Volume: 28116.765 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,2,Laser Cut,,,
+2 off 1670. 8000.A.059_MIR - Wheel Bracket 304/HR Laser Cut,"1670.8000.A.059_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.225 kg
+Volume: 28116.765 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,2,Laser Cut,,,
+32 off 1670. 8000.A.060 - Packers 304/2B Laser Cut,"1670.8000.A.060
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.017 kg
+Volume: 2146.274 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,32,Laser Cut,,,
+8 off 1670. 8000.A.061 - Packers 304/2B Laser Cut,"1670.8000.A.061
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.034 kg
+Volume: 4292.549 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,8,Laser Cut,,,
+2 off 1670. 8000.A.070 - Packers 304/2B Laser Cut,"1670.8000.A.070
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.101 kg
+Volume: 12621.441 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,2,Laser Cut,,,
+6 off 1670. 8000.A.071 - Packers 304/2B Laser Cut,"1670.8000.A.071
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.050 kg
+Volume: 6310.720 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,6,Laser Cut,,,
+1 off 1670. 8000.A.078 - Proxy Switch Bracket 304/2B Laser Cut,"1670.8000.A.078
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.075 kg
+Volume: 9350.470 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+6 off 1670. 8000.A.083 - Packers 304/2B Laser Cut,"1670.8000.A.083
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.005 kg
+Volume: 612.896 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,6,Laser Cut,,,
+1 off 1670. 8000.A.087 - Wheelstop Stiffner Plate 304/HR Laser Cut,"1670.8000.A.087
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 2.044 kg
+Volume: 255507.292 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+2 off 1670. 8000.A.088 - Wheel Bracket 304/HR Laser Cut,"1670.8000.A.088
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.210 kg
+Volume: 26292.743 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,2,Laser Cut,,,
+2 off 1670. 8000.A.088_MIR - Wheel Bracket 304/HR Laser Cut,"1670.8000.A.088_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.210 kg
+Volume: 26292.743 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,2,Laser Cut,,,
+8 off 1670. 8000.A.089 - Leveling Foot Pad 304/HR Laser Cut,"1670.8000.A.089
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.032 kg
+Volume: 4048.253 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,8,Laser Cut,,,
+8 off 1670. 8000.A.090 - Gusset 304/2B Laser Cut,"1670.8000.A.090
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.020 kg
+Volume: 2533.500 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,8,Laser Cut,,,
+Laser cut BOM - Blackfriars Lane,,ALL BOMS - Blackfriars Lane,,Laser cut,,,
+2 off 1670. 8000.A.092 - Limit Switch Angle 304/2B Laser Cut,"1670.8000.A.092
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser cut
+Link to BOM: 
+Mass: 0.141 kg
+Volume: 17563.452 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,2,Laser Cut,,,
+1 off 1670. 8000.A.094 - Folded angle 304/2B Laser Cut,"1670.8000.A.094
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 1.673 kg
+Volume: 209129.938 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+1 off 1670. 8000.A.095 - Angle 304/2B Laser Cut,"1670.8000.A.095
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 1.780 kg
+Volume: 222542.449 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+12 off 1670. 8000.A.100 - Packers 304/2B Laser Cut,"1670.8000.A.100
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.064 kg
+Volume: 7965.920 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,12,Laser Cut,,,
+4 off 1670. 8000.A.101 - Packers 304/2B Laser Cut,"1670.8000.A.101
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.127 kg
+Volume: 15931.841 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,4,Laser Cut,,,
+2 off 1670. 8000.A.103 - Leg Stabilisation Bracket 304/2B Laser Cut,"1670.8000.A.103
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 1.167 kg
+Volume: 145813.883 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,2,Laser Cut,,,
+1 off 1670. 8000.A.152 - Middle Step Plate 304/HR Laser Cut,"1670.8000.A.152
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 12.325 kg
+Volume: 1540671.314 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+1 off 1670. 8000.A.154 - Step Front Plate 304/HR Laser Cut,"1670.8000.A.154
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 6.584 kg
+Volume: 822955.932 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+1 off 1670. 8000.A.155 - Step Front Plate 304/HR Laser Cut,"1670.8000.A.155
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 5.922 kg
+Volume: 740235.932 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+3 off 1670. 8000.A.164 - Angle 304/2B Laser Cut,"1670.8000.A.164
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 1.784 kg
+Volume: 223050.209 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,3,Laser Cut,,,
+1 off 1670. 8000.A.165 - Folded angle 304/2B Laser Cut,"1670.8000.A.165
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 2.239 kg
+Volume: 279838.643 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+1 off 1670. 8000.A.166 - Folded angle 304/2B Laser Cut,"1670.8000.A.166
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 1.748 kg
+Volume: 218439.104 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+2 off 1670. 8000.A.167 - Leg Stabilisation Bracket 304/2B Laser Cut,"1670.8000.A.167
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.209 kg
+Volume: 26098.883 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,2,Laser Cut,,,
+2 off 1670. 8000.A.177 - Limit Switch Angle 304/2B Laser Cut,"1670.8000.A.177
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.254 kg
+Volume: 31792.039 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,2,Laser Cut,,,
+8 off 1670. 8000.A.180 - Rod packer 304/HR Laser Cut,"1670.8000.A.180
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.058 kg
+Volume: 7238.229 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,8,Laser Cut,,,
+1 off 1670. 8000.A.185 - Folded angle 304/2B Laser Cut,"1670.8000.A.185
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 2.239 kg
+Volume: 279838.643 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+1 off 1670. 8000.A.207 - Side Step Cover 304/HR Laser Cut,"1670.8000.A.207
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.564 kg
+Volume: 70506.576 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+1 off 1670. 8000.A.207_MIR - Side Step Cover 304/HR Laser Cut,"1670.8000.A.207_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.564 kg
+Volume: 70506.576 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+2 off 1670. 8000.A.208 - Bearing template 304/2B Laser Cut,"1670.8000.A.208
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.023 kg
+Volume: 2816.000 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,2,Laser Cut,,,
+10 off 1670. 8000.B.022 - Bracket Laser Cut,"1670.8000.B.022
+Material: Steel, Mild
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.143 kg
+Volume: 18218.000 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,10,Laser Cut,,,
+4 off 1670. 8000.B.045 - Flat Laser Cut,"1670.8000.B.045
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 1.253 kg
+Volume: 159576.549 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,4,Laser Cut,,,
+4 off 1670. 8000.B.046 - Frame distancing flat Laser Cut,"1670.8000.B.046
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.988 kg
+Volume: 125869.027 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,4,Laser Cut,,,
+1 off 1670. 8000.B.051 - Murr Base Bracket 304/2B Laser Cut,"1670.8000.B.051
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.557 kg
+Volume: 69577.737 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+4 off 1670. 8000.B.061 - I-Beam bottom Plate Laser Cut,"1670.8000.B.061
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.741 kg
+Volume: 94361.792 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,4,Laser Cut,,,
+2 off 1670. 8000.B.063 - SL Frame side angle drilling template Laser Cut,"1670.8000.B.063
+Material: Steel, Mild
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 2.140 kg
+Volume: 272661.770 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,2,Laser Cut,,,
+2 off 1670. 8000.C.005 - Folded Angle 304/2B Laser Cut,"1670.8000.C.005
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 1.282 kg
+Volume: 160264.521 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,2,Laser Cut,,,
+8 off 1670. 8000.C.007 - Plate 304/HR Laser Cut,"1670.8000.C.007
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.095 kg
+Volume: 11920.743 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,8,Laser Cut,,,
+8 off 1670. 8000.C.018 - Plate 304/HR Laser Cut,"1670.8000.C.018
+Stock Number: 304/HR
+KAN: KAN-696
+KAN Stock Link: https://app.asana.com/0/632603478911321/1211647530696130
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.092 kg
+Volume: 11520.115 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,8,Laser Cut,,,
+1 off 1670. 8000.C.021 - Base Channel 304/2B Laser Cut,"1670.8000.C.021
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 7.991 kg
+Volume: 998823.426 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+1 off 1670. 8000.C.021_MIR - Base Channel 304/2B Laser Cut,"1670.8000.C.021_MIR
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 7.991 kg
+Volume: 998823.426 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+4 off 1670. 8000.C.032 - Packers 304/2B Laser Cut,"1670.8000.C.032
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.500 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.064 kg
+Volume: 8026.958 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,4,Laser Cut,,,
+1 off 1670. 8000.C.035 - Folded Angle 304/2B Laser Cut,"1670.8000.C.035
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 1.415 kg
+Volume: 176839.521 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+1 off 1670. 8000.C.035_MIR - Folded Angle 304/2B Laser Cut,"1670.8000.C.035_MIR
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 1.415 kg
+Volume: 176839.521 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,1,Laser Cut,,,
+16 off 1670. 8000.C.038 - Washer Laser Cut,"1670.8000.C.038
+Material: Steel, Mild
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: 
+Mass: 0.007 kg
+Volume: 849.447 mm^3
+Project Task: ",Laser Cut - Blackfriars Lane,16,Laser Cut,,,
+Machining BOM - Blackfriars Lane,,ALL BOMS - Blackfriars Lane,,Machining,,,
+Machining - Blackfriars Lane,,Machining BOM - Blackfriars Lane,,Machining,,,
+1 off 1670. 1055.A17 - Machined assembly Machining,"1670.1055.A17
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+From Cost Centre Machining
+Link to BOM: 
+Mass: 0.712 kg
+Volume: 117751.372 mm^3
+Project Task: ",Machining - Blackfriars Lane,,Machining,purchasing@sesameaccess.com,,
+8 off 1670. 8000.A.009 - Step leg Machining,"1670.8000.A.009
+Material: Steel, Mild
+From Cost Centre Machining
+Link to BOM: 
+Mass: 7.655 kg
+Volume: 975210.633 mm^3
+Project Task: ",Machining - Blackfriars Lane,8,Machining,,,
+4 off 1670. 8000.A.044 - PTFE slider Machining,"1670.8000.A.044
+Material: PTFE
+Web Link: https://www.directplastics.co.uk/ptfe-sheet
+From Cost Centre Machining
+Link to BOM: 
+Mass: 0.140 kg
+Volume: 6356.857 mm^3
+Project Task: ",Machining - Blackfriars Lane,4,Machining,,,
+8 off 1670. 8000.A.049 - PTFE slider Machining,"1670.8000.A.049
+Material: PTFE
+Web Link: https://www.directplastics.co.uk/ptfe-sheet
+From Cost Centre Machining
+Link to BOM: 
+Mass: 0.878 kg
+Volume: 39921.715 mm^3
+Project Task: ",Machining - Blackfriars Lane,8,Machining,,,
+2 off 1670. 8000.A.069 - PTFE slider Machining,"1670.8000.A.069
+Material: PTFE
+Web Link: https://www.directplastics.co.uk/ptfe-sheet
+From Cost Centre Machining
+Link to BOM: 
+Mass: 0.694 kg
+Volume: 31561.715 mm^3
+Project Task: ",Machining - Blackfriars Lane,2,Machining,,,
+2 off 1670. 8000.A.082 - PTFE slider Machining,"1670.8000.A.082
+Material: PTFE
+Web Link: https://www.directplastics.co.uk/ptfe-sheet
+From Cost Centre Machining
+Link to BOM: 
+Mass: 0.077 kg
+Volume: 3497.715 mm^3
+Project Task: ",Machining - Blackfriars Lane,2,Machining,,,
+8 off 1670. 8000.A.203 - Leg Cap Machining,"1670.8000.A.203
+Material: Acetal Resin, Black
+From Cost Centre Machining
+Link to BOM: 
+Mass: 0.005 kg
+Volume: 3269.383 mm^3
+Project Task: ",Machining - Blackfriars Lane,8,Machining,,,
+8 off 1670. 8000.C.006 - Packing Block Machining,"1670.8000.C.006
+Material: Acetal Resin, Black
+From Cost Centre Machining
+Link to BOM: 
+Mass: 0.032 kg
+Volume: 22453.725 mm^3
+Project Task: ",Machining - Blackfriars Lane,8,Machining,,,
+2 off 1670. 8000.C.030 - Acetal Slider Machining,"1670.8000.C.030
+Material: Acetal Resin, Black
+From Cost Centre Machining
+Link to BOM: 
+Mass: 0.021 kg
+Volume: 14989.652 mm^3
+Project Task: ",Machining - Blackfriars Lane,2,Machining,,,
+2 off 1670. 8000.C.031 - Acetal Slider Machining,"1670.8000.C.031
+Material: Acetal Resin, Black
+From Cost Centre Machining
+Link to BOM: 
+Mass: 0.017 kg
+Volume: 12151.652 mm^3
+Project Task: ",Machining - Blackfriars Lane,2,Machining,,,
+2 off 1670. 8000.C.037 - Acetal Slider Machining,"1670.8000.C.037
+Material: Acetal Resin, Black
+From Cost Centre Machining
+Link to BOM: 
+Mass: 0.045 kg
+Volume: 31514.478 mm^3
+Project Task: ",Machining - Blackfriars Lane,2,Machining,,,
+MayTec BOM - Blackfriars Lane,,ALL BOMS - Blackfriars Lane,,MayTec,,,
+MayTec - Blackfriars Lane,,MayTec BOM - Blackfriars Lane,,MayTec,,,
+1 off 1670. 1002.G1 - Side frame MayTec,"1670.1002.G1
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+From Cost Centre MayTec
+Link to BOM: 
+Mass: 9.187 kg
+Volume: 3015089.450 mm^3
+Project Task: ",MayTec - Blackfriars Lane,,MayTec,purchasing@sesameaccess.com,,
+1 off 1670. 1002.G1_MIR1 - Side frame MayTec,"1670.1002.G1_MIR1
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+From Cost Centre MayTec
+Link to BOM: 
+Mass: 9.259 kg
+Volume: 3024200.156 mm^3
+Project Task: ",MayTec - Blackfriars Lane,,MayTec,purchasing@sesameaccess.com,,
+1 off 1670. 1002.G2 - Front frame MayTec,"1670.1002.G2
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+From Cost Centre MayTec
+Link to BOM: 
+Mass: 8.096 kg
+Volume: 2726126.245 mm^3
+Project Task: ",MayTec - Blackfriars Lane,,MayTec,purchasing@sesameaccess.com,,
+NBSS BOM - Blackfriars Lane,,ALL BOMS - Blackfriars Lane,,NBSS,,,
+NBSS/Sesame - Blackfriars Lane,,NBSS BOM - Blackfriars Lane,,NBSS/Sesame,,,
+8 off 1670. 003 - NBSS.003 15mm Shock Mount M8 25.5mm Diameter 60daN Compression Load 3.5mm 295-1477 / 511270 NBSS/Sesame,"1670.003
+Stock Number: 295-1477 / 511270
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/stud-mounts/2951477/
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 0.008 kg
+Volume: 8665.887 mm^3
+Project Task: ",NBSS/Sesame - Blackfriars Lane,8,NBSS/Sesame,,,
+NBSS/Machining - Blackfriars Lane,,NBSS BOM - Blackfriars Lane,,NBSS/Machining,,,
+1 off 1670. 009 - NBSS.009 AcetalRing Standard 80mm in machining stock NBSS/Machining,"1670.009
+Stock Number: Standard 80mm in machining stock
+Material: Acetal Resin, White
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 0.051 kg
+Volume: 36026.277 mm^3
+Project Task: ",NBSS/Machining - Blackfriars Lane,1,NBSS/Machining,,,
+1 off 1670. 010 - NBSS.010 PostHandle NBSS/Machining,"1670.010
+Material: Stainless Steel
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 1.147 kg
+Volume: 143377.756 mm^3
+Project Task: ",NBSS/Machining - Blackfriars Lane,1,NBSS/Machining,,,
+NBSS/Laser Cut - Blackfriars Lane,,NBSS BOM - Blackfriars Lane,,NBSS/Laser Cut,,,
+1 off 1670. 011 - NBSS.011 Button station -  Back Box 140x140 304/2B NBSS/Laser Cut,"1670.011
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.500 mm
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 0.621 kg
+Volume: 77651.885 mm^3
+Project Task: ",NBSS/Laser Cut - Blackfriars Lane,1,NBSS/Laser Cut,,,
+1 off 1670. 022 - NBSS.022 HydraulicBulkheadPlate 304/2B NBSS/Laser Cut,"1670.022
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 0.579 kg
+Volume: 71702.921 mm^3
+Project Task: ",NBSS/Laser Cut - Blackfriars Lane,1,NBSS/Laser Cut,,,
+2 off 1670. 030 - NBSS.030 JunctionBoxBracket NBSS/Laser Cut,"1670.030
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 0.264 kg
+Volume: 33031.962 mm^3
+Project Task: ",NBSS/Laser Cut - Blackfriars Lane,2,NBSS/Laser Cut,,,
+1 off 1670. 033 - NBSS.033 Button Plate dia 160 x 160 304/DP1 NBSS/Laser Cut,"1670.033
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 0.377 kg
+Volume: 46626.669 mm^3
+Project Task: ",NBSS/Laser Cut - Blackfriars Lane,1,NBSS/Laser Cut,,,
+1 off 1670. 034.001 - NBSS.034.001 SafeWorkingLoadPlate: Blank NBSS/Laser Cut,"1670.034.001
+KAN: KAN-310
+KAN Stock Link: https://app.asana.com/0/632603478911321/1165239479083396
+Material: Stainless Steel
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 0.154 kg
+Volume: 19288.301 mm^3
+Project Task: ",NBSS/Laser Cut - Blackfriars Lane,,NBSS/Laser Cut,purchasing@sesameaccess.com,,
+Welded by Sesame - Blackfriars Lane,,NBSS BOM - Blackfriars Lane,,Welded by Sesame,,,
+16 off 1670. 040.02 - NBSS.040.02 Welded Assembly Welded by Sesame,"1670.040.02
+KAN: KAN-298
+KAN Stock Link: https://app.asana.com/0/632603478911321/1200317103586535
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 0.111 kg
+Volume: 13853.362 mm^3
+Project Task: ",Welded by Sesame - Blackfriars Lane,,Welded by Sesame,purchasing@sesameaccess.com,,
+8 off 1670. 044.01 - NBSS.044.01 Bearing Rubber Gasket NBSS/Sesame,"1670.044.01
+Material: Rubber
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 0.002 kg
+Volume: 1810.937 mm^3
+Project Task: ",NBSS/Sesame - Blackfriars Lane,8,NBSS/Sesame,,,
+1 off 1670. 047 - NBSS.047 Post Inner Rod (This part is 70mm and needs to be adjusted per job by Sesame Engineer) NBSS/Machining,"1670.047
+Material: Stainless Steel
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 0.672 kg
+Volume: 84026.857 mm^3
+Project Task: ",NBSS/Machining - Blackfriars Lane,1,NBSS/Machining,,,
+NBSS/Welded by Sesame - Blackfriars Lane,,NBSS BOM - Blackfriars Lane,,NBSS/Welded by Sesame,,,
+1 off 1670. 049 - NBSS.049 Welded tray NBSS/Welded by Sesame,"1670.049
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 7.853 kg
+Volume: 981587.109 mm^3
+Project Task: ",NBSS/Welded by Sesame - Blackfriars Lane,1,NBSS/Welded by Sesame,,,
+1 off 1670. 049.01 - Motor Pump tray 304/2B NBSS/Laser Cut,"1670.049.01
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 7.829 kg
+Volume: 978681.293 mm^3
+Project Task: ",NBSS/Laser Cut - Blackfriars Lane,1,NBSS/Laser Cut,,,
+4 off 1670. 050 - NBSS.050 Leveling Feet Welded Bolt NBSS/Welded by Sesame,"1670.050
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 0.318 kg
+Volume: 40545.057 mm^3
+Project Task: ",NBSS/Welded by Sesame - Blackfriars Lane,4,NBSS/Welded by Sesame,,,
+6 off 1670. 051 - NBSS.051 Pit Trim Installation Bracket 304/HR NBSS/Laser Cut,"1670.051
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 0.115 kg
+Volume: 14350.411 mm^3
+Project Task: ",NBSS/Laser Cut - Blackfriars Lane,6,NBSS/Laser Cut,,,
+8 off 1670. 129 - NBSS.129 Loading Point Washer dia 50 x 50 304/HR NBSS/Laser Cut,"1670.129
+Stock Number: 304/HR
+KAN: KAN-288
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267503
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 0.185 kg
+Volume: 23151.593 mm^3
+Project Task: ",NBSS/Laser Cut - Blackfriars Lane,,NBSS/Laser Cut,purchasing@sesameaccess.com,,
+1 off 1670. 768 - NBSS.768 Machine Room Cabinet Frame NBSS/Sesame,"1670.768
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 24.659 kg
+Volume: 3141298.763 mm^3
+Project Task: ",NBSS/Sesame - Blackfriars Lane,1,NBSS/Sesame,,,
+6 off 1670. 779 - NBSS.779 Tapped Bush NBSS/Machining,"1670.779
+Material: Stainless Steel
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 0.074 kg
+Volume: 9231.792 mm^3
+Project Task: ",NBSS/Machining - Blackfriars Lane,6,NBSS/Machining,,,
+4 off 1670. 1000.C.R-Clip 2.5x45 - Zinc Plated Steel R-Clip 2.5x45 R-Clip 2.5x45 NBSS/Sesame,"1670.1000.C.R-Clip 2.5x45
+Stock Number: R-Clip 2.5x45
+Material: Stainless Steel
+Web Link: https://www.spaldingfasteners.co.uk/metric-zinc-plated-steel-r-clips-1-2-x-16mm-to-6-x-117mm/
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 0.004 kg
+Volume: 489.875 mm^3
+Project Task: ",NBSS/Sesame - Blackfriars Lane,4,NBSS/Sesame,,,
+4 off 1670. 1000.L.WDS674-216 - Swivel Pad M16 674-216 NBSS/Sesame,"1670.1000.L.WDS674-216
+Stock Number: 674-216
+KAN: KAN-264
+KAN Stock Link: https://app.asana.com/0/632603478911321/1202312166676506
+Web Link: https://www.wdscomponents.com/en-gb/swivel-pad-steel-with-chemical-black-finish-674-216
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 0.189 kg
+Volume: 24055.574 mm^3
+Project Task: ",NBSS/Sesame - Blackfriars Lane,,NBSS/Sesame,purchasing@sesameaccess.com,,
+1 off 1670. 1016.E3 - NBSS.401 Call For Assistance Plate Engraved NBSS/Sesame,"1670.1016.E3
+From Cost Centre NBSS
+Link to BOM: 
+Mass: 0.232 kg
+Volume: 29118.516 mm^3
+Project Task: 
+---
+NOTES: Rev_1 - part removed",NBSS/Sesame - Blackfriars Lane,1,NBSS/Sesame,,,
+Sesame BOM - Blackfriars Lane,,ALL BOMS - Blackfriars Lane,,Sesame,,,
+RS Components - Blackfriars Lane,,Sesame BOM - Blackfriars Lane,,RS Components,,,
+4 off 1670. 1000.B.30x17_F_M8_98.6daN - M8 x 30 female vibration mount 257-8763 RS Components,"1670.1000.B.30x17_F_M8_98.6daN
+Stock Number: 257-8763
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/anti-vibration-mounts/2578763/?relevancy-data=636F3D3126696E3D4931384E525353746F636B4E756D626572266C753D656E266D6D3D6D61746368616C6C26706D3D5E2828282872737C5253295B205D3F293F285C647B337D5B5C2D5C735D3F5C647B332C347D5B705061415D3F29297C283235285C647B387D7C5C647B317D5C2D5C647B377D2929292426706F3D3126736E3D592673723D2673743D52535F53544F434B5F4E554D4245522677633D4E4F4E45267573743D3235372D38373633267374613D3235373837363326&searchHistory=%7B%22enabled%22%3Atrue%7D
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.011 kg
+Volume: 11797.192 mm^3
+Project Task: ",RS Components - Blackfriars Lane,4,RS Components,,,
+"8 off 1670. 1000.B.50x15_F_M10_306kg - RS PRO M10 Anti Vibration Mount, Female Buffer Foot with 306kg Compression Load 126-5969 RS Components","1670.1000.B.50x15_F_M10_306kg
+Stock Number: 126-5969
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/anti-vibration-mounts/1265969?redirect-relevancy-data=7365617263685F636173636164655F6F726465723D31267365617263685F696E746572666163655F6E616D653D4931384E525353746F636B4E756D626572267365617263685F6D617463685F6D6F64653D6D61746368616C6C267365617263685F7061747465726E5F6D6174636865643D5E2828282872737C5253295B205D3F293F285C647B337D5B5C2D5C735D3F5C647B332C347D5B705061415D3F29297C283235285C647B387D7C5C647B317D5C2D5C647B377D29292924267365617263685F747970653D52535F53544F434B5F4E554D424552267365617263685F77696C645F63617264696E675F6D6F64653D4E4F4E45267365617263685F6B6579776F72643D31323635393639267365617263685F6B6579776F72645F6170703D3132363539363926
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.029 kg
+Volume: 28862.393 mm^3
+Project Task: ",RS Components - Blackfriars Lane,8,RS Components,,,
+4 off 1670. 1000.B.50x25_M_M10_300daN - Shock Mount M10 50mm Diameter 300daN Compression Load 6mm deflection 385-1586 / 511525 RS Components,"1670.1000.B.50x25_M_M10_300daN
+Stock Number: 385-1586 / 511525
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/stud-mounts/3851586/?sra=pstk
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.047 kg
+Volume: 51050.881 mm^3
+Project Task: ",RS Components - Blackfriars Lane,4,RS Components,,,
+Boneham - Blackfriars Lane,,Sesame BOM - Blackfriars Lane,,Boneham,,,
+4 off 1670. 1000.C.ClevisPin 12x35mm - Clevis Pin Stainless Steel CPSS-12-035 Boneham,"1670.1000.C.ClevisPin 12x35mm
+Stock Number: CPSS-12-035
+Material: Stainless Steel
+Web Link: http://www.boneham.co.uk/Products/clevis-pins/clevis-pins-metric
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.040 kg
+Volume: 5021.399 mm^3
+Project Task: ",Boneham - Blackfriars Lane,4,Boneham,,,
+1 off 1670. 1008.A3.001 - MP200701 - Magnetic Proximity Sensor N/O 765-9347 RS Components,"1670.1008.A3.001
+Stock Number: 765-9347
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/magnetic-proximity-switches/7659347
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.003 kg
+Volume: 2845.338 mm^3
+Project Task: ",RS Components - Blackfriars Lane,1,RS Components,,,
+Sesame - Blackfriars Lane,,Sesame BOM - Blackfriars Lane,,Sesame,,,
+1 off 1670. 1008.A3.005 - Neodymium Magnet - 1.2kg Pull F102N-10 Sesame,"1670.1008.A3.005
+Stock Number: F102N-10
+Material: Generic
+Web Link: https://www.first4magnets.com/product/10mm-dia-x-2mm-thick-x-3mm-c-sink-neodymium-magnet-12kg-pull-2446#ab_1_1|ps_2_675
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.000 kg
+Volume: 114.506 mm^3
+Project Task: ",Sesame - Blackfriars Lane,1,Sesame,,,
+"1 off 1670. 1008.A3.006 - RS PRO Vulcanised Fibre Tap Washers, M4 526-366 RS Components","1670.1008.A3.006
+Stock Number: 526-366
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/washers/0526366?gb=a
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.000 kg
+Volume: 40.841 mm^3
+Project Task: ",RS Components - Blackfriars Lane,1,RS Components,,,
+1 off 1670. 1008.C.002 - E.Stop - Big 330-8587 RS Components,"1670.1008.C.002
+Stock Number: 330-8587
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/emergency-stop-push-buttons/3308587/
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.298 kg
+Volume: 298073.368 mm^3
+Project Task: ",RS Components - Blackfriars Lane,,RS Components,purchasing@sesameaccess.com,,
+1 off 1670. 1008.D.118 - Cable Mount  M12 Connector  Male  IP67  713 Series RS Stock No: 706-7476 RS Components,"1670.1008.D.118
+Stock Number: RS Stock No: 706-7476
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/industrial-circular-connectors/7067476
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.015 kg
+Volume: 15418.632 mm^3
+Project Task: ",RS Components - Blackfriars Lane,1,RS Components,,,
+Bes - Blackfriars Lane,,Sesame BOM - Blackfriars Lane,,Bes,,,
+"1 off 1670. 1008.D.120 - Drain Cock Type A - 3/4"" BSP Brass 3/4"" BSP Bes","1670.1008.D.120
+Stock Number: 3/4"" BSP
+Material: Brass, Soft Yellow
+Web Link: https://www.bes.co.uk/drain-cock-type-a-3-4in-bsp-brass-7496/?srsltid=AfmBOopiSwmvu2xg6-awSWh6goCllN-njqrkEp1XNkmdCSXU4uyE7jHg
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.316 kg
+Volume: 37283.251 mm^3
+Project Task: ",Bes - Blackfriars Lane,1,Bes,,,
+Amazon - Blackfriars Lane,,Sesame BOM - Blackfriars Lane,,Amazon,,,
+1 off 1670. 1008.D.122 - Hexagon Locknut G3/4 Lock Nut Amazon,"1670.1008.D.122
+Stock Number: G3/4 Lock Nut
+Material: Brass, Soft Yellow
+Web Link: https://www.amazon.co.uk/dp/B09NQ44G6X?ref=cm_sw_r_cso_cp_apin_dp_EHREW6PZASZW4VTSNFJX&ref_=cm_sw_r_cso_cp_apin_dp_EHREW6PZASZW4VTSNFJX&social_share=cm_sw_r_cso_cp_apin_dp_EHREW6PZASZW4VTSNFJX&th=1
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.106 kg
+Volume: 12511.587 mm^3
+Project Task: ",Amazon - Blackfriars Lane,1,Amazon,,,
+2 off 1670. 1008.N1 - Standard LimitSwitch: LRC5A54 LRC5A54 Sesame,"1670.1008.N1
+Stock Number: LRC5A54
+Web Link: https://uk.farnell.com/imo-precision-controls/
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.854 kg
+Volume: 162337.453 mm^3
+Project Task: ",Sesame - Blackfriars Lane,2,Sesame,,,
+1 off 1670. 1008.T.8ID_Grommet - 8mm ID Grommet 666-4603 Sesame,"1670.1008.T.8ID_Grommet
+Stock Number: 666-4603
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/cable-grommets/6664603
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.001 kg
+Volume: 677.640 mm^3
+Project Task: ",Sesame - Blackfriars Lane,1,Sesame,,,
+7 off 1670. 1008.T.13ID_P_Clip - Rubber-lined clamp; 13mm ID 298-8097 RS Components,"1670.1008.T.13ID_P_Clip
+Stock Number: 298-8097
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/p-clips/2988097/
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.002 kg
+Volume: 1949.773 mm^3
+Project Task: ",RS Components - Blackfriars Lane,7,RS Components,,,
+1 off 1670. 1008.T.25ID_Grommet - Grommet ID 18.5mm (Hole 25mm Dia.) Sesame,"1670.1008.T.25ID_Grommet
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.005 kg
+Volume: 5276.370 mm^3
+Project Task: ",Sesame - Blackfriars Lane,1,Sesame,,,
+2 off 1670. 1008.U.01 - 85x85x51 Wiska Junction Box 700-0802 Sesame,"1670.1008.U.01
+Stock Number: 700-0802
+Material: PET Plastic
+Web Link: https://uk.rs-online.com/web/p/junction-boxes/7000802?searchId=f4dce812-75bb-4641-9814-24dc7daf85be&gb=s
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.000 kg
+Volume: 45249.084 mm^3
+Project Task: ",Sesame - Blackfriars Lane,2,Sesame,,,
+Steerforth - Blackfriars Lane,,Sesame BOM - Blackfriars Lane,,Steerforth,,,
+"2 off 1670. 1008.V1.1.MiniActuator[50mm] - Mini hydraulic actuator _ 50mm stroke, connectors on both sides MP SX 25/18X50 S AS Steerforth","1670.1008.V1.1.MiniActuator[50mm]
+Stock Number: MP SX 25/18X50 S AS
+Web Link: https://www.steerforth.co.uk/magnetic-compact-industrial-hydraulic-cylinders-p-4285.html / https://www.confortinet.com/product-rp.asp
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.268 kg
+Volume: 267549.302 mm^3
+Project Task: ",Steerforth - Blackfriars Lane,2,Steerforth,,,
+4 off 1670. 1008.V1.003 - Comepi reed switch for hydraulic actuator groove SA3D250-G18 Steerforth,"1670.1008.V1.003
+Stock Number: SA3D250-G18
+Material: Generic
+Web Link: www.confortinet.com
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.001 kg
+Volume: 555.360 mm^3
+Project Task: ",Steerforth - Blackfriars Lane,4,Steerforth,,,
+EAO - Blackfriars Lane,,Sesame BOM - Blackfriars Lane,,EAO,,,
+2 off 1670. 1016.3.001 - Lift UP.Down Button 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066 EAO,"1670.1016.3.001
+Stock Number: 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066
+Material: Generic
+Web Link: http://eao.com/en
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.014 kg
+Volume: 13547.123 mm^3
+Project Task: ",EAO - Blackfriars Lane,2,EAO,,,
+"1 off 1670. 1016.3.002 - Call for assistance (Bell), CFA + Doorbell 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066 EAO","1670.1016.3.002
+Stock Number: 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.014 kg
+Volume: 13546.262 mm^3
+Project Task: ",EAO - Blackfriars Lane,,EAO,purchasing@sesameaccess.com,,
+1 off 1670. 1016.3.003 - E-Stop Mushroom Head 61-3440.4/5 EAO,"1670.1016.3.003
+Stock Number: 61-3440.4/5
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.014 kg
+Volume: 13538.346 mm^3
+Project Task: ",EAO - Blackfriars Lane,1,EAO,,,
+1 off 1670. 1016.3.006 - Stairs push button 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066 EAO,"1670.1016.3.006
+Stock Number: 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.014 kg
+Volume: 13545.673 mm^3
+Project Task: ",EAO - Blackfriars Lane,1,EAO,,,
+1 off 1670. 1016.3.008 - Stainless Call for Assistance button RS: 690-3292 RS Components,"1670.1016.3.008
+Stock Number: RS: 690-3292
+Material: Generic
+Web Link: http://uk.rs-online.com/web/
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.011 kg
+Volume: 10696.285 mm^3
+Project Task: ",RS Components - Blackfriars Lane,1,RS Components,,,
+1 off 1670. 1016.3.009(3Way-Spr) - Key Switch. 3PositionSpringReturn (VERIFY!) 51-374.F22DF EAO,"1670.1016.3.009(3Way-Spr)
+Stock Number: 51-374.F22DF
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.011 kg
+Volume: 10542.114 mm^3
+Project Task: ",EAO - Blackfriars Lane,1,EAO,,,
+Rubber Supplier - Blackfriars Lane,,Sesame BOM - Blackfriars Lane,,Rubber Supplier,,,
+1 off 1670. 1016.E.003 - Ruber Gasket Rubber Supplier,"1670.1016.E.003
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.007 kg
+Volume: 7628.469 mm^3
+Project Task: ",Rubber Supplier - Blackfriars Lane,1,Rubber Supplier,,,
+1 off 1670. 1016.F.010 - Honeywell Doorbell DCP311G - USE ONLY ONE PER JOB Series 3 DCP311G Sesame,"1670.1016.F.010
+Stock Number: Series 3 DCP311G
+Material: Generic
+Web Link: https://www.amazon.co.uk/gp/product/B016OXTBD8/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&th=1
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.030 kg
+Volume: 29594.803 mm^3
+Project Task: ",Sesame - Blackfriars Lane,1,Sesame,,,
+1 off 1670. 1016.J.RemoteControll_RF.Sol.1(4B).04 Sesame,"1670.1016.J.RemoteControll_RF.Sol.1(4B).04
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.013 kg
+Volume: 12671.486 mm^3
+Project Task: ",Sesame - Blackfriars Lane,1,Sesame,,,
+8 off 1670. 8000.A.010 - Rubber Washer Sesame,"1670.8000.A.010
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.002 kg
+Volume: 2287.079 mm^3
+Project Task: ",Sesame - Blackfriars Lane,8,Sesame,,,
+Blickle - Blackfriars Lane,,Sesame BOM - Blackfriars Lane,,Blickle,,,
+4 off 1670. 8000.A.144 - Guide roller FTH 50x15/12-12K Blickle,"1670.8000.A.144
+Stock Number: FTH 50x15/12-12K
+Material: Generic
+Web Link: https://www.blickle.co.uk/product/FTH-50x15-12-12K-463802
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.025 kg
+Volume: 24770.901 mm^3
+Project Task: ",Blickle - Blackfriars Lane,4,Blickle,,,
+IGUS - Blackfriars Lane,,Sesame BOM - Blackfriars Lane,,IGUS,,,
+16 off 1670. 8000.A.145 - Thrust washer WTM-1224-015 IGUS,"1670.8000.A.145
+Stock Number: WTM-1224-015
+Material: Nylon 6/6
+Web Link: https://www.igus.co.uk/product/130?artNr=WTM-1224-015
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.001 kg
+Volume: 508.938 mm^3
+Project Task: ",IGUS - Blackfriars Lane,16,IGUS,,,
+8 off 1670. 8000.A.FJUM_02_40_1 - Bearing fi 40 FUM-02-40 IGUS,"1670.8000.A.FJUM_02_40_1
+Stock Number: FUM-02-40
+Web Link: https://www.igus.co.uk/product/1212?artNr=FJUM-02-40
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.387 lbmass
+Volume: 175394.739 mm^3
+Project Task: ",IGUS - Blackfriars Lane,8,IGUS,,,
+8 off 1670. BRH-M4-16-GS (RivetBush) - Round M4 rivet bush BRH-M4-16-GS Sesame,"1670.BRH-M4-16-GS (RivetBush)
+Stock Number: BRH-M4-16-GS
+Material: Stainless Steel
+Web Link: http://www.npfasteners.com/rivetbush/brh.htm
+From Cost Centre Sesame
+Link to BOM: 
+Mass: 0.002 kg
+Volume: 212.110 mm^3
+Project Task: ",Sesame - Blackfriars Lane,8,Sesame,,,

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  01/07/2026  11:45
+============================================================
+With:         Ctm IT SUPPORT 0330 500 1215
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo discussing Wi-Fi issues and network setup with Cameron from IT support, including troubleshooting the UniFi system, firmware updates, and device connectivity. The overall outcome was identifying potential causes and planning further actions to improve network stability.
+
+--- RECAP --------------------------------------------------
+Giles Hugo contacted Cameron from IT support to address Wi-Fi and UniFi system issues at their office, specifically focusing on inconsistent Wi-Fi performance and device connectivity problems.Cameron identified that the Workshop access point (AP) was offline and connected to an outdated firmware version 6.7.7, which may contribute to network instability.The Workshop AP was connected via a switch port that had been moved, causing it to go offline; power was confirmed to be supplied via an injector, but network connectivity was problematic.Device analysis showed that some iPhones, including Steve's, experienced disconnections and roaming issues, possibly due to the APs' firmware and network configuration, including the switch uplink speed of 100 Mbps.Cameron suggested that upgrading the firmware on the UniFi APs to version 6.754, released on June 25, 2026, could improve client connectivity and roaming stability, but expressed caution due to past issues with firmware updates.The team discussed the high device load on the mezzanine AP, which had 12 devices connected and was experiencing high bandwidth usage (170 GB in 24 hours), potentially causing slow service.Plans were made to bring the Workshop AP back online, possibly by switching it to a different switch port or temporarily turning it off to assess impact, and to monitor Steve’s device once his IP address is obtained.Cameron recommended ensuring that devices like iPhones have MAC address randomization turned off to maintain consistent device identification.Further steps include labeling devices with their IP addresses, testing network changes, and considering firmware updates after confirming system stability.The call concluded with a brief discussion about using Microsoft Teams and Power Automate for recording and storing meeting transcripts, which Cameron indicated they do not currently do.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will obtain the IP addresses of Steve and Andy's devices when they are in the office tomorrow and send them to Cameron for monitoring.Cameron will label Steve's device in the system with his IP address and plan to bring the Workshop AP back online, either by switching it to a different port or temporarily disabling it to test network stability.Cameron will consider updating the firmware on the UniFi APs to version 6.754 to improve client connectivity and roaming, but will do so cautiously to avoid past issues.Giles Hugo will coordinate with team members to ensure MAC address randomization is turned off on iPhones to maintain device consistency in the network.Cameron will monitor the network after changes to assess if device disconnections and roaming issues improve.
+
+(Full transcript: RC web portal only — no RingSense API)

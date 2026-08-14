@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Live QA Action Portal — Purchasing Parser</title>
+<style>
+:root{--bg:#f4f6fa;--card:#fff;--ink:#1a1a2e;--muted:#6b7280;--line:#e5e7eb;
+--brand:#0f766e;--red:#dc2626;--green:#16a34a;--amber:#d97706;--blue:#2563eb;
+--hi:#e7f7ee;--mid:#fef6e7;--lo:#fdecec;--done:#eef2f6;--hover:#f9fafb}
+:root.theme-stock{--bg:#0f1117;--card:#1a1d27;--ink:#e2e8f0;--muted:#94a3b8;
+--line:#2d3250;--brand:#6c8ef7;--amber:#fbbf24;--red:#f87171;--green:#34d399;--blue:#6c8ef7;
+--hi:#0c2b22;--mid:#2d2a14;--lo:#2d1416;--done:#21253a;--hover:#21253a}
+*{box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);margin:0;line-height:1.5}
+.wrap{max-width:1200px;margin:0 auto;padding:20px 22px 90px}
+.navbar{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.backbtn{display:inline-flex;align-items:center;gap:6px;background:var(--card);color:var(--brand);border:1px solid var(--line);border-radius:8px;padding:6px 12px;font-size:13px;font-weight:600;text-decoration:none;transition:border-color .15s}
+.backbtn:hover{border-color:var(--brand)}
+h1{margin:0 0 2px;font-size:22px;color:var(--brand)}
+.meta{color:var(--muted);font-size:12.5px;margin-bottom:14px}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.toolbar label{font-size:12px;color:var(--muted)}
+.toolbar select,.toolbar input[type=text]{background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:5px 8px;font-size:13px}
+.counts{margin-left:auto;font-size:12.5px;color:var(--muted)}
+table{border-collapse:collapse;width:100%;font-size:13px;background:var(--card)}
+thead th{background:var(--brand);color:#fff;position:sticky;top:0;text-align:left;padding:7px 9px}
+td{border:1px solid var(--line);padding:6px 9px;vertical-align:top}
+tr.r-hi td{background:var(--hi)} tr.r-mid td{background:var(--mid)} tr.r-lo td{background:var(--lo)} tr.r-done td{background:var(--done)}
+.subj{max-width:300px;word-break:break-word}
+.conf{font-weight:700;font-size:11px;text-transform:uppercase}
+.c-hi{color:var(--green)} .c-mid{color:var(--amber)} .c-lo{color:var(--red)} .c-done{color:var(--muted)}
+textarea{width:100%;min-height:32px;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:4px 6px;font-size:12px;resize:vertical}
+.btns{display:flex;gap:4px}
+.abtn{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:6px;padding:4px 9px;font-size:12px;font-weight:600;cursor:pointer}
+.abtn.on-a{background:var(--green);color:#fff;border-color:var(--green)}
+.abtn.on-m{background:var(--amber);color:#fff;border-color:var(--amber)}
+.abtn.on-r{background:var(--red);color:#fff;border-color:var(--red)}
+.savebar{position:fixed;bottom:0;left:0;right:0;background:var(--card);border-top:1px solid var(--line);padding:10px 22px;display:flex;gap:10px;align-items:center}
+#saveBtn{background:var(--brand);color:#fff;border:0;border-radius:8px;padding:9px 20px;font-size:14px;font-weight:700;cursor:pointer}
+#saveStatus{color:var(--muted);font-size:12.5px}
+a{color:var(--blue)}
+</style></head>
+<body>
+<div class="wrap">
+<div class="navbar">
+  <a class="backbtn" href="file:///C:/Users/GilesHugo/SES_Workspace/data/os_status/nav.html">← Portal Home</a>
+</div>
+<h1>📋 Live QA Action Portal</h1>
+<div class="meta">Purchasing email-parser · decisions &amp; notes save back to the Google Sheet · generated <span id="gen">—</span></div>
+
+<div class="toolbar">
+  <label>Group</label><select id="fGroup"><option value="">All</option></select>
+  <label>Match</label>
+    <select id="fMatch"><option value="">All</option><option value="MATCHED">Matched</option><option value="NOT">Not matched</option></select>
+  <label>Confidence</label>
+    <select id="fConf"><option value="">All</option><option value="HIGH">High</option><option value="MEDIUM">Medium</option><option value="LOW">Low</option></select>
+  <label>Search</label>
+  <input type="text" id="fSearch" placeholder="subject / task / po / sender…">
+  <div class="counts"><span id="shown">0</span> shown of <span id="tot">0</span></div>
+</div>
+
+<table><thead><tr>
+  <th>Conf</th><th>Group</th><th>Received</th><th>Subject</th><th>Sender</th>
+  <th>PO/Ref</th><th>Matched Task</th><th>Proposal / Issue</th>
+  <th>Notes (saved)</th><th>Decision</th><th>Link</th>
+</tr></thead><tbody id="tbody"></tbody></table>
+</div>
+
+<div class="savebar">
+  <button id="saveBtn">💾 Save decisions &amp; notes</button>
+  <span id="saveStatus">Changes staged locally — click Save to write actions for sheet sync.</span>
+</div>
+
+<script>
+var DATA = __QA_DATA__;
+var ACTIONS = {};
+var ROWS = DATA.items || [];
+
+function esc(s){return (s==null?'':String(s)).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function confClass(d){return d==='DONE'?'done':(d==='HIGH'?'hi':(d==='MEDIUM'?'mid':'lo'));}
+function fmtDate(s){var d=new Date(s);return isNaN(d)?(s||''):d.toISOString().slice(0,10);}
+function linkTxt(r){return (r.asana_link||'').indexOf('http')===0?'<a href="'+esc(r.asana_link)+'" target="_blank">open</a>':'—';}
+
+function setDecision(row,val){
+  var a=ACTIONS[row]||(ACTIONS[row]={});
+  if((a.decision||'').toLowerCase()===String(val).toLowerCase()){
+    a.decision=''; // click again -> toggle off
+  } else {
+    a.decision=val; // only one decision per row (mutually exclusive)
+  }
+  ACTIONS[row]=a; markDirty(); refreshButtons();
+}
+function setNote(row,txt){
+  var a=ACTIONS[row]||(ACTIONS[row]={}); a.note=txt; ACTIONS[row]=a; markDirty();
+}
+function markDirty(){ var n=Object.keys(ACTIONS).length;
+  document.getElementById('saveStatus').textContent=n+' pending change(s). Click Save to persist.'; }
+
+function refreshButtons(){
+  document.querySelectorAll('.abtn').forEach(function(b){
+    var r=Number(b.getAttribute('data-row')); var a=ACTIONS[r]||{}; var d=(a.decision||'').toLowerCase();
+    // reset all selected-state classes, then light only the matching button for this row
+    b.classList.remove('on-a','on-m','on-r');
+    if(d && b.getAttribute('data-val')===d) b.classList.add('on-'+d);
+  });
+}
+
+function setupFilters(){
+  var seen={}; ROWS.forEach(function(r){if(!seen[r.doc_type])seen[r.doc_type]=1;});
+  var sel=document.getElementById('fGroup');
+  Object.keys(seen).sort().forEach(function(g){var o=document.createElement('option');o.value=g;o.textContent=g;sel.appendChild(o);});
+}
+
+// canonical sheet row id for a record (_rowindex is the sheet row; fall back to row)
+function rowKey(r){ return (typeof r._rowindex!=='undefined' && r._rowindex!==null) ? r._rowindex : r.row; }
+
+function render(){
+  var g=document.getElementById('fGroup').value;
+  var m=document.getElementById('fMatch').value;
+  var c=document.getElementById('fConf').value;
+  var q=document.getElementById('fSearch').value.toLowerCase();
+  var rows='',shown=0;
+  ROWS.forEach(function(r){
+    if(g&&r.doc_type!==g)return;
+    var mt=(r.matched_task||'').toUpperCase();
+    var isNot = (mt==='NOT MATCHED'||mt==='');
+    if(m==='MATCHED'&&isNot)return;
+    if(m==='NOT'&&!isNot)return;
+    if(c&&r.confidence!==c)return;
+    if(q){var hay=(r.subject+' '+r.matched_task+' '+r.po_number+' '+r.sender_domain+' '+r.doc_type).toLowerCase();if(hay.indexOf(q)<0)return;}
+    shown++;
+    var rk=rowKey(r);
+    var a=ACTIONS[rk]||{decision:r.decision,note:r.amendment_notes}; var d=(a.decision||'').toLowerCase();
+    rows+='<tr class="r-'+confClass(r.confidence)+'">'
+      +'<td class="conf c-'+confClass(r.confidence)+'">'+esc(r.confidence)+'</td>'
+      +'<td>'+esc((r.doc_type||'').replace('_',' '))+'</td>'
+      +'<td>'+esc(fmtDate(r.received))+'</td>'
+      +'<td class="subj">'+esc(r.subject||'')+'</td>'
+      +'<td>'+esc(r.sender_domain||'')+'</td>'
+      +'<td>'+esc(r.po_number||'')+'</td>'
+      +'<td class="subj">'+esc(r.matched_task||'')+'</td>'
+      +'<td class="subj">'+esc((r.proposed_action||'').slice(0,90))+'</td>'
+      +'<td><textarea data-row="'+rk+'" rows="1" placeholder="add note…">'+esc(a.note||'')+'</textarea></td>'
+      +'<td><div class="btns">'
+      +'<button class="abtn'+(d==='a'?' on-a':'')+'" data-row="'+rk+'" data-val="a" onclick="setDecision(this.dataset.row,this.dataset.val)">A</button>'
+      +'<button class="abtn'+(d==='m'?' on-m':'')+'" data-row="'+rk+'" data-val="m" onclick="setDecision(this.dataset.row,this.dataset.val)">M</button>'
+      +'<button class="abtn'+(d==='r'?' on-r':'')+'" data-row="'+rk+'" data-val="r" onclick="setDecision(this.dataset.row,this.dataset.val)">R</button>'
+      +'</div></td>'
+      +'<td>'+linkTxt(r)+'</td></tr>';
+  });
+  document.getElementById('tbody').innerHTML=rows;
+  document.getElementById('shown').textContent=shown;
+  document.getElementById('tot').textContent=ROWS.length;
+  // attach note change handlers
+  document.querySelectorAll('textarea[data-row]').forEach(function(t){
+    t.addEventListener('input',function(){setNote(Number(t.getAttribute('data-row')),t.value);});
+  });
+}
+
+function save(){
+  var st=document.getElementById('saveStatus');
+  var json=JSON.stringify(ACTIONS,null,2);
+  // Preferred: POST to the local qa_server (http://127.0.0.1:8611/save)
+  var target='/save';
+  if (location.protocol==='http:' && location.port==='8611') target='/save';
+  fetch(target,{method:'POST',headers:{'Content-Type':'application/json'},body:json})
+    .then(function(res){ return res.json(); })
+    .then(function(r){ st.textContent='✅ Saved '+r.saved+' actions to data/qa/qa_actions.json — now run qa_sync.py --push to write to the sheet.'; })
+    .catch(function(){ download(); });
+  function download(){
+    var blob=new Blob([json],{type:'application/json'});
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(blob); a.download='qa_actions.json';
+    document.body.appendChild(a); a.click();
+    URL.revokeObjectURL(a.href); a.remove();
+    st.textContent='Downloaded qa_actions.json — place it in data/qa/ then run qa_sync.py --push.';
+  }
+}
+
+['fGroup','fMatch','fConf','fSearch'].forEach(function(id){
+  document.getElementById(id).addEventListener('change',render);
+  var el=document.getElementById(id);
+  if(el.tagName==='INPUT')el.addEventListener('input',render);
+});
+document.getElementById('saveBtn').addEventListener('click',save);
+document.getElementById('gen').textContent=DATA.generated||'';
+setupFilters(); render();
+</script>
+</body></html>

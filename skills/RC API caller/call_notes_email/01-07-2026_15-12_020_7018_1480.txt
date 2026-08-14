@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  01/07/2026  15:12
+============================================================
+With:         020 7018 1480
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a voicemail call where Phil from London Machine Works left a message for Giles Hugo, who was unavailable due to personal commitments. Phil plans to call back tomorrow morning.
+
+--- RECAP --------------------------------------------------
+Phil from London Machine Works called Giles Hugo and left a message because Giles was unavailable, citing personal commitments and traffic issues.Giles Hugo acknowledged the message and indicated he would return the call the next morning.
+
+--- TASKS --------------------------------------------------
+Phil from London Machine Works will call Giles Hugo tomorrow morning to follow up.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  13/08/2026  13:53
+============================================================
+With:         - Purchasing 07484 937806
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a voicemail from Google representative Tanat informing Giles Hugo from Sesame Texas about updates to Google Ads features, which Giles declined to explore at this time.
+
+--- RECAP --------------------------------------------------
+Tanat from Google called Giles Hugo at Sesame Texas to discuss updates to their Google Ads account, specifically mentioning new features related to target CPA, target ROAS, and smart reading strategies introduced after August 17th.Giles Hugo clarified that the person responsible for Google Ads is not available at the moment and indicated that they are not interested in exploring the new features at this time, declining further discussion.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  15/07/2026  14:23
+============================================================
+With:         - Purchasing 0161 938 8080
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo coordinating with Adam from PP to set up a quotation for water jet cutting and machining services for various metal parts, including specific drawings and tolerances, with plans to receive separate quotes for different thicknesses and processes.
+
+--- RECAP --------------------------------------------------
+Adam from PP confirmed they are setting up Giles Hugo's account and need the full name, company details, and specific drawing references, including item 5 (40mm thick piece) and additional flat plates with holes, to prepare accurate quotations.Giles Hugo provided his full name, company details, and specific drawing references (158 1025 807, 096, 017, and 014), requesting water jet cutting for the 40mm thick piece and laser cutting for other parts, with undersizing to accommodate tolerances.Adam confirmed that water jet cutting offers a tolerance of approximately plus or minus 0.5mm, which may affect the fit of the parts, and explained that laser cutting costs are generally lower but depend on shape and thickness.Giles Hugo discussed the application of these parts in low-profile scissor arms, which are currently machined from Breitbart, and expressed interest in obtaining quotes for 16mm, 20mm, and 30mm thick materials to evaluate cost savings and feasibility.Adam agreed to prepare separate quotations for water jet cutting of the 40mm parts and machining of the 16mm and 30mm thick parts, with the latter to help Giles Hugo decide on future production methods.
+
+--- TASKS --------------------------------------------------
+Adam from PP will send a formal quotation including the water jet cut price for the 40mm thick item 5 and the flat plates with holes, based on the provided drawings.Adam will also prepare separate quotes for machining the 16mm and 30mm thick parts, including the costs for each thickness, to assist Giles Hugo in decision-making.
+
+(Full transcript: RC web portal only — no RingSense API)

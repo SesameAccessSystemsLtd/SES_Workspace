@@ -1,0 +1,1472 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date
+ALL BOMS - 1582 - Russel Square Entire,1582 - Russel Square Entire,,,,,,
+Engraving BOM - 1582 - Russel Square Entire,,ALL BOMS - 1582 - Russel Square Entire,,Engraving,,,
+Engraving - 1582 - Russel Square Entire,,Engraving BOM - 1582 - Russel Square Entire,,Engraving,,,
+1 off 1582. 1016.1.1 - 6 Buttons Face Plate - Engraving Engraving,"1582.1016.1.1
+From Cost Centre Engraving
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.376 kg
+Volume: 46585.841 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Engraving - 1582 - Russel Square Entire,1,Engraving,,,
+1 off 1582. 1016.F.2 - CallForAssistance Plate Narrow - Engraving Engraving,"1582.1016.F.2
+From Cost Centre Engraving
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.246 kg
+Volume: 30793.521 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Engraving - 1582 - Russel Square Entire,1,Engraving,,,
+1 off 1582. 1016.H1 - SWLPlate.OneWheelchairUser- Engraved Engraving,"1582.1016.H1
+From Cost Centre Engraving
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.154 kg
+Volume: 19380.471 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Engraving - 1582 - Russel Square Entire,1,Engraving,,,
+Surface Finish BOM - 1582 - Russel Square Entire,,ALL BOMS - 1582 - Russel Square Entire,,Surface Finish BOM,,,
+Powder Coating - 1582 - Russel Square Entire,,Surface Finish BOM - 1582 - Russel Square Entire,,Powder Coating,,,
+1 off 1582. 033 - NBSS.033 Button Plate dia 160 x 160 304/DP1 Powder Coating,"1582.033
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.377 kg
+Volume: 46626.669 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true
+---
+NOTES: PPC to match Analok 545",Powder Coating - 1582 - Russel Square Entire,1,Powder Coating,,,
+Anodising - 1582 - Russel Square Entire,,Surface Finish BOM - 1582 - Russel Square Entire,,Anodising,,,
+1 off 1582. 1002.G.013 - Pit Trim Side Panel Anodising,"1582.1002.G.013
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.893 kg
+Volume: 330570.625 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Anodising - 1582 - Russel Square Entire,1,Anodising,,,
+1 off 1582. 1002.G.017 - Pit Trim Side Panel Anodising,"1582.1002.G.017
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.972 kg
+Volume: 360150.338 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Anodising - 1582 - Russel Square Entire,1,Anodising,,,
+1 off 1582. 1002.G.028 - Pit Trim Back Panel Anodising,"1582.1002.G.028
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 2.292 kg
+Volume: 848736.507 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Anodising - 1582 - Russel Square Entire,1,Anodising,,,
+4 off 1582. 1002.G.029 - Pit Trim Wheel Track Anodising,"1582.1002.G.029
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.087 kg
+Volume: 32116.627 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Anodising - 1582 - Russel Square Entire,4,Anodising,,,
+1 off 1582. 1016.F.011 - Call for Assistance - Face Plate Narrow 304/DP1 Powder Coating,"1582.1016.F.011
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.246 kg
+Volume: 30689.801 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true
+---
+NOTES: PPC to match Analok 545",Powder Coating - 1582 - Russel Square Entire,1,Powder Coating,,,
+Yellow Zinc Plating - 1582 - Russel Square Entire,,Surface Finish BOM - 1582 - Russel Square Entire,,Yellow Zinc Plating,,,
+12 off 1582. 8000.A.009 - Step leg Yellow Zinc Plating,"1582.8000.A.009
+Material: Steel, Mild
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 7.308 kg
+Volume: 931008.300 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Yellow Zinc Plating - 1582 - Russel Square Entire,12,Yellow Zinc Plating,,,
+Galvanising - 1582 - Russel Square Entire,,Surface Finish BOM - 1582 - Russel Square Entire,,Galvanising,,,
+9 off 1582. 8000.A.182 - Flat Galvanising,"1582.8000.A.182
+Material: Steel
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 11.736 kg
+Volume: 1494973.452 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Galvanising - 1582 - Russel Square Entire,9,Galvanising,,,
+1 off 1582. 8000.B3w - Welded Assembly Galvanising,"1582.8000.B3w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 63.286 kg
+Volume: 8061918.759 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Galvanising - 1582 - Russel Square Entire,1,Galvanising,,,
+1 off 1582. 8000.B6w - Welded Assembly Galvanising,"1582.8000.B6w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 17.155 kg
+Volume: 2185368.280 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Galvanising - 1582 - Russel Square Entire,1,Galvanising,,,
+1 off 1582. 8000.B6w_MIR - Welded Assembly Galvanising,"1582.8000.B6w_MIR
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 17.155 kg
+Volume: 2185368.280 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Galvanising - 1582 - Russel Square Entire,1,Galvanising,,,
+12 off 1582. SecurityScrew - M4 x 8 CS - M4x8 Countersunk Security Screw Powder Coating,"1582.SecurityScrew - M4 x 8 CS
+Material: Generic
+Web Link: https://www.orbitalfasteners.co.uk/en/products/m4x8-countersunk-socket-machine-screw-resistorx-stainless-steel-a2-304-tx-20h
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.000 kg
+Volume: 127.948 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true
+---
+NOTES: PPC to match Analok 545",Powder Coating - 1582 - Russel Square Entire,12,Powder Coating,,,
+Laser Cut BOM - 1582 - Russel Square Entire,,ALL BOMS - 1582 - Russel Square Entire,,Laser Cut,,,
+Laser Cut - 1582 - Russel Square Entire,,Laser Cut BOM - 1582 - Russel Square Entire,,Laser Cut,,,
+1 off 1582. 1002.G.013 - Pit Trim Side Panel Laser Cut,"1582.1002.G.013
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.893 kg
+Volume: 330570.625 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 1002.G.014 - Pit Trim Side Panel 304/2B Laser Cut,"1582.1002.G.014
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 1.822 kg
+Volume: 227757.169 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 1002.G.014_MIR - Pit Trim Side Panel 304/2B Laser Cut,"1582.1002.G.014_MIR
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 1.822 kg
+Volume: 227757.169 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 1002.G.015 - Pit Trim Front Panel 304/2B Laser Cut,"1582.1002.G.015
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 2.443 kg
+Volume: 305332.711 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 1002.G.017 - Pit Trim Side Panel Laser Cut,"1582.1002.G.017
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.972 kg
+Volume: 360150.338 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+12 off 1582. 1002.G.018 - Corner bracket 304/HR Laser Cut,"1582.1002.G.018
+Stock Number: 304/HR
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.493 kg
+Volume: 61571.645 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,12,Laser Cut,,,
+1 off 1582. 1002.G.021 - SWLP support 304/2B Laser Cut,"1582.1002.G.021
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.309 kg
+Volume: 38590.751 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 1002.G.022 - Packer 304/2B Laser Cut,"1582.1002.G.022
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.078 kg
+Volume: 9697.949 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 1002.G.026 - Magnet bracket 304/2B Laser Cut,"1582.1002.G.026
+Stock Number: 304/2B
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.058 kg
+Volume: 7293.423 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 1002.G.028 - Pit Trim Back Panel Laser Cut,"1582.1002.G.028
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 2.292 kg
+Volume: 848736.507 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+4 off 1582. 1002.G.029 - Pit Trim Wheel Track Laser Cut,"1582.1002.G.029
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.087 kg
+Volume: 32116.627 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,4,Laser Cut,,,
+1 off 1582. 1008.C.003 - Plate to E-stop under lift 304/HR Laser Cut,"1582.1008.C.003
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.425 kg
+Volume: 53142.459 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 1008.D1.112 - Valve Plate No Ext. 304/HR Laser Cut,"1582.1008.D1.112
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.828 kg
+Volume: 103454.377 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 1016.F.011 - Call for Assistance - Face Plate Narrow 304/DP1 Laser Cut,"1582.1016.F.011
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.246 kg
+Volume: 30689.801 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true
+---
+NOTES: PPC to match Analok 545",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 1055.A.004 - Tube Base Plate 304/HR Laser Cut,"1582.1055.A.004
+Stock Number: 304/HR
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.112 kg
+Volume: 13804.562 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 1055.A.030 - Steel plate 304/DP1 Laser Cut,"1582.1055.A.030
+Stock Number: 304/DP1
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.040 kg
+Volume: 5024.648 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+2 off 1582. 1055.A.031 - Lifting key 304/2B Laser Cut,"1582.1055.A.031
+Stock Number: 304/2B
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.014 kg
+Volume: 1798.214 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+1 off 1582. 1055.A.032 - Base Plate 304/HR Laser Cut,"1582.1055.A.032
+Stock Number: 304/HR
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.226 kg
+Volume: 28006.598 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+2 off 1582. 1055.A.037 - Packers 304/2B Laser Cut,"1582.1055.A.037
+Stock Number: 304/2B
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.039 kg
+Volume: 4899.014 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+1 off 1582. 8000.A.011 - Top Step Plate 304/HR Laser Cut,"1582.8000.A.011
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 13.939 kg
+Volume: 1742340.553 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 8000.A.023 - WheelStop BasePlate 304/HR Laser Cut,"1582.8000.A.023
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 51.855 kg
+Volume: 6481922.718 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 8000.A.024 - WheelStop Front 304/DP2 Laser Cut,"1582.8000.A.024
+Stock Number: 304/DP2
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 10.477 kg
+Volume: 1309623.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 8000.A.025 - WheelStop Side 304/DP2 Laser Cut,"1582.8000.A.025
+Stock Number: 304/DP2
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 13.035 kg
+Volume: 1629357.292 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 8000.A.025_MIR1 - WheelStop Side 304/DP2 Laser Cut,"1582.8000.A.025_MIR1
+Stock Number: 304/DP2
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 13.035 kg
+Volume: 1629357.292 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+12 off 1582. 8000.A.039 - Packers 304/HR Laser Cut,"1582.8000.A.039
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.023 kg
+Volume: 2898.446 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,12,Laser Cut,,,
+60 off 1582. 8000.A.040 - Packer 304/2B Laser Cut,"1582.8000.A.040
+Stock Number: 304/2B
+KAN: KAN-298
+KAN Stock Link: https://app.asana.com/0/632603478911321/1200317103586535
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.005 kg
+Volume: 579.689 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,60,Laser Cut,,,
+2 off 1582. 8000.A.043 - Bumper Bracket 304/HR Laser Cut,"1582.8000.A.043
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 4.072 kg
+Volume: 509001.966 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+24 off 1582. 8000.A.051 - Packers 304/2B Laser Cut,"1582.8000.A.051
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.064 kg
+Volume: 7987.120 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,24,Laser Cut,,,
+8 off 1582. 8000.A.052 - Packers 304/2B Laser Cut,"1582.8000.A.052
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.128 kg
+Volume: 15974.241 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,8,Laser Cut,,,
+2 off 1582. 8000.A.059 - Wheel Bracket 304/HR Laser Cut,"1582.8000.A.059
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.225 kg
+Volume: 28116.765 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+2 off 1582. 8000.A.059_MIR - Wheel Bracket 304/HR Laser Cut,"1582.8000.A.059_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.225 kg
+Volume: 28116.765 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+32 off 1582. 8000.A.060 - Packers 304/2B Laser Cut,"1582.8000.A.060
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.017 kg
+Volume: 2146.274 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,32,Laser Cut,,,
+8 off 1582. 8000.A.061 - Packers 304/2B Laser Cut,"1582.8000.A.061
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.034 kg
+Volume: 4292.549 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,8,Laser Cut,,,
+2 off 1582. 8000.A.062 - Wheel Bracket 304/HR Laser Cut,"1582.8000.A.062
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.195 kg
+Volume: 24366.462 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+2 off 1582. 8000.A.062_MIR - Wheel Bracket 304/HR Laser Cut,"1582.8000.A.062_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.195 kg
+Volume: 24366.462 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+6 off 1582. 8000.A.070 - Packers 304/2B Laser Cut,"1582.8000.A.070
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.101 kg
+Volume: 12621.441 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,6,Laser Cut,,,
+18 off 1582. 8000.A.071 - Packers 304/2B Laser Cut,"1582.8000.A.071
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.050 kg
+Volume: 6310.720 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,18,Laser Cut,,,
+1 off 1582. 8000.A.078 - Proxy Switch Bracket 304/2B Laser Cut,"1582.8000.A.078
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.105 kg
+Volume: 13100.882 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+12 off 1582. 8000.A.083 - Packers 304/2B Laser Cut,"1582.8000.A.083
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.005 kg
+Volume: 612.896 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,12,Laser Cut,,,
+1 off 1582. 8000.A.087 - Wheelstop Stiffner Plate 304/HR Laser Cut,"1582.8000.A.087
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 2.031 kg
+Volume: 253827.292 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+12 off 1582. 8000.A.089 - Leveling Foot Pad 304/HR Laser Cut,"1582.8000.A.089
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.032 kg
+Volume: 4048.253 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,12,Laser Cut,,,
+12 off 1582. 8000.A.090 - Gusset 304/2B Laser Cut,"1582.8000.A.090
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.020 kg
+Volume: 2533.500 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,12,Laser Cut,,,
+Laser cut BOM - 1582 - Russel Square Entire,,ALL BOMS - 1582 - Russel Square Entire,,Laser cut,,,
+3 off 1582. 8000.A.092 - Limit Switch Angle 304/2B Laser Cut,"1582.8000.A.092
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.141 kg
+Volume: 17563.452 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,3,Laser Cut,,,
+1 off 1582. 8000.A.094 - Folded angle 304/2B Laser Cut,"1582.8000.A.094
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 1.675 kg
+Volume: 209355.144 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 8000.A.095 - Angle 304/2B Laser Cut,"1582.8000.A.095
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 1.782 kg
+Volume: 222758.687 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+6 off 1582. 8000.A.100 - Packers 304/2B Laser Cut,"1582.8000.A.100
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.064 kg
+Volume: 7965.920 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,6,Laser Cut,,,
+2 off 1582. 8000.A.101 - Packers 304/2B Laser Cut,"1582.8000.A.101
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.127 kg
+Volume: 15931.841 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+2 off 1582. 8000.A.103 - Leg Stabilisation Bracket 304/2B Laser Cut,"1582.8000.A.103
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.228 kg
+Volume: 28506.715 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+2 off 1582. 8000.A.105 - Packers 304/2B Laser Cut,"1582.8000.A.105
+Stock Number: 304/2B
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.084 kg
+Volume: 10459.841 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+6 off 1582. 8000.A.106 - Packers 304/2B Laser Cut,"1582.8000.A.106
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.042 kg
+Volume: 5229.920 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,6,Laser Cut,,,
+1 off 1582. 8000.A.152 - Middle Step Plate 304/HR Laser Cut,"1582.8000.A.152
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 13.858 kg
+Volume: 1732244.226 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+2 off 1582. 8000.A.155 - Step Front Plate 304/HR Laser Cut,"1582.8000.A.155
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 5.961 kg
+Volume: 745094.592 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+5 off 1582. 8000.A.164 - Angle 304/2B Laser Cut,"1582.8000.A.164
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 1.786 kg
+Volume: 223266.447 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,5,Laser Cut,,,
+1 off 1582. 8000.A.165 - Folded angle 304/2B Laser Cut,"1582.8000.A.165
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 2.814 kg
+Volume: 351748.849 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+2 off 1582. 8000.A.166 - Folded angle 304/2B Laser Cut,"1582.8000.A.166
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 1.749 kg
+Volume: 218664.309 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+2 off 1582. 8000.A.167 - Leg Stabilisation Bracket 304/2B Laser Cut,"1582.8000.A.167
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.245 kg
+Volume: 30598.883 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+3 off 1582. 8000.A.177 - Limit Switch Angle 304/2B Laser Cut,"1582.8000.A.177
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.254 kg
+Volume: 31792.039 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,3,Laser Cut,,,
+12 off 1582. 8000.A.180 - Rod packer 304/HR Laser Cut,"1582.8000.A.180
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.058 kg
+Volume: 7238.229 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,12,Laser Cut,,,
+2 off 1582. 8000.A.183 - Angle 304/2B Laser Cut,"1582.8000.A.183
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.245 kg
+Volume: 30668.550 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+2 off 1582. 8000.A.185 - Folded angle 304/2B Laser Cut,"1582.8000.A.185
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 2.585 kg
+Volume: 323093.447 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+1 off 1582. 8000.A.197 - Flat 304/HR Laser Cut,"1582.8000.A.197
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 1.512 kg
+Volume: 189054.577 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 8000.A.198 - Front skirt 304/DP1 Laser Cut,"1582.8000.A.198
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 4.611 kg
+Volume: 576323.813 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 8000.A.199 - Middle Step Plate 304/HR Laser Cut,"1582.8000.A.199
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 33.784 kg
+Volume: 4222980.707 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+2 off 1582. 8000.A.204 - Flat 304/HR Laser Cut,"1582.8000.A.204
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 2.003 kg
+Volume: 250397.608 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+1 off 1582. 8000.A.205 - Side skirt 304/DP1 Laser Cut,"1582.8000.A.205
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 4.755 kg
+Volume: 594334.496 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 8000.A.205_MIR - Side skirt 304/DP1 Laser Cut,"1582.8000.A.205_MIR
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 4.757 kg
+Volume: 594588.376 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 8000.A.207 - Side Step Cover 304/HR Laser Cut,"1582.8000.A.207
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.630 kg
+Volume: 78786.576 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+1 off 1582. 8000.A.207_MIR - Side Step Cover 304/HR Laser Cut,"1582.8000.A.207_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.630 kg
+Volume: 78786.576 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,1,Laser Cut,,,
+2 off 1582. 8000.A.208 - Bearing template 304/2B Laser Cut,"1582.8000.A.208
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.023 kg
+Volume: 2816.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+2 off 1582. 8000.A.212 - Leg Stabilisation Bracket 304/2B Laser Cut,"1582.8000.A.212
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.721 kg
+Volume: 90141.715 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+10 off 1582. 8000.B.022 - Bracket Laser Cut,"1582.8000.B.022
+Material: Steel, Mild
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.143 kg
+Volume: 18218.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,10,Laser Cut,,,
+4 off 1582. 8000.B.046 - Frame distancing flat Laser Cut,"1582.8000.B.046
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.669 kg
+Volume: 85252.129 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,4,Laser Cut,,,
+2 off 1582. 8000.B.063 - SL Frame side angle drilling template Laser Cut,"1582.8000.B.063
+Material: Steel, Mild
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 2.140 kg
+Volume: 272598.938 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+2 off 1582. 8000.B.064 - Packers 304/2B Laser Cut,"1582.8000.B.064
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.049 kg
+Volume: 6121.673 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+4 off 1582. 8000.B.069 - Frame fixing plate Laser Cut,"1582.8000.B.069
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 3.089 kg
+Volume: 393553.806 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,4,Laser Cut,,,
+4 off 1582. 8000.C.005 - Folded Angle 304/2B Laser Cut,"1582.8000.C.005
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.948 kg
+Volume: 118490.764 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,4,Laser Cut,,,
+8 off 1582. 8000.C.007 - Plate 304/HR Laser Cut,"1582.8000.C.007
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.095 kg
+Volume: 11920.743 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,8,Laser Cut,,,
+10 off 1582. 8000.C.018 - Plate 304/HR Laser Cut,"1582.8000.C.018
+Stock Number: 304/HR
+KAN: KAN-696
+KAN Stock Link: https://app.asana.com/0/632603478911321/1211647530696130
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.092 kg
+Volume: 11520.115 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,10,Laser Cut,,,
+2 off 1582. 8000.C.021 - Base Channel 304/2B Laser Cut,"1582.8000.C.021
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 6.347 kg
+Volume: 793339.634 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,2,Laser Cut,,,
+12 off 1582. 8000.C.040 - Washer Laser Cut,"1582.8000.C.040
+KAN: KAN-298
+KAN Stock Link: https://app.asana.com/0/632603478911321/1200317103586535
+Material: Steel, Mild
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.007 kg
+Volume: 849.447 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Laser Cut - 1582 - Russel Square Entire,12,Laser Cut,,,
+Machining BOM - 1582 - Russel Square Entire,,ALL BOMS - 1582 - Russel Square Entire,,Machining,,,
+Machining - 1582 - Russel Square Entire,,Machining BOM - 1582 - Russel Square Entire,,Machining,,,
+1 off 1582. 1055.A17 - Machined assembly Machining,"1582.1055.A17
+KAN: KAN-341
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267493
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.721 kg
+Volume: 118681.469 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Machining - 1582 - Russel Square Entire,1,Machining,,,
+12 off 1582. 8000.A.009 - Step leg Machining,"1582.8000.A.009
+Material: Steel, Mild
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 7.308 kg
+Volume: 931008.300 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Machining - 1582 - Russel Square Entire,12,Machining,,,
+4 off 1582. 8000.A.044 - PTFE slider Machining,"1582.8000.A.044
+Material: PTFE
+Web Link: https://www.directplastics.co.uk/ptfe-sheet
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.140 kg
+Volume: 6356.857 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Machining - 1582 - Russel Square Entire,4,Machining,,,
+8 off 1582. 8000.A.049 - PTFE slider Machining,"1582.8000.A.049
+Material: PTFE
+Web Link: https://www.directplastics.co.uk/ptfe-sheet
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.878 kg
+Volume: 39921.715 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Machining - 1582 - Russel Square Entire,8,Machining,,,
+6 off 1582. 8000.A.069 - PTFE slider Machining,"1582.8000.A.069
+Material: PTFE
+Web Link: https://www.directplastics.co.uk/ptfe-sheet
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.694 kg
+Volume: 31561.715 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Machining - 1582 - Russel Square Entire,6,Machining,,,
+4 off 1582. 8000.A.082 - PTFE slider Machining,"1582.8000.A.082
+Material: PTFE
+Web Link: https://www.directplastics.co.uk/ptfe-sheet
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.077 kg
+Volume: 3497.715 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Machining - 1582 - Russel Square Entire,4,Machining,,,
+2 off 1582. 8000.A.099 - PTFE slider Machining,"1582.8000.A.099
+Material: PTFE
+Web Link: https://www.directplastics.co.uk/ptfe-sheet
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.878 kg
+Volume: 39921.715 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Machining - 1582 - Russel Square Entire,2,Machining,,,
+2 off 1582. 8000.A.104 - PTFE slider Machining,"1582.8000.A.104
+Material: PTFE
+Web Link: https://www.directplastics.co.uk/ptfe-sheet
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.577 kg
+Volume: 26241.715 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Machining - 1582 - Russel Square Entire,2,Machining,,,
+12 off 1582. 8000.A.203 - Leg Cap Machining,"1582.8000.A.203
+Material: Acetal Resin, Black
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.005 kg
+Volume: 3269.383 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Machining - 1582 - Russel Square Entire,12,Machining,,,
+8 off 1582. 8000.C.006 - Packing Block Machining,"1582.8000.C.006
+Material: Acetal Resin, Black
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.032 kg
+Volume: 22453.725 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Machining - 1582 - Russel Square Entire,8,Machining,,,
+2 off 1582. 8000.C.030 - Acetal Slider Machining,"1582.8000.C.030
+Material: Acetal Resin, Black
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.055 kg
+Volume: 38609.478 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Machining - 1582 - Russel Square Entire,2,Machining,,,
+2 off 1582. 8000.C.037 - Acetal Slider Machining,"1582.8000.C.037
+Material: Acetal Resin, Black
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.020 kg
+Volume: 13699.652 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Machining - 1582 - Russel Square Entire,2,Machining,,,
+4 off 1582. 8000.C.038 - Acetal Slider Machining,"1582.8000.C.038
+Material: Acetal Resin, Black
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.008 kg
+Volume: 5959.652 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Machining - 1582 - Russel Square Entire,4,Machining,,,
+2 off 1582. 8000.C.041 - Acetal Slider Machining,"1582.8000.C.041
+Material: Acetal Resin, Black
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.053 kg
+Volume: 37252.310 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Machining - 1582 - Russel Square Entire,2,Machining,,,
+MayTec BOM - 1582 - Russel Square Entire,,ALL BOMS - 1582 - Russel Square Entire,,MayTec,,,
+MayTec - 1582 - Russel Square Entire,,MayTec BOM - 1582 - Russel Square Entire,,MayTec,,,
+1 off 1582. 1002.G1 - Side frame MayTec,"1582.1002.G1
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 7.283 kg
+Volume: 2396331.299 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",MayTec - 1582 - Russel Square Entire,1,MayTec,,,
+1 off 1582. 1002.G1_MIR - Side frame MayTec,"1582.1002.G1_MIR
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 7.283 kg
+Volume: 2396331.299 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",MayTec - 1582 - Russel Square Entire,1,MayTec,,,
+1 off 1582. 1002.G2 - Front frame MayTec,"1582.1002.G2
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 4.521 kg
+Volume: 1544534.549 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",MayTec - 1582 - Russel Square Entire,1,MayTec,,,
+1 off 1582. 1002.G4 - Back frame MayTec,"1582.1002.G4
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 6.818 kg
+Volume: 2304370.300 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",MayTec - 1582 - Russel Square Entire,1,MayTec,,,
+NBSS BOM - 1582 - Russel Square Entire,,ALL BOMS - 1582 - Russel Square Entire,,NBSS,,,
+NBSS/Sesame - 1582 - Russel Square Entire,,NBSS BOM - 1582 - Russel Square Entire,,NBSS/Sesame,,,
+8 off 1582. 003 - NBSS.003 15mm Shock Mount M8 25.5mm Diameter 60daN Compression Load 3.5mm 295-1477 / 511270 NBSS/Sesame,"1582.003
+Stock Number: 295-1477 / 511270
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/stud-mounts/2951477/
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.008 kg
+Volume: 8665.887 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Sesame - 1582 - Russel Square Entire,8,NBSS/Sesame,,,
+NBSS/Machining - 1582 - Russel Square Entire,,NBSS BOM - 1582 - Russel Square Entire,,NBSS/Machining,,,
+1 off 1582. 009 - NBSS.009 AcetalRing Standard 80mm in machining stock NBSS/Machining,"1582.009
+Stock Number: Standard 80mm in machining stock
+Material: Acetal Resin, White
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.051 kg
+Volume: 35815.976 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Machining - 1582 - Russel Square Entire,1,NBSS/Machining,,,
+1 off 1582. 010 - NBSS.010 PostHandle NBSS/Machining,"1582.010
+Material: Stainless Steel
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 1.147 kg
+Volume: 143377.756 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Machining - 1582 - Russel Square Entire,1,NBSS/Machining,,,
+NBSS/Laser Cut - 1582 - Russel Square Entire,,NBSS BOM - 1582 - Russel Square Entire,,NBSS/Laser Cut,,,
+1 off 1582. 011 - NBSS.011 Button station -  Back Box 140x140 304/2B NBSS/Laser Cut,"1582.011
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.500 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.621 kg
+Volume: 77651.885 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Laser Cut - 1582 - Russel Square Entire,1,NBSS/Laser Cut,,,
+1 off 1582. 012 - NBSS.012 Call for Assistance BackingBox NBSS/Laser Cut,"1582.012
+Material: Stainless Steel
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.362 kg
+Volume: 45269.275 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Laser Cut - 1582 - Russel Square Entire,1,NBSS/Laser Cut,,,
+1 off 1582. 022 - NBSS 022 HydraulicBulkheadPlate 304/2B NBSS/Laser Cut,"1582.022
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.579 kg
+Volume: 71702.921 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Laser Cut - 1582 - Russel Square Entire,1,NBSS/Laser Cut,,,
+1 off 1582. 030 - NBSS.030 JunctionBoxBracket NBSS/Laser Cut,"1582.030
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.264 kg
+Volume: 33031.962 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Laser Cut - 1582 - Russel Square Entire,1,NBSS/Laser Cut,,,
+1 off 1582. 033 - NBSS.033 Button Plate dia 160 x 160 304/DP1 NBSS/Laser Cut,"1582.033
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.377 kg
+Volume: 46626.669 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true
+---
+NOTES: PPC to match Analok 545",NBSS/Laser Cut - 1582 - Russel Square Entire,1,NBSS/Laser Cut,,,
+1 off 1582. 034.001 - NBSS.034.001 SafeWorkingLoadPlate: Blank NBSS/Laser Cut,"1582.034.001
+KAN: KAN-310
+KAN Stock Link: https://app.asana.com/0/632603478911321/1165239479083396
+Material: Stainless Steel
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.154 kg
+Volume: 19288.301 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Laser Cut - 1582 - Russel Square Entire,1,NBSS/Laser Cut,,,
+NBSS/Welded by Sesame - 1582 - Russel Square Entire,,NBSS BOM - 1582 - Russel Square Entire,,NBSS/Welded by Sesame,,,
+12 off 1582. 040.02 - NBSS 040 Welded Assembly NBSS/Welded by Sesame,"1582.040.02
+KAN: KAN-298
+KAN Stock Link: https://app.asana.com/0/632603478911321/1200317103586535
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.110 kg
+Volume: 13853.362 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Welded by Sesame - 1582 - Russel Square Entire,12,NBSS/Welded by Sesame,,,
+12 off 1582. 044.01 - NBSS.044.01 Bearing Rubber Gasket NBSS/Sesame,"1582.044.01
+Material: Rubber
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.002 kg
+Volume: 1810.937 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Sesame - 1582 - Russel Square Entire,12,NBSS/Sesame,,,
+1 off 1582. 047 - NBSS.047 Post Inner Rod (This part is 70mm and needs to be adjusted per job by Sesame Engineer) NBSS/Machining,"1582.047
+Material: Stainless Steel
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.692 kg
+Volume: 86540.131 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Machining - 1582 - Russel Square Entire,1,NBSS/Machining,,,
+1 off 1582. 049 - NBSS.049 Dripping Tray NBSS/Welded by Sesame,"1582.049
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 7.853 kg
+Volume: 981587.109 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Welded by Sesame - 1582 - Russel Square Entire,1,NBSS/Welded by Sesame,,,
+4 off 1582. 050 - NBSS.050 Leveling Feet Welded Bolt NBSS/Welded by Sesame,"1582.050
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.318 kg
+Volume: 40545.057 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Welded by Sesame - 1582 - Russel Square Entire,4,NBSS/Welded by Sesame,,,
+8 off 1582. 051 - NBSS.051 Pit Trim Installation Bracket 304/HR NBSS/Laser Cut,"1582.051
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.115 kg
+Volume: 14350.411 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Laser Cut - 1582 - Russel Square Entire,8,NBSS/Laser Cut,,,
+8 off 1582. 129 - NBSS.129 Loading Point Washer dia 50 x 50 304/HR NBSS/Laser Cut,"1582.129
+Stock Number: 304/HR
+KAN: KAN-288
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267503
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.185 kg
+Volume: 23151.593 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Laser Cut - 1582 - Russel Square Entire,8,NBSS/Laser Cut,,,
+1 off 1582. 768 - NBSS.768 Machine Room Cabinet Frame NBSS/Sesame,"1582.768
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 24.659 kg
+Volume: 3141298.763 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Sesame - 1582 - Russel Square Entire,1,NBSS/Sesame,,,
+8 off 1582. 779 - Tapped Bush NBSS/Machining,"1582.779
+Material: Stainless Steel
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.118 kg
+Volume: 14788.641 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Machining - 1582 - Russel Square Entire,8,NBSS/Machining,,,
+4 off 1582. 1000.C.R-Clip 2.5x45 - Zinc Plated Steel R-Clip 2.5x45 R-Clip 2.5x45 NBSS/Sesame,"1582.1000.C.R-Clip 2.5x45
+Stock Number: R-Clip 2.5x45
+Material: Stainless Steel
+Web Link: https://www.spaldingfasteners.co.uk/metric-zinc-plated-steel-r-clips-1-2-x-16mm-to-6-x-117mm/
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.004 kg
+Volume: 489.875 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Sesame - 1582 - Russel Square Entire,4,NBSS/Sesame,,,
+4 off 1582. 1000.L.WDS674-216 - Swivel Pad M16 674-216 NBSS/Sesame,"1582.1000.L.WDS674-216
+Stock Number: 674-216
+KAN: KAN-264
+KAN Stock Link: https://app.asana.com/0/632603478911321/1202312166676506
+Web Link: https://www.wdscomponents.com/en-gb/swivel-pad-steel-with-chemical-black-finish-674-216
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.189 kg
+Volume: 24055.574 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Sesame - 1582 - Russel Square Entire,4,NBSS/Sesame,,,
+1 off 1582. 1008.T.8ID_Grommet - 8mm ID Grommet 666-4603 NBSS/Sesame,"1582.1008.T.8ID_Grommet
+Stock Number: 666-4603
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/cable-grommets/6664603
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.001 kg
+Volume: 677.640 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",NBSS/Sesame - 1582 - Russel Square Entire,1,NBSS/Sesame,,,
+Sesame BOM - 1582 - Russel Square Entire,,ALL BOMS - 1582 - Russel Square Entire,,Sesame,,,
+RS Components - 1582 - Russel Square Entire,,Sesame BOM - 1582 - Russel Square Entire,,RS Components,,,
+4 off 1582. 1000.B.30x17_F_M8_98.6daN - M8 x 30 female vibration mount 257-8763 RS Components,"1582.1000.B.30x17_F_M8_98.6daN
+Stock Number: 257-8763
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/anti-vibration-mounts/2578763/?relevancy-data=636F3D3126696E3D4931384E525353746F636B4E756D626572266C753D656E266D6D3D6D61746368616C6C26706D3D5E2828282872737C5253295B205D3F293F285C647B337D5B5C2D5C735D3F5C647B332C347D5B705061415D3F29297C283235285C647B387D7C5C647B317D5C2D5C647B377D2929292426706F3D3126736E3D592673723D2673743D52535F53544F434B5F4E554D4245522677633D4E4F4E45267573743D3235372D38373633267374613D3235373837363326&searchHistory=%7B%22enabled%22%3Atrue%7D
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.011 kg
+Volume: 11797.192 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",RS Components - 1582 - Russel Square Entire,4,RS Components,,,
+"12 off 1582. 1000.B.50x15_F_M10_306kg - RS PRO M10 Anti Vibration Mount, Female Buffer Foot with 306kg Compression Load 126-5969 RS Components","1582.1000.B.50x15_F_M10_306kg
+Stock Number: 126-5969
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/anti-vibration-mounts/1265969?redirect-relevancy-data=7365617263685F636173636164655F6F726465723D31267365617263685F696E746572666163655F6E616D653D4931384E525353746F636B4E756D626572267365617263685F6D617463685F6D6F64653D6D61746368616C6C267365617263685F7061747465726E5F6D6174636865643D5E2828282872737C5253295B205D3F293F285C647B337D5B5C2D5C735D3F5C647B332C347D5B705061415D3F29297C283235285C647B387D7C5C647B317D5C2D5C647B377D29292924267365617263685F747970653D52535F53544F434B5F4E554D424552267365617263685F77696C645F63617264696E675F6D6F64653D4E4F4E45267365617263685F6B6579776F72643D31323635393639267365617263685F6B6579776F72645F6170703D3132363539363926
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.029 kg
+Volume: 28862.393 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",RS Components - 1582 - Russel Square Entire,12,RS Components,,,
+4 off 1582. 1000.B.50x25_M_M10_300daN - Shock Mount M10 50mm Diameter 300daN Compression Load 6mm deflection 385-1586 / 511525 RS Components,"1582.1000.B.50x25_M_M10_300daN
+Stock Number: 385-1586 / 511525
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/stud-mounts/3851586/?sra=pstk
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.047 kg
+Volume: 51050.881 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",RS Components - 1582 - Russel Square Entire,4,RS Components,,,
+Boneham - 1582 - Russel Square Entire,,Sesame BOM - 1582 - Russel Square Entire,,Boneham,,,
+4 off 1582. 1000.C.ClevisPin 12x35mm - Clevis Pin Stainless Steel CPSS-12-035 Boneham,"1582.1000.C.ClevisPin 12x35mm
+Stock Number: CPSS-12-035
+Material: Stainless Steel
+Web Link: http://www.boneham.co.uk/Products/clevis-pins/clevis-pins-metric
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.040 kg
+Volume: 5021.399 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Boneham - 1582 - Russel Square Entire,4,Boneham,,,
+1 off 1582. 1008.A3.001 - MP200701 - Magnetic Proximity Sensor N/O 765-9347 RS Components,"1582.1008.A3.001
+Stock Number: 765-9347
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/magnetic-proximity-switches/7659347
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.003 kg
+Volume: 2845.338 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",RS Components - 1582 - Russel Square Entire,1,RS Components,,,
+Sesame - 1582 - Russel Square Entire,,Sesame BOM - 1582 - Russel Square Entire,,Sesame,,,
+1 off 1582. 1008.A3.005 - Neodymium Magnet - 1.2kg Pull F102N-10 Sesame,"1582.1008.A3.005
+Stock Number: F102N-10
+Material: Generic
+Web Link: https://www.first4magnets.com/product/10mm-dia-x-2mm-thick-x-3mm-c-sink-neodymium-magnet-12kg-pull-2446#ab_1_1|ps_2_675
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.000 kg
+Volume: 114.506 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Sesame - 1582 - Russel Square Entire,1,Sesame,,,
+"1 off 1582. 1008.A3.006 - RS PRO Vulcanised Fibre Tap Washers, M4 526-366 RS Components","1582.1008.A3.006
+Stock Number: 526-366
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/washers/0526366?gb=a
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.000 kg
+Volume: 40.841 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",RS Components - 1582 - Russel Square Entire,1,RS Components,,,
+3 off 1582. 1008.A14 - Standard LimitSwitch: LRC5A54 LRC5A54 Sesame,"1582.1008.A14
+Stock Number: LRC5A54
+Web Link: https://uk.farnell.com/imo-precision-controls/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.854 kg
+Volume: 162337.453 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Sesame - 1582 - Russel Square Entire,3,Sesame,,,
+1 off 1582. 1008.C.002 - E.Stop - Big 330-8587 RS Components,"1582.1008.C.002
+Stock Number: 330-8587
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/emergency-stop-push-buttons/3308587/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.298 kg
+Volume: 298073.368 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",RS Components - 1582 - Russel Square Entire,1,RS Components,,,
+Bes - 1582 - Russel Square Entire,,Sesame BOM - 1582 - Russel Square Entire,,Bes,,,
+"1 off 1582. 1008.D1.120 - Drain Cock Type A - 3/4"" BSP Brass 3/4"" BSP Bes","1582.1008.D1.120
+Stock Number: 3/4"" BSP
+Material: Brass, Soft Yellow
+Web Link: https://www.bes.co.uk/drain-cock-type-a-3-4in-bsp-brass-7496/?srsltid=AfmBOopiSwmvu2xg6-awSWh6goCllN-njqrkEp1XNkmdCSXU4uyE7jHg
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.316 kg
+Volume: 37283.251 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Bes - 1582 - Russel Square Entire,1,Bes,,,
+5 off 1582. 1008.T.13ID_P_Clip - Rubber-lined clamp; 13mm ID 298-8097 RS Components,"1582.1008.T.13ID_P_Clip
+Stock Number: 298-8097
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/p-clips/2988097/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.002 kg
+Volume: 1949.773 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",RS Components - 1582 - Russel Square Entire,5,RS Components,,,
+1 off 1582. 1008.T.25ID_Grommet - Grommet ID 18.5mm (Hole 25mm Dia.) Sesame,"1582.1008.T.25ID_Grommet
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.005 kg
+Volume: 5276.370 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Sesame - 1582 - Russel Square Entire,1,Sesame,,,
+2 off 1582. 1008.U.01 - 85x85x51 Wiska Junction Box 700-0802 Sesame,"1582.1008.U.01
+Stock Number: 700-0802
+Material: PET Plastic
+Web Link: https://uk.rs-online.com/web/p/junction-boxes/7000802?searchId=f4dce812-75bb-4641-9814-24dc7daf85be&gb=s
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.000 kg
+Volume: 45249.084 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Sesame - 1582 - Russel Square Entire,2,Sesame,,,
+Steerforth - 1582 - Russel Square Entire,,Sesame BOM - 1582 - Russel Square Entire,,Steerforth,,,
+"2 off 1582. 1008.V1.1.MiniActuator[50mm] - Mini hydraulic actuator _ 50mm stroke, connectors on both sides MP SX 25/18X50 S AS Steerforth","1582.1008.V1.1.MiniActuator[50mm]
+Stock Number: MP SX 25/18X50 S AS
+Web Link: https://www.steerforth.co.uk/magnetic-compact-industrial-hydraulic-cylinders-p-4285.html / https://www.confortinet.com/product-rp.asp
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.268 kg
+Volume: 267549.302 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Steerforth - 1582 - Russel Square Entire,2,Steerforth,,,
+4 off 1582. 1008.V1.003 - Comepi reed switch for hydraulic actuator groove SA3D250-G18 Steerforth,"1582.1008.V1.003
+Stock Number: SA3D250-G18
+Material: Generic
+Web Link: www.confortinet.com
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.001 kg
+Volume: 555.360 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Steerforth - 1582 - Russel Square Entire,4,Steerforth,,,
+Rubber Supplier - 1582 - Russel Square Entire,,Sesame BOM - 1582 - Russel Square Entire,,Rubber Supplier,,,
+1 off 1582. 1016.2.005 - Ruber Gasket Rubber Supplier,"1582.1016.2.005
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.008 kg
+Volume: 8451.460 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Rubber Supplier - 1582 - Russel Square Entire,1,Rubber Supplier,,,
+EAO - 1582 - Russel Square Entire,,Sesame BOM - 1582 - Russel Square Entire,,EAO,,,
+2 off 1582. 1016.3.001 - Lift UP.Down Button 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066 EAO,"1582.1016.3.001
+Stock Number: 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066
+Material: Generic
+Web Link: http://eao.com/en
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.014 kg
+Volume: 13547.123 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",EAO - 1582 - Russel Square Entire,2,EAO,,,
+"1 off 1582. 1016.3.002 - Call for assistance (Bell), CFA + Doorbell 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066 EAO","1582.1016.3.002
+Stock Number: 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.014 kg
+Volume: 13546.262 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",EAO - 1582 - Russel Square Entire,1,EAO,,,
+1 off 1582. 1016.3.003 - E-Stop Mushroom Head 61-3440.4/5 EAO,"1582.1016.3.003
+Stock Number: 61-3440.4/5
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.014 kg
+Volume: 13538.346 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",EAO - 1582 - Russel Square Entire,1,EAO,,,
+1 off 1582. 1016.3.006 - Stairs push button 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066 EAO,"1582.1016.3.006
+Stock Number: 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.014 kg
+Volume: 13545.673 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",EAO - 1582 - Russel Square Entire,1,EAO,,,
+1 off 1582. 1016.3.008 - Stainless Call for Assistance button RS: 690-3292 RS Components,"1582.1016.3.008
+Stock Number: RS: 690-3292
+Material: Generic
+Web Link: http://uk.rs-online.com/web/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.011 kg
+Volume: 10696.285 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",RS Components - 1582 - Russel Square Entire,1,RS Components,,,
+1 off 1582. 1016.3.009(3Way-Spr) - Key Switch. 3PositionSpringReturn 51-374.F22DF EAO,"1582.1016.3.009(3Way-Spr)
+Stock Number: 51-374.F22DF
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.011 kg
+Volume: 10542.114 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",EAO - 1582 - Russel Square Entire,1,EAO,,,
+1 off 1582. 1016.F.007 - Ruber Gasket Rubber Supplier,"1582.1016.F.007
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.006 kg
+Volume: 6303.903 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Rubber Supplier - 1582 - Russel Square Entire,1,Rubber Supplier,,,
+1 off 1582. 1016.F.010 - Honeywell Doorbell DCP311G Series 3 DCP311G Sesame,"1582.1016.F.010
+Stock Number: Series 3 DCP311G
+Material: Generic
+Web Link: https://www.amazon.co.uk/gp/product/B016OXTBD8/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&th=1
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.030 kg
+Volume: 29594.803 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Sesame - 1582 - Russel Square Entire,1,Sesame,,,
+1 off 1582. 1016.J.RemoteControll_RF.Sol.1(4B).04 Sesame,"1582.1016.J.RemoteControll_RF.Sol.1(4B).04
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.013 kg
+Volume: 12671.486 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Sesame - 1582 - Russel Square Entire,1,Sesame,,,
+12 off 1582. 8000.A.010 - Rubber Washer Sesame,"1582.8000.A.010
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.002 kg
+Volume: 2287.079 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Sesame - 1582 - Russel Square Entire,12,Sesame,,,
+Blickle - 1582 - Russel Square Entire,,Sesame BOM - 1582 - Russel Square Entire,,Blickle,,,
+4 off 1582. 8000.A.144 - Guide roller FTH 50x15/12-12K Blickle,"1582.8000.A.144
+Stock Number: FTH 50x15/12-12K
+Material: Generic
+Web Link: https://www.blickle.co.uk/product/FTH-50x15-12-12K-463802
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.025 kg
+Volume: 24770.901 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Blickle - 1582 - Russel Square Entire,4,Blickle,,,
+IGUS - 1582 - Russel Square Entire,,Sesame BOM - 1582 - Russel Square Entire,,IGUS,,,
+16 off 1582. 8000.A.145 - Thrust washer WTM-1224-015 IGUS,"1582.8000.A.145
+Stock Number: WTM-1224-015
+Material: Nylon 6/6
+Web Link: https://www.igus.co.uk/product/130?artNr=WTM-1224-015
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.001 kg
+Volume: 508.938 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",IGUS - 1582 - Russel Square Entire,16,IGUS,,,
+12 off 1582. 8000.A.FJUM_02_40_1 - Bearing fi 40 FUM-02-40 IGUS,"1582.8000.A.FJUM_02_40_1
+Stock Number: FUM-02-40
+Web Link: https://www.igus.co.uk/product/1212?artNr=FJUM-02-40
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.387 lbmass
+Volume: 175394.739 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",IGUS - 1582 - Russel Square Entire,12,IGUS,,,
+8 off 1582. BRH-M4-16-GS (RivetBush) - Round M4 rivet bush BRH-M4-16-GS Sesame,"1582.BRH-M4-16-GS (RivetBush)
+Stock Number: BRH-M4-16-GS
+Material: Stainless Steel
+Web Link: http://www.npfasteners.com/rivetbush/brh.htm
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/m7z6hkppvg8297ed39p6f/ANrsBnYTWQOvsKPpHw9888o?rlkey=v7nm25iwipmyps6ip020xxcw9&dl=0
+Mass: 0.002 kg
+Volume: 212.110 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Sesame - 1582 - Russel Square Entire,8,Sesame,,,

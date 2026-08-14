@@ -1,0 +1,19 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  16/07/2026  14:07
+============================================================
+With:         - Purchasing 01582 606033
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call was a follow-up from Purchasing to Giles Hugo regarding recent order dispatch and potential future collaboration. Giles indicated limited current engagement but showed openness to future pricing discussions, though he is not prioritizing immediate changes.
+
+--- RECAP --------------------------------------------------
+Purchasing informed Giles Hugo that a recent order of try-rated cable has been dispatched and should arrive the next day.Giles Hugo confirmed that the order was placed by a colleague and was for specific cable reels, with no current awareness of the order.Giles Hugo stated that their company stocks various cable ranges, heat shrink, and accessories like zip ties, primarily used in bulk for specific projects, and they prefer to buy from suppliers like RS or eBay for certain items.Purchasing asked if Giles Hugo would be open to receiving quotes for other product ranges and potentially switching suppliers if prices and lead times are competitive; Giles Hugo indicated that speed of ordering is more critical than price, and they do not do many orders.Giles Hugo suggested that updates to their system could be made to include additional items, but currently, their system is set up mainly for cable orders.Purchasing proposed providing a previous order list for price comparison to assess competitiveness; Giles Hugo mentioned he is currently overwhelmed with administrative
+
+--- TASKS --------------------------------------------------
+and not focused on procurement changes.Giles Hugo indicated that their current system is heavily involved in AI administration and logistics, which he manages, and he is not actively seeking to change suppliers at this time.Purchasing agreed to follow up in about a month to check on progress and any improvements in their system or processes.
+Tasks
+Purchasing will send an email to Giles Hugo to update their system to include additional product ranges.Purchasing will review a previous order list and prepare a price comparison for Giles Hugo to consider potential savings.
+
+(Full transcript: RC web portal only — no RingSense API)

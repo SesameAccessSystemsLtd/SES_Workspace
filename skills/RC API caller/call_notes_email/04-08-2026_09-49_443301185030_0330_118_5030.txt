@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  04/08/2026  09:49
+============================================================
+With:         +443301185030 0330 118 5030
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a follow-up call from Fatima at Sesame Access to George at Rockhall regarding a form that was supposed to be sent via email. The issue with email delivery was discussed, and alternative email addresses were provided to ensure successful receipt.
+
+--- RECAP --------------------------------------------------
+Fatima from Sesame Access contacted George at Rockhall to confirm receipt of a form sent via email, which was not received in the initial email account (accounts1@sesameaccess.com).George confirmed he had sent the form and suggested checking spam or junk folders due to potential email delivery issues caused by an automated signature.Fatima checked and confirmed the form was not in the spam or junk folders of the initial email account.George provided an alternative email address (finance@sesameaccess.com) to resend the form, which Fatima's colleague successfully received after resending.Both parties confirmed the form was now received, and the issue was resolved.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,254 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date
+ALL BOMS - 1535 Brook Handrails,1535 Brook Handrails,,,,,,
+Engraving BOM - 1535 Brook Handrails,,ALL BOMS - 1535 Brook Handrails,,Engraving,,,
+Engraving - 1535 Brook Handrails,,Engraving BOM - 1535 Brook Handrails,,Engraving,,,
+2 off 1536. 1016.N1 - engraved button station on handrail Engraving,"1536.1016.N1
+From Cost Centre Engraving
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 0.287 kg
+Volume: 35876.886 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Engraving - 1535 Brook Handrails,2,Engraving,,,
+Surface Finish BOM - 1535 Brook Handrails,,ALL BOMS - 1535 Brook Handrails,,Surface Finish BOM,,,
+Electroplating - 1535 Brook Handrails,,Surface Finish BOM - 1535 Brook Handrails,,Electroplating,,,
+2 off 1536. 1016.N.010 - Button station back box 304/DP1 Electroplating,"1536.1016.N.010
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 0.293 kg
+Volume: 36627.491 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Electroplating - 1535 Brook Handrails,2,Electroplating,,,
+2 off 1536. 1016.N.011 - Button Station front box 304/DP1 Electroplating,"1536.1016.N.011
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 0.287 kg
+Volume: 35818.075 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Electroplating - 1535 Brook Handrails,2,Electroplating,,,
+16 off 1536. 1016.N.016 - Handrail base plate 304/HR Electroplating,"1536.1016.N.016
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 0.118 kg
+Volume: 14717.380 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Electroplating - 1535 Brook Handrails,16,Electroplating,,,
+32 off 1536. 1016.N.022 - Barrel nut Electroplating,"1536.1016.N.022
+Material: Stainless Steel
+Web Link: https://www.fastenright.com/general-fixings/socket-countersunk-barrel-nuts/sb001
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 0.006 kg
+Volume: 705.744 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Electroplating - 1535 Brook Handrails,32,Electroplating,,,
+2 off 1536. 1016.N.030 - Tube Electroplating,"1536.1016.N.030
+Material: Stainless Steel
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 2.644 kg
+Volume: 330560.539 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Electroplating - 1535 Brook Handrails,2,Electroplating,,,
+1 off 1536. 1016.N2w - Handrail welded assembly Electroplating,"1536.1016.N2w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 2.899 kg
+Volume: 2835832.568 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Electroplating - 1535 Brook Handrails,1,Electroplating,,,
+1 off 1536. 1016.N3w - Handrail welded assembly Electroplating,"1536.1016.N3w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 2.829 kg
+Volume: 2829044.933 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Electroplating - 1535 Brook Handrails,1,Electroplating,,,
+3 off 1536. 1016.N6w - Handrail welded assembly Electroplating,"1536.1016.N6w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 2.829 kg
+Volume: 2829044.933 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Electroplating - 1535 Brook Handrails,3,Electroplating,,,
+1 off 1536. 1016.N11w - Handrail welded assembly Electroplating,"1536.1016.N11w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 2.622 kg
+Volume: 2558334.005 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Electroplating - 1535 Brook Handrails,1,Electroplating,,,
+2 off 1536. 1016.N15w - Handrail welded assembly Electroplating,"1536.1016.N15w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 3.698 kg
+Volume: 2937715.010 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Electroplating - 1535 Brook Handrails,2,Electroplating,,,
+32 off 1536. ISO 10642 - M6 x  40 - Hexagon socket countersunk head cap screws Electroplating,"1536.ISO 10642 - M6 x  40
+Material: Stainless Steel
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 0.010 kg
+Volume: 1232.688 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Electroplating - 1535 Brook Handrails,32,Electroplating,,,
+16 off 1536. SecurityScrew - M4 x 8 CS - M4x10 Countersunk Security Screw Electroplating,"1536.SecurityScrew - M4 x 8 CS
+Material: Stainless Steel
+Web Link: https://www.orbitalfasteners.co.uk/en/products/m4x8-countersunk-socket-machine-screw-resistorx-stainless-steel-a2-304-tx-20h
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 0.001 kg
+Volume: 127.948 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Electroplating - 1535 Brook Handrails,16,Electroplating,,,
+Laser Cut BOM - 1535 Brook Handrails,,ALL BOMS - 1535 Brook Handrails,,Laser Cut,,,
+Laser Cut - 1535 Brook Handrails,,Laser Cut BOM - 1535 Brook Handrails,,Laser Cut,,,
+2 off 1536. 1016.N.010 - Button station back box 304/DP1 Laser Cut,"1536.1016.N.010
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 0.293 kg
+Volume: 36627.491 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Laser Cut - 1535 Brook Handrails,2,Laser Cut,,,
+2 off 1536. 1016.N.011 - Button Station front box 304/DP1 Laser Cut,"1536.1016.N.011
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 0.287 kg
+Volume: 35818.075 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Laser Cut - 1535 Brook Handrails,2,Laser Cut,,,
+4 off 1536. 1016.N.012 - Plate 304/2B Laser Cut,"1536.1016.N.012
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 0.036 kg
+Volume: 4514.881 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Laser Cut - 1535 Brook Handrails,4,Laser Cut,,,
+16 off 1536. 1016.N.016 - Handrail base plate 304/HR Laser Cut,"1536.1016.N.016
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 0.118 kg
+Volume: 14717.380 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Laser Cut - 1535 Brook Handrails,16,Laser Cut,,,
+2 off 1536. 1016.N.019 - Base plate 304/HR Laser Cut,"1536.1016.N.019
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 3.010 kg
+Volume: 376273.596 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Laser Cut - 1535 Brook Handrails,2,Laser Cut,,,
+2 off 1536. 1016.N.021 - Base plate 304/HR Laser Cut,"1536.1016.N.021
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 3.030 kg
+Volume: 378713.386 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Laser Cut - 1535 Brook Handrails,2,Laser Cut,,,
+1 off 1536. 1016.N.027 - Base plate 304/HR Laser Cut,"1536.1016.N.027
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 3.021 kg
+Volume: 377582.413 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Laser Cut - 1535 Brook Handrails,1,Laser Cut,,,
+1 off 1536. 1016.N.028 - Base plate 304/HR Laser Cut,"1536.1016.N.028
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 3.030 kg
+Volume: 378713.386 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Laser Cut - 1535 Brook Handrails,1,Laser Cut,,,
+Machining BOM - 1535 Brook Handrails,,ALL BOMS - 1535 Brook Handrails,,Machining,,,
+Machining - 1535 Brook Handrails,,Machining BOM - 1535 Brook Handrails,,Machining,,,
+"1 off 1536. 1016.N.014 - Tube OD 2"", wall 3mm Machining","1536.1016.N.014
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 15.045 kg
+Volume: 1880648.956 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Machining - 1535 Brook Handrails,1,Machining,,,
+"7 off 1536. 1016.N.015 - Tube OD 2"", wall 3mm Machining","1536.1016.N.015
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 7.569 kg
+Volume: 946153.849 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Machining - 1535 Brook Handrails,7,Machining,,,
+"6 off 1536. 1016.N.023 - Tube OD 2"", wall 3mm Machining","1536.1016.N.023
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 15.063 kg
+Volume: 1882891.084 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Machining - 1535 Brook Handrails,6,Machining,,,
+"1 off 1536. 1016.N.024 - Tube OD 2"", wall 3mm Machining","1536.1016.N.024
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 13.935 kg
+Volume: 1741893.262 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Machining - 1535 Brook Handrails,1,Machining,,,
+"1 off 1536. 1016.N.025 - Tube OD 2"", wall 3mm Machining","1536.1016.N.025
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 6.459 kg
+Volume: 807410.980 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Machining - 1535 Brook Handrails,1,Machining,,,
+4 off 1536. 1016.N.029 - Welded tube Machining,"1536.1016.N.029
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 0.065 kg
+Volume: 8165.761 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Machining - 1535 Brook Handrails,4,Machining,,,
+"2 off 1536. 1016.N.030 - Tube OD 2"", wall 3mm Machining","1536.1016.N.030
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 2.557 kg
+Volume: 319664.136 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Machining - 1535 Brook Handrails,2,Machining,,,
+Sesame BOM - 1535 Brook Handrails,,ALL BOMS - 1535 Brook Handrails,,Sesame,,,
+watercooling - 1535 Brook Handrails,,Sesame BOM - 1535 Brook Handrails,,watercooling,,,
+"2 off 1536. 1016.F.002 - Push-Button 19mm Stainless Steel, White Lighting, With Screw-On Contacts 6pin, CFA + Doorbell SKU: 71131 watercooling","1536.1016.F.002
+Stock Number: SKU: 71131
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Generic
+Web Link: www.watercoolinguk.co.uk/p/Push-Button-19mm-Stainless-Steel-White-Lighting-With-Screw-On-Contacts-6pin_19539.html
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 0.011 kg
+Volume: 10696.285 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",watercooling - 1535 Brook Handrails,,watercooling,purchasing@sesameaccess.com,,
+Sesame - 1535 Brook Handrails,,Sesame BOM - 1535 Brook Handrails,,Sesame,,,
+4 off 1536. 1016.N.013 - Rubber isolation Sesame,"1536.1016.N.013
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 0.004 kg
+Volume: 4367.157 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",Sesame - 1535 Brook Handrails,4,Sesame,,,
+fastenright - 1535 Brook Handrails,,Sesame BOM - 1535 Brook Handrails,,fastenright,,,
+32 off 1536. 1016.N.022 - Barrel nut fastenright,"1536.1016.N.022
+Material: Stainless Steel
+Web Link: https://www.fastenright.com/general-fixings/socket-countersunk-barrel-nuts/sb001
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/z3lz12ogv3i87grwi5jp0/ALiTG0AwyJYA6THMPJ03WMc?rlkey=o1mff6gwb74286qpssjnn6514&dl=0
+Mass: 0.006 kg
+Volume: 705.744 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903611584444",fastenright - 1535 Brook Handrails,32,fastenright,,,

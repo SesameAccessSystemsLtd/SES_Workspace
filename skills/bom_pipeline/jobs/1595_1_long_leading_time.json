@@ -1,0 +1,15 @@
+{
+  "job_id": "1595_1_long_leading_time",
+  "project_name": "1595 - 1.Long Leading Time",
+  "control_task_gid": "1215905006904419",
+  "asana_url": "https://app.asana.com/0/0/1215905006904419",
+  "dropbox_url": "https://www.dropbox.com/scl/fo/palg6vpxnu7xpylsfqj9m/AEJs8hnjIHJnmcTQfq1G0KQ?rlkey=qn9x556bo92960vrnp1bn9yxv&dl=0",
+  "parts_folder": "C:\\Users\\GilesHugo\\SAS Dropbox\\3. Projects\\St George's House West\\2.3. Order\\1.Long Leading Time",
+  "target_project_gid": "848657415032331",
+  "job_project_gid": null,
+  "assignee_gid": "1142108324926610",
+  "excluded_cost_centres": [
+    "Steel Profile"
+  ],
+  "notes": "Auto-built from tracker dispatch payload 2026-08-14T12-25-16-tracker-bom_pipeline_push-1595-3a5d29.json."
+}

@@ -1,0 +1,14 @@
+{
+  "request_id": "ccc067b2-1690-4ec2-90c4-b1e1ab16346c",
+  "source": "email_approval_sheet",
+  "row_index": 55,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAABnJ7JfAACfKjgQkWRhS42xGA6fMW2cAAkCMt7UAAA=",
+  "subject": "RE: New TS Mod Single - Traversing 1578",
+  "task_gid": "1216293347892218",
+  "task_name": "21148-1578 - Tapeswitch - reorder Tapeswitch Traversing Mod",
+  "asana_url": "https://app.asana.com/0/0/1216293347892218",
+  "action": "(Matched via PO Number in Local DB); Update delivery date to 2026-07-20; Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043); Note added to description: Order_Confirmation from Tapeswitch - £346.20 (2026-07-09)",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-07-09T06:50:12Z\nEmail: RE: New TS Mod Single - Traversing 1578\n- Update delivery date to 2026-07-20\n- Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043)\n- Note added to description: Order_Confirmation from Tapeswitch - £346.20 (2026-07-09)",
+  "decision": "A",
+  "created_at": "2026-07-10T13:00:07.719364+00:00"
+}

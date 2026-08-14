@@ -1,0 +1,104 @@
+# SES_Workspace PATH_CONFIG.yaml
+# Single source of truth for all file paths used by SAS automation scripts.
+# Scripts import lib/path_config.py and reference PATHS keys — never hardcode paths.
+# To move the system (new machine, VPS, container): update workspace_root + db section only.
+
+# migration_state history: was wrongly "complete" until 2026-07-08 (audit G1).
+# Set to "complete" only when: single ops.db, single REQUESTS queue, no script
+# resolves a .openclaw path at runtime.
+migration_state: in_progress
+
+workspace_root: "C:/Users/GilesHugo/SES_Workspace"
+
+# ── Python runtime ─────────────────────────────────────────────────────────
+python:
+  venv: "C:/Users/GilesHugo/SES_Workspace/.venv/Scripts/python.exe"
+  # Legacy (keep .openclaw venv until all scripts validated):
+  # venv_legacy: "C:/Users/GilesHugo/.openclaw/venv/Scripts/python.exe"
+
+# ── Databases ──────────────────────────────────────────────────────────────
+# LIVE DATA (verified 2026-08-12): single ops.db at SES_Workspace/db/ops.db.
+#   - 908 MB, actively written (db_write_log ~2.85M rows, max write same-day).
+#   - Contains fresh America 1 (1588) data — imported/synced to THIS db.
+#   - The .openclaw ops.db NO LONGER EXISTS (OpenClaw retired 2026-08).
+#   - Any script/agent reading ops.db MUST use the OPS_DB path below, never
+#     a .openclaw path.
+# (Previous note claiming SES_Workspace/ops.db was a "frozen fork" and live
+#  data lived in .openclaw was STALE — removed 2026-08-12.)
+db:
+  ops:       "C:/Users/GilesHugo/SES_Workspace/db/ops.db"
+  crm:       "C:/Users/GilesHugo/SES_Workspace/db/crm.db"
+  telemetry: "C:/Users/GilesHugo/SES_Workspace/db/run_log.db"
+
+# ── Skills ─────────────────────────────────────────────────────────────────
+skills:
+  root:         "C:/Users/GilesHugo/SES_Workspace/skills"
+  purchasing:   "C:/Users/GilesHugo/SES_Workspace/skills/purchasing"
+  bom_pipeline: "C:/Users/GilesHugo/SES_Workspace/skills/bom_pipeline"
+  rc_api:       "C:/Users/GilesHugo/SES_Workspace/skills/RC API caller"
+  daily_brief:  "C:/Users/GilesHugo/SES_Workspace/skills/daily_brief"
+  sql_db:       "C:/Users/GilesHugo/SES_Workspace/skills/sql_db"
+
+# ── Data (runtime files — JSON state, email cache, proposals) ──────────────
+data:
+  root:               "C:/Users/GilesHugo/SES_Workspace/data"
+  raw_emails:         "C:/Users/GilesHugo/SES_Workspace/data/raw_purchasing_emails.json"
+  parsed_insights:    "C:/Users/GilesHugo/SES_Workspace/data/parsed_insights.json"
+  proposals_archive:  "C:/Users/GilesHugo/SES_Workspace/data/proposals_archive"
+  alert_state:        "C:/Users/GilesHugo/SES_Workspace/data/parser_alert_state.json"
+  processed_ids:      "C:/Users/GilesHugo/SES_Workspace/data/processed_email_ids.json"
+  approval_queue:     "C:/Users/GilesHugo/SES_Workspace/data/pending_approval_queue.json"
+
+# ── Queues ─────────────────────────────────────────────────────────────────
+# LIVE queue is .openclaw (execute_requests.py drains only this location).
+# The SES_Workspace/queues/ copies collected orphaned files until 2026-07-08
+# (daily_brief wrote there; nothing drained them). Cut over together with db.
+queues:
+  requests:          "C:/Users/GilesHugo/SES_Workspace/queues/REQUESTS"
+  requests_complete: "C:/Users/GilesHugo/SES_Workspace/queues/REQUESTS_COMPLETE"
+  requests_failed:   "C:/Users/GilesHugo/SES_Workspace/queues/REQUESTS_FAILED"
+
+# ── Run history and telemetry ───────────────────────────────────────────────
+run_history:
+  root:       "C:/Users/GilesHugo/SES_Workspace/run_history"
+  failures:   "C:/Users/GilesHugo/SES_Workspace/run_history/failures"
+  edge_cases: "C:/Users/GilesHugo/SES_Workspace/run_history/edge_cases"
+
+# ── Memory and session tracking ─────────────────────────────────────────────
+memory:
+  root:        "C:/Users/GilesHugo/SES_Workspace/memory"
+  session_log: "C:/Users/GilesHugo/SES_Workspace/memory/session_log.jsonl"
+
+# ── Knowledge ──────────────────────────────────────────────────────────────
+knowledge:
+  ses_brain:    "C:/Users/GilesHugo/SES_Brain"
+  sesame_brain: "C:/Users/GilesHugo/OneDrive - SESAME ACCESS AZURE/SES_Brain_POC"
+  graph:        "C:/Users/GilesHugo/SES_Workspace/graphify-out/graph.json"
+  graph_html:   "C:/Users/GilesHugo/SES_Workspace/graphify-out/graph.html"
+  graph_report: "C:/Users/GilesHugo/SES_Workspace/graphify-out/GRAPH_REPORT.md"
+
+# ── Copilot / harness meta ─────────────────────────────────────────────────
+copilot:
+  root:     "C:/Users/GilesHugo/SES_Workspace/_copilot"
+  graph:    "C:/Users/GilesHugo/SES_Workspace/_copilot/graph"
+  manifest: "C:/Users/GilesHugo/SES_Workspace/_copilot/SYSTEM_MANIFEST.yaml"
+  config:   "C:/Users/GilesHugo/SES_Workspace/_copilot/PATH_CONFIG.yaml"
+
+# ── Dropbox source data — READ ONLY, never write/delete ───────────────────────
+# Hermes and scripts may read source files from here. Never modify.
+dropbox:
+  root:      "C:/Users/GilesHugo/SAS Dropbox"
+  bom_dump:  "C:/Users/GilesHugo/SAS Dropbox/4. External Operations/7.4 Purchasing Dept/Asana CSV Import Tools/Excel_BOM_Dump"
+  bom_morph: "C:/Users/GilesHugo/SAS Dropbox/4. External Operations/7.4 Purchasing Dept/Asana CSV Import Tools/MORPH_BOM_Inputs"
+
+# ── Legacy paths — migration reference only ────────────────────────────────
+# Do not use in new code. Update scripts to use canonical paths above.
+legacy:
+  workspace: "C:/Users/GilesHugo/.openclaw/workspace"
+  db_ops:    "C:/Users/GilesHugo/.openclaw/workspace/db/ops.db"
+  db_crm:    "C:/Users/GilesHugo/.openclaw/workspace/db/crm.db"
+  skills:    "C:/Users/GilesHugo/.openclaw/workspace/skills"
+  requests:  "C:/Users/GilesHugo/.openclaw/workspace/REQUESTS"
+  data:      "C:/Users/GilesHugo/.openclaw/workspace/data"
+  env:       "C:/Users/GilesHugo/.openclaw/.env"
+  venv:      "C:/Users/GilesHugo/.openclaw/venv/Scripts/python.exe"

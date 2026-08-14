@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  09/07/2026  14:53
+============================================================
+With:         Andy Easton 307
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Giles Hugo and Andy Easton discussing the status of a mechanical component, confirming that it is acceptable and safe to proceed with, with no load concerns. They agreed the component's pin is fixed and not subject to rotation or load, and confirmed its integrity on both sides.
+
+--- RECAP --------------------------------------------------
+Andy Easton confirmed that a component has been tested with Rhema 40.1 and has a clearance of 0.1, indicating it is acceptable.Andy Easton explained that the component involves a fixed pin passing through, which does not rotate and is not under load, as per their assessment.Both parties reviewed the presence of a bush welded on the other side of the bearing, confirming the component's integrity on both sides.Giles Hugo and Andy Easton agreed that the component is suitable and can be approved for use.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

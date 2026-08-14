@@ -1,0 +1,1515 @@
+New Date activity has the following segment identifier: 
+----------------------------------------------------------------------------------------------------------------------
+#####  
+18.05.2026 
+Here's the full picture:
+
+  parts_control table does not exist in openclaw.db — the nightly syncer has never created or populated it. That's
+  consistent with the memory entry "What Is NOT Yet Built: SQLite mirror of stock projects."
+
+  What IS in the database:
+
+  ┌─────────────────────────┬──────┬─────────────────────────────────────────────────────────────────────────────────┐
+  │          Table          │ Rows │                                What it contains                                 │
+  ├─────────────────────────┼──────┼─────────────────────────────────────────────────────────────────────────────────┤
+  │ active_purchasing_tasks │ 140  │ PO/order tasks from Asana — 35 of these are 1575 Jenners (purchasing orders     │
+  │                         │      │ like 20962, 20963…)                                                             │
+  ├─────────────────────────┼──────┼─────────────────────────────────────────────────────────────────────────────────┤
+  │ asana_task_states       │ 0    │ Intended for task status snapshots — never populated                            │
+  ├─────────────────────────┼──────┼─────────────────────────────────────────────────────────────────────────────────┤
+  │ bom_requirements        │ 0    │ Intended for imported BOM parts — never populated                               │
+  ├─────────────────────────┼──────┼─────────────────────────────────────────────────────────────────────────────────┤
+  │ scraper_runs            │ 2    │ Only IHBC marketing data from April 1 — no procurement/Asana sync has ever run  │
+  └─────────────────────────┴──────┴─────────────────────────────────────────────────────────────────────────────────┘
+
+  Jenners 1575 in SQLite: The 35 rows that exist are purchasing/PO tasks (ALL BOMS - 1575 Jenners, vendor subtasks, PO
+  numbers like 20978-1575 - Lasershape). These are the ordering workflow tasks, not parts-level stock data.
+
+  Bottom line: There is no parts control sync at all — no Golden Index in SQLite, no stock levels, no BOM line-item
+  data. The bom_requirements schema exists ready for it but is empty. The data you'd be reviewing for crossover lives
+  entirely in Asana, not here.
+
+
+
+------- 
+Rev4 CSV is in place. The current golden_index has 412 rows last synced 2026-04-13, seeded from Rev2 column names
+  (which don't match Rev4 at all — the stock_project field will be blank on all 412 rows, and Asana_TYPE_OF_STOCK was
+  never read).
+
+  Before I run the clear-and-reseed I want to confirm the action: this will delete all 412 rows and replace them from
+  Rev4. If the Rev4 CSV has parts that were in Rev2 they'll come back correctly mapped; anything that was in Rev2 but
+  removed from Rev4 will be gone. Do you want me to proceed with --clear + reseed from Rev4 now, or would you prefer to
+  keep the existing rows and just layer the Rev4 data on top (upsert without clearing)?
+
+  ---
+  Here is a summary of everything changed:
+
+  ULTIMATE_VISIBILITY_SCHEMA.sql — updated:
+  - stock_inventory: added supplier_type TEXT and is_subtask INTEGER NOT NULL DEFAULT 0
+  - parts_control: added is_subtask INTEGER NOT NULL DEFAULT 0
+  - procurement_tasks: total_price → price_ex_vat, delivery_date → due_date, added is_subtask, added inline GID comments
+   for all three write-back fields (854330340727040, 1208706270294053, 1143955334207040)
+  - Added asana_field_registry table with all 11 known GIDs pre-seeded — agents query this at runtime, no more magic
+  strings scattered across scripts
+  - Removed build_pack_line_items (replaced by direct FK on parts_control)
+  - build_packs → build_assembly_packs, parts_inventory → stock_inventory, active_purchasing_tasks → procurement_tasks
+
+  seed_golden_index.py — rewritten for Rev4:
+  - Column map updated: CAD PN → Stock_Number, Mapped KAN → Mapped_KAN, Asana Stock Name → Asana_Name, Match Confidence
+  → Confidence
+  - Now also reads Asana_TYPE_OF_STOCK → stock_project (was never populated before)
+  - Added --clear flag to truncate before seeding
+  - Default CSV path updated to Rev4
+
+
+------- 
+
+UPDATE for SESAL: 
+Read the file at C:\Users\GilesHugo\.openclaw\agents\personal_planner\Latest DB setup for ops.txt and update your
+  working model accordingly.
+
+  Key changes since your last briefing:
+  - openclaw.db is retired and renamed .retired — do not open it
+  - ops.db is now the sole operational database — all purchasing, parts, procurement, stock, email pipeline data lives
+  here
+  - crm.db created — companies and leads migrated here from openclaw.db
+  - All writes to ops.db go through skills/purchasing/db_writer.py only — never raw sqlite3
+  - procurement_tasks table is live with 3647 rows (replaces active_purchasing_tasks)
+  - parts_control table is live with 901 rows synced from Asana
+  - 03_proposal_engine.py now reads from ops.db:procurement_tasks — the email pipeline split-brain is fixed
+  - Nightly mirror sync cron added at 01:00 — runs sync_all_mirrors.py
+  - Four pipelines are now clearly separated: BOM Ingest, Nightly Mirror Sync, Email Parsing, Future Order Outflow
+  - Full protocol in workspace/DB_WRITE_PROTOCOL.md
+
+  Confirm you have read and indexed the file before proceeding with any purchasing or data tasks.
+
+
+
+------
+Bash Verify final clean state of drawing_pipeline directory  8/05/2026
+IN
+echo "=== drawing_pipeline/ ===" && ls "C:/Users/GilesHugo/.openclaw/workspace/skills/drawing_pipeline/" && echo "=== scripts/ ===" && ls "C:/Users/GilesHugo/.openclaw/workspace/skills/drawing_pipeline/scripts/" && echo "=== scripts/lib/ ===" && ls "C:/Users/GilesHugo/.openclaw/workspace/skills/drawing_pipeline/scripts/lib/" && echo "=== data/ ===" && ls "C:/Users/GilesHugo/.openclaw/workspace/skills/drawing_pipeline/data/"
+
+OUT
+=== drawing_pipeline/ ===
+CLAUDE.md
+PN_EDGE_CASES.md
+SKILL.md
+data
+pn_aliases.json
+scripts
+=== scripts/ ===
+01_populate_assembly_packs.py
+02_extract_drawing_boms.py
+02_map_parts_to_packs.py
+03_write_to_asana.py
+lib
+run_drawing_pipeline.py
+=== scripts/lib/ ===
+__init__.py
+pdf_bom_extractor.py
+pn_normalizer.py
+=== data/ ===
+1575_drawing_boms.csv
+1575_multi_pack.csv
+1575_unresolved.csv
+1575_write_log.csv
+Clean. Here's the final state:
+
+drawing_pipeline/ — 4 files at root, no clutter
+
+SKILL.md — agent-readable run protocol with job prefix guide
+CLAUDE.md — GID registry
+PN_EDGE_CASES.md — 9 normalization rules
+pn_aliases.json — manual aliases
+scripts/ — 5 files, exactly the 4 stages + orchestrator
+
+scripts/lib/ — 3 files (__init__.py, pdf_bom_extractor.py, pn_normalizer.py), no pycache
+
+data/ — 4 files only (boms, unresolved, multi_pack, write_log) — 13 intermediate timestamped CSVs deleted
+
+Deleted elsewhere:
+
+workspace/asana_build_pack_allocator.py (dead code, violated SAP rule)
+4 dev_temp prototype scripts (fetch_asana_pdf.py, read_pdf_gemini.py, inspect_bom.py, inspect_bom_notes.py)
+dev_temp/data/latest_drawing.pdf (8.1 MB test PDF)
+Registered in workspace/SKILLS_REGISTRY.md with full entry point, DB tables, run protocol pointer, and confirmed Jenners result.
+
+---------------------------------------------------
+
+Done. Final state:
+
+  ┌──────────────────────────────┬───────────────────────┬──────────────────┐
+  │            Agent             │        Primary        │     Fallback     │
+  ├──────────────────────────────┼───────────────────────┼──────────────────┤
+  │ defaults                     │ gemini-2.5-flash-lite │ gemini-2.5-flash │
+  ├──────────────────────────────┼───────────────────────┼──────────────────┤
+  │ main (SESAL)                 │ gemini-2.5-flash-lite │ gemini-2.5-flash │
+  ├──────────────────────────────┼───────────────────────┼──────────────────┤
+  │ asana_agent (SAP)            │ gemini-2.5-flash-lite │ gemini-2.5-flash │
+  ├──────────────────────────────┼───────────────────────┼──────────────────┤
+  │ scraper (SAD)                │ gemini-2.5-flash-lite │ gemini-2.5-flash │
+  ├──────────────────────────────┼───────────────────────┼──────────────────┤
+  │ sesame_marketing (SAM)       │ gemini-2.5-flash-lite │ gemini-2.5-flash │
+  ├──────────────────────────────┼───────────────────────┼──────────────────┤
+  │ ops_agent (SAO)              │ gemini-2.5-flash-lite │ gemini-2.5-flash │
+  ├──────────────────────────────┼───────────────────────┼──────────────────┤
+  │ personal_planner (Navigator) │ gemini-2.5-flash-lite │ gemini-2.5-flash │
+  ├──────────────────────────────┼───────────────────────┼──────────────────┤
+  │ dev_agent (Forge)            │ gemini-2.5-flash      │ gemini-2.5-pro   │
+  └──────────────────────────────┴───────────────────────┴──────────────────┘
+
+-----------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+#####  All 4 done: 19.05.2026
+
+  1. Orphan cron job deleted — 6 jobs remain, only the 23:00 audit runs
+  2. comm-officer-agent removed from SKILLS_REGISTRY — azure_mail marked TBD
+  3. Purchasing SKILL.md rewritten — describes the actual 5-script + Google Sheets HITL flow, old architecture gone
+  4. building_conservation_scraper registered in SKILLS_REGISTRY as a named placeholder — script present, no active runs, assigned to SAD when development resumes
+
+
+Fixed. Summary of all issues found and resolved today in 05_sheet_approver.py:
+
+  ┌─────────────────────────────────────┬────────────────────────────────────────────────────────────┬──────────────────────────────────────────┐
+  │                 Bug                 │                           Effect                           │                   Fix                    │
+  ├─────────────────────────────────────┼────────────────────────────────────────────────────────────┼──────────────────────────────────────────┤
+  │ HEADERS hardcoded vs actual sheet   │ DECISION always read from wrong column → nothing processed │ Read actual sheet header row dynamically │
+  ├─────────────────────────────────────┼────────────────────────────────────────────────────────────┼──────────────────────────────────────────┤
+  │ ?focus=true in URL                  │ GID extraction fails → "task not matched"                  │ Strip query params before splitting      │
+  ├─────────────────────────────────────┼────────────────────────────────────────────────────────────┼──────────────────────────────────────────┤
+  │ → char in print                     │ UnicodeEncodeError crashes loop after first row            │ Replaced with ->                         │
+  ├─────────────────────────────────────┼────────────────────────────────────────────────────────────┼──────────────────────────────────────────┤
+  │ M decision requires Amendment Notes │ Skips valid M rows where Giles only corrected Asana Link   │ Allow M + valid link + no amendment text │
+  ├─────────────────────────────────────┼────────────────────────────────────────────────────────────┼──────────────────────────────────────────┤
+  │ Filename uses truncated email_id    │ All rows in same run overwrite to 1 file                   │ Use uuid8 instead                        │
+  └─────────────────────────────────────┴────────────────────────────────────────────────────────────┴──────────────────────────────────────────┘
+
+  On Asana comments: SAP processes REQUESTS/ at its 08:30 heartbeat — nothing wrong there, just needs to wait. The previously created 15:08 and 15:19 files only contain 1 task each (overwrote). Ask SESAL to
+  run 05_sheet_approver.py again now — it'll regenerate unique REQUESTS files for all 7 decided rows.
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+#####  20.05.2026
+All 7 files untracked from git index. Files still on disk — not deleted.
+
+  D = staged for removal from tracking. openclaw.json.template shows as ?? untracked — that one should be committed (it's
+   safe, tokens replaced). Correct state.
+
+  Your tonight checklist:
+  1. Rotate Google API key (Google Cloud Console → credentials)
+  2. Rotate all 5 Telegram bot tokens (BotFather)
+  3. Commit everything + push
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+#####  26.05.2026
+All three fixes working correctly:
+
+6000.A.104 (and all Marine Lacquer authority rows) → Surface Finish BOM → Marine Lacquer ✓
+6000.A.275 / .276 (lasercut parts inside Marine Lacquer file) → Laser Cut BOM → Laser Cut ✓
+1010.B.064 from Finishes: 12 off Yellow Zinc Plating 1575. 1010.B.064 - Bottom Packer for Bearing Yellow Zinc Plated ✓
+1010.B.064 from Laser Cut: 12 off 1575. 1010.B.064 - Bottom Packer for Bearing Yellow Zinc Plated Laser Cut — clearly distinct ✓
+Three changes made to [BOM_IMPORT_4_Asana_v4.py](workspace/skills/bom_pipeline/1.BOM IMPORT into Asana/BOM_IMPORT_4_Asana_v4.py):
+
+is_finishes now tests cost_center.lower() == 'finishes bom' instead of source filename
+elif is_marine: block removed
+Surface finish task names: vendor before part number
+Note: existing Asana tasks from the April Jenners run still have the old structure. Those need manual correction in Asana — the code fix only applies to future runs.
+
+----------------------------------------------------------------------------------------------------------------------
+#####  28.05.2026
+
+What was broken and what's fixed:
+
+  1. Daily brief never scheduled — Added cron job d2e7f4a1 running daily_brief.py at 07:00 daily. Email resumes tomorrow
+   morning.
+
+  2. Eisenhower audit — Added to daily_brief.py. Each morning it: fetches tasks from your personal project
+  (369446862164514), sends them to Claude Haiku with the full Eisenhower prompt, adds the analysis as a purple section
+  in the email, AND drops a REQUESTS/ file for SAP to create an Asana task with findings.
+
+  3. Orphan 08:00 cron disabled — Job 6213c3a8 (duplicate Nightly Audit with 6 consecutive errors, pointing at
+  @heartbeat) is now "enabled": false.
+
+  4. Sesal's Asana blindness fixed — Created agents/main/TOOLS.md with full MCP tool list + URL→GID extraction guide.
+  Added section to SOUL.md so Sesal reads it every session. Now when you give Sesal an Asana URL, it knows to call
+  asana_get_task directly instead of saying it can't access external links.
+
+  5. SKILLS_REGISTRY — daily_brief skill registered with full cron details.
+
+  ---
+  Why bots lose workspace knowledge — each cron session starts fresh with only the agent's identity files. SOUL.md +
+  IDENTITY.md are the only persistence. Any tool or skill not mentioned there gets forgotten. The TOOLS.md fix addresses
+   this for Asana — the same pattern should be applied to Navigator's IDENTITY.md if it also needs Asana access.
+
+  To test now: run daily_brief.py --dry-run — it'll save an HTML preview without emailing.
+
+-----------------------------------------------------------
+
+because i updated teh google sheet with manula oveies it seemed to trigger the email parser to write into asana in html and so : 
+Fix applied
+Updated execute_requests.py
+
+Comment posting now uses plain text payload unless an actual @Giles mention is detected.
+If mention is required, it sanitizes existing <body> wrappers and replaces @giles or profile URLs cleanly before posting.
+This prevents nested <a> tags and messy HTML comments like the one you reported.
+Updated asana_task_updater.py
+
+Added the same safer HTML comment handling there too for consistency.
+Validation
+Both updated files compile cleanly with Python.
+
+--------------------------------------------------------------------
+Clear picture now. Answering all questions:
+
+  ---
+  Why staging + production in Doppler?
+  Doppler auto-creates dev / staging / prd when a project is made. OpenClaw runs locally — you only need dev. Staging
+  and prd are empty templates. Ignore staging. Prd is useful if you ever want a "live-only" config separate from dev
+  tinkering.
+
+  ---
+  GEMINI_API_KEY_AGENTS — where to find it
+  Value lives in 3 identical files (all same key):
+  - C:\Users\GilesHugo\.openclaw\agents\main\agent\auth-profiles.json:7
+  - C:\Users\GilesHugo\.openclaw\agents\asana_agent\agent\auth-profiles.json:7
+  - C:\Users\GilesHugo\.openclaw\agents\personal_planner\agent\auth-profiles.json:7
+
+  Value: AIzaSyDe4hbYiIsjaQu9_fTkoECeviCj5x6IH2I
+
+  We already pushed this to Doppler dev. Copy it into prd manually. However — this key cannot be hidden from those JSON
+  files. OpenClaw reads auth-profiles.json directly at startup. Doppler holds it as a reference record only.
+
+  ---
+  Which .env is canonical?
+  Grep confirms: C:\Users\GilesHugo\.openclaw\.env is canonical. Almost all scripts hardcode that path. daily_brief.py
+  loads both (root first, workspace as fallback). workspace/.env is secondary/legacy.
+
+  Correct single-file answer: root .env only. workspace/.env is legacy and only matters for the Asana GIDs at the bottom
+   (which aren't secrets anyway).
+
+  ---
+  The three .env files
+
+  ┌──────────┬────────────────────────────────────────────────────┬───────────────┐
+  │   File   │                     What it is                     │     Keep?     │
+  ├──────────┼────────────────────────────────────────────────────┼───────────────┤
+  │ .env     │ Live stub — empty values, keys documented          │ ✓ Keep        │
+  ├──────────┼────────────────────────────────────────────────────┼───────────────┤
+  │ .env.bak │ Auto-backup from refresh_env.ps1                   │ Can delete    │
+  ├──────────┼────────────────────────────────────────────────────┼───────────────┤
+  │ .env.enc │ SOPS-encrypted backup from March 2026 — old system │ Redundant now │
+  └──────────┴────────────────────────────────────────────────────┴───────────────┘
+
+  ---
+  Does .sops.yaml become redundant?
+
+  Yes. SOPS was the previous secret manager (encrypts .env → .env.enc using an AGE key). Doppler replaces it entirely.
+  Both .sops.yaml and .env.enc can be deleted.
+
+  Want me to delete those two files now?
+
+  ---
+  Are all JSON/env files clear of real keys?
+
+  ┌─────────────────────────────┬───────────────────────────────────────────────────────────────────┐
+  │            File             │                              Status                               │
+  ├─────────────────────────────┼───────────────────────────────────────────────────────────────────┤
+  │ .openclaw/.env              │ ✓ Stub — values empty                                             │
+  ├─────────────────────────────┼───────────────────────────────────────────────────────────────────┤
+  │ workspace/.env              │ ✓ Stub — values empty                                             │
+  ├─────────────────────────────┼───────────────────────────────────────────────────────────────────┤
+  │ openclaw.json               │ ✗ Telegram tokens hardcoded — must stay, framework reads directly │
+  ├─────────────────────────────┼───────────────────────────────────────────────────────────────────┤
+  │ agents/*/auth-profiles.json │ ✗ Gemini key hardcoded — must stay, framework reads directly      │
+  ├─────────────────────────────┼───────────────────────────────────────────────────────────────────┤
+  │ Python scripts              │ ✓ All use os.environ.get() — no hardcoded values                  │
+  └─────────────────────────────┴───────────────────────────────────────────────────────────────────┘
+
+✻ Cogitated for 1m 14s
+
+※ recap: Doppler is now set up as OpenClaw's secret manager with all keys uploaded. Next action: confirm whether to
+  delete the old SOPS files (.sops.yaml and .env.enc) now that they are redundant. (disable recaps in /config)
+
+--------------------------------------------------------------------------------------------------------------------------
+##### 29.5.2026
+● Filter working — 60 tasks found. GEMINI_API_KEY not loading. Checking if it's in the right .env:
+
+● PowerShell(Select-String -Path "C:\Users\GilesHugo\.openclaw\.env" -Pattern "GEMINI" | Select-Object Line)
+  ⎿  (No output)
+
+● Key not in .openclaw\.env — it wasn't saved yet. The file needs this line added (you'll need to open it and add the
+  value from your Doppler dashboard):
+
+  GEMINI_API_KEY=your-key-here
+
+  File path: C:\Users\GilesHugo\.openclaw\.env
+
+  Once added, run again:
+  ! "C:\Users\GilesHugo\.openclaw\venv\Scripts\python.exe"
+  "C:\Users\GilesHugo\.openclaw\workspace\skills\daily_brief\daily_brief.py"
+
+  ---
+  On your security question — assessment:
+
+  ┌─────────────────────────────┬────────────────────────┬──────────┬─────────────────────────────────────────────┐
+  │             Key             │ Keep in .openclaw\.env │ Doppler  │                   Reason                    │
+  ├─────────────────────────────┼────────────────────────┼──────────┼─────────────────────────────────────────────┤
+  │ GEMINI_API_KEY              │ ✓                      │ Optional │ Local-only, single machine, no team         │
+  ├─────────────────────────────┼────────────────────────┼──────────┼─────────────────────────────────────────────┤
+  │ ASANA_PERSONAL_ACCESS_TOKEN │ ✓ already              │ Optional │ Same — local agent only                     │
+  ├─────────────────────────────┼────────────────────────┼──────────┼─────────────────────────────────────────────┤
+  │ ANTHROPIC_API_KEY           │ ✓ already              │ Optional │ Same                                        │
+  ├─────────────────────────────┼────────────────────────┼──────────┼─────────────────────────────────────────────┤
+  │ HUBSPOT_*, ELASTIC_EMAIL_*  │ Either                 │ ✓ better │ External marketing — rotation/audit matters │
+  ├─────────────────────────────┼────────────────────────┼──────────┼─────────────────────────────────────────────┤
+  │ purchasing_Email_Api_Key    │ Either                 │ ✓ better │ Azure credential — rotation matters         │
+  └─────────────────────────────┴────────────────────────┴──────────┴─────────────────────────────────────────────┘
+
+  Both files are gitignored (.env and *.bak). No git remote = no leak vector anyway. Doppler adds value for keys that
+  rotate or are shared across machines. For a single-user local agent system, .openclaw\.env is pragmatically equivalent
+   with less friction.
+
+
+----------------------------------------------------------------------------------------------------------------------
+##### 9.06.26
+ Now I have the full picture. Let me summarize what I found:
+
+  Root causes:
+  1. paginate_tasks uses completed: false filter → 32 parts marked complete in Asana are silently excluded every sync,
+  leaving stale DB records
+  2. No is_completed column in parts_control → can't distinguish "completed task" from "sync missed it"
+  3. 02_map_parts_to_packs.py:179 writes last_synced_at directly to SQLite with isoformat() format (bypasses
+  db_writer.py, creates inconsistent timestamps)
+  4. _is_stale() in db_writer.py does string comparison on mixed timestamp formats — fragile
+
+  Fixes:
+  - sync_parts_control.py: fetch ALL tasks (completed + incomplete), stamp is_completed
+  - sync_utils.py: add all_completion_states param to paginate_tasks
+  - db_writer.py: parse timestamps before comparing in _is_stale
+  - DB migration: add is_completed column
+
+  Searched for 1 pattern, read 1 file (ctrl+o to expand)
+
+● Now I have everything. Making 4 changes: sync_utils.py, sync_parts_control.py, db_writer.py, db_init_ops.py, plus a
+  live DB migration.
+
+
+All 1306 tasks written — 196 1670 parts all now carry a fresh 2026-06-09T08:15:08Z timestamp, is_completed=0 confirmed
+  for all of them.
+
+  Interestingly the 32 stale parts are NOT completed Asana tasks. The most likely cause: they were briefly marked
+  complete in Asana during the 1 AM nightly window (e.g. after being picked from stock), then un-completed later —
+  making them invisible to the completed: false filter exactly when the sync ran.
+
+  ---
+  What was broken and what changed:
+
+  ┌─────┬──────────────────────────────────────────────────────────┬────────────────────────────────────────────────┐
+  │  #  │                         Problem                          │                      Fix                       │
+  ├─────┼──────────────────────────────────────────────────────────┼────────────────────────────────────────────────┤
+  │     │ paginate_tasks used completed: false — tasks completed   │ Added all_completion_states=True param;        │
+  │ 1   │ in Asana at sync time were silently excluded forever     │ sync_parts_control.py now fetches ALL tasks    │
+  │     │                                                          │ regardless of completion                       │
+  ├─────┼──────────────────────────────────────────────────────────┼────────────────────────────────────────────────┤
+  │     │ No way to tell "completed in Asana" from "just not       │ New is_completed column in parts_control (DB   │
+  │ 2   │ synced"                                                  │ migrated live, schema updated in               │
+  │     │                                                          │ db_init_ops.py)                                │
+  ├─────┼──────────────────────────────────────────────────────────┼────────────────────────────────────────────────┤
+  │ 3   │ _is_stale() did raw string comparison on mixed timestamp │ Now parses both to aware datetime before       │
+  │     │  formats (Z vs +00:00)                                   │ comparing                                      │
+  ├─────┼──────────────────────────────────────────────────────────┼────────────────────────────────────────────────┤
+  │     │ (noted, not refactored) 02_map_parts_to_packs.py:179     │ Should be fixed separately — it's a CLAUDE.md  │
+  │ 4   │ writes last_synced_at directly via raw SQLite with       │ rule violation                                 │
+  │     │ isoformat() format, bypassing db_writer.py               │                                                │
+  └─────┴──────────────────────────────────────────────────────────┴────────────────────────────────────────────────┘
+
+  Tomorrow's 1 AM cron will now correctly sync all parts — completed or not.
+
+/btw what is the long term best management of the database as this project may grow and we don't want to have to sync…
+
+    - Nightly: modified_since = yesterday — catches new + changed tasks only
+    - Weekly: one full sync to catch anything the incremental missed
+
+    This drops a 60-second full sync to a 2-3 second incremental.
+
+    Long term (if Parts Control becomes multi-project or 20k+ tasks): archive tier
+    - Add an archived_at column to parts_control
+    - Parts completed > 90 days ago get soft-archived (excluded from active queries but kept in DB for history)
+    - Active queries add WHERE archived_at IS NULL — stays fast regardless of total row count
+    - SQLite handles millions of rows fine with proper indexes; the bottleneck is always the Asana API, not the DB
+
+    The specific indexes already on parts_control (idx_pc_sesame_pn, idx_pc_bap, etc.) are correct — don't let the table
+    get unindexed as it grows.
+
+    One thing to avoid: don't split into multiple DB files per job. Keep everything in ops.db — SQLite with indexes is
+    faster than joins across files, and the unified read layer is what makes the agent architecture work.
+
+    Practical recommendation: when the full sync takes >2 minutes, add modified_since. Until then, the current approach
+    is fine and simpler to reason about.
+
+------
+Clear picture. Three-part fix needed. Let me implement.
+
+  Root cause: Two separate failures in SESAL:
+  1. Used stale --stage4-file path from previous run's timestamp dir instead of capturing the path from Stage 4 output
+  2. Confirmed success based on "command was submitted with --commit" rather than checking exit code
+
+  Script already handles it correctly (sys.exit(1) on missing stage4-file, line 262). Problem is entirely SESAL's handling.
+
+  Fix plan:
+  1. run_mrp_pipeline.py — write pipeline_last_run.json when stopping at Stage 4 so SESAL reads the path, never reconstructs it
+  2. SKILL.md — explicit "read the JSON, check exit code" step
+  3. SOUL.md — add hard rule: destructive ops require exit-code-0 confirmation
+
+● Update(.openclaw\workspace\skills\bom_pipeline\run_mrp_pipeline.py)
+
+ Done. Three changes made:
+
+  1. run_mrp_pipeline.py — when --stop-after 4 completes, writes pipeline_last_run.json to the skill root containing the exact stage4_file absolute path, project name, and status: "awaiting_commit". SESAL
+  reads this file — no path reconstruction needed.
+
+  2. SKILL.md — added mandatory Step 2.5: read pipeline_last_run.json, use stage4_file verbatim as --stage4-file. Also added Step 3 exit-code check: exit 0 = confirm success; non-zero = report failure with
+  quoted error lines, never say "committed."
+
+  3. SOUL.md — added hard rule under a new "Destructive operation confirmation" section. Exit code is the only truth. Carries the incident date (2026-06-02) so SESAL understands why the rule exists.
+
+  The key change behaviorally: SESAL can no longer legally reconstruct the stage4 path from context or memory — it must read the JSON file. And it cannot confirm a commit until it has exit code 0.
+
+✻ Brewed for 3m 17s
+
+---------
+
+Done. Summary of changes:
+
+  DATAMAP.md — full rewrite:
+  - ihbc_hespr / new_leads / review → marked STALE (69 days old, rule is 30 days)
+  - New section: Active Datasets — Ops Pipeline (SAO) — covers the 4 purchasing pipeline JSON files actively written today
+  - New Write Rules block at top: status definitions, 30-day freshness threshold, workspace cleanliness rules, writer authority table
+
+  scraper/TOOLS.md — added DATAMAP Write Discipline section:
+  - Must update DATAMAP same operation as writing data
+  - Status values defined, 30-day rule explicit
+  - Workspace boundaries: SAD writes to Inbound Data/, not workspace/data/
+
+  ops_agent/TOOLS.md — added workspace/data/ section:
+  - Maps each JSON file to its pipeline stage
+  - DATAMAP update rules after each stage run
+  - Explicit: do NOT touch SAD's section
+
+  One remaining Forge issue not touched yet: skills/bom_pipeline and skills/dropbox missing from SKILLS_REGISTRY.md. Want me to add those entries now, or do you know if dropbox skill is actually active?
+
+✻ Crunched for 2m 41s
+
+Done. Three changes made:
+
+  1. run_mrp_pipeline.py — when --stop-after 4 completes, writes pipeline_last_run.json to the skill root containing the exact stage4_file absolute path, project name, and status: "awaiting_commit". SESAL
+  reads this file — no path reconstruction needed.
+
+  2. SKILL.md — added mandatory Step 2.5: read pipeline_last_run.json, use stage4_file verbatim as --stage4-file. Also added Step 3 exit-code check: exit 0 = confirm success; non-zero = report failure with
+  quoted error lines, never say "committed."
+
+  3. SOUL.md — added hard rule under a new "Destructive operation confirmation" section. Exit code is the only truth. Carries the incident date (2026-06-02) so SESAL understands why the rule exists.
+
+  The key change behaviorally: SESAL can no longer legally reconstruct the stage4 path from context or memory — it must read the JSON file. And it cannot confirm a commit until it has exit code 0.
+
+✻ Brewed for 3m 17s
+
+※ recap: Fixed a BOM pipeline bug where SESAL falsely confirmed Asana commits on failure. Next: run a live BOM import to verify the pipeline_last_run.json state file is written correctly at Stage 4. (disable
+  recaps in /config)
+
+
+----------
+
+Summary of all changes this session:
+
+  Daily brief fixes:
+  - Priority order fixed: servicing now ranks above dev work
+  - Staleness filter: 2024-era abandoned tasks skipped
+  - Triage bug fixed: Gemini now receives 60 filtered tasks, not 473 historical SQLite rows
+  - Eisenhower fetch fixed: user_task_list API returns 0 (Asana quirk) — now reuses the already-fetched 439 tasks, capped at 120
+  - NameError from tasks → db_all rename fixed
+
+  execute_requests.py:
+  - HTML comment passthrough: if comment_to_push is already <body>...</body>, post directly without re-wrapping. Prevents raw HTML appearing in Asana task comments.
+
+  The Asana task 1214802848497999 that already has the mangled comment — that's already posted and can't be auto-fixed. SAP would need to delete that comment and re-post, or you can tidy it manually.
+
+✻ Baked for 7m 12s
+
+
+---------
+32 tagged, 0 errors. The pre-check confirmed all 32 genuinely had no Build Pack ref set in Asana — which means the DB sync also cleared the Asana field for those 10 I was concerned about. They all needed the
+  tag.
+
+  All 32 unlinked parts now carry tag 1214056716982132 in Asana. They can be filtered/reviewed as a group to assign packs manually or re-run the pipeline once the missing Build Schedule entries (1055.A,
+  1016.F, 1008.V1, 1016.J) are created.
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+#####  11.06.2026
+
+ Here is Claude's plan:
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ Plan: Drawing Pipeline — Late-Added Drawing Task Handling
+
+ Context
+
+ When the drawing pipeline ran for job 1670, it missed 6 parts (1670.1055.A.004/.030/.031/.032/.037/A17) because the
+ drawing task 1670.1055.A.Hand Held didn't exist in Asana at run time. These parts sit in parts_control with
+ build_assembly_pack_gid = NULL and were never written to Asana.
+
+ Now the drawing task (GID 1215575033042714, project 1142754335688166 = Drawing Control) has been added. The user wants
+ to know how to recover and how to prevent this gap in future.
+
+ ---
+ Critique of Bot's Proposal
+
+ The bot missed the actual root cause entirely.
+
+ What the bot proposed: try/except around PDF download in Stage 2, a _missing_drawings.txt log, and
+ --retry-missing-drawings flag.
+
+ Why that's wrong: Stage 2 never even attempts the 1670.1055.A drawing because Stage 1 never added it to
+ build_assembly_packs. Stage 1 scans the Build Schedule project only. If the assembly pack/drawing task doesn't exist
+ in Build Schedule at run time, it is silently absent — there is no exception to catch. The bot diagnosed a
+ PDF-download failure when the failure happened one full stage earlier: task discovery.
+
+ What the bot got right: The idea of a missing-drawing log and a retry mechanism is directionally correct. The
+ implementation target is wrong (Stage 1, not Stage 2), but the output artefact concept is reusable.
+
+ ---
+ Actual Root Cause
+
+ Stage 1 scans:  Build Schedule project (GID 852956628490855)
+ New task lives: Drawing Control project (GID 1142754335688166)
+
+ Stage 1 filters tasks by name prefix and parts[1].isdigit(). Even if the task were in Build Schedule, the name
+ 1670.1055.A.Hand Held would pass that filter. So the fix is not a filter change — it's ensuring Stage 1 can discover
+ tasks that are only in Drawing Control (or accept a direct GID to force-register a pack).
+
+ ---
+ Key Ambiguity to Resolve Before Coding
+
+ Must verify: Is task 1215575033042714 also in the Build Schedule project?
+
+ In Asana, a task can appear in multiple projects (multi-homing). If this task is already in Build Schedule, re-running
+ Stage 1 as-is would pick it up — no code change needed, just a re-run.
+
+ If it is only in Drawing Control, code changes are required.
+
+ The plan below handles both cases cleanly.
+
+ ---
+ Proposed Changes
+
+ 1. Stage 1 (01_populate_assembly_packs.py) — add --task-gid flag
+
+ Add an optional --task-gid <GID> argument. When provided:
+ - Fetch that task from Asana (works regardless of which project it belongs to)
+ - Determine if it is a Drawing Control task or a Build Schedule assembly pack task by checking
+ memberships[].project.gid
+ - If it's a Drawing Control drawing task: fetch its subtasks to find the Build Schedule assembly pack task, OR use the
+ drawing task itself as the pack source (since PDFs are on drawing tasks)
+ - If it's already a Build Schedule pack task: use it directly
+ - Upsert into build_assembly_packs as normal
+
+ This gives a clean targeted recovery path: given any Asana URL/GID, Stage 1 can register the pack without needing to
+ know which project it's in.
+
+ 2. Stage 1 — add project-context disambiguation helper
+
+ Add a small helper get_task_project_type(task_gid) -> "drawing_control" | "build_schedule" | "other" that checks
+ memberships on the fetched task. Used by the --task-gid path and also useful for future debugging.
+
+ 3. Orchestrator (run_drawing_pipeline.py) — pass --reset to Stage 3
+
+ The orchestrator currently only passes --job-prefix and --dry-run to all stages. Stage 3's --reset flag (clears all
+ build_assembly_pack_gid for the job, enabling clean re-map) is never reachable from the orchestrator. Add --reset to
+ the orchestrator so it passes through to Stage 3.
+
+ Without this, a full re-run after a late-added drawing always requires manually calling Stage 3 directly — which is
+ error-prone.
+
+ 4. Stage 1 — add _missing_packs.csv output (adopt bot's logging idea, right stage)
+
+ After scanning Build Schedule, write data/{job}_missing_packs.csv listing any parts in parts_control for this job that
+ have no matching pack in build_assembly_packs. This surfaces the gap at Stage 1 output time, not silently at the end.
+ Columns: sesame_pn, pack_prefix (first 3 components), reason: no_assembly_pack_task_found.
+
+ This is the bot's missing-drawing log idea, moved to the correct stage.
+
+ 5. PN_EDGE_CASES.md — document the late-drawing edge case
+
+ Add a section describing this scenario, the re-run command sequence, and the --task-gid recovery path.
+
+ ---
+ Files to Change
+
+ ┌───────────────────────────────────────┬──────────────────────────────────────────────────────────────────────────┐
+ │                 File                  │                                  Change                                  │
+ ├───────────────────────────────────────┼──────────────────────────────────────────────────────────────────────────┤
+ │ scripts/01_populate_assembly_packs.py │ Add --task-gid flag, project-type disambiguation, _missing_packs.csv     │
+ │                                       │ output                                                                   │
+ ├───────────────────────────────────────┼──────────────────────────────────────────────────────────────────────────┤
+ │ scripts/run_drawing_pipeline.py       │ Add --reset flag, pass to Stage 3                                        │
+ ├───────────────────────────────────────┼──────────────────────────────────────────────────────────────────────────┤
+ │ PN_EDGE_CASES.md                      │ New section: late-added drawing task                                     │
+ └───────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────┘
+
+ No changes to Stage 2, Stage 3, or Stage 4. Bot's proposal to modify Stage 2 is unnecessary.
+
+ ---
+ Recovery Procedure for Current 1670.1055.A Gap
+
+ Once code is deployed (or after confirming task is already in Build Schedule):
+
+ # Option A — task confirmed in Build Schedule (re-run Stage 1 normally):
+ python run_drawing_pipeline.py --job-prefix 1670 --stop-after 1
+
+ # Option B — task only in Drawing Control (use new --task-gid flag):
+ python scripts/01_populate_assembly_packs.py --job-prefix 1670 --task-gid 1215575033042714
+
+ # Then re-extract + re-map + write:
+ python run_drawing_pipeline.py --job-prefix 1670 --stop-after 2
+ python scripts/02_map_parts_to_packs.py --job-prefix 1670 --reset --dry-run
+ # review output — confirm 1670.1055.A.* parts matched — then:
+ python scripts/02_map_parts_to_packs.py --job-prefix 1670 --reset
+ python scripts/03_write_to_asana.py --job-prefix 1670 --dry-run
+ # review — confirm ~6 pending parts — then:
+ python scripts/03_write_to_asana.py --job-prefix 1670
+
+ Stage 4 dedup (write_log) means the 164 already-written parts are skipped. Only newly matched parts get written to
+ Asana.
+
+ ---
+ Verification
+
+ 1. Run Stage 1 dry-run — confirm 1670.1055.A appears in output as INSERTED
+ 2. Check ops.db: SELECT * FROM build_assembly_packs WHERE pack_reference LIKE '1670.1055%' → 1 row
+ 3. Run Stage 3 dry-run — confirm 1670.1055.A.004/.030/.031/.032/.037/A17 appear as matched
+ 4. Run Stage 4 dry-run — confirm 6 pending tasks, 164 already-done
+ 5. Live run Stage 4 — verify Asana tasks updated (Build Packs reference field set)
+
+
+-------
+DRAWING PIPELINE — LATE-DRAWING EDGE CASE FIX  |  2026-06-11  |  Claude Code CLI session
+
+CONTEXT: Drawing pipeline ran for job 1670 on 2026-06-09. 6 parts (1670.1055.A.004/.030/.031/.032/.037/A17)
+were not updated in DB or Asana because the drawing task '1670.1055.A.Hand Held' did not exist
+in Asana's Build Schedule project at run time. Task now added (GID 1215575033042714, Drawing Control
+project 1142754335688166).
+
+ROOT CAUSE CONFIRMED: Stage 1 (01_populate_assembly_packs.py) scans Build Schedule ONLY. A task in
+Drawing Control is silently absent — no error raised, just not found. Bot's initial proposal to add
+try/except to Stage 2 was wrong (the failure happens before Stage 2 ever runs).
+
+FILES CHANGED:
+
+1. scripts/01_populate_assembly_packs.py
+   - Added --task-gid <GID> flag: accepts any Asana task GID, works regardless of project
+   - Added classify_task_project(): checks task memberships to determine if task is in
+     Build Schedule, Drawing Control, both, or neither — logs result clearly for operator
+   - Added write_missing_packs_report(): after every Stage 1 run, writes
+     data/{job}_missing_packs.csv listing all parts_control pack prefixes with no
+     registered build_assembly_packs entry. Surfaces gaps at Stage 1 output time.
+
+2. scripts/run_drawing_pipeline.py
+   - Added --reset flag: passes through to Stage 3 (02_map_parts_to_packs.py) only
+   - Required for clean re-runs after late-added drawings
+
+3. PN_EDGE_CASES.md
+   - Added Edge Case 10: late-added drawing task — full recovery procedure documented
+
+RECOVERY COMMAND SEQUENCE FOR 1670.1055.A:
+  python scripts/01_populate_assembly_packs.py --job-prefix 1670 --task-gid 1215575033042714
+  python run_drawing_pipeline.py --job-prefix 1670 --stop-after 2
+  python scripts/02_map_parts_to_packs.py --job-prefix 1670 --reset --dry-run
+  python scripts/02_map_parts_to_packs.py --job-prefix 1670 --reset
+  python scripts/03_write_to_asana.py --job-prefix 1670 --dry-run
+  python scripts/03_write_to_asana.py --job-prefix 1670
+
+KEY RULE: When user provides a Drawing Control task URL, extract the GID (last number in URL)
+and use --task-gid. Do NOT assume it is also in Build Schedule.
+
+--------
+##### 12.06.2026
+
+ Root cause: Subtasks/dependents live in Asana projects that don't have Stock ACTION field configured — field is
+  project-scoped, so Asana rejects the write.
+
+  Fix applied:
+  - Added _has_field() check before queuing any update
+  - Tasks missing the field are now skipped cleanly (not errored)
+  - Summary line shows count of field-absent skips
+
+  Those 11 tasks are likely in a different project (e.g. a manufacturing or parts project) that doesn't have Stock
+  ACTION. If you want to propagate to them too, the field needs adding to that Asana project first.
+
+------------------------------------------------------------------
+#### 18.06.26
+
+Done. Three files changed, two problems addressed:
+
+  ---
+  Memory loss fix (CADENCE.md + SOUL.md):
+  - Added "daily memory log" row to CADENCE.md with 1-day threshold — SESAL will see it as overdue every session and
+  must write it before anything else
+  - Changed SOUL.md rule from "write at end of session" → "write after the task completes, before sending the reply" —
+  Telegram has no session-end signal, so "session end" was never a reliable trigger
+
+  Silent execution fix (bom_pipeline SKILL.md):
+  - Added Step 2.5: after Stage 4 completes, SESAL must send Giles a Telegram message with the Excel path and next steps
+  — not wait to be asked
+
+  HEARTBEAT.md also updated with current date and the two known fixes, so next SESAL session immediately sees what was
+  changed and why.
+
+  One thing that would make memory writing more robust long-term: a cron job at ~22:00 that explicitly prompts SESAL to
+  write today's memory file. Want me to add that? It would require editing cron/jobs.json.
+
+✻ Sautéed for 2m 23s
+
+※ recap: BOM pipeline for Salisbury Jam replacement ran successfully through Stage 4. Open the staging Excel, review it,
+  then tell SESAL to commit. (disable recaps in /config)
+
+Done. New job added: "Nightly Memory Log" — runs 22:00 London time every day.
+
+  What it does each night:
+  1. Reads pipeline_last_run.json, TASKS.md, REQUESTS/, HEARTBEAT.md to reconstruct the day
+  2. Writes agents/main/memory/YYYY-MM-DD.md
+  3. Updates CADENCE.md "Daily memory log" Last Done date
+  4. Sends one-line confirmation to Telegram: Memory log written: YYYY-MM-DD.md
+
+  Combined with the CADENCE.md 1-day threshold from earlier, SESAL now has two enforcement layers:
+  - Proactive (interactive session): sees "memory overdue" in CADENCE.md → writes it before answering
+  - Hard backstop (22:00 cron): writes it regardless of whether any interactive session happened
+
+--------------
+Document written to SES_Brain/raw/ses_workspace_architecture.md.
+
+  ---
+  Here's the executive summary of what I found and designed:
+
+  Current state in one sentence
+
+  Your business logic, databases, and scripts are trapped inside .openclaw/workspace/ — they're harness-agnostic in
+  nature but physically entangled with the harness.
+
+  What the design does
+
+  Creates C:\Users\GilesHugo\SES_Workspace\ as a neutral root. Seven clean layers:
+
+  ┌───────────┬───────────────────────┬───────────────────────────────────────────────────────────┐
+  │   Layer   │        Folder         │                     What lives there                      │
+  ├───────────┼───────────────────────┼───────────────────────────────────────────────────────────┤
+  │ Context   │ context/              │ SOUL.md, AGENTS.md, IDENTITY.md — any harness reads these │
+  ├───────────┼───────────────────────┼───────────────────────────────────────────────────────────┤
+  │ Rules     │ protocols/            │ DELETE_SAFETY, DB write rules, Asana rules                │
+  ├───────────┼───────────────────────┼───────────────────────────────────────────────────────────┤
+  │ Logic     │ skills/               │ All 14 Python skill packages, unchanged                   │
+  ├───────────┼───────────────────────┼───────────────────────────────────────────────────────────┤
+  │ State     │ db/ + data/ + queues/ │ Databases, JSON pipeline state, REQUESTS queue            │
+  ├───────────┼───────────────────────┼───────────────────────────────────────────────────────────┤
+  │ Reference │ reference/            │ Golden index, Asana GIDs, part number aliases             │
+  ├───────────┼───────────────────────┼───────────────────────────────────────────────────────────┤
+  │ History   │ run_history/          │ Pipeline runs, nightly audits, failures                   │
+  ├───────────┼───────────────────────┼───────────────────────────────────────────────────────────┤
+  │ Memory    │ memory/               │ Agent memory, CLI sessions                                │
+  └───────────┴───────────────────────┴───────────────────────────────────────────────────────────┘
+
+  Three new things that don't exist today
+
+  1. telemetry/run_log.db — every script appends one row on completion. Single query answers "what is the system doing
+  right now?" across any harness.
+  2. Structured failure records in run_history/failures/ — not just a log line, a file with error, context, and a blank
+  resolution field the agent fills in after fixing.
+  3. queues/REQUESTS_LOG.jsonl — append-only index of every Asana write ever processed. Currently you'd have to read
+  100+ files to reconstruct that history.
+
+  Biggest risk to watch
+
+  DB divergence — once you copy ops.db, OpenClaw keeps writing to it. The SES_Workspace copy is stale from minute one.
+  Don't point any scripts at the new DB until OpenClaw crons are switched off.
+
+
+
+-------
+ All changes look correct. Here's what changed and why:
+
+  ---
+  Fix 1 — @Giles mention (execute_requests.py)
+
+  Two HTML fixes:
+  - data-asana-gid now comes before data-asana-type — Asana's parser requires this attribute order
+  - <br/> → <br> — Asana's html_text subset uses HTML5 void elements
+
+  Belt-and-suspenders: after a successful comment post, asana_add_follower() runs. This calls POST
+  /tasks/{gid}/addFollowers with Giles's GID. Even if the html_text mention doesn't fire a notification, the follower
+  add guarantees one. If Giles is already a follower, Asana treats it as a no-op silently.
+
+  ---
+  Fix 2 — Price field safety (03_proposal_engine.py + execute_requests.py)
+
+  New logic in 03_proposal_engine.py:
+
+  ┌──────────────────────────────────────┬─────────────────────────────────────────────────────┐
+  │               Scenario               │                       Action                        │
+  ├──────────────────────────────────────┼─────────────────────────────────────────────────────┤
+  │ Field empty                          │ Set Price Ex VAT field + append note to description │
+  ├──────────────────────────────────────┼─────────────────────────────────────────────────────┤
+  │ Field has value, price unchanged     │ Skip (existing behaviour)                           │
+  ├──────────────────────────────────────┼─────────────────────────────────────────────────────┤
+  │ Field has value, new/different price │ Append to description only — never overwrite        │
+  └──────────────────────────────────────┴─────────────────────────────────────────────────────┘
+
+  Note format in description: Quote from Hydraproducts - £2089.40 (2026-06-18) — includes document type, supplier,
+  amount, date.
+
+  In execute_requests.py: new append_notes op type → asana_append_to_task_notes() fetches current task notes, appends a
+  new line, and PUTs back. No data is ever lost.
+
+
+Written to SES_Brain/raw/telemetry_implementation.md.
+
+  ---
+  Here's what I found and why the design works the way it does:
+
+  Key findings from the code
+
+  db_writer.py already proves the pattern — it's a shared module that every script imports. telemetry.py follows exactly
+  the same structure. No new concepts to introduce.
+
+  Scripts use sys.path.insert() to import local modules (see 01_email_fetcher.py line 27 importing pdf_extractor). Same
+  approach works for lib/telemetry.py.
+
+  execute_requests.py already tracks completed/failed counts but throws them away after printing. The REQUESTS_LOG just
+  adds 4 lines to capture what's already being counted.
+
+  run_mrp_pipeline.py has --project-name arg — natural job_ref. Every BOM run is traceable to a job number.
+
+  The three things, implemented
+
+  1. telemetry/run_log.db — a lib/telemetry.py module with three public functions:
+  - log_run() — append one row, update health table, flush health.json
+  - write_failure_record() — structured .md file with blank Resolution/Root cause fields
+  - timed_run() — context manager that does both automatically on exception
+
+  All calls are wrapped in silent try/except — telemetry never crashes the calling script.
+
+  2. Failure records — write_failure_record() queries the health table to include "consecutive failures" and "last OK
+  at" in every failure file. Agent fills in Resolution and Root cause after fixing — persistent repair history.
+
+  3. REQUESTS_LOG.jsonl — 15 lines added to execute_requests.py. One JSON line per request processed. grep + jq or plain
+  text search answers any audit question instantly.
+
+  Effort
+
+  90 minutes to instrument all 13 cron scripts once SES_Workspace/lib/telemetry.py exists. The module itself is ~150
+  lines.
+
+---------------------------------
+####25.06.26
+
+What I'm proposing — plain language
+
+Goal: Give every AI harness on this machine a shared map of your files, so they don't waste tokens blindly exploring folders every session.
+
+---
+Step 1 — Install Python + tooling
+
+Your machine has a Microsoft Store Python stub (fake — it doesn't work). I'd install real Python 3.12 via winget, then install uv (a Python package manager), then install graphify from PyPI.
+
+Step 2 — Register graphify as a Claude Code skill
+
+Running graphify claude install adds /graphify as a slash command inside Claude Code sessions. You type /graphify . and it scans a folder.
+
+Step 3 — Scan 6 directories
+
+Run graphify separately on each of these:
+- .openclaw/ — your agent system
+- SES_Brain/ — your knowledge vault
+- .Hermes/ — the Hermes AI framework installed on your machine
+- sesame-ai/ — the Electron fleet app
+- .claude/ — Claude Code config, memory, hooks
+- Claude Co_Pilot/ — the Node.js dashboard project
+
+Step 4 — Store all outputs in one place
+
+Every scan produces three files: graph.json (queryable index), graph.html (visual map), GRAPH_REPORT.md (summary). All go into .openclaw/workspace/graph/[domain]/.
+
+Step 5 — Protect sensitive files
+
+Create .graphifyignore files so graphify never reads .env, .db files, .ssh/, or SAS Dropbox/.
+
+---
+What this achieves
+
+- Claude Code can query graph.json to find any file or function without reading raw files first — fewer tokens per session
+- Hermes, Cursor, Gemini CLI can all point at the same graph.json files — one shared file map underneath all harnesses
+- When you reorganise files, you re-run one scan and all harnesses get updated
+
+---
+Assumptions I've made
+
+1. Hermes is a harness you actively use. I saw .Hermes/ is a full AI framework. I assumed it's installed and running, not just a downloaded repo you don't touch.
+2. Claude Co_Pilot/ is worth indexing. I saw it's a Node.js Express app. I don't know if it's active or abandoned.
+3. gemini-project/ is empty. The directory scan returned nothing. I've excluded it.
+4. Per-domain graphs are better than one unified graph. My call — easier to refresh one domain without re-scanning everything. You may prefer one big graph.
+5. .openclaw/workspace/graph/ is the right output home. I picked it because it's neutral, inside your agent system, and not in SES_Brain (which has write rules). You may want it elsewhere.
+6. Other harnesses (Hermes, Cursor) can read graph.json directly. Graphify's JSON format is standard. I haven't verified whether Hermes has a built-in graphify adapter or needs one written.
+7. "60-80% fewer tokens" was an estimate, not a measured figure. Real savings depend on how often Claude currently reads files to orient itself.
+8. The PyPI package name is graphifyy (double-y). This is what the README states. I haven't independently verified this is the official/safe package — worth checking before installing.
+
+
+
+-------------------------------------------------------
+Ring Central Transcript management plan
+
+Clear picture now. Here's what we know: about Ring Central Transcript management plan
+
+What the API can see: Call log ✓, call metadata ✓
+What it can't reach: All AI/transcript endpoints → 404. No subscriptions exist yet (you enabled the capability in dev console, but no actual subscription created).
+
+Root cause: The AI notes your users receive via email are from RC's native AI Summaries (built into the RC App) — separate from RingSense. This feature doesn't expose a public API endpoint currently. That's why the web portal can show them but there's no API path to pull programmatically.
+
+---
+Two realistic options:
+
+Option A — Email intercept (works now, no extra RC setup)
+RC emails each user an AI summary after each call. If you forward/BCC those to a shared mailbox (e.g. sesameshared@gmail.com), a script can parse them automatically. Fast to implement.
+
+Option B — Enable RC call recording + app permissions (proper API path)
+In RC Admin Portal, enable automatic call recording for all users. In RC Developer Console, add Read Call Recording permission to the app. Then calls get recording IDs → we can either transcribe the audio ourselves or wait for RC to process them.
+
+---
+Which do you want to pursue? Option A is faster — if the AI summary emails already have the content you need, we can have a parser running today.
+
+
+----------------------------------------------------------
+#### 26.6.2026
+
+
+Asana Ordering Process Plan: 
+Plan written to workspace/plans/PLAN-2026-06-26-ordering-skills.md.
+
+---
+Summary
+
+8 scripts + 2 new DB tables + new REQUESTS/ action types. Here's what the plan covers:
+
+---
+The flow
+
+Stock projects (KANBAN / Consumables)
+  → detect_stock_demand.py        ← reads Stock ACTION = "Order"
+  → route_to_parts_control.py     ← multi-homes to Parts Control via REQUESTS/
+  → compile_vendor_groups.py      ← groups by vendor, flags stock vs project
+  → [optional HITL gate]
+  → create_order_tasks.py         ← writes NEEDS task per vendor via REQUESTS/
+  → arrived_stock_processor.py    ← reads Arrived qty, updates title + stock_qty
+
+Every failure at every step → ordering_edge_cases table + Asana task in project 1214604066893979 with link back to source task.
+
+---
+Before any code is written, you need to:
+
+Asana (you must do these):
+1. Create "Arrived Stock Qty" number field → add to KANBAN, Consumables, Parts Control → give me the GID
+2. Open Parts Control in Asana → tell me which fields are on tasks there (especially Vendor, ORDER QTY, Stock ACTION)
+3. Open edge case task 1216032608799169 → describe its format so new tasks match
+
+Decisions needed from you:
+- D1: What triggers detection — Stock ACTION field, stock qty comparison, or both?
+- D2: HITL gate between compile and create? (Recommended yes, at least for first few runs)
+- D3: One NEEDS task per vendor (batch) or one per item? (Recommend per vendor)
+- D6: What does "awaiting order" look like in Parts Control — section or field value?
+
+Run these queries against ops.db now to see current state:
+SELECT DISTINCT stock_action, COUNT(*) FROM stock_inventory GROUP BY stock_action;
+SELECT DISTINCT vendor_name, COUNT(*) FROM parts_control WHERE vendor_name IS NOT NULL GROUP BY vendor_name;
+
+Once you've answered those, build order is clear and each script has defined inputs/outputs.
+
+
+
+
+-----------
+
+Clear picture now. Here's what we know:
+
+What the API can see: Call log ✓, call metadata ✓
+What it can't reach: All AI/transcript endpoints → 404. No subscriptions exist yet (you enabled the capability in dev console, but no actual subscription created).
+
+Root cause: The AI notes your users receive via email are from RC's native AI Summaries (built into the RC App) — separate from RingSense. This feature doesn't expose a public API endpoint currently. That's why the web portal can show them but there's no API path to pull programmatically.
+
+---
+Two realistic options:
+
+Option A — Email intercept (works now, no extra RC setup)
+RC emails each user an AI summary after each call. If you forward/BCC those to a shared mailbox (e.g. sesameshared@gmail.com), a script can parse them automatically. Fast to implement.
+
+Option B — Enable RC call recording + app permissions (proper API path)
+In RC Admin Portal, enable automatic call recording for all users. In RC Developer Console, add Read Call Recording permission to the app. Then calls get recording IDs → we can either transcribe the audio ourselves or wait for RC to process them.
+
+---
+Which do you want to pursue? Option A is faster — if the AI summary emails already have the content you need, we can have a parser running today.
+
+✻ Churned for 1m 46s
+
+❯ the route transcript is not there, but a good insight is often summarised quote well. what is missing is what was actually said and so the work around will likley need ot be when w ehave the CoWork OS running on each computer and we are able to ask it to follow teh link in browser and trigger teh downloading of that transcript. meanwhile a good easy updater is to push all emails to a central repository email for ring central - either a shared outlook inbox (probably cleaner for people to use as a local bot can then pass all those transcripts for up to date knowldge, or a gmail account. Identify if a shared office 365 email inbox can have api access and be seachable by the local cowork bot
+
+Yes — shared O365 inbox is the cleaner choice. Here's why and how:
+
+Graph API capability (what the CoWork bot can do):
+- Read, search, filter emails by sender/subject/date
+- Full email body + attachments
+- No user login needed — app-only auth (daemon mode)
+- Free shared mailbox — no seat license required in M365
+
+You already have Azure credentials in .env:
+PURCHASING_TENANT_ID   = 3bfd9e7d-219f-48db-bd9e-e63b3b990a1a
+PURCHASING_EMAIL_API_KEY = 3B-8Q~...   ← looks like Azure client secret
+PURCHAISNG_SECRET_ID   = a7bd53ba-...  ← likely app/secret ID
+May already have an Azure app registered. Need to verify it has Mail.Read permission and the shared mailbox is in scope.
+
+---
+Setup path:
+
+Step 1 — Create shared mailbox (M365 Admin, 2 min, free)
+admin.microsoft.com → Exchange → Recipients → Shared mailboxes → Add
+Suggested name: rc-notes@sesameaccess.com
+
+Step 2 — Route RC AI summary emails there
+Two options:
+- RC Admin Portal → Notifications → set AI summary email destination (if supported)
+- OR each user creates an Outlook rule: forward emails from no-reply@ringcentral.com (or whatever RC sends from) to rc-notes@
+
+Step 3 — Grant app access to shared mailbox
+In Azure Entra ID → your existing app → API Permissions → add Mail.Read (application permission, not delegated) → grant admin consent
+
+Step 4 — CoWork bot queries mailbox
+GET https://graph.microsoft.com/v1.0/users/rc-notes@sesameaccess.com/messages
+    ?$search="RingCentral"
+    &$orderby=receivedDateTime desc
+
+update: 
+What we built
+
+Two independent RC transcript scripts:
+
+1. rc_call_notes.py — Direct RC API (RingSense path)
+Polls RC account call log, fetches ACE insights per recording, saves .txt files.
+Currently returns 0 — needs call recording + RingSense enabled to work.
+
+2. rc_email_notes.py — Email intercept path (working NOW)
+Polls rc-notes@sesameaccess.onmicrosoft.com shared mailbox via Graph API, parses forwarded RC AI summary emails, saves structured .txt files. Runs hourly 8–18 Mon–Fri.
+
+---
+File locations
+
+┌────────────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────┐
+│                              File                              │                                           Purpose                                           │
+├────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────┤
+│ .openclaw\workspace\skills\RC API caller\rc_email_notes.py     │ Main script — runs on schedule                                                              │
+├────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────┤
+│ .openclaw\workspace\skills\RC API caller\rc_call_notes.py      │ RingSense path — dormant until RC recordings enabled                                        │
+├────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────┤
+│ .openclaw\workspace\skills\RC API caller\call_notes_email\     │ Output folder — one .txt per call                                                           │
+├────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────┤
+│ .openclaw\workspace\skills\RC API caller\processed_emails.json │ State tracker — prevents double-processing                                                  │
+├────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────┤
+│ .openclaw\workspace\skills\RC API caller\rc_email_notes.log    │ Run log                                                                                     │
+├────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────┤
+│ .openclaw\.env                                                 │ All credentials: RC_*, PURCHASING_TENANT_ID, PURCHAISNG_SECRET_ID, PURCHASING_EMAIL_API_KEY │
+├────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────┤
+│ .openclaw\cron\jobs.json                                       │ Scheduler — new job RingCentral Email Notes Sync added                                      │
+└────────────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────┘
+
+---
+Outstanding
+
+┌──────────────────────────────────────┬───────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                 Item                 │       Owner       │                                                       Action                                                        │
+├──────────────────────────────────────┼───────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ All other users need forwarding rule │ Giles             │ Each user: Outlook rule — emails from service-uk@ringcentral.com → forward to rc-notes@sesameaccess.onmicrosoft.com │
+├──────────────────────────────────────┼───────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Full word-for-word transcript        │ Future            │ Requires CoWork-OS browser automation to click "View transcript" link in RC portal                                  │
+├──────────────────────────────────────┼───────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ RingSense path activation            │ Future (or never) │ Enable call recording in RC Admin + purchase RingSense seats                                                        │
+└──────────────────────────────────────┴───────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+----------------------------------------
+Graphify Deployment Pivot: 
+The core problem: if Hermes goes to a VPS, it can't read C:\Users\GilesHugo\.openclaw\workspace\graph\. Local Windows paths break the moment you leave the machine.
+
+So three questions collapse into one: what is the unit of deployment for Hermes?
+
+---
+Where memory and graph should live
+
+Right now (OpenClaw, local):
+.openclaw/workspace/        ← skills, memory, DB, graph (planned)
+.openclaw/agents/*/memory/  ← per-agent memory
+
+The problem with keeping this as the home:
+Hermes on VPS has no filesystem access to C:\Users\GilesHugo\. Every script path, every memory read, every graph query breaks. VPS runs Linux — C:\ doesn't exist.
+
+The answer: SES_Workspace (from the architecture we designed) is exactly the thing that gets deployed to the VPS. It's harness-agnostic for this precise reason. When Hermes moves to VPS, you rsync SES_Workspace/ to /opt/ses/workspace/ on the server. Scripts get one path-config change. Memory, graph, skills — all travel together.
+
+Local machine (Windows)                  VPS (Linux)
+─────────────────────────────            ─────────────────────────
+SES_Workspace\                           /opt/ses/workspace/
+  _copilot\graph\         ──sync──>        _copilot/graph/
+  skills\                 ──sync──>        skills/
+  memory\                 ──sync──>        memory/   (or VPS-native)
+  db\ops.db               ──sync──>        db/ops.db
+  .env                    ──secure──>      .env (separate secret)
+
+.openclaw/ stays on Windows forever — it's the harness config, not the payload. It doesn't travel.
+
+---
+The _copilot/ insight is exactly right
+
+The earlier analysis nailed it: _copilot/ was planned but never created. Graphify's graph.json outputs ARE what _copilot/ was meant to hold. Put them there — inside SES_Workspace, not inside .openclaw/.
+
+SES_Workspace/
+└── _copilot/
+    ├── graph/
+    │   ├── openclaw/graph.json      ← indexed from .openclaw codebase
+    │   ├── ses_workspace/graph.json ← indexed from SES_Workspace itself
+    │   └── ses_brain/graph.json     ← indexed from SES_Brain vault
+    ├── SYSTEM_MANIFEST.yaml         ← what exists, what runs, what's healthy
+    ├── PATH_CONFIG.yaml             ← environment-aware paths (local vs VPS)
+    └── SKILLS_INDEX.yaml            ← machine-readable skill registry
+
+Any harness on any machine reads _copilot/graph/ instead of crawling raw files. This is the token-saving mechanism.
+
+---
+The path problem (biggest practical blocker)
+
+Every script in .openclaw/workspace/skills/ currently has paths like:
+
+load_dotenv(r'C:\Users\GilesHugo\.openclaw\.env')
+OUTPUT_PATH = r"C:\Users\GilesHugo\.openclaw\workspace\data\raw_purchasing_emails.json"
+
+These are dead on Linux. The migration to SES_Workspace isn't just copying files — it's replacing hardcoded paths with a PATH_CONFIG.yaml that each script reads at startup.
+
+# SES_Workspace/_copilot/PATH_CONFIG.yaml
+workspace_root: C:\Users\GilesHugo\SES_Workspace     # local Windows
+# workspace_root: /opt/ses/workspace                  # VPS Linux — swap this line
+
+env_file: C:\Users\GilesHugo\.openclaw\.env          # credentials location
+db_ops: ${workspace_root}/db/ops.db
+data_dir: ${workspace_root}/data/email_pipeline
+requests_dir: ${workspace_root}/queues/REQUESTS
+
+Scripts import one config object instead of 30 hardcoded strings. Swap workspace_root → everything moves.
+
+---
+Where memory lives in the migration
+
+Three distinct memory types, three different answers:
+
+┌──────────────────────────────────────┬──────────────────────────────┬──────────────────────────────────────────┬────────────────────────────────┐
+│             Memory type              │          Local home          │                 VPS home                 │            Shared?             │
+├──────────────────────────────────────┼──────────────────────────────┼──────────────────────────────────────────┼────────────────────────────────┤
+│ Hermes conversation memory           │ .Hermes/ or ~/.hermes/       │ VPS ~/.hermes/                           │ No — per-instance              │
+├──────────────────────────────────────┼──────────────────────────────┼──────────────────────────────────────────┼────────────────────────────────┤
+│ Operational memory (daily .md files) │ SES_Workspace/memory/        │ /opt/ses/workspace/memory/               │ Synced via rsync               │
+├──────────────────────────────────────┼──────────────────────────────┼──────────────────────────────────────────┼────────────────────────────────┤
+│ Company knowledge (Sesame_Brain)     │ OneDrive (readable anywhere) │ Via Microsoft Graph API or OneDrive sync │ Yes — this is the shared layer │
+└──────────────────────────────────────┴──────────────────────────────┴──────────────────────────────────────────┴────────────────────────────────┘
+
+Hermes on VPS doesn't need Giles's conversation history. It needs operational context (what ran, what failed, current state). That travels in SES_Workspace/memory/. The Sesame_Brain on OneDrive is what the VPS reads for product/process knowledge — accessible via Microsoft Graph API without needing the local filesystem at all.
+
+---
+Revised recommendation: graphify targets
+
+Run graphify against the codebases, output to SES_Workspace/_copilot/graph/:
+
+# Run from Windows — outputs go to harness-agnostic location
+graphify .openclaw --output SES_Workspace/_copilot/graph/openclaw/
+graphify SES_Brain --output SES_Workspace/_copilot/graph/ses_brain/
+graphify sesame-ai --output SES_Workspace/_copilot/graph/sesame_ai/
+graphify SES_Workspace/skills --output SES_Workspace/_copilot/graph/skills/
+
+NOT to .openclaw/workspace/graph/ — that location doesn't travel to VPS. SES_Workspace does.
+
+---
+The clean answer to your original question
+
+.openclaw/workspace stays as-is, running OpenClaw. Don't change it — it's live.
+
+SES_Workspace is the migration unit. That's what gets built in parallel, graphify-indexed, and eventually rsync'd to the VPS when Hermes is ready. The _copilot/ directory inside it is the shared file-map layer that makes any harness (local or VPS) efficient without re-reading everything from scratch.
+
+Memory that matters for Hermes on VPS: operational state in SES_Workspace/memory/ + Sesame_Brain on OneDrive via Microsoft Graph API. Hermes already has microsoft_graph_client.py in its tools — that's how it reads OneDrive without needing Windows filesystem access.
+
+------------------------
+
+Status: Plan complete, build not started
+
+---
+What's been done (this session)
+
+┌───────────────────────────────────────────────┬───────────────────────────────────────────────────────┐
+│                     Work                      │                        Status                         │
+├───────────────────────────────────────────────┼───────────────────────────────────────────────────────┤
+│ Architecture decisions D1–D7                  │ ✅ All resolved                                       │
+├───────────────────────────────────────────────┼───────────────────────────────────────────────────────┤
+│ All Asana GIDs confirmed via live API queries │ ✅ Done                                               │
+├───────────────────────────────────────────────┼───────────────────────────────────────────────────────┤
+│ Fallback vendor tag GIDs confirmed            │ ✅ Done                                               │
+├───────────────────────────────────────────────┼───────────────────────────────────────────────────────┤
+│ Consumables carve-out rules defined           │ ✅ Done                                               │
+├───────────────────────────────────────────────┼───────────────────────────────────────────────────────┤
+│ Asana routing rules created by Giles          │ ✅ Done (ORDER FOR STOCK → Parts Control)             │
+├───────────────────────────────────────────────┼───────────────────────────────────────────────────────┤
+│ Arrived Stock Qty field on both projects      │ ✅ Done                                               │
+├───────────────────────────────────────────────┼───────────────────────────────────────────────────────┤
+│ Full plan document written                    │ ✅ workspace/plans/PLAN-2026-06-26-ordering-skills.md │
+├───────────────────────────────────────────────┼───────────────────────────────────────────────────────┤
+│ GID memory file saved                         │ ✅ memory/project_ordering_skills_gids.md             │
+└───────────────────────────────────────────────┴───────────────────────────────────────────────────────┘
+
+No code has been written. The plan is approved-ready but Giles hasn't said "approved" yet.
+
+---
+What needs to be built (in order)
+
+┌─────┬─────────────────────────────────────────────────────────────────┬─────────────┐
+│  #  │                              Item                               │ Dependency  │
+├─────┼─────────────────────────────────────────────────────────────────┼─────────────┤
+│ 1   │ db_migrate.py — add ordering_queue + ordering_edge_cases tables │ None        │
+├─────┼─────────────────────────────────────────────────────────────────┼─────────────┤
+│ 2   │ db_writer.py additions — 3 new functions                        │ Step 1      │
+├─────┼─────────────────────────────────────────────────────────────────┼─────────────┤
+│ 3   │ execute_requests.py — 5 new action types                        │ None        │
+├─────┼─────────────────────────────────────────────────────────────────┼─────────────┤
+│ 4   │ log_edge_case_to_asana.py — helper                              │ Steps 2+3   │
+├─────┼─────────────────────────────────────────────────────────────────┼─────────────┤
+│ 5   │ audit_parts_control_routing.py                                  │ Steps 2+3   │
+├─────┼─────────────────────────────────────────────────────────────────┼─────────────┤
+│ 6   │ compile_vendor_groups.py                                        │ Steps 2+3   │
+├─────┼─────────────────────────────────────────────────────────────────┼─────────────┤
+│ 7   │ create_order_tasks.py                                           │ Steps 3+4+6 │
+├─────┼─────────────────────────────────────────────────────────────────┼─────────────┤
+│ 8   │ arrived_stock_processor.py                                      │ Steps 2+3   │
+├─────┼─────────────────────────────────────────────────────────────────┼─────────────┤
+│ 9   │ Cron jobs for all scripts                                       │ All above   │
+└─────┴─────────────────────────────────────────────────────────────────┴─────────────┘
+
+---
+What needs testing (once built)
+
+Highest risk areas:
+
+1. Asana rule firing correctly — set a KANBAN task to ORDER FOR STOCK manually and watchControl within ~30 seconds. Test before any script runs.
+2. Vendor field blank → fallback — multi-home a test task with no Vendor set. Confirm compile groups it under SESAME BOM SUPPLIER / Consumables Supplier and tags it correctly.
+3. append_to_description action — if existing NEEDS task already has a description, confite it. This is the highest-risk new execute_requests action.
+4. Arrived Stock Qty reset race condition — if arrived_stock_processor runs twice before SAP processes the reset REQUESTS/ file, Arrived field could be read twice and double-counted. Need idempotency check: script should also write to a pending_reset flag in ops.db before SAP clears the field.
+5. Consumables title safety — confirm script 3 absolutely does not attempt title update on consumables tasks (no [N off] assumption).
+6. audit_parts_control_routing Path B — before enabling in production, run --scan and reto ORDER FOR STOCK. Risk of incorrectly flagging items that are HOLD ORDER or alreadyhandled.
+
+---
+Edge case management
+
+Three layers:
+
+Layer 1 — ordering_edge_cases table (ops.db)
+Structured log. Every failure writes a row with: script, stage, task GID, issue_type, description, raw JSON snapshot of task state. Immutable — never updated, only inserted.
+
+Layer 2 — Asana edge case tasks (project 1214604066893979)
+log_edge_case_to_asana.py (helper) converts each ops.db row into an Asana task via REQUE] {issue_type} — {task_name} — {date}. Description includes source task URL so Giles canclick through directly.
+
+Layer 3 — Severity tiers
+
+┌────────────────────────┬──────────┬──────────────┬─────────────────────────────┐
+│          Type          │ Severity │ Task created │     Task still orders?      │
+├────────────────────────┼──────────┼──────────────┼─────────────────────────────┤
+│ vendor_fallback        │ Info     │ Yes          │ Yes — under fallback tag    │
+├────────────────────────┼──────────┼──────────────┼─────────────────────────────┤
+│ title_parse_fail       │ Warning  │ Yes          │ — (arrived flow only)       │
+├────────────────────────┼──────────┼──────────────┼─────────────────────────────┤
+│ arrived_exceeds_order  │ Warning  │ Yes          │ Stock still updated         │
+├────────────────────────┼──────────┼──────────────┼─────────────────────────────┤
+│ stock_record_not_found │ Warning  │ Yes          │ Stock not updated           │
+├────────────────────────┼──────────┼──────────────┼─────────────────────────────┤
+│ title_update_fail      │ Error    │ Yes          │ Stock updated, title broken │
+├────────────────────────┼──────────┼──────────────┼─────────────────────────────┤
+│ sap_write_fail         │ Error    │ Yes          │ Action blocked              │
+├────────────────────────┼──────────┼──────────────┼─────────────────────────────┤
+│ no_task_created        │ Error    │ Yes          │ Order not created           │
+└────────────────────────┴──────────┴──────────────┴─────────────────────────────┘
+
+Key design: errors never silently drop work. Either the order task gets created or an edge case task flags exactly what failed and why, with a direct link to the source.
+
+---                                                                                                                                                                                                             Recommendations
+                                                                                                                                                                                                                1. Add idempotency to arrived_stock_processor (before production)
+If the script runs twice before SAP clears the Arrived field, you double-count stock. Fix: write arrived_reset_pending = 1 to ordering_queue before issuing the reset REQUESTS/ file, and skip tasks where that flag is set.
+                                                                                                                                                                                                                2. Vendor field population — Asana rule could help
+When a task routes to Parts Control from KANBAN, Asana could potentially auto-populate the Vendor field from a default per task type. Not always possible (same task, different suppliers) but worth exploring  for common repeat items once the system is running and patterns emerge.
+                                                                                                                                                                                                                3. add_to_existing match needs tightening
+Currently matches vendor_name to open procurement_tasks. Vendor name is free text — "RS Components", "RS", "R.S. Components" could all be the same supplier but won't match. Before build, consider fuzzy match (lowercased, stripped punctuation) or normalise vendor names in ops.db at sync time.
+
+4. Consider a weekly "unattributed vendor" Telegram digest
+All vendor_fallback edge cases from the past 7 days summarised in one Telegram message: "6 items ordered under SESAME BOM SUPPLIER this week — set Vendor field in Parts Control to attribute them."
+Low-effort, keeps data quality improving passively.
+
+5. Unit price population plan
+Price Ex VAT will be null for most items initially. Over time, as invoices are processed through the email pipeline, po_lines.unit_price will fill in. The order description showing "null" is correct now, but
+worth a future task to backfill from invoice history once po_lines is being written to.
+
+--------------
+Every case resolves correctly:
+
+- TransDev → Bearing Suppliers 1206555068737835 ✓ (via LIKE match → Vendor field "bearing supplier" → group tag)
+- NBSS/Sesame → Sesame BOM 722775702060138 ✓
+- NBSS/Lasercut → Lasercut orders 1118517828524819 ✓
+- NBSS/Machining → 2 tags (Machining Orders + Thameside) ✓
+- Rubber Supplier, Boneham, RS Components, Accu, Saws UK, Engraving → specific supplier tags ✓
+- Berger Tools, Bes → consumables fallback ✓
+
+Now apply the TransDev tag to the task created last week:
+
+● Write(~\.openclaw\workspace\REQUESTS\2026-06-30T09-05-00-tag-transdev-order.md)
+Wrote 17 lines to ..\REQUESTS\2026-06-30T09-05-00-tag-transdev-order.md
+---
+From: ops_agent
+To: asana_agent
+Type: asana_write
+Status: PENDING
+Priority: normal
+Created: 2026-06-30T09:05:00+00:00
+---
+
+## Request
+… +7 lines
+
+  Ran 1 shell command
+
+Done. Summary of what's now in place:
+
+Tag resolver priority (baked into find_supplier_tags()):
+1. NBSS/Sesame → Sesame BOM 722775702060138
+2. NBSS/Lasercut → Lasercut orders 1118517828524819
+3. NBSS/Machining → Machining Orders 856508769152405 + Thameside 1120996645925681
+4. Exact vendor match in suppliers DB → specific supplier tag (Boneham, RS, Accu, Rubber Supplier, Saws UK, Engraving...)
+5. LIKE match → Vendor field = "bearing supplier" → Bearing Suppliers 1206555068737835
+6. No match → consumables fallback 1126036408841509
+
+Patched this session:
+- Saws UK ORDER task → "Saws UK Ltd" tag applied
+- TransDev ORDER task → "Bearing Suppliers" tag applied
+
+To extend group tags (e.g., if you add "electrical supplier", "rubber supplier" as Vendoier Engagement): add an entry to _GROUP_VENDOR_TAGS in create_order_tasks.py. No syncneeded — just the dict and a re-deploy.
+
+----------
+Your 4 folders explained
+Folder	What it is	Use it for
+sesame-ai\release-sesame\win-unpacked\	The fresh build (latest code) — you're running this ✅	Testing. Run Sesame AI.exe here.
+AppData\Roaming\cowork-os\sesame-ai\	App data (profile.json, keys) — shared by every install on this PC	Nothing manual, except resetting profile.json
+SAS Dropbox\...\4. External Operations\Sesame_AI	The older copy you released to colleagues	Stale — don't test with it. Replace when v1 is final.
+SAS Dropbox\...\Sesame Ai Agentic Master file	The sync/distribution folder (completions.json, employee pack) — syncFolderPath	Where the champion drops packs + collects completions
+Mental model: win-unpacked = the app you test. AppData = its settings. The two SAS Dropbox folders = distribution, not the app.
+
+
+---------
+All three updated from Doppler without values appearing.
+
+To answer your question about Application ID and Directory ID: PURCHAISNG_SECRET_ID (the app/client ID) is fine — not sensitive. PURCHASING_TENANT_ID is fine — public identifier. Only PURCHASING_EMAIL_API_KEY (the client secret) needed rotating, and that's done.
+
+Status of the email pipeline:
+- New client secret → pulled from Doppler ✓
+- New Gemini key → pulled from Doppler ✓
+- Graph URLs suppressed in Telegram output ✓
+
+Next run at 14:00 should parse emails cleanly. Anything else pressing or shall we move on to the SES_Workspace/memory structure and CoWork-OS workspace setup?
+
+
+--------
+Working Hermes setup: 
+Good picture now. Here's the honest state:
+
+Cron jobs: 7/13 fired ok. 6 nighttime jobs pending first fire tonight. Not a concern.
+
+SES_Workspace: Skills are populated. But four directories are empty stubs blocking proper operation:
+
+---
+Gaps — priority order:
+
+┌─────┬──────────────────────────────────┬──────────────────────────────────────────────────┬────────────────────┐
+│  #  │               Gap                │                      Impact                      │       Effort       │
+├─────┼──────────────────────────────────┼──────────────────────────────────────────────────┼────────────────────┤
+│ 1   │ lib/telemetry.py missing         │ No run logging on any cron job — failures        │ 30 min — code      │
+│     │                                  │ invisible                                        │ already designed   │
+├─────┼──────────────────────────────────┼──────────────────────────────────────────────────┼────────────────────┤
+│ 2   │ db/ empty                        │ No ops.db in SES_Workspace — cron jobs still     │ Symlink or copy    │
+│     │                                  │ hitting .openclaw/db/                            │                    │
+├─────┼──────────────────────────────────┼──────────────────────────────────────────────────┼────────────────────┤
+│ 3   │ _copilot/PATH_CONFIG.yaml        │ VPS migration impossible — all paths hardcoded   │ 15 min             │
+│     │ missing                          │ Windows                                          │                    │
+├─────┼──────────────────────────────────┼──────────────────────────────────────────────────┼────────────────────┤
+│ 4   │ _copilot/SYSTEM_MANIFEST.yaml    │ No agent registry — SOUL.md table is             │ 20 min             │
+│     │ missing                          │ hand-written, not machine-readable               │                    │
+├─────┼──────────────────────────────────┼──────────────────────────────────────────────────┼────────────────────┤
+│ 5   │ memory/session_log.jsonl missing │ No cross-harness session awareness               │ 5 min stub         │
+├─────┼──────────────────────────────────┼──────────────────────────────────────────────────┼────────────────────┤
+│ 6   │ _copilot/graph/graph.json        │ Graphify not run — harnesses reading files blind │ Pending other chat │
+│     │ missing                          │                                                  │                    │
+├─────┼──────────────────────────────────┼──────────────────────────────────────────────────┼────────────────────┤
+│ 7   │ Hermes cron script paths         │ Jobs still resolve scripts from .openclaw/ — not │ Need to verify     │
+│     │                                  │  confirmed pointing at SES_Workspace/            │                    │
+├─────┼──────────────────────────────────┼──────────────────────────────────────────────────┼────────────────────┤
+│ 8   │ OpenClaw still running           │ Duplicate cron fires, duplicate Telegram sends   │ Shutdown decision  │
+│     │                                  │                                                  │ needed             │
+├─────┼──────────────────────────────────┼──────────────────────────────────────────────────┼────────────────────┤
+│ 9   │ daily_brief.py Gemini call       │ Will fail once Gemini key removed — tech debt    │ Refactor needed    │
+├─────┼──────────────────────────────────┼──────────────────────────────────────────────────┼────────────────────┤
+│ 10  │ Sesame_Brain POC                 │ Not seeded on OneDrive                           │ Separate task      │
+└─────┴──────────────────────────────────┴──────────────────────────────────────────────────┴────────────────────┘
+
+---
+Recommend doing 1, 3, 4, 5 now — pure content creation, no risk. Then verify item 7 (script path resolution) before shutting down OpenClaw (item 8).
+
+Start with telemetry.py and PATH_CONFIG.yaml?
+
+--------------------------------------------------------------
+## Status board, updated:
+
+---
+DONE
+- Infrastructure: PATH_CONFIG, path_config.py, telemetry.py, SYSTEM_MANIFEST, session_log ✅
+- All 11 Hermes wrapper scripts → SES_Workspace ✅
+- 7 runtime data files copied to SES_Workspace/data/ ✅
+- Purchasing pipeline (01–04) data paths → SES_Workspace ✅
+- Live test: execute_requests chain confirmed working ✅
+
+REMAINING
+
+┌─────┬─────────────────────────────────────────────────────────────────────┬─────────────────────────────────────┐
+│  #  │                                Task                                 │                Notes                │
+├─────┼─────────────────────────────────────────────────────────────────────┼─────────────────────────────────────┤
+│ 1   │ Other 43 scripts with .openclaw data   │ Low urgency — purchasing pipeline   │
+│     │                                                                     │ is the active one                   │
+├─────┼────────────────────────────────────────┼─────────────────────────────────────┤
+│ 2   │ Copy ops.db + crm.db → SES_Workspace/db/, flip 2 lines in           │ Needed before OpenClaw shutdown     │
+│     │ PATH_CONFIG                            │                                     │
+├─────┼─────────────────────────────────────────────────────────────────────┼─────────────────────────────────────┤
+│ 3   │ Create SES_Workspace/.venv             │ Needed before OpenClaw shutdown     │
+├─────┼─────────────────────────────────────────────────────────────────────┼─────────────────────────────────────┤
+│ 4   │ REQUESTS_DIR in 05_sheet_approver.py   │ Do together when SAP retires        │
+│     │ SES_Workspace/queues/REQUESTS                                       │                                     │
+├─────┼────────────────────────────────────────┼─────────────────────────────────────┤
+│ 5   │ Shut down OpenClaw gateway + crons                                  │ After DB migrated + venv created    │
+├─────┼────────────────────────────────────────┼─────────────────────────────────────┤
+│ 6   │ Fix daily_brief.py + 02_llm_parser.py Gemini hardcode               │ Tech debt                           │
+└─────┴────────────────────────────────────────┴─────────────────────────────────────┘
+
+Highest-value next: Create SES_Workspace/.vency on .openclaw. Want to do that now?

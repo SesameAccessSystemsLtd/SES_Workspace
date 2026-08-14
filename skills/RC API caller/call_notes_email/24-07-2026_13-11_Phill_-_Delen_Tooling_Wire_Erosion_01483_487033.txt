@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  24/07/2026  13:11
+============================================================
+With:         Phill - Delen Tooling Wire Erosion 01483 487033
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This is a preliminary call between Giles Hugo from SME Access and Phil from Delen Tooling Wire Erosion to discuss the possibility of EDM services for a cam component. They plan to exchange images and details via email to determine feasibility and pricing.
+
+--- RECAP --------------------------------------------------
+Giles Hugo from SME Access inquires about EDM services from Phil at Delen Tooling Wire Erosion for a cam component measuring approximately 130mm by 80mm with a radius on one surface, made of 40mm thick mild steel, with a non-parallel, tapered surface due to water jet machining.Giles explains the component's purpose in a scissor lift mechanism and the need to flatten or correct the cam surface to a normal profile, considering previous water jet modifications.Phil indicates that the requested EDM process, involving sparking wire erosion, is feasible and asks for visual confirmation via photos and CAD files to assess the work.Giles agrees to send photos and DXF files of the component for evaluation and requests a ballpark price estimate if the work is suitable.They discuss scheduling a potential visit to the workshop, with Phil available for an hour or two in the afternoon, and plan to confirm the visit based on the assessment of the images and details.Giles mentions he will be unavailable for the next couple of weeks but will coordinate to send the necessary information promptly.They exchange contact details, with Giles providing the email address "info@dlentooling.co.uk" and Phil confirming he will look out for the email and respond accordingly.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send photos and DXF files of the cam component to Phil at Delen Tooling Wire Erosion for evaluation.Phil will review the images and files to determine if the EDM process can be performed and provide a ballpark price estimate.Giles Hugo will follow up via email with the requested information and await a response regarding feasibility and pricing.If the work is feasible, Phil will coordinate a visit to the SME Access location in West Bley to discuss the project further.
+
+(Full transcript: RC web portal only — no RingSense API)

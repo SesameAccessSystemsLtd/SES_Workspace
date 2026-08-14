@@ -1,0 +1,1058 @@
+{
+  "compiled_at": "2026-08-14T07:00:27.871807+00:00",
+  "total_items": 76,
+  "vendor_groups": [
+    {
+      "vendor_name": "SESAME BOM SUPPLIER",
+      "vendor_name_normalised": "sesame bom supplier",
+      "vendor_is_fallback": true,
+      "fallback_tag_gid": "722775702060138",
+      "items": [
+        {
+          "asana_task_gid": "1206475669272320",
+          "task_name": "1024.A.061 - 32 off - washer",
+          "sesame_pn": null,
+          "item_type": "stock",
+          "order_qty": null,
+          "unit_price": null,
+          "stock_qty_at_detection": 0.0,
+          "parts_control_task_gid": "1206475669272320",
+          "vendor_is_fallback": true
+        },
+        {
+          "asana_task_gid": "523333842528553",
+          "task_name": "SES447424   Main Lift Manifold with Gate - ORDER NOW ",
+          "sesame_pn": "1008.H6(RF SES447424) ",
+          "item_type": "stock",
+          "order_qty": 10.0,
+          "unit_price": 453.68,
+          "stock_qty_at_detection": 3.0,
+          "parts_control_task_gid": "523333842528553",
+          "vendor_is_fallback": true
+        },
+        {
+          "asana_task_gid": "1215997547923355",
+          "task_name": "1\toff\tEngraved plate\t1295.1016.E.005\t\t\t\t\tEngraving",
+          "sesame_pn": null,
+          "item_type": "stock",
+          "order_qty": null,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1215997547923355",
+          "vendor_is_fallback": true
+        },
+        {
+          "asana_task_gid": "1201444884708129",
+          "task_name": "Honeywell Doorbell Transmitter (button)  DCP311G - 6 off ",
+          "sesame_pn": "1016.F.010",
+          "item_type": "stock",
+          "order_qty": 10.0,
+          "unit_price": 19.61,
+          "stock_qty_at_detection": 0.0,
+          "parts_control_task_gid": "1201444884708129",
+          "vendor_is_fallback": true
+        },
+        {
+          "asana_task_gid": "1202176745254922",
+          "task_name": "6mm Cement Board - 2.4x1.2m Product Code: A1-3201 ",
+          "sesame_pn": null,
+          "item_type": "stock",
+          "order_qty": null,
+          "unit_price": null,
+          "stock_qty_at_detection": 1.0,
+          "parts_control_task_gid": "1202176745254922",
+          "vendor_is_fallback": true
+        }
+      ]
+    },
+    {
+      "vendor_name": "Machining BOM",
+      "vendor_name_normalised": "machining bom",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1202107048753318",
+          "task_name": "2\toff\t1010.A.065\tBush Safety Bar\tStainless Steel\t  MC101\t",
+          "sesame_pn": null,
+          "item_type": "stock",
+          "order_qty": 11.0,
+          "unit_price": 14.0,
+          "stock_qty_at_detection": 0.0,
+          "parts_control_task_gid": "1202107048753318",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1202107048753316",
+          "task_name": "2\toff\t1010.A.030\t(LargeBushing)\tSteel, Mild\tMC101 ",
+          "sesame_pn": null,
+          "item_type": "stock",
+          "order_qty": 10.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1202107048753316",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "928895539267493",
+          "task_name": "20 off NBSS105 Rev1 (OrangeWheel_Rod 20mm)",
+          "sesame_pn": null,
+          "item_type": "stock",
+          "order_qty": 20.0,
+          "unit_price": 10.5,
+          "stock_qty_at_detection": 0.0,
+          "parts_control_task_gid": "928895539267493",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "Machining",
+      "vendor_name_normalised": "machining",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216242488499802",
+          "task_name": "2 off 1588. 1025.A.007 - Scissor leg Bright Bar Machining",
+          "sesame_pn": "1588.1025.A.007",
+          "item_type": "stock",
+          "order_qty": 2.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216242488499802",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216242263168675",
+          "task_name": "8 off 1588. 1025.A.012 - Bush Machining",
+          "sesame_pn": "1588.1025.A.012",
+          "item_type": "stock",
+          "order_qty": 8.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216242263168675",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216242618231673",
+          "task_name": "16 off 1588. 1025.A.013 - Hinge pin Machining",
+          "sesame_pn": "1588.1025.A.013",
+          "item_type": "stock",
+          "order_qty": 16.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216242618231673",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216242682912193",
+          "task_name": "2 off 1588. 1025.A.014 - Scissor Leg Bright Bar Machining",
+          "sesame_pn": "1588.1025.A.014",
+          "item_type": "stock",
+          "order_qty": 2.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216242682912193",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216242580272260",
+          "task_name": "2 off 1588. 1025.A.014_MIR - Scissor Leg Bright Bar Machining",
+          "sesame_pn": "1588.1025.A.014_MIR",
+          "item_type": "stock",
+          "order_qty": 2.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216242580272260",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216242581380675",
+          "task_name": "6 off 1588. 1025.A.017 - Actuator Cam Machining",
+          "sesame_pn": "1588.1025.A.017",
+          "item_type": "stock",
+          "order_qty": 6.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216242581380675",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216242617702998",
+          "task_name": "8 off 1588. 1025.A.019 - Hinge Block Machining",
+          "sesame_pn": "1588.1025.A.019",
+          "item_type": "stock",
+          "order_qty": 8.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216242617702998",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216242617993179",
+          "task_name": "4 off 1588. 1025.A.029 - Round Studding Connector Machining",
+          "sesame_pn": "1588.1025.A.029",
+          "item_type": "stock",
+          "order_qty": 4.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216242617993179",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216242489475952",
+          "task_name": "6 off 1588. 1025.A.034 - Actuator Wheel hardened EN16/EN24 Machining",
+          "sesame_pn": "1588.1025.A.034",
+          "item_type": "stock",
+          "order_qty": 6.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216242489475952",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216242489674898",
+          "task_name": "2 off 1588. 1025.A.035 - Pin Machining",
+          "sesame_pn": "1588.1025.A.035",
+          "item_type": "stock",
+          "order_qty": 2.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216242489674898",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216242618890076",
+          "task_name": "2 off 1588. 1025.A.045 - Wheel bracket Machining",
+          "sesame_pn": "1588.1025.A.045",
+          "item_type": "stock",
+          "order_qty": 2.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216242618890076",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216242263763063",
+          "task_name": "4 off 1588. 1025.A.057 - Cap Machining",
+          "sesame_pn": "1588.1025.A.057",
+          "item_type": "stock",
+          "order_qty": 4.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216242263763063",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216242489121740",
+          "task_name": "2 off 1588. 1025.A.058 - Scissor leg Bright Bar Machining",
+          "sesame_pn": "1588.1025.A.058",
+          "item_type": "stock",
+          "order_qty": 2.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216242489121740",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216754895927582",
+          "task_name": "6 off 1555. 1009.P.032 - Tube (10 mm OD 1 mm wall) Machining",
+          "sesame_pn": "1555.1009.P.032",
+          "item_type": "stock",
+          "order_qty": 6.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216754895927582",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216755364022894",
+          "task_name": "2 off 1555. 1009.P.033 - Modified clevis pin Machining",
+          "sesame_pn": "1555.1009.P.033",
+          "item_type": "stock",
+          "order_qty": 2.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216755364022894",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216754994682734",
+          "task_name": "4 off 1555. 1009.P.035 - Tube (10 mm OD 1 mm wall) Machining",
+          "sesame_pn": "1555.1009.P.035",
+          "item_type": "stock",
+          "order_qty": 4.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216754994682734",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216755221138377",
+          "task_name": "1 off 1555. 1009.P.036 - Limit switch striker Machining",
+          "sesame_pn": "1555.1009.P.036",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216755221138377",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216754995161602",
+          "task_name": "6 off 1555. 1009.P.037 - Handrail support Machining",
+          "sesame_pn": "1555.1009.P.037",
+          "item_type": "stock",
+          "order_qty": 6.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216754995161602",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "Plastics Supplier",
+      "vendor_name_normalised": "plastics supplier",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216242618645370",
+          "task_name": "4 off 1588. 1025.A.084 - Acetal pad for ram Plastics Supplier",
+          "sesame_pn": "1588.1025.A.084",
+          "item_type": "stock",
+          "order_qty": 4.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216242618645370",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216242619046780",
+          "task_name": "4 off 1588. 1025.A.085 - Acetal pad for ram Plastics Supplier",
+          "sesame_pn": "1588.1025.A.085",
+          "item_type": "stock",
+          "order_qty": 4.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216242619046780",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "RS Components",
+      "vendor_name_normalised": "rs components",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216242264793494",
+          "task_name": "4 off 1588. 1000.B.40x25_F_M10_86.4kg - Female Rubber Buffer 126-3934 RS Components",
+          "sesame_pn": "1588.1000.B.40x25_F_M10_86.4kg",
+          "item_type": "stock",
+          "order_qty": 4.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216242264793494",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216622513409645",
+          "task_name": "4 off 1588. 1000.B.40x30_M_M8_120daN - 40x30mm Shock Mount M8 20mm studd 415-0682 RS Components",
+          "sesame_pn": "1588.1000.B.40x30_M_M8_120daN",
+          "item_type": "stock",
+          "order_qty": 4.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216622513409645",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1207602607732274",
+          "task_name": "150mm Shaft for PLC isolator - Socomec 14070515 (RS 179-9637) ",
+          "sesame_pn": null,
+          "item_type": "stock",
+          "order_qty": 10.0,
+          "unit_price": 6.74,
+          "stock_qty_at_detection": 1.0,
+          "parts_control_task_gid": "1207602607732274",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "Sesame",
+      "vendor_name_normalised": "sesame",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216242683844077",
+          "task_name": "1 off 1588. 1008.A11.001 - Detection distance 2 m, Cable with connector M12, Laser Class 2 LR-TB2000C Sesame",
+          "sesame_pn": "1588.1008.A11.001",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216242683844077",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216622713156238",
+          "task_name": "2 off 1588. 1006.A.102 - Lighting Supports - Trolley Assemblies P2949 Sesame",
+          "sesame_pn": "1588.1006.A.102",
+          "item_type": "stock",
+          "order_qty": 2.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216622713156238",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216623913403297",
+          "task_name": "1 off 1594. 1008.A11.001 - Detection distance 2 m, Cable with connector M12, Laser Class 2 LR-TB2000C Sesame",
+          "sesame_pn": "1594.1008.A11.001",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623913403297",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216623853578470",
+          "task_name": "1 off 1594. 1010.L.109 - 3D Printed guide channel Sesame",
+          "sesame_pn": "1594.1010.L.109",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623853578470",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216623914113767",
+          "task_name": "1 off 1594. 1010.L.109_MIR - 3D Printed guide channel Sesame",
+          "sesame_pn": "1594.1010.L.109_MIR",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623914113767",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "NBSS/Laser Cut",
+      "vendor_name_normalised": "nbsslaser cut",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216622542740943",
+          "task_name": "1 off 1588. 034.001 - NBSS.034.001 SafeWorkingLoadPlate: Blank NBSS/Laser Cut",
+          "sesame_pn": "1588.034.001",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216622542740943",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216622542732068",
+          "task_name": "1 off 1588. 033 - NBSS.033 Button Plate dia 160 x 160 304/DP1 NBSS/Laser Cut",
+          "sesame_pn": "1588.033",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216622542732068",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216625040404985",
+          "task_name": "1 off 1591. 034.001 - NBSS.034.001 SafeWorkingLoadPlate: Blank NBSS/Laser Cut",
+          "sesame_pn": "1591.034.001",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216625040404985",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "NBSS/Welded by Sesame",
+      "vendor_name_normalised": "nbsswelded by sesame",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216622452626619",
+          "task_name": "1 off 1588. 049 - NBSS.049 Dripping Tray NBSS/Welded by Sesame",
+          "sesame_pn": "1588.049",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216622452626619",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "Orbital Fasteners",
+      "vendor_name_normalised": "orbital fasteners",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216622513895473",
+          "task_name": "2 off 1588. 1006.A.103 - DEEP PLAIN CHANNEL HEAVY GAUGE X 3 METRE, 41MM X 41MM X 2.5MM. 316/A4 STAINLESS STEEL. UNISTRUT COMPATIBLE, 764mm length SKU Number: 5028420 Orbital Fasteners",
+          "sesame_pn": "1588.1006.A.103",
+          "item_type": "stock",
+          "order_qty": 2.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216622513895473",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216755222991795",
+          "task_name": "6 off 1555. 1009.P.025 - Lifting eyebolt M5x40 3140985 Orbital fasteners",
+          "sesame_pn": "1555.1009.P.025",
+          "item_type": "stock",
+          "order_qty": 6.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216755222991795",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "Hennig",
+      "vendor_name_normalised": "hennig",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216623814251397",
+          "task_name": "1 off 1594. 1010.L.045 - Roller Shutter Blind Aluflex(ASS 100 travel) Hennig",
+          "sesame_pn": "1594.1010.L.045",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623814251397",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "ABCO",
+      "vendor_name_normalised": "abco",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216611735131364",
+          "task_name": "1 off 1588. 1003.A.StairRam_Single - Close 1000mm, Stroke 777mm ABCO",
+          "sesame_pn": "1588.1003.A.StairRam_Single",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216611735131364",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216623853978419",
+          "task_name": "2 off 1594. 1010.L.Actuator - CC:450 / Stroke: 250 mm, Single act. Ram RKHM23300250 ABCO",
+          "sesame_pn": "1594.1010.L.Actuator",
+          "item_type": "stock",
+          "order_qty": 2.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623853978419",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "NBSS/Machining",
+      "vendor_name_normalised": "nbssmachining",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216622452420943",
+          "task_name": "4 off 1588. 105 - NBSS.105 OrangeWheel_Rod 20mm NBSS/Machining",
+          "sesame_pn": "1588.105",
+          "item_type": "stock",
+          "order_qty": 4.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216622452420943",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "Bellows Supplier",
+      "vendor_name_normalised": "bellows supplier",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216622513878705",
+          "task_name": "1 off 1588. 1006.A.Bellows - Bellows Bellows Supplier",
+          "sesame_pn": "1588.1006.A.Bellows",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216622513878705",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "Pemsa",
+      "vendor_name_normalised": "pemsa",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216622610439709",
+          "task_name": "2 off 1588. 1008.W.008 - Wire mesh tray 35x60x4 Pemsa 60221060 Pemsa",
+          "sesame_pn": "1588.1008.W.008",
+          "item_type": "stock",
+          "order_qty": 2.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216622610439709",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216622585280353",
+          "task_name": "1 off 1588. 1008.W.009 - Wire mesh tray 35x60x4 Pemsa 60221060 Pemsa",
+          "sesame_pn": "1588.1008.W.009",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216622585280353",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "Blickle",
+      "vendor_name_normalised": "blickle",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216623831857754",
+          "task_name": "4 off 1594. 1000.A9.001 - Guide roller FTH 34x16/8-7K Blickle",
+          "sesame_pn": "1594.1000.A9.001",
+          "item_type": "stock",
+          "order_qty": 4.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623831857754",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "Concens",
+      "vendor_name_normalised": "concens",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216623852973460",
+          "task_name": "2 off 1594. 1000.N.Driver - conXion DIN Driver (one per actuator) conXion DIN Concens",
+          "sesame_pn": "1594.1000.N.Driver",
+          "item_type": "stock",
+          "order_qty": 2.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623852973460",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216623740655235",
+          "task_name": "2 off 1594. 1000.N.Linear Actuator14_100_SDP_CLEVIS_1010L - Linear actuator SDP with clevis con-35 fork 100mm stroke 24V DC 3m cable 400N 1:14 Ratio 350100-143212C030000 CONCENS",
+          "sesame_pn": "1594.1000.N.Linear Actuator14_100_SDP_CLEVIS_1010L",
+          "item_type": "stock",
+          "order_qty": 2.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623740655235",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "DQR",
+      "vendor_name_normalised": "dqr",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216623814116756",
+          "task_name": "1 off 1594. 1010.L.030 - RollerShutterBlind - Side PE580 Matt Tarpaulin Fabric dia. 34mm when rolled",
+          "sesame_pn": "1594.1010.L.030",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623814116756",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "Tape Switch",
+      "vendor_name_normalised": "tape switch",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216623853462049",
+          "task_name": "1 off 1594. 1010.L.032 - TS6 Sensing Edge With Resistor TS6/Resistor Fitted/+End caps/ Tape Switch",
+          "sesame_pn": "1594.1010.L.032",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623853462049",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "Fastenright",
+      "vendor_name_normalised": "fastenright",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216623741078625",
+          "task_name": "4 off 1594. 1010.L.074 - Socket Countersunk Barrel Nut M6 x 20 SB001 Fastenright",
+          "sesame_pn": "1594.1010.L.074",
+          "item_type": "stock",
+          "order_qty": 4.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623741078625",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "Bearing Supplier",
+      "vendor_name_normalised": "bearing supplier",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216623913902240",
+          "task_name": "2 off 1594. 1010.L.080 - igutex® TX3, cylindrical plain bearing TX3SM-4048-60 Bearing Supplier",
+          "sesame_pn": "1594.1010.L.080",
+          "item_type": "stock",
+          "order_qty": 2.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623913902240",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216623741151645",
+          "task_name": "6 off 1594. 1010.L.082 - iglidur® W300, thrust washer WTM-4266-015 Bearing Supplier",
+          "sesame_pn": "1594.1010.L.082",
+          "item_type": "stock",
+          "order_qty": 6.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623741151645",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216623913644534",
+          "task_name": "4 off 1594. 1010.L.086 - iglidur® TX1, sleeve bearing TX1SM-2025-30 Bearing Supplier",
+          "sesame_pn": "1594.1010.L.086",
+          "item_type": "stock",
+          "order_qty": 4.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623913644534",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216623741070924",
+          "task_name": "4 off 1594. 1010.L.087 - iglidur® TX1, sleeve bearing TX1SM-2025-15 Bearing Supplier",
+          "sesame_pn": "1594.1010.L.087",
+          "item_type": "stock",
+          "order_qty": 4.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623741070924",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216623741143894",
+          "task_name": "8 off 1594. 1010.L.088 - iglidur® W300, thrust washer WTM-2238-015 Bearing Supplier",
+          "sesame_pn": "1594.1010.L.088",
+          "item_type": "stock",
+          "order_qty": 8.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623741143894",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216623853894129",
+          "task_name": "8 off 1594. 1010.L.112 - iglidur® J, sleeve bearing JSM-1620-20 Bearing Supplier",
+          "sesame_pn": "1594.1010.L.112",
+          "item_type": "stock",
+          "order_qty": 8.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623853894129",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216623833444567",
+          "task_name": "16 off 1594. 1010.L.113 - iglidur® W300, thrust washer WTM-1630-015 Bearing Supplier",
+          "sesame_pn": "1594.1010.L.113",
+          "item_type": "stock",
+          "order_qty": 16.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623833444567",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216755222839328",
+          "task_name": "4 off 1555. 1009.P.012 - Flanged bearing GFM-04050-06 Bearing Supplier",
+          "sesame_pn": "1555.1009.P.012",
+          "item_type": "stock",
+          "order_qty": 4.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216755222839328",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216755481363020",
+          "task_name": "12 off 1555. 1009.P.020 - Flanged bearing GFM-0405-0255 Bearing Supplier",
+          "sesame_pn": "1555.1009.P.020",
+          "item_type": "stock",
+          "order_qty": 12.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216755481363020",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "Boneham",
+      "vendor_name_normalised": "boneham",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216755364455509",
+          "task_name": "6 off 1555. 1000.C.ClevisPin 4x20mm - Clevis pin Stainless Steel CPSS-04-020 Boneham",
+          "sesame_pn": "1555.1000.C.ClevisPin 4x20mm",
+          "item_type": "stock",
+          "order_qty": 6.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216755364455509",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216754839295556",
+          "task_name": "2 off 1555. 1000.C.ClevisPin 8x40mm - Clevis Pin Stainless Steel CPSS-08-040 Boneham",
+          "sesame_pn": "1555.1000.C.ClevisPin 8x40mm",
+          "item_type": "stock",
+          "order_qty": 2.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216754839295556",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216755221573600",
+          "task_name": "2 off 1555. 1000.C.ClevisPin 8x50mm - Clevis Pin Stainless Steel CPSS-08-050 Boneham",
+          "sesame_pn": "1555.1000.C.ClevisPin 8x50mm",
+          "item_type": "stock",
+          "order_qty": 2.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216755221573600",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216754839836289",
+          "task_name": "6 off 1555. 1000.C.R-Clip 1.0x20 - R CLIP 1mm x 20mm Stainless Steel RC1.0SS Boneham",
+          "sesame_pn": "1555.1000.C.R-Clip 1.0x20",
+          "item_type": "stock",
+          "order_qty": 6.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216754839836289",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1216755324456612",
+          "task_name": "2 off 1555. 1000.C.R-Clip 1.2x22 - R CLIP 1.2mm Dia x 22mm Stainless Steel RC1.2SS Boneham",
+          "sesame_pn": "1555.1000.C.R-Clip 1.2x22",
+          "item_type": "stock",
+          "order_qty": 2.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216755324456612",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "Vital-Parts",
+      "vendor_name_normalised": "vitalparts",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216755481966870",
+          "task_name": "3 off 1555. 1009.P.029 - Push-in rubber feet PIF001 Vital-Parts",
+          "sesame_pn": "1555.1009.P.029",
+          "item_type": "stock",
+          "order_qty": 3.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216755481966870",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "Norelem",
+      "vendor_name_normalised": "norelem",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216623852941558",
+          "task_name": "2 off 1594. 1000.B.50x40_M_M10_5000N - Rubber buffers, steel type KRA spherical 26116-0500401070 Norelem",
+          "sesame_pn": "1594.1000.B.50x40_M_M10_5000N",
+          "item_type": "stock",
+          "order_qty": 2.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623852941558",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "JAJO",
+      "vendor_name_normalised": "jajo",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216611730467143",
+          "task_name": "1 off 1588. 1008.D1.MachineRoomCabinet - Machine Room Cabinet JAJO",
+          "sesame_pn": "1588.1008.D1.MachineRoomCabinet",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216611730467143",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "polymax",
+      "vendor_name_normalised": "polymax",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1205893685730792",
+          "task_name": "Male M8 40x30mm with x30 stud 60 ShA  - Rubber AV mount  RS COMPONENTS ONLY  415-0682",
+          "sesame_pn": "1000.B.40x30_M_M8_120daN",
+          "item_type": "stock",
+          "order_qty": 40.0,
+          "unit_price": 2.42,
+          "stock_qty_at_detection": 2.0,
+          "parts_control_task_gid": "1205893685730792",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "Laser Cut/Machining",
+      "vendor_name_normalised": "laser cutmachining",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1217374533449647",
+          "task_name": "1 off 1591. 7003.E.224 - Support Leg 304/HR Machining",
+          "sesame_pn": "1591.7003.E.224",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1217374533449647",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "1217374268972565",
+          "task_name": "1 off 1591. 7003.E.224_MIR - Support Leg 304/HR Machining",
+          "sesame_pn": "1591.7003.E.224_MIR",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1217374268972565",
+          "vendor_is_fallback": false
+        }
+      ]
+    },
+    {
+      "vendor_name": "Laser Cut",
+      "vendor_name_normalised": "laser cut",
+      "vendor_is_fallback": false,
+      "fallback_tag_gid": null,
+      "items": [
+        {
+          "asana_task_gid": "1216623601144831",
+          "task_name": "1 off 1594. 1008.A11.002 - Reflective plate under laser scanner 304/2B Laser Cut",
+          "sesame_pn": "1594.1008.A11.002",
+          "item_type": "stock",
+          "order_qty": 1.0,
+          "unit_price": null,
+          "stock_qty_at_detection": null,
+          "parts_control_task_gid": "1216623601144831",
+          "vendor_is_fallback": false
+        }
+      ]
+    }
+  ]
+}

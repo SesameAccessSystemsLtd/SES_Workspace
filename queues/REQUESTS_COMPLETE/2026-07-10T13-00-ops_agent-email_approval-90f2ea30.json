@@ -1,0 +1,14 @@
+{
+  "request_id": "1c5b1de4-52f7-44f7-8365-0348e3c02b07",
+  "source": "email_approval_sheet",
+  "row_index": 56,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAABnJ7JfAACfKjgQkWRhS42xGA6fMW2cAAkCMt7TAAA=",
+  "subject": "[Keyence (UK) Ltd] Order Confirmation# 1000340965",
+  "task_gid": "1216242580440488",
+  "task_name": "21147-1588 - Keyence - 1588 - America 1 Scissor BOM",
+  "asana_url": "https://app.asana.com/0/0/1216242580440488",
+  "action": "(Matched via PO Number in Local DB); Update delivery date to 2026-07-09; Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043); Update custom field 'Price Ex VAT' (field GID: 854330340727040) to 222.0; Note added to description: Order_Confirmation from Keyence - £222.00 (2026-07-09)",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-07-09T08:25:41Z\nEmail: [Keyence (UK) Ltd] Order Confirmation# 1000340965\n- Update delivery date to 2026-07-09\n- Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043)\n- Update custom field 'Price Ex VAT' (field GID: 854330340727040) to 222.0\n- Note added to description: Order_Confirmation from Keyence - £222.00 (2026-07-09)",
+  "decision": "A",
+  "created_at": "2026-07-10T13:00:07.730658+00:00"
+}

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  23/07/2026  13:00
+============================================================
+With:         Karol Porwol 303
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Giles Hugo discussing procurement issues related to fasteners for handrails, including supplier constraints and potential alternatives, with Karol Porwol. The main outcome was that Giles will investigate whether 16 mm fasteners can replace 20 mm ones and will send relevant links for review.
+
+--- RECAP --------------------------------------------------
+Giles Hugo inquired about the quality of reception and confirmed the audio was clearer during the call.They discussed fasteners for Brooks handrails, specifically socket barrel sex bolts, which require 20 mm length instead of the standard 16 mm.Giles noted that the preferred supplier, Fixings Right, has a minimum order quantity of 150 pounds, making small orders impractical.Giles suggested removing Fixings Right as a supplier due to their new ordering restrictions and will provide feedback accordingly.Giles will investigate whether 16 mm fasteners can be used instead of 20 mm for the specified models and will send links for review.Karol will review the drawings against the models once he receives the links and will provide an answer regarding the feasibility of using 16 mm fasteners.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send the links to Karol Porwol for review of the fastener models.Karol Porwol will review the drawings against the models and determine if 16 mm fasteners can replace 20 mm ones, providing feedback to Giles.
+
+(Full transcript: RC web portal only — no RingSense API)

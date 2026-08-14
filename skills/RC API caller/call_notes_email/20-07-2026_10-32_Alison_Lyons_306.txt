@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  20/07/2026  10:32
+============================================================
+With:         Alison Lyons 306
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a call between Alison Lyons and Fatima Barros discussing expense processing and a payment request from Jane at Circus Star. The main outcome was that Fatima approved the expenses, and Alison was advised to check the expense portal for updates.
+
+--- RECAP --------------------------------------------------
+Jane from Circus Star requested a payment of 50 pounds, which Alison Lyons acknowledged.Fatima Barros confirmed she has approved the expenses for steps and Adams, and instructed Alison to process them as usual.Alison Lyons was unsure if the expenses had been processed earlier, as she did not see them on the expense portal about an hour ago.Fatima Barros advised Alison to check again, as she had already processed the expenses, and they should now be visible and ready for processing.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

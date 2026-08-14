@@ -1,0 +1,34 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date
+ALL BOMS - 1582 Long Lead BOM,1582 Long Lead BOM,,,,,,
+Long Leading BOM - 1582 Long Lead BOM,,ALL BOMS - 1582 Long Lead BOM,,Long Leading,,,
+JAJO - 1582 Long Lead BOM,,Long Leading BOM - 1582 Long Lead BOM,,JAJO,,,
+1 off 1582. 1008.D1.MachineRoomCabinet - Machine Room Cabinet JAJO,"1582.1008.D1.MachineRoomCabinet
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/sbnmht9h0ccm72pyypqc6/AJVhWXmC_qy8VfBNAIOZYkQ?rlkey=aewf2s6d1de6zwie3pujvcemw&dl=0
+Mass: 64.868 kg
+Volume: 32537954.668 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",JAJO - 1582 Long Lead BOM,1,JAJO,,,
+Hydraulic Supplier - 1582 Long Lead BOM,,Long Leading BOM - 1582 Long Lead BOM,,Hydraulic Supplier,,,
+1 off 1582. 1008.D1.MotorPumpUnit - TBC by Karol - Spec as per PLC BOM Hydraulic Supplier,"1582.1008.D1.MotorPumpUnit
+Material: Generic
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/sbnmht9h0ccm72pyypqc6/AJVhWXmC_qy8VfBNAIOZYkQ?rlkey=aewf2s6d1de6zwie3pujvcemw&dl=0
+Mass: 14.000 kg
+Volume: 14000247.356 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Hydraulic Supplier - 1582 Long Lead BOM,1,Hydraulic Supplier,,,
+Related Fluid - 1582 Long Lead BOM,,Long Leading BOM - 1582 Long Lead BOM,,Related Fluid,,,
+1 off 1582. 1008.H6(RF SES447424) - Valve Block (2 function) RF SES447424 Related Fluid,"1582.1008.H6(RF SES447424)
+Stock Number: RF SES447424
+Material: Generic
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/sbnmht9h0ccm72pyypqc6/AJVhWXmC_qy8VfBNAIOZYkQ?rlkey=aewf2s6d1de6zwie3pujvcemw&dl=0
+Mass: 1.927 kg
+Volume: 1927464.015 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Related Fluid - 1582 Long Lead BOM,1,Related Fluid,,,
+Sesame - 1582 Long Lead BOM,,Long Leading BOM - 1582 Long Lead BOM,,Sesame,,,
+1 off 1582. 1011.B.ScissorLift Double - Double Scissor Lift Sesame,"1582.1011.B.ScissorLift Double
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/sbnmht9h0ccm72pyypqc6/AJVhWXmC_qy8VfBNAIOZYkQ?rlkey=aewf2s6d1de6zwie3pujvcemw&dl=0
+Mass: 441.444 kg
+Volume: 61287735.949 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1192686469436889/task/1214179327365184?focus=true",Sesame - 1582 Long Lead BOM,1,Sesame,,,

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #f8f9ff; color: #1A1A2E; font-size: 12px; }
+.sr-only { position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0); }
+.wrap { padding: 16px 18px 24px; }
+.title { font-size: 14px; font-weight: 700; color: #2D3A8C; text-align:center; margin-bottom:3px; }
+.sub   { font-size: 10px; color: #6B7280; text-align:center; margin-bottom:14px; }
+
+.tabs { display:flex; gap:5px; margin-bottom:14px; flex-wrap:wrap; justify-content:center; }
+.tab  { padding:4px 13px; border-radius:20px; font-size:11px; font-weight:600; cursor:pointer;
+        border:2px solid #C5CBF0; color:#5B6EC8; background:#fff; transition:all 0.15s; }
+.tab.active { background:#2D3A8C; color:#fff; border-color:#2D3A8C; }
+.panel { display:none; } .panel.active { display:block; }
+
+/* Blocker cards */
+.blocker { border-radius:8px; margin-bottom:10px; overflow:hidden; border:2px solid #E5E7EB; }
+.blocker-head { display:flex; align-items:flex-start; padding:8px 12px; gap:10px; }
+.sev { font-size:9px; font-weight:700; letter-spacing:.8px; text-transform:uppercase;
+       padding:2px 7px; border-radius:8px; white-space:nowrap; flex-shrink:0; margin-top:1px; }
+.sev.high   { background:#FEE2E2; color:#991B1B; border:1px solid #FCA5A5; }
+.sev.med    { background:#FEF3C7; color:#92400E; border:1px solid #FCD34D; }
+.sev.low    { background:#D1FAE5; color:#065F46; border:1px solid #6EE7B7; }
+.bh-right   { flex:1; }
+.bh-title   { font-size:12px; font-weight:700; color:#1A1A2E; margin-bottom:2px; }
+.bh-sub     { font-size:10px; color:#6B7280; }
+.blocker-body { padding:10px 12px; background:#fff; }
+.b-row { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.b-section { }
+.b-label { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; color:#6B7280; margin-bottom:4px; }
+.b-text  { font-size:10px; color:#374151; line-height:1.5; }
+.fix { background:#EEF0FB; border-radius:5px; padding:5px 8px; font-size:10px; color:#2D3A8C; margin-top:4px; line-height:1.5; }
+.fix strong { color:#2D3A8C; }
+
+/* Prereq table */
+.pre-group { margin-bottom:14px; }
+.pre-title { font-size:11px; font-weight:700; color:#2D3A8C; padding:6px 10px; background:#EEF0FB; border-radius:6px; margin-bottom:6px; }
+.pre-item { display:grid; grid-template-columns:28px 1fr 80px 80px; gap:6px; align-items:start;
+            padding:6px 8px; border-radius:5px; margin-bottom:4px; }
+.pre-item:nth-child(odd) { background:#F8F9FF; }
+.pre-icon { font-size:14px; text-align:center; }
+.pre-name { font-size:10px; font-weight:600; color:#1A1A2E; }
+.pre-desc { font-size:9px; color:#6B7280; margin-top:1px; }
+.pre-who { font-size:9px; font-weight:600; }
+.pre-when { font-size:9px; }
+.champ { color:#2D3A8C; } .emp { color:#5B6EC8; }
+
+/* Communication options */
+.opt { border-radius:8px; margin-bottom:10px; overflow:hidden; }
+.opt-head { display:flex; align-items:center; gap:8px; padding:7px 12px; }
+.opt-title { font-size:11px; font-weight:700; }
+.opt-body  { padding:8px 12px; font-size:10px; line-height:1.6; color:#374151; background:#fff; border-top:1px solid #E5E7EB; }
+.tag { display:inline-block; font-size:9px; font-weight:700; padding:1px 6px; border-radius:8px; }
+.tag.green  { background:#D1FAE5; color:#065F46; }
+.tag.amber  { background:#FEF3C7; color:#92400E; }
+.tag.red    { background:#FEE2E2; color:#991B1B; }
+.tag.blue   { background:#EEF0FB; color:#2D3A8C; }
+
+.rec { background:#1A1A2E; border-radius:8px; padding:10px 14px; margin-top:6px; }
+.rec-title { font-size:10px; font-weight:700; color:#5B6EC8; margin-bottom:6px; }
+.rec-row { font-size:10px; color:#E2E8F0; line-height:1.6; }
+</style>
+</head>
+<body>
+<!-- SAS-OS-NAV -->
+<a href="../data/os_status/nav.html" style="position:fixed;top:16px;right:16px;z-index:9999;background:#0f172a;color:#fff;font:600 13px -apple-system,'Segoe UI',Roboto,sans-serif;text-decoration:none;padding:8px 16px;border-radius:20px;box-shadow:0 2px 8px rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.25)">&larr; SAS OS portal</a>
+
+<h2 class="sr-only">Sesame AI roadblock analysis: email authorization, network restrictions, installer signing, and prerequisite checklist.</h2>
+<div class="wrap">
+  <div class="title">SESAME AI — Roadblock Analysis</div>
+  <div class="sub">Likely trip-wires, mitigations, and what must be in place before launch</div>
+
+  <div class="tabs">
+    <div class="tab active" onclick="show('email')">📧 Email Blockers</div>
+    <div class="tab" onclick="show('network')">🌐 Network & Security</div>
+    <div class="tab" onclick="show('install')">💾 Install Blockers</div>
+    <div class="tab" onclick="show('comms')">📡 Comms Options</div>
+    <div class="tab" onclick="show('prereqs')">✅ Prerequisites</div>
+  </div>
+
+  <!-- EMAIL BLOCKERS -->
+  <div class="panel active" id="panel-email">
+
+    <div class="blocker">
+      <div class="blocker-head">
+        <span class="sev high">HIGH</span>
+        <div class="bh-right">
+          <div class="bh-title">Microsoft Graph API — Mail.Send permission</div>
+          <div class="bh-sub">Most companies will not grant this. Tenant admin consent required.</div>
+        </div>
+      </div>
+      <div class="blocker-body">
+        <div class="b-row">
+          <div class="b-section">
+            <div class="b-label">Why it blocks</div>
+            <div class="b-text">Sending email programmatically via Graph API requires an Azure AD app registration with Mail.Send scope. This needs tenant admin consent — a step most IT departments refuse for third-party desktop apps. Even with consent, conditional access policies, DLP rules, and MFA requirements can silently block it.</div>
+          </div>
+          <div class="b-section">
+            <div class="b-label">Mitigation</div>
+            <div class="fix"><strong>Primary fix:</strong> Use mailto: links only. The system composes the email and opens the user's default mail client pre-filled. User clicks Send. No API. No admin consent. Works everywhere Outlook is installed (which is every Sesame machine).</div>
+            <div class="fix" style="margin-top:5px;"><strong>Fallback:</strong> Asana email-to-task (see Comms Options tab). No Graph API needed at all.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blocker">
+      <div class="blocker-head">
+        <span class="sev high">HIGH</span>
+        <div class="bh-right">
+          <div class="bh-title">mailto: link has no default mail client</div>
+          <div class="bh-sub">Machines where Outlook isn't installed or registered as default email app.</div>
+        </div>
+      </div>
+      <div class="blocker-body">
+        <div class="b-row">
+          <div class="b-section">
+            <div class="b-label">Why it blocks</div>
+            <div class="b-text">If no mail client is set as default, clicking a mailto: link either does nothing or opens a "how do you want to open this?" dialog that confuses non-technical employees. Web-only email users (Gmail in browser) will hit this. Field engineers may have company phones but no desktop email client configured.</div>
+          </div>
+          <div class="b-section">
+            <div class="b-label">Mitigation</div>
+            <div class="fix"><strong>Detection:</strong> The prereq checker tests whether a mailto: handler is registered. If not, it flags it and guides the employee to set Outlook as default before install.</div>
+            <div class="fix" style="margin-top:5px;"><strong>Alternative flow:</strong> If no mail client, wizard offers "Copy completion summary to clipboard" so employee can paste it into a web email manually — crude but reliable.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blocker">
+      <div class="blocker-head">
+        <span class="sev med">MED</span>
+        <div class="bh-right">
+          <div class="bh-title">Completion email silently not sent</div>
+          <div class="bh-sub">mailto: opens but employee closes without sending. Champion never knows they're done.</div>
+        </div>
+      </div>
+      <div class="blocker-body">
+        <div class="b-row">
+          <div class="b-section">
+            <div class="b-label">Why it blocks</div>
+            <div class="b-text">The wizard can't confirm the email was actually sent — it only opens the mail client. An employee who closes Outlook without sending leaves the champion with a gap in their rollout tracking.</div>
+          </div>
+          <div class="b-section">
+            <div class="b-label">Mitigation</div>
+            <div class="fix"><strong>Primary:</strong> Write completion record to a shared OneDrive JSON file (completions.json in the employee pack folder) — no email required for tracking. Email becomes a nice-to-have notification, not the source of truth.</div>
+            <div class="fix" style="margin-top:5px;"><strong>Champion dashboard:</strong> Reads completions.json rather than inbox. Reliable, no mail dependency.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blocker">
+      <div class="blocker-head">
+        <span class="sev med">MED</span>
+        <div class="bh-right">
+          <div class="bh-title">Asana API requires Business/Enterprise tier</div>
+          <div class="bh-sub">As you identified — API key access for automation is gated behind paid tiers.</div>
+        </div>
+      </div>
+      <div class="blocker-body">
+        <div class="b-row">
+          <div class="b-section">
+            <div class="b-label">Why it blocks</div>
+            <div class="b-text">Full Asana API automation (creating tasks, reading projects programmatically) requires a Business or Enterprise subscription. The API key itself is available on free/basic, but rate limits and features needed for proper automation hit a paywall.</div>
+          </div>
+          <div class="b-section">
+            <div class="b-label">Mitigation</div>
+            <div class="fix"><strong>Free tier workaround:</strong> Every Asana project has a unique email address. Employees cc that address on their completion email and Asana creates a task automatically — no API key, no subscription upgrade. Champion sets up the project once, shares the email address, it goes into company-profile.json.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blocker">
+      <div class="blocker-head">
+        <span class="sev low">LOW</span>
+        <div class="bh-right">
+          <div class="bh-title">OneDrive sharing link requires sign-in</div>
+          <div class="bh-sub">Some SharePoint/OneDrive tenants disable "anyone with link" sharing.</div>
+        </div>
+      </div>
+      <div class="blocker-body">
+        <div class="b-row">
+          <div class="b-section">
+            <div class="b-label">Why it blocks</div>
+            <div class="b-text">If the tenant has disabled anonymous sharing (common in some M365 configurations), the download link in the onboarding email will demand a login. Employees who haven't signed into M365 on their machine get a login wall before they can download anything.</div>
+          </div>
+          <div class="b-section">
+            <div class="b-label">Mitigation</div>
+            <div class="fix"><strong>Champion setup wizard asks:</strong> "Does your OneDrive allow anonymous sharing?" If no, the email template switches to "People in your organisation" link type. All Sesame employees have M365 accounts so this is a minor friction, not a blocker.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NETWORK BLOCKERS -->
+  <div class="panel" id="panel-network">
+
+    <div class="blocker">
+      <div class="blocker-head">
+        <span class="sev high">HIGH</span>
+        <div class="bh-right">
+          <div class="bh-title">DeepSeek API blocked by corporate firewall</div>
+          <div class="bh-sub">DeepSeek is a Chinese-origin service. Many UK/EU corporate firewalls block Chinese domains by policy.</div>
+        </div>
+      </div>
+      <div class="blocker-body">
+        <div class="b-row">
+          <div class="b-section">
+            <div class="b-label">Why it blocks</div>
+            <div class="b-text">Corporate firewalls — particularly in finance, legal, or regulated industries — often use geo-blocking or domain reputation lists that flag deepseek.com. Even if not actively blocked, some DLP policies alert on API traffic to non-approved services.</div>
+          </div>
+          <div class="b-section">
+            <div class="b-label">Mitigation</div>
+            <div class="fix"><strong>Prereq check tests connectivity</strong> to deepseek.com, anthropic.com, openai.com before install. If DeepSeek fails, wizard defaults to Anthropic or OpenAI.</div>
+            <div class="fix" style="margin-top:5px;"><strong>OpenRouter as proxy:</strong> DeepSeek models are available via OpenRouter (openrouter.ai) which is a US-domiciled aggregator — less likely to be blocked. Single OpenRouter key covers all providers.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blocker">
+      <div class="blocker-head">
+        <span class="sev med">MED</span>
+        <div class="bh-right">
+          <div class="bh-title">Outbound HTTPS inspection / SSL interception</div>
+          <div class="bh-sub">Some corporate proxies do SSL termination — breaks API certificate validation.</div>
+        </div>
+      </div>
+      <div class="blocker-body">
+        <div class="b-row">
+          <div class="b-section">
+            <div class="b-label">Why it blocks</div>
+            <div class="b-text">If the corporate network uses a proxy that intercepts HTTPS (common in larger companies for DLP), the API calls see a corporate certificate, not the provider's cert. This causes certificate validation errors that look like network failures to the user.</div>
+          </div>
+          <div class="b-section">
+            <div class="b-label">Mitigation</div>
+            <div class="fix"><strong>Prereq check:</strong> Detects proxy environment (HTTP_PROXY env var, Windows proxy settings). If found, warns the employee to inform IT that the app makes API calls to approved LLM endpoints.</div>
+            <div class="fix" style="margin-top:5px;"><strong>Electron NODE_TLS_REJECT_UNAUTHORIZED:</strong> Configurable in enterprise mode — but only set this as a last resort with IT sign-off.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blocker">
+      <div class="blocker-head">
+        <span class="sev med">MED</span>
+        <div class="bh-right">
+          <div class="bh-title">API key validation fails on first use — user gives up</div>
+          <div class="bh-sub">Error messages from LLM providers are cryptic. Employees who entered the wrong key think the app is broken.</div>
+        </div>
+      </div>
+      <div class="blocker-body">
+        <div class="b-row">
+          <div class="b-section">
+            <div class="b-label">Why it blocks</div>
+            <div class="b-text">A typo in an API key, a key without billing attached, a free-tier key without credits, or a key for the wrong model all return different error codes. If the wizard just says "invalid key" the employee has no idea what went wrong.</div>
+          </div>
+          <div class="b-section">
+            <div class="b-label">Mitigation</div>
+            <div class="fix"><strong>llm-validator.ts must distinguish:</strong> 401 (wrong key) vs 402/429 (no credits/quota) vs network error vs timeout. Show a specific human message for each: "Key looks wrong — check for extra spaces", "Key is valid but has no credits — top up at X", "Can't reach the service — may be blocked on your network."</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blocker">
+      <div class="blocker-head">
+        <span class="sev low">LOW</span>
+        <div class="bh-right">
+          <div class="bh-title">LLM API key shared across employees = one billing account</div>
+          <div class="bh-sub">If the champion provides a company key, all usage runs against one account. No per-employee spend visibility.</div>
+        </div>
+      </div>
+      <div class="blocker-body">
+        <div class="b-row">
+          <div class="b-section">
+            <div class="b-label">Why it blocks</div>
+            <div class="b-text">A single shared API key means no usage attribution, no ability to set per-user spending limits, and a single point of failure if the key leaks or the account runs out of credits mid-month.</div>
+          </div>
+          <div class="b-section">
+            <div class="b-label">Mitigation</div>
+            <div class="fix"><strong>Decision point:</strong> Company key (simple, champion manages billing) vs employee-own keys (each employee registers and pays or claims). For a company Sesame's size, one company key per provider with monthly billing is simpler. DeepSeek allows sub-key creation for usage tracking.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INSTALL BLOCKERS -->
+  <div class="panel" id="panel-install">
+
+    <div class="blocker">
+      <div class="blocker-head">
+        <span class="sev high">HIGH</span>
+        <div class="bh-right">
+          <div class="bh-title">Windows SmartScreen blocks unsigned installer</div>
+          <div class="bh-sub">"Windows protected your PC" — most employees will stop here.</div>
+        </div>
+      </div>
+      <div class="blocker-body">
+        <div class="b-row">
+          <div class="b-section">
+            <div class="b-label">Why it blocks</div>
+            <div class="b-text">Any .exe not signed with an Extended Validation (EV) code signing certificate triggers SmartScreen. The warning is aggressive — it says "Windows protected your PC" with no obvious safe path. Non-technical employees will not know to click "More info → Run anyway." This will be the single biggest employee-facing blocker.</div>
+          </div>
+          <div class="b-section">
+            <div class="b-label">Mitigation</div>
+            <div class="fix"><strong>Buy an EV code signing certificate.</strong> ~£300–600/year from DigiCert, Sectigo, or GlobalSign. EV certs build SmartScreen reputation immediately. Worth doing before any rollout.</div>
+            <div class="fix" style="margin-top:5px;"><strong>Stop-gap:</strong> The quick-start PDF includes a screenshot of exactly what to click. Buys time while cert is obtained.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blocker">
+      <div class="blocker-head">
+        <span class="sev high">HIGH</span>
+        <div class="bh-right">
+          <div class="bh-title">No local administrator rights</div>
+          <div class="bh-sub">Many employees on managed Windows machines cannot install software.</div>
+        </div>
+      </div>
+      <div class="blocker-body">
+        <div class="b-row">
+          <div class="b-section">
+            <div class="b-label">Why it blocks</div>
+            <div class="b-text">Managed Windows endpoints (common in any company with proper IT) restrict software installation to admins. The installer will either fail silently or prompt for credentials the employee doesn't have. Field engineers especially are likely on tightly managed machines.</div>
+          </div>
+          <div class="b-section">
+            <div class="b-label">Mitigation</div>
+            <div class="fix"><strong>Per-user install mode:</strong> electron-builder can build a per-user NSIS installer (no admin required) that installs to %APPDATA% instead of Program Files. Add <code>perMachine: false</code> to electron-builder.yml.</div>
+            <div class="fix" style="margin-top:5px;"><strong>MSI for IT push:</strong> For machines that need IT-managed install, build an MSI that IT deploys via Intune — no employee action needed.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blocker">
+      <div class="blocker-head">
+        <span class="sev med">MED</span>
+        <div class="bh-right">
+          <div class="bh-title">macOS Gatekeeper blocks unsigned DMG</div>
+          <div class="bh-sub">Same problem as SmartScreen but on Mac. Requires Apple notarisation.</div>
+        </div>
+      </div>
+      <div class="blocker-body">
+        <div class="b-row">
+          <div class="b-section">
+            <div class="b-label">Why it blocks</div>
+            <div class="b-text">macOS will refuse to open a DMG that isn't signed with an Apple Developer certificate and notarised through Apple's servers. The error message "can't be opened because Apple cannot check it for malicious software" is shown with no obvious workaround.</div>
+          </div>
+          <div class="b-section">
+            <div class="b-label">Mitigation</div>
+            <div class="fix"><strong>Apple Developer account:</strong> £79/year. electron-builder has built-in notarisation support. Required for any Mac deployment beyond the pilot. The quick-start PDF covers the right-click → Open workaround for the pilot phase only.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blocker">
+      <div class="blocker-head">
+        <span class="sev med">MED</span>
+        <div class="bh-right">
+          <div class="bh-title">Corporate antivirus flags Electron app</div>
+          <div class="bh-sub">CrowdStrike, Defender for Endpoint, or Symantec may quarantine the app.</div>
+        </div>
+      </div>
+      <div class="blocker-body">
+        <div class="b-row">
+          <div class="b-section">
+            <div class="b-label">Why it blocks</div>
+            <div class="b-text">Electron apps bundle Node.js and Chromium — patterns that some heuristic AV engines flag as suspicious, especially unsigned ones. CrowdStrike in particular is aggressive about new unsigned binaries making network connections.</div>
+          </div>
+          <div class="b-section">
+            <div class="b-label">Mitigation</div>
+            <div class="fix"><strong>Code signing solves most of this.</strong> For the pilot: submit the binary hash to your AV vendor's whitelist portal before distribution. Champion should test on a machine with the company AV before sending to employees.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blocker">
+      <div class="blocker-head">
+        <span class="sev low">LOW</span>
+        <div class="bh-right">
+          <div class="bh-title">Keytar fails on Windows with no Credential Manager</div>
+          <div class="bh-sub">Rare but possible on stripped-down or kiosk-mode Windows builds.</div>
+        </div>
+      </div>
+      <div class="blocker-body">
+        <div class="b-row">
+          <div class="b-section">
+            <div class="b-label">Why it blocks</div>
+            <div class="b-text">keytar uses Windows Credential Manager to store API keys. On some domain-hardened machines the credential manager service is disabled by GPO. The app crashes on first key storage attempt with a native module error.</div>
+          </div>
+          <div class="b-section">
+            <div class="b-label">Mitigation</div>
+            <div class="fix"><strong>AES-256 fallback:</strong> CoWork-OS already has this. If keytar throws, fall back to encrypted electron-store. Less secure but functional. Log the fallback in the completion record so IT knows.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMMS OPTIONS -->
+  <div class="panel" id="panel-comms">
+    <p style="font-size:10px;color:#6B7280;margin-bottom:12px;">Ranked by reliability and ease of setup. Recommendation at the bottom.</p>
+
+    <div class="opt" style="border:2px solid #6EE7B7;">
+      <div class="opt-head" style="background:#D1FAE5;">
+        <span>📁</span><span class="opt-title" style="color:#065F46;">Option A — OneDrive shared completions.json</span>
+        <span style="margin-left:auto;"><span class="tag green">RECOMMENDED</span></span>
+      </div>
+      <div class="opt-body">Wizard writes a completion record to completions.json in the shared OneDrive folder. Champion reads this file to track who is done. No email, no API, no auth. Uses file permissions Sesame already has. Works 100% of the time if OneDrive is accessible (which it is — it's where they downloaded the installer from).
+        <br><br><strong>Completions.json entry:</strong> <code style="font-size:9px;background:#f1f5f9;padding:1px 4px;border-radius:3px;">{ "employee": "Alice", "role": "engineering", "timestamp": "2026-06-12", "providers": ["deepseek"], "integrations": ["outlook", "sharepoint"], "machineHash": "abc123" }</code>
+      </div>
+    </div>
+
+    <div class="opt" style="border:2px solid #C5CBF0;">
+      <div class="opt-head" style="background:#EEF0FB;">
+        <span>📧</span><span class="opt-title" style="color:#2D3A8C;">Option B — mailto: + Asana project email (free tier)</span>
+        <span style="margin-left:auto;"><span class="tag blue">GOOD FALLBACK</span></span>
+      </div>
+      <div class="opt-body">Wizard opens mailto: pre-filled with the champion's email AND cc'd to the Asana project email address (e.g. <code style="font-size:9px;background:#f1f5f9;padding:1px 3px;border-radius:3px;">x+projectcode@mail.asana.com</code>). User clicks Send. Email arrives in champion inbox AND creates an Asana task automatically. No API key. No subscription upgrade. Subject line contains [SESAME-AI] for inbox filtering.
+        <br><br><strong>Setup:</strong> Champion creates one Asana project called "Sesame AI Rollout", copies the project's unique email address, pastes it into champion-setup.js when asked. That's it.
+      </div>
+    </div>
+
+    <div class="opt" style="border:2px solid #FCD34D;">
+      <div class="opt-head" style="background:#FEF3C7;">
+        <span>💬</span><span class="opt-title" style="color:#92400E;">Option C — Microsoft Teams incoming webhook</span>
+        <span style="margin-left:auto;"><span class="tag amber">IF TEAMS IS USED</span></span>
+      </div>
+      <div class="opt-body">If Sesame uses Teams, an incoming webhook posts a card to a channel with no OAuth, no Graph API, and no admin consent required. The webhook URL is generated in the Teams channel settings by any channel owner — takes 2 minutes. App POSTs to the webhook URL on completion.
+        <br><br><strong>Limitation:</strong> No email thread. Just a notification. Good for real-time visibility, not for formal tracking.
+      </div>
+    </div>
+
+    <div class="opt" style="border:2px solid #FCA5A5;">
+      <div class="opt-head" style="background:#FEE2E2;">
+        <span>🚫</span><span class="opt-title" style="color:#991B1B;">Option D — Microsoft Graph API Mail.Send</span>
+        <span style="margin-left:auto;"><span class="tag red">AVOID</span></span>
+      </div>
+      <div class="opt-body">Requires Azure AD app registration, tenant admin consent, OAuth token refresh flow, and ongoing maintenance. Even if granted, can break if the tenant admin revokes consent or changes conditional access policies. The failure mode is silent — app thinks it sent, admin didn't receive. Not worth the complexity when Options A and B are simpler and more reliable.
+      </div>
+    </div>
+
+    <div class="rec">
+      <div class="rec-title">▶ Recommended combination</div>
+      <div class="rec-row">
+        <strong style="color:#5B6EC8;">Primary tracking:</strong> completions.json in OneDrive (Option A) — always reliable, no dependencies.<br>
+        <strong style="color:#5B6EC8;">Notification:</strong> mailto: + Asana project email (Option B) — human confirmation, Asana task created for free.<br>
+        <strong style="color:#5B6EC8;">Prereq failures:</strong> mailto: only — no Asana needed, just champion email.<br>
+        This combination has zero infrastructure dependencies beyond OneDrive, which is already in use.
+      </div>
+    </div>
+  </div>
+
+  <!-- PREREQS -->
+  <div class="panel" id="panel-prereqs">
+
+    <div class="pre-group">
+      <div class="pre-title">🏆 Champion — Before Running champion-setup.js</div>
+      <div class="pre-item"><div class="pre-icon">🔧</div><div><div class="pre-name">Node.js 20 LTS</div><div class="pre-desc">nvm recommended. Required for all build scripts.</div></div><div class="pre-who champ">Champion</div><div class="pre-when">Before Sprint 0</div></div>
+      <div class="pre-item"><div class="pre-icon">📦</div><div><div class="pre-name">Git + GitHub CLI</div><div class="pre-desc">For forking CoWork-OS and managing the repo.</div></div><div class="pre-who champ">Champion</div><div class="pre-when">Before Sprint 0</div></div>
+      <div class="pre-item"><div class="pre-icon">🤖</div><div><div class="pre-name">Claude Code CLI</div><div class="pre-desc">npm install -g @anthropic-ai/claude-code. Needs ANTHROPIC_API_KEY env var.</div></div><div class="pre-who champ">Champion</div><div class="pre-when">Before Sprint 0</div></div>
+      <div class="pre-item"><div class="pre-icon">🔑</div><div><div class="pre-name">DeepSeek API key</div><div class="pre-desc">platform.deepseek.com — needed to test llm-validator. Company billing account.</div></div><div class="pre-who champ">Champion</div><div class="pre-when">Before Sprint 3</div></div>
+      <div class="pre-item"><div class="pre-icon">🏗️</div><div><div class="pre-name">Windows Build Tools (Windows only)</div><div class="pre-desc">Visual Studio Build Tools for native Electron modules (keytar). npm install --global windows-build-tools</div></div><div class="pre-who champ">Champion</div><div class="pre-when">Before Sprint 0</div></div>
+      <div class="pre-item"><div class="pre-icon">🍎</div><div><div class="pre-name">Xcode CLT (macOS only)</div><div class="pre-desc">xcode-select --install. Required for native module compilation.</div></div><div class="pre-who champ">Champion</div><div class="pre-when">Before Sprint 0</div></div>
+      <div class="pre-item"><div class="pre-icon">📜</div><div><div class="pre-name">EV Code Signing Certificate</div><div class="pre-desc">DigiCert or Sectigo. ~£300-600/year. Required before full rollout (not pilot).</div></div><div class="pre-who champ">Champion</div><div class="pre-when">Before Sprint 10</div></div>
+      <div class="pre-item"><div class="pre-icon">🍏</div><div><div class="pre-name">Apple Developer Account</div><div class="pre-desc">£79/year. Required for macOS notarisation. Not needed if Windows-only rollout.</div></div><div class="pre-who champ">Champion</div><div class="pre-when">Before Sprint 10</div></div>
+      <div class="pre-item"><div class="pre-icon">📋</div><div><div class="pre-name">Asana project + email address</div><div class="pre-desc">Create "Sesame AI Rollout" project. Copy the project's unique email address. Free account sufficient.</div></div><div class="pre-who champ">Champion</div><div class="pre-when">Before Sprint 8</div></div>
+      <div class="pre-item"><div class="pre-icon">☁️</div><div><div class="pre-name">OneDrive shared folder</div><div class="pre-desc">Create a shared folder for the employee pack. Confirm "anyone in org" sharing is enabled.</div></div><div class="pre-who champ">Champion</div><div class="pre-when">Before Sprint 7</div></div>
+      <div class="pre-item"><div class="pre-icon">🪟</div><div><div class="pre-name">Azure app registration (optional)</div><div class="pre-desc">Only if pursuing Teams webhook or SharePoint OAuth. Not needed for email+OneDrive approach.</div></div><div class="pre-who champ">Champion</div><div class="pre-when">Sprint 7+ only</div></div>
+    </div>
+
+    <div class="pre-group">
+      <div class="pre-title">👤 Employee — Checked by prereq-check.bat/.sh</div>
+      <div class="pre-item"><div class="pre-icon">🖥️</div><div><div class="pre-name">Windows 10 1903+ or macOS 13+</div><div class="pre-desc">Minimum OS for Electron 28. Checked automatically.</div></div><div class="pre-who emp">Employee</div><div class="pre-when">Auto-detected</div></div>
+      <div class="pre-item"><div class="pre-icon">💾</div><div><div class="pre-name">2 GB free disk space</div><div class="pre-desc">For the app + local Knowledge Graph. Checked automatically.</div></div><div class="pre-who emp">Employee</div><div class="pre-when">Auto-detected</div></div>
+      <div class="pre-item"><div class="pre-icon">🌐</div><div><div class="pre-name">Network access to LLM endpoints</div><div class="pre-desc">deepseek.com, anthropic.com, openai.com. Checked automatically. Fallback suggested if blocked.</div></div><div class="pre-who emp">Employee</div><div class="pre-when">Auto-detected</div></div>
+      <div class="pre-item"><div class="pre-icon">📧</div><div><div class="pre-name">Default email client configured</div><div class="pre-desc">Outlook set as default mail app. Checked automatically. Guided fix if missing.</div></div><div class="pre-who emp">Employee</div><div class="pre-when">Auto-detected</div></div>
+      <div class="pre-item"><div class="pre-icon">🔓</div><div><div class="pre-name">Install permission (or per-user mode)</div><div class="pre-desc">Admin rights OR per-user installer build deployed. Checked automatically — emails champion if admin rights missing.</div></div><div class="pre-who emp">Employee</div><div class="pre-when">Auto-detected</div></div>
+      <div class="pre-item"><div class="pre-icon">🔑</div><div><div class="pre-name">API key (if employee-self-service model)</div><div class="pre-desc">Employee registers at deepseek.com or anthropic.com and gets their own key. Guided in the wizard.</div></div><div class="pre-who emp">Employee</div><div class="pre-when">Step 3 of wizard</div></div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function show(id) {
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('panel-'+id).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>

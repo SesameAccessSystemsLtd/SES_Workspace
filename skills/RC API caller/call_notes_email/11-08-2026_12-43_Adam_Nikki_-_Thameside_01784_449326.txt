@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  11/08/2026  12:43
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved updates on stock, ongoing projects, and future material and machining needs, with discussions about staffing and process improvements. The overall outcome was an exchange of information with some action items for material procurement and process coordination.
+
+--- RECAP --------------------------------------------------
+Adam from Thameside provided updates on stock levels, confirming approximately £3,000 worth of large cams and small cams are in stock, with recent orders placed for additional spark erode parts and materials, including a 12x12 mm sea tool strip and auto flux top flat components.Giles Hugo discussed upcoming project deadlines, prioritizing the St. Mary's laser cut parts, which are due to arrive tomorrow, with a target to showcase the lift within two weeks. He also mentioned the Fifth Avenue Tesla parts, which are less urgent but expected in two weeks, and emphasized the need to test the barrier system promptly.Staffing challenges were addressed, noting that Jack is away next week and the nephew has moved to another engineering company, leading to difficulties in meeting project timelines. Material deliveries are expected today, but staffing shortages may impact progress.Giles offered a CV library service to help find additional personnel, explaining the process of using credits to source suitable candidates, and suggested Adam or Nikki could initiate this process.Several materials and components, including auto flux, sea tool strip, and radius-ed parts, are being ordered or prepared, with some items arriving later this week. Adam mentioned plans to put radii on certain parts and acknowledged some delays due to staffing and scheduling.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will get the free issue material cut today and drop it off this evening for the St. Mary's project.Adam from Thameside will send the job description to Giles to initiate the CV library candidate sourcing process once credits are available.Giles Hugo will review the order for the sea tool strip and auto flux components to confirm quantities and ensure timely delivery.Adam will follow up on staffing arrangements and material deliveries, especially for the larger jobs, to mitigate delays.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  29/06/2026  14:57
+============================================================
+With:         +441420561902 01420 561902
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles from Sesame Access discussing the commissioning process for PLC panels with Clive from social controls, focusing on support for lift panel installation and commissioning across the UK.
+
+--- RECAP --------------------------------------------------
+Giles from Sesame Access inquires about commissioning support for PLC panels used in lift operations, specifically Siemens Logo 8 panels, and discusses the process of validation after installation.Clive from social controls confirms they can assist with commissioning and support across the UK, emphasizing their expertise in PLC programming, electrical design, and panel building, with a focus on qualified electricians or panel builders.Giles mentions he will send an email with panel images and certificates to Clive's colleague Dave Jones, who is the appropriate contact for commissioning support during Giles's absence.Clive advises that a qualified panel builder may be preferable for panel construction, as their experience can reduce issues and speed up the build process, though qualified electricians can also learn quickly.
+
+--- TASKS --------------------------------------------------
+Giles will forward the email with panel images and certificates to Dave Jones at code.uk today.Clive will review the email and coordinate with Dave Jones to provide the necessary commissioning support for the lift panels.
+
+(Full transcript: RC web portal only — no RingSense API)

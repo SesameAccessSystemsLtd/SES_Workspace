@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  07/07/2026  14:45
+============================================================
+With:         +447833987972 07833 987972
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This voicemail call involved Giles Hugo inquiring if the recipient's team has deionized water available, and the recipient checking with their colleagues to confirm availability. No immediate action was taken during the call.
+
+--- RECAP --------------------------------------------------
+Giles Hugo asked the recipient if they have deionized water, which is water without salt or impurities, often used in diesel vehicles or for specific applications.The recipient responded that they do not currently have deionized water and offered to check with their team members in the van and at the factory to see if they have any available.The recipient stated they would call back shortly after checking with their colleagues.
+
+--- TASKS --------------------------------------------------
+The recipient will check with their team members in the van and at the factory to confirm if deionized water is available.
+
+(Full transcript: RC web portal only — no RingSense API)

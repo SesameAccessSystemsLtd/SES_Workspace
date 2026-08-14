@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  23/07/2026  15:11
+============================================================
+With:         +441483975158 01483 975158
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+Giles Hugo coordinated vehicle bookings and service appointments with the dealership, including scheduling for two vehicles on the same day and confirming details about vehicle history and services. The call resulted in confirmed appointments and clarified service details.
+
+--- RECAP --------------------------------------------------
+Giles Hugo provided the registration number Romeo Foxtrot 23 Uniform November Lemur for a vehicle booked at Toyota Guildford, scheduled for August 26th at 9:45 AM, including a full service, vehicle health check, and a wash, with confirmation sent via email.A second vehicle with registration Bravo X-ray 18 Oscar Golf Lima, a 2018 Toyota Post in Black, was scheduled for August 4th at 10:00 AM for a service, MOT, and vehicle health check, with drop-off on August 3rd and pickup on August 4th or 5th, depending on completion.Giles Hugo confirmed that both vehicles would be dropped off simultaneously, with no loan car needed for the second vehicle, and discussed the possibility of dropping off the first vehicle on August 3rd due to timing constraints.The dealership confirmed that services include activation of the vehicle warranty for an additional year, and that the last service was a full Service B, with the last mileage approximately 63,199 miles.Giles Hugo requested that the dealership keep him updated about the vehicle status and confirmed preferences regarding contact methods and service details.
+
+--- TASKS --------------------------------------------------
+The dealership representative will send a confirmation email for the scheduled services and appointments.The dealership representative will update the system with the drop-off date of August 3rd for the first vehicle and confirm the vehicle's status after service.Giles Hugo will verify with the dealership about the possibility of dropping off the first vehicle on August 3rd and confirm the arrangements.
+
+(Full transcript: RC web portal only — no RingSense API)

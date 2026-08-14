@@ -1,0 +1,36 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1588 - America Long Lead,"Master task for all BOMs related to 1588 - America Long Lead
+Dropbox: https://www.dropbox.com/scl/fo/wr1rn674qxqhmdmm3z510/AGkWty2ko8X6B_WG-qv8Fvs?rlkey=xq4gdimtg5l6tjtc9if55p7mv&dl=0
+Project: https://app.asana.com/1/357939803556123/task/1216552017497288?focus=true",,,,,,,,,,
+Long Leading BOM - 1588 - America Long Lead,,ALL BOMS - 1588 - America Long Lead,,Long Leading,,,,,,,
+ABCO - 1588 - America Long Lead,,Long Leading BOM - 1588 - America Long Lead,,ABCO,,,,,,,
+"1 off 1588. 1003.A.StairRam_Single - Close 1000mm, Stroke 777mm ABCO","1588.1003.A.StairRam_Single
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/wr1rn674qxqhmdmm3z510/AGkWty2ko8X6B_WG-qv8Fvs?rlkey=xq4gdimtg5l6tjtc9if55p7mv&dl=0
+Mass: 10.274 kg
+Volume: 1326042.513 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216552017497288?focus=true",ABCO - 1588 - America Long Lead,1,ABCO,,,,ORDER,PROJECT ORDER,1216611735131364,https://app.asana.com/0/1215855354172758/1216611735131364
+JAJO - 1588 - America Long Lead,,Long Leading BOM - 1588 - America Long Lead,,JAJO,,,,,,,
+1 off 1588. 1008.D1.MachineRoomCabinet - Machine Room Cabinet JAJO,"1588.1008.D1.MachineRoomCabinet
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/wr1rn674qxqhmdmm3z510/AGkWty2ko8X6B_WG-qv8Fvs?rlkey=xq4gdimtg5l6tjtc9if55p7mv&dl=0
+Mass: 65.012 kg
+Volume: 32588890.230 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216552017497288?focus=true",JAJO - 1588 - America Long Lead,1,JAJO,,,,ORDER,PROJECT ORDER,1216611730467143,https://app.asana.com/0/1215855354172758/1216611730467143
+Hydraulic Supplier - 1588 - America Long Lead,,Long Leading BOM - 1588 - America Long Lead,,Hydraulic Supplier,,,,,,,
+1 off 1588. 1008.D1.MotorPumpUnit - TBC by Karol - Spec as per PLC BOM Hydraulic Supplier,"1588.1008.D1.MotorPumpUnit
+Material: Generic
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/wr1rn674qxqhmdmm3z510/AGkWty2ko8X6B_WG-qv8Fvs?rlkey=xq4gdimtg5l6tjtc9if55p7mv&dl=0
+Mass: 14.000 kg
+Volume: 14000247.356 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216552017497288?focus=true",Hydraulic Supplier - 1588 - America Long Lead,1,Hydraulic Supplier,,,,ORDER,PROJECT ORDER,1216611671233059,https://app.asana.com/0/1215855354172758/1216611671233059
+Related Fluid - 1588 - America Long Lead,,Long Leading BOM - 1588 - America Long Lead,,Related Fluid,,,,,,,
+1 off 1588. 1008.H1.1(RF SES44742402) - Valve Block - 2 function RF SES44742402 Related Fluid,"1588.1008.H1.1(RF SES44742402)
+Stock Number: RF SES44742402
+Material: Generic
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/wr1rn674qxqhmdmm3z510/AGkWty2ko8X6B_WG-qv8Fvs?rlkey=xq4gdimtg5l6tjtc9if55p7mv&dl=0
+Mass: 1.935 kg
+Volume: 1935050.725 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216552017497288?focus=true",Related Fluid - 1588 - America Long Lead,1,Related Fluid,,,,ORDER,PROJECT ORDER,1216611589584556,https://app.asana.com/0/1215855354172758/1216611589584556

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  12/08/2026  11:49
+============================================================
+With:         +447953966150 07953 966150
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Fatima Barros seeking assistance with accessing online account features and setting up paper bills due to technical issues. The representative confirmed the ongoing portal problems and arranged for paper billing until the issues are resolved.
+
+--- RECAP --------------------------------------------------
+Fatima Barros, representing Sesame Access Systems Limited, contacted EE customer service to set up online account access for downloading invoices, which was unsuccessful due to technical portal issues.The account was recently transferred to a new ownership, and previous login credentials provided did not work; verification was completed using account details and partial password information.EE acknowledged a major system outage affecting the online portal, with no estimated resolution time, and offered to set up paper bills free of charge as a temporary solution.The billing address was confirmed as Unit One, Business Park, Fleet, KT14 7LF, and the payment method was set to direct debit, with payments deducted on the 10th of each month and bills generated on the 2nd.The representative explained that future online access would require the registered email address, but current portal issues prevent login, and advised that the process involves receiving a one-time PIN via email.
+
+--- TASKS --------------------------------------------------
+EE technical team to resolve the online portal issues affecting account access, with no specific deadline provided.EE to continue setting up paper bills for Fatima Barros until the portal is operational again.
+
+(Full transcript: RC web portal only — no RingSense API)

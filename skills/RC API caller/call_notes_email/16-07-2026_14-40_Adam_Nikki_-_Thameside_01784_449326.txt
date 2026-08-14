@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  16/07/2026  14:40
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Adam/Nikki from Thameside confirming that a 25.4 mm (1 inch) diameter safety bar can be used as a substitute for a 26 mm diameter part, with agreement from Giles Hugo. The discussion concluded with mutual confirmation to proceed.
+
+--- RECAP --------------------------------------------------
+Adam/Nikki asked Giles Hugo if a 25.4 mm (1 inch) diameter safety bar could replace a 26 mm diameter part, specifically part ending 065, which has already been made.Giles Hugo confirmed that using the 25.4 mm diameter bar would be acceptable, noting it might be slightly loose but still suitable as a safety bar.Both parties agreed that the slight difference in diameter would not pose a significant issue and that Adam/Nikki could proceed with the installation.The call ended with mutual confirmation to continue with the plan.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

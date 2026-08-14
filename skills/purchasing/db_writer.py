@@ -1,0 +1,482 @@
+"""
+db_writer.py — Sole write gateway for ops.db.
+
+All scripts that need to write to ops.db import and call functions from this
+module. No script calls sqlite3 INSERT/UPDATE/DELETE directly.
+
+Pattern for every write function:
+  1. Validate input
+  2. Check for conflicts (stale-sync guard on last_synced_at)
+  3. Apply the write
+  4. Log to db_write_log
+  5. Return dict: {written, skipped, errors}
+"""
+
+import json
+import logging
+import os
+import sqlite3
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+# Path resolution: env var wins, else PATH_CONFIG.yaml (db.ops).
+# Fail fast if the DB file does not exist — sqlite3.connect would silently
+# create a new empty database at a wrong path and cause split-brain.
+_LIB_DIR = Path(__file__).resolve().parents[2] / "lib"
+if str(_LIB_DIR) not in sys.path:
+    sys.path.insert(0, str(_LIB_DIR))
+from path_config import p as _p
+
+DEFAULT_DB_PATH = os.environ.get("OPENCLAW_OPS_DB_PATH") or _p("db.ops")
+if not Path(DEFAULT_DB_PATH).is_file():
+    raise FileNotFoundError(
+        f"ops.db not found at {DEFAULT_DB_PATH!r} "
+        "(resolved from OPENCLAW_OPS_DB_PATH env var or PATH_CONFIG.yaml db.ops). "
+        "Refusing to continue: connecting would create an empty database and "
+        "split operational data across two files."
+    )
+
+log = logging.getLogger(__name__)
+
+
+# ---------------------------------------------------------------------------
+# Internal helpers
+# ---------------------------------------------------------------------------
+
+def _connect(db_path: str) -> sqlite3.Connection:
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    conn.execute("PRAGMA journal_mode=WAL")
+    conn.execute("PRAGMA foreign_keys=ON")
+    return conn
+
+
+def _log_write(conn: sqlite3.Connection, table_name: str, row_gid: str | None,
+               action: str, source: str, fields_changed: list[str] | None) -> None:
+    conn.execute(
+        """INSERT INTO db_write_log (table_name, row_gid, action, source, fields_changed)
+           VALUES (?, ?, ?, ?, ?)""",
+        (table_name, row_gid, action, source,
+         json.dumps(fields_changed) if fields_changed else None),
+    )
+
+
+def _is_stale(existing_synced_at: str | None, incoming_synced_at: str | None) -> bool:
+    """Return True if the existing DB record is NEWER than the incoming row — skip the update."""
+    if not existing_synced_at or not incoming_synced_at:
+        return False
+    try:
+        existing_dt = datetime.fromisoformat(existing_synced_at.replace("Z", "+00:00"))
+        incoming_dt = datetime.fromisoformat(incoming_synced_at.replace("Z", "+00:00"))
+        return existing_dt > incoming_dt
+    except (ValueError, AttributeError):
+        return existing_synced_at > incoming_synced_at
+
+
+def _upsert_rows(conn: sqlite3.Connection, table: str, rows: list[dict],
+                 key_col: str, source: str, db_path: str) -> dict:
+    written = skipped = errors = 0
+    for row in rows:
+        gid = row.get(key_col)
+        if not gid:
+            log.warning("%s: row missing %s — skipped", table, key_col)
+            errors += 1
+            continue
+        try:
+            existing = conn.execute(
+                f"SELECT last_synced_at FROM {table} WHERE {key_col} = ?", (gid,)
+            ).fetchone()
+            if existing and _is_stale(existing["last_synced_at"], row.get("last_synced_at")):
+                _log_write(conn, table, gid, "skip", source, None)
+                skipped += 1
+                continue
+
+            cols = list(row.keys())
+            placeholders = ", ".join("?" * len(cols))
+            updates = ", ".join(f"{c} = excluded.{c}" for c in cols if c != key_col)
+            sql = (
+                f"INSERT INTO {table} ({', '.join(cols)}) VALUES ({placeholders}) "
+                f"ON CONFLICT({key_col}) DO UPDATE SET {updates}"
+            )
+            conn.execute(sql, list(row.values()))
+            action = "update" if existing else "insert"
+            _log_write(conn, table, gid, action, source, cols)
+            written += 1
+        except Exception as exc:
+            log.error("%s gid=%s: %s", table, gid, exc)
+            errors += 1
+    conn.commit()
+    return {"written": written, "skipped": skipped, "errors": errors}
+
+
+# ---------------------------------------------------------------------------
+# Public API — Asana mirror upserts (called by sync scripts)
+# ---------------------------------------------------------------------------
+
+def upsert_stock_inventory(rows: list[dict], source: str = "sync",
+                            db_path: str = DEFAULT_DB_PATH) -> dict:
+    with _connect(db_path) as conn:
+        return _upsert_rows(conn, "stock_inventory", rows, "asana_task_gid", source, db_path)
+
+
+def upsert_build_assembly_packs(rows: list[dict], source: str = "sync",
+                                 db_path: str = DEFAULT_DB_PATH) -> dict:
+    with _connect(db_path) as conn:
+        return _upsert_rows(conn, "build_assembly_packs", rows, "asana_task_gid", source, db_path)
+
+
+def upsert_parts_control(rows: list[dict], source: str = "sync",
+                          db_path: str = DEFAULT_DB_PATH) -> dict:
+    with _connect(db_path) as conn:
+        return _upsert_rows(conn, "parts_control", rows, "asana_task_gid", source, db_path)
+
+
+def update_parts_pack_allocation(task_gid: str, pack_gid: str,
+                                 source: str = "legacy_bom_pack_allocation",
+                                 checked_at: str | None = None,
+                                 db_path: str = DEFAULT_DB_PATH) -> dict:
+    """Allocate a build-pack GID to one parts_control task (targeted UPDATE).
+
+    Sets build_assembly_pack_gid, association_status='linked', association_checked_at.
+    A plain UPDATE (not upsert) so it never touches NOT NULL columns like part_name and
+    never creates a phantom row. Returns {written, skipped, errors}; written=0 if the
+    task_gid is not present (skipped, not an error).
+    """
+    if not task_gid or not pack_gid:
+        raise ValueError("update_parts_pack_allocation: task_gid and pack_gid required")
+    checked_at = checked_at or datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    with _connect(db_path) as conn:
+        cur = conn.execute(
+            """UPDATE parts_control
+                  SET build_assembly_pack_gid = ?,
+                      association_status = 'linked',
+                      association_checked_at = ?
+                WHERE asana_task_gid = ?""",
+            (pack_gid, checked_at, task_gid),
+        )
+        if cur.rowcount:
+            _log_write(conn, "parts_control", task_gid, "update", source,
+                       ["build_assembly_pack_gid", "association_status", "association_checked_at"])
+            conn.commit()
+            return {"written": 1, "skipped": 0, "errors": 0}
+        conn.commit()
+        return {"written": 0, "skipped": 1, "errors": 0}
+
+
+def upsert_suppliers(rows: list[dict], source: str = "sync",
+                     db_path: str = DEFAULT_DB_PATH) -> dict:
+    with _connect(db_path) as conn:
+        return _upsert_rows(conn, "suppliers", rows, "asana_task_gid", source, db_path)
+
+
+def upsert_procurement_tasks(rows: list[dict], source: str = "sync",
+                              db_path: str = DEFAULT_DB_PATH) -> dict:
+    with _connect(db_path) as conn:
+        return _upsert_rows(conn, "procurement_tasks", rows, "asana_task_gid", source, db_path)
+
+
+def upsert_qc_issues(rows: list[dict], source: str = "sync",
+                     db_path: str = DEFAULT_DB_PATH) -> dict:
+    with _connect(db_path) as conn:
+        return _upsert_rows(conn, "qc_issues", rows, "asana_task_gid", source, db_path)
+
+
+def upsert_golden_index(rows: list[dict], source: str = "seed",
+                         db_path: str = DEFAULT_DB_PATH) -> dict:
+    with _connect(db_path) as conn:
+        return _upsert_rows(conn, "golden_index", rows, "sesame_part_no", source, db_path)
+
+
+# ---------------------------------------------------------------------------
+# Public API — Email pipeline writes (called by 02_llm_parser.py)
+# ---------------------------------------------------------------------------
+
+def write_email_po_match(row: dict, source: str = "email_pipeline",
+                          db_path: str = DEFAULT_DB_PATH) -> dict:
+    required = {"email_message_id"}
+    if not required.issubset(row):
+        raise ValueError(f"write_email_po_match: missing required fields {required - row.keys()}")
+    with _connect(db_path) as conn:
+        conn.execute(
+            """INSERT INTO email_po_matches
+               (email_message_id, email_subject, received_at, supplier_name,
+                attachment_filename, extracted_po_number, extracted_order_ref,
+                asana_task_gid_matched, asana_task_name, match_confidence,
+                comment_written, comment_gid)
+               VALUES (:email_message_id, :email_subject, :received_at, :supplier_name,
+                       :attachment_filename, :extracted_po_number, :extracted_order_ref,
+                       :asana_task_gid_matched, :asana_task_name,
+                       :match_confidence, :comment_written, :comment_gid)
+               ON CONFLICT(email_message_id) DO NOTHING""",
+            row,
+        )
+        _log_write(conn, "email_po_matches", row.get("email_message_id"),
+                   "insert", source, list(row.keys()))
+        conn.commit()
+    return {"written": 1, "skipped": 0, "errors": 0}
+
+
+def write_purchase_order(row: dict, source: str = "email_pipeline",
+                          db_path: str = DEFAULT_DB_PATH) -> dict:
+    required = {"supplier_name"}
+    if not required.issubset(row):
+        raise ValueError(f"write_purchase_order: missing required fields {required - row.keys()}")
+    with _connect(db_path) as conn:
+        cursor = conn.execute(
+            """INSERT INTO purchase_orders
+               (po_number, supplier_name, supplier_email, part_numbers,
+                order_date, expected_delivery, status, asana_task_gid, source_email_id, notes)
+               VALUES (:po_number, :supplier_name, :supplier_email, :part_numbers,
+                       :order_date, :expected_delivery, :status, :asana_task_gid,
+                       :source_email_id, :notes)
+               ON CONFLICT(po_number) DO NOTHING""",
+            row,
+        )
+        new_id = cursor.lastrowid
+        _log_write(conn, "purchase_orders", row.get("po_number"),
+                   "insert", source, list(row.keys()))
+        conn.commit()
+    return {"written": 1, "skipped": 0, "errors": 0, "id": new_id}
+
+
+def write_bom_requirement(row: dict, source: str = "bom_pipeline",
+                           db_path: str = DEFAULT_DB_PATH) -> dict:
+    required = {"build_ref", "sesame_part_no", "required_qty"}
+    if not required.issubset(row):
+        raise ValueError(f"write_bom_requirement: missing required fields {required - row.keys()}")
+    with _connect(db_path) as conn:
+        # Idempotent: skip if this Asana task GID already recorded
+        if row.get("asana_task_gid"):
+            existing = conn.execute(
+                "SELECT id FROM bom_requirements WHERE asana_task_gid = ?",
+                (row["asana_task_gid"],)
+            ).fetchone()
+            if existing:
+                _log_write(conn, "bom_requirements", row["asana_task_gid"],
+                           "skip", source, None)
+                conn.commit()
+                return {"written": 0, "skipped": 1, "errors": 0}
+        conn.execute(
+            """INSERT INTO bom_requirements
+               (build_ref, asana_project_gid, sesame_part_no, part_description,
+                required_qty, stock_qty_at_import, status, asana_task_gid, source_bom_file)
+               VALUES (:build_ref, :asana_project_gid, :sesame_part_no, :part_description,
+                       :required_qty, :stock_qty_at_import, :status, :asana_task_gid,
+                       :source_bom_file)""",
+            row,
+        )
+        _log_write(conn, "bom_requirements", row.get("asana_task_gid"),
+                   "insert", source, list(row.keys()))
+        conn.commit()
+    return {"written": 1, "skipped": 0, "errors": 0}
+
+
+def write_po_line(row: dict, source: str = "email_pipeline",
+                  db_path: str = DEFAULT_DB_PATH) -> dict:
+    required = {"po_id"}
+    if not required.issubset(row):
+        raise ValueError(f"write_po_line: missing required fields {required - row.keys()}")
+    with _connect(db_path) as conn:
+        conn.execute(
+            """INSERT INTO po_lines
+               (po_id, sesame_part_no, description, ordered_qty, allocated_qty, unit_price,
+                line_status, asana_task_gid, bom_req_id, notes)
+               VALUES (:po_id, :sesame_part_no, :description, :ordered_qty, :allocated_qty,
+                       :unit_price, :line_status, :asana_task_gid, :bom_req_id, :notes)""",
+            row,
+        )
+        _log_write(conn, "po_lines", str(row.get("po_id")), "insert", source, list(row.keys()))
+        conn.commit()
+    return {"written": 1, "skipped": 0, "errors": 0}
+
+
+# ---------------------------------------------------------------------------
+# Public API — Asana write log (called by 04_asana_executer.py)
+# ---------------------------------------------------------------------------
+
+def log_propagator_run(run_at: str, updates: list[dict],
+                       db_path: str = DEFAULT_DB_PATH) -> dict:
+    """Log each cascaded On Order update from parts_control_propagator. One row per task."""
+    if not updates:
+        return {"written": 0, "skipped": 0, "errors": 0}
+    with _connect(db_path) as conn:
+        conn.execute(
+            """CREATE TABLE IF NOT EXISTS propagator_audit_log (
+               id                   INTEGER PRIMARY KEY AUTOINCREMENT,
+               run_at               TEXT NOT NULL,
+               task_gid             TEXT NOT NULL,
+               task_name            TEXT,
+               parent_gid           TEXT,
+               parent_name          TEXT,
+               relationship         TEXT,
+               previous_stock_action TEXT,
+               new_stock_action     TEXT
+            )"""
+        )
+        written = errors = 0
+        for row in updates:
+            try:
+                conn.execute(
+                    """INSERT INTO propagator_audit_log
+                       (run_at, task_gid, task_name, parent_gid, parent_name,
+                        relationship, previous_stock_action, new_stock_action)
+                       VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
+                    (
+                        run_at,
+                        row.get("task_gid"),
+                        row.get("task_name"),
+                        row.get("parent_gid"),
+                        row.get("parent_name"),
+                        row.get("relationship"),
+                        row.get("current_stock_action"),
+                        row.get("new_stock_action"),
+                    ),
+                )
+                written += 1
+            except Exception as exc:
+                log.error("propagator_audit_log insert failed: %s", exc)
+                errors += 1
+        _log_write(conn, "propagator_audit_log", None, "insert_batch",
+                   "parts_control_propagator", ["run_at", "task_gid"])
+        conn.commit()
+    return {"written": written, "skipped": 0, "errors": errors}
+
+
+def log_asana_write(row: dict, source: str = "asana_executer",
+                    db_path: str = DEFAULT_DB_PATH) -> dict:
+    required = {"task_gid", "action_type"}
+    if not required.issubset(row):
+        raise ValueError(f"log_asana_write: missing required fields {required - row.keys()}")
+    with _connect(db_path) as conn:
+        conn.execute(
+            """INSERT INTO asana_write_log
+               (task_gid, task_name, source, email_id, action_type,
+                field_name, field_gid, value_applied, result, error_detail)
+               VALUES (:task_gid, :task_name, :source, :email_id, :action_type,
+                       :field_name, :field_gid, :value_applied, :result, :error_detail)""",
+            {**row, "source": source},
+        )
+        conn.commit()
+    return {"written": 1, "skipped": 0, "errors": 0}
+
+
+# ---------------------------------------------------------------------------
+# Public API — Ordering pipeline (called by ordering skill scripts)
+# ---------------------------------------------------------------------------
+
+import re as _re
+
+
+def normalise_vendor_name(raw: str | None) -> str | None:
+    """Canonical vendor normalisation: lower, strip punctuation, collapse whitespace.
+
+    'R.S. Components Ltd.' → 'rs components ltd'
+    Use this everywhere vendor names are compared across scripts.
+    """
+    if not raw:
+        return None
+    name = raw.lower()
+    name = _re.sub(r"[^a-z0-9 ]", "", name)
+    name = _re.sub(r"\s+", " ", name).strip()
+    return name or None
+
+
+def write_ordering_queue_item(row: dict, db_path: str = DEFAULT_DB_PATH) -> dict:
+    """Upsert one item into ordering_queue by asana_task_gid.
+
+    Caller is responsible for setting vendor_name_normalised before passing row.
+    """
+    required = {"asana_task_gid"}
+    if not required.issubset(row):
+        raise ValueError(f"write_ordering_queue_item: missing asana_task_gid")
+    row = dict(row)
+    if "vendor_name" in row and "vendor_name_normalised" not in row:
+        row["vendor_name_normalised"] = normalise_vendor_name(row["vendor_name"])
+    with _connect(db_path) as conn:
+        cols = list(row.keys())
+        placeholders = ", ".join("?" * len(cols))
+        updates = ", ".join(
+            f"{c} = excluded.{c}" for c in cols if c != "asana_task_gid"
+        )
+        conn.execute(
+            f"INSERT INTO ordering_queue ({', '.join(cols)}) VALUES ({placeholders}) "
+            f"ON CONFLICT(asana_task_gid) DO UPDATE SET {updates}",
+            list(row.values()),
+        )
+        _log_write(conn, "ordering_queue", row["asana_task_gid"],
+                   "upsert", "ordering_pipeline", cols)
+        conn.commit()
+    return {"written": 1, "skipped": 0, "errors": 0}
+
+
+def update_ordering_queue_status(
+    task_gid: str,
+    status: str,
+    db_path: str = DEFAULT_DB_PATH,
+    **kwargs,
+) -> dict:
+    """Update status + any additional columns on an ordering_queue row.
+
+    kwargs: any column=value pairs to set alongside status
+    (e.g. ordered_at=..., arrived_qty=..., order_task_gid=...)
+    """
+    valid_statuses = {"grouped", "ordered", "arrived", "error", "cancelled"}
+    if status not in valid_statuses:
+        raise ValueError(f"update_ordering_queue_status: invalid status '{status}'")
+    updates = {"status": status, **kwargs}
+    set_clause = ", ".join(f"{k} = ?" for k in updates)
+    with _connect(db_path) as conn:
+        conn.execute(
+            f"UPDATE ordering_queue SET {set_clause} WHERE asana_task_gid = ?",
+            [*updates.values(), task_gid],
+        )
+        _log_write(conn, "ordering_queue", task_gid, "update",
+                   "ordering_pipeline", list(updates.keys()))
+        conn.commit()
+    return {"written": 1, "skipped": 0, "errors": 0}
+
+
+def update_arrived_reset_pending(
+    task_gid: str,
+    value: int,
+    db_path: str = DEFAULT_DB_PATH,
+) -> dict:
+    """Set arrived_reset_pending flag on an ordering_queue row.
+
+    value=1: REQUESTS/ file has been filed to reset Arrived field — skip on next run.
+    value=0: SAP has confirmed reset — safe to process again.
+    """
+    if value not in (0, 1):
+        raise ValueError("update_arrived_reset_pending: value must be 0 or 1")
+    with _connect(db_path) as conn:
+        conn.execute(
+            "UPDATE ordering_queue SET arrived_reset_pending = ? WHERE asana_task_gid = ?",
+            (value, task_gid),
+        )
+        _log_write(conn, "ordering_queue", task_gid, "update",
+                   "arrived_stock_processor", ["arrived_reset_pending"])
+        conn.commit()
+    return {"written": 1, "skipped": 0, "errors": 0}
+
+
+def write_ordering_edge_case(row: dict, db_path: str = DEFAULT_DB_PATH) -> dict:
+    """Insert one edge case record into ordering_edge_cases. Immutable — never updated."""
+    required = {"run_timestamp", "script", "issue_type"}
+    if not required.issubset(row):
+        raise ValueError(f"write_ordering_edge_case: missing {required - row.keys()}")
+    with _connect(db_path) as conn:
+        conn.execute(
+            """INSERT INTO ordering_edge_cases
+               (run_timestamp, script, stage, asana_task_gid, task_name,
+                vendor_name, issue_type, description, raw_data, asana_edge_case_gid)
+               VALUES (:run_timestamp, :script, :stage, :asana_task_gid, :task_name,
+                       :vendor_name, :issue_type, :description, :raw_data,
+                       :asana_edge_case_gid)""",
+            row,
+        )
+        _log_write(conn, "ordering_edge_cases", row.get("asana_task_gid"),
+                   "insert", row["script"], list(row.keys()))
+        conn.commit()
+    return {"written": 1, "skipped": 0, "errors": 0}

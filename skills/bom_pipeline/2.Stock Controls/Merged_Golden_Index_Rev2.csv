@@ -1,0 +1,464 @@
+CAD PN,Mapped KAN,Asana Stock Name,Asana URL,Associated BOM Descriptions,Total Usage Frequency,Match Confidence,Match Type
+.002,KAN-1424,"RS 253-8560 28mm Black, Stainless Steel 304 P Clip 1 off",https://app.asana.com/1/357939803556123/1210000000000000.0,['Emergency Stop Angle Bracket'],2,90,Stock Number Substring Match
+.002.001,KAN-261,50x15mm 12mm bore Orange caster wheels FTH 50x15/12-12K  463802,https://app.asana.com/1/357939803556123/1200000000000000.0,['Back Box 138x138 - NBSS 011'],1,90,CAD substring
+.34.001,KAN-311,sending 10 off for call off,https://app.asana.com/1/357939803556123/1200000000000000.0,['SafeWorkingLoadPlate: WheelchairUser'],1,90,CAD substring
+.034.001,KAN-311,sending 10 off for call off,https://app.asana.com/1/357939803556123/1200000000000000.0,['SafeWorkingLoadPlate: WheelchairUser'],2,90,Stock Number Substring Match
+.037.006,KAN-80,2 off  OBSOLETE Yellow Zinc Plated Ram Pin 30 x 87mm   1011.B6w (3 in stock) - OBSOLETE as of May.2022,https://app.asana.com/1/357939803556123/1150000000000000.0,['Welded Assembly'],2,90,CAD substring
+.045.1,KAN-295,40 off NBSS045.01-5mm - Tape switch packers,https://app.asana.com/1/357939803556123/1200000000000000.0,['NBSS.045.1 (3RBarrier TS Packers)'],4,90,CAD substring
+.129,KAN-1424,"RS 253-8560 28mm Black, Stainless Steel 304 P Clip 1 off",https://app.asana.com/1/357939803556123/1210000000000000.0,['Loading Point Washer dia 50 x 50'],8,90,Stock Number Substring Match
+.414,KAN-1424,"RS 253-8560 28mm Black, Stainless Steel 304 P Clip 1 off",https://app.asana.com/1/357939803556123/1210000000000000.0,['Limit Switch Angle'],2,90,Stock Number Substring Match
+.415,KAN-1424,"RS 253-8560 28mm Black, Stainless Steel 304 P Clip 1 off",https://app.asana.com/1/357939803556123/1210000000000000.0,['LimitSwitch.Plate dia 100 x 90'],4,90,Stock Number Substring Match
+.1000.129,KAN-701,NBSS051 (Pit Trim Installation Bracket),https://app.asana.com/1/357939803556123/1210000000000000.0,['Loading Point Washer - NBSS'],8,90,Stock substring
+.1003.008,KAN-355,100 off NBSS008 Rev 1 (Stair Wheels),https://app.asana.com/1/357939803556123/929000000000000.0,['NylonStairWheel - NBSS 008'],12,90,Stock substring
+.1003.013,KAN-746,Brother priner ink 422XL pack,https://app.asana.com/1/357939803556123/1210000000000000.0,"['Bottom Step Wheel (85mm OD, 70mm Width, )', 'Bottom Step Wheel (85mm OD, 60mm Width, )']",24,90,Stock Number Substring Match
+.1003.061,KAN-159,Guide roller with nylon tread  FPO 40x20/10-9K (ID 761487) - white,https://app.asana.com/1/357939803556123/1200000000000000.0,['Guide roller with nylon tread'],4,90,Stock Number Substring Match
+.1003.07,KAN-380,100 off NBSS014 Glacier Bearing Bush 14X16X15  WMU141615  MB1415DU,https://app.asana.com/1/357939803556123/929000000000000.0,['Bearing Bush-  NBSS 014'],24,90,Stock substring
+.1003.087,KAN-1014,60 off M14 Form A Nylon Washer White - SKU 2921065,https://app.asana.com/1/357939803556123/1200000000000000.0,['M14 Form A Nylon Washer White'],120,90,Stock Number Substring Match
+.1022.005,KAN-746,Brother priner ink 422XL pack,https://app.asana.com/1/357939803556123/1210000000000000.0,"['Ribbon switch TYPE E', 'Ribbon switch']",6,90,Stock Number Substring Match
+.1022.007,KAN-723,b3-3443-2m,https://app.asana.com/1/357939803556123/1210000000000000.0,['TapeSwitch.Spring'],8,90,Stock Number Substring Match
+.1024.004,KAN-568,AP-C3 weld plates (100x30x8 -  M10)  - 1025.A.004,https://app.asana.com/1/357939803556123/1210000000000000.0,['AP-C3 weld plates (100x30x8 -  M10)'],16,50,Fuzzy Description Match
+.1024.021,KAN-251,NUTR 3072 - 4 off 1011.B.016  - PLATED NUTR 30 - 72mm Roller bearings,https://app.asana.com/1/357939803556123/1200000000000000.0,['Bearing'],16,90,Stock Number Substring Match
+.002 NBSS,KAN-1431,205ltr Drum Hydraulic oil 32 grade,https://app.asana.com/1/357939803556123/1210000000000000.0,['Emergency Stop Angle Bracket'],1,90,Stock substring
+.005-099-001_Shrinkwrap,KAN-565,Solenoid Valve Body with NC 055-541-000 cartridge,https://app.asana.com/1/357939803556123/1210000000000000.0,['Solenoid Valve'],4,90,Stock Number Substring Match
+.008 NBSS,KAN-355,100 off NBSS008 Rev 1 (Stair Wheels),https://app.asana.com/1/357939803556123/929000000000000.0,['NylonStairWheel'],12,90,Stock substring
+.008.C.002,KAN-919,Big E-Stop button Harmony  - Onlift RS 330-8587 Emergency Em Stop,https://app.asana.com/1/357939803556123/1200000000000000.0,['E.Stop - Big'],1,90,Stock Number Substring Match
+.012 NBSS,KAN-325,'- Controlling revised NBSS drawings,https://app.asana.com/1/357939803556123/1160000000000000.0,['Call for Assistance BackingBox'],1,90,Stock substring
+.012(Call for Assistance Box),KAN-325,'- Controlling revised NBSS drawings,https://app.asana.com/1/357939803556123/1160000000000000.0,['BackingBox - NBSS 012'],1,90,Stock substring
+.014 NBSS,KAN-380,100 off NBSS014 Glacier Bearing Bush 14X16X15  WMU141615  MB1415DU,https://app.asana.com/1/357939803556123/929000000000000.0,['Bearing Bush (14X16X15)'],30,90,Stock substring
+.014(Bearing Bush),KAN-380,100 off NBSS014 Glacier Bearing Bush 14X16X15  WMU141615  MB1415DU,https://app.asana.com/1/357939803556123/929000000000000.0,['Bearing Bush (14X16X15) - NBSS 014'],141,90,Stock substring
+.023 NBSS,KAN-528,Weld up PLC Support Frame x10,https://app.asana.com/1/357939803556123/1210000000000000.0,['Bearing Bush (14X16X12)'],12,90,CAD substring
+.025 NBSS,KAN-695,NBSS049 - Dripping Tray,https://app.asana.com/1/357939803556123/1210000000000000.0,"['Metric DU Washers (14x26x1,5)']",32,90,CAD substring
+.025(RisingBarrierThrustWasher),KAN-378,100 off NBSS025   14x26x1.5mm (RisingBarrierThrustWasher) TFW1426015 DLU,https://app.asana.com/1/357939803556123/929000000000000.0,"['METRIC DU WASHERS (14x26x1,5) - NBSS 025']",41,90,Stock substring
+.026 NBSS,KAN-701,NBSS051 (Pit Trim Installation Bracket),https://app.asana.com/1/357939803556123/1210000000000000.0,['Tapped Bar'],4,90,CAD substring
+.027 NBSS,KAN-344,10715/1110 - 16 off	Tapped Bar Short - NBSS 027	Wolfson.1005.B.091		NBSS 027	NBSS/Machining	- Ashtead,https://app.asana.com/1/357939803556123/888000000000000.0,['Tapped Bar Short'],4,90,Stock substring
+.027(RisingBarrierStudding),KAN-344,10715/1110 - 16 off	Tapped Bar Short - NBSS 027	Wolfson.1005.B.091		NBSS 027	NBSS/Machining	- Ashtead,https://app.asana.com/1/357939803556123/888000000000000.0,['Tapped Bar Short - NBSS 027'],4,90,Stock substring
+.036(SprocketWasher),KAN-1424,"RS 253-8560 28mm Black, Stainless Steel 304 P Clip 1 off",https://app.asana.com/1/357939803556123/1210000000000000.0,['Sprocket Washer NBSS 036'],14,90,Stock substring
+.040 NBSS,KAN-706,Design Feedback on rev number control,https://app.asana.com/1/357939803556123/1210000000000000.0,['Pit Trim Fixing Plate'],22,90,Stock substring
+.042 NBSS,KAN-716,End Cap Dome Top Hammer Fit 42.4mm Fix 1804216C F.H. BRUNDLE,https://app.asana.com/1/357939803556123/1210000000000000.0,['NBSS.042 (BarrierChamferedPlate)'],6,90,Stock substring
+.060 X00 E03 RB,KAN-933,1	off	Fork; pushing; spring return Solenoid 1m cable length	GFCX 060 X00 E03 RB,https://app.asana.com/1/357939803556123/1200000000000000.0,['Fork; pushing; spring return Solenoid'],2,90,Stock Number Substring Match
+.1000.A.001,KAN-464,Polyurethane Cast Iron 50mm Ball Bearing Wheel 120kg Load BZH50WPTBJM12,https://app.asana.com/1/357939803556123/1200000000000000.0,['Polyurethane Cast Iron 50mm Plain Bore 80kg Load'],112,90,Stock Number Substring Match
+.1000.B.30x16_M_M10_122daN,KAN-1287,Male M10 30x16mm 60 ShA 25mm shank - Rubber D3016M1025-2,https://app.asana.com/1/357939803556123/1210000000000000.0,['M10 rubber foot'],8,90,Stock Number Substring Match
+.1000.B.30x17_F_M8_98.6daN,KAN-151,Female M8 30x17mm 60 shA - Rubber AV mount,https://app.asana.com/1/357939803556123/1200000000000000.0,['M8 x 30 female vibration mount'],88,90,Stock Number Substring Match
+.1000.B.40x30_M_M8_120daN,KAN-580,Male M8 40x30mm with x30 stud 60 ShA  - Rubber AV mount  RS COMPONENTS ONLY,https://app.asana.com/1/357939803556123/1210000000000000.0,['40x30mm Shock Mount M8 20mm studd'],28,90,Stock Number Substring Match
+.1000.B.50x25_M_M10_300daN,KAN-968,Male M10 50x25mm with x25 stud 60 ShA  - Rubber AV mount  (RS-385-1586),https://app.asana.com/1/357939803556123/1200000000000000.0,['Shock Mount M10 50mm Diameter 300daN Compression Load 6mm deflection'],60,90,Stock Number Substring Match
+.1000.C.ClevisPin 12x60mm,KAN-925,12x60 Clevis pins  CPSS-12-60,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Clevis Pin', 'Clevis Pin 12x60mm']",26,90,Stock Number Substring Match
+.1000.ClevisPin 12x35mm,KAN-1209,12x35 Clevis pin CPSS-12-035,https://app.asana.com/1/357939803556123/1200000000000000.0,['Clevis Pin 12x35mm'],4,90,Stock Number Substring Match
+.1000.ClevisPin 12x50mm,KAN-1278,12x50 Clevis Pin  CPSS-12-050,https://app.asana.com/1/357939803556123/1200000000000000.0,['Clevis Pin'],12,90,Stock Number Substring Match
+.1000.ClevisPin 12x60mm,KAN-925,12x60 Clevis pins  CPSS-12-60,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Clevis Pin', 'Clevis Pin 12x60mm', 'Clevis pin']",28,90,Stock Number Substring Match
+.1000.F.Winkel.Bearing_(4.053),KAN-143,20 off Winkle Bearings for stock,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Winkel Bearing + PL00(Plate) send to zinc plating', 'Winkel Bearing + PL00(Plate) - send to zinc plating']",28,90,Stock Number Substring Match
+.1000.F.Winkel.Bearing_(4.053+PL00),KAN-143,20 off Winkle Bearings for stock,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Winkel bearing, welded by Supplier, send to zinc plating']",8,90,Stock Number Substring Match
+.1000.L.WDS674-216,KAN-264,25 off M16 swivel leveling feet - 674-216  WDS,https://app.asana.com/1/357939803556123/1200000000000000.0,['Swivel Pad M16'],8,90,CAD substring
+.1001.B.020,KAN-262,15791-170522 - Blickle - stock orange wheels order - 901085468,https://app.asana.com/1/357939803556123/1200000000000000.0,['Glass Roller Wheel'],32,90,Stock Number Substring Match
+.1001.B.029,KAN-262,15791-170522 - Blickle - stock orange wheels order - 901085468,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Glass Roller Wheel', 'Gray Glass Roller Wheel']",24,90,Stock Number Substring Match
+.1001.B.036,KAN-1015,32 off LS1226 Raceway Washer Series LS 12x26x2.75mm,https://app.asana.com/1/357939803556123/1200000000000000.0,['Budget Raceway Washer Series LS 12x26x2.75mm'],56,90,Stock Number Substring Match
+.1001.E.016,KAN-746,Brother priner ink 422XL pack,https://app.asana.com/1/357939803556123/1210000000000000.0,['Sensing Mat'],3,90,Stock Number Substring Match
+.1001.E.021,KAN-1081,B5-4243-2M   1001.E.021,https://app.asana.com/1/357939803556123/1200000000000000.0,['Spring'],34,90,Stock Number Substring Match
+.1003.A.013,KAN-746,Brother priner ink 422XL pack,https://app.asana.com/1/357939803556123/1210000000000000.0,"['Bottom Step Wheel (85mm OD 60mm Width )', 'Bottom Step Wheel (85mm OD, 60mm Width, )']",56,90,Stock Number Substring Match
+.1003.A.061,KAN-159,Guide roller with nylon tread  FPO 40x20/10-9K (ID 761487) - white,https://app.asana.com/1/357939803556123/1200000000000000.0,['Guide roller with nylon tread'],4,90,Stock Number Substring Match
+.1003.A.087,KAN-1014,60 off M14 Form A Nylon Washer White - SKU 2921065,https://app.asana.com/1/357939803556123/1200000000000000.0,['M14 Form A Nylon Washer White'],188,90,Stock Number Substring Match
+.1003.A.121,KAN-457,12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock),https://app.asana.com/1/357939803556123/1200000000000000.0,['Thrust Washer 20x36x1.5mm'],8,90,Stock Number Substring Match
+.1003.A.124,KAN-457,12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock),https://app.asana.com/1/357939803556123/1200000000000000.0,['Thrust Washer 20x36x1.5mm'],96,90,Stock Number Substring Match
+.1003.B.008,KAN-355,100 off NBSS008 Rev 1 (Stair Wheels),https://app.asana.com/1/357939803556123/929000000000000.0,"['NylonStairWheel', 'NylonStairWheel - NBSS 008']",192,90,Stock Number Substring Match
+.1003.B.013,KAN-746,Brother priner ink 422XL pack,https://app.asana.com/1/357939803556123/1210000000000000.0,"['(BottomStepWheels) 85mm OD, 70mm Width,', 'Bottom Step Wheel (85mm OD 60mm Width )']",28,90,Stock Number Substring Match
+.1003.B.061,KAN-159,Guide roller with nylon tread  FPO 40x20/10-9K (ID 761487) - white,https://app.asana.com/1/357939803556123/1200000000000000.0,['Guide roller with nylon tread'],2,90,Stock Number Substring Match
+.1003.B.087,KAN-1014,60 off M14 Form A Nylon Washer White - SKU 2921065,https://app.asana.com/1/357939803556123/1200000000000000.0,['M14 Form A Nylon Washer White'],186,90,Stock Number Substring Match
+.1003.B.092,KAN-579,"U Clip, 10.7mm x 12.7mm x 0.36mm EPF186-PPBLK",https://app.asana.com/1/357939803556123/1210000000000000.0,['Guide Wheel'],8,90,Stock Number Substring Match
+.1003.B.124,KAN-457,12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock),https://app.asana.com/1/357939803556123/1200000000000000.0,['Thrust Washer 20x36x1.5mm'],8,90,Stock Number Substring Match
+.1004.B.054,KAN-701,NBSS051 (Pit Trim Installation Bracket),https://app.asana.com/1/357939803556123/1210000000000000.0,['FRAME LOAD Washer - NBSS 129'],4,90,Stock substring
+.1004.D.116,KAN-224,Upgrading waterproof cable reels,https://app.asana.com/1/357939803556123/1210000000000000.0,['Rubber Corner Insert green'],32,90,Stock Number Substring Match
+.1004.E.025,KAN-1424,"RS 253-8560 28mm Black, Stainless Steel 304 P Clip 1 off",https://app.asana.com/1/357939803556123/1210000000000000.0,['FRAME LOAD Washer - NBSS 129'],16,90,Stock Number Substring Match
+.1004.R.4,KAN-1334,1005.b.b26W,https://app.asana.com/1/357939803556123/1210000000000000.0,['E.Stop - Big'],4,90,Stock Number Substring Match
+.1005.A.032,KAN-43,MS20SSU Maglocks long 24V – 10m Fly lead – extra plating          £ 89.00,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Non-standard Maglock', '100mm long maglock']",3,90,Stock Number Substring Match
+.1005.A.044,KAN-366,30 off NBSS125 Triple Sprocket with keyway - ST4SR14 with keyway,https://app.asana.com/1/357939803556123/929000000000000.0,['Single Sprocket with the keyway'],1,90,Stock Number Substring Match
+.1005.B.002,KAN-370,16 off Harken tracks - 2720.1.5M - NO LONGER BUYNG,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Harken Track - Cut this in half', 'Harken Track - 1.5m long']",100,90,Stock Number Substring Match
+.1005.B.005,KAN-266,5 off M70 2 bolt flange (for MHM50A0L motor),https://app.asana.com/1/357939803556123/1200000000000000.0,"['BarrierMotor - 50CC', '16mm Straight Keyed Shaft Side Ports BarrierMotor Danfoss - 50CC']",25,90,Stock Number Substring Match
+.1005.B.030,KAN-266,5 off M70 2 bolt flange (for MHM50A0L motor),https://app.asana.com/1/357939803556123/1200000000000000.0,"['M70 2 bolt flange (for MAM-16-S motor)', 'M70 2 bolt flange (for MHM50A0L motor)']",24,90,Stock Number Substring Match
+.1005.B.059,KAN-47,single chain link for 08B-1R,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Middle Chain - Single X1', 'Middle Chain - Single X1 (Length =3053mm)']",27,90,Stock Number Substring Match
+.1005.B.064,KAN-45,Double chain connecting link for 08B-2R,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Sprocket Chain - Double X2', 'Sprocket Chain - Double X2 (Length = 2774mm)']",92,90,Stock Number Substring Match
+.1005.B.077,KAN-366,30 off NBSS125 Triple Sprocket with keyway - ST4SR14 with keyway,https://app.asana.com/1/357939803556123/929000000000000.0,['Single Sprocket with keyway'],10,90,Stock Number Substring Match
+.1005.B.088,KAN-1242,113205 - 14.04n/mm,https://app.asana.com/1/357939803556123/1210000000000000.0,['Spring -  rising barrier jam device'],32,90,Stock Number Substring Match
+.1005.B.092,KAN-718,Jubilee clips 125mm  - 39875,https://app.asana.com/1/357939803556123/1210000000000000.0,['Spring -  rising barrier jam device - 11.52 n/mm -  painted BLUE'],8,90,Stock substring
+.1005.C.014,KAN-263,40 off Cylindrical Bumper 28D x 25H - 6001200,https://app.asana.com/1/357939803556123/1200000000000000.0,['Rubber Stopper'],38,90,Stock Number Substring Match
+.1005.E.014,KAN-112,Type F - 101B/0050/FS/F/A/*0600/*0300/Y - w/o resistor (2pair of wires),https://app.asana.com/1/357939803556123/1200000000000000.0,['Ribbon Switch 101B without resistor'],8,90,Stock Number Substring Match
+.1005.E.028,KAN-112,Type F - 101B/0050/FS/F/A/*0600/*0300/Y - w/o resistor (2pair of wires),https://app.asana.com/1/357939803556123/1200000000000000.0,['Ribbon Switch 101B with resistor'],8,90,Stock Number Substring Match
+.1006.A.011,KAN-580,Male M8 40x30mm with x30 stud 60 ShA  - Rubber AV mount  RS COMPONENTS ONLY,https://app.asana.com/1/357939803556123/1210000000000000.0,"['40x30mm Shock Mount M8 20mm studd', 'RubberBuffer']",24,90,Stock Number Substring Match
+.1006.A.067,KAN-1233,Aluminium Foil Tape 12mm wide - Dymo Express,https://app.asana.com/1/357939803556123/1210000000000000.0,"['TS6 Sensing Edge With Resistor', 'TS3 Sensing Edge With Resistor']",4,90,Stock Number Substring Match
+.1006.A.068,KAN-1233,Aluminium Foil Tape 12mm wide - Dymo Express,https://app.asana.com/1/357939803556123/1210000000000000.0,"['TS3 Sensing Edge Without Resistor', 'TS6 Sensing Edge Without Resistor']",4,90,Stock Number Substring Match
+.1006.A.094,KAN-547,20mm magnet - F315N-20,https://app.asana.com/1/357939803556123/1200000000000000.0,['Round Countersunk Magnet'],8,90,Stock Number Substring Match
+.1006.A.110,KAN-1233,Aluminium Foil Tape 12mm wide - Dymo Express,https://app.asana.com/1/357939803556123/1210000000000000.0,"['TS6 sensing edge with resistor', 'Cement Board 10mm', 'TS3 Sensing Edge With Resistor']",4,90,Stock Number Substring Match
+.1006.A.111,KAN-1233,Aluminium Foil Tape 12mm wide - Dymo Express,https://app.asana.com/1/357939803556123/1210000000000000.0,"['Cement board 10mm', 'TS3 Sensing Edge Without Resistor']",3,90,Stock Number Substring Match
+.1006.A.124,KAN-569,92906 compression springs - 1006.A.124,https://app.asana.com/1/357939803556123/1210000000000000.0,['Compression Springs'],4,90,Stock Number Substring Match
+.1006.A.125,KAN-729,TS6 end caps,https://app.asana.com/1/357939803556123/1210000000000000.0,"['On Lift Cement board 10 mm', 'TS6 Sensing Edge Without Resistor']",2,90,Stock Number Substring Match
+.1006.A.137,KAN-262,15791-170522 - Blickle - stock orange wheels order - 901085468,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Timber board', 'Guide roller']",10,90,Stock Number Substring Match
+.1006.A.138,KAN-1212,WTM-1224-015  12 x 24 x 1.5 washer,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Timber board', 'Thrust washer']",40,90,Stock Number Substring Match
+.1006.A.161,KAN-262,15791-170522 - Blickle - stock orange wheels order - 901085468,https://app.asana.com/1/357939803556123/1200000000000000.0,['Guide roller'],4,90,Stock Number Substring Match
+.1006.A.162,KAN-1212,WTM-1224-015  12 x 24 x 1.5 washer,https://app.asana.com/1/357939803556123/1200000000000000.0,['Thrust washer'],10,90,Stock Number Substring Match
+.1006.A25TS,KAN-1233,Aluminium Foil Tape 12mm wide - Dymo Express,https://app.asana.com/1/357939803556123/1210000000000000.0,['TS3 Sensing Edge With Resistor'],1,90,Stock Number Substring Match
+.1006.B.011,KAN-580,Male M8 40x30mm with x30 stud 60 ShA  - Rubber AV mount  RS COMPONENTS ONLY,https://app.asana.com/1/357939803556123/1210000000000000.0,['Rubber Buffer'],4,90,Stock substring
+.1006.B.074,KAN-547,20mm magnet - F315N-20,https://app.asana.com/1/357939803556123/1200000000000000.0,['Round Countersunk Magnet'],16,90,Stock Number Substring Match
+.1006.B.093,KAN-729,TS6 end caps,https://app.asana.com/1/357939803556123/1210000000000000.0,['TS 6 Tape Switch'],2,90,Stock Number Substring Match
+.1006.B.094,KAN-547,20mm magnet - F315N-20,https://app.asana.com/1/357939803556123/1200000000000000.0,['Round Countersunk Magnet'],8,90,Stock Number Substring Match
+.1006.B.122,KAN-1233,Aluminium Foil Tape 12mm wide - Dymo Express,https://app.asana.com/1/357939803556123/1210000000000000.0,"['TS3 Sensing Edge', 'Platform Cement Board']",4,90,Stock Number Substring Match
+.1006.B.127,KAN-1233,Aluminium Foil Tape 12mm wide - Dymo Express,https://app.asana.com/1/357939803556123/1210000000000000.0,['TS3 Sensing Edge'],1,90,Stock Number Substring Match
+.1006.C.144,KAN-262,15791-170522 - Blickle - stock orange wheels order - 901085468,https://app.asana.com/1/357939803556123/1200000000000000.0,['Guide roller'],4,90,Stock Number Substring Match
+.1006.C.145,KAN-1212,WTM-1224-015  12 x 24 x 1.5 washer,https://app.asana.com/1/357939803556123/1200000000000000.0,['Thrust washer'],16,90,Stock Number Substring Match
+.1006.J.080,KAN-244,70mm Orange Casters - BZH8570WPTBJM20 or ( P0759 at Technica) - OBSOLETE,https://app.asana.com/1/357939803556123/888000000000000.0,"['85mm OD, 70mm Width,']",40,90,Stock Number Substring Match
+.1008.1(TopStepPLC),KAN-510,,https://app.asana.com/1/357939803556123/1200000000000000.0,[''],2,70,Exact Description Match
+.1008.A1,KAN-126,LRC5A55 - the long arm  limit switch (Buy ARMS ONLY),https://app.asana.com/1/357939803556123/1200000000000000.0,"['LimitSwitch - FR555', 'Adjustable actuator LimitSwitch: LRC5A55', 'LimitSwitch - FR555 - METAL BODY!']",18,90,Stock Number Substring Match
+.1008.A3,KAN-566,MP200702 - N/C Magnetic Proximity Sensor,https://app.asana.com/1/357939803556123/1210000000000000.0,"['MP200701 - Magnetic Proximity Sensor N/C', 'MP200701 - Magnetic Proximity Sensor']",25,50,Fuzzy Description Match
+.1008.A3.001,KAN-566,MP200702 - N/C Magnetic Proximity Sensor,https://app.asana.com/1/357939803556123/1210000000000000.0,"['MP200701 - Magnetic Proximity Sensor N/C', 'MP200701 - Magnetic Proximity Sensor']",73,50,Fuzzy Description Match
+.1008.A3.005,KAN-545,10mm magnet - F102N-10,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Neodymium Magnet - 2.6kg [code: F338N-2]', '10mm dia x 2mm thick x 3mm c/sink Neodymium Magnet']",34,90,Stock Number Substring Match
+.1008.A3.006,KAN-545,10mm magnet - F102N-10,https://app.asana.com/1/357939803556123/1200000000000000.0,['10mm dia x 2mm thick x 3mm c/sink Neodymium Magnet'],32,90,Stock Number Substring Match
+.1008.A3.1,KAN-566,MP200702 - N/C Magnetic Proximity Sensor,https://app.asana.com/1/357939803556123/1210000000000000.0,['MP200701 - Magnetic Proximity Sensor'],20,50,Fuzzy Description Match
+.1008.A6.EP1G12Z020U,KAN-930,1	off	Roller Limit Switch (min. 2m Cable)	1008.A6.EP1G12Z020U	EP1G12Z020U	http://www.comepi.it	LongVale			SES101,https://app.asana.com/1/357939803556123/1200000000000000.0,['Roller Limit Switch (min. 2m Cable)'],4,90,Stock Number Substring Match
+.1008.A6.EP1G12Z020U - Roller,KAN-930,1	off	Roller Limit Switch (min. 2m Cable)	1008.A6.EP1G12Z020U	EP1G12Z020U	http://www.comepi.it	LongVale			SES101,https://app.asana.com/1/357939803556123/1200000000000000.0,['Roller LimitSwitch (min. 2m Cable)'],17,90,Stock Number Substring Match
+.1008.A6.EP1G12ZA - Roller,KAN-141,EP1G12ZU -  roller head (inline) - 4 core 1NC/1NO - most Common,https://app.asana.com/1/357939803556123/1200000000000000.0,['Roller LimitSwitch (min. 2m Cable)'],10,90,Stock Number Substring Match
+.1008.A7.002.ipt,KAN-22,TRIGGER order - 2 off IFM OGP500 with reflectors,https://app.asana.com/1/357939803556123/1200000000000000.0,['Photocell'],1,90,Stock Number Substring Match
+.1008.C.002,KAN-1334,1005.b.b26W,https://app.asana.com/1/357939803556123/1210000000000000.0,['E.Stop - Big'],46,90,Stock Number Substring Match
+.1008.D.067,KAN-151,Female M8 30x17mm 60 shA - Rubber AV mount,https://app.asana.com/1/357939803556123/1200000000000000.0,['Rubber Buffer'],92,90,Stock Number Substring Match
+.1008.D.068,KAN-968,Male M10 50x25mm with x25 stud 60 ShA  - Rubber AV mount  (RS-385-1586),https://app.asana.com/1/357939803556123/1200000000000000.0,"['Shock Mount M10 50mm Diameter 300daN Compression Load 6mm', 'Rubber Buffer']",84,90,Stock Number Substring Match
+.1008.D.440P-M18001,KAN-237,16 off 1008.D.440P-M18001	440P-M18001	Red Limit Switch with roller	RS* 323-511	(18),https://app.asana.com/1/357939803556123/1190000000000000.0,['Limit Switch with roller'],2,90,Stock Number Substring Match
+.1008.H3(RF SES4473),KAN-41,10 off SES447324 Emergency Barrier Lower = £210 each,https://app.asana.com/1/357939803556123/523000000000000.0,['Emergency barrier lower valve assembly'],10,90,Stock Number Substring Match
+.1008.H4.002,KAN-279,6   off SOLENOID COIL  LC-08-S 24VDC,https://app.asana.com/1/357939803556123/1200000000000000.0,['SOLENOID COIL'],4,90,Stock Number Substring Match
+.1008.H4.003,KAN-1422,"Pilz  Pnoz X2.1 Safety Relay 24V ac/dc, Dual-Channel 2 Safety Contacts - RS 239-1055",https://app.asana.com/1/357939803556123/1210000000000000.0,['Valve connector'],4,90,Stock Number Substring Match
+.1008.H7.(CV88 VRSP1220),KAN-252,3 off Regeneration valves - CV88 VRSP1220,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Regenerative Valve (more than 10m hose or more than 6 steps)', 'Regenerative Valve']",3,90,Stock Number Substring Match
+.1008.J.SL.001.Murr Base,KAN-155,Murr Base in stock - 8000-88500-0000000,https://app.asana.com/1/357939803556123/1200000000000000.0,['Murr Base'],47,90,Stock Number Substring Match
+.1008.N1,KAN-126,LRC5A55 - the long arm  limit switch (Buy ARMS ONLY),https://app.asana.com/1/357939803556123/1200000000000000.0,"['Standard LimitSwitch: LRC5A54', 'LimitSwitch - FR554']",151,90,Stock Number Substring Match
+.1008.N1.1,KAN-125,LRC5A54 - short arm limit switches,https://app.asana.com/1/357939803556123/1200000000000000.0,['Standard LimitSwitch: LRC5A54'],6,90,Stock Number Substring Match
+.1008.NR.LimitSwitch,KAN-126,LRC5A55 - the long arm  limit switch (Buy ARMS ONLY),https://app.asana.com/1/357939803556123/1200000000000000.0,"['IMO FR554', 'LimitSwitch - FR554']",5,90,Stock Number Substring Match
+.1008.Q.002,KAN-333,40 off 1008.Q.002 - lifting jig plate,https://app.asana.com/1/357939803556123/1120000000000000.0,['Flat Plate'],2,90,CAD substring
+.1008.Q.003,KAN-334,40 off 1008.Q.003 - lifting jig,https://app.asana.com/1/357939803556123/1120000000000000.0,['Flat Plate'],2,90,CAD substring
+.1008.T.13ID_P_Clip,KAN-1156,"RS 298-8097 13mm Black, Stainless Steel P Clip",https://app.asana.com/1/357939803556123/1200000000000000.0,['Rubber-lined clamp; 13mm ID'],28,90,Stock Number Substring Match
+.1008.T.25ID_Grommet,KAN-224,Upgrading waterproof cable reels,https://app.asana.com/1/357939803556123/1210000000000000.0,['Grommet ID 18.5mm (Hole 25mm Dia.)'],146,90,Stock Number Substring Match
+.1008.T.8ID_Grommet,KAN-224,Upgrading waterproof cable reels,https://app.asana.com/1/357939803556123/1210000000000000.0,['8mm ID Grommet'],8,90,Stock Number Substring Match
+.1008.U.01,KAN-1345,RS 700-0802 - wiska box 85x85x51,https://app.asana.com/1/357939803556123/1210000000000000.0,"['85x85x52 Junction Box', '85x85x51 Wiska Junction Box', '85x85x51 Junction Box']",77,90,Stock Number Substring Match
+.1008.U.05,KAN-1348,OB11  junction box,https://app.asana.com/1/357939803556123/1210000000000000.0,['SpringCable_JunctionBox+Glands'],28,90,Stock Number Substring Match
+.1008.U.11,KAN-1348,OB11  junction box,https://app.asana.com/1/357939803556123/1210000000000000.0,['JunctionBox+Glands'],85,90,Stock Number Substring Match
+.1008.V1.1.MiniActuator[50mm],KAN-175,10 off MP SX 25/18x50 SAS - 50cc 4 port conforti hydraulic actuators,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Mini hydraulic actuator _ 50mm stroke, connectors on both sides']",42,90,Stock Number Substring Match
+.1008.W.005,KAN-1412,RS 798-9414 cable tray 50x12x3m,https://app.asana.com/1/357939803556123/1210000000000000.0,"['Cable Tray, Pre-Galvanised Steel 3m x 50 mm x 12mm, length=846mm']",8,90,Stock Number Substring Match
+.1009.A.022,KAN-266,5 off M70 2 bolt flange (for MHM50A0L motor),https://app.asana.com/1/357939803556123/1200000000000000.0,['BarrierMotor - 50CC'],7,90,Stock Number Substring Match
+.1009.A.032,KAN-43,MS20SSU Maglocks long 24V – 10m Fly lead – extra plating          £ 89.00,https://app.asana.com/1/357939803556123/1200000000000000.0,['Non-standard Maglock'],4,90,Stock Number Substring Match
+.1009.B.002,KAN-370,16 off Harken tracks - 2720.1.5M - NO LONGER BUYNG,https://app.asana.com/1/357939803556123/1200000000000000.0,['Harken Track - 1.5m long'],28,90,Stock Number Substring Match
+.1009.B.048,KAN-43,MS20SSU Maglocks long 24V – 10m Fly lead – extra plating          £ 89.00,https://app.asana.com/1/357939803556123/1200000000000000.0,['Non-standard Maglock'],10,90,Stock Number Substring Match
+.1009.B.058,KAN-266,5 off M70 2 bolt flange (for MHM50A0L motor),https://app.asana.com/1/357939803556123/1200000000000000.0,['BarrierMotor - 50CC'],1,90,Stock Number Substring Match
+.1009.B.060,KAN-266,5 off M70 2 bolt flange (for MHM50A0L motor),https://app.asana.com/1/357939803556123/1200000000000000.0,['M70 2 bolt flange (forMHM50A0L motor)'],1,50,Fuzzy Description Match
+.1009.C.041,KAN-746,Brother priner ink 422XL pack,https://app.asana.com/1/357939803556123/1210000000000000.0,"['Wheel (85mm OD, 60mm Width, )']",4,90,Stock Number Substring Match
+.1009.E.025,KAN-1393,"RS 474-577   5mm Black, Polyamide P Clip",https://app.asana.com/1/357939803556123/1210000000000000.0,['E.Stop - Big'],1,90,Stock substring
+.1009.E.027,KAN-157,GFM-081014-05 - flanged (100 off),https://app.asana.com/1/357939803556123/1200000000000000.0,['IGUS Flange Bearing'],4,90,Stock Number Substring Match
+.1009.E.032,KAN-131,Illumination Push button flush mount - 51-151.0252F  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,['Flush STOP Button'],1,90,Stock Number Substring Match
+.1009.E.033,KAN-231,Blue Lens for EAO buttons - 61-9642.6  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Call for assistance (Bell), CFA + Doorbell']",1,90,Stock Number Substring Match
+.1009.E.034,KAN-231,Blue Lens for EAO buttons - 61-9642.6  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,['Arrow Button'],2,90,Stock Number Substring Match
+.1009.F.020,KAN-1327,5x5x20mm key steel 302-4087,https://app.asana.com/1/357939803556123/1210000000000000.0,['20x5x5mm Steel Feather Key'],2,90,Stock Number Substring Match
+.1009.G.027,KAN-157,GFM-081014-05 - flanged (100 off),https://app.asana.com/1/357939803556123/1200000000000000.0,['IGUS Flange Bearing'],12,90,Stock Number Substring Match
+.1009.H.038,KAN-157,GFM-081014-05 - flanged (100 off),https://app.asana.com/1/357939803556123/1200000000000000.0,['IGUS Flange Bearing'],8,90,Stock Number Substring Match
+.1009.I.021,KAN-157,GFM-081014-05 - flanged (100 off),https://app.asana.com/1/357939803556123/1200000000000000.0,['IGUS Flange Bearing'],12,90,Stock Number Substring Match
+.1009.J.012,KAN-157,GFM-081014-05 - flanged (100 off),https://app.asana.com/1/357939803556123/1200000000000000.0,['IGUS Flange Bearing'],4,90,Stock Number Substring Match
+.1009.K.011,KAN-157,GFM-081014-05 - flanged (100 off),https://app.asana.com/1/357939803556123/1200000000000000.0,['IGUS Flange Bearing'],4,90,Stock Number Substring Match
+.1009.L.011,KAN-157,GFM-081014-05 - flanged (100 off),https://app.asana.com/1/357939803556123/1200000000000000.0,['IGUS Flange Bearing'],12,90,Stock Number Substring Match
+.1010.C.025,KAN-251,NUTR 3072 - 4 off 1011.B.016  - PLATED NUTR 30 - 72mm Roller bearings,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Bearing: 72 +0/-0,1 x 30 +0/-0,03']",4,90,Stock Number Substring Match
+.1010.C.026,KAN-401,"30x35x25  2 off  1010.A.026   -  PMB187 	Brass, Soft Yellow",https://app.asana.com/1/357939803556123/958000000000000.0,['PlainMetricBush_30x35x25'],2,90,Stock Number Substring Match
+.1010.C.027,KAN-455,30x40x45  4 off 1011.B.038 - Plain bearing bush  - KAN-455,https://app.asana.com/1/357939803556123/1150000000000000.0,['PlainMetricBush_(30x40x45)'],2,90,Stock Number Substring Match
+.1010.C.028,KAN-399,40x50x50	 Flanged   2	off	1010.A.028   -  Flanged Metric Bush    FMB405050,https://app.asana.com/1/357939803556123/958000000000000.0,['FlangedBearingBush_40x50x50'],2,90,Stock Number Substring Match
+.1010.C.074,KAN-522,16x20x20 Plain Bearing Bush_		PMB162020,https://app.asana.com/1/357939803556123/1200000000000000.0,['PlainBearingBush_16x20x20'],12,90,Stock Number Substring Match
+.1010.EB.15,KAN-524,2	off	Oil Filled Bronze Flanged Bush 16x22x25mm	Flanged Bush 16x22x25mm,https://app.asana.com/1/357939803556123/1200000000000000.0,['FlangeBearingBush_16x22x25'],16,90,Stock Number Substring Match
+.1010.EB.25,KAN-251,NUTR 3072 - 4 off 1011.B.016  - PLATED NUTR 30 - 72mm Roller bearings,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Bearing: 72 +0/-0,1 x 30 +0/-0,03']",16,90,Stock Number Substring Match
+.1010.EB.26,KAN-401,"30x35x25  2 off  1010.A.026   -  PMB187 	Brass, Soft Yellow",https://app.asana.com/1/357939803556123/958000000000000.0,['PlainMetricBush_30x35x25'],8,90,Stock Number Substring Match
+.1010.EB.27,KAN-455,30x40x45  4 off 1011.B.038 - Plain bearing bush  - KAN-455,https://app.asana.com/1/357939803556123/1150000000000000.0,['PlainMetricBush_(30x40x45)'],8,90,Stock Number Substring Match
+.1010.EB.28,KAN-399,40x50x50	 Flanged   2	off	1010.A.028   -  Flanged Metric Bush    FMB405050,https://app.asana.com/1/357939803556123/958000000000000.0,['FlangedBearingBush_40x50x50'],8,90,Stock Number Substring Match
+.1010.EB.44,KAN-784,10	off	1010.EB.044	Nylon 66 washer black M16x30x3	DNFPM160	Nylon 6/6	Orbitalfasteners	https://www.orbitalfasteners.co.uk/en/search/q/2921070,https://app.asana.com/1/357939803556123/958000000000000.0,['Nylon 66 washer white M16x30x3'],8,90,Stock Number Substring Match
+.1011.A.016,KAN-251,NUTR 3072 - 4 off 1011.B.016  - PLATED NUTR 30 - 72mm Roller bearings,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Bearing: 72 +0/-0,1 x 30 +0/-0,03']",4,90,Stock Number Substring Match
+.1011.A.028,KAN-456,40x46x40 Flanged 4 off 1011.B.028 - Flanged bearing bush - AL404640 (40 in stock) - KAN-456,https://app.asana.com/1/357939803556123/1150000000000000.0,['Flanged bearing bush - 40x46x40'],8,90,Stock Number Substring Match
+.1011.A.Actuator,KAN-95,5 off  CC:502 / Stroke:263    1011.B.Actuator.09   (5 to be ordered),https://app.asana.com/1/357939803556123/1150000000000000.0,['CC:428 / Stroke:189'],1,90,Stock Number Substring Match
+.1011.A.Actuator_MIR,KAN-94,5 off  CC:502 / Stroke:263   1011.B.Actuator_MIR.09   (5 to be ordered),https://app.asana.com/1/357939803556123/1150000000000000.0,['CC:428 / Stroke: 189'],1,90,Stock Number Substring Match
+.1011.B.092,KAN-457,12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock),https://app.asana.com/1/357939803556123/1200000000000000.0,['Thrust Washer - 20x36x1.5mm'],48,90,Stock Number Substring Match
+.1011.B.105,KAN-427,40x60x1 Thrust washer AS4060,https://app.asana.com/1/357939803556123/1200000000000000.0,['Thrust washer 40x60x1'],24,90,Stock Number Substring Match
+.1011.B.106,KAN-1216,"Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm   AS3047",https://app.asana.com/1/357939803556123/1200000000000000.0,"['Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm']",48,90,Stock Number Substring Match
+.1011.D.016,KAN-251,NUTR 3072 - 4 off 1011.B.016  - PLATED NUTR 30 - 72mm Roller bearings,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Bearing: 72 +0/-0,1 x 30 +0/-0,03']",8,90,Stock Number Substring Match
+.1011.D.028,KAN-456,40x46x40 Flanged 4 off 1011.B.028 - Flanged bearing bush - AL404640 (40 in stock) - KAN-456,https://app.asana.com/1/357939803556123/1150000000000000.0,['Flanged bearing bush - 40x46x40'],16,90,Stock Number Substring Match
+.1011.D.038,KAN-455,30x40x45  4 off 1011.B.038 - Plain bearing bush  - KAN-455,https://app.asana.com/1/357939803556123/1150000000000000.0,['Plain bearing bush - 30x40x45'],8,90,Stock Number Substring Match
+.1011.D.100,KAN-483,40x46x32 Flanged - 2 off 1011.B.104 - Flanged Metric Bush - FMB404632 - KAN-483,https://app.asana.com/1/357939803556123/1200000000000000.0,['Flanged bearing bush - 40x46x32 - to be shortened'],4,90,Stock Number Substring Match
+.1011.D.101,KAN-427,40x60x1 Thrust washer AS4060,https://app.asana.com/1/357939803556123/1200000000000000.0,['Thrust washer 40x60x1'],16,90,Stock Number Substring Match
+.1011.D.105,KAN-398,20x26x15 flanged - 8 off 1011.B.100 - Flanged Metric Bush - FMB202615 (20 in stock) - KAN-398,https://app.asana.com/1/357939803556123/1200000000000000.0,['Flanged bearing bush - 20x26x15 - to be shortened'],16,90,Stock Number Substring Match
+.1011.D.106,KAN-1216,"Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm   AS3047",https://app.asana.com/1/357939803556123/1200000000000000.0,"['Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm']",24,90,Stock Number Substring Match
+.1012.A.031,KAN-938,"1	off	5/8"" UNF RIGHT HAND THREAD HALF NUT X1	1012.A.031",https://app.asana.com/1/357939803556123/1200000000000000.0,"['5/8"" UNF RIGHT HAND THREAD HALF NUT X1']",2,50,Fuzzy Description Match
+.1016.3.001,KAN-131,Illumination Push button flush mount - 51-151.0252F  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Lift UP.Down Button Black', 'Lift UP.Down Button', 'Lift up/down button', 'Lift UP.Down Button - Brass/black infil', 'Lift UP.Down Button (with ilumination)']",202,90,Stock Number Substring Match
+.1016.3.002,KAN-131,Illumination Push button flush mount - 51-151.0252F  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Call for assistance (Bell), CFA + Doorbell -Brass/black infil', 'Call for assistance (Bell), CFA + Doorbell Black', 'Call for assistance (Bell) (with ilumination), CFA + Doorbell', 'Call for assistance (Bell Button)', 'Call for assistance (Bell), CFA + Doorbell']",48,90,Stock Number Substring Match
+.1016.3.003,KAN-919,Big E-Stop button Harmony  - Onlift RS 330-8587 Emergency Em Stop,https://app.asana.com/1/357939803556123/1200000000000000.0,"['E-Stop Mushroom Head (with ilumination)', 'E-Stop Mushroom Head']",90,90,Stock Number Substring Match
+.1016.3.006,KAN-131,Illumination Push button flush mount - 51-151.0252F  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Stairs push button Black', 'Stairs push button - Brass/black infil', 'Stairs push button', '(Stairs)', 'Stairs Button', 'Stairs push button (with ilumination)']",55,90,Stock Number Substring Match
+.1016.3.007,KAN-131,Illumination Push button flush mount - 51-151.0252F  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Flush E.Stop Button', 'Flush E.Stop Button (with ilumination)']",12,90,Stock Number Substring Match
+.1016.3.009,KAN-132,Keylock 3 pos maint key remove centre - 51-374.F22DF  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Key Switch.2WaySpring', 'Key Switch.2WaySpringReturn (VERIFY!)', 'Key Switch.2WaySpringReturn', 'Key Switch.2WaySpring - Brass infil', 'Key Switch Spring return', 'Key Switch.2WayMaintenance']",38,90,Stock Number Substring Match
+.1016.3.009(2Way-Spr),KAN-132,Keylock 3 pos maint key remove centre - 51-374.F22DF  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,['Key Switch.2WaySpringReturn'],4,90,Stock Number Substring Match
+.1016.3.010,KAN-393,Keylock 2 position Non Spring Return -  51-135.022DF  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Key Switch.SpringReturn', 'Key Switch.1WaySpringReturn', 'Key Switch.1WayMaintained', 'Lift On Key Switch - Brass infil', 'Key Switch.SpringReturn One way', 'Key Switch.SpringReturn One Way', 'Key Switch.SpringReturn (VERIFY!)', 'Key Switch.1WaySpringReturn (VERIFY!)']",104,90,Stock Number Substring Match
+.1016.3.010(1Way-Spr),KAN-134,Keylock 2 position 1C/O momentary - 51-141.025D2F  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Key Switch.1WaySpringReturn (VERIFY!)', 'Key Switch.1WaySpringReturn']",15,90,Stock Number Substring Match
+.1016.3.011,KAN-131,Illumination Push button flush mount - 51-151.0252F  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Key Switch.2WayMaintained', 'Call for assistance (Bell), CFA + Doorbell']",3,90,Stock Number Substring Match
+.1016.A.014,KAN-665,Long Arms for IMO limit switches - LRC5A55,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Speaker Driver, 2W, 8?']",1,90,Stock Number Substring Match
+.1016.E.001(BackPlate),KAN-1424,"RS 253-8560 28mm Black, Stainless Steel 304 P Clip 1 off",https://app.asana.com/1/357939803556123/1210000000000000.0,['(BackPlate) Black matt coating'],2,90,Stock Number Substring Match
+.1016.E.002(BackingBoxA.),KAN-1424,"RS 253-8560 28mm Black, Stainless Steel 304 P Clip 1 off",https://app.asana.com/1/357939803556123/1210000000000000.0,['(BackingBoxA) Black matt coating'],2,90,Stock Number Substring Match
+.1016.F.005,KAN-325,'- Controlling revised NBSS drawings,https://app.asana.com/1/357939803556123/1160000000000000.0,['BackingBox'],4,90,Stock Number Substring Match
+.1016.H.001,KAN-310,NBSS034.001.03- Seated Only SWL plate 350Kg - on call off,https://app.asana.com/1/357939803556123/1170000000000000.0,['SWLPlate.OneWheelchairUser'],1,90,CAD substring
+.1016.J.RemoteControll,KAN-224,Upgrading waterproof cable reels,https://app.asana.com/1/357939803556123/1210000000000000.0,"['Standard Hand Held Radio Transmitters (4B)', 'RemoteControll']",11,90,Stock Number Substring Match
+.1016.P.001,KAN-461,RS PRO Green Panel Mount Indicator chrome,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Green Indicator, S/S finish']",12,90,Stock Number Substring Match
+.1016.X.003,KAN-1,10 off NBSS041 - Narrow Call for Assistance face plate,https://app.asana.com/1/357939803556123/1200000000000000.0,['PB3004-US90-EN-Compact-2-Pushbutton'],4,90,Stock Number Substring Match
+.1016.X.006,KAN-1,10 off NBSS041 - Narrow Call for Assistance face plate,https://app.asana.com/1/357939803556123/1200000000000000.0,['PB3004-US90-EN-Compact-2-Pushbutton'],2,90,Stock Number Substring Match
+.1017.TS6,KAN-729,TS6 end caps,https://app.asana.com/1/357939803556123/1210000000000000.0,['TS6 Sensing Edge'],1,90,Stock Number Substring Match
+.1020.A.023,KAN-231,Blue Lens for EAO buttons - 61-9642.6  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Call for assistance (Bell), CFA + Doorbell']",1,90,Stock Number Substring Match
+.1020.A.24,KAN-231,Blue Lens for EAO buttons - 61-9642.6  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Call for assistance (Bell), CFA + Doorbell']",1,90,Stock Number Substring Match
+.1021.A.016,KAN-251,NUTR 3072 - 4 off 1011.B.016  - PLATED NUTR 30 - 72mm Roller bearings,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Bearing: 72 +0/-0,1 x 30 +0/-0,03']",12,90,Stock Number Substring Match
+.1021.A.028,KAN-456,40x46x40 Flanged 4 off 1011.B.028 - Flanged bearing bush - AL404640 (40 in stock) - KAN-456,https://app.asana.com/1/357939803556123/1150000000000000.0,['Flanged bearing bush - 40x46x40'],40,90,Stock Number Substring Match
+.1021.A.038,KAN-455,30x40x45  4 off 1011.B.038 - Plain bearing bush  - KAN-455,https://app.asana.com/1/357939803556123/1150000000000000.0,['Plain bearing bush - 30x40x45'],16,90,Stock Number Substring Match
+.1050.A.014,KAN-112,Type F - 101B/0050/FS/F/A/*0600/*0300/Y - w/o resistor (2pair of wires),https://app.asana.com/1/357939803556123/1200000000000000.0,['Ribbon Switch 101B'],6,90,Stock Number Substring Match
+.1050.A.028,KAN-112,Type F - 101B/0050/FS/F/A/*0600/*0300/Y - w/o resistor (2pair of wires),https://app.asana.com/1/357939803556123/1200000000000000.0,['Ribbon Switch 101B With resistor'],6,90,Stock Number Substring Match
+.1055.A.009,KAN-930,1	off	Roller Limit Switch (min. 2m Cable)	1008.A6.EP1G12Z020U	EP1G12Z020U	http://www.comepi.it	LongVale			SES101,https://app.asana.com/1/357939803556123/1200000000000000.0,"['EP1G14Z (Limit Swith)', 'EP1G12Z020U 2 m PVC cable', 'EP1G12ZU 2 m PVC cable']",14,90,Stock Number Substring Match
+.121.SingleSprocket,KAN-366,30 off NBSS125 Triple Sprocket with keyway - ST4SR14 with keyway,https://app.asana.com/1/357939803556123/929000000000000.0,['Single Sprocket NBSS 121 DO NOT ORDER FOR TRIPLE SPROCKET'],9,90,Stock substring
+.126 NBSS,KAN-317,20 off NBSS022  (HydraulicBulkheadPlate),https://app.asana.com/1/357939803556123/1200000000000000.0,['Sprocket Pin Motor'],4,90,Stock substring
+.126(SprocketPlatePinMotor),KAN-317,20 off NBSS022  (HydraulicBulkheadPlate),https://app.asana.com/1/357939803556123/1200000000000000.0,['Sprocket Pin Motor - NBSS 126'],4,90,Stock substring
+.1279.1008.V1.MiniActuator[50mm],KAN-175,10 off MP SX 25/18x50 SAS - 50cc 4 port conforti hydraulic actuators,https://app.asana.com/1/357939803556123/1200000000000000.0,['Mini hydraulic actuator _ 50mm stroke'],8,90,Stock Number Substring Match
+.129 NBSS,KAN-1334,1005.b.b26W,https://app.asana.com/1/357939803556123/1210000000000000.0,['Loading Point Washer dia 50 x 50'],8,90,Stock substring
+.2000.E.029,KAN-464,Polyurethane Cast Iron 50mm Ball Bearing Wheel 120kg Load BZH50WPTBJM12,https://app.asana.com/1/357939803556123/1200000000000000.0,['Polyurethane Cast Iron 50mm Ball Bearing'],38,90,Stock Number Substring Match
+.2000.E.050,KAN-1212,WTM-1224-015  12 x 24 x 1.5 washer,https://app.asana.com/1/357939803556123/1200000000000000.0,['Thrust washer'],64,90,Stock Number Substring Match
+.2000.E.051,KAN-262,15791-170522 - Blickle - stock orange wheels order - 901085468,https://app.asana.com/1/357939803556123/1200000000000000.0,['Guide roller'],16,90,Stock Number Substring Match
+.2100.B.129,KAN-28,2 off NBB4-12GM30-E2-V1 - Ram Sensor (£61.33 ea),https://app.asana.com/1/357939803556123/1200000000000000.0,['Inductive sensor'],4,90,Stock Number Substring Match
+.3000.1005.006,KAN-251,NUTR 3072 - 4 off 1011.B.016  - PLATED NUTR 30 - 72mm Roller bearings,https://app.asana.com/1/357939803556123/1200000000000000.0,['Bearing_NUTR 30-72'],6,90,Stock Number Substring Match
+.3000.Winkel.Bearing_(4.053),KAN-143,20 off Winkle Bearings for stock,https://app.asana.com/1/357939803556123/1200000000000000.0,['Winkel Bearing + PL00(Plate) -  TDC Coating'],8,90,Stock Number Substring Match
+.35_8K_G15,KAN-888,Gorilla Super glue,https://app.asana.com/1/357939803556123/1210000000000000.0,['Heavy duty cast iron wheel 35mm dia.'],9,90,Stock Number Substring Match
+.4-216,KAN-264,25 off M16 swivel leveling feet - 674-216  WDS,https://app.asana.com/1/357939803556123/1200000000000000.0,['Swivel Pad M16'],8,90,Stock Number Substring Match
+.431 NBSS,KAN-711,Micro stepper Driver CW8060 (DON'T USE),https://app.asana.com/1/357939803556123/1210000000000000.0,['Rising Barrier Sliding Wheel'],2,90,Stock substring
+.6000.A.001,KAN-380,100 off NBSS014 Glacier Bearing Bush 14X16X15  WMU141615  MB1415DU,https://app.asana.com/1/357939803556123/929000000000000.0,['Bearing Bush (14X16X13) (CUT FOR 13mm)'],96,90,Stock Number Substring Match
+.6000.A.014,KAN-1014,60 off M14 Form A Nylon Washer White - SKU 2921065,https://app.asana.com/1/357939803556123/1200000000000000.0,['M14 Form A Nylon Washer White'],48,90,Stock Number Substring Match
+.6000.A.023,KAN-68,15235-280122 - ebay - Nema 34 - 14-08188-52578,https://app.asana.com/1/357939803556123/1200000000000000.0,['Stepper motor'],2,90,Stock Number Substring Match
+.6000.A.033,KAN-683,WSM-0810-20,https://app.asana.com/1/357939803556123/1210000000000000.0,"['Plain Metric Bush (8X10X20)', 'Plain Metric Bush (8X12X20)']",10,90,Stock Number Substring Match
+.6000.A.081,KAN-712,Digital Micro stepper Driver DM805-AI (supplied in the PLC),https://app.asana.com/1/357939803556123/1210000000000000.0,['DM805-AI - Digital Microstepping Driver'],2,90,Stock Number Substring Match
+.6000.A.083,KAN-47,single chain link for 08B-1R,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Pinion CUT 5mm', 'Pinion']",10,90,Stock Number Substring Match
+.6000.A.090,KAN-892,Flexible Coupling 14mm to 12mm,https://app.asana.com/1/357939803556123/1200000000000000.0,['Flexible Coupling 14mm to 8mm'],10,50,Fuzzy Description Match
+.6000.A.153,KAN-463,Polyurethane Cast Iron 50mm Ball Bearing Wheel 110kg Load BZH50WPTBJM17,https://app.asana.com/1/357939803556123/1200000000000000.0,['Polyurethane Cast Iron 50mm Ball Bearing 110kg Load'],24,90,Stock Number Substring Match
+.6000.A.155,KAN-221,PFM-0405-04,https://app.asana.com/1/357939803556123/1200000000000000.0,['Side Vertical Nylon Slider Bearing'],48,90,Stock Number Substring Match
+.6000.A.167,KAN-891,Flexible Coupling 16mm to 14mm,https://app.asana.com/1/357939803556123/1200000000000000.0,['Flexible Coupling 16mm to 14mm'],4,70,Exact Description Match
+.6000.A.MJC-30-BL-14-14,KAN-891,Flexible Coupling 16mm to 14mm,https://app.asana.com/1/357939803556123/1200000000000000.0,['Flexible Coupling 14mm to 14mm'],10,50,Fuzzy Description Match
+.6000.A.TD7654,KAN-35,13196-210121pro  - SG Transmission - Permanent magnetic brake order - 27320,https://app.asana.com/1/357939803556123/1200000000000000.0,['PERMANENT MAGNET BRAKE type 62'],3,90,Stock Number Substring Match
+.6000.B.029,KAN-112,Type F - 101B/0050/FS/F/A/*0600/*0300/Y - w/o resistor (2pair of wires),https://app.asana.com/1/357939803556123/1200000000000000.0,['Ribbon Switch 101B without resistor'],20,90,Stock Number Substring Match
+.6000.B.040,KAN-112,Type F - 101B/0050/FS/F/A/*0600/*0300/Y - w/o resistor (2pair of wires),https://app.asana.com/1/357939803556123/1200000000000000.0,['Ribbon Switch 101B with resistor'],12,90,Stock Number Substring Match
+.6000.B.249,KAN-1066,102910 - 1.66n/mm,https://app.asana.com/1/357939803556123/1200000000000000.0,['Spring'],24,90,Stock Number Substring Match
+.6000.B.250,KAN-1067,103110 - 3.87 N/mm,https://app.asana.com/1/357939803556123/1200000000000000.0,['Spring'],24,90,Stock Number Substring Match
+.6000.B.MJC-30-BL-12-14,KAN-892,Flexible Coupling 14mm to 12mm,https://app.asana.com/1/357939803556123/1200000000000000.0,['Flexible Coupling 14mm to 12mm'],4,70,Exact Description Match
+.6000.D.014,KAN-579,"U Clip, 10.7mm x 12.7mm x 0.36mm EPF186-PPBLK",https://app.asana.com/1/357939803556123/1210000000000000.0,"['U Clip, 10.7mm x 12.7mm x 0.36mm']",16,50,Fuzzy Description Match
+.912 - 4 x 6.5,KAN-258,Woodruff Stock Keys,https://app.asana.com/1/357939803556123/1200000000000000.0,['Woodruff Keys'],4,50,Fuzzy Description Match
+.A3.001,KAN-566,MP200702 - N/C Magnetic Proximity Sensor,https://app.asana.com/1/357939803556123/1210000000000000.0,['MP200701 - Magnetic Proximity Sensor'],22,50,Fuzzy Description Match
+.C.002,KAN-919,Big E-Stop button Harmony  - Onlift RS 330-8587 Emergency Em Stop,https://app.asana.com/1/357939803556123/1200000000000000.0,['E.Stop - Big'],1,90,Stock Number Substring Match
+.Compress Spring1,KAN-997,B4-3443-2M  - 7.62N  -  non plated,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Compress spring 7,62N/mm - PLATED']",4,90,Stock Number Substring Match
+.Compress Spring11,KAN-997,B4-3443-2M  - 7.62N  -  non plated,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Compress spring 7,62N/mm - PLATED']",8,90,Stock Number Substring Match
+.Compress Spring12,KAN-1069,M165106 - 1.73N/mm -  Glass Barrier Springs - OBSOLETE,https://app.asana.com/1/357939803556123/1200000000000000.0,"['spring 8mm dia, 30mm free length, 1.73N/mm ratio']",12,90,Stock Number Substring Match
+.E-Clip_15.5mmShaft_12mmGroove,KAN-1293,"E Type Circlip, 12mm Shaft S/S - 209-6918",https://app.asana.com/1/357939803556123/1210000000000000.0,['E - type circlip'],32,90,Stock Number Substring Match
+.ed Bush 16x22x16mm,KAN-525,2	off	Oil Filled Bronze Flanged Bush 16x22x16mm	Flanged Bush 16x22x16mm,https://app.asana.com/1/357939803556123/1200000000000000.0,['Oil Filled Bronze Flanged Bush 16x22x16mm'],4,90,Stock Number Substring Match
+.ed Bush 16x22x25mm,KAN-524,2	off	Oil Filled Bronze Flanged Bush 16x22x25mm	Flanged Bush 16x22x25mm,https://app.asana.com/1/357939803556123/1200000000000000.0,['Oil Filled Bronze Flanged Bush 16x22x25mm'],4,90,Stock Number Substring Match
+.ess Spring1,KAN-997,B4-3443-2M  - 7.62N  -  non plated,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Compress spring 7,62N/mm - PLATED']",4,90,Stock Number Substring Match
+.ess Spring11,KAN-1235,364320 - 55.46n/mm,https://app.asana.com/1/357939803556123/1210000000000000.0,"['Spring 25.9OD, 63.5mm free length, 55.46N/mm rate']",2,90,Stock Number Substring Match
+.ess Spring12,KAN-987,M165505 - 4.79N/mm,https://app.asana.com/1/357939803556123/1200000000000000.0,"['spring 8mm dia, 25mm free length, 4.79N/mm ratio']",16,90,Stock Number Substring Match
+.FT257_6-12,KAN-833,19225-221124 - Enrgtech - restock hand pads - 0018220,https://app.asana.com/1/357939803556123/1210000000000000.0,['Piston check valve'],6,90,Stock Number Substring Match
+.H500,KAN-165,H500 - Accumulator 500cc- Diaphragm - set to 60 bar pre-charge (10 off ),https://app.asana.com/1/357939803556123/1200000000000000.0,['Hydraulic Accumulator - LT - 92mm wide (60 PSI pr-charge)'],2,90,Stock Number Substring Match
+.HPMSF433WHSNN05PN,KAN-140,14911-191021 - Hydraproducts - 1.5kw & 1.1kw power packs - 127155,https://app.asana.com/1/357939803556123/1200000000000000.0,['1.1 kW Motor Pump Unit + 4l tank'],4,90,Stock Number Substring Match
+.ISO 3912 - 4 x 6.5,KAN-258,Woodruff Stock Keys,https://app.asana.com/1/357939803556123/1200000000000000.0,['Woodruff Keys'],2,50,Fuzzy Description Match
+.KBST-G-14(0-1),KAN-969,14mm bore - KBST-G-14,https://app.asana.com/1/357939803556123/1200000000000000.0,['Split Rigid Shaft Coupling'],1,90,Stock Number Substring Match
+.KBST-G-16(0-1),KAN-479,16mm bore - KBST-G-16 (rev design 15.08.22),https://app.asana.com/1/357939803556123/1200000000000000.0,['Split Rigid Shaft Coupling'],2,90,Stock Number Substring Match
+.L.008,KAN-355,100 off NBSS008 Rev 1 (Stair Wheels),https://app.asana.com/1/357939803556123/929000000000000.0,['NylonStairWheel'],12,90,Stock substring
+.L.014,KAN-79,Type I - 101B/0080/FS/F/A/*0600/*0600/Y - w/o resistor (2pair of wires) with 200mm long channel  **MUST BE SPEAKER CABLE** - Drawing 22991942,https://app.asana.com/1/357939803556123/1200000000000000.0,['Bearing Bush (14X16X15)'],24,90,CAD substring
+.L.034.001,KAN-311,sending 10 off for call off,https://app.asana.com/1/357939803556123/1200000000000000.0,['SafeWorkingLoadPlate: WheelchairUser'],1,90,Stock substring
+.L.1003.A.013,KAN-746,Brother priner ink 422XL pack,https://app.asana.com/1/357939803556123/1210000000000000.0,"['Bottom Step Wheel (85mm OD, 60mm Width, )']",4,90,Stock Number Substring Match
+.L.1003.A.087,KAN-1014,60 off M14 Form A Nylon Washer White - SKU 2921065,https://app.asana.com/1/357939803556123/1200000000000000.0,['M14 Form A Nylon Washer White'],8,90,Stock Number Substring Match
+.L.1003.A.124,KAN-457,12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock),https://app.asana.com/1/357939803556123/1200000000000000.0,['Thrust Washer 20x36x1.5mm'],8,90,Stock Number Substring Match
+.L.1006.A.011,KAN-580,Male M8 40x30mm with x30 stud 60 ShA  - Rubber AV mount  RS COMPONENTS ONLY,https://app.asana.com/1/357939803556123/1210000000000000.0,['40x30mm Shock Mount M8 20mm studd'],4,90,Stock substring
+.L.1008.A1,KAN-126,LRC5A55 - the long arm  limit switch (Buy ARMS ONLY),https://app.asana.com/1/357939803556123/1200000000000000.0,['Adjustable actuator LimitSwitch: LRC5A55'],2,90,Stock Number Substring Match
+.L.1008.A3.001,KAN-566,MP200702 - N/C Magnetic Proximity Sensor,https://app.asana.com/1/357939803556123/1210000000000000.0,['MP200701 - Magnetic Proximity Sensor N/C'],1,50,Fuzzy Description Match
+.L.1008.D.068,KAN-968,Male M10 50x25mm with x25 stud 60 ShA  - Rubber AV mount  (RS-385-1586),https://app.asana.com/1/357939803556123/1200000000000000.0,['Shock Mount M10 50mm Diameter 300daN Compression Load 6mm'],4,90,Stock Number Substring Match
+.L.1008.N1,KAN-125,LRC5A54 - short arm limit switches,https://app.asana.com/1/357939803556123/1200000000000000.0,['Standard LimitSwitch: LRC5A54'],2,90,Stock Number Substring Match
+.L.1008.T.13ID_P_Clip,KAN-1156,"RS 298-8097 13mm Black, Stainless Steel P Clip",https://app.asana.com/1/357939803556123/1200000000000000.0,['Rubber-lined clamp; 13mm ID'],12,90,Stock substring
+.L.1008.U.05,KAN-1348,OB11  junction box,https://app.asana.com/1/357939803556123/1210000000000000.0,['SpringCable_JunctionBox+Glands'],4,90,Stock Number Substring Match
+.L.1016.3.001,KAN-231,Blue Lens for EAO buttons - 61-9642.6  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,['Lift UP.Down Button'],2,90,Stock Number Substring Match
+.L.1016.3.003,KAN-746,Brother priner ink 422XL pack,https://app.asana.com/1/357939803556123/1210000000000000.0,['E-Stop Mushroom Head'],1,90,Stock Number Substring Match
+.L.1016.3.006,KAN-231,Blue Lens for EAO buttons - 61-9642.6  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,['Stairs push button'],1,90,Stock Number Substring Match
+.L.1016.3.010,KAN-134,Keylock 2 position 1C/O momentary - 51-141.025D2F  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,['Key Switch.SpringReturn (VERIFY!)'],2,90,Stock Number Substring Match
+.L.105,KAN-1422,"Pilz  Pnoz X2.1 Safety Relay 24V ac/dc, Dual-Channel 2 Safety Contacts - RS 239-1055",https://app.asana.com/1/357939803556123/1210000000000000.0,['OrangeWheel_Rod 20mm'],4,90,Stock substring
+.L.1055.A.009,KAN-141,EP1G12ZU -  roller head (inline) - 4 core 1NC/1NO - most Common,https://app.asana.com/1/357939803556123/1200000000000000.0,['EP1G12ZU 2 m PVC cable'],1,90,Stock Number Substring Match
+.L.129,KAN-1334,1005.b.b26W,https://app.asana.com/1/357939803556123/1210000000000000.0,['Loading Point Washer dia 50 x 50'],8,90,Stock substring
+.L.WDS674-216,KAN-264,25 off M16 swivel leveling feet - 674-216  WDS,https://app.asana.com/1/357939803556123/1200000000000000.0,['Swivel Pad M16'],8,90,CAD substring
+.made up WDS674-216,KAN-264,25 off M16 swivel leveling feet - 674-216  WDS,https://app.asana.com/1/357939803556123/1200000000000000.0,['Swivel Pad M16'],4,90,Stock substring
+.N1,KAN-125,LRC5A54 - short arm limit switches,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Standard LimitSwitch: LRC5A54', 'LimitSwitch - FR554']",10,90,Stock Number Substring Match
+.p_15.5mmShaft_12mmGroove,KAN-1293,"E Type Circlip, 12mm Shaft S/S - 209-6918",https://app.asana.com/1/357939803556123/1210000000000000.0,['E - type circlip'],24,90,Stock Number Substring Match
+.procketPlatePinC),KAN-337,20 off NBSS128 Rev 2 (SprocketPlatePinC),https://app.asana.com/1/357939803556123/929000000000000.0,['Sprocket Pin C - NBSS 128'],3,90,CAD substring
+.RP2518X50S,KAN-175,10 off MP SX 25/18x50 SAS - 50cc 4 port conforti hydraulic actuators,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Mini hydraulic actuator _ 50mm stroke,  connectors on both sides']",2,90,Stock Number Substring Match
+.RP2518X50S_5199_15_10_2013_17_38_32,KAN-175,10 off MP SX 25/18x50 SAS - 50cc 4 port conforti hydraulic actuators,https://app.asana.com/1/357939803556123/1200000000000000.0,['Mini hydraulic actuator _ 50mm stroke_connectors on both sides'],4,90,Stock Number Substring Match
+.S1.008,KAN-355,100 off NBSS008 Rev 1 (Stair Wheels),https://app.asana.com/1/357939803556123/929000000000000.0,['NylonStairWheel'],16,90,Stock substring
+.S1.014,KAN-380,100 off NBSS014 Glacier Bearing Bush 14X16X15  WMU141615  MB1415DU,https://app.asana.com/1/357939803556123/929000000000000.0,['Bearing Bush (14X16X15)'],32,90,Stock substring
+.S1.034.001,KAN-311,sending 10 off for call off,https://app.asana.com/1/357939803556123/1200000000000000.0,['SafeWorkingLoadPlate: WheelchairUser'],1,90,Stock substring
+.S1.1000.A.001,KAN-464,Polyurethane Cast Iron 50mm Ball Bearing Wheel 120kg Load BZH50WPTBJM12,https://app.asana.com/1/357939803556123/1200000000000000.0,['Polyurethane Cast Iron 50mm Plain Bore 80kg Load'],4,90,Stock substring
+.S1.1000.ClevisPin 12x60mm,KAN-925,12x60 Clevis pins  CPSS-12-60,https://app.asana.com/1/357939803556123/1200000000000000.0,['Clevis Pin 12x60mm'],2,90,Stock substring
+.S1.1003.A.013,KAN-1423,"RS - 554-636 Slide On Cable Markers, White on Brown, Pre-printed ""1""  2 off",https://app.asana.com/1/357939803556123/1210000000000000.0,"['Bottom Step Wheel (85mm OD, 60mm Width, )']",4,90,Stock substring
+.S1.1003.A.087,KAN-1014,60 off M14 Form A Nylon Washer White - SKU 2921065,https://app.asana.com/1/357939803556123/1200000000000000.0,['M14 Form A Nylon Washer White'],12,90,Stock substring
+.S1.1003.A.124,KAN-457,12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock),https://app.asana.com/1/357939803556123/1200000000000000.0,['Thrust Washer 20x36x1.5mm'],8,90,Stock substring
+.S1.1006.A.011,KAN-580,Male M8 40x30mm with x30 stud 60 ShA  - Rubber AV mount  RS COMPONENTS ONLY,https://app.asana.com/1/357939803556123/1210000000000000.0,['RubberBuffer'],4,90,Stock substring
+.S1.1006.A.094,KAN-547,20mm magnet - F315N-20,https://app.asana.com/1/357939803556123/1200000000000000.0,['Round Countersunk Magnet'],4,90,Stock substring
+.S1.1008.A3.001,KAN-566,MP200702 - N/C Magnetic Proximity Sensor,https://app.asana.com/1/357939803556123/1210000000000000.0,['MP200701 - Magnetic Proximity Sensor'],1,50,Fuzzy name
+.S1.1008.C.002,KAN-919,Big E-Stop button Harmony  - Onlift RS 330-8587 Emergency Em Stop,https://app.asana.com/1/357939803556123/1200000000000000.0,['E.Stop - Big'],1,90,Stock substring
+.S1.1008.D.067,KAN-151,Female M8 30x17mm 60 shA - Rubber AV mount,https://app.asana.com/1/357939803556123/1200000000000000.0,['Rubber Buffer'],4,90,Stock substring
+.S1.1008.N1,KAN-125,LRC5A54 - short arm limit switches,https://app.asana.com/1/357939803556123/1200000000000000.0,['Standard LimitSwitch: LRC5A54'],1,90,Stock substring
+.S1.1008.T.13ID_P_Clip,KAN-1156,"RS 298-8097 13mm Black, Stainless Steel P Clip",https://app.asana.com/1/357939803556123/1200000000000000.0,['Rubber-lined clamp; 13mm ID'],10,90,Stock substring
+.S1.1016.3.009,KAN-132,Keylock 3 pos maint key remove centre - 51-374.F22DF  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,['Key Switch.2WaySpringReturn'],1,90,Stock substring
+.S1.1016.3.010,KAN-134,Keylock 2 position 1C/O momentary - 51-141.025D2F  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,['Key Switch.1WaySpringReturn'],1,90,Stock substring
+.S1.129,KAN-1334,1005.b.b26W,https://app.asana.com/1/357939803556123/1210000000000000.0,['Loading Point Washer dia 50 x 50'],12,90,Stock substring
+.S1.WDS674-216,KAN-264,25 off M16 swivel leveling feet - 674-216  WDS,https://app.asana.com/1/357939803556123/1200000000000000.0,['Swivel Pad M16'],8,90,Stock substring
+.S2.008,KAN-355,100 off NBSS008 Rev 1 (Stair Wheels),https://app.asana.com/1/357939803556123/929000000000000.0,['NylonStairWheel'],16,90,Stock substring
+.S2.014,KAN-380,100 off NBSS014 Glacier Bearing Bush 14X16X15  WMU141615  MB1415DU,https://app.asana.com/1/357939803556123/929000000000000.0,['Bearing Bush (14X16X15)'],32,90,Stock substring
+.S2.034.001,KAN-311,sending 10 off for call off,https://app.asana.com/1/357939803556123/1200000000000000.0,['SafeWorkingLoadPlate: WheelchairUser'],1,90,Stock substring
+.S2.1000.A.001,KAN-464,Polyurethane Cast Iron 50mm Ball Bearing Wheel 120kg Load BZH50WPTBJM12,https://app.asana.com/1/357939803556123/1200000000000000.0,['Polyurethane Cast Iron 50mm Plain Bore 80kg Load'],8,90,Stock Number Substring Match
+.S2.1000.ClevisPin 12x60mm,KAN-925,12x60 Clevis pins  CPSS-12-60,https://app.asana.com/1/357939803556123/1200000000000000.0,['Clevis Pin 12x60mm'],4,90,Stock Number Substring Match
+.S2.1003.A.013,KAN-746,Brother priner ink 422XL pack,https://app.asana.com/1/357939803556123/1210000000000000.0,"['Bottom Step Wheel (85mm OD, 60mm Width, )']",8,90,Stock Number Substring Match
+.S2.1003.A.087,KAN-1014,60 off M14 Form A Nylon Washer White - SKU 2921065,https://app.asana.com/1/357939803556123/1200000000000000.0,['M14 Form A Nylon Washer White'],24,90,Stock Number Substring Match
+.S2.1003.A.124,KAN-457,12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock),https://app.asana.com/1/357939803556123/1200000000000000.0,['Thrust Washer 20x36x1.5mm'],8,90,Stock Number Substring Match
+.S2.1004.B3.054,KAN-1334,1005.b.b26W,https://app.asana.com/1/357939803556123/1210000000000000.0,['FRAME LOAD Washer - NBSS 129'],4,90,Stock substring
+.S2.1006.A.011,KAN-580,Male M8 40x30mm with x30 stud 60 ShA  - Rubber AV mount  RS COMPONENTS ONLY,https://app.asana.com/1/357939803556123/1210000000000000.0,['RubberBuffer'],4,90,Stock substring
+.S2.1006.A.094,KAN-547,20mm magnet - F315N-20,https://app.asana.com/1/357939803556123/1200000000000000.0,['Round Countersunk Magnet'],8,90,Stock Number Substring Match
+.S2.1008.A3.001,KAN-566,MP200702 - N/C Magnetic Proximity Sensor,https://app.asana.com/1/357939803556123/1210000000000000.0,['MP200701 - Magnetic Proximity Sensor'],2,50,Fuzzy Description Match
+.S2.1008.C.002,KAN-919,Big E-Stop button Harmony  - Onlift RS 330-8587 Emergency Em Stop,https://app.asana.com/1/357939803556123/1200000000000000.0,['E.Stop - Big'],2,90,Stock Number Substring Match
+.S2.1008.D.067,KAN-151,Female M8 30x17mm 60 shA - Rubber AV mount,https://app.asana.com/1/357939803556123/1200000000000000.0,['Rubber Buffer'],8,90,Stock Number Substring Match
+.S2.1008.N1,KAN-125,LRC5A54 - short arm limit switches,https://app.asana.com/1/357939803556123/1200000000000000.0,['Standard LimitSwitch: LRC5A54'],1,90,Stock Number Substring Match
+.S2.1008.T.13ID_P_Clip,KAN-1156,"RS 298-8097 13mm Black, Stainless Steel P Clip",https://app.asana.com/1/357939803556123/1200000000000000.0,['Rubber-lined clamp; 13mm ID'],10,90,Stock substring
+.S2.1016.3.009,KAN-132,Keylock 3 pos maint key remove centre - 51-374.F22DF  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,['Key Switch.2WaySpringReturn'],2,90,Stock Number Substring Match
+.S2.1016.3.010,KAN-134,Keylock 2 position 1C/O momentary - 51-141.025D2F  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,['Key Switch.1WaySpringReturn'],2,90,Stock Number Substring Match
+.S2.129,KAN-1334,1005.b.b26W,https://app.asana.com/1/357939803556123/1210000000000000.0,['Loading Point Washer dia 50 x 50'],12,90,Stock substring
+.S2.WDS674-216,KAN-264,25 off M16 swivel leveling feet - 674-216  WDS,https://app.asana.com/1/357939803556123/1200000000000000.0,['Swivel Pad M16'],8,90,Stock substring
+.S3.008,KAN-355,100 off NBSS008 Rev 1 (Stair Wheels),https://app.asana.com/1/357939803556123/929000000000000.0,['NylonStairWheel'],28,90,Stock substring
+.S3.014,KAN-380,100 off NBSS014 Glacier Bearing Bush 14X16X15  WMU141615  MB1415DU,https://app.asana.com/1/357939803556123/929000000000000.0,['Bearing Bush (14X16X15)'],67,90,Stock substring
+.S3.025,KAN-378,100 off NBSS025   14x26x1.5mm (RisingBarrierThrustWasher) TFW1426015 DLU,https://app.asana.com/1/357939803556123/929000000000000.0,"['Metric DU Washers (14x26x1,5)']",13,90,Stock substring
+.S3.034.001,KAN-311,sending 10 off for call off,https://app.asana.com/1/357939803556123/1200000000000000.0,['SafeWorkingLoadPlate: WheelchairUser'],1,90,Stock substring
+.S3.036,KAN-308,60 off NBSS036 (SprocketWasher),https://app.asana.com/1/357939803556123/929000000000000.0,['Sprocket Washer'],4,90,Stock substring
+.S3.1000.A.001,KAN-464,Polyurethane Cast Iron 50mm Ball Bearing Wheel 120kg Load BZH50WPTBJM12,https://app.asana.com/1/357939803556123/1200000000000000.0,['Polyurethane Cast Iron 50mm Plain Bore 80kg Load'],4,90,Stock Number Substring Match
+.S3.1000.ClevisPin 12x60mm,KAN-925,12x60 Clevis pins  CPSS-12-60,https://app.asana.com/1/357939803556123/1200000000000000.0,['Clevis Pin 12x60mm'],2,90,Stock Number Substring Match
+.S3.1003.A.013,KAN-746,Brother priner ink 422XL pack,https://app.asana.com/1/357939803556123/1210000000000000.0,"['Bottom Step Wheel (85mm OD, 60mm Width, )']",4,90,Stock Number Substring Match
+.S3.1003.A.061,KAN-159,Guide roller with nylon tread  FPO 40x20/10-9K (ID 761487) - white,https://app.asana.com/1/357939803556123/1200000000000000.0,['Guide roller with nylon tread'],2,90,Stock Number Substring Match
+.S3.1003.A.087,KAN-1014,60 off M14 Form A Nylon Washer White - SKU 2921065,https://app.asana.com/1/357939803556123/1200000000000000.0,['M14 Form A Nylon Washer White'],24,90,Stock Number Substring Match
+.S3.1003.B.125,KAN-457,12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock),https://app.asana.com/1/357939803556123/1200000000000000.0,['Thrust Washer 20x36x1.5mm'],8,90,Stock Number Substring Match
+.S3.1005.B.002,KAN-370,16 off Harken tracks - 2720.1.5M - NO LONGER BUYNG,https://app.asana.com/1/357939803556123/1200000000000000.0,['Harken Track - 1.5m long'],4,90,Stock Number Substring Match
+.S3.1005.B.088,KAN-718,Jubilee clips 125mm  - 39875,https://app.asana.com/1/357939803556123/1210000000000000.0,['Spring -  rising barrier jam device - 14.77 n/mm - painted RED'],8,90,Stock substring
+.S3.1005.B.092,KAN-718,Jubilee clips 125mm  - 39875,https://app.asana.com/1/357939803556123/1210000000000000.0,['Spring -  rising barrier jam device - 11.52 n/mm -  painted BLUE'],8,90,Stock substring
+.S3.1005.C.014,KAN-263,40 off Cylindrical Bumper 28D x 25H - 6001200,https://app.asana.com/1/357939803556123/1200000000000000.0,['Rubber Stopper'],2,90,Stock Number Substring Match
+.S3.1006.A.011,KAN-580,Male M8 40x30mm with x30 stud 60 ShA  - Rubber AV mount  RS COMPONENTS ONLY,https://app.asana.com/1/357939803556123/1210000000000000.0,['RubberBuffer'],4,90,Stock substring
+.S3.1006.A.094,KAN-547,20mm magnet - F315N-20,https://app.asana.com/1/357939803556123/1200000000000000.0,['Round Countersunk Magnet'],2,90,Stock Number Substring Match
+.S3.1008.A3.001,KAN-566,MP200702 - N/C Magnetic Proximity Sensor,https://app.asana.com/1/357939803556123/1210000000000000.0,['MP200701 - Magnetic Proximity Sensor'],1,50,Fuzzy Description Match
+.S3.1008.C.002,KAN-919,Big E-Stop button Harmony  - Onlift RS 330-8587 Emergency Em Stop,https://app.asana.com/1/357939803556123/1200000000000000.0,['E.Stop - Big'],1,90,Stock Number Substring Match
+.S3.1008.N1,KAN-125,LRC5A54 - short arm limit switches,https://app.asana.com/1/357939803556123/1200000000000000.0,['Standard LimitSwitch: LRC5A54'],6,90,Stock Number Substring Match
+.S3.1008.T.13ID_P_Clip,KAN-1156,"RS 298-8097 13mm Black, Stainless Steel P Clip",https://app.asana.com/1/357939803556123/1200000000000000.0,['Rubber-lined clamp; 13mm ID'],14,90,Stock substring
+.S3.1008.U.05,KAN-1348,OB11  junction box,https://app.asana.com/1/357939803556123/1210000000000000.0,['SpringCable_JunctionBox+Glands'],4,90,Stock Number Substring Match
+.S3.121,KAN-366,30 off NBSS125 Triple Sprocket with keyway - ST4SR14 with keyway,https://app.asana.com/1/357939803556123/929000000000000.0,['Single Sprocket  DO NOT ORDER FOR TRIPLE SPROCKET'],4,90,Stock substring
+.S3.129,KAN-1334,1005.b.b26W,https://app.asana.com/1/357939803556123/1210000000000000.0,['Loading Point Washer dia 50 x 50'],8,90,Stock substring
+.S3.431,KAN-711,Micro stepper Driver CW8060 (DON'T USE),https://app.asana.com/1/357939803556123/1210000000000000.0,['Rising Barrier Sliding Wheel'],2,90,Stock substring
+.S4.008,KAN-355,100 off NBSS008 Rev 1 (Stair Wheels),https://app.asana.com/1/357939803556123/929000000000000.0,['NylonStairWheel'],24,90,Stock substring
+.S4.014,KAN-380,100 off NBSS014 Glacier Bearing Bush 14X16X15  WMU141615  MB1415DU,https://app.asana.com/1/357939803556123/929000000000000.0,['Bearing Bush (14X16X15)'],48,90,Stock substring
+.S4.017,KAN-579,"U Clip, 10.7mm x 12.7mm x 0.36mm EPF186-PPBLK",https://app.asana.com/1/357939803556123/1210000000000000.0,['Lift Rod Nylon'],4,90,Stock substring
+.S4.018,KAN-1413,100 x100 80 grit flap wheel - FMTA/80/100100,https://app.asana.com/1/357939803556123/1210000000000000.0,['Wheel Pin'],4,90,Stock substring
+.S4.034.001,KAN-311,sending 10 off for call off,https://app.asana.com/1/357939803556123/1200000000000000.0,['SafeWorkingLoadPlate: Blank'],1,90,Stock substring
+.S4.1000.A.001,KAN-464,Polyurethane Cast Iron 50mm Ball Bearing Wheel 120kg Load BZH50WPTBJM12,https://app.asana.com/1/357939803556123/1200000000000000.0,['Polyurethane Cast Iron 50mm Plain Bore 80kg Load'],4,90,Stock Number Substring Match
+.S4.1000.ClevisPin 12x60mm,KAN-925,12x60 Clevis pins  CPSS-12-60,https://app.asana.com/1/357939803556123/1200000000000000.0,['Clevis Pin 12x60mm'],2,90,Stock Number Substring Match
+.S4.1003.A.013,KAN-746,Brother priner ink 422XL pack,https://app.asana.com/1/357939803556123/1210000000000000.0,"['Bottom Step Wheel (85mm OD, 60mm Width, )']",4,90,Stock Number Substring Match
+.S4.1003.A.087,KAN-1014,60 off M14 Form A Nylon Washer White - SKU 2921065,https://app.asana.com/1/357939803556123/1200000000000000.0,['M14 Form A Nylon Washer White'],20,90,Stock Number Substring Match
+.S4.1003.A.124,KAN-457,12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock),https://app.asana.com/1/357939803556123/1200000000000000.0,['Thrust Washer 20x36x1.5mm'],8,90,Stock Number Substring Match
+.S4.1006.A.011,KAN-580,Male M8 40x30mm with x30 stud 60 ShA  - Rubber AV mount  RS COMPONENTS ONLY,https://app.asana.com/1/357939803556123/1210000000000000.0,['RubberBuffer'],4,90,Stock substring
+.S4.1008.A3.001,KAN-566,MP200702 - N/C Magnetic Proximity Sensor,https://app.asana.com/1/357939803556123/1210000000000000.0,['MP200701 - Magnetic Proximity Sensor'],1,50,Fuzzy Description Match
+.S4.1008.D.067,KAN-151,Female M8 30x17mm 60 shA - Rubber AV mount,https://app.asana.com/1/357939803556123/1200000000000000.0,['Rubber Buffer'],4,90,Stock Number Substring Match
+.S4.1008.D.068,KAN-968,Male M10 50x25mm with x25 stud 60 ShA  - Rubber AV mount  (RS-385-1586),https://app.asana.com/1/357939803556123/1200000000000000.0,['Shock Mount M10 50mm Diameter 300daN Compression Load 6mm'],4,90,Stock Number Substring Match
+.S4.1008.T.13ID_P_Clip,KAN-1156,"RS 298-8097 13mm Black, Stainless Steel P Clip",https://app.asana.com/1/357939803556123/1200000000000000.0,['Rubber-lined clamp; 13mm ID'],5,90,Stock substring
+.S4.1016.3.009,KAN-132,Keylock 3 pos maint key remove centre - 51-374.F22DF  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,['Key Switch.2WaySpring'],1,90,Stock Number Substring Match
+.S4.1016.3.010,KAN-134,Keylock 2 position 1C/O momentary - 51-141.025D2F  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,['Key Switch.SpringReturn'],1,90,Stock Number Substring Match
+.S4.105,KAN-1422,"Pilz  Pnoz X2.1 Safety Relay 24V ac/dc, Dual-Channel 2 Safety Contacts - RS 239-1055",https://app.asana.com/1/357939803556123/1210000000000000.0,['OrangeWheel_Rod 20mm'],4,90,Stock substring
+.S4.129,KAN-1334,1005.b.b26W,https://app.asana.com/1/357939803556123/1210000000000000.0,['Loading Point Washer dia 50 x 50'],16,90,Stock substring
+.S4.414,KAN-1412,RS 798-9414 cable tray 50x12x3m,https://app.asana.com/1/357939803556123/1210000000000000.0,['Limit Switch Angle'],2,90,Stock substring
+.S447424,KAN-36,SES447424   Main Lift Manifold with Gate - ORDER NOW,https://app.asana.com/1/357939803556123/523000000000000.0,['ValveBlock'],2,90,Stock Number Substring Match
+.S5&6.1008.A1,KAN-126,LRC5A55 - the long arm  limit switch (Buy ARMS ONLY),https://app.asana.com/1/357939803556123/1200000000000000.0,['Adjustable actuator LimitSwitch: LRC5A55'],4,90,Stock Number Substring Match
+.S5&6.1008.A6.EP1G12Z020U,KAN-930,1	off	Roller Limit Switch (min. 2m Cable)	1008.A6.EP1G12Z020U	EP1G12Z020U	http://www.comepi.it	LongVale			SES101,https://app.asana.com/1/357939803556123/1200000000000000.0,['Roller Limit Switch (min. 2m Cable)'],2,90,Stock Number Substring Match
+.S5&6.1008.N1,KAN-125,LRC5A54 - short arm limit switches,https://app.asana.com/1/357939803556123/1200000000000000.0,['Standard LimitSwitch: LRC5A54'],2,90,Stock Number Substring Match
+.S5&6.1008.T.13ID_P_Clip,KAN-1156,"RS 298-8097 13mm Black, Stainless Steel P Clip",https://app.asana.com/1/357939803556123/1200000000000000.0,['Rubber-lined clamp; 13mm ID'],2,90,Stock substring
+.S5&6.1012.A.031,KAN-938,"1	off	5/8"" UNF RIGHT HAND THREAD HALF NUT X1	1012.A.031",https://app.asana.com/1/357939803556123/1200000000000000.0,"['5/8"" UNF RIGHT HAND THREAD HALF NUT X1']",2,50,Fuzzy Description Match
+.S5&6.1016.3.010,KAN-134,Keylock 2 position 1C/O momentary - 51-141.025D2F  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,['Key Switch.SpringReturn (VERIFY!)'],2,90,Stock Number Substring Match
+.S5&6.Flanged Bush 16x22x16mm,KAN-525,2	off	Oil Filled Bronze Flanged Bush 16x22x16mm	Flanged Bush 16x22x16mm,https://app.asana.com/1/357939803556123/1200000000000000.0,['Oil Filled Bronze Flanged Bush 16x22x16mm'],4,90,Stock Number Substring Match
+.S5&6.Flanged Bush 16x22x25mm,KAN-524,2	off	Oil Filled Bronze Flanged Bush 16x22x25mm	Flanged Bush 16x22x25mm,https://app.asana.com/1/357939803556123/1200000000000000.0,['Oil Filled Bronze Flanged Bush 16x22x25mm'],4,90,Stock Number Substring Match
+.S5&6.GFCX 060 X00 E03 RB,KAN-933,1	off	Fork; pushing; spring return Solenoid 1m cable length	GFCX 060 X00 E03 RB,https://app.asana.com/1/357939803556123/1200000000000000.0,['Fork; pushing; spring return Solenoid'],2,90,Stock Number Substring Match
+.S5.1008.C.002,KAN-919,Big E-Stop button Harmony  - Onlift RS 330-8587 Emergency Em Stop,https://app.asana.com/1/357939803556123/1200000000000000.0,['E.Stop - Big'],1,90,Stock Number Substring Match
+.S5.129,KAN-1334,1005.b.b26W,https://app.asana.com/1/357939803556123/1210000000000000.0,['Loading Point Washer dia 50 x 50'],4,90,Stock substring
+.S5.WDS674-216,KAN-264,25 off M16 swivel leveling feet - 674-216  WDS,https://app.asana.com/1/357939803556123/1200000000000000.0,['Swivel Pad M16'],4,90,Stock substring
+.S6.129,KAN-1334,1005.b.b26W,https://app.asana.com/1/357939803556123/1210000000000000.0,['Loading Point Washer dia 50 x 50'],4,90,Stock substring
+.S6.WDS674-216,KAN-264,25 off M16 swivel leveling feet - 674-216  WDS,https://app.asana.com/1/357939803556123/1200000000000000.0,['Swivel Pad M16'],4,90,Stock substring
+.tair Wheels),KAN-356,Update drawing to reflect correct material,https://app.asana.com/1/357939803556123/1200000000000000.0,['NylonStairWheel - NBSS 008'],52,90,CAD substring
+.U.1008.C.002,KAN-919,Big E-Stop button Harmony  - Onlift RS 330-8587 Emergency Em Stop,https://app.asana.com/1/357939803556123/1200000000000000.0,['E.Stop - Big'],1,90,Stock Number Substring Match
+.U.1391.L.008,KAN-355,100 off NBSS008 Rev 1 (Stair Wheels),https://app.asana.com/1/357939803556123/929000000000000.0,['NylonStairWheel'],12,90,Stock substring
+.U.1391.L.014,KAN-380,100 off NBSS014 Glacier Bearing Bush 14X16X15  WMU141615  MB1415DU,https://app.asana.com/1/357939803556123/929000000000000.0,['Bearing Bush (14X16X15)'],24,90,Stock substring
+.U.1391.L.034.001,KAN-311,sending 10 off for call off,https://app.asana.com/1/357939803556123/1200000000000000.0,['SafeWorkingLoadPlate: WheelchairUser'],1,90,Stock substring
+.U.1391.L.1003.A.013,KAN-746,Brother priner ink 422XL pack,https://app.asana.com/1/357939803556123/1210000000000000.0,"['Bottom Step Wheel (85mm OD, 60mm Width, )']",4,90,Stock Number Substring Match
+.U.1391.L.1003.A.087,KAN-1014,60 off M14 Form A Nylon Washer White - SKU 2921065,https://app.asana.com/1/357939803556123/1200000000000000.0,['M14 Form A Nylon Washer White'],8,90,Stock Number Substring Match
+.U.1391.L.1003.A.124,KAN-457,12 off TFW2036015 DLU	Thrust Washer 20x36x1.5mm (15 in stock),https://app.asana.com/1/357939803556123/1200000000000000.0,['Thrust Washer 20x36x1.5mm'],8,90,Stock Number Substring Match
+.U.1391.L.1006.A.011,KAN-580,Male M8 40x30mm with x30 stud 60 ShA  - Rubber AV mount  RS COMPONENTS ONLY,https://app.asana.com/1/357939803556123/1210000000000000.0,['40x30mm Shock Mount M8 20mm studd'],4,90,Stock substring
+.U.1391.L.1008.A1,KAN-126,LRC5A55 - the long arm  limit switch (Buy ARMS ONLY),https://app.asana.com/1/357939803556123/1200000000000000.0,['Adjustable actuator LimitSwitch: LRC5A55'],2,90,Stock Number Substring Match
+.U.1391.L.1008.A3.001,KAN-566,MP200702 - N/C Magnetic Proximity Sensor,https://app.asana.com/1/357939803556123/1210000000000000.0,['MP200701 - Magnetic Proximity Sensor N/C'],1,50,Fuzzy Description Match
+.U.1391.L.1008.D.068,KAN-968,Male M10 50x25mm with x25 stud 60 ShA  - Rubber AV mount  (RS-385-1586),https://app.asana.com/1/357939803556123/1200000000000000.0,['Shock Mount M10 50mm Diameter 300daN Compression Load 6mm'],4,90,Stock Number Substring Match
+.U.1391.L.1008.N1,KAN-125,LRC5A54 - short arm limit switches,https://app.asana.com/1/357939803556123/1200000000000000.0,['Standard LimitSwitch: LRC5A54'],2,90,Stock Number Substring Match
+.U.1391.L.1008.T.13ID_P_Clip,KAN-1156,"RS 298-8097 13mm Black, Stainless Steel P Clip",https://app.asana.com/1/357939803556123/1200000000000000.0,['Rubber-lined clamp; 13mm ID'],12,90,Stock substring
+.U.1391.L.1008.U.05,KAN-1348,OB11  junction box,https://app.asana.com/1/357939803556123/1210000000000000.0,['SpringCable_JunctionBox+Glands'],4,90,Stock Number Substring Match
+.U.1391.L.1016.3.001,KAN-231,Blue Lens for EAO buttons - 61-9642.6  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,['Lift UP.Down Button'],2,90,Stock Number Substring Match
+.U.1391.L.1016.3.003,KAN-746,Brother priner ink 422XL pack,https://app.asana.com/1/357939803556123/1210000000000000.0,['E-Stop Mushroom Head'],1,90,Stock Number Substring Match
+.U.1391.L.1016.3.006,KAN-231,Blue Lens for EAO buttons - 61-9642.6  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,['Stairs push button'],1,90,Stock Number Substring Match
+.U.1391.L.1016.3.010,KAN-134,Keylock 2 position 1C/O momentary - 51-141.025D2F  - EAO STOCK,https://app.asana.com/1/357939803556123/1200000000000000.0,['Key Switch.SpringReturn (VERIFY!)'],2,90,Stock Number Substring Match
+.U.1391.L.105,KAN-1422,"Pilz  Pnoz X2.1 Safety Relay 24V ac/dc, Dual-Channel 2 Safety Contacts - RS 239-1055",https://app.asana.com/1/357939803556123/1210000000000000.0,['OrangeWheel_Rod 20mm'],4,90,Stock substring
+.U.1391.L.1055.A.009,KAN-141,EP1G12ZU -  roller head (inline) - 4 core 1NC/1NO - most Common,https://app.asana.com/1/357939803556123/1200000000000000.0,['EP1G12ZU 2 m PVC cable'],1,90,Stock Number Substring Match
+.U.1391.L.129,KAN-1334,1005.b.b26W,https://app.asana.com/1/357939803556123/1210000000000000.0,['Loading Point Washer dia 50 x 50'],8,90,Stock substring
+.V1.1.MiniActuator[50mm],KAN-175,10 off MP SX 25/18x50 SAS - 50cc 4 port conforti hydraulic actuators,https://app.asana.com/1/357939803556123/1200000000000000.0,"['Mini hydraulic actuator _ 50mm stroke, connectors on both sides', 'Mini hydraulic actuator _ 50mm stroke_connectors on both sides']",6,90,Stock Number Substring Match
+.WDS674-216,KAN-264,25 off M16 swivel leveling feet - 674-216  WDS,https://app.asana.com/1/357939803556123/1200000000000000.0,['Swivel Pad M16'],8,90,Stock Number Substring Match
+.Wheel Pin),KAN-347,40 off NBSS018 (Wheel Pin) 14x51 clevis pins S/S,https://app.asana.com/1/357939803556123/929000000000000.0,['(Wheel_Pin)'],8,90,CAD substring
+.Winkel.Bearing_(4.053),KAN-143,20 off Winkle Bearings for stock,https://app.asana.com/1/357939803556123/1200000000000000.0,['Winkel Bearing + PL00(Plate) -  TDC Coating'],18,90,Stock Number Substring Match
+1001.A.002,KAN-1424,,,BarrierDogLeg.EarFront,1,100,Manual
+1008.Q.002,KAN-1424,,,Flat Plate,1,100,Manual
+1008.Q.003,KAN-334,40 off 1008.Q.003 - lifting jig,Open in Asana,Flat Plate,1,100,Manual
+6000.A.129,KAN-1424,,,Packer,1,100,Manual
+6000.A.153,KAN-463,Polyurethane Cast Iron 50mm Ball Bearing Wheel 110kg Load BZH50WPTBJM17,Open in Asana,Packer,1,100,Manual
+6000.A.167,KAN-891,,,Packer,1,100,Manual
+6000.A.14,KAN-1014,,,MayTec assembly,1,100,Manual
+6000.A.16,KAN-891,,,MayTec Assembly,1,100,Manual
+6000.A.17,KAN-891,,,MayTec Assembly,1,100,Manual
+414,KAN-1424,,,NBSS.414 Limit Switch Angle,1,100,Manual
+415,KAN-1424,,,NBSS.415 LimitSwitch.Plate dia 100 x 90,1,100,Manual
+1008.T.8ID_Grommet,KAN-224,Upgrading waterproof cable reels,Open in Asana,8mm ID Grommet,1,100,Manual
+1000.A2.001,KAN-464,Polyurethane Cast Iron 50mm Ball Bearing Wheel 120kg Load BZH50WPTBJM12,Open in Asana,Guide roller,1,100,Manual
+1000.A3.001,KAN-566,MP200702 - N/C Magnetic Proximity Sensor,Open in Asana,"Polyurethane Cast Iron 50mm Ball Bearing 110kg Load (ID measured 16,91mm)",1,100,Manual
+1000.A4.001,KAN-464,Polyurethane Cast Iron 50mm Ball Bearing Wheel 120kg Load BZH50WPTBJM12,Open in Asana,Polyurethane roller D=20 L=30,1,100,Manual
+1000.A5.001,KAN-464,Polyurethane Cast Iron 50mm Ball Bearing Wheel 120kg Load BZH50WPTBJM12,Open in Asana,Polyurethane roller 20mm,1,100,Manual
+1000.B.30x17_F_M8_98.6daN,KAN-151,Female M8 30x17mm 60 shA - Rubber AV mount,Open in Asana,M8 x 30 female vibration mount,1,100,Manual
+1000.B.30x30_M_M8_70daN,KAN-580,Male M8 40x30mm with x30 stud 60 ShA  - Rubber AV mount  RS COMPONENTS ONLY,Open in Asana,Rubber Buffer,1,100,Manual
+1000.B.40x30_M_M8_120daN,KAN-580,Male M8 40x30mm with x30 stud 60 ShA  - Rubber AV mount  RS COMPONENTS ONLY,Open in Asana,40x30mm Shock Mount M8 20mm studd,1,100,Manual
+1000.B.50x25_M_M10_300daN,KAN-968,,,Shock Mount M10 50mm Diameter 300daN Compression Load 6mm deflection,1,100,Manual
+1000.C.ClevisPin 6x50mm,KAN-925,,,Clevis pin Stainless Steel,1,100,Manual
+1000.C.ClevisPin 12x60mm,KAN-925,,,Clevis Pin Stainless Steel,1,100,Manual
+1000.R2.002,KAN-1424,,,20m drag chain cables  -  4 core M12,1,100,Manual
+1001.A.CB.002,KAN-1424,,,Cement Board 10mm,1,100,Manual
+1005.B.005,KAN-266,5 off M70 2 bolt flange (for MHM50A0L motor),Open in Asana,BarrierMotor - 50CC,1,100,Manual
+1005.B.030,KAN-266,5 off M70 2 bolt flange (for MHM50A0L motor),Open in Asana,M70 2 bolt flange (for MHM50A0L motor),1,100,Manual
+1005.B.059,KAN-47,single chain link for 08B-1R,Open in Asana,Middle Chain - Single X1 (Length = 2211mm),1,100,Manual
+1005.C.014,KAN-263,40 off Cylindrical Bumper 28D x 25H - 6001200,Open in Asana,Rubber Stopper,1,100,Manual
+1006.A.067,KAN-1233,,,TS6 Sensing Edge With Resistor,1,100,Manual
+1006.A.068,KAN-1233,,,TS6 Sensing Edge Without Resistor,1,100,Manual
+1006.A.111,KAN-1233,,,TS3 Sensing Edge,1,100,Manual
+1006.A.124,KAN-569,92906 compression springs - 1006.A.124,Open in Asana,Compression Springs,1,100,Manual
+1006.A.125,KAN-729,,,TS6 Sensing Edge Without Resistor,1,100,Manual
+1008.A1,KAN-126,LRC5A55 - the long arm  limit switch (Buy ARMS ONLY),Open in Asana,Adjustable actuator LimitSwitch: LRC5A55,1,100,Manual
+1008.A6.EP1G14Z2U,KAN-930,,,Roller LimitSwitch (min. 2m Cable),1,100,Manual
+1008.A10.002,KAN-1424,,,Female 4 way M8 to Unterminated Sensor Actuator Cable,1,100,Manual
+1008.A10.Magnet,KAN-126,LRC5A55 - the long arm  limit switch (Buy ARMS ONLY),Open in Asana,"Magnetic Non-Contact Safety Switch, Part 2/2",1,100,Manual
+1008.A10.Sensor,KAN-126,LRC5A55 - the long arm  limit switch (Buy ARMS ONLY),Open in Asana,"Magnetic Non-Contact Safety Switch, Part 1/2, operating distance 8mm",1,100,Manual
+1008.C.002,KAN-1424,,,E.Stop - Big,1,100,Manual
+1008.N1,KAN-126,LRC5A55 - the long arm  limit switch (Buy ARMS ONLY),Open in Asana,Standard LimitSwitch: LRC5A54,1,100,Manual
+1008.T.13ID_P_Clip,KAN-1156,,,Rubber-lined clamp; 13mm ID,1,100,Manual
+1008.T.25ID_Grommet,KAN-224,Upgrading waterproof cable reels,Open in Asana,Grommet ID 18.5mm (Hole 25mm Dia.),1,100,Manual
+1008.U.01,KAN-1345,,,85x85x51 Wiska Junction Box,1,100,Manual
+1008.U.11,KAN-1348,,,JunctionBox+Glands,1,100,Manual
+1016.3.001,KAN-131,Illumination Push button flush mount - 51-151.0252F  - EAO STOCK,Open in Asana,Lift UP.Down Button,1,100,Manual
+1016.3.002,KAN-1424,,,"Call for assistance (Bell), CFA + Doorbell",1,100,Manual
+1016.3.003,KAN-919,,,E-Stop Mushroom Head,1,100,Manual
+1016.3.006,KAN-131,Illumination Push button flush mount - 51-151.0252F  - EAO STOCK,Open in Asana,Stairs push button,1,100,Manual
+1016.3.010(2Way-Spr),KAN-393,Keylock 2 position Non Spring Return -  51-135.022DF  - EAO STOCK,Open in Asana,Key Switch. 2PositionSpringReturn (VERIFY!),1,100,Manual
+6000.A.033,KAN-683,WSM-0810-20,Open in Asana,Plain Metric Bush (8X10X20),1,100,Manual
+KBST-G-16(0-1),KAN-479,16mm bore - KBST-G-16 (rev design 15.08.22),Open in Asana,Split Rigid Shaft Coupling,1,100,Manual

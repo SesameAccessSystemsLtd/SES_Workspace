@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  13/08/2026  12:14
+============================================================
+With:         Sage Accounts Helpdesk 0191 479 5955
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved technical support assisting Fatima Barros with a synchronisation error in Sage 50 Accounts, which was resolved by restarting relevant services. The issue was caused by a loss of connection, and the support agent guided Fatima through refreshing the services to restore access.
+
+--- RECAP --------------------------------------------------
+Fatima Barros contacted Sage Accounts Helpdesk reporting a synchronisation error when opening Sage 50 Accounts, indicating the company's data was unavailable due to a connection issue.The support agent advised Fatima to access the Windows Services to restart the 'Sage 50 Account Service' and 'Account Control' services to resolve the connection problem.Fatima stopped and restarted both services as instructed, then attempted to reopen Sage 50 Accounts, which prompted re-authentication due to the session being logged out.After re-authentication, Fatima successfully logged into Sage 50 Accounts, confirming the connection issue was resolved.The support agent confirmed the case could be marked as closed and thanked Fatima for her cooperation.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

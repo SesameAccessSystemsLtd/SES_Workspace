@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  04/08/2026  10:00
+============================================================
+With:         Richard Purch 309
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call was a brief discussion between Fatima Barros and Richard Purch regarding the potential task of replacing windows and the organisation of related information. Richard agreed to look into creating a task after his break.
+
+--- RECAP --------------------------------------------------
+Fatima Barros inquired whether there was an existing task for replacing windows; Richard Purch responded that he did not think there was one.Fatima asked where the task should be created for easy access; Richard offered to look into creating it after his break.Fatima requested Richard to handle the task creation so she can consolidate information in one place.Richard agreed to investigate and create the task after his break.
+
+--- TASKS --------------------------------------------------
+Richard Purch will look into creating a task for window replacement after his break.
+
+(Full transcript: RC web portal only — no RingSense API)

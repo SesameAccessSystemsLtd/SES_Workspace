@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  14/08/2026  10:27
+============================================================
+With:         Karol Porwol 303
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo informing Karol Porwol about resolved conflicts in the golden index mapping and discussing a slight skew in the Metropolitan lift's folding, with plans to send a picture for comparison. The call concluded with casual closing remarks.
+
+--- RECAP --------------------------------------------------
+Giles Hugo notified Karol Porwol that conflicts in the golden index mapping between their parts have been resolved and the latest iteration has been sent for review.Giles Hugo reported that the Metropolitan lift's big steel tray has a slight skew in its folding, resulting in a 4mm wider width at one end, and clarified that the top table is shorter by 4mm.Karol Porwol confirmed understanding of the issue, identified the top table as the 'big u-shaped' or 'w-shaped' structure, and requested a picture to compare with the model to assess potential problems.Giles Hugo agreed to send a picture of the skewed lift for comparison, including it in a task, and confirmed the plan to proceed accordingly.The call ended with casual remarks and a casual goodbye.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send a picture of the Metropolitan lift's skewed folding to Karol Porwol for comparison.
+
+(Full transcript: RC web portal only — no RingSense API)

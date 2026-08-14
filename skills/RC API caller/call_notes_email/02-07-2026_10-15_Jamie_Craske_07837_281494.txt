@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  02/07/2026  10:15
+============================================================
+With:         Jamie Craske 07837 281494
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+Giles Hugo inquired about the status of a component delivery from Jamie Craske, who confirmed the last part was cut and the shipment is leaving today. They discussed potential updates from the design team regarding changes to the bomb components and the possibility of additional orders if needed.
+
+--- RECAP --------------------------------------------------
+Jamie Craske's team completed the cutting of the last 20mm part last night, and the shipment is leaving today.Giles Hugo asked about the current stage of the component delivery, confirming it is ready for dispatch.Jamie Craske indicated they are aiming to complete the job earlier than the targeted next week if possible.Giles Hugo mentioned that the design team might request changes to the bomb components, which could lead to further orders.Both parties acknowledged the importance of speed in delivery and discussed the potential for additional work depending on the design team's needs.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

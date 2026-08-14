@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  03/07/2026  09:02
+============================================================
+With:         07706 355619
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a phone call between Giles Hugo and an individual with phone number +447706355619, coordinating a delivery and location details. Giles provided directions, and they agreed to meet at a specified location near a Shell garage in approximately 10 minutes.
+
+--- RECAP --------------------------------------------------
+The caller with phone number +447706355619 requested a delivery handle to be brought to their current location, which they were unsure of but indicated they were heading back towards the M25 and near Victory Court on Church Road.Giles Hugo attempted to assist by asking for landmarks and directions, confirming the caller's proximity to Victory Court and Church Road, and suggested they meet at a Shell garage on the right, which the caller confirmed is nearby.The caller indicated they would park at the Shell garage and wait for Giles Hugo, who estimated they would arrive in approximately 10 minutes.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

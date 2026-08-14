@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  02/07/2026  10:17
+============================================================
+With:         Karol Porwol 303
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo and Karol Porwol discussing the immediate dispatch of a shipment and strategies to reduce delivery costs by consolidating orders. Giles confirmed the shipment is leaving today, and Karol proposed holding the delivery at their workshop with additional parts to save on costs.
+
+--- RECAP --------------------------------------------------
+Giles Hugo spoke with an unnamed individual who confirmed that the shipment is all packed and leaving today.Karol Porwol recommended holding the delivery at their workshop with additional pieces to be issued later, aiming to save on delivery costs.Karol suggested ordering extra flat bars to replace those already laid, facilitating consolidation of shipments.Both parties agreed to hold the delivery and proceed with the plan to minimize costs.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

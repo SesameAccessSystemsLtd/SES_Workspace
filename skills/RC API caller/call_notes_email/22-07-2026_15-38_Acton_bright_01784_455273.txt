@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  22/07/2026  15:38
+============================================================
+With:         Acton bright 01784 455273
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo from Sesame Access requesting a quote and arranging purchase of steel material from Acton Bright. The order was confirmed for delivery on Tuesday, with payment processed during the call.
+
+--- RECAP --------------------------------------------------
+Giles Hugo inquired about purchasing 50 by 50 millimeter steel, specifically about a length of approximately 1 to 2 meters, with a preference for a 3-meter piece to be cut down to 1200 mm, and requested a price quote of 95 pounds for 1.2 meters, or 81.40 pounds for 1 meter.Giles Hugo provided credit card details for payment, which Acton Bright confirmed and processed, including card number, expiry date, and security code.The order was for a single piece of 50 mm square steel, 1 meter long, with delivery scheduled for Tuesday, as same-day delivery was not possible due to time constraints.Giles Hugo requested if a card payment could be made for tomorrow's delivery, but Acton Bright explained it was too late in the day to process such an order, and confirmed the delivery for Tuesday with order number 21192.
+
+--- TASKS --------------------------------------------------
+Acton Bright will deliver the steel order to Giles Hugo on Tuesday.Acton Bright will process the payment for the order using the provided credit card details during the call.
+
+(Full transcript: RC web portal only — no RingSense API)

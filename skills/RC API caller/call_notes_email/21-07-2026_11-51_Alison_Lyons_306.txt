@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  21/07/2026  11:51
+============================================================
+With:         Alison Lyons 306
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Alison Lyons and Fatima Barros discussing the verification of driving licences for insurance purposes, including checking specific individuals' licences and the process to do so via the DVLA website.
+
+--- RECAP --------------------------------------------------
+Alison Lyons asked Fatima Barros to verify the driving licences of certain individuals for insurance purposes, suggesting she can do this via the DVLA website.Fatima Barros confirmed she can check licences by entering the licence code and is willing to do so, noting it may take some time.Alison Lyons mentioned that Peter, John, and Les have all said no to having valid licences, and asked Fatima to check the licences of Part, Bart, and Josh.Fatima Barros expressed uncertainty about whether Part's licence has been updated or if she can access Bart's licence, but agreed to attempt the checks.
+
+--- TASKS --------------------------------------------------
+Fatima Barros will attempt to verify the licences of Part, Bart, and Josh via the DVLA website.Alison Lyons will follow up with Peter, John, and Les to confirm their licence statuses.Fatima Barros will inform Alison Lyons of the results of the licence checks once completed.
+
+(Full transcript: RC web portal only — no RingSense API)

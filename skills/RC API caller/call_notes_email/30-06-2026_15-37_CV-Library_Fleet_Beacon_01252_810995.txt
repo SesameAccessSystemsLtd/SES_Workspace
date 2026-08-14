@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  30/06/2026  15:37
+============================================================
+With:         CV-Library Fleet Beacon 01252 810995
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a support call where Giles Hugo received assistance from Ben at CV Library regarding account access, API integration options, and website job listing features. The call concluded with plans for further support if needed.
+
+--- RECAP --------------------------------------------------
+Ben confirmed that Giles Hugo's account has been activated and that he is now logged in to CV Library, enabling him to start using the platform.Giles Hugo inquired about API integration options, specifically asking if there is an API for APR; Ben directed him to search for 'Stevie Library API' for instructions.Giles Hugo discussed the possibility of downloading job listings to display on his website, expressing interest in viewing and integrating job data externally.Ben offered to connect Giles Hugo with the customer success team for additional assistance with API setup and integration, and assured ongoing support if needed.
+
+--- TASKS --------------------------------------------------
+Ben will have the customer success team contact Giles Hugo to assist with API integration and setup.Giles Hugo will attempt to follow the API instructions found by searching 'Stevie Library API' as suggested by Ben.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  14/07/2026  14:16
+============================================================
+With:         - Purchasing 07973 662154
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a voicemail call where the Purchasing representative attempted to contact Shana regarding an ISO query for the quality management system. The call was disrupted by poor line quality, but the intention was to connect with Shana for further discussion.
+
+--- RECAP --------------------------------------------------
+The Purchasing representative tried to reach Shana about an ISO query related to the quality management system, but the call quality was poor due to being abroad, causing crackling and squeaky audio.Giles Hugo identified the person as Shana and attempted to connect the Purchasing representative to her, but the connection was not completed as the Purchasing representative chose to ignore the call after being put through.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

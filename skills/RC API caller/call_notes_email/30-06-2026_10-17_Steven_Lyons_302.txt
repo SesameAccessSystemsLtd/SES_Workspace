@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  30/06/2026  10:17
+============================================================
+With:         Steven Lyons 302
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Steven Lyons testing audio clarity and connection quality while walking through a workshop, with Fatima Barros confirming consistent audio and connection status despite environmental noise.
+
+--- RECAP --------------------------------------------------
+Steven Lyons conducted a live audio test while moving through the workshop, checking for clarity and connection stability with Fatima Barros.Steven reported that his voice was clear to Fatima, and Fatima confirmed her audio was clear with no issues during initial tests.Environmental noise, including wind and machinery, caused some audio cutouts and connection interruptions, which Fatima reported as lost connection at one point.Despite the noise and connection issues, Fatima confirmed that the audio was clear throughout the test.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

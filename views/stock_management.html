@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stock Management System — Sesame Access</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #21253a;
+    --border: #2d3250;
+    --accent: #6c8ef7;
+    --accent2: #a78bfa;
+    --green: #34d399;
+    --amber: #fbbf24;
+    --red: #f87171;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --done: #34d399;
+    --partial: #fbbf24;
+    --gap: #f87171;
+    --planned: #6c8ef7;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .page { max-width: 1100px; margin: 0 auto; padding: 40px 24px 80px; }
+
+  /* Header */
+  .header { border-bottom: 1px solid var(--border); padding-bottom: 32px; margin-bottom: 40px; }
+  .header-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; }
+  .logo-area h1 { font-size: 26px; font-weight: 700; color: #fff; letter-spacing: -0.5px; }
+  .logo-area .sub { color: var(--muted); margin-top: 4px; font-size: 13px; }
+  .date-badge { background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 8px 16px; font-size: 12px; color: var(--muted); white-space: nowrap; }
+  .objective-bar { margin-top: 24px; background: linear-gradient(135deg, #1e2a5e 0%, #2d1f6e 100%); border: 1px solid #3d4a9e; border-radius: 12px; padding: 20px 24px; }
+  .objective-bar h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 8px; }
+  .objective-bar p { color: var(--text); font-size: 15px; line-height: 1.6; }
+
+  /* Section headers */
+  .section { margin-bottom: 48px; }
+  .section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
+  .section-header .num { background: var(--accent); color: #fff; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .section-header h2 { font-size: 18px; font-weight: 700; color: #fff; }
+  .section-header .chip { background: var(--surface2); border: 1px solid var(--border); border-radius: 20px; padding: 3px 10px; font-size: 11px; color: var(--muted); margin-left: auto; }
+
+  /* Challenge cards */
+  .challenge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+  .challenge-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px; }
+  .challenge-card .icon { font-size: 22px; margin-bottom: 10px; }
+  .challenge-card h3 { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 6px; }
+  .challenge-card p { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+  /* Pipeline */
+  .pipeline { display: flex; gap: 0; flex-wrap: wrap; }
+  .pipeline-stage { flex: 1; min-width: 140px; background: var(--surface); border: 1px solid var(--border); padding: 16px; position: relative; }
+  .pipeline-stage:not(:last-child)::after {
+    content: '→';
+    position: absolute; right: -14px; top: 50%; transform: translateY(-50%);
+    color: var(--accent); font-size: 18px; z-index: 1;
+  }
+  .pipeline-stage:first-child { border-radius: 10px 0 0 10px; }
+  .pipeline-stage:last-child { border-radius: 0 10px 10px 0; }
+  .pipeline-stage .stage-num { font-size: 11px; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+  .pipeline-stage h3 { font-size: 13px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+  .pipeline-stage p { font-size: 12px; color: var(--muted); }
+  .pipeline-stage.hitl { background: linear-gradient(135deg, #1e3a2f, #1e2a1a); border-color: var(--green); }
+  .pipeline-stage.hitl .stage-num { color: var(--green); }
+
+  /* Layer cards */
+  .layer-list { display: flex; flex-direction: column; gap: 14px; }
+  .layer-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; }
+  .layer-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .layer-badge { font-size: 11px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; flex-shrink: 0; }
+  .badge-built { background: rgba(52,211,153,0.15); color: var(--green); border: 1px solid rgba(52,211,153,0.3); }
+  .badge-partial { background: rgba(251,191,36,0.15); color: var(--amber); border: 1px solid rgba(251,191,36,0.3); }
+  .badge-planned { background: rgba(108,142,247,0.15); color: var(--accent); border: 1px solid rgba(108,142,247,0.3); }
+  .layer-card h3 { font-size: 15px; font-weight: 600; color: #fff; }
+  .layer-card p { font-size: 13px; color: var(--muted); line-height: 1.55; }
+  .layer-card .detail-list { margin-top: 10px; display: flex; flex-direction: column; gap: 5px; }
+  .layer-card .detail-item { display: flex; gap: 8px; font-size: 12px; }
+  .layer-card .detail-item .dot { color: var(--accent); flex-shrink: 0; margin-top: 2px; }
+  .layer-card .detail-item span { color: var(--muted); }
+  .layer-card .detail-item strong { color: var(--text); }
+
+  /* Asana field mesh */
+  .field-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+  .field-card { background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+  .field-card .fname { font-size: 13px; font-weight: 600; color: #fff; }
+  .field-card .ftype { font-size: 11px; color: var(--accent); margin-bottom: 6px; }
+  .field-card .fgid { font-size: 10px; color: var(--muted); font-family: monospace; }
+  .enum-options { margin-top: 6px; }
+  .enum-pill { display: inline-block; background: rgba(108,142,247,0.1); color: var(--accent); border-radius: 4px; padding: 1px 6px; font-size: 10px; margin: 2px 1px; }
+  .enum-pill.green { background: rgba(52,211,153,0.1); color: var(--green); }
+  .enum-pill.amber { background: rgba(251,191,36,0.1); color: var(--amber); }
+  .enum-pill.red { background: rgba(248,113,113,0.1); color: var(--red); }
+
+  /* Gap/Outstanding section */
+  .gap-list { display: flex; flex-direction: column; gap: 12px; }
+  .gap-card { background: var(--surface); border-radius: 10px; padding: 18px 22px; display: flex; gap: 16px; }
+  .gap-card.high { border-left: 3px solid var(--red); }
+  .gap-card.medium { border-left: 3px solid var(--amber); }
+  .gap-card.low { border-left: 3px solid var(--muted); }
+  .gap-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+  .gap-body { flex: 1; }
+  .gap-body h3 { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+  .gap-body p { font-size: 13px; color: var(--muted); }
+  .gap-body .gap-meta { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+  .meta-tag { font-size: 11px; padding: 2px 8px; border-radius: 4px; border: 1px solid var(--border); color: var(--muted); }
+
+  /* Architecture diagram */
+  .arch-diagram { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+  .arch-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 10px; }
+  .arch-node { background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; font-size: 12px; text-align: center; }
+  .arch-node .node-name { font-weight: 600; color: #fff; font-size: 13px; }
+  .arch-node .node-role { color: var(--muted); font-size: 11px; margin-top: 2px; }
+  .arch-node.primary { border-color: var(--accent); background: rgba(108,142,247,0.08); }
+  .arch-node.writer { border-color: var(--green); background: rgba(52,211,153,0.08); }
+  .arch-node.cloud { border-color: var(--accent2); background: rgba(167,139,250,0.08); }
+  .arch-arrow { color: var(--muted); font-size: 18px; }
+
+  /* Status table */
+  .status-table { width: 100%; border-collapse: collapse; }
+  .status-table th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); padding: 8px 12px; border-bottom: 1px solid var(--border); }
+  .status-table td { padding: 12px 12px; border-bottom: 1px solid rgba(45,50,80,0.5); font-size: 13px; vertical-align: top; }
+  .status-table tr:last-child td { border-bottom: none; }
+  .status-table td:first-child { color: #fff; font-weight: 500; }
+  .status-table td:nth-child(2) { color: var(--muted); }
+  .status-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+  .dot-green { background: var(--green); }
+  .dot-amber { background: var(--amber); }
+  .dot-red { background: var(--red); }
+  .dot-blue { background: var(--accent); }
+
+  /* Summary bar */
+  .summary-bar { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
+  .summary-stat { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; flex: 1; min-width: 160px; }
+  .summary-stat .stat-num { font-size: 28px; font-weight: 700; line-height: 1; }
+  .summary-stat .stat-label { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .stat-green { color: var(--green); }
+  .stat-amber { color: var(--amber); }
+  .stat-red { color: var(--red); }
+  .stat-blue { color: var(--accent); }
+
+  /* Footer */
+  .footer { border-top: 1px solid var(--border); padding-top: 24px; margin-top: 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; }
+  .footer p { font-size: 12px; color: var(--muted); }
+
+  @media (max-width: 680px) {
+    .pipeline { flex-direction: column; }
+    .pipeline-stage:not(:last-child)::after { content: '↓'; right: auto; left: 50%; top: auto; bottom: -14px; transform: translateX(-50%); }
+    .pipeline-stage:first-child { border-radius: 10px 10px 0 0; }
+    .pipeline-stage:last-child { border-radius: 0 0 10px 10px; }
+    .arch-row { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<!-- SAS-OS-NAV -->
+<a href="../data/os_status/nav.html" style="position:fixed;top:16px;right:16px;z-index:9999;background:#0f172a;color:#fff;font:600 13px -apple-system,'Segoe UI',Roboto,sans-serif;text-decoration:none;padding:8px 16px;border-radius:20px;box-shadow:0 2px 8px rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.25)">&larr; SAS OS portal</a>
+
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-top">
+      <div class="logo-area">
+        <h1>Stock Management System</h1>
+        <div class="sub">Sesame Access Systems — OpenClaw Build Report</div>
+      </div>
+      <div class="date-badge">27 April 2026</div>
+    </div>
+    <div class="objective-bar">
+      <h2>Objective</h2>
+      <p>Ensure that stock is managed perfectly across all bespoke build projects — from initial BOM import through part matching, pick/order routing, kitting, purchasing, and real-time Asana task control — with reliable human input at every critical decision point.</p>
+    </div>
+  </div>
+
+  <!-- Progress Summary -->
+  <div class="summary-bar">
+    <div class="summary-stat"><div class="stat-num stat-green">6</div><div class="stat-label">Layers built & live</div></div>
+    <div class="summary-stat"><div class="stat-num stat-amber">4</div><div class="stat-label">High-priority gaps</div></div>
+    <div class="summary-stat"><div class="stat-num stat-blue">5</div><div class="stat-label">Automation rules designed</div></div>
+    <div class="summary-stat"><div class="stat-num stat-red">1</div><div class="stat-label">Critical dependency (Flowsana)</div></div>
+  </div>
+
+  <!-- Section 1: The Problem Space -->
+  <div class="section">
+    <div class="section-header">
+      <div class="num">1</div>
+      <h2>The Problem Space</h2>
+    </div>
+    <div class="challenge-grid">
+      <div class="challenge-card">
+        <div class="icon">🧩</div>
+        <h3>Part Number Ambiguity</h3>
+        <p>Every job prefixes part numbers with a 4-digit job code (e.g. <code>1566.1003.B.087</code>). The same physical stock item has a different identifier on every project BOM, making automated matching inherently fragile.</p>
+      </div>
+      <div class="challenge-card">
+        <div class="icon">📦</div>
+        <h3>Pick vs. Order Routing</h3>
+        <p>Each BOM line must be correctly routed: PICK from KANBAN if in stock, or ORDER if not. A wrong routing wastes stock or delays the job. The decision requires live stock data AND a curated matching index.</p>
+      </div>
+      <div class="challenge-card">
+        <div class="icon">🔄</div>
+        <h3>Kitting & Task State</h3>
+        <p>Once tasks are in Asana, their status must update as picking happens, orders arrive, and builds progress. Custom fields, automation rules, and human picks must all stay in sync — across 100+ projects.</p>
+      </div>
+      <div class="challenge-card">
+        <div class="icon">🧠</div>
+        <h3>Human Input Reliability</h3>
+        <p>Critical decisions (override quantities, new part mappings, order approvals) must come from Giles with full context. The system must surface exactly the right information at each checkpoint — not drown in noise.</p>
+      </div>
+      <div class="challenge-card">
+        <div class="icon">📧</div>
+        <h3>Order Control & Purchasing</h3>
+        <p>Supplier emails, delivery notes, and order acknowledgements arrive unstructured. Matching them to Asana tasks — and updating custom fields correctly — was entirely manual before the purchasing pipeline was built.</p>
+      </div>
+      <div class="challenge-card">
+        <div class="icon">⚙️</div>
+        <h3>Automation Reliability</h3>
+        <p>Native Asana rules and Flowsana handle the cross-project logic mesh, but they are fragile: no 24/7 reliability, no audit trail, no ability to handle complex conditions. They break silently when fields change.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: The BOM Pipeline -->
+  <div class="section">
+    <div class="section-header">
+      <div class="num">2</div>
+      <h2>BOM Import Pipeline (MRP)</h2>
+      <div class="chip">✅ Live</div>
+    </div>
+    <p style="color:var(--muted); margin-bottom:18px; font-size:13px;">Every job begins with a vendor BOM. This 5-stage pipeline takes raw Excel files and produces a structured Asana task hierarchy — with stock-checked, routed line items — before a single task is written to Asana.</p>
+    <div class="pipeline">
+      <div class="pipeline-stage">
+        <div class="stage-num">Stage 1</div>
+        <h3>BOM Consolidation</h3>
+        <p>Merges multi-vendor xlsx files. Enforces Cost Centre column. Normalises part numbers.</p>
+      </div>
+      <div class="pipeline-stage">
+        <div class="stage-num">Stage 2</div>
+        <h3>Golden Index Match</h3>
+        <p>Strips job prefix, fuzzy-matches to Golden Index Rev4. Assigns KAN numbers where known.</p>
+      </div>
+      <div class="pipeline-stage">
+        <div class="stage-num">Stage 3</div>
+        <h3>Live Stock Check</h3>
+        <p>Queries KANBAN project in Asana. Compares required qty vs. available. Flags ORDER vs. PICK.</p>
+      </div>
+      <div class="pipeline-stage hitl">
+        <div class="stage-num">Stage 4 — HITL ✋</div>
+        <h3>Staging Review</h3>
+        <p>Exports Excel for Giles. He adds SKIP, HOLD, FORCE_ORDER, or qty overrides. Only checkpoint.</p>
+      </div>
+      <div class="pipeline-stage">
+        <div class="stage-num">Stage 5</div>
+        <h3>Asana Import</h3>
+        <p>Creates full task hierarchy in Build Orders project. Embeds Dropbox URL, project refs.</p>
+      </div>
+    </div>
+    <div style="margin-top:14px; background:var(--surface2); border:1px solid var(--border); border-radius:8px; padding:12px 16px; font-size:12px; color:var(--muted);">
+      <strong style="color:var(--text);">Task hierarchy produced:</strong>&nbsp;
+      ALL BOMS — {project} → PICKING BOM + {CostCentre} BOM → {Vendor} → {qty} off {part} — {desc}
+    </div>
+  </div>
+
+  <!-- Section 3: The Golden Index -->
+  <div class="section">
+    <div class="section-header">
+      <div class="num">3</div>
+      <h2>The Golden Index — Part Matching Intelligence</h2>
+      <div class="chip">✅ Live (Rev4)</div>
+    </div>
+    <div class="layer-list">
+      <div class="layer-card">
+        <div class="layer-card-header">
+          <div class="layer-badge badge-built">Built</div>
+          <h3>Curated Part Number → KAN Number Lookup</h3>
+        </div>
+        <p>The Golden Index (Merged_Golden_Index_Rev4.csv) is the authoritative mapping between vendor part numbers (prefix-stripped) and Sesame KANBAN stock items. Without it, every BOM import would route every part to ORDER regardless of available stock.</p>
+        <div class="detail-list">
+          <div class="detail-item"><div class="dot">▸</div><span><strong>16 columns</strong> including Stock_Number, Mapped_KAN, Asana_Name, Confidence, Match_Type, Provisional</span></div>
+          <div class="detail-item"><div class="dot">▸</div><span><strong>Fuzzy matching</strong> via SequenceMatcher at 80% threshold — handles minor part number variants</span></div>
+          <div class="detail-item"><div class="dot">▸</div><span><strong>Feedback loop:</strong> when Giles confirms a new mapping at Stage 4, it's written back via update_golden_index.py</span></div>
+          <div class="detail-item"><div class="dot">▸</div><span><strong>Two copies</strong> must stay in sync — skill folder + OneDrive lab copy</span></div>
+          <div class="detail-item"><div class="dot">▸</div><span><strong>Known gap:</strong> the feedback write-back is currently a manual step, not auto-captured from Stage 4 approvals</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: Asana Architecture -->
+  <div class="section">
+    <div class="section-header">
+      <div class="num">4</div>
+      <h2>Asana Project Architecture</h2>
+      <div class="chip">✅ Live</div>
+    </div>
+    <div class="arch-diagram">
+      <p style="font-size:12px; color:var(--muted); margin-bottom:18px;">Key projects and their roles in the stock control flow:</p>
+      <table class="status-table">
+        <thead>
+          <tr><th>Project</th><th>Role</th><th>GID</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Build Orders / Project Orders</td>
+            <td>All imported BOM tasks land here. The primary working view for production.</td>
+            <td style="font-family:monospace;font-size:11px;color:var(--muted)">848657415032331</td>
+            <td><span class="status-dot dot-green"></span>Live</td>
+          </tr>
+          <tr>
+            <td>KANBAN</td>
+            <td>Live stock levels. Stage 3 queries this directly to determine PICK vs. ORDER.</td>
+            <td style="font-family:monospace;font-size:11px;color:var(--muted)">632603478911321</td>
+            <td><span class="status-dot dot-green"></span>Live</td>
+          </tr>
+          <tr>
+            <td>Parts Control</td>
+            <td>Parts registry. All parts with QTY should be members here for cross-project visibility.</td>
+            <td style="font-family:monospace;font-size:11px;color:var(--muted)">1211660707080749</td>
+            <td><span class="status-dot dot-amber"></span>Manual membership</td>
+          </tr>
+          <tr>
+            <td>Goods In / Order Requests</td>
+            <td>Inbound stock and purchase requests. Tracks ETA, shortages, supplier comms.</td>
+            <td style="font-family:monospace;font-size:11px;color:var(--muted)">358790955858777</td>
+            <td><span class="status-dot dot-green"></span>Live</td>
+          </tr>
+          <tr>
+            <td>Categorised Stock Projects</td>
+            <td>Nuts & Bolts, PPE, Steel, Electronics & Hydraulics, Consumables. Drive category dashboards.</td>
+            <td style="font-size:11px;color:var(--muted)">Multiple</td>
+            <td><span class="status-dot dot-green"></span>Live</td>
+          </tr>
+          <tr>
+            <td>Build Schedule</td>
+            <td>Production timeline. Flags overdue stages. Feeds into SAP heartbeat monitoring.</td>
+            <td style="font-family:monospace;font-size:11px;color:var(--muted)">852956628490855</td>
+            <td><span class="status-dot dot-green"></span>Live</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="margin-top: 20px;">
+      <p style="font-size:13px; font-weight:600; color:#fff; margin-bottom:12px;">Key Custom Fields (Stock Control)</p>
+      <div class="field-grid">
+        <div class="field-card">
+          <div class="fname">Stock ACTION</div>
+          <div class="ftype">Enum</div>
+          <div class="fgid">1199111659373956</div>
+          <div class="enum-options">
+            <span class="enum-pill green">PLEASE PICK</span>
+            <span class="enum-pill green">PICKING COMPLETE</span>
+            <span class="enum-pill green">IN STOCK</span>
+            <span class="enum-pill amber">ORDER FOR STOCK</span>
+            <span class="enum-pill amber">ORDER URGENTLY</span>
+            <span class="enum-pill amber">PROJECT ORDER</span>
+            <span class="enum-pill">On order</span>
+            <span class="enum-pill">HOLD ORDER</span>
+            <span class="enum-pill red">OBSOLETE</span>
+            <span class="enum-pill">Check Stock</span>
+            <span class="enum-pill">Req. Price Update</span>
+            <span class="enum-pill">SUBCON TASKS</span>
+          </div>
+        </div>
+        <div class="field-card">
+          <div class="fname">Sesame Part No</div>
+          <div class="ftype">Text (full number incl. prefix)</div>
+          <div class="fgid">1213228090549470</div>
+        </div>
+        <div class="field-card">
+          <div class="fname">ORDER QTY</div>
+          <div class="ftype">Number</div>
+          <div class="fgid">1201447044882111</div>
+        </div>
+        <div class="field-card">
+          <div class="fname">STOCK QTY</div>
+          <div class="ftype">Number</div>
+          <div class="fgid">1126782469949969</div>
+        </div>
+        <div class="field-card">
+          <div class="fname">PROJECT NAME</div>
+          <div class="ftype">Enum (auto-populated by SOLD workflow)</div>
+          <div class="fgid">1202882645384174</div>
+        </div>
+        <div class="field-card">
+          <div class="fname">Vendor</div>
+          <div class="ftype">Text</div>
+          <div class="fgid">854127216887083</div>
+        </div>
+        <div class="field-card">
+          <div class="fname">Unit Price £</div>
+          <div class="ftype">Number</div>
+          <div class="fgid">1182371951145356</div>
+        </div>
+        <div class="field-card">
+          <div class="fname">Build Packs reference</div>
+          <div class="ftype">Reference (task GID required)</div>
+          <div class="fgid">1211660742155293</div>
+        </div>
+      </div>
+      <p style="font-size:11px; color:var(--muted); margin-top:8px;">Full schema: 179 custom fields documented in workspace/reference/Asana Custom Field Index GID numbers.xlsx</p>
+    </div>
+  </div>
+
+  <!-- Section 5: Purchasing Pipeline -->
+  <div class="section">
+    <div class="section-header">
+      <div class="num">5</div>
+      <h2>Purchasing Intelligence Pipeline</h2>
+      <div class="chip">✅ Live (ops_agent / SAO)</div>
+    </div>
+    <div class="layer-list">
+      <div class="layer-card">
+        <div class="layer-card-header">
+          <div class="layer-badge badge-built">Built</div>
+          <h3>4-Layer LLM + Human-in-the-Loop Email Parsing</h3>
+        </div>
+        <p>Inbound purchasing emails and supplier PDFs are automatically ingested, parsed by an LLM, matched to Asana tasks, and queued for human approval before any Asana write occurs.</p>
+        <div class="detail-list">
+          <div class="detail-item"><div class="dot">▸</div><span><strong>Layer 1:</strong> Email fetcher reads purchasing@sesameaccess.com via Microsoft Graph API</span></div>
+          <div class="detail-item"><div class="dot">▸</div><span><strong>Layer 2:</strong> LLM parser (Gemini) extracts PO numbers, prices, dates, vendor info, delivery notes</span></div>
+          <div class="detail-item"><div class="dot">▸</div><span><strong>Layer 3:</strong> Proposal engine matches against Asana tasks and ops.db, generates pending_approval_queue.json</span></div>
+          <div class="detail-item"><div class="dot">▸</div><span><strong>Layer 3.5 HITL:</strong> Commander Claw presents proposals to Giles — approve, modify, hold, or reject</span></div>
+          <div class="detail-item"><div class="dot">▸</div><span><strong>Layer 4:</strong> Asana Executor writes approved updates, categorises emails in Outlook, sends receipts</span></div>
+          <div class="detail-item"><div class="dot">▸</div><span><strong>PDF extraction:</strong> pdfplumber handles delivery notes, despatch notes, order acknowledgements</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 6: Agent Architecture -->
+  <div class="section">
+    <div class="section-header">
+      <div class="num">6</div>
+      <h2>OpenClaw Agent Architecture</h2>
+      <div class="chip">✅ Live</div>
+    </div>
+    <div class="arch-diagram">
+      <p style="font-size:12px; color:var(--muted); margin-bottom:16px;">Multi-agent system with strict write permissions. All Asana writes route through SAP — no agent can bypass this.</p>
+      <table class="status-table">
+        <thead>
+          <tr><th>Agent</th><th>Name</th><th>Role</th><th>Asana Write?</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>main</td>
+            <td>Commander Claw (SESAL)</td>
+            <td>Orchestrator. Reads everything, writes nothing. HITL interface for Giles.</td>
+            <td style="color:var(--muted)">❌ Read-only</td>
+          </tr>
+          <tr>
+            <td>asana_agent</td>
+            <td>SAP</td>
+            <td><strong>Sole Asana writer.</strong> All write requests from other agents go via REQUESTS/ protocol.</td>
+            <td style="color:var(--green)">✅ Only writer</td>
+          </tr>
+          <tr>
+            <td>ops_agent</td>
+            <td>SAO</td>
+            <td>Purchasing intelligence. Email parsing, PDF extraction, PO matching, proposal generation.</td>
+            <td style="color:var(--muted)">Via SAP</td>
+          </tr>
+          <tr>
+            <td>scraper</td>
+            <td>SAD</td>
+            <td>Data ingestion, HubSpot sync. Owns DATAMAP.md. Writes to openclaw.db.</td>
+            <td style="color:var(--muted)">Via SAP</td>
+          </tr>
+          <tr>
+            <td>sesame_marketing</td>
+            <td>SAM</td>
+            <td>Marketing campaigns, lead pipeline, CRM. Isolated from stock system.</td>
+            <td style="color:var(--muted)">Via SAP</td>
+          </tr>
+          <tr>
+            <td>dev_agent</td>
+            <td>Forge</td>
+            <td>Code builds. PLAN→BUILD→VALIDATE gates. Nightly audit at 23:00.</td>
+            <td style="color:var(--muted)">Via SAP</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Section 7: Current Automation Rules -->
+  <div class="section">
+    <div class="section-header">
+      <div class="num">7</div>
+      <h2>Automation Rules — Current State</h2>
+      <div class="chip">⚠️ Flowsana-dependent</div>
+    </div>
+    <div class="layer-list">
+      <div class="layer-card">
+        <div class="layer-card-header">
+          <div class="layer-badge badge-partial">Partial</div>
+          <h3>The Complex Mesh — Native Asana + Flowsana</h3>
+        </div>
+        <p>The current automation layer is a mesh of native Asana rules and Flowsana logic spanning 100+ projects. It works, but is fragile: no audit trail, no 24/7 reliability, silent failures when fields change, and dependency on Flowsana pricing/availability.</p>
+        <div class="detail-list">
+          <div class="detail-item"><div class="dot">▸</div><span><strong>Cross-project flow:</strong> Project A field change → section move → Project B task move → status update</span></div>
+          <div class="detail-item"><div class="dot">▸</div><span><strong>Supplier tagging:</strong> When Stock ACTION → "Order for Stock", match Vendor → copy tags from Supplier project</span></div>
+          <div class="detail-item"><div class="dot">▸</div><span><strong>Consumables:</strong> Unticking a task auto-flags for reorder</span></div>
+          <div class="detail-item"><div class="dot">▸</div><span><strong>High-value items:</strong> Trigger double-check review process</span></div>
+          <div class="detail-item"><div class="dot">▸</div><span><strong>Tags:</strong> Strictly reserved for final order aggregation — cross-workspace view for order placement</span></div>
+          <div class="detail-item"><div class="dot">▸</div><span><strong>SOLD workflow:</strong> Creates PROJECT NAME enum option, multi-homes tasks, applies field to all subtasks</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 8: Outstanding Paths -->
+  <div class="section">
+    <div class="section-header">
+      <div class="num">8</div>
+      <h2>Outstanding Paths — What Remains</h2>
+    </div>
+    <div class="gap-list">
+
+      <!-- HIGH -->
+      <div style="font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--red); margin-bottom:6px; margin-top:8px; padding-left:4px;">🔴 High Priority</div>
+
+      <div class="gap-card high">
+        <div class="gap-icon">☁️</div>
+        <div class="gap-body">
+          <h3>Google Cloud Run Watcher — Replace Flowsana</h3>
+          <p>The architecture is fully designed (CLOUD_RUN_ACA_ARCHITECTURE.md + ASANA_RULES_INDEX.md) and a testing sandbox exists (cloud_rules_testing/), but the Cloud Run app has not been deployed. This is the single most impactful outstanding build. It replaces the fragile Flowsana dependency with a stateless, always-on FastAPI webhook server that holds all the complex rule logic in versioned Python code.</p>
+          <div class="gap-meta">
+            <span class="meta-tag">FastAPI webhook server</span>
+            <span class="meta-tag">Router-Handler pattern</span>
+            <span class="meta-tag">handlers/ per rule type</span>
+            <span class="meta-tag">gcloud run deploy</span>
+            <span class="meta-tag">Signature validation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gap-card high">
+        <div class="gap-icon">🤖</div>
+        <div class="gap-body">
+          <h3>ACA Agent (Asana Cloud Architect) — Not Yet Built</h3>
+          <p>The Cloud Run app needs a dedicated agent to manage it: deploying code, parsing error logs from GCP, mapping cross-project field dependencies, and testing handlers before deployment. Without ACA, the Cloud Run system would need manual management. The agent spec is written; the agent directory doesn't exist yet.</p>
+          <div class="gap-meta">
+            <span class="meta-tag">GCP CLI access</span>
+            <span class="meta-tag">Log parsing from Cloud Logging</span>
+            <span class="meta-tag">One rule per file mandate</span>
+            <span class="meta-tag">Reads ASANA_RULES_INDEX.md as firewall</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gap-card high">
+        <div class="gap-icon">🏗️</div>
+        <div class="gap-body">
+          <h3>SOLD Workflow / Project Initialiser — Partial Code Only</h3>
+          <p>When a project is sold, a webhook should: create a PROJECT NAME enum option, recursively find all tasks and subtasks, multi-home them to the new job project, and apply the enum field. This currently relies on Flowsana and manual steps. project_initializer.py exists in the sandbox but is not deployed or wired to a webhook.</p>
+          <div class="gap-meta">
+            <span class="meta-tag">project_initializer.py (sandbox)</span>
+            <span class="meta-tag">PROJECT NAME enum creation</span>
+            <span class="meta-tag">Recursive subtask multi-homing</span>
+            <span class="meta-tag">Ongoing new-task watcher</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gap-card high">
+        <div class="gap-icon">🏷️</div>
+        <div class="gap-body">
+          <h3>Supplier Tagging Automation — Documented, Not in Cloud</h3>
+          <p>When a task's Stock ACTION changes to "Order for Stock", the system should auto-match the Vendor field to the Supplier Project and copy the relevant tags. This logic is fully documented in ASANA_RULES_INDEX.md but is currently handled by native Asana rules (fragile). It needs to be one of the first handlers built in the Cloud Run system.</p>
+          <div class="gap-meta">
+            <span class="meta-tag">Target: supplier_tagging.py handler</span>
+            <span class="meta-tag">Supplier Project GID: 414986125671548</span>
+            <span class="meta-tag">Exception: ignore if PICKED</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MEDIUM -->
+      <div style="font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--amber); margin-bottom:6px; margin-top:16px; padding-left:4px;">🟡 Medium Priority</div>
+
+      <div class="gap-card medium">
+        <div class="gap-icon">🗂️</div>
+        <div class="gap-body">
+          <h3>Parts Control Project Membership — Currently Manual</h3>
+          <p>All parts with a QTY value should automatically be added to the Parts Control project on BOM import (Stage 5). Currently Giles does this manually after each import. Automating this would complete the traceability loop between Build Orders and Parts Control.</p>
+          <div class="gap-meta">
+            <span class="meta-tag">Parts Control GID: 1211660707080749</span>
+            <span class="meta-tag">Blocked pending explicit instruction</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gap-card medium">
+        <div class="gap-icon">🧬</div>
+        <div class="gap-body">
+          <h3>Golden Index Feedback Loop — Manual Write-back</h3>
+          <p>When Giles confirms a new part → KAN mapping during Stage 4 review, that mapping should be automatically written back to the Golden Index. Currently it requires a manual update_golden_index.py run. Auto-capturing confirmed mappings from Stage 4 Excel would make the index self-improving.</p>
+          <div class="gap-meta">
+            <span class="meta-tag">update_golden_index.py exists</span>
+            <span class="meta-tag">Stage 4 override column available</span>
+            <span class="meta-tag">Two copies must sync</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gap-card medium">
+        <div class="gap-icon">📁</div>
+        <div class="gap-body">
+          <h3>Per-Job Project Task Membership — Manual Post-Import</h3>
+          <p>After Stage 5, Giles manually adds the imported BOM tasks to the specific job/manufacturing project. This is the last manual step in the import flow. Automating it would require reliable per-job GID resolution, which currently depends on Giles providing the URL at run time.</p>
+        </div>
+      </div>
+
+      <div class="gap-card medium">
+        <div class="gap-icon">📋</div>
+        <div class="gap-body">
+          <h3>Build Packs Reference Field — Requires Task GID</h3>
+          <p>The Build Packs reference field (GID 1211660742155293) is a reference type — it requires a task GID, not a text value. This means it cannot be set by name during automated processes and currently requires manual intervention. Solving this needs a GID resolution step in the pipeline.</p>
+        </div>
+      </div>
+
+      <!-- LOW -->
+      <div style="font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--muted); margin-bottom:6px; margin-top:16px; padding-left:4px;">⚪ Lower Priority / Backlog</div>
+
+      <div class="gap-card low">
+        <div class="gap-icon">📐</div>
+        <div class="gap-body">
+          <h3>Drawing BOM Extractor — Built, Not Integrated</h3>
+          <p>3.Drawing_BOM_Extractor/ exists in the Asana Scripts folder but is not wired into the BOM pipeline. It could extract parts from drawing packs automatically rather than relying on manual vendor Excel files.</p>
+        </div>
+      </div>
+
+      <div class="gap-card low">
+        <div class="gap-icon">🔗</div>
+        <div class="gap-body">
+          <h3>Relational Syncer — Partial</h3>
+          <p>The Relational Syncer (description_appender.py, 07_update_references.py) handles cross-reference updates between tasks. Partially built, not fully integrated into the operational flow.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Section 9: Roadmap at a glance -->
+  <div class="section">
+    <div class="section-header">
+      <div class="num">9</div>
+      <h2>Path to Perfect Stock Control</h2>
+    </div>
+    <table class="status-table" style="background:var(--surface); border-radius:10px; overflow:hidden;">
+      <thead>
+        <tr><th>What</th><th>Current state</th><th>Next action</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>BOM → Asana import</td>
+          <td><span class="status-dot dot-green"></span>Live, 5-stage pipeline</td>
+          <td style="color:var(--muted)">Monitor — ongoing</td>
+        </tr>
+        <tr>
+          <td>Part matching (Golden Index)</td>
+          <td><span class="status-dot dot-amber"></span>Live but manual feedback loop</td>
+          <td style="color:var(--muted)">Auto-capture Stage 4 mappings → write-back</td>
+        </tr>
+        <tr>
+          <td>Pick / Order routing</td>
+          <td><span class="status-dot dot-green"></span>Live via Stage 3 stock check</td>
+          <td style="color:var(--muted)">Monitor — ongoing</td>
+        </tr>
+        <tr>
+          <td>Purchasing email intelligence</td>
+          <td><span class="status-dot dot-green"></span>Live, 4-layer HITL pipeline</td>
+          <td style="color:var(--muted)">Monitor — ongoing</td>
+        </tr>
+        <tr>
+          <td>Parts Control membership</td>
+          <td><span class="status-dot dot-red"></span>Manual (Giles post-import)</td>
+          <td style="color:var(--muted)">Automate in Stage 5 with explicit sign-off</td>
+        </tr>
+        <tr>
+          <td>Automation rules (supplier tagging, consumables, high-value)</td>
+          <td><span class="status-dot dot-amber"></span>Flowsana + native (fragile)</td>
+          <td style="color:var(--muted)">Build Cloud Run FastAPI app → deploy handlers</td>
+        </tr>
+        <tr>
+          <td>SOLD → project initialisation</td>
+          <td><span class="status-dot dot-red"></span>Manual / Flowsana</td>
+          <td style="color:var(--muted)">Wire project_initializer.py to Cloud Run webhook</td>
+        </tr>
+        <tr>
+          <td>Cloud Run watcher</td>
+          <td><span class="status-dot dot-red"></span>Designed, not deployed</td>
+          <td style="color:var(--muted)">Forge build → ACA agent → gcloud run deploy</td>
+        </tr>
+        <tr>
+          <td>ACA agent</td>
+          <td><span class="status-dot dot-red"></span>Scoped, not built</td>
+          <td style="color:var(--muted)">Create agents/asana_cloud_architect/ with GCP CLI tools</td>
+        </tr>
+        <tr>
+          <td>Per-job project membership</td>
+          <td><span class="status-dot dot-amber"></span>Manual post-import</td>
+          <td style="color:var(--muted)">Add GID resolution step to Stage 5 (low friction)</td>
+        </tr>
+        <tr>
+          <td>Build Packs reference field</td>
+          <td><span class="status-dot dot-amber"></span>Manual (requires task GID)</td>
+          <td style="color:var(--muted)">Add GID lookup step to pipeline or handler</td>
+        </tr>
+        <tr>
+          <td>Drawing BOM Extractor</td>
+          <td><span class="status-dot dot-amber"></span>Built, not integrated</td>
+          <td style="color:var(--muted)">Wire to Stage 1 as optional input path</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Generated by OpenClaw — Sesame Access Systems</p>
+    <p>Context saved to workspace/memory/stock_system_context.md · 2026-04-27</p>
+  </div>
+
+</div>
+</body>
+</html>

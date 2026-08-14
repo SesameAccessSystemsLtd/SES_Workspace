@@ -1,0 +1,6 @@
+<!-- converted from GI_revision_pending_20260721_1449.xlsx -->
+
+## Sheet: Sheet1
+| Override / Reorder QTY | Low Stock Alert | BOM QTY | BOM Description | vendor | ORDER_PICK | Remaining after BOM | Mapped KAN | Asana Task Name | Part Number | Matched Stock_Number | Stock QTY | min Stock QTY | Asana Task URL | Order reference | Order Status | cost center | material | thickness | stock number | web link | notes | mass | volume | source bom file | rev | authority | item | location | qty | info / link | length | zip | d | b | t | a | Asana Stock Name | Asana URL (Golden) | Match Confidence | Match Type | Index Match Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | NO | 2 | Stiffening rib | Laser Cut | PICK | 6.0 | KAN-330 | 10 off NBSS002 (Emergency Stop Angle Bracket) Rev_2 | 1555.1009.P.002 | 002 | 8.0 | 5.0 | Open in Asana |  | PICK | Laser Cut | Stainless Steel | 4.000 mm | 304/HR |  |  | 0.185 kg | 23092.505 mm^3 | 1555.BOM.10.Tesla handrail.Laser Cut.xlsx |  |  | 2 |  |  |  |  |  |  |  |  |  | 10 off NBSS002 (Emergency Stop Angle Bracket) Rev_2 | https://app.asana.com/1/357939803556123/929000000000000.0 | 90 | Substring | MATCHED |

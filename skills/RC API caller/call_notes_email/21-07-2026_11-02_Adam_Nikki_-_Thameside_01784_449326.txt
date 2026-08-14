@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  21/07/2026  11:02
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles from Sesame discussing order volumes, pricing, and stock status with Adam from Thameside, focusing on current and upcoming manufacturing needs and cost considerations.
+
+--- RECAP --------------------------------------------------
+Giles from Sesame inquired about order volumes, specifically 12 long cams, 2 short cams, 26 wheels, and various hinge blocks, with some items in stock and others to be produced via water jet or laser cutting.Adam from Thameside provided current stock levels, including 12 long cams, 2 short cams, 26 wheels, 10 square-ended hinge blocks, 4 rounded-corner hinge blocks, and some brackets, noting some items are in stock and others need to be ordered or reworked.Pricing discussions revealed last prices for certain items: long cams at approximately 211-248, wheels at around 42 pounds each, hinge blocks at 58 pounds for 10 units, and hinge pins are currently unavailable.Giles indicated interest in purchasing 12 long cams, 2 short cams, 26 wheels, and 10 hinge blocks, with negotiations on unit prices, aiming to align costs with budget constraints and competitive market pricing.Adam mentioned ongoing production and stock issues, including delays with certain parts like hinge pins and larger brackets, and plans to confirm specific part numbers and prices for future orders.Both parties agreed to review and confirm prices, stock availability, and order quantities before finalizing and invoicing, with Giles planning to send additional pricing information for comparison.
+
+--- TASKS --------------------------------------------------
+Giles from Sesame will review stock and confirm availability of hinge pins and larger brackets, and provide updated pricing for items discussed.Adam from Thameside will verify part numbers, current stock levels, and previous order prices, then send updated quotes for long cams, short cams, wheels, hinge blocks, and hinge pins.Giles will compare the provided prices with market competitors to ensure cost competitiveness and inform Thameside of any adjustments needed.Both parties will coordinate to finalize order quantities and prices before proceeding with invoicing and delivery arrangements.
+
+(Full transcript: RC web portal only — no RingSense API)

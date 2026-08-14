@@ -1,0 +1,9 @@
+{
+  "action": "run_bom_pipeline",
+  "job": "1595",
+  "control": "Karol Generate Entire BOM - 1595 - St George's House",
+  "control_gid": "1215905006904419",
+  "sub_bom": "1.Long Leading Time",
+  "sub_bom_gid": "12345",
+  "dropbox_url": "https://www.dropbox.com/scl/fo/abc/XYZ?rlkey=k&dl=0"
+}

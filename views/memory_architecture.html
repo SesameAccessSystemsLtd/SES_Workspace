@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #f8f9ff; color: #1A1A2E; }
+.sr-only { position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0); }
+
+.wrap { padding: 18px 20px 24px; max-width: 900px; }
+.title { font-size: 14px; font-weight: 700; color: #2D3A8C; text-align: center; margin-bottom: 3px; }
+.sub   { font-size: 10px; color: #6B7280; text-align: center; margin-bottom: 18px; }
+
+/* Tab switcher */
+.tabs { display: flex; gap: 6px; margin-bottom: 16px; justify-content: center; flex-wrap: wrap; }
+.tab  { padding: 5px 14px; border-radius: 20px; font-size: 11px; font-weight: 600; cursor: pointer;
+        border: 2px solid #C5CBF0; color: #5B6EC8; background: #fff; transition: all 0.15s; }
+.tab.active { background: #2D3A8C; color: #fff; border-color: #2D3A8C; }
+
+/* Content panels */
+.panel { display: none; }
+.panel.active { display: block; }
+
+/* Layer stack */
+.layer { border-radius: 10px; margin-bottom: 10px; padding: 0; overflow: hidden; }
+.layer-head { display: flex; align-items: center; padding: 8px 14px; gap: 10px; }
+.layer-badge { font-size: 9px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+               padding: 2px 7px; border-radius: 10px; white-space: nowrap; }
+.layer-title { font-size: 12px; font-weight: 700; }
+.layer-body  { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; border-top: 1px solid rgba(0,0,0,0.08); }
+.layer-cell  { padding: 8px 12px; border-right: 1px solid rgba(0,0,0,0.06); }
+.layer-cell:last-child { border-right: none; }
+.cell-label  { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #6B7280; margin-bottom: 4px; }
+.cell-text   { font-size: 10px; line-height: 1.5; color: #374151; }
+
+/* Layer colours */
+.l0 .layer-head { background: #1A1A2E; }
+.l0 .layer-title, .l0 .layer-badge { color: #E2E8F0; }
+.l0 .layer-badge { background: #374151; }
+.l0 .layer-body  { background: #F8FAFF; }
+
+.l1 .layer-head { background: #2D3A8C; }
+.l1 .layer-title { color: #fff; }
+.l1 .layer-badge { background: rgba(255,255,255,0.2); color: #fff; }
+.l1 .layer-body  { background: #EEF0FB; }
+
+.l2 .layer-head { background: #5B6EC8; }
+.l2 .layer-title { color: #fff; }
+.l2 .layer-badge { background: rgba(255,255,255,0.2); color: #fff; }
+.l2 .layer-body  { background: #F0F4FF; }
+
+.l3 .layer-head { background: #059669; }
+.l3 .layer-title { color: #fff; }
+.l3 .layer-badge { background: rgba(255,255,255,0.2); color: #fff; }
+.l3 .layer-body  { background: #F0FDF4; }
+
+.l4 .layer-head { background: #D97706; }
+.l4 .layer-title { color: #fff; }
+.l4 .layer-badge { background: rgba(255,255,255,0.2); color: #fff; }
+.l4 .layer-body  { background: #FFFBEB; }
+
+/* Lock / open icons inline */
+.icon { font-size: 12px; margin-right: 2px; }
+
+/* Arrows between layers */
+.connector { text-align: center; font-size: 9px; color: #9CA3AF; margin: -4px 0 2px; letter-spacing: 0.5px; }
+
+/* Governance panel */
+.phase { border-radius: 8px; margin-bottom: 12px; overflow: hidden; border: 2px solid #E5E7EB; }
+.phase-head { padding: 8px 14px; display: flex; align-items: center; gap: 10px; }
+.phase-title { font-size: 12px; font-weight: 700; }
+.phase-body  { padding: 10px 14px; font-size: 10px; line-height: 1.6; color: #374151; background: #fff; }
+.phase-layers { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 6px; }
+.pl { font-size: 9px; font-weight: 600; padding: 2px 7px; border-radius: 10px; }
+
+.ph0 .phase-head { background: #F3F4F6; } .ph0 .phase-title { color: #374151; }
+.ph1 .phase-head { background: #EEF0FB; } .ph1 .phase-title { color: #2D3A8C; }
+.ph2 .phase-head { background: #D1FAE5; } .ph2 .phase-title { color: #065F46; }
+.ph3 .phase-head { background: #FEF3C7; } .ph3 .phase-title { color: #92400E; }
+
+/* Collab panel */
+.signal { border-radius: 8px; margin-bottom: 10px; background: #fff; border: 2px solid #C5CBF0; overflow: hidden; }
+.signal-head { padding: 7px 12px; background: #EEF0FB; display: flex; align-items: center; gap: 8px; }
+.signal-title { font-size: 11px; font-weight: 700; color: #2D3A8C; }
+.signal-body  { padding: 8px 12px; font-size: 10px; color: #374151; line-height: 1.5; }
+.signal-body strong { color: #2D3A8C; }
+
+.note { background: #FFFBEB; border: 1.5px solid #FCD34D; border-radius: 6px; padding: 8px 12px;
+        font-size: 10px; color: #92400E; margin-top: 14px; line-height: 1.5; }
+</style>
+</head>
+<body>
+<!-- SAS-OS-NAV -->
+<a href="../data/os_status/nav.html" style="position:fixed;top:16px;right:16px;z-index:9999;background:#0f172a;color:#fff;font:600 13px -apple-system,'Segoe UI',Roboto,sans-serif;text-decoration:none;padding:8px 16px;border-radius:20px;box-shadow:0 2px 8px rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.25)">&larr; SAS OS portal</a>
+
+<h2 class="sr-only">Sesame AI memory architecture: five layers from company data through personal, pattern, contributed, and process memory, with governance-staged federation.</h2>
+
+<div class="wrap">
+  <div class="title">SESAME AI — Memory Architecture</div>
+  <div class="sub">Three questions: what's being asked · what's been learned · how does it stay current</div>
+
+  <div class="tabs">
+    <div class="tab active" onclick="show('layers')">Memory Layers</div>
+    <div class="tab" onclick="show('collab')">Surfacing Collaboration</div>
+    <div class="tab" onclick="show('gov')">Governance Staging</div>
+    <div class="tab" onclick="show('update')">Keeping Insights Current</div>
+  </div>
+
+  <!-- LAYERS PANEL -->
+  <div class="panel active" id="panel-layers">
+
+    <div class="layer l0">
+      <div class="layer-head">
+        <span class="layer-badge">Layer 0</span>
+        <span class="layer-title">🏢 Company Data — Existing Systems</span>
+      </div>
+      <div class="layer-body">
+        <div class="layer-cell"><div class="cell-label">Where it lives</div><div class="cell-text">SharePoint, OneDrive, Outlook, CRM, project management, CAD systems</div></div>
+        <div class="layer-cell"><div class="cell-label">Who can see it</div><div class="cell-text">Existing permissions — unchanged by Sesame AI</div></div>
+        <div class="layer-cell"><div class="cell-label">Agent role</div><div class="cell-text">Read-only source of truth. Agents query it; nothing is written back without explicit action.</div></div>
+      </div>
+    </div>
+    <div class="connector">↑ agents read from Layer 0 · nothing syncs up without consent ↓</div>
+
+    <div class="layer l1">
+      <div class="layer-head">
+        <span class="layer-badge">Layer 1 — 🔒 Private</span>
+        <span class="layer-title">Personal Memory — stays on device, always</span>
+      </div>
+      <div class="layer-body">
+        <div class="layer-cell"><div class="cell-label">What it holds</div><div class="cell-text">Conversation history, personal Knowledge Graph, task patterns, saved shortcuts, private notes</div></div>
+        <div class="layer-cell"><div class="cell-label">Who can see it</div><div class="cell-text">Employee only. Not the champion. Not IT. Never synced.</div></div>
+        <div class="layer-cell"><div class="cell-label">Tech</div><div class="cell-text">CoWork-OS local SQLite Knowledge Graph + FTS5 + encrypted electron-store. Already built.</div></div>
+      </div>
+    </div>
+    <div class="connector">↑ only topic tags (never content) can move up — with employee consent ↓</div>
+
+    <div class="layer l2">
+      <div class="layer-head">
+        <span class="layer-badge">Layer 2 — 👁 Metadata Only</span>
+        <span class="layer-title">Pattern Index — what topics are active across the team</span>
+      </div>
+      <div class="layer-body">
+        <div class="layer-cell"><div class="cell-label">What it holds</div><div class="cell-text">Topic frequency map. "5 people worked on shaft specifications this week." No names. No content. No queries.</div></div>
+        <div class="layer-cell"><div class="cell-label">Who can see it</div><div class="cell-text">Champion sees aggregate counts. Employees see "others are working on similar topics" nudge only.</div></div>
+        <div class="layer-cell"><div class="cell-label">Tech</div><div class="cell-text">Lightweight JSON index synced to OneDrive. Tags only. Auto-generated by local agent, reviewed before upload.</div></div>
+      </div>
+    </div>
+    <div class="connector">↑ employee explicitly publishes a finished insight ↓</div>
+
+    <div class="layer l3">
+      <div class="layer-head">
+        <span class="layer-badge">Layer 3 — ✋ Opt-in</span>
+        <span class="layer-title">Contributed Knowledge — shared insights employees choose to publish</span>
+      </div>
+      <div class="layer-body">
+        <div class="layer-cell"><div class="cell-label">What it holds</div><div class="cell-text">Summaries, how-tos, project learnings, supplier notes — published deliberately by the employee.</div></div>
+        <div class="layer-cell"><div class="cell-label">Who can see it</div><div class="cell-text">All employees. Champion can approve before publishing. Author is attributed.</div></div>
+        <div class="layer-cell"><div class="cell-label">Tech</div><div class="cell-text">Shared SharePoint folder or OneDrive library. Champion-managed. Versioned documents.</div></div>
+      </div>
+    </div>
+    <div class="connector">↑ champion curates and formalises into official process ↓</div>
+
+    <div class="layer l4">
+      <div class="layer-head">
+        <span class="layer-badge">Layer 4 — 👑 Champion-managed</span>
+        <span class="layer-title">Process Library — official knowledge pushed to all instances</span>
+      </div>
+      <div class="layer-body">
+        <div class="layer-cell"><div class="cell-label">What it holds</div><div class="cell-text">Approved procedures, compliance requirements, standard templates, best practices. Versioned with dates.</div></div>
+        <div class="layer-cell"><div class="cell-label">Who can see it</div><div class="cell-text">All employees read it. Champion writes and updates it. Pushed via [SESAME-AI] email or config sync.</div></div>
+        <div class="layer-cell"><div class="cell-label">Tech</div><div class="cell-text">quick-wins.json + role-pack-map.json + a company knowledge base file. Baked into Employee Package updates.</div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- COLLABORATION PANEL -->
+  <div class="panel" id="panel-collab">
+    <p style="font-size:11px;color:#6B7280;margin-bottom:12px;">The goal: surface "Alice and Bob are solving the same problem" without either of them knowing their queries are being read.</p>
+
+    <div class="signal">
+      <div class="signal-head"><span>🏷️</span><span class="signal-title">Mechanism: Topic Tags, not Query Content</span></div>
+      <div class="signal-body">Each agent silently tags its tasks with topic labels — never the actual words typed. Tags are things like <strong>shaft-spec</strong>, <strong>listed-building-compliance</strong>, <strong>client-onboarding</strong>. These tags sync to the shared Pattern Index (Layer 2). Content never leaves the device.</div>
+    </div>
+
+    <div class="signal">
+      <div class="signal-head"><span>💡</span><span class="signal-title">Collaboration Nudge (employee-facing)</span></div>
+      <div class="signal-body">When 2+ employees share a topic tag, their local agent surfaces a gentle nudge: <strong>"3 colleagues are also working on listed-building compliance this week. There may be shared knowledge worth checking."</strong> No names. Just the signal. Employee decides whether to ask the champion to connect them.</div>
+    </div>
+
+    <div class="signal">
+      <div class="signal-head"><span>📊</span><span class="signal-title">Champion Dashboard (aggregate view)</span></div>
+      <div class="signal-body">Champion sees: which topic clusters are active, which teams are working on similar things, where duplication is happening. Example: <strong>"Engineering and Installation are both researching the same supplier specification — should these teams talk?"</strong> Champion chooses whether to act.</div>
+    </div>
+
+    <div class="signal">
+      <div class="signal-head"><span>🔗</span><span class="signal-title">Cross-Department Signal</span></div>
+      <div class="signal-body">If Sales is researching a building type that Engineering is simultaneously specifying a lift for — the Pattern Index will show overlapping tags. Champion can surface this: <strong>"Sales opportunity and Engineering spec may relate to the same client."</strong> This is the silo-breaker, without exposing individual work.</div>
+    </div>
+
+    <div class="note">⚠️ Important: the Pattern Index never stores employee names alongside tags. It stores counts and department labels only. "Engineering × 3, Sales × 1" — not "Alice, Bob, Charlie from Engineering."</div>
+  </div>
+
+  <!-- GOVERNANCE PANEL -->
+  <div class="panel" id="panel-gov">
+
+    <div class="phase ph0">
+      <div class="phase-head">
+        <span style="font-size:16px;">🔒</span>
+        <div>
+          <div class="phase-title">Now — Pre-Governance (build phase)</div>
+          <div style="font-size:9px;color:#6B7280;">No sharing. Everything local. Safe to deploy.</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        Only Layer 0 (read from existing systems) and Layer 1 (personal, on-device) are active. Nothing syncs anywhere. No governance framework needed. Employees get full local agent power with zero privacy risk. Champion gets completion emails only.
+        <div class="phase-layers">
+          <span class="pl" style="background:#E5E7EB;color:#374151;">✅ Layer 0 — Company Data</span>
+          <span class="pl" style="background:#EEF0FB;color:#2D3A8C;">✅ Layer 1 — Personal</span>
+          <span class="pl" style="background:#F3F4F6;color:#9CA3AF;">⬜ Layer 2 — Pattern Index</span>
+          <span class="pl" style="background:#F3F4F6;color:#9CA3AF;">⬜ Layer 3 — Contributed</span>
+          <span class="pl" style="background:#F3F4F6;color:#9CA3AF;">⬜ Layer 4 — Process Library</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase ph1">
+      <div class="phase-head">
+        <span style="font-size:16px;">📋</span>
+        <div>
+          <div class="phase-title">Stage 1 — Governance Lite (after pilot, ~month 2)</div>
+          <div style="font-size:9px;color:#6B7280;">Requires: a simple data use policy employees sign. Champion as data steward.</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        Enable the Pattern Index (Layer 2) and Process Library (Layer 4). Topics tags sync (no content). Champion can push approved processes down. Collaboration nudges appear. No individual data visible to anyone.
+        <div class="phase-layers">
+          <span class="pl" style="background:#E5E7EB;color:#374151;">✅ L0</span>
+          <span class="pl" style="background:#EEF0FB;color:#2D3A8C;">✅ L1</span>
+          <span class="pl" style="background:#DBEAFE;color:#1E40AF;">✅ Layer 2 — Pattern Index</span>
+          <span class="pl" style="background:#F3F4F6;color:#9CA3AF;">⬜ Layer 3</span>
+          <span class="pl" style="background:#FEF3C7;color:#92400E;">✅ Layer 4 — Process Library</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase ph2">
+      <div class="phase-head">
+        <span style="font-size:16px;">🤝</span>
+        <div>
+          <div class="phase-title">Stage 2 — Collaborative (month 3–4)</div>
+          <div style="font-size:9px;color:#6B7280;">Requires: knowledge contribution policy, champion approval workflow, GDPR data register entry.</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        Enable opt-in knowledge contribution (Layer 3). Employees can publish finished insights to the shared library. Champion reviews before it's visible to others. Authorship is attributed. This is where organisational intelligence starts compounding.
+        <div class="phase-layers">
+          <span class="pl" style="background:#E5E7EB;color:#374151;">✅ L0</span>
+          <span class="pl" style="background:#EEF0FB;color:#2D3A8C;">✅ L1</span>
+          <span class="pl" style="background:#DBEAFE;color:#1E40AF;">✅ L2</span>
+          <span class="pl" style="background:#D1FAE5;color:#065F46;">✅ Layer 3 — Contributed Knowledge</span>
+          <span class="pl" style="background:#FEF3C7;color:#92400E;">✅ L4</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase ph3">
+      <div class="phase-head">
+        <span style="font-size:16px;">🚀</span>
+        <div>
+          <div class="phase-title">Stage 3 — Full Federation (month 6+)</div>
+          <div style="font-size:9px;color:#6B7280;">Requires: full AI governance policy, DPA amendment, executive sign-off.</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        All five layers active. Richer cross-instance knowledge sharing. Agents can query the shared knowledge base directly. The organisational intelligence layer becomes self-reinforcing — every new insight is checked against existing knowledge, contradictions are flagged, processes are auto-updated.
+        <div class="phase-layers">
+          <span class="pl" style="background:#E5E7EB;color:#374151;">✅ L0</span>
+          <span class="pl" style="background:#EEF0FB;color:#2D3A8C;">✅ L1</span>
+          <span class="pl" style="background:#DBEAFE;color:#1E40AF;">✅ L2</span>
+          <span class="pl" style="background:#D1FAE5;color:#065F46;">✅ L3</span>
+          <span class="pl" style="background:#FEF3C7;color:#92400E;">✅ L4</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- UPDATE PANEL -->
+  <div class="panel" id="panel-update">
+    <p style="font-size:11px;color:#6B7280;margin-bottom:12px;">Three mechanisms keep knowledge from going stale.</p>
+
+    <div class="signal">
+      <div class="signal-head"><span>📅</span><span class="signal-title">Freshness Dating</span></div>
+      <div class="signal-body">Every item in Layers 3 and 4 is tagged with a creation date and a <strong>review-by date</strong> (set by champion or author). The local agent checks these dates. Items past review-by surface as: <strong>"This process document is 6 months old and may not reflect current practice."</strong> Champion gets a weekly digest of items due for review.</div>
+    </div>
+
+    <div class="signal">
+      <div class="signal-head"><span>⚡</span><span class="signal-title">Contradiction Flagging</span></div>
+      <div class="signal-body">When an employee's local agent generates a finding that conflicts with an item in the Process Library (Layer 4), it flags it: <strong>"Your research suggests X, but the company standard says Y. Flag this to your champion?"</strong> One click sends a <strong>[SESAME-AI] Knowledge Conflict</strong> email to the champion, who can update the process library or dismiss it.</div>
+    </div>
+
+    <div class="signal">
+      <div class="signal-head"><span>🔄</span><span class="signal-title">Champion Push Updates</span></div>
+      <div class="signal-body">When the champion updates quick-wins.json, role-pack-map.json, or the Process Library, these propagate to employees on next launch (or via a <strong>[SESAME-AI] Update Available</strong> email). The employee's instance pulls the new config from the OneDrive folder. No reinstall required — just a config refresh.</div>
+    </div>
+
+    <div class="signal">
+      <div class="signal-head"><span>🧠</span><span class="signal-title">CoWork-OS Dreaming (already built)</span></div>
+      <div class="signal-body">CoWork-OS has a built-in background process called Dreaming that curates local memory overnight — merging duplicates, compressing old context, and surfacing forgotten insights. This works on Layer 1 automatically. In Stage 3, a shared version can run across the contributed knowledge base to consolidate organisational learning.</div>
+    </div>
+
+    <div class="note">🏗️ Build order: Freshness dating and champion push updates in Stage 1. Contradiction flagging in Stage 2. Shared Dreaming in Stage 3. Don't build what you don't need yet.</div>
+  </div>
+
+</div>
+
+<script>
+function show(id) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('panel-' + id).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>

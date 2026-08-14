@@ -1,0 +1,340 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1591 - Uni of Cambridge Entire BOM,"Master task for all BOMs related to 1591 - Uni of Cambridge Entire BOM
+Dropbox: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Project: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",,,,,,,,,,
+Engraving BOM - 1591 - Uni of Cambridge Entire BOM,,ALL BOMS - 1591 - Uni of Cambridge Entire BOM,,Engraving,,,,,,,
+Engraving - 1591 - Uni of Cambridge Entire BOM,,Engraving BOM - 1591 - Uni of Cambridge Entire BOM,,Engraving,,,,,,,
+1 off 1591. 1016.H1 - SWLPlate.OneWheelchairUser- Engraved Engraving,"1591.1016.H1
+From Cost Centre Engraving
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.154 kg
+Volume: 19380.180 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Engraving - 1591 - Uni of Cambridge Entire BOM,1,Engraving,,,,ORDER,PROJECT ORDER,1216625040098022,https://app.asana.com/0/848657415032331/1216625040098022
+1 off 1591. 1020.A1.1 - 6 buttons plate - Engraving Engraving,"1591.1020.A1.1
+From Cost Centre Engraving
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.308 kg
+Volume: 38136.985 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Engraving - 1591 - Uni of Cambridge Entire BOM,1,Engraving,,,,ORDER,PROJECT ORDER,1216625039286575,https://app.asana.com/0/848657415032331/1216625039286575
+Laser Cut BOM - 1591 - Uni of Cambridge Entire BOM,,ALL BOMS - 1591 - Uni of Cambridge Entire BOM,,Laser Cut,,,,,,,
+Laser Cut - 1591 - Uni of Cambridge Entire BOM,,Laser Cut BOM - 1591 - Uni of Cambridge Entire BOM,,Laser Cut,,,,,,,
+1 off 1591. 1002.H.010 - Pit Trim Front Panel 304/DP1 Laser Cut,"1591.1002.H.010
+Stock Number: 304/DP1
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 8.313 kg
+Volume: 1039176.008 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Laser Cut - 1591 - Uni of Cambridge Entire BOM,,Laser Cut,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216625039779004,https://app.asana.com/0/848657415032331/1216625039779004
+1 off 1591. 1002.H.011 - Pit Trim Side Panel 304/DP1 Laser Cut,"1591.1002.H.011
+Stock Number: 304/DP1
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 10.868 kg
+Volume: 1358495.741 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Laser Cut - 1591 - Uni of Cambridge Entire BOM,,Laser Cut,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216624790095745,https://app.asana.com/0/848657415032331/1216624790095745
+1 off 1591. 1002.H.011_MIR - Pit Trim Side Panel 304/DP1 Laser Cut,"1591.1002.H.011_MIR
+Stock Number: 304/DP1
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 10.868 kg
+Volume: 1358495.741 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Laser Cut - 1591 - Uni of Cambridge Entire BOM,,Laser Cut,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216624792405301,https://app.asana.com/0/848657415032331/1216624792405301
+6 off 1591. 1002.H.018 - Fixing plate 304/HR Laser Cut,"1591.1002.H.018
+Stock Number: 304/HR
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.421 kg
+Volume: 52610.038 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Laser Cut - 1591 - Uni of Cambridge Entire BOM,,Laser Cut,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216625040099479,https://app.asana.com/0/848657415032331/1216625040099479
+1 off 1591. 1002.H.019 - Flat Plate Laser Cut,"1591.1002.H.019
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminium 5083
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 5.388 kg
+Volume: 2034055.792 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Laser Cut - 1591 - Uni of Cambridge Entire BOM,,Laser Cut,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216624793119896,https://app.asana.com/0/848657415032331/1216624793119896
+1 off 1591. 1002.H.023 - Pit Trim Rear Panel 304/DP1 Laser Cut,"1591.1002.H.023
+Stock Number: 304/DP1
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 8.529 kg
+Volume: 1066085.741 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Laser Cut - 1591 - Uni of Cambridge Entire BOM,,Laser Cut,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216624944519413,https://app.asana.com/0/848657415032331/1216624944519413
+2 off 1591. 1020.A.002 - ButtonPost - TopCap 304/DP1 Laser Cut,"1591.1020.A.002
+Stock Number: 304/DP1
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.121 kg
+Volume: 14976.823 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Laser Cut - 1591 - Uni of Cambridge Entire BOM,,Laser Cut,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216624944693871,https://app.asana.com/0/848657415032331/1216624944693871
+2 off 1591. 1020.A.004 - ButtonPost - Base Plate 304/HR Laser Cut,"1591.1020.A.004
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.834 kg
+Volume: 104192.478 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Laser Cut - 1591 - Uni of Cambridge Entire BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216625091015137,https://app.asana.com/0/848657415032331/1216625091015137
+1 off 1591. 1020.A.005 - Button post plate 304/DP1 Laser Cut,"1591.1020.A.005
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.308 kg
+Volume: 38060.088 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Laser Cut - 1591 - Uni of Cambridge Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216625091137467,https://app.asana.com/0/848657415032331/1216625091137467
+2 off 1591. 1020.A.010 - Channel Connector 304/2B Laser Cut,"1591.1020.A.010
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.061 kg
+Volume: 7565.207 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Laser Cut - 1591 - Uni of Cambridge Entire BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216624997318735,https://app.asana.com/0/848657415032331/1216624997318735
+1 off 1591. 1020.A.011 - Drilling Template Laser Cut,"1591.1020.A.011
+Material: Steel, Mild
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.552 kg
+Volume: 70366.809 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Laser Cut - 1591 - Uni of Cambridge Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1216624998067717,https://app.asana.com/0/848657415032331/1216624998067717
+2 off 1591. 1020.A.012 - Cutout Cover 304/DP1 Laser Cut,"1591.1020.A.012
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.787 kg
+Volume: 98359.770 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Laser Cut - 1591 - Uni of Cambridge Entire BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216625092196032,https://app.asana.com/0/848657415032331/1216625092196032
+2 off 1591. 1020.A.014 - Angle 304/2B Laser Cut,"1591.1020.A.014
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.062 kg
+Volume: 7707.490 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Laser Cut - 1591 - Uni of Cambridge Entire BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1216624856905565,https://app.asana.com/0/848657415032331/1216624856905565
+4 off 1591. 1020.A.016 - ButtonPost - Channel 304/HR Laser Cut,"1591.1020.A.016
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 1.933 kg
+Volume: 241672.517 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Laser Cut - 1591 - Uni of Cambridge Entire BOM,4,Laser Cut,,,,ORDER,PROJECT ORDER,1216625040017773,https://app.asana.com/0/848657415032331/1216625040017773
+1 off 1591. 1020.A.017 - Drilling Template Laser Cut,"1591.1020.A.017
+KAN: KAN-348
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267457
+Material: Steel, Mild
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.239 kg
+Volume: 30466.071 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Laser Cut - 1591 - Uni of Cambridge Entire BOM,,Laser Cut,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216624945008011,https://app.asana.com/0/848657415032331/1216624945008011
+Surface Finish BOM - 1591 - Uni of Cambridge Entire BOM,,ALL BOMS - 1591 - Uni of Cambridge Entire BOM,,Surface Finish BOM,,,,,,,
+Marine Lacquer - 1591 - Uni of Cambridge Entire BOM,,Surface Finish BOM - 1591 - Uni of Cambridge Entire BOM,,Marine Lacquer,,,,,,,
+1 off Marine Lacquer 1591. 1002.H.019 - Flat Plate,"1591.1002.H.019
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Aluminium 5083
+Thickness: 10.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 5.388 kg
+Volume: 2034055.792 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Marine Lacquer - 1591 - Uni of Cambridge Entire BOM,,Marine Lacquer,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216624857280870,https://app.asana.com/0/848657415032331/1216624857280870
+MayTec BOM - 1591 - Uni of Cambridge Entire BOM,,ALL BOMS - 1591 - Uni of Cambridge Entire BOM,,MayTec,,,,,,,
+MayTec - 1591 - Uni of Cambridge Entire BOM,,MayTec BOM - 1591 - Uni of Cambridge Entire BOM,,MayTec,,,,,,,
+1 off 1591. 1002.H1 - Side frame MayTec,"1591.1002.H1
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 1.700 kg
+Volume: 1261796.181 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",MayTec - 1591 - Uni of Cambridge Entire BOM,,MayTec,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216625040500837,https://app.asana.com/0/848657415032331/1216625040500837
+1 off 1591. 1002.H1_MIR - Side frame MayTec,"1591.1002.H1_MIR
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 1.700 kg
+Volume: 1261796.181 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",MayTec - 1591 - Uni of Cambridge Entire BOM,,MayTec,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216625180393053,https://app.asana.com/0/848657415032331/1216625180393053
+1 off 1591. 1002.H2 - Front frame MayTec,"1591.1002.H2
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 1.255 kg
+Volume: 875038.294 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",MayTec - 1591 - Uni of Cambridge Entire BOM,,MayTec,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216624943958074,https://app.asana.com/0/848657415032331/1216624943958074
+NBSS BOM - 1591 - Uni of Cambridge Entire BOM,,ALL BOMS - 1591 - Uni of Cambridge Entire BOM,,NBSS,,,,,,,
+NBSS/Laser Cut - 1591 - Uni of Cambridge Entire BOM,,NBSS BOM - 1591 - Uni of Cambridge Entire BOM,,NBSS/Laser Cut,,,,,,,
+1 off 1591. 034.001 - NBSS.034.001 SafeWorkingLoadPlate: Blank NBSS/Laser Cut,"1591.034.001
+KAN: KAN-310
+KAN Stock Link: https://app.asana.com/0/632603478911321/1165239479083396
+Material: Stainless Steel
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.154 kg
+Volume: 19288.301 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",NBSS/Laser Cut - 1591 - Uni of Cambridge Entire BOM,,NBSS/Laser Cut,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216625040404985,https://app.asana.com/0/848657415032331/1216625040404985
+NBSS/Welded by Sesame - 1591 - Uni of Cambridge Entire BOM,,NBSS BOM - 1591 - Uni of Cambridge Entire BOM,,NBSS/Welded by Sesame,,,,,,,
+6 off 1591. 040.02 - NBSS.040.02 Welded Assembly NBSS/Welded by Sesame,"1591.040.02
+KAN: KAN-298
+KAN Stock Link: https://app.asana.com/0/632603478911321/1200317103586535
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.110 kg
+Volume: 13853.362 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",NBSS/Welded by Sesame - 1591 - Uni of Cambridge Entire BOM,,NBSS/Welded by Sesame,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216625039875223,https://app.asana.com/0/848657415032331/1216625039875223
+NBSS/Sesame - 1591 - Uni of Cambridge Entire BOM,,NBSS BOM - 1591 - Uni of Cambridge Entire BOM,,NBSS/Sesame,,,,,,,
+1 off 1591. 041 - NBSS.041 CallForAssistance Plate Narrow Engraved NBSS/Sesame,"1591.041
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.246 kg
+Volume: 30793.521 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",NBSS/Sesame - 1591 - Uni of Cambridge Entire BOM,1,NBSS/Sesame,,,,ORDER,PROJECT ORDER,1216625092557709,https://app.asana.com/0/848657415032331/1216625092557709
+Sesame BOM - 1591 - Uni of Cambridge Entire BOM,,ALL BOMS - 1591 - Uni of Cambridge Entire BOM,,Sesame,,,,,,,
+Sesame - 1591 - Uni of Cambridge Entire BOM,,Sesame BOM - 1591 - Uni of Cambridge Entire BOM,,Sesame,,,,,,,
+2 off 1591. 1008.T.8ID_Grommet - 8mm ID Grommet 666-4603 Sesame,"1591.1008.T.8ID_Grommet
+Stock Number: 666-4603
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/cable-grommets/6664603
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.001 kg
+Volume: 677.640 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Sesame - 1591 - Uni of Cambridge Entire BOM,2,Sesame,,,,ORDER,PROJECT ORDER,1216625092662763,https://app.asana.com/0/848657415032331/1216625092662763
+RS Components - 1591 - Uni of Cambridge Entire BOM,,Sesame BOM - 1591 - Uni of Cambridge Entire BOM,,RS Components,,,,,,,
+4 off 1591. 1008.T.13ID_P_Clip - Rubber-lined clamp; 13mm ID 298-8097 RS Components,"1591.1008.T.13ID_P_Clip
+Stock Number: 298-8097
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/p-clips/2988097/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.002 kg
+Volume: 1949.773 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",RS Components - 1591 - Uni of Cambridge Entire BOM,4,RS Components,,,,ORDER,PROJECT ORDER,1216625180871877,https://app.asana.com/0/848657415032331/1216625180871877
+2 off 1591. 1008.T.PG9 - PG9 CableGland / or M16 NBSS/Sesame,"1591.1008.T.PG9
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.016 lbmass
+Volume: 0.448 in^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",NBSS/Sesame - 1591 - Uni of Cambridge Entire BOM,2,NBSS/Sesame,,,,ORDER,PROJECT ORDER,1216625040915911,https://app.asana.com/0/848657415032331/1216625040915911
+EAO - 1591 - Uni of Cambridge Entire BOM,,Sesame BOM - 1591 - Uni of Cambridge Entire BOM,,EAO,,,,,,,
+2 off 1591. 1016.3.001 - Lift UP.Down Button 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066 EAO,"1591.1016.3.001
+Stock Number: 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066
+Material: Generic
+Web Link: http://eao.com/en
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.014 kg
+Volume: 13547.123 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",EAO - 1591 - Uni of Cambridge Entire BOM,2,EAO,,,,ORDER,PROJECT ORDER,1216625093124566,https://app.asana.com/0/848657415032331/1216625093124566
+"1 off 1591. 1016.3.002 - Call for assistance (Bell), CFA + Doorbell 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066 EAO","1591.1016.3.002
+Stock Number: 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066
+KAN: KAN-330
+KAN Stock Link: https://app.asana.com/0/632603478911321/928895539267431
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.014 kg
+Volume: 13546.262 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",EAO - 1591 - Uni of Cambridge Entire BOM,,EAO,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1216624997794975,https://app.asana.com/0/848657415032331/1216624997794975
+1 off 1591. 1016.3.003 - E-Stop Mushroom Head 61-3440.4/5 EAO,"1591.1016.3.003
+Stock Number: 61-3440.4/5
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.014 kg
+Volume: 13538.346 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",EAO - 1591 - Uni of Cambridge Entire BOM,1,EAO,,,,ORDER,PROJECT ORDER,1216625180902090,https://app.asana.com/0/848657415032331/1216625180902090
+1 off 1591. 1016.3.008 - Stainless Call for Assistance button RS: 690-3292 RS Components,"1591.1016.3.008
+Stock Number: RS: 690-3292
+Material: Generic
+Web Link: http://uk.rs-online.com/web/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.011 kg
+Volume: 10696.285 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",RS Components - 1591 - Uni of Cambridge Entire BOM,1,RS Components,,,,ORDER,PROJECT ORDER,1216625041376430,https://app.asana.com/0/848657415032331/1216625041376430
+2 off 1591. 1016.3.010(2Way-Spr) - Key Switch. 2PositionSpringReturn (VERIFY!) 51-141.025D2F EAO,"1591.1016.3.010(2Way-Spr)
+Stock Number: 51-141.025D2F
+Material: Generic
+Web Link: http://eao.com/en
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.011 kg
+Volume: 10542.114 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",EAO - 1591 - Uni of Cambridge Entire BOM,2,EAO,,,,ORDER,PROJECT ORDER,1216625040947806,https://app.asana.com/0/848657415032331/1216625040947806
+1 off 1591. 1016.F.010 - Honeywell Doorbell Wired DW313S - USE ONLY ONE PER JOB Series 3 DW313S Sesame,"1591.1016.F.010
+Stock Number: Series 3 DW313S
+Material: Generic
+Web Link: https://www.amazon.co.uk/Honeywell-dw313-Bell-Cabling-Melodies-White/dp/B019ELBVFI/ref=bmx_5/259-7677686-0013600?pd_rd_w=EdJGl&pf_rd_p=21458252-274b-4574-abb7-e16ed8f7bdfc&pf_rd_r=DZD31CA79ZFF7XVBS234&pd_rd_r=2d7d1c75-89b4-4f8e-bf9e-34800ca49497&pd_rd_wg=aGI6D&pd_rd_i=B019ELBVFI&psc=1
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.030 kg
+Volume: 29599.060 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Sesame - 1591 - Uni of Cambridge Entire BOM,1,Sesame,,,,ORDER,PROJECT ORDER,1216625027021274,https://app.asana.com/0/848657415032331/1216625027021274
+1 off 1591. 1016.J.RemoteControll_RF.Sol.1(4B).04 - Remote Control Sesame,"1591.1016.J.RemoteControll_RF.Sol.1(4B).04
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.013 kg
+Volume: 12671.486 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Sesame - 1591 - Uni of Cambridge Entire BOM,1,Sesame,,,,ORDER,PROJECT ORDER,1216625039791172,https://app.asana.com/0/848657415032331/1216625039791172
+Cement Board Supplier - 1591 - Uni of Cambridge Entire BOM,,Sesame BOM - 1591 - Uni of Cambridge Entire BOM,,Cement Board Supplier,,,,,,,
+1 off 1591. 7003.A.212 - 22 mm Cement Board Size 1.2x2.4m Cement Board Supplier,"1591.7003.A.212
+Stock Number: Size 1.2x2.4m
+Material: Concrete
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 95.977 kg
+Volume: 39869085.586 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Cement Board Supplier - 1591 - Uni of Cambridge Entire BOM,1,Cement Board Supplier,,,,ORDER,PROJECT ORDER,1216625026015062,https://app.asana.com/0/848657415032331/1216625026015062
+2 off 1591. 7003.E.256 - Self Adhesive Neoprene Rubber Strip 20mm(W) x2mm(T) x3m(L) - cut to length Sesame,"1591.7003.E.256
+Material: Rubber
+Web Link: https://www.amazon.co.uk/NUTKIT-Adhesive-Neoprene-Thin-Rubber-Absorption/dp/B0FPM5W61H/ref=sr_1_7?dib=eyJ2IjoiMSJ9.ljru3V3bPgbOsLByMw7_dUOuZcGgzzzj-x9kG_3utLDmk58PxTlFL1BViALTdTWW9JpIX2vcvOywfd_gJoQqh1YTr6yXJKP7Xxi2nL34FWcLn5rUzjHNnxgLAthg5Y3fD9sUszvE0MZEWylSiJMeXBnUFOLcHdRkhVEdIq1Y9-4NY90vzRSZbgiRunoXR20bU9hkKORNupUeoMXaovuDObATyhEBMFIA5-1B7CmPmuPzG1a30_ncjlwFWDhp6uDBCIBgJLo40neqc2pSCvrs7XaKBDFU2nTv6GxGNw-ZEKk.R2sZtzdyKxf555o59ziusyfcnSXHANd3EQaHzu_aBig&dib_tag=se&keywords=neoprene%2Brubber%2Bstrip&qid=1784187054&sr=8-7&th=1
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/r7ak52my4y8mjokk4pmdt/AINGWk7CmFqeBPAo32Ehtz0?rlkey=bi2quz8waqg1jba708r9t95nv&dl=0
+Mass: 0.001 kg
+Volume: 1000.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1216616779722372?focus=true",Sesame - 1591 - Uni of Cambridge Entire BOM,2,Sesame,,,,ORDER,PROJECT ORDER,1216625180795286,https://app.asana.com/0/848657415032331/1216625180795286

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  20/07/2026  09:16
+============================================================
+With:         +44800110000 0800 110000
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved a customer, Fatima Barros, requesting a VAT invoice for a laptop purchase. The agent verified account details and successfully arranged to send the invoice via email. The call concluded with the customer expressing satisfaction.
+
+--- RECAP --------------------------------------------------
+Fatima Barros contacted customer service to request a VAT invoice for a laptop purchased on 7th July, with order number 3 triple 0 1 6 0 0 9 1 8 1, from the company account of Mr Stephen Lions.The agent verified the account details, including account number W410492, the account holder's name, date of birth (13th January 1994), postal code GW18 1AP, and the last order details, confirming the purchase was a laptop.The agent confirmed the email address for invoice delivery as stevenl@sesameax.com and manually prepared the VAT invoice, which included item description, quantity, price, VAT rate of 20%, and total amount.The VAT invoice was sent to the verified email address within five minutes, and the customer expressed appreciation for the assistance.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

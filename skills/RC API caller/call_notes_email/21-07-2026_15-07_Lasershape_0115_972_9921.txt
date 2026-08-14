@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  21/07/2026  15:07
+============================================================
+With:         Lasershape 0115 972 9921
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo and Lasershape discussing recent quotes, email communication issues, and coordinating the processing of quotes for the factory while Connor is away. The overall outcome was troubleshooting email threads and confirming actions to secure quotes.
+
+--- RECAP --------------------------------------------------
+Giles Hugo and Lasershape discussed recent quotes for projects in America, St. Mary's, and Cambridge, with Lasershape providing updates and attempting to send quote information.There was confusion over email threads and sender addresses, with Giles explaining that emails from purchasing were not reaching the intended recipients due to system routing issues.Lasershape agreed to forward all relevant quotes to the purchasing email address to ensure proper processing.Giles Hugo confirmed that he will review the quotes again and get back to Lasershape, aiming to help get as many quotes into the factory as possible while Connor is away.Giles also instructed to secure quote DP1 25521 as a standard procedure.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will review the received quotes and get back to Lasershape with updates.Lasershape will forward all relevant quotes to the purchasing email address to ensure proper processing.Giles Hugo will secure quote DP1 25521 as a standard procedure.
+
+(Full transcript: RC web portal only — no RingSense API)

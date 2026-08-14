@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  23/07/2026  14:05
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo and a client discussing stock levels, order revisions, and pricing adjustments for various machining and stock items. They clarified order quantities, stock status, and pricing, with plans to review and update orders accordingly.
+
+--- RECAP --------------------------------------------------
+Giles Hugo and the client discussed stock levels and order revisions for low profile stock, hinge blocks, and other items, with a focus on quantities and pricing.The client expressed dissatisfaction with previous stainless steel work and requested higher pricing at 10 pounds per item, matching material costs.Giles Hugo indicated the need to review current stock and orders, especially for unlisted items, and to send detailed order updates.They confirmed the order for the American low profile stock, with adjustments based on current stock and previous requests.Both parties acknowledged the complexity of the machining orders and the importance of aligning stock and order quantities to avoid unnecessary costs.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will review current stock and unlisted items to reconcile with existing orders and send detailed updates.Giles Hugo will confirm the revised order quantities for the American low profile stock based on current stock levels.Giles Hugo will update the client on the stock status and any adjustments needed for upcoming orders.
+
+(Full transcript: RC web portal only — no RingSense API)

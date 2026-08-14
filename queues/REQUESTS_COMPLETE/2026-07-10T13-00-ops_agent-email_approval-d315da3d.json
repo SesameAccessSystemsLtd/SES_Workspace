@@ -1,0 +1,14 @@
+{
+  "request_id": "6ed2b5fd-26ec-4205-9334-c97fdf48c585",
+  "source": "email_approval_sheet",
+  "row_index": 34,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkAYZvAAAA=",
+  "subject": "Aalco have delivered your order!",
+  "task_gid": "1215969777794699",
+  "task_name": "21132-1670 - Aalco Non-Ferrous BOM  1670 -  Blackfriers",
+  "asana_url": "https://app.asana.com/0/0/1215969777794699",
+  "action": "(Matched via PO Number in Local DB); Update delivery date to 2026-07-07; Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043)",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-07-07T12:03:06Z\nEmail: Aalco have delivered your order!\n- Update delivery date to 2026-07-07\n- Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043)",
+  "decision": "A",
+  "created_at": "2026-07-10T13:00:07.634789+00:00"
+}

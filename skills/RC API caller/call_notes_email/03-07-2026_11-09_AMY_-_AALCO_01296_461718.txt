@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  03/07/2026  11:09
+============================================================
+With:         AMY - AALCO 01296 461718
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo confirming delivery schedules and discussing order modifications with Amy from AALCO. The delivery will be split between today and Monday, with an addition to the order to be sent via email. Amy will remove the carriage fee if applicable, and the goal is to expedite processing for possible Monday dispatch.
+
+--- RECAP --------------------------------------------------
+Giles Hugo inquired whether the delivery was due today or Monday; Amy confirmed a partial delivery of uncut flat bar today and the rest, including an added order, on Monday.Giles Hugo planned to send an email with additional items to be added to the existing order, which Amy confirmed could be processed on Monday.Amy will remove the carriage fee from the order if applicable, to facilitate the delivery process.The order involves flat bars with multiple cuts, scheduled for delivery on Monday or Tuesday, aiming for possible dispatch on Monday if processed promptly.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send an email with the additional items to be added to the order.Amy will update the order to include the additional items and remove the carriage fee if applicable, processing the order on Monday.
+
+(Full transcript: RC web portal only — no RingSense API)

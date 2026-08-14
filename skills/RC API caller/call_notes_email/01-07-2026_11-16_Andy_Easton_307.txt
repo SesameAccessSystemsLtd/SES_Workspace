@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  01/07/2026  11:16
+============================================================
+With:         Andy Easton 307
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call between Giles Hugo and Andy Easton discussed the status of a gold-plated panel project, highlighting delays due to surface imperfections and the need for different polishing tools. They agreed the panel would not be ready for collection tomorrow and considered alternative approaches to achieve the desired finish.
+
+--- RECAP --------------------------------------------------
+Andy Easton informed Giles Hugo that the gold panel would not be ready for collection tomorrow due to surface issues caused by scratches from polishing attempts, requiring a different mop for proper finishing.Andy explained that the scratches resulted from polishing with a 2500 grit Scotch-Brite on a slow-speed orbital sander to achieve a dull finish, as per client specifications, which differs from the mirror finish initially provided.Giles Hugo confirmed that the client wanted a dull finish, not a mirror finish, and that the entire panel was originally finished with a 2500 grit Scotch-Brite, leading to micro scratches across the surface.Both discussed that attempting to correct the scratches with current methods might not produce a mirror finish and could dull the surface further, making the panel unsuitable for tomorrow's collection.Andy suggested not to proceed with the collection tomorrow and proposed practicing on the underside to test effects before further work, indicating a plan to work on the panel later and inform the client accordingly.
+
+--- TASKS --------------------------------------------------
+Andy Easton will purchase a different mop with Ramzan first thing in the morning to attempt further polishing.Andy Easton will work on the panel to improve its condition and assess the results before the next collection attempt.Giles Hugo will communicate to the client that the panel will not be ready for collection tomorrow due to surface issues.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,61 @@
+Richard Purchasing Performance — Asana Comment Categorization
+Source: memory/richard_comments_chunk_2.json (380 comments)
+
+=== PER-CATEGORY COUNTS (primary issue per comment) ===
+ 1. QC check missed/not done                22
+ 2. Stock status not updated                41
+ 3. Wrong part/spec                         16
+ 4. Incomplete Asana admin                  21
+ 5. Order/invoice diligence failure         18
+ 6. Delayed/overdue                         45
+ 7. Stock/ordering error                    10
+ 8. Missing/incorrect documentation         18
+ 9. Communication/response gap               7
+10. Other/uncategorized                    182
+TOTAL = 380
+
+=== COMMENT AUTHOR BREAKDOWN ===
+Giles   : 200
+Richard : 84
+Others  : 96  (null/no-author status notes=42, Karol=25, Andy=11, Adam Oryl=5,
+               SEAN=5, Steven Lyons=4, Leslie Vaughan=2, Yann Berjonneau=1, sambo=1)
+
+=== DATE RANGE ===
+2019-11-13  to  2026-08-12
+
+=== DOMINANT THEMES / INTERPRETATION ===
+The single largest block is 'Other/uncategorized' (182) — but this is expected:
+it consists overwhelmingly of benign, non-failure items (automated "order
+received" status notes, "please chase overdue task" / "QC metrics section"
+prompts, one-word acknowledgements, pure links, cross-team design/FYIs from
+Karol/Andy/SEAN, and Giles recording his own actions). They are not Richard
+procedural failures.
+
+Excluding those, the ACTUAL recurring procedural failures against Richard, by
+frequency, are:
+  • Delayed/overdue (45)  — the #1 live issue: overdue prints/drawings,
+    parts/QCs not checked in on time, quotes and deliveries not chased.
+  • Stock status not updated (41) — #2: parts arrived/picked/kitted but not
+    book-in/checked-in/ticked, stock locations & counts not reflected in Asana,
+    QC'd-and-kitted items never marked complete/picked.
+  • QC check missed/not done (22) — parts passed/built without proper QC
+    sign-off or that failed QC; wrong finishes (bronze vs brass) passed.
+  • Incomplete Asana admin (21) — tasks completed prematurely while subtasks
+    outstanding, impact/payment/approval fields blank, arrival not ticked.
+  • Order/invoice diligence failure (18) — invoices processed against wrong PO
+    or for items not yet received, invoices signed without delivery note/
+    QC, credit notes unresolved.
+  • Missing/incorrect documentation (18) — no invoice/quote/photos/paperwork
+    attached, no delivery-note photo taken.
+  • Wrong part/spec (16) — wrong size/type/material picked or ordered
+    (e.g. 3.3 vs 3.2 pump, high-density foam vs polystyrene, 16 vs 15 bearing).
+  • Stock/ordering error (10) — wrong/redundant quantities, failure to flag
+    reorders/bulk buys, duplicate order lines.
+  • Communication/response gap (7) — notably small: failure to respond, confirm,
+    or flag things promptly.
+
+Giles authored 200 of 380 comments (53%) — the heavy majority of flagged
+issues. Richard authored 84, mostly acknowledgements/status replies. The
+Giles-authored issues concentrate in categories 6, 4, 5, 2 and 1, confirming
+that the dominant picture is: chronic delays + incomplete stock/QC admin
+rather than high-severity supplier or part-selection errors.

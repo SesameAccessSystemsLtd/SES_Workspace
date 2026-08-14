@@ -1,0 +1,6234 @@
+{
+  "generated_utc": "2026-08-14T09:13:03Z",
+  "record_count": 185,
+  "schema": {
+    "kan": "primary key (string)",
+    "stock_number": "single canonical stock number",
+    "assembly_packs": "list of assembly pack codes",
+    "asana_sesame_part_numbers": "list",
+    "asana_vendor_part_numbers": "list",
+    "resolution_source": "'auto' (single stock) or 'conflict_resolution' (human-chosen)"
+  },
+  "outstanding_conflicts": [],
+  "kans_without_stock": [
+    "KAN-1031"
+  ],
+  "records": [
+    {
+      "kan": "KAN-15",
+      "stock_number": "295-1477",
+      "stock_number_variants": [
+        "295-1477"
+      ],
+      "assembly_packs": [
+        "1005.A",
+        "1005.B",
+        "1006.A",
+        "1008.D",
+        "1029.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.A.003",
+        "1005.B.003",
+        "1006.A.011",
+        "1008.D.066",
+        "1029.A.016"
+      ],
+      "asana_vendor_part_numbers": [
+        "295-1477"
+      ],
+      "asana_task_names": [
+        "100 off NBSS003 - Male M8 25x15mm with 20mm stud 60 ShA - Rubber AV mount - Barriers"
+      ],
+      "description": "Shock Mount M8 25.5mm Diameter 60daN Compression Load 3.5mm",
+      "descriptions_all": [
+        "M8 Rubber Buffer",
+        "Rubber Dong",
+        "RubberBuffer",
+        "Shock Mount M8 25.5mm Diameter 60daN Compression Load 3.5mm"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "vendor": 5
+      },
+      "source_row_count": 5,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-17",
+      "stock_number": "318595",
+      "stock_number_variants": [
+        "318595"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "6000.A.160"
+      ],
+      "asana_vendor_part_numbers": [
+        "IFM IW5064",
+        "IS5001",
+        "NBB10-F17-E2"
+      ],
+      "asana_task_names": [
+        "2 off NBB10-F17-E2 - Inductive sensor (Â£67.20)"
+      ],
+      "description": "Inductive sensor NBB10-F17-E2",
+      "descriptions_all": [
+        "Inductive sensor NBB10-F17-E2"
+      ],
+      "vendors": [
+        "Pepperl-fuchs"
+      ],
+      "match_types": {
+        "description": 3
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-19",
+      "stock_number": "IQ23008BBPKG/K1/0.3M/PUR/US",
+      "stock_number_variants": [
+        "IQ23008BBPKG/K1/0.3M/PUR/US"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1008.A8.002"
+      ],
+      "asana_vendor_part_numbers": [
+        "IFM IW5064",
+        "IS5001",
+        "NBB10-F17-E2"
+      ],
+      "asana_task_names": [
+        "IQ2012 short cable with moulded plug 300mm lg"
+      ],
+      "description": "Inductive Senso",
+      "descriptions_all": [
+        "Inductive Senso"
+      ],
+      "vendors": [
+        "Ifm"
+      ],
+      "match_types": {
+        "description": 3
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-21",
+      "stock_number": "OGP500",
+      "stock_number_variants": [
+        "OGP500"
+      ],
+      "assembly_packs": [
+        "1008.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.A7.002.",
+        "1008.A7.002.ipt"
+      ],
+      "asana_vendor_part_numbers": [
+        "OGP500"
+      ],
+      "asana_task_names": [
+        "2 off IFM OGP500 (Â£84ea) see commit"
+      ],
+      "description": "Photocell",
+      "descriptions_all": [
+        "Photocell"
+      ],
+      "vendors": [
+        "Ifm"
+      ],
+      "match_types": {
+        "vendor": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-27",
+      "stock_number": "EVC078",
+      "stock_number_variants": [
+        "EVC078"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1000.R2.002"
+      ],
+      "asana_vendor_part_numbers": [
+        "EVC078"
+      ],
+      "asana_task_names": [
+        "5m drag chains cables - 4 core M12 - EVC077"
+      ],
+      "description": "20m drag chain cables - 4 core M12",
+      "descriptions_all": [
+        "20m drag chain cables - 4 core M12"
+      ],
+      "vendors": [
+        "ifm"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-28",
+      "stock_number": "NBB4-12GM30-E2-V1",
+      "stock_number_variants": [
+        "NBB4-12GM30-E2-V1"
+      ],
+      "assembly_packs": [
+        "2100.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "2100.B.129"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBB4-12GM30-E2-V1"
+      ],
+      "asana_task_names": [
+        "2 off NBB4-12GM30-E2-V1 - Ram Sensor (Â£61.33 ea)"
+      ],
+      "description": "Inductive sensor",
+      "descriptions_all": [
+        "Inductive sensor"
+      ],
+      "vendors": [
+        "Pepperl-fuchs"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-32",
+      "stock_number": "62 - 05 - P.M. BRAKE - B - C.C. - 24 - E2(14mm keyway)",
+      "stock_number_variants": [
+        "62 - 05 - P.M. BRAKE - B - C.C. - 24 - E2(14mm keyway)"
+      ],
+      "assembly_packs": [
+        "6000.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "6000.A.TD765"
+      ],
+      "asana_vendor_part_numbers": [
+        "Type 62 - 09*62-FM(A)-CC-Ã14-24Vdc"
+      ],
+      "asana_task_names": [
+        "Permanent magnetic brake Type 62 Stock (2 off)"
+      ],
+      "description": "PERMANENT MAGNET BRAKE type 62",
+      "descriptions_all": [
+        "PERMANENT MAGNET BRAKE type 62"
+      ],
+      "vendors": [
+        "SG Transmission"
+      ],
+      "match_types": {
+        "description": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-41",
+      "stock_number": "SES4473",
+      "stock_number_variants": [
+        "SES4473"
+      ],
+      "assembly_packs": [
+        "1008.H"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.H3(RF S",
+        "1008.H3(RF SES4473)"
+      ],
+      "asana_vendor_part_numbers": [
+        "SES447324"
+      ],
+      "asana_task_names": [
+        "10 off SES447324 Emergency Barrier Lower = Â£210 each"
+      ],
+      "description": "Emergency barrier lower valve assembly",
+      "descriptions_all": [
+        "Emergency barrier lower valve assembly"
+      ],
+      "vendors": [
+        "Related Fluid"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-43",
+      "stock_number": "MS20SSU",
+      "stock_number_variants": [
+        "MS20SSU"
+      ],
+      "assembly_packs": [
+        "1005.A",
+        "1009.A",
+        "1009.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.A.032",
+        "1005.B.020",
+        "1009.A.032",
+        "1009.B.048"
+      ],
+      "asana_vendor_part_numbers": [
+        "MS20SSU"
+      ],
+      "asana_task_names": [
+        "MS20SSU Maglocks long 24V â 10m Fly lead â extra platingÂ Â Â Â Â Â Â Â Â Â Â£ 89.00"
+      ],
+      "description": "Non-standard Maglock",
+      "descriptions_all": [
+        "100mm long maglock",
+        "Non-standard Maglock"
+      ],
+      "vendors": [
+        "Magnetic Solutions"
+      ],
+      "match_types": {
+        "description": 1,
+        "vendor": 3
+      },
+      "source_row_count": 4,
+      "has_assembly_pack": true,
+      "resolution_source": "conflict_resolution"
+    },
+    {
+      "kan": "KAN-44",
+      "stock_number": "08B-2R",
+      "stock_number_variants": [
+        "08B-2R"
+      ],
+      "assembly_packs": [
+        "1005.A",
+        "1005.B",
+        "1009.A",
+        "1009.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.A.039.D",
+        "1005.A18.Double",
+        "1005.B.064",
+        "1005.B34.Double",
+        "1009.A.039",
+        "1009.A17.Double",
+        "1009.B.043",
+        "1009.B21.Double",
+        "1009.N.039.Double"
+      ],
+      "asana_vendor_part_numbers": [
+        "08B-2R"
+      ],
+      "asana_task_names": [
+        "5 off box of 5m 08B-2R Double chain - Â£12.94/m"
+      ],
+      "description": "Sprocket Chain - Double X2 (Length = 1974mm)",
+      "descriptions_all": [
+        "Sprocket Chain",
+        "Sprocket Chain - Double X2",
+        "Sprocket Chain - Double X2 (Length = 1974mm)",
+        "Sprocket Chain - Double X2 (Length = 2771mm)",
+        "Sprocket Chain - Double X2 (Length = 2774mm)"
+      ],
+      "vendors": [
+        "Transmission Development"
+      ],
+      "match_types": {
+        "vendor": 8
+      },
+      "source_row_count": 8,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-46",
+      "stock_number": "08B-1R",
+      "stock_number_variants": [
+        "08B-1R"
+      ],
+      "assembly_packs": [
+        "1005.B",
+        "1009.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.B.059",
+        "1009.B.044"
+      ],
+      "asana_vendor_part_numbers": [
+        "08B-1R"
+      ],
+      "asana_task_names": [
+        "5 off box of 5m 08B-1R Single chain - Â£4.85/m"
+      ],
+      "description": "Middle Chain - Single X1 (Length = 2211mm) CHANGE ME",
+      "descriptions_all": [
+        "Middle Chain - Single X1",
+        "Middle Chain - Single X1 (Length = 2211mm) CHANGE ME",
+        "Middle Chain - Single X1 (Length = 3106mm)"
+      ],
+      "vendors": [
+        "Transmission Development"
+      ],
+      "match_types": {
+        "vendor": 4
+      },
+      "source_row_count": 4,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-48",
+      "stock_number": "NBSS.431",
+      "stock_number_variants": [
+        "NBSS.431"
+      ],
+      "assembly_packs": [
+        "1004.B",
+        "1009.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1004.B3.108",
+        "1009.B.005",
+        "431"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.431"
+      ],
+      "asana_task_names": [
+        "30 off NBSS431 - Varley Casters - the plastic part"
+      ],
+      "description": "(Rising Barrier Sliding Wheel) - NBSS.431",
+      "descriptions_all": [
+        "(Rising Barrier Sliding Wheel) - NBSS.431"
+      ],
+      "vendors": [
+        "NBSS/Varley-Castors",
+        "Varley-Castors"
+      ],
+      "match_types": {
+        "vendor": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-54",
+      "stock_number": "Z14.1.028.0 with ends 2x 114.1.12P",
+      "stock_number_variants": [
+        "Z14.1.028.0 with ends 2x 114.1.12P"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1008.Y.EasyChain[15mm] DoubleRB",
+        "1008.Y.EasyChain[15mm]6000",
+        "1008.Y.EasyChain[15mm]6000.2",
+        "1008.Y.EasyChain[15mm]6000.3",
+        "1009.EasyChain[75mm]"
+      ],
+      "asana_vendor_part_numbers": [
+        "06.10.018.0",
+        "2400.07.0750",
+        "E300.075.075"
+      ],
+      "asana_task_names": [
+        "15mm ID Easy Chain 14.1.028"
+      ],
+      "description": "Easy Chain [15mm inner] Length: XXXX",
+      "descriptions_all": [
+        "Easy Chain [15mm inner] Length: XXXX"
+      ],
+      "vendors": [
+        "IGUS"
+      ],
+      "match_types": {
+        "description": 12
+      },
+      "source_row_count": 12,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-56",
+      "stock_number": "Z14.2.028.0 with ends 2x 114.2.12P",
+      "stock_number_variants": [
+        "Z14.2.028.0 with ends 2x 114.2.12P"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1008.Y.EasyC",
+        "1008.Y.EasyChain[25mm] RisingButtonPost",
+        "1009.EasyChain[25mm]",
+        "1009.EasyChain[25mm].Front",
+        "1009.EasyChain[25mm].Front.Electric",
+        "1009.EasyChain[75mm]",
+        "1022.A06"
+      ],
+      "asana_vendor_part_numbers": [
+        "06.10.018.0",
+        "2400.07.0750",
+        "E300.075.075"
+      ],
+      "asana_task_names": [
+        "25mm ID Easy Chain 14.2.028"
+      ],
+      "description": "Easy Chain [Inner width:25mm] 2 ends for fitting",
+      "descriptions_all": [
+        "Easy Chain [25mm inner] Length: XXXX",
+        "Easy Chain [Inner width:25mm] 2 ends for fitting",
+        "Easy Chain [Inner width:25mm] 793mm length",
+        "Easy Chain [Inner width:25mm] Length: 1281mm"
+      ],
+      "vendors": [
+        "IGUS"
+      ],
+      "match_types": {
+        "description": 18
+      },
+      "source_row_count": 18,
+      "has_assembly_pack": false,
+      "resolution_source": "conflict_resolution"
+    },
+    {
+      "kan": "KAN-59",
+      "stock_number": "Z14.3.028.0 with ends 2x 114.3.12P",
+      "stock_number_variants": [
+        "Z14.3.028.0 with ends 2x 114.3.12P"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1003.107",
+        "1003.B.107",
+        "1008.Y.Easy",
+        "1008.Y.EasyChain[38mm]",
+        "1008.Y.EasyChain[38mm] SingleRB",
+        "1008.Y.EasyChain[38mm] Stairs_A",
+        "1008.Y.EasyChain[38mm] Stairs_B",
+        "1009.EasyCha",
+        "1009.EasyChain[38mm].Front",
+        "1009.EasyChain[38mm].SingleBarrier",
+        "1009.EasyChain[75mm]",
+        "3000.1005.EasyChain[38mm]",
+        "S1.1003.A.Ea"
+      ],
+      "asana_vendor_part_numbers": [
+        "06.10.018.0",
+        "2400.07.0750",
+        "E300.075.075"
+      ],
+      "asana_task_names": [
+        "10mm ID Easy chain 06.10.018.0",
+        "38mm ID Easy Chain 14.3.028",
+        "75mm ID Easy Chain 2400.07.0750 - NOT HOLDING IN STOCK - Returning to IGUS",
+        "75mm ID easy chain E300.075.100.0 - used on rising barrier platforms"
+      ],
+      "description": "Easy Chain [38mm inner] Length: 701,5mm",
+      "descriptions_all": [
+        "Easy Chain [38mm inner] Length:",
+        "Easy Chain [38mm inner] Length: 1159mm",
+        "Easy Chain [38mm inner] Length: 1260",
+        "Easy Chain [38mm inner] Length: 701,5mm",
+        "Easy Chain [38mm inner] Length: 915mm",
+        "Easy Chain [38mm inner] Length: XXXX",
+        "Easy Chain [38mm inner] Length: mm"
+      ],
+      "vendors": [
+        "IGUS"
+      ],
+      "match_types": {
+        "description": 36
+      },
+      "source_row_count": 36,
+      "has_assembly_pack": false,
+      "resolution_source": "conflict_resolution"
+    },
+    {
+      "kan": "KAN-61",
+      "stock_number": "MHM50A0L",
+      "stock_number_variants": [
+        "MHM50A0L"
+      ],
+      "assembly_packs": [
+        "1009.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.B.005",
+        "1009.A.022",
+        "1009.B.058",
+        "1009.F.007"
+      ],
+      "asana_vendor_part_numbers": [
+        "MHM50A0L"
+      ],
+      "asana_task_names": [
+        "50cc MHM50A0L - 16mm Straight Keyed Shaft Side Ports Barrier Motor Danfoss"
+      ],
+      "description": "BarrierMotor - 50CC",
+      "descriptions_all": [
+        "BarrierMotor - 50CC"
+      ],
+      "vendors": [
+        "Hydraulic Supplier"
+      ],
+      "match_types": {
+        "vendor": 4
+      },
+      "source_row_count": 4,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-63",
+      "stock_number": "MMFS32C",
+      "stock_number_variants": [
+        "MMFS32C"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1005.A17"
+      ],
+      "asana_vendor_part_numbers": [
+        "MMS32C"
+      ],
+      "asana_task_names": [
+        "32cc Barrier motor - MMFS32C (raising barrier)"
+      ],
+      "description": "BarrierMotor - 32CC",
+      "descriptions_all": [
+        "BarrierMotor - 32CC"
+      ],
+      "vendors": [
+        "MS Hydraulic"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-64",
+      "stock_number": "SY85STH156-6204B Nema 34",
+      "stock_number_variants": [
+        "SY85STH156-6204B Nema 34"
+      ],
+      "assembly_packs": [
+        "6000.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "6000.A.023"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "Nema 34 Stepper motors - 4.2Amp and 6.2 Amp 34HS59-6204D"
+      ],
+      "description": "Stepper motor",
+      "descriptions_all": [
+        "Stepper motor"
+      ],
+      "vendors": [
+        "Motion Controls"
+      ],
+      "match_types": {
+        "description": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-87",
+      "stock_number": "LAS-2-1-50-24",
+      "stock_number_variants": [
+        "LAS-2-1-50-24"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1034.1",
+        "1034.A11",
+        "1034.B.11",
+        "1035.A.11"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "LAS 2-1-50 GE 600N 24 Volts"
+      ],
+      "description": "Linear Actuator (s=50mm, v=25mm/s)",
+      "descriptions_all": [
+        "Linear Actuator (s=50mm)",
+        "Linear Actuator (s=50mm, v=25mm/s)"
+      ],
+      "vendors": [
+        "Gapp Automation",
+        "HIWIN"
+      ],
+      "match_types": {
+        "description": 8
+      },
+      "source_row_count": 8,
+      "has_assembly_pack": false,
+      "resolution_source": "conflict_resolution"
+    },
+    {
+      "kan": "KAN-114",
+      "stock_number": "TS6 - Type D - 43mm",
+      "stock_number_variants": [
+        "TS6 - Type D - 43mm"
+      ],
+      "assembly_packs": [
+        "1005.B",
+        "1009.E",
+        "1009.G",
+        "1009.H",
+        "1009.I",
+        "1009.L"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.B.051",
+        "1009.E.012",
+        "1009.G.012",
+        "1009.H.018",
+        "1009.I.016",
+        "1009.L.018",
+        "S3.1005.B.05"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.045.01",
+        "NBSS.045.02",
+        "NBSS.046"
+      ],
+      "asana_task_names": [
+        "Type D - TS6/0043/FS/0600*/0600*/BLACK \"LEGACY STOCK\" - WITHOUT RESISTOR - 72992092"
+      ],
+      "description": "Tape Switch TS6 (TYPE D) 43mm length",
+      "descriptions_all": [
+        "Tape Switch TS6 (TYPE D)",
+        "Tape Switch TS6 (TYPE D) 43mm length"
+      ],
+      "vendors": [
+        "Tape Switch"
+      ],
+      "match_types": {
+        "description": 21
+      },
+      "source_row_count": 21,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-116",
+      "stock_number": "TS6 - TYPE C - 43mm",
+      "stock_number_variants": [
+        "TS6 - TYPE C - 43mm"
+      ],
+      "assembly_packs": [
+        "1005.B",
+        "1009.E",
+        "1009.G",
+        "1009.H",
+        "1009.L",
+        "1015.C"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.B.058",
+        "1009.E.011",
+        "1009.G.011",
+        "1009.H.017",
+        "1009.L.019",
+        "1015.C.011"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.045.01",
+        "NBSS.045.02",
+        "NBSS.046"
+      ],
+      "asana_task_names": [
+        "Type C - TS6/0043/SLR/ 6K8/0600*/BLACK \"LEGACY STOCK\" - WITH RESISTOR - 72992105"
+      ],
+      "description": "Tape Switch TS6 (TYPE C) 43mm length",
+      "descriptions_all": [
+        "Tape Switch TS6 (TYPE C)",
+        "Tape Switch TS6 (TYPE C) 43mm length"
+      ],
+      "vendors": [
+        "Tape Switch"
+      ],
+      "match_types": {
+        "description": 18
+      },
+      "source_row_count": 18,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-120",
+      "stock_number": "SES44742402",
+      "stock_number_variants": [
+        "SES44742402"
+      ],
+      "assembly_packs": [
+        "1008.H"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.H1.1(RF"
+      ],
+      "asana_vendor_part_numbers": [
+        "SES44742402"
+      ],
+      "asana_task_names": [
+        "SES44742402 Main lift Manifold with Stairs - Â£421.19 DO NOT ORDER MORE"
+      ],
+      "description": "Valve Block - 2 function",
+      "descriptions_all": [
+        "Valve Block - 2 function"
+      ],
+      "vendors": [
+        "Related Fluid"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-125",
+      "stock_number": "LRC5A54",
+      "stock_number_variants": [
+        "LRC5A54"
+      ],
+      "assembly_packs": [
+        "1008.N"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.A14",
+        "1008.N1",
+        "1008.N1.1"
+      ],
+      "asana_vendor_part_numbers": [
+        "LRC5A54"
+      ],
+      "asana_task_names": [
+        "LRC5A54Â - short arm limit switches"
+      ],
+      "description": "Standard LimitSwitch: LRC5A54",
+      "descriptions_all": [
+        "Standard LimitSwitch: LRC5A54"
+      ],
+      "vendors": [
+        "IMO"
+      ],
+      "match_types": {
+        "vendor": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-126",
+      "stock_number": "LRC5A55",
+      "stock_number_variants": [
+        "LRC5A55"
+      ],
+      "assembly_packs": [
+        "1008.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.A1",
+        "L.1008.A1"
+      ],
+      "asana_vendor_part_numbers": [
+        "LRC5A55"
+      ],
+      "asana_task_names": [
+        "LRC5A55 - the long arm limit switch (Buy ARMS ONLY)"
+      ],
+      "description": "Adjustable actuator LimitSwitch: LRC5A55",
+      "descriptions_all": [
+        "Adjustable actuator LimitSwitch: LRC5A55"
+      ],
+      "vendors": [
+        "IMO"
+      ],
+      "match_types": {
+        "vendor": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-131",
+      "stock_number": "51-151.0252F / 61-9933.0 / 61-9642.2 / 10-2j09.1062",
+      "stock_number_variants": [
+        "51-151.0252F / 61-9933.0 / 61-9642.2 / 10-2j09.1062"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1016.3.001",
+        "1016.3.007"
+      ],
+      "asana_vendor_part_numbers": [
+        "51-151.0252F"
+      ],
+      "asana_task_names": [
+        "Illumination Push button flush mount - 51-151.0252F - EAO STOCK"
+      ],
+      "description": "Flush E.Stop Button",
+      "descriptions_all": [
+        "Flush E.Stop Button"
+      ],
+      "vendors": [
+        "EAO"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-132",
+      "stock_number": "51-374.F22DF",
+      "stock_number_variants": [
+        "51-374.F22DF"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1016.3.009"
+      ],
+      "asana_vendor_part_numbers": [
+        "51-372.022DF"
+      ],
+      "asana_task_names": [
+        "Keylock 3 pos maint key remove centre - 51-374.F22DF - EAO STOCK"
+      ],
+      "description": "Key Switch. 3PositionSpringReturn (VERIFY!)",
+      "descriptions_all": [
+        "Key Switch. 3PositionSpringReturn (VERIFY!)"
+      ],
+      "vendors": [
+        "EAO"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-134",
+      "stock_number": "51-141.025D2F",
+      "stock_number_variants": [
+        "51-141.025D2F"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1016.3.010"
+      ],
+      "asana_vendor_part_numbers": [
+        "51-141.025D2F"
+      ],
+      "asana_task_names": [
+        "Keylock 2 position 1C/O momentary - 51-141.025D2F - EAO STOCK"
+      ],
+      "description": "Key Switch. 2PositionSpringReturn (VERIFY!)",
+      "descriptions_all": [
+        "Key Switch. 2PositionSpringReturn (VERIFY!)"
+      ],
+      "vendors": [
+        "EAO"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-143",
+      "stock_number": "4.053",
+      "stock_number_variants": [
+        "4.053"
+      ],
+      "assembly_packs": [
+        "1000.F",
+        "3000.W"
+      ],
+      "asana_sesame_part_numbers": [
+        "1000.F.Winke",
+        "3000.Winkel."
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.021"
+      ],
+      "asana_task_names": [
+        "20 off Winkle Bearings for stock"
+      ],
+      "description": "Winkel Bearing + PL00(Plate) - send to zinc plating",
+      "descriptions_all": [
+        "Winkel Bearing + PL00(Plate) - TDC Coating",
+        "Winkel Bearing + PL00(Plate) - send to zinc plating"
+      ],
+      "vendors": [
+        "Euro Bearings",
+        "Euro-Bearings"
+      ],
+      "match_types": {
+        "description": 3
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-148",
+      "stock_number": "BZH50WPT",
+      "stock_number_variants": [
+        "BZH50WPT"
+      ],
+      "assembly_packs": [
+        "1000.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "1000.A.001"
+      ],
+      "asana_vendor_part_numbers": [
+        "BZH50WPT"
+      ],
+      "asana_task_names": [
+        "50x12mm orange caster wheels - BZH50WPT"
+      ],
+      "description": "Polyurethane Cast Iron 50mm Plain Bore 80kg Load",
+      "descriptions_all": [
+        "Polyurethane Cast Iron 50mm Plain Bore 80kg Load"
+      ],
+      "vendors": [
+        "Bil Castors"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-155",
+      "stock_number": "8000-88500-0000000",
+      "stock_number_variants": [
+        "8000-88500-0000000"
+      ],
+      "assembly_packs": [
+        "1008.J"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.J.SL.00"
+      ],
+      "asana_vendor_part_numbers": [
+        "8000-88500-0000000"
+      ],
+      "asana_task_names": [
+        "Murr Base in stock - 8000-88500-0000000"
+      ],
+      "description": "Murr Base",
+      "descriptions_all": [
+        "Murr Base"
+      ],
+      "vendors": [
+        "Murr"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-157",
+      "stock_number": "GFM-081014-05",
+      "stock_number_variants": [
+        "GFM-081014-05"
+      ],
+      "assembly_packs": [
+        "1009.E",
+        "1009.G",
+        "1009.H",
+        "1009.I",
+        "1009.J",
+        "1009.K",
+        "1009.L"
+      ],
+      "asana_sesame_part_numbers": [
+        "1009.E.027",
+        "1009.G.027",
+        "1009.H.038",
+        "1009.I.021",
+        "1009.J.012",
+        "1009.K.011",
+        "1009.L.011"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "GFM-081014-05 - flanged (100 off)"
+      ],
+      "description": "IGUS Flange Bearing",
+      "descriptions_all": [
+        "IGUS Flange Bearing"
+      ],
+      "vendors": [
+        "IGUS"
+      ],
+      "match_types": {
+        "name": 7
+      },
+      "source_row_count": 7,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-159",
+      "stock_number": "FPO 40x20/10-9K",
+      "stock_number_variants": [
+        "FPO 40x20/10-9K"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1003.061",
+        "1003.A.061",
+        "1003.B.061",
+        "35",
+        "S3.1003.A.06"
+      ],
+      "asana_vendor_part_numbers": [
+        "761487",
+        "NBSS.035"
+      ],
+      "asana_task_names": [
+        "Guide roller with nylon tread FPO 40x20/10-9K (ID 761487) - white"
+      ],
+      "description": "Guide roller with nylon tread FPO 40x20/10-9K (ID 761487)",
+      "descriptions_all": [
+        "Guide roller with nylon tread",
+        "Guide roller with nylon tread FPO 40x20/10-9K (ID 761487)"
+      ],
+      "vendors": [
+        "Blickle"
+      ],
+      "match_types": {
+        "name": 2,
+        "vendor": 1,
+        "description": 4
+      },
+      "source_row_count": 7,
+      "has_assembly_pack": false,
+      "resolution_source": "conflict_resolution"
+    },
+    {
+      "kan": "KAN-164",
+      "stock_number": "CKQ59-H4-02500-ZCM-14-P-R-L010",
+      "stock_number_variants": [
+        "CKQ59-H4-02500-ZCM-14-P-R-L010"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "CKQ59-H4-02500-ZCM-14-P-R-L010"
+      ],
+      "asana_vendor_part_numbers": [
+        "C59-H4-02500-ZCM-14-ST-R"
+      ],
+      "asana_task_names": [
+        "Stock GAPP Encoder - C59 -H4-02500- ZCM - 14 - PT- R - L010"
+      ],
+      "description": "Gapp Encoder",
+      "descriptions_all": [
+        "Gapp Encoder"
+      ],
+      "vendors": [
+        "Gapp Automation"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-166",
+      "stock_number": "H350",
+      "stock_number_variants": [
+        "H350"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "H350"
+      ],
+      "asana_vendor_part_numbers": [
+        "H350"
+      ],
+      "asana_task_names": [
+        "H350 - Accumulator 350cc- Diaphram - set to"
+      ],
+      "description": "Hydraulic Accumulator - 70mm wide (60 PSI pr-charge)",
+      "descriptions_all": [
+        "Hydraulic Accumulator - 70mm wide (60 PSI pr-charge)"
+      ],
+      "vendors": [
+        "ISIS"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-167",
+      "stock_number": "CTDE - 25050080 - 845",
+      "stock_number_variants": [
+        "CTDE - 25050080 - 845"
+      ],
+      "assembly_packs": [
+        "2100.T"
+      ],
+      "asana_sesame_part_numbers": [
+        "2100.Telesco",
+        "767"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.767",
+        "R04061"
+      ],
+      "asana_task_names": [
+        "NBSS767 - 1555mm stroke double acting stair rams"
+      ],
+      "description": "2 stage double acting hydraulic telescopic cylinder",
+      "descriptions_all": [
+        "2 stage double acting hydraulic telescopic cylinder"
+      ],
+      "vendors": [
+        "Steerforth"
+      ],
+      "match_types": {
+        "description": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-168",
+      "stock_number": "NUTR 30",
+      "stock_number_variants": [
+        "NUTR 30"
+      ],
+      "assembly_packs": [
+        "1024"
+      ],
+      "asana_sesame_part_numbers": [
+        "1010.B.025",
+        "1024.021",
+        "1024.A.021"
+      ],
+      "asana_vendor_part_numbers": [
+        "24 off Stock NUTR 30 62mm roller bearings for LOW PROFILE scissors",
+        "NUTR 30-72"
+      ],
+      "asana_task_names": [
+        "24 off Stock NUTR 30 62mm roller bearings for LOW PROFILE scissors - Plated"
+      ],
+      "description": "Bearing",
+      "descriptions_all": [
+        "Bearing"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "name": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-175",
+      "stock_number": "MP SX 25/18X50 S AS",
+      "stock_number_variants": [
+        "MP SX 25/18X50 S AS"
+      ],
+      "assembly_packs": [
+        "1008.V"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.V.MiniActuator[50mm]",
+        "1008.V1.1.Mi",
+        "1008.V1.1.MiniActuator[50mm]"
+      ],
+      "asana_vendor_part_numbers": [
+        "18x50 S AS",
+        "MP SX 25",
+        "MP2518A50S - FRONT"
+      ],
+      "asana_task_names": [
+        "10 off MP SX 25/18x50 SAS - 50cc 4 port conforti hydraulic actuators"
+      ],
+      "description": "Mini hydraulic actuator _ 50mm stroke Use loctite in pin assembly",
+      "descriptions_all": [
+        "Mini hydraulic actuator _ 50mm stroke Use loctite in pin assembly",
+        "Mini hydraulic actuator _ 50mm stroke, connectors on both sides"
+      ],
+      "vendors": [
+        "Confortinet.com",
+        "Steerforth"
+      ],
+      "match_types": {
+        "description": 2,
+        "vendor": 2
+      },
+      "source_row_count": 4,
+      "has_assembly_pack": true,
+      "resolution_source": "conflict_resolution"
+    },
+    {
+      "kan": "KAN-194",
+      "stock_number": "FMB081208",
+      "stock_number_variants": [
+        "FMB081208"
+      ],
+      "assembly_packs": [
+        "6000.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "6000.A.072"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "8x12x8 flanged Metric Bush"
+      ],
+      "description": "Oilube flange bush (8x12x8)",
+      "descriptions_all": [
+        "Oilube flange bush (8x12x8)"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-195",
+      "stock_number": "FMB081216",
+      "stock_number_variants": [
+        "FMB081216"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1004.G.137",
+        "6000.A.072",
+        "6000.A.122"
+      ],
+      "asana_vendor_part_numbers": [
+        "FMB081216"
+      ],
+      "asana_task_names": [
+        "8x12x16 flanged Metric oil lite Bush"
+      ],
+      "description": "Bearing 12OD 8ID 16mm Length",
+      "descriptions_all": [
+        "Bearing 12OD 8ID 16mm Length",
+        "Oilube flange bush (8x12x16)"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "vendor": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-196",
+      "stock_number": "FMB162225",
+      "stock_number_variants": [
+        "FMB162225"
+      ],
+      "assembly_packs": [
+        "1010.E"
+      ],
+      "asana_sesame_part_numbers": [
+        "1010.EB.15"
+      ],
+      "asana_vendor_part_numbers": [
+        "FMB162225"
+      ],
+      "asana_task_names": [
+        "16x22x25 flanged Metric Bush"
+      ],
+      "description": "FlangeBearingBush_16x22x25",
+      "descriptions_all": [
+        "FlangeBearingBush_16x22x25"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-197",
+      "stock_number": "FMB182430",
+      "stock_number_variants": [
+        "FMB182430"
+      ],
+      "assembly_packs": [
+        "2100.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "2100.A.091"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "18x24x30 flanged Metric Bush"
+      ],
+      "description": "Flanged bush 18x24x30",
+      "descriptions_all": [
+        "Flanged bush 18x24x30"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-202",
+      "stock_number": "PMB116",
+      "stock_number_variants": [
+        "PMB116"
+      ],
+      "assembly_packs": [
+        "2100.C"
+      ],
+      "asana_sesame_part_numbers": [
+        "2100.C.063"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "18x22x18 Plain Metric Bush"
+      ],
+      "description": "plain metric bush 18x22x18",
+      "descriptions_all": [
+        "plain metric bush 18x22x18"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-205",
+      "stock_number": "PMB119",
+      "stock_number_variants": [
+        "PMB119"
+      ],
+      "assembly_packs": [
+        "2100.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "2100.A.092"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "18x24x18 Plain Metric Bush"
+      ],
+      "description": "plain bush 18x24x18",
+      "descriptions_all": [
+        "plain bush 18x24x18"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-206",
+      "stock_number": "PMB117",
+      "stock_number_variants": [
+        "PMB117"
+      ],
+      "assembly_packs": [
+        "2100.C"
+      ],
+      "asana_sesame_part_numbers": [
+        "2100.C.064"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "18x22x30 Plain Metric Bush"
+      ],
+      "description": "plainBush 18x22x30; CUT OFF FOR 24mm length",
+      "descriptions_all": [
+        "plainBush 18x22x30; CUT OFF FOR 24mm length"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-208",
+      "stock_number": "PMB354125",
+      "stock_number_variants": [
+        "PMB354125"
+      ],
+      "assembly_packs": [
+        "2100.C"
+      ],
+      "asana_sesame_part_numbers": [
+        "2100.C.088"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "35x41x25 Plain Metric Bush"
+      ],
+      "description": "Plain metric bush 35x41x25",
+      "descriptions_all": [
+        "Plain metric bush 35x41x25"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-213",
+      "stock_number": "AL3038-30",
+      "stock_number_variants": [
+        "AL3038-30"
+      ],
+      "assembly_packs": [
+        "1024"
+      ],
+      "asana_sesame_part_numbers": [
+        "1024.011",
+        "6000.A.072",
+        "6000.A.122"
+      ],
+      "asana_vendor_part_numbers": [
+        "FMB081216"
+      ],
+      "asana_task_names": [
+        "30x38x30 flanged Metric Bush - Low profile scissors - 1024.A.011 - 4 off"
+      ],
+      "description": "Oil Filled Bronze Flanged Bush",
+      "descriptions_all": [
+        "Oil Filled Bronze Flanged Bush"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-221",
+      "stock_number": "PFM-0405-04",
+      "stock_number_variants": [
+        "PFM-0405-04"
+      ],
+      "assembly_packs": [
+        "6000.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "6000.A.155"
+      ],
+      "asana_vendor_part_numbers": [
+        "PFM-0405-04"
+      ],
+      "asana_task_names": [
+        "PFM-0405-04"
+      ],
+      "description": "Side Vertical Nylon Slider Bearing",
+      "descriptions_all": [
+        "Side Vertical Nylon Slider Bearing"
+      ],
+      "vendors": [
+        "IGUS"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-237",
+      "stock_number": "440P-M18001",
+      "stock_number_variants": [
+        "440P-M18001"
+      ],
+      "assembly_packs": [
+        "1008.D"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.A4.001",
+        "1008.D.440P-",
+        "1008.D.440P-M18001"
+      ],
+      "asana_vendor_part_numbers": [
+        "440P-M18001"
+      ],
+      "asana_task_names": [
+        "16 off 1008.D.440P-M18001 440P-M18001 Red Limit Switch with roller RS* 323-511 (18)"
+      ],
+      "description": "Limit Switch with roller",
+      "descriptions_all": [
+        "Limit Switch with roller"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "vendor": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-241",
+      "stock_number": "PX86",
+      "stock_number_variants": [
+        "PX86"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "MotorGearbox"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "4:1 gear box for Nema 34 stepper motor"
+      ],
+      "description": "Planetary Reducer Stepper Motor Gearbox 4:1 (Check with Andrew per project!!! Delete Me!!!)",
+      "descriptions_all": [
+        "Planetary Reducer Stepper Motor Gearbox 4:1 (Check with Andrew per project!!! Delete Me!!!)"
+      ],
+      "vendors": [
+        "Motion Control",
+        "Motion Controls"
+      ],
+      "match_types": {
+        "description": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-244",
+      "stock_number": "BZH8570WPTBJM20",
+      "stock_number_variants": [
+        "BZH8570WPTBJM20"
+      ],
+      "assembly_packs": [
+        "1003.B",
+        "1006.J"
+      ],
+      "asana_sesame_part_numbers": [
+        "1003.B.013",
+        "1006.J.080"
+      ],
+      "asana_vendor_part_numbers": [
+        "BZH8570WPTBJM20"
+      ],
+      "asana_task_names": [
+        "70mm Orange Casters - BZH8570WPTBJM20 or ( P0759 at Technica) - OBSOLETE"
+      ],
+      "description": "(BottomStepWheels) 85mm OD, 70mm Width,",
+      "descriptions_all": [
+        "(BottomStepWheels) 85mm OD, 70mm Width,",
+        "85mm OD, 70mm Width,"
+      ],
+      "vendors": [
+        "BIL Casters"
+      ],
+      "match_types": {
+        "vendor": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-247",
+      "stock_number": "A0101212-A_Sht1",
+      "stock_number_variants": [
+        "A0101212-A_Sht1"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1000.W2.FlatShootbolt"
+      ],
+      "asana_vendor_part_numbers": [
+        "A0100010 or GFCX 040 X00 E23 R 100%ED"
+      ],
+      "asana_task_names": [
+        "GFCX 040 X00 E23 RA 24v 100%ED (A0100010)1m long leads- Magnetic Shultz - Shoot Bolt"
+      ],
+      "description": "TO BE PAINTED WITH DURALUX - note on drawing - EBL-I 1515 61-GFCX 040 FC FL 24V (Power to retract)",
+      "descriptions_all": [
+        "TO BE PAINTED WITH DURALUX - note on drawing - EBL-I 1515 61-GFCX 040 FC FL 24V (Power to retract)"
+      ],
+      "vendors": [
+        "Magnet Schultz"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-251",
+      "stock_number": "NUTR 30-72",
+      "stock_number_variants": [
+        "NUTR 30-72"
+      ],
+      "assembly_packs": [
+        "1010.C",
+        "1010.E",
+        "1011.A",
+        "1011.D",
+        "1021.A",
+        "3000.1"
+      ],
+      "asana_sesame_part_numbers": [
+        "1010.B.025",
+        "1010.C.025",
+        "1010.EB.25",
+        "1011.A.016",
+        "1011.D.016",
+        "1021.A.016",
+        "3000.1005.00",
+        "3000.1005.006"
+      ],
+      "asana_vendor_part_numbers": [
+        "NUTR 30-72"
+      ],
+      "asana_task_names": [
+        "NUTR 3072 - 4 off 1011.B.016 - PLATED NUTR 30 - 72mm Roller bearings"
+      ],
+      "description": "Bearing: 72 +0/-0,1 x 30 +0/-0,03",
+      "descriptions_all": [
+        "Bearing: 72 +0/-0,1 x 30 +0/-0,03",
+        "Bearing_NUTR 30-72"
+      ],
+      "vendors": [
+        "Bearing Supplier",
+        "Euro Bearings",
+        "Euro-Bearings"
+      ],
+      "match_types": {
+        "vendor": 8
+      },
+      "source_row_count": 8,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-252",
+      "stock_number": "CV88 VRSP1220",
+      "stock_number_variants": [
+        "CV88 VRSP1220"
+      ],
+      "assembly_packs": [
+        "1008.H"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.H7.(CV8"
+      ],
+      "asana_vendor_part_numbers": [
+        "CV88 VRSP1220"
+      ],
+      "asana_task_names": [
+        "3 off Regeneration valves - CV88 VRSP1220"
+      ],
+      "description": "Regenerative Valve",
+      "descriptions_all": [
+        "Regenerative Valve"
+      ],
+      "vendors": [
+        "Sesame"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-261",
+      "stock_number": "FTH 50x15/12-12K",
+      "stock_number_variants": [
+        "FTH 50x15/12-12K"
+      ],
+      "assembly_packs": [
+        "1001.B",
+        "1006.A",
+        "1006.C",
+        "2000.E"
+      ],
+      "asana_sesame_part_numbers": [
+        "1000.A2.001",
+        "1001.B.029",
+        "1006.A.161",
+        "1006.C.144",
+        "2000.E.051"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "50x15mm 12mm bore Orange caster wheels FTH 50x15/12-12K 463802"
+      ],
+      "description": "Glass Roller Wheel",
+      "descriptions_all": [
+        "Glass Roller Wheel",
+        "Guide roller"
+      ],
+      "vendors": [
+        "Blickle"
+      ],
+      "match_types": {
+        "name": 5
+      },
+      "source_row_count": 5,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-263",
+      "stock_number": "6001200",
+      "stock_number_variants": [
+        "6001200"
+      ],
+      "assembly_packs": [
+        "1005.C"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.C.014",
+        "S3.1005.C.01"
+      ],
+      "asana_vendor_part_numbers": [
+        "6001200"
+      ],
+      "asana_task_names": [
+        "40 off Cylindrical Bumper 28D x 25H - 6001200"
+      ],
+      "description": "Rubber Stopper",
+      "descriptions_all": [
+        "Rubber Stopper"
+      ],
+      "vendors": [
+        "Polymax"
+      ],
+      "match_types": {
+        "vendor": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-264",
+      "stock_number": "674-216",
+      "stock_number_variants": [
+        "674-216"
+      ],
+      "assembly_packs": [
+        "1000.L"
+      ],
+      "asana_sesame_part_numbers": [
+        "1000.L.WDS67",
+        "1000.L.WDS674-216"
+      ],
+      "asana_vendor_part_numbers": [
+        "674-216"
+      ],
+      "asana_task_names": [
+        "25 off M16 swivel leveling feet - 674-216 WDS"
+      ],
+      "description": "Swivel Pad M16",
+      "descriptions_all": [
+        "Swivel Pad M16"
+      ],
+      "vendors": [
+        "WDS"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-266",
+      "stock_number": "151G0211",
+      "stock_number_variants": [
+        "151G0211"
+      ],
+      "assembly_packs": [
+        "1005.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.B.030",
+        "1009.A.020",
+        "1009.A.022",
+        "1009.F.008"
+      ],
+      "asana_vendor_part_numbers": [
+        "151G0211"
+      ],
+      "asana_task_names": [
+        "5 off M70 2 bolt flange (for MHM50A0L motor)"
+      ],
+      "description": "M70 2 bolt flange (for MHM50A0L motor)",
+      "descriptions_all": [
+        "M70 2 bolt flange (for MHM50A0L motor)"
+      ],
+      "vendors": [
+        "Hydraulic Supplier",
+        "Hydrokit LTD"
+      ],
+      "match_types": {
+        "vendor": 4
+      },
+      "source_row_count": 4,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-269",
+      "stock_number": "SA3D250-G18",
+      "stock_number_variants": [
+        "SA3D250-G18"
+      ],
+      "assembly_packs": [
+        "1008.V"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.A6.EP1G12Z020U",
+        "1008.V1.003",
+        "2100.F.001"
+      ],
+      "asana_vendor_part_numbers": [
+        "MP2518A50S - FRONT",
+        "SP Conforti Reed switch"
+      ],
+      "asana_task_names": [
+        "30 off Magnetic Reed Switch for conforti hydraulic actuators"
+      ],
+      "description": "Comepi reed switch for hydraulic actuator groove",
+      "descriptions_all": [
+        "Comepi reed switch for hydraulic actuator groove"
+      ],
+      "vendors": [
+        "Conforti",
+        "Steerforth"
+      ],
+      "match_types": {
+        "description": 9
+      },
+      "source_row_count": 9,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-279",
+      "stock_number": "LC-08-S",
+      "stock_number_variants": [
+        "LC-08-S"
+      ],
+      "assembly_packs": [
+        "1008.H"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.H4.002"
+      ],
+      "asana_vendor_part_numbers": [
+        "LC-08-S"
+      ],
+      "asana_task_names": [
+        "6Â Â off SOLENOID COIL Â LC-08-S 24VDC"
+      ],
+      "description": "SOLENOID COIL",
+      "descriptions_all": [
+        "SOLENOID COIL"
+      ],
+      "vendors": [
+        "Hydraulic Supplier"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-282",
+      "stock_number": "NBSS.414",
+      "stock_number_variants": [
+        "NBSS.414"
+      ],
+      "assembly_packs": [
+        "1008.N"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.N.004"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.414"
+      ],
+      "asana_task_names": [
+        "60 off NBSS414 (LimitSwitchAngle)"
+      ],
+      "description": "Limit Switch Angle - NBSS.414",
+      "descriptions_all": [
+        "Limit Switch Angle - NBSS.414"
+      ],
+      "vendors": [
+        "NBSS/ Laser Cut"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-288",
+      "stock_number": "NBSS.129",
+      "stock_number_variants": [
+        "NBSS.129"
+      ],
+      "assembly_packs": [
+        "1004.F",
+        "1004.R",
+        "1004.T"
+      ],
+      "asana_sesame_part_numbers": [
+        "1004.F.013",
+        "1004.R.11",
+        "1004.T.013"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.129"
+      ],
+      "asana_task_names": [
+        "100 off NBSS129 (Frame Load - Washer)"
+      ],
+      "description": "FRAME LOAD Washer - NBSS.129",
+      "descriptions_all": [
+        "FRAME LOAD Washer - NBSS.129"
+      ],
+      "vendors": [
+        "Laser Cut",
+        "NBSS/ Laser Cut"
+      ],
+      "match_types": {
+        "vendor": 3
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-317",
+      "stock_number": "NBSS.022",
+      "stock_number_variants": [
+        "NBSS.022"
+      ],
+      "assembly_packs": [
+        "1004.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1004.B3.065",
+        "22"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.022"
+      ],
+      "asana_task_names": [
+        "20 off NBSS022 (HydraulicBulkheadPlate)"
+      ],
+      "description": "LS_Bracket_Stairs - NBSS.022",
+      "descriptions_all": [
+        "LS_Bracket_Stairs - NBSS.022"
+      ],
+      "vendors": [
+        "NBSS/ Laser Cut"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-320",
+      "stock_number": "NBSS.020",
+      "stock_number_variants": [
+        "NBSS.020"
+      ],
+      "assembly_packs": [
+        "1008.J"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.J.MurrB"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.020"
+      ],
+      "asana_task_names": [
+        "20 off NBSS020 (MurBaseAngle)"
+      ],
+      "description": "Murr Base Cover - NBSS.020",
+      "descriptions_all": [
+        "Murr Base Cover - NBSS.020"
+      ],
+      "vendors": [
+        "NBSS/ Laser Cut"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-321",
+      "stock_number": "NBSS.019",
+      "stock_number_variants": [
+        "NBSS.019"
+      ],
+      "assembly_packs": [
+        "1008.D"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.D.070"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.019"
+      ],
+      "asana_task_names": [
+        "10 off NBSS019 (ValveBlockPlate) not used"
+      ],
+      "description": "Valve blocks base plate - NBSS.019",
+      "descriptions_all": [
+        "Valve blocks base plate - NBSS.019"
+      ],
+      "vendors": [
+        "NBSS/ Laser Cut"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-322",
+      "stock_number": "NBSS.015",
+      "stock_number_variants": [
+        "NBSS.015"
+      ],
+      "assembly_packs": [
+        "1005.A",
+        "1005.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.A.045",
+        "1005.B.008"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.015"
+      ],
+      "asana_task_names": [
+        "30 off NBSS015_REV 1 - Rising Barrier Sprocket Plate"
+      ],
+      "description": "Sproket Plate - NBSS.015",
+      "descriptions_all": [
+        "Sproket Plate",
+        "Sproket Plate - NBSS.015"
+      ],
+      "vendors": [
+        "NBSS/ Laser Cut"
+      ],
+      "match_types": {
+        "vendor": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-324",
+      "stock_number": "NBSS.012",
+      "stock_number_variants": [
+        "NBSS.012"
+      ],
+      "assembly_packs": [
+        "1016.F"
+      ],
+      "asana_sesame_part_numbers": [
+        "1016.F.005",
+        "12"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.012"
+      ],
+      "asana_task_names": [
+        "10 off NBSS012 (Call for Assistance Box) REV 3 (legacy stock to use first)"
+      ],
+      "description": "BackingBox",
+      "descriptions_all": [
+        "BackingBox"
+      ],
+      "vendors": [
+        "Laser Cut"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-329",
+      "stock_number": "NBSS.011",
+      "stock_number_variants": [
+        "NBSS.011"
+      ],
+      "assembly_packs": [
+        "1016.2"
+      ],
+      "asana_sesame_part_numbers": [
+        "1016.2.001"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.011"
+      ],
+      "asana_task_names": [
+        "10 off NBSS011 (Button Station Box) Rev3"
+      ],
+      "description": "(BackingBox) 138x138x50",
+      "descriptions_all": [
+        "(BackingBox) 138x138x50"
+      ],
+      "vendors": [
+        "Laser Cut"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-330",
+      "stock_number": "NBSS.002",
+      "stock_number_variants": [
+        "NBSS.002"
+      ],
+      "assembly_packs": [
+        "1008.C"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.C.001"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.002"
+      ],
+      "asana_task_names": [
+        "10 off NBSS002 (Emergency Stop Angle Bracket) Rev_2"
+      ],
+      "description": "Emergency Stop Angle Bracket - NBSS.002",
+      "descriptions_all": [
+        "Emergency Stop Angle Bracket - NBSS.002"
+      ],
+      "vendors": [
+        "Laser Cut"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-335",
+      "stock_number": "NBSS.132",
+      "stock_number_variants": [
+        "NBSS.132"
+      ],
+      "assembly_packs": [
+        "1005.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.B.032",
+        "132"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.132"
+      ],
+      "asana_task_names": [
+        "20 off NBSS132 Tension pin Rev1"
+      ],
+      "description": "Tension Pin - NBSS.132",
+      "descriptions_all": [
+        "Tension Pin - NBSS.132"
+      ],
+      "vendors": [
+        "NBSS/ Machining"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-336",
+      "stock_number": "NBSS.131",
+      "stock_number_variants": [
+        "NBSS.131"
+      ],
+      "assembly_packs": [
+        "1005.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.B.033"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.131"
+      ],
+      "asana_task_names": [
+        "20 off NBSS131 Tension pin central"
+      ],
+      "description": "Tension Pin Central - NBSS.131",
+      "descriptions_all": [
+        "Tension Pin Central - NBSS.131"
+      ],
+      "vendors": [
+        "NBSS/ Machining"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-337",
+      "stock_number": "NBSS.128",
+      "stock_number_variants": [
+        "NBSS.128"
+      ],
+      "assembly_packs": [
+        "1005.A",
+        "1005.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.A.010",
+        "1005.B.011"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.128"
+      ],
+      "asana_task_names": [
+        "20 off NBSS128 Rev 2 (SprocketPlatePinC)"
+      ],
+      "description": "Sprocket Pin C - NBSS.128",
+      "descriptions_all": [
+        "Sprocket Pin C",
+        "Sprocket Pin C - NBSS.128"
+      ],
+      "vendors": [
+        "NBSS/ Machining"
+      ],
+      "match_types": {
+        "vendor": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-338",
+      "stock_number": "NBSS.127",
+      "stock_number_variants": [
+        "NBSS.127"
+      ],
+      "assembly_packs": [
+        "1005.A",
+        "1005.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.A.009",
+        "1005.B.010",
+        "127"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.127"
+      ],
+      "asana_task_names": [
+        "20 off NBSS127 (SprocketPlatePinB) Rev2 - 1005.b."
+      ],
+      "description": "Sprocket Pin B - NBSS.127",
+      "descriptions_all": [
+        "Sprocket Pin B",
+        "Sprocket Pin B - NBSS.127"
+      ],
+      "vendors": [
+        "NBSS/ Machining"
+      ],
+      "match_types": {
+        "vendor": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-339",
+      "stock_number": "NBSS.126",
+      "stock_number_variants": [
+        "NBSS.126"
+      ],
+      "assembly_packs": [
+        "1005.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.B.009"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.126"
+      ],
+      "asana_task_names": [
+        "20 off NBSS126 (SprocketPlatePinMotor)"
+      ],
+      "description": "Sprocket Pin Motor - NBSS.126",
+      "descriptions_all": [
+        "Sprocket Pin Motor - NBSS.126"
+      ],
+      "vendors": [
+        "NBSS/ Machining"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-341",
+      "stock_number": "NBSS.105",
+      "stock_number_variants": [
+        "NBSS.105"
+      ],
+      "assembly_packs": [
+        "1003",
+        "1003.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1003.027",
+        "1003.B.027"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.105"
+      ],
+      "asana_task_names": [
+        "20 off NBSS105 Rev1 (OrangeWheel_Rod 20mm)"
+      ],
+      "description": "OrangeWheel_Rod 20mm NBSS.105",
+      "descriptions_all": [
+        "OrangeWheel_Rod 20mm",
+        "OrangeWheel_Rod 20mm NBSS.105"
+      ],
+      "vendors": [
+        "NBSS/ Machining"
+      ],
+      "match_types": {
+        "vendor": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-347",
+      "stock_number": "NBSS.018",
+      "stock_number_variants": [
+        "NBSS.018"
+      ],
+      "assembly_packs": [
+        "1003",
+        "1003.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1003.006",
+        "1003.B.006"
+      ],
+      "asana_vendor_part_numbers": [
+        "33970MFG"
+      ],
+      "asana_task_names": [
+        "40 off NBSS018 (Wheel Pin) 14x51 clevis pins S/S"
+      ],
+      "description": "Wheel Pin NBSS.018",
+      "descriptions_all": [
+        "Wheel Pin",
+        "Wheel Pin NBSS.018"
+      ],
+      "vendors": [
+        "NBSS/ Sesame"
+      ],
+      "match_types": {
+        "description": 4
+      },
+      "source_row_count": 4,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-348",
+      "stock_number": "NBSS.017",
+      "stock_number_variants": [
+        "NBSS.017"
+      ],
+      "assembly_packs": [
+        "1006.A",
+        "1006.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1006.A.012",
+        "1006.B.012"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.017"
+      ],
+      "asana_task_names": [
+        "24 off NBSS017 (Lift Rod Acteal) - Rev_1"
+      ],
+      "description": "Lift Rod Nylon - NBSS.017",
+      "descriptions_all": [
+        "Lift Rod Nylon - NBSS.017"
+      ],
+      "vendors": [
+        "Machining",
+        "NBSS/ Machining"
+      ],
+      "match_types": {
+        "vendor": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-350",
+      "stock_number": "NBSS: 013",
+      "stock_number_variants": [
+        "NBSS.013",
+        "NBSS: 013"
+      ],
+      "assembly_packs": [
+        "1014.F"
+      ],
+      "asana_sesame_part_numbers": [
+        "1014.F.007",
+        "1014.F.056"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.013"
+      ],
+      "asana_task_names": [
+        "NBSS013 (GlassGateNylonInsert)"
+      ],
+      "description": "Glass Nylon Insert (NBSS.013)",
+      "descriptions_all": [
+        "Glass Gate Nylon Insert",
+        "Glass Nylon Insert (NBSS.013)"
+      ],
+      "vendors": [
+        "Machining",
+        "NBSS/ Machining",
+        "WDS"
+      ],
+      "match_types": {
+        "description": 3,
+        "vendor": 1
+      },
+      "source_row_count": 4,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-351",
+      "stock_number": "NBSS.010",
+      "stock_number_variants": [
+        "NBSS.010"
+      ],
+      "assembly_packs": [
+        "1055.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "1055.A.002"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.010"
+      ],
+      "asana_task_names": [
+        "10 off NBSS010 (PostHandle)"
+      ],
+      "description": "PostHandle_NBSS.010",
+      "descriptions_all": [
+        "PostHandle_NBSS.010"
+      ],
+      "vendors": [
+        "Machining"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-352",
+      "stock_number": "NBSS.009",
+      "stock_number_variants": [
+        "NBSS.009"
+      ],
+      "assembly_packs": [
+        "1055.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "1055.A.006",
+        "1055.A.026"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.009"
+      ],
+      "asana_task_names": [
+        "10 off NBSS009 (Black Acetal inner Post)"
+      ],
+      "description": "NylonRing - NBSS: 009 - held by Machining",
+      "descriptions_all": [
+        "NylonRing - NBSS: 009 - held by Machining"
+      ],
+      "vendors": [
+        "NBSS/ Machining"
+      ],
+      "match_types": {
+        "vendor": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-355",
+      "stock_number": "NBSS.008",
+      "stock_number_variants": [
+        "NBSS.008"
+      ],
+      "assembly_packs": [
+        "1003",
+        "1003.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1003.008",
+        "1003.B.008"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.008"
+      ],
+      "asana_task_names": [
+        "100 off NBSS008 Rev 1 (Stair Wheels)"
+      ],
+      "description": "NylonStairWheel - NBSS.008",
+      "descriptions_all": [
+        "NylonStairWheel",
+        "NylonStairWheel - NBSS.008"
+      ],
+      "vendors": [
+        "NBSS/ Machining"
+      ],
+      "match_types": {
+        "vendor": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-357",
+      "stock_number": "NBSS.007",
+      "stock_number_variants": [
+        "NBSS.007"
+      ],
+      "assembly_packs": [
+        "1014.F"
+      ],
+      "asana_sesame_part_numbers": [
+        "1014.F.003"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.007"
+      ],
+      "asana_task_names": [
+        "NBSS007 (Glass Clamp)"
+      ],
+      "description": "GlassClamp - NBSS.007",
+      "descriptions_all": [
+        "GlassClamp - NBSS.007"
+      ],
+      "vendors": [
+        "NBSS/ Sesame"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-360",
+      "stock_number": "ST4DRI4",
+      "stock_number_variants": [
+        "ST4DRI4"
+      ],
+      "assembly_packs": [
+        "1005.A",
+        "1005.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.A.040",
+        "1005.B.076"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.123"
+      ],
+      "asana_task_names": [
+        "20 off NBSS123 Double Sprocket - O8B-2 14T - SKU CS4SR14",
+        "Plating Double sprockets"
+      ],
+      "description": "Double Sprocket",
+      "descriptions_all": [
+        "Double Sprocket"
+      ],
+      "vendors": [
+        "Transmission Development"
+      ],
+      "match_types": {
+        "description": 4
+      },
+      "source_row_count": 4,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-366",
+      "stock_number": "ST4SR14",
+      "stock_number_variants": [
+        "ST4SR14"
+      ],
+      "assembly_packs": [
+        "1005.A",
+        "1005.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.A.044",
+        "1005.B.077"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.124",
+        "NBSS.125"
+      ],
+      "asana_task_names": [
+        "30 off NBSS125 Triple Sprocket with keyway - ST4SR14 with keyway"
+      ],
+      "description": "Single Sprocket with the keyway",
+      "descriptions_all": [
+        "Single Sprocket with keyway",
+        "Single Sprocket with the keyway"
+      ],
+      "vendors": [
+        "Transmission Development"
+      ],
+      "match_types": {
+        "name": 4
+      },
+      "source_row_count": 4,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-370",
+      "stock_number": "2720.1.5M",
+      "stock_number_variants": [
+        "2720.1.5M"
+      ],
+      "assembly_packs": [
+        "1009.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.B.002",
+        "1009.B.002"
+      ],
+      "asana_vendor_part_numbers": [
+        "2720.1.5M"
+      ],
+      "asana_task_names": [
+        "16 off Harken tracks - 2720.1.5M - NO LONGER BUYNG"
+      ],
+      "description": "Harken Track - Cut this in half",
+      "descriptions_all": [
+        "Harken Track - 1.5m long",
+        "Harken Track - Cut this in half"
+      ],
+      "vendors": [
+        "Harken"
+      ],
+      "match_types": {
+        "vendor": 1,
+        "description": 2
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": true,
+      "resolution_source": "conflict_resolution"
+    },
+    {
+      "kan": "KAN-372",
+      "stock_number": "DCP311G",
+      "stock_number_variants": [
+        "DCP311G"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1016.F.010"
+      ],
+      "asana_vendor_part_numbers": [
+        "DCP311G"
+      ],
+      "asana_task_names": [
+        "Honeywell Doorbell Transmitter (button) DCP311G - 6 off"
+      ],
+      "description": "Honeywell Doorbell DCP311G - USE ONLY ONE PER JOB",
+      "descriptions_all": [
+        "Honeywell Doorbell DCP311G - USE ONLY ONE PER JOB"
+      ],
+      "vendors": [
+        "Amazon"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-373",
+      "stock_number": "765-9347",
+      "stock_number_variants": [
+        "765-9347"
+      ],
+      "assembly_packs": [
+        "1006.A",
+        "1008.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "1006.A10.Pro",
+        "1008.A3.001"
+      ],
+      "asana_vendor_part_numbers": [
+        "MP200701",
+        "MP200702"
+      ],
+      "asana_task_names": [
+        "MP200701 - 20 off N/O Magnetic Proximity Sensor"
+      ],
+      "description": "MP200701 - Magnetic Proximity Sensor N/O",
+      "descriptions_all": [
+        "MP200701",
+        "MP200701 - Magnetic Proximity Sensor",
+        "MP200701 - Magnetic Proximity Sensor N/O"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "description": 5
+      },
+      "source_row_count": 5,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-380",
+      "stock_number": "NBSS.014",
+      "stock_number_variants": [
+        "NBSS.014"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1003.B.070",
+        "1005.A.046",
+        "14",
+        "6000.A.001"
+      ],
+      "asana_vendor_part_numbers": [
+        "15170",
+        "NBSS.014",
+        "PMB107"
+      ],
+      "asana_task_names": [
+        "100 off NBSS014 Glacier Bearing Bush 14X16X15 WMU141615 MB1415DU",
+        "16x20x20 Plain Bearing Bush_ PMB162020",
+        "4 off 1010.A.031 Bearing Bush Stainless Steel MC101",
+        "40x46x30 8 off 1011.B.043 - Plain bearing bush (20 in stock) - KAN-453"
+      ],
+      "description": "Bearing Bush (14X16X13) (CUT FOR 13mm)",
+      "descriptions_all": [
+        "Bearing Bush (14X16X13) (CUT FOR 13mm)",
+        "Bearing Bush (14x16x15)"
+      ],
+      "vendors": [
+        "Bearing Supplier",
+        "NBSS/ Bearing Supplier"
+      ],
+      "match_types": {
+        "name": 1,
+        "description": 6
+      },
+      "source_row_count": 7,
+      "has_assembly_pack": false,
+      "resolution_source": "conflict_resolution"
+    },
+    {
+      "kan": "KAN-391",
+      "stock_number": "FC-A180-380-493MÂ 11.52 n/mm",
+      "stock_number_variants": [
+        "FC-A180-380-493MÂ 11.52 n/mm"
+      ],
+      "assembly_packs": [
+        "1005.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.B.092"
+      ],
+      "asana_vendor_part_numbers": [
+        "F14613 Plated and Painted Blue"
+      ],
+      "asana_task_names": [
+        "NBSS777 - Blue Jam Springs - F14613 - 11.52 N/mm"
+      ],
+      "description": "Spring - rising barrier jam device - 11.52 n/mm - painted BLUE",
+      "descriptions_all": [
+        "Spring - rising barrier jam device - 11.52 n/mm - painted BLUE"
+      ],
+      "vendors": [
+        "FlexoSprings"
+      ],
+      "match_types": {
+        "description": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-392",
+      "stock_number": "FC-A180-380-512MÂ 14.77 n/mm",
+      "stock_number_variants": [
+        "FC-A180-380-512MÂ 14.77 n/mm"
+      ],
+      "assembly_packs": [
+        "1005.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "S3.1005.B.08"
+      ],
+      "asana_vendor_part_numbers": [
+        "F14612 Plated and Painted RED"
+      ],
+      "asana_task_names": [
+        "NBSS776 - Red Jam Springs - F14612 - 14.77N/mm"
+      ],
+      "description": "Spring - rising barrier jam device - 14.77 n/mm - painted RED",
+      "descriptions_all": [
+        "Spring - rising barrier jam device - 14.77 n/mm - painted RED"
+      ],
+      "vendors": [
+        "FlexoSprings"
+      ],
+      "match_types": {
+        "description": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-393",
+      "stock_number": "51-135.022DF",
+      "stock_number_variants": [
+        "51-135.022DF"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1016.3.011"
+      ],
+      "asana_vendor_part_numbers": [
+        "51-135.022DF"
+      ],
+      "asana_task_names": [
+        "Keylock 2 position Non Spring Return - 51-135.022DF - EAO STOCK"
+      ],
+      "description": "Key Switch.2WayMaintained",
+      "descriptions_all": [
+        "Key Switch.2WayMaintained"
+      ],
+      "vendors": [
+        "EAO"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-398",
+      "stock_number": "FMB202615",
+      "stock_number_variants": [
+        "FMB202615"
+      ],
+      "assembly_packs": [
+        "1011.D"
+      ],
+      "asana_sesame_part_numbers": [
+        "1011.A.098",
+        "1011.D.105"
+      ],
+      "asana_vendor_part_numbers": [
+        "FMB202615"
+      ],
+      "asana_task_names": [
+        "20x26x15 flanged - 8 off 1011.B.100 - Flanged Metric Bush - FMB202615 (20 in stock) - KAN-398"
+      ],
+      "description": "Flanged bearing bush - 20x26x15 - to be shortened",
+      "descriptions_all": [
+        "Flanged bearing bush - 20x26x15 - to be shortened"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "vendor": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-399",
+      "stock_number": "FMB405050",
+      "stock_number_variants": [
+        "FMB405050"
+      ],
+      "assembly_packs": [
+        "1010.C",
+        "1010.E"
+      ],
+      "asana_sesame_part_numbers": [
+        "1010.A.028",
+        "1010.B.028",
+        "1010.C.028",
+        "1010.EB.28"
+      ],
+      "asana_vendor_part_numbers": [
+        "FMB405050"
+      ],
+      "asana_task_names": [
+        "40x50x50 Flanged 2 off 1010.A.028 - Flanged Metric Bush FMB405050"
+      ],
+      "description": "FlangedBearingBush_40x50x50",
+      "descriptions_all": [
+        "FlangedBearingBush_40x50x50"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "vendor": 3
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-401",
+      "stock_number": "PMB187",
+      "stock_number_variants": [
+        "PMB187"
+      ],
+      "assembly_packs": [
+        "1010.C",
+        "1010.E"
+      ],
+      "asana_sesame_part_numbers": [
+        "1010.A.026",
+        "1010.B.026",
+        "1010.C.026",
+        "1010.EB.26"
+      ],
+      "asana_vendor_part_numbers": [
+        "PMB187"
+      ],
+      "asana_task_names": [
+        "30x35x25 2 off 1010.A.026 - PMB187 Brass, Soft Yellow"
+      ],
+      "description": "PlainMetricBush_30x35x25",
+      "descriptions_all": [
+        "PlainMetricBush_30x35x25"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "vendor": 3
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-409",
+      "stock_number": "WTM_2036_015_2",
+      "stock_number_variants": [
+        "WTM_2036_015_2"
+      ],
+      "assembly_packs": [
+        "1005.A",
+        "1005.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.A.050",
+        "1005.B.086"
+      ],
+      "asana_vendor_part_numbers": [
+        "1010.A.077"
+      ],
+      "asana_task_names": [
+        "4 off 1010.A.077.02 Plain washer MILD Steel, 4.000 mm"
+      ],
+      "description": "20mm ID Plain Washer",
+      "descriptions_all": [
+        "20mm ID Plain Washer"
+      ],
+      "vendors": [
+        "IGUS"
+      ],
+      "match_types": {
+        "description": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-418",
+      "stock_number": "P0051 - 85/60/65/20",
+      "stock_number_variants": [
+        "P0051 - 85/60/65/20"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1003.013",
+        "1003.A.013",
+        "1003.B.013",
+        "S1.1003.A.01"
+      ],
+      "asana_vendor_part_numbers": [
+        "1010.A.036"
+      ],
+      "asana_task_names": [
+        "2 off 1010.A.036 Bottom_WheelTrack Stainless Steel, 304/2B 3.000 mm"
+      ],
+      "description": "Bottom Step Wheel (85mm OD, 60mm Width, )",
+      "descriptions_all": [
+        "Bottom Step Wheel (85mm OD 60mm Width )",
+        "Bottom Step Wheel (85mm OD, 60mm Width, )"
+      ],
+      "vendors": [
+        "Technica wheels"
+      ],
+      "match_types": {
+        "description": 4
+      },
+      "source_row_count": 4,
+      "has_assembly_pack": false,
+      "resolution_source": "conflict_resolution"
+    },
+    {
+      "kan": "KAN-427",
+      "stock_number": "INA AS4060",
+      "stock_number_variants": [
+        "INA AS4060"
+      ],
+      "assembly_packs": [
+        "1011.B",
+        "1011.D"
+      ],
+      "asana_sesame_part_numbers": [
+        "1011.B.105",
+        "1011.D.101",
+        "1011.E.105",
+        "1011.E.106"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "40x60x1 Thrust washer AS4060"
+      ],
+      "description": "Thrust washer 40x60x1",
+      "descriptions_all": [
+        "Thrust washer 40x60x1"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 9
+      },
+      "source_row_count": 9,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-439",
+      "stock_number": "PMB192",
+      "stock_number_variants": [
+        "PMB192"
+      ],
+      "assembly_packs": [
+        "1011.A",
+        "1011.D",
+        "1021.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "1011.A.039",
+        "1011.D.039",
+        "1019.A.039",
+        "1021.A.039"
+      ],
+      "asana_vendor_part_numbers": [
+        "30x38x40 4 off 1011.b.039",
+        "PMB107"
+      ],
+      "asana_task_names": [
+        "30x38x40 4 off 1011.b.039 - Plain Metric Bush - KAN-439"
+      ],
+      "description": "Plain bearing bush - 30x38x40 - to be shortened",
+      "descriptions_all": [
+        "Plain bearing bush - 30x38x40",
+        "Plain bearing bush - 30x38x40 - to be shortened"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 15
+      },
+      "source_row_count": 15,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-453",
+      "stock_number": "PMB226",
+      "stock_number_variants": [
+        "PMB226"
+      ],
+      "assembly_packs": [
+        "1011.A",
+        "1011.D",
+        "1021.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "1011.A.043",
+        "1011.D.043",
+        "1019.A.043",
+        "1021.A.043"
+      ],
+      "asana_vendor_part_numbers": [
+        "40x46x30 8 off 1011.B.043",
+        "PMB107"
+      ],
+      "asana_task_names": [
+        "40x46x30 8 off 1011.B.043 - Plain bearing bush (20 in stock) - KAN-453"
+      ],
+      "description": "Plain bearing bush - 40x46x30",
+      "descriptions_all": [
+        "Plain bearing bush - 40x46x30"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 12
+      },
+      "source_row_count": 12,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-455",
+      "stock_number": "PMB195",
+      "stock_number_variants": [
+        "PMB195"
+      ],
+      "assembly_packs": [
+        "1011.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "1010.A.027",
+        "1011.A.038",
+        "1011.D.038",
+        "1019.A.038",
+        "1021.A.038"
+      ],
+      "asana_vendor_part_numbers": [
+        "40x46x30 8 off 1011.B.043",
+        "PMB107",
+        "PMB304045"
+      ],
+      "asana_task_names": [
+        "30x40x45 2 off 1010.A.027 - Plain bearing bush PMB304045",
+        "30x40x45 4 off 1011.B.038 - Plain bearing bush - KAN-455"
+      ],
+      "description": "Plain bearing bush - 30x40x35",
+      "descriptions_all": [
+        "Plain bearing bush - 30x40x35",
+        "Plain bearing bush - 30x40x45"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 15
+      },
+      "source_row_count": 15,
+      "has_assembly_pack": true,
+      "resolution_source": "conflict_resolution"
+    },
+    {
+      "kan": "KAN-456",
+      "stock_number": "FMB404640",
+      "stock_number_variants": [
+        "FMB404640"
+      ],
+      "assembly_packs": [
+        "1011.A",
+        "1011.D",
+        "1021.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "1011.A.028",
+        "1011.D.028",
+        "1011.E.028",
+        "1019.A.028",
+        "1021.A.028",
+        "6000.A.072",
+        "6000.A.122"
+      ],
+      "asana_vendor_part_numbers": [
+        "FMB081216",
+        "FMB404640"
+      ],
+      "asana_task_names": [
+        "40x46x40 Flanged 4 off 1011.B.028 - Flanged bearing bush - AL404640 (40 in stock) - KAN-456"
+      ],
+      "description": "Oil Filled Bronze Flanged Bush Bearing",
+      "descriptions_all": [
+        "Flanged bearing bush - 40x46x40",
+        "Oil Filled Bronze Flanged Bush Bearing"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "vendor": 3,
+        "description": 2
+      },
+      "source_row_count": 5,
+      "has_assembly_pack": true,
+      "resolution_source": "conflict_resolution"
+    },
+    {
+      "kan": "KAN-457",
+      "stock_number": "AS2035",
+      "stock_number_variants": [
+        "AS2035"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1011.A.105",
+        "1011.B.111",
+        "1011.B.112",
+        "1011.E.105",
+        "1011.E.106"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "12 off TFW2036015 DLU Thrust Washer 20x36x1.5mm (15 in stock)"
+      ],
+      "description": "Thrust washer (ID 20 mm OD >35 mm), thickness 1-1.5 mm",
+      "descriptions_all": [
+        "Thrust washer (ID 20 mm OD >35 mm), thickness 1-1.5 mm"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 9
+      },
+      "source_row_count": 9,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-461",
+      "stock_number": "700-1928",
+      "stock_number_variants": [
+        "700-1928"
+      ],
+      "assembly_packs": [
+        "1016.P"
+      ],
+      "asana_sesame_part_numbers": [
+        "1016.P.001"
+      ],
+      "asana_vendor_part_numbers": [
+        "700-1928"
+      ],
+      "asana_task_names": [
+        "RS PRO Green Panel Mount Indicator chrome"
+      ],
+      "description": "Green Indicator, S/S finish",
+      "descriptions_all": [
+        "Green Indicator, S/S finish"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-463",
+      "stock_number": "BZH50WPTBJM17",
+      "stock_number_variants": [
+        "BZH50WPTBJM17"
+      ],
+      "assembly_packs": [
+        "2000.E",
+        "6000.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "1000.A3.001",
+        "2000.E.029",
+        "6000.A.153"
+      ],
+      "asana_vendor_part_numbers": [
+        "BZH50WPTBJM17"
+      ],
+      "asana_task_names": [
+        "Polyurethane Cast Iron 50mm Ball Bearing Wheel 110kg Load BZH50WPTBJM17"
+      ],
+      "description": "Polyurethane Cast Iron 50mm Ball Bearing 110kg Load (ID measured 16,91mm)",
+      "descriptions_all": [
+        "Polyurethane Cast Iron 50mm Ball Bearing",
+        "Polyurethane Cast Iron 50mm Ball Bearing 110kg Load",
+        "Polyurethane Cast Iron 50mm Ball Bearing 110kg Load (ID measured 16,91mm)"
+      ],
+      "vendors": [
+        "Bil Castors"
+      ],
+      "match_types": {
+        "vendor": 3
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-479",
+      "stock_number": "KBST-G-16",
+      "stock_number_variants": [
+        "KBST-G-16"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "KBST-G-16(0-1)"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "16mm bore - KBST-G-16 (rev design 15.08.22)"
+      ],
+      "description": "Split Rigid Shaft Coupling",
+      "descriptions_all": [
+        "Split Rigid Shaft Coupling"
+      ],
+      "vendors": [
+        "Misumi"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-483",
+      "stock_number": "FMB404632",
+      "stock_number_variants": [
+        "FMB404632"
+      ],
+      "assembly_packs": [
+        "1011.D"
+      ],
+      "asana_sesame_part_numbers": [
+        "1011.D.100"
+      ],
+      "asana_vendor_part_numbers": [
+        "FMB404632"
+      ],
+      "asana_task_names": [
+        "40x46x32 Flanged - 2 off 1011.B.104 - Flanged Metric Bush - FMB404632 - KAN-483"
+      ],
+      "description": "Flanged bearing bush - 40x46x32 - to be shortened",
+      "descriptions_all": [
+        "Flanged bearing bush - 40x46x32 - to be shortened"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-522",
+      "stock_number": "PMB107",
+      "stock_number_variants": [
+        "PMB107"
+      ],
+      "assembly_packs": [
+        "1010.C"
+      ],
+      "asana_sesame_part_numbers": [
+        "1010.C.074"
+      ],
+      "asana_vendor_part_numbers": [
+        "PMB107"
+      ],
+      "asana_task_names": [
+        "16x20x20 Plain Bearing Bush_ PMB162020"
+      ],
+      "description": "PlainBearingBush_16x20x20",
+      "descriptions_all": [
+        "PlainBearingBush_16x20x20"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-526",
+      "stock_number": "TFW2036015 DLU",
+      "stock_number_variants": [
+        "TFW2036015 DLU"
+      ],
+      "assembly_packs": [
+        "1003.A",
+        "1003.B",
+        "1011.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1003.A.124",
+        "1003.B.124",
+        "1011.B.092",
+        "1011.E.111",
+        "S1.1003.A.12",
+        "S3.1003.B.12"
+      ],
+      "asana_vendor_part_numbers": [
+        "TFW2036015 DLU"
+      ],
+      "asana_task_names": [
+        "20 x 36 x1.5mm thrust washers / Thrust Washer 20x36x1.5mm"
+      ],
+      "description": "Thrust Washer - 20x36x1.5mm",
+      "descriptions_all": [
+        "Thrust Washer - 20x36x1.5mm",
+        "Thrust Washer 20x36x1.5mm"
+      ],
+      "vendors": [
+        "Bearing Supplier",
+        "Simply Bearings"
+      ],
+      "match_types": {
+        "vendor": 5
+      },
+      "source_row_count": 5,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-545",
+      "stock_number": "F102N-10",
+      "stock_number_variants": [
+        "F102N-10"
+      ],
+      "assembly_packs": [
+        "1008.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.A3.005",
+        "1008.A3.006"
+      ],
+      "asana_vendor_part_numbers": [
+        "F102N-10"
+      ],
+      "asana_task_names": [
+        "10mm magnet - F102N-10"
+      ],
+      "description": "10mm dia x 2mm thick x 3mm c/sink Neodymium Magnet",
+      "descriptions_all": [
+        "10mm dia x 2mm thick x 3mm c/sink Neodymium Magnet",
+        "Neodymium Magnet - 1.2kg Pull"
+      ],
+      "vendors": [
+        "First4magnets"
+      ],
+      "match_types": {
+        "vendor": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-546",
+      "stock_number": "F338N-2",
+      "stock_number_variants": [
+        "F338N-2"
+      ],
+      "assembly_packs": [
+        "1014.H",
+        "1070"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.A10.001",
+        "1008.V1.003",
+        "1070.013"
+      ],
+      "asana_vendor_part_numbers": [
+        "MP200702",
+        "SP Conforti Reed switch"
+      ],
+      "asana_task_names": [
+        "15mm magnet - F338N"
+      ],
+      "description": "Magnet",
+      "descriptions_all": [
+        "Magnet"
+      ],
+      "vendors": [
+        "First4magnets",
+        "RS Components"
+      ],
+      "match_types": {
+        "description": 3
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-547",
+      "stock_number": "F315N-2",
+      "stock_number_variants": [
+        "F315N-2"
+      ],
+      "assembly_packs": [
+        "1006.A",
+        "1006.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1006.A.094",
+        "1006.B.074",
+        "1006.E.014"
+      ],
+      "asana_vendor_part_numbers": [
+        "F315N-20",
+        "MS202CSK"
+      ],
+      "asana_task_names": [
+        "20mm magnet - F315N-20"
+      ],
+      "description": "20mm dia x 4mm thick x 5.2mm c/sink Neodymium Magnet - 6.7kg Pull",
+      "descriptions_all": [
+        "20mm dia x 4mm thick x 5.2mm c/sink Neodymium Magnet - 6.7kg Pull",
+        "Round Countersunk Magnet"
+      ],
+      "vendors": [
+        "First4Magnets",
+        "First4magnets"
+      ],
+      "match_types": {
+        "name": 3
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-559",
+      "stock_number": "FMB162016",
+      "stock_number_variants": [
+        "FMB162016"
+      ],
+      "assembly_packs": [
+        "2000.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "1010.B.082",
+        "1010.E.081",
+        "1011.E.028",
+        "2000.A.009"
+      ],
+      "asana_vendor_part_numbers": [
+        "FMB 16x20x12",
+        "FMB404640"
+      ],
+      "asana_task_names": [
+        "8 off 16x20x16 1010.A.081 flanged Metric Bush (104)"
+      ],
+      "description": "Flanged bearing bush - 16x20x16 - to be shortened",
+      "descriptions_all": [
+        "Flanged bearing bush - 16x20x16 - to be shortened",
+        "Oilube flange bearing"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 5
+      },
+      "source_row_count": 5,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-560",
+      "stock_number": "SKU Number: 5028420",
+      "stock_number_variants": [
+        "SKU Number: 5028420"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1006.A.103",
+        "1006.B.103",
+        "775"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.775"
+      ],
+      "asana_task_names": [
+        "40 off NBSS775 - Stainless 41mm long spacer"
+      ],
+      "description": "DEEP PLAIN CHANNEL HEAVY GAUGE X 3 METRE, 41MM X 41MM X 2.5MM. 316/A4 STAINLESS STEEL. UNISTRUT COMPATIBLE",
+      "descriptions_all": [
+        "DEEP PLAIN CHANNEL HEAVY GAUGE X 3 METRE, 41MM X 41MM X 2.5MM. 316/A4 STAINLESS STEEL. UNISTRUT COMPATIBLE"
+      ],
+      "vendors": [
+        "Flexosprings",
+        "Orbital Fasteners"
+      ],
+      "match_types": {
+        "description": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-568",
+      "stock_number": "AP-C3",
+      "stock_number_variants": [
+        "AP-C3"
+      ],
+      "assembly_packs": [
+        "1024"
+      ],
+      "asana_sesame_part_numbers": [
+        "1024.004"
+      ],
+      "asana_vendor_part_numbers": [
+        "AP-C3"
+      ],
+      "asana_task_names": [
+        "AP-C3 weld plates (100x30x8 - M10) - 1025.A.004"
+      ],
+      "description": "AP-C3 weld plates (100x30x8 - M10)",
+      "descriptions_all": [
+        "AP-C3 weld plates (100x30x8 - M10)"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-569",
+      "stock_number": "92906",
+      "stock_number_variants": [
+        "92906"
+      ],
+      "assembly_packs": [
+        "1006.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "1006.A.124",
+        "1006.B.129"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "92906 compression springs - 1006.A.124"
+      ],
+      "description": "Compression Springs",
+      "descriptions_all": [
+        "Compression Springs"
+      ],
+      "vendors": [
+        "Flexosprings"
+      ],
+      "match_types": {
+        "name": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-578",
+      "stock_number": "UMJ20-30",
+      "stock_number_variants": [
+        "UMJ20-30"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1000.A4.001"
+      ],
+      "asana_vendor_part_numbers": [
+        "UMJ20-30"
+      ],
+      "asana_task_names": [
+        "UMJ20-30 white wheel castors"
+      ],
+      "description": "Polyurethane roller D=20 L=30",
+      "descriptions_all": [
+        "Polyurethane roller D=20 L=30"
+      ],
+      "vendors": [
+        "Misumi"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-579",
+      "stock_number": "C27091-014",
+      "stock_number_variants": [
+        "C27091-014"
+      ],
+      "assembly_packs": [
+        "6000.D"
+      ],
+      "asana_sesame_part_numbers": [
+        "6000.D.014"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "U Clip, 10.7mm x 12.7mm x 0.36mm EPF186-PPBLK"
+      ],
+      "description": "U Clip, 10.7mm x 12.7mm x 0.36mm",
+      "descriptions_all": [
+        "U Clip, 10.7mm x 12.7mm x 0.36mm"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-580",
+      "stock_number": "415-0682",
+      "stock_number_variants": [
+        "415-0682"
+      ],
+      "assembly_packs": [
+        "1000.B",
+        "1006.A",
+        "1006.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1000.B.40x30",
+        "1000.B.40x30_M_M8_120daN",
+        "1006.B.011",
+        "S1.1006.A.01"
+      ],
+      "asana_vendor_part_numbers": [
+        "415-0682"
+      ],
+      "asana_task_names": [
+        "Male M8 40x30mm with x30 stud 60 ShA - Rubber AV mount RS COMPONENTS ONLY"
+      ],
+      "description": "40x30mm Shock Mount M8 20mm studd",
+      "descriptions_all": [
+        "40x30mm Shock Mount M8 20mm studd",
+        "Rubber Buffer",
+        "RubberBuffer"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "vendor": 4
+      },
+      "source_row_count": 4,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-583",
+      "stock_number": "UMJ20-20",
+      "stock_number_variants": [
+        "UMJ20-20"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1000.A5.001"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "UMJ20-20 white wheel castors"
+      ],
+      "description": "Polyurethane roller 20mm",
+      "descriptions_all": [
+        "Polyurethane roller 20mm"
+      ],
+      "vendors": [
+        "Misumi"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-589",
+      "stock_number": "126-5969",
+      "stock_number_variants": [
+        "126-5969"
+      ],
+      "assembly_packs": [
+        "1000.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1000.B.50x15",
+        "1014.A.087"
+      ],
+      "asana_vendor_part_numbers": [
+        "673-702"
+      ],
+      "asana_task_names": [
+        "Female M10 50x16mm 60 ShA - Rubber AV mount"
+      ],
+      "description": "RS PRO M10 Anti Vibration Mount, Female Buffer Foot with 306kg Compression Load",
+      "descriptions_all": [
+        "RS PRO M10 Anti Vibration Mount, Female Buffer Foot with 306kg Compression Load"
+      ],
+      "vendors": [
+        "RS Components",
+        "WDS"
+      ],
+      "match_types": {
+        "description": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-607",
+      "stock_number": "RP2518X50S",
+      "stock_number_variants": [
+        "RP2518X50S"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1008.V1.003",
+        "1008.V1.1.MiniActuator[50mm]",
+        "3000.RP2518X50S_5199_15_10_2013_17_38_32",
+        "RP2518X50S",
+        "RP2518X50S_MIR"
+      ],
+      "asana_vendor_part_numbers": [
+        "18x50 S AS",
+        "MP SX 25",
+        "MP2518A50S - FRONT",
+        "SP Conforti Reed switch"
+      ],
+      "asana_task_names": [
+        "10 off MP2518A50S - 50cc 2 port on FRONT conforti hydraulic actuators"
+      ],
+      "description": "Mini hydraulic actuator _ 50mm stroke",
+      "descriptions_all": [
+        "Mini hydraulic actuator _ 50mm stroke"
+      ],
+      "vendors": [
+        "Steerforth"
+      ],
+      "match_types": {
+        "description": 9
+      },
+      "source_row_count": 9,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-613",
+      "stock_number": "LSV-08-2NCP",
+      "stock_number_variants": [
+        "LSV-08-2NCP"
+      ],
+      "assembly_packs": [
+        "1008.H"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.H4.001",
+        "1014.E.088"
+      ],
+      "asana_vendor_part_numbers": [
+        "EVC6-140-024DC",
+        "EVC6-380-024DC"
+      ],
+      "asana_task_names": [
+        "Motor pump offloading H-NC Solenoid Valve 2/2 Normally closed MANUAL (use LC2 Coil) LSV2-08-2NCP-M"
+      ],
+      "description": "Rubber feet for the motor pump",
+      "descriptions_all": [
+        "Rubber feet for the motor pump",
+        "Solenoid poppet valve"
+      ],
+      "vendors": [
+        "Flowfit",
+        "Hydraulic Supplier",
+        "RS Components"
+      ],
+      "match_types": {
+        "description": 4
+      },
+      "source_row_count": 4,
+      "has_assembly_pack": true,
+      "resolution_source": "conflict_resolution"
+    },
+    {
+      "kan": "KAN-642",
+      "stock_number": "TBC",
+      "stock_number_variants": [
+        "TBC"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1019.A.114"
+      ],
+      "asana_vendor_part_numbers": [
+        "EVC6-140-024DC",
+        "EVC6-380-024DC"
+      ],
+      "asana_task_names": [
+        "1/4\"Bsp 24VDC 2Way Norm Closed Poppet 2/2 Valve 25L/min - Accumulator Control"
+      ],
+      "description": "Poppet valve",
+      "descriptions_all": [
+        "Poppet valve"
+      ],
+      "vendors": [
+        "Flowfit",
+        "RS Components"
+      ],
+      "match_types": {
+        "description": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-657",
+      "stock_number": "SKU: 20078.080.050",
+      "stock_number_variants": [
+        "SKU: 20078.080.050"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1009.M.018"
+      ],
+      "asana_vendor_part_numbers": [
+        "20078.080.050"
+      ],
+      "asana_task_names": [
+        "M8 x50 round Stud connector nuts"
+      ],
+      "description": "M8 x 50mm Round Studding Connector Nuts, Zinc Plated",
+      "descriptions_all": [
+        "M8 x 50mm Round Studding Connector Nuts, Zinc Plated"
+      ],
+      "vendors": [
+        "Bolts World"
+      ],
+      "match_types": {
+        "description": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-661",
+      "stock_number": "673-702",
+      "stock_number_variants": [
+        "673-702"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1014.A.087",
+        "1014.F.010"
+      ],
+      "asana_vendor_part_numbers": [
+        "673-702"
+      ],
+      "asana_task_names": [
+        "20 off M10 x25 non tilt leveling foot 35mm thread 673-702 WDS"
+      ],
+      "description": "Levelling foot flat non tilt Steel Zinc plated",
+      "descriptions_all": [
+        "Levelling foot flat non tilt Steel Zinc plated"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-669",
+      "stock_number": "FMB081212",
+      "stock_number_variants": [
+        "FMB081212"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "6000.A.072"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "8x12x12 flanged Metric Bush"
+      ],
+      "description": "Oilube flange bush (8x12x12)",
+      "descriptions_all": [
+        "Oilube flange bush (8x12x12)"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-673",
+      "stock_number": "AL4050-25",
+      "stock_number_variants": [
+        "AL4050-25"
+      ],
+      "assembly_packs": [
+        "1018"
+      ],
+      "asana_sesame_part_numbers": [
+        "1018.03",
+        "6000.A.072",
+        "6000.A.122"
+      ],
+      "asana_vendor_part_numbers": [
+        "FMB081216"
+      ],
+      "asana_task_names": [
+        "40x50x25 Flanged Metric Bush"
+      ],
+      "description": "Oil Filled Bronze Flanged Bush Bearing 40x50x25mm - to be shortened to 15 mm!",
+      "descriptions_all": [
+        "Oil Filled Bronze Flanged Bush Bearing 40x50x25mm - to be shortened to 15 mm!"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-681",
+      "stock_number": "GTM-1630-015",
+      "stock_number_variants": [
+        "GTM-1630-015"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1005.A.075",
+        "1005.B.135",
+        "1009.A.051",
+        "1009.X.016"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "GTM-1630-015"
+      ],
+      "description": "Thrust washer iglide G300",
+      "descriptions_all": [
+        "Thrust washer iglide G300"
+      ],
+      "vendors": [
+        "IGUS"
+      ],
+      "match_types": {
+        "name": 4
+      },
+      "source_row_count": 4,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-683",
+      "stock_number": "WSM-0810-20",
+      "stock_number_variants": [
+        "WSM-0810-20"
+      ],
+      "assembly_packs": [
+        "6000.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "6000.A.033"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "WSM-0810-20"
+      ],
+      "description": "Plain Metric Bush (8X10X20)",
+      "descriptions_all": [
+        "Plain Metric Bush (8X10X20)"
+      ],
+      "vendors": [
+        "IGUS"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-698",
+      "stock_number": "STS20/15B",
+      "stock_number_variants": [
+        "STS20/15B"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "6000.A.161"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "Engneer to Cut this from inhouse stock bar - 50 to 100 off"
+      ],
+      "description": "Pinion STS20/15B CUT 7MM (CHANGED from 16 to 15 teeths)",
+      "descriptions_all": [
+        "Pinion STS20/15B CUT 7MM (CHANGED from 16 to 15 teeths)"
+      ],
+      "vendors": [
+        "automationshop"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-710",
+      "stock_number": "RS Stock No 619-2830",
+      "stock_number_variants": [
+        "619-2830",
+        "RS Stock No 619-2830"
+      ],
+      "assembly_packs": [
+        "1005.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.B.132",
+        "1008.A10.001",
+        "1008.A10.Sensor"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "Pilz PSENmag Series Magnetic Non-Contact Safety Switch, 24V dc, Plastic Housing, 2NO, M8 - RS 619-2830"
+      ],
+      "description": "Magnetic Non-Contact Safety Switch, Part 1/2, operating distance 8mm",
+      "descriptions_all": [
+        "Magnetic Non-Contact Safety Switch, Part 1/2",
+        "Magnetic Non-Contact Safety Switch, Part 1/2, operating distance 8mm",
+        "Magnetic Non-Contact Safety Switch, Part 2/2"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "name": 1,
+        "description": 2
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-712",
+      "stock_number": "DM805-AI",
+      "stock_number_variants": [
+        "DM805-AI"
+      ],
+      "assembly_packs": [
+        "6000.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "6000.A.081"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "Digital Micro stepper Driver DM805-AI (supplied in the PLC)"
+      ],
+      "description": "DM805-AI - Digital Microstepping Driver",
+      "descriptions_all": [
+        "DM805-AI - Digital Microstepping Driver"
+      ],
+      "vendors": [
+        "Motion Controls"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-723",
+      "stock_number": "B3-3443-2M",
+      "stock_number_variants": [
+        "B3-3443-2M"
+      ],
+      "assembly_packs": [
+        "1022"
+      ],
+      "asana_sesame_part_numbers": [
+        "1022.007"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "b3-3443-2m"
+      ],
+      "description": "TapeSwitch.Spring",
+      "descriptions_all": [
+        "TapeSwitch.Spring"
+      ],
+      "vendors": [
+        "Flexo Springs"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-783",
+      "stock_number": "EC053",
+      "stock_number_variants": [
+        "EC053"
+      ],
+      "assembly_packs": [
+        "2000.A",
+        "2000.B",
+        "3000.1"
+      ],
+      "asana_sesame_part_numbers": [
+        "2000.B.074"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "2 off Obsolete Nickel plated Ram Bottom Rod 1011.B.012 - MAKE INHOUSE"
+      ],
+      "description": "Winkel Channel (EC053) + nickel plated",
+      "descriptions_all": [
+        "Winkel Channel (EC053) + nickel plated"
+      ],
+      "vendors": [
+        "Euro-bearings"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-784",
+      "stock_number": "DNFPM160",
+      "stock_number_variants": [
+        "DNFPM160"
+      ],
+      "assembly_packs": [
+        "1010.E"
+      ],
+      "asana_sesame_part_numbers": [
+        "1010.EB.44"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "10 off 1010.EB.044 Nylon 66 washer black M16x30x3 DNFPM160 Nylon 6/6 Orbitalfasteners https://www.orbitalfasteners.co.uk/en/search/q/2921070"
+      ],
+      "description": "Nylon 66 washer white M16x30x3",
+      "descriptions_all": [
+        "Nylon 66 washer white M16x30x3"
+      ],
+      "vendors": [
+        "Orbital Fasteners"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-838",
+      "stock_number": "PF16",
+      "stock_number_variants": [
+        "PF16"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1005.C.021"
+      ],
+      "asana_vendor_part_numbers": [
+        "PF16"
+      ],
+      "asana_task_names": [
+        "Barrier rubber inserts - donks - PF16"
+      ],
+      "description": "Push in feet",
+      "descriptions_all": [
+        "Push in feet"
+      ],
+      "vendors": [
+        "Sinclair & Rush"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-866",
+      "stock_number": "GL1-FLM",
+      "stock_number_variants": [
+        "GL1-FLM"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1000.W.Lock"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "GATE PRESSURE REDUCING RELIEVING VALVE (PAN HEAD) INSERTRD IN TO VALVE BLOCK"
+      ],
+      "description": "GL1 Electromechanical Gate Lock 1/2",
+      "descriptions_all": [
+        "GL1 Electromechanical Gate Lock 1/2"
+      ],
+      "vendors": [
+        "Securitron"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-891",
+      "stock_number": "BF1 - 16x14 - D45 L66",
+      "stock_number_variants": [
+        "BF1 - 16x14 - D45 L66"
+      ],
+      "assembly_packs": [
+        "6000.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "6000.A.167"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "Flexible Coupling 16mm to 14mm"
+      ],
+      "description": "Flexible Coupling 16mm to 14mm",
+      "descriptions_all": [
+        "Flexible Coupling 16mm to 14mm"
+      ],
+      "vendors": [
+        "Motion Controls"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-892",
+      "stock_number": "BF-D30L42",
+      "stock_number_variants": [
+        "BF-D30L42"
+      ],
+      "assembly_packs": [
+        "6000.A",
+        "6000.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "6000.B.MJC-3"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "Flexible Coupling 14mm to 12mm"
+      ],
+      "description": "Flexible Coupling 14mm to 12mm",
+      "descriptions_all": [
+        "Flexible Coupling 14mm to 12mm"
+      ],
+      "vendors": [
+        "Motion Controls"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-894",
+      "stock_number": "DIN 6885 - A 5 x 5 x 20",
+      "stock_number_variants": [
+        "DIN 6885 - A 5 x 5 x 20"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "DIN 6885 - A 5 x 5 x 20"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "5mm x 5mm Parallel Key"
+      ],
+      "description": "Parallel Key",
+      "descriptions_all": [
+        "Parallel Key"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-913",
+      "stock_number": "122-3450",
+      "stock_number_variants": [
+        "122-3450"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1012.C.022",
+        "6000.A.181",
+        "7100.E.009"
+      ],
+      "asana_vendor_part_numbers": [
+        "7379"
+      ],
+      "asana_task_names": [
+        "Shaft Collar 8x16x8mm"
+      ],
+      "description": "Steel Shaft Collar with Grub Screw",
+      "descriptions_all": [
+        "Shaft Collar",
+        "Steel Shaft Collar with Grub Screw"
+      ],
+      "vendors": [
+        "RS Components",
+        "Simply Bearings"
+      ],
+      "match_types": {
+        "description": 3
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": false,
+      "resolution_source": "conflict_resolution"
+    },
+    {
+      "kan": "KAN-914",
+      "stock_number": "CABU10Z",
+      "stock_number_variants": [
+        "CABU10Z"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1012.C.035",
+        "7100.E.009"
+      ],
+      "asana_vendor_part_numbers": [
+        "7379"
+      ],
+      "asana_task_names": [
+        "Shaft Collar 10x20x10mm"
+      ],
+      "description": "Steel Shaft Collar with Grub Screw",
+      "descriptions_all": [
+        "Steel Shaft Collar with Grub Screw"
+      ],
+      "vendors": [
+        "Simply Bearings"
+      ],
+      "match_types": {
+        "description": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-916",
+      "stock_number": "122-3453",
+      "stock_number_variants": [
+        "122-3453"
+      ],
+      "assembly_packs": [
+        "6000.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "6000.A.096"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "Shaft Collar 14x25x12mm"
+      ],
+      "description": "Shaft collar",
+      "descriptions_all": [
+        "Shaft collar"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-919",
+      "stock_number": "330-8587",
+      "stock_number_variants": [
+        "330-8587"
+      ],
+      "assembly_packs": [
+        "1008.C",
+        "1016.3"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.C.002",
+        "1016.3.003",
+        "S1.1008.C.00"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "Big E-Stop button Harmony - Onlift RS 330-8587 Emergency Em Stop"
+      ],
+      "description": "E-Stop Mushroom Head",
+      "descriptions_all": [
+        "E-Stop Mushroom Head",
+        "E.Stop - Big"
+      ],
+      "vendors": [
+        "EAO",
+        "RS Components"
+      ],
+      "match_types": {
+        "name": 3
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-925",
+      "stock_number": "CPSS-12-060",
+      "stock_number_variants": [
+        "CPSS-12-060"
+      ],
+      "assembly_packs": [
+        "1000.C"
+      ],
+      "asana_sesame_part_numbers": [
+        "1000.C.ClevisPin 12x60mm",
+        "1000.ClevisP",
+        "1014.D.004"
+      ],
+      "asana_vendor_part_numbers": [
+        "1010.A.013.03",
+        "WF63198"
+      ],
+      "asana_task_names": [
+        "12x60 Clevis pins CPSS-12-60"
+      ],
+      "description": "Clevis Pin Stainless Steel",
+      "descriptions_all": [
+        "Clevis Pin 12x60mm",
+        "Clevis Pin Stainless Steel"
+      ],
+      "vendors": [
+        "Boneham"
+      ],
+      "match_types": {
+        "description": 6
+      },
+      "source_row_count": 6,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-930",
+      "stock_number": "EP1G12Z020U",
+      "stock_number_variants": [
+        "EP1G12Z020U"
+      ],
+      "assembly_packs": [
+        "1055.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.A6.EP1G",
+        "1008.A6.EP1G12Z020U",
+        "1008.A6.EP1G12Z2U",
+        "1008.A6.EP1G12ZA - Roller",
+        "1008.A6.EP1G14Z2U",
+        "1008.D.440P-M18001",
+        "1055.A.009"
+      ],
+      "asana_vendor_part_numbers": [
+        "440P-M18001"
+      ],
+      "asana_task_names": [
+        "1 off Roller Limit Switch (min. 2m Cable) 1008.A6.EP1G12Z020U EP1G12Z020U http://www.comepi.it LongVale SES101"
+      ],
+      "description": "Roller Limit Switch (min. 2m Cable)",
+      "descriptions_all": [
+        "EP1G12Z020U 2 m PVC cable",
+        "Roller Limit Switch (min. 2m Cable)",
+        "Roller LimitSwitch (min. 2m Cable)"
+      ],
+      "vendors": [
+        "Comepi",
+        "LongVale"
+      ],
+      "match_types": {
+        "name": 1,
+        "description": 6
+      },
+      "source_row_count": 7,
+      "has_assembly_pack": true,
+      "resolution_source": "conflict_resolution"
+    },
+    {
+      "kan": "KAN-968",
+      "stock_number": "385-1586",
+      "stock_number_variants": [
+        "385-1586"
+      ],
+      "assembly_packs": [
+        "1000.B",
+        "1008.D"
+      ],
+      "asana_sesame_part_numbers": [
+        "1000.B.50x25",
+        "1000.B.50x25_M_M10_300daN",
+        "1008.D.068",
+        "S3.1008.D.06"
+      ],
+      "asana_vendor_part_numbers": [
+        "D5025M1030-2"
+      ],
+      "asana_task_names": [
+        "Male M10 50x25mm with x25 stud 60 ShA - Rubber AV mount (RS-385-1586)"
+      ],
+      "description": "Shock Mount M10 50mm Diameter 300daN Compression Load 6mm deflection",
+      "descriptions_all": [
+        "25mm Shock Mount M10 50mm Diameter 300daN Compression Load 6mm",
+        "Shock Mount M10 50mm Diameter 300daN Compression Load 6mm",
+        "Shock Mount M10 50mm Diameter 300daN Compression Load 6mm deflection"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "name": 3,
+        "description": 1
+      },
+      "source_row_count": 4,
+      "has_assembly_pack": true,
+      "resolution_source": "conflict_resolution"
+    },
+    {
+      "kan": "KAN-969",
+      "stock_number": "KBST-G-14",
+      "stock_number_variants": [
+        "KBST-G-14"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "KBST-G-14(0-1)"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "14mm bore - KBST-G-14"
+      ],
+      "description": "Split Rigid Shaft Coupling",
+      "descriptions_all": [
+        "Split Rigid Shaft Coupling"
+      ],
+      "vendors": [
+        "Misumi"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-976",
+      "stock_number": "R-Clip 2x48",
+      "stock_number_variants": [
+        "R-Clip 2x48"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1000.C.R-Clip 2x48"
+      ],
+      "asana_vendor_part_numbers": [
+        "1010.A.064",
+        "99213374"
+      ],
+      "asana_task_names": [
+        "mild steel r clip 2.5 x 42mm"
+      ],
+      "description": "Zinc Plated Steel R-Clip 2x48",
+      "descriptions_all": [
+        "Zinc Plated Steel R-Clip 2x48"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "description": 3
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-978",
+      "stock_number": "DC915N",
+      "stock_number_variants": [
+        "DC915N"
+      ],
+      "assembly_packs": [
+        "1016.1",
+        "1016.F"
+      ],
+      "asana_sesame_part_numbers": [
+        "1016.F.010",
+        "12"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.012",
+        "NBSS.041"
+      ],
+      "asana_task_names": [
+        "Honeywell Wireless Doorbell DC915S 9 Series"
+      ],
+      "description": "Call for Assistance reciever",
+      "descriptions_all": [
+        "Call for Assistance reciever"
+      ],
+      "vendors": [
+        "Amazon"
+      ],
+      "match_types": {
+        "description": 3
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-982",
+      "stock_number": "CPSS-06-050",
+      "stock_number_variants": [
+        "CPSS-06-050"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1000.C.ClevisPin 6x45mm",
+        "1000.C.ClevisPin 6x50mm"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "6x50 Clevis pins CPSS-06-050"
+      ],
+      "description": "Clevis pin Stainless Steel",
+      "descriptions_all": [
+        "Clevis pin Stainless Steel"
+      ],
+      "vendors": [
+        "Boneham"
+      ],
+      "match_types": {
+        "name": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-990",
+      "stock_number": "B4-3443-2M",
+      "stock_number_variants": [
+        "B4-3443-2M"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "Compress Spring1"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "B4-3443-2M - 7.62N - plated"
+      ],
+      "description": "Compress spring 7,62N/mm - PLATED",
+      "descriptions_all": [
+        "Compress spring 7,62N/mm - PLATED"
+      ],
+      "vendors": [
+        "Flexosprings"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-991",
+      "stock_number": "344120",
+      "stock_number_variants": [
+        "344120"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1004.G.158"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "344120 - 24.83 N/mm"
+      ],
+      "description": "Spring 25.1OD, 63.5mm free length, 24,83 N/mm rate",
+      "descriptions_all": [
+        "Spring 25.1OD, 63.5mm free length, 24,83 N/mm rate"
+      ],
+      "vendors": [
+        "Flexosprings"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1009",
+      "stock_number": "103108",
+      "stock_number_variants": [
+        "103108"
+      ],
+      "assembly_packs": [
+        "1001.E"
+      ],
+      "asana_sesame_part_numbers": [
+        "1001.E.021"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "103108 - 4.78N/mm"
+      ],
+      "description": "Spring",
+      "descriptions_all": [
+        "Spring"
+      ],
+      "vendors": [
+        "Flexosprings"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1010",
+      "stock_number": "AS1730",
+      "stock_number_variants": [
+        "AS1730"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1010.A.089",
+        "1010.B.087",
+        "1011.E.105",
+        "1011.E.106"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "16 x 30 x 1.5 thrust washers"
+      ],
+      "description": "Thrust washer (ID 17 mm OD >30 mm), thickness 1-1.5 mm",
+      "descriptions_all": [
+        "Thrust washer (ID 17 mm OD >30 mm), thickness 1-1.5 mm"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 6
+      },
+      "source_row_count": 6,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1014",
+      "stock_number": "2921065",
+      "stock_number_variants": [
+        "2921065"
+      ],
+      "assembly_packs": [
+        "1003",
+        "1003.A",
+        "1003.B",
+        "6000.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "1003.087",
+        "1003.A.087",
+        "1003.B.087",
+        "6000.A.014",
+        "S1.1003.A.08"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "60 off M14 Form A Nylon Washer White - SKU 2921065"
+      ],
+      "description": "M14 Form A Nylon Washer White",
+      "descriptions_all": [
+        "M14 Form A Nylon Washer White"
+      ],
+      "vendors": [
+        "Orbital Fasteners"
+      ],
+      "match_types": {
+        "name": 5
+      },
+      "source_row_count": 5,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1015",
+      "stock_number": "LS1226",
+      "stock_number_variants": [
+        "LS1226"
+      ],
+      "assembly_packs": [
+        "1001.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1001.B.036"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "32 off LS1226 Raceway Washer Series LS 12x26x2.75mm"
+      ],
+      "description": "Budget Raceway Washer Series LS 12x26x2.75mm",
+      "descriptions_all": [
+        "Budget Raceway Washer Series LS 12x26x2.75mm"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1066",
+      "stock_number": "102910",
+      "stock_number_variants": [
+        "102910"
+      ],
+      "assembly_packs": [
+        "6000.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "6000.B.249"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "102910 - 1.66n/mm"
+      ],
+      "description": "Spring",
+      "descriptions_all": [
+        "Spring"
+      ],
+      "vendors": [
+        "Flexosprings"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1067",
+      "stock_number": "103110",
+      "stock_number_variants": [
+        "103110"
+      ],
+      "assembly_packs": [
+        "6000.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "6000.B.250"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "103110 - 3.87 N/mm"
+      ],
+      "description": "Spring",
+      "descriptions_all": [
+        "Spring"
+      ],
+      "vendors": [
+        "Flexosprings"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1073",
+      "stock_number": "455-065",
+      "stock_number_variants": [
+        "455-065"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1008.U.03"
+      ],
+      "asana_vendor_part_numbers": [
+        "455-065"
+      ],
+      "asana_task_names": [
+        "RS 455-065 - Junction Box, IP65, 160 x 135 x 77mm"
+      ],
+      "description": "160x135x77 Junction Box",
+      "descriptions_all": [
+        "160x135x77 Junction Box"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "vendor": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1081",
+      "stock_number": "B5-4243-2M",
+      "stock_number_variants": [
+        "B5-4243-2M"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1001.E.021"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "B5-4243-2M 1001.E.021"
+      ],
+      "description": "Spring",
+      "descriptions_all": [
+        "Spring"
+      ],
+      "vendors": [
+        "Flexosprings"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1093",
+      "stock_number": "E300.075.100.0 with ends 2x E3075.34PZ",
+      "stock_number_variants": [
+        "E300.075.100.0 with ends 2x E3075.34PZ"
+      ],
+      "assembly_packs": [
+        "1008.Y"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.Y.A2.Ea",
+        "1009.EasyChain[75mm]"
+      ],
+      "asana_vendor_part_numbers": [
+        "06.10.018.0",
+        "2400.07.0750",
+        "E300.075.075"
+      ],
+      "asana_task_names": [
+        "10mm ID Easy chain 06.10.018.0",
+        "75mm ID Easy Chain 2400.07.0750 - NOT HOLDING IN STOCK - Returning to IGUS",
+        "75mm ID easy chain E300.075.100.0 - used on rising barrier platforms"
+      ],
+      "description": "Easy chain [75mm] Length: 2211mm",
+      "descriptions_all": [
+        "Easy chain [75mm] Length: 2211mm"
+      ],
+      "vendors": [
+        "IGUS"
+      ],
+      "match_types": {
+        "description": 3
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1156",
+      "stock_number": "298-8097",
+      "stock_number_variants": [
+        "298-8097"
+      ],
+      "assembly_packs": [
+        "1008.T"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.T.13ID_",
+        "1008.T.13ID_P_Clip"
+      ],
+      "asana_vendor_part_numbers": [
+        "298-8097"
+      ],
+      "asana_task_names": [
+        "RS 298-8097 13mm Black, Stainless Steel P Clip"
+      ],
+      "description": "Rubber-lined clamp; 13mm ID",
+      "descriptions_all": [
+        "Rubber-lined clamp; 13mm ID"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "vendor": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1167",
+      "stock_number": "FEL08",
+      "stock_number_variants": [
+        "FEL08"
+      ],
+      "assembly_packs": [
+        "2100.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "2100.A.086",
+        "6000.A.SelfTappInsertM8"
+      ],
+      "asana_vendor_part_numbers": [
+        "488-1342"
+      ],
+      "asana_task_names": [
+        "RS 488-1342 PVC Clear Cable Sleeve, 19mm Length"
+      ],
+      "description": "Internal M8 outside M12, 9mm length",
+      "descriptions_all": [
+        "Internal M8 outside M12, 9mm length"
+      ],
+      "vendors": [
+        "Baercoil"
+      ],
+      "match_types": {
+        "description": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1212",
+      "stock_number": "WTM-1224-015",
+      "stock_number_variants": [
+        "WTM-1224-015"
+      ],
+      "assembly_packs": [
+        "1006.A",
+        "1006.C",
+        "2000.E"
+      ],
+      "asana_sesame_part_numbers": [
+        "1006.A.162",
+        "1006.C.145",
+        "2000.E.050"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "WTM-1224-015 12 x 24 x 1.5 washer"
+      ],
+      "description": "Thrust washer",
+      "descriptions_all": [
+        "Thrust washer"
+      ],
+      "vendors": [
+        "IGUS"
+      ],
+      "match_types": {
+        "name": 3
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1216",
+      "stock_number": "AS3047",
+      "stock_number_variants": [
+        "AS3047"
+      ],
+      "assembly_packs": [
+        "1011.B",
+        "1011.D"
+      ],
+      "asana_sesame_part_numbers": [
+        "1010.A.085",
+        "1010.A.088",
+        "1010.B.086",
+        "1011.A.104",
+        "1011.B.106",
+        "1011.D.106",
+        "1011.E.106"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm AS3047"
+      ],
+      "description": "Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm",
+      "descriptions_all": [
+        "Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "name": 6
+      },
+      "source_row_count": 6,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1242",
+      "stock_number": "113205",
+      "stock_number_variants": [
+        "113205"
+      ],
+      "assembly_packs": [
+        "1005.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.B.088"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "113205 - 14.04n/mm"
+      ],
+      "description": "Spring - rising barrier jam device",
+      "descriptions_all": [
+        "Spring - rising barrier jam device"
+      ],
+      "vendors": [
+        "FlexoSprings"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1287",
+      "stock_number": "D3016M1025-2",
+      "stock_number_variants": [
+        "D3016M1025-2"
+      ],
+      "assembly_packs": [
+        "1000.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1000.B.30x16"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "Male M10 30x16mm 60 ShA 25mm shank - Rubber D3016M1025-2"
+      ],
+      "description": "M10 rubber foot",
+      "descriptions_all": [
+        "M10 rubber foot"
+      ],
+      "vendors": [
+        "Polymax"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1292",
+      "stock_number": "RS Stock No: 2096851 - PUT ME ON BOM !",
+      "stock_number_variants": [
+        "RS Stock No: 2096851 - PUT ME ON BOM !"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "DIN 6799.6mm Shaft.5mm Groove"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "E Type Circlip, 4mm Shaft"
+      ],
+      "description": "E - Clip 6mm Shaft Diameter, 4mm Groove Diameter",
+      "descriptions_all": [
+        "E - Clip 6mm Shaft Diameter, 4mm Groove Diameter"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1293",
+      "stock_number": "209-6918",
+      "stock_number_variants": [
+        "209-6918"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "E-Clip_15.5mmShaft_12mmGroove"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "E Type Circlip, 12mm Shaft S/S - 209-6918"
+      ],
+      "description": "E - type circlip",
+      "descriptions_all": [
+        "E - type circlip"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1324",
+      "stock_number": "8 X 7 X 50 2RE KEY",
+      "stock_number_variants": [
+        "8 X 7 X 50 2RE KEY"
+      ],
+      "assembly_packs": [
+        "1009.F"
+      ],
+      "asana_sesame_part_numbers": [
+        "1009.F.020",
+        "1009.F.021"
+      ],
+      "asana_vendor_part_numbers": [
+        "5x5x20mm key steel 302"
+      ],
+      "asana_task_names": [
+        "5x5x20mm key steel 302-4087",
+        "5x5x25mm key steel",
+        "8x7x25 key steel"
+      ],
+      "description": "50x8x7mm Steel Feather Key",
+      "descriptions_all": [
+        "50x8x7mm Steel Feather Key"
+      ],
+      "vendors": [
+        "KeysAndPins"
+      ],
+      "match_types": {
+        "description": 3
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1325",
+      "stock_number": "8 X 8 X 50 2RE KEY",
+      "stock_number_variants": [
+        "8 X 8 X 50 2RE KEY"
+      ],
+      "assembly_packs": [
+        "1009.F"
+      ],
+      "asana_sesame_part_numbers": [
+        "1009.F.020",
+        "1009.F.022"
+      ],
+      "asana_vendor_part_numbers": [
+        "5x5x20mm key steel 302"
+      ],
+      "asana_task_names": [
+        "5x5x20mm key steel 302-4087",
+        "5x5x25mm key steel",
+        "8x7x25 key steel"
+      ],
+      "description": "50x8x8mm Steel Feather Key",
+      "descriptions_all": [
+        "50x8x8mm Steel Feather Key"
+      ],
+      "vendors": [
+        "KeysAndPins"
+      ],
+      "match_types": {
+        "description": 3
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1327",
+      "stock_number": "302-4087",
+      "stock_number_variants": [
+        "302-4087"
+      ],
+      "assembly_packs": [
+        "1009.F"
+      ],
+      "asana_sesame_part_numbers": [
+        "1009.F.020"
+      ],
+      "asana_vendor_part_numbers": [
+        "5x5x20mm key steel 302"
+      ],
+      "asana_task_names": [
+        "5x5x20mm key steel 302-4087"
+      ],
+      "description": "20x5x5mm Steel Feather Key",
+      "descriptions_all": [
+        "20x5x5mm Steel Feather Key"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "name": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1345",
+      "stock_number": "10060610",
+      "stock_number_variants": [
+        "10060610"
+      ],
+      "assembly_packs": [
+        "1008.U",
+        "1034.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.U.01",
+        "1034.B.087"
+      ],
+      "asana_vendor_part_numbers": [
+        "CN20133"
+      ],
+      "asana_task_names": [
+        "OB11 junction box",
+        "RS 455065 - Junction Box, IP65, 160 x 135 x 77mm",
+        "RS 455071 - Junction Box, IP65, 200 x 170 x 80mm",
+        "RS 700-0802 - wiska box 85x85x51"
+      ],
+      "description": "85x85x51 Wiska Junction Box",
+      "descriptions_all": [
+        "85x85x51 Wiska Junction Box",
+        "85x85x52 Junction Box"
+      ],
+      "vendors": [
+        "CPC",
+        "NBSS/ Sesame",
+        "RS Components",
+        "Sesame Stock"
+      ],
+      "match_types": {
+        "description": 6,
+        "name": 1
+      },
+      "source_row_count": 7,
+      "has_assembly_pack": true,
+      "resolution_source": "conflict_resolution"
+    },
+    {
+      "kan": "KAN-1346",
+      "stock_number": "526-366",
+      "stock_number_variants": [
+        "526-366"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1003.A.130"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "16mm Morse Tapper 2 Drill - For drilling sprockets only"
+      ],
+      "description": "RS PRO Vulcanised Fibre Tap Washers, M4",
+      "descriptions_all": [
+        "RS PRO Vulcanised Fibre Tap Washers, M4"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "description": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1348",
+      "stock_number": "CN20133",
+      "stock_number_variants": [
+        "CN20133"
+      ],
+      "assembly_packs": [
+        "1008.U"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.U.05",
+        "1008.U.11"
+      ],
+      "asana_vendor_part_numbers": [
+        "CN20133"
+      ],
+      "asana_task_names": [
+        "OB11 junction box"
+      ],
+      "description": "SpringCable_JunctionBox+Glands",
+      "descriptions_all": [
+        "JunctionBox+Glands",
+        "SpringCable_JunctionBox+Glands"
+      ],
+      "vendors": [
+        "CPC"
+      ],
+      "match_types": {
+        "name": 1,
+        "vendor": 1
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "conflict_resolution"
+    },
+    {
+      "kan": "KAN-1350",
+      "stock_number": "RS: 690-3292",
+      "stock_number_variants": [
+        "690-3292",
+        "RS: 690-3292"
+      ],
+      "assembly_packs": [
+        "1016.3"
+      ],
+      "asana_sesame_part_numbers": [
+        "1016.3.008",
+        "12"
+      ],
+      "asana_vendor_part_numbers": [
+        "NBSS.012",
+        "NBSS.041",
+        "R19FFSSTAG"
+      ],
+      "asana_task_names": [
+        "RS 690-3292 - Push Button Switch, Momentary,"
+      ],
+      "description": "Stainless Call for Assistance button",
+      "descriptions_all": [
+        "Push-Button 19mm Stainless Steel",
+        "Stainless Call for Assistance button"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "name": 1,
+        "description": 3
+      },
+      "source_row_count": 4,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1376",
+      "stock_number": "798-9414",
+      "stock_number_variants": [
+        "798-9414"
+      ],
+      "assembly_packs": [
+        "1008.W"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.W.005"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "RS 798-9414 Light Duty Tray, Pre-Galvanised Steel 3m x 50 mm x 12mm",
+        "RS 798-9414 cable tray 50x12x3m"
+      ],
+      "description": "Cable Tray, Pre-Galvanised Steel 3m x 50 mm x 12mm, length=846mm",
+      "descriptions_all": [
+        "Cable Tray, Pre-Galvanised Steel 3m x 50 mm x 12mm, length=846mm"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "name": 2
+      },
+      "source_row_count": 2,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1385",
+      "stock_number": "RS Stock No 724-2677",
+      "stock_number_variants": [
+        "724-2677",
+        "RS Stock No 724-2677"
+      ],
+      "assembly_packs": [
+        "1005.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1005.B.135",
+        "1008.A10.002"
+      ],
+      "asana_vendor_part_numbers": [
+        "1419690",
+        "724-2677",
+        "774306",
+        "PNOZx2.1"
+      ],
+      "asana_task_names": [
+        "RS 724-2677 Lumberg Automation Right Angle Female 4 way M8"
+      ],
+      "description": "Female 4 way M8 to Unterminated Sensor Actuator Cable",
+      "descriptions_all": [
+        "Female 4 way M8 to Unterminated Sensor Actuator Cable"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "description": 3,
+        "vendor": 1
+      },
+      "source_row_count": 4,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1393",
+      "stock_number": "474-577",
+      "stock_number_variants": [
+        "474-577"
+      ],
+      "assembly_packs": [
+        "1008.W"
+      ],
+      "asana_sesame_part_numbers": [
+        "1008.W.004"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "RS 474-577 5mm Black, Polyamide P Clip"
+      ],
+      "description": "5mm ID P clips",
+      "descriptions_all": [
+        "5mm ID P clips"
+      ],
+      "vendors": [
+        "RS Components"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1396",
+      "stock_number": "CPSS-16-050",
+      "stock_number_variants": [
+        "CPSS-16-050"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1000.C.ClevisPin 16x50mm"
+      ],
+      "asana_vendor_part_numbers": [],
+      "asana_task_names": [
+        "16x50 Clevis pins CPSS-16-050"
+      ],
+      "description": "Clevis Pin Stainless Steel",
+      "descriptions_all": [
+        "Clevis Pin Stainless Steel"
+      ],
+      "vendors": [
+        "Boneham"
+      ],
+      "match_types": {
+        "name": 1
+      },
+      "source_row_count": 1,
+      "has_assembly_pack": false,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1447",
+      "stock_number": "LOW032",
+      "stock_number_variants": [
+        "LOW032"
+      ],
+      "assembly_packs": [
+        "6000.A"
+      ],
+      "asana_sesame_part_numbers": [
+        "1000.B.20x6_M_M8_xxdaN",
+        "6000.A.140"
+      ],
+      "asana_vendor_part_numbers": [
+        "LOW031"
+      ],
+      "asana_task_names": [
+        "Low Profile Feet LOW032"
+      ],
+      "description": "M8x46 20x6 low profile adjustable feet",
+      "descriptions_all": [
+        "Low Profile Feet",
+        "M8x46 20x6 low profile adjustable feet"
+      ],
+      "vendors": [
+        "vital-parts"
+      ],
+      "match_types": {
+        "description": 6
+      },
+      "source_row_count": 6,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1448",
+      "stock_number": "LOW042",
+      "stock_number_variants": [
+        "LOW042"
+      ],
+      "assembly_packs": [
+        "1000.B"
+      ],
+      "asana_sesame_part_numbers": [
+        "1000.B.25x6_",
+        "1000.B.25x6_M_M8_26"
+      ],
+      "asana_vendor_part_numbers": [
+        "LOW031"
+      ],
+      "asana_task_names": [
+        "Low Profile Feet LOW042"
+      ],
+      "description": "Low Profile Feet",
+      "descriptions_all": [
+        "Low Profile Feet"
+      ],
+      "vendors": [
+        "vital-parts"
+      ],
+      "match_types": {
+        "description": 6
+      },
+      "source_row_count": 6,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1449",
+      "stock_number": "BF6550",
+      "stock_number_variants": [
+        "BF6550"
+      ],
+      "assembly_packs": [],
+      "asana_sesame_part_numbers": [
+        "1001.D.019",
+        "1014.A.007",
+        "1014.E.104"
+      ],
+      "asana_vendor_part_numbers": [
+        "15170",
+        "PMB107"
+      ],
+      "asana_task_names": [
+        "65x70x50 split bearing WMX657050"
+      ],
+      "description": "Split bearing bush - SEND TO MACHINING",
+      "descriptions_all": [
+        "Split bearing bush - SEND TO MACHINING"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 9
+      },
+      "source_row_count": 9,
+      "has_assembly_pack": false,
+      "resolution_source": "conflict_resolution"
+    },
+    {
+      "kan": "KAN-1450",
+      "stock_number": "PM6540DX",
+      "stock_number_variants": [
+        "PM6540DX"
+      ],
+      "assembly_packs": [
+        "1001.D"
+      ],
+      "asana_sesame_part_numbers": [
+        "1014.A.011",
+        "1014.B.001",
+        "1014.C.020"
+      ],
+      "asana_vendor_part_numbers": [
+        "15170",
+        "PMB107"
+      ],
+      "asana_task_names": [
+        "65x70x40 split bearing PM6540DX"
+      ],
+      "description": "Split bearing bush - SEND TO MACHINING",
+      "descriptions_all": [
+        "Split bearing bush - SEND TO MACHINING"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 9
+      },
+      "source_row_count": 9,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    },
+    {
+      "kan": "KAN-1451",
+      "stock_number": "PM6560DX",
+      "stock_number_variants": [
+        "PM6560DX"
+      ],
+      "assembly_packs": [
+        "1014.C"
+      ],
+      "asana_sesame_part_numbers": [
+        "1014.C.020"
+      ],
+      "asana_vendor_part_numbers": [
+        "15170",
+        "PMB107"
+      ],
+      "asana_task_names": [
+        "65x70x60 split bearing PM6560DX"
+      ],
+      "description": "Split bearing bush - SEND TO MACHINING",
+      "descriptions_all": [
+        "Split bearing bush - SEND TO MACHINING"
+      ],
+      "vendors": [
+        "Bearing Supplier"
+      ],
+      "match_types": {
+        "description": 3
+      },
+      "source_row_count": 3,
+      "has_assembly_pack": true,
+      "resolution_source": "auto"
+    }
+  ]
+}

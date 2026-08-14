@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  20/07/2026  13:30
+============================================================
+With:         Mark Mercury plating 01276 24144
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Giles Hugo discussing with Mark Mercury plating the feasibility of clamping a thin, buoyant panel for plating, with concerns about potential damage and process limitations. They considered attempting clamping despite risks, acknowledging possible bowing and indentations.
+
+--- RECAP --------------------------------------------------
+Giles Hugo contacted Mark Mercury plating to discuss whether they can plate a specific thin, buoyant panel sent by Giles, which is challenging due to its size and material thickness.Mark Mercury plating explained that the panel's thinness makes clamping difficult, as it could cause indentations or bowing, and their tank size is at maximum capacity, limiting options.They considered trying to clamp the panel to hold it down, accepting the risk of clamp marks and potential bowing, but acknowledged that this might not yield a perfect result.Mark Mercury plating noted that the panel has previously been attempted to be plated but did not go well, likely due to its thinness and buoyancy.They discussed the possibility of giving clamping a try, understanding it might damage the panel, but agreed to proceed cautiously.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

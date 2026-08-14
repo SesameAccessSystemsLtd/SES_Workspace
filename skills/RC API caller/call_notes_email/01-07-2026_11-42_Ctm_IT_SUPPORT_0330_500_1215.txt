@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  01/07/2026  11:42
+============================================================
+With:         Ctm IT SUPPORT 0330 500 1215
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a voicemail call from the ctm IT support help desk, where the support agent Alex attempted to establish communication but was unable to hear the caller and planned to call back.
+
+--- RECAP --------------------------------------------------
+The call was initiated by the ctm IT support help desk, with Alex as the representative, attempting to assist a caller.The caller's audio was not clear, as Alex stated he couldn't hear the caller and intended to call back.
+
+--- TASKS --------------------------------------------------
+Alex from ctm IT support will attempt to call the caller back to establish communication.
+
+(Full transcript: RC web portal only — no RingSense API)

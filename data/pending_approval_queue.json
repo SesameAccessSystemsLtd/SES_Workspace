@@ -1,0 +1,24 @@
+[
+  {
+    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkWzikMAAA=",
+    "subject": "New call from 01795 293104",
+    "sender_domain": "ringcentral.com",
+    "received_at": "2026-08-14T14:50:35Z",
+    "insights": {
+      "po_number": null,
+      "total_price": null,
+      "delivery_date": null,
+      "has_issues": false,
+      "issue_summary": null,
+      "sqr_number": null,
+      "document_type": "other",
+      "line_items": []
+    },
+    "asana_task_gid": null,
+    "asana_task_name": null,
+    "asana_task_url": null,
+    "proposed_action": "Manual review \u2014 no task/id extracted. Subject: 'New call from 01795 293104' (doc type: other, sender: ringcentral.com)",
+    "comment_to_push": "",
+    "status": "pending_review"
+  }
+]

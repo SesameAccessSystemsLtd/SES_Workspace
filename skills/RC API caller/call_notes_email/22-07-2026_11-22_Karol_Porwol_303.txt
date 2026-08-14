@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  22/07/2026  11:22
+============================================================
+With:         Karol Porwol 303
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved discussions about the specifications for low-profile systems, particularly the threaded connector items, and the ordering process for machine parts and stock items. The overall outcome was agreement on threading requirements and bulk ordering procedures.
+
+--- RECAP --------------------------------------------------
+Giles Hugo explained that the low-profile systems include a machined connector item, approximately 20mm OD, with a threaded hole through the entire length, intended for lifting purposes with M10 or M12 threads.Karol Porwol indicated that the connector should have full threads all the way through, with a 25-30 minute thread length, and confirmed that the threaded hole should be through the entire part to facilitate welding and proper positioning from underneath.Giles Hugo confirmed that the connector will be manufactured with full threading, which adds approximately 4 pounds to the cost, making it 20 pounds if fully threaded versus 16 pounds if halfway threaded.The participants discussed ordering stock items, including pins, hinge blocks, hinge pins, and machining caps, in bulk for future lifts, emphasizing consistency in the parts used.Karol Porwol requested the part list be sent via email or WhatsApp so he can arrange for the parts to be made in a different color to distinguish stock items, and Giles Hugo agreed to include him in the ordering email.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will confirm and proceed with manufacturing the connector with full threading as specified.Giles Hugo will send the part list to Karol Porwol via email or WhatsApp for bulk ordering and color differentiation.
+
+(Full transcript: RC web portal only — no RingSense API)

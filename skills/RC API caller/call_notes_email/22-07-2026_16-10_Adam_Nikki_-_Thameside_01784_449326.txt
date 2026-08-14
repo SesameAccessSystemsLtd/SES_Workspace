@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  22/07/2026  16:10
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a call between Giles Hugo and Adam/Nikki from Thameside discussing stock levels and specifications for certain mechanical parts, with plans to confirm details and send items later. The call was primarily about inventory and part details.
+
+--- RECAP --------------------------------------------------
+Giles Hugo and Adam/Nikki discussed stock availability of specific parts, including 1 mil thick washers and shear pins, with Adam/Nikki confirming they have 3 washers in stock at 3 pounds each and about 10 shear pins of specific sizes.They clarified part numbers and specifications: the washer is 12 mil by 12 mil, 1 mil thick, and the shear pins are identified as ship pins, with part numbers 703-B-262 and 1010 L 047, with lengths of 16 mm and 26 mm respectively.Adam/Nikki mentioned they have previously made shear pins under different numbers and will check with Carol to confirm if the parts are interchangeable or similar.Adam/Nikki plans to send the parts to Giles Hugo in the morning and will find out the pricing for the tougher shear pins to inform Giles Hugo.
+
+--- TASKS --------------------------------------------------
+Adam/Nikki will send the stock items to Giles Hugo in the morning.Adam/Nikki will confirm with Carol whether the shear pins with part number 703-B-262 and 1010 L 047 are interchangeable or similar.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  14/07/2026  14:53
+============================================================
+With:         Karol Porwol 303
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo requesting a read-only Dropbox API key for project automation, which Karol Porwol agreed to investigate further. They discussed sharing project links and the process for obtaining API access.
+
+--- RECAP --------------------------------------------------
+Giles Hugo asked Karol Porwol for a read-only Dropbox API key to enable bots to read and download files without writing permissions, for project automation purposes.Karol Porwol explained how to share project links via Dropbox and agreed to look into obtaining the API key, specifically for project number 3, the following morning.Giles Hugo mentioned that obtaining the API key would likely require access to Dropbox Developers and Automation settings, and confirmed he would review this process as well.
+
+--- TASKS --------------------------------------------------
+Karol Porwol will investigate how to generate a read-only Dropbox API key for project number 3 by tomorrow morning.Giles Hugo will review the Dropbox Developers and Automation settings to assist in obtaining the API key.
+
+(Full transcript: RC web portal only — no RingSense API)

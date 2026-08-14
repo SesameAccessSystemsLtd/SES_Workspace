@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  04/08/2026  11:49
+============================================================
+With:         447966696949 - Accounts 07966 696949
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call was a voicemail inquiry from Daisy at Cleveland Lift requesting confirmation of a job completion at 77 Wympole Street. Fatima Barros attempted to connect her with a colleague but did not complete the transfer.
+
+--- RECAP --------------------------------------------------
+Daisy from Cleveland Lift called to inquire about the completion status of a job at 77 Wympole Street, providing the PO number if needed.Fatima Barros asked for clarification on the caller's location and the specific job, then attempted to connect Daisy with a colleague but did not complete the transfer.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  15/07/2026  08:00
+============================================================
+With:         +44800110000 0800 110000
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call was an automated message informing the caller that the service is only available for payments via the automated system, directing them to the app or website for other services. No further action was taken during the call.
+
+--- RECAP --------------------------------------------------
+The caller dialled the number +44800110000 and received an automated message stating that the service is only available for payments through the automated system.The message instructed the caller to use the app or website to shop, make payments, arrange returns, or check order status, at any time of day.The automated system then transferred the caller to the payment service.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  12/08/2026  11:18
+============================================================
+With:         Alison Lyons 306
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a brief call where Giles Hugo attempted to speak with Alison Lyons regarding a subscription management issue, but Alison was unavailable due to a meeting. Giles was advised to have the caller send an email instead.
+
+--- RECAP --------------------------------------------------
+Giles Hugo called Alison Lyons to discuss a matter related to subscription management involving Reeba and NBSS, but Alison was in a meeting and unavailable to take the call.Alison suggested that the caller from Reeba and NBSS send an email to address their issue, as Giles recommended.Giles agreed to have the caller send an email and ended the call after confirming this plan.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,14 @@
+{
+  "request_id": "e00111c9-dfc2-4d9a-a0ce-4fa1a5ea02ac",
+  "source": "email_approval_sheet",
+  "row_index": 9,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkWzijGAAA=",
+  "subject": "Specialist Glass Products Ltd New Order Acknowledgement: 187381 (21236-1487)",
+  "task_gid": "1217412323428358",
+  "task_name": "21236-1487 - SGP - Adelaide replacement glass approved",
+  "asana_url": "https://app.asana.com/0/0/1217412323428358",
+  "action": "AMENDMENT (Giles overrode proposed action):\nOriginal: (Matched via PO Number in Local DB); Update custom field 'Price Ex VAT' (field GID: 854330340727040) to 379.19; Note added to description: Order_Confirmation from Specialistglass - £379.19 (2026-08-12)\nAmendment: THIS  ORDER HAS NOW BEEN CENCELLED",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-08-12T13:18:40Z\nEmail: Specialist Glass Products Ltd New Order Acknowledgement: 187381 (21236-1487)\n- Update custom field 'Price Ex VAT' (field GID: 854330340727040) to 379.19\n- Note added to description: Order_Confirmation from Specialistglass - £379.19 (2026-08-12)",
+  "decision": "M",
+  "created_at": "2026-08-12T16:00:42.147968+00:00"
+}

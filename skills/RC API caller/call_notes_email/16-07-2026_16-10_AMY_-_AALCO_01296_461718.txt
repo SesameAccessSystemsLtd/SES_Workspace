@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  16/07/2026  16:10
+============================================================
+With:         AMY - AALCO 01296 461718
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a follow-up call between Giles from Sesame Access and Amy from AALCO regarding a quote and order processing, with plans to confirm delivery dates and avoid over-ordering.
+
+--- RECAP --------------------------------------------------
+Giles from Sesame Access contacted Amy at AALCO to follow up on a quote request and to confirm receipt of an email sent earlier, which Amy's colleague Joe is handling.Amy confirmed that Joe has seen the quote and is preparing a formal quote to be sent to Giles as soon as possible.Giles indicated he would leave a purchase order (PO) number for processing and emphasized the importance of timely delivery, ideally tomorrow or Monday.Amy explained that they will attempt to deliver the materials by tomorrow if they are on-site and within the cutoff time, otherwise delivery will be scheduled for Monday, with confirmation sent to Giles.Giles advised to avoid over-ordering and expressed appreciation for the assistance, ending the call with well wishes.
+
+--- TASKS --------------------------------------------------
+Amy from AALCO will send a confirmation email with the delivery dates and order details to Giles from Sesame Access.Giles will follow up with a PO number to facilitate order processing.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  12/08/2026  12:12
+============================================================
+With:         +441795293104 01795 293104
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a brief test call where Giles Hugo, speaking as Charles, attempted to verify audio connectivity and speaker functionality. The call did not involve substantive discussion or decision-making.
+
+--- RECAP --------------------------------------------------
+Giles Hugo, speaking as Charles, initiated a call to test audio and speaker functionality.Giles Hugo reported being unable to hear the other party and conducted a test to confirm speaker operation.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

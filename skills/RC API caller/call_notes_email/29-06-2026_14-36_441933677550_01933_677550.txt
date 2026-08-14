@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  29/06/2026  14:36
+============================================================
+With:         +441933677550 01933 677550
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles from Sesame Access discussing their plans to bring PLC panel manufacturing in-house and seeking a partner to sign off and commission these panels. The conversation clarified the company's needs, capabilities, and the qualifications required for signing off on panels.
+
+--- RECAP --------------------------------------------------
+Giles from Sesame Access explained they are building in-house capabilities to manufacture PLC panels, typically 1.2 by 1.2 meters, with three tiers of complexity, and seek a partner to sign off and commission these panels, primarily in London and other major cities.The company tests and validates panels internally but requires external certification for voltage checks, connection verification, and commissioning after installation, especially for panels installed outside their own facilities.The external partner would not be responsible for initial testing or wiring diagrams but would sign off on commissioning after installation, with the work being relatively straightforward and localized in London.The company does not supply panel components and prefers to buy through wholesalers; they focus on designing and building control panels and are currently working on projects for clients like Red Bull Racing.Qualifications for signing off are flexible; understanding regulations and being competent is sufficient, with no specific licensing or electrician qualification required.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

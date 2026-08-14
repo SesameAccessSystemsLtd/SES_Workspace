@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  22/07/2026  14:12
+============================================================
+With:         +441158760862 0115 876 0862
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Fatima Barros seeking assistance with multiple bookings, including cancellations and new reservations at the Orchard Hotel and Jubilee, for individuals named Brandon and Liam. The agent, Brian, helped clarify booking details, processed cancellations, and made new reservations, ensuring correct dates and rates, including student discounts where applicable.
+
+--- RECAP --------------------------------------------------
+Fatima Barros contacted customer support to resolve issues with duplicate bookings for Brandon, with confirmation emails showing different dates; she requested to keep the booking from 20th to 25th September and cancel the 22nd to 27th September booking.The agent confirmed the cancellation of the 22nd to 27th September booking for Brandon and verified the remaining booking for 20th to 25th September, which was active.Fatima inquired about a new booking for Brandon in November, specifically from 22nd to 27th, at the Orchard Hotel, and was informed of limited availability, with only a standard double room left at the Orchard, costing £714 for five nights, including breakfast.The agent checked availability for Liam Baxter in November, confirmed no existing booking, and agreed to cancel a duplicate booking from 22nd to 27th November, subject to providing student email details for a discounted rate.Details for the new bookings were collected, including personal information, card details, and correct spelling of surnames, with the agent updating the records and confirming reservations.The agent transferred the call to a colleague when technical issues arose during payment processing, and the bookings were successfully secured after reattempts.Additional inquiries about availability in April at Jubilee and the Orchard Hotel were made; Jubilee had only a suite available, and Orchard was fully booked for those dates.The conversation concluded with all bookings confirmed, and the agent offered further assistance if needed.
+
+--- TASKS --------------------------------------------------
+Brian will update the booking details for Brandon and Liam in the system to reflect the correct dates and names.Brian will send confirmation emails for all processed bookings to Fatima Barros.Fatima Barros will provide the student email addresses to enable discounted rates for Liam Baxter and any other eligible individuals.Brian will ensure the name corrections are applied to existing bookings and resend updated confirmations.
+
+(Full transcript: RC web portal only — no RingSense API)

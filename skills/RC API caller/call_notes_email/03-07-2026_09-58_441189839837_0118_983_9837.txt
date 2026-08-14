@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  03/07/2026  09:58
+============================================================
+With:         +441189839837 0118 983 9837
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Fatima from Sesame Axis seeking clarification on whether an engineer with an expired driving licence, currently under renewal, would have valid insurance coverage in case of an accident. The representative confirmed that as long as DVLA states the licence is valid and the engineer is permitted to drive, the insurance remains valid.
+
+--- RECAP --------------------------------------------------
+Fatima from Sesame Axis inquired whether an engineer with an expired driving licence, which is being renewed, would have valid insurance coverage if involved in an accident. The engineer's licence is currently valid but has an expired category requiring renewal, and DVLA has confirmed he can still drive during the renewal process.The insurance representative explained that as long as DVLA confirms the licence is valid and the engineer is authorised to drive, the insurance policy remains in effect. If DVLA later revokes the licence, the insurance would no longer be valid. The representative emphasised that the key factor is DVLA's approval for the engineer to drive during renewal.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

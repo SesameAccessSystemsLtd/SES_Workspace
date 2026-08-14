@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  22/07/2026  11:39
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo discussing upcoming orders, project details, and manufacturing options with Adam/Nikki from Thameside. They coordinated on order quantities, material specifications, and potential in-house production, with follow-up actions for quotes and review of technical drawings.
+
+--- RECAP --------------------------------------------------
+Giles Hugo informed Adam/Nikki that he will be away for the next two weeks starting from the Monday after this call, due to a holiday.Giles Hugo confirmed an order for 12 hardened wheels, increasing from the current 6, and plans to hold an additional 6 in stock.Giles Hugo requested to remove the 32 round studded connector from the order because it can be made in-house on the lathe, as per a call from Andy and Joe.Adam/Nikki discussed reviewing and pricing various machining jobs, including a top flat aluminum part that needs 5mm taken off the thickness, which is 5mm thick aluminum, and considering whether to have it laser cut or machined.Giles Hugo asked for a quote on the aluminum top flat part, which is a shutter roller, and confirmed it is 5mm thick aluminum, with a note that in-house machining might be possible.They discussed larger parts labeled L84 and L89, which are too big for laser cutting and will require machining, with some consideration of their size and previous work done.Giles Hugo suggested that the L039 part might not need to be machined, possibly due to its thickness or size, and Adam/Nikki agreed to review the drawings and pricing accordingly.
+
+--- TASKS --------------------------------------------------
+Adam/Nikki will update the order to include 12 hardened wheels and remove the 32 studded connector, based on Giles Hugo's instructions.Adam/Nikki will request a quote for the aluminum top flat part, considering in-house machining options, and review the technical drawings for the L84 and L89 parts to determine machining requirements.Adam/Nikki will review the drawings and pricing for the L039 part to decide if machining is necessary.
+
+(Full transcript: RC web portal only — no RingSense API)

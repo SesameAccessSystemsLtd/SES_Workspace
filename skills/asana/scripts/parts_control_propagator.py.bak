@@ -1,0 +1,250 @@
+"""
+parts_control_propagator.py — Propagate On Order status to subtasks and dependents.
+
+When a parent task's ORDER Status = "On Order - Awaiting CONFIRMATION", this script
+sets Stock ACTION = "On order (dependents NOT ORDER TASKS)" on all direct subtasks
+and direct dependent tasks.
+
+Exception: tasks already set to PICKING COMPLETE are never touched.
+Already-correct tasks (already On order dependents) are skipped — idempotent.
+
+Scan source: Goods In project (358790955858777) — primary order tracking view.
+Depth: direct subtasks + direct dependents only (1 level). Results are paginated
+to handle large task counts (e.g. LaserCut orders with hundreds of subtasks).
+
+Audit log: actual updates written to propagator_audit_log table in ops.db via db_writer.
+
+Usage:
+    python parts_control_propagator.py --scan    # dry run, prints summary, no changes
+    python parts_control_propagator.py --commit  # scan + apply in one pass
+"""
+
+import os
+import sys
+import argparse
+import requests
+from datetime import datetime, timezone
+from pathlib import Path
+
+# Co-located batch updater — handles Batch API + 429 retry
+sys.path.insert(0, str(Path(__file__).parent))
+from asana_batch_updater import push_updates, get_asana_token
+
+# db_writer — sole write gateway for ops.db
+_WORKSPACE = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(_WORKSPACE / "skills" / "purchasing"))
+from db_writer import log_propagator_run
+
+BASE = "https://app.asana.com/api/1.0"
+
+# Projects
+GOODS_IN_PROJECT = "358790955858777"
+
+# Custom field GIDs
+ORDER_STATUS_FIELD = "1143955334207040"
+STOCK_ACTION_FIELD = "1199111659373956"
+
+# Enum GIDs
+ON_ORDER_AWAITING  = "1143955334207043"  # ORDER Status: On Order - Awaiting CONFIRMATION
+ON_ORDER_DEPS_ENUM = "1200721961626388"  # Stock ACTION: On order (dependents NOT ORDER TASKS)
+PICKING_COMPLETE   = "1208001339654376"  # Stock ACTION: PICKING COMPLETE
+
+TASK_FIELDS = (
+    "gid,name,"
+    "custom_fields.gid,"
+    "custom_fields.enum_value.gid,"
+    "custom_fields.enum_value.name"
+)
+
+
+def _headers(token):
+    return {"Authorization": f"Bearer {token}", "Accept": "application/json"}
+
+
+def _has_field(task, field_gid):
+    """True if field_gid exists on the task (regardless of value)."""
+    return any(cf.get("gid") == field_gid for cf in task.get("custom_fields", []))
+
+
+def _get_enum(task, field_gid):
+    """Return (enum_gid, enum_name) for a custom field on a task, or (None, None)."""
+    for cf in task.get("custom_fields", []):
+        if cf.get("gid") == field_gid:
+            ev = cf.get("enum_value")
+            return (ev.get("gid"), ev.get("name")) if ev else (None, None)
+    return None, None
+
+
+def _get_all_pages(url, params, token):
+    """Fetch all pages from a paginated Asana list endpoint."""
+    results = []
+    while url:
+        r = requests.get(url, headers=_headers(token), params=params)
+        r.raise_for_status()
+        body = r.json()
+        results.extend(body.get("data", []))
+        nxt = body.get("next_page")
+        url = nxt.get("uri") if nxt else None
+        params = {}  # cursor is embedded in the next_page URI
+    return results
+
+
+def find_on_order_parents(token):
+    """Return all incomplete Goods In tasks with ORDER Status = On Order - Awaiting CONFIRMATION."""
+    print(f"Scanning Goods In ({GOODS_IN_PROJECT}) for 'On Order - Awaiting CONFIRMATION' tasks...")
+    all_tasks = _get_all_pages(
+        f"{BASE}/projects/{GOODS_IN_PROJECT}/tasks",
+        {"completed_since": "now", "opt_fields": TASK_FIELDS, "limit": 100},
+        token,
+    )
+    parents = [t for t in all_tasks if _get_enum(t, ORDER_STATUS_FIELD)[0] == ON_ORDER_AWAITING]
+    print(f"  Found {len(parents)} parent task(s) with 'On Order - Awaiting CONFIRMATION':")
+    for p in parents:
+        pu = _task_url(p["gid"], p["name"])
+        print(f"    • {pu}")
+    return parents
+
+
+def collect_children(parent_gid, token):
+    """Return [(relationship, task)] for all direct subtasks and dependents."""
+    subtasks   = _get_all_pages(f"{BASE}/tasks/{parent_gid}/subtasks",   {"opt_fields": TASK_FIELDS, "limit": 100}, token)
+    dependents = _get_all_pages(f"{BASE}/tasks/{parent_gid}/dependents", {"opt_fields": TASK_FIELDS, "limit": 100}, token)
+    return [("subtask", t) for t in subtasks] + [("dependent", t) for t in dependents]
+
+
+def build_update_list(token):
+    """Scan all On Order parents and classify each child as update / skip."""
+    parents = find_on_order_parents(token)
+    updates = []
+    skipped = []
+
+    for parent in parents:
+        pgid  = parent["gid"]
+        pname = parent["name"]
+        children = collect_children(pgid, token)
+        pu = _task_url(pgid, pname)
+        print(f"  {pu}: {len(children)} child(ren)")
+
+        for rel, task in children:
+            tgid = task["gid"]
+            tname = task["name"]
+
+            if not _has_field(task, STOCK_ACTION_FIELD):
+                skipped.append({
+                    "task_gid": tgid,
+                    "task_name": tname,
+                    "parent_name": pname,
+                    "relationship": rel,
+                    "reason": "Stock ACTION field not on this task (different project)",
+                    "current_stock_action": None,
+                })
+                continue
+
+            sa_gid, sa_name = _get_enum(task, STOCK_ACTION_FIELD)
+
+            if sa_gid == PICKING_COMPLETE:
+                skipped.append({
+                    "task_gid": tgid,
+                    "task_name": tname,
+                    "parent_name": pname,
+                    "relationship": rel,
+                    "reason": "PICKING COMPLETE — preserved",
+                    "current_stock_action": sa_name,
+                })
+
+            elif sa_gid == ON_ORDER_DEPS_ENUM:
+                skipped.append({
+                    "task_gid": tgid,
+                    "task_name": tname,
+                    "parent_name": pname,
+                    "relationship": rel,
+                    "reason": "Already set — no change needed",
+                    "current_stock_action": sa_name,
+                })
+
+            else:
+                updates.append({
+                    "task_gid": tgid,
+                    "task_name": tname,
+                    "parent_gid": pgid,
+                    "parent_name": pname,
+                    "relationship": rel,
+                    "current_stock_action": sa_name,
+                    "custom_field_gid": STOCK_ACTION_FIELD,
+                    "new_enum_gid": ON_ORDER_DEPS_ENUM,
+                    "new_stock_action": "On order (dependents NOT ORDER TASKS)",
+                })
+
+    return updates, skipped
+
+
+ASA_BASE = "https://app.asana.com/0/0/"
+
+
+def _task_url(gid, name):
+    return f"[{name}]({ASA_BASE}{gid}/f)"
+
+def print_summary(updates, skipped):
+    pc      = sum(1 for s in skipped if "PICKING COMPLETE" in s["reason"])
+    already = sum(1 for s in skipped if "Already" in s["reason"])
+    no_field = sum(1 for s in skipped if "not on this task" in s["reason"])
+    print(f"\nSummary:")
+    print(f"  To update:                       {len(updates)}")
+    print(f"  Skipped (PICKING COMPLETE):      {pc}")
+    print(f"  Skipped (already set):           {already}")
+    print(f"  Skipped (field absent on task):  {no_field}")
+
+    if updates:
+        print(f"\nChildren being updated:")
+        seen_parents = {}
+        for u in updates:
+            pu = seen_parents.get(u["parent_gid"])
+            if not pu:
+                pu = _task_url(u["parent_gid"], u["parent_name"])
+                seen_parents[u["parent_gid"]] = pu
+            tu = _task_url(u["task_gid"], u["task_name"])
+            print(f"    • {tu} ({u['relationship']}, under {pu})")
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Propagate On Order status to subtasks and dependents in Asana."
+    )
+    parser.add_argument("--scan",   action="store_true", help="Dry run — print summary, no changes, no DB write")
+    parser.add_argument("--commit", action="store_true", help="Apply updates via Batch API and log to ops.db")
+    args = parser.parse_args()
+
+    if not args.scan and not args.commit:
+        parser.print_help()
+        sys.exit(1)
+
+    token = get_asana_token()
+    if not token:
+        sys.exit("ERROR: ASANA_PERSONAL_ACCESS_TOKEN not found in environment or ASANAconfig.json")
+
+    updates, skipped = build_update_list(token)
+    print_summary(updates, skipped)
+
+    if not updates:
+        print("\nNothing to update.")
+        sys.exit(0)
+
+    if args.scan:
+        print("\nDry run — no changes applied.")
+        sys.exit(0)
+
+    # --commit: apply and log to ops.db
+    print(f"\nApplying {len(updates)} update(s) via Batch API...")
+    ok, fail = push_updates(updates, token, dry_run=False)
+    print(f"Done. Applied: {ok}  Failed: {fail}")
+
+    run_at = datetime.now(timezone.utc).isoformat()
+    result = log_propagator_run(run_at, updates)
+    if result["errors"]:
+        print(f"WARNING: {result['errors']} audit log row(s) failed to write to ops.db")
+
+    sys.exit(1 if fail else 0)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  22/07/2026  09:47
+============================================================
+With:         441822833111 - Accounts 01822 833111
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Keith from Interfluid requesting overdue payment from Fatima Barros, who needed to confirm payment timing with Allison. The payment was overdue since 30th June, and no payment has been received yet.
+
+--- RECAP --------------------------------------------------
+Keith from Interfluid contacted Fatima Barros regarding unpaid invoices, noting that payment was due on 30th June and has not yet been received, despite assurances of payment last Friday.Fatima Barros acknowledged the overdue payment and stated she would check with Allison to confirm when the payment would be made.Keith expressed the urgency of receiving the payment as soon as possible, emphasising the delay since the due date.Fatima Barros asked for Keith's name again, which he provided as Hazel from Sesame, and she promised to update him once she has confirmation from Allison.
+
+--- TASKS --------------------------------------------------
+Fatima Barros to check with Allison and confirm the expected payment date.
+
+(Full transcript: RC web portal only — no RingSense API)

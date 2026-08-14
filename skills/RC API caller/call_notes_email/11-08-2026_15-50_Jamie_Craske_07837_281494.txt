@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  11/08/2026  15:50
+============================================================
+With:         Jamie Craske 07837 281494
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a casual call between Giles Hugo and Jamie Craske discussing recent personal activities and ongoing work issues related to parts orders and deliveries. Giles reported on his holiday and leisure activities, while both discussed potential delays and discrepancies in parts deliveries and communication with suppliers.
+
+--- RECAP --------------------------------------------------
+Giles Hugo shared details about his holiday in France and activities in Norfolk, including seaside entertainment and family time.Giles mentioned recent work involving parts orders, specifically referencing order number 21133-1580 for a St. Mary's scissor lift and associated laser-cut parts, with some parts expected to arrive tomorrow.There was a discussion about a potential miscommunication or delay regarding parts ordered, with Giles expressing concern that some parts may not have been processed correctly or included in the order, and that he is awaiting confirmation from the supplier.Jamie Craske agreed to review the delivery status first thing in the morning, checking if all parts have been received and if they are on the correct job, with a planned call around 7:30-8:00 AM to update Giles.Giles indicated he would follow up with an email to clarify outstanding parts and confirm delivery status, and Jamie confirmed he would check the delivery records and update accordingly.
+
+--- TASKS --------------------------------------------------
+Jamie Craske will review the delivery records first thing in the morning to verify if all parts have been delivered and are on the correct job, and will call Giles around 7:30-8:00 AM with an update.Giles Hugo will send a follow-up email to Jamie with details of any outstanding parts or discrepancies once he has checked the source system.
+
+(Full transcript: RC web portal only — no RingSense API)

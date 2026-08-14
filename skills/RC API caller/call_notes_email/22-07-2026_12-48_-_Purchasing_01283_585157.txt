@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  22/07/2026  12:48
+============================================================
+With:         - Purchasing 01283 585157
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call between Giles Hugo and Chris from purchasing covered inquiries about water jet parts, manufacturing capabilities, and pricing for various components, with a focus on water jet cutting, machining, and fabrication options for handrails and related parts.
+
+--- RECAP --------------------------------------------------
+Chris from purchasing inquired about water jet parts, including water jet cutting, laser welding, and fabrication capabilities, primarily for handrails and related components.Giles Hugo discussed current orders totaling approximately 13,000 to 14,000 pounds for laser-cut parts and water jet components, noting slow business in this period.They explored the possibility of fabricating handrails in brass and stainless steel, with considerations about bending limitations, tooling costs, and material availability.Chris mentioned that their water jet service charges approximately 53 pounds per cut for 40mm thick plates, with additional costs for machining and finishing, and that they can supply pre-made bends in stainless steel with fixed radii.Giles Hugo indicated that their current in-house capabilities include standard fabrication, manual milling, and turning, but they lack CNC mills and specialized bending equipment, making some parts more feasible to produce through manual methods or external suppliers.Pricing for small machined components like bushes and rings was discussed, with machining costs around 12 pounds each for bushes and 40 pounds for rings, while laser cutting offers cheaper alternatives at about 3 pounds per ring.They agreed to exchange machining quotes to compare costs and determine the most efficient manufacturing route for upcoming projects.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send machining quotes for the components discussed to Chris for comparison.Chris will work out the costs for fabricating handrails in stainless steel and brass, considering material and tooling expenses.Giles Hugo will consult with the machine room team regarding bending options and the feasibility of fabricating handrails in brass or stainless steel.
+
+(Full transcript: RC web portal only — no RingSense API)

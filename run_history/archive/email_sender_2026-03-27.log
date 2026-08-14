@@ -1,0 +1,49 @@
+2026-03-27 15:34:15,195 [INFO] ============================================================
+2026-03-27 15:34:15,197 [INFO] SesameAccess × Elastic Email sender — 2026-03-27 15:34 UTC
+2026-03-27 15:34:15,198 [INFO] Mode: LIVE | Limit: none
+2026-03-27 15:34:15,198 [INFO] ============================================================
+2026-03-27 15:34:15,199 [INFO] Test email → purchasing@sesameaccess.com (from alisonl@sesameaccess.com)
+2026-03-27 15:34:15,201 [INFO] Subject: Disability Access Lifts for Example Council — SesameAccess
+2026-03-27 15:34:15,207 [ERROR]   ❌ Request error sending to purchasing@sesameaccess.com: HTTPSConnectionPool(host='api.elasticemail.com', port=443): Max retries exceeded with url: /v4/emails/transactional (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+2026-03-27 15:41:34,337 [INFO] ============================================================
+2026-03-27 15:41:34,338 [INFO] SesameAccess � Elastic Email sender � 2026-03-27 15:41 UTC
+2026-03-27 15:41:34,338 [INFO] Mode: LIVE | Limit: none
+2026-03-27 15:41:34,338 [INFO] ============================================================
+2026-03-27 15:41:34,338 [ERROR] EMAIL_SERVICE_Elasticemail_API_KEY is not set in environment
+2026-03-27 15:41:51,608 [INFO] ============================================================
+2026-03-27 15:41:51,608 [INFO] SesameAccess � Elastic Email sender � 2026-03-27 15:41 UTC
+2026-03-27 15:41:51,616 [INFO] Mode: LIVE | Limit: none
+2026-03-27 15:41:51,616 [INFO] ============================================================
+2026-03-27 15:41:51,632 [INFO] Subject: Disability Access Lifts for Example Council � SesameAccess
+2026-03-27 15:47:48,250 [INFO] ============================================================
+2026-03-27 15:47:48,250 [INFO] SesameAccess × Elastic Email sender — 2026-03-27 15:47 UTC
+2026-03-27 15:47:48,258 [INFO] Mode: LIVE | Limit: none
+2026-03-27 15:47:48,258 [INFO] ============================================================
+2026-03-27 15:47:48,258 [INFO] Test email → purchasing@sesameaccess.com (from alisonl@sesameaccess.com)
+2026-03-27 15:47:48,258 [INFO] Subject: Disability Access Lifts for Example Council — SesameAccess
+2026-03-27 15:47:48,567 [INFO]   ✅ Sent → purchasing@sesameaccess.com (id=461caa6b-7bdb-81c3-a06b-07c15dbe1a19)
+2026-03-27 15:49:25,264 [INFO] ============================================================
+2026-03-27 15:49:25,264 [INFO] SesameAccess × Elastic Email sender — 2026-03-27 15:49 UTC
+2026-03-27 15:49:25,264 [INFO] Mode: LIVE | Limit: none
+2026-03-27 15:49:25,264 [INFO] ============================================================
+2026-03-27 15:49:25,264 [ERROR] EMAIL_SERVICE_Elasticemail_API_KEY is not set in environment
+2026-03-27 15:50:28,986 [INFO] ============================================================
+2026-03-27 15:50:28,986 [INFO] SesameAccess × Elastic Email sender — 2026-03-27 15:50 UTC
+2026-03-27 15:50:28,986 [INFO] Mode: LIVE | Limit: none
+2026-03-27 15:50:28,986 [INFO] ============================================================
+2026-03-27 15:50:28,986 [INFO] Test email → purchasing@sesameaccess.com (from alisonl@sesameaccess.com)
+2026-03-27 15:50:28,986 [INFO] Subject: Disability Access Lifts for Example Council — SesameAccess
+2026-03-27 15:50:29,283 [INFO]   ✅ Sent → purchasing@sesameaccess.com (id=461caa7a-18dc-c1bd-e07a-2ed04caf0c57)
+2026-03-27 16:01:36,738 [INFO] ============================================================
+2026-03-27 16:01:36,738 [INFO] SesameAccess × Elastic Email sender — 2026-03-27 16:01 UTC
+2026-03-27 16:01:36,738 [INFO] Mode: LIVE | Limit: none
+2026-03-27 16:01:36,738 [INFO] ============================================================
+2026-03-27 16:01:36,739 [INFO] Test email → purchasing@sesameaccess.com (from alisonl@sesameaccess.com)
+2026-03-27 16:01:36,739 [INFO] Subject: Hidden Wheelchair Lifts for Example Council — Sesame Access
+2026-03-27 16:01:37,015 [INFO]   ✅ Sent → purchasing@sesameaccess.com (id=461caa38-a4de-41d2-8038-af920eed4c19)
+2026-03-27 16:28:10,293 [INFO] ============================================================
+2026-03-27 16:28:10,294 [INFO] SesameAccess × Elastic Email sender — 2026-03-27 16:28 UTC
+2026-03-27 16:28:10,294 [INFO] Mode: LIVE | Limit: 5
+2026-03-27 16:28:10,294 [INFO] ============================================================
+2026-03-27 16:28:10,825 [INFO]   Send queue: 0 contact(s) with TO_EMAIL status
+2026-03-27 16:28:10,825 [INFO] Send queue is empty — no contacts with TO_EMAIL status in HubSpot

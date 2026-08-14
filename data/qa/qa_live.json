@@ -1,0 +1,56 @@
+{
+  "generated": "2026-08-13T23:27:52",
+  "items": [
+    {
+      "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkWztzxAAA=",
+      "received": "2026-08-11T18:23:44Z",
+      "subject": "APC Overnight Ref: 0020108",
+      "sender_domain": "bookingplatform.apc-overnight.com",
+      "doc_type": "dispatch_note",
+      "po_number": "",
+      "matched_task": "NOT MATCHED",
+      "asana_link": "",
+      "proposed_action": "Task not found. Document Type: dispatch_note. PO: None. SQR: None. Sender Domain: bookingplatform.apc-overnight.com",
+      "comments": "",
+      "decision": "R",
+      "amendment_notes": "APC no action - noise",
+      "processed_at": "2026-08-13 14:48",
+      "_rowindex": 2,
+      "confidence": "DONE"
+    },
+    {
+      "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkWzijpAAA=",
+      "received": "2026-08-13T14:56:12Z",
+      "subject": "Notes from your call with Lasershape 0115 972 9921 on 13/08/2026 15:54",
+      "sender_domain": "ringcentral.com",
+      "doc_type": "other",
+      "po_number": "",
+      "matched_task": "NOT MATCHED",
+      "asana_link": "",
+      "proposed_action": "Manual review — no task/id extracted. Subject: 'Notes from your call with Lasershape 0115 972 9921 on 13/08/2026 15:54' (doc type: other, sender: ringcentral.com)",
+      "comments": "",
+      "decision": "",
+      "amendment_notes": "",
+      "processed_at": "",
+      "_rowindex": 3,
+      "confidence": "LOW"
+    },
+    {
+      "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkWzijnAAA=",
+      "received": "2026-08-13T14:32:46Z",
+      "subject": "TNT shipment notification for 146914501",
+      "sender_domain": "mail.tnt.com",
+      "doc_type": "dispatch_note",
+      "po_number": "21207-1575 / 21205-1514",
+      "matched_task": "21207-1575 - Tape switch - replacements - 1575 -",
+      "asana_link": "https://app.asana.com/0/0/1216946791201146",
+      "proposed_action": "(Matched via Base PO '21207' in Local DB); Update delivery date to 2026-08-17; Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043)",
+      "comments": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-08-13T14:32:46Z\nEmail: TNT shipment notification for 146914501\n- Update delivery date to 2026-08-17\n- Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043)",
+      "decision": "",
+      "amendment_notes": "",
+      "processed_at": "",
+      "_rowindex": 4,
+      "confidence": "HIGH"
+    }
+  ]
+}

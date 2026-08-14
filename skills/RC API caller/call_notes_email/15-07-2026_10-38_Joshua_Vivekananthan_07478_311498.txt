@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  15/07/2026  10:38
+============================================================
+With:         Joshua Vivekananthan 07478 311498
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved troubleshooting internet connectivity issues at Glen Eagles, focusing on the SIM card and Dior system, with plans for further visits to resolve hardware and software updates.
+
+--- RECAP --------------------------------------------------
+The team attempted to resolve internet connectivity issues at Glen Eagles by restarting the router and checking the connection, but the system still lacks internet access, despite the router showing GSM signal bars.Giles Hugo identified that the Dior system's legacy hardware and outdated software may be causing packet loss and weak signals, which could be mitigated by updating the Dior devices and their software.It was confirmed that the SIM card in the Dior device has the number 8, but the device shows no active signal bars, indicating the SIM may be inactive or not properly connected, and the SIM card has not been updated from the inventory list.The team discussed that the SIM card should be active and functional if the client is paying for the service, and a task was identified to physically check and possibly replace the SIM card at Glen Eagles.Giles noted that the current system setup is outdated, with limited packet size and weak encryption, which contributes to signal issues, and recommended updating the Dior hardware and software to improve performance.A future visit is planned to physically inspect the SIM card, update the Dior system, and ensure proper connectivity, as current limitations prevent system updates remotely.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will arrange a visit to Glen Eagles to physically inspect and possibly replace the SIM card, and verify its activation status.Joshua Vivekananthan will go to Glen Eagles to check for the presence of a SIM card, remove it, and report the number on the side to Giles.Giles Hugo will update the task record for Glen Eagles to include the inspection and replacement of the SIM card, and ensure the Dior system is properly configured and updated during the next visit.
+
+(Full transcript: RC web portal only — no RingSense API)

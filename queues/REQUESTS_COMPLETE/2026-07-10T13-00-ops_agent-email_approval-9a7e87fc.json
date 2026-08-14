@@ -1,0 +1,14 @@
+{
+  "request_id": "a7746c82-0f9f-4ff7-bf2a-a7c05e2e19aa",
+  "source": "email_approval_sheet",
+  "row_index": 64,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkCMjpXAAA=",
+  "subject": "RE: Single Scissor BOM",
+  "task_gid": "1215202782923459",
+  "task_name": "21066-1010 - Exact Lasercut BOM  - Single Scissor  may 2026",
+  "asana_url": "https://app.asana.com/0/0/1215202782923459",
+  "action": "(Matched via PO Number in Local DB); Flag issue: The quality of through holes on order 21066-1010 does not meet expectations, requiring remake of part 1010.A.035.05 and assessment of 1010.A.034.05.",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-07-09T14:04:46Z\nEmail: RE: Single Scissor BOM \n- Flag issue: The quality of through holes on order 21066-1010 does not meet expectations, requiring remake of part 1010.A.035.05 and assessment of 1010.A.034.05.",
+  "decision": "A",
+  "created_at": "2026-07-10T13:00:07.770213+00:00"
+}

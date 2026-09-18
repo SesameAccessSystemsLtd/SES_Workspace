@@ -8,15 +8,18 @@ import asyncio
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 
 # --- Configuration ---
-ASANA_PERSONAL_ACCESS_TOKEN_FALLBACK = "***REMOVED_ASANA_PAT***"
+# 2026-09-17: hardcoded token fallback removed (leaked in git history; rotate it).
+# The token must come from the environment. Never hardcode it.
 ASANA_CUSTOM_FIELD_PROJECT_NAME_GID = "1202882645384174"
 
 # --- Asana Client Initialization ---
 def get_asana_client():
-    token = os.getenv("ASANA_PERSONAL_ACCESS_TOKEN", ASANA_PERSONAL_ACCESS_TOKEN_FALLBACK)
+    token = os.getenv("ASANA_PERSONAL_ACCESS_TOKEN")
     if not token:
-        logging.error("Asana Personal Access Token not found. Please set ASANA_PERSONAL_ACCESS_TOKEN in your .env or provide it.")
-        exit(1)
+        raise RuntimeError(
+            "ASANA_PERSONAL_ACCESS_TOKEN not set. Export it (or put it in "
+            "C:/Users/GilesHugo/.hermes/.env) before running. Do NOT hardcode it."
+        )
     return asana.Client.access_token(token)
 
 # --- Helper Functions ---

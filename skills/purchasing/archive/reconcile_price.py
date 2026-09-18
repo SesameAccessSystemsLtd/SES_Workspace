@@ -2,9 +2,17 @@ import requests
 import argparse
 import sys
 import json
+import os
 import re
 
-ASANA_TOKEN = "***REMOVED_ASANA_PAT***"
+# 2026-09-17: hardcoded token removed (leaked in git history; rotate it).
+# Read from env instead — see SES_Workspace/.hermes/.env or the process env.
+ASANA_TOKEN = os.environ.get("ASANA_PERSONAL_ACCESS_TOKEN", "").strip()
+if not ASANA_TOKEN:
+    raise RuntimeError(
+        "ASANA_PERSONAL_ACCESS_TOKEN not set. Export it (or put it in "
+        "C:/Users/GilesHugo/.hermes/.env) before running. Do NOT hardcode it."
+    )
 HEADERS = {"Authorization": f"Bearer {ASANA_TOKEN}", "Accept": "application/json"}
 
 # GIDs

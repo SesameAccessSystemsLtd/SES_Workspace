@@ -1,3 +1,4 @@
 {
-  "ASANA_PERSONAL_ACCESS_TOKEN": "***REMOVED_ASANA_PAT***"
-} 
+  "_comment": "2026-09-17: the real ASANA_PERSONAL_ACCESS_TOKEN that was committed here has been removed and MUST be rotated. Prefer the ASANA_PERSONAL_ACCESS_TOKEN environment variable. If you need this file as a local fallback, populate it on your own machine and keep it out of Git (see .gitignore: *.env / credentials patterns) - never commit a real token.",
+  "ASANA_PERSONAL_ACCESS_TOKEN": ""
+}

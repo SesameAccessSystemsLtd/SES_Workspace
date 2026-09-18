@@ -141,7 +141,14 @@ def upsert_purchase_order(conn: sqlite3.Connection, proposal: dict, commit: bool
 
 def reconcile_po_price(conn, asana_task_gid, extracted_price, source_bom_or_email, commit):
     import requests
-    ASANA_TOKEN = "***REMOVED_ASANA_PAT***"
+    import os
+    # 2026-09-17: hardcoded token removed (leaked in git history; rotate it).
+    ASANA_TOKEN = (os.environ.get("ASANA_PERSONAL_ACCESS_TOKEN") or "").strip()
+    if not ASANA_TOKEN:
+        raise RuntimeError(
+            "ASANA_PERSONAL_ACCESS_TOKEN not set. Export it (or put it in "
+            "C:/Users/GilesHugo/.hermes/.env) before running. Do NOT hardcode it."
+        )
     HEADERS = {"Authorization": f"Bearer {ASANA_TOKEN}", "Accept": "application/json"}
     GILES_GID = "369446862164512"
     PRICE_EX_VAT_GID = "854330340727040"

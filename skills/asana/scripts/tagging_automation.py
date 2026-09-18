@@ -3,7 +3,17 @@ import argparse
 import sys
 import os
 
-ASANA_TOKEN = os.environ.get("ASANA_PERSONAL_ACCESS_TOKEN", "***REMOVED_ASANA_PAT***")
+# 2026-09-17: hardcoded token fallback removed (leaked in git history; rotate it).
+#
+# A bare os.environ.get() default is a trap: the module still imports and runs
+# happily with a *revoked* token, and every request then fails as a confusing
+# 401 rather than "you forgot to set the token". Fail loudly at import instead.
+ASANA_TOKEN = (os.environ.get("ASANA_PERSONAL_ACCESS_TOKEN") or "").strip()
+if not ASANA_TOKEN:
+    raise RuntimeError(
+        "ASANA_PERSONAL_ACCESS_TOKEN not set. Export it (or put it in "
+        "C:/Users/GilesHugo/.hermes/.env) before running. Do NOT hardcode it."
+    )
 HEADERS = {"Authorization": f"Bearer {ASANA_TOKEN}", "Accept": "application/json"}
 
 SUPPLIER_PROJECT = "414986125671548"

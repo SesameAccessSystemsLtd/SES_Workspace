@@ -8,7 +8,9 @@
 $script:Config = @{}
 
 # --- Asana ---
-$Config.ASANA_PAT         = "***REMOVED***"
+# 2026-09-17: hardcoded secrets removed (leaked in git history; ROTATE THEM).
+# Secrets now come from the environment. Never commit real values here.
+$Config.ASANA_PAT         = $env:ASANA_PERSONAL_ACCESS_TOKEN
 $Config.ASANA_PROJECT_ID  = "902269769783650"
 $Config.ASANA_WORKSPACE_ID = "357939803556123"
 $Config.ASANA_API_BASE    = "https://app.asana.com/api/1.0"
@@ -18,9 +20,13 @@ $Config.MAIL_FOLDER_INBOX  = "INVOICES TO PROCESS"
 $Config.MAIL_FOLDER_ARCHIVE = "INVOICES TO PROCESS/Invoice Archive"
 $Config.GRAPH_TENANT_ID    = "3bfd9e7d-219f-48db-bd9e-e63b3b990a1a"
 $Config.GRAPH_CLIENT_ID    = "a7bd53ba-a635-4b2a-bc08-7ae7b1a3ec17"
-$Config.GRAPH_CLIENT_SECRET = "***REMOVED***"
+$Config.GRAPH_CLIENT_SECRET = $env:GRAPH_CLIENT_SECRET
 $Config.GRAPH_USER_EMAIL   = "purchasing@sesameaccess.com"
 $Config.GRAPH_API_BASE     = "https://graph.microsoft.com/v1.0"
+
+# Fail loudly rather than making unauthenticated calls with a null secret.
+if (-not $Config.ASANA_PAT)       { throw "ASANA_PERSONAL_ACCESS_TOKEN is not set. Set it in the environment before running. Do NOT hardcode it." }
+if (-not $Config.GRAPH_CLIENT_SECRET) { throw "GRAPH_CLIENT_SECRET is not set. Set it in the environment before running. Do NOT hardcode it." }
 
 # --- PO Regex ---
 $Config.PO_PATTERN = "^[0-9]{5}-[0-9]{4,6}"

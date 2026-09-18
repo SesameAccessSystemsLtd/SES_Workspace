@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  14/09/2026  14:12
+============================================================
+With:         Andy Easton 307
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved updates on the delivery and processing of large panels, confirming specifications and scheduling pickups, with a brief mention of incoming channels and flats. The overall outcome was coordination for timely processing and delivery of materials.
+
+--- RECAP --------------------------------------------------
+Giles Hugo spoke with Dave Burke at IDL, who reported that last week's delivery is ready and will be processed for tomorrow morning's turnaround on a large panel.The large panel is finished and will be ready for painting tomorrow; it will be delivered back to them after processing.Giles confirmed that only the counter-sunk side should be powder coated, with no coating needed on the other side or inside, and edges should be processed accordingly.The rest of the panel will be taken down and processed tomorrow morning, with pickup scheduled for then.Channels and flats are arriving in 2 to 3 days, with a brief discussion about import timing and urgency.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will ensure the remaining panel is processed and ready for pickup tomorrow morning.Giles Hugo will coordinate the delivery of the processed panel back to their location after processing.
+
+(Full transcript: RC web portal only — no RingSense API)

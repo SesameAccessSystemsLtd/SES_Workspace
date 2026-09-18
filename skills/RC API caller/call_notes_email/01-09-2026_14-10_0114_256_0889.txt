@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  01/09/2026  14:10
+============================================================
+With:         0114 256 0889
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo attempting to resolve a payment issue with Sesame Access, discussing order processing, payment methods, and email communication to facilitate a manual transaction. The call concluded with successful receipt of the email confirmation.
+
+--- RECAP --------------------------------------------------
+Giles Hugo contacted Sesame Access to resolve an issue with processing an order, specifically with verifying the transaction via OTP, which was not received.Giles attempted to pay using a credit card but was advised that bank transfer was an option, requiring an email with order details and reference number for manual processing.Giles provided order number 223824 and requested assistance in completing the payment, which involved sending an email with order details to the sales email address.The representative confirmed receipt of the email and agreed to process the order manually, then attempted to verify the email transmission and confirmed successful receipt of the email with the order details.The call ended with the successful confirmation that the email was received, and Giles Hugo expressed thanks and ended the call.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send the order details and reference number via email to the sales team at sales@directplasticcredituk.co.uk for manual processing.The Sesame Access representative will process the order manually and attempt to complete the payment using the provided email and order details.
+
+(Full transcript: RC web portal only — no RingSense API)

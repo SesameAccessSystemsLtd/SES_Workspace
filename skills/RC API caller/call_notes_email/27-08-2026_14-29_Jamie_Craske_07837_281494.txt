@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  27/08/2026  14:29
+============================================================
+With:         Jamie Craske 07837 281494
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a casual call between Giles Hugo and Jamie Craske discussing weather, work progress, and ongoing manufacturing issues, with a focus on shipping, QC, and part tracking. No specific decisions or outcomes were finalized.
+
+--- RECAP --------------------------------------------------
+Giles Hugo and Jamie Craske discussed the weather, with Giles mentioning his morning swim in the rain and their general preference for warm weather and pools.Giles Hugo reported on traffic conditions on the M25, noting rain and traffic congestion, and commented on the overgrown state of trees and the impact of rain on driving behavior.Giles Hugo confirmed that all outstanding parts and deliveries, including steel strips, face plates, and other components, are scheduled to be shipped today.They reviewed specific parts, including 2 mil face plates with holes, 10 mil steel strips, and various brackets, noting QC issues and pending deliveries.Giles Hugo highlighted some overdue chase issues and parts that need to be checked, including ramps and mirror parts, with specific attention to laser cut parts in DP1 steel.Jamie Craske confirmed that certain parts, such as angles and ramps, are scheduled for delivery tomorrow and discussed the polishing and material specifications for these parts.They discussed communication and documentation practices, emphasizing the importance of clear quoting and change management to avoid errors and delays.Both acknowledged the complexity of tracking parts and quotes across multiple systems and the need for better standardization and communication to improve efficiency.
+
+--- TASKS --------------------------------------------------
+Jamie Craske will sort out the bracket issue as quickly as possible.Jamie Craske will verify and confirm the delivery of the ramp and angle parts scheduled for tomorrow.Jamie Craske will check the status of the laser cut ramp part in DP1 steel and ensure it is scheduled for delivery as discussed.Giles Hugo will review the overdue chase issues and follow up on the missing QC parts and outstanding deliveries.Both Giles Hugo and Jamie Craske will improve communication regarding part specifications and quoting procedures to prevent future errors.
+
+(Full transcript: RC web portal only — no RingSense API)

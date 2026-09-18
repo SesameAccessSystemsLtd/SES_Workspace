@@ -247,6 +247,7 @@ def process(df: pd.DataFrame, project_name: str, dropbox_url: str, asana_url: st
         ('volume',         'volume'),
         ('authority',      'authority'),
         ('vendor',         'Supplier', 'Vendor', 'vendor'),
+        ('po id',          'PO ID', 'Purchase Order', 'po id', 'PO Number'),
         ('source bom file','source bom file'),
     ]
     col_map = {}
@@ -265,20 +266,36 @@ def process(df: pd.DataFrame, project_name: str, dropbox_url: str, asana_url: st
         return []
 
     # ------------------------------------------------------------------
-    # Load Golden Index to detect manual KAN amendments
+    # Load Golden Index to detect manual KAN amendments.
+    # Source of truth = ops.db table golden_index_rev6 (stock_number -> kan_number),
+    # resolved via PATH_CONFIG. The legacy Rev4 CSV (golden_index_path) is only an
+    # emergency fallback if the DB cannot be read.  [repointed 2026-09-04]
     # ------------------------------------------------------------------
     gi_dict = {}
-    if golden_index_path:
-        gi_path = Path(__file__).parent / golden_index_path
-        if gi_path.exists():
-            gi_df = pd.read_csv(gi_path, dtype=str).fillna('')
-            for _, r in gi_df.iterrows():
-                cad = str(r.get('Stock_Number', '')).strip().lower()  # Rev4 col C
-                kan = str(r.get('Mapped_KAN', '')).strip()            # Rev4 col I
-                if cad:
-                    gi_dict[cad] = kan
-        else:
-            print(f"WARNING: Golden Index not found at {gi_path.resolve()} — unable to check manual KAN amendments.")
+    try:
+        import sqlite3, sys as _sys
+        _sys.path.insert(0, str(Path(__file__).resolve().parents[3] / "lib"))
+        from path_config import p as _p
+        _con = sqlite3.connect(f"file:{_p('db.ops')}?mode=ro", uri=True)
+        for stock, kan in _con.execute(
+            "SELECT stock_number, kan_number FROM golden_index_rev6"
+        ):
+            if stock:
+                gi_dict[str(stock).strip().lower()] = str(kan).strip()
+        _con.close()
+    except Exception as e:
+        print(f"WARNING: could not read golden_index_rev6 ({e}); trying legacy CSV fallback.")
+        if golden_index_path:
+            gi_path = Path(__file__).parent / golden_index_path
+            if gi_path.exists():
+                gi_df = pd.read_csv(gi_path, dtype=str).fillna('')
+                for _, r in gi_df.iterrows():
+                    cad = str(r.get('Stock_Number', '')).strip().lower()
+                    kan = str(r.get('Mapped_KAN', '')).strip()
+                    if cad:
+                        gi_dict[cad] = kan
+            else:
+                print(f"WARNING: Golden Index CSV not found at {gi_path.resolve()} — unable to check manual KAN amendments.")
 
     # ------------------------------------------------------------------
     # CSV output tracker (ALL rows: hierarchy + part tasks)
@@ -339,6 +356,15 @@ def process(df: pd.DataFrame, project_name: str, dropbox_url: str, asana_url: st
         mass        = clean(row.get(col_map.get('mass'), ''))        if col_map.get('mass')         else ''
         volume      = clean(row.get(col_map.get('volume'), ''))      if col_map.get('volume')       else ''
         source      = clean(row.get(col_map.get('source bom file'), '')) if col_map.get('source bom file') else ''
+        # CHG-3B: capture the purchase-order id at creation time so bom_requirements
+        # carries the part↔PO link. At BOM import no PO exists yet (the order is
+        # placed later), so this is normally None — the writer is now po_id-aware
+        # for staging sheets that DO carry a PO reference.
+        po_id_raw   = clean(row.get(col_map.get('po id'), '')) if col_map.get('po id') else ''
+        try:
+            po_id = int(float(po_id_raw)) if po_id_raw else None
+        except (ValueError, TypeError):
+            po_id = None
 
         # Route by cost_center (set correctly by Stage 1 for both Finishes and Marine Lacquer).
         # Marine Lacquer parts WITH authority already have cost_center='Finishes BOM' after Stage 1.
@@ -397,88 +423,96 @@ def process(df: pd.DataFrame, project_name: str, dropbox_url: str, asana_url: st
         # Determine parent (CSV subtask_of + API parent GID)
         # ---------------------------------------------------------------
         section = get_section(row, override_col, op_col)
-        
-        # Check if KAN was manually amended
-        cad_pn = re.sub(r'^\d{4}\.', '', pn.strip())
-        gi_kan = gi_dict.get(cad_pn.lower(), '')
-        kan_amended = bool(kan_val) and (kan_val != gi_kan)
 
         stock_action = 'PROJECT ORDER'
         if section == 'PICK':
-            if not kan_amended:
-                stock_action = 'PLEASE PICK'
+            # Hardening (2026-09-07, Giles): always re-query LIVE Asana STOCK QTY
+            # (custom field 1126782469949969) at commit time for EVERY PICK part,
+            # not only when the KAN was manually amended. Stock can move between
+            # the Stage-3 staging run and this commit, so a PICK staged earlier
+            # may already be out of stock. On dry-run (no --commit) we trust the
+            # Stage-3 classification and assume enough stock.
+            if commit and kan_val:
+                try:
+                    # Find the KAN task in KANBAN project (632603478911321)
+                    params = {
+                        'custom_fields.1206590288351824.value': kan_val,
+                        'projects.any': '632603478911321',
+                        'opt_fields': 'custom_fields',
+                        'limit': 1,
+                    }
+                    ws_resp = updater._request_with_retry('GET', f"{updater.base}/users/me")
+                    workspace_gid = ws_resp.json()['data']['workspaces'][0]['gid']
+
+                    r = updater._request_with_retry('GET', f"{updater.base}/workspaces/{workspace_gid}/tasks/search", params=params)
+                    kan_tasks = r.json().get('data', [])
+
+                    if kan_tasks:
+                        k_task = kan_tasks[0]
+                        stk_qty_val = AsanaUpdater.extract_custom_field_value(k_task, '1126782469949969')
+                        stk_qty = float(stk_qty_val) if stk_qty_val is not None else 0.0
+                        bom_req = float(qty_str) if qty_str and _is_numeric(qty_str) else 0.0
+                        stock_action = 'PLEASE PICK' if stk_qty >= bom_req else 'PROJECT ORDER'
+                    else:
+                        # KAN no longer resolvable to a task -> cannot verify stock
+                        stock_action = 'PROJECT ORDER'
+                except Exception as e:
+                    print(f"    [WARN] Failed to re-query live stock for {kan_val}: {e}")
+                    stock_action = 'PROJECT ORDER'
             else:
-                # KAN manually amended in staging -> Re-query Asana STOCK QTY
-                if commit:
-                    print(f"    [INFO] KAN amended to {kan_val} -> Re-querying stock...")
-                    try:
-                        # Find the KAN task in KANBAN project (632603478911321)
-                        params = {
-                            'custom_fields.1206590288351824.value': kan_val,
-                            'projects.any': '632603478911321',
-                            'opt_fields': 'custom_fields',
-                            'limit': 1,
-                        }
-                        ws_resp = updater._request_with_retry('GET', f"{updater.base}/users/me")
-                        workspace_gid = ws_resp.json()['data']['workspaces'][0]['gid']
-                        
-                        r = updater._request_with_retry('GET', f"{updater.base}/workspaces/{workspace_gid}/tasks/search", params=params)
-                        kan_tasks = r.json().get('data', [])
-                        
-                        if kan_tasks:
-                            k_task = kan_tasks[0]
-                            stk_qty_val = AsanaUpdater.extract_custom_field_value(k_task, '1126782469949969')
-                            stk_qty = float(stk_qty_val) if stk_qty_val is not None else 0.0
-                            bom_req = float(qty_str) if qty_str and _is_numeric(qty_str) else 0.0
-                            stock_action = 'PLEASE PICK' if stk_qty >= bom_req else 'PROJECT ORDER'
-                        else:
-                            stock_action = 'PROJECT ORDER'
-                    except Exception as e:
-                        print(f"    [WARN] Failed to query stock for {kan_val}: {e}")
-                        stock_action = 'PLEASE PICK (dry-run assumes enough stock)'
-                else:
-                    stock_action = 'PLEASE PICK (dry-run assumes enough stock)'
+                # Dry-run (no --commit) or no KAN: trust the Stage-3 PICK classification
+                stock_action = 'PLEASE PICK'
 
         # Both PICK and ORDER items follow the same vendor grouping logic
         # PICK items get "PLEASE PICK" stock action, ORDER items get "PROJECT ORDER"
-        if is_finishes:
-            cat = f"Surface Finish BOM - {project_name}"
-            csv_section(cat, subtask_of=top_name, vendor='Surface Finish BOM')
-            hierarchy.get_or_create(cat, top_name, notes=f"Surface Finish BOM for {project_name}\nDropbox: {dropbox_url}\nProject: {asana_url}")
-            if effective_vendor:
-                vg = f"{effective_vendor} - {project_name}"
-                csv_section(vg, subtask_of=cat, vendor=effective_vendor)
-                hierarchy.get_or_create(vg, cat, add_to_project=True,
-                                      notes=f"{effective_vendor} ordering tasks for {project_name}\nDropbox: {dropbox_url}\nProject: {asana_url}",
-                                      custom_fields={'854127216887083': effective_vendor})
-                subtask_of = vg
-            else:
-                subtask_of = cat
-        elif effective_vendor:
-            if cost_center:
+        # Per-part tolerance: if creating the parent/cost-centre/vendor group task
+        # for this part fails, log it and SKIP the row rather than aborting the
+        # whole run. The HierarchyManager caches its GIDs, so one bad group call
+        # does not corrupt later rows (they retry / reuse as appropriate).
+        try:
+            if is_finishes:
+                cat = f"Surface Finish BOM - {project_name}"
+                csv_section(cat, subtask_of=top_name, vendor='Surface Finish BOM')
+                hierarchy.get_or_create(cat, top_name, notes=f"Surface Finish BOM for {project_name}\nDropbox: {dropbox_url}\nProject: {asana_url}")
+                if effective_vendor:
+                    vg = f"{effective_vendor} - {project_name}"
+                    csv_section(vg, subtask_of=cat, vendor=effective_vendor)
+                    hierarchy.get_or_create(vg, cat, add_to_project=True,
+                                          notes=f"{effective_vendor} ordering tasks for {project_name}\nDropbox: {dropbox_url}\nProject: {asana_url}",
+                                          custom_fields={'854127216887083': effective_vendor})
+                    subtask_of = vg
+                else:
+                    subtask_of = cat
+            elif effective_vendor:
+                if cost_center:
+                    cc = f"{cost_center} BOM - {project_name}"
+                    csv_section(cc, subtask_of=top_name, vendor=cost_center)
+                    hierarchy.get_or_create(cc, top_name, notes=f"{cost_center} BOM for {project_name}\nDropbox: {dropbox_url}\nProject: {asana_url}")
+                    vg = f"{effective_vendor} - {project_name}"
+                    csv_section(vg, subtask_of=cc, vendor=effective_vendor)
+                    hierarchy.get_or_create(vg, cc, add_to_project=True,
+                                          notes=f"{effective_vendor} ordering tasks for {project_name}\nDropbox: {dropbox_url}\nProject: {asana_url}",
+                                          custom_fields={'854127216887083': effective_vendor})
+                    subtask_of = vg
+                else:
+                    vg = f"{effective_vendor} - {project_name}"
+                    csv_section(vg, subtask_of=top_name, vendor=effective_vendor)
+                    hierarchy.get_or_create(vg, top_name, add_to_project=True,
+                                          notes=f"{effective_vendor} ordering tasks for {project_name}\nDropbox: {dropbox_url}\nProject: {asana_url}",
+                                          custom_fields={'854127216887083': effective_vendor})
+                    subtask_of = vg
+            elif cost_center:
                 cc = f"{cost_center} BOM - {project_name}"
                 csv_section(cc, subtask_of=top_name, vendor=cost_center)
-                hierarchy.get_or_create(cc, top_name, notes=f"{cost_center} BOM for {project_name}\nDropbox: {dropbox_url}\nProject: {asana_url}")
-                vg = f"{effective_vendor} - {project_name}"
-                csv_section(vg, subtask_of=cc, vendor=effective_vendor)
-                hierarchy.get_or_create(vg, cc, add_to_project=True,
-                                      notes=f"{effective_vendor} ordering tasks for {project_name}\nDropbox: {dropbox_url}\nProject: {asana_url}",
-                                      custom_fields={'854127216887083': effective_vendor})
-                subtask_of = vg
+                hierarchy.get_or_create(cc, top_name, add_to_project=True, notes=f"{cost_center} BOM for {project_name}\nDropbox: {dropbox_url}\nProject: {asana_url}")
+                subtask_of = cc
             else:
-                vg = f"{effective_vendor} - {project_name}"
-                csv_section(vg, subtask_of=top_name, vendor=effective_vendor)
-                hierarchy.get_or_create(vg, top_name, add_to_project=True,
-                                      notes=f"{effective_vendor} ordering tasks for {project_name}\nDropbox: {dropbox_url}\nProject: {asana_url}",
-                                      custom_fields={'854127216887083': effective_vendor})
-                subtask_of = vg
-        elif cost_center:
-            cc = f"{cost_center} BOM - {project_name}"
-            csv_section(cc, subtask_of=top_name, vendor=cost_center)
-            hierarchy.get_or_create(cc, top_name, add_to_project=True, notes=f"{cost_center} BOM for {project_name}\nDropbox: {dropbox_url}\nProject: {asana_url}")
-            subtask_of = cc
-        else:
-            subtask_of = top_name
+                subtask_of = top_name
+        except Exception as e:
+            pn_short = pn[:40] if pn else '(no part)'
+            print(f"    [ERROR] Parent/group task for '{pn_short}' could not be created: {e}")
+            print(f"    [SKIP] '{pn_short}' will not be imported this run. Inspect and re-run if needed.")
+            continue
 
         parent_gid = hierarchy._gid_cache.get(subtask_of,
                      hierarchy._gid_cache.get(top_name, ''))
@@ -554,6 +588,7 @@ def process(df: pd.DataFrame, project_name: str, dropbox_url: str, asana_url: st
                         'required_qty':        bom_qty,
                         'stock_qty_at_import': None,
                         'status':              bom_status,
+                        'po_id':               po_id,
                         'asana_task_gid':      t_gid,
                         'source_bom_file':     source,
                     })

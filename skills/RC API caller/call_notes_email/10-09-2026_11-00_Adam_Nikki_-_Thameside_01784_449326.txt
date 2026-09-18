@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  10/09/2026  11:00
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved coordination between Giles Hugo and Adam/Nikki from Thameside regarding collection
+
+--- RECAP --------------------------------------------------
+Giles Hugo confirmed he is collecting items today and received positive feedback from Adam/Nikki about his work.Adam/Nikki requested Giles to provide drawings for parts ending in 026 and 027, with clarification on the numbering and details about the parts' specifications.There was discussion about a part with a 3026 marking on the drawing, possibly a J, and whether it is a free issue part with a hole in it, with uncertainty about the hole size and material details.Giles Hugo is sourcing unusual pipes and tubes, assuming stainless steel, and needs to confirm material specifications, including whether a shoulder and hole are required.A machining estimate was discussed: approximately 40 to 48 pounds per part, depending on material availability, with a plan to machine from a 73 mm OD billet to a 65 mm ID over 40 mm length, possibly by machining 80 mm from an end and cutting to length.Material sourcing is pending, as Giles cannot confirm if suitable material is available locally; Adam/Nikki will check and may need to purchase material, which could increase costs.Giles Hugo will send the machining and material cost estimates for two parts, and follow up on material availability.Details for the Forest Road parts are on hold until Giles provides material specifications; collection of other items is scheduled for today.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will confirm the material specifications and whether a hole is required in the parts, and will follow up with cost estimates for machining and material.Adam/Nikki will check their stock for suitable material and inform Giles whether they can supply it or if they need to purchase new material.Giles Hugo will send the machining cost estimate for two parts once details are confirmed.
+
+(Full transcript: RC web portal only — no RingSense API)

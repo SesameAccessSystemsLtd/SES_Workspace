@@ -43,7 +43,7 @@ from asana_batch_updater import push_updates, get_asana_token
 # db_writer — sole write gateway for ops.db
 _WORKSPACE = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(_WORKSPACE / "skills" / "purchasing"))
-from db_writer import log_propagator_run
+from db_writer import log_propagator_run, update_parts_control_stock_action
 
 BASE = "https://app.asana.com/api/1.0"
 
@@ -370,13 +370,94 @@ def print_summary(updates, skipped, mismatches):
             print(f"    • {tu} ({u['relationship']}, under {pu})")
 
 
+def _watchdog_commit(updates, mismatches, token):
+    """Silent --commit for the cron watchdog. Prints feedback ONLY when there is a
+    real problem, so a clean run produces no stdout (cron stays quiet)."""
+    # No changes AND no review edges -> genuinely clean: stay silent, skip the noisy
+    # push_updates([]) call so nothing leaks to stdout on a normal quiet run.
+    if not updates and not mismatches:
+        return True
+
+    # Apply via Batch API. push_updates/log_propagator_run print progress/status to
+    # stdout — discard that chatter (we surface our own, clean message only when a
+    # problem exists). A clean run must emit nothing.
+    import contextlib, io
+    _sink = io.StringIO()
+    db_push_errors = 0
+    try:
+        with contextlib.redirect_stdout(_sink):
+            if updates:
+                ok, fail = push_updates(updates, token, dry_run=False)
+                run_at = datetime.now(timezone.utc).isoformat()
+                result = log_propagator_run(run_at, updates)
+                audit_errors = result.get("errors", [])
+                # CHG-1B: push the flipped stock_action to ops.db so parts_control
+                # is current within one propagator cycle (closes the ~24h mirror lag).
+                # push_updates() returns only counts, not which items failed, so we
+                # write the DB ONLY when every Asana write succeeded (fail == 0);
+                # otherwise we skip the mirror and let the nightly sync catch up —
+                # never push a possibly-stale value. Any DB-write failure is counted
+                # into `problems` so a broken mirror surfaces as an alert, while a
+                # clean run (fail==0 and no DB errors) stays silent.
+                if fail == 0:
+                    for u in updates:
+                        try:
+                            r = update_parts_control_stock_action(
+                                u["task_gid"], u["new_stock_action"],
+                                source="parts_control_propagator")
+                            if r.get("errors"):
+                                db_push_errors += 1
+                        except Exception:
+                            db_push_errors += 1
+            else:
+                ok, fail, audit_errors = 0, 0, []
+    except Exception as e:                                  # network/API failure → alert
+        print(f"❌ Parts Control propagate FAILED during update: {e}")
+        return False
+
+    problems = []
+    if fail:
+        problems.append(f"{fail} update(s) FAILED to apply (of {len(updates)})")
+    if mismatches:
+        problems.append(f"{len(mismatches)} parent order(s) reference Parts Control "
+                        f"tasks that are NOT linked as dependents — needs review")
+    if audit_errors:
+        problems.append(f"{len(audit_errors)} audit log row(s) failed to write to ops.db")
+    if db_push_errors:
+        problems.append(f"{db_push_errors} DB mirror write(s) failed (parts_control.stock_action)")
+
+    if not problems:
+        # Clean run: nothing wrong — stay silent (no stdout → no Telegram nudge).
+        return True
+
+    # There is a problem → surface it for Giles. Lead with what actually happened.
+    print(f"⚠️ Parts Control propagate: applied {ok}/{len(updates)}.")
+    for p in problems:
+        print(f"  • {p}")
+    if mismatches:
+        print("\nDescription-referenced but NOT-linked tasks (check each order):")
+        for m in mismatches:
+            pu = _task_url(m["parent_gid"], m["parent_name"])
+            print(f"  {pu}:")
+            for gid in m.get("desc_only_gids", []):
+                print(f"    • https://app.asana.com/0/0/{gid}/f")
+    return bool(not fail and not audit_errors and not db_push_errors)
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Propagate On Order status to Parts Control dependents (scans Order Numbers project)."
     )
     parser.add_argument("--scan",   action="store_true", help="Dry run — print summary, no changes, no DB write")
     parser.add_argument("--commit", action="store_true", help="Apply updates via Batch API and log to ops.db")
+    parser.add_argument("--watchdog", action="store_true",
+                        help="Cron/silent mode: apply like --commit but print feedback ONLY when there is a "
+                             "problem (failed update, exception, or description-mismatch needing review). "
+                             "Clean runs print nothing so the no_agent cron stays quiet unless something breaks.")
     args = parser.parse_args()
+
+    # --watchdog implies --commit
+    args.commit = args.commit or args.watchdog
 
     if not args.scan and not args.commit:
         parser.print_help()
@@ -384,11 +465,30 @@ def main():
 
     token = get_asana_token()
     if not token:
-        sys.exit("ERROR: ASANA_PERSONAL_ACCESS_TOKEN not found in environment or ASANAconfig.json")
+        msg = "ERROR: ASANA_PERSONAL_ACCESS_TOKEN not found in environment or ASANAconfig.json"
+        if args.watchdog:
+            print(msg); sys.exit(1)          # problem → alert
+        sys.exit(msg)
 
+    if args.watchdog:
+        # Suppress the routine scan/progress chatter; we only talk on problems.
+        import io, contextlib
+        buf = io.StringIO()
+        try:
+            with contextlib.redirect_stdout(buf):
+                updates, skipped, mismatches = build_update_list(token)
+        except Exception as e:
+            print(f"❌ Parts Control propagate scan FAILED: {e}"); sys.exit(1)
+        # Re-raise stderr-level failures are not captured (build_update_list uses stdout).
+        ok = _watchdog_commit(updates, mismatches, token)
+        # Exit: 0 if clean (silent alert suppressed), 1 if there was a problem.
+        # (A non-zero exit also triggers the cron's auto error alert even if we had
+        #  already printed — belt and braces so a failure is never missed.)
+        sys.exit(0 if ok else 1)
+
+    # --- Interactive paths (--scan / --commit): verbose as before ---
     updates, skipped, mismatches = build_update_list(token)
     print_summary(updates, skipped, mismatches)
-
     if mismatches:
         print("\n[EDGE CASE] Description-referenced PC tasks not set as dependents:")
         print("  These tasks are mentioned in the order description but are NOT")
@@ -410,10 +510,29 @@ def main():
 
     run_at = datetime.now(timezone.utc).isoformat()
     result = log_propagator_run(run_at, updates)
-    if result["errors"]:
+    if result.get("errors"):
         print(f"WARNING: {result['errors']} audit log row(s) failed to write to ops.db")
 
+    # CHG-1B: push the flipped stock_action to ops.db (parts_control.stock_action)
+    # so the DB is current within one propagator cycle. Only when every Asana write
+    # succeeded (fail == 0) — otherwise skip and let the nightly mirror catch up.
+    if fail == 0:
+        db_push_errors = 0
+        for u in updates:
+            try:
+                r = update_parts_control_stock_action(
+                    u["task_gid"], u["new_stock_action"],
+                    source="parts_control_propagator")
+                if r.get("errors"):
+                    db_push_errors += 1
+            except Exception as e:
+                db_push_errors += 1
+                print(f"WARNING: DB mirror write failed for {u.get('task_gid')}: {e}")
+        if db_push_errors:
+            print(f"WARNING: {db_push_errors} DB mirror write(s) failed (parts_control.stock_action)")
+
     sys.exit(1 if fail else 0)
+    
 
 
 if __name__ == "__main__":

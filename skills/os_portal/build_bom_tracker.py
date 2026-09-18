@@ -31,8 +31,8 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 from build_os_status import (
-    WS, OPS_DB, ORDER_NUMBERS, ASANA_BASE, API_BASE, CSS,
-    asana_token, headers, paginate, esc, load_open_orders,
+    WS, OPS_DB, ORDER_NUMBERS, ASANA_TASK_BASE, API_BASE, CSS,
+    asana_token, headers, paginate, api_get, esc, load_open_orders,
 )
 
 OUT_DEFAULT = WS / "data" / "os_status"
@@ -150,8 +150,7 @@ def subtask_list(gid, fields="name,gid,completed,due_on,assignee.name,notes,pare
 
 def _task_notes(gid):
     try:
-        j = requests.get(f"{API_BASE}/tasks/{gid}",
-                         headers=headers(), params={"opt_fields": "notes"}).json()
+        j = api_get(f"/tasks/{gid}", {"opt_fields": "notes"})
         return (j.get("data") or {}).get("notes") or ""
     except Exception:
         return ""
@@ -173,23 +172,83 @@ def count_open_parts(root_gid, depth=2):
             yield from walk(s["gid"], d-1)
     return list(walk(root_gid, depth))
 
+def _pack_code(sesame_pn):
+    """First three dot-components of a PN: job.pack.rev. None for short NBSS PNs.
+    Mirrors pack_code() in drawing_pipeline/scripts/05_reconcile_pack_association.py
+    so the tracker and the reconciler classify a part identically."""
+    parts = (sesame_pn or "").split(".")
+    return ".".join(parts[:3]) if len(parts) >= 4 else None
+
+
 def load_ops_pack_links():
+    """Split unlinked parts by WHY they are unlinked, not just that they are.
+
+    A part with no pack is not one problem but three, and they need different
+    people (Giles 2026-09-04):
+
+      resolvable  a pack exists for this part's code -> the drawing pipeline or
+                  05_reconcile_pack_association.py can link it. Automatable.
+      ambiguous   2+ distinct packs claim the code -> needs a human ruling.
+      no_pack     no pack carries this code at all -> BLOCKED upstream: the BOM
+                  never said which pack the part belongs to. Cannot be fixed by
+                  re-running anything; needs the design team's PACK column.
+      short_pn    NBSS-style PN too short to carry a pack code.
+
+    Lumping these together hid 9 Langley parts that no amount of re-running
+    could ever resolve behind a '▶ Stage drawing' button.
+    """
     c = sqlite3.connect(OPS_DB); c.row_factory = sqlite3.Row
     rows = c.execute("SELECT sesame_pn, build_assembly_pack_gid FROM parts_control").fetchall()
+    # Pack codes that actually exist, so we can tell 'not linked yet' from
+    # 'nothing to link to'.
+    code_counts = defaultdict(set)
+    for pr in c.execute("SELECT pack_reference FROM build_assembly_packs "
+                        "WHERE project_name = 'Build Schedule' "
+                        "  AND pack_reference IS NOT NULL"):
+        code = _pack_code(pr["pack_reference"])
+        if code:
+            code_counts[code].add((pr["pack_reference"] or "").strip())
     c.close()
+
     per = defaultdict(list)
     for r in rows:
         pn = (r["sesame_pn"] or "").strip(); bp = (r["build_assembly_pack_gid"] or "").strip()
         m = re.match(r"^(\d{4})", pn); job = m.group(1) if m else "?"
         linked = bool(bp) and bp.lower() not in ("", "-", "null", "none")
         per[job].append((pn, linked))
+
     out = {}
     for job, items in per.items():
         bypn = defaultdict(list)
         for pn, ln in items: bypn[pn].append(ln)
         parts = {pn: any(bypn[pn]) for pn in bypn}
-        no_pack = [pn for pn, ln in parts.items() if pn and (pn[0].isdigit() or '.' in pn) and not ln]
-        out[job] = {"total": len(parts), "no_pack": len(no_pack)}
+        no_pack = [pn for pn, ln in parts.items()
+                   if pn and (pn[0].isdigit() or '.' in pn) and not ln]
+
+        resolvable, ambiguous, blocked, short_pn = [], [], [], []
+        for pn in no_pack:
+            code = _pack_code(pn)
+            if code is None:
+                short_pn.append(pn)
+                continue
+            packs = code_counts.get(code, set())
+            if len(packs) == 1:
+                resolvable.append(pn)
+            elif len(packs) > 1:
+                ambiguous.append(pn)
+            else:
+                blocked.append(pn)
+
+        out[job] = {
+            "total": len(parts),
+            "no_pack": len(no_pack),
+            "resolvable": len(resolvable),
+            "ambiguous": len(ambiguous),
+            "blocked": len(blocked),
+            "short_pn": len(short_pn),
+            "blocked_pns": sorted(blocked)[:40],
+            "ambiguous_pns": sorted(ambiguous)[:40],
+        }
     return out
 
 def bom_priority(r):
@@ -369,9 +428,21 @@ def build_dataset(purch_tasks, build_tasks, open_orders):
     pack_links = load_ops_pack_links()
     no_pack_jobs = []
     for job, info in sorted(pack_links.items(), key=lambda kv: (kv[1]["no_pack"], kv[0])):
-        if job in ("?",) or job not in BUILD_JOBS or info["no_pack"] <= 3: continue
+        if job in ("?",) or job not in BUILD_JOBS: continue
+        # The <=3 threshold hides small tails of unlinked parts, which is fine
+        # for parts a re-run would fix. It is NOT fine for parts that are
+        # permanently stuck: a job with 2 blocked parts would never appear at
+        # all. Blocked and ambiguous always surface, whatever the count.
+        if info["no_pack"] <= 3 and not (info["blocked"] or info["ambiguous"]):
+            continue
         hand = next((h for h in handover if job_of(h.get("name") or "") == job), None)
         no_pack_jobs.append({"job": job, "no_pack": info["no_pack"],
+                             "resolvable": info["resolvable"],
+                             "ambiguous": info["ambiguous"],
+                             "blocked": info["blocked"],
+                             "short_pn": info["short_pn"],
+                             "blocked_pns": info["blocked_pns"],
+                             "ambiguous_pns": info["ambiguous_pns"],
                              "handover": hand, "anchor": hand["name"] if hand else None})
 
     counts = {
@@ -379,6 +450,9 @@ def build_dataset(purch_tasks, build_tasks, open_orders):
         "plc": len(plc_rows), "handover_open": len([h for h in handover if not h.get("completed")]),
         "karol_action": len(karol_action), "vendor_open": len(vendor_open),
         "no_pack_parts": sum(i["no_pack"] for i in no_pack_jobs), "steel": len(steel_by_job),
+        "np_blocked": sum(i["blocked"] for i in no_pack_jobs),
+        "np_ambiguous": sum(i["ambiguous"] for i in no_pack_jobs),
+        "np_resolvable": sum(i["resolvable"] for i in no_pack_jobs),
     }
     return {"rows": rows, "plc": plc_rows, "handover": handover, "karol_action": karol_action,
             "vendor_open": vendor_open, "steel_by_job": steel_by_job, "no_pack_jobs": no_pack_jobs,
@@ -475,7 +549,7 @@ def order_cell(orders, job, today):
         if due:
             cls = "over" if due < today else "open"
             due_tag = f' <span class="pill {cls}">{esc(due)}</span>'
-        lis.append(f'<a href="{ASANA_BASE}/{ORDER_NUMBERS}/{o["gid"]}">{esc(o.get("name","")[:40])}</a>{due_tag}')
+        lis.append(f'<a href="{ASANA_TASK_BASE}/{o["gid"]}">{esc(o.get("name","")[:40])}</a>{due_tag}')
     if len(orders) > 5: lis.append(f'<span class="muted">+{len(orders)-5}</span>')
     return "<br>".join(lis)
 
@@ -494,7 +568,7 @@ def outstanding_block(r, today):
         else:
             due_cell = '<span class="muted">no due</span>'
         rows.append(
-            f'<tr><td><a href="{ASANA_BASE}/{PARTS_CONTROL}/{s["gid"]}">{esc(s.get("name","")[:46])}</a></td>'
+            f'<tr><td><a href="{ASANA_TASK_BASE}/{s["gid"]}">{esc(s.get("name","")[:46])}</a></td>'
             f'<td>{due_cell}</td><td><span class="pill open">open</span></td></tr>')
     more = f'<tr><td colspan="3" class="muted">+{len(r["open_parts"])-12} more</td></tr>' if len(r["open_parts"])>12 else ""
     return f"""<details class="sec"><summary>Outstanding · {len(r['open_parts'])} un-picked / un-ordered part(s)</summary>
@@ -514,7 +588,7 @@ def render(data, NEW, today):
 <div class="t">🚨 NEW CAL RELEASE — {esc(nrow['ctrl_name'])}</div>
 Open sub-BOMs: {esc(', '.join(s['name'] for s in next((k['subtasks'] for k in data['karol_action'] if k['job']==nrow['job']), [])) or 'n/a')}
 · Unassigned to Giles (Karol didn't assign) — the watcher now catches this.
-· <a href="{ASANA_BASE}/850066254549317/{NEW['gid']}">Open task →</a></div>"""
+· <a href="{ASANA_TASK_BASE}/{NEW['gid']}">Open task →</a></div>"""
 
     # PLC section — moved to the BOTTOM of the page (spec-sheet handover, feeds a
     # Karol sub-BOM item task "Machine Room Cabinet" with vendor JAJO). It does NOT
@@ -540,11 +614,11 @@ Open sub-BOMs: {esc(', '.join(s['name'] for s in next((k['subtasks'] for k in da
                 for j in r["jajo"]:
                     jst = cf_value(j, ORDER_STATUS_FIELD) or cf_value(j, BOM_STATUS_FIELD)
                     jtag = f' · <span class="muted">{esc(jst)}</span>' if jst else ""
-                    links.append(f'<a href="{ASANA_BASE}/{BUILD_ORDERS}/{j["gid"]}">{esc(j.get("name","")[:38])}</a>{jtag}')
+                    links.append(f'<a href="{ASANA_TASK_BASE}/{j["gid"]}">{esc(j.get("name","")[:38])}</a>{jtag}')
                 jajo_cell = "<br>".join(links)
             else:
                 jajo_cell = '<span class="muted">no JAJO order imported yet</span>'
-            rows += (f'<tr><td><a href="{ASANA_BASE}/{BUILD_ORDERS}/{r["ctrl_gid"]}">{esc(r["ctrl_name"])}</a></td>'
+            rows += (f'<tr><td><a href="{ASANA_TASK_BASE}/{r["ctrl_gid"]}">{esc(r["ctrl_name"])}</a></td>'
                      f'<td>{esj(r["job"])}</td><td>{bom_badge}</td>'
                      f'<td>{esc(r["due_on"] or "—")}</td><td>{jajo_cell}</td></tr>')
         plc_html = (f'<details class="sec" open><summary><span class="cnt">PLC BOMs (spec handover) · {len(data["plc"])} open</span></summary>'
@@ -556,13 +630,13 @@ Open sub-BOMs: {esc(', '.join(s['name'] for s in next((k['subtasks'] for k in da
     ho = [h for h in data["handover"] if not h.get("completed")]
     if ho:
         items = "".join(
-            f'<tr><td><a href="{ASANA_BASE}/850066254549317/{h["gid"]}">{esc(h["name"])}</a></td>'
+            f'<tr><td><a href="{ASANA_TASK_BASE}/{h["gid"]}">{esc(h["name"])}</a></td>'
             f'<td>{esj(job_of(h["name"]))}</td><td>{"✓" if _extract_dropbox(h.get("notes") or "") else "—"}</td></tr>' for h in ho)
         hand_html = f'<details class="sec"><summary><span class="cnt">Handover Legacy BOMs · {len(ho)} open</span></summary><table><tr><th>Task</th><th>Job</th><th>Dropbox</th></tr>{items}</table></details>'
     # Karol needs-action (open sub-BOMs under unticked Karol ctls)
     karol_html = ""
+    cards = ""   # init outside the guard so {cards} below never UnboundLocalErrors on empty karol_action
     if data["karol_action"]:
-        cards = ""
         for k in data["karol_action"]:
             subs = ""
             for s in k["subtasks"]:
@@ -584,14 +658,14 @@ Open sub-BOMs: {esc(', '.join(s['name'] for s in next((k['subtasks'] for k in da
                 }
                 btn = f'<button class="acc" onclick="stageAction(\'{_jsesc(json.dumps(pl))}\', \'BOM pipeline push\')">▶ Stage to pipeline</button>' if s.get("dropbox") else '<span class="muted">no Dropbox link</span>'
                 subs += (f'<li><b style="color:var(--red)">OPEN</b> '
-                         f'<a href="{ASANA_BASE}/850066254549317/{s["gid"]}">{esc(s["name"])}</a> '
+                         f'<a href="{ASANA_TASK_BASE}/{s["gid"]}">{esc(s["name"])}</a> '
                          f'<span class="muted">({esc(s.get("due_on") or "no due")})</span> · {btn}</li>')
             # steel-profile box per Karol sub-BOM: has a Steel Profile BOM been
             # created and imported for this BOM? (imported = steel task has >=1
             # subtask = its vendor-order tasks). No dropdown — just a status box.
             st = k.get("steel")
             if st:
-                steel_txt = (f'✅ Steel Profile BOM imported <a href="{ASANA_BASE}/{BUILD_ORDERS}/{st["task"]["gid"]}" style="color:var(--green)">({st["task"]["name"]})</a> '
+                steel_txt = (f'✅ Steel Profile BOM imported <a href="{ASANA_TASK_BASE}/{st["task"]["gid"]}" style="color:var(--green)">({st["task"]["name"]})</a> '
                              f'· {st["n_subtasks"]} vendor order task(s), {st["open_subs"]} open')
                 steel_class = "ok"
             else:
@@ -616,7 +690,7 @@ Open sub-BOMs: {esc(', '.join(s['name'] for s in next((k['subtasks'] for k in da
             f'<span class="pill open">{len(vg["open_subs"])} open</span>'
             f' · due {esc(vg.get("due_on") or "—")} · {vstat(vg)}</summary><table><tr><th>Part</th><th>Due</th></tr>'
             + "".join(
-                f'<tr><td><a href="{ASANA_BASE}/{BUILD_ORDERS}/{s["gid"]}">{esc(s.get("name","")[:46])}</a></td>'
+                f'<tr><td><a href="{ASANA_TASK_BASE}/{s["gid"]}">{esc(s.get("name","")[:46])}</a></td>'
                 f'<td>{due_cell(s.get("due_on"), today)}</td></tr>'
                 for s in vg["open_subs"][:8])
             + (f'<tr><td colspan="2" class="muted">+{len(vg["open_subs"])-8} more</td></tr>' if len(vg["open_subs"])>8 else "") + "</table></details>"
@@ -626,12 +700,65 @@ Open sub-BOMs: {esc(', '.join(s['name'] for s in next((k['subtasks'] for k in da
     # no-pack (drawing trigger) expandable
     np_html = ""
     if data["no_pack_jobs"]:
-        rows = "".join(
-            f'<tr><td><b>{esj(j["job"])}</b></td><td>{j["no_pack"]}</td>'
-            f'<td>{esc(j["anchor"] or "no Handover — fallback drawing")}</td>'
-            f'<td><button class="acc" onclick="stageAction(\'{_jsesc(json.dumps({"action":"run_drawing_pipeline","job":j["job"],"no_pack_parts":j["no_pack"],"anchor":j["anchor"]}))}\', \'Drawing pipeline\')">▶ Stage drawing</button></td></tr>'
-            for j in data["no_pack_jobs"][:20])
-        np_html = f'<details class="sec"><summary><span class="cnt">Parts without assembly pack · {c["no_pack_parts"]} distinct parts · {len(data["no_pack_jobs"])} jobs</span></summary><p class="muted">Stage the drawing pipeline — anchor = Handover Legacy BOM if present, else the job drawing task → PDF.</p><table><tr><th>Job</th><th>No-pack</th><th>Anchor</th><th>Action</th></tr>{rows}</table></details>'
+        def _np_row(j):
+            # A blocked part cannot be fixed by re-running anything, so it must
+            # not be offered a '▶ Stage drawing' button — that button implies a
+            # fix exists. Blocked parts need the BOM's missing PACK column.
+            bits = []
+            if j["resolvable"]:
+                bits.append(f'<span class="pill open">{j["resolvable"]} resolvable</span>')
+            if j["ambiguous"]:
+                bits.append(f'<span class="pill warn">{j["ambiguous"]} ambiguous</span>')
+            if j["blocked"]:
+                bits.append(f'<span class="pill over">{j["blocked"]} blocked</span>')
+            if j["short_pn"]:
+                bits.append(f'<span class="muted">{j["short_pn"]} short PN</span>')
+            state = " ".join(bits) or '<span class="muted">—</span>'
+
+            detail = ""
+            if j["blocked_pns"] or j["ambiguous_pns"]:
+                lines = ""
+                if j["blocked_pns"]:
+                    lines += ('<p class="muted"><b>Blocked</b> — no pack exists for these '
+                              'part codes. Needs the PACK column on the BOM, or a pack '
+                              'created in Build Schedule. Re-running the pipeline will '
+                              'not help.</p><p>'
+                              + ", ".join(f'<code>{esc(p)}</code>' for p in j["blocked_pns"])
+                              + "</p>")
+                if j["ambiguous_pns"]:
+                    lines += ('<p class="muted"><b>Ambiguous</b> — two or more packs claim '
+                              'this code. Needs a human ruling; the reconciler will not '
+                              'guess.</p><p>'
+                              + ", ".join(f'<code>{esc(p)}</code>' for p in j["ambiguous_pns"])
+                              + "</p>")
+                detail = (f'<tr><td colspan="5"><details class="vendor">'
+                          f'<summary>{j["blocked"] + j["ambiguous"]} part(s) needing '
+                          f'reconciliation — job {esc(j["job"])}</summary>{lines}'
+                          f'</details></td></tr>')
+
+            if j["resolvable"]:
+                action = (f'<button class="acc" onclick="stageAction(\''
+                          f'{_jsesc(json.dumps({"action":"run_drawing_pipeline","job":j["job"],"no_pack_parts":j["resolvable"],"anchor":j["anchor"]}))}'
+                          f'\', \'Drawing pipeline\')">▶ Stage drawing</button>')
+            else:
+                action = '<span class="muted">nothing to stage</span>'
+
+            return (f'<tr><td><b>{esj(j["job"])}</b></td><td>{j["no_pack"]}</td>'
+                    f'<td>{state}</td>'
+                    f'<td>{esc(j["anchor"] or "no Handover — fallback drawing")}</td>'
+                    f'<td>{action}</td></tr>{detail}')
+
+        rows = "".join(_np_row(j) for j in data["no_pack_jobs"][:20])
+        hdr = (f'{c["no_pack_parts"]} distinct parts · {len(data["no_pack_jobs"])} jobs'
+               f' · {c["np_blocked"]} blocked · {c["np_ambiguous"]} ambiguous')
+        np_html = (f'<details class="sec"{" open" if c["np_blocked"] else ""}>'
+                   f'<summary><span class="cnt">Parts without assembly pack · {hdr}</span></summary>'
+                   f'<p class="muted"><b>resolvable</b> = a pack exists, the drawing pipeline can link it. '
+                   f'<b>ambiguous</b> = 2+ packs claim the code, needs your ruling. '
+                   f'<b>blocked</b> = no pack exists for the code — the BOM never said which pack the '
+                   f'part belongs to, so no re-run can fix it.</p>'
+                   f'<table><tr><th>Job</th><th>No-pack</th><th>Reconciliation state</th>'
+                   f'<th>Anchor</th><th>Action</th></tr>{rows}</table></details>')
 
     # ── Issued BOMs section — REVERSE-DERIVED from open vendor groups ──────────
     # (Giles 2026-08-13). The old control-driven view hid jobs whose Karol control
@@ -644,7 +771,7 @@ Open sub-BOMs: {esc(', '.join(s['name'] for s in next((k['subtasks'] for k in da
         proj = esc(v["project"] or "—")
         # all ALL BOMS roots for this job (a job can span multiple BOMs, e.g. 1591
         # has 'Traversing replacement Feet' + 'Uni of Cambridge Entire BOM')
-        root_links = [f'<a href="{ASANA_BASE}/{BUILD_ORDERS}/{r["gid"]}">{esc(r["name"])}</a>'
+        root_links = [f'<a href="{ASANA_TASK_BASE}/{r["gid"]}">{esc(r["name"])}</a>'
                       for r in v["roots"]]
         root_cell = "<br>".join(root_links) if root_links else "-"
         # open vendor groups table (name · due · status)
@@ -655,7 +782,7 @@ Open sub-BOMs: {esc(', '.join(s['name'] for s in next((k['subtasks'] for k in da
                        if due and due < today else due_cell(due, today))
             st = g.get("order_status") or g.get("bom_status") or ""
             st_txt = (f'<span class="pill open">{esc(st)}</span>' if st else '<span class="muted">—</span>')
-            group_rows += (f'<tr><td><a href="{ASANA_BASE}/{BUILD_ORDERS}/{g["task"]["gid"]}">{esc(g["task"]["name"])}</a>'
+            group_rows += (f'<tr><td><a href="{ASANA_TASK_BASE}/{g["task"]["gid"]}">{esc(g["task"]["name"])}</a>'
                            f' ({len(g["open_subs"])} open)</td><td>{due_txt}</td><td>{st_txt}</td></tr>')
         overdue_badge = (f'<span class="pill over">{v["overdue"]} overdue</span>' if v["overdue"]
                          else '<span class="pill ok">0 overdue</span>')

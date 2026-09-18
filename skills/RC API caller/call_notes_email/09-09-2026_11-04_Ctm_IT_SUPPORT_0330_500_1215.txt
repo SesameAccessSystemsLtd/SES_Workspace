@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  09/09/2026  11:04
+============================================================
+With:         Ctm IT SUPPORT 0330 500 1215
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved IT support assisting Giles Hugo with diagnosing and recording DNS MX record issues affecting Microsoft 365 email flow. The support agent provided technical details and offered to access Giles's device to document the correct MX record information.
+
+--- RECAP --------------------------------------------------
+Ctm IT Support identified that Giles Hugo's DNS MX record is incorrect, currently pointing to 'sesame-access-do.mail.eo.outlook.com' instead of the expected 'sesame-access-cam.mail.pro.com'.Giles Hugo explained that DNS management is a mixed setup, with some control by the marketing team and possibly recent changes made without full clarity.Ctm IT Support offered to remotely access Giles's device to document the correct MX record details and TTL information to resolve the DNS issue.Ctm IT Support successfully connected to Giles's device, verified the spelling of the MX record, and prepared a notepad with the correct DNS record details for Giles to update.
+
+--- TASKS --------------------------------------------------
+Ctm IT Support will email Giles Hugo the documented MX record and TTL information for him to update his DNS settings.
+
+(Full transcript: RC web portal only — no RingSense API)

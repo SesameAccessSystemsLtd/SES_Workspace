@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  09/09/2026  09:13
+============================================================
+With:         AMY - AALCO 01296 461718
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+Amy from AALCO contacted Giles Hugo regarding a potential supply of 50mm by 3mm material for an urgent project at Manchester Town Hall. They discussed design options, lead times, and alternative solutions to meet the project's tight schedule.
+
+--- RECAP --------------------------------------------------
+Giles Hugo confirmed an urgent project at Manchester Town Hall requires a 50mm by 3mm material, with a length of 88 meters, needed by the end of the week or early next week, due to ongoing installation work.Amy will check if she can source the specified material or an alternative with a similar internal diameter, considering lead times and cost, and will provide a quote within the next half hour.Giles Hugo plans to consult with the designer to explore whether the project can be redesigned to accommodate different specifications, such as a 44mm internal diameter, which might be easier to source or machine.Both parties agree to review options, including off-the-shelf products and other suppliers, to meet the project's urgent timeline.
+
+--- TASKS --------------------------------------------------
+Amy will investigate the availability and pricing of the 50mm by 3mm material, including potential off-the-shelf options with a 44mm internal diameter, and will report back within 30 minutes.Giles Hugo will consult with the designer to determine if the project can be redesigned to use a different size, such as a 44mm internal diameter, to facilitate sourcing and manufacturing.
+
+(Full transcript: RC web portal only — no RingSense API)

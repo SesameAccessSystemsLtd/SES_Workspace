@@ -1,13 +1,18 @@
 # Purchasing Skill — Email Pipeline with Google Sheets HITL
 
+> **Scope note.** This file covers the EMAIL pipeline only.
+> The parts impact + improvement engine, the PO ledger and the validation suite
+> are documented in **`PIPELINE_OPS.md`** in this folder. Paths below were
+> corrected from `.openclaw` (retired 2026-08) to live locations on 2026-09-11.
+
 5-stage pipeline. Runs on cron (hourly 09–16 Mon–Fri). Human approval gate via Google Sheets before any Asana write.
 
-All scripts use the OpenClaw venv:
+All scripts use the SES_Workspace venv:
 ```
-C:\Users\GilesHugo\.openclaw\venv\Scripts\python.exe
+C:\Users\GilesHugo\SES_Workspace\.venv\Scripts\python.exe
 ```
 
-Auth: `.openclaw/.env` (MS Graph, Gemini, Elastic Email) + `google_service_account.json` (Google Sheets).
+Auth: `C:\Users\GilesHugo\.hermes\.env` (MS Graph, Gemini, Elastic Email) + `google_service_account.json` (Google Sheets).
 
 ---
 
@@ -75,7 +80,7 @@ No Asana writes occur without a decision in the sheet.
 |---------|-----------|--------|
 | MS Graph (email) | `MS_GRAPH_CLIENT_ID`, `MS_GRAPH_CLIENT_SECRET`, `MS_GRAPH_TENANT_ID` | `.env` |
 | Gemini (LLM parse) | `GEMINI_API_KEY` | `.env` |
-| Google Sheets | service account JSON | `.openclaw/google_service_account.json` |
+| Google Sheets | service account JSON | `C:\Users\GilesHugo\.Hermes\Google_Service_Account.json` |
 | Elastic Email (receipts) | `ELASTIC_EMAIL_API_KEY` | `.env` |
 | Asana | `ASANA_PERSONAL_ACCESS_TOKEN` | `.env` — SAP only |
 
@@ -92,6 +97,7 @@ No Asana writes occur without a decision in the sheet.
 - **ALL emails flow through the review queue** (Giles 2026-08-13). `03_proposal_engine.py` must NOT pre-sift by whether PO/SQR/price/date was extracted — the confidence model + portal views filter. Unmatched/no-id emails get a "Manual review — no task/id extracted" proposal. Do NOT reintroduce a `valid` filter that drops emails.
 - Unmatched email gate: if no id was extracted, proposal reads "Manual review — ... Subject" (not a dead "PO: None, SQR: None").
 - `normalise_ref()` helper added 2026-08-12 to `03_proposal_engine.py` — canonicalises SQR/PO refs (upper, alnum only) so `SQR 46386` (email) matches `SQR-46386` (DB). Do NOT regress to exact `=` string match on SQR.
+- **Human comment bullets are clean natural English (Giles 2026-09-02).** Never emit `field GID: …` / `option GID: …` into the review/comment action text — the executor (`execute_requests.parse_actions`) resolves the ORDER Status enum and Price Ex VAT field to their GIDs from env constants when it sees the plain phrases (`Update ORDER Status to 'On Order - Delivery Date Confirmed'`, `Update 'Price Ex VAT' to £N`). GIDs are machine-implementation detail; the review comment must read cleanly for Giles.
 - Stage 4 requires `google_service_account.json` — if credentials missing, pipeline stops and reports error. Do not retry automatically.
 - Never call Asana write APIs from any script in this folder — route via REQUESTS/ to SAP.
 - `db_writer.py` is the sole write gateway for ops.db — no raw sqlite3 calls.

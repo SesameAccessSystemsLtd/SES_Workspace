@@ -1,0 +1,397 @@
+
+============================================================
+  BOM PIPELINE — 1580 - Admiralty House 2.Entire System BOM
+============================================================
+  Parts folder : C:\Users\GilesHugo\SAS Dropbox\3. Projects\Admiralty House\2.3. Order\2.Entire System
+  Dropbox URL  : https://www.dropbox.com/scl/fo/2zuoy59lkqtc9v46u25ec/AMtZuu7TD4vIYCYcwJcDy4Q?rlkey=d2vns8aqshxh91h03xzvr3sm6&dl=0
+  Asana URL    : https://app.asana.com/1/357939803556123/project/1213862344086973/task/1218503682400437?focus=true
+  Project GID  : 848657415032331 (Build Orders — default)
+  Stop after   : Stage 5
+  Commit mode  : COMMIT — WRITING TO ASANA
+  Outputs      : C:\Users\GilesHugo\SES_Workspace\skills\bom_pipeline\1.BOM IMPORT into Asana\pipeline_runs\1580_-_Admiralty_House_2_Entire_System_BOM_20260915_1037
+============================================================
+
+Skipping Stages 1-4. Using: C:\Users\GilesHugo\SES_Workspace\skills\bom_pipeline\1.BOM IMPORT into Asana\pipeline_runs\1580_-_Admiralty_House_2_Entire_System_BOM_20260915_1031\stage4_staging_review.xlsx
+  [IDEMPOTENCY CHECK] No existing 'ALL BOMS - 1580 - Admiralty House 2.Entire System BOM' found — safe to proceed.
+
+============================================================
+  STAGE 4.5 - Revision Log
+============================================================
+[STAGE 4.5] Revision log written: GI_revision_pending_20260915_1037.xlsx — review and run update_golden_index.py to apply.
+
+============================================================
+  STAGE 5 — Asana Import (COMMIT)
+============================================================
+Loading staging Excel: C:\Users\GilesHugo\SES_Workspace\skills\bom_pipeline\1.BOM IMPORT into Asana\pipeline_runs\1580_-_Admiralty_House_2_Entire_System_BOM_20260915_1031\stage4_staging_review.xlsx
+  159 rows loaded from sheet 'BOM Review'
+  12 KAN stock URL(s) extracted
+
+Rows to import: 159 of 159 total
+    [CREATED] 'ALL BOMS - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218494783806724
+    [CREATED] 'Engraving BOM - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218494783365261
+    [CREATED] 'Engraving - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218503775308839
+    [CREATED] '1 off 1580. 1016.1.1 - 6 Buttons Face Plate - Engraving Engr' -> https://app.asana.com/0/848657415032331/1218498324115116
+    [DB] bom_requirements: 1580.1016.1.1 (needs_order)
+    [CREATED] '1 off 1580. 1016.E3 - Call For Assistance Plate Engraved Eng' -> https://app.asana.com/0/848657415032331/1218498324270416
+    [DB] bom_requirements: 1580.1016.E3 (needs_order)
+    [CREATED] '1 off 1580. 1016.H1 - SWLPlate.OneWheelchairUser- Engraved E' -> https://app.asana.com/0/848657415032331/1218496167921563
+    [DB] bom_requirements: 1580.1016.H1 (needs_order)
+    [CREATED] 'Surface Finish BOM - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218496167873869
+    [CREATED] 'Galvanising - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218494798320810
+    [CREATED] '1 off Galvanising 1580. 768 - NBSS.768 Machine Room Cabinet ' -> https://app.asana.com/0/848657415032331/1218494798253194
+    [DB] bom_requirements: 1580.768 (needs_order)
+    [CREATED] 'Yellow Zinc Plating - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218503775308880
+    [CREATED] '10 off Yellow Zinc Plating 1580. 8000.A.009 - Step leg' -> https://app.asana.com/0/848657415032331/1218494783396429
+    [DB] bom_requirements: 1580.8000.A.009 (needs_order)
+    [CREATED] '10 off Galvanising 1580. 8000.A.182 - Flat' -> https://app.asana.com/0/848657415032331/1218503775269959
+    [DB] bom_requirements: 1580.8000.A.182 (needs_order)
+    [CREATED] '1 off Galvanising 1580. 8000.B3w - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218498324405285
+    [DB] bom_requirements: 1580.8000.B3w (needs_order)
+    [CREATED] '1 off Galvanising 1580. 8000.B6w - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218496167908597
+    [DB] bom_requirements: 1580.8000.B6w (needs_order)
+    [CREATED] '1 off Galvanising 1580. 8000.B6w_MIR - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218503775687040
+    [DB] bom_requirements: 1580.8000.B6w_MIR (needs_order)
+    [CREATED] '2 off Galvanising 1580. 8000.B7w - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218496168313363
+    [DB] bom_requirements: 1580.8000.B7w (needs_order)
+    [CREATED] '2 off Galvanising 1580. 8000.B7w_MIR - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218498324595111
+    [DB] bom_requirements: 1580.8000.B7w_MIR (needs_order)
+    [CREATED] 'Laser Cut BOM - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218494798712124
+    [CREATED] 'Laser Cut - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218512904168006
+    [CREATED] '1 off 1580. 1002.I.009 - Pit Trim Panel 304/DP1 Laser Cut' -> https://app.asana.com/0/848657415032331/1218503775762049
+    [DB] bom_requirements: 1580.1002.I.009 (needs_order)
+    [CREATED] '1 off 1580. 1002.I.010 - Pit Trim Panel 304/DP1 Laser Cut' -> https://app.asana.com/0/848657415032331/1218494784376761
+    [DB] bom_requirements: 1580.1002.I.010 (needs_order)
+    [CREATED] '1 off 1580. 1002.I.010_MIR - Pit Trim Panel 304/DP1 Laser Cu' -> https://app.asana.com/0/848657415032331/1218496168583607
+    [DB] bom_requirements: 1580.1002.I.010_MIR (needs_order)
+    [CREATED] '1 off 1580. 1002.I.013 - Pit Trim Panel 304/DP1 Laser Cut' -> https://app.asana.com/0/848657415032331/1218494784110214
+    [DB] bom_requirements: 1580.1002.I.013 (needs_order)
+    [CREATED] '1 off 1580. 1002.I.014 - Pit Trim Panel 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218494799002153
+    [DB] bom_requirements: 1580.1002.I.014 (needs_order)
+    [CREATED] '1 off 1580. 1002.I.015 - SWLP support 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218494798118251
+    [DB] bom_requirements: 1580.1002.I.015 (needs_order)
+    [CREATED] '1 off 1580. 1002.I.023 - Packer 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218496168705087
+    [DB] bom_requirements: 1580.1002.I.023 (needs_order)
+    [CREATED] '14 off 1580. 1002.I.024 - Fixing plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218494784667550
+    [DB] bom_requirements: 1580.1002.I.024 (needs_order)
+    [CREATED] '2 off 1580. 1002.I.025 - Fixing plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218496168867866
+    [DB] bom_requirements: 1580.1002.I.025 (needs_order)
+    [CREATED] '1 off 1580. 1002.I.029 - Pit Trim Panel 304/DP1 Laser Cut' -> https://app.asana.com/0/848657415032331/1218503775839780
+    [DB] bom_requirements: 1580.1002.I.029 (needs_order)
+    [CREATED] '2 off 1580. 1002.I.031 - Track 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218503776303845
+    [DB] bom_requirements: 1580.1002.I.031 (needs_order)
+    [CREATED] '4 off 1580. 1002.I.032 - Wheel Bracket 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218498325295536
+    [DB] bom_requirements: 1580.1002.I.032 (needs_order)
+    [CREATED] '4 off 1580. 1002.I.032_MIR - Wheel Bracket 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218498325332189
+    [DB] bom_requirements: 1580.1002.I.032_MIR (needs_order)
+    [CREATED] '1 off 1580. 1002.I.034 - Magnet bracket 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218494784817795
+    [DB] bom_requirements: 1580.1002.I.034 (needs_order)
+    [CREATED] '1 off 1580. 1008.C.003 - Plate to E-stop under lift 304/HR L' -> https://app.asana.com/0/848657415032331/1218496168887395
+    [DB] bom_requirements: 1580.1008.C.003 (needs_order)
+    [CREATED] '1 off 1580. 1008.D1.112 - Valve Plate No Ext. 304/HR Laser C' -> https://app.asana.com/0/848657415032331/1218503776406775
+    [DB] bom_requirements: 1580.1008.D1.112 (needs_order)
+    [CREATED] '1 off 1580. 1016.1.009 - Call for Assistance - Face Plate 30' -> https://app.asana.com/0/848657415032331/1218494785215528
+    [DB] bom_requirements: 1580.1016.1.009 (needs_order)
+    [CREATED] '1 off 1580. 1016.E.001 - (BackPlate) 304/DP1 Laser Cut' -> https://app.asana.com/0/848657415032331/1218496168923608
+    [DB] bom_requirements: 1580.1016.E.001 (needs_order)
+    [CREATED] '1 off 1580. 1016.E.002 - (BackingBoxA) 304/DP1 Laser Cut' -> https://app.asana.com/0/848657415032331/1218494785079846
+    [DB] bom_requirements: 1580.1016.E.002 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.011 - Top Step Plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218503776350913
+    [DB] bom_requirements: 1580.8000.A.011 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.023 - WheelStop BasePlate 304/HR Laser Cu' -> https://app.asana.com/0/848657415032331/1218498325332210
+    [DB] bom_requirements: 1580.8000.A.023 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.024 - WheelStop Front 304/DP2 Laser Cut' -> https://app.asana.com/0/848657415032331/1218498325687252
+    [DB] bom_requirements: 1580.8000.A.024 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.025 - WheelStop Side 304/DP2 Laser Cut' -> https://app.asana.com/0/848657415032331/1218496168923639
+    [DB] bom_requirements: 1580.8000.A.025 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.025_MIR1 - WheelStop Side 304/DP2 Laser C' -> https://app.asana.com/0/848657415032331/1218498325436400
+    [DB] bom_requirements: 1580.8000.A.025_MIR1 (needs_order)
+    [CREATED] '10 off 1580. 8000.A.039 - Packers 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218494784768035
+    [DB] bom_requirements: 1580.8000.A.039 (needs_order)
+    [CREATED] '50 off 1580. 8000.A.040 - Packer 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218496169414492
+    [DB] bom_requirements: 1580.8000.A.040 (needs_order)
+    [CREATED] '2 off 1580. 8000.A.043 - Bumper Bracket 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218495043328212
+    [DB] bom_requirements: 1580.8000.A.043 (needs_order)
+    [CREATED] '24 off 1580. 8000.A.051 - Packers 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495055660077
+    [DB] bom_requirements: 1580.8000.A.051 (needs_order)
+    [CREATED] '8 off 1580. 8000.A.052 - Packers 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495055616520
+    [DB] bom_requirements: 1580.8000.A.052 (needs_order)
+    [CREATED] '2 off 1580. 8000.A.059 - Wheel Bracket 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218498326024148
+    [DB] bom_requirements: 1580.8000.A.059 (needs_order)
+    [CREATED] '2 off 1580. 8000.A.059_MIR - Wheel Bracket 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218498325808436
+    [DB] bom_requirements: 1580.8000.A.059_MIR (needs_order)
+    [CREATED] '16 off 1580. 8000.A.060 - Packers 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218503776770151
+    [DB] bom_requirements: 1580.8000.A.060 (needs_order)
+    [CREATED] '4 off 1580. 8000.A.061 - Packers 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495043637564
+    [DB] bom_requirements: 1580.8000.A.061 (needs_order)
+    [CREATED] '6 off 1580. 8000.A.070 - Packers 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495043727883
+    [DB] bom_requirements: 1580.8000.A.070 (needs_order)
+    [CREATED] '18 off 1580. 8000.A.071 - Packers 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218503776874598
+    [DB] bom_requirements: 1580.8000.A.071 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.078 - Proxy Switch Bracket 304/2B Laser C' -> https://app.asana.com/0/848657415032331/1218496168770807
+    [DB] bom_requirements: 1580.8000.A.078 (needs_order)
+    [CREATED] '12 off 1580. 8000.A.083 - Packers 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495055585439
+    [DB] bom_requirements: 1580.8000.A.083 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.087 - Wheelstop Stiffner Plate 304/HR Las' -> https://app.asana.com/0/848657415032331/1218496169588646
+    [DB] bom_requirements: 1580.8000.A.087 (needs_order)
+    [CREATED] '12 off 1580. 8000.A.089 - Leveling Foot Pad 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218503777364109
+    [DB] bom_requirements: 1580.8000.A.089 (needs_order)
+    [CREATED] '12 off 1580. 8000.A.090 - Gusset 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218496169726177
+    [DB] bom_requirements: 1580.8000.A.090 (needs_order)
+    [CREATED] 'Laser cut BOM - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218495043958759
+    [CREATED] '3 off 1580. 8000.A.092 - Limit Switch Angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495056259080
+    [DB] bom_requirements: 1580.8000.A.092 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.094 - Folded angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495055891979
+    [DB] bom_requirements: 1580.8000.A.094 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.095 - Angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218503777539999
+    [DB] bom_requirements: 1580.8000.A.095 (needs_order)
+    [CREATED] '12 off 1580. 8000.A.100 - Packers 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218496169454126
+    [DB] bom_requirements: 1580.8000.A.100 (needs_order)
+    [CREATED] '4 off 1580. 8000.A.101 - Packers 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218503777564077
+    [DB] bom_requirements: 1580.8000.A.101 (needs_order)
+    [CREATED] '2 off 1580. 8000.A.103 - Leg Stabilisation Bracket 304/2B La' -> https://app.asana.com/0/848657415032331/1218503777564107
+    [DB] bom_requirements: 1580.8000.A.103 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.152 - Middle Step Plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218496170189729
+    [DB] bom_requirements: 1580.8000.A.152 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.154 - Step Front Plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218495056250165
+    [DB] bom_requirements: 1580.8000.A.154 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.155 - Step Front Plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218498326746288
+    [DB] bom_requirements: 1580.8000.A.155 (needs_order)
+    [CREATED] '3 off 1580. 8000.A.164 - Angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218496169936090
+    [DB] bom_requirements: 1580.8000.A.164 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.165 - Folded angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495056047000
+    [DB] bom_requirements: 1580.8000.A.165 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.166 - Folded angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495043736907
+    [DB] bom_requirements: 1580.8000.A.166 (needs_order)
+    [CREATED] '2 off 1580. 8000.A.167 - Leg Stabilisation Bracket 304/2B La' -> https://app.asana.com/0/848657415032331/1218498326162120
+    [DB] bom_requirements: 1580.8000.A.167 (needs_order)
+    [CREATED] '3 off 1580. 8000.A.177 - Limit Switch Angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495044527974
+    [DB] bom_requirements: 1580.8000.A.177 (needs_order)
+    [CREATED] '10 off 1580. 8000.A.180 - Rod packer 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218495044487160
+    [DB] bom_requirements: 1580.8000.A.180 (needs_order)
+    [CREATED] '2 off 1580. 8000.A.183 - Angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495056858344
+    [DB] bom_requirements: 1580.8000.A.183 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.185 - Folded angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218503777876558
+    [DB] bom_requirements: 1580.8000.A.185 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.197 - Flat 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218498327093028
+    [DB] bom_requirements: 1580.8000.A.197 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.198 - Front skirt 304/DP1 Laser Cut' -> https://app.asana.com/0/848657415032331/1218496170115017
+    [DB] bom_requirements: 1580.8000.A.198 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.199 - Middle Step Plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218503778072332
+    [DB] bom_requirements: 1580.8000.A.199 (needs_order)
+    [CREATED] '2 off 1580. 8000.A.204 - Flat 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218496170573638
+    [DB] bom_requirements: 1580.8000.A.204 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.205 - Side skirt 304/DP1 Laser Cut' -> https://app.asana.com/0/848657415032331/1218495056850885
+    [DB] bom_requirements: 1580.8000.A.205 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.205_MIR - Side skirt 304/DP1 Laser Cut' -> https://app.asana.com/0/848657415032331/1218495057013217
+    [DB] bom_requirements: 1580.8000.A.205_MIR (needs_order)
+    [CREATED] '2 off 1580. 8000.A.208 - Bearing template 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495056713999
+    [DB] bom_requirements: 1580.8000.A.208 (needs_order)
+    [CREATED] '2 off 1580. 8000.A.212 - Leg Stabilisation Bracket 304/2B La' -> https://app.asana.com/0/848657415032331/1218498327418984
+    [DB] bom_requirements: 1580.8000.A.212 (needs_order)
+    [CREATED] '2 off 1580. 8000.A.213 - Angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495044628319
+    [DB] bom_requirements: 1580.8000.A.213 (needs_order)
+    [CREATED] '1 off 1580. 8000.A.214 - Folded angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218496170573666
+    [DB] bom_requirements: 1580.8000.A.214 (needs_order)
+    [CREATED] '2 off 1580. 8000.A.215 - Stiffener 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218498327528760
+    [DB] bom_requirements: 1580.8000.A.215 (needs_order)
+    [CREATED] '2 off 1580. 8000.A.215_MIR - Stiffener 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218498327453301
+    [DB] bom_requirements: 1580.8000.A.215_MIR (needs_order)
+    [CREATED] '1 off 1580. 8000.A.216 - Folded angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495057434698
+    [DB] bom_requirements: 1580.8000.A.216 (needs_order)
+    [CREATED] '8 off 1580. 8000.A.217 - Step holder Laser Cut' -> https://app.asana.com/0/848657415032331/1218498327226091
+    [DB] bom_requirements: 1580.8000.A.217 (needs_order)
+    [CREATED] '10 off 1580. 8000.B.022 - Bracket Laser Cut' -> https://app.asana.com/0/848657415032331/1218503778520958
+    [DB] bom_requirements: 1580.8000.B.022 (needs_order)
+    [CREATED] '4 off 1580. 8000.B.045 - Flat Laser Cut' -> https://app.asana.com/0/848657415032331/1218495057583238
+    [DB] bom_requirements: 1580.8000.B.045 (needs_order)
+    [CREATED] '1 off 1580. 8000.B.051 - Murr Base Bracket 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495057594820
+    [DB] bom_requirements: 1580.8000.B.051 (needs_order)
+    [CREATED] '8 off 1580. 8000.B.055 - Bracket Laser Cut' -> https://app.asana.com/0/848657415032331/1218495057352726
+    [DB] bom_requirements: 1580.8000.B.055 (needs_order)
+    [CREATED] '4 off 1580. 8000.B.061 - I-Beam bottom Plate Laser Cut' -> https://app.asana.com/0/848657415032331/1218503778463052
+    [DB] bom_requirements: 1580.8000.B.061 (needs_order)
+    [CREATED] '2 off 1580. 8000.B.063 - SL Frame side angle drilling templa' -> https://app.asana.com/0/848657415032331/1218498327825313
+    [DB] bom_requirements: 1580.8000.B.063 (needs_order)
+    [CREATED] '2 off 1580. 8000.C.005 - Folded Angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218496171255774
+    [DB] bom_requirements: 1580.8000.C.005 (needs_order)
+    [CREATED] '8 off 1580. 8000.C.007 - Plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218495057584033
+    [DB] bom_requirements: 1580.8000.C.007 (needs_order)
+    [CREATED] '8 off 1580. 8000.C.018 - Plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218496171204016
+    [DB] bom_requirements: 1580.8000.C.018 (needs_order)
+    [CREATED] '1 off 1580. 8000.C.021 - Base Channel 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218496171356456
+    [DB] bom_requirements: 1580.8000.C.021 (needs_order)
+    [CREATED] '1 off 1580. 8000.C.021_MIR - Base Channel 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495057851079
+    [DB] bom_requirements: 1580.8000.C.021_MIR (needs_order)
+    [CREATED] '4 off 1580. 8000.C.032 - Packers 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495045651709
+    [DB] bom_requirements: 1580.8000.C.032 (needs_order)
+    [CREATED] '1 off 1580. 8000.C.035 - Folded Angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495057725800
+    [DB] bom_requirements: 1580.8000.C.035 (needs_order)
+    [CREATED] '1 off 1580. 8000.C.035_MIR - Folded Angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218495057944001
+    [DB] bom_requirements: 1580.8000.C.035_MIR (needs_order)
+    [CREATED] '16 off 1580. 8000.C.038 - Washer Laser Cut' -> https://app.asana.com/0/848657415032331/1218495045651725
+    [DB] bom_requirements: 1580.8000.C.038 (needs_order)
+    [CREATED] 'Machining BOM - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218495045379934
+    [CREATED] 'Machining - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218496171333761
+    [CREATED] '10 off 1580. 8000.A.009 - Step leg Machining' -> https://app.asana.com/0/848657415032331/1218496171633878
+    [DB] bom_requirements: 1580.8000.A.009 (needs_order)
+    [CREATED] '4 off 1580. 8000.A.044 - PTFE slider Machining' -> https://app.asana.com/0/848657415032331/1218495058096601
+    [DB] bom_requirements: 1580.8000.A.044 (needs_order)
+    [CREATED] '8 off 1580. 8000.A.049 - PTFE slider Machining' -> https://app.asana.com/0/848657415032331/1218496171644642
+    [DB] bom_requirements: 1580.8000.A.049 (needs_order)
+    [CREATED] '6 off 1580. 8000.A.069 - PTFE slider Machining' -> https://app.asana.com/0/848657415032331/1218496171333744
+    [DB] bom_requirements: 1580.8000.A.069 (needs_order)
+    [CREATED] '4 off 1580. 8000.A.082 - PTFE slider Machining' -> https://app.asana.com/0/848657415032331/1218503778956992
+    [DB] bom_requirements: 1580.8000.A.082 (needs_order)
+    [CREATED] '4 off 1580. 8000.A.099 - PTFE slider Machining' -> https://app.asana.com/0/848657415032331/1218495057583506
+    [DB] bom_requirements: 1580.8000.A.099 (needs_order)
+    [CREATED] '10 off 1580. 8000.A.203 - Leg Cap 304/HR Machining' -> https://app.asana.com/0/848657415032331/1218496171871783
+    [DB] bom_requirements: 1580.8000.A.203 (needs_order)
+    [CREATED] '8 off 1580. 8000.C.006 - Packing Block Machining' -> https://app.asana.com/0/848657415032331/1218503779472305
+    [DB] bom_requirements: 1580.8000.C.006 (needs_order)
+    [CREATED] '2 off 1580. 8000.C.030 - Acetal Slider Machining' -> https://app.asana.com/0/848657415032331/1218496171832617
+    [DB] bom_requirements: 1580.8000.C.030 (needs_order)
+    [CREATED] '2 off 1580. 8000.C.031 - Acetal Slider Machining' -> https://app.asana.com/0/848657415032331/1218495058016916
+    [DB] bom_requirements: 1580.8000.C.031 (needs_order)
+    [CREATED] '2 off 1580. 8000.C.037 - Acetal Slider Machining' -> https://app.asana.com/0/848657415032331/1218495058237949
+    [DB] bom_requirements: 1580.8000.C.037 (needs_order)
+    [CREATED] 'Maytec BOM - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218496171461625
+    [CREATED] 'Maytec - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218495046058513
+    [CREATED] '1 off 1580. 1002.I1 - Maytec Assembly Maytec' -> https://app.asana.com/0/848657415032331/1218495046025325
+    [DB] bom_requirements: 1580.1002.I1 (needs_order)
+    [CREATED] '1 off 1580. 1002.I1_MIR - Maytec Assembly Maytec' -> https://app.asana.com/0/848657415032331/1218495046267137
+    [DB] bom_requirements: 1580.1002.I1_MIR (needs_order)
+    [CREATED] '1 off 1580. 1002.I2 - Maytec Assembly Maytec' -> https://app.asana.com/0/848657415032331/1218498328812031
+    [DB] bom_requirements: 1580.1002.I2 (needs_order)
+    [CREATED] '1 off 1580. 1002.I4 - Maytec Assembly Maytec' -> https://app.asana.com/0/848657415032331/1218495058629266
+    [DB] bom_requirements: 1580.1002.I4 (needs_order)
+    [CREATED] 'NBSS BOM - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218496172101812
+    [CREATED] 'NBSS/Welded by Sesame - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218503779568825
+    [CREATED] '1 off 049 - NBSS.049 Dripping Tray NBSS/Welded by Sesame' -> https://app.asana.com/0/848657415032331/1218496172101832
+    [DB] bom_requirements: 049 (needs_order)
+    [CREATED] 'NBSS/Sesame - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218496171652216
+    [CREATED] '8 off 1580. 003 - NBSS.003 15mm Shock Mount M8 25.5mm Diamet' -> https://app.asana.com/0/848657415032331/1218495046145120
+    [DB] bom_requirements: 1580.003 (in_stock)
+    [CREATED] 'NBSS/Laser Cut - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218496172155938
+    [CREATED] '1 off 1580. 011 - NBSS.011 Button station -  Back Box 140x14' -> https://app.asana.com/0/848657415032331/1218495045951531
+    [DB] bom_requirements: 1580.011 (needs_order)
+    [CREATED] '1 off 1580. 022 - NBSS 022 HydraulicBulkheadPlate 304/2B NBS' -> https://app.asana.com/0/848657415032331/1218498329150658
+    [DB] bom_requirements: 1580.022 (needs_order)
+    [CREATED] '2 off 1580. 030 - NBSS.030 JunctionBoxBracket NBSS/Laser Cut' -> https://app.asana.com/0/848657415032331/1218503779875151
+    [DB] bom_requirements: 1580.030 (needs_order)
+    [CREATED] '1 off 1580. 033 - NBSS.033 Button Plate dia 160 x 160 304/DP' -> https://app.asana.com/0/848657415032331/1218503780079097
+    [DB] bom_requirements: 1580.033 (needs_order)
+    [CREATED] '1 off 1580. 034.001 - NBSS.034.001 SafeWorkingLoadPlate: Bla' -> https://app.asana.com/0/848657415032331/1218495046666577
+    [DB] bom_requirements: 1580.034.001 (needs_order)
+    [CREATED] '16 off 1580. 040.02 - NBSS 040 Welded Assembly NBSS/Welded b' -> https://app.asana.com/0/848657415032331/1218503779922910
+    [DB] bom_requirements: 1580.040.02 (needs_order)
+    [CREATED] '10 off 1580. 044.01 - NBSS.044.01 Bearing Rubber Gasket NBSS' -> https://app.asana.com/0/848657415032331/1218498329348698
+    [DB] bom_requirements: 1580.044.01 (needs_order)
+    [CREATED] '4 off 1580. 050 - NBSS.050 Leveling Feet Welded Bolt NBSS/We' -> https://app.asana.com/0/848657415032331/1218496172716772
+    [DB] bom_requirements: 1580.050 (needs_order)
+    [CREATED] '8 off 1580. 051 - NBSS.051 Pit Trim Installation Bracket 304' -> https://app.asana.com/0/848657415032331/1218495058881289
+    [DB] bom_requirements: 1580.051 (needs_order)
+    [CREATED] '8 off 1580. 129 - NBSS.129 Loading Point Washer dia 50 x 50 ' -> https://app.asana.com/0/848657415032331/1218503780108155
+    [DB] bom_requirements: 1580.129 (needs_order)
+    [CREATED] '1 off 1580. 768 - NBSS.768 Machine Room Cabinet Frame NBSS/S' -> https://app.asana.com/0/848657415032331/1218498329590834
+    [DB] bom_requirements: 1580.768 (needs_order)
+    [CREATED] '6 off 1580. 1000.C.R-Clip 2.5x45 - Zinc Plated Steel R-Clip ' -> https://app.asana.com/0/848657415032331/1218498329552354
+    [DB] bom_requirements: 1580.1000.C.R-Clip 2.5x45 (needs_order)
+    [CREATED] '4 off 1580. 1000.L.WDS674-216 - Swivel Pad M16 674-216 NBSS/' -> https://app.asana.com/0/848657415032331/1218496172700088
+    [DB] bom_requirements: 1580.1000.L.WDS674-216 (in_stock)
+    [CREATED] '1 off 1580. 1008.T.8ID_Grommet - 8mm ID Grommet 666-4603 NBS' -> https://app.asana.com/0/848657415032331/1218498329227229
+    [DB] bom_requirements: 1580.1008.T.8ID_Grommet (needs_order)
+    [CREATED] 'Sesame BOM - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218498329271467
+    [CREATED] 'Blickle - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218503780562318
+    [CREATED] '4 off 1580. 1000.A8.001 - Guide roller FTH 35X14/12-8K Blick' -> https://app.asana.com/0/848657415032331/1218503780550464
+    [DB] bom_requirements: 1580.1000.A8.001 (needs_order)
+    [CREATED] 'RS Components - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218498329890860
+    [CREATED] '4 off 1580. 1000.B.30x17_F_M8_98.6daN - M8 x 30 female vibra' -> https://app.asana.com/0/848657415032331/1218498329833726
+    [DB] bom_requirements: 1580.1000.B.30x17_F_M8_98.6daN (needs_order)
+    [CREATED] '12 off 1580. 1000.B.50x15_F_M10_306kg - RS PRO M10 Anti Vibr' -> https://app.asana.com/0/848657415032331/1218498329947486
+    [DB] bom_requirements: 1580.1000.B.50x15_F_M10_306kg (needs_order)
+    [CREATED] '4 off 1580. 1000.B.50x25_M_M10_300daN - Shock Mount M10 50mm' -> https://app.asana.com/0/848657415032331/1218495343189359
+    [DB] bom_requirements: 1580.1000.B.50x25_M_M10_300daN (needs_order)
+    [CREATED] 'Boneham - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218495310968165
+    [CREATED] '6 off 1580. 1000.C.ClevisPin 12x35mm - Clevis Pin Stainless ' -> https://app.asana.com/0/848657415032331/1218498329938323
+    [DB] bom_requirements: 1580.1000.C.ClevisPin 12x35mm (needs_order)
+    [CREATED] '1 off 1580. 1008.A3.001 - MP200701 - Magnetic Proximity Sens' -> https://app.asana.com/0/848657415032331/1218503780527319
+    [DB] bom_requirements: 1580.1008.A3.001 (in_stock)
+    [CREATED] 'Sesame - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218495343405712
+    [CREATED] '1 off 1580. 1008.A3.005 - Neodymium Magnet - 1.2kg Pull F102' -> https://app.asana.com/0/848657415032331/1218513264186823
+    [DB] bom_requirements: 1580.1008.A3.005 (in_stock)
+    [CREATED] '1 off 1580. 1008.A3.006 - RS PRO Vulcanised Fibre Tap Washer' -> https://app.asana.com/0/848657415032331/1218495343439039
+    [DB] bom_requirements: 1580.1008.A3.006 (needs_order)
+    [CREATED] '5 off 1580. 1008.A14 - Standard LimitSwitch: LRC5A54 LRC5A54' -> https://app.asana.com/0/848657415032331/1218503780982878
+    [DB] bom_requirements: 1580.1008.A14 (in_stock)
+    [CREATED] '1 off 1580. 1008.C.002 - E.Stop - Big 330-8587 RS Components' -> https://app.asana.com/0/848657415032331/1218495343551094
+    [DB] bom_requirements: 1580.1008.C.002 (needs_order)
+    [CREATED] '1 off 1580. 1008.D1.118 - Cable Mount  M12 Connector  Male  ' -> https://app.asana.com/0/848657415032331/1218495343541382
+    [DB] bom_requirements: 1580.1008.D1.118 (needs_order)
+    [CREATED] 'Bes - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218495343541394
+    [CREATED] '1 off 1580. 1008.D1.120 - Drain Cock Type A - 3/4" BSP Brass' -> https://app.asana.com/0/848657415032331/1218495343438010
+    [DB] bom_requirements: 1580.1008.D1.120 (needs_order)
+    [CREATED] '12 off 1580. 1008.T.13ID_P_Clip - Rubber-lined clamp; 13mm I' -> https://app.asana.com/0/848657415032331/1218495311578743
+    [DB] bom_requirements: 1580.1008.T.13ID_P_Clip (needs_order)
+    [CREATED] '1 off 1580. 1008.T.25ID_Grommet - Grommet ID 18.5mm (Hole 25' -> https://app.asana.com/0/848657415032331/1218496173638794
+    [DB] bom_requirements: 1580.1008.T.25ID_Grommet (needs_order)
+    [CREATED] '2 off 1580. 1008.U.01 - 85x85x51 Wiska Junction Box 700-0802' -> https://app.asana.com/0/848657415032331/1218503780700109
+    [DB] bom_requirements: 1580.1008.U.01 (needs_order)
+    [CREATED] 'Steerforth - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218495311433623
+    [CREATED] '2 off 1580. 1008.V1.1.MiniActuator[50mm] - Mini hydraulic ac' -> https://app.asana.com/0/848657415032331/1218498330453341
+    [DB] bom_requirements: 1580.1008.V1.1.MiniActuator[50mm] (needs_order)
+    [CREATED] '4 off 1580. 1008.V1.003 - Comepi reed switch for hydraulic a' -> https://app.asana.com/0/848657415032331/1218495343486349
+    [DB] bom_requirements: 1580.1008.V1.003 (in_stock)
+    [CREATED] 'EAO - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218495311638922
+    [CREATED] '2 off 1580. 1016.3.001 - Lift UP.Down Button 51-151.0252F / ' -> https://app.asana.com/0/848657415032331/1218495343407082
+    [DB] bom_requirements: 1580.1016.3.001 (in_stock)
+    [CREATED] '1 off 1580. 1016.3.003 - E-Stop Mushroom Head 61-3440.4/5 EA' -> https://app.asana.com/0/848657415032331/1218498330553362
+    [DB] bom_requirements: 1580.1016.3.003 (needs_order)
+    [CREATED] '1 off 1580. 1016.3.006 - Stairs push button 51-151.0252F / 6' -> https://app.asana.com/0/848657415032331/1218498330201337
+    [DB] bom_requirements: 1580.1016.3.006 (in_stock)
+    [CREATED] '1 off 1580. 1016.3.008 - Stainless Call for Assistance butto' -> https://app.asana.com/0/848657415032331/1218503781279337
+    [DB] bom_requirements: 1580.1016.3.008 (needs_order)
+    [CREATED] '2 off 1580. 1016.3.010(2Way-Spr) - Key Switch. 2PositionSpri' -> https://app.asana.com/0/848657415032331/1218495311938146
+    [DB] bom_requirements: 1580.1016.3.010(2Way-Spr) (in_stock)
+    [CREATED] 'Rubber Supplier - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218495311825188
+    [CREATED] '1 off 1580. 1016.E.003 - Ruber Gasket Rubber Supplier' -> https://app.asana.com/0/848657415032331/1218498330701409
+    [DB] bom_requirements: 1580.1016.E.003 (needs_order)
+    [CREATED] '1 off 1580. 1016.F.010 - Honeywell Doorbell DCP311G - USE ON' -> https://app.asana.com/0/848657415032331/1218495343407105
+    [DB] bom_requirements: 1580.1016.F.010 (in_stock)
+    [CREATED] '1 off 1580. 1016.J.RemoteControll_RF.Sol.1(4B).04 - Remote C' -> https://app.asana.com/0/848657415032331/1218495311254825
+    [DB] bom_requirements: 1580.1016.J.RemoteControll_RF.Sol.1(4B).04 (needs_order)
+    [CREATED] '10 off 1580. 8000.A.010 - Rubber Washer Sesame' -> https://app.asana.com/0/848657415032331/1218496173621217
+    [DB] bom_requirements: 1580.8000.A.010 (needs_order)
+    [CREATED] '2 off 1580. 8000.A.144 - Guide roller FTH 50x15/12-12K Blick' -> https://app.asana.com/0/848657415032331/1218495311965998
+    [DB] bom_requirements: 1580.8000.A.144 (in_stock)
+    [CREATED] 'IGUS - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218496174174233
+    [CREATED] '8 off 1580. 8000.A.145 - Thrust washer WTM-1224-015 IGUS' -> https://app.asana.com/0/848657415032331/1218498330944032
+    [DB] bom_requirements: 1580.8000.A.145 (needs_order)
+    [CREATED] 'MISUMI - 1580 - Admiralty House 2.Entire System BOM' -> GID 1218495343837320
+    [CREATED] '8 off 1580. 8000.A.219 - Spring Ball Lock Pin BLPF8-30 MISUM' -> https://app.asana.com/0/848657415032331/1218498331183072
+    [DB] bom_requirements: 1580.8000.A.219 (needs_order)
+    [CREATED] '10 off 1580. 8000.A.FJUM_02_40_1 - Bearing fi 40 FUM-02-40 I' -> https://app.asana.com/0/848657415032331/1218503781927531
+    [DB] bom_requirements: 1580.8000.A.FJUM_02_40_1 (needs_order)
+    [CREATED] '8 off 1580. BRH-M4-16-GS (RivetBush) - Round M4 rivet bush B' -> https://app.asana.com/0/848657415032331/1218496174388449
+    [DB] bom_requirements: 1580.BRH-M4-16-GS (RivetBush) (needs_order)
+
+============================================================
+  Total CSV rows : 187  (28 hierarchy + 159 parts)
+  ORDER parts    : 148
+  PICK parts     : 11
+  Manifest saved : C:\Users\GilesHugo\SES_Workspace\skills\bom_pipeline\1.BOM IMPORT into Asana\pipeline_runs\1580_-_Admiralty_House_2_Entire_System_BOM_20260915_1037\stage5_import_manifest_20260915_1037.csv
+============================================================
+
+============================================================
+  POST-COMMIT COMPLETENESS CHECK (Stage 5)
+============================================================
+  [CC-CHECK] OK — 159 part task(s) found, matching the 159 expected.
+  [CC-CHECK] Vendor group tasks present: 19 of 19 expected.
+============================================================
+  State updated: C:\Users\GilesHugo\SES_Workspace\skills\bom_pipeline\pipeline_last_run.json (status: committed)
+
+============================================================
+  Pipeline complete — 1580 - Admiralty House 2.Entire System BOM
+  Manifest CSV : C:\Users\GilesHugo\SES_Workspace\skills\bom_pipeline\1.BOM IMPORT into Asana\pipeline_runs\1580_-_Admiralty_House_2_Entire_System_BOM_20260915_1037\stage5_import_manifest_20260915_1037.csv
+============================================================
+
+EXIT=0

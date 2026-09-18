@@ -1,0 +1,14 @@
+{
+  "request_id": "a337a4ca-91e6-4248-a503-750b8ddb8fcd",
+  "source": "email_approval_sheet",
+  "row_index": 38,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy6IAAA=",
+  "subject": "Re: Bellows - Langley Steet",
+  "task_gid": "1216850437678797",
+  "task_name": "21202-1569 - Machguard - Brooks Roller shutter blind - 28044",
+  "asana_url": "https://app.asana.com/0/0/1216850437678797",
+  "action": "AMENDMENT (Giles overrode proposed action):\nOriginal: (Domain Fallback: 'machguard')\nAmendment: Wrong task - this 21202 is already closed out and correct task is https://app.asana.com/1/357939803556123/project/1129657506061421/task/1217816924994537?focus=true",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-08-26T13:53:36Z\nEmail: Re: Bellows - Langley Steet \nMatch basis: (Domain Fallback: 'machguard')\n- Acknowledged update — no field change proposed (type=update, vendor=machguard)",
+  "decision": "M",
+  "created_at": "2026-08-28T10:00:36.352340+00:00"
+}

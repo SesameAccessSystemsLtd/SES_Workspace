@@ -1,0 +1,33 @@
+{
+  "id": "d2183136",
+  "objective": "Test thread — confirm dev_register writes, lists and syncs correctly",
+  "where": [
+    "C:/Users/GilesHugo/SES_Workspace/skills/os_portal/dev_register.py"
+  ],
+  "channel": "cli-hermes",
+  "area": "Documentation",
+  "effort": "S",
+  "priority": "Low",
+  "created_at": "2026-09-17T15:06:38.546986+00:00",
+  "asana_gid": "1218595137842217",
+  "events": [
+    {
+      "at": "2026-09-17T15:06:38.546998+00:00",
+      "status": "open",
+      "by": "cli-hermes",
+      "note": "thread opened"
+    },
+    {
+      "at": "2026-09-17T15:06:42.680317+00:00",
+      "status": "awaiting_signoff",
+      "by": "agent",
+      "note": "test — ready for review"
+    },
+    {
+      "at": "2026-09-17T15:32:05.323915+00:00",
+      "status": "awaiting_signoff",
+      "by": "dev_register.sync",
+      "note": "created Asana task 1218595137842217"
+    }
+  ]
+}

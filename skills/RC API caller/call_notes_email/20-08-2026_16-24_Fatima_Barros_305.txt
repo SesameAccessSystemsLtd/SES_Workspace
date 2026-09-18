@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  20/08/2026  16:24
+============================================================
+With:         Fatima Barros 305
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Fatima Barros and Giles Hugo discussing technical setup and procedures for an upcoming training session, including audio-visual issues and participant interaction methods. The outcome was confirming the meeting setup and noting that Giles Hugo will review the details on Monday.
+
+--- RECAP --------------------------------------------------
+Fatima Barros tested the meeting room computer and confirmed it opens the meeting link, but noted there is no sound or video, likely due to mirroring issues from the downstairs computer.Giles Hugo explained that when Steve was connected, sound was working from his computer, suggesting the issue might be that the downstairs computer's sound is muted.Giles Hugo indicated he will not be in tomorrow and asked Fatima to leave a note on his desk for review on Monday.Fatima clarified that participants will mainly listen during the training, with an option to ask questions via typing if needed, and that all three participants will join simultaneously via video.Both confirmed that participants can watch and listen, and questions can be asked through typing during the session.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will review the meeting setup and audio issues on Monday.Fatima Barros will leave a note on Giles Hugo's desk for him to review the meeting details on Monday.
+
+(Full transcript: RC web portal only — no RingSense API)

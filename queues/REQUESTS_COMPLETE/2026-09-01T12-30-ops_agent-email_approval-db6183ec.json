@@ -1,0 +1,14 @@
+{
+  "request_id": "a55c382c-f87e-477d-a07f-c2ea5f4e06e3",
+  "source": "email_approval_sheet",
+  "row_index": 9,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy7fAAA=",
+  "subject": "Re: Ferrous BOM  1595 - St George - SQR-46793",
+  "task_gid": "1217947686119104",
+  "task_name": "21586-1595 - Goodman - Ferrous BOM  1595 - St George",
+  "asana_url": "https://app.asana.com/0/0/1217947686119104",
+  "action": "(Matched via SQR in Local DB); [SQR-ledger] no SQR match for Richard.Perry@goodsteel.co.uk; Flag issue: Supplier cannot supply the exact 70x40x4 Mild Steel box section and offers alternative sizes (80x40x4.0 or 75x50x3.0) pending buyer's decision.",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-08-28T13:14:59Z\nEmail: Re: Ferrous BOM  1595 - St George - SQR-46793\nMatch basis: (Matched via SQR in Local DB); [SQR-ledger] no SQR match for Richard.Perry@goodsteel.co.uk\n- Flag issue: Supplier cannot supply the exact 70x40x4 Mild Steel box section and offers alternative sizes (80x40x4.0 or 75x50x3.0) pending buyer's decision.",
+  "decision": "A",
+  "created_at": "2026-09-01T12:30:32.602255+00:00"
+}

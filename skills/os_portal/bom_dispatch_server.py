@@ -45,6 +45,15 @@ except Exception:
     REQUESTS_DIR = _WS / "queues" / "REQUESTS"
 
 PORT = int(os.environ.get("BOM_DISPATCH_PORT", "8765"))
+# LAN exposure: bind host defaults to loopback (safe). Set BOM_DISPATCH_HOST=0.0.0.0
+# to expose on the LAN. POST /dispatch is bearer-token-gated via PORTAL_AUTH_TOKEN,
+# so even when exposed, only clients holding the token can trigger a dispatch.
+BIND_HOST = os.environ.get("BOM_DISPATCH_HOST") or os.environ.get("HOST") or "127.0.0.1"
+# Read lazily inside the handler (after load_env() merges ~/.hermes/.env), so a
+# Doppler-synced PORTAL_AUTH_TOKEN in .env is honoured even though this module
+# constant is defined before load_env() runs.
+def _portal_auth_token():
+    return os.environ.get("PORTAL_AUTH_TOKEN", "")
 
 # --- env file loader (mirrors os_status_refresh.py so the listener has the
 #     Doppler-sourced secrets that live in ~/.hermes/.env without needing a
@@ -162,7 +171,8 @@ def compile_prompt(pl: dict) -> str:
         local_path = pl.get("parts_folder")
         call = _call_name(pl, local_path)
         parts_folder = f"<b>{local_path}</b>" if local_path else "(resolve at run from Dropbox link)"
-        asana_url = f"https://app.asana.com/0/0/{pl.get('control_gid')}" if pl.get("control_gid") else "(none)"
+        asana_url = (f"https://app.asana.com/1/357939803556123/task/{pl.get('control_gid')}"
+                     if pl.get("control_gid") else "(none)")
         ctrl = pl.get("control_name") or pl.get("control") or ""
         proj = pl.get("project_name") or pl.get("job") or ""
         # Job + name as ONE entity (matches how Giles hand-triggers)
@@ -285,10 +295,17 @@ class Handler(BaseHTTPRequestHandler):
             return self._json(200, {"ok": True, "service": "bom_dispatch", "requests_dir": str(REQUESTS_DIR)})
         # Serve the OS portal HTML from the same origin so the action buttons
         # post same-origin (no CORS / Private Network Access issues at all).
-        # Open in a browser as:  http://127.0.0.1:8765/bom-tracker.html
+        # Open in a browser as:  http://127.0.0.1:8765/data/os_status/nav.html
+        #
+        # Web root = the WHOLE SES_Workspace, so nav.html's relative links
+        # (\"../views/*\", \"../qa/latest.html\", same-dir os_status pages) all
+        # resolve same-origin. Fixed 2026-08-27: the root used to be only
+        # data/os_status, so every link escaping that dir (views/, qa/) 404'd
+        # when browsed over http://127.0.0.1:8765 — the \"portal pages don't
+        # pull through\" bug. Traversal protection below still applies.
         if self.path.startswith("/"):
-            rel = Path(self.path.lstrip("/")).name   # filename only, no traversal
-            portal_root = _WS / "data" / "os_status"
+            rel = Path(self.path.lstrip("/"))
+            portal_root = _WS
             target = (portal_root / rel).resolve()
             if str(target).startswith(str(portal_root.resolve())) and target.is_file() and target.suffix.lower() in {".html", ".css", ".js", ".svg", ".png", ".jpg", ".ico"}:
                 data = target.read_bytes()
@@ -308,6 +325,15 @@ class Handler(BaseHTTPRequestHandler):
     def do_POST(self):
         if self.path.rstrip("/") != "/dispatch":
             return self._json(404, {"ok": False, "error": "not found"})
+        # Auth gate: POST /dispatch triggers writes + Telegram. If PORTAL_AUTH_TOKEN
+        # is set (the LAN-exposed case), require it as a Bearer token. Loopback with
+        # no token set keeps working (local browser buttons) until it's needed.
+        token = _portal_auth_token()
+        if token:
+            auth = self.headers.get("Authorization", "")
+            given = auth.removeprefix("Bearer ").strip() if auth.startswith("Bearer ") else ""
+            if not given or given != token:
+                return self._json(401, {"ok": False, "error": "unauthorized"})
         try:
             n = int(self.headers.get("Content-Length", 0))
             pl = json.loads(self.rfile.read(n) or b"{}")
@@ -327,11 +353,12 @@ def main():
     # Idempotent: if the port is already bound, another instance is running —
     # exit cleanly so repeated launches (e.g. from the portal refresh) are no-ops.
     try:
-        srv = ThreadingHTTPServer(("127.0.0.1", PORT), Handler)
+        srv = ThreadingHTTPServer((BIND_HOST, PORT), Handler)
     except OSError as e:
         print(f"bom_dispatch_server: port {PORT} unavailable ({e}); assuming already up.")
         return
-    print(f"bom_dispatch_server on http://127.0.0.1:{PORT}  (REQUESTS -> {REQUESTS_DIR})")
+    print(f"bom_dispatch_server on http://{BIND_HOST}:{PORT}  (REQUESTS -> {REQUESTS_DIR})"
+          + ("  [AUTH on /dispatch]" if _portal_auth_token() else "  [no /dispatch auth]"))
     srv.serve_forever()
 
 

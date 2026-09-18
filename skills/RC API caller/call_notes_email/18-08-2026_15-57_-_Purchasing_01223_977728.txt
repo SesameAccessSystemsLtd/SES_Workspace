@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  18/08/2026  15:57
+============================================================
+With:         - Purchasing 01223 977728
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call was a voicemail inquiry from John Reynolds of Cambridge Lift, asking Giles Hugo about installing a platform lift in a building. Giles attempted to transfer the call to sales but did not complete the transfer.
+
+--- RECAP --------------------------------------------------
+John Reynolds from Cambridge Lift called Giles Hugo, inquiring about installing a platform lift in a building.Giles Hugo responded by asking if he should transfer the call to the sales department but did not complete the transfer during the call.No specific details about the building, lift specifications, or follow-up actions were discussed or confirmed.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

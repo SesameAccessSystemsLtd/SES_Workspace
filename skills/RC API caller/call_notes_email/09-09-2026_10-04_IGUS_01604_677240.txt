@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  09/09/2026  10:04
+============================================================
+With:         IGUS 01604 677240
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a clarification call between IGUS and Giles Hugo regarding the order details for brackets and related components. IGUS confirmed the specifications and will send a quote shortly.
+
+--- RECAP --------------------------------------------------
+Giles Hugo clarified that they require one set of brackets, which is 2 meters in length, and requested two sets in total.Giles Hugo confirmed that separators are not needed inside the chain, as they have never used them before.Giles Hugo specified that they want two sets of end caps, considering the cost is not significant.IGUS acknowledged the specifications, confirmed the details, and stated they will send a quote within five minutes.
+
+--- TASKS --------------------------------------------------
+IGUS will send a quote to Giles Hugo within the next 5 minutes.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  17/08/2026  13:20
+============================================================
+With:         Steve - CPS for Van MOT 07455 960622
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a brief call between Giles Hugo and Steve from CPS regarding pending vehicle MOT payment and a quote for a system replacement. The main outcome was that Giles will push through the MOT payment and check on the quote status.
+
+--- RECAP --------------------------------------------------
+Giles Hugo confirms the MOT payment has not been processed yet and will push it through once confirmed.Steve from CPS asks Giles to notify him when the MOT payment is completed so he can verify it in the system.Giles mentions a quote for a system replacement, possibly LV 69, which has not been finalized or completed.Steve indicates he will check if the quote has been processed or if any work has been done on the system replacement.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will push through the MOT payment and notify Steve once it is completed.Steve from CPS will verify in the system if the MOT payment has been received and check the status of the system quote.
+
+(Full transcript: RC web portal only — no RingSense API)

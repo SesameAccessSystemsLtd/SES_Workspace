@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  20/08/2026  11:27
+============================================================
+With:         Mark Mercury plating 01276 24144
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo from Sesame coordinating with Mark Mercury Plating regarding a project initially intended for anodizing but now requiring powder coating. They discussed the status of the parts, cancellation of the original order, and arrangements for partial pickup of items to be processed differently.
+
+--- RECAP --------------------------------------------------
+Giles Hugo from Sesame inquired about the status of parts sent to Mark Mercury Plating for anodizing, with the intention to switch to powder coating in a specific color.Mark Mercury Plating confirmed the parts had not yet been processed and were still in the system, indicating they had not started work on them.Giles Hugo decided to cancel the original anodizing order and arranged for Andy to pick up some parts that do not need plating this afternoon.Giles Hugo clarified that not all parts would be processed; some would be collected by Andy, and the order would continue with the remaining items.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will coordinate with Andy to ensure the parts that do not need plating are collected this afternoon.Mark Mercury Plating will prepare the specified parts for pickup by Andy.
+
+(Full transcript: RC web portal only — no RingSense API)

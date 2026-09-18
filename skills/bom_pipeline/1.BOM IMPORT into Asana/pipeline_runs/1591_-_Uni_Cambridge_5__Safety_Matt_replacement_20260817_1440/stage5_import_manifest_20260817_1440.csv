@@ -1,0 +1,43 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1591 - Uni Cambridge 5. Safety Matt replacement,"Master task for all BOMs related to 1591 - Uni Cambridge 5. Safety Matt replacement
+Dropbox: https://www.dropbox.com/scl/fo/23f8ivm222wqyx8v7wger/AKuG_HE3z9G4Z-ameNdzB4M?rlkey=e17qlzkwoalw2v7k70flpmkto&dl=0
+Project: https://app.asana.com/1/357939803556123/project/1216293165459681/task/1217451597572487?focus=true",,,,,,,,,,
+Laser Cut BOM - 1591 - Uni Cambridge 5. Safety Matt replacement,,ALL BOMS - 1591 - Uni Cambridge 5. Safety Matt replacement,,Laser Cut,,,,,,,
+Laser Cut - 1591 - Uni Cambridge 5. Safety Matt replacement,,Laser Cut BOM - 1591 - Uni Cambridge 5. Safety Matt replacement,,Laser Cut,,,,,,,
+1 off 1591. 7003.G.152 - Wheelstop Channel Plate 304/2B Laser Cut,"1591.7003.G.152
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/23f8ivm222wqyx8v7wger/AKuG_HE3z9G4Z-ameNdzB4M?rlkey=e17qlzkwoalw2v7k70flpmkto&dl=0
+Mass: 1.318 kg
+Volume: 164760.796 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1216293165459681/task/1217451597572487?focus=true",Laser Cut - 1591 - Uni Cambridge 5. Safety Matt replacement,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217546709061668,https://app.asana.com/0/848657415032331/1217546709061668
+Sesame BOM - 1591 - Uni Cambridge 5. Safety Matt replacement,,ALL BOMS - 1591 - Uni Cambridge 5. Safety Matt replacement,,Sesame,,,,,,,
+Tape Switch - 1591 - Uni Cambridge 5. Safety Matt replacement,,Sesame BOM - 1591 - Uni Cambridge 5. Safety Matt replacement,,Tape Switch,,,,,,,
+1 off 1591. 7003.G.013 - Custom Membrane Sensor P-0523 Tape Switch,"1591.7003.G.013
+Stock Number: P-0523
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/23f8ivm222wqyx8v7wger/AKuG_HE3z9G4Z-ameNdzB4M?rlkey=e17qlzkwoalw2v7k70flpmkto&dl=0
+Mass: 0.192 kg
+Volume: 206383.006 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1216293165459681/task/1217451597572487?focus=true",Tape Switch - 1591 - Uni Cambridge 5. Safety Matt replacement,1,Tape Switch,,,,ORDER,PROJECT ORDER,1217546564991330,https://app.asana.com/0/848657415032331/1217546564991330
+1 off 1591. 7003.G.267 - TS6 Sensing Edge without resistor TS6/without resistor/+End caps/ Tape Switch,"1591.7003.G.267
+Stock Number: TS6/without resistor/+End caps/
+Material: Generic
+Web Link: tapeswitch.com
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/23f8ivm222wqyx8v7wger/AKuG_HE3z9G4Z-ameNdzB4M?rlkey=e17qlzkwoalw2v7k70flpmkto&dl=0
+Mass: 0.508 kg
+Volume: 507656.561 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1216293165459681/task/1217451597572487?focus=true",Tape Switch - 1591 - Uni Cambridge 5. Safety Matt replacement,1,Tape Switch,,,,ORDER,PROJECT ORDER,1217546341012785,https://app.asana.com/0/848657415032331/1217546341012785
+1 off 1591. 7003.G.272 - TS6 Sensing Edge without resistor TS6/without resistor/+End caps/ Tape Switch,"1591.7003.G.272
+Stock Number: TS6/without resistor/+End caps/
+Material: Generic
+Web Link: tapeswitch.com
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/23f8ivm222wqyx8v7wger/AKuG_HE3z9G4Z-ameNdzB4M?rlkey=e17qlzkwoalw2v7k70flpmkto&dl=0
+Mass: 0.143 kg
+Volume: 143220.426 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1216293165459681/task/1217451597572487?focus=true",Tape Switch - 1591 - Uni Cambridge 5. Safety Matt replacement,1,Tape Switch,,,,ORDER,PROJECT ORDER,1217546567461291,https://app.asana.com/0/848657415032331/1217546567461291

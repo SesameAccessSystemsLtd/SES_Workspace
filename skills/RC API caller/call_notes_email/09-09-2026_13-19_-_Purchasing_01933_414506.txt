@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  09/09/2026  13:19
+============================================================
+With:         - Purchasing 01933 414506
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a follow-up call between Giles Hugo and Theresa from Chemist and Controls to discuss pending quotes and account issues related to PLC components. Giles plans to send specific component requests, and Theresa will correct account allocations and provide quotes promptly.
+
+--- RECAP --------------------------------------------------
+Giles Hugo contacted Theresa at Chemist and Controls to follow up on previous discussions about PLC components and account issues, noting a recent request for a quote that was not received since March due to account misallocation.Theresa identified that the recent quote was mistakenly placed on an inactive account from 2012 and will move it to the correct account, which is active since 2012, and close the outdated account for stains from 26 years ago.Giles requested a quote for all PLC components needed, including Seiko parts and a full Envent Hoffman enclosure, and will send detailed requests via email for Theresa to process.Theresa agreed to send her email address and the necessary information to Giles, who will then forward the component requests for prompt quoting.Giles mentioned the urgency of acquiring components to begin manufacturing PLCs in-house, and Theresa committed to providing quotes and lead times for off-the-shelf items quickly.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send detailed component requests, including the full Envent Hoffman enclosure, to Theresa via email.Theresa will move the recent quote to the correct active account and close the outdated accounts for stains and West Spy Plate.Theresa will send her email address and relevant information to Giles for him to forward component requests.Giles Hugo will review and approve quotes for off-the-shelf components with lead times, and will follow up if more complex items are involved.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -277,12 +277,21 @@ def run(commit: bool):
             # Update ordering_queue status to 'ordered' for all items in this group
             now = datetime.now(timezone.utc).isoformat()
             for item in items:
+                kw = {
+                    "ordered_at": now,
+                    "vendor_name_at_order": vendor,
+                    "vendor_is_fallback": 1 if is_fallback else 0,
+                }
+                # CHG-3B: capture the order/group task gid at creation time so the
+                # DB holds the order↔line link (ordering_queue.order_task_gid).
+                # Append-to-existing: the order task gid IS known now. Create-new:
+                # SAP creates the task later, so it stays NULL until backfilled.
+                if existing_gid:
+                    kw["order_task_gid"] = existing_gid
+                    kw["order_task_type"] = "needs"
                 update_ordering_queue_status(
                     item["asana_task_gid"], "ordered",
-                    ordered_at=now,
-                    vendor_name_at_order=vendor,
-                    vendor_is_fallback=1 if is_fallback else 0,
-                    db_path=DB_PATH,
+                    db_path=DB_PATH, **kw,
                 )
 
         except Exception as exc:

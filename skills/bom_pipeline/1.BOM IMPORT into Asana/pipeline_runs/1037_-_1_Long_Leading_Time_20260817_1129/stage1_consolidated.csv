@@ -1,0 +1,4 @@
+assembly pack name,assembly pack details,source bom file,item qty,item,description,part number,rev,thickness,material,stock number,vendor,web link,authority,cost center,notes,mass,volume,location
+,,1037.BOM.1.Long Leading.xlsx,1,1,Rod end bearing (Dunlop part number: MP-M12C),1037.1014.N.080,,,Generic,POS12C,Sesame,https://bepltd.com/products/pos12c-nylon-liner-male-rod-end-bearing-m12x1-25,,Long Leading,,0.011 kg,11441.414 mm^3,
+,,1037.BOM.1.Long Leading.xlsx,1,2,Ram: MD 25/18 D 130 SSF   Stroke: 130 mm,1037.1014.N13.Ram,,,,MD 25/18 D 130 SSF,Confortinet,steerforth.co.uk,,Long Leading,,0.280 kg,279597.257 mm^3,
+,,1037.BOM.1.Long Leading.xlsx,2,3,Magnetic reed switch,1037.1014.N25,,,,SRSTA,Confortinet,steerforth.co.uk,,Long Leading,,0.011 lbmass,4775.924 mm^3,

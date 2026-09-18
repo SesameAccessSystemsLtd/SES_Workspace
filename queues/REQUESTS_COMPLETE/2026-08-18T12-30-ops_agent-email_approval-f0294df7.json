@@ -1,0 +1,14 @@
+{
+  "request_id": "d74c6d79-dfbb-4b85-816e-3905bf2bfd92",
+  "source": "email_approval_sheet",
+  "row_index": 24,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkcdG12AAA=",
+  "subject": "TNT Shipment 146914501 - We are about to deliver your shipment to United Kingdom",
+  "task_gid": "1216946791201146",
+  "task_name": "21207-1575 - Tape switch - replacements - 1575 -",
+  "asana_url": "https://app.asana.com/0/0/1216946791201146",
+  "action": "AMENDMENT (Giles overrode proposed action):\nOriginal: (Matched via PO Number in Local DB); Update delivery date to 2026-08-18; Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043)\nAmendment: NO THIS IS CONFIRMING THAT THIS IS NOW RECEIVED AND SO I HAVE UPDATE DTHIS - JUST COMMENT AND WE NED TO FLAG A TASK IS ALREADY ARRIVED AND NOT AWAITING CONFIRMATION, THEN do not UPDATE TO CONFIMRED",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-08-18T07:04:52Z\nEmail: TNT Shipment 146914501 - We are about to deliver your shipment to United Kingdom\nMatch basis: (Matched via PO Number in Local DB)\n- Update delivery date to 2026-08-18\n- Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043)",
+  "decision": "M",
+  "created_at": "2026-08-18T12:30:54.877356+00:00"
+}

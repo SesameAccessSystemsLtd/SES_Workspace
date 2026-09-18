@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  09/09/2026  09:29
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Giles Hugo discussing a repair issue with Adam/Nikki from Thameside regarding a gate drive shaft. The shaft's drive mechanism was completed but found to have a manufacturing error, which will require minor adjustments before shipping.
+
+--- RECAP --------------------------------------------------
+Adam/Nikki from Thameside reported that the gate drive shaft's repair was completed, but a mistake was identified where the bars lifted up about the jaws due to a dimensional error in the slot, which is now 6mm instead of the specified 4mm.The drawing number for the shaft is m05 01.1037, and the specific area of concern is near the middle of the job, next to 1097, where the slot dimension was incorrect.The dimensional error involves the slot being 6mm deep instead of 4mm, which is not an issue for the shaft's function but will require shimming or minor adjustments during installation.Giles Hugo plans to arrange for someone to collect the shaft promptly, with the awareness of the 2mm error, and will consider shipping it with a note about the discrepancy.Adam/Nikki will mark the shaft with a red pen indicating the 2mm deep error for clarity during collection.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will arrange for the collection of the shaft and inform the collector about the 2mm dimensional error.Adam/Nikki will mark the shaft with a red pen indicating the 2mm deep error.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -27,7 +27,7 @@ PENDING_TAB = "Pending"
 HEADERS = [
     "Email ID", "Received", "Subject", "Sender Domain", "Document Type",
     "PO Number", "Matched Task", "Asana Link", "Proposed Action", "Comments",
-    "DECISION", "Amendment Notes",
+    "DECISION", "Amendment Notes", "Processed At", "Response Needed", "Response Status",
 ]
 
 
@@ -94,6 +94,17 @@ def main():
 
         insights = item.get("insights", {})
 
+        # Response-needed flag (Pending col N=14) + status note (col O=15).
+        # Default to "yes" so every newly written email is flagged for Giles to
+        # review whether an outbound reply is needed. Set "no" (plus a status
+        # note) from the portal / sheet when no response is required.
+        response_needed = (item.get("response_needed") or "").strip().lower()
+        if response_needed not in ("yes", "no"):
+            response_needed = "yes"
+        has_issues = bool(insights.get("has_issues"))
+        response_status = item.get("response_status", "") or (
+            "check for reply needed" + (" — has flagged issues" if has_issues else ""))
+
         row = [
             email_id,
             item.get("received_at", ""),
@@ -107,6 +118,9 @@ def main():
             item.get("comment_to_push", ""),  # J - Comments
             "",   # K - DECISION — blank for Giles to fill
             "",   # L - Amendment Notes
+            "",   # M - Processed At — stamped by qa_sync --push on archive
+            response_needed,      # N - Response Needed
+            response_status,      # O - Response Status
         ]
 
         ws.append_row(row, value_input_option="USER_ENTERED")

@@ -1,0 +1,89 @@
+projects fetched: 869
+  scanned 0/869
+  scanned 50/869
+  scanned 100/869
+  scanned 150/869
+  scanned 200/869
+  scanned 250/869
+  scanned 300/869
+  scanned 350/869
+  scanned 400/869
+  scanned 450/869
+  scanned 500/869
+  scanned 550/869
+  scanned 600/869
+WROTE C:\Users\GilesHugo\SES_Workspace\data\audit\asana_projects_audit.csv
+
+Asana usage audit v2 — 2026-09-15T10:07:11
+Total 621 | active 621 | archived 248
+
+ACTIVE classification:
+  CONTROL/NAMED has-open       289
+  JOB-BOARD has-open           232
+  JOB-BOARD done/dormant       30
+  CONTROL no-open              28
+  CONTROL empty                22
+  TEST/CRUFT                   18
+  JOB-BOARD empty              2
+
+Active projects WITH open (incomplete) work: 538
+Active projects sampled with ZERO tasks: 25
+
+Top 30 active by sample size:
+    200 tasks | inc=True | act 2026-09-14 | Improvements / Change Management Control
+    200 tasks | inc=True | act 2026-09-15 | 1.2 - Goods in / Order Requests
+    200 tasks | inc=True | act 2026-09-14 | 1 -  Supplier List / Engagement
+    200 tasks | inc=True | act 2026-09-14 | Design Feedback / Drawing Issues
+    200 tasks | inc=True | act 2026-09-15 | Reviews CONTROL
+    200 tasks | inc=True | act 2026-09-14 | Stock Control / Kanban - Tracking
+    200 tasks | inc=False | act 2026-09-11 | 1.0 - QC issues / Parts Needed / Causing delays
+    200 tasks | inc=True | act 2026-09-15 | 1.3 Project Orders
+    200 tasks | inc=True | act 2026-09-15 | 1.1- Picking / Order control
+    200 tasks | inc=True | act 2026-09-15 | 1.4 Purchasing Dept
+    200 tasks | inc=True | act 2026-09-15 | 3.1 Build Schedule
+    200 tasks | inc=True | act 2026-09-14 | Holiday for Employees
+    200 tasks | inc=True | act 2026-09-15 | 0 - Order Numbers
+    200 tasks | inc=True | act 2026-09-15 | Sales
+    200 tasks | inc=True | act 2026-09-15 | Invoices
+    200 tasks | inc=True | act 2026-09-14 | Callouts
+    200 tasks | inc=True | act 2026-09-15 | 9 - Training & Procedures
+    200 tasks | inc=True | act 2026-09-10 | Tool Control
+    200 tasks | inc=True | act 2026-09-10 | z - Hydraulic Hose List
+    200 tasks | inc=True | act 2026-09-14 | 4.0 Service Schedule
+    200 tasks | inc=True | act 2026-09-15 | Design Inbox
+    200 tasks | inc=True | act 2026-09-14 | MC PO REQUIRED - VARIATIONS TO QUOTE
+    200 tasks | inc=True | act 2026-09-15 | 2.1 PLC Wiring Diagrams - Do not tick complete
+    200 tasks | inc=True | act 2026-09-14 | 4.1 Service Rack
+    200 tasks | inc=True | act 2026-09-09 | CRM - Contacts
+    200 tasks | inc=True | act 2026-09-15 | Training Records
+    200 tasks | inc=True | act 2026-09-08 | Photos of Lifts
+    200 tasks | inc=True | act 2026-09-14 | Clothing PPE  stock Control
+    200 tasks | inc=False | act 2026-07-23 | Stock Fixings Control
+    200 tasks | inc=True | act 2026-09-15 | 2.0 Drawing Status/Control
+
+Active ZERO-task projects (archive candidates):
+  Crowd Funding                                              | cre 2019-02-27 mod 2026-02-25
+  OWO Old War Office 4th Lift. North Quadrant  Project       | cre 2021-01-20 mod 2026-02-25
+  Battersea Power Station, Project Floyd Project             | cre 2021-06-21 mod 2026-02-25
+  Cotham Road 228, Kew, Australia (Kew Apartments)  Project  | cre 2021-07-02 mod 2026-02-25
+  Job Number -  Job Name Install                             | cre 2022-02-24 mod 2026-02-25
+  BUILD - Nominal code                                       | cre 2022-12-14 mod 2026-02-25
+  ARCHIVED HR TASKS / PEOPLE                                 | cre 2022-12-15 mod 2026-02-25
+  Adam's test project                                        | cre 2023-12-20 mod 2026-02-25
+  Router Network  emails                                     | cre 2024-03-22 mod 2026-02-25
+  0504                                                       | cre 2024-07-11 mod 2026-02-25
+  DIOR Notification and problem status                       | cre 2024-08-09 mod 2026-02-25
+  admin@tbeng.com.au's previously assigned tasks             | cre 2025-01-02 mod 2025-01-02
+  Servicing Quotes                                           | cre 2025-02-03 mod 2025-06-18
+  Proudlock - Analysis                                       | cre 2025-02-24 mod 2025-07-09
+  Property Developers                                        | cre 2025-04-09 mod 2025-06-18
+  https://app.asana.com/1/357939803556123/project/3587909558 | cre 2025-05-19 mod 2025-05-19
+  https://app.asana.com/1/357939803556123/project/1122520870 | cre 2025-05-27 mod 2025-06-03
+  goods                                                      | cre 2025-08-18 mod 2025-09-23
+  Greg Miller's previously assigned tasks                    | cre 2026-06-02 mod 2026-06-02
+  build                                                      | cre 2026-07-16 mod 2026-07-16
+  1595 St George’s House                                     | cre 2026-07-28 mod 2026-08-31
+  1.2                                                        | cre 2026-09-07 mod 2026-09-08
+  __invalid__                                                | cre 2026-09-12 mod 2026-09-12
+  Honest Elevator Company (HEC) Ireland - Prospects & Price  | cre 2026-09-14 mod 2026-09-14
+  LiftX Ireland - Prospects & Price Guide                    | cre 2026-09-14 mod 2026-09-14

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  10/09/2026  14:44
+============================================================
+With:         Richard Purch 309
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call was a brief exchange between Richard Purch and Fatima Barros, primarily discussing their mutual dislike for Toyota's servicing company, eMac, and confirming that no invoice from eMac was received. The call appears to be informal with no specific goals or follow-up actions identified.
+
+--- RECAP --------------------------------------------------
+Richard Purch and Fatima Barros discussed the absence of an invoice from eMac, the company servicing Toyota's advance, with Fatima noting no invoice was seen on emails.Both expressed negative opinions about eMac and Toyota's servicing, indicating dissatisfaction.There were no specific decisions, goals, or action items established during the call.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

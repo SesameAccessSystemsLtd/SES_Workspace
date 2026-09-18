@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  17/09/2026  16:14
+============================================================
+With:         +441536264869 01536 264869
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo from Sesame Access discussing a bespoke CT3 pressure mat sensor with Grant from Med Page, who confirmed they are a reseller and can potentially produce custom sizes. Giles plans to send an email with specifications for further review and follow-up.
+
+--- RECAP --------------------------------------------------
+Giles Hugo from Sesame Access contacted Grant at Med Page regarding a CT3 pressure mat sensor, seeking a bespoke size of approximately 1 meter by 200mm, with an expected annual usage of 20 units, increasing to 60 units.Grant confirmed that Med Page is a reseller of the product and has previously produced bespoke mats for orders of around 500 units, though smaller quantities are possible.Giles explained that the pressure mats are intended for a platform to detect edge sensitivity on a moving platform, and will send a detailed brief via email.Grant provided his email address (Grant at EZLynkUK.co.uk) for Giles to send the specifications, and indicated he would discuss the request with his MD and respond the following day.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send an email with the detailed specifications and brief to Grant at EZLynkUK.co.uk for review.Grant will discuss the bespoke order request with his MD and will follow up with Giles tomorrow.
+
+(Full transcript: RC web portal only — no RingSense API)

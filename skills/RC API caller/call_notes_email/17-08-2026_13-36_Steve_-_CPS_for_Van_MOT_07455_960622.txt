@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  17/08/2026  13:36
+============================================================
+With:         Steve - CPS for Van MOT 07455 960622
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a phone call between Giles Hugo and Steve from Van MOT, primarily to discuss the cost and duration of a clutch repair and to process an invoice payment over the phone.
+
+--- RECAP --------------------------------------------------
+Steve from Van MOT informed Giles Hugo that the clutch repair, including flywheel, clutch, and bolts, costs 1830 and takes approximately 8.5 hours.Giles Hugo agreed to the repair cost and requested to pay the invoice over the phone.Steve confirmed he could process the payment via card and provided instructions for entering the credit card details.Giles provided the credit card information, which Steve entered and confirmed as registered to Katie 147 LF.Steve confirmed the payment was successful and stated he would email the invoice to Giles Hugo.
+
+--- TASKS --------------------------------------------------
+Steve from Van MOT will email the invoice to Giles Hugo.
+
+(Full transcript: RC web portal only — no RingSense API)

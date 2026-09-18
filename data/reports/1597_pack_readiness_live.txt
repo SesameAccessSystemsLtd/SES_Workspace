@@ -1,0 +1,402 @@
+PROJECT 1597 — pack readiness (rule: latest order delivery +3d for lasercut only)  [2026-09-17]
+====================================================================================================
+
+1597.1008.D1.MachineRoomCabinet
+  build due: 2026-09-21 | readiness: 2026-09-21 [+3d (lasercut)]  ⚠ 10 unconfirmed
+  pack: https://app.asana.com/1/357939803556123/task/1218237466504803
+      due -          UNCONFIRMED [laser] NBSS/Sesame          NBSS BOM - 1597 - Forrest Road Ent
+          https://app.asana.com/1/357939803556123/task/1218239094998016
+      due -          UNCONFIRMED [laser] NBSS/Laser Cut       NBSS BOM - 1597 - Forrest Road Ent
+          https://app.asana.com/1/357939803556123/task/1218239094998016
+      due -          UNCONFIRMED [laser] NBSS/Welded by Sesam NBSS BOM - 1597 - Forrest Road Ent
+          https://app.asana.com/1/357939803556123/task/1218239094998016
+      due -          UNCONFIRMED [laser] NBSS/Sesame          NBSS BOM - 1597 - Forrest Road Ent
+          https://app.asana.com/1/357939803556123/task/1218239094998016
+      due 2026-09-07 confirmed   RS Components        21618
+          https://app.asana.com/1/357939803556123/task/1218239398212045
+      due 2026-09-07 confirmed   RS Components        21618
+          https://app.asana.com/1/357939803556123/task/1218239398212045
+      due 2026-09-07 confirmed   RS Components        21618
+          https://app.asana.com/1/357939803556123/task/1218239398212045
+      due 2026-09-09 UNCONFIRMED Bes                  Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-09 UNCONFIRMED Amazon               Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-14 UNCONFIRMED JAJO                 Long Leading BOM - 1597 - Forrest  (db)
+          https://app.asana.com/1/357939803556123/task/1218240935710976
+      due -          UNCONFIRMED Hydraulic Supplier   Long Leading BOM - 1597 - Forrest 
+          https://app.asana.com/1/357939803556123/task/1218240935710976
+      due 2026-09-07 UNCONFIRMED Related Fluid        Long Leading BOM - 1597 - Forrest  (db)
+          https://app.asana.com/1/357939803556123/task/1218240935710976
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+
+1597.7110.C19w
+  build due: 2026-09-21 | readiness: 2026-09-21 [+3d (lasercut)]  ⚠ 3 unconfirmed
+  pack: https://app.asana.com/1/357939803556123/task/1218237285311358
+      due -          UNCONFIRMED Hydraulics Supplier  Long Leading BOM - 1597 - Forrest 
+          https://app.asana.com/1/357939803556123/task/1218240935710976
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+
+1597.7110.G.ScissorLiftFrame.S
+  build due: 2026-09-21 | readiness: 2026-09-21 [+3d (lasercut)]  ⚠ 9 unconfirmed
+  pack: https://app.asana.com/1/357939803556123/task/1218237285311368
+      due -          UNCONFIRMED [laser] NBSS/Welded by Sesam NBSS BOM - 1597 - Forrest Road Ent
+          https://app.asana.com/1/357939803556123/task/1218239094998016
+      due -          UNCONFIRMED [laser] NBSS/Laser Cut       NBSS BOM - 1597 - Forrest Road Ent
+          https://app.asana.com/1/357939803556123/task/1218239094998016
+      due -          UNCONFIRMED [laser] NBSS/Sesame          NBSS BOM - 1597 - Forrest Road Ent
+          https://app.asana.com/1/357939803556123/task/1218239094998016
+      due 2026-09-07 confirmed   RS Components        21618
+          https://app.asana.com/1/357939803556123/task/1218239398212045
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+
+1597.7110.I.MT.PitTrimPlatform
+  build due: 2026-09-21 | readiness: 2026-09-28 [as-delivered]  ⚠ LATE vs build by 7d  ⚠ 10 unconfirmed
+  pack: https://app.asana.com/1/357939803556123/task/1218237285311373
+      due 2026-09-21 UNCONFIRMED Marine Lacquer       1597.1008.Q1.DoubleLiftingJig.
+          https://app.asana.com/1/357939803556123/task/1218237466504808
+      due 2026-09-21 UNCONFIRMED Marine Lacquer       1597.1008.Q1.DoubleLiftingJig.
+          https://app.asana.com/1/357939803556123/task/1218237466504808
+      due 2026-09-21 UNCONFIRMED Marine Lacquer       1597.1008.Q1.DoubleLiftingJig.
+          https://app.asana.com/1/357939803556123/task/1218237466504808
+      due 2026-09-23 confirmed   MayTec               21615-1597
+          https://app.asana.com/1/357939803556123/task/1218239396667507
+      due 2026-09-23 confirmed   MayTec               21615-1597
+          https://app.asana.com/1/357939803556123/task/1218239396667507
+      due 2026-09-28 UNCONFIRMED Anodising            Surface Finish BOM - 1597 - Forres (db)
+          https://app.asana.com/1/357939803556123/task/1218238914601915
+      due 2026-09-28 UNCONFIRMED Anodising            Surface Finish BOM - 1597 - Forres (db)
+          https://app.asana.com/1/357939803556123/task/1218238914601915
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+
+1597.7110.B.Platform-MT
+  build due: 2026-09-21 | readiness: 2026-10-02 [as-delivered]  ⚠ LATE vs build by 11d  ⚠ 29 unconfirmed
+  pack: https://app.asana.com/1/357939803556123/task/1218237285311353
+      due 2026-10-02 UNCONFIRMED Machining            21647-1597
+          https://app.asana.com/1/357939803556123/task/1218239225153654
+      due 2026-10-02 UNCONFIRMED Machining            21647-1597
+          https://app.asana.com/1/357939803556123/task/1218239225153654
+      due 2026-10-02 UNCONFIRMED Machining            21647-1597
+          https://app.asana.com/1/357939803556123/task/1218239225153654
+      due 2026-09-21 UNCONFIRMED Marine Lacquer       1597.1008.Q1.DoubleLiftingJig.
+          https://app.asana.com/1/357939803556123/task/1218237466504808
+      due 2026-09-21 UNCONFIRMED Marine Lacquer       1597.1008.Q1.DoubleLiftingJig.
+          https://app.asana.com/1/357939803556123/task/1218237466504808
+      due 2026-09-21 UNCONFIRMED Marine Lacquer       1597.1008.Q1.DoubleLiftingJig.
+          https://app.asana.com/1/357939803556123/task/1218237466504808
+      due 2026-09-21 UNCONFIRMED Marine Lacquer       1597.1008.Q1.DoubleLiftingJig.
+          https://app.asana.com/1/357939803556123/task/1218237466504808
+      due -          UNCONFIRMED [laser] NBSS/Laser Cut       NBSS BOM - 1597 - Forrest Road Ent
+          https://app.asana.com/1/357939803556123/task/1218239094998016
+      due 2026-09-09 UNCONFIRMED Sesame               Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-24 confirmed   Tape Switch          21611-1597
+          https://app.asana.com/1/357939803556123/task/1218239426597875
+      due 2026-09-24 confirmed   Tape Switch          21611-1597
+          https://app.asana.com/1/357939803556123/task/1218239426597875
+      due 2026-09-09 UNCONFIRMED Weber Cox            Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-28 UNCONFIRMED Anodising            Surface Finish BOM - 1597 - Forres (db)
+          https://app.asana.com/1/357939803556123/task/1218238914601915
+      due 2026-09-28 UNCONFIRMED Anodising            Surface Finish BOM - 1597 - Forres (db)
+          https://app.asana.com/1/357939803556123/task/1218238914601915
+      due 2026-09-28 UNCONFIRMED Anodising            Surface Finish BOM - 1597 - Forres (db)
+          https://app.asana.com/1/357939803556123/task/1218238914601915
+      due 2026-09-28 UNCONFIRMED Anodising            Surface Finish BOM - 1597 - Forres (db)
+          https://app.asana.com/1/357939803556123/task/1218238914601915
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+
+1597.7110.J.Manual MT_Barrier
+  build due: 2026-09-21 | readiness: 2026-10-02 [as-delivered]  ⚠ LATE vs build by 11d  ⚠ 22 unconfirmed
+  pack: https://app.asana.com/1/357939803556123/task/1218237285311378
+      due 2026-09-24 confirmed   Magnet Schultz       21640-1597
+          https://app.asana.com/1/357939803556123/task/1218239316880566
+      due 2026-10-02 UNCONFIRMED Machining            21647-1597
+          https://app.asana.com/1/357939803556123/task/1218239225153654
+      due 2026-10-02 UNCONFIRMED Machining            21647-1597
+          https://app.asana.com/1/357939803556123/task/1218239225153654
+      due 2026-10-02 UNCONFIRMED Machining            21647-1597
+          https://app.asana.com/1/357939803556123/task/1218239225153654
+      due 2026-09-10 UNCONFIRMED Welded by Sesame     Machining BOM - 1597 - Forrest Roa (db)
+          https://app.asana.com/1/357939803556123/task/1218253413557183
+      due 2026-09-23 confirmed   MayTec               21615-1597
+          https://app.asana.com/1/357939803556123/task/1218239396667507
+      due 2026-09-24 confirmed   Magnet Schultz       21640-1597
+          https://app.asana.com/1/357939803556123/task/1218239316880566
+      due 2026-09-07 confirmed   RS Components        21618
+          https://app.asana.com/1/357939803556123/task/1218239398212045
+      due 2026-09-09 UNCONFIRMED Sesame               Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-09 UNCONFIRMED first4magnets        Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-09 UNCONFIRMED Sesame               Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-09 UNCONFIRMED Sesame               Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-28 UNCONFIRMED Anodising            Surface Finish BOM - 1597 - Forres (db)
+          https://app.asana.com/1/357939803556123/task/1218238914601915
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+
+1597.1010.I.ScissorLift_Single
+  build due: 2026-09-21 | readiness: 2026-10-22 [as-delivered]  ⚠ LATE vs build by 31d  ⚠ 53 unconfirmed
+  pack: https://app.asana.com/1/357939803556123/task/1218237466504813
+      due 2026-09-07 UNCONFIRMED Yellow Zinc Plating  Surface Finish BOM - 1597 - Forres (db)
+          https://app.asana.com/1/357939803556123/task/1218238914601915
+      due 2026-09-07 UNCONFIRMED Yellow Zinc Plating  Surface Finish BOM - 1597 - Forres (db)
+          https://app.asana.com/1/357939803556123/task/1218238914601915
+      due 2026-09-07 UNCONFIRMED Yellow Zinc Plating  Surface Finish BOM - 1597 - Forres (db)
+          https://app.asana.com/1/357939803556123/task/1218238914601915
+      due 2026-09-10 UNCONFIRMED Welded by Sesame     Machining BOM - 1597 - Forrest Roa (db)
+          https://app.asana.com/1/357939803556123/task/1218253413557183
+      due 2026-09-10 UNCONFIRMED Welded by Sesame     Machining BOM - 1597 - Forrest Roa (db)
+          https://app.asana.com/1/357939803556123/task/1218253413557183
+      due 2026-09-10 UNCONFIRMED Welded by Sesame     Machining BOM - 1597 - Forrest Roa (db)
+          https://app.asana.com/1/357939803556123/task/1218253413557183
+      due 2026-09-10 UNCONFIRMED Welded by Sesame     Machining BOM - 1597 - Forrest Roa (db)
+          https://app.asana.com/1/357939803556123/task/1218253413557183
+      due 2026-09-10 UNCONFIRMED Welded by Sesame     Machining BOM - 1597 - Forrest Roa (db)
+          https://app.asana.com/1/357939803556123/task/1218253413557183
+      due -          UNCONFIRMED [laser] NBSS/Laser Cut       NBSS BOM - 1597 - Forrest Road Ent
+          https://app.asana.com/1/357939803556123/task/1218239094998016
+      due 2026-09-09 UNCONFIRMED Sesame               Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-09 UNCONFIRMED Sesame               Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-09 UNCONFIRMED VUBA                 Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-07 confirmed   RS Components        21618
+          https://app.asana.com/1/357939803556123/task/1218239398212045
+      due 2026-09-09 UNCONFIRMED Sesame               Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-09 UNCONFIRMED Sesame               Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-09 UNCONFIRMED Sesame               Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-09 UNCONFIRMED Euro-Bearings        Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-09 UNCONFIRMED OnlineBearings       Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-09 UNCONFIRMED OnlineBearings       Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-09 UNCONFIRMED OnlineBearings       Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-09 UNCONFIRMED SimplyBearings       Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-09 UNCONFIRMED Bearing Supplier     Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-09 UNCONFIRMED Bearing Supplier     Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-09 UNCONFIRMED Sesame               Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-10-22 UNCONFIRMED ABCO                 21630-1597
+          https://app.asana.com/1/357939803556123/task/1218240884022851
+      due 2026-10-22 UNCONFIRMED ABCO                 21630-1597
+          https://app.asana.com/1/357939803556123/task/1218240884022851
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+
+1597.Forrest Road, Edinburgh_EngineeringDrawing
+  build due: 2026-09-21 | readiness: 2026-11-24 [as-delivered]  ⚠ LATE vs build by 64d  ⚠ 23 unconfirmed
+  pack: https://app.asana.com/1/357939803556123/task/1218237285311383
+      due -          UNCONFIRMED Plastics Supplier    Machining BOM - 1597 - Forrest Roa
+          https://app.asana.com/1/357939803556123/task/1218253413557183
+      due 2026-09-23 confirmed   MayTec               21615-1597
+          https://app.asana.com/1/357939803556123/task/1218239396667507
+      due 2026-09-09 UNCONFIRMED Sesame               Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-18 confirmed   IGUS                 21617-1597
+          https://app.asana.com/1/357939803556123/task/1218239425962514
+      due 2026-09-18 confirmed   IGUS                 21617-1597
+          https://app.asana.com/1/357939803556123/task/1218239425962514
+      due 2026-10-14 UNCONFIRMED gsfslides            21616-1597
+          https://app.asana.com/1/357939803556123/task/1218239399119153
+      due 2026-09-18 confirmed   IGUS                 21617-1597
+          https://app.asana.com/1/357939803556123/task/1218239425962514
+      due 2026-09-09 UNCONFIRMED selfadhesive         Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-09 UNCONFIRMED selfadhesive         Sesame BOM - 1597 - Forrest Road E
+          https://app.asana.com/1/357939803556123/task/1218239405481935
+      due 2026-09-24 confirmed   Tape Switch          21611-1597
+          https://app.asana.com/1/357939803556123/task/1218239426597875
+      due 2026-11-24 UNCONFIRMED Bellows Supplier     21612-1597
+          https://app.asana.com/1/357939803556123/task/1218239426956787
+      due 2026-10-26 confirmed   Gapp Automation      21608-1597
+          https://app.asana.com/1/357939803556123/task/1218239319439320
+      due 2026-09-28 UNCONFIRMED Anodising            Surface Finish BOM - 1597 - Forres (db)
+          https://app.asana.com/1/357939803556123/task/1218238914601915
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+      due 2026-09-18 UNCONFIRMED [laser] Laser Cut            21622-1597 - Exact - Laser Cut BOM
+          https://app.asana.com/1/357939803556123/task/1218238770702796
+
+1597.1008.Q1.DoubleLiftingJig
+  build due: 2026-09-21 | readiness: -          []
+  pack: https://app.asana.com/1/357939803556123/task/1218237466504808
+
+1597.7110.E.Covers&Connectors
+  build due: 2026-09-21 | readiness: -          []
+  pack: https://app.asana.com/1/357939803556123/task/1218237285311363
+
+1597 - Forrest Road - QC Control
+  build due: 2026-10-30 | readiness: -          []
+  pack: https://app.asana.com/1/357939803556123/task/1216653359849794

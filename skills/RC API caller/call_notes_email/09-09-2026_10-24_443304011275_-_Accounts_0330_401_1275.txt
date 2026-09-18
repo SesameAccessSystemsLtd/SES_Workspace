@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  09/09/2026  10:24
+============================================================
+With:         443304011275 - Accounts 0330 401 1275
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a voicemail from an accounts representative at HBC Construction Limited, requesting to verbally confirm bank details with Fatima Barros for setting up a subby ledger. No confirmation or further action was completed during the call.
+
+--- RECAP --------------------------------------------------
+The caller, from HBC Construction Limited, requested to speak with someone in the accounts department to confirm bank details for setting up a subby ledger.Fatima Barros responded that she may be able to help but did not provide any bank details or confirm any information during the call.The caller indicated they had already set up the subby ledger but needed verbal confirmation of bank details.The call ended without any further details or actions taken.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

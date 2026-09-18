@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  26/08/2026  11:50
+============================================================
+With:         Dave Burt IDL 07810 558753
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo and Dave Burt discussing project drawings, quotes, and order processing for powder coating and fabrication jobs, clarifying order details, and addressing confusion over multiple quotes and parts. Giles plans to send a purchase order and updated parts list to Dave.
+
+--- RECAP --------------------------------------------------
+Giles Hugo and Dave Burt discussed the drawings and quotes related to the Langley Street refurb project, including issues with outdated drawings and multiple quotes for different parts.They clarified that the initial order was for a single panel for the old war office, but additional panels and parts were brought in later, causing confusion over the correct order and processing.Giles agreed to send a purchase order covering all parts now ready for powder coating, including the platform and panels, and to clarify the details with the team to prevent further confusion.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send a purchase order to Dave Burt covering all the parts for the Langley Street project, including the platform and panels.Giles Hugo will include drawings and dimensions for the parts in the order email.Dave Burt will process the order once received and update the invoicing accordingly.Giles Hugo will investigate the platform and clarify its details with the team to ensure proper processing.
+
+(Full transcript: RC web portal only — no RingSense API)

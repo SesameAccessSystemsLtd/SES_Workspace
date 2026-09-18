@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  21/08/2026  11:06
+============================================================
+With:         Jon TransDev Bearings - 447568427776 07568 427776
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a voicemail call where Giles Hugo discussed product specifications and clarified details about split bearings and a specific bearing size with Jon TransDev Bearings. They agreed to follow up next week.
+
+--- RECAP --------------------------------------------------
+Giles Hugo, who is on leave but handling calls, contacted Jon TransDev Bearings to clarify product details related to split bearings with Teflon honeycomb inside and a specific bearing size.Giles specified that the split bearings are bronze with Teflon honeycomb, and they are requesting these for their application.Regarding the bearings, Giles indicated the correct size should be 212, with a 60 mm inner diameter (ID) and an outer diameter (OD) of 605 mm, to match existing bearings.Jon acknowledged the specifications and agreed to confirm the details, stating he will get back to Giles by Monday.The call concluded with mutual well-wishes and plans to follow up next week.
+
+--- TASKS --------------------------------------------------
+Jon TransDev Bearings will confirm the product specifications and follow up with Giles Hugo by Monday.
+
+(Full transcript: RC web portal only — no RingSense API)

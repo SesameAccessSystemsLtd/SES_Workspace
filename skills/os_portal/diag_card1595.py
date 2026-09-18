@@ -13,7 +13,7 @@ for s in k["subtasks"]:
     btn = (f'<button class="acc" onclick="stageAction(\'{m._jsesc(json.dumps({"action":"run_bom_pipeline","job":k["job"],"control":k["ctl"]["name"],"control_gid":k["ctl"]["gid"],"sub_bom":s["name"],"sub_bom_gid":s["gid"],"dropbox_url":s["dropbox"]}))}\', \'BOM pipeline push\')">▶ Stage to pipeline</button>'
            if s.get("dropbox") else '<span class="muted">no Dropbox link</span>')
     subs += (f'<li><b style="color:var(--red)">OPEN</b> '
-             f'<a href="{m.ASANA_BASE}/850066254549317/{s["gid"]}">{m.esc(s["name"])}</a> '
+             f'<a href="{m.ASANA_TASK_BASE}/{s["gid"]}">{m.esc(s["name"])}</a> '
              f'<span class="muted">({m.esc(s.get("due_on") or "no due")})</span> · {btn}</li>')
     print("  sub li len:", len(subs))
 st = k.get("steel")

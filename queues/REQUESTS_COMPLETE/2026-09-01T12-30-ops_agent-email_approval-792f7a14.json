@@ -1,0 +1,14 @@
+{
+  "request_id": "ae304c04-7862-4623-863f-0925f3fe231b",
+  "source": "email_approval_sheet",
+  "row_index": 11,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy78AAA=",
+  "subject": "Amazon Invoice Available for 21558-1486 (Invoice No. GB623HSQABEY)",
+  "task_gid": "1217770225935589",
+  "task_name": "21558-1486 - Amazon - Patina Finish Rub solutions",
+  "asana_url": "https://app.asana.com/0/0/1217770225935589",
+  "action": "(Matched via PO Number in Local DB); [SQR-ledger] no SQR match for no-reply@amazon.com; Note added to description: Invoice from Amazon - £17.79 (2026-08-30)",
+  "comment_to_push": "<a data-asana-gid=\"369446862164512\" data-asana-type=\"user\">@Giles</a> Purchasing update\nEmail received: 2026-08-30T23:48:43Z\nEmail: Amazon Invoice Available for 21558-1486 (Invoice No. GB623HSQABEY)\nMatch basis: (Matched via PO Number in Local DB); [SQR-ledger] no SQR match for no-reply@amazon.com\n- Note added to description: Invoice from Amazon - £17.79 (2026-08-30)",
+  "decision": "A",
+  "created_at": "2026-09-01T12:30:32.622026+00:00"
+}

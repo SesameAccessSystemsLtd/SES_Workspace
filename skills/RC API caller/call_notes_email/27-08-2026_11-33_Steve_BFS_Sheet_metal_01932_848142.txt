@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  27/08/2026  11:33
+============================================================
+With:         Steve BFS Sheet metal 01932 848142
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles from Sesame inquiring about aluminum sheet stock at BFS Sheet Metal, confirming availability of specific sizes, and arranging for cutting and pickup. The conversation resulted in an order for two 3-meter lengths of 3mm thick aluminum sheets, with plans for BFS to cut and prepare the materials for pickup today.
+
+--- RECAP --------------------------------------------------
+Giles from Sesame asked BFS Sheet Metal about the stock of aluminum sheets, specifically 3mm and 5mm thicknesses, and requested three strips of 200mm width with specific lengths totaling approximately 2.118 meters each.BFS confirmed they have plenty of 3mm sheets but limited 5mm sheets, and verified that they have a sheet long enough to cut the required lengths, including a 2-meter sheet suitable for the 2.118-meter strips.Giles requested to double the order to two sets of the same dimensions, resulting in a total of six strips, and asked BFS to cut and prepare the materials for pickup today.BFS agreed to cut the sheets accordingly and confirmed they will prepare the order for collection, which Giles will pick up later today, and will send an email confirmation.
+
+--- TASKS --------------------------------------------------
+Giles from Sesame will send an email confirming the order details and pickup arrangements.BFS Sheet Metal will cut the aluminum sheets to the specified dimensions and prepare them for pickup today.
+
+(Full transcript: RC web portal only — no RingSense API)

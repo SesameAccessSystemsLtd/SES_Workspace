@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  09/09/2026  10:24
+============================================================
+With:         - Purchasing 01268 733883
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call was a check-in between Giles Hugo and Lewis from Laser 24 regarding upcoming laser cutting jobs, capabilities, and quoting timelines. Giles discussed current workload, specific job requirements, and the need for clear labeling and traceability to prevent errors.
+
+--- RECAP --------------------------------------------------
+Giles Hugo and Lewis discussed Giles's current laser cutting workload, which includes small jobs and a few larger projects, with one currently landing and ready for quoting.Giles explained that their laser supplier capabilities have expanded, now allowing for folding capabilities, which previously caused issues with quoting.Giles highlighted challenges with rework and contract negotiations due to discrepancies in parts and drawings, emphasizing the importance of clear labeling and traceability to prevent errors.The typical lead time for parts from Gravity Supplies is around 6 days for standard parts and approximately 2 weeks for bombs.Giles requested that labels and proper mapping be used to prevent mix-ups, especially for parts with visible features, and suggested track and trace methods instead of engraving.Giles will send over the current inquiry for a new job to Laser 24 to obtain a quote, and will follow up due to some technical issues logging into his computer.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send the current laser cutting inquiry to Lewis at Laser 24 as soon as possible.Giles Hugo will provide the estimated duration for the inquiry once he resolves his computer login issues.
+
+(Full transcript: RC web portal only — no RingSense API)

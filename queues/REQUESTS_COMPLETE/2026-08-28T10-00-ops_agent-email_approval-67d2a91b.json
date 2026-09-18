@@ -1,0 +1,14 @@
+{
+  "request_id": "185106ee-2b72-4548-9559-ffe08edbf41c",
+  "source": "email_approval_sheet",
+  "row_index": 49,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy6pAAA=",
+  "subject": "RE: Bellows - Langley Steet",
+  "task_gid": "1216850437678797",
+  "task_name": "21202-1569 - Machguard - Brooks Roller shutter blind - 28044",
+  "asana_url": "https://app.asana.com/0/0/1216850437678797",
+  "action": "AMENDMENT (Giles overrode proposed action):\nOriginal: (Domain Fallback: 'machguard'); Note added to description: Quote from Machguard - £1262.55 (2026-08-27)\nAmendment: Wrong task - this 21202 is already closed out and correct task is https://app.asana.com/1/357939803556123/project/1129657506061421/task/1217816924994537?focus=true",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-08-27T08:06:48Z\nEmail: RE: Bellows - Langley Steet \nMatch basis: (Domain Fallback: 'machguard')\n- Note added to description: Quote from Machguard - £1262.55 (2026-08-27)",
+  "decision": "M",
+  "created_at": "2026-08-28T10:00:36.454348+00:00"
+}

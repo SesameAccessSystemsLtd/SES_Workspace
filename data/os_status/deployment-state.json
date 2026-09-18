@@ -1,0 +1,185 @@
+{
+  "meta": {
+    "title": "Procurement & BOM Deployment Tracker",
+    "generated": "",
+    "last_updated": "2026-08-27",
+    "owner": "Hermes + Giles",
+    "note": "State lives in this JSON (data/os_status/deployment-state.json). Edit state here; render via skills/os_portal/build_deployment_tracker.py. Reference a stage in chat as P1-P8; an edge case as EC-<stage>-N. Update via the documented protocol (Hermes logs a change, Giles verifies, then signs off)."
+  },
+  "stages": [
+    {
+      "id": "P1",
+      "name": "Drawing-to-Part Assignment",
+      "summary": "Map each part to its parent assembly drawing / build pack",
+      "status": "in_progress",
+      "last_moved": "2026-08-27",
+      "data_routing": "Asana: Build Packs reference field + description append. ops.db: parts_control.build_assembly_pack_gid mirror.",
+      "outstanding": [
+        "DONE 2026-08-27: added 'pack_assign' action type to execute_requests.py (sets Build Packs reference 1211660742155293 + appends '{qty} off in Assembly Pack {pack}' + mirrors parts_control.build_assembly_pack_gid, REQUESTS-gated, phantom-GID-safe).",
+        "DONE 2026-08-27: unassigned_parts_net.py built - found 256 unassigned parts across build jobs, wrote CSV. This is the missing-metadata detector.",
+        "DONE 2026-08-27: stage_pack_proposals.py (overnight chain orchestrator) built - computes part->pack candidates, stages REQUESTS for UNAMBIGUOUS only, flags ambiguous/no-pack to review CSV. Dry-run: 1 confirmed / 109 ambiguous / 148 no-pack - validates the skill warning that prefix-based auto-assign over-infers (pack writes must stay REQUESTS-gated).",
+        "SCHEDULE PENDING: wire ~02:00 cron (stage_pack_proposals.py) AFTER the 01:00 mirror sync; resolve legacy per-project Dropbox folders."
+      ],
+      "edge_cases": [
+        {"id": "EC-P1-1", "title": "'+' and _revN in pack filenames break resolve_pack -> file skipped as not_found", "status": "open", "owner": "Hermes", "verified_by": null, "notes": "e.g. 1037.1014.M.Gate+Support_rev2 fails to match the Build Schedule pack. Patch resolve_pack to strip '+' and _revN."},
+        {"id": "EC-P1-2", "title": "Phantom GIDs cause 'could not fetch task' 404s on pack write", "status": "open", "owner": "Hermes", "verified_by": null, "notes": "From BOM commit Stage-5 timeout. Recovery = Giles finds real GIDs, patch parts_control.asana_task_gid, re-run drawing Stage 4. DO NOT re-run BOM commit. pack_assign handler now skips 404s safely."},
+        {"id": "EC-P1-3", "title": "No automatic flag when a parts_control row lacks any pack link after sync", "status": "done", "owner": "Hermes", "verified_by": "Hermes", "notes": "RESOLVED 2026-08-27: unassigned_parts_net.py flags unassigned parts per job + stage_pack_proposals.py classifies unique/ambiguous/no-pack. 109 ambiguous + 148 no-pack flagged for review (never auto-assigned)."}
+      ],
+      "signed_off": false,
+      "signed_off_by": null,
+      "signed_off_at": null,
+      "verify_with": "Legacy scan on one project (e.g. 1037) -> confirm pack GIDs; run --stop-after 3, confirm build_assembly_pack_gid populated; confirm execute_requests handles pack_assign."
+    },
+    {
+      "id": "P2",
+      "name": "Picking, Verification & Requisition",
+      "summary": "Verify inventory, confirm quantities, mark items for purchase",
+      "status": "in_progress",
+      "last_moved": "2026-08-17",
+      "data_routing": "Asana: parts_control stock ACTION enum (PICK/ORDER), vendor assignment, Order Numbers task. ops.db: ordering_queue, stock_inventory.",
+      "outstanding": [
+        "Add dedupe guard on ordering_queue (sesame_pn + project + vendor) - duplicate part requests",
+        "Populate lead times (suppliers.typical_lead_times_days) - currently NULL",
+        "Add 'spec_verified' + confidence flag so unmatchable/spec-unverified parts surface before RFQ"
+      ],
+      "edge_cases": [
+        {"id": "EC-P2-1", "title": "Duplicate part request appears in ordering_queue across passes", "status": "open", "owner": "Hermes", "verified_by": null, "notes": "No unique index / confirmed-vs-proposed status."},
+        {"id": "EC-P2-2", "title": "Unmatchable PN (parenthesised key suffixes) silently goes to ORDER", "status": "open", "owner": "Hermes", "verified_by": null, "notes": "e.g. (2Way-Spr), (RivetBush). Expected but should carry a spec-unverified flag."}
+      ],
+      "signed_off": false,
+      "signed_off_by": null,
+      "signed_off_at": null,
+      "verify_with": "Run ordering_compile twice -> no duplicate rows. Pick a low-stock part -> 08:00 compile proposes + REQUESTS stages (not direct write). arrived_stock_processor re-run is idempotent."
+    },
+    {
+      "id": "P3",
+      "name": "Supplier Discovery & Historical Lookup",
+      "summary": "Match parts to historical supplier performance + catalog data",
+      "status": "in_progress",
+      "last_moved": "2026-08-27",
+      "data_routing": "OFFLINE ops.db by default: supplier scores, history, lead-time, price variance. Asana gets high-level status tag only.",
+      "outstanding": [
+        "DONE 2026-08-27: sync_suppliers.py extended to pull Email/Phone/Payment/Lead-time/Supplier-type (matched by CF GID) -> 201 emails, 157 phones, 287 payment, 382 supplier-type populated (from 0). Thameside phone+email now resolve for RC-call inference.",
+        "DONE 2026-08-27: dropped UNIQUE on suppliers.primary_domain (schema migration - multiple suppliers/contacts share a domain). Now 201 domains populate (was 188). New supplier_contacts table models many contacts per company (primary + quote_sender).",
+        "Add vendor_pn_map table (Sesame-PN -> supplier PN -> supplier GID) for ambiguous part numbers",
+        "Add quote_history table (SQR -> price -> date -> selected) for supplier response-time scoring"
+      ],
+      "edge_cases": [
+        {"id": "EC-P3-1", "title": "suppliers.email/phone/domain NULL for most of 430 rows", "status": "done", "owner": "Hermes", "verified_by": "Giles", "notes": "RESOLVED 2026-08-27: extended sync_suppliers.py to map custom fields by GID. 430/430 written. UNIQUE on primary_domain dropped (Giles-approved schema fix) so shared domains (gmail.com x3 etc.) now populate."},
+        {"id": "EC-P3-2", "title": "13+ vendor-name spellings for one supplier historically", "status": "open", "owner": "Hermes", "verified_by": null, "notes": "vendor_name_normalised exists; needs grouping before trusting vendor fallback."}
+      ],
+      "signed_off": false,
+      "signed_off_by": null,
+      "signed_off_at": null,
+      "verify_with": "Run extended sync_suppliers -> contact_email/phone counts jump. Probe RC note 'Thameside 01784 449326' resolves to Thameside supplier + its open orders."
+    },
+    {
+      "id": "P4",
+      "name": "RFQ Dispatch & SQR Tracking",
+      "summary": "Generate + track RFQs tied to a unique SQR number",
+      "status": "in_progress",
+      "last_moved": "2026-08-27",
+      "data_routing": "Emails = OUTLOOK DRAFTS (never auto-send). Asana: SQR link + status tag. ops.db: rfq_outbox ledger (sent/received per SQR).",
+      "outstanding": [
+        "DONE 2026-08-27: create_rfq_draft.py builds Outlook Draft (never sends) + issues next SQR (SQR-46787 tested) + rfq_outbox ledger table; safety-verified isDraft=True/sent=False before logging.",
+        "DONE 2026-08-27: rfq_tracker.py marks sent/received + reports counts per SQR/supplier (verified).",
+        "DONE 2026-08-27: match_quote_to_sqr.py matches returned quotes by EXPLICIT SQR or by DOMAIN (separate-chain quotes) -> fills supplier_quote_ref + confirmation_number + invoice_number + captures quote_sender into supplier_contacts (per-contact reply routing). Verified on SQR-46787.",
+        "HOOK PENDING: wire 03_proposal_engine.py inbound matcher to auto-call match_quote_to_sqr on every inbound quote/confirmation/invoice"
+      ],
+      "edge_cases": [
+        {"id": "EC-P4-1", "title": "No outbound email capability at all - the email pipeline is inbound-only", "status": "done", "owner": "Hermes", "verified_by": "Hermes", "notes": "RESOLVED 2026-08-27: create_rfq_draft.py creates Outlook Drafts via Graph, issues next SQR, logs to rfq_outbox. Test draft [TEST - Hermes P4] created for Giles to review in Drafts. Never auto-sends."},
+        {"id": "EC-P4-2", "title": "SQR issuance not modelled - SQR only appears when a supplier quotes back", "status": "done", "owner": "Hermes", "verified_by": "Hermes", "notes": "RESOLVED 2026-08-27: rfq_outbox issues outbound SQRs; match_quote_to_sqr.py links returned quotes back to the issued SQR by domain/explicit-ref, holding supplier quote + confirmation + invoice numbers."},
+        {"id": "EC-P4-3", "title": "Quotes arrive in a separate chain from the RFQ request - no direct thread link", "status": "done", "owner": "Hermes", "verified_by": "Giles", "notes": "RESOLVED 2026-08-27: domain-based matching in match_quote_to_sqr.py links a separate-chain quote to the issued SQR. Quote sender captured for per-contact reply routing."},
+        {"id": "EC-P4-4", "title": "Multiple contacts per company - a quote often comes from a different person than the generic inbox", "status": "open", "owner": "Hermes", "verified_by": null, "notes": "supplier_contacts table now models many contacts/company (source=project vs quote_sender). Email-scrape for bulk reverse-engineering deferred by Hermes recommendation (mess risk); quote-sender capture is the organic safe path."}
+      ],
+      "signed_off": false,
+      "signed_off_by": null,
+      "signed_off_at": null,
+      "verify_with": "Drive RFQ-needed task -> Outlook Draft appears (NOT sent) with part list + SQR. Simulate returned quote -> 01->03 -> QA sheet HITL + rfq_outbox received tick. Assert no code path auto-sends."
+    },
+    {
+      "id": "P5",
+      "name": "Cost Push & Selection Logic",
+      "summary": "Evaluate returned quotes, select preferred vendor, update part costs",
+      "status": "blocked",
+      "last_moved": "2026-08-17",
+      "data_routing": "Itemized unit costs stay OFFLINE in ops.db po_lines + analytics portal. Asana: selected vendor task + canonical Price Ex VAT + status only.",
+      "outstanding": [
+        "Populate po_lines from parsed quote line-items (0 rows today)",
+        "Build quote_comparison view: per part all returned quotes, ranked",
+        "Compute weighted cost offline; push only chosen vendor + 'cost ok' status"
+      ],
+      "edge_cases": [
+        {"id": "EC-P5-1", "title": "purchase_orders (7) and po_lines (0) empty - no unit-cost storage layer", "status": "open", "owner": "Hermes", "verified_by": null, "notes": "The whole cost/pricing layer is unbuilt."},
+        {"id": "EC-P5-2", "title": "Risk of polluting Asana with full cost matrix", "status": "open", "owner": "Hermes", "verified_by": null, "notes": "Decision locked: keep unit costs offline; Asana carries canonical value only."}
+      ],
+      "signed_off": false,
+      "signed_off_by": null,
+      "signed_off_at": null,
+      "verify_with": "Parse a returned quote -> po_lines row per line (unit price + PN). 2+ quotes for a part -> comparator ranks + surfaces recommendation (never auto-selects). Assert no Asana field holds the full matrix."
+    },
+    {
+      "id": "P6",
+      "name": "Order Lifecycle & Delivery Pre-flight",
+      "summary": "Track live orders; proactive supplier check-ins near delivery dates",
+      "status": "in_progress",
+      "last_moved": "2026-08-17",
+      "data_routing": "Asana: Order Numbers due_on (expected) + confirmed-delivery status. ops.db: supplier_deliveries variance, purchase_orders.confirmed_delivery.",
+      "outstanding": [
+        "Populate supplier_deliveries + confirmed_delivery from Order Numbers + dispatch confirmations",
+        "Add pre-flight watcher: orders due in N days + no confirmation -> draft follow-up (Outlook Draft)",
+        "Distinguish expected vs confirmed delivery signals"
+      ],
+      "edge_cases": [
+        {"id": "EC-P6-1", "title": "expected-vs-confirmed confusion: due_on is expected, not confirmed", "status": "open", "owner": "Hermes", "verified_by": null, "notes": "No confirmed_delivery signal pipeline."},
+        {"id": "EC-P6-2", "title": "supplier_deliveries table empty; purchase_orders.expected_delivery empty", "status": "open", "owner": "Hermes", "verified_by": null, "notes": "Delivery analytics mirror unpopulated."}
+      ],
+      "signed_off": false,
+      "signed_off_by": null,
+      "signed_off_at": null,
+      "verify_with": "Open Order Number due in 3 days, no confirmation -> pre-flight drafts a check-in. Re-run idempotent. Draft reviews PO + parts + SQR, not auto-sent."
+    },
+    {
+      "id": "P7",
+      "name": "QC Exception & Issue Tracking",
+      "summary": "Handle failed inspections / damaged parts with grouped follow-up",
+      "status": "in_progress",
+      "last_moved": "2026-08-17",
+      "data_routing": "Asana: signed_off_status, associated_po_number, parts_control_gid (source of truth). ops.db qc_issues: dedupe + analytics (impact, order_value, date_out_of_project).",
+      "outstanding": [
+        "Build grouped follow-up email: select flagged parts -> ONE Outlook Draft (with attachments) linking thread history to parent part/task",
+        "Add portal view of un-signed-off QC issues grouped by supplier with select-draft button",
+        "Dedupe qc_issues by asana_task_gid + last_synced_at"
+      ],
+      "edge_cases": [
+        {"id": "EC-P7-1", "title": "Grouped follow-up email not built", "status": "open", "owner": "Hermes", "verified_by": null, "notes": "Manual-trigger HITL grouping + drafting is the right pattern (never auto-send)."},
+        {"id": "EC-P7-2", "title": "qc_issues duplicates mask real counts", "status": "open", "owner": "Hermes", "verified_by": null, "notes": "9,020 rows; dedupe by asana_task_gid + last_synced_at."}
+      ],
+      "signed_off": false,
+      "signed_off_by": null,
+      "signed_off_at": null,
+      "verify_with": "QC portal view -> select 3 issues same supplier -> Draft -> ONE Outlook Draft with 3 parts + links + attachments, no auto-send. Each row links to parent task. Re-select idempotent."
+    },
+    {
+      "id": "P8",
+      "name": "Architecture & VPS Migration Readiness",
+      "summary": "Move local scripts to a permanent always-on VPS with persistent webhooks",
+      "status": "in_progress",
+      "last_moved": "2026-08-17",
+      "data_routing": "Webhooks -> REQUESTS -> SAP (writes unchanged). ops.db shadow on VPS (/opt/ses/workspace/db/ops.db). Portal HTML served from VPS (kills file:// + PNA caveats).",
+      "outstanding": [
+        "Define + deploy public webhook receiver on VPS behind Tailscale/SSH (NEVER public) for Asana X-Hook-Signature-verified events",
+        "Consolidate VPS env-var set (D4: DEEPSEEK, ASANA_PAT, PURCHASING_*, HUBSPOT, GEMINI, DROPBOX, DOPPLER + Graph-send secret for RFQ drafts)",
+        "Define fallback logging: webhook events to VPS log + asana_write_log; error to System Updates on failure; scheduler retry"
+      ],
+      "edge_cases": [
+        {"id": "EC-P8-1", "title": "No public webhook receiver exists yet (only localhost bom_dispatch_server)", "status": "open", "owner": "Hermes", "verified_by": null, "notes": "os-portal skill documents hookdeck/webhook-skills + Asana HMAC protocol; not deployed."},
+        {"id": "EC-P8-2", "title": "D6 one-live-writer: must not run same purchasing/Asana cron on BOTH local + VPS", "status": "open", "owner": "Hermes", "verified_by": null, "notes": "VPS owns always-on watchers + cron (shadow DB); local stays interactive/dev."}
+      ],
+      "signed_off": false,
+      "signed_off_by": null,
+      "signed_off_at": null,
+      "verify_with": "Verify ops.db no WAL/SHM -> scp to VPS. Stand up public receiver behind Tailscale -> confirm X-Hook-Secret handshake. Test Asana event -> REQUESTS file -> execute_requests picks up. Confirm cron ownership + asana_write_log shows each GID written once by one actor."
+    }
+  ]
+}

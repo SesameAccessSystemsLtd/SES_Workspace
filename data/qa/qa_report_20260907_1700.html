@@ -1,0 +1,140 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><title>Parser QA Scorecard</title><style>
+    body{font-family:Segoe UI,Arial,sans-serif;margin:24px;color:#222;max-width:1100px}
+    h1{color:#0b3d66;border-bottom:2px solid #0b3d66;padding-bottom:8px}
+    h2{color:#0b3d66;margin-top:6px}
+    .meta{color:#666;font-style:italic}
+    .card{background:#f7f9fb;border:1px solid #dde3ea;border-radius:8px;padding:14px 18px;margin:16px 0}
+    table{border-collapse:collapse;width:100%;font-size:14px}
+    th,td{border:1px solid #ccd4dc;padding:6px 8px;text-align:left;vertical-align:top}
+    th{background:#0b3d66;color:#fff}
+    tr:nth-child(even) td{background:#eef2f6}
+    .subj{font-family:Consolas,monospace;font-size:12.5px}
+    .note{color:#555;font-size:13px;margin-top:6px}
+    </style></head><body><h1>Purchasing Pipeline — Parser QA Scorecard</h1>
+<p class='meta'>Generated 2026-09-07 17:00 · 521 processed emails · source: <code>Processed</code> tab</p>
+<div class='card'><h2>Headline</h2><table>
+<tr><th>Metric</th><th>Value</th></tr>
+<tr><td>True Positives (match accepted)</td><td>119</td></tr>
+<tr><td>False Positives (match rejected)</td><td>88</td></tr>
+<tr><td>True Negatives (correctly filtered)</td><td>293</td></tr>
+<tr><td>False Negatives (missed match)</td><td>21</td></tr>
+<tr><td><b>Precision</b> TP/(TP+FP)</td><td><b>57.5%</b></td></tr>
+<tr><td><b>Recall</b> TP/(TP+FN)</td><td><b>85.0%</b></td></tr>
+<tr><td><b>F1</b></td><td><b>0.686</b></td></tr>
+</table>
+<p class='note'>Precision = % of proposed matches you actually accepted (low = over-proposing/wrong tasks). Recall = % of actionable mail successfully matched (low = missing real quotes/orders). 'Matched + Rejected' conflates wrong-match with rejected-action — surfaced rows let us tell them apart.</p></div>
+<div class='card'><h2>By Document Type</h2><table><tr><th>Type</th><th>Total</th><th>TP</th><th>FP</th><th>TN</th><th>FN</th><th>Precision</th><th>Recall</th></tr>
+<tr><td>dispatch_note</td><td>92</td><td>14</td><td>37</td><td>38</td><td>3</td><td>27.5%</td><td>82.4%</td></tr>
+<tr><td>invoice</td><td>33</td><td>13</td><td>7</td><td>11</td><td>2</td><td>65.0%</td><td>86.7%</td></tr>
+<tr><td>order_confirmation</td><td>84</td><td>41</td><td>16</td><td>21</td><td>6</td><td>71.9%</td><td>87.2%</td></tr>
+<tr><td>other</td><td>124</td><td>3</td><td>10</td><td>110</td><td>1</td><td>23.1%</td><td>75.0%</td></tr>
+<tr><td>quote</td><td>48</td><td>21</td><td>4</td><td>17</td><td>6</td><td>84.0%</td><td>77.8%</td></tr>
+<tr><td>update</td><td>140</td><td>27</td><td>14</td><td>96</td><td>3</td><td>65.9%</td><td>90.0%</td></tr>
+</table></div>
+<div class='card'><h2>By Sender Domain (top 15)</h2><table><tr><th>Domain</th><th>Total</th><th>TP</th><th>FP</th><th>TN</th><th>FN</th></tr>
+<tr><td>ringcentral.com</td><td>86</td><td>0</td><td>1</td><td>84</td><td>1</td></tr>
+<tr><td>amazon.co.uk</td><td>30</td><td>5</td><td>21</td><td>1</td><td>3</td></tr>
+<tr><td>aalco.co.uk</td><td>16</td><td>5</td><td>9</td><td>0</td><td>2</td></tr>
+<tr><td>jajoautomation.co.uk</td><td>13</td><td>4</td><td>0</td><td>8</td><td>1</td></tr>
+<tr><td>rswww.com</td><td>12</td><td>6</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>toolstation.com</td><td>11</td><td>0</td><td>0</td><td>10</td><td>1</td></tr>
+<tr><td>bookingplatform.apc-overnight.com</td><td>10</td><td>0</td><td>0</td><td>10</td><td>0</td></tr>
+<tr><td>RS-Components.com</td><td>10</td><td>4</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>gpslive.co.uk</td><td>10</td><td>0</td><td>0</td><td>10</td><td>0</td></tr>
+<tr><td>eesmith.co.uk</td><td>9</td><td>0</td><td>0</td><td>9</td><td>0</td></tr>
+<tr><td>royalmail.com</td><td>9</td><td>0</td><td>0</td><td>9</td><td>0</td></tr>
+<tr><td>lasershape.com</td><td>7</td><td>7</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>silverliningfurniture.com</td><td>7</td><td>0</td><td>0</td><td>7</td><td>0</td></tr>
+<tr><td>parcelhero.com</td><td>7</td><td>0</td><td>0</td><td>7</td><td>0</td></tr>
+<tr><td>specialistglass.co.uk</td><td>7</td><td>3</td><td>1</td><td>2</td><td>1</td></tr>
+</table></div>
+<div class='card'><h2>Surfaced — False Positives &amp; False Negatives (review &amp; enrich)</h2>
+<table><tr><th>Class</th><th>Doc</th><th>Subject</th><th>Matched</th><th>Tag(s)</th><th>Link</th></tr>
+<tr><td>FN</td><td>order_confirmation</td><td class='subj'>Acknowledgement of order 000759386  your ref  PO21581 270826</td><td class='subj'>NOT MATCHED</td><td>reference-normalisation candidate</td><td>—</td></tr>
+<tr><td>FN</td><td>dispatch_note</td><td class='subj'>Delivered: ‘Castrol EDGE 0W-20 V...’</td><td class='subj'>NOT MATCHED</td><td>task found via description/dependency (subtask target)</td><td>—</td></tr>
+<tr><td>FN</td><td>dispatch_note</td><td class='subj'>Delivered: ‘Rust-Oleum 400ml Universal...’</td><td class='subj'>NOT MATCHED</td><td>task found via description/dependency (subtask target)</td><td>—</td></tr>
+<tr><td>FN</td><td>order_confirmation</td><td class='subj'>Drill Service - Order Confirmation - Order Number: WEB0062972</td><td class='subj'>NOT MATCHED</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/1/357939803556123/project/854650811917168/task/1214928116159713?focus=true'>Asana</a></td></tr>
+<tr><td>FN</td><td>invoice</td><td class='subj'>Invoice   473198</td><td class='subj'>NOT MATCHED</td><td>reference-normalisation candidate</td><td>—</td></tr>
+<tr><td>FN</td><td>other</td><td class='subj'>Notes from your call with Dave Burt IDL 07810 558753 on 26/08/2026 11:</td><td class='subj'>NOT MATCHED</td><td>reference-normalisation candidate</td><td>—</td></tr>
+<tr><td>FN</td><td>dispatch_note</td><td class='subj'>Out for delivery: ‘Castrol EDGE 0W-20 V...’</td><td class='subj'>NOT MATCHED</td><td>task found via description/dependency (subtask target)</td><td>—</td></tr>
+<tr><td>FN</td><td>order_confirmation</td><td class='subj'>Please find attached Sales Order Acknowledgement from Drill Service</td><td class='subj'>NOT MATCHED</td><td>manual triage</td><td>—</td></tr>
+<tr><td>FN</td><td>update</td><td class='subj'>RE: Actuator Cam</td><td class='subj'>NOT MATCHED</td><td>manual triage</td><td>—</td></tr>
+<tr><td>FN</td><td>update</td><td class='subj'>RE: Machining - 1535 Brook Handrails</td><td class='subj'>NOT MATCHED</td><td>reference-normalisation candidate</td><td>—</td></tr>
+<tr><td>FN</td><td>update</td><td class='subj'>RE: SOGB020281154 : Sesame Access</td><td class='subj'>NOT MATCHED</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/1/357939803556123/project/358790955858777/task/1213732563344227?focus=true'>Asana</a></td></tr>
+<tr><td>FN</td><td>quote</td><td class='subj'>Re: Kerry Way - 1595 - St Georges House Entire system</td><td class='subj'>NOT MATCHED</td><td>reference-normalisation candidate</td><td>—</td></tr>
+<tr><td>FN</td><td>quote</td><td class='subj'>Re: PLC BOM - 1595 - St George’s House</td><td class='subj'>NOT MATCHED</td><td>reference-normalisation candidate</td><td>—</td></tr>
+<tr><td>FN</td><td>quote</td><td class='subj'>Re: Urgent Stainless brushed</td><td class='subj'>NOT MATCHED</td><td>manual triage</td><td>—</td></tr>
+<tr><td>FN</td><td>quote</td><td class='subj'>Sales Order 32589 from IDL Colour Coating Limited - 26/08/2026 - Sesam</td><td class='subj'>NOT MATCHED</td><td>reference-normalisation candidate</td><td>—</td></tr>
+<tr><td>FN</td><td>quote</td><td class='subj'>Sales Quote - SQ0248374UE  Your ref:</td><td class='subj'>NOT MATCHED</td><td>reference-normalisation candidate</td><td>—</td></tr>
+<tr><td>FN</td><td>invoice</td><td class='subj'>Sesame Invoice </td><td class='subj'>NOT MATCHED</td><td>manual triage</td><td>—</td></tr>
+<tr><td>FN</td><td>quote</td><td class='subj'>Specialist Glass Products Ltd Quote: 251084 (1595 - ST GEORGES HOUSE)</td><td class='subj'>NOT MATCHED</td><td>reference-normalisation candidate</td><td>—</td></tr>
+<tr><td>FN</td><td>order_confirmation</td><td class='subj'>Toolstation order YWW413315214 confirmed</td><td class='subj'>NOT MATCHED</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/1/357939803556123/project/902269769783650/task/1215119872550271?focus=true'>Asana</a></td></tr>
+<tr><td>FN</td><td>order_confirmation</td><td class='subj'>Your Direct Plastics Limited order confirmation</td><td class='subj'>NOT MATCHED</td><td>manual triage</td><td><a href='https://app.asana.com/1/357939803556123/project/854650811917168/task/1214800293657248?focus=true'>Asana</a></td></tr>
+<tr><td>FN</td><td>order_confirmation</td><td class='subj'>Your metals4U order confirmation</td><td class='subj'>NOT MATCHED</td><td>manual triage</td><td><a href='https://app.asana.com/1/357939803556123/project/358790955858777/task/1214639406124104?focus=true'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Aalco have delivered your order!</td><td class='subj'>21132-1670 - Aalco Non-Ferrous BOM  1670 -  B</td><td>manual triage</td><td><a href='https://app.asana.com/0/0/1215969777794699'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Aalco will deliver your order Monday 06th July 2026 between 09:00 - 11</td><td class='subj'>21132-1670 - Aalco Non-Ferrous BOM  1670 -  B</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1215969777794699'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Aalco will deliver your order Monday 06th July 2026 between 09:00 - 11</td><td class='subj'>21132-1670 - Aalco Non-Ferrous BOM  1670 -  B</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1215969777794699'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Aalco will deliver your order Monday 06th July 2026 between 10:00 - 12</td><td class='subj'>21132-1670 - Aalco Non-Ferrous BOM  1670 -  B</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1215969777794699'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Aalco will deliver your order Monday 06th July 2026 between 10:00 - 12</td><td class='subj'>21132-1670 - Aalco Non-Ferrous BOM  1670 -  B</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1215969777794699'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Aalco will deliver your order Monday 06th July 2026 between 11:00 - 13</td><td class='subj'>21132-1670 - Aalco Non-Ferrous BOM  1670 -  B</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1215969777794699'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Aalco will deliver your order Tuesday 07th July 2026 between 10:00 - 1</td><td class='subj'>21132-1670 - Aalco Non-Ferrous BOM  1670 -  B</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1215969777794699'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Aalco will deliver your order Tuesday 07th July 2026 between 12:00 - 1</td><td class='subj'>21132-1670 - Aalco Non-Ferrous BOM  1670 -  B</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1215969777794699'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Aalco will deliver your order Tuesday 07th July 2026 between 12:00 - 1</td><td class='subj'>21132-1670 - Aalco Non-Ferrous BOM  1670 -  B</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1215969777794699'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Arriving today: 2 of GENERIC Swarfega Orange... and 8 more items</td><td class='subj'>21006-270426 - amazon - tools for Greg - GB61</td><td>manual triage</td><td><a href='https://app.asana.com/0/0/1214104687061274'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Arriving today: YIMIKI 3 Meters Foam Tape...</td><td class='subj'>21006-270426 - amazon - tools for Greg - GB61</td><td>manual triage</td><td><a href='https://app.asana.com/0/0/1214104687061274'>Asana</a></td></tr>
+<tr><td>FP</td><td>other</td><td class='subj'>Automatic reply: Glass Supplier - 1373 - Manchester Windsor - SQR-4638</td><td class='subj'>Glass Supplier - 1373 - Manchester Windsor £2</td><td>auto-reply/noreply leakage; project-name reference (job number not literal); reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1217361626632543'>Asana</a></td></tr>
+<tr><td>FP</td><td>other</td><td class='subj'>Automatic reply: Yellow Zinc Plating - 1582 Russel Square Scissor PO 2</td><td class='subj'>21070-1582 - Corodine - Yellow Zinc Plating -</td><td>auto-reply/noreply leakage; reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1214429873829266'>Asana</a></td></tr>
+<tr><td>FP</td><td>invoice</td><td class='subj'>B.E.S. LTD - Invoice# 3535277</td><td class='subj'>15947-110722 - ebay - storage tubes for craig</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1202581262580775'>Asana</a></td></tr>
+<tr><td>FP</td><td>invoice</td><td class='subj'>C-0367226035 - invoice    [ ref:!00DF005wsA.!500e70aalDQ:ref ]</td><td class='subj'>12598-200720 - speedshift - posting UPS to Po</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1181425564437041'>Asana</a></td></tr>
+<tr><td>FP</td><td>other</td><td class='subj'>CPC - Overdue account - CSH743204 - SESAME ACCESS SYSTEMS</td><td class='subj'>21010-1572 - Exact - Laser Cut - 1572 - St Jo</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1214420760836566'>Asana</a></td></tr>
+<tr><td>FP</td><td>update</td><td class='subj'>Changes to your DHL Account from 2 July 2026</td><td class='subj'>13953-230821 - Grove group - handhled schotch</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1200789836226020'>Asana</a></td></tr>
+<tr><td>FP</td><td>invoice</td><td class='subj'>Confirmation of your order: A26472678510. Please find your invoice att</td><td class='subj'>16316-1388 - Screwfix - andy king edeward hos</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1202958062648448'>Asana</a></td></tr>
+<tr><td>FP</td><td>invoice</td><td class='subj'>Cutwel Invoice/Credit Note 2204083</td><td class='subj'>21143-70726 - Cutwel - 120 degrees 16.4 count</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1213612396537593'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Delivered: ⁦10⁩ items | Order ⁦# 026-6897797-7688313⁩</td><td class='subj'>21006-270426 - amazon - tools for Greg - GB61</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1214104687061274'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Delivered: ⁦1⁩ item | Order ⁦# 026-5179543-8036350⁩</td><td class='subj'>21006-270426 - amazon - tools for Greg - GB61</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1214104687061274'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Delivered: ⁦1⁩ item | Order ⁦# 026-6040393-7469900⁩</td><td class='subj'>21006-270426 - amazon - tools for Greg - GB61</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1214104687061274'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Delivered: ⁦1⁩ item | Order ⁦# 026-7059875-5357113⁩</td><td class='subj'>21006-270426 - amazon - tools for Greg - GB61</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1214104687061274'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Delivered: ⁦1⁩ item | Order ⁦# 026-7174393-9092358⁩</td><td class='subj'>21006-270426 - amazon - tools for Greg - GB61</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1214104687061274'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Delivered: ⁦3⁩ items | Order ⁦# 026-2946156-7375503⁩</td><td class='subj'>21006-270426 - amazon - tools for Greg - GB61</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1214104687061274'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Delivered: ⁦3⁩ items | Order ⁦# 026-6786540-4329133⁩</td><td class='subj'>21006-270426 - amazon - tools for Greg - GB61</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1214104687061274'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Delivered: ⁦7⁩ items | Order ⁦# 026-1778343-4577950⁩</td><td class='subj'>21006-270426 - amazon - tools for Greg - GB61</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1214104687061274'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Despatch Notification</td><td class='subj'>21144-1588 - RS Components - 1588 - America 1</td><td>manual triage</td><td><a href='https://app.asana.com/0/0/1216242582077298'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Despatch Notification</td><td class='subj'>21144-1588 - RS Components - 1588 - America 1</td><td>manual triage</td><td><a href='https://app.asana.com/0/0/1216242582077298'>Asana</a></td></tr>
+<tr><td>FP</td><td>order_confirmation</td><td class='subj'>Details for order #28890 on Spa Plating: gold plating kit</td><td class='subj'>21112-250626 - Spa plating - Gold solution</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1216030356530292'>Asana</a></td></tr>
+<tr><td>FP</td><td>order_confirmation</td><td class='subj'>Drill Service - Order Confirmation - Order Number: WEB0063247</td><td class='subj'>21096-150626 - Drill Services  - Monday stock</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1215721225482210'>Asana</a></td></tr>
+<tr><td>FP</td><td>other</td><td class='subj'>How did we do? Please tell us about your experience.</td><td class='subj'>21245-180826 - Cromwell - OMRON Relay 230 v A</td><td>manual triage</td><td><a href='https://app.asana.com/0/0/1217530130097546'>Asana</a></td></tr>
+<tr><td>FP</td><td>other</td><td class='subj'>How did your courier do?</td><td class='subj'>16313-90922 - myhermes - return items to poly</td><td>manual triage</td><td><a href='https://app.asana.com/0/0/1202167452918921'>Asana</a></td></tr>
+<tr><td>FP</td><td>update</td><td class='subj'>Important EU Regulation Import Changes</td><td class='subj'>11817/1271- Parcel2go - Send panel to Alexand</td><td>manual triage</td><td><a href='https://app.asana.com/0/0/1147427041039981'>Asana</a></td></tr>
+<tr><td>FP</td><td>other</td><td class='subj'>Items cancelled successfully: ‘Einhell Cordless Car...’ and ⁦1⁩ other </td><td class='subj'>21006-270426 - amazon - tools for Greg - GB61</td><td>manual triage</td><td><a href='https://app.asana.com/0/0/1214104687061274'>Asana</a></td></tr>
+<tr><td>FP</td><td>other</td><td class='subj'>Items cancelled successfully: ‘Einhell Cordless Car...’ and ⁦1⁩ other </td><td class='subj'>21006-270426 - amazon - tools for Greg - GB61</td><td>manual triage</td><td><a href='https://app.asana.com/0/0/1214104687061274'>Asana</a></td></tr>
+<tr><td>FP</td><td>quote</td><td class='subj'>K2917-Sesame  Maytec Alternative for 1575 Jenners - SQR-44513</td><td class='subj'>21009-1575 - MayTec - 1575 Jenners Rev 1 bom </td><td>project-name reference (job number not literal); reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1214090856195588'>Asana</a></td></tr>
+<tr><td>FP</td><td>dispatch_note</td><td class='subj'>Label</td><td class='subj'>11439/250619 - Interfluid - Order 5 sets of d</td><td>manual triage</td><td><a href='https://app.asana.com/0/0/1127735327035725'>Asana</a></td></tr>
+<tr><td>FP</td><td>other</td><td class='subj'>Notes from your call with Graham - Steerforth 01252 333633 on 18/08/20</td><td class='subj'>21247-1037 - Steerforth - 1037 - 1.Long Leadi</td><td>reference-normalisation candidate</td><td><a href='https://app.asana.com/0/0/1217541497709661'>Asana</a></td></tr>
+</table>
+<p class='note'>…and 49 more.</p>
+</div>
+<div class='card'><h2>Thin amendment notes (approved but no detail — please enrich)</h2>
+<table><tr><th>Doc</th><th>Subject</th></tr>
+<tr><td>order_confirmation</td><td class='subj'>Your Amazon.co.uk order of &quot;YIMIKI 3 Meters Foam Tape...&quot;</td></tr>
+<tr><td>quote</td><td class='subj'>RE: [ Ticket: 1401289 ] Bosch Rexroth - 1575 Jenners - SQR-44513</td></tr>
+<tr><td>order_confirmation</td><td class='subj'>Order Notification</td></tr>
+<tr><td>order_confirmation</td><td class='subj'>Your RS order confirmation - 21041-1582</td></tr>
+<tr><td>quote</td><td class='subj'>Your igus quotation 26-080422-BRG-GB-DHO SQR-45323</td></tr>
+<tr><td>quote</td><td class='subj'>Your igus quotation 26-080422-BRG-GB-DHO SQR-45323</td></tr>
+<tr><td>quote</td><td class='subj'>RE: [ Ticket: 1401289 ] Bosch Rexroth - 1575 Jenners - SQR-44513</td></tr>
+<tr><td>order_confirmation</td><td class='subj'>Order Notification</td></tr>
+<tr><td>order_confirmation</td><td class='subj'>Your RS order confirmation - 21041-1582</td></tr>
+<tr><td>invoice</td><td class='subj'>Credit Card Charge</td></tr>
+<tr><td>dispatch_note</td><td class='subj'>Despatch Notification</td></tr>
+<tr><td>order_confirmation</td><td class='subj'>RE: Laser Cut BOM - 1582 - Russel Square Entire - SQR-45369</td></tr>
+<tr><td>order_confirmation</td><td class='subj'>Sales order confirmation for your order 21046-1582 S000424222</td></tr>
+<tr><td>quote</td><td class='subj'>RE: Stock fixings 21.05.26</td></tr>
+<tr><td>quote</td><td class='subj'>RE: Laser Cut BOM - 1582 - Russel Square Entire - SQR-45369</td></tr>
+<tr><td>invoice</td><td class='subj'>Your Invoice(s) from Goodmans Steel Services Ltd</td></tr>
+<tr><td>quote</td><td class='subj'>K2917-Sesame  Maytec Alternative for 1575 Jenners - SQR-44513</td></tr>
+<tr><td>update</td><td class='subj'>Case ID &quot;W0138N // Quotation // 26052104640855&quot;: Reply to your &quot;Re: [M</td></tr>
+<tr><td>order_confirmation</td><td class='subj'>RE: Schaefer RT42 IX blank black buttons Q3031</td></tr>
+<tr><td>update</td><td class='subj'>Re: Jenner Scissor Rams - PO 21031-1575</td></tr>
+</table>
+<p class='note'>…and 87 more.</p>
+</div></body></html>

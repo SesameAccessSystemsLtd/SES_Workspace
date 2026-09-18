@@ -1,0 +1,324 @@
+<title>Purchasing Pipeline: Final Plan</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#F3F4F2;--surface:#FFFFFF;--surface-2:#EAECE9;
+  --ink:#171C1A;--ink-2:#3E4744;--ink-3:#6C7671;
+  --rule:#D3D8D3;--rule-strong:#AEB6B0;
+  --brass:#9C6F26;--brass-soft:#E9DCC3;
+  --verdigris:#2C6B62;--verdigris-soft:#D6E6E2;
+  --crit:#9E3325;--crit-soft:#F2DAD5;
+  --warn:#A97814;--warn-soft:#F3E6C8;
+  --ok:#2C6B62;--ok-soft:#D6E6E2;
+  --shadow:0 1px 2px rgba(23,28,26,.06),0 8px 24px -16px rgba(23,28,26,.28);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#101413;--surface:#171C1A;--surface-2:#1E2523;
+  --ink:#E6EAE7;--ink-2:#B7C0BB;--ink-3:#89948F;
+  --rule:#2A322F;--rule-strong:#3C4642;
+  --brass:#D6A452;--brass-soft:#3A2F1B;
+  --verdigris:#6FBAAE;--verdigris-soft:#1C302D;
+  --crit:#E0705E;--crit-soft:#37201C;
+  --warn:#DCAA4A;--warn-soft:#332818;
+  --ok:#6FBAAE;--ok-soft:#1C302D;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7);
+}}
+:root[data-theme="dark"]{
+  --paper:#101413;--surface:#171C1A;--surface-2:#1E2523;
+  --ink:#E6EAE7;--ink-2:#B7C0BB;--ink-3:#89948F;
+  --rule:#2A322F;--rule-strong:#3C4642;
+  --brass:#D6A452;--brass-soft:#3A2F1B;
+  --verdigris:#6FBAAE;--verdigris-soft:#1C302D;
+  --crit:#E0705E;--crit-soft:#37201C;
+  --warn:#DCAA4A;--warn-soft:#332818;
+  --ok:#6FBAAE;--ok-soft:#1C302D;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:"IBM Plex Serif",Georgia,serif;font-size:16.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px 96px}
+.col{max-width:70ch}
+h1,h2,h3,h4{font-family:"IBM Plex Sans Condensed","Helvetica Neue",Arial,sans-serif}
+h1{font-size:clamp(2.1rem,4.8vw,3.2rem);line-height:1.04;font-weight:700;letter-spacing:-.015em;margin:0;text-wrap:balance}
+h2{font-size:1.66rem;font-weight:700;letter-spacing:-.01em;margin:0;text-wrap:balance}
+h3{font-size:1.06rem;font-weight:600;margin:0 0 .3rem}
+p{margin:0 0 1rem}
+a{color:var(--verdigris)}
+code,.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.87em}
+:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+header.mast{border-bottom:2px solid var(--ink);padding:52px 0 22px;margin-bottom:36px}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:500}
+.mast .lede{font-size:1.09rem;color:var(--ink-2);margin-top:18px;max-width:65ch}
+section{margin:0 0 56px;scroll-margin-top:20px}
+.shead{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--rule-strong);padding-bottom:8px;margin-bottom:24px}
+.snum{font-family:"IBM Plex Mono",monospace;font-size:.74rem;color:var(--brass);font-weight:600;letter-spacing:.08em;flex:none;padding-top:4px}
+.sub{font-family:"IBM Plex Sans Condensed",sans-serif;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);margin:26px 0 10px;font-weight:600}
+.tw{overflow-x:auto;border:1px solid var(--rule);border-radius:3px;background:var(--surface);margin:0 0 14px;box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;font-family:"IBM Plex Sans Condensed",sans-serif;font-size:.85rem}
+th{text-align:left;font-weight:600;font-size:.67rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);padding:10px 13px;border-bottom:1px solid var(--rule-strong);white-space:nowrap;background:var(--surface-2)}
+td{padding:9px 13px;border-bottom:1px solid var(--rule);vertical-align:top;color:var(--ink-2)}
+tbody tr:last-child td{border-bottom:0}
+td.n{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--ink)}
+td.k{color:var(--ink);font-weight:500}
+caption{caption-side:bottom;text-align:left;font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);padding:9px 13px;border-top:1px solid var(--rule)}
+.p{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.65rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600;padding:2px 6px;border-radius:2px;white-space:nowrap}
+.p-red{background:var(--crit-soft);color:var(--crit)}
+.p-amb{background:var(--warn-soft);color:var(--warn)}
+.p-grn{background:var(--ok-soft);color:var(--ok)}
+.p-gry{background:var(--surface-2);color:var(--ink-3)}
+.callout{background:var(--surface);border:1px solid var(--rule);border-top:3px solid var(--brass);border-radius:3px;padding:19px 21px;margin:0 0 24px;box-shadow:var(--shadow)}
+.callout.gate{border-top-color:var(--crit)}
+.callout h4{color:var(--brass);text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;font-family:"IBM Plex Mono",monospace;margin:0 0 .4rem}
+.callout.gate h4{color:var(--crit)}
+.callout p:last-child{margin-bottom:0}
+pre{background:var(--surface-2);border:1px solid var(--rule);border-radius:3px;padding:14px 16px;overflow-x:auto;font-family:"IBM Plex Mono",monospace;font-size:.775rem;line-height:1.62;color:var(--ink);margin:0 0 14px}
+ul.tick{list-style:none;padding:0;margin:0 0 18px;display:flex;flex-direction:column;gap:8px}
+ul.tick li{padding-left:20px;position:relative;color:var(--ink-2)}
+ul.tick li::before{content:"—";position:absolute;left:0;color:var(--brass);font-family:"IBM Plex Mono",monospace}
+.goal{background:var(--surface);border:1px solid var(--rule-strong);border-radius:3px;padding:22px 24px;margin:0 0 24px;box-shadow:var(--shadow)}
+.goal ol{margin:0;padding-left:20px;font-family:"IBM Plex Sans Condensed",sans-serif;font-size:1rem;color:var(--ink);line-height:1.7}
+.goal li{margin-bottom:5px}
+.goal li span{color:var(--ink-3);font-family:"IBM Plex Serif",serif;font-size:.88rem}
+.act{border:1px solid var(--rule);border-radius:3px;background:var(--surface);margin:0 0 12px;box-shadow:var(--shadow);overflow:hidden}
+.acthead{display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:baseline;padding:12px 16px;background:var(--surface-2);border-bottom:1px solid var(--rule)}
+.acthead .no{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:1rem;color:var(--brass)}
+.acthead .nm{font-family:"IBM Plex Sans Condensed",sans-serif;font-weight:600;font-size:1.02rem;color:var(--ink)}
+.actbody{padding:13px 16px;font-size:.9rem;color:var(--ink-2);line-height:1.55}
+.actbody p:last-child{margin-bottom:0}
+.actbody .meta{font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);margin-top:7px}
+.cut{display:grid;grid-template-columns:1fr;gap:0;border:1px solid var(--rule);border-radius:3px;overflow:hidden;margin:0 0 16px;background:var(--surface);box-shadow:var(--shadow)}
+.cutrow{display:grid;grid-template-columns:minmax(180px,1fr) 2fr;gap:14px;padding:12px 16px;border-bottom:1px solid var(--rule);align-items:start}
+.cutrow:last-child{border-bottom:0}
+.cutrow .what{font-family:"IBM Plex Sans Condensed",sans-serif;font-weight:600;color:var(--ink);font-size:.94rem}
+.cutrow .why{font-size:.88rem;color:var(--ink-2);line-height:1.5}
+footer{border-top:2px solid var(--ink);padding-top:20px;font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--ink-3);line-height:1.7}
+@media (max-width:700px){.wrap{padding:0 18px 64px}.cutrow{grid-template-columns:1fr;gap:4px}.acthead{grid-template-columns:28px 1fr;gap:8px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="eyebrow">Sesame Access Systems · Final plan · 11 September 2026</div>
+  <h1>Purchasing Pipeline: Final Plan</h1>
+  <p class="lede">Three days of investigation, six defects fixed and proven in production, and a design that got smaller every time you corrected it. This is the settled version: what the outcome is, what stands, what I am deleting, and the ordered list of what is left to do.</p>
+</header>
+
+<!-- ===== GOAL ===== -->
+<section id="goal">
+  <div class="shead"><span class="snum">01</span><h2>The outcome we are building toward</h2></div>
+  <div class="goal">
+    <ol>
+      <li>Know what every live order actually is, without reconstructing it
+        <br><span>a number that is unique, a delivery date that means delivery, a scope that excludes history</span></li>
+      <li>See production impact before it is too late to act
+        <br><span>which packs are at risk, why, what the next action is and whose it is</span></li>
+      <li>Have status reach people without going through you
+        <br><span>a change stream and a portal, not a question</span></li>
+      <li>Catch friction once and prove it is gone
+        <br><span>an edge case becomes a case, a case gets an action, an action closes only on a measured move</span></li>
+    </ol>
+  </div>
+  <div class="col">
+    <p>Everything below is measured against those four. Anything that does not serve one of them has been cut.</p>
+  </div>
+</section>
+
+<!-- ===== STANDS ===== -->
+<section id="stands">
+  <div class="shead"><span class="snum">02</span><h2>What now stands — proven, not asserted</h2></div>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Was</th><th>Is</th><th>How it was proven</th></tr></thead>
+      <tbody>
+        <tr><td class="k">Nightly ordering audit failing, every night</td><td><span class="p p-grn">Green</span></td><td>Ran clean 10 and 11 Sept after the bind-parameter fix</td></tr>
+        <tr><td class="k">Ordering queue frozen since 3 July, 117 stuck</td><td><span class="p p-grn">0 stuck · 141 ordered</span></td><td>Drained itself on the first clean compile run</td></tr>
+        <tr><td class="k"><span class="mono">ordering_edge_cases</span> empty since creation</td><td><span class="p p-grn">Receiving</span></td><td>6 real vendor_fallback rows, harvested automatically</td></tr>
+        <tr><td class="k">Part → order link: 0 of 2,761</td><td class="n">2,426</td><td>Was in the payload and discarded; now stored</td></tr>
+        <tr><td class="k">Delivery date was the order date</td><td><span class="p p-grn">Corrected</span></td><td>Verified per-task against Asana</td></tr>
+        <tr><td class="k">392 open orders · 241 overdue · £168k</td><td class="n">50 · 11 · £66k</td><td>Agrees with your own oversight page</td></tr>
+        <tr><td class="k">Every sync rewrote every column, 9× daily</td><td class="n">2,434 → 10 writes</td><td>Measured on consecutive real runs</td></tr>
+        <tr><td class="k">Pack readiness null on all 2,618 packs</td><td class="n">238 populated</td><td>Field was hardcoded to None</td></tr>
+        <tr><td class="k">Nothing could see a contradiction</td><td class="n">12 found</td><td>Packs declaring ready with unordered parts, and the reverse</td></tr>
+      </tbody>
+      <caption>Impact engine now scores 71 live packs: 11 blocked, 14 at risk, 19 watch, 27 clear, 7 flagged for expedite.</caption>
+    </table>
+  </div>
+</section>
+
+<!-- ===== CUT ===== -->
+<section id="cut">
+  <div class="shead"><span class="snum">03</span><h2>What I am deleting</h2></div>
+  <div class="col">
+    <p>You asked for less to maintain. Each of these is removed from the plan — three of them were my own additions, and one was a design I argued for before you corrected the premise.</p>
+  </div>
+
+  <div class="cut">
+    <div class="cutrow"><div class="what">Per-pack PO allocation</div><div class="why">Cancelled entirely — table, split rule, mismatch flag. Ordering the BOM sum plus stock or contingency means ordered quantity is <em>supposed</em> to exceed the pack total. The flag would have fired on correct buying.</div></div>
+    <div class="cutrow"><div class="what">The eight pack-set decisions</div><div class="why">Off the critical path. They belong to pack reporting, not to purchasing, and nothing waits on them.</div></div>
+    <div class="cutrow"><div class="what">Pack reference registry</div><div class="why">Downgraded from a maintained alias table to a one-off cleanup plus a uniqueness rule. A registry is a thing to keep feeding; a clean-up is done once.</div></div>
+    <div class="cutrow"><div class="what">My pack GID resolver</div><div class="why">Retired in favour of <span class="mono">06_normalise_pack_gid.py</span>, which was written first, guards ambiguity properly and already exists. Two implementations of one rule is one too many.</div></div>
+    <div class="cutrow"><div class="what">Putting the pack GID in descriptions</div><div class="why">Dropped on your instruction. The reference string stays the user-facing key.</div></div>
+    <div class="cutrow"><div class="what">Walkthrough subtasks B and C</div><div class="why">They demonstrated the remainder and mismatch cases, which no longer exist. Cut to two subtasks: a clean order and a moved line.</div></div>
+  </div>
+
+  <div class="callout">
+    <h4>And one correction to carry forward</h4>
+    <p>I twice reported that no receipt event exists for project parts, reading Arrived Stock Qty as unpopulated. It is a staging field — written on book-in, consumed, cleared — so an empty snapshot is it working. The path is also <strong>deliberately not in use yet</strong>, pending correct stock mapping. The conclusion was right by accident and the reasoning was wrong; the reasoning is what would have misled the next decision.</p>
+    <p>Checking it also found a bug in my own change-detection code: <span class="mono">_norm(x) or None</span> collapsed a real zero to NULL, destroying exactly the <span class="mono">0 → value</span> transition that a staging field is made of. Fixed, and 34 false events cleared.</p>
+  </div>
+</section>
+
+<!-- ===== FLOW ===== -->
+<section id="flow">
+  <div class="shead"><span class="snum">04</span><h2>The settled flow</h2></div>
+  <pre>DEMAND
+  BOM import          task carries the TOTAL required
+  pack ingest         adds per-pack breakdown + split marker to the task
+                      (feeds the picking report — NOT the purchasing path)
+
+PURCHASE
+  task exists         a NEEDS item, a project order, or a line moved off another order
+  reserve             instant, local, atomic        -> 21629-1597
+                      suffix = project id, else today's date (day unpadded)
+  you apply it        typed into the task name, exactly as now
+  order lines         each part parented to the order becomes a po_lines row
+  extra               ordered minus BOM required, with a reason: stock | contingency
+
+MOVEMENT                                              (the ordinary week)
+  unavailable         rebind to another order — allocation follows the PART
+  made dependent      keeps its binding, gains a dependency; later ETA wins
+  re-homed            project task or new task — still just a rebind
+
+CONFIRM
+  sent items sync     records the address the PO actually went to
+  ledger              reserved -> confirmed
+
+RECEIPT                                               [GATED — see below]
+  arrived qty         staging field: set on book-in, consumed, cleared
+  blocked on          correct stock mapping from the Golden Index BOM import
+
+NIGHTLY
+  01:00  mirror + reconcile    real changes only; adopt manual PO numbers
+  01:05  impact                71 packs scored; readiness drives the date
+  01:20  improvement           friction harvested, metrics snapshotted</pre>
+</section>
+
+<!-- ===== GATE ===== -->
+<section id="gate">
+  <div class="shead"><span class="snum">05</span><h2>The critical path runs through the Golden Index</h2></div>
+  <div class="col">
+    <p>Your note that the arrived-quantity path is held pending correct mapping of parts coming off the shelf changes the priority order. That mapping is not a side task — it is the gate on the entire receipt half of the pipeline, and everything downstream of goods-in waits behind it.</p>
+  </div>
+
+  <div class="callout gate">
+    <h4>What the gate currently measures</h4>
+    <p><span class="mono">golden_index_rev6</span> holds <strong>177</strong> entries covering <strong>367</strong> part numbers, of which 100 carry an Asana task GID. Against <strong>335</strong> distinct live part numbers in Parts Control, <strong>2 match</strong>. The index and the live work are, right now, almost disjoint sets.</p>
+    <p>That is not necessarily a fault — the index is a stock catalogue and most live work is project parts. But it does mean the coverage question has to be answered before the arrived path can be switched on, and nobody can answer it from the numbers alone.</p>
+  </div>
+
+  <pre>Golden Index mapping coverage
+        |
+        v
+  stock allocation at BOM import        parts coming off the shelf
+        |
+        v
+  ARRIVED QTY path usable               currently held, correctly
+        |
+        v
+  receipt events for project parts
+        |
+        v
+  order confirmation vs delivery        the separate email-parsing track</pre>
+
+  <div class="col">
+    <p>The question that unlocks it: <strong>of the parts that come off the shelf on a live job, what share should be in the Golden Index and are not?</strong> That is a sampling exercise on one or two jobs, not a rebuild, and it is the smallest thing that tells you whether the gate is nearly open or a long way off.</p>
+  </div>
+</section>
+
+<!-- ===== ACTIONS ===== -->
+<section id="actions">
+  <div class="shead"><span class="snum">06</span><h2>Actions, in order</h2></div>
+
+  <div class="act">
+    <div class="acthead"><span class="no">1</span><span class="nm">Seed the PO counter</span><span class="p p-red">You</span></div>
+    <div class="actbody">Read the last issued number from the PO book and seed it. Nothing in the ledger can run until this happens, and I will not guess it. The live band in Asana reads 21628, but Asana is not the book.
+      <div class="meta">python skills/purchasing/po_number_allocator.py --seed &lt;number&gt;</div></div>
+  </div>
+
+  <div class="act">
+    <div class="acthead"><span class="no">2</span><span class="nm">Clear the stale rows</span><span class="p p-amb">Me · needs a yes</span></div>
+    <div class="actbody"><strong>327 rows in <span class="mono">parts_control</span> no longer exist in the Asana project</strong> and still read as live, because nothing ever marked them complete. They inflate every live count I have quoted — real live parts are 354, not 681. Same pass clears the pre-09-09 write log, which records nothing real and is most of the 1.21 GB.
+      <div class="meta">archive, never delete · dry-run first</div></div>
+  </div>
+
+  <div class="act">
+    <div class="acthead"><span class="no">3</span><span class="nm">Turn on the two nightly jobs</span><span class="p p-amb">You · one line each</span></div>
+    <div class="actbody">Impact engine at <span class="mono">5 1 * * *</span>, improvement engine at <span class="mono">20 1 * * *</span>. Both read-only against Asana, both idempotent. They have been run by hand for three days without incident; this just makes them routine.</div>
+  </div>
+
+  <div class="act">
+    <div class="acthead"><span class="no">4</span><span class="nm">Walkthrough task, trimmed</span><span class="p p-amb">Me · needs a yes</span></div>
+    <div class="actbody">Cut to a parent plus two subtasks — a clean order and a moved line. Goes through the REQUESTS queue, lands in TESTING Order numbers, consumes no real PO number. Walking it tells you whether the description format is what your report needs before anything is built on it.</div>
+  </div>
+
+  <div class="act">
+    <div class="acthead"><span class="no">5</span><span class="nm">1595 pack-note cleanup</span><span class="p p-amb">Me · needs a yes</span></div>
+    <div class="actbody">Roughly 100–150 parts on job 1595 carry the same pack named twice — a stub and a full reference — so a description-scanning report reads them double. Confined to 1595; zero occurrences elsewhere in a 130-part sample. One scripted pass, dry-run showing every line it would collapse.</div>
+  </div>
+
+  <div class="act">
+    <div class="acthead"><span class="no">6</span><span class="nm">Golden Index coverage sample</span><span class="p p-red">You + me</span></div>
+    <div class="actbody">Take one live job. List the parts that come off the shelf. Check how many resolve to a Golden Index entry. That single number tells you whether the arrived-qty gate is weeks or months away, and it is the only thing standing between here and receipt tracking.</div>
+  </div>
+
+  <div class="act">
+    <div class="acthead"><span class="no">7</span><span class="nm">Retire the duplicate pack resolver</span><span class="p p-grn">Me · no decision needed</span></div>
+    <div class="actbody">Remove my resolver from the impact engine, point it at <span class="mono">06_normalise_pack_gid.py</span>. One rule, one owner, one place to fix it. Pure maintenance reduction.</div>
+  </div>
+
+  <div class="act">
+    <div class="acthead"><span class="no">8</span><span class="nm">Webhook at the input side</span><span class="p p-gry">When you are ready</span></div>
+    <div class="actbody">Point it at quantity, parent and status changes rather than at alerts. Today those are invisible until 01:00, so everything downstream recalculates against numbers up to a day stale. This is the half of the webhook that pays.</div>
+  </div>
+
+  <div class="sub">Deliberately not doing</div>
+  <ul class="tick">
+    <li>Anything in the email-parsing and delivery-assessment track — separate, and it stays separate</li>
+    <li>Anything requiring the arrived-qty path until the Golden Index question is answered</li>
+    <li>Anything that adds a table someone has to keep feeding</li>
+  </ul>
+</section>
+
+<!-- ===== MEASURE ===== -->
+<section id="measure">
+  <div class="shead"><span class="snum">07</span><h2>How we will know it worked</h2></div>
+  <div class="col">
+    <p>Twelve metrics are already being snapshotted nightly. These are the ones that answer the four goals, with today's reading as the baseline.</p>
+  </div>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Goal</th><th>Metric</th><th>Today</th><th>Target</th></tr></thead>
+      <tbody>
+        <tr><td class="k">Know the live orders</td><td>PO numbers adopted rather than reserved</td><td class="n">100%</td><td class="n">&lt; 10%</td></tr>
+        <tr><td class="k">Know the live orders</td><td>Open orders with no expected delivery date</td><td class="n">8</td><td class="n">0</td></tr>
+        <tr><td class="k">See impact early</td><td>Packs with no steel-profile assessment</td><td class="n">43</td><td class="n">&lt; 5</td></tr>
+        <tr><td class="k">See impact early</td><td>Readiness contradictions</td><td class="n">12</td><td class="n">0</td></tr>
+        <tr><td class="k">Status without you</td><td>Live parts with no order link</td><td class="n">335</td><td class="n">trend down</td></tr>
+        <tr><td class="k">Status without you</td><td>Overdue chases with no resolvable recipient</td><td class="n">27 of 35</td><td class="n">&lt; 5</td></tr>
+        <tr><td class="k">Prove the fixes</td><td>Unplanned engineer hours</td><td class="n">tracking</td><td class="n">trend down</td></tr>
+        <tr><td class="k">Prove the fixes</td><td>Scheduled jobs in an error state</td><td class="n">0</td><td class="n">0</td></tr>
+      </tbody>
+      <caption>Unplanned hours is the north star — it is the only direct friction meter the business has, and it is now in the change stream.</caption>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <div><strong>Code changed across the three days</strong> — <span class="mono">skills/sql_db/scripts/</span>: migrate_impact_engine.py (new), sync_parts_control.py, sync_build_schedule.py, sync_procurement_tasks.py · <span class="mono">skills/purchasing/</span>: db_writer.py, impact_engine.py (new), improvement_engine.py (new), po_number_allocator.py (new).</div>
+  <div style="margin-top:10px"><strong>Never changed</strong> — no Asana task, field or project; no cron definition; nothing deleted; the staged Centre-of-Truth artifacts untouched. Pre-migration copy of ops.db at <span class="mono">%TEMP%\claude\ops_backup_preimpact.db</span>.</div>
+  <div style="margin-top:10px"><strong>Waiting on you</strong> — seed the counter · yes or no on actions 2, 4, 5 · the Golden Index coverage sample.</div>
+</footer>
+
+</div>

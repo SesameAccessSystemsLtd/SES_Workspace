@@ -1,0 +1,14 @@
+{
+  "request_id": "13a2fc6a-5a30-43b8-9ea4-fead61686584",
+  "source": "email_approval_sheet",
+  "row_index": 4,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy1kAAA=",
+  "subject": "[Keyence (UK) Ltd] Order Confirmation# 1000344824",
+  "task_gid": "1217630015875025",
+  "task_name": "21253-190826 - Keyence - 5 mtr. Analogue X2 output position sensor",
+  "asana_url": "https://app.asana.com/0/0/1217630015875025",
+  "action": "(Matched via PO Number in Local DB); Update delivery date to 2026-08-19; Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043); Note added to description: Order_Confirmation from Keyence - £472.00 (2026-08-19)",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-08-19T12:36:46Z\nEmail: [Keyence (UK) Ltd] Order Confirmation# 1000344824\nMatch basis: (Matched via PO Number in Local DB)\n- Update delivery date to 2026-08-19\n- Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043)\n- Note added to description: Order_Confirmation from Keyence - £472.00 (2026-08-19)",
+  "decision": "A",
+  "created_at": "2026-08-20T10:00:56.894506+00:00"
+}

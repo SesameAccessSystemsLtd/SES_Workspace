@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  01/09/2026  15:27
+============================================================
+With:         01455 272505
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a call between Giles Hugo from Sesame Access and a representative from Crescent Steel regarding the availability of a specific hollow section. Giles sought information about sourcing the part, which was previously inquired about, and was directed to contact Jenny Barnes for further details. The call concluded with plans for follow-up via email.
+
+--- RECAP --------------------------------------------------
+Giles Hugo from Sesame Access inquired about sourcing a 70x40x4 rectangular hollow section, 18 meters in length, which was previously asked about by their design team. The Crescent Steel representative confirmed they can source it from stockholders but noted a long lead time and that the quantity requested is 18 meters. The sales team had previously indicated that the part could not be obtained at 80 cents, but this was uncertain. Giles requested contact details for the sales representative who provided the quote, and was directed to email Jenny Barnes at Crescent Steel for further information. Jenny is working from home and will follow up on the inquiry.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will email Jenny Barnes at Crescent Steel to follow up on the inquiry and request the quote details.
+
+(Full transcript: RC web portal only — no RingSense API)

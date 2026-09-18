@@ -19,6 +19,7 @@ import argparse
 import os
 import re
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -38,17 +39,77 @@ ORDER_NUMBERS_GID   = "854650811917168"
 
 # Custom field GIDs
 GID_PRICE_EX_VAT  = "854330340727040"
-GID_DELIVERY_DATE = "1208706270294053"
+# 1208706270294053 is "Order date " — NOT the expected delivery date. It was
+# previously mapped to procurement_tasks.due_date, so every lateness figure in the
+# database was really measuring days-since-ordered. The expected delivery date is
+# the Asana task due date (task.due_on), which was not fetched at all.
+GID_ORDER_DATE    = "1208706270294053"
+GID_DAYS_DELIVERY = "1208706270294055"   # Days for delivery
 GID_ORDER_STATUS  = "1143955334207040"
 GID_VENDOR        = "854127216887083"
 GID_SQR           = "1211774738554014"
+GID_IMPACT        = "1148052247637687"
+GID_PO_TASK       = "1213595302673057"
+GID_PROJECT_NAME  = "1202882645384174"
 
 OPT_FIELDS = (
-    "gid,name,parent.gid,"
+    "gid,name,parent.gid,due_on,completed,completed_at,created_at,"
     "custom_fields.gid,custom_fields.type,custom_fields.resource_subtype,"
     "custom_fields.display_value,custom_fields.number_value,custom_fields.text_value,"
     "custom_fields.enum_value.gid,custom_fields.enum_value.name"
 )
+
+PROJECT_CODE_RE = re.compile(r"\b(1[0-9]{3})\b")
+
+# Statuses that mean the order is still live in the supply chain.
+_LIVE_STATUS = ("on order", "partial delivery", "awaiting dispatch",
+                "need to qc", "to be ordered", "picking", "hold on order")
+# Names that mark a placeholder or an idea rather than a real purchase.
+_NON_ORDER_RE = re.compile(
+    r"\b(holding task|place ?holder|test|improvement|idea|template|example)\b", re.I)
+
+# An order older than this with no live status is treated as history, not backlog.
+LEGACY_AFTER_DAYS = 180
+
+
+def _project_code(*candidates: str | None) -> str | None:
+    for text in candidates:
+        if not text:
+            continue
+        m = PROJECT_CODE_RE.search(text)
+        if m:
+            return m.group(1)
+    return None
+
+
+def _scope(name: str, completed: bool, po_number: str | None, vendor: str | None,
+           status: str | None, order_date: str | None, due_on: str | None) -> str:
+    """live | legacy | improvement | unknown.
+
+    Giles, 2026-09-09: the ~392 'open' orders the mirror reported are mainly
+    legacy tasks and improvement ideas. This classifies them at sync time so
+    operational views can filter to what is genuinely in the supply chain.
+    """
+    if _NON_ORDER_RE.search(name or ""):
+        return "improvement"
+    if completed:
+        return "legacy"
+    st = (status or "").lower()
+    if any(h in st for h in _LIVE_STATUS):
+        # Still live unless it is very old and has no forward-looking date.
+        ref = (due_on or order_date or "")[:10]
+        if ref:
+            try:
+                age = (datetime.now(timezone.utc)
+                       - datetime.strptime(ref, "%Y-%m-%d").replace(tzinfo=timezone.utc)).days
+                if age > LEGACY_AFTER_DAYS and not due_on:
+                    return "legacy"
+            except ValueError:
+                pass
+        return "live"
+    if not po_number and not vendor:
+        return "improvement"
+    return "legacy" if not st else "unknown"
 
 # lib/ is on sys.path via the db_writer import above
 from path_config import p as _p
@@ -77,20 +138,40 @@ def _parse_price(raw) -> float | None:
 
 def task_to_row(task: dict, project_gid: str, project_name: str,
                 doc_type: str, sync_ts: str) -> dict:
-    name = task.get("name", "").strip()
+    name       = task.get("name", "").strip()
+    po_number  = _extract_po(name)
+    vendor     = get_custom_field(task, GID_VENDOR)
+    status     = get_custom_field(task, GID_ORDER_STATUS)
+    order_date = get_custom_field(task, GID_ORDER_DATE)
+    due_on     = task.get("due_on")
+    completed  = bool(task.get("completed"))
+    days       = get_custom_field(task, GID_DAYS_DELIVERY)
+    try:
+        days = float(str(days).replace(",", "")) if days not in (None, "") else None
+    except (TypeError, ValueError):
+        days = None
     return {
         "asana_task_gid": task["gid"],
         "task_name":      name,
         "document_type":  doc_type,
-        "po_number":      _extract_po(name),
+        "po_number":      po_number,
         "sqr_number":     get_custom_field(task, GID_SQR) or _extract_sqr(name),
         "price_ex_vat":   _parse_price(get_custom_field(task, GID_PRICE_EX_VAT)),
-        "order_date":     None,
-        "due_date":       get_custom_field(task, GID_DELIVERY_DATE),
-        "order_status":   get_custom_field(task, GID_ORDER_STATUS),
-        "vendor_name":    get_custom_field(task, GID_VENDOR),
+        "order_date":     order_date,
+        # Expected delivery = the Asana task due date. The "Order date " custom
+        # field now lands in order_date where it belongs.
+        "due_date":       due_on,
+        "days_for_delivery": days,
+        "order_status":   status,
+        "impact":         get_custom_field(task, GID_IMPACT),
+        "po_task_gid":    get_custom_field(task, GID_PO_TASK),
+        "vendor_name":    vendor,
         "vendor_gid":     None,
         "source_project": project_name,
+        "project_code":   _project_code(name, get_custom_field(task, GID_PROJECT_NAME)),
+        "scope":          _scope(name, completed, po_number, vendor, status,
+                                 order_date, due_on),
+        "is_completed":   1 if completed else 0,
         "is_subtask":     1 if task.get("parent") else 0,
         "last_synced_at": sync_ts,
     }
@@ -115,7 +196,7 @@ def main() -> None:
     for project_gid, project_name, doc_type in projects:
         log.info("Fetching from %s (%s)", project_name, project_gid)
         try:
-            tasks = paginate_tasks(project_gid, OPT_FIELDS)
+            tasks = paginate_tasks(project_gid, OPT_FIELDS, all_completion_states=True)
         except AsanaFetchError as exc:
             # Transient Asana outage on one project must not sink the whole
             # pipeline — the approval-sheet writer runs downstream of this.

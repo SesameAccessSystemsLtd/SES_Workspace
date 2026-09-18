@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  03/09/2026  12:01
+============================================================
+With:         Eric Lawtronic Panel PLC 07512 541133
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call was a follow-up discussion between Giles Hugo and Eric from Lawtronic Panel PLC regarding project documentation, drawings, and panel component sourcing. They discussed sharing images and bill of materials to facilitate quoting and panel assembly, with plans to exchange photographs and cost details for further progress.
+
+--- RECAP --------------------------------------------------
+Eric from Lawtronic Panel PLC followed up on previous email regarding drawings and URS form; Giles Hugo indicated drawings are proprietary and not available for sharing, but provided a list and pictures of required items.Eric requested images to assist in quoting for components; Giles agreed to send photographs of the panel to aid in cost estimation and layout planning.They discussed the need for design drawings or images to determine panel layout and component placement, which affects labor costs.Giles mentioned ongoing work on PCB capabilities and sourcing components, with intentions to compare prices and possibly have Lawtronic build and wire the control panel.Both parties agreed to exchange photographs and cost information to proceed with the project, including potential panel assembly by Lawtronic.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send photographs of the panel to Eric from Lawtronic Panel PLC.Eric from Lawtronic Panel PLC will review the photographs and provide a quote for components and panel assembly.
+
+(Full transcript: RC web portal only — no RingSense API)

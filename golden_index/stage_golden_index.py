@@ -54,11 +54,25 @@ from datetime import datetime, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_JSON = os.path.join(HERE, "golden_index_master.json")
-# ops.db location differs per host; try the known Windows + POSIX mounts.
+
+
+def _pathconfig_db() -> str:
+    """Canonical ops.db via SES_Workspace/lib/path_config.py (PATH_CONFIG.yaml —
+    single source of truth). Empty string if unavailable, so the literal
+    fallbacks below still apply."""
+    try:
+        import sys as _sys
+        _sys.path.insert(0, os.path.join(HERE, "..", "lib"))
+        from path_config import p as _p
+        return _p("db.ops")
+    except Exception:
+        return ""
+
+
 _DB_CANDIDATES = [
+    _pathconfig_db(),                                 # canonical (PATH_CONFIG.yaml)
+    r"C:\Users\GilesHugo\SES_Workspace\db\ops.db",    # resilient literal fallback
     os.path.join(HERE, "..", "db", "ops.db"),
-    r"C:\Users\GilesHugo\SES_Workspace\db\ops.db",
-    "/sessions/eloquent-intelligent-curie/mnt/SES_Workspace/db/ops.db",
 ]
 TABLE = "golden_index_rev6"
 LIST_SEP = " | "
@@ -83,6 +97,29 @@ def resolve_db(explicit: str | None) -> str | None:
 def load_master(path: str) -> list[dict]:
     with open(path, encoding="utf-8") as fh:
         return json.load(fh)["records"]
+
+
+GATHERED_GIDS = os.path.join(HERE, "gathered_gids.csv")
+
+
+def load_authoritative_gids(path: str = GATHERED_GIDS) -> dict:
+    """
+    KAN -> Asana task GID, sourced from the KAN-custom-field gather
+    (gathered_gids.csv). This is the AUTHORITATIVE anchor: it is resolved from
+    the Asana `KAN` custom field, so it overrides the weak stock_inventory
+    string-match heuristic (link_kanban), which historically left GIDs blank
+    AND assigned wrong GIDs via fuzzy collisions. Using this on every reload
+    keeps asana_task_gid correct and 1:1. Empty dict if the file is absent.
+    """
+    out = {}
+    if os.path.exists(path):
+        with open(path, encoding="utf-8-sig") as fh:
+            for r in csv.DictReader(fh):
+                k = (r.get("kan") or "").strip()
+                g = (r.get("task_gid") or "").strip()
+                if k and g:
+                    out[k] = g
+    return out
 
 
 # ---------------------------------------------------------------------------
@@ -229,13 +266,29 @@ CREATE INDEX IF NOT EXISTS idx_{TABLE}_stocknorm ON {TABLE}(stock_number_norm);
 """
 
 
-def load_db(records: list[dict], links: dict, db_path: str) -> int:
+def load_db(records: list[dict], links: dict, db_path: str,
+            authoritative_gids: dict | None = None) -> dict:
+    """
+    Full-refresh the table. asana_task_gid is taken from the AUTHORITATIVE
+    KAN-field gather (authoritative_gids) first; the weak link_kanban heuristic
+    is only a fallback for a KAN missing from the gather. Returns counts,
+    including how many GIDs came from each source (0 fallback/blank is the
+    healthy state).
+    """
+    authoritative_gids = authoritative_gids or {}
     con = sqlite3.connect(db_path)
     now = datetime.now(timezone.utc).isoformat()
+    src = {"authoritative": 0, "heuristic": 0, "blank": 0}
     try:
         con.executescript(DDL)
         con.execute(f"DELETE FROM {TABLE}")  # full refresh; table is ours alone
         for r in records:
+            gid = authoritative_gids.get(r["kan"])
+            if gid:
+                src["authoritative"] += 1
+            else:
+                gid = (links.get(r["kan"], {}) or {}).get("gid")
+                src["heuristic" if gid else "blank"] += 1
             con.execute(
                 f"INSERT INTO {TABLE} (kan_number, stock_number, stock_number_norm, "
                 "description, vendor, assembly_packs, sesame_part_numbers, "
@@ -249,7 +302,7 @@ def load_db(records: list[dict], links: dict, db_path: str) -> int:
                     LIST_SEP.join(r["vendors"]),
                     LIST_SEP.join(r["assembly_packs"]),
                     LIST_SEP.join(r["asana_sesame_part_numbers"]),
-                    (links.get(r["kan"], {}) or {}).get("gid"),
+                    gid,
                     ";".join(sorted(r["match_types"])),
                     r.get("resolution_source"),
                     r["source_row_count"],
@@ -257,7 +310,8 @@ def load_db(records: list[dict], links: dict, db_path: str) -> int:
                 ),
             )
         con.commit()
-        return con.execute(f"SELECT COUNT(*) FROM {TABLE}").fetchone()[0]
+        rows = con.execute(f"SELECT COUNT(*) FROM {TABLE}").fetchone()[0]
+        return {"rows": rows, "gid_source": src}
     finally:
         con.close()
 
@@ -291,6 +345,7 @@ def main(argv=None):
 
     records = load_master(args.json)
     links = link_kanban(records, db_path)
+    authoritative = load_authoritative_gids()
 
     lookup_path = os.path.join(args.outdir, "golden_index_rev6_lookup.csv")
     conb_path = os.path.join(args.outdir, "asana_sesame_task_updates.csv")
@@ -301,7 +356,7 @@ def main(argv=None):
     if args.load_db:
         if not db_path:
             raise SystemExit("--load-db requested but no ops.db found.")
-        loaded = load_db(records, links, db_path)
+        loaded = load_db(records, links, db_path, authoritative)
 
     print("=" * 64)
     print("GOLDEN INDEX STAGING COMPLETE")
@@ -314,8 +369,12 @@ def main(argv=None):
     print(f"  [B] sesame-task update rows  : {b['rows']}  -> {os.path.basename(conb_path)}")
     print(f"      linked to KANBAN task    : {b['linked']} / {b['rows']}")
     print(f"      distinct build-pack opts : {len(b['distinct_pack_options'])}")
+    print(f"  authoritative GIDs (gather)  : {len(authoritative)} available")
     if loaded is not None:
-        print(f"  DB table {TABLE:22s}: {loaded} rows @ {db_path}")
+        s = loaded["gid_source"]
+        print(f"  DB table {TABLE:22s}: {loaded['rows']} rows @ {db_path}")
+        print(f"      asana_task_gid source    : authoritative={s['authoritative']} "
+              f"heuristic_fallback={s['heuristic']} blank={s['blank']}")
     else:
         print(f"  DB                           : not loaded (pass --load-db)")
     return {"a": a, "b": b, "loaded": loaded}

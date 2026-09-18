@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  03/09/2026  14:30
+============================================================
+With:         RS Components 01536 444025
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+Giles Hugo from Sesame Access Systems contacted RS Components to add a 40 mil reamer to an existing order. The RS representative confirmed the order details and agreed to keep the current order unchanged, declining to add the item.
+
+--- RECAP --------------------------------------------------
+Giles Hugo inquired about adding a 40 mil reamer to an existing order with RS Components, providing the order reference 3020069568.RS Components confirmed the order details and searched for the 40 mil reamer, identifying multiple options but ultimately deciding not to modify the order based on Giles's instructions.Giles Hugo clarified which specific reamer he wanted, but decided not to proceed with adding it to the order after RS confirmed the current order would remain unchanged.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

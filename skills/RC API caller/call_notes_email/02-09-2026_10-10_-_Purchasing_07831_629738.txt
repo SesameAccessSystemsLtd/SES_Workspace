@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  02/09/2026  10:10
+============================================================
+With:         - Purchasing 07831 629738
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a voicemail call from Midland Battery Services confirming the delivery of a refurbished forklift battery and discussing the return of Andy, who is back tomorrow. Giles Hugo acknowledged the details and ended the call.
+
+--- RECAP --------------------------------------------------
+Giles Hugo from Midland Battery Services received a call from a purchasing representative confirming that a refurbished forklift battery order will be delivered in the morning.The purchasing representative asked if Andy, who is back tomorrow, would be available, and Giles confirmed Andy's return is scheduled for tomorrow.The purchasing representative had previously sent an email about the delivery date, which Giles acknowledged, noting the delivery was initially thought to be on Wednesday but is now scheduled for tomorrow morning.The call concluded with mutual thanks and goodbyes, with no further action items discussed.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

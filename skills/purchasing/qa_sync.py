@@ -39,11 +39,49 @@ LIVE_JSON = "qa_live.json"
 HIST_JSON = "qa_history.json"
 ACT_JSON = "qa_actions.json"
 
-# Headers — must match the sheet layout (both tabs share first 13 columns).
+
+def load_actions(actions, _json=json):
+    """Normalise qa_actions.json to a LIST of {row, decision, note} regardless
+    of the persisted shape, then return {row: action}.
+
+    The QA page posts its ACTIONS as a DICT keyed by row ({'123':{decision,note}})
+    and qa_server /save writes that dict verbatim. qa_sync used to assume a LIST
+    ([{row:...}]) — so a portal save made the next --portal/--push crash with
+    ValueError "string indices must be integers" (iterating dict keys). Accept
+    BOTH shapes here so nothing breaks whichever wrote last. (Fixed 2026-08-27.)
+    """
+    out = {}
+    if isinstance(actions, dict):
+        for k, a in actions.items():
+            if not isinstance(a, dict):
+                continue
+            row = a.get("row") or a.get("_rowindex") or k
+            out[str(row)] = {"row": row,
+                             "decision": a.get("decision", ""),
+                             "note": a.get("note", a.get("amendment_notes", "")),
+                             "response_needed": a.get("response_needed", ""),
+                             "response_status": a.get("response_status", "")}
+    elif isinstance(actions, list):
+        for a in actions:
+            if not isinstance(a, dict):
+                continue
+            row = a.get("row") or a.get("_rowindex")
+            if row is None:
+                continue
+            out[str(row)] = {"row": row,
+                             "decision": a.get("decision", ""),
+                             "note": a.get("note", a.get("amendment_notes", "")),
+                             "response_needed": a.get("response_needed", ""),
+                             "response_status": a.get("response_status", "")}
+    return out
+
+# Headers — must match the sheet layout (Pending tab shares first 13 columns
+# with Processed, and gains 14-15 for the response-needed flag added 2026-08-28).
 HDR = [
     "email_id", "received", "subject", "sender_domain", "doc_type",
     "po_number", "matched_task", "asana_link", "proposed_action",
     "comments", "decision", "amendment_notes", "processed_at",
+    "response_needed", "response_status",
 ]
 
 NBSP = "\u00a0"
@@ -80,6 +118,31 @@ def normalize_rows(data):
     return out
 
 
+def decorate_record(rec):
+    """Add the portal-facing alias fields + response_needed default to a row.
+
+    - comment_to_push / document_type: friendly aliases so the portal template
+      can reference the comment content and doc type without hard-coding the
+      sheet column names.
+    - line_items: the Google Sheet does NOT persist per-line item data, so this
+      stays an empty list (kept for forward-compat / future enrichment). The
+      complete proposed update is still visible via proposed_action + comments.
+    - response_needed: read from Pending col 14 if present; when blank we default
+      to 'yes' so every pending email is flagged for a response check. Giles can
+      mark it 'no' (with an optional response_status note) and that flag persists
+      back to the sheet via qa_sync --push when the column exists.
+    """
+    rec["comment_to_push"] = rec.get("comments", "")
+    rec["document_type"] = rec.get("doc_type", "")
+    rec.setdefault("line_items", [])
+    rn = (rec.get("response_needed") or "").strip().lower()
+    if rn not in ("yes", "no"):
+        rn = "yes"  # default: assume a reply/response is needed until Giles says otherwise
+    rec["response_needed"] = rn
+    rec["response_status"] = rec.get("response_status", "").strip()
+    return rec
+
+
 def write_json(path, obj):
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(os.path.join(DATA_DIR, path), "w", encoding="utf-8") as f:
@@ -93,12 +156,14 @@ def build(data_dir=DATA_DIR):
 
     # Live = still no decision. Compute confidence.
     for rec in live:
+        decorate_record(rec)
         rec["confidence"] = confidence(
             rec["doc_type"], rec["matched_task"], rec["asana_link"])
         rec["decision"] = ""  # force blank for portal
 
     # History: keep as-is, attach confidence too.
     for rec in hist:
+        decorate_record(rec)
         d = (rec.get("decision") or "").strip().upper()
         rec["confidence"] = confidence(rec["doc_type"], rec["matched_task"], rec["asana_link"])
         rec["decision"] = d
@@ -107,16 +172,19 @@ def build(data_dir=DATA_DIR):
     # reflects what has already been captured locally.
     try:
         with open(os.path.join(data_dir, ACT_JSON), encoding="utf-8") as f:
-            actions = json.load(f)
+            _actions = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
-        actions = []
-
-    act_by_row = {a["row"]: a for a in actions}
+        _actions = []
+    act_by_row = load_actions(_actions)   # handles dict (page/server) OR list shape
     for rec in live:
         a = act_by_row.get(rec["_rowindex"])
         if a:
             rec["decision"] = a.get("decision", rec["decision"])
             rec["amendment_notes"] = a.get("note", rec.get("amendment_notes", ""))
+            if a.get("response_needed"):
+                rec["response_needed"] = a["response_needed"]
+            if a.get("response_status"):
+                rec["response_status"] = a["response_status"]
         # Recompute confidence after any decision
         rec["confidence"] = confidence(rec["doc_type"], rec["matched_task"], rec["asana_link"])
         if rec["decision"]:
@@ -126,7 +194,7 @@ def build(data_dir=DATA_DIR):
                                 "items": live})
     hp = write_json(HIST_JSON, {"generated": dt.datetime.now().isoformat(timespec="seconds"),
                                 "items": hist})
-    return lp, hp, len(live), len(hist), len(actions)
+    return lp, hp, len(live), len(hist), len(act_by_row)
 
 
 PORTAL_TEMPLATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "qa_portal_template.html")
@@ -138,6 +206,7 @@ def generate_portal(data_dir=DATA_DIR):
     live = normalize_rows(read_sheet_tab("Pending"))
     hist = normalize_rows(read_sheet_tab("Processed"))
     for rec in live + hist:
+        decorate_record(rec)
         rec["confidence"] = confidence(rec["doc_type"], rec["matched_task"], rec["asana_link"])
         d = (rec.get("decision") or "").strip().upper()
         if d:
@@ -152,7 +221,7 @@ def generate_portal(data_dir=DATA_DIR):
             actions = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         actions = []
-    act_by_row = {a["row"]: a for a in actions}
+    act_by_row = load_actions(actions)   # dict (page/server) OR list shape
 
     data = {"generated": dt.datetime.now().isoformat(timespec="seconds"),
             "items": live}
@@ -164,6 +233,10 @@ def generate_portal(data_dir=DATA_DIR):
         if a:
             rec["decision"] = a.get("decision", rec.get("decision", ""))
             rec["amendment_notes"] = a.get("note", rec.get("amendment_notes", ""))
+            if a.get("response_needed"):
+                rec["response_needed"] = a["response_needed"]
+            if a.get("response_status"):
+                rec["response_status"] = a["response_status"]
 
     templ = open(PORTAL_TEMPLATE, encoding="utf-8").read()
     html = templ.replace("__QA_DATA__", json.dumps(data, ensure_ascii=False))
@@ -185,13 +258,20 @@ def push_actions(data_dir=DATA_DIR):
         print("No actions to push.")
         return 0
 
+    act_by_row = load_actions(actions)   # dict (page/server) OR list shape
+
     gc = gspread.service_account(filename=SERVICE_ACCOUNT_PATH)
     sh = gc.open_by_key(SHEET_ID)
     ws = sh.worksheet("Pending")
 
+    # Detect whether the response-needed columns (14/15) exist so we stay
+    # backward compatible with the older 13-column layout.
+    actual_hdr = ws.row_values(1)
+    col_14 = actual_hdr[13] if len(actual_hdr) > 13 else ""
+    col_15 = actual_hdr[14] if len(actual_hdr) > 14 else ""
+
     pushed = 0
-    for a in actions:
-        row = a.get("row")
+    for row, a in sorted(act_by_row.items(), key=lambda kv: int(kv[0]) if str(kv[0]).isdigit() else 0):
         decision = (a.get("decision") or "").strip()
         note = (a.get("note") or "").strip()
         if not row or not decision:
@@ -201,8 +281,16 @@ def push_actions(data_dir=DATA_DIR):
         ws.update_cell(row, 12, note)
         # Stamp Processed At (col M=13)
         ws.update_cell(row, 13, dt.datetime.now().strftime("%Y-%m-%d %H:%M"))
+        # Write the response-needed flag (col N=14) and status note (col O=15)
+        # ONLY if those columns exist on the Pending tab (backward compatible).
+        rn = (a.get("response_needed") or "").strip()
+        rs = (a.get("response_status") or "").strip()
+        if col_14.lower() in ("response needed", "response_needed", "response needed?") and rn:
+            ws.update_cell(row, 14, rn)
+        if col_15 and rs:
+            ws.update_cell(row, 15, rs)
         pushed += 1
-        print(f"  pushed row {row}: decision={decision}, note={note[:40]!r}")
+        print(f"  pushed row {row}: decision={decision}, note={note[:40]!r}" + (f", response_needed={rn}" if rn else ""))
 
     # Clear the pushed set so we don't double-push (they now live in the sheet).
     with open(os.path.join(data_dir, ACT_JSON), "w", encoding="utf-8") as f:

@@ -4,10 +4,31 @@ import requests
 import re
 from datetime import datetime
 
+# Asana @Giles mention tag — renders as a live user chip in Asana story comments.
+# Same value as GILES_MENTION_TAG in execute_requests.py so comment content that
+# flows through asana_add_comment() posts cleanly (never the raw profile URL).
+GILES_USER_GID      = "1142108324926610"  # REAL Giles user GID (verified 2026-09-01; old 369446862164512 was dead)
+GILES_EMAIL         = "giles@sesameaccess.com"  # typed at end of comments; Asana auto-links it as a mailto address
+GILES_MENTION_TAG   = f'<a data-asana-gid="{GILES_USER_GID}" data-asana-type="user">@Giles</a>'
+
 def extract_domain_from_sender(sender_email):
     match = re.search(r"@([a-zA-Z0-9.-]+)", sender_email)
     if match: return match.group(1)
     return None
+
+def extract_email_and_name(sender):
+    """Pull the actual email address + display name from a raw sender string.
+    Handles 'Name <email>', bare 'email', and 'Name/email' forms."""
+    email = None
+    name = ""
+    m = re.search(r"([A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+)", sender or "")
+    if m:
+        email = m.group(1)
+        # Name = the part before '<' if present, else before '@'-domain, else empty.
+        pre = (sender or "").split("<")[0].strip()
+        if pre and "@" not in pre:
+            name = pre.strip()
+    return email, name
 
 def extract_company_name_from_domain(domain):
     # Strip TLD suffixes and subdomain prefixes — e.g. noreply.aalco.co.uk → aalco
@@ -22,6 +43,55 @@ def normalise_ref(value):
     if not value:
         return ''
     return ''.join(ch for ch in str(value).upper() if ch.isalnum())
+
+
+def _findings_summary(insights, sender_domain):
+    """One-line summary of what the parser extracted, for human review.
+    Populated on every row so Giles can judge match quality even when no task
+    was found or no field change is proposed (2026-08-17)."""
+    parts = []
+    if insights.get("document_type"): parts.append(f"type={insights['document_type']}")
+    if insights.get("po_number"):      parts.append(f"PO={insights['po_number']}")
+    if insights.get("sqr_number"):     parts.append(f"SQR={insights['sqr_number']}")
+    if insights.get("total_price") is not None: parts.append(f"price=£{insights['total_price']}")
+    if insights.get("delivery_date"):  parts.append(f"delivery={insights['delivery_date']}")
+    if sender_domain:                  parts.append(f"vendor={extract_company_name_from_domain(sender_domain)}")
+    if insights.get("has_issues"):     parts.append(f"ISSUE: {insights.get('issue_summary','')}")
+    return ", ".join(parts) if parts else "no identifiers extracted"
+
+
+# ---- P4 auto-hook: attach inbound quotes/confirmations/invoices to our SQR ledger ----
+# (Giles 2026-08-27) Returned quotes arrive in a SEPARATE chain; match by domain/ref to
+# the SQR we issued and hold the supplier's quote/confirmation/invoice + sender in ops.db.
+SQR_DOC_TYPES = {"quote": "quote_ref", "order_confirmation": "confirmation", "invoice": "invoice"}
+
+def _hook_quote_ledger(item, insights, sender_email):
+    """Auto-call match_quote_to_sqr.process_quote when an inbound email is a
+    quote, order_confirmation or invoice. Best-effort — never blocks the mail flow.
+    Returns a short human note ('' if nothing to route)."""
+    try:
+        doc_type = insights.get("document_type")
+        if doc_type not in SQR_DOC_TYPES:
+            return ""
+        import sys as _sys, os as _os
+        _sys.path.insert(0, _os.path.dirname(os.path.abspath(__file__)))
+        from match_quote_to_sqr import process_quote
+
+        ref = insights.get("po_number") or ""
+        explicit_sqr = insights.get("sqr_number") or ""
+        _, sender_name = extract_email_and_name(item.get("sender") or sender_email or "")
+        result = process_quote(
+            sender_email=sender_email or "", sender_name=sender_name,
+            quote_ref=(ref if doc_type == "quote" else ""),
+            confirmation=(ref if doc_type == "order_confirmation" else ""),
+            invoice=(ref if doc_type == "invoice" else ""),
+            explicit_sqr=explicit_sqr)
+        if result.get("matched"):
+            return f"[SQR-ledger] {result['note']}"
+        return f"[SQR-ledger] no SQR match for {sender_email}"
+    except Exception as exc:  # pragma: no cover - hook must never break the pipeline
+        return f"[SQR-ledger] hook error: {exc}"
+
 
 
 from dotenv import load_dotenv
@@ -190,6 +260,15 @@ def main():
         sqr = insights.get("sqr_number")
 
         task, matched_by = search_asana_task(ASANA_WORKSPACE_GID, document_type, insights.get("po_number"), insights.get("sqr_number"), sender_domain, subject=item.get("subject", ""))
+
+        # P4 auto-hook: attach inbound quote/confirmation/invoice to the SQR ledger.
+        sender_email, _ = extract_email_and_name(item.get("sender", ""))
+        sqr_hook_note = _hook_quote_ledger(item, insights, sender_email)
+        if sqr_hook_note:
+            if not matched_by:
+                matched_by = sqr_hook_note
+            else:
+                matched_by = f"{matched_by}; {sqr_hook_note}"
         
         action_text = []
         comment_to_push = ""
@@ -215,8 +294,11 @@ def main():
             
             if proposed_date_update and extracted_delivery_date_str:
                 action_text.append(f"Update delivery date to {extracted_delivery_date_str}")
-                # Status Rule: If a firm delivery date is extracted, propose changing ORDER Status
-                action_text.append(f"Update ORDER Status custom field (field GID: {ASANA_ORDER_STATUS_FIELD_GID}) to 'On Order - Delivery Date Confirmed' (option GID: {ASANA_ORDER_STATUS_CONFIRMED_GID})")
+                # Status Rule: If a firm delivery date is extracted, propose changing ORDER Status.
+                # Written in plain English for the human review comment — the executor resolves
+                # this exact value to the ORDER Status custom field + option GID in code
+                # (execute_requests.parse_actions). No raw GIDs leak into Giles' view.
+                action_text.append("Update ORDER Status to 'On Order - Delivery Date Confirmed'")
 
             # Price Rule
             extracted_total_price = insights.get("total_price")
@@ -244,8 +326,10 @@ def main():
                     # Field already has value — never overwrite; append to description instead
                     action_text.append(f"Note added to description: {note_line}")
                 else:
-                    # First price — set the custom field and record in description
-                    action_text.append(f"Update custom field 'Price Ex VAT' (field GID: {ASANA_PRICE_EX_VAT_FIELD_GID}) to {extracted_total_price}")
+                    # First price — set the custom field and record in description.
+                    # Plain-English for the review comment; the executor maps the exact
+                    # 'Price Ex VAT' phrase to the custom-field GID in code.
+                    action_text.append(f"Update 'Price Ex VAT' to £{extracted_total_price:.2f}")
                     action_text.append(f"Note added to description: {note_line}")
 
             if insights.get("has_issues"): action_text.append(f"Flag issue: {insights['issue_summary']}")
@@ -253,16 +337,40 @@ def main():
             comment_items = [a for a in action_text if not a.startswith("(Matched") and not a.startswith("(Job#") and not a.startswith("(Domain Fallback:") and not a.startswith("Skipped")]
             if insights.get("has_issues") and not any(a.startswith("Flag issue:") for a in comment_items):
                 comment_items.append(f"Flag issue: {insights['issue_summary']}")
-            if comment_items:
-                email_subject = item.get("subject", "")
-                received_timestamp = item.get("receivedDateTime", "")
-                comment_to_push = (
-                    f"https://app.asana.com/1/357939803556123/profile/369446862164512 "
-                    f"Purchasing update\n"
-                    f"Email received: {received_timestamp}\n"
-                    f"Email: {email_subject}\n"
-                    + "\n".join(f"- {a}" for a in comment_items)
-                )
+            # Always build a comment for review — even when no field change is
+            # proposed. A blank Comments cell left Giles nothing to evaluate or
+            # push (2026-08-17). When there is no action, surface an
+            # acknowledgement plus the findings so match quality is still visible.
+            if not comment_items:
+                comment_items = [
+                    f"Acknowledged {document_type or 'email'} — no field change proposed "
+                    f"({_findings_summary(insights, sender_domain)})"
+                ]
+            email_subject = item.get("subject", "")
+            received_timestamp = item.get("receivedDateTime", "")
+            email_id = item.get("email_id", "")
+            sender_email, _ = extract_email_and_name(item.get("sender", "") or "")
+            task_ref = f"Task GID: {task.get('gid') if task else 'n/a'}"
+            task_url = (task.get("permalink_url") or "") if task else ""
+            # Content-first layout (Giles 2026-09-01): lead with the substance
+            # (document type + subject + proposed action bullets), then tracking
+            # (reference / match / GID / URL), then giles@sesameaccess.com at the
+            # very bottom (Asana auto-links it as a mailto address).
+            tracking_lines = [
+                f"Reference: {insights.get('po_number') or insights.get('sqr_number') or 'n/a'} · "
+                f"Received: {received_timestamp}",
+                f"Match basis: {matched_by or 'n/a'}",
+                f"{task_ref} · {email_id}",
+            ]
+            if task_url:
+                tracking_lines.append(f"{task_url}")
+            comment_to_push = (
+                f"{GILES_MENTION_TAG} {document_type or 'Email'}: {email_subject}\n"
+                + "\n".join(f"- {a}" for a in comment_items)
+                + "\n\n"
+                + "\n".join(tracking_lines)
+                + f"\n\n{GILES_EMAIL}"
+            )
         else:
             # Unmatched — still surface it (Giles 2026-08-13): no identifier, manual review.
             has_id = any([insights.get("po_number"), insights.get("sqr_number"),
@@ -276,6 +384,22 @@ def main():
                 action_text.append(
                     f"Manual review — no task/id extracted. Subject: '{item.get('subject','')[:90]}' "
                     f"(doc type: {document_type or 'unknown'}, sender: {sender_domain or 'unknown'})")
+            # Populate a review comment for unmatched rows too. matched_by can
+            # carry domain-fallback candidate links even when no task was auto-
+            # picked — surface that so Giles can locate the right task by hand.
+            # Content-first + email-at-bottom, same as the matched branch.
+            email_id_u = item.get("email_id", "")
+            sender_email_u, _ = extract_email_and_name(item.get("sender", "") or "")
+            comment_to_push = (
+                f"{GILES_MENTION_TAG} NO AUTO-MATCH - manual review.\n"
+                f"Email: {item.get('subject','')}\n"
+                f"Sender: {sender_email_u or sender_domain or 'unknown'}\n"
+                f"Received: {item.get('receivedDateTime','')}\n"
+                f"Found: {_findings_summary(insights, sender_domain)}"
+                + (f"\nMatch attempt: {matched_by}" if matched_by else "")
+                + f"\nEmail ID: {email_id_u}"
+                + f"\n\n{GILES_EMAIL}"
+            )
 
         queue.append({
             "email_id": item.get("email_id"),

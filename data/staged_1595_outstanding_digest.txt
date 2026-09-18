@@ -1,0 +1,366 @@
+# 1595 St George's House — Outstanding parts per pack (staged 02 Sep 2026)
+
+Source: parts_control (Asana Parts Control), open (incomplete) rows only.
+Total: 156 open part rows across 11 packs.
+
+## Format A — ONE comment on the job's main ALL BOMS build task
+Incomplete parts grouped under each pack, compact. (Main task = 1595 ALL BOMS root, GID held by Giles/production.)
+
+### 1595.1002.H.MT.PitTrimPlatform  — 8 part lines outstanding
+  - 1595.1002.H.010  ×1  Laser Cut
+  - 1595.1002.H.011  ×1  Laser Cut
+  - 1595.1002.H.018  ×2  Laser Cut
+  - 1595.1002.H.019  ×1  Laser Cut
+  - 1595.1002.H.019  ×1  Marine Lacquer
+  - 1595.1002.H.021  ×1  Laser Cut
+  - 1595.1002.H.021  ×1  Marine Lacquer
+  - 1595.1002.H.022  ×8  Laser Cut
+### 1595.1004.D.ScissorLiftFrame.Bellows  — 6 part lines outstanding
+  - 1595.1004.D.005  ×12  Laser Cut
+  - 1595.1004.D.006  ×4  Laser Cut
+  - 1595.1004.D.007  ×1  Laser Cut
+  - 1595.1004.D.008  ×2  Laser Cut
+  - 1595.1004.D.009  ×2  Laser Cut
+  - 1595.1004.D.010  ×4  Laser Cut
+### 1595.1006.G.GlassPlatform  — 31 part lines outstanding
+  - 1595.1006.G.001  ×1  Laser Cut
+  - 1595.1006.G.003  ×1  Glass Supplier
+  - 1595.1006.G.004  ×2  Glass Supplier
+  - 1595.1006.G.018  ×1  Laser Cut
+  - 1595.1006.G.019  ×1  Laser Cut
+  - 1595.1006.G.024  ×1  Laser Cut
+  - 1595.1006.G.039  ×1  Laser Cut
+  - 1595.1006.G.048  ×2  Laser Cut
+  - 1595.1006.G.049  ×2  Laser Cut
+  - 1595.1006.G.050  ×1  Laser Cut
+  - 1595.1006.G.052  ×3  Laser Cut
+  - 1595.1006.G.058  ×1  Laser Cut
+  - 1595.1006.G.062  ×1  Laser Cut
+  - 1595.1006.G.063  ×2  Laser Cut
+  - 1595.1006.G.064  ×2  Laser Cut
+  - 1595.1006.G.074  ×1  Laser Cut
+  - 1595.1006.G.075  ×1  Laser Cut
+  - 1595.1006.G.095  ×1  Orbital Fasteners
+  - 1595.1006.G.098  ×1  Tape Switch
+  - 1595.1006.G.114  ×1  Laser Cut
+  - 1595.1006.G.116  ×1  Laser Cut
+  - 1595.1006.G.126  ×1  Laser Cut
+  - 1595.1006.G.127  ×1  Bearing Supplier
+  - 1595.1006.G.138  ×5  Laser Cut
+  - 1595.1006.G.139  ×1  Laser Cut
+  - 1595.1006.G.140  ×1  Laser Cut
+  - 1595.1006.G.141  ×1  Laser Cut
+  - 1595.1006.G.142  ×1  Laser Cut
+  - 1595.1006.G.145  ×1  Laser Cut
+  - 1595.1006.G.150  ×12  Laser Cut
+  - 1595.1006.G.Bellows  ×1  Bellows Supplier
+### 1595.1008.D1.MachineRoomCabinet  — 3 part lines outstanding
+  - 1595.1008.D1.112  ×1  Laser Cut
+  - 1595.1008.D1.128  ×1  Amazon
+  - 1595.1008.D1.MotorPumpUnit  ×1  Hydraulic Supplier
+### 1595.1011.B.ScissorLift Double  — 14 part lines outstanding
+  - 1595.1011.B.030  ×1  Laser Cut
+  - 1595.1011.B.031  ×1  Laser Cut
+  - 1595.1011.B.032  ×1  Laser Cut
+  - 1595.1011.B.040  ×1  Laser Cut
+  - 1595.1011.B.058  ×1  Laser Cut
+  - 1595.1011.B.086  ×1  Laser Cut
+  - 1595.1011.B.109  ×1  Laser Cut
+  - 1595.1011.B.114  ×2  Laser Cut
+  - 1595.1011.B.117  ×1  Laser Cut
+  - 1595.1011.B.119  ×1  Laser Cut
+  - 1595.1011.B.120  ×1  Laser Cut
+  - 1595.1011.B.121  ×1  Laser Cut
+  - 1595.1011.B.122  ×1  Laser Cut
+  - 1595.1011.B.ScissorLift Double  ×1  Sesame
+### 1595.1014.F9.PlatformGlassGate  — 14 part lines outstanding
+  - 1595.1014.F.038  ×2  Laser Cut
+  - 1595.1014.F.039  ×2  Laser Cut
+  - 1595.1014.F.040  ×2  Machining
+  - 1595.1014.F.041  ×2  Laser Cut
+  - 1595.1014.F.042  ×4  Rubber Supplier
+  - 1595.1014.F.043  ×2  Rubber Supplier
+  - 1595.1014.F.044  ×2  Rubber Supplier
+  - 1595.1014.F.067  ×3  Anodising
+  - 1595.1014.F.068  ×1  Laser Cut
+  - 1595.1014.F.069  ×1  Glass Supplier
+  - 1595.1014.F.070  ×1  Machining
+  - 1595.1014.F.071  ×3  Machining
+  - 1595.1014.F.082  ×2  Laser Cut
+  - 1595.1014.F.083  ×2  MacLellan Rubber
+### 1595.1014.P.LowProfileAutoGlassGate  — 23 part lines outstanding
+  - 1595.1014.P.001  ×1  Laser Cut
+  - 1595.1014.P.002  ×1  Laser Cut
+  - 1595.1014.P.004  ×1  Bearing Supplier
+  - 1595.1014.P.005  ×2  simplybearings
+  - 1595.1014.P.006  ×1  Laser Cut
+  - 1595.1014.P.007  ×1  Glass Supplier
+  - 1595.1014.P.008  ×1  Machining
+  - 1595.1014.P.009  ×1  Bearing Supplier
+  - 1595.1014.P.010  ×1  Laser Cut
+  - 1595.1014.P.011  ×3  Anodising
+  - 1595.1014.P.012  ×1  Bearing Supplier
+  - 1595.1014.P.014  ×1  Laser Cut
+  - 1595.1014.P.017  ×1  Laser Cut
+  - 1595.1014.P.021  ×2  Laser Cut
+  - 1595.1014.P.024  ×2  Laser Cut
+  - 1595.1014.P.025  ×1  Laser Cut
+  - 1595.1014.P.032  ×1  Laser Cut
+  - 1595.1014.P.040  ×1  Machining
+  - 1595.1014.P.041  ×2  Sesame
+  - 1595.1014.P.043  ×3  Machining
+  - 1595.1014.P.045  ×1  Laser Cut
+  - 1595.1014.P.049  ×1  Laser Cut
+  - 1595.1014.P.053  ×1  Laser Cut
+### 1595.1014.A.OnLiftGateMechanism  — 22 part lines outstanding
+  - 1595.1014.A.001  ×1  Laser Cut
+  - 1595.1014.A.010  ×1  Laser Cut
+  - 1595.1014.A.012  ×1  Laser Cut
+  - 1595.1014.A.032  ×1  Laser Cut
+  - 1595.1014.A.035  ×8  Laser Cut
+  - 1595.1014.A.036  ×1  Laser Cut
+  - 1595.1014.A.058  ×1  Laser Cut
+  - 1595.1014.A.059  ×1  Laser Cut
+  - 1595.1014.A.066  ×1  Laser Cut
+  - 1595.1014.A.067  ×1  Laser Cut
+  - 1595.1014.A.069  ×1  Laser Cut
+  - 1595.1014.A.076  ×2  simply bearings
+  - 1595.1014.A.077  ×16  Laser Cut
+  - 1595.1014.A.080  ×2  Laser Cut
+  - 1595.1014.A.083  ×2  Laser Cut
+  - 1595.1014.A.084  ×4  Laser Cut
+  - 1595.1014.A.085  ×1  Laser Cut
+  - 1595.1014.A.086  ×1  Machining
+  - 1595.1014.A.088  ×1  Laser Cut
+  - 1595.1014.A.091  ×1  Bearing Supplier
+  - 1595.1014.A.094  ×1  Machining
+  - 1595.1014.A.097  ×1  Laser Cut
+### 1595.1015.C.StabilisationChannel  — 13 part lines outstanding
+  - 1595.1015.C.002  ×1  Laser Cut
+  - 1595.1015.C.003  ×1  Laser Cut
+  - 1595.1015.C.004  ×3  Laser Cut
+  - 1595.1015.C.006  ×1  Laser Cut
+  - 1595.1015.C.007  ×3  Laser Cut
+  - 1595.1015.C.008  ×1  Laser Cut
+  - 1595.1015.C.009  ×1  Laser Cut
+  - 1595.1015.C.012  ×1  Laser Cut
+  - 1595.1015.C.014  ×2  Laser Cut
+  - 1595.1015.C.015  ×1  Laser Cut
+  - 1595.1015.C.016  ×2  Laser Cut
+  - 1595.1015.C.022  ×1  Laser Cut
+  - 1595.1015.C.023  ×1  Laser Cut
+### 1595.1016.A.OnLift.BS.Glass  — 15 part lines outstanding
+  - 1595.1016.A.001  ×1  Laser Cut
+  - 1595.1016.A.002  ×1  Laser Cut
+  - 1595.1016.A.006  ×1  Laser Cut
+  - 1595.1016.A.007  ×1  Laser Cut
+  - 1595.1016.A.010  ×4  Laser Cut
+  - 1595.1016.A.012  ×1  Laser Cut
+  - 1595.1016.A.013  ×1  Laser Cut
+  - 1595.1016.A.015  ×1  Laser Cut
+  - 1595.1016.A.016  ×1  Laser Cut
+  - 1595.1016.A.018  ×2  Rubber Supplier
+  - 1595.1016.A.019  ×4  Rubber Supplier
+  - 1595.1016.A.020  ×2  Rubber Supplier
+  - 1595.1016.A.021  ×1  Rubber Supplier
+  - 1595.1016.A.022  ×2  Rubber Supplier
+  - 1595.1016.A.023  ×1  Rubber Supplier
+### 1595.1020.A.FreeStandingButtonPost  — 7 part lines outstanding
+  - 1595.1020.A.002  ×1  Laser Cut
+  - 1595.1020.A.004  ×1  Laser Cut
+  - 1595.1020.A.010  ×1  Laser Cut
+  - 1595.1020.A.011  ×1  Laser Cut
+  - 1595.1020.A.012  ×1  Laser Cut
+  - 1595.1020.A.014  ×1  Laser Cut
+  - 1595.1020.A.016  ×2  Laser Cut
+
+## Format B — a comment on EACH Build Schedule pack task (11 comments)
+
+--- Comment on Build Schedule pack task 1595.1002.H.MT.PitTrimPlatform (gid 1217543695788646) ---
+OUTSTANDING (8):
+  1595.1002.H.010 ×1 — Laser Cut
+  1595.1002.H.011 ×1 — Laser Cut
+  1595.1002.H.018 ×2 — Laser Cut
+  1595.1002.H.019 ×1 — Laser Cut
+  1595.1002.H.019 ×1 — Marine Lacquer
+  1595.1002.H.021 ×1 — Laser Cut
+  1595.1002.H.021 ×1 — Marine Lacquer
+  1595.1002.H.022 ×8 — Laser Cut
+
+--- Comment on Build Schedule pack task 1595.1004.D.ScissorLiftFrame.Bellows (gid 1217543695788651) ---
+OUTSTANDING (6):
+  1595.1004.D.005 ×12 — Laser Cut
+  1595.1004.D.006 ×4 — Laser Cut
+  1595.1004.D.007 ×1 — Laser Cut
+  1595.1004.D.008 ×2 — Laser Cut
+  1595.1004.D.009 ×2 — Laser Cut
+  1595.1004.D.010 ×4 — Laser Cut
+
+--- Comment on Build Schedule pack task 1595.1006.G.GlassPlatform (gid 1217543695788656) ---
+OUTSTANDING (31):
+  1595.1006.G.001 ×1 — Laser Cut
+  1595.1006.G.003 ×1 — Glass Supplier
+  1595.1006.G.004 ×2 — Glass Supplier
+  1595.1006.G.018 ×1 — Laser Cut
+  1595.1006.G.019 ×1 — Laser Cut
+  1595.1006.G.024 ×1 — Laser Cut
+  1595.1006.G.039 ×1 — Laser Cut
+  1595.1006.G.048 ×2 — Laser Cut
+  1595.1006.G.049 ×2 — Laser Cut
+  1595.1006.G.050 ×1 — Laser Cut
+  1595.1006.G.052 ×3 — Laser Cut
+  1595.1006.G.058 ×1 — Laser Cut
+  1595.1006.G.062 ×1 — Laser Cut
+  1595.1006.G.063 ×2 — Laser Cut
+  1595.1006.G.064 ×2 — Laser Cut
+  1595.1006.G.074 ×1 — Laser Cut
+  1595.1006.G.075 ×1 — Laser Cut
+  1595.1006.G.095 ×1 — Orbital Fasteners
+  1595.1006.G.098 ×1 — Tape Switch
+  1595.1006.G.114 ×1 — Laser Cut
+  1595.1006.G.116 ×1 — Laser Cut
+  1595.1006.G.126 ×1 — Laser Cut
+  1595.1006.G.127 ×1 — Bearing Supplier
+  1595.1006.G.138 ×5 — Laser Cut
+  1595.1006.G.139 ×1 — Laser Cut
+  1595.1006.G.140 ×1 — Laser Cut
+  1595.1006.G.141 ×1 — Laser Cut
+  1595.1006.G.142 ×1 — Laser Cut
+  1595.1006.G.145 ×1 — Laser Cut
+  1595.1006.G.150 ×12 — Laser Cut
+  1595.1006.G.Bellows ×1 — Bellows Supplier
+
+--- Comment on Build Schedule pack task 1595.1008.D1.MachineRoomCabinet (gid 1217543576958476) ---
+OUTSTANDING (3):
+  1595.1008.D1.112 ×1 — Laser Cut
+  1595.1008.D1.128 ×1 — Amazon
+  1595.1008.D1.MotorPumpUnit ×1 — Hydraulic Supplier
+
+--- Comment on Build Schedule pack task 1595.1011.B.ScissorLift Double (gid 1217543576958491) ---
+OUTSTANDING (14):
+  1595.1011.B.030 ×1 — Laser Cut
+  1595.1011.B.031 ×1 — Laser Cut
+  1595.1011.B.032 ×1 — Laser Cut
+  1595.1011.B.040 ×1 — Laser Cut
+  1595.1011.B.058 ×1 — Laser Cut
+  1595.1011.B.086 ×1 — Laser Cut
+  1595.1011.B.109 ×1 — Laser Cut
+  1595.1011.B.114 ×2 — Laser Cut
+  1595.1011.B.117 ×1 — Laser Cut
+  1595.1011.B.119 ×1 — Laser Cut
+  1595.1011.B.120 ×1 — Laser Cut
+  1595.1011.B.121 ×1 — Laser Cut
+  1595.1011.B.122 ×1 — Laser Cut
+  1595.1011.B.ScissorLift Double ×1 — Sesame
+
+--- Comment on Build Schedule pack task 1595.1014.F9.PlatformGlassGate (gid 1217543576958501) ---
+OUTSTANDING (14):
+  1595.1014.F.038 ×2 — Laser Cut
+  1595.1014.F.039 ×2 — Laser Cut
+  1595.1014.F.040 ×2 — Machining
+  1595.1014.F.041 ×2 — Laser Cut
+  1595.1014.F.042 ×4 — Rubber Supplier
+  1595.1014.F.043 ×2 — Rubber Supplier
+  1595.1014.F.044 ×2 — Rubber Supplier
+  1595.1014.F.067 ×3 — Anodising
+  1595.1014.F.068 ×1 — Laser Cut
+  1595.1014.F.069 ×1 — Glass Supplier
+  1595.1014.F.070 ×1 — Machining
+  1595.1014.F.071 ×3 — Machining
+  1595.1014.F.082 ×2 — Laser Cut
+  1595.1014.F.083 ×2 — MacLellan Rubber
+
+--- Comment on Build Schedule pack task 1595.1014.P.LowProfileAutoGlassGate (gid 1217543576958506) ---
+OUTSTANDING (23):
+  1595.1014.P.001 ×1 — Laser Cut
+  1595.1014.P.002 ×1 — Laser Cut
+  1595.1014.P.004 ×1 — Bearing Supplier
+  1595.1014.P.005 ×2 — simplybearings
+  1595.1014.P.006 ×1 — Laser Cut
+  1595.1014.P.007 ×1 — Glass Supplier
+  1595.1014.P.008 ×1 — Machining
+  1595.1014.P.009 ×1 — Bearing Supplier
+  1595.1014.P.010 ×1 — Laser Cut
+  1595.1014.P.011 ×3 — Anodising
+  1595.1014.P.012 ×1 — Bearing Supplier
+  1595.1014.P.014 ×1 — Laser Cut
+  1595.1014.P.017 ×1 — Laser Cut
+  1595.1014.P.021 ×2 — Laser Cut
+  1595.1014.P.024 ×2 — Laser Cut
+  1595.1014.P.025 ×1 — Laser Cut
+  1595.1014.P.032 ×1 — Laser Cut
+  1595.1014.P.040 ×1 — Machining
+  1595.1014.P.041 ×2 — Sesame
+  1595.1014.P.043 ×3 — Machining
+  1595.1014.P.045 ×1 — Laser Cut
+  1595.1014.P.049 ×1 — Laser Cut
+  1595.1014.P.053 ×1 — Laser Cut
+
+--- Comment on Build Schedule pack task 1595.1014.A.OnLiftGateMechanism (gid 1217543576958496) ---
+OUTSTANDING (22):
+  1595.1014.A.001 ×1 — Laser Cut
+  1595.1014.A.010 ×1 — Laser Cut
+  1595.1014.A.012 ×1 — Laser Cut
+  1595.1014.A.032 ×1 — Laser Cut
+  1595.1014.A.035 ×8 — Laser Cut
+  1595.1014.A.036 ×1 — Laser Cut
+  1595.1014.A.058 ×1 — Laser Cut
+  1595.1014.A.059 ×1 — Laser Cut
+  1595.1014.A.066 ×1 — Laser Cut
+  1595.1014.A.067 ×1 — Laser Cut
+  1595.1014.A.069 ×1 — Laser Cut
+  1595.1014.A.076 ×2 — simply bearings
+  1595.1014.A.077 ×16 — Laser Cut
+  1595.1014.A.080 ×2 — Laser Cut
+  1595.1014.A.083 ×2 — Laser Cut
+  1595.1014.A.084 ×4 — Laser Cut
+  1595.1014.A.085 ×1 — Laser Cut
+  1595.1014.A.086 ×1 — Machining
+  1595.1014.A.088 ×1 — Laser Cut
+  1595.1014.A.091 ×1 — Bearing Supplier
+  1595.1014.A.094 ×1 — Machining
+  1595.1014.A.097 ×1 — Laser Cut
+
+--- Comment on Build Schedule pack task 1595.1015.C.StabilisationChannel (gid 1217543695928403) ---
+OUTSTANDING (13):
+  1595.1015.C.002 ×1 — Laser Cut
+  1595.1015.C.003 ×1 — Laser Cut
+  1595.1015.C.004 ×3 — Laser Cut
+  1595.1015.C.006 ×1 — Laser Cut
+  1595.1015.C.007 ×3 — Laser Cut
+  1595.1015.C.008 ×1 — Laser Cut
+  1595.1015.C.009 ×1 — Laser Cut
+  1595.1015.C.012 ×1 — Laser Cut
+  1595.1015.C.014 ×2 — Laser Cut
+  1595.1015.C.015 ×1 — Laser Cut
+  1595.1015.C.016 ×2 — Laser Cut
+  1595.1015.C.022 ×1 — Laser Cut
+  1595.1015.C.023 ×1 — Laser Cut
+
+--- Comment on Build Schedule pack task 1595.1016.A.OnLift.BS.Glass (gid 1217543695928408) ---
+OUTSTANDING (15):
+  1595.1016.A.001 ×1 — Laser Cut
+  1595.1016.A.002 ×1 — Laser Cut
+  1595.1016.A.006 ×1 — Laser Cut
+  1595.1016.A.007 ×1 — Laser Cut
+  1595.1016.A.010 ×4 — Laser Cut
+  1595.1016.A.012 ×1 — Laser Cut
+  1595.1016.A.013 ×1 — Laser Cut
+  1595.1016.A.015 ×1 — Laser Cut
+  1595.1016.A.016 ×1 — Laser Cut
+  1595.1016.A.018 ×2 — Rubber Supplier
+  1595.1016.A.019 ×4 — Rubber Supplier
+  1595.1016.A.020 ×2 — Rubber Supplier
+  1595.1016.A.021 ×1 — Rubber Supplier
+  1595.1016.A.022 ×2 — Rubber Supplier
+  1595.1016.A.023 ×1 — Rubber Supplier
+
+--- Comment on Build Schedule pack task 1595.1020.A.FreeStandingButtonPost (gid 1217543695928418) ---
+OUTSTANDING (7):
+  1595.1020.A.002 ×1 — Laser Cut
+  1595.1020.A.004 ×1 — Laser Cut
+  1595.1020.A.010 ×1 — Laser Cut
+  1595.1020.A.011 ×1 — Laser Cut
+  1595.1020.A.012 ×1 — Laser Cut
+  1595.1020.A.014 ×1 — Laser Cut
+  1595.1020.A.016 ×2 — Laser Cut

@@ -1,0 +1,545 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1037 - Langley Entire BOM,"Master task for all BOMs related to 1037 - Langley Entire BOM
+Dropbox: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Project: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",,,,,,,,,,
+Surface Finish BOM - 1037 - Langley Entire BOM,,ALL BOMS - 1037 - Langley Entire BOM,,Surface Finish BOM,,,,,,,
+Powder Coating - 1037 - Langley Entire BOM,,Surface Finish BOM - 1037 - Langley Entire BOM,,Powder Coating,,,,,,,
+1 off Powder Coating 1037. 9990.A.004 - Front cover,"1037.9990.A.004
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 17.799 kg
+Volume: 6592079.658 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true
+---
+NOTES: RAL 9017 matt",Powder Coating - 1037 - Langley Entire BOM,1,Powder Coating,,,,ORDER,PROJECT ORDER,1217816714660528,https://app.asana.com/0/848657415032331/1217816714660528
+1 off Powder Coating 1037. 9990.A1w - Cover fold welding,"1037.9990.A1w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 24.654 kg
+Volume: 9131104.864 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true
+---
+NOTES: RAL 9017 matt",Powder Coating - 1037 - Langley Entire BOM,1,Powder Coating,,,,ORDER,PROJECT ORDER,1217816603412185,https://app.asana.com/0/848657415032331/1217816603412185
+30 off Powder Coating ISO 10642 - M4 x  8 PPC - Hexagon socket countersunk head cap screws,"ISO 10642 - M4 x  8 PPC
+Material: Stainless Steel
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.001 kg
+Volume: 134.894 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true
+---
+NOTES: RAL 9017 matt",Powder Coating - 1037 - Langley Entire BOM,30,Powder Coating,,,,ORDER,PROJECT ORDER,1217831983112358,https://app.asana.com/0/848657415032331/1217831983112358
+34 off Powder Coating ISO 10642 - M5 x  8 PPC - Hexagon socket countersunk head cap screws,"ISO 10642 - M5 x  8 PPC
+Material: Steel
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.002 kg
+Volume: 221.098 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true
+---
+NOTES: RAL 9017 matt",Powder Coating - 1037 - Langley Entire BOM,34,Powder Coating,,,,ORDER,PROJECT ORDER,1217816669817840,https://app.asana.com/0/848657415032331/1217816669817840
+4 off Powder Coating ISO 10642 - M8 x  20 PPC - Hexagon socket countersunk head cap screws,"ISO 10642 - M8 x  20 PPC
+Material: Steel
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.010 kg
+Volume: 1253.417 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true
+---
+NOTES: RAL 9017 matt",Powder Coating - 1037 - Langley Entire BOM,4,Powder Coating,,,,ORDER,PROJECT ORDER,1217816669673904,https://app.asana.com/0/848657415032331/1217816669673904
+Laser Cut BOM - 1037 - Langley Entire BOM,,ALL BOMS - 1037 - Langley Entire BOM,,Laser Cut,,,,,,,
+Laser Cut - 1037 - Langley Entire BOM,,Laser Cut BOM - 1037 - Langley Entire BOM,,Laser Cut,,,,,,,
+1 off 1037. 1014.M.105 - Top plate Laser Cut,"1037.1014.M.105
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.467 kg
+Volume: 59544.027 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217831983112442,https://app.asana.com/0/848657415032331/1217831983112442
+1 off 1037. 1014.M.106 - Fixing plate Laser Cut,"1037.1014.M.106
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.554 kg
+Volume: 70569.027 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816714998448,https://app.asana.com/0/848657415032331/1217816714998448
+1 off 1037. 1014.M.107 - Gusset Laser Cut,"1037.1014.M.107
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.937 kg
+Volume: 119350.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816670085446,https://app.asana.com/0/848657415032331/1217816670085446
+1 off 1037. 1014.M.110 - Packer 304/HR Laser Cut,"1037.1014.M.110
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.456 kg
+Volume: 57038.319 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816669802299,https://app.asana.com/0/848657415032331/1217816669802299
+1 off 1037. 1014.M.111 - Packer 304/HR Laser Cut,"1037.1014.M.111
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.228 kg
+Volume: 28519.159 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816647703125,https://app.asana.com/0/848657415032331/1217816647703125
+2 off 1037. 1014.M.112 - Packer 304/2B Laser Cut,"1037.1014.M.112
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.091 kg
+Volume: 11407.664 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217816923787526,https://app.asana.com/0/848657415032331/1217816923787526
+2 off 1037. 1014.M.113 - Packer 304/2B Laser Cut,"1037.1014.M.113
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.046 kg
+Volume: 5703.832 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217816715236467,https://app.asana.com/0/848657415032331/1217816715236467
+1 off 1037. 1014.M.114.01 - Packer 304/HR Laser Cut,"1037.1014.M.114.01
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.261 kg
+Volume: 32572.832 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816670236918,https://app.asana.com/0/848657415032331/1217816670236918
+1 off 1037. 1014.M.115.01 - Packer 304/2B Laser Cut,"1037.1014.M.115.01
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.104 kg
+Volume: 13029.133 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816670214654,https://app.asana.com/0/848657415032331/1217816670214654
+2 off 1037. 1014.M.116.01 - Packer 304/2B Laser Cut,"1037.1014.M.116.01
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.052 kg
+Volume: 6514.566 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217816647852695,https://app.asana.com/0/848657415032331/1217816647852695
+1 off 1037. 1014.M.118 - Gusset Laser Cut,"1037.1014.M.118
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.453 kg
+Volume: 57646.239 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816648037643,https://app.asana.com/0/848657415032331/1217816648037643
+1 off 1037. 1014.N.002 - Flat 304/HR Laser Cut,"1037.1014.N.002
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.634 kg
+Volume: 79254.550 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816648111922,https://app.asana.com/0/848657415032331/1217816648111922
+1 off 1037. 1014.N.010.01 - Gate Stopper Laser Cut,"1037.1014.N.010.01
+Material: Steel, Mild
+Thickness: 20.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.644 kg
+Volume: 82010.394 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816923777600,https://app.asana.com/0/848657415032331/1217816923777600
+1 off 1037. 1014.N.020 - GateShaft BasePlate 304/2B Laser Cut,"1037.1014.N.020
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.206 kg
+Volume: 25479.288 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816670239415,https://app.asana.com/0/848657415032331/1217816670239415
+1 off 1037. 1014.N.024 - Packer 304/HR Laser Cut,"1037.1014.N.024
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.235 kg
+Volume: 29035.471 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816715654788,https://app.asana.com/0/848657415032331/1217816715654788
+2 off 1037. 1014.N.026 - Packer 304/2B Laser Cut,"1037.1014.N.026
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.047 kg
+Volume: 5807.094 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217816924268886,https://app.asana.com/0/848657415032331/1217816924268886
+1 off 1037. 1014.N.028 - Packer 304/2B Laser Cut,"1037.1014.N.028
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.094 kg
+Volume: 11614.188 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816911651344,https://app.asana.com/0/848657415032331/1217816911651344
+1 off 1037. 1014.N.088 - Packers 304/HR Laser Cut,"1037.1014.N.088
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.552 kg
+Volume: 68959.425 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816670761750,https://app.asana.com/0/848657415032331/1217816670761750
+1 off 1037. 1014.N.089 - Packers 304/2B Laser Cut,"1037.1014.N.089
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.221 kg
+Volume: 27583.770 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816715726136,https://app.asana.com/0/848657415032331/1217816715726136
+2 off 1037. 1014.N.090 - Packers 304/2B Laser Cut,"1037.1014.N.090
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.110 kg
+Volume: 13791.885 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217816715779185,https://app.asana.com/0/848657415032331/1217816715779185
+1 off 1037. 1014.N.100 - Packer 304/HR Laser Cut,"1037.1014.N.100
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.472 kg
+Volume: 58957.913 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816715889436,https://app.asana.com/0/848657415032331/1217816715889436
+1 off 1037. 1014.N.101 - Packer 304/2B Laser Cut,"1037.1014.N.101
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.189 kg
+Volume: 23583.165 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816924480592,https://app.asana.com/0/848657415032331/1217816924480592
+2 off 1037. 1014.N.102 - Packer 304/2B Laser Cut,"1037.1014.N.102
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.094 kg
+Volume: 11791.583 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217816715680669,https://app.asana.com/0/848657415032331/1217816715680669
+1 off 1037. 1014.N.105 - Mounting plate Laser Cut,"1037.1014.N.105
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 1.323 kg
+Volume: 168472.270 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816715815780,https://app.asana.com/0/848657415032331/1217816715815780
+1 off 1037. 1014.N.106 - Gate Stopper Laser Cut,"1037.1014.N.106
+Material: Steel, Mild
+Thickness: 20.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.687 kg
+Volume: 87476.135 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816924570648,https://app.asana.com/0/848657415032331/1217816924570648
+1 off 1037. 9990.A.001 - Cover fold Laser Cut,"1037.9990.A.001
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 24.654 kg
+Volume: 9131104.864 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816912226614,https://app.asana.com/0/848657415032331/1217816912226614
+2 off 1037. 9990.A.002 - Reinforcement plate Laser Cut,"1037.9990.A.002
+Material: Aluminum 5152
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.653 kg
+Volume: 241865.155 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217816716091839,https://app.asana.com/0/848657415032331/1217816716091839
+1 off 1037. 9990.A.003 - Reinforcement plate Laser Cut,"1037.9990.A.003
+Material: Aluminum 5152
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.531 kg
+Volume: 196715.155 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816604875531,https://app.asana.com/0/848657415032331/1217816604875531
+1 off 1037. 9990.A.004 - Front cover Laser Cut,"1037.9990.A.004
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 17.799 kg
+Volume: 6592079.658 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true
+---
+NOTES: RAL 9017 matt",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816924574844,https://app.asana.com/0/848657415032331/1217816924574844
+2 off 1037. 9990.A.010 - Z-bracket 304/2B Laser Cut,"1037.9990.A.010
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.241 kg
+Volume: 30178.938 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217816670720004,https://app.asana.com/0/848657415032331/1217816670720004
+1 off 1037. 9990.A.012 - Reinforcement plate Laser Cut,"1037.9990.A.012
+Material: Aluminum 5152
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.335 kg
+Volume: 124211.366 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816716176655,https://app.asana.com/0/848657415032331/1217816716176655
+1 off 1037. 9990.A.016 - Handrail bracket 304/HR Laser Cut,"1037.9990.A.016
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 1.088 kg
+Volume: 135966.114 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816604875546,https://app.asana.com/0/848657415032331/1217816604875546
+1 off 1037. 9992.A.001 - Wheelstop fold 304/DP2 Laser Cut,"1037.9992.A.001
+Stock Number: 304/DP2
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 5.127 kg
+Volume: 640905.130 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816671085598,https://app.asana.com/0/848657415032331/1217816671085598
+1 off 1037. 9992.A.002 - Endcap 304/DP1 Laser Cut,"1037.9992.A.002
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.024 kg
+Volume: 2968.454 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816671128462,https://app.asana.com/0/848657415032331/1217816671128462
+1 off 1037. 9992.B.001 - Tray vertical flat 304/DP1 Laser Cut,"1037.9992.B.001
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.438 kg
+Volume: 54720.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816671227254,https://app.asana.com/0/848657415032331/1217816671227254
+1 off 1037. 9992.B.002 - Tray horizontal part 304/2B Laser Cut,"1037.9992.B.002
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.372 kg
+Volume: 46512.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Laser Cut - 1037 - Langley Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217816924596253,https://app.asana.com/0/848657415032331/1217816924596253
+Machining BOM - 1037 - Langley Entire BOM,,ALL BOMS - 1037 - Langley Entire BOM,,Machining,,,,,,,
+Machining - 1037 - Langley Entire BOM,,Machining BOM - 1037 - Langley Entire BOM,,Machining,,,,,,,
+1 off 1037. 1014.M.057 - Gate Drive Shaft Machining,"1037.1014.M.057
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 10.452 kg
+Volume: 1306554.866 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Machining - 1037 - Langley Entire BOM,1,Machining,,,,ORDER,PROJECT ORDER,1217816856488809,https://app.asana.com/0/848657415032331/1217816856488809
+1 off 1037. 1014.N.079 - Bush Machining,"1037.1014.N.079
+Material: Steel, Mild
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.140 kg
+Volume: 17812.830 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Machining - 1037 - Langley Entire BOM,1,Machining,,,,ORDER,PROJECT ORDER,1217816716523917,https://app.asana.com/0/848657415032331/1217816716523917
+1 off 1037. 1014.N3 - Shaft Bracket With bearing Machining,"1037.1014.N3
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.745 kg
+Volume: 93138.019 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Machining - 1037 - Langley Entire BOM,1,Machining,,,,ORDER,PROJECT ORDER,1217816856558502,https://app.asana.com/0/848657415032331/1217816856558502
+1 off 1037. 1014.N11 - Upper gate bracket with bearing Machining,"1037.1014.N11
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.545 kg
+Volume: 67863.977 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Machining - 1037 - Langley Entire BOM,1,Machining,,,,ORDER,PROJECT ORDER,1217816912644100,https://app.asana.com/0/848657415032331/1217816912644100
+8 off 1037. 9991.C.001 - PTFE slider 45x1200 Machining,"1037.9991.C.001
+Material: PTFE
+Web Link: https://www.directplastics.co.uk/ptfe-sheet
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.161 kg
+Volume: 160756.333 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Machining - 1037 - Langley Entire BOM,8,Machining,,,,ORDER,PROJECT ORDER,1217816912389301,https://app.asana.com/0/848657415032331/1217816912389301
+2 off 1037. 9991.C.002 - PTFE slider 45x1570 Machining,"1037.9991.C.002
+Material: PTFE
+Web Link: https://www.directplastics.co.uk/ptfe-sheet
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.210 kg
+Volume: 210336.333 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Machining - 1037 - Langley Entire BOM,2,Machining,,,,ORDER,PROJECT ORDER,1217816856508732,https://app.asana.com/0/848657415032331/1217816856508732
+Marine Lacquer - 1037 - Langley Entire BOM,,Surface Finish BOM - 1037 - Langley Entire BOM,,Marine Lacquer,,,,,,,
+2 off Marine Lacquer 1037. 9990.A.002 - Reinforcement plate,"1037.9990.A.002
+Material: Aluminum 5152
+Thickness: 5.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.653 kg
+Volume: 241865.155 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Marine Lacquer - 1037 - Langley Entire BOM,2,Marine Lacquer,,,,ORDER,PROJECT ORDER,1217816856490516,https://app.asana.com/0/848657415032331/1217816856490516
+1 off Marine Lacquer 1037. 9990.A.003 - Reinforcement plate,"1037.9990.A.003
+Material: Aluminum 5152
+Thickness: 5.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.531 kg
+Volume: 196715.155 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Marine Lacquer - 1037 - Langley Entire BOM,1,Marine Lacquer,,,,ORDER,PROJECT ORDER,1217816856771817,https://app.asana.com/0/848657415032331/1217816856771817
+1 off Marine Lacquer 1037. 9990.A.012 - Reinforcement plate,"1037.9990.A.012
+Material: Aluminum 5152
+Thickness: 5.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.335 kg
+Volume: 124211.366 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Marine Lacquer - 1037 - Langley Entire BOM,1,Marine Lacquer,,,,ORDER,PROJECT ORDER,1217816856569733,https://app.asana.com/0/848657415032331/1217816856569733
+Sesame BOM - 1037 - Langley Entire BOM,,ALL BOMS - 1037 - Langley Entire BOM,,Sesame,,,,,,,
+Bellows Supplier - 1037 - Langley Entire BOM,,Sesame BOM - 1037 - Langley Entire BOM,,Bellows Supplier,,,,,,,
+1 off 1037. 1006.A.Bellows.01 - Bellows Bellows Supplier,"1037.1006.A.Bellows.01
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 12.436 kg
+Volume: 3466741.538 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Bellows Supplier - 1037 - Langley Entire BOM,1,Bellows Supplier,,,,ORDER,PROJECT ORDER,1217816716688339,https://app.asana.com/0/848657415032331/1217816716688339
+Sesame - 1037 - Langley Entire BOM,,Sesame BOM - 1037 - Langley Entire BOM,,Sesame,,,,,,,
+2 off 1037. 1014.M.064 - Levelling foot flat non tilt Steel Zinc plated 673-702 Sesame,"1037.1014.M.064
+Stock Number: 673-702
+KAN: KAN-661
+KAN Stock Link: https://app.asana.com/0/632603478911321/1208669430714093
+Material: Generic
+Web Link: https://www.wdscomponents.com/en-gb/levelling-foot-flat-non-tilt-steel-zinc-plated
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.008 kg
+Volume: 8243.616 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Sesame - 1037 - Langley Entire BOM,,Sesame,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217816671957546,https://app.asana.com/0/848657415032331/1217816671957546
+Bearing Supplier - 1037 - Langley Entire BOM,,Sesame BOM - 1037 - Langley Entire BOM,,Bearing Supplier,,,,,,,
+1 off 1037. 1014.N.004 - Split bearing bush - SEND TO MACHINING PM4020DX Bearing Supplier,"1037.1014.N.004
+Stock Number: PM4020DX
+Material: Steel
+Web Link: https://www.thebearingcompany.co.uk/products/pm4020dx-split-bush-bearing-40x44x20mm/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.040 kg
+Volume: 5130.778 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true
+---
+NOTES: Send to machining",Bearing Supplier - 1037 - Langley Entire BOM,1,Bearing Supplier,,,,ORDER,PROJECT ORDER,1217816925209976,https://app.asana.com/0/848657415032331/1217816925209976
+simplybearings - 1037 - Langley Entire BOM,,Sesame BOM - 1037 - Langley Entire BOM,,simplybearings,,,,,,,
+1 off 1037. 1014.N.005 - 51104 Budget Single Thrust Ball Bearing 20x35x10mm 51104 simplybearings,"1037.1014.N.005
+Stock Number: 51104
+Material: Generic
+Web Link: https://www.simplybearings.co.uk/products/51104-eu?_gl=1*fdygyc*_up*MQ..*_ga*MTA4ODc1NzMyNi4xNzg2NDM1MzI2*_ga_9MPVFZW38K*czE3ODY0MzUzMjUkbzEkZzEkdDE3ODY0MzUzNDIkajQzJGwwJGgxNDcwNjMyOA..
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.005 kg
+Volume: 4865.411 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",simplybearings - 1037 - Langley Entire BOM,1,simplybearings,,,,ORDER,PROJECT ORDER,1217816717142810,https://app.asana.com/0/848657415032331/1217816717142810
+1 off 1037. 1014.N.032 - Split bearing bush - SEND TO MACHINING PM4050DX Bearing Supplier,"1037.1014.N.032
+Stock Number: PM4050DX
+Material: Steel
+Web Link: https://www.thebearingcompany.co.uk/products/pm4050dx-split-bush-bearing-40x44x50mm/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.101 kg
+Volume: 12927.546 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true
+---
+NOTES: Send to machining",Bearing Supplier - 1037 - Langley Entire BOM,1,Bearing Supplier,,,,ORDER,PROJECT ORDER,1217816672198690,https://app.asana.com/0/848657415032331/1217816672198690
+"1 off 1037. 1014.N.067 - Lubricating Nipple, coned Type A DIN 71412 A AM 6 (coned short) Sesame","1037.1014.N.067
+Stock Number: DIN 71412 A AM 6 (coned short)
+Material: Steel, Mild
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.004 kg
+Volume: 471.462 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Sesame - 1037 - Langley Entire BOM,1,Sesame,,,,ORDER,PROJECT ORDER,1217816857235264,https://app.asana.com/0/848657415032331/1217816857235264
+Simply Bearings - 1037 - Langley Entire BOM,,Sesame BOM - 1037 - Langley Entire BOM,,Simply Bearings,,,,,,,
+2 off 1037. 1014.N.103 - UCP208 Metric Cast Iron Two Bolt Pillow UCP208/NP40 Simply Bearings,"1037.1014.N.103
+Stock Number: UCP208/NP40
+Material: Generic
+Web Link: https://www.simplybearings.co.uk/products/ucp-208?_gl=1*1xcgx8z*_up*MQ..*_ga*MTQ4NjgwMDUwNS4xNzg2NDQ1MjE3*_ga_HM5RZGXBJW*czE3ODY0NDUyMTYkbzEkZzEkdDE3ODY0NDUyMjMkajUzJGwwJGgw*_ga_NNP108LS6F*czE3ODY0NDUyMTYkbzEkZzEkdDE3ODY0NDUyMjMkajUzJGwwJGgxMTUzMjYyNjcz
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.664 lbmass
+Volume: 301128.770 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Simply Bearings - 1037 - Langley Entire BOM,2,Simply Bearings,,,,ORDER,PROJECT ORDER,1217816672165189,https://app.asana.com/0/848657415032331/1217816672165189
+www.par-group.co.uk - 1037 - Langley Entire BOM,,Sesame BOM - 1037 - Langley Entire BOM,,www.par-group.co.uk,,,,,,,
+4 off 1037. 9990.A.011 - Brush Strip T1 Section_BS1x10-180_(10mm trim) www.par-group.co.uk,"1037.9990.A.011
+Stock Number: T1 Section_BS1x10-180_(10mm trim)
+Material: Generic
+Web Link: https://www.par-group.co.uk/health-and-safety/brush-strip-sections/180-carrier-door-brush-strips/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.067 kg
+Volume: 67376.640 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",www.par-group.co.uk - 1037 - Langley Entire BOM,4,www.par-group.co.uk,,,,ORDER,PROJECT ORDER,1217816856771856,https://app.asana.com/0/848657415032331/1217816856771856
+www.s3i.co.uk - 1037 - Langley Entire BOM,,Sesame BOM - 1037 - Langley Entire BOM,,www.s3i.co.uk,,,,,,,
+1 off 1037. 9990.A.014 - SS Glass Handle - M8 fixings 47.5100.300.12 www.s3i.co.uk,"1037.9990.A.014
+Stock Number: 47.5100.300.12
+Material: Stainless Steel
+Web Link: https://www.s3i.co.uk/stainless-steel-door-handle-51.php
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 1.671 kg
+Volume: 208857.241 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",www.s3i.co.uk - 1037 - Langley Entire BOM,1,www.s3i.co.uk,,,,ORDER,PROJECT ORDER,1217816857271937,https://app.asana.com/0/848657415032331/1217816857271937
+Tape Switch - 1037 - Langley Entire BOM,,Sesame BOM - 1037 - Langley Entire BOM,,Tape Switch,,,,,,,
+1 off 1037. 9991.A.TapeSwitch.01 - TS6 Sensing Edge With Resistor TS6/+End caps/ Tape Switch,"1037.9991.A.TapeSwitch.01
+Stock Number: TS6/+End caps/
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.516 kg
+Volume: 515580.224 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Tape Switch - 1037 - Langley Entire BOM,1,Tape Switch,,,,ORDER,PROJECT ORDER,1217816671949188,https://app.asana.com/0/848657415032331/1217816671949188
+1 off 1037. Shoulder screw ISO 7379-12-M10-40 - Shoulder screw ISO 7379-12-M10-40 Sesame,"1037.Shoulder screw ISO 7379-12-M10-40
+Stock Number: ISO 7379-12-M10-40
+Material: Stainless Steel
+Web Link: https://www.berger-tools.co.uk/Iso7379_Hexagon_Socket_Head_Shoulder_Screw_Ssb_Stainless/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/ybjf3ok6yqlv8q1tx8nls/AM44-Wap-SGMbQxUXg2R9xY?rlkey=35ojdpg1l0e1fhf02hjkfabyz&dl=0
+Mass: 0.062 kg
+Volume: 7737.947 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217483803791434?focus=true",Sesame - 1037 - Langley Entire BOM,1,Sesame,,,,ORDER,PROJECT ORDER,1217816925300613,https://app.asana.com/0/848657415032331/1217816925300613

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  27/08/2026  11:25
+============================================================
+With:         +441932353011 01932 353011
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call was a voicemail exchange regarding the specification and delivery of threaded rods, clarifying that M16 is not suitable and confirming delivery timelines. Giles Hugo and the caller discussed the required size and delivery schedule.
+
+--- RECAP --------------------------------------------------
+The caller clarified that they need threaded rods, specifically not M16 size, possibly M6, M8, or M12, but not M16.Giles Hugo confirmed understanding and mentioned that the rods are needed today for delivery tomorrow morning.The caller emphasized that M16 threaded rods are not to be supplied.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

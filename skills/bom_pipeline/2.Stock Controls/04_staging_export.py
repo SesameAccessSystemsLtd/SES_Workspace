@@ -6,7 +6,7 @@ Exports the stock-checked BOM (all rows) as a formatted Excel workbook for revie
 Left-hand audit panel (first 12 columns, matches Giles review format):
   Override/Reorder QTY | Low Stock Alert | BOM QTY | BOM Description | ORDER_PICK |
   Remaining after BOM | Mapped KAN | Asana Task Name | Part Number | Stock QTY |
-  min Stock QTY | Asana Task URL (hyperlink)
+  Trigger Order QTY | Asana Task URL (hyperlink)
 
 Then: Order reference | Order Status | cost center | vendor | material | ... BOM fields
 
@@ -75,7 +75,7 @@ PRIORITY_COLS = [
     'Part Number',               # J: full Sesame PN (e.g. 1575.1008.T.8ID_Grommet)
     'Matched Stock_Number',      # K: Rev4 Golden Index key matched against — verify this is correct
     'Stock QTY',                 # L
-    'min Stock QTY',             # M
+    'Trigger Order QTY',         # M (Asana field 1198179728033183 — replenish threshold)
     'Asana Task URL',            # N: hyperlink
     'Order reference',           # N
     'Order Status',              # O

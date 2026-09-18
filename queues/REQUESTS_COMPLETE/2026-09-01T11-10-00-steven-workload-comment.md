@@ -1,0 +1,34 @@
+---
+To: asana_agent
+From: Hermes (Giles)
+Type: asana_write
+Status: COMPLETE
+Completed: 2026-09-01T11:00:30.016674+00:00
+Note: comment posted
+Priority: normal
+Created: 2026-09-01T11:10:00Z
+---
+
+Task GID: 1217816139267932
+
+Comment To Push:
+Giles — response to Steven (28.08.26 Workload & Overload review)
+
+Thanks Steven — understood, and you're right to set that priority clearly. I accept full accountability for it: every part needed for every live lift must be identified, ordered early, chased, delivered, correct, and ready for the engineers when they need it. Nothing missed, no surprises weeks before install. That is the remit, and it's what I'm structuring my work around.
+
+How I'm addressing it directly:
+
+- Per-lift part coverage is the backstop, not a wish. I'm building a per-live-lift checklist that proves each part is in one of four clean states — quoted / ordered / in-transit / delivered-correct — so nothing falls through the gap between "BOM created" and "engineer needs it."
+- BOM → purchasing is getting systematised. Every project BOM is being consolidated into one consistent structure in Asana (root → cost centre → vendor task → parts) so the "what must be bought for this lift" question has a single, reliable answer.
+- Chasing is being made proactive. The aim is that delivery status is tracked and surfaced to me rather than me hunting for it — so I'm responding to exceptions, not discovering them late.
+
+The system challenge behind why I'm addressing it this way (secondary, but honest):
+
+The current process was built for human administration, and it doesn't flow end-to-end. Part data is fragmented across sources — project BOMs, legacy BOMs, drawings (part allocation now has to be read off the drawing files), and a growing number of ad-hoc BOMs coming in from unusual drawing/service tasks, often with heavy crossover between them (the Langley BOMs landing while I was on leave are a clear example). That fragmentation is the single biggest risk to "nothing missed" — it's why parts can slip between the cracks, and it's why a lot of my time has gone into stitching information together manually rather than into the purchasing itself.
+
+So the AI development I'm doing is aimed squarely at removing that stitching — consolidating the sources, giving everyone the information they can help themselves to, and tightening the quoted → ordered → chased → delivered chain so the priority you've set becomes more reliable, not less. That's the lens every piece of it is being judged against.
+
+I also hear you on the non-purchasing load (collections, deliveries, vans, drop-and-collect labour). I'll keep that visible separately, but it comes second to the above.
+
+## Context
+Reply from Giles to Steven on the workload/browser-history task. Pure comment post — no PO numbers, no status changes, no task edits.

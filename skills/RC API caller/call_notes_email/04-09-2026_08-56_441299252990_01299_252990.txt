@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  04/09/2026  08:56
+============================================================
+With:         +441299252990 01299 252990
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a voicemail from Tech Electric Motors, providing options for motor and gearbox sales and support, and transferring the caller accordingly.
+
+--- RECAP --------------------------------------------------
+The caller from Tech Electric Motors called and was presented with options to dial 1 for motor sales or 2 for gearbox sales and support.The caller was informed that their call was being transferred after selecting an option.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

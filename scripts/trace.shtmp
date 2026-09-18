@@ -1,0 +1,32 @@
+#!/bin/bash
+TOKEN=*** '^ASANA_PERSONAL_ACCESS_TOKEN' /c/Users/GilesHugo/.Hermes/.env | head -1 | cut -d= -f2- | tr -d '"' | tr -d " \t\r\n")
+AUTH=*** Bearer $TOKEN"
+API="https://app.asana.com/api/1.0"
+get_page_gids() {
+  echo "$1" | grep -o '"gid": *"[0-9]*"' | sed 's/.*"gid": *"\([0-9]*\)".*/\1/'
+}
+get_subtasks() {
+  local parent="$1"
+  local cur=""
+  while : ; do
+    local resp
+    if [ -n "$cur" ]; then
+      resp=$(curl -s -H "$AUTH" "$API/tasks/$parent/subtasks?limit=100&opt_fields=name&offset=$cur")
+    else
+      resp=$(curl -s -H "$AUTH" "$API/tasks/$parent/subtasks?limit=100&opt_fields=name")
+    fi
+    local gids
+    gids=$(get_page_gids "$resp")
+    echo "[DEBUG resp-len=${#resp}]"
+    echo "[DEBUG gids=$gids]"
+    [ -n "$gids" ] && echo "$gids"
+    cur=$(echo "$resp" | grep -o '"offset": *"[^"]*"' | head -1 | cut -d'"' -f4)
+    local hm
+    hm=$(echo "$resp" | grep -o '"has_more": *[a-z]*' | head -1 | cut -d' ' -f2)
+    echo "[DEBUG cur=$cur hm=$hm]"
+    if [ "$hm" != "true" ] || [ -z "$cur" ]; then break; fi
+  done
+}
+echo "== get_subtasks 1216293165478983 =="
+get_subtasks 1216293165478983
+echo "== done =="

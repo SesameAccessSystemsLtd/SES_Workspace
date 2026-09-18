@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  26/08/2026  11:08
+============================================================
+With:         Andrew Grain 07808 849698
+Forwarded by: LesV@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Leslie Vaughn from Sesame Access discussing logistical arrangements with Andrew Grain, including assistance with gantry assembly and clarifying the reference points for lift installation at Manchester hall. The overall outcome was agreement on the reference points and confirmation of meeting arrangements.
+
+--- RECAP --------------------------------------------------
+Leslie Vaughn requested assistance from Andrew Grain in providing a spare person for approximately 10 minutes to help erect the gantry at Manchester hall on the upcoming Tuesday.Leslie Vaughn raised concerns about the alignment of lines in the pit, noting that their setting out point was the arch of the building being central, but the carpenters were using steel references, which may differ from the grid lines provided by the main contractor. They agreed to verify the lift's position upon arrival.Andrew Grain confirmed that the centre line of the lift should align with the centre of the steels, as instructed by Carroll, and that this was the plan for installation.Both parties confirmed they would meet on Tuesday at Manchester hall to proceed with the work.
+
+--- TASKS --------------------------------------------------
+Leslie Vaughn will verify the position of the lift upon arrival at Manchester hall on Tuesday.Andrew Grain will arrange for a spare person to assist with the gantry erection for about 10 minutes on Tuesday.
+
+(Full transcript: RC web portal only — no RingSense API)

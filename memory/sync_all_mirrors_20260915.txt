@@ -1,0 +1,46 @@
+
+--- sync_stock_inventory.py ---
+11:03:44  INFO      sync_stock_inventory  Fetching from KANBAN (632603478911321)
+11:03:51  INFO      sync_stock_inventory    579 tasks
+11:03:51  INFO      sync_stock_inventory  Fetching from Consumables (1200068443534209)
+11:03:59  INFO      sync_stock_inventory    745 tasks
+11:03:59  INFO      sync_stock_inventory  Rows prepared: 239  (skipped — no sesame_pn: 1084)
+11:03:59  ERROR     db_writer  stock_inventory gid=1198507094515469: UNIQUE constraint failed: stock_inventory.sesame_pn
+11:03:59  ERROR     db_writer  stock_inventory gid=1201028213514491: UNIQUE constraint failed: stock_inventory.sesame_pn
+11:03:59  ERROR     db_writer  stock_inventory gid=1203123545923776: UNIQUE constraint failed: stock_inventory.sesame_pn
+11:03:59  INFO      sync_stock_inventory  Done — written: 0  skipped: 236  errors: 3
+
+--- sync_suppliers.py ---
+11:04:00  INFO      sync_suppliers  Fetching tasks from Suppliers project 414986125671548
+11:04:04  INFO      sync_suppliers  Fetched 432 tasks
+11:04:04  INFO      sync_suppliers  Done — written: 0  skipped: 432  errors: 0
+
+--- sync_build_schedule.py ---
+11:04:04  INFO      sync_build_schedule  Fetching from Drawing Control (1142754335688166)
+11:04:25  INFO      sync_build_schedule    2102 tasks
+11:04:25  INFO      sync_build_schedule  Fetching from Build Schedule (852956628490855)
+11:04:28  INFO      sync_build_schedule    249 tasks
+11:04:28  INFO      sync_build_schedule  Total rows prepared: 2350
+11:04:28  INFO      sync_build_schedule  Done — written: 36  skipped: 2314  errors: 0
+
+--- sync_parts_control.py ---
+11:04:28  INFO      sync_parts_control  Fetching tasks from Parts Control project 1211660707080749
+11:04:58  INFO      sync_parts_control  Fetched 2644 tasks (2098 completed)
+11:04:58  INFO      sync_parts_control  Done — written: 222  skipped: 2422  errors: 0
+
+--- sync_procurement_tasks.py ---
+11:04:58  INFO      sync_procurement_tasks  Fetching from Quote Control (1207766004159548)
+11:05:00  INFO      sync_procurement_tasks    69 tasks
+11:05:00  INFO      sync_procurement_tasks  Fetching from Order Numbers (854650811917168)
+11:05:40  INFO      sync_procurement_tasks    3614 tasks
+11:05:40  INFO      sync_procurement_tasks  Total rows prepared: 3683
+11:05:40  INFO      sync_procurement_tasks  Done — written: 0  skipped: 3683  errors: 0
+
+--- sync_qc_issues.py ---
+11:05:40  INFO      sync_qc_issues  Fetching tasks from QC Issues project 902269769783650
+11:06:42  WARNING   root  paginate_tasks: hit max_pages=50 limit for project 902269769783650 — 5000 tasks fetched, truncating
+11:06:42  INFO      sync_qc_issues  Fetched 5000 tasks
+11:06:42  INFO      sync_qc_issues  Done — written: 2  skipped: 4998  errors: 0
+
+All mirror syncs completed successfully.
+EXIT=0

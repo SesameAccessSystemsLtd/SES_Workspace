@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  17/09/2026  11:32
+============================================================
+With:         - Purchasing 01709 578222
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a brief call where Ian from M God provided an order number to Giles Hugo, who confirmed receipt and indicated he would return shortly after locating the order details.
+
+--- RECAP --------------------------------------------------
+Ian from M God called Giles Hugo to provide an order number 21582 with an additional identifier 1037.Giles Hugo acknowledged the order number and confirmed it was the correct one.Giles Hugo stated he would find the order details and call back in 2 minutes.Ian from M God waited for Giles to locate the order and expected a callback shortly.
+
+--- TASKS --------------------------------------------------
+Giles Hugo to locate the order details for order number 21582 and return Ian's call within 2 minutes.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  09/09/2026  11:12
+============================================================
+With:         - Purchasing 0118 227 7559
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo from system access discussing a quote and order quantities with Ben from Rebound Electronics. The main outcome was that Rebound Electronics will review a quote for a limited quantity of items, as their current volume requirements are lower than Giles's suppliers can accommodate.
+
+--- RECAP --------------------------------------------------
+Giles Hugo from system access contacted Ben at Rebound Electronics to discuss a quote for electronic components, with a focus on managing DNS server settings and ordering quantities.Ben managed to prepare a quote for 5 units of each item requested, citing good prices and limited quantities, and will send the quote via email once email issues are resolved.Giles indicated that their current volume needs are small and that they are exploring options with other suppliers who can fulfill larger volumes, especially for PCBs.Ben will send the quote for the 5 units per item to Giles for review, and Giles will consider whether to proceed based on the quote and their volume requirements.
+
+--- TASKS --------------------------------------------------
+Ben will send the quote for 5 units of each item to Giles once email issues are resolved.Giles will review the quote and determine if it meets their needs or if they need to explore other supplier options for larger volumes.
+
+(Full transcript: RC web portal only — no RingSense API)

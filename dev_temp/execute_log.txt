@@ -1,0 +1,29 @@
+workspace-search pool tasks: 338
+project_subtree task count: 512
+ALL placeholder matches (workspace incl.): 9
+  X 1216653243720194 'ARCHIVE - [Project name] '
+  PROJ 1216293054994605 'ARCHIVE - [Project name] '
+  X 1216653359864568 'Packing Up the Lift - [Project Name]'
+  PROJ 1216293066712442 'Packing Up the Lift - [Project Name]'
+  X 1216653359864566 'QC Lift - [Project Name] '
+  PROJ 1216293066712438 'QC Lift - [Project Name] '
+  X 1213227425805921 'Update tasks needing [project name]'
+  X 1213067091171799 'Update tasks needing [project name]'
+  PROJ 1216293066510705 'Update tasks needing [project name]'
+in-project matches to update: 4
+out-of-project matches (reported, not updated): 5
+  UPDATED 1216293054994605
+    old: 'ARCHIVE - [Project name] '
+    new: 'ARCHIVE - 1591 - University of Cambridge '
+  UPDATED 1216293066712442
+    old: 'Packing Up the Lift - [Project Name]'
+    new: 'Packing Up the Lift - 1591 - University of Cambridge'
+  UPDATED 1216293066712438
+    old: 'QC Lift - [Project Name] '
+    new: 'QC Lift - 1591 - University of Cambridge '
+  UPDATED 1216293066510705
+    old: 'Update tasks needing [project name]'
+    new: 'Update tasks needing 1591 - University of Cambridge'
+UPDATED COUNT: 4
+result written
+EXIT 0

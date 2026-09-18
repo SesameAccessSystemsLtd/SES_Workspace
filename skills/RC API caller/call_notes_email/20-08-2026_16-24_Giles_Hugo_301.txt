@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  20/08/2026  16:24
+============================================================
+With:         Giles Hugo 301
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a voicemail call where Fatima confirmed that the meeting room's computer can open the meeting link but lacks sound and video, likely due to mirroring issues or muted settings. They discussed the training session's format, which involves participants watching and listening, with an option to ask questions via typing, all conducted simultaneously with three participants.
+
+--- RECAP --------------------------------------------------
+Fatima tested the meeting room computer and confirmed it can open the meeting link, but there is no sound or video, possibly due to mirroring issues or the computer being muted.Giles noted that when Steve was connected, sound was received from his computer, suggesting the issue may be with the meeting room computer's sound settings.Fatima asked if Giles would be in tomorrow; he is not, so she will leave a note on his desk for review on Monday.They discussed the training session, which involves three participants watching and listening simultaneously, with an option for participants to ask questions via typing if they wish.Participants are expected to watch and listen during the training, with questions being optional and conducted through typing.
+
+--- TASKS --------------------------------------------------
+Fatima will leave a note on Giles's desk for him to review the meeting setup issues on Monday.
+
+(Full transcript: RC web portal only — no RingSense API)

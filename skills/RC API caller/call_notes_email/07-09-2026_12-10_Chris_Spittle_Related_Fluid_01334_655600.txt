@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  07/09/2026  12:10
+============================================================
+With:         Chris Spittle | Related Fluid 01334 655600
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a call between Giles Hugo from Sesame Access and Chris Spittle from Related Fluid regarding an email about an order and production status. Giles inquired about expediting the order and obtaining machining drawings, and Chris indicated he would review the email and follow up accordingly.
+
+--- RECAP --------------------------------------------------
+Giles Hugo from Sesame Access called Chris Spittle at Related Fluid to discuss an email sent earlier regarding an order and the possibility of expediting it.Giles asked about the current state of production, and Chris explained that production is currently backlogged due to machine issues, limiting their ability to expedite lead times unless the order involves off-the-shelf parts or subcontracted components.Giles requested access to the machining drawings related to the order, and Chris indicated he would need to consult with a colleague named Chris to obtain these drawings.Chris confirmed he would review the email and the order details and ensure someone from their team would follow up with Giles.Giles provided Chris with the contact information for the colleague named Chris to facilitate obtaining the machining drawings.
+
+--- TASKS --------------------------------------------------
+Chris Spittle will review the email and order details and arrange for a team member to follow up with Giles Hugo.Chris Spittle will consult with his colleague named Chris regarding access to the machining drawings and will include Giles in the follow-up communication.
+
+(Full transcript: RC web portal only — no RingSense API)

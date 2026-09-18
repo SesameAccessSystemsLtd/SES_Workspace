@@ -323,6 +323,8 @@ def read_resolutions(path: str) -> dict:
     headers = list(rows[0].keys())
     kan_col = next((h for h in headers if h.strip().upper() == "KAN"), None)
     res_col = next((h for h in headers if "RESOLUTION" in h.upper()), None)
+    verdict_col = next((h for h in headers if "VERDICT" in h.upper()), None)
+    note_col = next((h for h in headers if "CHECK" in h.upper()), None)  # "Check result"
     if not kan_col or not res_col:
         raise RuntimeError(
             f"Resolutions file {path} must have 'KAN' and a 'Resolution' column; "
@@ -332,8 +334,12 @@ def read_resolutions(path: str) -> dict:
     for r in rows:
         kan = clean_text(r.get(kan_col, ""))
         chosen = clean_text(r.get(res_col, ""))
-        if kan and chosen:
-            out[kan] = chosen
+        verdict = clean_text(r.get(verdict_col, "")).upper() if verdict_col else ""
+        note = clean_text(r.get(note_col, "")) if note_col else ""
+        # Keep an entry when there is a chosen value OR a verdict — a RED verdict
+        # with a blank resolution must still quarantine the KAN.
+        if kan and (chosen or verdict):
+            out[kan] = {"chosen": chosen, "verdict": verdict, "note": note}
     return out
 
 
@@ -379,7 +385,7 @@ def consolidate(kan_map: dict, assembly_index: dict, resolutions: dict | None = 
         no_stock           : list[str]     (KANs with no stock number at all)
     """
     resolutions = resolutions or {}
-    master, conflicts, merges, no_stock, resolved_conflicts = [], [], [], [], []
+    master, conflicts, merges, no_stock, resolved_conflicts, needs_split = [], [], [], [], [], []
 
     for kan in sorted(kan_map, key=_kan_sort_key):
         rec = kan_map[kan]
@@ -393,11 +399,47 @@ def consolidate(kan_map: dict, assembly_index: dict, resolutions: dict | None = 
             candidates = sorted(
                 {canonical_stock(sorted(rec["norm_to_raw"][nk])) for nk in norm_keys}
             )
-            chosen = resolutions.get(kan)
+            entry = resolutions.get(kan) or {}
+            chosen = entry.get("chosen", "")
+            verdict = (entry.get("verdict") or "").upper()
+            note = entry.get("note", "")
+
+            candidate_norms = {normalise_stock(c) for c in rec["stock_variants"]}
+            matched = bool(chosen) and normalise_stock(chosen) in candidate_norms
+
+            def _quarantine(reason):
+                needs_split.append(
+                    {
+                        "kan": kan,
+                        "reason": reason,
+                        "verdict": verdict,
+                        "candidate_stock_numbers": candidates,
+                        "all_raw_variants": sorted(rec["stock_variants"]),
+                        "match_types": dict(rec["match_types"]),
+                        "row_count": rec["row_count"],
+                        "asana_sesame_pn": sorted(rec["asana_sesame_pn"]),
+                        "karol_resolution": chosen,
+                        "karol_note": note,
+                    }
+                )
+
+            # RED = design confirmed genuinely different parts wrongly sharing one
+            # KAN. Must be split into separate KANs (a data decision) — withhold.
+            if verdict == "RED":
+                _quarantine("different_parts_RED")
+                continue
+
+            # Provenance guard: a chosen value that is NOT among the detected
+            # candidates AND carries no human GREEN/AMBER sign-off is ungrounded
+            # (possibly fabricated) — withhold, never guess. A GREEN/AMBER verdict
+            # IS the human verification, so a reviewed value is trusted even when
+            # it is a cleaned/reformatted spelling of a candidate.
+            if chosen and not matched and verdict not in ("GREEN", "AMBER"):
+                _quarantine("resolution_not_a_candidate")
+                continue
+
             if chosen:
-                # Human resolved this conflict - promote to master.
-                candidate_norms = {normalise_stock(c) for c in rec["stock_variants"]}
-                matched = normalise_stock(chosen) in candidate_norms
+                # Human resolved (GREEN/AMBER, value IS a real candidate) - promote.
                 record = _build_master_record(
                     kan, rec, chosen, [chosen], assembly_index,
                     provenance="conflict_resolution",
@@ -448,6 +490,7 @@ def consolidate(kan_map: dict, assembly_index: dict, resolutions: dict | None = 
         "master": master,
         "conflicts": conflicts,
         "resolved_conflicts": resolved_conflicts,
+        "needs_split": needs_split,
         "merges": merges,
         "no_stock": no_stock,
     }
@@ -508,6 +551,7 @@ def write_json(consolidated: dict, path: str) -> None:
             "resolution_source": "'auto' (single stock) or 'conflict_resolution' (human-chosen)",
         },
         "outstanding_conflicts": [c["kan"] for c in consolidated["conflicts"]],
+        "needs_split": consolidated.get("needs_split", []),
         "kans_without_stock": consolidated["no_stock"],
         "records": consolidated["master"],
     }
@@ -655,6 +699,31 @@ def build_workbook(consolidated: dict, quality: dict, stats: dict, path: str) ->
         widths={1: 12, 2: 30, 3: 40, 4: 20, 5: 10, 6: 26, 7: 24},
     )
 
+    # --- Needs split (RED / unverifiable — withheld from master, for design) ---
+    ns_headers = [
+        "KAN", "Reason", "Verdict", "Candidate Stock Numbers",
+        "Asana Sesame PNs", "Karol Resolution", "Karol Note", "Source Rows",
+    ]
+    ns_rows = [
+        [
+            n["kan"],
+            n["reason"],
+            n.get("verdict", ""),
+            LIST_SEP.join(n["candidate_stock_numbers"]),
+            LIST_SEP.join(n["asana_sesame_pn"]),
+            n.get("karol_resolution", ""),
+            n.get("karol_note", ""),
+            n["row_count"],
+        ]
+        for n in consolidated.get("needs_split", [])
+    ]
+    add_sheet(
+        "Needs split",
+        ns_headers,
+        ns_rows,
+        widths={1: 12, 2: 24, 3: 9, 4: 30, 5: 26, 6: 20, 7: 55, 8: 10},
+    )
+
     # --- Resolved conflicts (audit of human decisions applied) ---
     add_sheet(
         "Resolved conflicts",
@@ -742,6 +811,7 @@ def main(argv=None):
         "resolved": len(consolidated["master"]),
         "resolved_conflicts": len(consolidated["resolved_conflicts"]),
         "conflicts": len(consolidated["conflicts"]),
+        "needs_split": len(consolidated["needs_split"]),
         "no_stock": len(consolidated["no_stock"]),
         "merges": len(consolidated["merges"]),
         "duplicates": duplicates,
@@ -755,6 +825,27 @@ def main(argv=None):
     json_path = os.path.join(args.outdir, "golden_index_master.json")
     build_workbook(consolidated, quality, stats, xlsx_path)
     write_json(consolidated, json_path)
+
+    # needs_split.csv — RED / unverifiable KANs withheld from master, handed to
+    # design to split into separate KANs (or correct the stock number). Never
+    # shipped to rev6, so the BOM matcher can't map to a known-wrong part.
+    ns_path = os.path.join(args.outdir, "needs_split.csv")
+    with open(ns_path, "w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh)
+        w.writerow([
+            "KAN", "Reason", "Verdict", "Candidate Stock Numbers",
+            "All Raw Variants", "Asana Sesame PNs", "Karol Resolution",
+            "Karol Note", "Source Rows",
+        ])
+        for n in consolidated.get("needs_split", []):
+            w.writerow([
+                n["kan"], n["reason"], n.get("verdict", ""),
+                LIST_SEP.join(n["candidate_stock_numbers"]),
+                LIST_SEP.join(n["all_raw_variants"]),
+                LIST_SEP.join(n["asana_sesame_pn"]),
+                n.get("karol_resolution", ""), n.get("karol_note", ""),
+                n["row_count"],
+            ])
 
     # Console report -------------------------------------------------------
     print("=" * 64)
@@ -773,6 +864,10 @@ def main(argv=None):
         print("\n  TRUE CONFLICTS still outstanding (excluded from master):")
         for c in consolidated["conflicts"]:
             print(f"    {c['kan']:10s} -> {c['candidate_stock_numbers']}")
+    if consolidated.get("needs_split"):
+        print("\n  NEEDS SPLIT — withheld from master (RED / unverifiable), for design:")
+        for n in consolidated["needs_split"]:
+            print(f"    {n['kan']:10s} [{n['reason']}] -> {n['candidate_stock_numbers']}")
     print(f"\n  Workbook: {xlsx_path}")
     print(f"  JSON    : {json_path}")
     return stats

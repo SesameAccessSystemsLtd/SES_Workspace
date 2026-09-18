@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  24/08/2026  13:23
+============================================================
+With:         - Purchasing 07716 093497
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+Gavin from Glen Eagles hotel called Giles Hugo to report an issue with their Sesame list control panel, which has lost power lights despite having power input. Giles indicated he would find support and call back, but Sean, the usual support person, is on leave.
+
+--- RECAP --------------------------------------------------
+Gavin from Glen Eagles hotel reported that their Sesame list control panel stopped functioning, with no lights on the control panel despite power being supplied, indicating a possible hardware issue.Gavin inquired if support could be provided; Giles Hugo responded that he would check if Sean, the usual support person, is available, but Sean is currently on annual leave.Giles Hugo promised to find support and return Gavin's call as soon as possible.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will identify a support technician who can assist with the Sesame list issue and call Gavin back with support details.
+
+(Full transcript: RC web portal only — no RingSense API)

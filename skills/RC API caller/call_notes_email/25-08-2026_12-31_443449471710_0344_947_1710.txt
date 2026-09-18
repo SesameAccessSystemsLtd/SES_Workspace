@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  25/08/2026  12:31
+============================================================
+With:         +443449471710 0344 947 1710
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a call related to vehicle hiring options, involving a discussion about fleet size and specific vehicle components. The call concluded with confirmation of an order and clarification of the items involved.
+
+--- RECAP --------------------------------------------------
+The caller was navigating options for vehicle hire, with prompts for fleet size and business type, but the transcript mainly features a conversation about vehicle components, specifically manifolds and motor pumps.Giles Hugo discussed manifolds, asking whether they are low profile and if they need to be selected, indicating a focus on specific vehicle parts.It was confirmed that 6 items were ordered, with 5 currently available or delivered, and the order details were clarified.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

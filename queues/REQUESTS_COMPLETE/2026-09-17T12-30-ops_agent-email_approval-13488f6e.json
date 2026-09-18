@@ -1,0 +1,14 @@
+{
+  "request_id": "2d62cfc8-a1db-4c71-ac2f-bd56041b20a3",
+  "source": "email_approval_sheet",
+  "row_index": 28,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkurQogAAA=",
+  "subject": "Amazon Invoice Available for 21637-150926 (Invoice No. GB60O44Q98RVNI)",
+  "task_gid": "1218498273286310",
+  "task_name": "21637-150926 - Amazon - Monday stock order",
+  "asana_url": "https://app.asana.com/0/0/1218498273286310",
+  "action": "(Matched via PO Number in Local DB); [SQR-ledger] no SQR match for no-reply@amazon.com; Note added to description: Invoice from Amazon - £35.34 (2026-09-16)",
+  "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> invoice: Amazon Invoice Available for 21637-150926 (Invoice No. GB60O44Q98RVNI)\n- Note added to description: Invoice from Amazon - £35.34 (2026-09-16)\n\nReference: 21637-150926 · Received: 2026-09-16T22:31:51Z\nMatch basis: (Matched via PO Number in Local DB); [SQR-ledger] no SQR match for no-reply@amazon.com\nTask GID: 1218498273286310 · AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkurQogAAA=\nhttps://app.asana.com/0/0/1218498273286310\n\ngiles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-17T12:30:39.553005+00:00"
+}

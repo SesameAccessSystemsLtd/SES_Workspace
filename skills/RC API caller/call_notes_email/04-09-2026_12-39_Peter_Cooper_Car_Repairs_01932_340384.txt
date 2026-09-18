@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  04/09/2026  12:39
+============================================================
+With:         Peter Cooper Car Repairs 01932 340384
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo coordinating with Peter Cooper Car Repairs to schedule tire replacements for two vehicles, confirming tire details and arranging for drop-off. The work on the first vehicle has already been completed, and the second vehicle's tires are to be replaced soon.
+
+--- RECAP --------------------------------------------------
+Giles Hugo requested tire replacements for two vehicles: the first with registration RF23U, which has already had three tires replaced two weeks ago by Peter Cooper Car Repairs, and the second with registration Bravo X-ray 18 Oscar Golf Juliet, for which two front tires need to be changed due to advisories. The tires for the second vehicle are brand new Michelin 6-17 C, already purchased and brought by Giles.Giles Hugo confirmed that the first vehicle's work is complete and that no further work is needed on it. He plans to bring the second vehicle to the repair shop for tire replacement, and will send a purchase order via email. Peter Cooper Car Repairs agreed to fit the work into their schedule when the vehicle arrives.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send a purchase order via email to Peter Cooper Car Repairs.Giles Hugo will bring the second vehicle with registration Bravo X-ray 18 Oscar Golf Juliet to the repair shop for tire replacement.
+
+(Full transcript: RC web portal only — no RingSense API)

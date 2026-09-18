@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  01/09/2026  09:18
+============================================================
+With:         Leslie Vaughn 310
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Fatima Barros and Leslie Vaughn discussing the completion of online training for John, with plans to ensure the training link is accessible on John's dashboard before site visit.
+
+--- RECAP --------------------------------------------------
+Fatima Barros informed Leslie Vaughn that she has sent the online training link to John's email, which he can access and complete online.Leslie Vaughn mentioned that John cannot do the course on his iPhone and has the link on his dashboard via Leslie's iPad, and asked if the link has been successfully added to John's dashboard.Fatima suggested that John could forward the email containing the link to Leslie so he can access it on his own device.Leslie agreed to have John forward the email, and confirmed he will copy the link to his own email for access.
+
+--- TASKS --------------------------------------------------
+Leslie Vaughn will ensure John forwards the training link to his email so Leslie can access it on his device before the site visit.
+
+(Full transcript: RC web portal only — no RingSense API)

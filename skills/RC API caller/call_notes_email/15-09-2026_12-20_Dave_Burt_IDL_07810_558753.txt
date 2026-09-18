@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  15/09/2026  12:20
+============================================================
+With:         Dave Burt IDL 07810 558753
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo discussing defect issues on a powder-coated panel with Dave Burt, including debris and surface imperfections, and exploring options for review and rework.
+
+--- RECAP --------------------------------------------------
+Giles Hugo inquired whether Dave Burt had inspected the panels before they returned, noting defects on the main front cover with raised debris and possible hot spots.Dave Burt confirmed he had not inspected the panels and explained that if defects are in the base metal, they cannot be fixed; surface debris or imperfections can potentially be addressed.Giles Hugo described the defects as debris and small dimples, possibly from contaminant pieces or hot spots, suggesting debris may have fallen onto the panels during coating.Both agreed that the panels could be brought back for review, with the understanding that if damage is in the base metal, rework is not possible; surface issues might be reworkable.Dave Burt indicated he would need to examine the panels to determine the extent of repairability, but was uncertain when he would have the chance to do so.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will bring the panels back for Dave Burt to review and assess the damage and potential for rework.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  19/08/2026  11:00
+============================================================
+With:         Andy Easton 307
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved coordination between Giles Hugo and Andy Easton regarding procurement and logistics for hydraulic fittings, relays, and other equipment needed for ongoing projects, with specific instructions for pickups and orders.
+
+--- RECAP --------------------------------------------------
+Andy Easton asked Giles Hugo to have Danny pick up fittings from GMAC for a low profile lift, with additional fittings to be added to the list for pickup after lunch.Giles Hugo confirmed that he has ordered the two analog components, which are expected to arrive tomorrow if ordered by noon.Giles Hugo clarified that relay bases are in order and being processed, and relays are due to arrive on Monday, with some components arriving separately from the bases.Andy Easton instructed Giles Hugo to leave any delivery notes on the shelf for him to collect in the morning, and discussed attaching a clipboard to prevent notes from being blown away.Giles Hugo confirmed that he has not yet ordered manifolds from Flowfit, as the hydraulic fittings only arrived two hours prior, and emphasized the need to order 5-6 additional hydraulic fittings for the lifts.Andy Easton requested specific hydraulic fittings, including 5 or 6 manifolds and male-male swivel elbows, to make the hydraulic system more compact, with options discussed with Martin.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will have Danny pick up fittings from GMAC after lunch and add any additional fittings to the list.Giles Hugo will ensure delivery notes are left on the shelf for Andy Easton to collect in the morning.Giles Hugo will order the manifolds from Flowfit, including 5-6 units, once he receives all hydraulic components.Andy Easton will confirm with Martin the options for male-male swivel elbows and their suitability for the hydraulic system.
+
+(Full transcript: RC web portal only — no RingSense API)

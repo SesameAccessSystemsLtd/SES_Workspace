@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  25/08/2026  11:16
+============================================================
+With:         +441932350500 01932 350500
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo inquiring about renting a van from Enterprise, focusing on vehicle size and height restrictions. The call was interrupted before finalizing the reservation details.
+
+--- RECAP --------------------------------------------------
+Giles Hugo contacted Enterprise to rent a van from September 1st to September 4th, 2026, and confirmed the dates with the representative.Giles expressed concern about the van's height restriction, specifying a maximum exterior height of 2 meters, and inquired whether the interior height was 2 meters and exterior 2.6 meters.The Enterprise representative confirmed the exterior height as 2.6 meters and interior height as 2 meters, and asked if Giles wanted to proceed with the booking.Giles Hugo decided to discuss the height restrictions further before proceeding and indicated he would return to complete the booking later.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will review the height restrictions and determine if the vehicle options meet his requirements before returning to finalize the reservation.
+
+(Full transcript: RC web portal only — no RingSense API)

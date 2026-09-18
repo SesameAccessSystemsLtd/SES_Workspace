@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  16/09/2026  09:58
+============================================================
+With:         Andy Easton 307
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a call between Giles Hugo and Andy Easton discussing the status of ordered metal supplies, confirming order details, and clarifying delivery timelines. The issue with the incorrect length of metal was resolved, and the order is expected to arrive within 2 to 3 days.
+
+--- RECAP --------------------------------------------------
+Andy Easton inquired about a 12 by 3 metal stain order, confirming if Giles Hugo had ordered it; Giles confirmed he had.Andy noted the order arrived yesterday and questioned whether it was from the stainless supplier or a different one.Giles clarified the order was from Metals for You, with a separate 12 by 3 order needed from the same supplier, expected to arrive in 2 to 3 days.Andy initially thought there was a hiccup due to a 20 by 3 length being ordered instead of 12 by 3, but Giles confirmed the correct order was placed and the issue was resolved.Andy expressed relief that the issue was sorted, and the call concluded with mutual thanks.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

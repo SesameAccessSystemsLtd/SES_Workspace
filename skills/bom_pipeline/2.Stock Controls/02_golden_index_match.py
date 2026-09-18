@@ -27,10 +27,24 @@ import pandas as pd
 
 # Golden Index source of truth (Rev6). The CSV is retained only as a fallback.
 GOLDEN_TABLE = "golden_index_rev6"
+
+
+def _pathconfig_db() -> str:
+    """Canonical ops.db via SES_Workspace/lib/path_config.py (single source of
+    truth — PATH_CONFIG.yaml; follows the DB to a VPS). Empty string if the
+    helper can't be imported, so the literal fallbacks below still apply."""
+    try:
+        import sys as _sys
+        _sys.path.insert(0, str(Path(__file__).resolve().parents[3] / "lib"))
+        from path_config import p as _p
+        return _p("db.ops")
+    except Exception:
+        return ""
+
+
 _DB_CANDIDATES = [
-    os.environ.get("OPENCLAW_OPS_DB_PATH", ""),
-    r"C:\Users\GilesHugo\SES_Workspace\db\ops.db",
-    "/sessions/eloquent-intelligent-curie/mnt/SES_Workspace/db/ops.db",
+    _pathconfig_db(),                                 # canonical (PATH_CONFIG.yaml)
+    r"C:\Users\GilesHugo\SES_Workspace\db\ops.db",    # resilient literal fallback
     str(Path(__file__).resolve().parents[3] / "db" / "ops.db"),
 ]
 

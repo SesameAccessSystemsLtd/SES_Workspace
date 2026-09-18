@@ -1,9 +1,31 @@
 [
   {
-    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkWzikMAAA=",
-    "subject": "New call from 01795 293104",
-    "sender_domain": "ringcentral.com",
-    "received_at": "2026-08-14T14:50:35Z",
+    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDguLAAA=",
+    "subject": "Re: 1597 - Forrest Road Machine Room Cabinet PLC -  SQR-46885",
+    "sender_domain": "jajoautomation.co.uk",
+    "received_at": "2026-09-18T10:59:21Z",
+    "insights": {
+      "po_number": null,
+      "total_price": null,
+      "delivery_date": null,
+      "has_issues": false,
+      "issue_summary": null,
+      "sqr_number": "SQR-46885",
+      "document_type": "other",
+      "line_items": []
+    },
+    "asana_task_gid": "1218240883811118",
+    "asana_task_name": "JAJO - 1597 - Forrest Road PLC BOM",
+    "asana_task_url": "https://app.asana.com/0/0/1218240883811118",
+    "proposed_action": "(Matched via SQR in Local DB)",
+    "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> other: Re: 1597 - Forrest Road Machine Room Cabinet PLC -  SQR-46885\n- Acknowledged other \u2014 no field change proposed (type=other, SQR=SQR-46885, vendor=jajoautomation)\n\nReference: SQR-46885 \u00b7 Received: 2026-09-18T10:59:21Z\nMatch basis: (Matched via SQR in Local DB)\nTask GID: 1218240883811118 \u00b7 AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDguLAAA=\nhttps://app.asana.com/0/0/1218240883811118\n\ngiles@sesameaccess.com",
+    "status": "pending_review"
+  },
+  {
+    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDguIAAA=",
+    "subject": "We are expecting your parcel from Warren Machine Tools (Guildfor",
+    "sender_domain": "dhlecommerce.co.uk",
+    "received_at": "2026-09-18T10:06:19Z",
     "insights": {
       "po_number": null,
       "total_price": null,
@@ -17,8 +39,52 @@
     "asana_task_gid": null,
     "asana_task_name": null,
     "asana_task_url": null,
-    "proposed_action": "Manual review \u2014 no task/id extracted. Subject: 'New call from 01795 293104' (doc type: other, sender: ringcentral.com)",
-    "comment_to_push": "",
+    "proposed_action": "Manual review \u2014 no task/id extracted. Subject: 'We are expecting your parcel from Warren Machine Tools (Guildfor' (doc type: other, sender: dhlecommerce.co.uk)",
+    "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> NO AUTO-MATCH - manual review.\nEmail: We are expecting your parcel from Warren Machine Tools (Guildfor\nSender: notifications@dhlecommerce.co.uk\nReceived: 2026-09-18T10:06:19Z\nFound: type=other, vendor=dhlecommerce\nEmail ID: AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDguIAAA=\n\ngiles@sesameaccess.com",
+    "status": "pending_review"
+  },
+  {
+    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkwDtIBAAA=",
+    "subject": "Notes from your call with Richard Purch 309 on 18/09/2026 11:15",
+    "sender_domain": "ringcentral.com",
+    "received_at": "2026-09-18T10:15:57Z",
+    "insights": {
+      "po_number": null,
+      "total_price": null,
+      "delivery_date": null,
+      "has_issues": true,
+      "issue_summary": "Giles Hugo needs to confirm with IDL whether the powder coating for Langley has been completed before Richard Purch can collect it.",
+      "sqr_number": null,
+      "document_type": "other",
+      "line_items": []
+    },
+    "asana_task_gid": null,
+    "asana_task_name": null,
+    "asana_task_url": null,
+    "proposed_action": "Manual review \u2014 no task/id extracted. Subject: 'Notes from your call with Richard Purch 309 on 18/09/2026 11:15' (doc type: other, sender: ringcentral.com)",
+    "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> NO AUTO-MATCH - manual review.\nEmail: Notes from your call with Richard Purch 309 on 18/09/2026 11:15\nSender: service-uk@ringcentral.com\nReceived: 2026-09-18T10:15:57Z\nFound: type=other, vendor=ringcentral, ISSUE: Giles Hugo needs to confirm with IDL whether the powder coating for Langley has been completed before Richard Purch can collect it.\nEmail ID: AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkwDtIBAAA=\n\ngiles@sesameaccess.com",
+    "status": "pending_review"
+  },
+  {
+    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkwDtIAAAA=",
+    "subject": "Notes from your call with Dave Burt IDL 07810 558753 on 18/09/2026 11:25",
+    "sender_domain": "ringcentral.com",
+    "received_at": "2026-09-18T10:27:08Z",
+    "insights": {
+      "po_number": null,
+      "total_price": null,
+      "delivery_date": null,
+      "has_issues": true,
+      "issue_summary": "No powder coating is currently available, with new powder expected to be ready by early next week (Monday or Tuesday).",
+      "sqr_number": null,
+      "document_type": "other",
+      "line_items": []
+    },
+    "asana_task_gid": null,
+    "asana_task_name": null,
+    "asana_task_url": null,
+    "proposed_action": "Manual review \u2014 no task/id extracted. Subject: 'Notes from your call with Dave Burt IDL 07810 558753 on 18/09/2026 11:25' (doc type: other, sender: ringcentral.com)",
+    "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> NO AUTO-MATCH - manual review.\nEmail: Notes from your call with Dave Burt IDL 07810 558753 on 18/09/2026 11:25\nSender: service-uk@ringcentral.com\nReceived: 2026-09-18T10:27:08Z\nFound: type=other, vendor=ringcentral, ISSUE: No powder coating is currently available, with new powder expected to be ready by early next week (Monday or Tuesday).\nEmail ID: AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkwDtIAAAA=\n\ngiles@sesameaccess.com",
     "status": "pending_review"
   }
 ]

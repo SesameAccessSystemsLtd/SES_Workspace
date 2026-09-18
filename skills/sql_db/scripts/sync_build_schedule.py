@@ -17,6 +17,7 @@ Usage:
 
 import argparse
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -30,11 +31,35 @@ DRAWING_CONTROL_GID  = "1142754335688166"
 BUILD_SCHEDULE_GID   = "852956628490855"
 
 OPT_FIELDS = (
-    "gid,name,notes,completed,"
+    "gid,name,notes,completed,completed_at,due_on,"
     "custom_fields.gid,custom_fields.type,custom_fields.resource_subtype,"
     "custom_fields.display_value,custom_fields.number_value,custom_fields.text_value,"
     "custom_fields.enum_value.gid,custom_fields.enum_value.name"
 )
+
+# Production-readiness fields. These exist on the Build Schedule project and were
+# previously hardcoded to None in task_to_row, which is why all 2,618 mirrored
+# pack rows carried a null parts_readiness and stage_of_production.
+GID_PARTS_READINESS = "1142754335683361"   # PARTS - Readiness
+GID_STAGE           = "1146377793927906"   # STAGE of production
+GID_STEEL_PROFILE   = "1142754335683355"   # STEEL PROFILE
+GID_NEEDS_PURCH     = "1207196303096574"   # NEEDS - from Purch
+GID_EST_HOURS       = "1155021669124711"   # Estimated Hours
+GID_ACTUAL_COST     = "1155021669124674"   # "Actual Cost" = unplanned engineer hours
+GID_REQUIRES_DEBRIEF= "1201006767756706"   # Requires De-Brief
+GID_PROJECT_NAME    = "1202882645384174"   # PROJECT  NAME
+
+PROJECT_CODE_RE = re.compile(r"\b(1[0-9]{3})\b")
+
+
+def _project_code(*candidates: str | None) -> str | None:
+    for text in candidates:
+        if not text:
+            continue
+        m = PROJECT_CODE_RE.search(text)
+        if m:
+            return m.group(1)
+    return None
 
 import sys as _sys
 from pathlib import Path as _Path
@@ -53,8 +78,16 @@ def task_to_row(task: dict, project_gid: str, project_name: str, sync_ts: str) -
         "revision":            None,
         "status":              None,
         "approval_status":     None,
-        "parts_readiness":     None,
-        "stage_of_production": None,
+        "parts_readiness":     get_custom_field(task, GID_PARTS_READINESS),
+        "stage_of_production": get_custom_field(task, GID_STAGE),
+        "steel_profile":       get_custom_field(task, GID_STEEL_PROFILE),
+        "needs_from_purch":    get_custom_field(task, GID_NEEDS_PURCH),
+        "estimated_hours":     get_custom_field(task, GID_EST_HOURS),
+        "unplanned_hours":     get_custom_field(task, GID_ACTUAL_COST),
+        "requires_debrief":    get_custom_field(task, GID_REQUIRES_DEBRIEF),
+        "due_on":              task.get("due_on"),
+        "project_code":        _project_code(name, get_custom_field(task, GID_PROJECT_NAME)),
+        "is_completed":        1 if task.get("completed") else 0,
         "ai_processed_status": None,
         "url_to_drawing":      None,
         "source_project_gid":  project_gid,

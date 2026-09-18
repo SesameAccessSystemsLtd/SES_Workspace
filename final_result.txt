@@ -1,0 +1,210 @@
+====================================================================================================
+TASK_NAME: 1 off 1594. 1010.L.064 - Ramp 304/DP1 Laser Cut
+TASK 1216623812073748  PROJECT Parts Control(1211660707080749)  task_modified=2026-08-27
+ISSUE_NOTE: QC-fail lasercut part progressed into production / kitted - plus future dp1-on-4mm brush process note
+  [Giles comment 2026-08-27 by Giles]: Part has been kitted and progressed into production despite being a qc fail. 
+
+We are going to brush in house as works is done... 
+
+
+  [Giles comment 2026-08-27 by Giles]: https://app.asana.com/0/445939052821806/445939052821806 Please be aware that in future we will need to brush in house unless we buy in bulk, as dp1 is not available on 4mm
+
+And so a extra brush process will be needed by any lasercut supplier 
+====================================================================================================
+TASK_NAME: 12 off 1582. 8000.A.203 - Leg Cap Machining
+TASK 1214803030808195  PROJECT Parts Control(1211660707080749)  task_modified=2026-08-25
+ISSUE_NOTE: Leg Cap Machining process issues (duplicate part-no round vs square; status not updated; inhouse stock parts pulled)
+  [Giles comment 2026-07-16 by Giles]: I see the issue - first this was supposed to be an inhouse item - and then we bought 8 more of the same item because it has the same part number  when the new order came through however the part https://app.asana.com/1/357939803556123/project/1211660707080749/task/1215446304623354?focus=true is the round disc but on this lift it is the square end block - again indicating that we can NOT easily or reliably achieve economies of scale between two projects 
+
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1216622791330498
+
+  [Giles comment 2026-07-16 by Giles]: https://app.asana.com/1/357939803556123/profile/357939803556127 well done for asigning to me - we nee the PARTS STATUS To be updated correct as this wasnt updated from on order and so to me looks to be addressed unless i return to the comments - i also need the system to try and identify the correct tag so that it is pulled up in our next plastics or machining order - than can be added and checked manually as a fallback
+  [Giles comment 2026-07-20 by Giles]: https://app.asana.com/1/357939803556123/profile/357939803556127 the actual issue here is that 18 were ordered for this JOB because he had 18 in stock and i took the outstanding - then 6 off these were issued to a job that was flagged to be made inhouse - which were supposed to be stock parts ( i can totally see why you would do that if extra came in) but they were pulled from stock rather than made to an order and these were flagged to eb made inhouse 
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1216704913768239
+
+====================================================================================================
+TASK_NAME: 1 off 1566.1016.H5 - SWLPlate.OneWheelchairUser- Engraved  Engraving (after anodising) - ready to send 
+TASK 1211427422578875  PROJECT Parts Control(1211660707080749)  task_modified=2026-08-18
+ISSUE_NOTE: Duplicate engraved-plate task - one shown already in parent task
+  [Giles comment 2026-08-18 by Giles]: We have one shown in parent task. So we have duplicated and you had recored this is lost 
+====================================================================================================
+TASK_NAME: 1426 - 1 Leicester Square - 1190 - Hotel Indigo - Items needed for next visit
+TASK 1211159750454174  PROJECT Quote Control(1207766004159548)  task_modified=2026-08-21
+ISSUE_NOTE: STOP assigning parts to approvals role - removes from stock & triggers replacement order with no PO
+  [Giles comment 2026-05-14 by Giles]: https://app.asana.com/1/357939803556123/profile/1206213741641685 PLEASE STOP assigning parts to https://app.asana.com/1/357939803556123/profile/357939803556127 - this is not your role. These pasrt are being quotes and i have provided teh quote to https://app.asana.com/1/357939803556123/profile/358766297404632 who is managing the order. Assigning to richard confirms that these are approved and removes the items from stock and triggers a replacement order -  But we dont have a PO. Any parts you need must go through sean or me unless you are certain that the client is on a full service contract and the accumulated cost of items needed has a value les than £350 inc Markup.  Total Value is £560 for these items so we need a PO for £190 https://app.asana.com/1/357939803556123/profile/358766297404632
+====================================================================================================
+TASK_NAME: New Variation - Handrails  - Brook theatre internal and external lift plus external staircase (all handrails)
+TASK 1211100300359102  PROJECT Quote Control(1207766004159548)  task_modified=2026-09-02
+ISSUE_NOTE: Legacy BOM dumped in BOM folder -> 79 duplicate tasks imported; changed format breaks scripts; BOM placed outside agreed task
+  [Giles comment 2026-05-20 by Giles]: https://app.asana.com/1/357939803556123/profile/445939052821804 you have changed how you provide data to me again and put teh legacy BOm in the BOm folder  which has imported 79 tasks with many duplicates rather than the 31 that is in the sub folders. - I'm pleased i spotted this before i got too far into the quoting - but all tasks have been imported and if this was a full BOM and i didnt spot it then it would have been a bigger issue.  
+Please be mindful that i am using scripts to process data and when they see more than excel sheets then expecting they will process them - I will delete the lot and start again 
+
+Also we agreed that all BOMs would be under https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903905217260?focus=true and on this occasion you have created a second tier confusing clarity as to which task confirms when order is to progress 
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1214932607006526
+
+  [Giles comment 2026-05-20 by Giles]: Previously in ALLLLLLLLLL revisions you have added a new URL with a comment that a new BOMM has been produced. Not a new task 
+That is my problem - everytime you do something it is different from before! I need you to be the robot and consistent in your outputs! - we have enough variations / edge cases to manage!
+
+Second point is a feedback - given  that when you were over i said by bot now imports form the dropbox url you give  me, it processes EVERYTHING that is in an excel sheet into a BOM! Well that kind throws the system when you put the legacy BOM (always previously in with the drawings) into the BOM. 
+
+Last week you added them to the drawing task in an act of randomness and again it throws out a system. 
+We discussed it and there is https://app.asana.com/1/357939803556123/task/1210881172146884for these task if needed 
+https://app.asana.com/1/357939803556123/profile/445939052821804
+====================================================================================================
+TASK_NAME: 21243-1578 - Mercury ANODISNING - 1578 - Traversing NEW
+TASK 1213212124682884  PROJECT Order Numbers(854650811917168)  task_modified=2026-08-28
+ISSUE_NOTE: Parts taken to anodiser with no trace/record of what went & condition
+  [Giles comment 2026-08-17 by Giles]: https://app.asana.com/1/357939803556123/profile/360042216871613 please confirm what you have actually take down today - i have processed and order but we have no record or trace of what has gone and in what state they are in (ie if scratched) f you have an images please upload  them here also 
+
+Expected parts to be takening are: 
+
+https://app.asana.com/1/357939803556123/project/1212775618786243/task/1213212124682885
+https://app.asana.com/1/357939803556123/project/1212775618786243/task/1213212124682886
+https://app.asana.com/1/357939803556123/project/1212775618786243/task/1213212124682887
+https://app.asana.com/1/357939803556123/project/1212775618786243/task/1213212124682888
+https://app.asana.com/1/357939803556123/project/1212775618786243/task/1213212124682889
+https://app.asana.com/1/357939803556123/project/1212775618786243/task/1213212124682890
+https://app.asana.com/1/357939803556123/project/1212775618786243/task/1213212124682891
+https://app.asana.com/1/357939803556123/project/1212775618786243/task/1213212124682892
+
+and the Blackfriers - i think you said have been done? 
+https://app.asana.com/1/357939803556123/project/1211660707080749/task/1215446301909076
+https://app.asana.com/1/357939803556123/project/1211660707080749/task/1215446061024830
+https://app.asana.com/1/357939803556123/project/1211660707080749/task/1215446301796550
+  [Giles comment 2026-08-25 by Giles]: should be ready Friday 
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1217817421829529
+
+====================================================================================================
+TASK_NAME: 21240-1588 - ABCO - 1588 - America stair ram 
+TASK 1216611337149396  PROJECT Order Numbers(854650811917168)  task_modified=2026-08-28
+ISSUE_NOTE: Picking task not picked or flagged to order - missed flag for purchasing
+  [Giles comment 2026-08-11 by Giles]: https://app.asana.com/1/357939803556123/profile/357939803556127 i've just picked up that this picking task was not picked or flagged to order 
+
+I had it out for quote in any case , but please look into why is was missed as being flagged for me to order
+====================================================================================================
+TASK_NAME: 21231-1555 - Thameside Machining - 1555 - Fifth Av Tesla Handrail
+TASK 1216755221876955  PROJECT Order Numbers(854650811917168)  task_modified=2026-09-01
+ISSUE_NOTE: Order earlier not processed/flagged - being processed now
+  [Giles comment 2026-08-10 by Giles]: https://app.asana.com/1/357939803556123/profile/357939803556127 this didn't get processed : 
+
+Processing now 
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1217325051454904
+
+====================================================================================================
+TASK_NAME: 21213-1487 - SGP - Glass Adelaide Replacement - 1487
+TASK 1217014939428772  PROJECT Order Numbers(854650811917168)  task_modified=2026-09-02
+ISSUE_NOTE: Order processed under existing/unrelated PO instead of correct task
+  [Giles comment 2026-08-18 by Giles]: https://app.asana.com/1/357939803556123/profile/357939803556127 you has processed thsi order under an existing PO https://app.asana.com/1/357939803556123/task/1214073918288684
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1217584963868751
+
+====================================================================================================
+TASK_NAME: BOM 2. SlidersModifications
+TASK 1214635677104888  PROJECT Build/Project Orders(848657415032331)  task_modified=2026-08-22
+ISSUE_NOTE: Blocked/on-hold dependent parts not assigned after approval sign-off - big issue, wants auto-assign + unblock date
+  [Giles comment 2026-06-15 by Giles]: i have missed that https://app.asana.com/1/357939803556123/project/1120494544424361/task/1214635545323094?focus=true was signed off and approved and need to ensure that any parts in https://app.asana.com/1/357939803556123/project/848657415032331/list/1204972043509515 that is on hold and dependent - gets assigned to me and has a date when it is no longer blocked - this was a big issue and we do not want this happening again
+====================================================================================================
+TASK_NAME: 21133-1580 - Exact Laser Cut BOM - 1580 - Admiralty Single Scissor BOM - SA-42
+TASK 1216239283983165  PROJECT Build/Project Orders(848657415032331)  task_modified=2026-08-28
+ISSUE_NOTE: Invoice on wrong PO / logged against wrong order + process question for correct parts-against-order logging
+  [Giles comment 2026-08-12 by Giles]: The Invoice had the wrong PO number on it and it had been processed in https://app.asana.com/1/357939803556123/task/1215202782923459
+
+I have now re-processed this under this PO 
+
+https://app.asana.com/1/357939803556123/profile/357939803556127 please see if you have the delivery note for this delivery to attach and tell me what you can do in your process to ensure we are logging the correct parts in against the correct order? 
+
+Thsi was a very messy email chain, with lots of adhock, but it looks like they have delivered all that we were expecting just added it to a legacy PO
+====================================================================================================
+TASK_NAME: 21202-1569 - Machguard - Brooks Roller shutter blind - 28044
+TASK 1216850437678797  PROJECT Build/Project Orders(848657415032331)  task_modified=2026-08-31
+ISSUE_NOTE: Goods received not booked-in/QC checked - ensure anything arrived is booked in then QC checked
+  [Giles comment 2026-08-11 by Giles]: https://app.asana.com/1/357939803556123/profile/357939803556127 this was received yesterday - and is being booked in now after t has ben QC'd 
+
+Can we please ensure anything arrived gets booked in and then later QC checked
+  [Giles comment 2026-08-28 by Giles]: https://app.asana.com/1/357939803556123/profile/357939803556127 the goods ina nd invoice has been processed and this is still awaiting delivery
+====================================================================================================
+TASK_NAME: 21225-1588 - Insulation shop - 1588 - America 1 Entire - 85175
+TASK 1216622543618516  PROJECT Build/Project Orders(848657415032331)  task_modified=2026-09-01
+ISSUE_NOTE: Order progressed with 3 sheets instead of the amended 1 sheet 18mm (wrong qty on order)
+  [Giles comment 2026-08-10 by Giles]: https://app.asana.com/1/357939803556123/profile/357939803556127 i cant see that this has been ordered?
+
+I will request alison pay the poforma and issue the order number
+  [Giles comment 2026-08-10 by Giles]: it has been paid - how come you progressed with 3 sheets of 18mm? 
+
+I amended to 1 sheet of 18mm as that covered what is needed? 
+Was there more demand you were aware of or was this just £200 extra on contingency?
+====================================================================================================
+TASK_NAME: 21187-1588 - Thamside Machining - 1588 - America 1 Scissor BOM - 5876
+TASK 1216242331971326  PROJECT Build/Project Orders(848657415032331)  task_modified=2026-08-28
+ISSUE_NOTE: Workflow/process issue - meeting outcomes not picked up, unsure correct high-priority workflow for parts
+  [Giles comment 2026-07-08 by Giles]: Awaiting sign off for high cost: just about to process the America 1 machining BOM - with all the machined legs it is £7522 ex VAT - it includes 2 additional wheel brackets (£288 each) which keeps the price of these down or then go to £340ea (500 saving over two lifts on this repeating item) . - @Steven Lyons  please confirm this is within the budget
+  [Giles comment 2026-07-08 by Giles]: https://app.asana.com/1/357939803556123/profile/380748302108842 i have created a teams meeting for this on Friday at 10:30:
+
+Summary:  
+The task centers on the procurement of machined parts for the America 1 Scissor BOM, where Giles has successfully negotiated the supplier quote down from £7,522 to £6,722 ex. VAT. To optimize costs, the order includes additional wheel brackets to leverage bulk pricing, though the final purchase remains pending budget approval from Steven Lyons. While there is immediate pressure to complete the America 1 project for Ramzan, the team has initiated a parallel effort involving Karol and Andy to value engineer the scissor lift design and standardize parts to reduce future expenditures.
+
+
+Microsoft Teams meeting
+Join: https://teams.microsoft.com/meet/384388465001838?p=TGQYCY0dcBDS0DhZKJ
+Meeting ID: 384 388 465 001 838
+Passcode: Vj6a5nn7
+
+https://aka.ms/JoinTeamsMeeting?omkt=en-GB | https://teams.microsoft.com/l/meetup-join/19%3ameeting_YzgyY2YwMjItMTU5ZC00OTA5LWJjZWQtNDk4Zjg2YTU0NTcw%40thread.v2/0?context=%7b%22Tid%22%3a%223bfd9e7d-219f-48db-bd9e-e63b3b990a1a%22%2c%22Oid%22%3a%220065100a-40c4-4847-96fb-8fb369e549f2%22%7d
+For organisers: https://teams.microsoft.com/meetingOptions/?organizerId=0065100a-40c4-4847-96fb-8fb369e549f2&tenantId=3bfd9e7d-219f-48db-bd9e-e63b3b990a1a&threadId=19_meeting_YzgyY2YwMjItMTU5ZC00OTA5LWJjZWQtNDk4Zjg2YTU0NTcw@thread.v2&messageId=0&language=en-GB
+  [Giles comment 2026-07-16 by Giles]: had the most useless response to my direct request with andy where we were speaking abou these on my screen and he wanted teh source drawing https://app.asana.com/1/357939803556123/project/1142754335688166/task/1216204278965865?focus=true to cross check against these parts 
+
+the process issue i have is that we had a meeting on this and we missed the trust, the alternative items that could be bulk ordered or lasercut, or the likes of that and they want to have raised it in our WhatsApp and at carol and andy, it hasn't been picked up and therefore I don't know which workflow is the correct way to ensure its high priority and gets addressed.
+  [Giles comment 2026-07-21 by Giles]: Here’s the notes from your call with Adam / Nikki - Thameside 01784 449326 on 21 July 2026 at 11:02:
+This call involved Giles from Sesame discussing order volumes, pricing, and stock status with Adam from Thameside, focusing on current and upcoming manufacturing needs and cost considerations.
+Recap
+    Giles from Sesame inquired about order volumes, specifically 12 long cams, 2 short cams, 26 wheels, and various hinge blocks, with some items in stock and others to be produced via water jet or laser cutting.
+    Adam from Thameside provided current stock levels, including 12 long cams, 2 short cams, 26 wheels, 10 square-ended hinge blocks, 4 rounded-corner hinge blocks, and some brackets, noting some items are in stock and others need to be ordered or reworked.
+    Pricing discussions revealed last prices for certain items: long cams at approximately 211-248, wheels at around 42 pounds each, hinge blocks at 58 pounds for 10 units, and hinge pins are currently unavailable.
+    Giles indicated interest in purchasing 12 long cams, 2 short cams, 26 wheels, and 10 hinge blocks, with negotiations on unit prices, aiming to align costs with budget constraints and competitive market pricing.
+    Adam mentioned ongoing production and stock issues, including delays with certain parts like hinge pins and larger brackets, and plans to confirm specific part numbers and prices for future orders.
+    Both parties agreed to review and confirm prices, stock availability, and order quantities before finalizing and invoicing, with Giles planning to send additional pricing information for comparison.
+Tasks
+    Giles from Sesame will review stock and confirm availability of hinge pins and larger brackets, and provide updated pricing for items discussed.
+    Adam from Thameside will verify part numbers, current stock levels, and previous order prices, then send updated quotes for long cams, short cams, wheels, hinge blocks, and hinge pins.
+    Giles will compare the provided prices with market competitors to ensure cost competitiveness and inform Thameside of any adjustments needed.
+    Both parties will coordinate to finalize order quantities and prices before proceeding with invoicing and delivery arrangements.
+
+  [Giles comment 2026-07-21 by Giles]: https://app.asana.com/1/357939803556123/profile/380748302108842 i have assessed the items we need machined and can be held as stock for 3 lifts (with a couple of extra items like hing pins being 64 off instead of 16 (4 lifts) as they are used for both types 
+
+Current Volume price is £1684 → £854 per lift when ordered at volume = £3796 total 
+They also currently have 26 hardened cam wheels  which they want £42 ea for = £2532 
+
+
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1216723276906125
+
+====================================================================================================
+TASK_NAME: 21200-1594 - Fastenright - 1594 - St Mary Scissor Lift BOM - 51906
+TASK 1216623913809597  PROJECT Build/Project Orders(848657415032331)  task_modified=2026-08-17
+ISSUE_NOTE: Item naming inconsistency across orders makes previous orders/parts unfindable (sex bolt vs barrel nut)
+  [Giles comment 2026-07-23 by Giles]: https://app.asana.com/1/357939803556123/profile/445939052821804 please see 
+https://app.asana.com/1/357939803556123/project/848657415032331/task/1214966927980295?focus=true
+https://app.asana.com/1/357939803556123/task/1216623741078625
+
+The call involved Giles Hugo discussing procurement issues related to fasteners for handrails, including supplier constraints and potential alternatives, with Karol Porwol. The main outcome was that Giles will investigate whether 16 mm fasteners can replace 20 mm ones and will send relevant links for review.
+Recap
+    Giles Hugo inquired about the quality of reception and confirmed the audio was clearer during the call.
+    They discussed fasteners for Brooks handrails, specifically socket barrel sex bolts, which require 20 mm length instead of the standard 16 mm.
+    Giles noted that the preferred supplier, Fixings Right, has a minimum order quantity of 150 pounds, making small orders impractical.
+    Giles suggested removing Fixings Right as a supplier due to their new ordering restrictions and will provide feedback accordingly.
+    Giles will investigate whether 16 mm fasteners can be used instead of 20 mm for the specified models and will send links for review.
+    Karol will review the drawings against the models once he receives the links and will provide an answer regarding the feasibility of using 16 mm fasteners.
+Tasks
+    Giles Hugo will send the links to Karol Porwol for review of the fastener models.
+    Karol Porwol will review the drawings against the models and determine if 16 mm fasteners can replace 20 mm ones, providing feedback to Giles.
+
+  [Giles comment 2026-07-24 by Giles]: https://app.asana.com/1/357939803556123/profile/445939052821804 – we have ordered these before: https://app.asana.com/1/357939803556123/task/1205324345955564?focus=true. These are different from what we are currently asked to look up, and it was not easy to find the previous order: https://app.asana.com/1/357939803556123/task/1216623741078625.
+
+The reason is that we always label items as "M6 x20" so that anything x20 is findable, and anything M6 is findable (although M6 searches are massive). Previously, they were labeled as sex bolts, and now they are labeled as barrel nuts; what we ordered was "PIN TX CSK BARREL NUTS A2."
+
+I suppose we are at the point where previous orders differ because we have updated them to what they should be. However, convention would dictate using "M6 x20 barrel nut" (while keeping "sex bolt") in the description if this term was used previously.

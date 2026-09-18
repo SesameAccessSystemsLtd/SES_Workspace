@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  28/08/2026  15:12
+============================================================
+With:         +442089611414 020 8961 1414
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+Giles Hugo contacted Metal Supermarket to inquire about stock availability of a specific size of mild steel rectangular tube (70x40x3). The representative explained that this size is very rare or possibly unavailable across their network and suppliers, and suggested alternative sizes are more common. No immediate stock or supplier options for the exact size are available.
+
+--- RECAP --------------------------------------------------
+Giles Hugo inquired about the availability of 70x40x3 mild steel rectangular tube at Metal Supermarket, which is designed into a system requiring this specific size.The Metal Supermarket representative stated that the exact size is very rare, not listed in their stock, and not available from their suppliers, including their main network and international suppliers.The representative explained that the size occasionally appears due to random stock arrivals but is generally unavailable, and the network's stock of the entire Metal Supermarket chain does not include this size.Alternative sizes such as 75x50 and 80x40 are more common, but the exact 70x40x3 size is not currently obtainable.Giles Hugo mentioned that he normally sources from the Goodman Network and other big importers but has found no stock of this size across these networks either.The representative indicated that the size is not typically available in the market and that the supply of this specific dimension is extremely limited or non-existent at present.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

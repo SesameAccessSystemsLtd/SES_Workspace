@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  10/09/2026  10:54
+============================================================
+With:         +448005200729 0800 520 0729
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo placing an order for a 1-meter tube with Mark from Warehouse Supplies, arranging next-day delivery, and inquiring about additional custom pipe requirements. Mark confirmed the order details, delivery options, and provided information on custom pipe sizes and pricing.
+
+--- RECAP --------------------------------------------------
+Giles Hugo ordered a 1-meter tube, available in brush or dull polish, to be delivered to West by Fleet London, with delivery scheduled for the next day at a cost of 50 pounds plus the tube price of 69.76 pounds; an invoice will be sent to the email provided.Giles Hugo inquired about a custom 73mm OD tube with a 4mm wall thickness, which is non-standard; Mark suggested machining down a 2.5-inch pipe with a 5.2mm wall thickness to meet the specifications, and checked stock availability for stainless steel pipes.Mark confirmed that a 2.5-inch schedule 40 stainless steel pipe, approximately 73mm OD, is available in full lengths at a price of 210 pounds, but not sold per meter; delivery for this pipe would be arranged separately, possibly on the same day as the initial order.
+
+--- TASKS --------------------------------------------------
+Mark will send an invoice for the 1-meter tube order to Giles Hugo's email once payment is received.Mark will send a separate invoice for the 73mm OD stainless steel pipe after confirming delivery arrangements, likely for tomorrow.
+
+(Full transcript: RC web portal only — no RingSense API)

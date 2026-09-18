@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  19/08/2026  14:53
+============================================================
+With:         - Purchasing 07541 009465
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved a hospital representative providing information about the maximum capacity of a specific lift, confirming it is 350 kg, and clarifying that the data is from their main list but not updated in a secondary list. The caller thanked the representative for the information.
+
+--- RECAP --------------------------------------------------
+The caller from Royal Marin Hospital inquired about the maximum capacity of a lift at postal code 19, specifically at 19 Cavendish, which Giles Hugo confirmed as 350 kg.Giles Hugo indicated that 350 kg is typical for such lifts but was not personally familiar with this specific lift.The caller explained that their main list contains the lift information but the secondary list has not been updated, and they wanted to verify the capacity for their records.Giles Hugo confirmed that the lift at 19 Cavendish has a capacity of 350 kg, and the caller acknowledged this confirmation.The conversation concluded with polite exchanges, and the caller thanked Giles Hugo for his assistance.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

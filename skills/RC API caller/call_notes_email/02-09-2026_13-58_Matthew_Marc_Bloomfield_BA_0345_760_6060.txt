@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  02/09/2026  13:58
+============================================================
+With:         Matthew Marc Bloomfield BA 0345 760 6060
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Matthew Bloomfield guiding Fatima Barros through HSBC telephone banking procedures, with Fatima seeking clarification on the branch circle code source. The call appears to be a standard customer service interaction with no specific outcomes or follow-up actions mentioned.
+
+--- RECAP --------------------------------------------------
+Matthew Bloomfield welcomed Fatima Barros to HSBC business telephone banking and prompted her to enter her 16-digit card number, branch sort code, or customer identification number.Fatima Barros inquired about the 'branch circle code source code', seeking clarification on its meaning or source.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

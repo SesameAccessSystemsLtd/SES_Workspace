@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  27/08/2026  09:20
+============================================================
+With:         Leslie Vaughn 310
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Leslie Vaughn explaining recording policies and call transfer procedures to Giles Hugo, including legal requirements and methods for transferring or adding participants to a call.
+
+--- RECAP --------------------------------------------------
+Leslie Vaughn informed Giles Hugo that the call is automatically recorded and emphasized not to press record manually due to legal requirements.Leslie Vaughn explained that to transfer a call, one can either hold the call to transfer or add another person to the call, such as adding Andy.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

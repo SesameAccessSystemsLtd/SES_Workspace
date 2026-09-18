@@ -1,0 +1,404 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1569 - Brook Stage 6.UL MT Barrier,"Master task for all BOMs related to 1569 - Brook Stage 6.UL MT Barrier
+Dropbox: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Project: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",,,,,,,,,,
+Surface Finish BOM - 1569 - Brook Stage 6.UL MT Barrier,,ALL BOMS - 1569 - Brook Stage 6.UL MT Barrier,,Surface Finish BOM,,,,,,,
+Powder Coating - 1569 - Brook Stage 6.UL MT Barrier,,Surface Finish BOM - 1569 - Brook Stage 6.UL MT Barrier,,Powder Coating,,,,,,,
+"1 off Powder Coating 1569. 1070.A.001 - Profile 40x40, 1E, light, plain","1569.1070.A.001
+Stock Number: 1.11.040040.13LP
+Material: Aluminum 6061
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 1.613 kg
+Volume: 597347.655 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true
+---
+NOTES: Powder Coated Black Matt",Powder Coating - 1569 - Brook Stage 6.UL MT Barrier,1,Powder Coating,,,,ORDER,PROJECT ORDER,1218494555190757,https://app.asana.com/0/848657415032331/1218494555190757
+"2 off Powder Coating 1569. 1070.A.003 - Profile 40x40, 1E, light, plain","1569.1070.A.003
+Stock Number: 1.11.040040.13LP
+Material: Aluminum 6061
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 1.625 kg
+Volume: 601925.032 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true
+---
+NOTES: Powder Coated Black Matt",Powder Coating - 1569 - Brook Stage 6.UL MT Barrier,2,Powder Coating,,,,ORDER,PROJECT ORDER,1218496154998556,https://app.asana.com/0/848657415032331/1218496154998556
+"1 off Powder Coating 1569. 1070.A.050 - Profile 40×40, 2E opp, light, plain","1569.1070.A.050
+Stock Number: 1.11.040040.23LP
+Material: Aluminum 6061
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 1.309 kg
+Volume: 484983.213 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true
+---
+NOTES: Powder Coated Black Matt",Powder Coating - 1569 - Brook Stage 6.UL MT Barrier,1,Powder Coating,,,,ORDER,PROJECT ORDER,1218494555130555,https://app.asana.com/0/848657415032331/1218494555130555
+"4 off Powder Coating 1569. 1070.A.052 - Profile 40×40, 2E opp, light, plain","1569.1070.A.052
+Stock Number: 1.11.040040.23LP
+Material: Aluminum 6061
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.584 kg
+Volume: 216370.013 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true
+---
+NOTES: Powder Coated Black Matt",Powder Coating - 1569 - Brook Stage 6.UL MT Barrier,4,Powder Coating,,,,ORDER,PROJECT ORDER,1218496155315392,https://app.asana.com/0/848657415032331/1218496155315392
+2 off Powder Coating 1569. 1070.A.055 - Barrier panel lower,"1569.1070.A.055
+Material: Aluminum 5152
+Thickness: 2.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 1.330 kg
+Volume: 492725.549 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true
+---
+NOTES: Powder Coated Black Matt",Powder Coating - 1569 - Brook Stage 6.UL MT Barrier,2,Powder Coating,,,,ORDER,PROJECT ORDER,1218498312142729,https://app.asana.com/0/848657415032331/1218498312142729
+2 off Powder Coating 1569. 1070.A.056 - Barrier panel upper,"1569.1070.A.056
+Material: Aluminum 5152
+Thickness: 2.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 1.330 kg
+Volume: 492725.549 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true
+---
+NOTES: Powder Coated Black Matt",Powder Coating - 1569 - Brook Stage 6.UL MT Barrier,2,Powder Coating,,,,ORDER,PROJECT ORDER,1218512013268732,https://app.asana.com/0/848657415032331/1218512013268732
+1 off Powder Coating 1569. 1070.C.009 - Barrier Socket Cap,"1569.1070.C.009
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.014 kg
+Volume: 1767.204 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true
+---
+NOTES: Powder Coated Black Matt",Powder Coating - 1569 - Brook Stage 6.UL MT Barrier,1,Powder Coating,,,,ORDER,PROJECT ORDER,1218503763669563,https://app.asana.com/0/848657415032331/1218503763669563
+1 off Powder Coating 1569. 1070.C9w - Welded assembly,"1569.1070.C9w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 2.328 kg
+Volume: 291058.674 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true
+---
+NOTES: Powder Coated Black Matt",Powder Coating - 1569 - Brook Stage 6.UL MT Barrier,1,Powder Coating,,,,ORDER,PROJECT ORDER,1218493023148077,https://app.asana.com/0/848657415032331/1218493023148077
+1 off Powder Coating 1569. 1070.C10w - Welded assembly,"1569.1070.C10w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.119 kg
+Volume: 14936.200 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true
+---
+NOTES: Powder Coated Black Matt",Powder Coating - 1569 - Brook Stage 6.UL MT Barrier,1,Powder Coating,,,,ORDER,PROJECT ORDER,1218493023210020,https://app.asana.com/0/848657415032331/1218493023210020
+1 off Powder Coating 1569. 1070.C13w - Welded Assembly,"1569.1070.C13w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.493 kg
+Volume: 61582.369 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true
+---
+NOTES: Powder Coated Black Matt",Powder Coating - 1569 - Brook Stage 6.UL MT Barrier,1,Powder Coating,,,,ORDER,PROJECT ORDER,1218493023246732,https://app.asana.com/0/848657415032331/1218493023246732
+1 off Powder Coating 1569. 1070.C15w - Welded Assembly,"1569.1070.C15w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.494 kg
+Volume: 61757.516 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true
+---
+NOTES: Powder Coated Black Matt",Powder Coating - 1569 - Brook Stage 6.UL MT Barrier,1,Powder Coating,,,,ORDER,PROJECT ORDER,1218493023148090,https://app.asana.com/0/848657415032331/1218493023148090
+1 off Powder Coating 1569. ISO 10642 - M3x10 Powder Coated - Hexagon socket countersunk head cap screws,"1569.ISO 10642 - M3x10 Powder Coated
+Material: Stainless Steel
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.001 kg
+Volume: 84.631 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true
+---
+NOTES: Powder Coated Black Matt",Powder Coating - 1569 - Brook Stage 6.UL MT Barrier,1,Powder Coating,,,,ORDER,PROJECT ORDER,1218512037804222,https://app.asana.com/0/848657415032331/1218512037804222
+Laser Cut BOM - 1569 - Brook Stage 6.UL MT Barrier,,ALL BOMS - 1569 - Brook Stage 6.UL MT Barrier,,Laser Cut,,,,,,,
+Laser Cut - 1569 - Brook Stage 6.UL MT Barrier,,Laser Cut BOM - 1569 - Brook Stage 6.UL MT Barrier,,Laser Cut,,,,,,,
+1 off 1569. 1070.A.032 - Flat 304/HR Laser Cut,"1569.1070.A.032
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.055 kg
+Volume: 6865.604 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Laser Cut - 1569 - Brook Stage 6.UL MT Barrier,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218498312509439,https://app.asana.com/0/848657415032331/1218498312509439
+2 off 1569. 1070.A.035 - Flat 304/HR Laser Cut,"1569.1070.A.035
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.058 kg
+Volume: 7302.637 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Laser Cut - 1569 - Brook Stage 6.UL MT Barrier,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218498312509459,https://app.asana.com/0/848657415032331/1218498312509459
+2 off 1569. 1070.A.055 - Barrier panel lower Laser Cut,"1569.1070.A.055
+Material: Aluminum 5152
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 1.330 kg
+Volume: 492725.549 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true
+---
+NOTES: Powder Coated Black Matt",Laser Cut - 1569 - Brook Stage 6.UL MT Barrier,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218496155877794,https://app.asana.com/0/848657415032331/1218496155877794
+2 off 1569. 1070.A.056 - Barrier panel upper Laser Cut,"1569.1070.A.056
+Material: Aluminum 5152
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 1.330 kg
+Volume: 492725.549 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true
+---
+NOTES: Powder Coated Black Matt",Laser Cut - 1569 - Brook Stage 6.UL MT Barrier,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218496155560138,https://app.asana.com/0/848657415032331/1218496155560138
+1 off 1569. 1070.C.004 - bottom plate 304/HR Laser Cut,"1569.1070.C.004
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.053 kg
+Volume: 6568.946 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Laser Cut - 1569 - Brook Stage 6.UL MT Barrier,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218503764119315,https://app.asana.com/0/848657415032331/1218503764119315
+1 off 1569. 1070.C.005 - side fining plate 304/HR Laser Cut,"1569.1070.C.005
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.101 kg
+Volume: 12575.358 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Laser Cut - 1569 - Brook Stage 6.UL MT Barrier,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218496156027812,https://app.asana.com/0/848657415032331/1218496156027812
+1 off 1569. 1070.C.006 - side fining plate 304/HR Laser Cut,"1569.1070.C.006
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.102 kg
+Volume: 12737.934 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Laser Cut - 1569 - Brook Stage 6.UL MT Barrier,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218503763744384,https://app.asana.com/0/848657415032331/1218503763744384
+2 off 1569. 1070.C.007 - Spacer 304/HR Laser Cut,"1569.1070.C.007
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.021 kg
+Volume: 2602.723 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Laser Cut - 1569 - Brook Stage 6.UL MT Barrier,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218498312557318,https://app.asana.com/0/848657415032331/1218498312557318
+4 off 1569. 1070.C.008 - packers 304/2B Laser Cut,"1569.1070.C.008
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.004 kg
+Volume: 476.691 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Laser Cut - 1569 - Brook Stage 6.UL MT Barrier,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218503764267080,https://app.asana.com/0/848657415032331/1218503764267080
+1 off 1569. 1070.C.009 - Barrier Socket Cap 304/DP1 Laser Cut,"1569.1070.C.009
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.014 kg
+Volume: 1767.204 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true
+---
+NOTES: Powder Coated Black Matt",Laser Cut - 1569 - Brook Stage 6.UL MT Barrier,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218494556002167,https://app.asana.com/0/848657415032331/1218494556002167
+1 off 1569. 1070.C.012 - Removable Barrier Socket mounting plate 304/HR Laser Cut,"1569.1070.C.012
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.019 kg
+Volume: 2330.810 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Laser Cut - 1569 - Brook Stage 6.UL MT Barrier,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218498312916141,https://app.asana.com/0/848657415032331/1218498312916141
+1 off 1569. 1070.C.013 - Removable Barrier Socket cap mounting plate 304/HR Laser Cut,"1569.1070.C.013
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.015 kg
+Volume: 1873.709 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Laser Cut - 1569 - Brook Stage 6.UL MT Barrier,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218493023903380,https://app.asana.com/0/848657415032331/1218493023903380
+1 off 1569. 1070.C.020 - main fining plate 304/HR Laser Cut,"1569.1070.C.020
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 1.742 kg
+Volume: 217716.983 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Laser Cut - 1569 - Brook Stage 6.UL MT Barrier,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218498313007697,https://app.asana.com/0/848657415032331/1218498313007697
+1 off 1569. 1070.C.029 - Socket bracket 304/HR Laser Cut,"1569.1070.C.029
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.440 kg
+Volume: 54975.415 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Laser Cut - 1569 - Brook Stage 6.UL MT Barrier,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218493023888262,https://app.asana.com/0/848657415032331/1218493023888262
+1 off 1569. 1070.C.031 - Socket bracket 304/HR Laser Cut,"1569.1070.C.031
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.441 kg
+Volume: 55150.561 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Laser Cut - 1569 - Brook Stage 6.UL MT Barrier,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218503764081274,https://app.asana.com/0/848657415032331/1218503764081274
+1 off 1569. 1070.C.032 - Gusset 304/HR Laser Cut,"1569.1070.C.032
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.084 kg
+Volume: 10450.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Laser Cut - 1569 - Brook Stage 6.UL MT Barrier,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218503764603296,https://app.asana.com/0/848657415032331/1218503764603296
+Machining BOM - 1569 - Brook Stage 6.UL MT Barrier,,ALL BOMS - 1569 - Brook Stage 6.UL MT Barrier,,Machining,,,,,,,
+Magnet Schultz - 1569 - Brook Stage 6.UL MT Barrier,,Machining BOM - 1569 - Brook Stage 6.UL MT Barrier,,Magnet Schultz,,,,,,,
+1 off 1569. 1000.W1.ChamferShootbolt - EBL-I 1515  Machining to Drill additional Holes 61-GFCX 040-SA-CH-0-24V 100% Magnet Schultz,"1569.1000.W1.ChamferShootbolt
+Stock Number: 61-GFCX 040-SA-CH-0-24V 100%
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.503 kg
+Volume: 201663.378 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Magnet Schultz - 1569 - Brook Stage 6.UL MT Barrier,1,Magnet Schultz,,,,ORDER,PROJECT ORDER,1218494556641655,https://app.asana.com/0/848657415032331/1218494556641655
+Machining - 1569 - Brook Stage 6.UL MT Barrier,,Machining BOM - 1569 - Brook Stage 6.UL MT Barrier,,Machining,,,,,,,
+2 off 1569. 1070.A.036 - Rod Machining,"1569.1070.A.036
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.052 kg
+Volume: 6504.066 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Machining - 1569 - Brook Stage 6.UL MT Barrier,2,Machining,,,,ORDER,PROJECT ORDER,1218503764711672,https://app.asana.com/0/848657415032331/1218503764711672
+Welded by Sesame - 1569 - Brook Stage 6.UL MT Barrier,,Machining BOM - 1569 - Brook Stage 6.UL MT Barrier,,Welded by Sesame,,,,,,,
+1 off 1569. 1070.A5w - Welded assembly Welded by Sesame,"1569.1070.A5w
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.248 kg
+Volume: 30951.542 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Welded by Sesame - 1569 - Brook Stage 6.UL MT Barrier,1,Welded by Sesame,,,,ORDER,PROJECT ORDER,1218496156895292,https://app.asana.com/0/848657415032331/1218496156895292
+1 off 1569. 1070.C.017 - Tube machined to 48.3mm OD x 2 mm Wall Machining,"1569.1070.C.017
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.206 kg
+Volume: 25804.007 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Machining - 1569 - Brook Stage 6.UL MT Barrier,1,Machining,,,,ORDER,PROJECT ORDER,1218496156895304,https://app.asana.com/0/848657415032331/1218496156895304
+1 off 1569. 1070.C.019 - Acetal tube Machining,"1569.1070.C.019
+Material: Acetal Resin, Black
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.023 kg
+Volume: 16449.680 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Machining - 1569 - Brook Stage 6.UL MT Barrier,1,Machining,,,,ORDER,PROJECT ORDER,1218498313316725,https://app.asana.com/0/848657415032331/1218498313316725
+1 off 1569. 1070.C.021 - Tube (OD 30 mm wall 2 mm) Machining,"1569.1070.C.021
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.086 kg
+Volume: 10731.681 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Machining - 1569 - Brook Stage 6.UL MT Barrier,1,Machining,,,,ORDER,PROJECT ORDER,1218498313354341,https://app.asana.com/0/848657415032331/1218498313354341
+1 off 1569. 1070.C8 - Assembly by Machining Machining,"1569.1070.C8
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 2.352 kg
+Volume: 307508.354 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Machining - 1569 - Brook Stage 6.UL MT Barrier,1,Machining,,,,ORDER,PROJECT ORDER,1218498313354353,https://app.asana.com/0/848657415032331/1218498313354353
+1 off 1569. 1070.C10w - Welded assembly Welded by Sesame,"1569.1070.C10w
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.119 kg
+Volume: 14936.200 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Welded by Sesame - 1569 - Brook Stage 6.UL MT Barrier,1,Welded by Sesame,,,,ORDER,PROJECT ORDER,1218494556867051,https://app.asana.com/0/848657415032331/1218494556867051
+MayTec BOM - 1569 - Brook Stage 6.UL MT Barrier,,ALL BOMS - 1569 - Brook Stage 6.UL MT Barrier,,MayTec,,,,,,,
+MayTec - 1569 - Brook Stage 6.UL MT Barrier,,MayTec BOM - 1569 - Brook Stage 6.UL MT Barrier,,MayTec,,,,,,,
+1 off 1569. 1070.A1 - Front Barrier assembly MayTec,"1569.1070.A1
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 9.427 kg
+Volume: 3439373.510 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",MayTec - 1569 - Brook Stage 6.UL MT Barrier,1,MayTec,,,,ORDER,PROJECT ORDER,1218503765366581,https://app.asana.com/0/848657415032331/1218503765366581
+1 off 1569. 6000.A.51 - Additional box MayTec,"1569.6000.A.51
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.762 kg
+Volume: 244792.483 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",MayTec - 1569 - Brook Stage 6.UL MT Barrier,1,MayTec,,,,ORDER,PROJECT ORDER,1218493260003314,https://app.asana.com/0/848657415032331/1218493260003314
+Sesame/Machining BOM - 1569 - Brook Stage 6.UL MT Barrier,,ALL BOMS - 1569 - Brook Stage 6.UL MT Barrier,,Sesame/Machining,,,,,,,
+1 off 1569. 1000.W1.ChamferShootbolt - EBL-I 1515  Machining to Drill additional Holes 61-GFCX 040-SA-CH-0-24V 100% Magnet Schultz,"1569.1000.W1.ChamferShootbolt
+Stock Number: 61-GFCX 040-SA-CH-0-24V 100%
+From Cost Centre Sesame/Machining
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.503 kg
+Volume: 201663.378 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Magnet Schultz - 1569 - Brook Stage 6.UL MT Barrier,1,Magnet Schultz,,,,ORDER,PROJECT ORDER,1218503764472731,https://app.asana.com/0/848657415032331/1218503764472731
+Sesame BOM - 1569 - Brook Stage 6.UL MT Barrier,,ALL BOMS - 1569 - Brook Stage 6.UL MT Barrier,,Sesame,,,,,,,
+RS Components - 1569 - Brook Stage 6.UL MT Barrier,,Sesame BOM - 1569 - Brook Stage 6.UL MT Barrier,,RS Components,,,,,,,
+1 off 1569. 1008.A3.001 - MP200701 - Magnetic Proximity Sensor N/O 765-9347 RS Components,"1569.1008.A3.001
+Stock Number: 765-9347
+KAN: KAN-373
+KAN Stock Link: https://app.asana.com/0/632603478911321/1200833896753751
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/magnetic-proximity-switches/7659347?searchId=39499402-0fcc-41e0-a983-b692116554e4
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.003 kg
+Volume: 2845.338 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",RS Components - 1569 - Brook Stage 6.UL MT Barrier,,RS Components,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1218494557130967,https://app.asana.com/0/848657415032331/1218494557130967
+Sesame - 1569 - Brook Stage 6.UL MT Barrier,,Sesame BOM - 1569 - Brook Stage 6.UL MT Barrier,,Sesame,,,,,,,
+1 off 1569. 1070.A.006 - Magnet F338N-2 Sesame,"1569.1070.A.006
+Stock Number: F338N-2
+KAN: KAN-546
+KAN Stock Link: https://app.asana.com/0/632603478911321/1201650398790964
+Material: Generic
+Web Link: https://www.first4magnets.com/countersunk-c41/15mm-dia-x-2mm-thick-x-4-2mm-c-sink-neodymium-magnet-2-6kg-pull-p3055#ab_1_1|ps_2_1068
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.000 kg
+Volume: 294.721 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Sesame - 1569 - Brook Stage 6.UL MT Barrier,,Sesame,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1218503765508398,https://app.asana.com/0/848657415032331/1218503765508398
+first4magnets - 1569 - Brook Stage 6.UL MT Barrier,,Sesame BOM - 1569 - Brook Stage 6.UL MT Barrier,,first4magnets,,,,,,,
+1 off 1569. 1070.A.031 - Fiber Washer (should come with magnet) first4magnets,"1569.1070.A.031
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.000 kg
+Volume: 156.687 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",first4magnets - 1569 - Brook Stage 6.UL MT Barrier,1,first4magnets,,,,ORDER,PROJECT ORDER,1218494557548636,https://app.asana.com/0/848657415032331/1218494557548636
+"4 off 1569. 1070.A.034 - M6x16mm Slotted Head Grub Screws, SS SFA-M6-16-A1-BL Sesame","1569.1070.A.034
+Stock Number: SFA-M6-16-A1-BL
+Material: Stainless Steel
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.003 kg
+Volume: 430.871 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Sesame - 1569 - Brook Stage 6.UL MT Barrier,4,Sesame,,,,ORDER,PROJECT ORDER,1218496157581668,https://app.asana.com/0/848657415032331/1218496157581668
+baercoil - 1569 - Brook Stage 6.UL MT Barrier,,Sesame BOM - 1569 - Brook Stage 6.UL MT Barrier,,baercoil,,,,,,,
+8 off 1569. 1070.A.039 - Thread insert with cutting slots M4x0.7 / M6.5 L8mm baercoil,"1569.1070.A.039
+Stock Number: M4x0.7 / M6.5 L8mm
+Material: Generic
+Web Link: https://www.baercoil.com/en/products_bf_inserts.html
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.000 kg
+Volume: 155.771 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",baercoil - 1569 - Brook Stage 6.UL MT Barrier,8,baercoil,,,,ORDER,PROJECT ORDER,1218496157661702,https://app.asana.com/0/848657415032331/1218496157661702
+2 off 1569. 1070.A.041 - Gusket Sesame,"1569.1070.A.041
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/9ze1m77c18eapus4hhkt9/AIw0Jk4DbAGDyO75lg1Tec8?rlkey=s36eakb8e1vqgsq61s58sk1yn&dl=0
+Mass: 0.004 kg
+Volume: 4437.531 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/848657415032331/task/1218492256959022?focus=true",Sesame - 1569 - Brook Stage 6.UL MT Barrier,2,Sesame,,,,ORDER,PROJECT ORDER,1218503765784630,https://app.asana.com/0/848657415032331/1218503765784630

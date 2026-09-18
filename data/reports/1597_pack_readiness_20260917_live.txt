@@ -1,0 +1,10 @@
+[refresh] moved hierarchy cache aside -> full live re-resolve
+[orders-by-pack] resolving 178 part hierarchies (0 cached) ...
+Traceback (most recent call last):
+  File "C:\Users\GilesHugo\SES_Workspace\skills\os_portal\project_pack_readiness.py", line 181, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\GilesHugo\SES_Workspace\skills\os_portal\project_pack_readiness.py", line 118, in main
+    o_rows.append({"part": c.get("sesame_pn"), "vendor": (o.get("vendor_name") or c.get("vendor_name") or ""),
+                                                          ^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'

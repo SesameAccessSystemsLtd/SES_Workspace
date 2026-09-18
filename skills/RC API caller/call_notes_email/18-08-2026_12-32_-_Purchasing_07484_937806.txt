@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  18/08/2026  12:32
+============================================================
+With:         - Purchasing 07484 937806
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a call from Google Ads account manager Synott to Giles Hugo regarding recent updates and observations on the Libertex Google Ads account. Giles declined a detailed discussion, indicating they have internal experts managing the account.
+
+--- RECAP --------------------------------------------------
+Synott, a Google Ads account manager, called Giles Hugo to discuss recent observations and updates on the Libertex Google Ads account, including a new feature implemented the previous day related to target CPA and target ROAS starting August 17th.Synott offered a brief 5-minute call to walk Giles through these updates and suggested that the features could help optimize campaign performance, but Giles was unavailable and declined further discussion, stating they have internal experts managing the account.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

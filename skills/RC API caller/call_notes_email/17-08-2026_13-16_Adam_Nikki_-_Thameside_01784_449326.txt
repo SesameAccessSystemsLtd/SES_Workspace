@@ -1,0 +1,19 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  17/08/2026  13:16
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved discussions about material specifications, upcoming work scheduling, and pending quotes. Giles Hugo and Adam/Nikki from Thameside coordinated on project details and timelines.
+
+--- RECAP --------------------------------------------------
+Adam/Nikki reported that a 12mm square acetal strip they purchased was delivered in 30mm thickness, with cut sizes between 12 and 14.3mm, which may impact their project specifications.Giles Hugo suggested that making the strip 12mm high might be preferable, but Adam/Nikki indicated they might need to make it 13mm, and requested a drawing from Giles for confirmation.Adam/Nikki confirmed they are ordering laser-cut parts and will ensure that any holes are included or omitted as needed, to avoid issues during assembly.A request for quote was received about an hour prior, involving two parts, with a need to clarify if there are existing pilot holes to determine if material removal is necessary.Giles Hugo confirmed they are ordering laser-cut parts and will provide a quote accordingly.Regarding outstanding work, Adam/Nikki reported that progress on the St. Marys Machining project is delayed due to staff availability, with some
+
+--- TASKS --------------------------------------------------
+started but not completed, and uncertainty about meeting the Friday deadline.
+Tasks
+Giles Hugo to send a drawing to Adam/Nikki for confirmation on the acetal strip thickness and dimensions.Adam/Nikki to clarify whether pilot holes are present in the parts for the recent quote and to adjust the material accordingly.Giles Hugo to provide a quote for the laser-cut parts once the hole specifications are confirmed.Adam/Nikki to assess if the remaining tasks on the St. Marys Machining project can be completed by Friday, considering staff availability.
+
+(Full transcript: RC web portal only — no RingSense API)

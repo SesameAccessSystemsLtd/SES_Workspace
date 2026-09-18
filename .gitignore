@@ -10,3 +10,32 @@ __pycache__/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# --- VPS-side services: Linux source lives on the VPS (srv1903976), NOT in this
+# Windows workspace. The VPS workspace is not a git tree and is populated via SSH.
+# Do not commit Linux service source from Windows - it can clobber the Linux deploy.
+skills/webhook_receiver/
+
+# --- Credentials: never commit secrets (added 2026-09-17) ---
+.env
+.env.*
+*.env
+!.env.example
+*credentials*.json
+*service_account*.json
+*.pem
+*.key
+id_rsa*
+
+# --- Oversized operational DBs (kept out of Git; see commit 435df80) ---
+# NB: db/crm.db (192K) stays tracked - it is small and useful for backup.
+db/ops.db
+db/ops.db-*
+db/ops.db.*
+db/*.db-journal
+db/*.db.stale-fork-*
+db/*.db-wal
+db/*.db-shm
+db/*.bak
+db/*.bak_*
+db/.fuse_hidden*

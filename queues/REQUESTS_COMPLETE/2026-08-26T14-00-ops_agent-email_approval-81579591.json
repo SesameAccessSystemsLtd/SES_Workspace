@@ -1,0 +1,14 @@
+{
+  "request_id": "2f90acf6-0901-45f1-a12f-3558a1e2bb6f",
+  "source": "email_approval_sheet",
+  "row_index": 21,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy5lAAA=",
+  "subject": "Re: Bearing Supplier - 1037 - Langley Entire BOM [#460078]",
+  "task_gid": "1217816912698005",
+  "task_name": "21572-1037 - Simply Bearings - Bearing Supplier - 1037 - Langley Entire BOM",
+  "asana_url": "https://app.asana.com/0/0/1217816912698005",
+  "action": "(Matched via PO Number in Local DB)",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-08-26T06:20:38Z\nEmail: Re: Bearing Supplier - 1037 - Langley Entire BOM [#460078]\nMatch basis: (Matched via PO Number in Local DB)\n- Acknowledged order_confirmation — no field change proposed (type=order_confirmation, PO=21572-1037, vendor=simplybearings)",
+  "decision": "A",
+  "created_at": "2026-08-26T14:00:40.998387+00:00"
+}

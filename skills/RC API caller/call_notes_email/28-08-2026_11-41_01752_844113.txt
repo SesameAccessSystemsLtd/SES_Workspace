@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  28/08/2026  11:41
+============================================================
+With:         01752 844113
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a follow-up call from Terry at Bearing Options to Giles Hugo regarding a recent quote for bearings, which has since been ordered. The call included discussion about the supplier and pricing details, with no further actions required at this time.
+
+--- RECAP --------------------------------------------------
+Terry from Bearing Options called Giles Hugo to inquire about the status of a quote for bearings provided the previous week, but the quote status was not confirmed during the call.Giles Hugo confirmed that the quote had not been sent yet and that they had ordered the bearings, with the order placed with Transdev, a customer of Giles Hugo.The order was awarded to Transdev, which was unexpected because Transdev is typically more expensive, but they won the quote with a price of 167 compared to the competitor's 261.The main difference in pricing was due to the brand, with Giles Hugo's quote based on Dunlop, a high-quality brand, while the competitor's price was lower because they used a different brand.Terry expressed interest in future quotes and requested that brand information be included in quotes to better understand quality differences.The call concluded with mutual good wishes and no immediate follow-up actions required.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

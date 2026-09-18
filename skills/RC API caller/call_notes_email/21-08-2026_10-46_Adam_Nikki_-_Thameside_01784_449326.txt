@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  21/08/2026  10:46
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo and Adam/Nikki from Thameside discussing the status and details of a bracket machining project, including ordering laser-cut parts and machining operations. The overall outcome was clarification on the order and next steps for manufacturing.
+
+--- RECAP --------------------------------------------------
+Giles Hugo and Adam/Nikki discussed a bracket machining project, specifically item L15, which involves a laser-cut part measuring approximately 53 by 47 mm with a slot, tap holes, and a radius on the corner, to be ordered and machined.The laser-cut blank, 10 mm thick, will be ordered and delivered, with the machining process including drilling and possibly milling, though milling may not be necessary.There was confusion about the drilling depth, with a mention of 4 mm and 15 mm depths, which Giles Hugo found unclear and suggested leaving the issue for now.The order for the laser-cut parts was confirmed as the second item on the list, with the list and drawings to be provided via email or Dropbox link, and Giles Hugo will drop off the laser-cut parts once received.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will drop off the laser-cut parts once they are received.Adam/Nikki will wait for confirmation from Giles Hugo before proceeding with machining the brackets.
+
+(Full transcript: RC web portal only — no RingSense API)

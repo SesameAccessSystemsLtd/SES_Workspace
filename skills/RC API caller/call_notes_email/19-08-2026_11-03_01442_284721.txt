@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  19/08/2026  11:03
+============================================================
+With:         01442 284721
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a brief call between Giles Hugo and Craig from Alan Anderson Manufacturing, primarily to coordinate joining a scheduled Teams meeting and resolve technical issues with remote access. No specific goals or outcomes were achieved beyond confirming the meeting setup.
+
+--- RECAP --------------------------------------------------
+Giles Hugo and Craig discussed joining a Teams meeting scheduled for 11, with Craig offering to resend the link or do the meeting via phone if needed.Giles Hugo experienced a technical issue with remote desktop and video camera setup, prompting a brief pause and clarification on meeting access.Craig suggested doing the meeting on the phone if easier, but Giles preferred to use the transcript or recording if available.The call ended with Craig hanging up after confirming the situation.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

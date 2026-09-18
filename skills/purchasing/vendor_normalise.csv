@@ -1,0 +1,43 @@
+source_vendor,actual_vendor,confidence,comment
+Laser Cut,Lasershape,high,Primary lasercut supplier (procurement_tasks vendor_name "Lasershape"; suppliers "Lasershape Ltd - PRIMARY SUPPLIER")
+Laser Cut,Innovation Laser,high,procurement_tasks vendor_name "Innovation Laser" / "Innovation"; suppliers "Innovation Lasercut Ltd"
+Laser Cut,F1 Laser,high,procurement_tasks vendor_name "F1 Laser"; suppliers "F1 Lasercutting Ltd"
+Laser Cut,Exact,medium,procurement_tasks vendor_name "Exact"; suppliers "Exact Lasercut Ltd - ... NO LONGER A PREFERRED SUPPLIER"
+Laser Cut,Laser 24,medium,suppliers "Laser 24 - NEVER HAVE TO WAIT MORE THAN 5 DAYS"
+Laser Cut,Midtherm Laser,low,suppliers "Midtherm Laser - WANTS MORE BUSINESS"
+Laser Cut,Steel Express,low,suppliers "Steel Express Ltd - Lasercut - metal stock - ... ON TRIAL"
+Laser Cut,Onesite-Laser,low,suppliers "Onesite-Laser Ltd - TRIAL NEW SUPPLIER"
+Laser Cut,ADS Laser,low,suppliers "ADS Laser Ltd - New to trial"
+Laser Cut,FC Laser,low,suppliers "FC Laser Ltd"
+Laser Cut,SCC Laser,low,suppliers "SCC Laser Ltd"
+Laser Cut,HighSpeed Lasers,low,suppliers "HighSpeed Lasers Ltd"
+Laser Cut,Laser Profiles,low,suppliers "Laser Profiles Ltd - ... - ISSUES"
+Machining,Thameside,high,procurement_tasks vendor_name "Thameside"/"Thameside Eng"; machining order vendor
+Machining,Ashtead,medium,suppliers "Ashtead Ltd - Machining local supplier"
+Machining,Erodatool,low,suppliers "Erodatool Ltd - Machining company Sheffield with wire errosion"
+Machining,KPK,low,suppliers "KPK Ltd - Machining and Sheet metal"
+Machining,DMS Machining,low,suppliers "DMS Machining"
+Powder Coating,IDL,high,procurement_tasks vendor_name "IDL"; suppliers "IDL Ltd - Powder coating"
+Powder Coating,WSB,medium,suppliers "WSB Powder coating - Imran"
+Powder Coating,Paul Waite,low,suppliers "Paul Waite Powder coating - New supplier"
+Powder Coating,Medway Joseph Ash,low,suppliers "Medway Joseph Ash Ltd - galvanising - Zinc + powder coating"
+Engraving,Alexander Pollock,high,procurement_tasks vendor_name "Alexander Pollock"; suppliers "Alexander Pollock Ltd - Engravers"
+Engraving,Ashbee Engraving,medium,suppliers "Ashbee Engraving Ltd - Local engravers"
+Engraving,Brunel,low,suppliers "Brunel bought Adams Engraving Ltd - Engravers" (uncertain - mark for review)
+Anodising,Owen Coyle,high,suppliers "Owen Coyle Ltd - anodizing supplier"
+Anodising,Hard Anodisers,medium,suppliers "HARD ANODISERS LTD - Birmingham EXPENSIVE"
+Anodising,ACORN Plating,medium,suppliers "ACORN Plating - Anodising"
+Anodising,Piniqu,low,suppliers "Piniqu Plating - Now only Anodising"
+Anodising,The Anodising Company,low,suppliers "The Anodising Company Ltd - Small tank low cost"
+Electroplating,Corodine,high,procurement_tasks vendor_name "Corodine"; suppliers "Corodine Plating Ltd - Nickle / Zinc Plating"
+Electroplating,Jackson Plating,medium,suppliers "Jackson Plating Ltd - Chem Black an Plating local"
+Electroplating,Mercury Plating,medium,suppliers "Mercury Plating Ltd - Zinc Plating & Anodising supplier"
+Electroplating,Collins Chemical Blackening,low,suppliers "Collins Chemical Blackening Ltd - Plating"
+Electroplating,Premier Plating,low,suppliers "Premier plating Ltd"
+Electroplating,Broadway Brass,low,suppliers "Broadway Brass Ltd - Plating"
+Galvanising,Wessex Galvanising,high,suppliers "Wessex Galvanising Ltd - TUESDAYS & THURSDAYS"
+Galvanising,Medway Joseph Ash,medium,suppliers "Medway Joseph Ash Ltd - galvanising - Zinc + powder coating"
+Yellow Zinc Plating,Mercury Plating,medium,suppliers "Mercury Plating Ltd - Zinc Plating & Anodising supplier" (zinc process)
+Yellow Zinc Plating,Corodine,medium,procurement_tasks vendor_name "Corodine"; suppliers "Corodine Plating Ltd - Nickle / Zinc Plating"
+Marine Lacquer,,low,UNCERTAIN - no clear order vendor found in suppliers; needs Giles confirmation
+Laser Cut/Machining,Lasershape,low,combined process - likely split between Lasershape (cut) + Thameside (machining); mark for review

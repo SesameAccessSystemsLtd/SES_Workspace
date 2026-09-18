@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  11/09/2026  11:40
+============================================================
+With:         +441924869610 01924 869610
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo from Sesame Access inquiring about the dispatch status of a 48 mil reamer, confirming the order details and expected delivery date. The call concluded with clarification that the correct reamer size is 48 mil, with delivery scheduled for Tuesday and expected to arrive on Wednesday.
+
+--- RECAP --------------------------------------------------
+Giles Hugo from Sesame Access contacted the supplier to check on the dispatch status of a 38 mil reamer, later confirming it was actually a 48 mil reamer on back order.The supplier confirmed the 48 mil reamer is scheduled to arrive on Tuesday, with delivery expected on Wednesday next week.Giles Hugo agreed with the correction regarding the reamer size and acknowledged the delivery date, requesting a callback if the order details change.
+
+--- TASKS --------------------------------------------------
+Giles Hugo to call back if the reamer size is confirmed as 38 mil instead of 48 mil, to request a swap.
+
+(Full transcript: RC web portal only — no RingSense API)

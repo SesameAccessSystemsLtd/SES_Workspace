@@ -146,6 +146,11 @@ def build_queue_row(task, run_ts):
         "stock_action_value": "ORDER FOR STOCK",
         "parts_control_task_gid": gid,
         "status": "grouped",
+        # CHG-3B: the order/group task link is populated later by create_order_tasks.py
+        # (append path). At routing catch-up the part is only 'grouped' — no order
+        # task exists yet — so both are explicitly NULL.
+        "order_task_gid": None,
+        "order_task_type": None,
     }
 
 

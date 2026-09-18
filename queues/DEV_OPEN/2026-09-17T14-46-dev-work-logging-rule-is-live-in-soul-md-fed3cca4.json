@@ -1,0 +1,35 @@
+{
+  "id": "fed3cca4",
+  "objective": "Dev-work logging rule is live in SOUL.md, CLAUDE.md and AGENTS.md so every channel logs before writing code",
+  "where": [
+    "C:/Users/GilesHugo/AppData/Local/hermes/SOUL.md",
+    "C:/Users/GilesHugo/CLAUDE.md",
+    "C:/Users/GilesHugo/AGENTS.md"
+  ],
+  "channel": "hermes:default",
+  "area": "Documentation",
+  "effort": "S",
+  "priority": "High",
+  "created_at": "2026-09-17T14:46:14.349565+00:00",
+  "asana_gid": "1218595253311904",
+  "events": [
+    {
+      "at": "2026-09-17T14:46:14.349574+00:00",
+      "status": "open",
+      "by": "hermes:default",
+      "note": "thread opened"
+    },
+    {
+      "at": "2026-09-17T14:46:16.634548+00:00",
+      "status": "awaiting_signoff",
+      "by": "agent",
+      "note": "Rule is deployed in all 3 channel context files (SOUL.md/CLAUDE.md/AGENTS.md); verify wording reads correctly in each."
+    },
+    {
+      "at": "2026-09-17T15:31:49.402990+00:00",
+      "status": "awaiting_signoff",
+      "by": "dev_register.sync",
+      "note": "created Asana task 1218595253311904"
+    }
+  ]
+}

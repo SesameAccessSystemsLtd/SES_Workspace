@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAS OS — Andy's Worklist &amp; Pack Readiness</title><style>
+:root{--bg:#f4f6fa;--card:#fff;--ink:#1a1a2e;--muted:#6b7280;--line:#e5e7eb;
+--brand:#0f766e;--amber:#d97706;--red:#dc2626;--green:#16a34a;--blue:#2563eb;
+--brand2:#0f766e;--hero-grad:linear-gradient(135deg,#0f172a 0%,#134e4a 100%);
+--hover:#f9fafb;--subbg:#f8fafc;--accbg:#ecfdf5;--accink:#065f46;
+--vendbg:#f0fdf4;--vendline:#86efac;--vendink:#166534;--chipline:rgba(255,255,255,.22)}
+
+/* ── Stock Management dark scheme (default dark) ── */
+:root.theme-stock{--bg:#0f1117;--card:#1a1d27;--ink:#e2e8f0;--muted:#94a3b8;
+--line:#2d3250;--brand:#6c8ef7;--amber:#fbbf24;--red:#f87171;--green:#34d399;--blue:#6c8ef7;
+--brand2:#a78bfa;--hero-grad:linear-gradient(135deg,#1e2a5e 0%,#2d1f6e 100%);
+--hover:#21253a;--subbg:#1f2436;--accbg:#0c2b22;--accink:#34d399;
+--vendbg:#0e2a1f;--vendline:#34d399;--vendink:#34d399;--chipline:rgba(255,255,255,.28)}
+
+/* ── Futuristic electric neon (showcase) ── */
+:root.theme-neon{--bg:#05060f;--card:#0d101f;--ink:#e6f1ff;--muted:#8a93b8;
+--line:#1e2a4a;--brand:#00f0ff;--amber:#ffd100;--red:#ff3b6b;--green:#00ff9d;--blue:#5f7cff;
+--brand2:#b14aff;--hero-grad:linear-gradient(135deg,#060014 0%,#1a0040 60%,#004b73 100%);
+--hover:#131a33;--subbg:#0b0f24;--accbg:#001a1f;--accink:#00ff9d;
+--vendbg:#00141c;--vendline:#00f0ff;--vendink:#00f0ff;--chipline:rgba(0,240,255,.4)}
+*{box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);margin:0;padding:0;line-height:1.5;transition:background .4s,color .4s}
+.navbtn{position:fixed;top:16px;right:16px;z-index:9999;background:#0f172a;color:#fff;font-weight:600;font-size:13px;text-decoration:none;padding:8px 16px;border-radius:20px;box-shadow:0 2px 8px rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.25)}
+.navbtn:hover{background:#1e293b}
+.wrap{max-width:1240px;margin:0 auto;padding:24px 20px 90px}
+header.hero{background:var(--hero-grad);color:#fff;border-radius:16px;padding:26px 28px;margin-bottom:20px;transition:background .4s}
+header.hero h1{margin:0 0 6px;font-size:24px}
+header.hero .sub{opacity:.85;font-size:14px}
+.thememenu{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap;align-items:center}
+.thememenu .lbl{font-size:12px;color:var(--muted);margin-right:4px}
+.tbtn{background:rgba(255,255,255,.08);border:1px solid var(--chipline);color:#fff;border-radius:20px;padding:5px 14px;font-size:12.5px;cursor:pointer;font-weight:600}
+.tbtn:hover{background:rgba(255,255,255,.18)}
+.tbtn.on{background:var(--brand);border-color:var(--brand);color:#fff}
+.tbtn .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.badges{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+.badge{background:rgba(255,255,255,.14);border:1px solid var(--chipline);padding:4px 12px;border-radius:20px;font-size:12.5px}
+.badge.alert{background:#dc2626;border-color:#dc2626;font-weight:600}
+.badge.ok{background:#16a34a;border-color:#16a34a}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(16,24,40,.06);transition:background .4s,border-color .4s}
+.card h2{margin:0 0 12px;font-size:17px;display:flex;align-items:center;gap:8px}
+.card h2 .num{background:var(--brand);color:#fff;width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;border-radius:7px;font-size:12.5px}
+.card h2 a.projectlink{color:inherit;text-decoration:none}
+.card h2 a.projectlink:hover{color:var(--brand);text-decoration:underline}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:4px}
+th{text-align:left;color:var(--muted);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.4px;padding:7px 9px;border-bottom:2px solid var(--line);white-space:nowrap}
+td{padding:8px 9px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:hover td{background:var(--hover)}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.pill{display:inline-block;padding:2px 9px;border-radius:12px;font-size:12px;font-weight:600;white-space:nowrap}
+.pill.open{background:color-mix(in srgb,var(--blue) 15%,transparent);color:var(--blue)}
+.pill.done{background:color-mix(in srgb,var(--green) 15%,transparent);color:var(--green)}
+.pill.over{background:color-mix(in srgb,var(--red) 15%,transparent);color:var(--red)}
+.pill.ok{background:color-mix(in srgb,var(--green) 15%,transparent);color:var(--green)}
+.pill.warn{background:color-mix(in srgb,var(--amber) 18%,transparent);color:var(--amber)}
+.muted{color:var(--muted);font-size:12.5px}
+.fb{color:var(--muted);font-size:11px;text-align:right;margin-top:8px}
+.callout{border-left:5px solid var(--red);background:color-mix(in srgb,var(--red) 8%,transparent);padding:12px 16px;border-radius:0 10px 10px 0;margin-bottom:16px}
+.callout .t{font-weight:700;color:var(--red);margin-bottom:4px;font-size:14px}
+/* expandable subtask rows */
+details.sub{background:var(--subbg);border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:6px 0}
+details.sub summary{cursor:pointer;font-size:13px;color:var(--ink);user-select:none}
+details.sub summary .cnt{font-weight:600}
+details.sub table td{padding:5px 8px;font-size:12.5px}
+details.vendor{background:var(--vendbg);border:1px solid var(--vendline);border-radius:10px;padding:7px 12px;margin-top:6px}
+details.vendor summary{cursor:pointer;font-size:13px;font-weight:600;color:var(--vendink);user-select:none}
+details.vendor table td{padding:5px 8px;font-size:12.5px}
+details.vendor a{color:var(--vendink)}
+details.vendor a:hover{text-decoration:underline}
+.vorder{display:inline-block;padding:2px 9px;border-radius:12px;font-size:12px;font-weight:600}
+.vorder.over{background:color-mix(in srgb,var(--red) 15%,transparent);color:var(--red)}
+.vorder.ok{background:color-mix(in srgb,var(--green) 15%,transparent);color:var(--green)}
+.acc{border:1px solid var(--brand);background:var(--accbg);color:var(--accink);border-radius:8px;padding:3px 10px;font-size:12px;font-weight:600;cursor:pointer}
+.acc:hover{filter:brightness(1.15)}
+.acc:disabled{opacity:.5;cursor:not-allowed}
+.switchs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.switch{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:5px 14px;font-size:13px;color:var(--ink);cursor:pointer;text-decoration:none}
+.switch.on{background:var(--brand);color:#fff;border-color:var(--brand);font-weight:600}
+footer{color:var(--muted);font-size:12px;text-align:center;margin-top:26px}
+.empty{text-align:center;color:var(--muted);padding:40px 0}
+.note{background:color-mix(in srgb,var(--amber) 12%,transparent);border:1px solid color-mix(in srgb,var(--amber) 45%,transparent);border-radius:10px;padding:10px 14px;font-size:12.5px;color:var(--amber);margin-bottom:16px}
+</style>
+<script>
+// SAS OS — Accept button. ON A STATIC PAGE THIS CANNOT WRITE TO ASANA.
+// Truthful behaviour: clicking stages the change for the REQUESTS→SAP queue
+// and tells Giles the exact action, so it never fails silently nor fakes success.
+function acceptDue(taskGid, newDue, taskName) {
+  var changes = JSON.parse(localStorage.getItem('os_accepted_changes') || '[]');
+  changes.push({gid: taskGid, due: newDue, name: taskName, ts: new Date().toISOString()});
+  localStorage.setItem('os_accepted_changes', JSON.stringify(changes));
+  var msg = 'STAGED for SAP write (not yet applied to Asana):\n\n'
+          + 'Task: ' + taskName + '\n'
+          + 'GID:  ' + taskGid + '\n'
+          + 'Set due date:  ' + newDue + '\n\n'
+          + 'This now needs to be pushed through the REQUESTS→SAP queue to apply to Asana. '
+          + 'Tell Giles \"queue the accepted due-date changes\" and they will be drafted as REQUESTS files.';
+  alert(msg);
+  var b = event ? event.target : null;
+  if (b) { b.disabled = true; b.textContent = 'Staged ✓'; }
+}
+function showStaged() {
+  var changes = JSON.parse(localStorage.getItem('os_accepted_changes') || '[]');
+  if (!changes.length) { alert('No accepted changes staged yet.'); return; }
+  var out = changes.map(function(c,i){return (i+1)+'. '+c.name+' → '+c.due+' ('+c.gid+')';}).join('\n');
+  alert('Staged changes ('+changes.length+'):\n'+out+'\n\nCopy these to queue via REQUESTS→SAP.');
+}
+function clearStaged() {
+  localStorage.removeItem('os_accepted_changes');
+  alert('Staged changes cleared.');
+}
+// ── Theme switcher ──
+function setTheme(name){
+  document.documentElement.classList.remove('theme-stock','theme-neon');
+  if (name && name!=='light') document.documentElement.classList.add('theme-'+name);
+  localStorage.setItem('os_theme', name || 'light');
+  var b=document.querySelectorAll('.tbtn');
+  for (var i=0;i<b.length;i++) b[i].classList.toggle('on', b[i].getAttribute('data-theme')===name);
+}
+function initTheme(){
+  var t=localStorage.getItem('os_theme') || 'stock';
+  if (t==='light') t='';
+  setTheme(t==='stock'?'stock':(t==='neon'?'neon':'light'));
+}
+</script></head>
+<body onload="initTheme()"><div class="wrap">
+<header class="hero">
+  <h1>SAS OS — Andy's Worklist &amp; Pack Readiness</h1>
+  <div class="sub">Incomplete, Andy-assigned, project work · Generated 2026-08-18 · Live Asana (Build Schedule, Order Numbers, subtasks) + ops.db</div>
+  <a href="nav.html" class="navbtn">&larr; SAS OS portal</a>
+  <div class="thememenu"><span class="lbl">Theme:</span>
+    <button class="tbtn" data-theme="light" onclick="setTheme('light')"><span class="dot" style="background:#fff"></span>Light</button>
+    <button class="tbtn" data-theme="stock" onclick="setTheme('stock')"><span class="dot" style="background:#6c8ef7"></span>Stock</button>
+    <button class="tbtn" data-theme="neon" onclick="setTheme('neon')"><span class="dot" style="background:#00f0ff"></span>Neon</button>
+  </div>
+  <div class="badges"><span class="badge">Andy only</span><span class="badge">incomplete only</span>
+  <span class="badge">projects only</span><span class="badge">every row → Asana ↗</span>
+  <span class="badge ok">Accept = stage for REQUESTS→SAP</span></div>
+  <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+    <button onclick="showStaged()" style="background:var(--brand);color:#fff;border:none;border-radius:8px;padding:6px 14px;font-size:13px;cursor:pointer">Show staged accepts</button>
+    <button onclick="clearStaged()" style="background:#555;color:#fff;border:none;border-radius:8px;padding:6px 14px;font-size:13px;cursor:pointer">Clear staged</button>
+  </div>
+</header>
+<div class="note">📦 32 open supplier orders tracked · delivery = Order Numbers due_on (expected, not confirmed).</div>
+
+        <div class="card" id="1037">
+          <h2><span class="num">10</span> 1037 - Langley
+            <span class="muted" style="margin-left:auto">14 open · <span class="pill ok">0 overdue</span></span></h2>
+          <table><thead><tr>
+            <th>Pack task</th><th>Subtasks (open / overdue)</th>
+            <th>Parts arrive → advised due</th><th>Action</th>
+          </tr></thead><tbody><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1217356712493576">1037.1016.BS.2.</a><br>
+                <span class="muted">2026-08-21</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-08-18 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217541497709661">Steerforth</a> · 1.Long Leading Time</td>
+                      <td>Steerforth - 1037 - 1.Long Leading Time</td>
+                      <td>2026-08-18</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217419145717808">Laser Cut BOM</a> · 5.Button Stations Langley</td>
+                      <td>Laser Cut BOM - 1037 - 5.Button Stations Langley</td>
+                      <td>2026-08-18</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 3 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1217356712493577">Weld  - 1037.1016.BS.2.</a></td><td>—</td><td>2026-08-11 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1217356712493578">Assemble  - 1037.1016.BS.2.</a></td><td>—</td><td>2026-08-11 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1217356712493579">QC  - 1037.1016.BS.2.</a></td><td>—</td><td>2026-08-11 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">16 lasercut · 1 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1217356712493581">1037.1016.BS.3.</a><br>
+                <span class="muted">2026-08-21</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-08-18 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217541497709661">Steerforth</a> · 1.Long Leading Time</td>
+                      <td>Steerforth - 1037 - 1.Long Leading Time</td>
+                      <td>2026-08-18</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217419145717808">Laser Cut BOM</a> · 5.Button Stations Langley</td>
+                      <td>Laser Cut BOM - 1037 - 5.Button Stations Langley</td>
+                      <td>2026-08-18</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 3 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1217356712493582">Weld  - 1037.1016.BS.3.</a></td><td>—</td><td>2026-08-11 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1217356712493583">Assemble  - 1037.1016.BS.3.</a></td><td>—</td><td>2026-08-11 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1217356712493584">QC  - 1037.1016.BS.3.</a></td><td>—</td><td>2026-08-11 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">16 lasercut · 1 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1217484830289458">1037.1014.N.GateMechanism.</a><br>
+                <span class="muted">2026-08-28</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-08-18 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217541497709661">Steerforth</a> · 1.Long Leading Time</td>
+                      <td>Steerforth - 1037 - 1.Long Leading Time</td>
+                      <td>2026-08-18</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217419145717808">Laser Cut BOM</a> · 5.Button Stations Langley</td>
+                      <td>Laser Cut BOM - 1037 - 5.Button Stations Langley</td>
+                      <td>2026-08-18</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1217484830289459">Weld  - 1037.1014.N.GateMechanism.</a></td><td>Ramzan</td><td>2026-08-20 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1217484830289460">Assemble  - 1037.1014.N.GateMechanism.</a></td><td>—</td><td>2026-08-24 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1217484830289461">QC  - 1037.1014.N.GateMechanism.</a></td><td>—</td><td>2026-08-28 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">3 lasercut · 0 need-order · 2 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216065135265568">1037.1014.M.Gate+Support.</a><br>
+                <span class="muted">2026-08-28</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-08-18 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217541497709661">Steerforth</a> · 1.Long Leading Time</td>
+                      <td>Steerforth - 1037 - 1.Long Leading Time</td>
+                      <td>2026-08-18</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217419145717808">Laser Cut BOM</a> · 5.Button Stations Langley</td>
+                      <td>Laser Cut BOM - 1037 - 5.Button Stations Langley</td>
+                      <td>2026-08-18</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216065135265569">Weld  - 1037.1014.M.Gate+Support.</a></td><td>Ramzan</td><td>2026-08-19 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216065135265570">Assemble  - 1037.1014.M.Gate+Support.</a></td><td>—</td><td>2026-08-24 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216065135265571">QC  - 1037.1014.M.Gate+Support.</a></td><td>—</td><td>2026-08-28 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">3 lasercut · 0 need-order · 2 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213566425247586">1037.9991.C.001.</a><br>
+                <span class="muted">2026-08-28</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-08-18 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217541497709661">Steerforth</a> · 1.Long Leading Time</td>
+                      <td>Steerforth - 1037 - 1.Long Leading Time</td>
+                      <td>2026-08-18</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217419145717808">Laser Cut BOM</a> · 5.Button Stations Langley</td>
+                      <td>Laser Cut BOM - 1037 - 5.Button Stations Langley</td>
+                      <td>2026-08-18</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 3 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425247587">Weld  - 1037.9991.C.001.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425247588">Assemble  - 1037.9991.C.001.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425247589">QC  - 1037.9991.C.001.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213566425247581">1037.9991.A.TapeSwitch.</a><br>
+                <span class="muted">2026-08-28</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-08-18 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217541497709661">Steerforth</a> · 1.Long Leading Time</td>
+                      <td>Steerforth - 1037 - 1.Long Leading Time</td>
+                      <td>2026-08-18</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217419145717808">Laser Cut BOM</a> · 5.Button Stations Langley</td>
+                      <td>Laser Cut BOM - 1037 - 5.Button Stations Langley</td>
+                      <td>2026-08-18</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 3 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425247582">Weld  - 1037.9991.A.TapeSwitch.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425247583">Assemble  - 1037.9991.A.TapeSwitch.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425247584">QC  - 1037.9991.A.TapeSwitch.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213566425248678">1037.9992.A.Wheelstop Side.</a><br>
+                <span class="muted">2026-08-28</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-08-18 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217541497709661">Steerforth</a> · 1.Long Leading Time</td>
+                      <td>Steerforth - 1037 - 1.Long Leading Time</td>
+                      <td>2026-08-18</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217419145717808">Laser Cut BOM</a> · 5.Button Stations Langley</td>
+                      <td>Laser Cut BOM - 1037 - 5.Button Stations Langley</td>
+                      <td>2026-08-18</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 2 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425248680">Assemble  - 1037.9992.A.Wheelstop Side.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425248681">QC  - 1037.9992.A.Wheelstop Side.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425248679">Weld  - 1037.9992.A.Wheelstop Side.</a></td><td>Ramzan</td><td>2026-08-27 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213566425248668">1037.9991.C.002.</a><br>
+                <span class="muted">2026-08-28</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-08-18 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217541497709661">Steerforth</a> · 1.Long Leading Time</td>
+                      <td>Steerforth - 1037 - 1.Long Leading Time</td>
+                      <td>2026-08-18</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217419145717808">Laser Cut BOM</a> · 5.Button Stations Langley</td>
+                      <td>Laser Cut BOM - 1037 - 5.Button Stations Langley</td>
+                      <td>2026-08-18</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 2 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425248670">Assemble  - 1037.9991.C.002.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425248671">QC  - 1037.9991.C.002.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425248669">Weld  - 1037.9991.C.002.</a></td><td>Ramzan</td><td>2026-08-27 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213566425247561">1037.1006.A.Bellows.</a><br>
+                <span class="muted">2026-08-28</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-08-18 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217541497709661">Steerforth</a> · 1.Long Leading Time</td>
+                      <td>Steerforth - 1037 - 1.Long Leading Time</td>
+                      <td>2026-08-18</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217419145717808">Laser Cut BOM</a> · 5.Button Stations Langley</td>
+                      <td>Laser Cut BOM - 1037 - 5.Button Stations Langley</td>
+                      <td>2026-08-18</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 3 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425247562">Weld  - 1037.1006.A.Bellows.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425247563">Assemble  - 1037.1006.A.Bellows.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425247564">QC  - 1037.1006.A.Bellows.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213566425248683">1037.Langley street_05.03.2026(bellows+tapeswitch).</a><br>
+                <span class="muted">2026-08-28</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-08-18 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217541497709661">Steerforth</a> · 1.Long Leading Time</td>
+                      <td>Steerforth - 1037 - 1.Long Leading Time</td>
+                      <td>2026-08-18</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217419145717808">Laser Cut BOM</a> · 5.Button Stations Langley</td>
+                      <td>Laser Cut BOM - 1037 - 5.Button Stations Langley</td>
+                      <td>2026-08-18</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 2 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425248685">Assemble  - 1037.Langley street_05.03.2026(bellows+tapeswitch).</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425248686">QC  - 1037.Langley street_05.03.2026(bellows+tapeswitch).</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425248684">Weld  - 1037.Langley street_05.03.2026(bellows+tapeswitch).</a></td><td>Ramzan</td><td>2026-08-28 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br>—</td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213566425247566">1037.1016.X.ButtonStation.</a><br>
+                <span class="muted">2026-08-28</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-08-18 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217541497709661">Steerforth</a> · 1.Long Leading Time</td>
+                      <td>Steerforth - 1037 - 1.Long Leading Time</td>
+                      <td>2026-08-18</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217419145717808">Laser Cut BOM</a> · 5.Button Stations Langley</td>
+                      <td>Laser Cut BOM - 1037 - 5.Button Stations Langley</td>
+                      <td>2026-08-18</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 2 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425247568">Assemble  - 1037.1016.X.ButtonStation.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425247569">QC  - 1037.1016.X.ButtonStation.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425247567">Weld  - 1037.1016.X.ButtonStation.</a></td><td>Ramzan</td><td>2026-08-28 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">16 lasercut · 1 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213566425247571">1037.9990.A.010.</a><br>
+                <span class="muted">2026-08-28</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-08-18 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217541497709661">Steerforth</a> · 1.Long Leading Time</td>
+                      <td>Steerforth - 1037 - 1.Long Leading Time</td>
+                      <td>2026-08-18</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217419145717808">Laser Cut BOM</a> · 5.Button Stations Langley</td>
+                      <td>Laser Cut BOM - 1037 - 5.Button Stations Langley</td>
+                      <td>2026-08-18</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 2 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425247573">Assemble  - 1037.9990.A.010.</a></td><td>—</td><td>2026-06-26 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425247574">QC  - 1037.9990.A.010.</a></td><td>—</td><td>2026-06-26 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425247572">Weld  - 1037.9990.A.010.</a></td><td>Ramzan</td><td>2026-08-28 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213566425248673">1037.9992.A.Wheelstop Bracket Front.</a><br>
+                <span class="muted">2026-08-28</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-08-18 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217541497709661">Steerforth</a> · 1.Long Leading Time</td>
+                      <td>Steerforth - 1037 - 1.Long Leading Time</td>
+                      <td>2026-08-18</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217419145717808">Laser Cut BOM</a> · 5.Button Stations Langley</td>
+                      <td>Laser Cut BOM - 1037 - 5.Button Stations Langley</td>
+                      <td>2026-08-18</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 2 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425248675">Assemble  - 1037.9992.A.Wheelstop Bracket Front.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425248676">QC  - 1037.9992.A.Wheelstop Bracket Front.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425248674">Weld  - 1037.9992.A.Wheelstop Bracket Front.</a></td><td>Ramzan</td><td>2026-08-28 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213566425247576">1037.9990.A.Cover.</a><br>
+                <span class="muted">2026-08-31</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-08-18 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217541497709661">Steerforth</a> · 1.Long Leading Time</td>
+                      <td>Steerforth - 1037 - 1.Long Leading Time</td>
+                      <td>2026-08-18</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217419145717808">Laser Cut BOM</a> · 5.Button Stations Langley</td>
+                      <td>Laser Cut BOM - 1037 - 5.Button Stations Langley</td>
+                      <td>2026-08-18</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425247577">Weld  - 1037.9990.A.Cover.</a></td><td>Ramzan</td><td>2026-08-26 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425247578">Assemble  - 1037.9990.A.Cover.</a></td><td>—</td><td>2026-08-31 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213566425247579">QC  - 1037.9990.A.Cover.</a></td><td>—</td><td>2026-08-31 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr></tbody></table>
+          <div class="fb">ⓘ Accept queues a REQUESTS→SAP write to set the pack due date. Dry-run reviewed first.</div>
+        </div>
+        <div class="card" id="1365">
+          <h2><span class="num">13</span> 1365 - Serjeants Inn Temple Court Apex Hotel
+            <span class="muted" style="margin-left:auto">1 open · <span class="pill over">1 overdue</span></span></h2>
+          <table><thead><tr>
+            <th>Pack task</th><th>Subtasks (open / overdue)</th>
+            <th>Parts arrive → advised due</th><th>Action</th>
+          </tr></thead><tbody><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216751421789606">1365.1014.R.Gate stopper.</a><br>
+                <span class="muted">2026-08-17 · <span class="pill over">overdue</span></span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 3 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216751421789607">Weld  - 1365.1014.R.Gate stopper.</a></td><td>—</td><td>2026-07-21 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216751421789608">Assemble  - 1365.1014.R.Gate stopper.</a></td><td>—</td><td>2026-07-21 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216751421789609">QC  - 1365.1014.R.Gate stopper.</a></td><td>—</td><td>2026-07-21 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">4 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr></tbody></table>
+          <div class="fb">ⓘ Accept queues a REQUESTS→SAP write to set the pack due date. Dry-run reviewed first.</div>
+        </div>
+        <div class="card" id="1536">
+          <h2><span class="num">15</span> 1536 - Brook Theatre, External Lift - Buckingham Lift - External Manufacturing:
+            <span class="muted" style="margin-left:auto">1 open · <span class="pill over">1 overdue</span></span></h2>
+          <table><thead><tr>
+            <th>Pack task</th><th>Subtasks (open / overdue)</th>
+            <th>Parts arrive → advised due</th><th>Action</th>
+          </tr></thead><tbody><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1215826223041990">1536.Brook Theatre - Handrails.</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 3 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1215826223041991">Weld  - 1536.Brook Theatre - Handrails.</a></td><td>—</td><td>2026-06-18 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1215826223041992">Assemble  - 1536.Brook Theatre - Handrails.</a></td><td>—</td><td>2026-06-18 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1215826223041993">QC  - 1536.Brook Theatre - Handrails.</a></td><td>—</td><td>2026-06-18 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br>—</td>
+              <td><span class="muted">—</span></td></tr></tbody></table>
+          <div class="fb">ⓘ Accept queues a REQUESTS→SAP write to set the pack due date. Dry-run reviewed first.</div>
+        </div>
+        <div class="card" id="1537">
+          <h2><span class="num">15</span> 1537 - Porchester Hall, Backstage
+            <span class="muted" style="margin-left:auto">1 open · <span class="pill ok">0 overdue</span></span></h2>
+          <table><thead><tr>
+            <th>Pack task</th><th>Subtasks (open / overdue)</th>
+            <th>Parts arrive → advised due</th><th>Action</th>
+          </tr></thead><tbody><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1209728252692093">QC CONTROL - 1537 - Porchester Hall, Backstage</a><br>
+                <span class="muted">2026-12-02</span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">11 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1209728252843700">QC Lift - 1537 - Porchester Hall, Backstage</a></td><td>—</td><td>2026-12-02 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1209728252843706">Packing Up the Lift - 1537 - Porchester Hall, Backstage</a></td><td>—</td><td>2026-12-02 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1209728252919128">Check Hoses and cables to correct length</a></td><td>—</td><td>2026-12-02 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1209728252984872">Check Buttons are tested and signed off before giving to Purchasing</a></td><td>—</td><td>2026-12-02 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1209728252984885">Update Storage Location</a></td><td>—</td><td>2026-12-02 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1209728252843712">Photos of Lift - 1537 - Porchester Hall, Backstage</a></td><td>—</td><td>2026-12-07 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1209728252843719">Checks to be done</a></td><td>—</td><td>2026-12-07 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1209728252843725">QC Against 'Status A' Architect Drawing </a></td><td>—</td><td>2026-12-07 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1209728252919121">Check Plated parts are all correct / present </a></td><td>Steven Lyons</td><td>2026-12-07 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1209728252984878">Order DB2 and DB3 - correct length </a></td><td>Steven Lyons</td><td>2026-12-07 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1209728252843671">PLC Program QC</a></td><td>—</td><td>2026-12-07 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br>—</td>
+              <td><span class="muted">—</span></td></tr></tbody></table>
+          <div class="fb">ⓘ Accept queues a REQUESTS→SAP write to set the pack due date. Dry-run reviewed first.</div>
+        </div>
+        <div class="card" id="1555">
+          <h2><span class="num">15</span> 1555 - Fifth Ave 854 - Westminster - External:
+            <span class="muted" style="margin-left:auto">13 open · <span class="pill ok">0 overdue</span></span></h2>
+          <table><thead><tr>
+            <th>Pack task</th><th>Subtasks (open / overdue)</th>
+            <th>Parts arrive → advised due</th><th>Action</th>
+          </tr></thead><tbody><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216745444710063">1555.1009.P1.</a><br>
+                <span class="muted">2026-08-25</span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-21 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216755221876955">21231</a> · Thameside Machining - 1555 - Fifth Av Te</td>
+                      <td>21231-1555 - Thameside Machining - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-14 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216754995161585">21191</a> · Gapp Automation - 1555 - Fifth Av Tesla </td>
+                      <td>21191-1555 - Gapp Automation - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-21</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1212391008627573">20896</a> · JAJO - 1555 Fifth Av UL Approved panel</td>
+                      <td>20896-1555 - JAJO - 1555 Fifth Av  UL Approved panel</td>
+                      <td>no due</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216745444710064">Weld  - 1555.1009.P1.</a></td><td>Ramzan</td><td>2026-08-19 </td><td>→ advise 2026-08-22</td><td><button class="acc" onclick="acceptDue('1216745444710064','2026-08-22','Weld  - 1555.1009.P1.')">Accept → 2026-08-22</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216745444710065">Assemble  - 1555.1009.P1.</a></td><td>Paul Westcott</td><td>2026-08-20 </td><td>→ advise 2026-08-22</td><td><button class="acc" onclick="acceptDue('1216745444710065','2026-08-22','Assemble  - 1555.1009.P1.')">Accept → 2026-08-22</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216745444710066">QC  - 1555.1009.P1.</a></td><td>Krystian Kowalczuk</td><td>2026-08-24 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-21<br><span class="muted">0 lasercut · 0 need-order · 5 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213299484413967">1555.1008.X2.1.</a><br>
+                <span class="muted">2026-09-01</span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-21 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216755221876955">21231</a> · Thameside Machining - 1555 - Fifth Av Te</td>
+                      <td>21231-1555 - Thameside Machining - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-14 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216754995161585">21191</a> · Gapp Automation - 1555 - Fifth Av Tesla </td>
+                      <td>21191-1555 - Gapp Automation - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-21</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1212391008627573">20896</a> · JAJO - 1555 Fifth Av UL Approved panel</td>
+                      <td>20896-1555 - JAJO - 1555 Fifth Av  UL Approved panel</td>
+                      <td>no due</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 1 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213299484413970">QC  - 1555.1008.X2.1.</a></td><td>—</td><td>2026-02-16 <span class="pill over">overdue</span></td><td>→ advise 2026-08-22</td><td><button class="acc" onclick="acceptDue('1213299484413970','2026-08-22','QC  - 1555.1008.X2.1.')">Accept → 2026-08-22</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213299484413968">Weld  - 1555.1008.X2.1.</a></td><td>—</td><td>no due </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-21<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213299484413957">1555.1008.D.USMachineRoomCabinet.</a><br>
+                <span class="muted">2026-09-01</span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-21 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216755221876955">21231</a> · Thameside Machining - 1555 - Fifth Av Te</td>
+                      <td>21231-1555 - Thameside Machining - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-14 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216754995161585">21191</a> · Gapp Automation - 1555 - Fifth Av Tesla </td>
+                      <td>21191-1555 - Gapp Automation - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-21</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1212391008627573">20896</a> · JAJO - 1555 Fifth Av UL Approved panel</td>
+                      <td>20896-1555 - JAJO - 1555 Fifth Av  UL Approved panel</td>
+                      <td>no due</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">1 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213299484413960">QC  - 1555.1008.D.USMachineRoomCabinet.</a></td><td>Andy</td><td>2026-10-01 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-21<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213299484413962">1555.1008.Q1.DoubleLiftingJig.</a><br>
+                <span class="muted">2026-09-01</span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-21 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216755221876955">21231</a> · Thameside Machining - 1555 - Fifth Av Te</td>
+                      <td>21231-1555 - Thameside Machining - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-14 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216754995161585">21191</a> · Gapp Automation - 1555 - Fifth Av Tesla </td>
+                      <td>21191-1555 - Gapp Automation - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-21</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1212391008627573">20896</a> · JAJO - 1555 Fifth Av UL Approved panel</td>
+                      <td>20896-1555 - JAJO - 1555 Fifth Av  UL Approved panel</td>
+                      <td>no due</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">1 open · 1 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213299484413965">QC  - 1555.1008.Q1.DoubleLiftingJig.</a></td><td>—</td><td>2026-02-16 <span class="pill over">overdue</span></td><td>→ advise 2026-08-22</td><td><button class="acc" onclick="acceptDue('1213299484413965','2026-08-22','QC  - 1555.1008.Q1.DoubleLiftingJig.')">Accept → 2026-08-22</button></td></tr></tbody></table></details></td>
+              <td>2026-08-21<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213299484413952">1555.1004.G.MainStairFrame.</a><br>
+                <span class="muted">2026-09-01</span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-21 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216755221876955">21231</a> · Thameside Machining - 1555 - Fifth Av Te</td>
+                      <td>21231-1555 - Thameside Machining - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-14 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216754995161585">21191</a> · Gapp Automation - 1555 - Fifth Av Tesla </td>
+                      <td>21191-1555 - Gapp Automation - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-21</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1212391008627573">20896</a> · JAJO - 1555 Fifth Av UL Approved panel</td>
+                      <td>20896-1555 - JAJO - 1555 Fifth Av  UL Approved panel</td>
+                      <td>no due</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">1 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213299484413955">QC  - 1555.1004.G.MainStairFrame.</a></td><td>Andy</td><td>2026-10-01 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-21<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213299484413947">1555.1003.B.HorizontalStairs.</a><br>
+                <span class="muted">2026-09-01</span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-21 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216755221876955">21231</a> · Thameside Machining - 1555 - Fifth Av Te</td>
+                      <td>21231-1555 - Thameside Machining - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-14 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216754995161585">21191</a> · Gapp Automation - 1555 - Fifth Av Tesla </td>
+                      <td>21191-1555 - Gapp Automation - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-21</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1212391008627573">20896</a> · JAJO - 1555 Fifth Av UL Approved panel</td>
+                      <td>20896-1555 - JAJO - 1555 Fifth Av  UL Approved panel</td>
+                      <td>no due</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 1 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213299484413949">Assemble  - 1555.1003.B.HorizontalStairs.</a></td><td>Paul Westcott</td><td>2026-07-03 <span class="pill over">overdue</span></td><td>→ advise 2026-08-22</td><td><button class="acc" onclick="acceptDue('1213299484413949','2026-08-22','Assemble  - 1555.1003.B.HorizontalStairs.')">Accept → 2026-08-22</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213299484413950">QC  - 1555.1003.B.HorizontalStairs.</a></td><td>Andy</td><td>2026-09-07 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-21<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213299484467968">1555.1014.B.UpperGateFrame.</a><br>
+                <span class="muted">2026-09-01</span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-21 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216755221876955">21231</a> · Thameside Machining - 1555 - Fifth Av Te</td>
+                      <td>21231-1555 - Thameside Machining - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-14 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216754995161585">21191</a> · Gapp Automation - 1555 - Fifth Av Tesla </td>
+                      <td>21191-1555 - Gapp Automation - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-21</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1212391008627573">20896</a> · JAJO - 1555 Fifth Av UL Approved panel</td>
+                      <td>20896-1555 - JAJO - 1555 Fifth Av  UL Approved panel</td>
+                      <td>no due</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 1 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213299484467970">Assemble  - 1555.1014.B.UpperGateFrame.</a></td><td>Paul Westcott</td><td>2026-04-21 <span class="pill over">overdue</span></td><td>→ advise 2026-08-22</td><td><button class="acc" onclick="acceptDue('1213299484467970','2026-08-22','Assemble  - 1555.1014.B.UpperGateFrame.')">Accept → 2026-08-22</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213299484467971">QC  - 1555.1014.B.UpperGateFrame.</a></td><td>Andy</td><td>2026-09-07 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-21<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1209854002969066">1555.1092.C.PlatformLift.</a><br>
+                <span class="muted">2026-09-01</span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-21 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216755221876955">21231</a> · Thameside Machining - 1555 - Fifth Av Te</td>
+                      <td>21231-1555 - Thameside Machining - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-14 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216754995161585">21191</a> · Gapp Automation - 1555 - Fifth Av Tesla </td>
+                      <td>21191-1555 - Gapp Automation - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-21</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1212391008627573">20896</a> · JAJO - 1555 Fifth Av UL Approved panel</td>
+                      <td>20896-1555 - JAJO - 1555 Fifth Av  UL Approved panel</td>
+                      <td>no due</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">1 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213781791229908">QC  - 1555.1092.C.PlatformLift.  re-work locks for barriers</a></td><td>Andy</td><td>2026-09-07 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-21<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1209854006573940">1555.1092.F.MotorConnector.</a><br>
+                <span class="muted">2026-09-01</span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-21 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216755221876955">21231</a> · Thameside Machining - 1555 - Fifth Av Te</td>
+                      <td>21231-1555 - Thameside Machining - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-14 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216754995161585">21191</a> · Gapp Automation - 1555 - Fifth Av Tesla </td>
+                      <td>21191-1555 - Gapp Automation - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-21</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1212391008627573">20896</a> · JAJO - 1555 Fifth Av UL Approved panel</td>
+                      <td>20896-1555 - JAJO - 1555 Fifth Av  UL Approved panel</td>
+                      <td>no due</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">1 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1209854006573943">QC  - 1555.1092.F.MotorConnector.</a></td><td>Andy</td><td>2026-09-07 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-21<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1209854006573950">1555.1092.K.RP_MT_ButtonStation. Rev 1</a><br>
+                <span class="muted">2026-09-01</span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-21 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216755221876955">21231</a> · Thameside Machining - 1555 - Fifth Av Te</td>
+                      <td>21231-1555 - Thameside Machining - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-14 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216754995161585">21191</a> · Gapp Automation - 1555 - Fifth Av Tesla </td>
+                      <td>21191-1555 - Gapp Automation - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-21</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1212391008627573">20896</a> · JAJO - 1555 Fifth Av UL Approved panel</td>
+                      <td>20896-1555 - JAJO - 1555 Fifth Av  UL Approved panel</td>
+                      <td>no due</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">1 open · 1 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1209854006573952">Assemble  - 1555.1092.K.RP_MT_ButtonStation. Rev 1</a></td><td>Peter</td><td>2026-04-14 <span class="pill over">overdue</span></td><td>→ advise 2026-08-22</td><td><button class="acc" onclick="acceptDue('1209854006573952','2026-08-22','Assemble  - 1555.1092.K.RP_MT_ButtonStation. Rev 1')">Accept → 2026-08-22</button></td></tr></tbody></table></details></td>
+              <td>2026-08-21<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213784138180928">Production 1555.Fifth Ave 854 - LewisGleason_EngineeringDrawing</a><br>
+                <span class="muted">2026-09-01</span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-21 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216755221876955">21231</a> · Thameside Machining - 1555 - Fifth Av Te</td>
+                      <td>21231-1555 - Thameside Machining - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-14 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216754995161585">21191</a> · Gapp Automation - 1555 - Fifth Av Tesla </td>
+                      <td>21191-1555 - Gapp Automation - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-21</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1212391008627573">20896</a> · JAJO - 1555 Fifth Av UL Approved panel</td>
+                      <td>20896-1555 - JAJO - 1555 Fifth Av  UL Approved panel</td>
+                      <td>no due</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 1 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213784132014656">ASSEMBLE [Rename task] </a></td><td>Paul Westcott</td><td>2026-04-29 <span class="pill over">overdue</span></td><td>→ advise 2026-08-22</td><td><button class="acc" onclick="acceptDue('1213784132014656','2026-08-22','ASSEMBLE [Rename task] ')">Accept → 2026-08-22</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213784132014662">QC [Rename task] </a></td><td>Andy</td><td>2026-10-01 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213784132014650">WELD [Rename task] </a></td><td>—</td><td>no due </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-21<br>—</td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213805715820896">1555.1004.I.StepBeamFrameBIG</a><br>
+                <span class="muted">2026-09-01</span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-21 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216755221876955">21231</a> · Thameside Machining - 1555 - Fifth Av Te</td>
+                      <td>21231-1555 - Thameside Machining - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-14 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216754995161585">21191</a> · Gapp Automation - 1555 - Fifth Av Tesla </td>
+                      <td>21191-1555 - Gapp Automation - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-21</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1212391008627573">20896</a> · JAJO - 1555 Fifth Av UL Approved panel</td>
+                      <td>20896-1555 - JAJO - 1555 Fifth Av  UL Approved panel</td>
+                      <td>no due</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 1 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213805751823573">WELD  1555.1004.I.StepBeamFrameBIG</a></td><td>—</td><td>2026-03-27 <span class="pill over">overdue</span></td><td>→ advise 2026-08-22</td><td><button class="acc" onclick="acceptDue('1213805751823573','2026-08-22','WELD  1555.1004.I.StepBeamFrameBIG')">Accept → 2026-08-22</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213805751823579">ASSEMBLE 1555.1004.I.StepBeamFrameBIG</a></td><td>—</td><td>no due </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213805751823585">QC 1555.1004.I.StepBeamFrameBIG</a></td><td>—</td><td>no due </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-21<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1209579138925061">QC CONTROL - 1555 - Fifth Ave 854</a><br>
+                <span class="muted">2026-09-01</span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-21 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216755221876955">21231</a> · Thameside Machining - 1555 - Fifth Av Te</td>
+                      <td>21231-1555 - Thameside Machining - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-14 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216754995161585">21191</a> · Gapp Automation - 1555 - Fifth Av Tesla </td>
+                      <td>21191-1555 - Gapp Automation - 1555 - Fifth Av Tesla Handrail</td>
+                      <td>2026-08-21</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1212391008627573">20896</a> · JAJO - 1555 Fifth Av UL Approved panel</td>
+                      <td>20896-1555 - JAJO - 1555 Fifth Av  UL Approved panel</td>
+                      <td>no due</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">6 open · 2 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1209579144221037">Checks to be done</a></td><td>—</td><td>2026-04-30 <span class="pill over">overdue</span></td><td>→ advise 2026-08-22</td><td><button class="acc" onclick="acceptDue('1209579144221037','2026-08-22','Checks to be done')">Accept → 2026-08-22</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1209579144221043">QC Against 'Status A' Architect Drawing </a></td><td>—</td><td>2026-04-30 <span class="pill over">overdue</span></td><td>→ advise 2026-08-22</td><td><button class="acc" onclick="acceptDue('1209579144221043','2026-08-22','QC Against 'Status A' Architect Drawing ')">Accept → 2026-08-22</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1209579144156802">QC Lift - 1555 - Fifth Ave 854</a></td><td>Andy</td><td>2026-09-07 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1209579144156808">Packing Up the Lift - 1555 - Fifth Ave 854</a></td><td>Andy</td><td>2026-09-07 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1209579144221030">Photos of Lift - 1555 - Fifth Ave 854</a></td><td>Andy</td><td>2026-09-07 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1209579144270085">Update Storage Location in T-Card</a></td><td>Andy</td><td>2026-09-07 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-21<br>—</td>
+              <td><span class="muted">—</span></td></tr></tbody></table>
+          <div class="fb">ⓘ Accept queues a REQUESTS→SAP write to set the pack due date. Dry-run reviewed first.</div>
+        </div>
+        <div class="card" id="1575">
+          <h2><span class="num">15</span> 1575 - Jenners
+            <span class="muted" style="margin-left:auto">6 open · <span class="pill ok">0 overdue</span></span></h2>
+          <table><thead><tr>
+            <th>Pack task</th><th>Subtasks (open / overdue)</th>
+            <th>Parts arrive → advised due</th><th>Action</th>
+          </tr></thead><tbody><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1214057554245440">1575.1016.BS.3.</a><br>
+                <span class="muted">2026-08-18</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-20 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1214073919013410">21016</a> · DQR Bellows Supplier - 1575 Jenners</td>
+                      <td>21016-1575 - DQR Bellows Supplier - 1575 Jenners</td>
+                      <td>2026-08-17 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1214073918288684">20985</a> · SG transmission - 1575 Jenners</td>
+                      <td>20985-1575 - SG transmission - 1575 Jenners</td>
+                      <td>2026-08-20</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1214057554245442">Assemble  - 1575.1016.BS.3.</a></td><td>Peter</td><td>2026-08-18 </td><td>→ advise 2026-08-21</td><td><button class="acc" onclick="acceptDue('1214057554245442','2026-08-21','Assemble  - 1575.1016.BS.3.')">Accept → 2026-08-21</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1214057554245443">QC  - 1575.1016.BS.3.</a></td><td>Joshua</td><td>2026-08-25 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-20 → advise 2026-08-21<br><span class="muted">4 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><button class="acc" onclick="acceptDue('1214057554245440','2026-08-21','1575.1016.BS.3.')">Accept → set due 2026-08-21</button></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1214057554245445">1575.1016.F.Call For Assistance.</a><br>
+                <span class="muted">2026-08-18</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-20 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1214073919013410">21016</a> · DQR Bellows Supplier - 1575 Jenners</td>
+                      <td>21016-1575 - DQR Bellows Supplier - 1575 Jenners</td>
+                      <td>2026-08-17 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1214073918288684">20985</a> · SG transmission - 1575 Jenners</td>
+                      <td>20985-1575 - SG transmission - 1575 Jenners</td>
+                      <td>2026-08-20</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1214057554245447">Assemble  - 1575.1016.F.Call For Assistance.</a></td><td>Peter</td><td>2026-08-18 </td><td>→ advise 2026-08-21</td><td><button class="acc" onclick="acceptDue('1214057554245447','2026-08-21','Assemble  - 1575.1016.F.Call For Assistance.')">Accept → 2026-08-21</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1214057554245448">QC  - 1575.1016.F.Call For Assistance.</a></td><td>Joshua</td><td>2026-08-25 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-20 → advise 2026-08-21<br><span class="muted">4 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><button class="acc" onclick="acceptDue('1214057554245445','2026-08-21','1575.1016.F.Call For Assistance.')">Accept → set due 2026-08-21</button></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1214059103848014">1575.1006.A.WheelStopPlatform-SS.</a><br>
+                <span class="muted">2026-08-21</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-20 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1214073919013410">21016</a> · DQR Bellows Supplier - 1575 Jenners</td>
+                      <td>21016-1575 - DQR Bellows Supplier - 1575 Jenners</td>
+                      <td>2026-08-17 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1214073918288684">20985</a> · SG transmission - 1575 Jenners</td>
+                      <td>20985-1575 - SG transmission - 1575 Jenners</td>
+                      <td>2026-08-20</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1214059103848017">QC  - 1575.1006.A.WheelStopPlatform-SS.</a></td><td>Andy</td><td>2026-08-28 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1217530076219894">Assemble and fit Bellows</a></td><td>John Chaves</td><td>2026-08-28 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-20<br><span class="muted">1 lasercut · 0 need-order · 1 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213587365798174">QC CONTROL - 1575 - Jenners Edinburgh</a><br>
+                <span class="muted">2026-08-21</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-20 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1214073919013410">21016</a> · DQR Bellows Supplier - 1575 Jenners</td>
+                      <td>21016-1575 - DQR Bellows Supplier - 1575 Jenners</td>
+                      <td>2026-08-17 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1214073918288684">20985</a> · SG transmission - 1575 Jenners</td>
+                      <td>20985-1575 - SG transmission - 1575 Jenners</td>
+                      <td>2026-08-20</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">5 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213591365945459">QC Lift - 1575 - Jenners Edinburgh</a></td><td>Andy</td><td>2026-08-21 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213591365945463">Packing Up the Lift - 1575 - Jenners Edinburgh</a></td><td>—</td><td>2026-08-21 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213593028217235">Check Buttons are tested and signed off before giving to Purchasing</a></td><td>—</td><td>2026-08-21 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213593028217239">Update Storage Location</a></td><td>—</td><td>2026-08-21 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1213591365945472">Checks to be done</a></td><td>—</td><td>no due </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-20<br>—</td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1214057554245430">1575.1008.Q4.LiftingJig.</a><br>
+                <span class="muted">2026-08-21</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-20 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1214073919013410">21016</a> · DQR Bellows Supplier - 1575 Jenners</td>
+                      <td>21016-1575 - DQR Bellows Supplier - 1575 Jenners</td>
+                      <td>2026-08-17 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1214073918288684">20985</a> · SG transmission - 1575 Jenners</td>
+                      <td>20985-1575 - SG transmission - 1575 Jenners</td>
+                      <td>2026-08-20</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">1 open · 1 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1214057554245433">QC  - 1575.1008.Q4.LiftingJig.</a></td><td>Andy</td><td>2026-08-10 <span class="pill over">overdue</span></td><td>→ advise 2026-08-21</td><td><button class="acc" onclick="acceptDue('1214057554245433','2026-08-21','QC  - 1575.1008.Q4.LiftingJig.')">Accept → 2026-08-21</button></td></tr></tbody></table></details></td>
+              <td>2026-08-20<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1214057554245425">1575.1008.Q1.DoubleLiftingJig.</a><br>
+                <span class="muted">2026-08-21</span>
+                <details class="vendor"><summary>⛓ 2 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-20 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1214073919013410">21016</a> · DQR Bellows Supplier - 1575 Jenners</td>
+                      <td>21016-1575 - DQR Bellows Supplier - 1575 Jenners</td>
+                      <td>2026-08-17 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1214073918288684">20985</a> · SG transmission - 1575 Jenners</td>
+                      <td>20985-1575 - SG transmission - 1575 Jenners</td>
+                      <td>2026-08-20</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">1 open · 1 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1214057554245428">QC  - 1575.1008.Q1.DoubleLiftingJig.</a></td><td>Andy</td><td>2026-08-10 <span class="pill over">overdue</span></td><td>→ advise 2026-08-21</td><td><button class="acc" onclick="acceptDue('1214057554245428','2026-08-21','QC  - 1575.1008.Q1.DoubleLiftingJig.')">Accept → 2026-08-21</button></td></tr></tbody></table></details></td>
+              <td>2026-08-20<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr></tbody></table>
+          <div class="fb">ⓘ Accept queues a REQUESTS→SAP write to set the pack due date. Dry-run reviewed first.</div>
+        </div>
+        <div class="card" id="1578">
+          <h2><span class="num">15</span> 1578 - Traversing Lift Single scissor lift
+            <span class="muted" style="margin-left:auto">1 open · <span class="pill ok">0 overdue</span></span></h2>
+          <table><thead><tr>
+            <th>Pack task</th><th>Subtasks (open / overdue)</th>
+            <th>Parts arrive → advised due</th><th>Action</th>
+          </tr></thead><tbody><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1212775649044253">QC CONTROL - 1578 - Traversing Lift - Single Scissor Lift</a><br>
+                <span class="muted">2026-08-21</span>
+                <details class="vendor"><summary>⛓ 1 open vendor order · <span class='vorder over'>1 overdue</span> · latest 2026-08-17 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1213212124682884">21243</a> · ANODISNING - 1578 - Traversing NEW</td>
+                      <td>21243-1578 - ANODISNING - 1578 - Traversing NEW</td>
+                      <td>2026-08-17 <span class="vorder over">overdue</span></td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">5 open · 4 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1212775656574050">Check Buttons are tested and signed off before giving to Purchasing</a></td><td>—</td><td>2026-06-01 <span class="pill over">overdue</span></td><td>→ advise 2026-08-18</td><td><button class="acc" onclick="acceptDue('1212775656574050','2026-08-18','Check Buttons are tested and signed off before giving to Purchasing')">Accept → 2026-08-18</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1212775656574054">Update Storage Location</a></td><td>—</td><td>2026-06-01 <span class="pill over">overdue</span></td><td>→ advise 2026-08-18</td><td><button class="acc" onclick="acceptDue('1212775656574054','2026-08-18','Update Storage Location')">Accept → 2026-08-18</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1212775656574058">PLC Program QC</a></td><td>Andy</td><td>2026-08-10 <span class="pill over">overdue</span></td><td>→ advise 2026-08-18</td><td><button class="acc" onclick="acceptDue('1212775656574058','2026-08-18','PLC Program QC')">Accept → 2026-08-18</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1212775638333466">QC Lift - 1578 - Traversing Lift - Single Scissor Lift</a></td><td>Andy</td><td>2026-08-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1212770008689251">Checks to be done</a></td><td>—</td><td>no due </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-17<br>—</td>
+              <td><span class="muted">—</span></td></tr></tbody></table>
+          <div class="fb">ⓘ Accept queues a REQUESTS→SAP write to set the pack due date. Dry-run reviewed first.</div>
+        </div>
+        <div class="card" id="1580">
+          <h2><span class="num">15</span> 1580 - Admiralty House
+            <span class="muted" style="margin-left:auto">1 open · <span class="pill ok">0 overdue</span></span></h2>
+          <table><thead><tr>
+            <th>Pack task</th><th>Subtasks (open / overdue)</th>
+            <th>Parts arrive → advised due</th><th>Action</th>
+          </tr></thead><tbody><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216205136646253">1580.1010.A.ScissorLift_Single.</a><br>
+                <span class="muted">2026-09-07</span>
+                <details class="vendor"><summary>⛓ 1 open vendor order · <span class='vorder over'>1 overdue</span> · latest 2026-08-05 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216239283983165">21133</a> · Exact Laser Cut BOM - 1580 - Admiralty S</td>
+                      <td>21133-1580 - Exact Laser Cut BOM - 1580 - Admiralty Single Scissor BOM</td>
+                      <td>2026-08-05 <span class="vorder over">overdue</span></td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216205136646255">Assemble  - 1580.1010.A.ScissorLift_Single.</a></td><td>Krystian Kowalczuk</td><td>2026-08-28 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216205136646256">QC  - 1580.1010.A.ScissorLift_Single.</a></td><td>John Chaves</td><td>2026-09-07 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-05<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr></tbody></table>
+          <div class="fb">ⓘ Accept queues a REQUESTS→SAP write to set the pack due date. Dry-run reviewed first.</div>
+        </div>
+        <div class="card" id="1582">
+          <h2><span class="num">15</span> 1582 - Russell Square
+            <span class="muted" style="margin-left:auto">6 open · <span class="pill over">6 overdue</span></span></h2>
+          <table><thead><tr>
+            <th>Pack task</th><th>Subtasks (open / overdue)</th>
+            <th>Parts arrive → advised due</th><th>Action</th>
+          </tr></thead><tbody><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1214802368491290">1582.Russell Square 50-51_EngineeringDrawing.</a><br>
+                <span class="muted">2026-08-14 · <span class="pill over">overdue</span></span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 2 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1215857867181526">Wire electrics - 1582.Russell Square 50-51_EngineeringDrawing.</a></td><td>Peter</td><td>2026-06-29 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1214802368491293">Assemble  - 1582.Russell Square 50-51_EngineeringDrawing.</a></td><td>—</td><td>2026-07-03 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br>—</td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1214179276681839">QC CONTROL - 1582 - Russel Square No. 50</a><br>
+                <span class="muted">2026-08-17 · <span class="pill over">overdue</span></span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">10 open · 8 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1214179447191220">QC Lift - 1582 - Russel Square No. 50 </a></td><td>—</td><td>2026-08-03 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1214179447191222">Packing Up the Lift - 1582 - Russel Square No. 50</a></td><td>—</td><td>2026-08-03 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1214179447191224">Photos of Lift - 1582 - Russel Square No. 50</a></td><td>—</td><td>2026-08-03 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1214179447191228">QC Against 'Status A' Architect Drawing </a></td><td>—</td><td>2026-08-03 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1214179447191242">Check Buttons are tested and signed off before giving to Purchasing</a></td><td>—</td><td>2026-08-03 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1214179447191244">Update Storage Location</a></td><td>—</td><td>2026-08-03 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1214179447191238">Check Plated parts are all correct / present </a></td><td>Andy</td><td>2026-08-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1214179447191246">PLC Program QC</a></td><td>Andy</td><td>2026-08-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1214179447191226">Checks to be done</a></td><td>—</td><td>no due </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1214179447203435">Is there anything new about this lift that Les/Sean needs to know about for his install/Service</a></td><td>Andy</td><td>no due </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br>—</td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1214815545602148">1582.1008.D1.MachineRoomCabinet.</a><br>
+                <span class="muted">2026-08-17 · <span class="pill over">overdue</span></span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">1 open · 1 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1214815545602151">QC  - 1582.1008.D1.MachineRoomCabinet.</a></td><td>Andy</td><td>2026-08-14 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1214815545602163">1582.1016.F.Call For Assistance.</a><br>
+                <span class="muted">2026-08-17 · <span class="pill over">overdue</span></span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 2 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1215245542549834">Second Ops Needed - 1582.1016.F.Call For Assistance.</a></td><td>Giles</td><td>2026-06-30 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1214815545602165">Assemble  - 1582.1016.F.Call For Assistance.</a></td><td>Peter</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1214815545602166">QC  - 1582.1016.F.Call For Assistance.</a></td><td>Joshua</td><td>2026-08-19 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1214815545602158">1582.1016.BS.1.</a><br>
+                <span class="muted">2026-08-17 · <span class="pill over">overdue</span></span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 1 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1214815545602161">QC  - 1582.1016.BS.1.</a></td><td>Peter</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1214815545602160">Assemble  - 1582.1016.BS.1.</a></td><td>Joshua</td><td>2026-08-19 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1215245542844364">Plating or Powder coating - Undecided Second Ops Needed - 1582.1016.BS.1.</a></td><td>Joshua</td><td>2026-08-19 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1214802368491285">1582.8000.C.StepLockingMechanism.</a><br>
+                <span class="muted">2026-08-17 · <span class="pill over">overdue</span></span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">1 open · 1 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1214802368491288">QC  - 1582.8000.C.StepLockingMechanism.</a></td><td>Andy</td><td>2026-08-14 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr></tbody></table>
+          <div class="fb">ⓘ Accept queues a REQUESTS→SAP write to set the pack due date. Dry-run reviewed first.</div>
+        </div>
+        <div class="card" id="1588">
+          <h2><span class="num">15</span> <a class="projectlink" href="america-one-production-report-2026-08-03.html" title="Open 1588 - America Street, No.1 project page">1588 - America Street, No.1</a>
+            <span class="muted" style="margin-left:auto">15 open · <span class="pill over">15 overdue</span></span></h2>
+          <table><thead><tr>
+            <th>Pack task</th><th>Subtasks (open / overdue)</th>
+            <th>Parts arrive → advised due</th><th>Action</th>
+          </tr></thead><tbody><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216586378957141">1588.1004.B.MainStairFrame_MOD1.</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-10-15 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217231283319709">21223</a> · Erodatool - Re machine low pro cams</td>
+                      <td>21223-1588 - Erodatool - Re machine low pro cams  </td>
+                      <td>2026-08-24</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216611337149396">21240</a> · ABCO - 1588 - America stair ram</td>
+                      <td>21240-1588 - ABCO - 1588 - America stair ram </td>
+                      <td>2026-08-28</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216622713361939">21175</a> · DQR Bellows Supplier - 1588 - America 1 </td>
+                      <td>21175-1588 - DQR Bellows Supplier - 1588 - America 1 Entire</td>
+                      <td>2026-10-15</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">1 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216586378957144">QC  - 1588.1004.B.MainStairFrame_MOD1.</a></td><td>Andy</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586378957144','2026-10-16','QC  - 1588.1004.B.MainStairFrame_MOD1.')">Accept → 2026-10-16</button></td></tr></tbody></table></details></td>
+              <td>2026-10-15 → advise 2026-10-16<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><button class="acc" onclick="acceptDue('1216586378957141','2026-10-16','1588.1004.B.MainStairFrame_MOD1.')">Accept → set due 2026-10-16</button></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216586378957136">1588.1003.A.HorizontalStairs.</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-10-15 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217231283319709">21223</a> · Erodatool - Re machine low pro cams</td>
+                      <td>21223-1588 - Erodatool - Re machine low pro cams  </td>
+                      <td>2026-08-24</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216611337149396">21240</a> · ABCO - 1588 - America stair ram</td>
+                      <td>21240-1588 - ABCO - 1588 - America stair ram </td>
+                      <td>2026-08-28</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216622713361939">21175</a> · DQR Bellows Supplier - 1588 - America 1 </td>
+                      <td>21175-1588 - DQR Bellows Supplier - 1588 - America 1 Entire</td>
+                      <td>2026-10-15</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216586378957138">Assemble  - 1588.1003.A.HorizontalStairs.</a></td><td>Paul Westcott</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586378957138','2026-10-16','Assemble  - 1588.1003.A.HorizontalStairs.')">Accept → 2026-10-16</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1217446230362100">Assemble  - 1588.1003.A.HorizontalStairs.</a></td><td>Danny</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1217446230362100','2026-10-16','Assemble  - 1588.1003.A.HorizontalStairs.')">Accept → 2026-10-16</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216586378957139">QC  - 1588.1003.A.HorizontalStairs.</a></td><td>Andy</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586378957139','2026-10-16','QC  - 1588.1003.A.HorizontalStairs.')">Accept → 2026-10-16</button></td></tr></tbody></table></details></td>
+              <td>2026-10-15 → advise 2026-10-16<br><span class="muted">0 lasercut · 0 need-order · 1 on-order · 0 pick</span></td>
+              <td><button class="acc" onclick="acceptDue('1216586378957136','2026-10-16','1588.1003.A.HorizontalStairs.')">Accept → set due 2026-10-16</button></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216586336317353">1588.1008.Q1.DoubleLiftingJig_2.</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-10-15 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217231283319709">21223</a> · Erodatool - Re machine low pro cams</td>
+                      <td>21223-1588 - Erodatool - Re machine low pro cams  </td>
+                      <td>2026-08-24</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216611337149396">21240</a> · ABCO - 1588 - America stair ram</td>
+                      <td>21240-1588 - ABCO - 1588 - America stair ram </td>
+                      <td>2026-08-28</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216622713361939">21175</a> · DQR Bellows Supplier - 1588 - America 1 </td>
+                      <td>21175-1588 - DQR Bellows Supplier - 1588 - America 1 Entire</td>
+                      <td>2026-10-15</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">1 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216586336317356">QC  - 1588.1008.Q1.DoubleLiftingJig_2.</a></td><td>Andy</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586336317356','2026-10-16','QC  - 1588.1008.Q1.DoubleLiftingJig_2.')">Accept → 2026-10-16</button></td></tr></tbody></table></details></td>
+              <td>2026-10-15 → advise 2026-10-16<br><span class="muted">4 lasercut · 1 need-order · 0 on-order · 0 pick</span></td>
+              <td><button class="acc" onclick="acceptDue('1216586336317353','2026-10-16','1588.1008.Q1.DoubleLiftingJig_2.')">Accept → set due 2026-10-16</button></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216586378957126">1588.1001.C.ServiceHatches.</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-10-15 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217231283319709">21223</a> · Erodatool - Re machine low pro cams</td>
+                      <td>21223-1588 - Erodatool - Re machine low pro cams  </td>
+                      <td>2026-08-24</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216611337149396">21240</a> · ABCO - 1588 - America stair ram</td>
+                      <td>21240-1588 - ABCO - 1588 - America stair ram </td>
+                      <td>2026-08-28</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216622713361939">21175</a> · DQR Bellows Supplier - 1588 - America 1 </td>
+                      <td>21175-1588 - DQR Bellows Supplier - 1588 - America 1 Entire</td>
+                      <td>2026-10-15</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216586378957128">Assemble  - 1588.1001.C.ServiceHatches.</a></td><td>Danny</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586378957128','2026-10-16','Assemble  - 1588.1001.C.ServiceHatches.')">Accept → 2026-10-16</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216586378957129">QC  - 1588.1001.C.ServiceHatches.</a></td><td>Andy</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586378957129','2026-10-16','QC  - 1588.1001.C.ServiceHatches.')">Accept → 2026-10-16</button></td></tr></tbody></table></details></td>
+              <td>2026-10-15 → advise 2026-10-16<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><button class="acc" onclick="acceptDue('1216586378957126','2026-10-16','1588.1001.C.ServiceHatches.')">Accept → set due 2026-10-16</button></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216586378957156">1588.1008.Q1.DoubleLiftingJig.</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-10-15 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217231283319709">21223</a> · Erodatool - Re machine low pro cams</td>
+                      <td>21223-1588 - Erodatool - Re machine low pro cams  </td>
+                      <td>2026-08-24</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216611337149396">21240</a> · ABCO - 1588 - America stair ram</td>
+                      <td>21240-1588 - ABCO - 1588 - America stair ram </td>
+                      <td>2026-08-28</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216622713361939">21175</a> · DQR Bellows Supplier - 1588 - America 1 </td>
+                      <td>21175-1588 - DQR Bellows Supplier - 1588 - America 1 Entire</td>
+                      <td>2026-10-15</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">1 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216586336317351">QC  - 1588.1008.Q1.DoubleLiftingJig.</a></td><td>Andy</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586336317351','2026-10-16','QC  - 1588.1008.Q1.DoubleLiftingJig.')">Accept → 2026-10-16</button></td></tr></tbody></table></details></td>
+              <td>2026-10-15 → advise 2026-10-16<br><span class="muted">4 lasercut · 1 need-order · 0 on-order · 0 pick</span></td>
+              <td><button class="acc" onclick="acceptDue('1216586378957156','2026-10-16','1588.1008.Q1.DoubleLiftingJig.')">Accept → set due 2026-10-16</button></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216586336317363">1588.1025.A.Low.Profile.ScissorLift_rev1.</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-10-15 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217231283319709">21223</a> · Erodatool - Re machine low pro cams</td>
+                      <td>21223-1588 - Erodatool - Re machine low pro cams  </td>
+                      <td>2026-08-24</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216611337149396">21240</a> · ABCO - 1588 - America stair ram</td>
+                      <td>21240-1588 - ABCO - 1588 - America stair ram </td>
+                      <td>2026-08-28</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216622713361939">21175</a> · DQR Bellows Supplier - 1588 - America 1 </td>
+                      <td>21175-1588 - DQR Bellows Supplier - 1588 - America 1 Entire</td>
+                      <td>2026-10-15</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1217530130335079">Assemble  - 1588.1025.A.Low.Profile.ScissorLift_rev1.</a></td><td>Paul Westcott</td><td>2026-08-18 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1217530130335079','2026-10-16','Assemble  - 1588.1025.A.Low.Profile.ScissorLift_rev1.')">Accept → 2026-10-16</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216586336317365">Assemble  - 1588.1025.A.Low.Profile.ScissorLift_rev1.</a></td><td>Danny</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586336317365','2026-10-16','Assemble  - 1588.1025.A.Low.Profile.ScissorLift_rev1.')">Accept → 2026-10-16</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216586336317366">QC  - 1588.1025.A.Low.Profile.ScissorLift_rev1.</a></td><td>Andy</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586336317366','2026-10-16','QC  - 1588.1025.A.Low.Profile.ScissorLift_rev1.')">Accept → 2026-10-16</button></td></tr></tbody></table></details></td>
+              <td>2026-10-15 → advise 2026-10-16<br><span class="muted">287 lasercut · 0 need-order · 3 on-order · 0 pick</span></td>
+              <td><button class="acc" onclick="acceptDue('1216586336317363','2026-10-16','1588.1025.A.Low.Profile.ScissorLift_rev1.')">Accept → set due 2026-10-16</button></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216586378957151">1588.1008.D1.MachineRoomCabinet.</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-10-15 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217231283319709">21223</a> · Erodatool - Re machine low pro cams</td>
+                      <td>21223-1588 - Erodatool - Re machine low pro cams  </td>
+                      <td>2026-08-24</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216611337149396">21240</a> · ABCO - 1588 - America stair ram</td>
+                      <td>21240-1588 - ABCO - 1588 - America stair ram </td>
+                      <td>2026-08-28</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216622713361939">21175</a> · DQR Bellows Supplier - 1588 - America 1 </td>
+                      <td>21175-1588 - DQR Bellows Supplier - 1588 - America 1 Entire</td>
+                      <td>2026-10-15</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 2 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216586378957152">Weld BASE FRAME IF WE DO NOT HAVE ONE ALREADY  - 1588.1008.D1.MachineRoomCabinet.</a></td><td>Ramzan</td><td>2026-07-16 <span class="pill over">overdue</span></td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586378957152','2026-10-16','Weld BASE FRAME IF WE DO NOT HAVE ONE ALREADY  - 1588.1008.D1.MachineRoomCabinet.')">Accept → 2026-10-16</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216586378957153">Assemble  - 1588.1008.D1.MachineRoomCabinet.</a></td><td>Krystian Kowalczuk</td><td>2026-08-12 <span class="pill over">overdue</span></td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586378957153','2026-10-16','Assemble  - 1588.1008.D1.MachineRoomCabinet.')">Accept → 2026-10-16</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216586378957154">QC  - 1588.1008.D1.MachineRoomCabinet.</a></td><td>—</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586378957154','2026-10-16','QC  - 1588.1008.D1.MachineRoomCabinet.')">Accept → 2026-10-16</button></td></tr></tbody></table></details></td>
+              <td>2026-10-15 → advise 2026-10-16<br><span class="muted">4 lasercut · 1 need-order · 0 on-order · 0 pick</span></td>
+              <td><button class="acc" onclick="acceptDue('1216586378957151','2026-10-16','1588.1008.D1.MachineRoomCabinet.')">Accept → set due 2026-10-16</button></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216586336317358">1588.1016.BS.1.</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-10-15 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217231283319709">21223</a> · Erodatool - Re machine low pro cams</td>
+                      <td>21223-1588 - Erodatool - Re machine low pro cams  </td>
+                      <td>2026-08-24</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216611337149396">21240</a> · ABCO - 1588 - America stair ram</td>
+                      <td>21240-1588 - ABCO - 1588 - America stair ram </td>
+                      <td>2026-08-28</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216622713361939">21175</a> · DQR Bellows Supplier - 1588 - America 1 </td>
+                      <td>21175-1588 - DQR Bellows Supplier - 1588 - America 1 Entire</td>
+                      <td>2026-10-15</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216586336317360">Assemble  - 1588.1016.BS.1.</a></td><td>—</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586336317360','2026-10-16','Assemble  - 1588.1016.BS.1.')">Accept → 2026-10-16</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216586336317361">QC  - 1588.1016.BS.1.</a></td><td>—</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586336317361','2026-10-16','QC  - 1588.1016.BS.1.')">Accept → 2026-10-16</button></td></tr></tbody></table></details></td>
+              <td>2026-10-15 → advise 2026-10-16<br><span class="muted">0 lasercut · 0 need-order · 2 on-order · 0 pick</span></td>
+              <td><button class="acc" onclick="acceptDue('1216586336317358','2026-10-16','1588.1016.BS.1.')">Accept → set due 2026-10-16</button></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216586378957146">1588.1006.A.WheelStopPlatform-SS.</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-10-15 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217231283319709">21223</a> · Erodatool - Re machine low pro cams</td>
+                      <td>21223-1588 - Erodatool - Re machine low pro cams  </td>
+                      <td>2026-08-24</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216611337149396">21240</a> · ABCO - 1588 - America stair ram</td>
+                      <td>21240-1588 - ABCO - 1588 - America stair ram </td>
+                      <td>2026-08-28</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216622713361939">21175</a> · DQR Bellows Supplier - 1588 - America 1 </td>
+                      <td>21175-1588 - DQR Bellows Supplier - 1588 - America 1 Entire</td>
+                      <td>2026-10-15</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1217530130335081">Assemble  - 1588.1006.A.WheelStopPlatform-SS.</a></td><td>John Chaves</td><td>2026-08-18 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1217530130335081','2026-10-16','Assemble  - 1588.1006.A.WheelStopPlatform-SS.')">Accept → 2026-10-16</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216586378957148">Assemble  - 1588.1006.A.WheelStopPlatform-SS.</a></td><td>Paul Westcott</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586378957148','2026-10-16','Assemble  - 1588.1006.A.WheelStopPlatform-SS.')">Accept → 2026-10-16</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216586378957149">QC  - 1588.1006.A.WheelStopPlatform-SS.</a></td><td>Andy</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586378957149','2026-10-16','QC  - 1588.1006.A.WheelStopPlatform-SS.')">Accept → 2026-10-16</button></td></tr></tbody></table></details></td>
+              <td>2026-10-15 → advise 2026-10-16<br><span class="muted">0 lasercut · 0 need-order · 1 on-order · 0 pick</span></td>
+              <td><button class="acc" onclick="acceptDue('1216586378957146','2026-10-16','1588.1006.A.WheelStopPlatform-SS.')">Accept → set due 2026-10-16</button></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216586378957131">1588.1002.G.MT.PitTrimSmall.</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-10-15 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217231283319709">21223</a> · Erodatool - Re machine low pro cams</td>
+                      <td>21223-1588 - Erodatool - Re machine low pro cams  </td>
+                      <td>2026-08-24</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216611337149396">21240</a> · ABCO - 1588 - America stair ram</td>
+                      <td>21240-1588 - ABCO - 1588 - America stair ram </td>
+                      <td>2026-08-28</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216622713361939">21175</a> · DQR Bellows Supplier - 1588 - America 1 </td>
+                      <td>21175-1588 - DQR Bellows Supplier - 1588 - America 1 Entire</td>
+                      <td>2026-10-15</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 1 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216586378957132">Weld &amp; assemble  - 1588.1002.G.MT.PitTrimSmall.</a></td><td>bart</td><td>2026-08-10 <span class="pill over">overdue</span></td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586378957132','2026-10-16','Weld &amp; assemble  - 1588.1002.G.MT.PitTrimSmall.')">Accept → 2026-10-16</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216586378957134">QC  - 1588.1002.G.MT.PitTrimSmall.</a></td><td>Krystian Kowalczuk</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586378957134','2026-10-16','QC  - 1588.1002.G.MT.PitTrimSmall.')">Accept → 2026-10-16</button></td></tr></tbody></table></details></td>
+              <td>2026-10-15 → advise 2026-10-16<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><button class="acc" onclick="acceptDue('1216586378957131','2026-10-16','1588.1002.G.MT.PitTrimSmall.')">Accept → set due 2026-10-16</button></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216586336317368">1588.1055.A.Hand Held Post.</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-10-15 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217231283319709">21223</a> · Erodatool - Re machine low pro cams</td>
+                      <td>21223-1588 - Erodatool - Re machine low pro cams  </td>
+                      <td>2026-08-24</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216611337149396">21240</a> · ABCO - 1588 - America stair ram</td>
+                      <td>21240-1588 - ABCO - 1588 - America stair ram </td>
+                      <td>2026-08-28</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216622713361939">21175</a> · DQR Bellows Supplier - 1588 - America 1 </td>
+                      <td>21175-1588 - DQR Bellows Supplier - 1588 - America 1 Entire</td>
+                      <td>2026-10-15</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">1 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216586336317370">Assemble  - 1588.1055.A.Hand Held Post.</a></td><td>Danny</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586336317370','2026-10-16','Assemble  - 1588.1055.A.Hand Held Post.')">Accept → 2026-10-16</button></td></tr></tbody></table></details></td>
+              <td>2026-10-15 → advise 2026-10-16<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><button class="acc" onclick="acceptDue('1216586336317368','2026-10-16','1588.1055.A.Hand Held Post.')">Accept → set due 2026-10-16</button></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216586336317373">1588.America Street, No.1_EngineeringDrawing.</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-10-15 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217231283319709">21223</a> · Erodatool - Re machine low pro cams</td>
+                      <td>21223-1588 - Erodatool - Re machine low pro cams  </td>
+                      <td>2026-08-24</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216611337149396">21240</a> · ABCO - 1588 - America stair ram</td>
+                      <td>21240-1588 - ABCO - 1588 - America stair ram </td>
+                      <td>2026-08-28</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216622713361939">21175</a> · DQR Bellows Supplier - 1588 - America 1 </td>
+                      <td>21175-1588 - DQR Bellows Supplier - 1588 - America 1 Entire</td>
+                      <td>2026-10-15</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">4 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216586336317374">Weld  - 1588.America Street, No.1_EngineeringDrawing.</a></td><td>Ramzan</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586336317374','2026-10-16','Weld  - 1588.America Street, No.1_EngineeringDrawing.')">Accept → 2026-10-16</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216586336317375">Assemble  - 1588.1006.A.WheelStopPlatform-SS.</a></td><td>Danny</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586336317375','2026-10-16','Assemble  - 1588.1006.A.WheelStopPlatform-SS.')">Accept → 2026-10-16</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1217530130335084">Assemble  - 1588.1006.A.WheelStopPlatform-SS.</a></td><td>John Chaves</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1217530130335084','2026-10-16','Assemble  - 1588.1006.A.WheelStopPlatform-SS.')">Accept → 2026-10-16</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216586336317376">QC  - 1588.America Street, No.1_EngineeringDrawing.</a></td><td>—</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216586336317376','2026-10-16','QC  - 1588.America Street, No.1_EngineeringDrawing.')">Accept → 2026-10-16</button></td></tr></tbody></table></details></td>
+              <td>2026-10-15 → advise 2026-10-16<br>—</td>
+              <td><button class="acc" onclick="acceptDue('1216586336317373','2026-10-16','1588.America Street, No.1_EngineeringDrawing.')">Accept → set due 2026-10-16</button></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216204278965866">1588.1025.A.Low.Profile.ScissorLift</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-10-15 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217231283319709">21223</a> · Erodatool - Re machine low pro cams</td>
+                      <td>21223-1588 - Erodatool - Re machine low pro cams  </td>
+                      <td>2026-08-24</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216611337149396">21240</a> · ABCO - 1588 - America stair ram</td>
+                      <td>21240-1588 - ABCO - 1588 - America stair ram </td>
+                      <td>2026-08-28</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216622713361939">21175</a> · DQR Bellows Supplier - 1588 - America 1 </td>
+                      <td>21175-1588 - DQR Bellows Supplier - 1588 - America 1 Entire</td>
+                      <td>2026-10-15</td>
+                    </tr></tbody></table></details></td>
+              <td><span class="pill ok">all subtasks complete</span></td>
+              <td>2026-10-15 → advise 2026-10-16<br><span class="muted">287 lasercut · 0 need-order · 3 on-order · 0 pick</span></td>
+              <td><button class="acc" onclick="acceptDue('1216204278965866','2026-10-16','1588.1025.A.Low.Profile.ScissorLift')">Accept → set due 2026-10-16</button></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216451232823973">1588.1004.S.BellowScissorFrame.</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-10-15 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217231283319709">21223</a> · Erodatool - Re machine low pro cams</td>
+                      <td>21223-1588 - Erodatool - Re machine low pro cams  </td>
+                      <td>2026-08-24</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216611337149396">21240</a> · ABCO - 1588 - America stair ram</td>
+                      <td>21240-1588 - ABCO - 1588 - America stair ram </td>
+                      <td>2026-08-28</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216622713361939">21175</a> · DQR Bellows Supplier - 1588 - America 1 </td>
+                      <td>21175-1588 - DQR Bellows Supplier - 1588 - America 1 Entire</td>
+                      <td>2026-10-15</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216451232823975">Assemble  - 1588.1004.S.BellowScissorFrame.</a></td><td>Danny</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216451232823975','2026-10-16','Assemble  - 1588.1004.S.BellowScissorFrame.')">Accept → 2026-10-16</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216451232823976">QC  - 1588.1004.S.BellowScissorFrame.</a></td><td>Andy</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216451232823976','2026-10-16','QC  - 1588.1004.S.BellowScissorFrame.')">Accept → 2026-10-16</button></td></tr></tbody></table></details></td>
+              <td>2026-10-15 → advise 2026-10-16<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><button class="acc" onclick="acceptDue('1216451232823973','2026-10-16','1588.1004.S.BellowScissorFrame.')">Accept → set due 2026-10-16</button></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216446237404675">1588.1004.B.MainStairFrame.</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder ok'>0 overdue</span> · latest 2026-10-15 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1217231283319709">21223</a> · Erodatool - Re machine low pro cams</td>
+                      <td>21223-1588 - Erodatool - Re machine low pro cams  </td>
+                      <td>2026-08-24</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216611337149396">21240</a> · ABCO - 1588 - America stair ram</td>
+                      <td>21240-1588 - ABCO - 1588 - America stair ram </td>
+                      <td>2026-08-28</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216622713361939">21175</a> · DQR Bellows Supplier - 1588 - America 1 </td>
+                      <td>21175-1588 - DQR Bellows Supplier - 1588 - America 1 Entire</td>
+                      <td>2026-10-15</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1217530130335086">Assemble  - 1588.1004.B.MainStairFrame.</a></td><td>Paul Westcott</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1217530130335086','2026-10-16','Assemble  - 1588.1004.B.MainStairFrame.')">Accept → 2026-10-16</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216446237404678">QC  - 1588.1004.B.MainStairFrame.</a></td><td>Andy</td><td>2026-08-26 </td><td>→ advise 2026-10-16</td><td><button class="acc" onclick="acceptDue('1216446237404678','2026-10-16','QC  - 1588.1004.B.MainStairFrame.')">Accept → 2026-10-16</button></td></tr></tbody></table></details></td>
+              <td>2026-10-15 → advise 2026-10-16<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><button class="acc" onclick="acceptDue('1216446237404675','2026-10-16','1588.1004.B.MainStairFrame.')">Accept → set due 2026-10-16</button></td></tr></tbody></table>
+          <div class="fb">ⓘ Accept queues a REQUESTS→SAP write to set the pack due date. Dry-run reviewed first.</div>
+        </div>
+        <div class="card" id="1591">
+          <h2><span class="num">15</span> 1591 - University of Cambridge, Department Geography
+            <span class="muted" style="margin-left:auto">8 open · <span class="pill over">5 overdue</span></span></h2>
+          <table><thead><tr>
+            <th>Pack task</th><th>Subtasks (open / overdue)</th>
+            <th>Parts arrive → advised due</th><th>Action</th>
+          </tr></thead><tbody><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216387858786510">1591.7003.TraversingLowProfileShort_MOD1.</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">4 open · 3 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216387858786513">QC  - 1591.7003.TraversingLowProfileShort_MOD1.</a></td><td>—</td><td>2026-07-08 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216387858786511">Assemble  - 1591.7003.TraversingLowProfileShort_MOD1.</a></td><td>Adam Oryl</td><td>2026-07-21 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216387858786512">Assemble/Wire and test  - 1591.7003.TraversingLowProfileShort_MOD1.</a></td><td>Peter</td><td>2026-07-21 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1217181564799377">Weld/Drill and Assemble Replacement legs- 1591.7003.TraversingLowProfileShort_MOD1.</a></td><td>—</td><td>no due </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">7 lasercut · 2 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1204252218663390">QC Control  -  1458 - Traversing R&amp;D</a><br>
+                <span class="muted">2026-08-13 · <span class="pill over">overdue</span></span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 2 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1204252166756834">Packing Control  - 1458 - Traversing R&amp;D</a></td><td>Andy</td><td>2026-08-07 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1204252166756823">QC lift  - 1458 - Traversing R&amp;D</a></td><td>Andy</td><td>2026-08-13 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br>—</td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216654461013015">1591.1020.A.FreeStandingButtonPost.</a><br>
+                <span class="muted">2026-08-14 · <span class="pill over">overdue</span></span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 2 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216654461013018">QC  - 1591.1020.A.FreeStandingButtonPost.</a></td><td>—</td><td>2026-08-11 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216654461013017">Assemble  - 1591.1020.A.FreeStandingButtonPost.</a></td><td>—</td><td>2026-08-12 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">1 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216654461013010">1591.1002.H.MT.PitTrimPlatform.</a><br>
+                <span class="muted">2026-08-14 · <span class="pill over">overdue</span></span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 3 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216654461013012">Assemble  - 1591.1002.H.MT.PitTrimPlatform.</a></td><td>bart</td><td>2026-08-10 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216654461013011">Weld  - 1591.1002.H.MT.PitTrimPlatform.</a></td><td>Ramzan</td><td>2026-08-11 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216654461013013">QC  - 1591.1002.H.MT.PitTrimPlatform.</a></td><td>Danny</td><td>2026-08-14 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1217486419062901">1591.7003.B.WheelStop-MT_MOD1.</a><br>
+                <span class="muted">2026-08-17 · <span class="pill over">overdue</span></span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">4 open · 4 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1217486419062902">Weld  - 1591.7003.B.WheelStop-MT_MOD1.</a></td><td>John Chaves</td><td>2026-08-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1217486419062903">Assemble  - 1591.7003.B.WheelStop-MT_MOD1.</a></td><td>John Chaves</td><td>2026-08-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1217486419062904">QC  - 1591.7003.B.WheelStop-MT_MOD1.</a></td><td>Andy</td><td>2026-08-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1217530725266257">Anodising - 1591.7003.B.WheelStop-MT_MOD1.</a></td><td>Giles</td><td>2026-08-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">7 lasercut · 2 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216654461013020">1591.1020.A.FreeStandingCFAPost.</a><br>
+                <span class="muted">2026-08-21</span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 1 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216654563875662">QC  - 1591.1020.A.FreeStandingCFAPost.</a></td><td>—</td><td>2026-08-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216654563875661">Assemble  - 1591.1020.A.FreeStandingCFAPost.</a></td><td>—</td><td>2026-08-19 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br><span class="muted">1 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216654563875669">1591.University of Cambridge, Department Geography_Engineering Drawing.</a><br>
+                <span class="muted">2026-08-21</span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 3 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216654563875670">Weld  - 1591.University of Cambridge, Department Geography_Engineering Drawing.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216654563875671">Assemble  - 1591.University of Cambridge, Department Geography_Engineering Drawing.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216654563875672">QC  - 1591.University of Cambridge, Department Geography_Engineering Drawing.</a></td><td>—</td><td>2026-07-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br>—</td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1217374268929398">INHOUSE Machining - 1591 - Traversing replacement Feet</a><br>
+                <span class="muted">2026-08-24</span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1217374268972565">1 off 1591. 7003.E.224_MIR - Support Leg 304/HR Machining</a></td><td>Richard</td><td>no due </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1217374533449647">1 off 1591. 7003.E.224 - Support Leg 304/HR Machining</a></td><td>Richard</td><td>no due </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br>—</td>
+              <td><span class="muted">—</span></td></tr></tbody></table>
+          <div class="fb">ⓘ Accept queues a REQUESTS→SAP write to set the pack due date. Dry-run reviewed first.</div>
+        </div>
+        <div class="card" id="1594">
+          <h2><span class="num">15</span> 1594 - St Mary of the Angel Church - Metropolitan Lift
+            <span class="muted" style="margin-left:auto">2 open · <span class="pill over">1 overdue</span></span></h2>
+          <table><thead><tr>
+            <th>Pack task</th><th>Subtasks (open / overdue)</th>
+            <th>Parts arrive → advised due</th><th>Action</th>
+          </tr></thead><tbody><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216623813521342">Marine Lacquer - 1594 - St Mary Scissor Lift BOM</a><br>
+                <span class="muted">2026-08-07 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-21 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216623652347209">21193</a> · Exact Laser Cut BOM - 1594 - St Mary Sci</td>
+                      <td>21193-1594 - Exact Laser Cut BOM - 1594 - St Mary Scissor Lift BOM</td>
+                      <td>2026-08-13 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216623852299962">21197</a> · Thameside Machining - 1594 - St Mary Sci</td>
+                      <td>21197-1594 - Thameside Machining - 1594 - St Mary Scissor Lift BOM</td>
+                      <td>2026-08-21</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216623739686000">21190</a> · Gapp Automation - 1594 - St Mary Scissor</td>
+                      <td>21190-1594 - Gapp Automation - 1594 - St Mary Scissor Lift BOM</td>
+                      <td>2026-08-21</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216623851267112">4 off Marine Lacquer 1594. 1010.L.046 - Cap</a></td><td>John Chaves</td><td>2026-08-21 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216623739394455">2 off Marine Lacquer 1594. 1010.L.047 - Shear Pin</a></td><td>John Chaves</td><td>2026-08-21 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-21 → advise 2026-08-22<br>—</td>
+              <td><button class="acc" onclick="acceptDue('1216623813521342','2026-08-22','Marine Lacquer - 1594 - St Mary Scissor Lift BOM')">Accept → set due 2026-08-22</button></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216654171424832">1594.1010.L.ScissorLift_Single_LowProfile 1600.</a><br>
+                <span class="muted">2026-08-19</span>
+                <details class="vendor"><summary>⛓ 3 open vendor orders · <span class='vorder over'>1 overdue</span> · latest 2026-08-21 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216623652347209">21193</a> · Exact Laser Cut BOM - 1594 - St Mary Sci</td>
+                      <td>21193-1594 - Exact Laser Cut BOM - 1594 - St Mary Scissor Lift BOM</td>
+                      <td>2026-08-13 <span class="vorder over">overdue</span></td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216623852299962">21197</a> · Thameside Machining - 1594 - St Mary Sci</td>
+                      <td>21197-1594 - Thameside Machining - 1594 - St Mary Scissor Lift BOM</td>
+                      <td>2026-08-21</td>
+                    </tr><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1216623739686000">21190</a> · Gapp Automation - 1594 - St Mary Scissor</td>
+                      <td>21190-1594 - Gapp Automation - 1594 - St Mary Scissor Lift BOM</td>
+                      <td>2026-08-21</td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">6 open · 3 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216976447735263">GALV - 1594.1010.L.ScissorLift_Single_LowProfile 1600.</a></td><td>Giles</td><td>2026-07-29 <span class="pill over">overdue</span></td><td>→ advise 2026-08-22</td><td><button class="acc" onclick="acceptDue('1216976447735263','2026-08-22','GALV - 1594.1010.L.ScissorLift_Single_LowProfile 1600.')">Accept → 2026-08-22</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216654171424833">Weld  - 1594.1010.L.ScissorLift_Single_LowProfile 1600.</a></td><td>Ramzan</td><td>2026-08-12 <span class="pill over">overdue</span></td><td>→ advise 2026-08-22</td><td><button class="acc" onclick="acceptDue('1216654171424833','2026-08-22','Weld  - 1594.1010.L.ScissorLift_Single_LowProfile 1600.')">Accept → 2026-08-22</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1217549532852055">Nickel PLATING - 1594.1010.L.ScissorLift_Single_LowProfile 1600.</a></td><td>Giles</td><td>2026-08-17 <span class="pill over">overdue</span></td><td>→ advise 2026-08-22</td><td><button class="acc" onclick="acceptDue('1217549532852055','2026-08-22','Nickel PLATING - 1594.1010.L.ScissorLift_Single_LowProfile 1600.')">Accept → 2026-08-22</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216654171424834">Assemble  - 1594.1010.L.ScissorLift_Single_LowProfile 1600.</a></td><td>—</td><td>2026-08-21 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216897212641701">Changes made to scissor Lift bottom frame</a></td><td>Andy</td><td>2026-08-24 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216976447735289">QC  B4 Galv - 1594.1010.L.ScissorLift_Single_LowProfile 1600.</a></td><td>—</td><td>no due </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-21 → advise 2026-08-22<br><span class="muted">4 lasercut · 3 need-order · 13 on-order · 0 pick</span></td>
+              <td><button class="acc" onclick="acceptDue('1216654171424832','2026-08-22','1594.1010.L.ScissorLift_Single_LowProfile 1600.')">Accept → set due 2026-08-22</button></td></tr></tbody></table>
+          <div class="fb">ⓘ Accept queues a REQUESTS→SAP write to set the pack due date. Dry-run reviewed first.</div>
+        </div>
+        <div class="card" id="1670">
+          <h2><span class="num">16</span> 1670 - Blackfriars Lane, No.20
+            <span class="muted" style="margin-left:auto">5 open · <span class="pill over">5 overdue</span></span></h2>
+          <table><thead><tr>
+            <th>Pack task</th><th>Subtasks (open / overdue)</th>
+            <th>Parts arrive → advised due</th><th>Action</th>
+          </tr></thead><tbody><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1215330758230055">1670.1016.BS.1.</a><br>
+                <span class="muted">2026-08-14 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 1 open vendor order · <span class='vorder over'>1 overdue</span> · latest 2026-08-12 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1215446072625510">21212</a> · Alexander pollock Engraving - 1670 - Bla</td>
+                      <td>21212-1670 - Alexander pollock Engraving - 1670 - Blackfriars Lane</td>
+                      <td>2026-08-12 <span class="vorder over">overdue</span></td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 1 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1215330758230058">QC  - 1670.1016.BS.1.</a></td><td>Peter</td><td>2026-07-17 <span class="pill over">overdue</span></td><td>→ advise 2026-08-13</td><td><button class="acc" onclick="acceptDue('1215330758230058','2026-08-13','QC  - 1670.1016.BS.1.')">Accept → 2026-08-13</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1215330758230057">Assemble  - 1670.1016.BS.1.</a></td><td>Joshua</td><td>2026-08-19 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-12<br><span class="muted">0 lasercut · 0 need-order · 3 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1215331106377222">1670.1016.E.Railings.ButtonStation.</a><br>
+                <span class="muted">2026-08-17 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 1 open vendor order · <span class='vorder over'>1 overdue</span> · latest 2026-08-12 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1215446072625510">21212</a> · Alexander pollock Engraving - 1670 - Bla</td>
+                      <td>21212-1670 - Alexander pollock Engraving - 1670 - Blackfriars Lane</td>
+                      <td>2026-08-12 <span class="vorder over">overdue</span></td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 1 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1215331106377225">QC  - 1670.1016.E.Railings.ButtonStation.</a></td><td>Peter</td><td>2026-07-17 <span class="pill over">overdue</span></td><td>→ advise 2026-08-13</td><td><button class="acc" onclick="acceptDue('1215331106377225','2026-08-13','QC  - 1670.1016.E.Railings.ButtonStation.')">Accept → 2026-08-13</button></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1215331106377224">Assemble and test - 1670.1016.E.Railings.ButtonStation.</a></td><td>Joshua</td><td>2026-08-19 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-12<br><span class="muted">0 lasercut · 0 need-order · 3 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1215331106377242">1670.Blackfriars Lane No.20_EngineeringDrawing.</a><br>
+                <span class="muted">2026-08-17 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 1 open vendor order · <span class='vorder over'>1 overdue</span> · latest 2026-08-12 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1215446072625510">21212</a> · Alexander pollock Engraving - 1670 - Bla</td>
+                      <td>21212-1670 - Alexander pollock Engraving - 1670 - Blackfriars Lane</td>
+                      <td>2026-08-12 <span class="vorder over">overdue</span></td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1215331106377244">Assemble  - 1670.Blackfriars Lane No.20_EngineeringDrawing.</a></td><td>John Chaves</td><td>2026-08-28 </td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1215331106377245">QC  - 1670.Blackfriars Lane No.20_EngineeringDrawing.</a></td><td>Andy</td><td>2026-08-31 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-12<br>—</td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1215331106377227">1670.8000.A.StepsPlatform.</a><br>
+                <span class="muted">2026-08-17 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 1 open vendor order · <span class='vorder over'>1 overdue</span> · latest 2026-08-12 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1215446072625510">21212</a> · Alexander pollock Engraving - 1670 - Bla</td>
+                      <td>21212-1670 - Alexander pollock Engraving - 1670 - Blackfriars Lane</td>
+                      <td>2026-08-12 <span class="vorder over">overdue</span></td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">1 open · 1 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1215331106377230">QC  - 1670.8000.A.StepsPlatform.</a></td><td>Danny</td><td>2026-08-07 <span class="pill over">overdue</span></td><td>→ advise 2026-08-13</td><td><button class="acc" onclick="acceptDue('1215331106377230','2026-08-13','QC  - 1670.8000.A.StepsPlatform.')">Accept → 2026-08-13</button></td></tr></tbody></table></details></td>
+              <td>2026-08-12<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1215330758230045">1670.1008.D.MachineRoomCabinet.</a><br>
+                <span class="muted">2026-08-17 · <span class="pill over">overdue</span></span>
+                <details class="vendor"><summary>⛓ 1 open vendor order · <span class='vorder over'>1 overdue</span> · latest 2026-08-12 · view</summary><table><thead><tr><th>PO · Vendor</th><th>Order</th><th>Due</th></tr></thead><tbody><tr>
+                      <td style="min-width:180px"><a href="https://app.asana.com/0/854650811917168/1215446072625510">21212</a> · Alexander pollock Engraving - 1670 - Bla</td>
+                      <td>21212-1670 - Alexander pollock Engraving - 1670 - Blackfriars Lane</td>
+                      <td>2026-08-12 <span class="vorder over">overdue</span></td>
+                    </tr></tbody></table></details></td>
+              <td><details class="sub"><summary><span class="cnt">2 open · 1 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1215330758230048">QC  - 1670.1008.D.MachineRoomCabinet.</a></td><td>Andy</td><td>2026-08-17 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1215330758230047">Assemble  - 1670.1008.D.MachineRoomCabinet.</a></td><td>Krystian Kowalczuk</td><td>2026-08-18 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>2026-08-12<br><span class="muted">0 lasercut · 0 need-order · 0 on-order · 0 pick</span></td>
+              <td><span class="muted">—</span></td></tr></tbody></table>
+          <div class="fb">ⓘ Accept queues a REQUESTS→SAP write to set the pack due date. Dry-run reviewed first.</div>
+        </div>
+        <div class="card" id="7003">
+          <h2><span class="num">15</span> 1591 - University of Cambridge, Department Geography
+            <span class="muted" style="margin-left:auto">1 open · <span class="pill over">1 overdue</span></span></h2>
+          <table><thead><tr>
+            <th>Pack task</th><th>Subtasks (open / overdue)</th>
+            <th>Parts arrive → advised due</th><th>Action</th>
+          </tr></thead><tbody><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216331340814661">7003.B.WheelStop-MT_MOD_1.</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 3 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216331341462196">QC  - 7003.B.WheelStop-MT_MOD_1.</a></td><td>—</td><td>2026-07-07 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216331341462194">Assemble  - 7003.B.WheelStop-MT_MOD_1.</a></td><td>Krystian Kowalczuk</td><td>2026-07-23 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216331341462195">Assemble/Wire and test  - 7003.B.WheelStop-MT_MOD_1.</a></td><td>Peter</td><td>2026-07-23 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br>—</td>
+              <td><span class="muted">—</span></td></tr></tbody></table>
+          <div class="fb">ⓘ Accept queues a REQUESTS→SAP write to set the pack due date. Dry-run reviewed first.</div>
+        </div>
+        <div class="card" id="7100">
+          <h2><span class="num">15</span> 1578 - Traversing Lift Single scissor lift
+            <span class="muted" style="margin-left:auto">2 open · <span class="pill over">1 overdue</span></span></h2>
+          <table><thead><tr>
+            <th>Pack task</th><th>Subtasks (open / overdue)</th>
+            <th>Parts arrive → advised due</th><th>Action</th>
+          </tr></thead><tbody><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1216334107803080">7100.B.WheelStop-MT_MOD_2.</a><br>
+                <span class="muted">2026-08-10 · <span class="pill over">overdue</span></span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">3 open · 3 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1216334107803081">Weld  - 7100.B.WheelStop-MT_MOD_2.</a></td><td>—</td><td>2026-07-07 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216334107803082">Assemble  - 7100.B.WheelStop-MT_MOD_2.</a></td><td>—</td><td>2026-07-07 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr><tr><td><a href="https://app.asana.com/0/852956628490855/1216334107803083">QC  - 7100.B.WheelStop-MT_MOD_2.</a></td><td>—</td><td>2026-07-07 <span class="pill over">overdue</span></td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br>—</td>
+              <td><span class="muted">—</span></td></tr><tr>
+              <td style="min-width:220px"><a href="https://app.asana.com/0/852956628490855/1213788030961544">7100.TraversingSingle.</a><br>
+                <span class="muted">2026-08-21</span>
+                <span class="muted">no open vendor orders for this job</span></td>
+              <td><details class="sub"><summary><span class="cnt">1 open · 0 overdue</span> · click to view subtasks</summary><table><thead><tr><th>Subtask</th><th>Assignee</th><th>Due</th><th>Advised→</th><th>Action</th></tr></thead><tbody><tr><td><a href="https://app.asana.com/0/852956628490855/1213788030961547">QC  - 7100.TraversingSingle.</a></td><td>Andy</td><td>2026-08-26 </td><td></td><td><span class="muted">—</span></td></tr></tbody></table></details></td>
+              <td>—<br>—</td>
+              <td><span class="muted">—</span></td></tr></tbody></table>
+          <div class="fb">ⓘ Accept queues a REQUESTS→SAP write to set the pack due date. Dry-run reviewed first.</div>
+        </div>
+<footer>SAS OS · Andy's worklist + pack readiness · data sources noted above · mistakes captured, not hidden</footer>
+</div></body></html>

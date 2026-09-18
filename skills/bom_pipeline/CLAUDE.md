@@ -112,6 +112,31 @@ Scripts read `ASANA_PERSONAL_ACCESS_TOKEN` from environment. Fallback: `ASANAcon
 
 ---
 
+## 🔴 Stage 5 Asana import POPULATES PROGRESSIVELY — never judge a root mid-flight (Giles, 2026-09-15)
+
+**Symptom that fooled me twice (Forrest Road 1597, then Brook 1569):** querying the `ALL BOMS - {project}`
+root's subtree shortly after a commit shows far fewer nodes than staging expects (36 nodes vs 45 staged
+rows; only 3 of 6 cost-centre branches). It *looks* like a partial/incomplete import and invites the wrong
+conclusion — "the root is missing branches, only N parts landed".
+
+**It is NOT partial. Asana finishes populating over the following minutes.** Verified live on 1569: the root
+went **36 → 46 leaf tasks** while being watched, and 40/40 staged part numbers were ultimately present (the
+last apparent mismatch was a part-number *format* variant, not a missing part).
+
+Rules:
+- **Do not assess completeness immediately after a commit.** Wait for population to settle, or re-query
+  minutes later, before drawing any conclusion.
+- **Never report a root as "incomplete/partial", and never propose a scoped re-import, from one early
+  sample.** Re-read the live subtree first.
+- **Never `--approve` / force a second root because the existing root "looks thin".** The idempotency guard
+  firing is normal when a root exists; "looks incomplete" is not grounds to override it.
+- **Part-number comparison is fuzzy, not exact.** Root leaf names carry a space after the project prefix
+  (`"1 off 1569. 1070.C.032 - Gusset"`) and non-numeric part formats (`1569.ISO 10642 - M3x10`). Normalise
+  hard — `re.sub(r"[^a-z0-9]", "", s.lower())` and strip the interior space — or you get false "missing"
+  hits on parts that are actually present.
+- **The idempotency-guard halt on a fresh commit usually means the job was already run** (often by an
+  earlier/parallel session). Treat it as "already done, verify", not "override me".
+
 ## Common code mistakes
 
 - **Referencing Rev2 index** — stale, update to Rev4.
@@ -123,6 +148,11 @@ Scripts read `ASANA_PERSONAL_ACCESS_TOKEN` from environment. Fallback: `ASANAcon
 - **`_MIR` parts** — won't match Golden Index and go to ORDER. Expected behaviour, not a bug.
 - **Parts Control automation** — project membership in Parts Control (`1211660707080749`) is currently manual. Do not automate this without explicit instruction from Giles.
 - **Build Packs reference field** (`1211660742155293`) — requires a task GID, not text. Cannot be set by name.
+- **Numpy import fails at Stage 1** — if you get `Unable to import required dependency numpy`, the venv's cp313 numpy is being shadowed by a leaked `PYTHONPATH` pointing at the uv-tool cp311 `hermes-agent` site-packages. Run the pipeline with `env -u PYTHONPATH` and the SES_Workspace venv python.
+- **Do NOT modify the Golden Index from BOM imports** — index items are stock-only; push nothing from a BOM run. `GI_revision_pending` (Stage 4.5) is review-only. Modify the index only on explicit Giles approval, and only from a stock-listing revision.
+- **Stage 5 re-reads LIVE STOCK QTY at `--commit` for every PICK part (2026-09-07)** — `BOM_IMPORT_4_Asana_v4.py` now re-queries the live KANBAN STOCK QTY field (`1126782469949969`) at commit time for **all** PICK rows with a KAN, not just manually-amended ones. It flips `PLEASE PICK` → `PROJECT ORDER` if remaining stock no longer covers the BOM qty. Two operational consequences: (a) a PICK part can become ORDER at commit if stock dropped since Stage 3 (correct, but expect it); (b) commit makes extra Asana search+read calls per PICK row, so large runs take longer. On **dry-run (no `--commit`)** it still trusts the Stage-3 classification and assumes enough stock. Do not "fix" this back to trusting staging — that reversal reintroduces picking already-out-of-stock parts.
+- **Stage 3 `Trigger Order QTY`, not "min Stock QTY"** — the Low Stock Alert compares `remaining after BOM < Trigger Order QTY` (`1198179728033183`), which is the KANBAN **replenish threshold**. KANBAN parts have **no** separate "min stock" field (that lives only on Consumables, `1205084645800516`). The Stage 3 output column is now correctly named `Trigger Order QTY`. Do not rename it back to `min Stock QTY` without also updating `03_stock_check.py`, `04_staging_export.py`'s `PRIORITY_COLS`, and any downstream consumer — the two files are intentionally coordinated.
+- **Stock-qty source audit (2026-09-07)** — all live stock readers (`03_stock_check.py`, `BOM_IMPORT_4_Asana_v4.py`, purchasing tools) read the correct STOCK QTY GID `1126782469949969`. The `golden_index_rev6` DB table carries **no** stock-qty column (KAN↔stocknumber mapping only). If a staged "Stock QTY" looks wrong, suspect a stale Stage-3 snapshot or a Stock QTY that moved after the run — not a field mix-up. Logged as edge case `1218241145902290`.
 
 ---
 

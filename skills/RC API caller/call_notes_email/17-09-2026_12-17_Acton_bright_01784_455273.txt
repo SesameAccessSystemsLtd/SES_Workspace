@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  17/09/2026  12:17
+============================================================
+With:         Acton bright 01784 455273
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo from Sesame confirming a purchase order with Lucy, including payment details and delivery arrangements, with the transaction scheduled for Tuesday. The call concluded with confirmation of invoice receipt and delivery details.
+
+--- RECAP --------------------------------------------------
+Giles Hugo from Sesame contacted Lucy to proceed with an order involving 2 bars of 40 mil and 2 bars of 20 by 3 angle, with a total VAT-inclusive amount of 34,082 pounds.Giles Hugo agreed to send the purchase order via email for traceability, and provided credit card details ending in 8313 for payment.The delivery address is unit 1 Cumberland Works, with delivery scheduled for Tuesday.Giles Hugo confirmed receipt of the invoice via email and concluded the call.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send the purchase order via email to Lucy for record-keeping.Lucy will ensure the invoice is sent to Giles Hugo by email.
+
+(Full transcript: RC web portal only — no RingSense API)

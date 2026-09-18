@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  14/09/2026  11:04
+============================================================
+With:         Dave Burt IDL 07810 558753
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles from Sesame discussing powder coating status and material requirements with Dave from IDL, including potential alternative processing options and upcoming collection plans.
+
+--- RECAP --------------------------------------------------
+Giles inquired about the status of powder coating for items scheduled for installation this week; Dave confirmed it has not yet been done and may need to be processed elsewhere if not completed soon.Giles expressed concern about timing, as items are due to go to site this week, and discussed the possibility of sourcing powder coating services externally if IDL cannot complete it in time.Giles requested a 12mm wide, 3mm thick stainless steel strip approximately 1226mm long; Dave confirmed they can process the material but warned it may not be perfectly flat due to the need to straighten and twist it.They discussed the process of straightening and flattening the stainless steel strip, including the need to twist it in the opposite direction to achieve flatness, and the potential welding to a sheet for better handling.Giles agreed to follow up later regarding the powder coating status and plans for the rest of the items, and confirmed he will prepare the remaining items for collection once the coating issue is resolved.
+
+--- TASKS --------------------------------------------------
+Giles will follow up with Dave later to confirm the powder coating status and whether it will be completed in time for this week's installation.Giles will also check on the availability and processing of the stainless steel strip, and will get back to Dave as soon as possible regarding the material's suitability and processing details.
+
+(Full transcript: RC web portal only — no RingSense API)

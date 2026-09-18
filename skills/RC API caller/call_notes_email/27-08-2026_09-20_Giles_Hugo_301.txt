@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  27/08/2026  09:20
+============================================================
+With:         Giles Hugo 301
+Forwarded by: LesV@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a call involving Leslie Vaughn explaining recording procedures and call transfer options, with Giles Hugo observing. The call included instructions about automatic recording and transferring calls by holding, with no specific outcomes or follow-up actions discussed.
+
+--- RECAP --------------------------------------------------
+Leslie Vaughn explained that the call is automatically recorded and advised not to press record manually, as recording is now law and automatic.Leslie Vaughn informed Giles Hugo that to transfer a call, they can put the caller on hold and then return to them, with the caller aware of the transfer.There was a brief mention of someone named Jars still talking, indicating ongoing conversation or call activity.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

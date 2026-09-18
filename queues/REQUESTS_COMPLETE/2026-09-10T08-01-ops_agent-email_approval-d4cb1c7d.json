@@ -1,0 +1,14 @@
+{
+  "request_id": "9b864d8e-09fa-48cb-80f3-77b08cdb0576",
+  "source": "email_approval_sheet",
+  "row_index": 24,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkqMvgOAAA=",
+  "subject": "Your igus quotation 26-142072-BRG-GB-DHO SQR-47032 - Bearings",
+  "task_gid": "1218239425962514",
+  "task_name": "IGUS - 1597 - Forrest Road Entire System",
+  "asana_url": "https://app.asana.com/0/0/1218239425962514",
+  "action": "(Matched via SQR in Local DB); [SQR-ledger] no SQR match for dhood@igus.net; Update 'Price Ex VAT' to £17.56; Note added to description: Quote from Igus - £17.56 (2026-09-09); Flag issue: A colleague from the chain will be in touch regarding the other part line, indicating that not all requested parts are covered in this quotation.",
+  "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> quote: Your igus quotation 26-142072-BRG-GB-DHO SQR-47032 - Bearings\n- Update 'Price Ex VAT' to £17.56\n- Note added to description: Quote from Igus - £17.56 (2026-09-09)\n- Flag issue: A colleague from the chain will be in touch regarding the other part line, indicating that not all requested parts are covered in this quotation.\n\nReference: SQR-47032 · Received: 2026-09-09T02:40:55Z\nMatch basis: (Matched via SQR in Local DB); [SQR-ledger] no SQR match for dhood@igus.net\nTask GID: 1218239425962514 · AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkqMvgOAAA=\nhttps://app.asana.com/0/0/1218239425962514\n\ngiles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-10T08:01:01.438164+00:00"
+}

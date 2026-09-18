@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  10/09/2026  10:38
+============================================================
+With:         +448005200729 0800 520 0729
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Giles Hugo inquiring about expedited delivery options for a stainless steel 50x3 round tube from Aluminium Warehouse. The representative confirmed standard delivery is 3-5 days at £25, with an option for next-day delivery at an additional £50, subject to stock availability. The stock status was uncertain during the call, and further confirmation was needed.
+
+--- RECAP --------------------------------------------------
+Giles Hugo requested to expedite the delivery of a 50x3 stainless steel round tube, currently estimated at 3-5 days for standard shipping costing £25.The representative offered next-day delivery for an additional £50, but noted that stock availability was uncertain and that the item might not be in stock at the specified location.Giles Hugo clarified that the material must be stainless steel, with a length of 1 meter, and preferred either brushed or matte finish, with no specific finish requirement.The representative attempted to verify stock availability and delivery options through their system, which was slow and sometimes unresponsive, and suggested passing the call to a colleague for further assistance.Giles Hugo confirmed his contact details and requested a callback once the stock status and delivery options are confirmed.
+
+--- TASKS --------------------------------------------------
+The customer service representative will check stock availability for the 50x3 stainless steel round tube and confirm whether next-day delivery is possible.The representative will contact Giles Hugo with the stock status and delivery options as soon as possible.
+
+(Full transcript: RC web portal only — no RingSense API)

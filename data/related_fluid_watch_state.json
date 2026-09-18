@@ -1,0 +1,35 @@
+{
+  "email_keys_seen": [
+    "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkpoH2YAAA=|Notes from your call with Chris Spittle | Related Fluid 01334 655600 on 07/09/20|2026-09-07T11:10:33Z",
+    "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkpoH2TAAA=|Undeliverable: RELATED FLUID - Main manifold  PO 21603-70926|2026-09-07T08:37:05Z",
+    "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy9DAAA=|Richard, did you forget to send your comment in 1 off 1595. 1008.H6(RF SES447424|2026-09-02T11:29:11Z",
+    "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEJAACfKjgQkWRhS42xGA6fMW2cAAkpoRe7AAA=|Fw: RELATED FLUID - Main manifold  PO 21603-70926|2026-09-07T11:16:40Z",
+    "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEJAACfKjgQkWRhS42xGA6fMW2cAAkpoRe5AAA=|RELATED FLUID - Main manifold  PO 21603-70926|2026-09-07T08:36:39Z",
+    "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEJAACfKjgQkWRhS42xGA6fMW2cAAhU9j4RAAA=|PO 20482-211025 - Related fluid - gate manifold |2025-10-21T07:20:53Z"
+  ],
+  "1218230230672634": {
+    "status": "\u23f0On Order - Awaiting CONFIRMATION",
+    "done": false,
+    "notes_len": 491,
+    "notes_head": "  10 off https://app.asana.com/1/357939803556123/project/1125467280370515/task/523333842528553?focus=true  NEEDED FOR https://app.asana.com/1/357939803556123/project/1125467280370515/task/121754223711"
+  },
+  "1218229931201739": {
+    "status": "",
+    "done": false,
+    "notes_len": 1792,
+    "notes_head": "EDGE CASE \u2014 QTY TRIGGER / LONG-LEAD STOCK EXCEPTION  Original issue: https://app.asana.com/1/357939803556123/project/1125467280370515/task/523333842528553?focus=true A 16-week lead item was flagged as"
+  },
+  "523333842528553": {
+    "status": "\u23f0On Order - Awaiting CONFIRMATION",
+    "done": false,
+    "notes_len": 245,
+    "notes_head": "price for 10 off   2023  \u00a3242.9 ea  2024 = \u00a3466.74   price for 16 off 2024 \u00a3453.40  This has the pilot check valve and https://app.asana.com/0/632603478911321/1199375407059403/f ontop   https://app.as"
+  },
+  "1217542237112416": {
+    "status": "",
+    "done": false,
+    "notes_len": 501,
+    "notes_head": "1595.1008.H6(RF SES447424) Stock Number: RF SES447424 https://app.asana.com/1/357939803556123/task/523333842528553 Material: Generic From Cost Centre Long Leading Link to BOM: https://www.dropbox.com/"
+  },
+  "_seeded": true
+}

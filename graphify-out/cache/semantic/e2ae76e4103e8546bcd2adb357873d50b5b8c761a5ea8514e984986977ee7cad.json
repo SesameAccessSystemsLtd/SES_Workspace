@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "ses447424_main_lift_manifold", "target": "sesame_bom_supplier_order", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "queues/REQUESTS_COMPLETE/2026-08-11T07-00-55-ordering-create-sesame-bom-supplier.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

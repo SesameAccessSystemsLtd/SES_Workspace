@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  25/08/2026  11:14
+============================================================
+With:         +441483755698 01483 755698
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo from Sesame Access inquiring about a van rental for September 1-4, specifically a short-height, long wheelbase van. The representative confirmed availability and pricing for a Citroen Relay or Maxis Deliver 9, both over 2 meters in height, and provided rental costs and insurance details.
+
+--- RECAP --------------------------------------------------
+Giles Hugo from Sesame Access requested a rental van with a height less than 2 meters, for the period September 1-4, and specified a preference for a Transit Custom, VW Transporter, or Renault Traffic, all of which are long wheelbase models.The representative informed Giles that their fleet does not include these models; instead, they have Citroen Relay and Maxis Deliver 9 vans, both with external heights of 2.5 meters, exceeding the specified height requirement.The rental rate for a week is 385 pounds, which includes insurance with a 750-pound excess, and covers 200 miles per day; additional miles are charged at 10 pence per mile.Giles confirmed understanding of the pricing and insurance details and concluded the call.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

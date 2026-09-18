@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  01/09/2026  15:17
+============================================================
+With:         0114 256 0889
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo coordinating with Gary (phone number +441142560889) regarding a quote, payment issues, and order specifications for cutting PTFE and tough materials. The main outcome was agreement to proceed with the order and payment via card, despite some bank-related payment difficulties.
+
+--- RECAP --------------------------------------------------
+Giles Hugo received and responded to a quote from Gary, discussing details of the order and confirming the items to be cut, including PTFE strips and tough materials.Gary explained that the payment attempt with the bank card was declined due to bank issues, and agreed to send a pro forma invoice for Giles to process payment the next day.Order specifications include cutting a 1200mm length into 15 strips of 45mm width, with an additional 12 strips of PTFE, and an off-cut piece, with some flexibility on the number of cuts.Giles provided the client details for the card payment, including the name Steven Lions and the card number, and confirmed the card details for the transaction.The call concluded with mutual thanks and goodbyes, with plans to proceed with the order and payment.
+
+--- TASKS --------------------------------------------------
+Gary will send the pro forma invoice to Giles for payment processing tomorrow.Giles will review the invoice and process the payment via card once received.Gary will prepare and cut the order as specified: 15 strips of 45mm width from 1200mm length, plus 12 PTFE strips and an off-cut, based on the agreed dimensions.
+
+(Full transcript: RC web portal only — no RingSense API)

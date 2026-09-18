@@ -1,0 +1,160 @@
+# 1037 Langley Street — Outstanding parts (live Asana) 113 open rows
+
+Format: one comment 2 Andy per Build Schedule pack task. Each row = an open part task (its own Asana URL below it).
+
+================================================================
+  PACK: 1037.1006.A.Bellows.   =  1 open   [BuildSchedule gid 1213566425247561]
+================================================================
+   1037.1006.A.Bellows.01   | due 2026-09-11   | https://app.asana.com/0/1217816716688339/1217816716688339
+
+================================================================
+  PACK: 1037.1014.M.Gate+Support.   =  38 open   [BuildSchedule gid 1216065135265568]
+================================================================
+   1037.1014.M.050   | due no due date   | https://app.asana.com/0/1216068702920399/1216068702920399
+   1037.1014.M.064   | due no due date   | https://app.asana.com/0/1216068927546276/1216068927546276  <-- DUPLICATE open task (2 open GIDs)
+   1037.1014.M.057   | due 2026-09-04   | https://app.asana.com/0/1217816856488809/1217816856488809
+   1037.1014.M.064   | due no due date   | https://app.asana.com/0/1217816671957546/1217816671957546  <-- DUPLICATE open task (2 open GIDs)
+   1037.1014.M19   | due no due date   | https://app.asana.com/0/1216068837707304/1216068837707304
+   1037.1014.M.061   | due 2026-07-24   | https://app.asana.com/0/1216068748287036/1216068748287036
+   1037.1014.M17w   | due no due date   | https://app.asana.com/0/1216068927645978/1216068927645978
+   1037.1014.M.118   | due no due date   | https://app.asana.com/0/1217816648037643/1217816648037643
+   1037.1014.M.106   | due no due date   | https://app.asana.com/0/1217816714998448/1217816714998448
+   1037.1014.M.110   | due no due date   | https://app.asana.com/0/1217816669802299/1217816669802299
+   1037.1014.M.107   | due no due date   | https://app.asana.com/0/1217816670085446/1217816670085446
+   1037.1014.M.111   | due no due date   | https://app.asana.com/0/1217816647703125/1217816647703125
+   1037.1014.M.113   | due 2026-09-02   | https://app.asana.com/0/1217816715236467/1217816715236467
+   1037.1014.M.112   | due no due date   | https://app.asana.com/0/1217816923787526/1217816923787526
+   1037.1014.M.105   | due no due date   | https://app.asana.com/0/1217831983112442/1217831983112442
+   1037.1014.M.045   | due no due date   | https://app.asana.com/0/1216068551384217/1216068551384217
+   1037.1014.M.043   | due no due date   | https://app.asana.com/0/1216068702438388/1216068702438388
+   1037.1014.M.051   | due no due date   | https://app.asana.com/0/1216068837312551/1216068837312551
+   1037.1014.M.042   | due no due date   | https://app.asana.com/0/1216068551232890/1216068551232890
+   1037.1014.M.103   | due no due date   | https://app.asana.com/0/1216068837445973/1216068837445973
+   1037.1014.M.040   | due no due date   | https://app.asana.com/0/1216068702343621/1216068702343621
+   1037.1014.M.102   | due no due date   | https://app.asana.com/0/1216068748345783/1216068748345783
+   1037.1014.N.010.01   | due no due date   | https://app.asana.com/0/1217816923777600/1217816923777600
+   1037.1014.M.114.01   | due no due date   | https://app.asana.com/0/1217816670236918/1217816670236918
+   1037.1014.M.116.01   | due no due date   | https://app.asana.com/0/1217816647852695/1217816647852695
+   1037.1014.M.115.01   | due no due date   | https://app.asana.com/0/1217816670214654/1217816670214654
+   1037.1014.N.106   | due no due date   | https://app.asana.com/0/1217816924570648/1217816924570648
+   1037.1014.M.033   | due no due date   | https://app.asana.com/0/1216068550542211/1216068550542211
+   1037.1014.M.035   | due no due date   | https://app.asana.com/0/1216068688525352/1216068688525352
+   1037.1014.M.104   | due 2026-09-02   | https://app.asana.com/0/1216068688922765/1216068688922765
+   1037.1014.M.041   | due 2026-09-02   | https://app.asana.com/0/1216068702301577/1216068702301577
+   1037.1014.M.038   | due 2026-08-13   | https://app.asana.com/0/1216068688642654/1216068688642654
+   1037.1014.M.108   | due 2026-08-13   | https://app.asana.com/0/1216068748287022/1216068748287022
+   1037.1014.M.044   | due 2026-08-13   | https://app.asana.com/0/1216068748275852/1216068748275852
+   1037.1014.M.034   | due 2026-08-06   | https://app.asana.com/0/1216068748087756/1216068748087756
+   1037.1014.M.032   | due 2026-07-30   | https://app.asana.com/0/1216068688184251/1216068688184251
+   1037.1014.M.039   | due 2026-07-30   | https://app.asana.com/0/1216068702209410/1216068702209410
+   1037.1014.M.109   | due 2026-08-06   | https://app.asana.com/0/1216068837289837/1216068837289837
+
+================================================================
+  PACK: 1037.1014.N.GateMechanism.   =  24 open   [BuildSchedule gid 1217484830289458]
+================================================================
+   1037.1014.N.067   | due no due date   | https://app.asana.com/0/1217816857235264/1217816857235264
+   1037.1014.N.080   | due 2026-09-04   | https://app.asana.com/0/1217541497362062/1217541497362062
+   1037.1014.N.079   | due no due date   | https://app.asana.com/0/1217816716523917/1217816716523917
+   1037.1014.N3   | due no due date   | https://app.asana.com/0/1217816856558502/1217816856558502
+   1037.1014.N11   | due no due date   | https://app.asana.com/0/1217816912644100/1217816912644100
+   1037.1014.N.005   | due no due date   | https://app.asana.com/0/1217816717142810/1217816717142810
+   1037.1014.N.004   | due no due date   | https://app.asana.com/0/1217816925209976/1217816925209976
+   1037.1014.N.032   | due no due date   | https://app.asana.com/0/1217816672198690/1217816672198690
+   1037.1014.N.103   | due no due date   | https://app.asana.com/0/1217816672165189/1217816672165189
+   1037.1014.N25   | due 2026-09-29   | https://app.asana.com/0/1217541759316896/1217541759316896
+   1037.1014.N13.Ram   | due 2026-09-29   | https://app.asana.com/0/1217541629337237/1217541629337237
+   1037.Shoulder screw ISO 7379-12-M10-40   | due no due date   | https://app.asana.com/0/1217816925300613/1217816925300613
+   1037.1014.N.002   | due no due date   | https://app.asana.com/0/1217816648111922/1217816648111922
+   1037.1014.N.088   | due no due date   | https://app.asana.com/0/1217816670761750/1217816670761750
+   1037.1014.N.090   | due no due date   | https://app.asana.com/0/1217816715779185/1217816715779185
+   1037.1014.N.102   | due no due date   | https://app.asana.com/0/1217816715680669/1217816715680669
+   1037.1014.N.089   | due no due date   | https://app.asana.com/0/1217816715726136/1217816715726136
+   1037.1014.N.100   | due no due date   | https://app.asana.com/0/1217816715889436/1217816715889436
+   1037.1014.N.026   | due no due date   | https://app.asana.com/0/1217816924268886/1217816924268886
+   1037.1014.N.024   | due no due date   | https://app.asana.com/0/1217816715654788/1217816715654788
+   1037.1014.N.105   | due no due date   | https://app.asana.com/0/1217816715815780/1217816715815780
+   1037.1014.N.101   | due no due date   | https://app.asana.com/0/1217816924480592/1217816924480592
+   1037.1014.N.028   | due no due date   | https://app.asana.com/0/1217816911651344/1217816911651344
+   1037.1014.N.020   | due no due date   | https://app.asana.com/0/1217816670239415/1217816670239415
+
+================================================================
+  PACK: 1037.1016.BS.2.   =  8 open   [BuildSchedule gid 1217356712493576]
+================================================================
+   1037.1016.1.2   | due 2026-09-05   | https://app.asana.com/0/1217419647121126/1217419647121126
+   1037.1016.3.001   | due no due date   | https://app.asana.com/0/1217438588858316/1217438588858316
+   1037.1016.3.003   | due no due date   | https://app.asana.com/0/1217419145621399/1217419145621399
+   1037.1016.3.010(2Way-Spr)   | due no due date   | https://app.asana.com/0/1217419146426889/1217419146426889
+   1037.1016.3.011(2Way-Mai)   | due no due date   | https://app.asana.com/0/1217419051446251/1217419051446251
+   1037.BRH-M4-16-GS (RivetBush)   | due no due date   | https://app.asana.com/0/1217419146681226/1217419146681226
+   1037.SecurityScrew - M4 x 8 CS   | due no due date   | https://app.asana.com/0/1217419655861020/1217419655861020
+   1037.1016.2.002   | due 2026-09-03   | https://app.asana.com/0/1217438588697494/1217438588697494
+
+================================================================
+  PACK: 1037.1016.BS.3.   =  3 open   [BuildSchedule gid 1217356712493581]
+================================================================
+   1037.1016.1.3   | due 2026-09-05   | https://app.asana.com/0/1217419647312362/1217419647312362
+   1037.1016.3.007   | due no due date   | https://app.asana.com/0/1217419051448992/1217419051448992
+   1037.1016.2.003   | due no due date   | https://app.asana.com/0/1217438588524556/1217438588524556
+
+================================================================
+  PACK: 1037.1016.X.ButtonStation.   =  2 open   [BuildSchedule gid 1213566425247566]
+================================================================
+   1037.1016.X.1   | due 2026-09-05   | https://app.asana.com/0/1217438588084644/1217438588084644
+   1037.012   | due no due date   | https://app.asana.com/0/1217419647684975/1217419647684975
+
+================================================================
+  PACK: 1037.9990.A.Cover.   =  15 open   [BuildSchedule gid 1213566425247576]
+================================================================
+   1037.9990.A.002   | due no due date   | https://app.asana.com/0/1217816856490516/1217816856490516  <-- DUPLICATE open task (2 open GIDs)
+   1037.9990.A.003   | due no due date   | https://app.asana.com/0/1217816856771817/1217816856771817  <-- DUPLICATE open task (2 open GIDs)
+   1037.9990.A.012   | due no due date   | https://app.asana.com/0/1217816856569733/1217816856569733  <-- DUPLICATE open task (2 open GIDs)
+   1037.1016.H1   | due no due date   | https://app.asana.com/0/1217418844692843/1217418844692843
+   1037.9990.A.014   | due no due date   | https://app.asana.com/0/1217816857271937/1217816857271937
+   1037.9990.A.011   | due no due date   | https://app.asana.com/0/1217816856771856/1217816856771856
+   1037.9990.A1w   | due no due date   | https://app.asana.com/0/1217816603412185/1217816603412185
+   1037.9990.A.004   | due no due date   | https://app.asana.com/0/1217816714660528/1217816714660528  <-- DUPLICATE open task (2 open GIDs)
+   1037.9990.A.003   | due no due date   | https://app.asana.com/0/1217816604875531/1217816604875531  <-- DUPLICATE open task (2 open GIDs)
+   1037.9990.A.001   | due 2026-09-10   | https://app.asana.com/0/1217816912226614/1217816912226614
+   1037.9990.A.002   | due no due date   | https://app.asana.com/0/1217816716091839/1217816716091839  <-- DUPLICATE open task (2 open GIDs)
+   1037.9990.A.012   | due no due date   | https://app.asana.com/0/1217816716176655/1217816716176655  <-- DUPLICATE open task (2 open GIDs)
+   1037.9990.A.004   | due no due date   | https://app.asana.com/0/1217816924574844/1217816924574844  <-- DUPLICATE open task (2 open GIDs)
+   1037.9990.A.016   | due no due date   | https://app.asana.com/0/1217816604875546/1217816604875546
+   1037.9990.A.010   | due no due date   | https://app.asana.com/0/1217816670720004/1217816670720004
+
+================================================================
+  PACK: 1037.9991.A.TapeSwitch.   =  1 open   [BuildSchedule gid 1213566425247581]
+================================================================
+   1037.9991.A.TapeSwitch.01   | due no due date   | https://app.asana.com/0/1217816671949188/1217816671949188
+
+================================================================
+  PACK: 1037.9991.C.001.   =  1 open   [BuildSchedule gid 1213566425247586]
+================================================================
+   1037.9991.C.001   | due no due date   | https://app.asana.com/0/1217816912389301/1217816912389301
+
+================================================================
+  PACK: 1037.9991.C.002.   =  1 open   [BuildSchedule gid 1213566425248668]
+================================================================
+   1037.9991.C.002   | due 2026-09-09   | https://app.asana.com/0/1217816856508732/1217816856508732
+
+================================================================
+  PACK: (no pack)   =  19 open   [BuildSchedule gid n/a]
+================================================================
+   1037.034.001   | due no due date   | https://app.asana.com/0/1217419655951271/1217419655951271  <-- DUPLICATE open task (2 open GIDs)
+   1037.9992.B.002   | due no due date   | https://app.asana.com/0/1217816924596253/1217816924596253
+   1037.9992.A.002   | due no due date   | https://app.asana.com/0/1217816671128462/1217816671128462
+   1037.9992.B.001   | due no due date   | https://app.asana.com/0/1217816671227254/1217816671227254
+   1037.1014.M.062   | due no due date   | https://app.asana.com/0/1216068688982438/1216068688982438
+   1037.1014.M.115   | due no due date   | https://app.asana.com/0/1216068689133400/1216068689133400
+   1037.1014.M.114   | due no due date   | https://app.asana.com/0/1216068551570269/1216068551570269
+   1037.1014.M.116   | due no due date   | https://app.asana.com/0/1216068551654581/1216068551654581
+   1037.1014.N.010   | due no due date   | https://app.asana.com/0/1216068748600608/1216068748600608
+   1037.1016.1.003   | due no due date   | https://app.asana.com/0/1217419655871851/1217419655871851  <-- DUPLICATE open task (2 open GIDs)
+   1037.1016.X.001   | due no due date   | https://app.asana.com/0/1217438588658984/1217438588658984  <-- DUPLICATE open task (2 open GIDs)
+   1037.1014.M.117   | due no due date   | https://app.asana.com/0/1216068551706582/1216068551706582
+   1037.1016.1.003   | due no due date   | https://app.asana.com/0/1217419145599385/1217419145599385  <-- DUPLICATE open task (2 open GIDs)
+   1037.034.001   | due no due date   | https://app.asana.com/0/1217419196384597/1217419196384597  <-- DUPLICATE open task (2 open GIDs)
+   1037.1016.1.007   | due no due date   | https://app.asana.com/0/1217419196689294/1217419196689294  <-- DUPLICATE open task (2 open GIDs)
+   1037.1016.X.001   | due no due date   | https://app.asana.com/0/1217419051354128/1217419051354128  <-- DUPLICATE open task (2 open GIDs)
+   1037.1014.M14w   | due no due date   | https://app.asana.com/0/1216068833295903/1216068833295903
+   1037.9992.A.001   | due 2026-09-02   | https://app.asana.com/0/1217816671085598/1217816671085598
+   1037.1016.1.007   | due no due date   | https://app.asana.com/0/1217419196751141/1217419196751141  <-- DUPLICATE open task (2 open GIDs)

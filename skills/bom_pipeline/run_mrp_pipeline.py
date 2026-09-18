@@ -53,6 +53,13 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+# Preflight/summary output uses ✓/✗ glyphs; without this the default cp1252
+# console (and Hermes cron stdout) raises UnicodeEncodeError mid-run.
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except Exception:
+    pass
+
 # ---------------------------------------------------------------------------
 # Paths — all relative to this script
 # ---------------------------------------------------------------------------
@@ -66,8 +73,256 @@ GOLDEN_INDEX   = S25_DIR / 'Merged_Golden_Index_Rev4.csv'  # legacy fallback onl
 USE_DB_GOLDEN_INDEX = True
 
 
+def _rev6_count() -> int:
+    """Rows in ops.db table golden_index_rev6 — the Golden Index source of truth.
+    Resolved via PATH_CONFIG; 0 if unreachable."""
+    try:
+        import sqlite3, sys as _sys
+        _sys.path.insert(0, str(BASE.parent.parent / "lib"))
+        from path_config import p as _p
+        con = sqlite3.connect(f"file:{_p('db.ops')}?mode=ro", uri=True)
+        n = con.execute("SELECT COUNT(*) FROM golden_index_rev6").fetchone()[0]
+        con.close()
+        return n
+    except Exception:
+        return 0
+
+
 def _slug(name: str) -> str:
     return re.sub(r'[^a-zA-Z0-9_-]', '_', name).strip('_')
+
+
+def _asana_paginated(url: str, headers: dict, params: dict) -> list[dict]:
+    """
+    GET an Asana collection endpoint, following `next_page` offset pagination.
+    Returns the concatenated list of task dicts. Raises on HTTP errors so the
+    caller can decide how to degrade (a query failure must never hard-fail the
+    pipeline's commit completeness check).
+    """
+    import requests as _req
+    items: list[dict] = []
+    page_params = dict(params)
+    while True:
+        r = _req.get(url, headers=headers, params=page_params)
+        r.raise_for_status()
+        items.extend(r.json().get('data', []))
+        next_page = r.json().get('next_page')
+        if not next_page or not next_page.get('offset'):
+            break
+        page_params['offset'] = next_page['offset']
+    return items
+
+
+def _read_stage4_expected(stage4_xlsx, project_name: str):
+    """
+    Read the Stage 4 plan and derive what we expect to have been created in Asana.
+
+    Returns a dict:
+        {
+          'part_count': int,            # importable rows (SKIP/HOLD overrides excluded)
+          'group_names': set,           # distinct group tasks under which parts attach
+          'vendor_group_names': set,    # distinct '{vendor} - {project}' vendor-group tasks
+        }
+    On ANY error (missing sheet/column, bad file) returns empty structures — the
+    completeness check must never block or fail the pipeline.
+    """
+    empty = {'part_count': 0, 'group_names': set(), 'vendor_group_names': set()}
+    try:
+        import pandas as pd
+        df = pd.read_excel(stage4_xlsx, sheet_name='BOM Review', dtype=str).fillna('')
+    except Exception as e:
+        print(f"  [CC-CHECK] Could not read Stage 4 plan '{stage4_xlsx}': {e} — skipping expected-count comparison.")
+        return empty
+
+    def clean(v) -> str:
+        return '' if v is None else str(v).strip()
+
+    # Normalise headers: take the part before any newline, lowercase.
+    def norm_col(c) -> str:
+        return ' '.join(str(c).split('\n')[0].strip().lower().split())
+
+    normed = {norm_col(c): c for c in df.columns}
+
+    override_col = None
+    for cand in ('Override / Reorder QTY', 'Override', 'override'):
+        if norm_col(cand) in normed:
+            override_col = normed[norm_col(cand)]
+            break
+    vendor_col = next((normed[k] for k in ('supplier', 'vendor') if k in normed), None)
+    cc_col = next((normed[k] for k in ('cost center', 'cost centre') if k in normed), None)
+
+    def is_importable(row) -> bool:
+        if override_col is None:
+            return True
+        o = clean(row.get(override_col, '')).upper()
+        return o not in ('SKIP', 'HOLD')
+
+    part_count = 0
+    group_names: set[str] = set()
+    vendor_group_names: set[str] = set()
+
+    for _, row in df.iterrows():
+        if not is_importable(row):
+            continue
+        vendor    = clean(row.get(vendor_col, '')) if vendor_col else ''
+        cost_cc   = clean(row.get(cc_col, ''))      if cc_col else ''
+
+        part_count += 1
+
+        if vendor:
+            grp = f"{vendor} - {project_name}"
+            group_names.add(grp)
+            vendor_group_names.add(grp)
+        elif cost_cc:
+            grp = f"{cost_cc} BOM - {project_name}"
+            group_names.add(grp)
+            # cost-centre BOM groups are not 'vendor groups'
+        # else: attaches directly under the root -> no separate group task
+
+    return {
+        'part_count': part_count,
+        'group_names': group_names,
+        'vendor_group_names': vendor_group_names,
+    }
+
+
+def _find_newest_root_gid(project_gid: str, root_prefix: str, headers: dict) -> str:
+    """
+    Return the GID of the most recently created 'ALL BOMS - {project}' root task.
+    Returns '' if none found (a query that finds no root must not hard-fail).
+    """
+    try:
+        roots = _asana_paginated(
+            f"https://app.asana.com/api/1.0/projects/{project_gid}/tasks",
+            headers,
+            {'opt_fields': 'name,created_at,completed', 'limit': 100},
+        )
+    except Exception as e:
+        print(f"  [CC-CHECK] Could not query project tasks for root: {e}")
+        return ''
+    matches = [t for t in roots
+               if t.get('name', '').lower().startswith(root_prefix.lower())
+               and not t.get('completed', False)]
+    if not matches:
+        return ''
+    # Newest first
+    matches.sort(key=lambda t: t.get('created_at', ''), reverse=True)
+    return matches[0]['gid']
+
+
+def _collect_root_subtree(root_gid: str, headers: dict) -> list[dict]:
+    """Return every task in the subtree below root_gid (BFS), or [] on error."""
+    all_tasks: list[dict] = []
+    stack = [root_gid]
+    while stack:
+        parent = stack.pop()
+        try:
+            subs = _asana_paginated(
+                f"https://app.asana.com/api/1.0/tasks/{parent}/subtasks",
+                headers,
+                {'opt_fields': 'name,created_at', 'limit': 100},
+            )
+        except Exception as e:
+            print(f"  [CC-CHECK] Could not fetch subtasks of {parent}: {e}")
+            continue
+        for t in subs:
+            all_tasks.append(t)
+            stack.append(t['gid'])
+    return all_tasks
+
+
+def _run_completeness_check(project_name: str, project_gid: str, stage4_xlsx, token) -> None:
+    """
+    Post-commit completeness check. Verifies the newer ALL BOMS root in Asana
+    contains ~the number of part tasks and vendor-group tasks expected from the
+    Stage 4 plan, tolerating up to 5 minutes of Asana propagation lag via a
+    wait -> re-search ladder. NEVER hard-fails: if still short it prints a clear
+    low-risk warning for Giles to investigate, then returns normally.
+    """
+    import time as _time
+
+    top_name = f"ALL BOMS - {project_name}"
+    headers = {'Authorization': f'Bearer {token}'}
+    expected = _read_stage4_expected(stage4_xlsx, project_name)
+
+    if not expected['group_names'] and expected['part_count'] == 0:
+        print("  [CC-CHECK] Stage 4 plan produced no importable rows — nothing to verify.")
+        return
+
+    print(f"\n{'='*60}")
+    print("  POST-COMMIT COMPLETENESS CHECK (Stage 5)")
+    print(f"{'='*60}")
+
+    root_gid = _find_newest_root_gid(project_gid, top_name, headers)
+    if not root_gid:
+        print(f"  [CC-CHECK] Could not locate an 'ALL BOMS - {project_name}' root to verify.")
+        print("  [CC-CHECK] This may be transient propagation lag; a re-run / manual search is advised.")
+        return
+
+    def snapshot():
+        """Return (part_task_count, distinct_group_names) of the root subtree."""
+        tasks = _collect_root_subtree(root_gid, headers)
+        group_set: set[str] = set()
+        part_set: set[str] = set()
+        for t in tasks:
+            nm = t.get('name', '')
+            if nm == top_name or nm.endswith(f' - {project_name}'):
+                group_set.add(nm)
+            else:
+                part_set.add(nm)
+        return len(part_set), group_set
+
+    SHORT_MSG = ("  [CC-CHECK] Asana propagation may lag by up to 5 minutes after commit. "
+                 "Re-querying periodically before concluding...")
+
+    # Ladder 1: immediate query
+    part_found, groups_found = snapshot()
+    if part_found >= expected['part_count'] and expected['vendor_group_names'].issubset(
+            {g for g in groups_found if ' BOM - ' not in g}):
+        print(f"  [CC-CHECK] OK — {part_found} part task(s) found, matching the {expected['part_count']} expected.")
+        print(f"  [CC-CHECK] Vendor group tasks present: "
+              f"{len({g for g in groups_found if ' BOM - ' not in g})} of {len(expected['vendor_group_names'])} expected.")
+        print(f"{'='*60}")
+        return
+
+    print(SHORT_MSG)
+    print(f"  [CC-CHECK] (Still checking — expected {expected['part_count']} part tasks, "
+          f"found {part_found} so far.)")
+
+    # Ladder 2: wait -> re-search up to 5 minutes total
+    WAIT_TOTAL_SEC = 300      # 5 minutes
+    POLL_INT_SEC = 30         # re-query every 30s
+    attempts = 0
+    while part_found < expected['part_count'] or not expected['vendor_group_names'].issubset(
+            {g for g in groups_found if ' BOM - ' not in g}):
+        attempts += 1
+        if attempts * POLL_INT_SEC >= WAIT_TOTAL_SEC:
+            break
+        _time.sleep(POLL_INT_SEC)
+        part_found, groups_found = snapshot()
+
+    # Ladder 3: after the wait, if still short -> LOW-RISK WARNING only (never hard-fail)
+    vendor_found = {g for g in groups_found if ' BOM - ' not in g}
+    ok = (part_found >= expected['part_count']
+          and expected['vendor_group_names'].issubset(vendor_found))
+    if ok:
+        print(f"  [CC-CHECK] OK after {attempts * POLL_INT_SEC}s — {part_found} part task(s) of "
+              f"{expected['part_count']} expected; all vendor groups present.")
+    else:
+        missing_parts = max(0, expected['part_count'] - part_found)
+        missing_vendors = expected['vendor_group_names'] - vendor_found
+        print(f"\n  ⚠️  [CC-CHECK] POSSIBLE INCOMPLETE IMPORT — please investigate (not a hard failure).")
+        print(f"  [CC-CHECK] Expected {expected['part_count']} part task(s), only {part_found} found after "
+              f"{min(WAIT_TOTAL_SEC, attempts * POLL_INT_SEC)}s of re-querying.")
+        if missing_parts:
+            print(f"  [CC-CHECK] {missing_parts} part task(s) may be missing.")
+        if missing_vendors:
+            print(f"  [CC-CHECK] {len(missing_vendors)} expected vendor-group task(s) NOT found:")
+            for vg in sorted(missing_vendors):
+                print(f"      - {vg}")
+        print(f"  [CC-CHECK] Suggestion: re-search Asana for '{top_name}' (allow propagation time),")
+        print(f"  [CC-CHECK] then re-run Stage 5 (dry-run first) or manually complete the missing groups.")
+    print(f"{'='*60}")
 
 
 def _load_token() -> str | None:
@@ -203,8 +458,12 @@ def main():
         errors.append(f"--parts-folder not found: {parts_folder}")
     if not legacy_folder.exists():
         errors.append(f"Legacy BOM folder not found: {legacy_folder}")
-    if not GOLDEN_INDEX.exists():
-        errors.append(f"Golden Index not found: {GOLDEN_INDEX}")
+    if USE_DB_GOLDEN_INDEX:
+        if _rev6_count() == 0:
+            errors.append("Golden Index empty/unreachable: ops.db table golden_index_rev6 has 0 rows "
+                          "— run golden_index/build_golden_index.py then stage_golden_index.py --load-db")
+    elif not GOLDEN_INDEX.exists():
+        errors.append(f"Golden Index CSV not found (legacy path): {GOLDEN_INDEX}")
     if not token:
         errors.append("No Asana token found — set ASANA_PERSONAL_ACCESS_TOKEN env var or check ASANAconfig.json")
     
@@ -236,7 +495,11 @@ def main():
         print(f"  Asana URL     : {args.asana_url or '(not set)'}")
         proj_gid_display = args.project_gid or '848657415032331 (Build Orders — default, correct for standard BOM)'
         print(f"  Project GID   : {proj_gid_display}")
-        print(f"  Golden Index  : {'EXISTS ✓' if GOLDEN_INDEX.exists() else 'NOT FOUND ✗'}")
+        if USE_DB_GOLDEN_INDEX:
+            _n = _rev6_count()
+            print(f"  Golden Index  : golden_index_rev6 DB table — {_n} rows {'✓' if _n else '✗ (EMPTY!)'}")
+        else:
+            print(f"  Golden Index  : {GOLDEN_INDEX.name} (legacy CSV) {'EXISTS ✓' if GOLDEN_INDEX.exists() else 'NOT FOUND ✗'}")
         print(f"  Asana token   : {'FOUND ✓' if token else 'MISSING ✗'}")
         print(f"  Stop after    : Stage {args.stop_after}")
         print(f"  Commit mode   : {'COMMIT' if args.commit else 'DRY-RUN (safe)'}")
@@ -478,6 +741,17 @@ def main():
 
     # Update state on successful commit
     if args.commit:
+        # Post-commit completeness check — verify the created part/vendor-group
+        # tasks against the Stage 4 plan, tolerating up to 5 min of Asana
+        # propagation lag. Never hard-fails; on a short count it prints a
+        # low-risk warning for Giles to investigate and we proceed to the
+        # state-file update below.
+        try:
+            _run_completeness_check(args.project_name, args.project_gid or '848657415032331',
+                                    stage4_xlsx, token)
+        except Exception as e:
+            print(f"  [CC-CHECK] WARNING: completeness check could not complete: {e}")
+
         state_path = BASE / "pipeline_last_run.json"
         if state_path.exists():
             try:

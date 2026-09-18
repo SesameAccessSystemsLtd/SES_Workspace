@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  07/09/2026  13:46
+============================================================
+With:         - Purchasing 0118 227 7559
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call was an introductory discussion between Giles Hugo and Ben from Rebound Electronics, focusing on sourcing electronic components and manufacturing options for wheelchair lift projects. They discussed potential component sourcing, PCB development, and assembly services, with plans to exchange emails for detailed part lists.
+
+--- RECAP --------------------------------------------------
+Ben from Rebound Electronics inquired if Giles Hugo's company has stock issues for components used in designing and manufacturing wheelchair lifts; Giles confirmed there are no stock problems.Ben explained that Rebound is a global distributor of electronic components, capable of sourcing parts at better rates and locating components for PCB assembly, but does not manufacture PCBs or final products.Giles described three avenues: manufacturing panels with Siemens Logo 8.4s and relays, assembling low-stakes versions in-house by sourcing components, and developing a PCB with embedded logic and relays for data processing.Ben offered to help locate components and provide quotes, requesting a list of parts from Giles via email, and will send an introductory email about Rebound's services.Giles provided his email address (purchasing@sesameaccess.com) for sending the parts list, and both agreed to follow up via email to proceed with sourcing and quotes.
+
+--- TASKS --------------------------------------------------
+Ben from Rebound Electronics will send an introductory email with details of their services to Giles Hugo at purchasing@sesameaccess.com.Giles Hugo will reply with a list of parts he is seeking quotes for, to facilitate component sourcing and pricing.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  18/09/2026  09:00
+============================================================
+With:         Karol Porwol 303
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call between Karol Porwol and Giles Hugo focused on verifying actuator measurements and the assembly of aluminium slats, with discussions about drawing revisions and manufacturing issues. The main outcome was confirming that the actuators are correct and identifying a discrepancy in the slat assembly, which is being addressed.
+
+--- RECAP --------------------------------------------------
+Karol Porwol called Giles Hugo to discuss issues with aluminium slats and actuator measurements, aiming to clarify discrepancies and ensure correct assembly.Giles Hugo confirmed that the actuators are correct with a measurement of 280, but there is a mismatch in the slat assembly due to an extra slat, which is being investigated.It was clarified that the actuator measurements are accurate, and the issue with the slats involves an extra slat in the roller slat assembly, which is being examined for its origin and QC oversight.The drawing revision history was discussed, confirming that the latest drawing is Revision 1, issued after July 20th, and there was no Revision Zero; the original issue was Revision 1.The team agreed that production issues can be resolved by drilling two new holes to accommodate the extra slat, and the problem is considered closed after this solution.Giles Hugo will investigate why the wrong assembly measurement was sent and why the discrepancy was not identified earlier in QC.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will investigate why the incorrect assembly measurement was sent and why the discrepancy was not detected during QC.Karol Porwol will verify the order details and confirm the drawing revision used for manufacturing, ensuring it matches the latest Revision 1.
+
+(Full transcript: RC web portal only — no RingSense API)

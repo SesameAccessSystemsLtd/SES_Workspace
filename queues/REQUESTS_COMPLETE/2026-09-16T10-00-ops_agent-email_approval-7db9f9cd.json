@@ -1,0 +1,14 @@
+{
+  "request_id": "301c240c-e203-48d7-9644-8fb92a79d578",
+  "source": "email_approval_sheet",
+  "row_index": 20,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkurQnxAAA=",
+  "subject": "RE: Laser Cut BOM - 1569 - Brook Stage 6.UL MT Barrier - SQR-47129",
+  "task_gid": "1218498312356914",
+  "task_name": "Laser Cut BOM - 1569 - Brook Stage 6.UL MT Barrier",
+  "asana_url": "https://app.asana.com/0/0/1218498312356914",
+  "action": "(Matched via SQR in Local DB); [SQR-ledger] no SQR match for brad@exactprecision.co.uk; Update 'Price Ex VAT' to £230.90; Note added to description: Quote from Exactprecision - £230.90 (2026-09-16)",
+  "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> quote: RE: Laser Cut BOM - 1569 - Brook Stage 6.UL MT Barrier - SQR-47129\n- Update 'Price Ex VAT' to £230.90\n- Note added to description: Quote from Exactprecision - £230.90 (2026-09-16)\n\nReference: SQR-47129 · Received: 2026-09-16T07:57:52Z\nMatch basis: (Matched via SQR in Local DB); [SQR-ledger] no SQR match for brad@exactprecision.co.uk\nTask GID: 1218498312356914 · AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkurQnxAAA=\nhttps://app.asana.com/0/0/1218498312356914\n\ngiles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-16T10:00:58.599511+00:00"
+}

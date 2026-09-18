@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  09/09/2026  10:56
+============================================================
+With:         Paul Barker 07552 363776
+Forwarded by: LesV@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call appears to be an automated message prompting the recipient to press one for more options, with no further details provided. The overall purpose is to offer additional choices via phone menu.
+
+--- RECAP --------------------------------------------------
+Paul Barker's message instructs the recipient to press one to hear more options, indicating an automated phone system prompt.No additional information about the caller, purpose, or context is provided in the transcript.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

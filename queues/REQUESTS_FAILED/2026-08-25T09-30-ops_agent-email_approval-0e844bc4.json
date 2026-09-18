@@ -1,0 +1,14 @@
+{
+  "request_id": "1d6b1799-37e9-4cff-b650-f56789e81825",
+  "source": "email_approval_sheet",
+  "row_index": 26,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkdCACeAAA=",
+  "subject": "Re: Urgent Stainless brushed",
+  "task_gid": null,
+  "task_name": "NOT MATCHED",
+  "asana_url": "",
+  "action": "AMENDMENT (task not auto-matched — SAP must locate manually):\nthis is 21565-1555 - Aalco - steel profile tube order and we need to be identifying the sales quote number form suppliers so that we can track that also - along with supplier order number",
+  "comment_to_push": "NO AUTO-MATCH — manual review.\nEmail: Re: Urgent Stainless brushed\nReceived: 2026-08-24T13:48:06Z\nFound: type=quote, delivery=2026-08-25, vendor=aalco",
+  "decision": "M",
+  "created_at": "2026-08-25T09:30:57.571848+00:00"
+}

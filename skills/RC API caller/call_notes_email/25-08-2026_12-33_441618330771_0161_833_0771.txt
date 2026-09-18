@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  25/08/2026  12:33
+============================================================
+With:         +441618330771 0161 833 0771
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo from Sesame Access assisting a caller with van rental options, focusing on finding a van under 2 meters in height. The caller clarified the height specifications, and Giles provided details about available vans, confirming the height measurements.
+
+--- RECAP --------------------------------------------------
+Giles Hugo from Sesame Access discussed van rental options with a caller, seeking a van less than 2 meters in height and with a long wheelbase.The caller clarified that the long wheelbase vans are over 2 meters in height overall, approximately 2.56 meters, with an interior height of 1.93 meters.Giles confirmed the height details and provided information about the vans, concluding the call.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

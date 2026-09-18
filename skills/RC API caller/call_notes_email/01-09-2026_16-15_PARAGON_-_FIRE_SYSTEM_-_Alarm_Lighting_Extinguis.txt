@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  01/09/2026  16:15
+============================================================
+With:         PARAGON - FIRE SYSTEM - Alarm / Lighting / Extinguishers 01483 724484
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+Giles Hugo contacted PARAGON regarding a beeping fire alarm that has been active since last Friday. They discussed scheduling a service visit and potential troubleshooting options, including a phone diagnosis from the engineering manager.
+
+--- RECAP --------------------------------------------------
+Giles Hugo reported that the fire alarm at their premises has been beeping since last Friday and had been reset the previous Friday.PARAGON confirmed the alarm is a fire alarm and asked whether Giles wanted an immediate visit or to schedule one for tomorrow; they clarified that a call-out would be chargeable, costing 136 pounds during hours or 250 pounds out of hours.PARAGON's engineering manager, returning from holiday, can provide phone assistance to help silence the alarm, which Giles expressed interest in.Giles inquired about the cost of a call-out, and PARAGON provided the pricing details for both in-hours and out-of-hours service visits.
+
+--- TASKS --------------------------------------------------
+PARAGON's engineering manager will follow up with Giles to provide phone troubleshooting assistance to silence the fire alarm.
+
+(Full transcript: RC web portal only — no RingSense API)

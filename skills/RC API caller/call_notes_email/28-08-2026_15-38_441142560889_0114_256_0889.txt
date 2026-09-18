@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  28/08/2026  15:38
+============================================================
+With:         +441142560889 0114 256 0889
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo discussing a custom order for an oversized PTFE sheet with a contact at +441142560889, focusing on dimensions and manufacturing options. The outcome was that Giles will check internally about splitting the sheet and follow up accordingly.
+
+--- RECAP --------------------------------------------------
+Giles Hugo received a request from +441142560889 for an oversized PTFE sheet measuring 1.6 meters in length, 1.2 meters in width, and 3 millimeters in thickness.The sheet's dimensions are unusual, and the contact suggested sending it to manufacturers for quotes or considering splitting the sheet in-house to meet size constraints.Giles indicated he would look into whether the sheet can be split and will follow up after checking internally.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will check in-house to determine if the PTFE sheet can be split to meet size requirements.
+
+(Full transcript: RC web portal only — no RingSense API)

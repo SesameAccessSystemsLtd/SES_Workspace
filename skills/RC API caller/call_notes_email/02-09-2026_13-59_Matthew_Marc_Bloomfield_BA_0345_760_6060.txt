@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  02/09/2026  13:59
+============================================================
+With:         Matthew Marc Bloomfield BA 0345 760 6060
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Fatima Barros reporting an issue with receiving OTPs on a company credit card. The HSBC agent explained that OTPs are sent to the cardholder's linked personal profile and advised that the cardholder, Steve, needs to call in to verify and update his personal details. The call concluded with plans for Steve to contact HSBC directly.
+
+--- RECAP --------------------------------------------------
+Fatima Barros reported that OTPs are not being received on a company credit card linked to Stephen Lions, which has worked previously but stopped recently.The HSBC agent explained that OTPs are sent to the personal profile associated with the card, which is linked to the cardholder's personal bank account and contact details.The agent advised that Steve needs to call HSBC to verify and update his personal profile details if necessary, especially to ensure the correct contact number is linked.It was confirmed that Steve does not have any other personal HSBC products, only the business credit card.The call concluded with Fatima Barros agreeing to have Steve call HSBC to resolve the OTP issue.
+
+--- TASKS --------------------------------------------------
+Fatima Barros will inform Steve to call HSBC to verify and update his personal profile details, including the contact number linked to his credit card.
+
+(Full transcript: RC web portal only — no RingSense API)

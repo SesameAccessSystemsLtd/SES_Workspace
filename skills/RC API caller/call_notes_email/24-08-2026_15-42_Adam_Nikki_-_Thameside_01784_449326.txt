@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  24/08/2026  15:42
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo discussing equipment issues and orders with Adam/Nikki from Thameside, including damaged parts, machining details, and delivery updates. The overall outcome was agreement on equipment usability and scheduling for upcoming deliveries.
+
+--- RECAP --------------------------------------------------
+Adam/Nikki from Thameside reported a broken tap on a piece of equipment, which is deeply embedded and difficult to remove, and discussed the condition of a spare part with additional machining, confirming it is not seen and can be used.Giles Hugo confirmed that the spare part is acceptable if it is not visible, and discussed the purpose of the equipment, which is a ram holder for holding a ram with two bearings, with minor machining imperfections deemed acceptable.Adam/Nikki expressed frustration with the complexity and cost of machining the parts, noting the operations are extensive and challenging, and suggested considering alternative manufacturing methods.The team discussed the completion and delivery schedule of parts, with some items expected to be finished the following afternoon and others to be brought over, including aluminum components.Giles Hugo inquired about the arrival of an aluminum order, which was confirmed to have arrived on August 12th and was processed the same day, with plans to send it over.They coordinated on delivery logistics, with Giles Hugo planning to have someone from their team pick up the parts the next day, depending on availability.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will arrange for someone to pick up the parts tomorrow, aiming for readiness by Wednesday.Giles Hugo will confirm with Danny to facilitate the pickup today, before Danny leaves.
+
+(Full transcript: RC web portal only — no RingSense API)

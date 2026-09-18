@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  08/09/2026  16:39
+============================================================
+With:         Ctm IT SUPPORT 0330 500 1215
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+Giles from Sesame Access Systems contacted Ctm IT Support to report email delivery issues involving specific emails from Brad at Exact Precision and support at Ring Central. The support technician agreed to investigate the email and Ring Central issues remotely and follow up via email.
+
+--- RECAP --------------------------------------------------
+Giles reported that emails from Brad at exactprecision.co.uk and support at ringcentral.com have not been received in his inbox, despite being present in call logs and notifications, indicating potential email delivery or synchronization issues.Giles requested Ctm IT Support to remotely investigate whether the problem is local to his Outlook client or related to the Exchange server, and to check the Ring Central email notifications.Giles is currently away from his computer, on his way home, and asked the technician to perform preliminary checks and send an email update once the issue is assessed, so he can follow up in the morning.
+
+--- TASKS --------------------------------------------------
+Ctm IT Support will remotely access Giles's device to determine if the email issue is local or server-related.Ctm IT Support will investigate the email delivery problem for both the specific emails and Ring Central notifications.Ctm IT Support will send an email update to Giles with findings and next steps once the investigation is complete.
+
+(Full transcript: RC web portal only — no RingSense API)

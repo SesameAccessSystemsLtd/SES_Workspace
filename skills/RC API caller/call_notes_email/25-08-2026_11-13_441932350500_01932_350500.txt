@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  25/08/2026  11:13
+============================================================
+With:         +441932350500 01932 350500
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a voicemail from Enterprise rental car, providing hours and location information and instructing the recipient to press 1 for more details. No further actions or outcomes were discussed.
+
+--- RECAP --------------------------------------------------
+The caller, Enterprise rental car, left a voicemail message for the recipient.The purpose of the call was to provide hours and location information for Enterprise rental car.The message instructed the recipient to press 1 to listen to the entire message and to obtain hours and location details.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

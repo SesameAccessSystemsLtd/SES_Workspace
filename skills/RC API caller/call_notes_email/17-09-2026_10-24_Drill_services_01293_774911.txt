@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  17/09/2026  10:24
+============================================================
+With:         Drill services 01293 774911
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Fatima Barros from Sesame Access confirming the company's new bank details with Drill Services, who clarified that payments should now be made to their Revolut account instead of the old RBS account. The call aimed to ensure correct payment details are used moving forward.
+
+--- RECAP --------------------------------------------------
+Fatima Barros from Sesame Access contacted Drill Services to confirm their current bank details for payments, as they had received an invoice indicating a different account from the one they used previously.Drill Services confirmed that they have changed their bank account to a Revolut account, with the details: sort code 230120 and account number 10909285, and advised not to pay into the old RBS account as they no longer have access to it.Drill Services explained that the invoice's bank details are outdated and that payments should now be directed to the Revolut account to avoid issues with funds not being received.Fatima expressed confusion over the differing bank details on the invoice and requested confirmation via email, which Drill Services agreed to pass on after the call.
+
+--- TASKS --------------------------------------------------
+Drill Services to send an email confirming the updated bank details: sort code 230120 and account number 10909285, to Fatima Barros at Sesame Access.
+
+(Full transcript: RC web portal only — no RingSense API)

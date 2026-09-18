@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  02/09/2026  13:57
+============================================================
+With:         Richard - Goodman steel 0118 956 1212
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call was a coordination between Giles Hugo and Richard from Goodman Steel regarding a delivery scheduled for tomorrow, confirming order details and delivery preferences. The main outcome was agreement on delivering uncut stock lengths to facilitate length verification upon arrival.
+
+--- RECAP --------------------------------------------------
+Giles Hugo informed Richard that a purchase order (PO) had been sent and confirmed the delivery scheduled for the next day, requesting Richard to proceed with the delivery.Richard confirmed receipt of the PO and agreed to deliver uncut stock lengths to allow for length verification and adjustments upon arrival.Both parties discussed whether to cut the stock beforehand; Richard indicated it was easier to deliver uncut stock, and Giles agreed to this approach.Richard will send the stock lengths for both ends to Giles to facilitate the process.
+
+--- TASKS --------------------------------------------------
+Richard from Goodman Steel will send the stock lengths for both ends to Giles Hugo to assist with length verification.
+
+(Full transcript: RC web portal only — no RingSense API)

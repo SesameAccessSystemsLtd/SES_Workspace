@@ -1,0 +1,14 @@
+{
+  "mode": "DRY-RUN",
+  "generated_at": "2026-09-11T22:55:18.393487+00:00",
+  "targets": [],
+  "summary": {
+    "checked": 25,
+    "skipped": {
+      "done": 15,
+      "not_a_pack": 147,
+      "no_weld": 0,
+      "weld_open": 25
+    }
+  }
+}

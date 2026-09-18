@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  01/09/2026  16:06
+============================================================
+With:         Alison Lyons 306
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Alison Lyons requesting Giles Hugo to address a persistent fire alarm beeping issue, discussing previous attempts to reset it, and arranging for an electrician to inspect it later. Giles provided updates on the system and suggested resetting it temporarily, with plans to follow up with the fire inspectors and electrician.
+
+--- RECAP --------------------------------------------------
+Alison Lyons reported that the fire alarm was beeping again and asked Giles Hugo about the location of the key to reset it; Giles explained he had recently reset the system by using the key and pressing reset.The fire alarm displayed a general fault related to the power supply, but Giles confirmed the system still had power, checked the fuse, and suspected a possible fault with the alarm or system, deciding to monitor it by turning it back on.Alison suggested involving an electrician, Peter, who had been in the building recently, to inspect the alarm; Giles confirmed Peter was there but did not ask him to look at the alarm, and noted that the fire inspectors had recently conducted an inspection.Alison offered to send Giles the fire inspection contact details for him to arrange a follow-up; Giles agreed to call them and inquire about the inspection and potential repairs.Giles provided instructions on how to reset the alarm using the control panel and key, but the alarm continued to beep after multiple attempts, indicating the issue persisted.Giles mentioned he was currently outside with his children and not at the office, planning to leave the alarm beeping for the day and to follow up with the electrician and fire inspectors tomorrow.
+
+--- TASKS --------------------------------------------------
+Alison Lyons will send Giles the contact details for the fire inspectors and ask him to call them tomorrow to arrange an inspection.Giles Hugo will contact the fire inspectors and the electrician (Peter) to have the alarm inspected and repaired as needed, following up on the previous inspection and current fault.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -12,7 +12,7 @@ ORDER_PICK logic:
   PICK  -- Stock QTY >= BOM item qty (can fulfil from current stock)
   ORDER -- Stock QTY < BOM item qty OR no KAN match (must purchase)
 
-Low Stock Alert = YES if remaining < min Stock QTY (flag to replenish even if PICK)
+Low Stock Alert = YES if remaining < Trigger Order QTY (flag to replenish even if PICK)
 
 Usage:
     python 03_stock_check.py --input bom_with_kan.csv --output bom_stock_check.csv
@@ -21,7 +21,7 @@ Usage:
 Custom field GIDs (KANBAN project):
     KAN              : 1206590288351824
     STOCK QTY        : 1126782469949969
-    Trigger Order QTY: 1198179728033183
+    Trigger Order QTY: 1198179728033183   <-- read for the Low Stock threshold
 """
 
 import argparse
@@ -37,7 +37,7 @@ from asana_updater import AsanaUpdater
 
 KAN_FIELD_GID       = '1206590288351824'
 STOCK_QTY_GID       = '1126782469949969'
-MIN_STOCK_GID       = '1198179728033183'
+TRIGGER_QTY_GID     = '1198179728033183'   # Asana field is "Trigger Order QTY" — the replenish (low-stock) threshold
 KANBAN_PROJECT_GID  = '632603478911321'
 TASK_BASE_URL       = f'https://app.asana.com/0/{KANBAN_PROJECT_GID}'
 
@@ -65,7 +65,7 @@ def find_task_by_kan(updater, workspace_gid, kan, pause):
 def _empty(status):
     return {
         'Asana Task GID': '', 'Asana Task URL': '', 'Asana Task Name': '',
-        'Asana Task Description': '', 'Stock QTY': '', 'min Stock QTY': '',
+        'Asana Task Description': '', 'Stock QTY': '', 'Trigger Order QTY': '',
         'Remaining after BOM': '', 'Low Stock Alert': '',
         'ORDER_PICK': 'ORDER', 'Stock Check Status': status,
     }
@@ -141,12 +141,12 @@ def main():
             continue
 
         stock_qty = AsanaUpdater.extract_custom_field_value(full, STOCK_QTY_GID)
-        min_qty   = AsanaUpdater.extract_custom_field_value(full, MIN_STOCK_GID)
+        trig_qty  = AsanaUpdater.extract_custom_field_value(full, TRIGGER_QTY_GID)
         stock_qty = float(stock_qty) if stock_qty is not None else 0.0
-        min_qty   = float(min_qty)   if min_qty   is not None else 0.0
+        trig_qty  = float(trig_qty)  if trig_qty  is not None else 0.0
 
         remaining = stock_qty - bom_qty
-        low_alert = 'YES' if remaining < min_qty else 'NO'
+        low_alert = 'YES' if remaining < trig_qty else 'NO'
         op        = order_or_pick(stock_qty, bom_qty)
 
         status = ''
@@ -163,7 +163,7 @@ def main():
             'Asana Task Name':        task_name,
             'Asana Task Description': task_notes,
             'Stock QTY':              stock_qty,
-            'min Stock QTY':          min_qty,
+            'Trigger Order QTY':      trig_qty,
             'Remaining after BOM':    remaining,
             'Low Stock Alert':        low_alert,
             'ORDER_PICK':             op,
@@ -172,7 +172,7 @@ def main():
         totals[op] += 1
         print(f"  [{op:5}] {task_name[:38]:40} | "
               f"Stk={stock_qty:.0f} BOM={bom_qty:.0f} "
-              f"Rem={remaining:.0f} Min={min_qty:.0f} LowAlert={low_alert}")
+              f"Rem={remaining:.0f} Trig={trig_qty:.0f} LowAlert={low_alert}")
 
     result_df = pd.DataFrame(rows_out)
     for col in result_df.columns:

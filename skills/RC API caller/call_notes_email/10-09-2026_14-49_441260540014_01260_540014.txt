@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  10/09/2026  14:49
+============================================================
+With:         +441260540014 01260 540014
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo requesting a change from an incorrect SDR version to a DRS version of a network device, which was unavailable in stock. The order was canceled, and a refund process was initiated. The call concluded with confirmation that the refund would be processed within 3 to 5 working days.
+
+--- RECAP --------------------------------------------------
+Giles Hugo placed an order for a DRS version of a network device with order number ending in 12862 but received the SDR version instead.The customer service representative confirmed that the DRS version was not in stock and suggested that the only available option was the SDR version, which did not meet Giles's requirements.Giles explained that the device needed a network port for their purposes and requested to cancel the original order and process a refund.The representative agreed to cancel the order and initiate a refund, which would be processed within 3 to 5 working days, and confirmed that a credit note or proof of refund would be sent once completed.
+
+--- TASKS --------------------------------------------------
+Customer service representative to process the cancellation of Giles Hugo's order and ensure the refund is initiated, expected within 3 to 5 working days.Customer service representative to send proof of credit or refund to Giles Hugo once the refund has been processed.
+
+(Full transcript: RC web portal only — no RingSense API)

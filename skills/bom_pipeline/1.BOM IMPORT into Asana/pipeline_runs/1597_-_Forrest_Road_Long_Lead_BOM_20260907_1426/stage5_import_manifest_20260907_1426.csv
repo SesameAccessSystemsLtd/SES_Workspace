@@ -1,0 +1,59 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1597 - Forrest Road Long Lead BOM,"Master task for all BOMs related to 1597 - Forrest Road Long Lead BOM
+Dropbox: https://www.dropbox.com/scl/fo/9wdyzi1jg36besyj5cr1a/APFdfnPg3nLNmDJssw8N7Ro?rlkey=zoa7mdbnb0ar6su6yn9fymjxs&dl=0
+Project: https://app.asana.com/1/357939803556123/task/1218222812952212",,,,,,,,,,
+Long Leading BOM - 1597 - Forrest Road Long Lead BOM,,ALL BOMS - 1597 - Forrest Road Long Lead BOM,,Long Leading,,,,,,,
+JAJO - 1597 - Forrest Road Long Lead BOM,,Long Leading BOM - 1597 - Forrest Road Long Lead BOM,,JAJO,,,,,,,
+1 off 1597. 1008.D1.MachineRoomCabinet - Machine Room Cabinet JAJO,"1597.1008.D1.MachineRoomCabinet
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/9wdyzi1jg36besyj5cr1a/APFdfnPg3nLNmDJssw8N7Ro?rlkey=zoa7mdbnb0ar6su6yn9fymjxs&dl=0
+Mass: 65.047 kg
+Volume: 32600029.037 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952212",JAJO - 1597 - Forrest Road Long Lead BOM,1,JAJO,,,,ORDER,PROJECT ORDER,1218240883843340,https://app.asana.com/0/848657415032331/1218240883843340
+Hydraulic Supplier - 1597 - Forrest Road Long Lead BOM,,Long Leading BOM - 1597 - Forrest Road Long Lead BOM,,Hydraulic Supplier,,,,,,,
+1 off 1597. 1008.D1.MotorPumpUnit - TBC by Karol - Spec as per PLC BOM Hydraulic Supplier,"1597.1008.D1.MotorPumpUnit
+Material: Generic
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/9wdyzi1jg36besyj5cr1a/APFdfnPg3nLNmDJssw8N7Ro?rlkey=zoa7mdbnb0ar6su6yn9fymjxs&dl=0
+Mass: 14.000 kg
+Volume: 14000247.356 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952212",Hydraulic Supplier - 1597 - Forrest Road Long Lead BOM,1,Hydraulic Supplier,,,,ORDER,PROJECT ORDER,1218241144656609,https://app.asana.com/0/848657415032331/1218241144656609
+Related Fluid - 1597 - Forrest Road Long Lead BOM,,Long Leading BOM - 1597 - Forrest Road Long Lead BOM,,Related Fluid,,,,,,,
+1 off 1597. 1008.H6(RF SES447424) - Valve Block (2 function) RF SES447424 Related Fluid,"1597.1008.H6(RF SES447424)
+Stock Number: RF SES447424
+Material: Generic
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/9wdyzi1jg36besyj5cr1a/APFdfnPg3nLNmDJssw8N7Ro?rlkey=zoa7mdbnb0ar6su6yn9fymjxs&dl=0
+Mass: 1.927 kg
+Volume: 1927464.015 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952212",Related Fluid - 1597 - Forrest Road Long Lead BOM,1,Related Fluid,,,,ORDER,PROJECT ORDER,1218240883985422,https://app.asana.com/0/848657415032331/1218240883985422
+ABCO - 1597 - Forrest Road Long Lead BOM,,Long Leading BOM - 1597 - Forrest Road Long Lead BOM,,ABCO,,,,,,,
+"1 off 1597. 1010.I.Actuator - CC:450.5 mm/ Stroke: 267.5 mm, Single act. Ram ABCO","1597.1010.I.Actuator
+Web Link: www.abcohydraulics.co.uk
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/9wdyzi1jg36besyj5cr1a/APFdfnPg3nLNmDJssw8N7Ro?rlkey=zoa7mdbnb0ar6su6yn9fymjxs&dl=0
+Mass: 2.653 kg
+Volume: 2652936.236 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952212",ABCO - 1597 - Forrest Road Long Lead BOM,1,ABCO,,,,ORDER,PROJECT ORDER,1218241011291509,https://app.asana.com/0/848657415032331/1218241011291509
+"1 off 1597. 1010.I.Actuator_MIR - CC:450.5 mm/ Stroke: 267.5 mm, Single act. Ram ABCO","1597.1010.I.Actuator_MIR
+Web Link: www.abcohydraulics.co.uk
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/9wdyzi1jg36besyj5cr1a/APFdfnPg3nLNmDJssw8N7Ro?rlkey=zoa7mdbnb0ar6su6yn9fymjxs&dl=0
+Mass: 2.653 kg
+Volume: 2652936.236 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952212",ABCO - 1597 - Forrest Road Long Lead BOM,1,ABCO,,,,ORDER,PROJECT ORDER,1218240996300526,https://app.asana.com/0/848657415032331/1218240996300526
+Hydraulics Supplier - 1597 - Forrest Road Long Lead BOM,,Long Leading BOM - 1597 - Forrest Road Long Lead BOM,,Hydraulics Supplier,,,,,,,
+1 off 1597. 7110.C.TraversingActuator - Traversing Platform Ram Hydraulics Supplier,"1597.7110.C.TraversingActuator
+Web Link: interfluid.co.uk
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/9wdyzi1jg36besyj5cr1a/APFdfnPg3nLNmDJssw8N7Ro?rlkey=zoa7mdbnb0ar6su6yn9fymjxs&dl=0
+Mass: 3.195 kg
+Volume: 3194926.091 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952212",Hydraulics Supplier - 1597 - Forrest Road Long Lead BOM,1,Hydraulics Supplier,,,,ORDER,PROJECT ORDER,1218241011217545,https://app.asana.com/0/848657415032331/1218241011217545
+1 off 1597. 7110.C.TraversingActuator_MIR - Traversing Platform Ram Hydraulics Supplier,"1597.7110.C.TraversingActuator_MIR
+Web Link: interfluid.co.uk
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/9wdyzi1jg36besyj5cr1a/APFdfnPg3nLNmDJssw8N7Ro?rlkey=zoa7mdbnb0ar6su6yn9fymjxs&dl=0
+Mass: 3.195 kg
+Volume: 3194926.091 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952212",Hydraulics Supplier - 1597 - Forrest Road Long Lead BOM,1,Hydraulics Supplier,,,,ORDER,PROJECT ORDER,1218241145022664,https://app.asana.com/0/848657415032331/1218241145022664

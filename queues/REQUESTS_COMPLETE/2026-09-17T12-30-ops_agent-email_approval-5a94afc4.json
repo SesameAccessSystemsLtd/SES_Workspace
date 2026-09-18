@@ -1,0 +1,14 @@
+{
+  "request_id": "b18b957e-588f-4c0d-8681-1148d0ac0285",
+  "source": "email_approval_sheet",
+  "row_index": 24,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkvlrnkAAA=",
+  "subject": "Booking Confirmation for #8153291",
+  "task_gid": "1218572072080032",
+  "task_name": "21650-1591 - Romans flatback for Uni of Cambridge",
+  "asana_url": "https://app.asana.com/0/0/1218572072080032",
+  "action": "(Matched via PO Number in Local DB); [SQR-ledger] no SQR match for sales@romanselfdrive.co.uk; Update delivery date to 2026-09-21; Update ORDER Status to 'On Order - Delivery Date Confirmed'; Update 'Price Ex VAT' to £148.00; Note added to description: Order_Confirmation from Romanselfdrive - £148.00 (2026-09-17)",
+  "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> order_confirmation: Booking Confirmation for #8153291\n- Update delivery date to 2026-09-21\n- Update ORDER Status to 'On Order - Delivery Date Confirmed'\n- Update 'Price Ex VAT' to £148.00\n- Note added to description: Order_Confirmation from Romanselfdrive - £148.00 (2026-09-17)\n\nReference: 21650-1591 · Received: 2026-09-17T07:25:16Z\nMatch basis: (Matched via PO Number in Local DB); [SQR-ledger] no SQR match for sales@romanselfdrive.co.uk\nTask GID: 1218572072080032 · AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkvlrnkAAA=\nhttps://app.asana.com/0/0/1218572072080032\n\ngiles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-17T12:30:39.525433+00:00"
+}

@@ -12,6 +12,15 @@ When a new skill is created, add it here immediately.
 
 ## Custom Skills (`/workspace/skills/`)
 
+- **skill: `purchasing` - parts impact + improvement engine**
+  - **Location:** `C:/Users/GilesHugo/SES_Workspace/skills/purchasing/`
+  - **Operations manual:** `PIPELINE_OPS.md` - READ THIS FIRST before changing anything in the purchasing pipeline. Covers what the system is for, the schema it owns, how to test and validate, how to maintain it, seven traps that were real defects, and the domain rules that shape the design.
+  - **Description:** Scores every live build pack for supply risk and forecasts a production date where Asana has none; harvests friction from 17 sources into a case register that closes only on a measured metric move; issues PO numbers atomically and adopts ones typed by hand.
+  - **Entry points:** `impact_engine.py [--dry-run|--report|--project NNNN]` (nightly 01:05) - `improvement_engine.py --run|--report|--stage` (nightly 01:20) - `po_number_allocator.py --seed|--reserve|--confirm|--void|--rebind|--status` - `validate_pipeline.py` (read-only, 22 assertions, exit 1 on FAIL).
+  - **Validation baseline (2026-09-11):** PASS 18 - WARN 4 - FAIL 0. The four WARNs are decisions awaiting Giles, not faults.
+  - **Schema:** owns `part_supply_events`, `production_impact`, `improvement_cases`, `improvement_observations`, `metric_snapshots`, `po_number_ledger`. Migration `skills/sql_db/scripts/migrate_impact_engine.py` (additive, idempotent).
+  - **Ordering constraint:** mirror sync 01:00 -> impact 01:05 -> improvement 01:20. The improvement engine harvests the impact engine's output; running it first gives a stale register that looks fine.
+
 - **skill: `legacy_bom_pack_allocation`**
   - **Location:** `C:\Users\GilesHugo\SES_Workspace\skills\legacy_bom_pack_allocation\`
   - **Description:** Allocate the correct build-pack GID to already-imported `parts_control` parts from a design-team Legacy BOM folder, replacing free-text pack links with verified GIDs. **Pack allocation, NOT BOM import** (that is `bom_pipeline`). Filename = pack; targets the Build Schedule pack, excludes the `.DRAWING` variant and design artifacts (`_MIR`, in-house welds, fasteners). `--scan` is read-only; `--commit` dual-writes ops.db (`build_assembly_pack_gid` via `db_writer`) + Asana `Build Packs reference` (via `asana_batch_updater`) from a reviewed stage file. HITL before any write.

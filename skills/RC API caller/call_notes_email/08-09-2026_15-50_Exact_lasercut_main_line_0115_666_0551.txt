@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  08/09/2026  15:50
+============================================================
+With:         Exact lasercut main line 0115 666 0551
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a follow-up call between Giles Hugo and Brad from Exact Lasercut to confirm order details, address email communication issues, and arrange the shipment of parts. The main outcome was that Brad will send the two requested parts and test email functionality, with plans to include these parts in the next order.
+
+--- RECAP --------------------------------------------------
+Giles Hugo contacted Brad to confirm order details for two parts, 1365.003 and 1365.0002, which have already been made and only need to be remade for a new order, with Brad noting they are 20mm thick and will be included in the next shipment.Brad will send the two parts and test email communication by sending a new email to Giles to verify receipt, as Giles has not been receiving Brad's emails despite confirming other emails are coming through.Giles requested that Brad include one of each part in the current parcel to be shipped with the next order, and Brad agreed to do so, planning to add these parts to the upcoming shipment.Brad will double-check email issues on his side to ensure communication is functioning properly, as there is concern about email delivery problems.The call concluded with mutual agreement that Brad will handle the order and email testing, and both expressed satisfaction with the plan.
+
+--- TASKS --------------------------------------------------
+Brad will send the two requested parts (1365.003 and 1365.0002) and include one of each in the upcoming shipment.Brad will create and send a test email to Giles to verify email receipt and troubleshoot the email communication issue.
+
+(Full transcript: RC web portal only — no RingSense API)

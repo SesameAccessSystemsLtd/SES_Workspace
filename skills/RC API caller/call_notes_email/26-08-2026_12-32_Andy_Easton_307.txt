@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  26/08/2026  12:32
+============================================================
+With:         Andy Easton 307
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved updates on quotes, project parts, equipment maintenance, and upcoming
+
+--- RECAP --------------------------------------------------
+Giles Hugo received and reviewed multiple quotes from IDL, noting inconsistencies and the need for proper referencing in email chains, and discussed the addition of a platform and the breakdown of parts for the mod project, requesting drawings for pricing.Andy Easton confirmed the addition of three black fryers, explained their origin, and agreed to send drawings for the parts, including the black fryers and old war office components, to facilitate volume calculations.Andy Easton reported a problem with the forklift batteries, identified damage likely caused by mishandling, and arranged for a replacement battery quote from Midland Battery Services, with a planned installation next week after September 1st, avoiding Tuesday.Andy Easton mentioned pending receipt of laser-cut parts from Laser Shape and coordination for equipment delivery times.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will follow up with IDL to ensure quotes are consistent and properly referenced in email chains.Andy Easton will send drawings for the black fryers, old war office parts, and other components to Giles Hugo for pricing and volume calculations.Andy Easton will coordinate with Midland Battery Services to order and schedule installation of the forklift battery replacement, aiming for Wednesday or Thursday after September 1st.Giles Hugo will confirm delivery times for laser-cut parts from Laser Shape and update Andy Easton accordingly.
+
+(Full transcript: RC web portal only — no RingSense API)

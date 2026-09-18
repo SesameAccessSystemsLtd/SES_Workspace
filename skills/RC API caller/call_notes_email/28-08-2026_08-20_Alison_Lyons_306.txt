@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  28/08/2026  08:20
+============================================================
+With:         Alison Lyons 306
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+Giles Hugo contacts Alison Lyons regarding the urgent reset of fire alarms downstairs, which requires access to a fire cabinet key stored in a locked drawer. They discuss the location and access procedures for the key and consider options for key storage and backup.
+
+--- RECAP --------------------------------------------------
+Giles Hugo reports an urgent issue with beeping fire alarms downstairs that need to be reset, but the key to the fire cabinet is kept in a locked drawer he does not have access to.Alison Lyons explains that the key to the drawer is a green key located under her keyboard, which opens a drawer containing a white key labeled 'fire' for the fire cabinet on the back wall, where fire documents and keys are stored.Giles Hugo plans to access the fire cabinet using the white key, retrieve the fire key, and reset the alarms, then return and lock the cabinet afterward.They discuss the possibility of obtaining a second key for the fire cabinet to allow easier access in future emergencies, and consider storing the key with the van keys or in a location accessible to both parties.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will access the fire cabinet using the white key, reset the fire alarms, and then return and lock the cabinet.Giles Hugo will ask if a second key can be obtained for the fire cabinet to facilitate future access.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,31 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1365 - Serjeants Inn Entire BOM,"Master task for all BOMs related to 1365 - Serjeants Inn Entire BOM
+Dropbox: https://www.dropbox.com/scl/fo/ffexwa6zm15suet93jj9v/AGP88yonzbdrgWl8gn-VC0s?rlkey=4ifbhfibf1tb3ozcgn1cwouhu&dl=0
+Project: https://app.asana.com/1/357939803556123/task/1217161966835154",,,,,,,,,,
+Laser Cut BOM - 1365 - Serjeants Inn Entire BOM,,ALL BOMS - 1365 - Serjeants Inn Entire BOM,,Laser Cut,,,,,,,
+Laser Cut - 1365 - Serjeants Inn Entire BOM,,Laser Cut BOM - 1365 - Serjeants Inn Entire BOM,,Laser Cut,,,,,,,
+1 off 1365. 1014.R.002 - Gate stopper flange Laser Cut,"1365.1014.R.002
+Material: Steel, Mild
+Thickness: 20.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ffexwa6zm15suet93jj9v/AGP88yonzbdrgWl8gn-VC0s?rlkey=4ifbhfibf1tb3ozcgn1cwouhu&dl=0
+Mass: 0.368 kg
+Volume: 46931.614 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1217161966835154",Laser Cut - 1365 - Serjeants Inn Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217542015545927,https://app.asana.com/0/848657415032331/1217542015545927
+1 off 1365. 1014.R.003 - Gate stopper clamp Laser Cut,"1365.1014.R.003
+Material: Steel, Mild
+Thickness: 20.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ffexwa6zm15suet93jj9v/AGP88yonzbdrgWl8gn-VC0s?rlkey=4ifbhfibf1tb3ozcgn1cwouhu&dl=0
+Mass: 0.149 kg
+Volume: 18919.691 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1217161966835154",Laser Cut - 1365 - Serjeants Inn Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217542161706837,https://app.asana.com/0/848657415032331/1217542161706837
+2 off 1365. 1014.R.004 - Packer 304/2B Laser Cut,"1365.1014.R.004
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ffexwa6zm15suet93jj9v/AGP88yonzbdrgWl8gn-VC0s?rlkey=4ifbhfibf1tb3ozcgn1cwouhu&dl=0
+Mass: 0.003 kg
+Volume: 332.949 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1217161966835154",Laser Cut - 1365 - Serjeants Inn Entire BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217542186985349,https://app.asana.com/0/848657415032331/1217542186985349

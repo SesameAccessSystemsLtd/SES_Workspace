@@ -303,3 +303,4 @@ Keeping it updated means future imports auto-route those parts to PICK rather th
 | Steel Profile BOM has no Cost Centre column | All Steel Profile parts dropped | Manually add Cost Centre column before running |
 | `_MIR` parts | Won't match Golden Index — expected, go to ORDER | Not a bug |
 | No Asana token | Stage 3 fails | Set `ASANA_PERSONAL_ACCESS_TOKEN` env var or check `ASANAconfig.json` |
+| A leaked `PYTHONPATH` (uv-tool `hermes-agent\Lib\site-packages`) shadows the venv's numpy with a cp311 copy | Stage 1 fails: `Unable to import required dependency numpy` (ModuleNotFoundError `_multiarray_umath`) | Run with that var cleared: `env -u PYTHONPATH` before the SES_Workspace venv python — fixes it for a Python 3.13 venv |

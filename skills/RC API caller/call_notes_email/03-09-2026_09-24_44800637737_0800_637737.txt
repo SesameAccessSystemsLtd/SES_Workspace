@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  03/09/2026  09:24
+============================================================
+With:         +44800637737 0800 637737
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles from Sesame Access discussing invoice discrepancies with Ella Creed from Air Liquide UK. Due to a backlog, customer service is unavailable by phone, and Giles was advised to contact them via email. The main issue was confusion over the number of canisters ordered versus invoiced, with Giles seeking clarification.
+
+--- RECAP --------------------------------------------------
+Giles from Sesame Access called Air Liquide UK to clarify discrepancies between three invoices and a credit note related to canister orders, totaling 74 canisters invoiced and 35 credited, while only 22 canisters were reportedly ordered.Ella Creed informed Giles that customer service is currently unavailable by phone due to a backlog and recommended contacting them via email for existing queries or updates.Giles expressed concern over the confusion caused by multiple invoices and credit notes, and asked for clarification on the situation.Ella explained that the backlog is due to a high volume of queries and that their team is working through it, which is why Giles received an update.Giles decided to send an email to customer service for further clarification and concluded the call.
+
+--- TASKS --------------------------------------------------
+Giles from Sesame Access will send an email to Air Liquide UK customer service to seek clarification on the invoice and credit note discrepancies.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  28/08/2026  11:41
+============================================================
+With:         +441752844113 01752 844113
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a brief call from Terry at Bearing Options to Joe, inquiring about the status of a quote for split bearings. The call ended with a system failure, leaving the status unconfirmed.
+
+--- RECAP --------------------------------------------------
+Terry from Bearing Options called Joe to follow up on a quote for split bearings, but the current status of the quote was not provided during the call.The call was interrupted by a system failure, and no further details or outcomes were established.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

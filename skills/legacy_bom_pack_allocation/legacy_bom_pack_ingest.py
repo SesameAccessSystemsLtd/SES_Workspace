@@ -83,20 +83,37 @@ def _like_escape(s: str) -> str:
 
 
 # ── pack resolution ─────────────────────────────────────────────────────────
+def _normalise_stem(file_stem: str) -> str:
+    """Strip trailing revision/version/suffix markers from a legacy-BOM file stem
+    so it can match the Build Schedule pack_reference.
+
+    Langley 1037 showed two failure modes (2026-08-17):
+      * '1037.1014.M.Gate+Support_rev2'  -> should match '1037.1014.M.Gate+Support.'
+      * '1037.9990.A.Cover_rev3'         -> should match '1037.9990.A.Cover.'
+    We strip a trailing '_rev<N>' / '_v<N>' / '-rev<N>' (case-insensitive) and any
+    trailing '.' so the bare pack name is the match key. 'Gate+Support' keeps its
+    '+' because that is part of the real pack name.
+    """
+    s = file_stem.strip().rstrip(".")
+    s = re.sub(r"[-_]?(?:rev|v|r)\s*\d+$", "", s, flags=re.I).rstrip(".")
+    return s
+
+
 def resolve_pack(conn: sqlite3.Connection, file_stem: str) -> dict:
     """Return {status, gid, pack_reference, candidates:[...]} for a file stem.
 
     status ∈ resolved | ambiguous | not_found
     """
-    pat = _like_escape(file_stem) + "%"
+    base = _normalise_stem(file_stem)
+    pat = _like_escape(base) + "%"
     rows = conn.execute(
         """SELECT asana_task_gid, pack_reference, pack_name, project_name
              FROM build_assembly_packs
             WHERE pack_reference LIKE ? ESCAPE '\\'""",
         (pat,),
     ).fetchall()
-    # Only true prefix matches on the stem (LIKE is a coarse pre-filter).
-    cand = [r for r in rows if (r["pack_reference"] or "").startswith(file_stem)]
+    # Only true prefix matches on the normalised base (LIKE is a coarse pre-filter).
+    cand = [r for r in rows if (r["pack_reference"] or "").startswith(base)]
     # Prefer Build Schedule packs, excluding the Drawing Control '.DRAWING' variant.
     bs = [
         r for r in cand
@@ -124,7 +141,7 @@ def _find_header(df0: pd.DataFrame):
 
 
 def classify_rows(xlsx_path: Path) -> list[dict]:
-    """Return [{item, sesame_pn, description, vendor, cost, stock, orderable, reason, confidence}]."""
+    """Return [{item, sesame_pn, description, vendor, cost, stock, orderable, reason, confidence, qty}]."""
     raw = pd.read_excel(xlsx_path, header=None, dtype=str)
     hdr = _find_header(raw)
     if hdr is None:
@@ -133,7 +150,23 @@ def classify_rows(xlsx_path: Path) -> list[dict]:
     df.columns = [str(c).strip() for c in df.columns]
 
     def g(r, c):
-        return str(r.get(c, "")).strip()
+        # Accept the exact column name or the case-insensitive variant.
+        if c in r.keys():
+            return str(r.get(c, "")).strip()
+        for k in r.keys():
+            if k and k.strip().upper() == c.upper():
+                return str(r[k]).strip()
+        return ""
+
+    def gqty(r):
+        # QTY column is 'ITEM QTY' / 'Item QTY' / 'QTY' — first one present.
+        for c in r.keys():
+            if not c:
+                continue
+            u = str(c).strip().upper()
+            if u in ("ITEM QTY", "QTY", "ITEMQTY", "ITEM QTY "):
+                return str(r[c]).strip()
+        return ""
 
     out = []
     for _, r in df.iterrows():
@@ -142,6 +175,7 @@ def classify_rows(xlsx_path: Path) -> list[dict]:
             continue
         desc = g(r, "DESCRIPTION")
         vendor, cost, stock = g(r, "VENDOR"), g(r, "COST CENTER"), g(r, "STOCK NUMBER")
+        qty_raw = gqty(r)
         dl = desc.lower()
         reason = None
         if "_MIR" in pn.upper():
@@ -160,6 +194,7 @@ def classify_rows(xlsx_path: Path) -> list[dict]:
             "item": g(r, "ITEM"), "sesame_pn": pn, "description": desc[:60],
             "vendor": vendor, "cost": cost, "stock": stock,
             "orderable": orderable, "reason": reason, "confidence": confidence,
+            "qty": qty_raw,
         })
     return out
 
@@ -188,6 +223,80 @@ def match_parts_control(conn: sqlite3.Connection, sesame_pn: str) -> list[sqlite
     return [], None
 
 
+def _pack_prefix(pn: str) -> str | None:
+    """First three dot-components of a part number, e.g. '1037.9991.C.001' -> '1037.9991.C'.
+
+    Returns None for part numbers that don't encode a pack (too short / NBSS-style
+    generic PNs like '1037.034.001' which have no pack component)."""
+    parts = (pn or "").split(".")
+    return ".".join(parts[:3]) if len(parts) >= 4 else None
+
+
+def _pack_candidates(rows, pre: str) -> list:
+    """Filter raw build_assembly_packs rows to Build Schedule packs whose
+    pack_reference starts with the given prefix (excluding .DRAWING variants)."""
+    return [r for r in rows
+            if (r["pack_reference"] or "").startswith(pre)
+            and ".DRAWING" not in (r["pack_reference"] or "").upper()]
+
+
+def resolve_pack_by_pn(conn: sqlite3.Connection, sesame_pn: str) -> dict:
+    """Resolve a part's pack from its part-NUMBER prefix (for consolidated BOM files).
+
+    Consolidated files (e.g. Langley 'bellows+tapeswitch+trims') contain parts from
+    MANY packs, so the filename can't name a single pack. We match each part's prefix
+    to a Build Schedule pack_reference.
+
+    Matching strategy (tiered, never guesses):
+      1. Try the FULL normalized pack code as a prefix first. For '1037.9991.C.001'
+         we first look for an exact pack base '1037.9991.C.001.' (its own PTFE pack);
+         only if that's absent do we fall back to the coarse 3-component prefix
+         '1037.9991.C'. This disambiguates C.001 vs C.002 (which ARE separate packs).
+      2. Revision markers in the PN (.01/.02 etc.) are stripped for the base match,
+         so '1037.1014.M.115.01' still matches pack '1037.1014.M'.$base = first 4 components
+    Status ∈ resolved | ambiguous | not_found."""
+    parts = [(p or "").strip() for p in (sesame_pn or "").split(".")]
+    if len(parts) < 4:
+        return {"status": "not_found", "gid": None, "pack_reference": None,
+                "candidates": []}
+    # Job + pack-rev + item base. rev-normalise item trailing digits (e.g. .115.01 -> .115)
+    # is handled by looking up the 4-component base when the full PN has >=5 parts.
+    def _find(pre) -> dict:
+        pat = _like_escape(pre) + "%"
+        rows = conn.execute(
+            """SELECT asana_task_gid, pack_reference, pack_name, project_name
+                 FROM build_assembly_packs
+                WHERE pack_reference LIKE ? ESCAPE '\\'
+                  AND project_name = ?""",
+            (pat, BUILD_SCHEDULE_PROJECT),
+        ).fetchall()
+        cand = _pack_candidates(rows, pre)
+        if len(cand) == 1:
+            return {"status": "resolved", "gid": cand[0]["asana_task_gid"],
+                    "pack_reference": cand[0]["pack_reference"],
+                    "candidates": [dict(r) for r in cand]}
+        if len(cand) == 0:
+            return {"status": "not_found", "gid": None, "pack_reference": None,
+                    "candidates": [dict(r) for r in cand]}
+        return {"status": "ambiguous", "gid": None, "pack_reference": None,
+                "candidates": [dict(r) for r in cand]}
+
+    # Tier 1: first 4 components as the specific pack base (e.g. '1037.9991.C.001').
+    pre4 = ".".join(parts[:4])
+    r4 = _find(pre4)
+    if r4["status"] == "resolved":
+        return r4
+    if r4["status"] == "ambiguous":
+        return r4
+    # Tier 2: fall back to the 3-component family (catches Bellows/TapeSwitch/Wheelstop
+    # where the pack is the family, or the item's 4th segment is a revision not a pack).
+    pre3 = _pack_prefix(sesame_pn)
+    if pre3 and pre3 != pre4:
+        r3 = _find(pre3)
+        return r3
+    return r4
+
+
 def build_candidates(conn: sqlite3.Connection, folder: Path) -> dict:
     """Scan a folder of per-pack xlsx and return the full candidate report."""
     files = sorted(list(folder.glob("*.xlsx")) + list(folder.glob("*.xls")))
@@ -201,20 +310,41 @@ def build_candidates(conn: sqlite3.Connection, folder: Path) -> dict:
         pack = resolve_pack(conn, stem)
         finfo = {"file": f.name, "pack_status": pack["status"],
                  "pack_gid": pack["gid"], "pack_reference": pack["pack_reference"]}
-        if pack["status"] != "resolved":
+        rows = classify_rows(f)
+        orderable = [r for r in rows if r["orderable"]]
+        excluded = [r for r in rows if not r["orderable"]]
+        finfo.update({"rows": len(rows), "orderable": len(orderable),
+                      "excluded": len(excluded)})
+
+        # Per-file pack resolution: a resolved filename gives a pack for every row;
+        # a NOT_FOUND filename is treated as a CONSOLIDATED file, so each orderable
+        # part's pack is resolved from its own part-number prefix instead.
+        per_file_pack = pack if pack["status"] == "resolved" else None
+
+        if pack["status"] not in ("resolved", "not_found"):
             finfo["candidate_packs"] = pack["candidates"]
             report["flags"].append({"file": f.name, "issue": f"pack_{pack['status']}",
                                      "candidates": pack["candidates"]})
             report["files"].append(finfo)
             continue
 
-        rows = classify_rows(f)
-        orderable = [r for r in rows if r["orderable"]]
-        excluded = [r for r in rows if not r["orderable"]]
-        finfo.update({"rows": len(rows), "orderable": len(orderable),
-                      "excluded": len(excluded)})
         held = 0
         for r in orderable:
+            # Determine the target pack: from the filename, or per-part for consolidated.
+            if per_file_pack is not None:
+                use_pack = per_file_pack
+                how_pack = "filename"
+            else:
+                use_pack = resolve_pack_by_pn(conn, r["sesame_pn"])
+                how_pack = "pn_prefix"
+                if use_pack is None or use_pack["status"] != "resolved":
+                    # Part's own pack can't be resolved -> flag (held), not guessed.
+                    if use_pack and use_pack["status"] == "ambiguous":
+                        report["flags"].append({
+                            "file": f.name, "issue": "part_pack_ambiguous",
+                            "part": r["sesame_pn"], "candidates": use_pack["candidates"]})
+                    continue
+
             matches, how = match_parts_control(conn, r["sesame_pn"])
             if not matches:
                 held += 1
@@ -226,9 +356,9 @@ def build_candidates(conn: sqlite3.Connection, folder: Path) -> dict:
                 seen_tasks[gid] = f.name
                 cur = m["build_assembly_pack_gid"]
                 st = m["association_status"]
-                if st == "linked" and cur == pack["gid"]:
+                if st == "linked" and cur == use_pack["gid"]:
                     action = "already_correct"
-                elif st == "linked_by_ref" or (cur and cur != pack["gid"]):
+                elif st == "linked_by_ref" or (cur and cur != use_pack["gid"]):
                     action = "migrate"          # text/other -> verified GID
                 else:
                     action = "new"              # unassociated / NULL -> allocate
@@ -239,13 +369,20 @@ def build_candidates(conn: sqlite3.Connection, folder: Path) -> dict:
                     "match": how,
                     "old_value": cur,
                     "old_status": st,
-                    "new_pack_gid": pack["gid"],
-                    "pack_reference": pack["pack_reference"],
+                    "new_pack_gid": use_pack["gid"],
+                    "pack_reference": use_pack["pack_reference"],
                     "source_file": f.name,
                     "confidence": r["confidence"],
+                    "qty": r.get("qty", ""),
                     "action": action,
                 })
         finfo["held_not_in_parts_control"] = held
+        if pack["status"] == "not_found":
+            # A consolidated file that failed to resolve to one pack isn't an error —
+            # mark it as handled via per-part resolution so it's distinguishable.
+            finfo["pack_status"] = "resolved_per_part"
+            finfo["pack_gid"] = None
+            finfo["pack_reference"] = "[consolidated — per-part]"
         report["files"].append(finfo)
 
     c = report["candidates"]
@@ -261,8 +398,39 @@ def build_candidates(conn: sqlite3.Connection, folder: Path) -> dict:
 
 
 # ── commit (dual-write) ─────────────────────────────────────────────────────
+def _note_line(qty, pack_name):
+    """Description line e.g. '2 off in Assembly Pack 1037.1014.M.Gate+Support.'"""
+    q = (qty or "").strip()
+    return f"{q} off in Assembly Pack {pack_name}"
+
+
+def _already_has_pack_note(notes, pack_reference):
+    return f"Assembly Pack {pack_reference}" in (notes or "")
+
+
+def _asana_get(token, task_gid):
+    import requests
+    r = requests.get(
+        f"https://app.asana.com/api/1.0/tasks/{task_gid}",
+        headers={"Authorization": f"Bearer {token}"},
+        params={"opt_fields": "name,notes"}, timeout=30)
+    if r.status_code != 200:
+        return None
+    return r.json().get("data", {})
+
+
+def _asana_put(token, task_gid, payload):
+    import requests
+    r = requests.put(
+        f"https://app.asana.com/api/1.0/tasks/{task_gid}",
+        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+        json={"data": payload}, timeout=30)
+    return r.status_code in (200, 201), ("" if r.status_code in (200, 201) else r.text[:200])
+
+
 def commit(stage: dict, db_path: str, pause: float = 0.35) -> dict:
     import db_writer
+    import requests
     from asana_batch_updater import push_updates, get_asana_token
 
     actionable = [c for c in stage["candidates"] if c["action"] in ("migrate", "new")]
@@ -273,7 +441,7 @@ def commit(stage: dict, db_path: str, pause: float = 0.35) -> dict:
     if not token:
         raise SystemExit("ERROR: ASANA_PERSONAL_ACCESS_TOKEN not found — cannot commit.")
 
-    # 1) Asana first (source of truth is the GID link). Batch API + 429 retry.
+    # 1) Build Packs reference field via the batch API (sets the pack GID on each task).
     updates = [{
         "task_gid": c["part_task_gid"],
         "task_name": c.get("part_name") or c["sesame_pn"],
@@ -282,9 +450,49 @@ def commit(stage: dict, db_path: str, pause: float = 0.35) -> dict:
     } for c in actionable]
     ok, fail = push_updates(updates, token, dry_run=False)
 
-    # 2) DB mirror via the sole gateway (targeted UPDATE) + audit log. push_updates
-    #    returns aggregate counts only, so we mirror all actionable rows and rely on
-    #    pack_association.py --list afterwards to reconcile association_status.
+    # 2) Description append + multi-pack marker. A part can appear on MORE THAN ONE
+    #    pack (Giles 2026-08-17): append '{qty} off in Assembly Pack {pack}' per pack,
+    #    and prepend '*' to the task name when the part maps to 2+ packs.
+    #    Note: the reference field can only hold ONE pack GID; the DESCRIPTION holds
+    #    the full multi-pack list. Dedup-safe (never re-appends an existing pack line).
+    by_task: dict[str, list] = {}
+    for c in actionable:
+        by_task.setdefault(c["part_task_gid"], []).append(c)
+
+    notes_ok = notes_fail = 0
+    for task_gid, cands in by_task.items():
+        task_data = _asana_get(token, task_gid)
+        if task_data is None:
+            notes_fail += 1
+            continue
+        current_notes = task_data.get("notes", "") or ""
+        current_name = task_data.get("name", "")
+        multi_pack = len(cands) > 1
+
+        payload = {}
+        # Description: append each missing pack's note line, joined by ' | '.
+        missing = [c for c in cands
+                   if not _already_has_pack_note(current_notes, c["pack_reference"])]
+        if missing:
+            note_lines = [_note_line(c.get("qty"), c.get("pack_reference") or c["new_pack_gid"])
+                          for c in missing]
+            combined = " | ".join(note_lines)
+            separator = "\n---\n" if current_notes.strip() else ""
+            payload["notes"] = current_notes + separator + combined
+
+        # Multi-pack: prepend '*' to the task name (only once).
+        if multi_pack and not current_name.startswith("*"):
+            payload["name"] = "*" + current_name
+
+        if payload:
+            success, msg = _asana_put(token, task_gid, payload)
+            if success:
+                notes_ok += 1
+            else:
+                notes_fail += 1
+        time.sleep(pause)
+
+    # 3) DB mirror via the sole gateway (targeted UPDATE) + audit log.
     now = _now()
     db_written = db_missing = 0
     for c in actionable:
@@ -305,7 +513,8 @@ def commit(stage: dict, db_path: str, pause: float = 0.35) -> dict:
             "email_id": None,
         }, source=PACK_SOURCE, db_path=db_path)
     return {"db_written": db_written, "db_missing": db_missing,
-            "asana_ok": ok, "asana_fail": fail}
+            "asana_ok": ok, "asana_fail": fail,
+            "notes_ok": notes_ok, "notes_fail": notes_fail}
 
 
 # ── CLI ─────────────────────────────────────────────────────────────────────
@@ -328,6 +537,22 @@ def _print_report(rep: dict) -> None:
         for c in rep["candidates"][:20]:
             print(f"    {c['action']:14} {c['sesame_pn']:30} task={c['part_task_gid']} "
                   f"→ {c['new_pack_gid']} [{c['match']},{c['confidence']}]")
+
+
+_WSTRACE_DATA = _WORKSPACE / "skills" / "drawing_pipeline" / "data"
+
+
+def _stage_out(stage_file: str | None, folder: Path) -> Path:
+    """Resolve where a scan's review/stage JSON should be written.
+
+    --stage-file (explicit) wins. Otherwise default to the workspace drawing_pipeline
+    data dir (canonical audit archive for stage + review files), keyed by the source
+    Legacy-BOM folder name so concurrent/future scans for different jobs don't collide.
+    Never write the review JSON inside the (read-only / guardrailed) Dropbox source.
+    """
+    if stage_file:
+        return Path(stage_file)
+    return _WSTRACE_DATA / f"{folder.name}_pack_allocation_scan.json"
 
 
 def main() -> None:
@@ -369,16 +594,21 @@ def main() -> None:
     finally:
         conn.close()
     _print_report(report)
-    out = Path(args.stage_file) if args.stage_file else (folder / "_pack_allocation_scan.json")
+    # Audit/review JSON belongs in the workspace drawing_pipeline data dir (canonical
+    # archive for stage + review files), NOT inside the source Legacy BOM folder (which
+    # is Dropbox / read-only and never an audit target). A --stage-file explicitly given
+    # wins; otherwise default to <workspace>/skills/drawing_pipeline/data/<folder>.json.
+    out = _stage_out(args.stage_file, folder)
     try:
+        out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps(report, indent=2), encoding="utf-8")
         print(f"\nStage file written: {out}")
         print("Review it, then: --commit --stage-file <that file>")
     except OSError as e:
-        # Dropbox source folders are read-only; fall back to CWD.
-        alt = Path.cwd() / "_pack_allocation_scan.json"
+        # Fall back to a path that is certain to be writable (never Guess-Dropbox).
+        alt = Path.cwd() / f"{folder.name}_pack_allocation_scan.json"
         alt.write_text(json.dumps(report, indent=2), encoding="utf-8")
-        print(f"\n(stage folder not writable: {e}) Stage file written: {alt}")
+        print(f"\n(stage dir not writable: {e}) Stage file written: {alt}")
 
 
 if __name__ == "__main__":

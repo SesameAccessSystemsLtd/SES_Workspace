@@ -33,6 +33,15 @@ textarea{width:100%;min-height:32px;background:var(--bg);color:var(--ink);border
 .abtn.on-a{background:var(--green);color:#fff;border-color:var(--green)}
 .abtn.on-m{background:var(--amber);color:#fff;border-color:var(--amber)}
 .abtn.on-r{background:var(--red);color:#fff;border-color:var(--red)}
+.badge{display:inline-block;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:700;text-transform:uppercase}
+.badge.rn-yes{background:var(--lo);color:var(--red)}
+.badge.rn-no{background:var(--done);color:var(--muted)}
+.rupd{display:flex;flex-direction:column;gap:5px}
+.rupd .pa{white-space:pre-wrap;word-break:break-word}
+.rupd .comment{white-space:pre-wrap;word-break:break-word;background:var(--bg);border-left:3px solid var(--brand);border-radius:4px;padding:4px 7px;font-size:11.5px;color:var(--muted)}
+.label-bit{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--muted)}
+.resp-toggle{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:6px;padding:3px 9px;font-size:11.5px;font-weight:600;cursor:pointer}
+.resp-toggle.on{background:var(--green);color:#fff;border-color:var(--green)}
 .savebar{position:fixed;bottom:0;left:0;right:0;background:var(--card);border-top:1px solid var(--line);padding:10px 22px;display:flex;gap:10px;align-items:center}
 #saveBtn{background:var(--brand);color:#fff;border:0;border-radius:8px;padding:9px 20px;font-size:14px;font-weight:700;cursor:pointer}
 #saveStatus{color:var(--muted);font-size:12.5px}
@@ -41,7 +50,7 @@ a{color:var(--blue)}
 <body>
 <div class="wrap">
 <div class="navbar">
-  <a class="backbtn" href="file:///C:/Users/GilesHugo/SES_Workspace/data/os_status/nav.html">← Portal Home</a>
+  <a class="backbtn" id="portalHomeBtn" href="http://127.0.0.1:8765/data/os_status/nav.html">← Portal Home</a>
 </div>
 <h1>📋 Live QA Action Portal</h1>
 <div class="meta">Purchasing email-parser · decisions &amp; notes save back to the Google Sheet · generated <span id="gen">—</span></div>
@@ -59,8 +68,8 @@ a{color:var(--blue)}
 
 <table><thead><tr>
   <th>Conf</th><th>Group</th><th>Received</th><th>Subject</th><th>Sender</th>
-  <th>PO/Ref</th><th>Matched Task</th><th>Proposal / Issue</th>
-  <th>Notes (saved)</th><th>Decision</th><th>Link</th>
+  <th>PO/Ref</th><th>Matched Task</th><th>Proposed Asana update</th>
+  <th>Response</th><th>Notes (saved)</th><th>Decision</th><th>Link</th>
 </tr></thead><tbody id="tbody"></tbody></table>
 </div>
 
@@ -70,7 +79,19 @@ a{color:var(--blue)}
 </div>
 
 <script>
-var DATA = {"generated": "2026-08-13T23:27:52", "items": [{"email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkWztzxAAA=", "received": "2026-08-11T18:23:44Z", "subject": "APC Overnight Ref: 0020108", "sender_domain": "bookingplatform.apc-overnight.com", "doc_type": "dispatch_note", "po_number": "", "matched_task": "NOT MATCHED", "asana_link": "", "proposed_action": "Task not found. Document Type: dispatch_note. PO: None. SQR: None. Sender Domain: bookingplatform.apc-overnight.com", "comments": "", "decision": "R", "amendment_notes": "APC no action - noise", "processed_at": "2026-08-13 14:48", "_rowindex": 2, "confidence": "DONE"}, {"email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkWzijpAAA=", "received": "2026-08-13T14:56:12Z", "subject": "Notes from your call with Lasershape 0115 972 9921 on 13/08/2026 15:54", "sender_domain": "ringcentral.com", "doc_type": "other", "po_number": "", "matched_task": "NOT MATCHED", "asana_link": "", "proposed_action": "Manual review — no task/id extracted. Subject: 'Notes from your call with Lasershape 0115 972 9921 on 13/08/2026 15:54' (doc type: other, sender: ringcentral.com)", "comments": "", "decision": "", "amendment_notes": "", "processed_at": "", "_rowindex": 3, "confidence": "LOW"}, {"email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkWzijnAAA=", "received": "2026-08-13T14:32:46Z", "subject": "TNT shipment notification for 146914501", "sender_domain": "mail.tnt.com", "doc_type": "dispatch_note", "po_number": "21207-1575 / 21205-1514", "matched_task": "21207-1575 - Tape switch - replacements - 1575 -", "asana_link": "https://app.asana.com/0/0/1216946791201146", "proposed_action": "(Matched via Base PO '21207' in Local DB); Update delivery date to 2026-08-17; Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043)", "comments": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-08-13T14:32:46Z\nEmail: TNT shipment notification for 146914501\n- Update delivery date to 2026-08-17\n- Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043)", "decision": "", "amendment_notes": "", "processed_at": "", "_rowindex": 4, "confidence": "HIGH"}]};
+// Origin-aware "Portal Home": the canonical portal hub is served by the
+// bom_dispatch_server on http://127.0.0.1:8765. When this QA page is itself
+// served over http (qa_server on 8611), link to the 8765 hub. If it's opened
+// as a raw file:// (double-click), fall back to the file:// hub path since the
+// local server may not be running. (Fixed 2026-08-27: the old hardcoded
+// file:// href silently broke the back button when browsed over http.)
+(function(){
+  var b=document.getElementById('portalHomeBtn');
+  if(b && location.protocol==='file:'){
+    b.setAttribute('href','file:///C:/Users/GilesHugo/SES_Workspace/data/os_status/nav.html');
+  }
+})();
+var DATA = {"generated": "2026-08-28T20:03:35", "items": [{"email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkWztzxAAA=", "received": "2026-08-11T18:23:44Z", "subject": "APC Overnight Ref: 0020108", "sender_domain": "bookingplatform.apc-overnight.com", "doc_type": "dispatch_note", "po_number": "", "matched_task": "NOT MATCHED", "asana_link": "", "proposed_action": "Task not found. Document Type: dispatch_note. PO: None. SQR: None. Sender Domain: bookingplatform.apc-overnight.com", "comments": "", "decision": "R", "amendment_notes": "APC no action - noise", "processed_at": "2026-08-13 14:48", "response_needed": "yes", "response_status": "", "_rowindex": 2, "comment_to_push": "", "document_type": "dispatch_note", "line_items": [], "confidence": "DONE"}, {"email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy6uAAA=", "received": "2026-08-27T08:53:53Z", "subject": "Notes from your call with 07951 032279 on 27/08/2026 09:49", "sender_domain": "ringcentral.com", "doc_type": "other", "po_number": "", "matched_task": "NOT MATCHED", "asana_link": "", "proposed_action": "Manual review — no task/id extracted. Subject: 'Notes from your call with 07951 032279 on 27/08/2026 09:49' (doc type: other, sender: ringcentral.com)", "comments": "NO AUTO-MATCH — manual review.\nEmail: Notes from your call with 07951 032279 on 27/08/2026 09:49\nReceived: 2026-08-27T08:53:53Z\nFound: type=other, vendor=ringcentral", "decision": "", "amendment_notes": "", "processed_at": "", "response_needed": "yes", "response_status": "", "_rowindex": 3, "comment_to_push": "NO AUTO-MATCH — manual review.\nEmail: Notes from your call with 07951 032279 on 27/08/2026 09:49\nReceived: 2026-08-27T08:53:53Z\nFound: type=other, vendor=ringcentral", "document_type": "other", "line_items": [], "confidence": "LOW"}, {"email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy6tAAA=", "received": "2026-08-27T08:46:16Z", "subject": "Re: City group South and East wiring mods", "sender_domain": "jajoautomation.co.uk", "doc_type": "update", "po_number": "", "matched_task": "NOT MATCHED", "asana_link": "", "proposed_action": "Manual review — no task/id extracted. Subject: 'Re: City group South and East wiring mods' (doc type: update, sender: jajoautomation.co.uk)", "comments": "NO AUTO-MATCH — manual review.\nEmail: Re: City group South and East wiring mods\nReceived: 2026-08-27T08:46:16Z\nFound: type=update, vendor=jajoautomation", "decision": "", "amendment_notes": "", "processed_at": "", "response_needed": "yes", "response_status": "", "_rowindex": 4, "comment_to_push": "NO AUTO-MATCH — manual review.\nEmail: Re: City group South and East wiring mods\nReceived: 2026-08-27T08:46:16Z\nFound: type=update, vendor=jajoautomation", "document_type": "update", "line_items": [], "confidence": "LOW"}, {"email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy7ZAAA=", "received": "2026-08-28T10:35:41Z", "subject": "Closed Monday: get your Flash Sale order in before Friday cutoff", "sender_domain": "directchannel.uk.com", "doc_type": "other", "po_number": "", "matched_task": "NOT MATCHED", "asana_link": "", "proposed_action": "Manual review — no task/id extracted. Subject: 'Closed Monday: get your Flash Sale order in before Friday cutoff' (doc type: other, sender: directchannel.uk.com)", "comments": "NO AUTO-MATCH — manual review.\nEmail: Closed Monday: get your Flash Sale order in before Friday cutoff\nReceived: 2026-08-28T10:35:41Z\nFound: type=other, vendor=directchannel", "decision": "", "amendment_notes": "", "processed_at": "", "response_needed": "yes", "response_status": "", "_rowindex": 5, "comment_to_push": "NO AUTO-MATCH — manual review.\nEmail: Closed Monday: get your Flash Sale order in before Friday cutoff\nReceived: 2026-08-28T10:35:41Z\nFound: type=other, vendor=directchannel", "document_type": "other", "line_items": [], "confidence": "LOW"}, {"email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy7bAAA=", "received": "2026-08-28T11:05:32Z", "subject": "How did we do, Giles Hugo?", "sender_domain": "reviews.io", "doc_type": "other", "po_number": "", "matched_task": "NOT MATCHED", "asana_link": "", "proposed_action": "Manual review — no task/id extracted. Subject: 'How did we do, Giles Hugo?' (doc type: other, sender: reviews.io)", "comments": "NO AUTO-MATCH — manual review.\nEmail: How did we do, Giles Hugo?\nReceived: 2026-08-28T11:05:32Z\nFound: type=other, vendor=reviews", "decision": "", "amendment_notes": "", "processed_at": "", "response_needed": "yes", "response_status": "", "_rowindex": 6, "comment_to_push": "NO AUTO-MATCH — manual review.\nEmail: How did we do, Giles Hugo?\nReceived: 2026-08-28T11:05:32Z\nFound: type=other, vendor=reviews", "document_type": "other", "line_items": [], "confidence": "LOW"}, {"email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy7nAAA=", "received": "2026-08-28T13:50:59Z", "subject": "Re: Ferrous BOM  1595 - St George - SQR-46793", "sender_domain": "goodsteel.co.uk", "doc_type": "quote", "po_number": "", "matched_task": "21586-1595 - Goodman - Ferrous BOM  1595 - St George", "asana_link": "https://app.asana.com/0/0/1217947686119104", "proposed_action": "(Matched via SQR in Local DB); [SQR-ledger] no SQR match for Richard.Perry@goodsteel.co.uk", "comments": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-08-28T13:50:59Z\nEmail: Re: Ferrous BOM  1595 - St George - SQR-46793\nMatch basis: (Matched via SQR in Local DB); [SQR-ledger] no SQR match for Richard.Perry@goodsteel.co.uk\n- Acknowledged quote — no field change proposed (type=quote, SQR=SQR-46793, vendor=goodsteel)", "decision": "", "amendment_notes": "", "processed_at": "", "response_needed": "yes", "response_status": "", "_rowindex": 7, "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-08-28T13:50:59Z\nEmail: Re: Ferrous BOM  1595 - St George - SQR-46793\nMatch basis: (Matched via SQR in Local DB); [SQR-ledger] no SQR match for Richard.Perry@goodsteel.co.uk\n- Acknowledged quote — no field change proposed (type=quote, SQR=SQR-46793, vendor=goodsteel)", "document_type": "quote", "line_items": [], "confidence": "HIGH"}, {"email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy7jAAA=", "received": "2026-08-28T13:41:02Z", "subject": "Your shipment has been delivered", "sender_domain": "parcelhero.com", "doc_type": "other", "po_number": "", "matched_task": "NOT MATCHED", "asana_link": "", "proposed_action": "Task not found. Document Type: other. PO: None. SQR: None. Sender Domain: parcelhero.com", "comments": "NO AUTO-MATCH — manual review.\nEmail: Your shipment has been delivered\nReceived: 2026-08-28T13:41:02Z\nFound: type=other, delivery=2026-08-28, vendor=parcelhero", "decision": "", "amendment_notes": "", "processed_at": "", "response_needed": "yes", "response_status": "", "_rowindex": 8, "comment_to_push": "NO AUTO-MATCH — manual review.\nEmail: Your shipment has been delivered\nReceived: 2026-08-28T13:41:02Z\nFound: type=other, delivery=2026-08-28, vendor=parcelhero", "document_type": "other", "line_items": [], "confidence": "LOW"}, {"email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy7fAAA=", "received": "2026-08-28T13:14:59Z", "subject": "Re: Ferrous BOM  1595 - St George - SQR-46793", "sender_domain": "goodsteel.co.uk", "doc_type": "quote", "po_number": "", "matched_task": "21586-1595 - Goodman - Ferrous BOM  1595 - St George", "asana_link": "https://app.asana.com/0/0/1217947686119104", "proposed_action": "(Matched via SQR in Local DB); [SQR-ledger] no SQR match for Richard.Perry@goodsteel.co.uk; Flag issue: Supplier cannot supply the exact 70x40x4 Mild Steel box section and offers alternative sizes (80x40x4.0 or 75x50x3.0) pending buyer's decision.", "comments": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-08-28T13:14:59Z\nEmail: Re: Ferrous BOM  1595 - St George - SQR-46793\nMatch basis: (Matched via SQR in Local DB); [SQR-ledger] no SQR match for Richard.Perry@goodsteel.co.uk\n- Flag issue: Supplier cannot supply the exact 70x40x4 Mild Steel box section and offers alternative sizes (80x40x4.0 or 75x50x3.0) pending buyer's decision.", "decision": "", "amendment_notes": "", "processed_at": "", "response_needed": "yes", "response_status": "", "_rowindex": 9, "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-08-28T13:14:59Z\nEmail: Re: Ferrous BOM  1595 - St George - SQR-46793\nMatch basis: (Matched via SQR in Local DB); [SQR-ledger] no SQR match for Richard.Perry@goodsteel.co.uk\n- Flag issue: Supplier cannot supply the exact 70x40x4 Mild Steel box section and offers alternative sizes (80x40x4.0 or 75x50x3.0) pending buyer's decision.", "document_type": "quote", "line_items": [], "confidence": "HIGH"}, {"email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy7vAAA=", "received": "2026-08-28T14:39:53Z", "subject": "Notes from your call with +441142560889 0114 256 0889 on 28/08/2026 15:38", "sender_domain": "ringcentral.com", "doc_type": "other", "po_number": "", "matched_task": "NOT MATCHED", "asana_link": "", "proposed_action": "Manual review — no task/id extracted. Subject: 'Notes from your call with +441142560889 0114 256 0889 on 28/08/2026 15:38' (doc type: other, sender: ringcentral.com)", "comments": "NO AUTO-MATCH — manual review.\nEmail: Notes from your call with +441142560889 0114 256 0889 on 28/08/2026 15:38\nReceived: 2026-08-28T14:39:53Z\nFound: type=other, vendor=ringcentral", "decision": "", "amendment_notes": "", "processed_at": "", "response_needed": "yes", "response_status": "", "_rowindex": 10, "comment_to_push": "NO AUTO-MATCH — manual review.\nEmail: Notes from your call with +441142560889 0114 256 0889 on 28/08/2026 15:38\nReceived: 2026-08-28T14:39:53Z\nFound: type=other, vendor=ringcentral", "document_type": "other", "line_items": [], "confidence": "LOW"}]};
 var ACTIONS = {};
 var ROWS = DATA.items || [];
 
@@ -90,6 +111,29 @@ function setDecision(row,val){
 }
 function setNote(row,txt){
   var a=ACTIONS[row]||(ACTIONS[row]={}); a.note=txt; ACTIONS[row]=a; markDirty();
+}
+// Response-needed toggle: 'no' means Giles confirms no outbound reply is needed.
+// Stores response_needed on the action so qa_sync --push can persist col N/O.
+function setResponse(row){
+  var a=ACTIONS[row]||(ACTIONS[row]={});
+  a.response_needed = (a.response_needed==='no') ? 'yes' : 'no';
+  a.response_status = (a.response_needed==='no') ? 'no response needed' : 'needs review';
+  ACTIONS[row]=a; markDirty(); refreshResponses();
+}
+function respBadge(rn){
+  var yes = (rn||'yes').toLowerCase()==='yes';
+  return '<span class="badge rn-'+(yes?'yes':'no')+'">'+ (yes?'response needed':'no resp. needed') +'</span>';
+}
+function refreshResponses(){
+  document.querySelectorAll('.resp-toggle').forEach(function(b){
+    var r=Number(b.getAttribute('data-row')); var a=ACTIONS[r]||{}; var rn=(a.response_needed||'').toLowerCase();
+    b.classList.toggle('on', rn==='no');
+  });
+  // reflect badge for already-rendered rows via data-rn
+  document.querySelectorAll('[data-rnbadge]').forEach(function(el){
+    var r=Number(el.getAttribute('data-rnbadge')); var a=ACTIONS[r]||{};
+    el.innerHTML = respBadge(a.response_needed || '');
+  });
 }
 function markDirty(){ var n=Object.keys(ACTIONS).length;
   document.getElementById('saveStatus').textContent=n+' pending change(s). Click Save to persist.'; }
@@ -128,7 +172,20 @@ function render(){
     if(q){var hay=(r.subject+' '+r.matched_task+' '+r.po_number+' '+r.sender_domain+' '+r.doc_type).toLowerCase();if(hay.indexOf(q)<0)return;}
     shown++;
     var rk=rowKey(r);
-    var a=ACTIONS[rk]||{decision:r.decision,note:r.amendment_notes}; var d=(a.decision||'').toLowerCase();
+    var a=ACTIONS[rk]||{decision:r.decision,note:r.amendment_notes,response_needed:r.response_needed};
+    var d=(a.decision||'').toLowerCase();
+    var rn=(a.response_needed||r.response_needed||'yes').toLowerCase();
+    var comment=(r.comment_to_push||r.comments||'');
+    var rupd='';
+    // Proposed Asana update preview: full proposed action + the comment to push.
+    rupd+='<div class="rupd">'
+      +'<div><span class="label-bit">Action to apply</span><div class="pa">'+esc((r.proposed_action||'')||'—')+'</div></div>'
+      +(comment?'<div><span class="label-bit">Comment to push</span><div class="comment">'+esc(comment)+'</div></div>':'')
+      +'</div>';
+    var respCell='<span data-rnbadge="'+rk+'">'+respBadge(rn)+'</span>'
+      +'<div style="margin-top:5px">'
+      +'<button class="resp-toggle'+(rn==='no'?' on':'')+'" data-row="'+rk+'" onclick="setResponse(this.dataset.row)">'
+      +'no response needed</button></div>';
     rows+='<tr class="r-'+confClass(r.confidence)+'">'
       +'<td class="conf c-'+confClass(r.confidence)+'">'+esc(r.confidence)+'</td>'
       +'<td>'+esc((r.doc_type||'').replace('_',' '))+'</td>'
@@ -137,7 +194,8 @@ function render(){
       +'<td>'+esc(r.sender_domain||'')+'</td>'
       +'<td>'+esc(r.po_number||'')+'</td>'
       +'<td class="subj">'+esc(r.matched_task||'')+'</td>'
-      +'<td class="subj">'+esc((r.proposed_action||'').slice(0,90))+'</td>'
+      +'<td class="subj">'+rupd+'</td>'
+      +'<td>'+respCell+'</td>'
       +'<td><textarea data-row="'+rk+'" rows="1" placeholder="add note…">'+esc(a.note||'')+'</textarea></td>'
       +'<td><div class="btns">'
       +'<button class="abtn'+(d==='a'?' on-a':'')+'" data-row="'+rk+'" data-val="a" onclick="setDecision(this.dataset.row,this.dataset.val)">A</button>'
@@ -153,6 +211,7 @@ function render(){
   document.querySelectorAll('textarea[data-row]').forEach(function(t){
     t.addEventListener('input',function(){setNote(Number(t.getAttribute('data-row')),t.value);});
   });
+  refreshResponses();
 }
 
 function save(){

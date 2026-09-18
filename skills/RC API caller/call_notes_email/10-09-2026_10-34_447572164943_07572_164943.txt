@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  10/09/2026  10:34
+============================================================
+With:         +447572164943 07572 164943
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo and a contact with phone number +447572164943 discussing the receipt and handling of machine parts, quotes for a project, and production lead times. The overall outcome was positive, with plans to expedite quote processing and maintain current production timelines.
+
+--- RECAP --------------------------------------------------
+The contact confirmed they received the machine parts signed for at 9:25 AM and mentioned they received two units of each part to avoid issues if one was misplaced.Giles Hugo thanked the contact for their efficiency and discussed the receipt of two quotes, which are being processed into their system and should be ready by the end of the day.The contact reported their current lead time for cutting and folding is approximately 7 working days, which is better than industry standards, and expressed confidence in meeting project deadlines.Both parties agreed to continue working swiftly, with the contact committing to return the quote data promptly and Giles Hugo acknowledging the positive progress.
+
+--- TASKS --------------------------------------------------
+The contact will import all quote data into their system and aim to have it ready by the end of today.The contact will ensure the quote is sent back to Giles Hugo as soon as possible.
+
+(Full transcript: RC web portal only — no RingSense API)

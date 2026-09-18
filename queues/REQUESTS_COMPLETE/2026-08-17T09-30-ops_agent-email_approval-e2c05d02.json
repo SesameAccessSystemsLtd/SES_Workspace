@@ -1,0 +1,14 @@
+{
+  "request_id": "f413968b-a549-4a35-9f80-49832e27c10d",
+  "source": "email_approval_sheet",
+  "row_index": 14,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkWzikJAAA=",
+  "subject": "Automatic reply: MayTec - 1595 - St Georges House Entire system - SQR-46463",
+  "task_gid": "1217486980106250",
+  "task_name": "MayTec - 1595 - St Georges House Entire system",
+  "asana_url": "https://app.asana.com/0/0/1217486980106250",
+  "action": "AMENDMENT (Giles overrode proposed action):\nOriginal: (Matched via SQR in Local DB)\nAmendment: Quotation Reference Number: QMK26KO0737\r\nYour Primary Contact: Kane Osborne\r\nTarget Quotation Date: 24/08/2026",
+  "comment_to_push": "Quotation Reference Number: QMK26KO0737\r\nYour Primary Contact: Kane Osborne\r\nTarget Quotation Date: 24/08/2026",
+  "decision": "M",
+  "created_at": "2026-08-17T09:30:13.499302+00:00"
+}

@@ -1,0 +1,708 @@
+<title>Purchasing Attention Audit</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#F3F4F2;
+  --surface:#FFFFFF;
+  --surface-2:#EAECE9;
+  --ink:#171C1A;
+  --ink-2:#3E4744;
+  --ink-3:#6C7671;
+  --rule:#D3D8D3;
+  --rule-strong:#AEB6B0;
+  --brass:#9C6F26;
+  --brass-soft:#E9DCC3;
+  --verdigris:#2C6B62;
+  --verdigris-soft:#D6E6E2;
+  --crit:#9E3325;
+  --crit-soft:#F2DAD5;
+  --warn:#A97814;
+  --warn-soft:#F3E6C8;
+  --ok:#2C6B62;
+  --ok-soft:#D6E6E2;
+  --shadow:0 1px 2px rgba(23,28,26,.06),0 8px 24px -16px rgba(23,28,26,.28);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#101413;
+    --surface:#171C1A;
+    --surface-2:#1E2523;
+    --ink:#E6EAE7;
+    --ink-2:#B7C0BB;
+    --ink-3:#89948F;
+    --rule:#2A322F;
+    --rule-strong:#3C4642;
+    --brass:#D6A452;
+    --brass-soft:#3A2F1B;
+    --verdigris:#6FBAAE;
+    --verdigris-soft:#1C302D;
+    --crit:#E0705E;
+    --crit-soft:#37201C;
+    --warn:#DCAA4A;
+    --warn-soft:#332818;
+    --ok:#6FBAAE;
+    --ok-soft:#1C302D;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#101413;
+  --surface:#171C1A;
+  --surface-2:#1E2523;
+  --ink:#E6EAE7;
+  --ink-2:#B7C0BB;
+  --ink-3:#89948F;
+  --rule:#2A322F;
+  --rule-strong:#3C4642;
+  --brass:#D6A452;
+  --brass-soft:#3A2F1B;
+  --verdigris:#6FBAAE;
+  --verdigris-soft:#1C302D;
+  --crit:#E0705E;
+  --crit-soft:#37201C;
+  --warn:#DCAA4A;
+  --warn-soft:#332818;
+  --ok:#6FBAAE;
+  --ok-soft:#1C302D;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"IBM Plex Serif",Georgia,serif;
+  font-size:16.5px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px 96px}
+.col{max-width:70ch}
+
+h1,h2,h3,h4,.ui{font-family:"IBM Plex Sans Condensed","Helvetica Neue",Arial,sans-serif}
+h1{font-size:clamp(2.3rem,5.2vw,3.5rem);line-height:1.02;font-weight:700;letter-spacing:-.015em;margin:0;text-wrap:balance}
+h2{font-size:1.75rem;font-weight:700;letter-spacing:-.01em;margin:0;text-wrap:balance}
+h3{font-size:1.16rem;font-weight:600;margin:0 0 .3rem;text-wrap:balance}
+h4{font-size:.95rem;font-weight:600;margin:0 0 .2rem;letter-spacing:.01em}
+p{margin:0 0 1rem}
+a{color:var(--verdigris)}
+strong{font-weight:600}
+code,.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.88em}
+:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+
+/* ---- masthead ---- */
+header.mast{border-bottom:2px solid var(--ink);padding:56px 0 22px;margin-bottom:40px}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:500}
+.mast .lede{font-size:1.12rem;color:var(--ink-2);margin-top:18px;max-width:62ch}
+.mastmeta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:22px;font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--ink-3);letter-spacing:.02em}
+
+/* ---- section chrome ---- */
+section{margin:0 0 64px;scroll-margin-top:20px}
+.shead{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--rule-strong);padding-bottom:8px;margin-bottom:26px}
+.snum{font-family:"IBM Plex Mono",monospace;font-size:.74rem;color:var(--brass);font-weight:600;letter-spacing:.08em;flex:none;padding-top:4px}
+
+/* ---- evidence grade chips ---- */
+.g{display:inline-flex;align-items:center;gap:5px;font-family:"IBM Plex Mono",monospace;font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;padding:2px 7px;border-radius:2px;white-space:nowrap;vertical-align:2px}
+.g-c{background:var(--ok-soft);color:var(--ok)}
+.g-i{background:var(--brass-soft);color:var(--brass)}
+.g-h{background:var(--warn-soft);color:var(--warn)}
+.g-u{background:var(--surface-2);color:var(--ink-3)}
+.key{display:flex;flex-wrap:wrap;gap:10px 18px;padding:14px 16px;background:var(--surface);border:1px solid var(--rule);border-radius:3px;margin:0 0 32px;font-family:"IBM Plex Sans Condensed",sans-serif;font-size:.83rem;color:var(--ink-2)}
+.key span.lbl{color:var(--ink-3)}
+
+/* ---- finding blocks ---- */
+.find{border-left:3px solid var(--rule-strong);padding:2px 0 2px 18px;margin:0 0 26px}
+.find.crit{border-left-color:var(--crit)}
+.find.warn{border-left-color:var(--warn)}
+.find.ok{border-left-color:var(--ok)}
+.find h3{display:flex;flex-wrap:wrap;align-items:baseline;gap:9px}
+.find p:last-child{margin-bottom:0}
+.ev{font-family:"IBM Plex Mono",monospace;font-size:.76rem;color:var(--ink-3);line-height:1.5;margin-top:.5rem}
+.ev b{color:var(--ink-2);font-weight:500}
+
+/* ---- tables ---- */
+.tw{overflow-x:auto;border:1px solid var(--rule);border-radius:3px;background:var(--surface);margin:0 0 12px;box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;font-family:"IBM Plex Sans Condensed",sans-serif;font-size:.86rem}
+th{text-align:left;font-weight:600;font-size:.68rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);padding:10px 13px;border-bottom:1px solid var(--rule-strong);white-space:nowrap;background:var(--surface-2)}
+td{padding:9px 13px;border-bottom:1px solid var(--rule);vertical-align:top;color:var(--ink-2)}
+tbody tr:last-child td{border-bottom:0}
+td.n{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--ink)}
+td.k{color:var(--ink);font-weight:500}
+caption{caption-side:bottom;text-align:left;font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);padding:9px 13px;border-top:1px solid var(--rule)}
+
+/* ---- status pills ---- */
+.p{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.65rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600;padding:2px 6px;border-radius:2px;white-space:nowrap}
+.p-red{background:var(--crit-soft);color:var(--crit)}
+.p-amb{background:var(--warn-soft);color:var(--warn)}
+.p-grn{background:var(--ok-soft);color:var(--ok)}
+.p-gry{background:var(--surface-2);color:var(--ink-3)}
+
+/* ---- bar rows ---- */
+.bars{display:flex;flex-direction:column;gap:7px;margin:0 0 14px;font-family:"IBM Plex Sans Condensed",sans-serif;font-size:.85rem}
+.bar{display:grid;grid-template-columns:minmax(150px,1.3fr) minmax(60px,3fr) 52px;align-items:center;gap:12px}
+.bar .lab{color:var(--ink-2);text-align:right;line-height:1.25}
+.bar .track{background:var(--surface-2);height:15px;border-radius:2px;overflow:hidden}
+.bar .fill{height:100%;background:var(--brass);border-radius:2px}
+.bar .fill.v{background:var(--verdigris)}
+.bar .fill.c{background:var(--crit)}
+.bar .val{font-family:"IBM Plex Mono",monospace;font-size:.76rem;color:var(--ink);font-variant-numeric:tabular-nums}
+
+/* ---- pipeline diagram ---- */
+.flow{display:flex;flex-direction:column;gap:0;margin:0 0 18px;font-family:"IBM Plex Sans Condensed",sans-serif}
+.step{display:grid;grid-template-columns:26px 1fr;gap:14px}
+.rail{display:flex;flex-direction:column;align-items:center}
+.dot{width:11px;height:11px;border-radius:50%;background:var(--ok);margin-top:7px;flex:none}
+.dot.b{background:var(--crit)}
+.dot.p{background:var(--warn)}
+.line{width:2px;flex:1;background:var(--rule-strong);margin:3px 0}
+.line.b{background:repeating-linear-gradient(to bottom,var(--crit) 0 4px,transparent 4px 8px)}
+.stepbody{padding:0 0 20px}
+.stepbody .t{font-weight:600;font-size:.98rem;color:var(--ink);display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.stepbody .d{font-family:"IBM Plex Serif",serif;font-size:.9rem;color:var(--ink-2);line-height:1.5;margin-top:2px}
+
+/* ---- callout ---- */
+.callout{background:var(--surface);border:1px solid var(--rule);border-top:3px solid var(--brass);border-radius:3px;padding:20px 22px;margin:0 0 26px;box-shadow:var(--shadow)}
+.callout h4{color:var(--brass);text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;font-family:"IBM Plex Mono",monospace}
+.callout p:last-child{margin-bottom:0}
+
+/* ---- leverage cards ---- */
+.lev{border:1px solid var(--rule);border-radius:3px;background:var(--surface);margin:0 0 18px;box-shadow:var(--shadow);overflow:hidden}
+.levhead{display:flex;align-items:baseline;gap:12px;padding:14px 20px;border-bottom:1px solid var(--rule);background:var(--surface-2);flex-wrap:wrap}
+.rank{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:1.05rem;color:var(--brass);flex:none}
+.levhead .nm{font-family:"IBM Plex Sans Condensed",sans-serif;font-weight:600;font-size:1.06rem;color:var(--ink);flex:1;min-width:200px}
+.levgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0}
+.cell{padding:13px 20px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.cell:last-child{border-right:0}
+.cell .ct{font-family:"IBM Plex Mono",monospace;font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:4px}
+.cell .cv{font-family:"IBM Plex Serif",serif;font-size:.9rem;line-height:1.5;color:var(--ink-2)}
+.levfoot{padding:13px 20px;font-size:.9rem;color:var(--ink-2);line-height:1.55}
+.levfoot b{font-family:"IBM Plex Sans Condensed",sans-serif;color:var(--ink);font-weight:600}
+
+/* ---- lists ---- */
+ul.tick{list-style:none;padding:0;margin:0 0 18px;display:flex;flex-direction:column;gap:8px}
+ul.tick li{padding-left:20px;position:relative;color:var(--ink-2)}
+ul.tick li::before{content:"—";position:absolute;left:0;color:var(--brass);font-family:"IBM Plex Mono",monospace}
+ol.q{padding-left:22px;margin:0;display:flex;flex-direction:column;gap:14px}
+ol.q li{color:var(--ink-2);padding-left:4px}
+ol.q li b{color:var(--ink);font-family:"IBM Plex Sans Condensed",sans-serif;font-weight:600}
+
+hr.rule{border:0;border-top:1px solid var(--rule);margin:30px 0}
+.sub{font-family:"IBM Plex Sans Condensed",sans-serif;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);margin:26px 0 10px;font-weight:600}
+footer{border-top:2px solid var(--ink);padding-top:20px;font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--ink-3);line-height:1.7}
+@media (max-width:640px){
+  .wrap{padding:0 18px 64px}
+  .bar{grid-template-columns:minmax(110px,1.4fr) 1fr 46px;gap:8px;font-size:.8rem}
+  body{font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="eyebrow">Sesame Access Systems · Operational Investigation · 9 September 2026</div>
+  <h1>Purchasing Attention Audit</h1>
+  <p class="lede">Where the Purchasing Manager's attention is actually consumed, traced through the live Asana workspace, <span class="mono">ops.db</span>, the automation queues and three years of Delay Destroyer and Design Feedback history — and which unfinished connections would remove the most future work.</p>
+  <div class="mastmeta">
+    <span>SOURCES: ops.db (1.21 GB, 27 tables) · Asana workspace 357939803556123 · SES_Workspace queues + skills · SES_Brain vault</span>
+    <span>METHOD: read-only. No task, field, schema, automation or record was modified.</span>
+  </div>
+</header>
+
+<div class="key">
+  <span class="lbl">Evidence grade:</span>
+  <span><span class="g g-c">Confirmed</span> observed directly in data or execution logs</span>
+  <span><span class="g g-i">Inferred</span> strongly implied, one step from evidence</span>
+  <span><span class="g g-h">Hypothesis</span> plausible, untested</span>
+  <span><span class="g g-u">Unknown</span> not accessible in this environment</span>
+</div>
+
+<!-- ============ 1 ============ -->
+<section id="finding">
+  <div class="shead"><span class="snum">01</span><h2>Executive finding</h2></div>
+
+  <div class="col">
+    <p>The purchasing pipeline is <strong>more complete than the documentation claims in some places and much less complete in one specific place</strong>. Demand capture works: every BOM that has been imported this year lands cleanly as part records, and six nightly mirrors keep a full copy of the Asana purchasing estate in <span class="mono">ops.db</span>. The failure is not at either end. It is at the single join in the middle.</p>
+
+    <p><strong>There is no data link between a required part and the order that covers it.</strong> Across 2,761 part records, the field that would hold the purchase-order reference — <span class="mono">parts_control.procurement_task_gid</span> — is empty on every single row. Across 1,698 BOM requirement lines, <span class="mono">bom_requirements.po_id</span> is empty on every single row. The tables that would record receipt and allocation (<span class="mono">po_lines</span>, <span class="mono">supplier_deliveries</span>) exist with full schemas and contain zero rows, and have never contained any.</p>
+
+    <p>That single missing join is what forces you to be the integration layer. Because no system can answer "which order covers this part," the answer is reconstructed by a human reading task names, vendor spellings and Asana parentage. Every downstream question — is this order late, has it arrived, which build pack is now short, who should chase it — inherits that reconstruction, and inherits you with it.</p>
+
+    <p>Three consequences show up in the evidence, and they account for most of the recurring load:</p>
+  </div>
+
+  <div class="find crit">
+    <h3>1 · Status maintenance replaced status measurement <span class="g g-c">Confirmed</span></h3>
+    <p>The mirrored database says 392 purchase-order tasks are open, worth £167,855, with 241 more than 30 days past their due date. Your own live oversight page, generated the same morning, says 31 orders are genuinely awaiting confirmation. The gap is not an automation bug — the oversight page excludes completed legacy orders and the raw mirror does not. It means the fastest honest answer to "what is actually on order" currently requires a purpose-built script, and any answer taken from the database without that filter is wrong.</p>
+    <p class="ev"><b>Evidence:</b> <span class="mono">procurement_tasks</span> open-status query vs <span class="mono">data/os_status/ops-oversight.html</span> generated 2026-09-09 08:06.</p>
+  </div>
+
+  <div class="find crit">
+    <h3>2 · Design Feedback has become a vendor-data repair desk <span class="g g-c">Confirmed</span></h3>
+    <p>67% of Design Feedback tasks raised in 2026 are single BOM part lines of the shape <span class="mono">"4 off 1597. 7110.E.014 — Sleeve bearing WSM-1618-08 Igus"</span>, up from 47% in 2025. Tracing one end to end: the importer set the vendor to <span class="mono">Igus</span>; you commented asking Design to change it to <span class="mono">IGUS</span>; you re-parented the part under the correct supplier order; two days later it came back marked <span class="mono">NEED TO ORDER</span> by Production. The project's own cause field is now meaningless — 1,216 of 1,248 tasks carry the non-cause value <em>"Update — aids in the metric report"</em> — so this work is invisible to any metric.</p>
+    <p class="ev"><b>Evidence:</b> task 1597.7110.E.014 activity feed 2026-09-07 → 09-09; <span class="mono">Route cause</span> distribution across all 1,248 tasks.</p>
+  </div>
+
+  <div class="find warn">
+    <h3>3 · Your judgement is captured, then discarded <span class="g g-c">Confirmed</span></h3>
+    <p>Corrective Actions are filled on 61% of the purchasing-addressed Delay Destroyer tasks, and they are genuinely good — supplier-continuity rules for refinished parts, fixings standardisation, second-source policy for mag brakes, the rule that any dependent task must route back to you. But the fields that would make them reusable are effectively empty: <span class="mono">LEARINGS</span> 12%, <span class="mono">Requires De-Brief</span> 8%, <span class="mono">DAY LAG</span> 6%. <span class="mono">Actual Cost</span> is filled on 99 tasks and sums to £480, so the cost case those actions were meant to build cannot be made. The reasoning is written down once, in free text, on a task that closes.</p>
+    <p class="ev"><b>Evidence:</b> custom-field fill rates across 212 purchasing-addressed Delay Destroyer tasks, 2019–2026.</p>
+  </div>
+
+  <div class="col">
+    <p>The headline number for personal load: <strong>579 of the 617 Asana tasks assigned to you are past their due date</strong> — 94%. A queue that is 94% overdue is not a queue; it has stopped carrying signal, which is why triage runs on top of it and why urgent things reach you by interruption instead.</p>
+  </div>
+</section>
+
+<!-- ============ 2 ============ -->
+<section id="map">
+  <div class="shead"><span class="snum">02</span><h2>Current-state process and data map</h2></div>
+  <div class="col">
+    <p>Observed flow from customer demand to production feedback. Each stage is graded by what the evidence shows actually executes, not by what the definitions promise.</p>
+  </div>
+
+  <div class="flow">
+    <div class="step"><div class="rail"><div class="dot"></div><div class="line"></div></div><div class="stepbody">
+      <div class="t">Demand — sales / project order created in Asana <span class="p p-grn">Working</span></div>
+      <div class="d">Manufacturing project per job (1597 Forrest Road, 1595 St George's, 1037 Langley …). Build packs mirror to <span class="mono">build_assembly_packs</span>, 2,618 rows, synced daily.</div>
+    </div></div>
+
+    <div class="step"><div class="rail"><div class="dot"></div><div class="line"></div></div><div class="stepbody">
+      <div class="t">Requirement — BOM import via MRP pipeline <span class="p p-grn">Working</span></div>
+      <div class="d">Stage 5 now writes <span class="mono">bom_requirements</span> — the gap the May capsule records as open is closed. 1,698 lines across 20 builds; latest 1597 Forrest Road on 2026-09-07. Every BOM line for the four jobs traced resolves to a Parts Control record: 199/199, 235/235, 118/118, 537/537.</div>
+    </div></div>
+
+    <div class="step"><div class="rail"><div class="dot p"></div><div class="line"></div></div><div class="stepbody">
+      <div class="t">Stock check — Golden Index + stock lookup <span class="p p-amb">Partial</span></div>
+      <div class="d">Status is written once at import (117 <span class="mono">in_stock</span>, 1,581 <span class="mono">needs_order</span>) and never changes again. <span class="mono">golden_index_rev6</span> holds 177 KAN mappings against 1,831 distinct part numbers in Parts Control, so most project parts are outside the index and get no stock answer at all.</div>
+    </div></div>
+
+    <div class="step"><div class="rail"><div class="dot p"></div><div class="line"></div></div><div class="stepbody">
+      <div class="t">Grouping — vendor collation into order candidates <span class="p p-amb">Stalled</span></div>
+      <div class="d">The ordering pipeline runs nightly and still groups (last write 2026-09-09 00:30). But of 134 queue lines only 17 were ever marked ordered, the last on 2026-07-03. 117 sit in <span class="mono">grouped</span>; 73 of those are over 30 days old, 21 over 60. The queue accumulates because ordering happens outside it.</div>
+    </div></div>
+
+    <div class="step"><div class="rail"><div class="dot b"></div><div class="line b"></div></div><div class="stepbody">
+      <div class="t">Purchase — PO raised in Asana, number assigned manually <span class="p p-red">Break point</span></div>
+      <div class="d">The PO exists only as an Asana task. <span class="mono">purchase_orders</span> holds 7 rows and has not been written since 2026-04-23. <strong>Nothing writes the link back to the part:</strong> <span class="mono">parts_control.procurement_task_gid</span> 0/2,761; <span class="mono">bom_requirements.po_id</span> 0/1,698. The part is marked <em>"On order (dependents NOT ORDER TASKS)"</em> — a state, not a reference.</div>
+    </div></div>
+
+    <div class="step"><div class="rail"><div class="dot p"></div><div class="line"></div></div><div class="stepbody">
+      <div class="t">Acknowledgement — supplier email parsed, human-gated <span class="p p-amb">Working, low yield</span></div>
+      <div class="d">Five-stage email pipeline is live (fetch → parse → match → Sheet → approve); it ran this morning. Over 489 reviewed emails the decisions were 358 reject, 101 approve, 30 modify — a 73% reject rate. 20 requests failed on 2026-08-28 with <em>"Task GID not matched — manual resolution required"</em> and remain in <span class="mono">REQUESTS_FAILED</span>.</div>
+    </div></div>
+
+    <div class="step"><div class="rail"><div class="dot p"></div><div class="line"></div></div><div class="stepbody">
+      <div class="t">Chase — overdue supplier chase drafts <span class="p p-amb">Built, not closing</span></div>
+      <div class="d">11 chase drafts generated 2026-09-01 → 09-07, each with a certainty grade. All 11 remain <span class="mono">status = 'draft'</span>. The oversight page also reports 230 suppliers with no email on file, so a large share of chasing cannot be drafted at all.</div>
+    </div></div>
+
+    <div class="step"><div class="rail"><div class="dot b"></div><div class="line b"></div></div><div class="stepbody">
+      <div class="t">Goods in — receipt, QC, allocation <span class="p p-red">Absent for project parts</span></div>
+      <div class="d"><span class="mono">po_lines</span> 0 rows. <span class="mono">supplier_deliveries</span> 0 rows. <span class="mono">ordering_queue.arrived_at</span> null on all 134 rows. A receipt path exists for stock and consumables only (<span class="mono">arrived_stock_processor.py</span>, driven by an Arrived Stock Qty field); project BOM parts have no receipt event anywhere in the data.</div>
+    </div></div>
+
+    <div class="step"><div class="rail"><div class="dot p"></div><div class="line"></div></div><div class="stepbody">
+      <div class="t">Build-pack readiness <span class="p p-amb">Structurally partial</span></div>
+      <div class="d">45% of Parts Control records (1,245 of 2,761) carry <span class="mono">association_status = 'unassociated'</span> — no build pack. <span class="mono">parts_readiness</span> and <span class="mono">stage_of_production</span> are null on all 2,618 pack rows, so pack readiness cannot be read from the mirror even where the association exists.</div>
+    </div></div>
+
+    <div class="step"><div class="rail"><div class="dot b"></div><div class="line b"></div></div><div class="stepbody">
+      <div class="t">Production feedback — Delay Destroyer / Design Feedback <span class="p p-red">Loop open</span></div>
+      <div class="d">Both projects receive well. Neither writes back. Delay Destroyer's <span class="mono">Corrective ACTIONS</span> is free text on a closing task; Design Feedback's <span class="mono">Route cause</span> is 97% a single non-cause value. No mechanism propagates either into the next BOM import, the parts library or the supplier master.</div>
+    </div></div>
+
+    <div class="step"><div class="rail"><div class="dot"></div></div><div class="stepbody">
+      <div class="t">You <span class="p p-red">The join</span></div>
+      <div class="d">Every dashed break above is closed by a person reading names and remembering context.</div>
+    </div></div>
+  </div>
+
+  <div class="callout">
+    <h4>A second, quieter defect</h4>
+    <p>The six mirror jobs run nine times a day and rewrite every column of every row each time, logging all columns as "changed" whether or not they were. <span class="mono">db_write_log</span> now holds 3.81 million rows — 769,043 in the last 30 days for a 4,085-row table — and is the main reason <span class="mono">ops.db</span> is 1.21 GB. The practical cost is not disk: it is that <strong>there is no change stream</strong>. Nothing can answer "which orders changed status since yesterday," which is precisely the question that would let status reach people without passing through you. <span class="g g-c">Confirmed</span></p>
+  </div>
+</section>
+
+<!-- ============ 3 ============ -->
+<section id="completeness">
+  <div class="shead"><span class="snum">03</span><h2>System completeness assessment</h2></div>
+
+  <div class="sub">Working — keep and depend on</div>
+  <ul class="tick">
+    <li><strong>Asana → ops.db mirroring.</strong> Six syncs, nine runs/day, current to 2026-09-09 09:01. Procurement tasks, parts control, build packs, stock, suppliers, invoices.</li>
+    <li><strong>BOM import through to Parts Control.</strong> 100% BOM-line-to-part resolution on all four jobs traced. The May-2026 documented gap (<span class="mono">bom_requirements</span> never written) is closed.</li>
+    <li><strong>Email ingest and human-gated approval.</strong> Live, idempotent, 2,769 emails de-duplicated, no unreviewed Asana writes.</li>
+    <li><strong>Parts Control propagator.</strong> Ran on 8 of the last 10 working days, 1,700 audited stock-action propagations.</li>
+    <li><strong>The oversight portal.</strong> <span class="mono">ops-oversight</span>, <span class="mono">giles-worklist</span>, <span class="mono">bom-tracker</span> regenerate daily and already do live-verified open-order reporting. This is the most under-used asset in the estate.</li>
+  </ul>
+
+  <div class="sub">Nearly complete — one connection short</div>
+  <ul class="tick">
+    <li><strong>Overdue chase.</strong> Detection, certainty grading and draft generation all work. 11 drafts sit unsent; no send/track/close step exists.</li>
+    <li><strong>Ordering queue.</strong> Grouping works nightly. The <span class="mono">ordered</span> transition has not fired since 2026-07-03 because PO raising happens outside the queue and nothing feeds the result back.</li>
+    <li><strong>Supplier master.</strong> 431 suppliers with types, tags and 209 contacts — but keyed on descriptive Asana names (<span class="mono">"AALCO Ltd - Aluminium and stainless steel"</span>) while parts carry short free text (<span class="mono">"Aalco"</span>). Only 5 of 119 part-vendor keys match the master.</li>
+    <li><strong>Legacy BOM handover.</strong> 22 packs <span class="mono">prepared</span>, 1 <span class="mono">committed</span>. The prepare step runs; the commit step waits on you.</li>
+  </ul>
+
+  <div class="sub">Unreliable — present but not trustworthy without verification</div>
+  <ul class="tick">
+    <li><strong>Open-order counts from the mirror.</strong> 392 vs 31 verified. Any figure taken without the live filter is wrong.</li>
+    <li><strong>Vendor identity.</strong> 238 collision groups in procurement tasks (1,335 raw spellings → 779). 13 Parts Control "vendor" values are actually part descriptions (<span class="mono">"2 off packs of 25"</span>, <span class="mono">"4 off BS EN ISO 4168"</span>).</li>
+    <li><strong>The <span class="mono">qc_issues</span> table.</strong> 9,065 rows, exactly matching the <em>Invoices</em> project's task count, with every <span class="mono">impact</span> and <span class="mono">signed_off_status</span> null. It appears to be an invoice mirror under a QC name. <span class="g g-i">Inferred</span></li>
+    <li><strong>Documentation.</strong> The SES_Brain capsules and the purchasing <span class="mono">SKILL.md</span> still route through <span class="mono">.openclaw</span>, retired in August. <span class="mono">PATH_CONFIG.yaml</span> honestly reports <span class="mono">migration_state: in_progress</span>.</li>
+  </ul>
+
+  <div class="sub">Missing — no implementation at all</div>
+  <ul class="tick">
+    <li><strong>Part-to-order reference.</strong> The whole basis of every downstream answer.</li>
+    <li><strong>Goods-in event for project parts.</strong> No receipt, no partial-delivery record, no shortage record, no QC-pass record.</li>
+    <li><strong>Allocation.</strong> <span class="mono">po_lines.allocated_qty</span> exists as a column and has never held a value.</li>
+    <li><strong>Change stream.</strong> No usable "what changed" feed despite 3.81M write-log rows.</li>
+    <li><strong>Feedback write-back.</strong> Nothing carries a Design Feedback or Delay Destroyer conclusion into the next BOM, drawing or supplier record.</li>
+  </ul>
+</section>
+
+<!-- ============ 4 ============ -->
+<section id="taxonomy">
+  <div class="shead"><span class="snum">04</span><h2>Intervention taxonomy</h2></div>
+  <div class="col">
+    <p>Why your involvement is currently required, separated by what you are actually supplying. Frequency is evidence-derived where the data supports it; where it does not, the cell says so.</p>
+  </div>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Intervention</th><th>What you supply</th><th>Frequency</th><th>Evidence</th><th>Treatment</th></tr></thead>
+      <tbody>
+        <tr><td class="k">Correcting vendor names / re-parenting parts to the right supplier order</td><td>Missing information</td><td class="n">29 of 43<br>DF tasks 2026</td><td>Design Feedback task shapes + task 1597.7110.E.014 feed</td><td><span class="p p-grn">Eliminate</span></td></tr>
+        <tr><td class="k">Reconstructing which order covers which part</td><td>Recovery from system failure</td><td class="n">Every enquiry</td><td>0/2,761 part→PO links</td><td><span class="p p-grn">Eliminate</span></td></tr>
+        <tr><td class="k">Chasing suppliers for confirmation and dates</td><td>Routine administration</td><td class="n">31 open<br>15 overdue</td><td>ops-oversight 2026-09-09</td><td><span class="p p-amb">Automate + escalate</span></td></tr>
+        <tr><td class="k">Reviewing purchasing email proposals</td><td>Routine administration</td><td class="n">489 reviewed<br>73% rejected</td><td><span class="mono">qa_history.json</span></td><td><span class="p p-amb">Simplify</span></td></tr>
+        <tr><td class="k">Advancing order status so others can see it</td><td>Routine administration</td><td class="n">392 stale<br>vs 31 real</td><td>mirror vs live diff</td><td><span class="p p-amb">Automate</span></td></tr>
+        <tr><td class="k">Deciding order / no-order on marginal stock items</td><td>Commercial + material judgement</td><td class="n">22 of 199<br>triaged as decisions</td><td><span class="mono">giles_tasks.triage_category</span></td><td><span class="p p-gry">Retain — aid it</span></td></tr>
+        <tr><td class="k">Substitution, finish continuity, make-vs-buy calls</td><td>Material / technical judgement</td><td class="n">Recurring<br>class</td><td>Corrective Actions text, 2025–26</td><td><span class="p p-gry">Retain — capture it</span></td></tr>
+        <tr><td class="k">Accepting risk on late long-lead items</td><td>Risk acceptance</td><td class="n">Not measurable</td><td>DAY LAG filled 6%</td><td><span class="p p-gry">Retain</span></td></tr>
+        <tr><td class="k">Absorbing organisational work with no other owner</td><td>Coordination</td><td class="n">352 of 617<br>tasks unclassifiable</td><td><span class="mono">giles_tasks</span> domain analysis</td><td><span class="p p-red">Route — management call</span></td></tr>
+        <tr><td class="k">IT, SIM cards, wifi, fobs, van stock, containers</td><td>Coordination</td><td class="n">42 IT + 15 fleet<br>tracked tasks</td><td><span class="mono">giles_tasks</span> names</td><td><span class="p p-red">Reassign — management call</span></td></tr>
+      </tbody>
+      <caption>Frequencies count records, not hours; effort per record is not instrumented anywhere in the estate.</caption>
+    </table>
+  </div>
+
+  <div class="sub">Where your Asana load actually sits</div>
+  <div class="bars">
+    <div class="bar"><span class="lab">Other / unclassifiable</span><span class="track"><span class="fill c" style="width:100%"></span></span><span class="val">352</span></div>
+    <div class="bar"><span class="lab">Purchasing &amp; orders</span><span class="track"><span class="fill" style="width:47.4%"></span></span><span class="val">167</span></div>
+    <div class="bar"><span class="lab">IT / systems / dev</span><span class="track"><span class="fill v" style="width:11.9%"></span></span><span class="val">42</span></div>
+    <div class="bar"><span class="lab">Production / build</span><span class="track"><span class="fill v" style="width:6.8%"></span></span><span class="val">24</span></div>
+    <div class="bar"><span class="lab">Fleet / vans / facilities</span><span class="track"><span class="fill v" style="width:4.3%"></span></span><span class="val">15</span></div>
+    <div class="bar"><span class="lab">HR / recruitment / training</span><span class="track"><span class="fill v" style="width:2.0%"></span></span><span class="val">7</span></div>
+    <div class="bar"><span class="lab">ISO / quality / compliance</span><span class="track"><span class="fill v" style="width:1.7%"></span></span><span class="val">6</span></div>
+    <div class="bar"><span class="lab">Design / drawings</span><span class="track"><span class="fill v" style="width:1.1%"></span></span><span class="val">4</span></div>
+  </div>
+  <p class="ev" style="max-width:70ch"><b>Reading this:</b> 617 open tasks assigned to you, classified by keyword from task names — so "other" is a genuine finding, not a classifier failure. A majority of your named workload does not describe itself as purchasing work. 579 of the 617 are overdue. <span class="g g-c">Confirmed</span></p>
+</section>
+
+<!-- ============ 5 ============ -->
+<section id="edge">
+  <div class="shead"><span class="snum">05</span><h2>Edge-case register</h2></div>
+  <div class="col">
+    <p>Material, purchasing, design and production edge cases the evidence actually shows, with where each is currently captured. The pattern worth noting: <strong>the recurrence is in the class of defect, not the part.</strong> Of 499 distinct part references in Design Feedback, only 19 appear more than once — but the same categories repeat every year.</p>
+  </div>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Edge case</th><th>Where captured now</th><th>How resolved</th><th>Reusable?</th></tr></thead>
+      <tbody>
+        <tr><td class="k">Vendor name variant on imported BOM line</td><td>Design Feedback comment to Design</td><td>Manual comment + re-parent</td><td><span class="p p-red">No</span></td></tr>
+        <tr><td class="k">Vendor field holding a part description</td><td>Nowhere — visible only in raw data</td><td>Not resolved</td><td><span class="p p-red">No</span></td></tr>
+        <tr><td class="k">Refinished part must use the original finisher</td><td>Corrective Actions free text, 2026-06-10</td><td>Stated once</td><td><span class="p p-red">No</span></td></tr>
+        <tr><td class="k">Fixings not on BOM (clinch nut / screw size mismatch)</td><td>Corrective Actions, 2025-07-29 &amp; 2026-02-25</td><td>Stated twice, a year apart</td><td><span class="p p-red">No</span></td></tr>
+        <tr><td class="k">Steel profile shortage on revised drawings</td><td>Corrective Actions, 2026-06-08 — <em>process was changed</em></td><td>Steel profile BOM task now generated per import</td><td><span class="p p-grn">Yes</span></td></tr>
+        <tr><td class="k">Single-source risk (mag brakes, Misumi wheels)</td><td>Corrective Actions, 2026-04-14</td><td>Second source sought, not recorded</td><td><span class="p p-amb">Partly</span></td></tr>
+        <tr><td class="k">Inhouse-vs-buy decided after material committed</td><td>Corrective Actions, 2026-05-14</td><td>Stated once</td><td><span class="p p-red">No</span></td></tr>
+        <tr><td class="k">BOM not processed within 3 days of issue</td><td>Corrective Actions, 2026-08-14</td><td>Noted as third occurrence in 9 years</td><td><span class="p p-amb">Partly</span></td></tr>
+        <tr><td class="k">Wrong regional variant nearly ordered (US pressure mat)</td><td>Corrective Actions, 2026-08-24</td><td>Rule stated: re-verify non-standard combined purchases</td><td><span class="p p-amb">Partly</span></td></tr>
+        <tr><td class="k">Dependent task blocks silently, never returns to you</td><td>Corrective Actions, 2026-05-08</td><td>Rule proposed, not implemented</td><td><span class="p p-red">No</span></td></tr>
+        <tr><td class="k">Supplier has no email on file</td><td>ops-oversight page — 230 suppliers</td><td>Manual lookup each time</td><td><span class="p p-amb">Listed</span></td></tr>
+        <tr><td class="k">Email cannot be matched to a task</td><td><span class="mono">REQUESTS_FAILED</span> — 28 files, 20 from one day</td><td>Manual resolution; none reprocessed</td><td><span class="p p-amb">Listed</span></td></tr>
+        <tr><td class="k">Importer / pipeline edge cases</td><td><span class="mono">run_history/edge_cases</span> + a dedicated Asana project</td><td>Logged deliberately</td><td><span class="p p-grn">Yes</span></td></tr>
+        <tr><td class="k">Ordering-pipeline edge cases</td><td><span class="mono">ordering_edge_cases</span> table — <strong>0 rows</strong></td><td>Table built, never written</td><td><span class="p p-red">No</span></td></tr>
+      </tbody>
+      <caption>The three "Yes" rows are the model: a stated conclusion that changed a pipeline, a project, or a generated artefact.</caption>
+    </table>
+  </div>
+
+  <div class="callout">
+    <h4>Likely occurring outside both projects</h4>
+    <p>Categories the evidence implies but does not record anywhere: partial deliveries reconciled by memory (42 tasks sit in <span class="mono">PARTIAL DELIVERY</span>, some since March, with no line-level shortage record); price variance between quote and invoice (<span class="mono">price_ex_vat</span> null on 272 tasks); lead-time drift by supplier (<span class="mono">typical_lead_times_days</span> exists on the supplier table and is unused); and substitution decisions taken verbally at the bench. <span class="g g-h">Hypothesis</span> — each would need a short observation period to confirm.</p>
+  </div>
+</section>
+
+<!-- ============ 6 ============ -->
+<section id="recurrence">
+  <div class="shead"><span class="snum">06</span><h2>Recurrence and feedback-loop analysis</h2></div>
+
+  <div class="col">
+    <p>Both learning projects are shrinking. That could mean fewer problems or less recording — the evidence points at both, and they are not the same thing.</p>
+  </div>
+
+  <div class="sub">Delay Destroyer — tasks raised per year</div>
+  <div class="bars">
+    <div class="bar"><span class="lab">2022</span><span class="track"><span class="fill" style="width:95.1%"></span></span><span class="val">251</span></div>
+    <div class="bar"><span class="lab">2023</span><span class="track"><span class="fill" style="width:98.9%"></span></span><span class="val">261</span></div>
+    <div class="bar"><span class="lab">2024</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="val">264</span></div>
+    <div class="bar"><span class="lab">2025</span><span class="track"><span class="fill" style="width:79.9%"></span></span><span class="val">211</span></div>
+    <div class="bar"><span class="lab">2026 to date</span><span class="track"><span class="fill c" style="width:42.0%"></span></span><span class="val">111</span></div>
+  </div>
+
+  <div class="sub">Design Feedback — tasks raised per year</div>
+  <div class="bars">
+    <div class="bar"><span class="lab">2021</span><span class="track"><span class="fill v" style="width:100%"></span></span><span class="val">222</span></div>
+    <div class="bar"><span class="lab">2022</span><span class="track"><span class="fill v" style="width:69.8%"></span></span><span class="val">155</span></div>
+    <div class="bar"><span class="lab">2023</span><span class="track"><span class="fill v" style="width:75.7%"></span></span><span class="val">168</span></div>
+    <div class="bar"><span class="lab">2024</span><span class="track"><span class="fill v" style="width:64.9%"></span></span><span class="val">144</span></div>
+    <div class="bar"><span class="lab">2025</span><span class="track"><span class="fill v" style="width:38.3%"></span></span><span class="val">85</span></div>
+    <div class="bar"><span class="lab">2026 to date</span><span class="track"><span class="fill c" style="width:19.4%"></span></span><span class="val">43</span></div>
+  </div>
+
+  <div class="find warn">
+    <h3>Falling volume is not evidence of a closing loop <span class="g g-c">Confirmed</span></h3>
+    <p>Recording quality fell alongside volume. 46% of 2026 Delay Destroyer tasks carry no <span class="mono">REASON</span> at all (51 of 111). Design Feedback's cause field collapsed into a single non-cause value. Where classification survives, it is stable year on year: <em>Process Issue</em>, <em>Design — BOM issue</em>, <em>Parts — QC</em>, <em>Error in Ordering</em> and <em>Supplier Issue</em> have been the top purchasing categories since 2023.</p>
+  </div>
+
+  <div class="find crit">
+    <h3>Resolution is slow and open items are very old <span class="g g-c">Confirmed</span></h3>
+    <p>Purchasing-addressed Delay Destroyer tasks take a <strong>median 58 days</strong> to close, mean 78, 90th percentile 141, maximum 1,183. Twelve remain open; the oldest has been open 1,266 days, two more over 900. Design Feedback closes faster — median 23 days — but 21 remain open including items from 2018, 2019, 2020 and 2021.</p>
+  </div>
+
+  <div class="find warn">
+    <h3>Recurrence is acknowledged but not acted on <span class="g g-c">Confirmed</span></h3>
+    <p>Of 212 purchasing-addressed delay tasks, 47 are explicitly marked <em>"Has happened before"</em> or <em>"Yes happens frequently"</em>, 80 as <em>"Not happening regularly"</em>, and 85 carry no assessment. There is no field, report or routine that reviews the 47 as a set. The one demonstrable permanent correction in the record — the steel-profile BOM task now generated with every import — was made because a pipeline changed, not because the project prompted it.</p>
+  </div>
+
+  <div class="find crit">
+    <h3>The cost case cannot currently be made <span class="g g-c">Confirmed</span></h3>
+    <p>The project's stated purpose, recorded in its own description, was to prove £68k of recoverable cost. <span class="mono">Actual Cost</span> is now populated on 99 of 212 purchasing tasks and totals <strong>£480</strong>. Whatever those numbers mean, they cannot support the argument the project exists to make.</p>
+  </div>
+</section>
+
+<!-- ============ 7 ============ -->
+<section id="capability">
+  <div class="shead"><span class="snum">07</span><h2>Can the system answer the operational questions?</h2></div>
+  <div class="col">
+    <p>Each question graded against what the environment can produce today without a person reconstructing the answer.</p>
+  </div>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Question</th><th>Capability today</th><th>Basis</th></tr></thead>
+      <tbody>
+        <tr><td class="k">What parts are required for every live order?</td><td><span class="p p-grn">Reliable</span></td><td>1,698 BOM lines, 100% resolved to parts on every job traced</td></tr>
+        <tr><td class="k">Which required parts are already available?</td><td><span class="p p-amb">Partial</span></td><td>Set once at import; never refreshed; 177 KAN mappings vs 1,831 part numbers</td></tr>
+        <tr><td class="k">Which are ordered?</td><td><span class="p p-amb">Verify first</span></td><td>Inferred from a stock-action label, not a reference; mirror over-counts 392 vs 31</td></tr>
+        <tr><td class="k">Which have been acknowledged by suppliers?</td><td><span class="p p-amb">Verify first</span></td><td>Email match works when the ref parses; 73% of proposals rejected</td></tr>
+        <tr><td class="k">Which are expected late?</td><td><span class="p p-amb">Partial</span></td><td>Due date null on 3,736 of 4,085 order tasks; 80 open tasks have no due date</td></tr>
+        <tr><td class="k">Which have arrived?</td><td><span class="p p-red">Unavailable</span></td><td>Stock and consumables only; 0 arrival records for project parts</td></tr>
+        <tr><td class="k">Which passed required checks?</td><td><span class="p p-red">Unavailable</span></td><td>No QC-pass event in the data model</td></tr>
+        <tr><td class="k">Which are allocated to the right order?</td><td><span class="p p-red">Unavailable</span></td><td><span class="mono">allocated_qty</span> never written</td></tr>
+        <tr><td class="k">Which orders have complete build packs?</td><td><span class="p p-red">Manual</span></td><td>45% of parts unassociated; readiness field null on all 2,618 packs</td></tr>
+        <tr><td class="k">Which orders are at risk of production delay?</td><td><span class="p p-red">Manual</span></td><td>Requires the previous four answers</td></tr>
+        <tr><td class="k">What is the next required action?</td><td><span class="p p-amb">Partial</span></td><td>Daily triage classifies 199 of 617 tasks; 418 untriaged</td></tr>
+        <tr><td class="k">Who owns that action?</td><td><span class="p p-amb">Partial</span></td><td>Delay Destroyer "Addressed By" works; 32% of 2026 tasks name you</td></tr>
+        <tr><td class="k">Which shortages are really data errors?</td><td><span class="p p-red">Unavailable</span></td><td>No reconciliation between required, ordered and received</td></tr>
+        <tr><td class="k">Which exceptions need your judgement?</td><td><span class="p p-red">Manual</span></td><td>No separation of exception from routine anywhere in the flow</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="col">
+    <p><strong>What is outstanding before this flow is operationally dependable</strong> — in dependency order: a vendor identity crosswalk; a part-to-order reference written when the order is raised; a receipt event for project parts; allocation against that receipt; and a change stream so all of it can be published without being asked. Nothing beyond that is required for dependability.</p>
+  </div>
+</section>
+
+<!-- ============ 8 ============ -->
+<section id="leverage">
+  <div class="shead"><span class="snum">08</span><h2>Ranked leverage register</h2></div>
+  <div class="col">
+    <p>Ranked by future interventions avoided per unit of build effort, weighted down for dependency risk and for the consequence of an automated decision being wrong. Each has a smallest safe test that changes nothing live.</p>
+  </div>
+
+  <div class="lev">
+    <div class="levhead"><span class="rank">01</span><span class="nm">Vendor identity crosswalk</span><span class="p p-grn">Eliminate</span></div>
+    <div class="levgrid">
+      <div class="cell"><div class="ct">Evidence</div><div class="cv">Only 5 of 119 part-vendor keys match the supplier master. 238 collision groups in order tasks. 29 of 43 Design Feedback tasks in 2026 are vendor/part-data corrections.</div></div>
+      <div class="cell"><div class="ct">Burden removed</div><div class="cv">The largest single recurring category of your manual correction work, plus the precondition for auto-chase, RFQ routing and supplier performance.</div></div>
+      <div class="cell"><div class="ct">Risk</div><div class="cv">Low. A crosswalk table proposes; it does not rename anything. Wrong mapping is visible and reversible.</div></div>
+      <div class="cell"><div class="ct">Depends on</div><div class="cv">Nothing. <span class="mono">vendor_normalise.csv</span> and <span class="mono">vendor_name_normalised</span> already exist and are partly populated.</div></div>
+    </div>
+    <div class="levfoot"><b>Smallest safe test:</b> generate a read-only report of every vendor string in Parts Control mapped to its best supplier-master match with a confidence score, plus the unmatched tail. You confirm or correct 119 rows once. <b>Success measure:</b> vendor-correction Design Feedback tasks per month falls from ~4 to under 1.</div>
+  </div>
+
+  <div class="lev">
+    <div class="levhead"><span class="rank">02</span><span class="nm">Write the part → order reference at the moment the order is raised</span><span class="p p-grn">Automate</span></div>
+    <div class="levgrid">
+      <div class="cell"><div class="ct">Evidence</div><div class="cv">0 of 2,761 parts and 0 of 1,698 BOM lines carry an order reference. Asana already holds the truth — the part task is a subtask of the order task.</div></div>
+      <div class="cell"><div class="ct">Burden removed</div><div class="cv">Every question that currently requires reading task names. Unlocks shortage reconciliation, pack readiness and risk reporting.</div></div>
+      <div class="cell"><div class="ct">Risk</div><div class="cv">Low — it records a relationship Asana already asserts. Wrong parent produces a wrong link, which the sync corrects next run.</div></div>
+      <div class="cell"><div class="ct">Depends on</div><div class="cv">Nothing technically. Works better after 01.</div></div>
+    </div>
+    <div class="levfoot"><b>Smallest safe test:</b> extend the Parts Control mirror to store the existing Asana parent GID in <span class="mono">procurement_task_gid</span>, read-only, one job (1597). Then count how many of that job's 199 parts resolve to a live order. <b>Success measure:</b> ≥90% resolution without human input.</div>
+  </div>
+
+  <div class="lev">
+    <div class="levhead"><span class="rank">03</span><span class="nm">Publish the daily status change list instead of answering status questions</span><span class="p p-grn">Automate</span></div>
+    <div class="levgrid">
+      <div class="cell"><div class="ct">Evidence</div><div class="cv">Nine syncs a day rewrite every column and log every column as changed. 3.81M write-log rows that cannot answer "what changed."</div></div>
+      <div class="cell"><div class="ct">Burden removed</div><div class="cv">Interruption-driven status enquiries, and the pressure to keep 392 stale order tasks tidy so others can read them.</div></div>
+      <div class="cell"><div class="ct">Risk</div><div class="cv">Low. Read-only diffing. Also shrinks a 1.21 GB database.</div></div>
+      <div class="cell"><div class="ct">Depends on</div><div class="cv">Nothing. The oversight portal already exists as the publishing surface.</div></div>
+    </div>
+    <div class="levfoot"><b>Smallest safe test:</b> compare each row against its stored values before writing, and log only real differences for one week. Publish the resulting change list as a section on the existing oversight page. <b>Success measure:</b> a working week where nobody asks you for an order status that appears on the page.</div>
+  </div>
+
+  <div class="lev">
+    <div class="levhead"><span class="rank">04</span><span class="nm">Close the chase loop — send, track, escalate</span><span class="p p-amb">Automate + retain escalation</span></div>
+    <div class="levgrid">
+      <div class="cell"><div class="ct">Evidence</div><div class="cv">11 chase drafts created 2026-09-01 → 09-07, all still <span class="mono">draft</span>. 15 overdue POs on the live worklist. 230 suppliers with no email.</div></div>
+      <div class="cell"><div class="ct">Burden removed</div><div class="cv">Routine chasing and the memory load of who has already been chased and when.</div></div>
+      <div class="cell"><div class="ct">Risk</div><div class="cv">Medium — this sends mail in the company's name. Keep the high-certainty send behind one-click approval; never auto-send at low certainty.</div></div>
+      <div class="cell"><div class="ct">Depends on</div><div class="cv">01 for supplier contact resolution.</div></div>
+    </div>
+    <div class="levfoot"><b>Smallest safe test:</b> take the 11 existing drafts, approve or discard each in one sitting, and record the reply outcome against the certainty grade. <b>Success measure:</b> high-certainty drafts that you would have sent unchanged ≥80%; then and only then reduce the gate.</div>
+  </div>
+
+  <div class="lev">
+    <div class="levhead"><span class="rank">05</span><span class="nm">Record a receipt event for project parts</span><span class="p p-amb">Automate the record, retain the check</span></div>
+    <div class="levgrid">
+      <div class="cell"><div class="ct">Evidence</div><div class="cv"><span class="mono">po_lines</span> and <span class="mono">supplier_deliveries</span> empty since creation. 42 tasks in <span class="mono">PARTIAL DELIVERY</span>, some since March. 19 sit in <span class="mono">ARRIVED — NEED TO QC</span> past due.</div></div>
+      <div class="cell"><div class="ct">Burden removed</div><div class="cv">"Has it come in?" and "what's still short?" — currently answerable only by walking to the parts.</div></div>
+      <div class="cell"><div class="ct">Risk</div><div class="cv">Medium. A wrong receipt is worse than no receipt: it hides a shortage. Goods-in must stay a human act; only the recording is automated.</div></div>
+      <div class="cell"><div class="ct">Depends on</div><div class="cv">02.</div></div>
+    </div>
+    <div class="levfoot"><b>Smallest safe test:</b> for one job, mirror the existing Asana goods-in signals into <span class="mono">po_lines</span> read-only and compare the result against the physical position on a single delivery. <b>Success measure:</b> the record matches the shelf on ten consecutive deliveries.</div>
+  </div>
+
+  <div class="lev">
+    <div class="levhead"><span class="rank">06</span><span class="nm">Turn Corrective Actions into standing purchasing rules</span><span class="p p-amb">Simplify + capture judgement</span></div>
+    <div class="levgrid">
+      <div class="cell"><div class="ct">Evidence</div><div class="cv">130 filled Corrective Actions on purchasing tasks; <span class="mono">LEARINGS</span> filled 12%, <span class="mono">Requires De-Brief</span> 8%. Fixings and finish-continuity rules stated more than once, years apart.</div></div>
+      <div class="cell"><div class="ct">Burden removed</div><div class="cv">Re-deriving decisions you have already made, and re-explaining them to design and production.</div></div>
+      <div class="cell"><div class="ct">Risk</div><div class="cv">Low, but a rule written badly is worse than none. Every rule stays advisory until it has survived three real cases.</div></div>
+      <div class="cell"><div class="ct">Depends on</div><div class="cv">Nothing. Purely additive.</div></div>
+    </div>
+    <div class="levfoot"><b>Smallest safe test:</b> extract the 130 existing Corrective Actions into a single reviewed list, keep the ten that are genuinely standing rules, and attach them to the BOM import checklist as advisory notes. <b>Success measure:</b> a repeat of a covered category within six months triggers the note before the order goes out.</div>
+  </div>
+
+  <div class="lev">
+    <div class="levhead"><span class="rank">07</span><span class="nm">Cut the email review to what needs a decision</span><span class="p p-amb">Simplify</span></div>
+    <div class="levgrid">
+      <div class="cell"><div class="ct">Evidence</div><div class="cv">489 reviewed, 358 rejected (73%). The confidence model already grades LOW / MEDIUM / HIGH; LOW is 242 of 489.</div></div>
+      <div class="cell"><div class="ct">Burden removed</div><div class="cv">Roughly three-quarters of a recurring review task that yields nothing.</div></div>
+      <div class="cell"><div class="ct">Risk</div><div class="cv">Medium — suppressing a real order confirmation is a real cost. Suppress from the default view only; never delete, and keep the full list one click away.</div></div>
+      <div class="cell"><div class="ct">Depends on</div><div class="cv">Nothing.</div></div>
+    </div>
+    <div class="levfoot"><b>Smallest safe test:</b> re-score the 358 rejected emails against the confidence grade to measure how many LOW-confidence items you nonetheless approved. <b>Success measure:</b> if that number is near zero, LOW can leave the default view.</div>
+  </div>
+
+  <div class="lev">
+    <div class="levhead"><span class="rank">08</span><span class="nm">Give the unowned work an owner</span><span class="p p-red">Management decision, not technical work</span></div>
+    <div class="levgrid">
+      <div class="cell"><div class="ct">Evidence</div><div class="cv">352 of 617 assigned tasks do not describe purchasing work: SIM connectivity, wifi, key fobs, container management, van stock, coaching, Asana workflow repair.</div></div>
+      <div class="cell"><div class="ct">Burden removed</div><div class="cv">The largest single block of your task list, and the interruption pattern that comes with it.</div></div>
+      <div class="cell"><div class="ct">Risk</div><div class="cv">Organisational, not technical. Some of it lands on you because you are the only person who will pick it up.</div></div>
+      <div class="cell"><div class="ct">Depends on</div><div class="cv">A decision by Steve.</div></div>
+    </div>
+    <div class="levfoot"><b>Smallest safe test:</b> take the 352 to a single management conversation with three buckets — mine, someone else's, nobody's-and-should-stop. <b>Success measure:</b> the count assigned to you falls and stays down for a quarter.</div>
+  </div>
+
+  <div class="lev">
+    <div class="levhead"><span class="rank">09</span><span class="nm">Repair the Delay Destroyer and Design Feedback instruments</span><span class="p p-amb">Simplify</span></div>
+    <div class="levgrid">
+      <div class="cell"><div class="ct">Evidence</div><div class="cv">46% of 2026 delay tasks have no reason. Design Feedback's cause field is 97% a single non-cause. Actual Cost totals £480 across 99 tasks.</div></div>
+      <div class="cell"><div class="ct">Burden removed</div><div class="cv">Not load directly — it restores the ability to prove where load comes from, which every other item is measured against.</div></div>
+      <div class="cell"><div class="ct">Risk</div><div class="cv">Low. Retire dead fields rather than adding new ones; more fields is what broke them.</div></div>
+      <div class="cell"><div class="ct">Depends on</div><div class="cv">Nothing.</div></div>
+    </div>
+    <div class="levfoot"><b>Smallest safe test:</b> make REASON mandatory at close on Delay Destroyer only, and retire the Design Feedback <em>Route cause</em> option that means nothing. <b>Success measure:</b> unclassified 2027 tasks under 10%.</div>
+  </div>
+</section>
+
+<!-- ============ 9 ============ -->
+<section id="backlog">
+  <div class="shead"><span class="snum">09</span><h2>Outstanding-work map</h2></div>
+
+  <div class="sub">A · Essential — required for the existing pipeline to be dependable</div>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Item</th><th>State</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr><td class="k">Vendor identity crosswalk (parts ↔ supplier master)</td><td><span class="p p-red">Missing</span></td><td>Blocks chase, RFQ, lead-time and supplier performance</td></tr>
+        <tr><td class="k"><span class="mono">parts_control.procurement_task_gid</span> populated</td><td><span class="p p-red">0 / 2,761</span></td><td>Data exists in Asana parentage today</td></tr>
+        <tr><td class="k"><span class="mono">bom_requirements.po_id</span> + status beyond <span class="mono">needs_order</span></td><td><span class="p p-red">0 / 1,698</span></td><td>Requirement never learns it was ordered</td></tr>
+        <tr><td class="k"><span class="mono">po_lines</span> written on order</td><td><span class="p p-red">0 rows</span></td><td><span class="mono">write_po_line()</span> exists, never called</td></tr>
+        <tr><td class="k">Receipt event for project parts</td><td><span class="p p-red">Missing</span></td><td>Stock/consumables path exists as the model</td></tr>
+        <tr><td class="k">Change detection in the six mirrors</td><td><span class="p p-red">Missing</span></td><td>Full rewrite ×9 daily; no usable change feed</td></tr>
+        <tr><td class="k">28 failed REQUESTS reprocessed or closed</td><td><span class="p p-amb">Stuck</span></td><td>20 from 2026-08-28, unmatched invoices</td></tr>
+        <tr><td class="k">1 pending REQUEST from 2026-08-28</td><td><span class="p p-amb">Stuck</span></td><td>Steel profile workflow init</td></tr>
+        <tr><td class="k">Documentation reconciled to real paths</td><td><span class="p p-amb">Stale</span></td><td>Capsules and SKILL.md still name <span class="mono">.openclaw</span>; runtime uses <span class="mono">.hermes/.env</span></td></tr>
+        <tr><td class="k">Scheduler of record identified</td><td><span class="p p-gry">Unknown</span></td><td>Only failing stubs in Task Scheduler; syncs demonstrably run</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sub">B · Would reduce administration</div>
+  <ul class="tick">
+    <li>Send/track/escalate on the chase drafts; contact capture for the 230 suppliers with no email.</li>
+    <li>Suppress LOW-confidence email proposals from the default review view.</li>
+    <li>Publish the daily change list on the existing oversight page.</li>
+    <li>Resolve the 117 stale ordering-queue lines: order, cancel, or stop grouping them.</li>
+    <li>Standing-rules list distilled from 130 Corrective Actions.</li>
+    <li>Clean the 13 Parts Control records whose vendor field holds a part description.</li>
+    <li>Extend Golden Index coverage, or state explicitly that it is stock-only and stop implying project-part coverage.</li>
+  </ul>
+
+  <div class="sub">C · Ambitious — should wait</div>
+  <ul class="tick">
+    <li>Line-item cost matching from quote PDFs to subtasks (already scoped in the skill notes; depends on 01 and 02).</li>
+    <li>Supplier lead-time and reliability scoring (needs a receipt event first).</li>
+    <li>Automatic order proposals from the grouped queue (needs a working ordered/arrived cycle before it can be trusted).</li>
+    <li>A shop-floor lookup agent (depends on readiness being answerable at all).</li>
+  </ul>
+
+  <div class="sub">D · Requires a management or ownership decision, not code</div>
+  <ul class="tick">
+    <li>Who owns IT, fleet, facilities and the miscellaneous 352.</li>
+    <li>Whether Delay Destroyer's Actual Cost is repaired or the cost objective is formally dropped.</li>
+    <li>Whether Design Feedback is split — genuine design anomalies apart from BOM/part-data corrections — or is renamed to what it has become.</li>
+    <li>Whether PO numbers stay manual. The constraint is documented as speed and collision risk; it is also the point at which every automatic link is currently lost.</li>
+    <li>Whether the ISO, audit, shackles and LOLER obligations sitting with you belong in the purchasing role at all.</li>
+  </ul>
+</section>
+
+<!-- ============ 10 ============ -->
+<section id="questions">
+  <div class="shead"><span class="snum">10</span><h2>Questions only you can answer</h2></div>
+  <div class="col">
+    <p>Each of these would change the findings or the priority order, and none can be settled from the environment.</p>
+  </div>
+  <ol class="q">
+    <li><b>Is the 392-vs-31 gap tolerated or unnoticed?</b> If the team already knows the mirror over-counts and works from the oversight page, leverage 03 gets easier and cheaper. If people are reading the raw counts, it is more urgent than ranked.</li>
+    <li><b>Why did the ordering queue stop advancing on 3 July?</b> Deliberate abandonment, a change in how you raise POs, or an unnoticed break? The fix is different in each case, and 117 stale lines are currently misleading.</li>
+    <li><b>What does Actual Cost mean on a Delay Destroyer task?</b> £480 across 99 tasks reads as hours, or as a field people gave up on. The answer decides whether item 09 is repair or retirement.</li>
+    <li><b>Which of the 230 email-less suppliers actually matter?</b> If it is thirty, contact capture is an afternoon and unblocks chase. If it is genuinely 230, the chase automation needs a different design.</li>
+    <li><b>Is manual PO numbering negotiable in any form?</b> Not automatic assignment — but could the system reserve a number that you confirm? That single change would let the part-to-order link be written at source rather than reconstructed.</li>
+    <li><b>What is actually running the six nightly syncs?</b> The only relevant scheduled tasks on this machine are failing stubs, yet the syncs demonstrably run. Until that is known, nothing built on top of them can be relied on. <span class="g g-u">Unknown</span></li>
+    <li><b>Of the 352 unclassified tasks, how many are genuinely yours?</b> A rough split — half, a quarter, nearly all — decides whether item 08 is the top priority or the eighth.</li>
+  </ol>
+</section>
+
+<hr class="rule">
+
+<footer>
+  <div><strong>Scope of this investigation.</strong> Read-only throughout. No Asana task, custom field, project, automation, database row, schema or queue file was created, modified or deleted. Live-system inspection covered ops.db, the Asana workspace via read endpoints, SES_Workspace queues, skills, run history and generated status pages, the SES_Brain vault and Windows Task Scheduler.</div>
+  <div style="margin-top:10px"><strong>Access limitations.</strong> The scheduler executing the nightly syncs was not identified on this machine. The Google Sheets approval gate and the Outlook mailbox were not opened. Time-per-intervention is not instrumented anywhere in the estate, so all effort statements are counts of records, never hours. Credentials were read only to authenticate read requests and appear nowhere in this document.</div>
+  <div style="margin-top:10px">Compiled 9 September 2026 · evidence current to ops.db write at 09:01 and the oversight page generated 08:06 the same morning.</div>
+</footer>
+
+</div>

@@ -10,9 +10,50 @@ load_dotenv(Path(__file__).parents[3] / ".hermes" / ".env")
 sys.path.insert(0, str(Path(__file__).parents[2] / "lib"))
 from llm import complete
 
+
+def _extract_json(raw):
+    """Robustly pull a JSON object out of an LLM response.
+
+    DeepSeek (and other providers) occasionally emit special control tokens inline
+    — e.g. `{"ok":<|endoftext|>true}` — or wrap the object in ```json fences, or add
+    a short preamble. A bare json.loads() then raises "Expecting value: line 1
+    column 1 (char 0)" and the email is silently dropped. This normalises all of
+    those cases and returns a parsed dict, or None if nothing JSON-like is present.
+    """
+    if not raw:
+        return None
+    s = raw.strip()
+    # Strip special/control tokens like <|endoftext|>, <|im_start|>, <|im_end|>, etc.
+    s = re.sub(r"<\|[^|]*\|>", "", s)
+    # Strip markdown code fences (```json ... ``` or ``` ... ```)
+    s = re.sub(r"^```(?:json)?\s*", "", s, flags=re.IGNORECASE)
+    s = re.sub(r"\s*```$", "", s).strip()
+    # Fast path
+    try:
+        return json.loads(s)
+    except Exception:
+        pass
+    # Fallback: first balanced {...} object (handles leading/trailing prose)
+    start = s.find("{")
+    if start == -1:
+        return None
+    depth = 0
+    for i in range(start, len(s)):
+        if s[i] == "{":
+            depth += 1
+        elif s[i] == "}":
+            depth -= 1
+            if depth == 0:
+                try:
+                    return json.loads(s[start:i + 1])
+                except Exception:
+                    return None
+    return None
+
+
 def parse_emails():
     
-    input_file = r"C:\Users\GilesHugo\SES_Workspace\data\raw_purchasing_emails.json"
+    input_file = "C:/Users/GilesHugo/SES_Workspace/data/raw_purchasing_emails.json"
     output_file = r"C:\Users\GilesHugo\SES_Workspace\data\parsed_insights.json"
     
     try:
@@ -29,6 +70,7 @@ def parse_emails():
         return
 
     insights = []
+    failed = []
     
     system_instruction = """
     You are a professional procurement assistant.
@@ -65,7 +107,8 @@ def parse_emails():
     """
 
     for email in emails:
-        print(f"  → {email['subject'].encode('ascii', 'ignore').decode()}")
+        safe_subj = str(email.get('subject', ''))[:70].encode('ascii', 'ignore').decode()
+        print(f"  → {safe_subj}")
         
         email_date = email.get('date', '')
         email_subject = email.get('subject', '')
@@ -78,7 +121,13 @@ def parse_emails():
                 max_tokens=2048,
                 temperature=0.1,
             )
-            result = json.loads(raw)
+            result = _extract_json(raw)
+            if result is None:
+                # LLM replied but we could not recover JSON — record it, do NOT
+                # silently drop (silent drops are how an outage stays invisible).
+                failed.append(safe_subj)
+                print(f"    ⚠ non-JSON LLM reply for '{safe_subj}' — skipped (raw: {repr((raw or '')[:80])})")
+                continue
 
             insights.append({
                 "email_id": email["id"],
@@ -89,11 +138,15 @@ def parse_emails():
             })
 
         except Exception as e:
-            print(f"Error parsing email {email['id']}: {e}")
+            failed.append(safe_subj)
+            print(f"    ⚠ parse error for '{safe_subj}': {type(e).__name__}: {e}")
             
     with open(output_file, 'w') as f:
         json.dump(insights, f, indent=2)
     print(f"Parsed insights saved to {output_file}")
+    print(f"Parsed OK: {len(insights)}  Failed: {len(failed)}  (of {len(emails)} raw)")
+    if failed:
+        print("Failed subjects: " + "; ".join(failed[:10]))
 
 if __name__ == '__main__':
     parse_emails()

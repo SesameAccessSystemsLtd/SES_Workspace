@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  11/09/2026  13:35
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Adam/Nikki from Thameside discussing material specifications and upcoming work with Giles Hugo, including tube dimensions and stock availability. The conversation also covered scheduling and pricing details.
+
+--- RECAP --------------------------------------------------
+Adam/Nikki inquired if the tube with an outer diameter (OD) of 48 mil could be used, mentioning a rough bar to keep costs down, and planned to send a price quote later.Giles Hugo confirmed the 48 mil OD tube was acceptable and noted that Adam/Nikki would machine it out of the bar completely.Giles Hugo mentioned there are additional requirements for other tubes without rebates, specifically four items, and has asked Richard to check stock for these materials.
+
+--- TASKS --------------------------------------------------
+Adam/Nikki will send a price quote along with other relevant details shortly.Giles Hugo will have Richard verify stock availability for the four additional tube requirements without rebates.
+
+(Full transcript: RC web portal only — no RingSense API)

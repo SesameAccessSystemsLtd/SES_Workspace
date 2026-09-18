@@ -51,17 +51,40 @@ def main():
     cur = conn.cursor()
 
     # All parts_control rows by build_assembly_pack_gid -> set of normalised pn.
-    # build_assembly_pack_gid holds the pack REFERENCE string (not the numeric GID).
+    #
+    # build_assembly_pack_gid historically held the pack REFERENCE string, but
+    # GID is now the canonical format (see 06_normalise_pack_gid.py). Both
+    # conventions can be present mid-migration, so resolve GIDs back to their
+    # reference string here — everything downstream in this script keys on the
+    # reference, so that stays the map key regardless of what the column holds.
+    gid_to_ref = {}
+    cur.execute("SELECT asana_task_gid, pack_reference FROM build_assembly_packs")
+    for r in cur.fetchall():
+        if r["asana_task_gid"] and r["pack_reference"]:
+            gid_to_ref[r["asana_task_gid"].strip()] = r["pack_reference"].strip()
+
     linked_by_ref = defaultdict(set)
     cur.execute("SELECT sesame_pn, build_assembly_pack_gid, asana_task_gid, order_qty, part_name FROM parts_control")
     all_pc_refs = set()
+    unresolved_gids = set()
     for r in cur.fetchall():
         ref = r["build_assembly_pack_gid"]
         pn = r["sesame_pn"]
         if ref and pn:
             ref = ref.strip()
+            if ref.isdigit():
+                resolved = gid_to_ref.get(ref)
+                if resolved is None:
+                    # A GID with no pack row — report rather than silently drop.
+                    unresolved_gids.add(ref)
+                    continue
+                ref = resolved
             linked_by_ref[ref].add(norm_pn(pn))
             all_pc_refs.add(ref)
+
+    if unresolved_gids:
+        print(f"WARNING: {len(unresolved_gids)} pack GID(s) in parts_control have "
+              f"no build_assembly_packs row: {sorted(unresolved_gids)[:10]}")
 
     # Build a lookup: given a CSV pack reference, find the matching parts_control
     # reference key. Handles both conventions:

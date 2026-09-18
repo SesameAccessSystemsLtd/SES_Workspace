@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  10/09/2026  14:55
+============================================================
+With:         +441709918510 01709 918510
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a call between Giles Hugo and Jade from a supplier, discussing the specifications and procurement process for a specific type of enclosure and its vents, with plans to send images and obtain a quote.
+
+--- RECAP --------------------------------------------------
+Giles Hugo inquired about sourcing a specific enclosure (Mad 1000x300) with vents and feet, which currently comes from JJ Automation, and discussed potential manufacturing in-house.Giles Hugo provided images of the enclosure to Jade via email to assess if they can be manufactured or supplied, including details about the shelf and base plinth.Jade requested the images and details to determine feasibility, pricing, and lead times, and confirmed they would need to go through their distributors for purchasing.Giles Hugo agreed to send the images and details to Jade's email, info.net.nyp, and confirmed the usual suppliers he uses are Kempson and Underwoods.The call concluded with both parties confirming the next steps, including sending images and obtaining a quote, and ended cordially.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will email Jade at info.net.nyp with images of the enclosure, including details about the shelf and base plinth, and specify the quantity and delivery location.Jade will review the images and details to determine if the enclosure can be manufactured or supplied, and will provide pricing and lead time information.
+
+(Full transcript: RC web portal only — no RingSense API)

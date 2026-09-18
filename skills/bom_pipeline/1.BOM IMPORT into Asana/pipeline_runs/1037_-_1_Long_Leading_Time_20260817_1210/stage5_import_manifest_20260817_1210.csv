@@ -1,0 +1,32 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1037 - 1.Long Leading Time,"Master task for all BOMs related to 1037 - 1.Long Leading Time
+Dropbox: https://www.dropbox.com/scl/fo/wytbjzuajlqpht7lem9l1/AEaWMQZEQwj40mrCculwGe0?rlkey=ygp4n8p69lc8nvnxv1dbjsp92&dl=0
+Project: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217451597572492?focus=true",,,,,,,,,,
+Long Leading BOM - 1037 - 1.Long Leading Time,,ALL BOMS - 1037 - 1.Long Leading Time,,Long Leading,,,,,,,
+Sesame - 1037 - 1.Long Leading Time,,Long Leading BOM - 1037 - 1.Long Leading Time,,Sesame,,,,,,,
+1 off 1037. 1014.N.080 - Rod end bearing (Dunlop part number: MP-M12C) POS12C Sesame,"1037.1014.N.080
+Stock Number: POS12C
+Material: Generic
+Web Link: https://bepltd.com/products/pos12c-nylon-liner-male-rod-end-bearing-m12x1-25
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/wytbjzuajlqpht7lem9l1/AEaWMQZEQwj40mrCculwGe0?rlkey=ygp4n8p69lc8nvnxv1dbjsp92&dl=0
+Mass: 0.011 kg
+Volume: 11441.414 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217451597572492?focus=true",Sesame - 1037 - 1.Long Leading Time,1,Sesame,,,,ORDER,PROJECT ORDER,1217541497362062,https://app.asana.com/0/848657415032331/1217541497362062
+Confortinet - 1037 - 1.Long Leading Time,,Long Leading BOM - 1037 - 1.Long Leading Time,,Confortinet,,,,,,,
+1 off 1037. 1014.N13.Ram - Ram: MD 25/18 D 130 SSF   Stroke: 130 mm MD 25/18 D 130 SSF Confortinet,"1037.1014.N13.Ram
+Stock Number: MD 25/18 D 130 SSF
+Web Link: steerforth.co.uk
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/wytbjzuajlqpht7lem9l1/AEaWMQZEQwj40mrCculwGe0?rlkey=ygp4n8p69lc8nvnxv1dbjsp92&dl=0
+Mass: 0.280 kg
+Volume: 279597.257 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217451597572492?focus=true",Confortinet - 1037 - 1.Long Leading Time,1,Confortinet,,,,ORDER,PROJECT ORDER,1217541629337237,https://app.asana.com/0/848657415032331/1217541629337237
+2 off 1037. 1014.N25 - Magnetic reed switch SRSTA Confortinet,"1037.1014.N25
+Stock Number: SRSTA
+Web Link: steerforth.co.uk
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/wytbjzuajlqpht7lem9l1/AEaWMQZEQwj40mrCculwGe0?rlkey=ygp4n8p69lc8nvnxv1dbjsp92&dl=0
+Mass: 0.011 lbmass
+Volume: 4775.924 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213147815445965/task/1217451597572492?focus=true",Confortinet - 1037 - 1.Long Leading Time,2,Confortinet,,,,ORDER,PROJECT ORDER,1217541759316896,https://app.asana.com/0/848657415032331/1217541759316896

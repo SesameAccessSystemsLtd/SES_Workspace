@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  09/09/2026  09:39
+============================================================
+With:         Jordan - Tapeswitch Mobile 07398 147717
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a call between Jordan from Tapeswitch Mobile and Giles Hugo discussing specifications for lift components, including lead lengths and channel material preferences. Jordan confirmed details and agreed to send drawings, with no major issues identified.
+
+--- RECAP --------------------------------------------------
+Jordan asked Giles Hugo about the lead length on the lift drawings, confirming it is 3 meters for all components.Giles Hugo noted that the small component does not specify lead length on the drawing and confirmed it is 55 millimeters.Jordan inquired whether the small component should have an aluminium or plastic channel; Giles Hugo suggested aluminium for all components for now.Jordan advised Giles Hugo to email or call if any details differ from the current specifications.Jordan agreed to send the drawings to Giles Hugo within the next hour.
+
+--- TASKS --------------------------------------------------
+Jordan will send the lift component drawings to Giles Hugo within the next hour.
+
+(Full transcript: RC web portal only — no RingSense API)

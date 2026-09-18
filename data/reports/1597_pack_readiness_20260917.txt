@@ -1,0 +1,187 @@
+PROJECT 1597 — pack readiness (rule: latest order delivery +3d for lasercut only)  [2026-09-17]
+====================================================================================================
+
+1597.7110.C19w
+  build due: 2026-09-21 | readiness: 2026-09-13 [+3d (lasercut)]  ⚠ 2 unconfirmed
+  pack: https://app.asana.com/1/357939803556123/task/1218237285311358
+      NO ORDER LINK | 1597.7110.C.TraversingActuator (Hydraulics Supplier)
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+
+1597.7110.G.ScissorLiftFrame.S
+  build due: 2026-09-21 | readiness: 2026-09-13 [+3d (lasercut)]  ⚠ 7 unconfirmed
+  pack: https://app.asana.com/1/357939803556123/task/1218237285311368
+      due 2026-09-09 UNCONFIRMED RS Components          Polymax - 1597 - Forrest Road Entire Sys
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+
+1597.1008.D1.MachineRoomCabinet
+  build due: 2026-09-21 | readiness: 2026-09-14 [as-delivered]  ⚠ 7 unconfirmed
+  pack: https://app.asana.com/1/357939803556123/task/1218237466504803
+      due 2026-09-09 UNCONFIRMED RS Components          Polymax - 1597 - Forrest Road Entire Sys
+      due 2026-09-09 UNCONFIRMED RS Components          Polymax - 1597 - Forrest Road Entire Sys
+      due 2026-09-09 UNCONFIRMED RS Components          Polymax - 1597 - Forrest Road Entire Sys
+      due 2026-09-09 UNCONFIRMED Bes                    Bes - 1597 - Forrest Road Entire System
+      due 2026-09-14 UNCONFIRMED JAJO                   JAJO - 1597 - Forrest Road PLC BOM
+      due 2026-09-07 UNCONFIRMED Related Fluid          Related Fluid - 1597 - Forrest Road Long
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+
+1597.7110.B.Platform-MT
+  build due: 2026-09-21 | readiness: 2026-09-28 [as-delivered]  ⚠ LATE vs build by 7d  ⚠ 23 unconfirmed
+  pack: https://app.asana.com/1/357939803556123/task/1218237285311353
+      due 2026-09-11 UNCONFIRMED Machining              21647-1597
+      due 2026-09-11 UNCONFIRMED Machining              21647-1597
+      due 2026-09-11 UNCONFIRMED Machining              21647-1597
+      due 2026-09-24 confirmed   Tape Switch            21611-1597
+      due 2026-09-24 confirmed   Tape Switch            21611-1597
+      due 2026-09-09 UNCONFIRMED Weber Cox              Weber Cox - 1597 - Forrest Road Entire S
+      due 2026-09-28 UNCONFIRMED Anodising              Anodising - 1597 - Forrest Road Entire S
+      due 2026-09-28 UNCONFIRMED Anodising              Anodising - 1597 - Forrest Road Entire S
+      due 2026-09-28 UNCONFIRMED Anodising              Anodising - 1597 - Forrest Road Entire S
+      due 2026-09-28 UNCONFIRMED Anodising              Anodising - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+
+1597.7110.I.MT.PitTrimPlatform
+  build due: 2026-09-21 | readiness: 2026-09-28 [as-delivered]  ⚠ LATE vs build by 7d  ⚠ 9 unconfirmed
+  pack: https://app.asana.com/1/357939803556123/task/1218237285311373
+      due 2026-09-23 UNCONFIRMED MayTec                 21615-1597
+      due 2026-09-23 UNCONFIRMED MayTec                 21615-1597
+      due 2026-09-28 UNCONFIRMED Anodising              Anodising - 1597 - Forrest Road Entire S
+      due 2026-09-28 UNCONFIRMED Anodising              Anodising - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+
+1597.7110.J.Manual MT_Barrier
+  build due: 2026-09-21 | readiness: 2026-09-28 [as-delivered]  ⚠ LATE vs build by 7d  ⚠ 20 unconfirmed
+  pack: https://app.asana.com/1/357939803556123/task/1218237285311378
+      due 2026-09-24 confirmed   Magnet Schultz         21640-1597
+      due 2026-09-11 UNCONFIRMED Machining              21647-1597
+      due 2026-09-11 UNCONFIRMED Machining              21647-1597
+      due 2026-09-11 UNCONFIRMED Machining              21647-1597
+      due 2026-09-10 UNCONFIRMED Welded by Sesame       INHOUSE MACHINING - 1597 - Forrest Road 
+      due 2026-09-23 UNCONFIRMED MayTec                 21615-1597
+      due 2026-09-24 confirmed   Magnet Schultz         21640-1597
+      due 2026-09-09 UNCONFIRMED RS Components          Polymax - 1597 - Forrest Road Entire Sys
+      NO ORDER LINK | 1597.7110.J.006 (Sesame)
+      NO ORDER LINK | 1597.7110.J.013 (Sesame)
+      due 2026-09-28 UNCONFIRMED Anodising              Anodising - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+
+1597.1010.I.ScissorLift_Single
+  build due: 2026-09-21 | readiness: 2026-10-22 [as-delivered]  ⚠ LATE vs build by 31d  ⚠ 41 unconfirmed
+  pack: https://app.asana.com/1/357939803556123/task/1218237466504813
+      due 2026-09-07 UNCONFIRMED Yellow Zinc Plating    Yellow Zinc Plating - 1597 - Forrest Roa
+      due 2026-09-07 UNCONFIRMED Yellow Zinc Plating    Yellow Zinc Plating - 1597 - Forrest Roa
+      due 2026-09-07 UNCONFIRMED Yellow Zinc Plating    Yellow Zinc Plating - 1597 - Forrest Roa
+      due 2026-09-10 UNCONFIRMED Welded by Sesame       INHOUSE MACHINING - 1597 - Forrest Road 
+      due 2026-09-10 UNCONFIRMED Welded by Sesame       INHOUSE MACHINING - 1597 - Forrest Road 
+      due 2026-09-10 UNCONFIRMED Welded by Sesame       INHOUSE MACHINING - 1597 - Forrest Road 
+      due 2026-09-10 UNCONFIRMED Welded by Sesame       INHOUSE MACHINING - 1597 - Forrest Road 
+      due 2026-09-10 UNCONFIRMED Welded by Sesame       INHOUSE MACHINING - 1597 - Forrest Road 
+      due 2026-09-09 UNCONFIRMED RS Components          Polymax - 1597 - Forrest Road Entire Sys
+      due 2026-09-09 UNCONFIRMED Bearing Supplier       Bearing Supplier - 1597 - Forrest Road E
+      due 2026-09-09 UNCONFIRMED Bearing Supplier       Bearing Supplier - 1597 - Forrest Road E
+      due 2026-10-22 UNCONFIRMED ABCO                   21630-1597
+      due 2026-10-22 UNCONFIRMED ABCO                   21630-1597
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+
+1597.Forrest Road, Edinburgh_EngineeringDrawing
+  build due: 2026-09-21 | readiness: 2026-11-24 [as-delivered]  ⚠ LATE vs build by 64d  ⚠ 24 unconfirmed
+  pack: https://app.asana.com/1/357939803556123/task/1218237285311383
+      due 2026-09-23 UNCONFIRMED MayTec                 21615-1597
+      due 2026-09-13 UNCONFIRMED IGUS                   21617-1597
+      due 2026-09-13 UNCONFIRMED IGUS                   21617-1597
+      due 2026-10-14 UNCONFIRMED gsfslides              21616-1597
+      due 2026-09-13 UNCONFIRMED IGUS                   21617-1597
+      due 2026-09-24 confirmed   Tape Switch            21611-1597
+      due 2026-11-24 UNCONFIRMED Bellows Supplier       21612-1597
+      due 2026-09-11 UNCONFIRMED Gapp Automation        21608-1597
+      due 2026-09-28 UNCONFIRMED Anodising              Anodising - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+      due 2026-09-10 UNCONFIRMED [laser] Laser Cut              Laser Cut - 1597 - Forrest Road Entire S
+
+1597.1008.Q1.DoubleLiftingJig
+  build due: 2026-09-21 | readiness: -          []
+  pack: https://app.asana.com/1/357939803556123/task/1218237466504808
+
+1597.7110.E.Covers&Connectors
+  build due: 2026-09-21 | readiness: -          []
+  pack: https://app.asana.com/1/357939803556123/task/1218237285311363
+
+1597 - Forrest Road - QC Control
+  build due: 2026-10-30 | readiness: -          []
+  pack: https://app.asana.com/1/357939803556123/task/1216653359849794

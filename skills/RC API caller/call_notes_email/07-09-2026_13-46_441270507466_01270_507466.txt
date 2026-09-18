@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  07/09/2026  13:46
+============================================================
+With:         +441270507466 01270 507466
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a recorded call menu navigation message from EMac, providing options for vehicle owners and retailers to access information about service and maintenance plans, with instructions for further assistance. No specific individual or follow-up actions were discussed.
+
+--- RECAP --------------------------------------------------
+The call was an automated recorded message from EMac, informing callers about options related to vehicle service and maintenance plans, including inquiries about data protection, plan types, payments, cancellations, renewals, and FAQs.Callers are instructed to select options by pressing numbers, with additional instructions to visit the website emac.co.uk/faqs for more information or to hold for a live advisor if needed.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

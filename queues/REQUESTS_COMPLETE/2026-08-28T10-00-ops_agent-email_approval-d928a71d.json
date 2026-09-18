@@ -1,0 +1,14 @@
+{
+  "request_id": "4cab6c9c-5a42-421c-9a4f-98aea5800c62",
+  "source": "email_approval_sheet",
+  "row_index": 22,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkdCADgAAA=",
+  "subject": "Automatic reply: SPG Glass - 1595 - St Georges House Entire system - SQR-46604",
+  "task_gid": "1217486678215190",
+  "task_name": "21573-1595 - SPG Glass - 1595 - St Georges House Entire system",
+  "asana_url": "https://app.asana.com/0/0/1217486678215190",
+  "action": "(Matched via SQR in Local DB)",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-08-25T08:31:53Z\nEmail: Automatic reply: SPG Glass - 1595 - St Georges House Entire system - SQR-46604\nMatch basis: (Matched via SQR in Local DB)\n- Acknowledged other — no field change proposed (type=other, SQR=SQR-46604, vendor=specialistglass)",
+  "decision": "A",
+  "created_at": "2026-08-28T10:00:36.231624+00:00"
+}

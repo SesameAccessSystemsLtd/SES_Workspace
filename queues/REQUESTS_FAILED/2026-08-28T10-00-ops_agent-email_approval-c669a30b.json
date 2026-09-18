@@ -1,0 +1,14 @@
+{
+  "request_id": "f0cd7618-2f14-428e-ade0-22296d52c800",
+  "source": "email_approval_sheet",
+  "row_index": 53,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy66AAA=",
+  "subject": "Acknowledgement of order 000759386  your ref  PO21581 270826",
+  "task_gid": null,
+  "task_name": "NOT MATCHED",
+  "asana_url": "",
+  "action": "AMENDMENT (task not auto-matched — SAP must locate manually):\nshould be finding and updating https://app.asana.com/1/357939803556123/project/358790955858777/task/1217900175707334?focus=true",
+  "comment_to_push": "NO AUTO-MATCH — manual review.\nEmail: Acknowledgement of order 000759386  your ref  PO21581 270826\nReceived: 2026-08-27T12:15:19Z\nFound: type=order_confirmation, PO=PO21581-270826, vendor=orbitalfasteners",
+  "decision": "M",
+  "created_at": "2026-08-28T10:00:36.519216+00:00"
+}

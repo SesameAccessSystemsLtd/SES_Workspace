@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  02/09/2026  15:56
+============================================================
+With:         Daniel Irons 07872 935158
+Forwarded by: LesV@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Daniel Irons and Leslie Vaughn discussing the upcoming site visit to review electrical requirements and drawings, with plans to verify details and relay information back to the design team. The visit is scheduled for tomorrow, with no immediate follow-up actions required beyond verification.
+
+--- RECAP --------------------------------------------------
+Daniel Irons and Leslie Vaughn confirmed their meeting at the town hall tomorrow to review electrical requirements and drawings, with Leslie providing a printed list of requirements.Leslie Vaughn stated that only two people, including themselves, will be present during the site visit, and they will be visitors without the need for inductions.They plan to spend approximately five minutes in a meeting room for initial discussion, followed by a site inspection outside.Leslie intends to review the site personally for about an hour, then relay the information from the drawings back to their design team for confirmation or correction via email.Daniel Irons mentioned that he has sent a full ADS build with the pit to Karen, who has confirmed satisfaction, and a full survey has been completed.
+
+--- TASKS --------------------------------------------------
+Leslie Vaughn will verify the electrical requirements list and confirm its accuracy before the site visit.
+
+(Full transcript: RC web portal only — no RingSense API)

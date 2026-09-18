@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  10/09/2026  09:46
+============================================================
+With:         - Purchasing 01268 733883
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call between Giles Hugo and Lewis from purchasing discussed pricing, capabilities, and lead times for folded stainless steel parts, including options for countersinking and tapping. The overall outcome was clarification on current capabilities and pricing estimates, with potential for future adjustments.
+
+--- RECAP --------------------------------------------------
+Lewis from purchasing reported that their current quote is under 3,700 pounds and that they have not included counter sinking on the stainless steel parts, citing difficulty with stainless and folded items.Giles Hugo confirmed that their quote is approximately 3,700 pounds, including countersinking and tapping, with a lead time of 8 days for folding and 6 days for standard delivery.Lewis indicated they have both tapping and countersinking machines but currently cannot do countersinking on stainless steel, and they plan to review if costs can be reduced further.Giles Hugo clarified that their current quote does not include countersinking or tapping, but they can offer folding and parts at a price of 5,251, with specific considerations for fold lines and narrow corners.The call concluded with Lewis mentioning a potential for slight price increases if additional countersinking and tapping are added, and they agreed to review and provide an updated quote later in the morning.
+
+--- TASKS --------------------------------------------------
+Lewis from purchasing will review and potentially update the quote to include countersinking and tapping for the stainless steel parts and send the revised estimate later this morning.
+
+(Full transcript: RC web portal only — no RingSense API)

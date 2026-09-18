@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  17/09/2026  09:36
+============================================================
+With:         - Purchasing 07850 145855
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo from a manufacturing company discussing panel build projects and potential collaboration with Jack from Elsie Automation, focusing on cost savings, supply chain, and product specifications.
+
+--- RECAP --------------------------------------------------
+Jack from Elsie Automation introduced himself and discussed their merger with Applied Automation, which now handles engineering and distribution, expanding their product offerings in electrical and mechanical automation components.Giles Hugo explained his company's transition from subcontracted panel manufacturing to in-house production, exploring options for panel sourcing, including in-house, mid-tier outsourcing, and using a trusted panel builder, with a focus on cost reduction and product stability.Jack indicated their ability to provide competitive pricing and suggested they will prepare quotations based on the current parts list, aiming to demonstrate potential cost savings and quality improvements, and offered to present to stakeholders if needed.
+
+--- TASKS --------------------------------------------------
+Jack from Elsie Automation will prepare a quotation based on the parts list and compare it with current suppliers.Jack will provide a full report on cost analysis and sourcing options within the next three months.Jack will follow up with Giles Hugo with the quotation and analysis results within two days.Giles Hugo will review the quotation and analysis, and consider arranging a presentation for his stakeholders if deemed beneficial.
+
+(Full transcript: RC web portal only — no RingSense API)

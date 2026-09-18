@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  07/09/2026  12:42
+============================================================
+With:         +441294313104 01294 313104
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a voicemail call from Giles Hugo of Sesame Access inquiring about the capability to print conductive inks and apply silicone dots on dielectric materials. The recipient confirmed they will forward the inquiry to the relevant department and provide a response.
+
+--- RECAP --------------------------------------------------
+Giles Hugo from Sesame Access called to ask if the recipient's company can print conductive inks on dielectric materials and apply silicone dots, seeking confirmation of these capabilities.Giles provided his email address (dallan@iecensus.com) for follow-up and requested that the inquiry be forwarded to the appropriate technical team via sales@calman.com.The recipient acknowledged the inquiry, agreed to pass it on to the relevant department, and committed to providing an answer as soon as possible.
+
+--- TASKS --------------------------------------------------
+The recipient will forward Giles Hugo's inquiry to the relevant technical team via sales@calman.com.The recipient will follow up with Giles Hugo with the response regarding the printing of conductive inks and silicone dots.
+
+(Full transcript: RC web portal only — no RingSense API)

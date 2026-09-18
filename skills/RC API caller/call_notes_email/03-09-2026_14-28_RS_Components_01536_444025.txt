@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  03/09/2026  14:28
+============================================================
+With:         RS Components 01536 444025
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This is a recorded call where Giles Hugo, representing Sesame Access, contacts RS Components to discuss their account. The call appears to be introductory or informational, with no specific outcomes or follow-up actions explicitly mentioned.
+
+--- RECAP --------------------------------------------------
+Giles Hugo, representing Sesame Access, calls RS Components and provides their company name and account information.RS Components' representative, Susan, greets Giles and asks for their name to proceed with the call.Giles mentions the company name Sesame Access and indicates they have an existing account with RS Components.The call includes standard recorded line disclosures and a prompt to press 1 to proceed or 2 to opt out of recording.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

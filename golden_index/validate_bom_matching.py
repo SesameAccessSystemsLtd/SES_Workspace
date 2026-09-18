@@ -23,11 +23,21 @@ from difflib import SequenceMatcher
 HERE = os.path.dirname(os.path.abspath(__file__))
 RUNS = os.path.join(HERE, "..", "skills", "bom_pipeline",
                     "1.BOM IMPORT into Asana", "pipeline_runs")
+def _pathconfig_db() -> str:
+    """Canonical ops.db via SES_Workspace/lib/path_config.py (PATH_CONFIG.yaml)."""
+    try:
+        import sys as _sys
+        _sys.path.insert(0, os.path.join(HERE, "..", "lib"))
+        from path_config import p as _p
+        return _p("db.ops")
+    except Exception:
+        return ""
+
+
 DB_CANDIDATES = [
-    os.environ.get("OPENCLAW_OPS_DB_PATH", ""),
+    _pathconfig_db(),                                 # canonical (PATH_CONFIG.yaml)
+    r"C:\Users\GilesHugo\SES_Workspace\db\ops.db",    # resilient literal fallback
     os.path.join(HERE, "..", "db", "ops.db"),
-    r"C:\Users\GilesHugo\SES_Workspace\db\ops.db",
-    "/sessions/eloquent-intelligent-curie/mnt/SES_Workspace/db/ops.db",
 ]
 THRESHOLD = 80
 _RS = re.compile(r'^(RS\s+STOCK\s+NO|RS\s+STOCK|STOCK\s+NO|RS)\b[:.\s-]*', re.I)

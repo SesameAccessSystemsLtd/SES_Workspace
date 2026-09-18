@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  27/08/2026  10:21
+============================================================
+With:         - Purchasing 07475 953187
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call was a voicemail inquiry from Elliot Group's purchasing department requesting a quote for the Belgravia Hotel project, with Giles Hugo attempting to connect the caller to Steve for further discussion.
+
+--- RECAP --------------------------------------------------
+The caller from Elliot Group's purchasing department inquired about a quote for the Belgravia Hotel project and requested to speak with Steve, who is responsible for providing the quote.Giles Hugo responded by offering to connect the caller to Steve, indicating that Steve is available to take the call.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,14 @@
+{
+  "request_id": "a9cc0e2c-3827-4bf0-baf8-c808b5186c93",
+  "source": "email_approval_sheet",
+  "row_index": 13,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy1PAAA=",
+  "subject": "Your RS order confirmation - 21250-1365",
+  "task_gid": "1217546337614415",
+  "task_name": "21250-1365 - RS Components - 1365 - Serjeants Inn Entire BOM",
+  "asana_url": "https://app.asana.com/0/0/1217546337614415",
+  "action": "(Matched via PO Number in Local DB)",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-08-19T09:36:34Z\nEmail: Your RS order confirmation - 21250-1365\nMatch basis: (Matched via PO Number in Local DB)\n- Acknowledged order_confirmation — no field change proposed (type=order_confirmation, PO=21250-1365, vendor=RS-Components)",
+  "decision": "A",
+  "created_at": "2026-08-19T11:00:26.587988+00:00"
+}

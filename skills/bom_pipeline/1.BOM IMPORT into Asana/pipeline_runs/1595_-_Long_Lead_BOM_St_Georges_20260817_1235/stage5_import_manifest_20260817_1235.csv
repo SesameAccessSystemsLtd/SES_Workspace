@@ -1,0 +1,87 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1595 - Long Lead BOM St Georges,"Master task for all BOMs related to 1595 - Long Lead BOM St Georges
+Dropbox: https://www.dropbox.com/scl/fo/palg6vpxnu7xpylsfqj9m/AEJs8hnjIHJnmcTQfq1G0KQ?rlkey=qn9x556bo92960vrnp1bn9yxv&dl=0
+Project: https://app.asana.com/1/357939803556123/project/1215904591987732/task/1217451597572458?focus=true",,,,,,,,,,
+Long Leading BOM - 1595 - Long Lead BOM St Georges,,ALL BOMS - 1595 - Long Lead BOM St Georges,,Long Leading,,,,,,,
+JAJO - 1595 - Long Lead BOM St Georges,,Long Leading BOM - 1595 - Long Lead BOM St Georges,,JAJO,,,,,,,
+1 off 1008. D1.MachineRoomCabinet - Machine Room Cabinet JAJO,"1008.D1.MachineRoomCabinet
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/palg6vpxnu7xpylsfqj9m/AEJs8hnjIHJnmcTQfq1G0KQ?rlkey=qn9x556bo92960vrnp1bn9yxv&dl=0
+Mass: 66.213 kg
+Volume: 32872715.717 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1215904591987732/task/1217451597572458?focus=true",JAJO - 1595 - Long Lead BOM St Georges,1,JAJO,,,,ORDER,PROJECT ORDER,1217542236828810,https://app.asana.com/0/848657415032331/1217542236828810
+Hydraulic Supplier - 1595 - Long Lead BOM St Georges,,Long Leading BOM - 1595 - Long Lead BOM St Georges,,Hydraulic Supplier,,,,,,,
+1 off 1595. 1008.D1.MotorPumpUnit - TBC by Karol - Spec as per PLC BOM Hydraulic Supplier,"1595.1008.D1.MotorPumpUnit
+Material: Generic
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/palg6vpxnu7xpylsfqj9m/AEJs8hnjIHJnmcTQfq1G0KQ?rlkey=qn9x556bo92960vrnp1bn9yxv&dl=0
+Mass: 14.000 kg
+Volume: 14000247.356 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1215904591987732/task/1217451597572458?focus=true",Hydraulic Supplier - 1595 - Long Lead BOM St Georges,1,Hydraulic Supplier,,,,ORDER,PROJECT ORDER,1217542015554762,https://app.asana.com/0/848657415032331/1217542015554762
+Related Fluid - 1595 - Long Lead BOM St Georges,,Long Leading BOM - 1595 - Long Lead BOM St Georges,,Related Fluid,,,,,,,
+1 off 1595. 1008.H6(RF SES447424) - Valve Block (2 function) RF SES447424 Related Fluid,"1595.1008.H6(RF SES447424)
+Stock Number: RF SES447424
+Material: Generic
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/palg6vpxnu7xpylsfqj9m/AEJs8hnjIHJnmcTQfq1G0KQ?rlkey=qn9x556bo92960vrnp1bn9yxv&dl=0
+Mass: 1.927 kg
+Volume: 1927464.015 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1215904591987732/task/1217451597572458?focus=true",Related Fluid - 1595 - Long Lead BOM St Georges,1,Related Fluid,,,,ORDER,PROJECT ORDER,1217542237112416,https://app.asana.com/0/848657415032331/1217542237112416
+2 off 1595. 1008.R.RF SAS4650 - Gate Control Unit RF SAS4650 Related Fluid,"1595.1008.R.RF SAS4650
+Stock Number: RF SAS4650
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/palg6vpxnu7xpylsfqj9m/AEJs8hnjIHJnmcTQfq1G0KQ?rlkey=qn9x556bo92960vrnp1bn9yxv&dl=0
+Mass: 1.195 kg
+Volume: 1194526.930 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1215904591987732/task/1217451597572458?focus=true",Related Fluid - 1595 - Long Lead BOM St Georges,2,Related Fluid,,,,ORDER,PROJECT ORDER,1217542161693333,https://app.asana.com/0/848657415032331/1217542161693333
+Sesame - 1595 - Long Lead BOM St Georges,,Long Leading BOM - 1595 - Long Lead BOM St Georges,,Sesame,,,,,,,
+1 off 1595. 1011.B.ScissorLift Double - Double Scissor Lift Sesame,"1595.1011.B.ScissorLift Double
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/palg6vpxnu7xpylsfqj9m/AEJs8hnjIHJnmcTQfq1G0KQ?rlkey=qn9x556bo92960vrnp1bn9yxv&dl=0
+Mass: 445.119 kg
+Volume: 62349447.572 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1215904591987732/task/1217451597572458?focus=true",Sesame - 1595 - Long Lead BOM St Georges,1,Sesame,,,,ORDER,PROJECT ORDER,1217542187824247,https://app.asana.com/0/848657415032331/1217542187824247
+Steerforth - 1595 - Long Lead BOM St Georges,,Long Leading BOM - 1595 - Long Lead BOM St Georges,,Steerforth,,,,,,,
+1 off 1595. 1014.N13.Ram - Ram: MD 25/18 D 130 SSF   Stroke: 130 mm MD 25/18 D 130 SSF Steerforth,"1595.1014.N13.Ram
+Stock Number: MD 25/18 D 130 SSF
+Web Link: steerforth.co.uk
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/palg6vpxnu7xpylsfqj9m/AEJs8hnjIHJnmcTQfq1G0KQ?rlkey=qn9x556bo92960vrnp1bn9yxv&dl=0
+Mass: 0.616 lbmass
+Volume: 279597.257 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1215904591987732/task/1217451597572458?focus=true",Steerforth - 1595 - Long Lead BOM St Georges,1,Steerforth,,,,ORDER,PROJECT ORDER,1217542188790087,https://app.asana.com/0/848657415032331/1217542188790087
+2 off 1595. 1014.P.041 - Rod end bearing (Dunlop part number: MP-M12C) POS12C Sesame,"1595.1014.P.041
+Stock Number: POS12C
+Material: Generic
+Web Link: https://bepltd.com/products/pos12c-nylon-liner-male-rod-end-bearing-m12x1-25
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/palg6vpxnu7xpylsfqj9m/AEJs8hnjIHJnmcTQfq1G0KQ?rlkey=qn9x556bo92960vrnp1bn9yxv&dl=0
+Mass: 0.011 kg
+Volume: 11441.414 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1215904591987732/task/1217451597572458?focus=true",Sesame - 1595 - Long Lead BOM St Georges,2,Sesame,,,,ORDER,PROJECT ORDER,1217542237307220,https://app.asana.com/0/848657415032331/1217542237307220
+1 off 1595. 1014.P7.Ram - Ram: MD 25/18 D 130 SSF   Stroke: 130 mm MD 25/18 D 130 SSF Steerforth,"1595.1014.P7.Ram
+Stock Number: MD 25/18 D 130 SSF
+Web Link: steerforth.co.uk
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/palg6vpxnu7xpylsfqj9m/AEJs8hnjIHJnmcTQfq1G0KQ?rlkey=qn9x556bo92960vrnp1bn9yxv&dl=0
+Mass: 0.280 kg
+Volume: 279597.257 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1215904591987732/task/1217451597572458?focus=true",Steerforth - 1595 - Long Lead BOM St Georges,1,Steerforth,,,,ORDER,PROJECT ORDER,1217557110274034,https://app.asana.com/0/848657415032331/1217557110274034
+Confortinet - 1595 - Long Lead BOM St Georges,,Long Leading BOM - 1595 - Long Lead BOM St Georges,,Confortinet,,,,,,,
+4 off 1595. 1014.P14 - Magnetic reed switch SRSTA Confortinet,"1595.1014.P14
+Stock Number: SRSTA
+Web Link: steerforth.co.uk
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/palg6vpxnu7xpylsfqj9m/AEJs8hnjIHJnmcTQfq1G0KQ?rlkey=qn9x556bo92960vrnp1bn9yxv&dl=0
+Mass: 0.011 lbmass
+Volume: 4775.924 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1215904591987732/task/1217451597572458?focus=true",Confortinet - 1595 - Long Lead BOM St Georges,4,Confortinet,,,,ORDER,PROJECT ORDER,1217542016014804,https://app.asana.com/0/848657415032331/1217542016014804
+1 off 1595. H500 - Hydraulic Accumulator - LT - 92mm wide (60 PSI pr-charge) H500 Hydraulic Supplier,"1595.H500
+Stock Number: H500
+Material: Generic
+Web Link: ISIS FLUID CONTROL LTD
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/palg6vpxnu7xpylsfqj9m/AEJs8hnjIHJnmcTQfq1G0KQ?rlkey=qn9x556bo92960vrnp1bn9yxv&dl=0
+Mass: 0.751 kg
+Volume: 750563.595 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1215904591987732/task/1217451597572458?focus=true",Hydraulic Supplier - 1595 - Long Lead BOM St Georges,1,Hydraulic Supplier,,,,ORDER,PROJECT ORDER,1217542237404081,https://app.asana.com/0/848657415032331/1217542237404081

@@ -1,0 +1,39 @@
+=== Overdue un-confirmed orders: 35 (today 2026-09-09) (Asana live-gate: dropped 106 finished/invoiced) ===
+  1. PO 20715-150126  PARAGON                      due=2026-01-15 overdue=237d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1207371623571355
+  2. PO 20985-1575  SG transmission              due=2026-04-20 overdue=142d  match=high   convo=AAQkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NAAQABp4erAtkkxKocbB2tbBgp4= to=katie.hirst@specialistglass.co.uk  asana=https://app.asana.com/0/0/1214073918288684
+  3. PO 21031-1575  Interfluid                   due=2026-05-13 overdue=119d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1214058627893439
+  4. PO 21061  ?                            due=2026-05-29 overdue=103d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1215236612403326
+  5. PO 21086  ?                            due=2026-06-11 overdue= 90d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1215579295163220
+  6. PO 21135  ?                            due=2026-07-03 overdue= 68d  match=medium convo=AAQkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NAAQAM5-UbOcno5Dvy0gLfZZO5I= to=alisonl@sesameaccess.com  asana=https://app.asana.com/0/0/1216241545991684
+  7. PO 21139-60726  amazon                       due=2026-07-06 overdue= 65d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1216298898397328
+  8. PO 21223  ?                            due=2026-08-06 overdue= 34d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1217235262622834
+  9. PO 21226-080826  OpenAI                       due=2026-08-08 overdue= 32d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1217297767214004
+ 10. PO 21243-1578  Anodising                    due=2026-08-17 overdue= 23d  match=high   convo=AAQkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NAAQAD1otRwhia5LhtlpvrTHLcU= to=quality@mercuryelectroplating.com  asana=https://app.asana.com/0/0/1213212124682884
+ 11. PO 21248-1595  Steerforth                   due=2026-08-18 overdue= 22d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1217542110017557
+ 12. PO 21247-1037  Steerforth                   due=2026-08-18 overdue= 22d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1217541497709661
+ 13. PO 21256-1365  Parcel Hero                  due=2026-08-20 overdue= 20d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1217671826698754
+ 14. PO 21559-1434  ?                            due=2026-08-24 overdue= 16d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1217419605998000
+ 15. PO 21569-250826  CPS                          due=2026-08-25 overdue= 15d  match=high   convo=AAQkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NAAQACg8u0rkLVdDh78ieZBZpUM= to=cpssteve69@gmail.com  asana=https://app.asana.com/0/0/1217543513496088
+ 16. PO None  Romans                       due=2026-08-25 overdue= 15d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1198304207052068
+ 17. PO 21574-1591  Weber Cox                    due=2026-08-26 overdue= 14d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1217538511443634
+ 18. PO 21576-1037  Machining                    due=2026-08-26 overdue= 14d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1217816924988082
+ 19. PO 21578-1595  Rubber Supplier              due=2026-08-26 overdue= 14d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1217486980895664
+ 20. PO 21580-1037  Bellows Supplier             due=2026-08-27 overdue= 13d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1217816924994537
+ 21. PO 21584-1588  JAJO                         due=2026-08-28 overdue= 12d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1216611730862632
+ 22. PO 21582-1595  Bellows Supplier             due=2026-08-28 overdue= 12d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1217487051559820
+ 23. PO 21583-1595  JAJO                         due=2026-08-28 overdue= 12d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1217542236607134
+ 24. PO 21591-1037  Engraving                    due=2026-09-01 overdue=  8d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1217419145218370
+ 25. PO None  ?                            due=2026-09-01 overdue=  8d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1218047865696945
+ 26. PO 21588-1591  Engraving                    due=2026-09-01 overdue=  8d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1216624793077165
+ 27. PO 21598-1037  Powder Coating               due=2026-09-03 overdue=  6d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1216068837918383
+ 28. PO 21601-042926  Peter Cooper                 due=2026-09-04 overdue=  5d  match=high   convo=AAQkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NAAQAGyYht-5rcxDmbGHsctgI24= to=peterdavidcooper@hotmail.com  asana=https://app.asana.com/0/0/1218178979133817
+ 29. PO 21600-1420  Royal mail                   due=2026-09-04 overdue=  5d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1218178706235890
+ 30. PO 21603-70926  RELATED FLUID                due=2026-09-07 overdue=  2d  match=high   convo=AAQkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NAAQAEwbip42osBJtImXPJkucYE= to=MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@sesameaccess.onmicrosoft.com  asana=https://app.asana.com/0/0/1218230230672634
+ 31. PO 21608-1597  Gapp Automation              due=2026-09-07 overdue=  2d  match=high   convo=AAQkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NAAQALYA5u8QSQdNml9nx3G0FPo= to=mweight@gapp.co.uk  asana=https://app.asana.com/0/0/1218239319439320
+ 32. PO 21606-70926  Drill services               due=2026-09-07 overdue=  2d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1218241568929858
+ 33. PO 21612-1597  Bellows Supplier             due=2026-09-08 overdue=  1d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1218239426956787
+ 34. PO 21611-1597  Tape Switch                  due=2026-09-08 overdue=  1d  match=none   convo=- to=-  asana=https://app.asana.com/0/0/1218239426597875
+ 35. PO 21610-1171  Wessex Galvanising           due=2026-09-08 overdue=  1d  match=high   convo=AAQkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NAAQAOv_G0D5nm5GrMukUTTCAy8= to=wessex@wggltd.co.uk  asana=https://app.asana.com/0/0/1218237285026846
+
+Total strictly-due-past un-confirmed POs: 35
+EXIT=0

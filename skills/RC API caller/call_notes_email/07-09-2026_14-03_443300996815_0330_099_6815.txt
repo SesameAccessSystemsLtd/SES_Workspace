@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  07/09/2026  14:03
+============================================================
+With:         +443300996815 0330 099 6815
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Fatima Barros requesting VAT invoices for two serviced vans, and Mark from customer services confirming the process and expected delivery time. The issue was resolved with the invoices to be emailed within two working days.
+
+--- RECAP --------------------------------------------------
+Fatima Barros contacted customer services to request VAT invoices for two vans that had been serviced, providing vehicle registration details for both.Mark confirmed receipt of the request, verified the vehicle registration numbers as LS69 LOLL and BRX180 FGJ, and informed Fatima that the invoices would be sent via email within two working days.
+
+--- TASKS --------------------------------------------------
+Mark from customer services will email the VAT invoices for the two vans to Fatima Barros within two working days.
+
+(Full transcript: RC web portal only — no RingSense API)

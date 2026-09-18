@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  27/08/2026  15:42
+============================================================
+With:         Leslie Vaughn 310
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call between Giles Hugo and Leslie Vaughn discussed the status of wheel stop platforms for Adelaide lifts, including recent modifications and commissioning status, as well as a pending visual plate adjustment. Leslie also mentioned a decision to create a spare wheel stop for future use.
+
+--- RECAP --------------------------------------------------
+Leslie Vaughn explained that all Adelaide lifts are in, and a wheel stop platform was modified by Danny to be a spare that can be swapped out later, which is currently in container two and will be taken to site upon approval from Adelaide.The wheel stop platform was not commissioned as it was only a visual feature highlighted by the client, requiring no formal commissioning process.Leslie made a decision to create a spare wheel stop by modifying an existing one with a bit of box section, to be used for commissioning or future needs.There was a mention of additional plates on Adelaide lifts seven and eight that were assigned to Reach, but the work was missed by the workshop and not yet addressed, deemed low priority since the client has not noticed the issue.
+
+--- TASKS --------------------------------------------------
+Leslie Vaughn will take the modified spare wheel stop to the site when approved by Adelaide, possibly during training day or the first service.Leslie Vaughn will monitor if the client notices the additional plates on Adelaide lifts seven and eight and decide whether to address them based on their response.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  17/08/2026  13:48
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved discussions between Adam from Thameside and Giles Hugo regarding the dimensions and fabrication details of a steel ramp component, including hole drilling and laser cutting instructions, with plans to review drawings and proceed accordingly.
+
+--- RECAP --------------------------------------------------
+Adam and Giles discussed the dimensions of a steel ramp, specifically a 12mm thickness with a width of approximately 13mm, and the positioning of holes for mounting, ensuring the ramp is flush with the stainless steel part at the top.Giles explained that the laser-cut parts will be provided to Adam for drilling and tapping holes, which will be done by Sesame, with the intention to minimize involvement of multiple parties in the process.Adam acknowledged the instructions and plans to review the drawings, particularly noting the protruding 40mm wide section on the laser-cut part, before proceeding with fabrication.Both parties agreed to review the drawings and call back if further clarification is needed before moving forward.
+
+--- TASKS --------------------------------------------------
+Adam will review the laser cut drawings, especially the protruding 40mm section, and confirm details before proceeding.Adam will proceed with drilling and tapping the holes as per the provided drawings after review.
+
+(Full transcript: RC web portal only — no RingSense API)

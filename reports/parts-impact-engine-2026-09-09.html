@@ -1,0 +1,399 @@
+<title>Parts Impact Engine</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#F3F4F2; --surface:#FFFFFF; --surface-2:#EAECE9;
+  --ink:#171C1A; --ink-2:#3E4744; --ink-3:#6C7671;
+  --rule:#D3D8D3; --rule-strong:#AEB6B0;
+  --brass:#9C6F26; --brass-soft:#E9DCC3;
+  --verdigris:#2C6B62; --verdigris-soft:#D6E6E2;
+  --crit:#9E3325; --crit-soft:#F2DAD5;
+  --warn:#A97814; --warn-soft:#F3E6C8;
+  --ok:#2C6B62; --ok-soft:#D6E6E2;
+  --shadow:0 1px 2px rgba(23,28,26,.06),0 8px 24px -16px rgba(23,28,26,.28);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#101413; --surface:#171C1A; --surface-2:#1E2523;
+  --ink:#E6EAE7; --ink-2:#B7C0BB; --ink-3:#89948F;
+  --rule:#2A322F; --rule-strong:#3C4642;
+  --brass:#D6A452; --brass-soft:#3A2F1B;
+  --verdigris:#6FBAAE; --verdigris-soft:#1C302D;
+  --crit:#E0705E; --crit-soft:#37201C;
+  --warn:#DCAA4A; --warn-soft:#332818;
+  --ok:#6FBAAE; --ok-soft:#1C302D;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7);
+}}
+:root[data-theme="dark"]{
+  --paper:#101413; --surface:#171C1A; --surface-2:#1E2523;
+  --ink:#E6EAE7; --ink-2:#B7C0BB; --ink-3:#89948F;
+  --rule:#2A322F; --rule-strong:#3C4642;
+  --brass:#D6A452; --brass-soft:#3A2F1B;
+  --verdigris:#6FBAAE; --verdigris-soft:#1C302D;
+  --crit:#E0705E; --crit-soft:#37201C;
+  --warn:#DCAA4A; --warn-soft:#332818;
+  --ok:#6FBAAE; --ok-soft:#1C302D;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:"IBM Plex Serif",Georgia,serif;font-size:16.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px 96px}
+.col{max-width:70ch}
+h1,h2,h3,h4,.ui{font-family:"IBM Plex Sans Condensed","Helvetica Neue",Arial,sans-serif}
+h1{font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.03;font-weight:700;letter-spacing:-.015em;margin:0;text-wrap:balance}
+h2{font-size:1.72rem;font-weight:700;letter-spacing:-.01em;margin:0;text-wrap:balance}
+h3{font-size:1.13rem;font-weight:600;margin:0 0 .3rem;text-wrap:balance}
+p{margin:0 0 1rem}
+a{color:var(--verdigris)}
+strong{font-weight:600}
+code,.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.87em}
+:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+header.mast{border-bottom:2px solid var(--ink);padding:52px 0 22px;margin-bottom:38px}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:500}
+.mast .lede{font-size:1.1rem;color:var(--ink-2);margin-top:18px;max-width:64ch}
+section{margin:0 0 62px;scroll-margin-top:20px}
+.shead{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--rule-strong);padding-bottom:8px;margin-bottom:24px}
+.snum{font-family:"IBM Plex Mono",monospace;font-size:.74rem;color:var(--brass);font-weight:600;letter-spacing:.08em;flex:none;padding-top:4px}
+.sub{font-family:"IBM Plex Sans Condensed",sans-serif;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);margin:28px 0 10px;font-weight:600}
+.tw{overflow-x:auto;border:1px solid var(--rule);border-radius:3px;background:var(--surface);margin:0 0 14px;box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;font-family:"IBM Plex Sans Condensed",sans-serif;font-size:.86rem}
+th{text-align:left;font-weight:600;font-size:.68rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);padding:10px 13px;border-bottom:1px solid var(--rule-strong);white-space:nowrap;background:var(--surface-2)}
+td{padding:9px 13px;border-bottom:1px solid var(--rule);vertical-align:top;color:var(--ink-2)}
+tbody tr:last-child td{border-bottom:0}
+td.n{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--ink)}
+td.k{color:var(--ink);font-weight:500}
+caption{caption-side:bottom;text-align:left;font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);padding:9px 13px;border-top:1px solid var(--rule)}
+.p{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.65rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600;padding:2px 6px;border-radius:2px;white-space:nowrap}
+.p-red{background:var(--crit-soft);color:var(--crit)}
+.p-amb{background:var(--warn-soft);color:var(--warn)}
+.p-grn{background:var(--ok-soft);color:var(--ok)}
+.p-gry{background:var(--surface-2);color:var(--ink-3)}
+.fix{border:1px solid var(--rule);border-left:3px solid var(--crit);border-radius:3px;background:var(--surface);padding:18px 20px;margin:0 0 18px;box-shadow:var(--shadow)}
+.fix.done{border-left-color:var(--ok)}
+.fix.todo{border-left-color:var(--warn)}
+.fix h3{display:flex;flex-wrap:wrap;align-items:baseline;gap:9px}
+.fix p:last-child{margin-bottom:0}
+.ev{font-family:"IBM Plex Mono",monospace;font-size:.75rem;color:var(--ink-3);line-height:1.55;margin-top:.55rem}
+.ev b{color:var(--ink-2);font-weight:500}
+.ba{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;border:1px solid var(--rule);border-radius:3px;overflow:hidden;margin:14px 0 4px;background:var(--surface)}
+.ba div{padding:12px 15px;border-right:1px solid var(--rule)}
+.ba div:last-child{border-right:0}
+.ba .lbl{font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.ba .was{font-family:"IBM Plex Mono",monospace;font-size:1.02rem;color:var(--crit);text-decoration:line-through;text-decoration-thickness:1px}
+.ba .now{font-family:"IBM Plex Mono",monospace;font-size:1.42rem;color:var(--ok);font-weight:600;line-height:1.2}
+pre{background:var(--surface-2);border:1px solid var(--rule);border-radius:3px;padding:13px 15px;overflow-x:auto;font-family:"IBM Plex Mono",monospace;font-size:.78rem;line-height:1.55;color:var(--ink);margin:0 0 14px}
+ul.tick{list-style:none;padding:0;margin:0 0 18px;display:flex;flex-direction:column;gap:8px}
+ul.tick li{padding-left:20px;position:relative;color:var(--ink-2)}
+ul.tick li::before{content:"—";position:absolute;left:0;color:var(--brass);font-family:"IBM Plex Mono",monospace}
+.loop{display:flex;flex-direction:column;gap:0;margin:0 0 20px;font-family:"IBM Plex Sans Condensed",sans-serif}
+.lstep{display:grid;grid-template-columns:24px 1fr;gap:14px}
+.lrail{display:flex;flex-direction:column;align-items:center}
+.ldot{width:11px;height:11px;border-radius:50%;background:var(--brass);margin-top:7px;flex:none}
+.lline{width:2px;flex:1;background:var(--rule-strong);margin:3px 0}
+.lbody{padding:0 0 18px}
+.lbody .t{font-weight:600;font-size:1rem;color:var(--ink)}
+.lbody .d{font-family:"IBM Plex Serif",serif;font-size:.9rem;color:var(--ink-2);line-height:1.5;margin-top:2px}
+.callout{background:var(--surface);border:1px solid var(--rule);border-top:3px solid var(--brass);border-radius:3px;padding:19px 21px;margin:0 0 24px;box-shadow:var(--shadow)}
+.callout h4{color:var(--brass);text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;font-family:"IBM Plex Mono",monospace;margin:0 0 .4rem}
+.callout p:last-child{margin-bottom:0}
+footer{border-top:2px solid var(--ink);padding-top:20px;font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--ink-3);line-height:1.7}
+@media (max-width:640px){.wrap{padding:0 18px 64px}body{font-size:16px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="eyebrow">Sesame Access Systems · Build + change record · 9 September 2026</div>
+  <h1>Parts Impact Engine</h1>
+  <p class="lede">Four defects were holding the parts-to-production picture shut. All four are fixed and verified against live data. On top of them sits a forecast that shows production impact <em>before</em> lasercut lands, and an improvement loop that finds friction, stages an action, and only closes it when a metric actually moves.</p>
+</header>
+
+<!-- ===================== 1 ===================== -->
+<section id="found">
+  <div class="shead"><span class="snum">01</span><h2>What was actually broken</h2></div>
+  <div class="col">
+    <p>Each of these was found by reading the code and confirming against live records. None is a design disagreement — all four are bugs with a single correct answer.</p>
+  </div>
+
+  <div class="fix done">
+    <h3>1 · The order link was fetched, then thrown away <span class="p p-grn">Fixed</span></h3>
+    <p><span class="mono">sync_parts_control.py</span> requested <span class="mono">parent.gid</span> from Asana, used it to set <span class="mono">is_subtask</span>, and then wrote <span class="mono">"procurement_task_gid": None</span> on every row. The link between a part and the order covering it was in the same dictionary, one line above, and was discarded.</p>
+    <div class="ba">
+      <div><div class="lbl">Parts with an order link</div><div class="was">0 of 2,761</div><div class="now">2,426</div></div>
+      <div><div class="lbl">Parts with a job number</div><div class="was">0</div><div class="now">2,412</div></div>
+      <div><div class="lbl">Parts with an order status</div><div class="was">0</div><div class="now">1,737</div></div>
+    </div>
+    <p class="ev"><b>Also now captured:</b> Arrived Stock Qty, Unit Price, Rev Number, PO TASK, Stock Link, due date, completion date, and a derived <span class="mono">supply_route</span> (lasercut / subcon / buy / inhouse / stock — 688 parts classify as lasercut, which is what makes the pre-lasercut forecast possible).</p>
+  </div>
+
+  <div class="fix done">
+    <h3>2 · The delivery date was the order date <span class="p p-grn">Fixed</span> <span class="p p-red">Corrects my earlier report</span></h3>
+    <p><span class="mono">procurement_tasks.due_date</span> was populated from custom field <span class="mono">1208706270294053</span>, which is <em>"Order date "</em>. The real expected delivery is the Asana task due date, and the sync never requested it. Every lateness figure in the database was measuring days since the order was placed.</p>
+    <p>Verified on PO <span class="mono">21617-1597 · IGUS</span>: task due date <span class="mono">2026-09-13</span>, Order date field <span class="mono">2026-09-09</span>. The database held 09-09 in a column called <span class="mono">due_date</span>.</p>
+    <p><strong>This is why my previous report said 392 open orders worth £167,855 with 241 more than 30 days late.</strong> That figure was built on the wrong column and on rows that were never live. With the mapping corrected and your answer to question 1 encoded as a <span class="mono">scope</span> field, the database now agrees with your own oversight page.</p>
+    <div class="ba">
+      <div><div class="lbl">Open orders</div><div class="was">392</div><div class="now">50</div></div>
+      <div><div class="lbl">Genuinely overdue</div><div class="was">241</div><div class="now">11</div></div>
+      <div><div class="lbl">Committed value</div><div class="was">£167,855</div><div class="now">£66,207</div></div>
+    </div>
+    <p class="ev"><b>Scope classification:</b> 3,556 legacy · 50 live · 39 improvement/placeholder · 31 unknown. A further 411 rows predate both source projects and carry no scope — historic, and excluded from every live view.</p>
+  </div>
+
+  <div class="fix done">
+    <h3>3 · One missing bind parameter killed the ordering loop <span class="p p-grn">Fixed</span></h3>
+    <p>This is the unnoticed break. <span class="mono">db_writer.write_ordering_edge_case()</span> built a named-parameter INSERT including <span class="mono">:asana_edge_case_gid</span>, and <em>every</em> caller omitted that key. So the moment either ordering script hit an edge case — the commonest being a blank vendor — it raised <span class="mono">sqlite3.ProgrammingError</span> and aborted mid-loop.</p>
+    <p>Three consequences, all confirmed: the nightly <em>Ordering — Audit Parts Control Routing</em> job has been exiting 1 every night; <span class="mono">create_order_tasks.py</span> stopped creating order tasks at the first fallback vendor, which is why nothing has moved to <span class="mono">ordered</span> since 3 July; and <span class="mono">ordering_edge_cases</span> has stood at zero rows since it was created, so the edge-case channel you asked me to build on has never once received an input.</p>
+    <p class="ev"><b>Fix:</b> optional columns default to NULL inside the writer. <b>Regression test:</b> the exact call shape that raised now returns <span class="mono">{'written': 1, 'skipped': 0, 'errors': 0}</span>. The routing audit runs clean and reports 7 items it would add.</p>
+  </div>
+
+  <div class="fix done">
+    <h3>4 · The pack reference column held names, not IDs <span class="p p-grn">Fixed</span></h3>
+    <p>Asana reference fields return the referenced task's <em>name</em>. <span class="mono">build_assembly_pack_gid</span> was being filled with strings like <span class="mono">1037.1014.N.GateMechanism.</span> — 1,470 of 1,519 populated rows held a name in a column named for an ID, while 44 held a real GID written by a different code path. Two namespaces in one column is why pack association looked 45% broken.</p>
+    <p class="ev"><b>Fix:</b> the name is stored honestly in <span class="mono">build_pack_ref_name</span>; the resolver in <span class="mono">impact_engine.py</span> matches it against <span class="mono">build_assembly_packs.pack_name</span> to recover the real GID. <b>Result:</b> 1,470 parts now carry <span class="mono">association_status = 'linked_by_name'</span> with a genuine pack GID.</p>
+  </div>
+
+  <div class="fix done">
+    <h3>5 · Production readiness was hardcoded to null <span class="p p-grn">Fixed</span></h3>
+    <p><span class="mono">sync_build_schedule.py</span> wrote <span class="mono">"parts_readiness": None</span> and <span class="mono">"stage_of_production": None</span> literally, on all 2,618 pack rows. The fields exist and are populated in Asana.</p>
+    <div class="ba">
+      <div><div class="lbl">Packs with readiness</div><div class="was">0</div><div class="now">238</div></div>
+      <div><div class="lbl">Packs with steel profile</div><div class="was">0</div><div class="now">237</div></div>
+      <div><div class="lbl">Packs with a job number</div><div class="was">0</div><div class="now">2,219</div></div>
+    </div>
+    <p class="ev"><b>Also now mirrored:</b> NEEDS - from Purch, Estimated Hours, Requires De-Brief, due date, and Actual Cost — stored as <span class="mono">unplanned_hours</span>, because you confirmed it records unplanned engineer time, not money.</p>
+  </div>
+
+  <div class="fix done">
+    <h3>6 · The write log could not answer "what changed" <span class="p p-grn">Fixed</span></h3>
+    <p>Every sync rewrote every column of every row and logged all columns as changed, nine times a day. <span class="mono">db_write_log</span> reached 3.81 million rows and carried no signal.</p>
+    <p><span class="mono">_upsert_rows()</span> now compares against the stored row, writes only real differences, and emits one <span class="mono">part_supply_events</span> row per meaningful field change.</p>
+    <div class="ba">
+      <div><div class="lbl">Rows written per sync</div><div class="was">2,434</div><div class="now">10</div></div>
+      <div><div class="lbl">Log rows added</div><div class="was">2,434</div><div class="now">10</div></div>
+      <div><div class="lbl">Change stream</div><div class="was">none</div><div class="now">live</div></div>
+    </div>
+    <p class="ev"><b>Measured on a real second run:</b> 2,434 tasks fetched, 10 written, 2,424 skipped as unchanged. That is a 99.6% reduction in write noise and the first usable "what changed since yesterday" feed in the estate.</p>
+  </div>
+</section>
+
+<!-- ===================== 2 ===================== -->
+<section id="impact">
+  <div class="shead"><span class="snum">02</span><h2>Seeing impact before lasercut lands</h2></div>
+  <div class="col">
+    <p>You said production dates are usually not set until the lasercut order arrives, because that is when packs get built and impact gets assessed — and that this is too late. The engine treats the missing date as the problem to solve rather than a blocker.</p>
+    <p><span class="mono">impact_engine.py</span> writes one <span class="mono">production_impact</span> row per live pack per run. Where Asana has a due date it uses it. Where it does not, it forecasts one, and records which of the two it used so nobody mistakes a forecast for a commitment.</p>
+  </div>
+
+  <div class="sub">How a pack gets a date</div>
+  <div class="loop">
+    <div class="lstep"><div class="lrail"><div class="ldot"></div><div class="lline"></div></div><div class="lbody">
+      <div class="t"><span class="mono">asana</span> — the pack already has a due date</div>
+      <div class="d">Used as-is. 51 of 71 live packs today.</div></div></div>
+    <div class="lstep"><div class="lrail"><div class="ldot"></div><div class="lline"></div></div><div class="lbody">
+      <div class="t"><span class="mono">forecast_lasercut</span> — no date, but lasercut parts exist</div>
+      <div class="d">Takes the latest ETA across parts routed to lasercut and adds the build lead time. This is the case your question is about: it produces a working production date the moment the lasercut order is placed, not when it is delivered.</div></div></div>
+    <div class="lstep"><div class="lrail"><div class="ldot"></div><div class="lline"></div></div><div class="lbody">
+      <div class="t"><span class="mono">forecast_longlead</span> — no date, no lasercut</div>
+      <div class="d">Falls back to the longest-lead outstanding part plus build lead time.</div></div></div>
+    <div class="lstep"><div class="lrail"><div class="ldot"></div></div><div class="lbody">
+      <div class="t"><span class="mono">none</span> — nothing to forecast from</div>
+      <div class="d">Reported honestly as undated rather than guessed. 20 packs today.</div></div></div>
+  </div>
+
+  <div class="callout">
+    <h4>Two assumptions you should set, not me</h4>
+    <p><span class="mono">BUILD_LEAD_DAYS = 10</span> — working days between lasercut delivery and the pack being needed on the floor. <span class="mono">ROUTE_LEAD_DAYS</span> — assumed lead time per supply route when no order exists yet (lasercut 10, subcon 12, buy 14, inhouse 5). Both sit at the top of <span class="mono">impact_engine.py</span> as named constants with comments. Every forecast in the system moves when you change them. <span class="mono">Days for delivery</span> exists as an Asana field and is populated on zero orders — if it were filled, the engine would use the real per-order figure instead of the route default.</p>
+  </div>
+
+  <div class="sub">First live run — 71 packs</div>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Band</th><th>Packs</th><th>What it means</th><th>Who acts</th></tr></thead>
+      <tbody>
+        <tr><td class="k"><span class="p p-red">Blocked</span></td><td class="n">8</td><td>Risk ≥ 70. Parts unordered or unresolved against a date that has passed</td><td>Purchasing, today</td></tr>
+        <tr><td class="k"><span class="p p-amb">At risk</span></td><td class="n">12</td><td>Risk 40–69. Longest-lead part lands after the production date</td><td>Purchasing, this week</td></tr>
+        <tr><td class="k"><span class="p p-gry">Watch</span></td><td class="n">23</td><td>Risk 15–39. Nothing to do yet; worth seeing</td><td>Nobody</td></tr>
+        <tr><td class="k"><span class="p p-grn">Clear</span></td><td class="n">28</td><td>No outstanding parts</td><td>Nobody</td></tr>
+      </tbody>
+      <caption>7 packs carry an expedite flag — at risk, but with every part already ordered, so the action is to chase rather than to buy.</caption>
+    </table>
+  </div>
+
+  <div class="col">
+    <p>Every row states its own reason and its next action with an owner. The commonest today: <em>"steel profile not assessed — lasercut scope unknown"</em> on 43 packs. That is exactly the pre-lasercut blind spot, and it is now a countable number rather than a feeling.</p>
+    <p>Parts belonging to no pack are reported once per job as an <span class="mono">UNASSIGNED</span> line, never spread across every pack in that job — smearing them would have manufactured a dozen false blockers from one real shortage.</p>
+  </div>
+</section>
+
+<!-- ===================== 3 ===================== -->
+<section id="engine">
+  <div class="shead"><span class="snum">03</span><h2>The improvement engine</h2></div>
+  <div class="col">
+    <p><span class="mono">improvement_engine.py</span> runs the loop you asked for: find friction, cluster it, stage an action against a named metric, then refuse to close the case until that metric has actually moved and held. The same machinery validates the amendments in this document, which is the point — it is not a separate reporting layer, it is the test harness for the changes.</p>
+  </div>
+
+  <div class="loop">
+    <div class="lstep"><div class="lrail"><div class="ldot"></div><div class="lline"></div></div><div class="lbody">
+      <div class="t">Harvest — 15 independent sources</div>
+      <div class="d">Ordering edge cases, vendor repairs seen in the change stream, vendor spelling collisions, vendor-field misuse, unlinked parts, unassociated parts, unassessed lasercut scope, orders with no delivery date, unsent chase drafts, stale queue lines, vendors with no email, failing cron jobs, unmatched email approvals, revisions changed after ordering, and blocked packs. Each is failure-isolated: a broken harvester cannot stop the run.</div></div></div>
+    <div class="lstep"><div class="lrail"><div class="ldot"></div><div class="lline"></div></div><div class="lbody">
+      <div class="t">Cluster — one case per signature</div>
+      <div class="d">243 vendor collisions are one case with 243 observations, not 243 cases. Standing backlogs report their current size; discrete events accumulate. Verified stable across consecutive runs — the score does not inflate just because the backlog was counted again.</div></div></div>
+    <div class="lstep"><div class="lrail"><div class="ldot"></div><div class="lline"></div></div><div class="lbody">
+      <div class="t">Score — occurrences × category weight × recency</div>
+      <div class="d">Weight reflects how much future work a category creates. Recency uses a 30-day half-life, so a problem that stopped happening fades instead of sitting at the top forever.</div></div></div>
+    <div class="lstep"><div class="lrail"><div class="ldot"></div><div class="lline"></div></div><div class="lbody">
+      <div class="t">Stage — record the decision and capture the baseline</div>
+      <div class="d">You name the action, its type (eliminate / simplify / automate / delegate / retain), the owner, the metric it should move, and the target. The current metric value is snapshotted as the baseline at that moment.</div></div></div>
+    <div class="lstep"><div class="lrail"><div class="ldot"></div></div><div class="lbody">
+      <div class="t">Validate — proven only on evidence</div>
+      <div class="d">A case becomes <span class="mono">proven</span> only if the metric reached target <em>and</em> every reading since staging held it, for at least 14 days. If it has been long enough and the metric has not moved, the case is marked <em>NOT WORKING</em> with the numbers attached. Nothing closes on assertion.</div></div></div>
+  </div>
+
+  <div class="sub">Today's register, first real run</div>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Score</th><th>Seen</th><th>Category</th><th>Friction</th></tr></thead>
+      <tbody>
+        <tr><td class="n">607.5</td><td class="n">243</td><td class="k">vendor_name_collision</td><td>One vendor recorded under several spellings</td></tr>
+        <tr><td class="n">172.0</td><td class="n">43</td><td class="k">lasercut_not_assessed</td><td>Build pack has no steel-profile assessment</td></tr>
+        <tr><td class="n">39.0</td><td class="n">13</td><td class="k">vendor_field_misuse</td><td>Part description entered in the Vendor field</td></tr>
+        <tr><td class="n">36.0</td><td class="n">9</td><td class="k">pack_blocked</td><td>Build pack blocked by outstanding parts</td></tr>
+        <tr><td class="n">35.0</td><td class="n">14</td><td class="k">request_unmatched</td><td>Email approval could not be matched to a task</td></tr>
+        <tr><td class="n">5.0</td><td class="n">1</td><td class="k">pipeline_failure</td><td>Ordering — Audit Parts Control Routing exiting 1 nightly</td></tr>
+        <tr><td class="n">3.0</td><td class="n">1</td><td class="k">order_overdue_no_chase</td><td>Chase drafts generated but never sent</td></tr>
+        <tr><td class="n">2.5</td><td class="n">1</td><td class="k">order_no_due_date</td><td>Open orders with no expected delivery date</td></tr>
+        <tr><td class="n">2.0</td><td class="n">1</td><td class="k">ordering_queue_stale</td><td>Queue lines grouped but never ordered</td></tr>
+        <tr><td class="n">2.0</td><td class="n">1</td><td class="k">pack_association_gap</td><td>Live parts not associated with a build pack</td></tr>
+        <tr><td class="n">1.5</td><td class="n">1</td><td class="k">supplier_contact_gap</td><td>Vendors on live orders with no email on file</td></tr>
+      </tbody>
+      <caption>The pipeline_failure case will self-clear once tonight's run succeeds — which is itself the first validation the engine performs.</caption>
+    </table>
+  </div>
+
+  <div class="sub">The twelve metrics it snapshots</div>
+  <div class="col">
+    <p><span class="mono">unplanned_hours_90d</span> is the north star, because you confirmed Actual Cost is an engineer flagging time spent on unplanned activity. That makes it the only direct friction meter the business has. The rest: vendor repair events, unlinked parts, unassociated parts, unassessed packs, orders with no due date, unsent chase drafts, stale queue lines, packs at risk, packs on forecast dates only, open cases, and pipeline failures.</p>
+  </div>
+
+  <pre># stage a decision against a metric
+python skills/purchasing/improvement_engine.py --stage 255 \
+  --action "Vendor crosswalk applied at BOM import" \
+  --type eliminate --owner Purchasing \
+  --metric vendor_repair_events_30d --target 0
+
+# then, on any later day
+python skills/purchasing/improvement_engine.py --validate</pre>
+</section>
+
+<!-- ===================== 4 ===================== -->
+<section id="po">
+  <div class="shead"><span class="snum">04</span><h2>Automatic PO numbers, without slowing the desk</h2></div>
+  <div class="col">
+    <p>You are open to automatic numbering provided it is fast, because orders are processed quickly. The design is <strong>reserve now, confirm later</strong>: allocation is a single local SQLite transaction with no network call, so it returns instantly. Nothing waits on Asana.</p>
+  </div>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Step</th><th>What happens</th><th>Speed</th></tr></thead>
+      <tbody>
+        <tr><td class="k"><span class="mono">--reserve</span></td><td>Takes the next number under an IMMEDIATE lock and prints it. Two people reserving at the same instant cannot collide.</td><td class="n">local, no network</td></tr>
+        <tr><td class="k"><span class="mono">--confirm</span></td><td>Attaches the number to the Asana order task once that task exists</td><td class="n">whenever</td></tr>
+        <tr><td class="k"><span class="mono">--void</span></td><td>Returns an unused number to the record with a reason, so gaps are explained</td><td class="n">whenever</td></tr>
+        <tr><td class="k"><span class="mono">--status</span></td><td>Last issued, next number, and any reservation over 48h old with no order attached</td><td class="n">instant</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout">
+    <h4>Why it needs its own counter, and one thing only you can do</h4>
+    <p><span class="mono">procurement_tasks.po_number</span> holds 933 distinct five-digit prefixes across 1,529 rows, because supplier order refs and invoice numbers have been typed into the same field. "Max + 1" over that column would hand out a number in the 29,000s. The ledger therefore keeps its own counter and <strong>must be seeded once from the real PO book</strong>: <span class="mono">python po_number_allocator.py --seed &lt;last issued number&gt;</span>. It refuses to seed backwards. I have deliberately not guessed the number.</p>
+  </div>
+</section>
+
+<!-- ===================== 5 ===================== -->
+<section id="cron">
+  <div class="shead"><span class="snum">05</span><h2>Cron and skill changes still to make</h2></div>
+  <div class="col">
+    <p>I have not touched <span class="mono">cron/jobs.json</span> — the Hermes gateway owns that file at runtime and a hand-edit while it is live risks being clobbered. These are the changes to make through the scheduler itself.</p>
+  </div>
+
+  <div class="sub">A · Two new jobs</div>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Name</th><th>Schedule</th><th>Script</th><th>Why that time</th></tr></thead>
+      <tbody>
+        <tr><td class="k">Parts Impact Engine</td><td class="n">5 1 * * *</td><td class="mono">impact_engine.py</td><td>Immediately after the 01:00 mirror sync, so it computes on fresh data</td></tr>
+        <tr><td class="k">Improvement Engine</td><td class="n">20 1 * * *</td><td class="mono">improvement_engine.py --run</td><td>After impact, so blocked packs are in scope for the harvest</td></tr>
+      </tbody>
+      <caption>Both are read-only against Asana and write only to ops.db. Both are idempotent and safe to re-run.</caption>
+    </table>
+  </div>
+
+  <div class="sub">B · Existing jobs to change</div>
+  <ul class="tick">
+    <li><strong>Ordering — Audit Parts Control Routing</strong> (<span class="mono">d3a3719dfd3b</span>, 01:30 daily). No config change needed — it was failing on the bind-parameter bug and now runs clean. Watch tonight's status: if it turns green, that is defect 3 proven in production.</li>
+    <li><strong>Nightly Asana Mirror Sync</strong> (<span class="mono">02f75e6f8c82</span>, 01:00). No config change. It will now write only real changes. Expect the run to get faster and <span class="mono">db_write_log</span> to stop growing by ~26,000 rows a day.</li>
+    <li><strong>Ordering — Compile and Create Order Tasks</strong> (<span class="mono">dd9fe4ed4a74</span>, 08:00 weekdays). No config change, but check it on the first weekday after this lands: it should resume creating order tasks now that a fallback vendor no longer aborts the loop. If <span class="mono">ordering_queue.ordered_at</span> is still stuck after that run, the remaining 117 grouped lines need a decision rather than a fix.</li>
+    <li><strong>Nightly Pack Association Reconcile</strong> (<span class="mono">45de2861006d</span>) is disabled. Leave it disabled — the resolver inside <span class="mono">impact_engine.py</span> now does the job deterministically by name, and running both risks two code paths writing the same column.</li>
+  </ul>
+
+  <div class="sub">C · Skill work still outstanding</div>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Item</th><th>Where</th><th>Priority</th></tr></thead>
+      <tbody>
+        <tr><td class="k">Arrived Stock Qty is populated on zero parts, so the goods-in processor has nothing to act on</td><td class="mono">arrived_stock_processor.py</td><td><span class="p p-red">Blocks receipt tracking</span></td></tr>
+        <tr><td class="k">Days for delivery populated on zero orders — the engine falls back to route defaults</td><td>Asana field discipline</td><td><span class="p p-amb">Improves every forecast</span></td></tr>
+        <tr><td class="k">Vendor crosswalk: parts use short free text, the supplier master uses long descriptive names. 243 collision groups, 13 vendor values that are part descriptions</td><td class="mono">vendor_normalise.csv</td><td><span class="p p-red">Highest friction score</span></td></tr>
+        <tr><td class="k">Chase drafts are generated and never sent — send, track and escalate is unbuilt</td><td class="mono">overdue_order_chase.py</td><td><span class="p p-amb">High</span></td></tr>
+        <tr><td class="k">28 failed REQUESTS, 20 from one day, none reprocessed</td><td class="mono">queues/REQUESTS_FAILED</td><td><span class="p p-amb">Medium</span></td></tr>
+        <tr><td class="k">The <span class="mono">qc_issues</span> table mirrors the Invoices project, 9,065 rows, every impact and sign-off field null</td><td class="mono">sync_qc_issues.py</td><td><span class="p p-gry">Naming and coverage</span></td></tr>
+        <tr><td class="k">Capsules and purchasing SKILL.md still route through <span class="mono">.openclaw</span>, retired in August</td><td>SES_Brain + skill docs</td><td><span class="p p-gry">Low, but misleads every future session</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="col">
+    <p>On the 230 suppliers with no email: your answer settles it. Most are effectively tags, so this is not a data-entry backlog. The right move is the audit you described — read the sent folder, find which vendors are actually corresponded with, and backfill only those. Until then the engine counts only vendors carrying <em>live</em> orders, which is a much smaller and more honest number.</p>
+  </div>
+</section>
+
+<!-- ===================== 6 ===================== -->
+<section id="rollout">
+  <div class="shead"><span class="snum">06</span><h2>What to do next, and how to undo it</h2></div>
+
+  <div class="sub">Already applied and verified today</div>
+  <ul class="tick">
+    <li>Schema migration — 50 additive statements, no drops, no rewrites, idempotent and safe to re-run</li>
+    <li>Six code fixes across <span class="mono">db_writer.py</span>, <span class="mono">sync_parts_control.py</span>, <span class="mono">sync_build_schedule.py</span>, <span class="mono">sync_procurement_tasks.py</span></li>
+    <li>Three new scripts — impact engine, improvement engine, PO allocator</li>
+    <li>All three syncs re-run against live Asana; impact and improvement engines run and their output checked against known jobs</li>
+  </ul>
+
+  <div class="sub">Your next four steps</div>
+  <ul class="tick">
+    <li><strong>Seed the PO ledger</strong> from the PO book — one command, and nothing else can use the allocator until you do.</li>
+    <li><strong>Set the two lead-time constants</strong> in <span class="mono">impact_engine.py</span> if 10 working days from lasercut delivery to floor is wrong.</li>
+    <li><strong>Add the two cron jobs</strong> at 01:05 and 01:20.</li>
+    <li><strong>Check tomorrow morning</strong> that the routing audit went green and the ordering compile created tasks. Those two are the production proof of the bind-parameter fix.</li>
+  </ul>
+
+  <div class="callout">
+    <h4>Rollback</h4>
+    <p>A full pre-migration copy of <span class="mono">ops.db</span> was taken before any change: <span class="mono">%TEMP%\claude\ops_backup_preimpact.db</span> (1.21 GB, taken 22:14). The migration only adds columns and tables, so restoring is only necessary if something worse than a bad column appears. The code changes are ordinary edits in the workspace and revert with git. Nothing in Asana was written at any point.</p>
+  </div>
+
+  <div class="sub">One thing I would not do yet</div>
+  <div class="col">
+    <p>Do not act on the 117 stale ordering-queue lines until the compile job has had one clean weekday run. If the fix restores the loop, some of them will resolve themselves and the remainder will be a much smaller, more meaningful list. Clearing them now would destroy the evidence that tells you whether the fix worked.</p>
+  </div>
+</section>
+
+<footer>
+  <div><strong>Files changed</strong> — <span class="mono">skills/sql_db/scripts/</span>: migrate_impact_engine.py (new), sync_parts_control.py, sync_build_schedule.py, sync_procurement_tasks.py · <span class="mono">skills/purchasing/</span>: db_writer.py, impact_engine.py (new), improvement_engine.py (new), po_number_allocator.py (new).</div>
+  <div style="margin-top:10px"><strong>Not changed</strong> — no Asana task, field or project; no cron job definition; no data deleted; no existing column repurposed.</div>
+  <div style="margin-top:10px">Built and verified 9 September 2026 against ops.db and the live Asana workspace.</div>
+</footer>
+
+</div>

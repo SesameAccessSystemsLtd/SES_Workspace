@@ -1,0 +1,14 @@
+{
+  "request_id": "87d42384-5956-4650-a654-51ff79abb0da",
+  "source": "email_approval_sheet",
+  "row_index": 12,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkcdG2HAAA=",
+  "subject": "Re: Laser Cut BOM - 1595 - St Georges House Entire system - SQR-46446",
+  "task_gid": "1217486647101746",
+  "task_name": "21242-1595 - Lasershape Laser Cut BOM - 1595 - St Georges House Entire system",
+  "asana_url": "https://app.asana.com/0/0/1217486647101746",
+  "action": "(Matched via SQR in Local DB); Update delivery date to 2026-09-04; Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043)",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-08-18T11:06:57Z\nEmail: Re: Laser Cut BOM - 1595 - St Georges House Entire system - SQR-46446\nMatch basis: (Matched via SQR in Local DB)\n- Update delivery date to 2026-09-04\n- Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043)",
+  "decision": "A",
+  "created_at": "2026-08-18T13:00:55.799909+00:00"
+}

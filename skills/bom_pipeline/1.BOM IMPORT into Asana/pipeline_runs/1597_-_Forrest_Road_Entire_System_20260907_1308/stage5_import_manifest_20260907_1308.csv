@@ -1,0 +1,1635 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1597 - Forrest Road Entire System,"Master task for all BOMs related to 1597 - Forrest Road Entire System
+Dropbox: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Project: https://app.asana.com/1/357939803556123/task/1218222812952217",,,,,,,,,,
+Surface Finish BOM - 1597 - Forrest Road Entire System,,ALL BOMS - 1597 - Forrest Road Entire System,,Surface Finish BOM,,,,,,,
+Yellow Zinc Plating - 1597 - Forrest Road Entire System,,Surface Finish BOM - 1597 - Forrest Road Entire System,,Yellow Zinc Plating,,,,,,,
+2 off Yellow Zinc Plating 1597. 1010.I.062 - Rod (BRIGHT),"1597.1010.I.062
+Material: Bright Steel 80A15
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.591 kg
+Volume: 75233.061 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Yellow Zinc Plating - 1597 - Forrest Road Entire System,2,Yellow Zinc Plating,,,,ORDER,PROJECT ORDER,1218238998777142,https://app.asana.com/0/848657415032331/1218238998777142
+2 off Yellow Zinc Plating 1597. 1010.I.063 - Rod (BRIGHT),"1597.1010.I.063
+Material: Bright Steel 80A15
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 1.082 lbmass
+Volume: 62509.610 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Yellow Zinc Plating - 1597 - Forrest Road Entire System,2,Yellow Zinc Plating,,,,ORDER,PROJECT ORDER,1218238802337984,https://app.asana.com/0/848657415032331/1218238802337984
+12 off Yellow Zinc Plating 1597. 1010.I.064 - Bottom Packer for Bearing Yellow Zinc Plated,"1597.1010.I.064
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.034 kg
+Volume: 4344.234 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Yellow Zinc Plating - 1597 - Forrest Road Entire System,12,Yellow Zinc Plating,,,,ORDER,PROJECT ORDER,1218238998989181,https://app.asana.com/0/848657415032331/1218238998989181
+2 off Yellow Zinc Plating 1597. 1010.I8w - Welded assembly,"1597.1010.I8w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.245 kg
+Volume: 31256.229 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Yellow Zinc Plating - 1597 - Forrest Road Entire System,2,Yellow Zinc Plating,,,,ORDER,PROJECT ORDER,1218238842684090,https://app.asana.com/0/848657415032331/1218238842684090
+1 off Yellow Zinc Plating 1597. 1010.I11w - Welded Assembly,"1597.1010.I11w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 6.534 kg
+Volume: 832346.250 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Yellow Zinc Plating - 1597 - Forrest Road Entire System,1,Yellow Zinc Plating,,,,ORDER,PROJECT ORDER,1218238842486994,https://app.asana.com/0/848657415032331/1218238842486994
+2 off Yellow Zinc Plating 1597. 1010.I16w - Welded assembly,"1597.1010.I16w
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.207 kg
+Volume: 26374.651 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Yellow Zinc Plating - 1597 - Forrest Road Entire System,2,Yellow Zinc Plating,,,,ORDER,PROJECT ORDER,1218238770476547,https://app.asana.com/0/848657415032331/1218238770476547
+Anodising - 1597 - Forrest Road Entire System,,Surface Finish BOM - 1597 - Forrest Road Entire System,,Anodising,,,,,,,
+1 off Anodising 1597. 7110.B.002 - Wheelstop Back Plate,"1597.7110.B.002
+Material: Aluminum 5152
+Thickness: 6.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 1.497 kg
+Volume: 554519.031 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Anodising - 1597 - Forrest Road Entire System,1,Anodising,,,,ORDER,PROJECT ORDER,1218238770189990,https://app.asana.com/0/848657415032331/1218238770189990
+1 off Anodising 1597. 7110.B.003 - Wheelstop Side Plate,"1597.7110.B.003
+Material: Aluminum 5152
+Thickness: 6.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 3.736 kg
+Volume: 1383759.142 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Anodising - 1597 - Forrest Road Entire System,1,Anodising,,,,ORDER,PROJECT ORDER,1218238914914903,https://app.asana.com/0/848657415032331/1218238914914903
+1 off Anodising 1597. 7110.B.003_MIR - Wheelstop Side Plate,"1597.7110.B.003_MIR
+Material: Aluminum 5152
+Thickness: 6.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 3.736 kg
+Volume: 1383759.142 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Anodising - 1597 - Forrest Road Entire System,1,Anodising,,,,ORDER,PROJECT ORDER,1218238802728672,https://app.asana.com/0/848657415032331/1218238802728672
+1 off Anodising 1597. 7110.B.034 - Lifting block,"1597.7110.B.034
+Material: Aluminum 5152
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.040 kg
+Volume: 14669.052 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Anodising - 1597 - Forrest Road Entire System,1,Anodising,,,,ORDER,PROJECT ORDER,1218238802748400,https://app.asana.com/0/848657415032331/1218238802748400
+1 off Anodising 1597. 7110.B.034_MIR - Lifting block,"1597.7110.B.034_MIR
+Material: Aluminum 5152
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.040 kg
+Volume: 14669.052 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Anodising - 1597 - Forrest Road Entire System,1,Anodising,,,,ORDER,PROJECT ORDER,1218238999430536,https://app.asana.com/0/848657415032331/1218238999430536
+1 off Anodising 1597. 7110.B.035 - Lifting block,"1597.7110.B.035
+Material: Aluminum 5152
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.039 kg
+Volume: 14459.947 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Anodising - 1597 - Forrest Road Entire System,1,Anodising,,,,ORDER,PROJECT ORDER,1218238802819770,https://app.asana.com/0/848657415032331/1218238802819770
+1 off Anodising 1597. 7110.B.035_MIR - Lifting block,"1597.7110.B.035_MIR
+Material: Aluminum 5152
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.039 kg
+Volume: 14459.947 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Anodising - 1597 - Forrest Road Entire System,1,Anodising,,,,ORDER,PROJECT ORDER,1218238802728746,https://app.asana.com/0/848657415032331/1218238802728746
+2 off Anodising 1597. 7110.I.010 - Pit Trim Front Panel,"1597.7110.I.010
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.826 kg
+Volume: 305836.593 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Anodising - 1597 - Forrest Road Entire System,2,Anodising,,,,ORDER,PROJECT ORDER,1218238999602154,https://app.asana.com/0/848657415032331/1218238999602154
+2 off Anodising 1597. 7110.I.011 - Pit Trim Side Panel,"1597.7110.I.011
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 1.433 kg
+Volume: 530645.741 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Anodising - 1597 - Forrest Road Entire System,2,Anodising,,,,ORDER,PROJECT ORDER,1218238915462988,https://app.asana.com/0/848657415032331/1218238915462988
+4 off Anodising 1597. 7110.J.036 - Stoper,"1597.7110.J.036
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.352 kg
+Volume: 130260.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Anodising - 1597 - Forrest Road Entire System,4,Anodising,,,,ORDER,PROJECT ORDER,1218239069594032,https://app.asana.com/0/848657415032331/1218239069594032
+4 off Anodising 1597. 7110.J.039 - Stoper,"1597.7110.J.039
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.220 kg
+Volume: 81383.700 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Anodising - 1597 - Forrest Road Entire System,4,Anodising,,,,ORDER,PROJECT ORDER,1218238802966983,https://app.asana.com/0/848657415032331/1218238802966983
+Laser Cut BOM - 1597 - Forrest Road Entire System,,ALL BOMS - 1597 - Forrest Road Entire System,,Laser Cut,,,,,,,
+Laser Cut - 1597 - Forrest Road Entire System,,Laser Cut BOM - 1597 - Forrest Road Entire System,,Laser Cut,,,,,,,
+1 off 1597. 1008.A11.002 - Reflective plate under laser scanner 304/2B Laser Cut,"1597.1008.A11.002
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.025 kg
+Volume: 3067.133 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218238843181622,https://app.asana.com/0/848657415032331/1218238843181622
+1 off 1597. 1008.D1.112 - Valve Plate No Ext. 304/HR Laser Cut,"1597.1008.D1.112
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.828 kg
+Volume: 103454.377 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218238999026069,https://app.asana.com/0/848657415032331/1218238999026069
+4 off 1597. 1010.I.006 - (Bott_Clip_Part) Laser Cut,"1597.1010.I.006
+Material: Steel, Mild
+Thickness: 20.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.822 kg
+Volume: 104680.365 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218238802018825,https://app.asana.com/0/848657415032331/1218238802018825
+2 off 1597. 1010.I.007 - Front Table Plate 304/HR Laser Cut,"1597.1010.I.007
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 2.027 kg
+Volume: 253409.097 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218238803050132,https://app.asana.com/0/848657415032331/1218238803050132
+2 off 1597. 1010.I.008 - (TopFrame_Side_Plate) 304/HR Laser Cut,"1597.1010.I.008
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 3.668 kg
+Volume: 458554.648 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218239069638742,https://app.asana.com/0/848657415032331/1218239069638742
+2 off 1597. 1010.I.010.01 - Top_WheelTrack 304/HR Laser Cut,"1597.1010.I.010.01
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 2.259 kg
+Volume: 282371.497 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218239069813950,https://app.asana.com/0/848657415032331/1218239069813950
+2 off 1597. 1010.I.011 - Hinge_Plate Laser Cut,"1597.1010.I.011
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.445 kg
+Volume: 56730.144 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218238999914956,https://app.asana.com/0/848657415032331/1218238999914956
+4 off 1597. 1010.I.012 - (Top_Clip_Part) Laser Cut,"1597.1010.I.012
+Material: Steel, Mild
+Thickness: 20.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.794 kg
+Volume: 101196.219 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218238803369810,https://app.asana.com/0/848657415032331/1218238803369810
+2 off 1597. 1010.I.013.01 - Folded Spine 304/2B Laser Cut,"1597.1010.I.013.01
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 1.538 kg
+Volume: 190338.112 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218239069929402,https://app.asana.com/0/848657415032331/1218239069929402
+1 off 1597. 1010.I.014 - Top Table Plate 304/HR Laser Cut,"1597.1010.I.014
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 56.756 kg
+Volume: 7094508.336 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239098597999,https://app.asana.com/0/848657415032331/1218239098597999
+2 off 1597. 1010.I.034 - (Lift_Leg_Lateral) Laser Cut,"1597.1010.I.034
+Material: Steel, Mild
+Thickness: 25.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 35.024 kg
+Volume: 4461688.866 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218238803447808,https://app.asana.com/0/848657415032331/1218238803447808
+2 off 1597. 1010.I.035 - (Lift_Leg_Medial) Laser Cut,"1597.1010.I.035
+Material: Steel, Mild
+Thickness: 25.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 33.608 kg
+Volume: 4281267.382 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218238999973663,https://app.asana.com/0/848657415032331/1218238999973663
+2 off 1597. 1010.I.036 - Bottom_WheelTrack 304/2B Laser Cut,"1597.1010.I.036
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 1.129 kg
+Volume: 141185.749 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218239098662048,https://app.asana.com/0/848657415032331/1218239098662048
+1 off 1597. 1010.I.043 - Scissor Lift fixing Laser Cut,"1597.1010.I.043
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.083 kg
+Volume: 10629.181 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218238803292760,https://app.asana.com/0/848657415032331/1218238803292760
+2 off 1597. 1010.I.061 - LiftStopperBar - Paint it RED Laser Cut,"1597.1010.I.061
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 2.387 kg
+Volume: 304107.468 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218239000140106,https://app.asana.com/0/848657415032331/1218239000140106
+12 off 1597. 1010.I.064 - Bottom Packer for Bearing Yellow Zinc Plated Laser Cut,"1597.1010.I.064
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.034 kg
+Volume: 4344.234 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,12,Laser Cut,,,,ORDER,PROJECT ORDER,1218239070128959,https://app.asana.com/0/848657415032331/1218239070128959
+1 off 1597. 1010.I.068 - Bend Plate 304/HR Laser Cut,"1597.1010.I.068
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.112 kg
+Volume: 14023.715 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239098708442,https://app.asana.com/0/848657415032331/1218239098708442
+4 off 1597. 1010.I.070 - (Actuator_Hung_Bott) Laser Cut,"1597.1010.I.070
+Material: Steel, Mild
+Thickness: 15.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.364 kg
+Volume: 46375.402 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218238999973535,https://app.asana.com/0/848657415032331/1218238999973535
+4 off 1597. 1010.I.072 - (Actuator_Hung_Top) Laser Cut,"1597.1010.I.072
+Material: Steel, Mild
+Thickness: 15.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 1.797 kg
+Volume: 228971.544 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218238803625868,https://app.asana.com/0/848657415032331/1218238803625868
+4 off 1597. 1010.I.077 - Stainless Steel Washer 304/HR Laser Cut,"1597.1010.I.077
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.027 kg
+Volume: 3342.655 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218239098598454,https://app.asana.com/0/848657415032331/1218239098598454
+2 off 1597. 1010.I.078 - Bottom Hinge Template Laser Cut,"1597.1010.I.078
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.122 kg
+Volume: 15516.504 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218239098958415,https://app.asana.com/0/848657415032331/1218239098958415
+2 off 1597. 1010.I.079 - Top Hinge Template Laser Cut,"1597.1010.I.079
+Material: Steel, Mild
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.119 kg
+Volume: 15114.903 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218239000317208,https://app.asana.com/0/848657415032331/1218239000317208
+2 off 1597. 1010.I.080 - pin fixing plate Laser Cut,"1597.1010.I.080
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.113 kg
+Volume: 14350.272 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218253209418054,https://app.asana.com/0/848657415032331/1218253209418054
+2 off 1597. 1010.I.084 - pin fixing plate Laser Cut,"1597.1010.I.084
+Material: Steel, Mild
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.074 kg
+Volume: 9468.693 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218238916367196,https://app.asana.com/0/848657415032331/1218238916367196
+2 off 1597. 1010.I.097 - (Frame.Angle.Bellows.Angle) 304/2B Laser Cut,"1597.1010.I.097
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.117 kg
+Volume: 14604.910 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218239098653618,https://app.asana.com/0/848657415032331/1218239098653618
+2 off 1597. 1010.I.098 - JunctionBoxBracket 304/2B Laser Cut,"1597.1010.I.098
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.373 kg
+Volume: 46626.735 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218238803710568,https://app.asana.com/0/848657415032331/1218238803710568
+1 off 1597. 1010.I.101 - Laser sensor bracket 304/2B Laser Cut,"1597.1010.I.101
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.053 kg
+Volume: 6624.740 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239070463063,https://app.asana.com/0/848657415032331/1218239070463063
+1 off 1597. 1010.I.102 - Hose plate 304/2B Laser Cut,"1597.1010.I.102
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.255 kg
+Volume: 31827.893 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239099303163,https://app.asana.com/0/848657415032331/1218239099303163
+1 off 1597. 1010.I.103 - LimitSwitch.Plate 304/2B Laser Cut,"1597.1010.I.103
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.122 kg
+Volume: 15188.300 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239070437810,https://app.asana.com/0/848657415032331/1218239070437810
+1 off 1597. 7110.B.002 - Wheelstop Back Plate Laser Cut,"1597.7110.B.002
+Material: Aluminum 5152
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 1.497 kg
+Volume: 554519.031 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218238803810806,https://app.asana.com/0/848657415032331/1218238803810806
+1 off 1597. 7110.B.003 - Wheelstop Side Plate Laser Cut,"1597.7110.B.003
+Material: Aluminum 5152
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 3.736 kg
+Volume: 1383759.142 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239070776453,https://app.asana.com/0/848657415032331/1218239070776453
+1 off 1597. 7110.B.003_MIR - Wheelstop Side Plate Laser Cut,"1597.7110.B.003_MIR
+Material: Aluminum 5152
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 3.736 kg
+Volume: 1383759.142 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239000736900,https://app.asana.com/0/848657415032331/1218239000736900
+2 off 1597. 7110.B.004 - TS flat Laser Cut,"1597.7110.B.004
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.274 kg
+Volume: 101581.435 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218239070558869,https://app.asana.com/0/848657415032331/1218239070558869
+1 off 1597. 7110.B.015 - Wheelstop Channel Plate 304/2B Laser Cut,"1597.7110.B.015
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 1.054 kg
+Volume: 131694.734 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218238803897100,https://app.asana.com/0/848657415032331/1218238803897100
+1 off 1597. 7110.B.016 - TS flat Laser Cut,"1597.7110.B.016
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.245 kg
+Volume: 90671.147 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239070603756,https://app.asana.com/0/848657415032331/1218239070603756
+1 off 1597. 7110.B.024 - Front flat 304/DP1 Laser Cut,"1597.7110.B.024
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.702 kg
+Volume: 87704.372 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239222033895,https://app.asana.com/0/848657415032331/1218239222033895
+2 off 1597. 7110.B.031 - Support 304/HR Laser Cut,"1597.7110.B.031
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.626 kg
+Volume: 78192.790 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218239222215178,https://app.asana.com/0/848657415032331/1218239222215178
+4 off 1597. 7110.B.032 - Support 304/HR Laser Cut,"1597.7110.B.032
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 1.230 kg
+Volume: 153771.350 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218239099533612,https://app.asana.com/0/848657415032331/1218239099533612
+1 off 1597. 7110.B.033 - PlatformTray BasePlate Laser Cut,"1597.7110.B.033
+Material: Aluminum 5152
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 18.353 kg
+Volume: 6797237.963 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239000935272,https://app.asana.com/0/848657415032331/1218239000935272
+4 off 1597. 7110.B.036 - Side plate 304/HR Laser Cut,"1597.7110.B.036
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.151 kg
+Volume: 18820.089 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218239071060971,https://app.asana.com/0/848657415032331/1218239071060971
+8 off 1597. 7110.B.037 - Side plate 304/HR Laser Cut,"1597.7110.B.037
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.077 kg
+Volume: 9671.416 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,8,Laser Cut,,,,ORDER,PROJECT ORDER,1218239099620343,https://app.asana.com/0/848657415032331/1218239099620343
+1 off 1597. 7110.B.039 - Cable reel connector 304/HR Laser Cut,"1597.7110.B.039
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.127 kg
+Volume: 15900.919 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239222356047,https://app.asana.com/0/848657415032331/1218239222356047
+12 off 1597. 7110.B.040 - Side plate 304/HR Laser Cut,"1597.7110.B.040
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.059 kg
+Volume: 7384.071 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,12,Laser Cut,,,,ORDER,PROJECT ORDER,1218239071091040,https://app.asana.com/0/848657415032331/1218239071091040
+2 off 1597. 7110.B.041 - Support 304/HR Laser Cut,"1597.7110.B.041
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 6.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.878 kg
+Volume: 109721.890 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218239222088418,https://app.asana.com/0/848657415032331/1218239222088418
+4 off 1597. 7110.B.231 - Junction box plate 304/2B Laser Cut,"1597.7110.B.231
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.110 kg
+Volume: 13784.709 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218239001116876,https://app.asana.com/0/848657415032331/1218239001116876
+2 off 1597. 7110.C.136 - Front ram plate 304/HR Laser Cut,"1597.7110.C.136
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 15.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 1.213 kg
+Volume: 151641.790 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218239001018890,https://app.asana.com/0/848657415032331/1218239001018890
+4 off 1597. 7110.C.138 - Ram support Laser Cut,"1597.7110.C.138
+Material: Steel, Mild
+Thickness: 15.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.645 kg
+Volume: 82227.942 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218239070647328,https://app.asana.com/0/848657415032331/1218239070647328
+2 off 1597. 7110.E.003 - Cover support 304/2B Laser Cut,"1597.7110.E.003
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.904 kg
+Volume: 112978.842 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218239099808957,https://app.asana.com/0/848657415032331/1218239099808957
+2 off 1597. 7110.E.005 - Easy chain plate 304/2B Laser Cut,"1597.7110.E.005
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.041 kg
+Volume: 5146.143 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218239099639449,https://app.asana.com/0/848657415032331/1218239099639449
+1 off 1597. 7110.E.006 - Front cover 304/DP1 Laser Cut,"1597.7110.E.006
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.263 kg
+Volume: 32927.844 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239222217604,https://app.asana.com/0/848657415032331/1218239222217604
+1 off 1597. 7110.E.006_MIR - Front cover 304/DP1 Laser Cut,"1597.7110.E.006_MIR
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.263 kg
+Volume: 32927.844 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239070955269,https://app.asana.com/0/848657415032331/1218239070955269
+1 off 1597. 7110.E.011 - Encoder plate 304/2B Laser Cut,"1597.7110.E.011
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.660 kg
+Volume: 82546.575 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218253265083707,https://app.asana.com/0/848657415032331/1218253265083707
+2 off 1597. 7110.E.013 - Cover support 304/2B Laser Cut,"1597.7110.E.013
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.572 kg
+Volume: 71454.599 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218239099811683,https://app.asana.com/0/848657415032331/1218239099811683
+1 off 1597. 7110.E.015 - Cover support 304/2B Laser Cut,"1597.7110.E.015
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 1.575 kg
+Volume: 196825.087 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239222533288,https://app.asana.com/0/848657415032331/1218239222533288
+8 off 1597. 7110.E.017 - Ram support 304/HR Laser Cut,"1597.7110.E.017
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.219 kg
+Volume: 27409.314 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,8,Laser Cut,,,,ORDER,PROJECT ORDER,1218239222130187,https://app.asana.com/0/848657415032331/1218239222130187
+2 off 1597. 7110.E.019 - Packer 304/2B Laser Cut,"1597.7110.E.019
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.046 kg
+Volume: 5807.177 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218239100146233,https://app.asana.com/0/848657415032331/1218239100146233
+6 off 1597. 7110.E.020 - Packer 304/2B Laser Cut,"1597.7110.E.020
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.015 kg
+Volume: 1935.726 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,6,Laser Cut,,,,ORDER,PROJECT ORDER,1218239100145774,https://app.asana.com/0/848657415032331/1218239100145774
+1 off 1597. 7110.E.087 - Slider Cover 304/DP1 Laser Cut,"1597.7110.E.087
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 8.436 kg
+Volume: 1054517.497 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239071296779,https://app.asana.com/0/848657415032331/1218239071296779
+1 off 1597. 7110.E.087_MIR - Slider Cover 304/DP1 Laser Cut,"1597.7110.E.087_MIR
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 8.436 kg
+Volume: 1054517.497 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239071486875,https://app.asana.com/0/848657415032331/1218239071486875
+1 off 1597. 7110.E.089 - Back Cover 304/DP1 Laser Cut,"1597.7110.E.089
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 1.150 kg
+Volume: 143723.893 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239001581141,https://app.asana.com/0/848657415032331/1218239001581141
+1 off 1597. 7110.E.090 - Top Cover 304/DP1 Laser Cut,"1597.7110.E.090
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 1.200 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 9.795 kg
+Volume: 1224338.792 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239071601162,https://app.asana.com/0/848657415032331/1218239071601162
+1 off 1597. 7110.E.095 - Back Cover Channel 304/HR Laser Cut,"1597.7110.E.095
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 3.718 kg
+Volume: 464778.963 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239100385805,https://app.asana.com/0/848657415032331/1218239100385805
+1 off 1597. 7110.E.137 - Slider Angle Top 304/HR Laser Cut,"1597.7110.E.137
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 4.921 kg
+Volume: 615108.045 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239001581114,https://app.asana.com/0/848657415032331/1218239001581114
+1 off 1597. 7110.E.137_MIR - Slider Angle Top 304/HR Laser Cut,"1597.7110.E.137_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 4.921 kg
+Volume: 615108.045 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239100190426,https://app.asana.com/0/848657415032331/1218239100190426
+1 off 1597. 7110.E.138 - Sliders Angle Side 304/HR Laser Cut,"1597.7110.E.138
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 8.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 7.353 kg
+Volume: 919159.772 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218238805264495,https://app.asana.com/0/848657415032331/1218238805264495
+1 off 1597. 7110.E.138_MIR - Sliders Angle Side 304/HR Laser Cut,"1597.7110.E.138_MIR
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 8.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 7.353 kg
+Volume: 919159.772 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218238805078217,https://app.asana.com/0/848657415032331/1218238805078217
+4 off 1597. 7110.G.006 - (Gusset) Laser Cut,"1597.7110.G.006
+Material: Steel, Mild
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 1.337 kg
+Volume: 170289.492 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218239001633023,https://app.asana.com/0/848657415032331/1218239001633023
+1 off 1597. 7110.G.012 - Murr Bases Plate 304/2B Laser Cut,"1597.7110.G.012
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.727 kg
+Volume: 90819.612 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239001768453,https://app.asana.com/0/848657415032331/1218239001768453
+1 off 1597. 7110.G.013 - Hose Plate 304/2B Laser Cut,"1597.7110.G.013
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.532 kg
+Volume: 66501.854 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239100049383,https://app.asana.com/0/848657415032331/1218239100049383
+12 off 1597. 7110.G.026 - Gusset Laser Cut,"1597.7110.G.026
+Material: Steel, Mild
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.081 kg
+Volume: 10308.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,12,Laser Cut,,,,ORDER,PROJECT ORDER,1218238804560420,https://app.asana.com/0/848657415032331/1218238804560420
+1 off 1597. 7110.G.028 - E-Stop Bracket 304/2B Laser Cut,"1597.7110.G.028
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.240 kg
+Volume: 29943.105 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239223052064,https://app.asana.com/0/848657415032331/1218239223052064
+6 off 1597. 7110.G.031 - (Frame.Angle.Bellows.Angle) 304/2B Laser Cut,"1597.7110.G.031
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.179 kg
+Volume: 22417.371 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,6,Laser Cut,,,,ORDER,PROJECT ORDER,1218239223495545,https://app.asana.com/0/848657415032331/1218239223495545
+1 off 1597. 7110.I.006 - Long Side Trim Laser Cut,"1597.7110.I.006
+Material: Aluminum 5152
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 3.599 kg
+Volume: 1327918.063 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239223513514,https://app.asana.com/0/848657415032331/1218239223513514
+1 off 1597. 7110.I.006_MIR - Long Side Trim Laser Cut,"1597.7110.I.006_MIR
+Material: Aluminum 5152
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 3.599 kg
+Volume: 1327918.063 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239100532598,https://app.asana.com/0/848657415032331/1218239100532598
+1 off 1597. 7110.I.007 - Short Side Trim Laser Cut,"1597.7110.I.007
+Material: Aluminum 5152
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 2.229 kg
+Volume: 822347.880 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239223483349,https://app.asana.com/0/848657415032331/1218239223483349
+2 off 1597. 7110.I.010 - Pit Trim Front Panel Laser Cut,"1597.7110.I.010
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.826 kg
+Volume: 305836.593 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218239001658089,https://app.asana.com/0/848657415032331/1218239001658089
+2 off 1597. 7110.I.011 - Pit Trim Side Panel Laser Cut,"1597.7110.I.011
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 1.433 kg
+Volume: 530645.741 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,2,Laser Cut,,,,ORDER,PROJECT ORDER,1218238805166214,https://app.asana.com/0/848657415032331/1218238805166214
+1 off 1597. 7110.I.019 - Flat Plate Laser Cut,"1597.7110.I.019
+Material: Aluminium 5083
+Thickness: 10.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 2.771 kg
+Volume: 1046183.633 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218239100474271,https://app.asana.com/0/848657415032331/1218239100474271
+4 off 1597. 7110.J.005 - Flat 304/HR Laser Cut,"1597.7110.J.005
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.055 kg
+Volume: 6865.604 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218239222727560,https://app.asana.com/0/848657415032331/1218239222727560
+8 off 1597. 7110.J.012 - Flat 304/HR Laser Cut,"1597.7110.J.012
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.093 kg
+Volume: 11573.905 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,8,Laser Cut,,,,ORDER,PROJECT ORDER,1218239091734892,https://app.asana.com/0/848657415032331/1218239091734892
+8 off 1597. 7110.J.014 - Socket bracket 304/HR Laser Cut,"1597.7110.J.014
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.072 kg
+Volume: 9039.203 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,8,Laser Cut,,,,ORDER,PROJECT ORDER,1218239001849778,https://app.asana.com/0/848657415032331/1218239001849778
+4 off 1597. 7110.J.017 - bottom plate 304/HR Laser Cut,"1597.7110.J.017
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.062 kg
+Volume: 7688.139 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218239100904968,https://app.asana.com/0/848657415032331/1218239100904968
+4 off 1597. 7110.J.018 - side fining plate 304/HR Laser Cut,"1597.7110.J.018
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.072 kg
+Volume: 9028.758 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218253336163450,https://app.asana.com/0/848657415032331/1218253336163450
+4 off 1597. 7110.J.019 - side fining plate 304/HR Laser Cut,"1597.7110.J.019
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.072 kg
+Volume: 8960.334 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218239100885028,https://app.asana.com/0/848657415032331/1218239100885028
+8 off 1597. 7110.J.020 - Spacer 304/HR Laser Cut,"1597.7110.J.020
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 5.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.021 kg
+Volume: 2602.723 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,8,Laser Cut,,,,ORDER,PROJECT ORDER,1218239223877058,https://app.asana.com/0/848657415032331/1218239223877058
+16 off 1597. 7110.J.021 - packers 304/2B Laser Cut,"1597.7110.J.021
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.004 kg
+Volume: 476.691 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,16,Laser Cut,,,,ORDER,PROJECT ORDER,1218239091923464,https://app.asana.com/0/848657415032331/1218239091923464
+4 off 1597. 7110.J.022 - Barrier Socket Cap 304/DP1 Laser Cut,"1597.7110.J.022
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.014 kg
+Volume: 1745.946 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218239223443659,https://app.asana.com/0/848657415032331/1218239223443659
+4 off 1597. 7110.J.023 - Removable Barrier Socket mounting plate 304/HR Laser Cut,"1597.7110.J.023
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.019 kg
+Volume: 2330.810 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218239072215473,https://app.asana.com/0/848657415032331/1218239072215473
+4 off 1597. 7110.J.024 - Removable Barrier Socket cap mounting plate 304/HR Laser Cut,"1597.7110.J.024
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.015 kg
+Volume: 1873.709 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218239101254213,https://app.asana.com/0/848657415032331/1218239101254213
+4 off 1597. 7110.J.028 - main fining plate 304/HR Laser Cut,"1597.7110.J.028
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 4.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.160 kg
+Volume: 20036.751 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218239224371404,https://app.asana.com/0/848657415032331/1218239224371404
+4 off 1597. 7110.J.036 - Stoper Laser Cut,"1597.7110.J.036
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.352 kg
+Volume: 130260.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218239001984998,https://app.asana.com/0/848657415032331/1218239001984998
+4 off 1597. 7110.J.039 - Stoper Laser Cut,"1597.7110.J.039
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.220 kg
+Volume: 81383.700 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Laser Cut - 1597 - Forrest Road Entire System,4,Laser Cut,,,,ORDER,PROJECT ORDER,1218239072588317,https://app.asana.com/0/848657415032331/1218239072588317
+Sesame/Machining BOM - 1597 - Forrest Road Entire System,,ALL BOMS - 1597 - Forrest Road Entire System,,Sesame/Machining,,,,,,,
+Magnet Schultz - 1597 - Forrest Road Entire System,,Sesame/Machining BOM - 1597 - Forrest Road Entire System,,Magnet Schultz,,,,,,,
+4 off 1597. 1000.W1.ChamferShootbolt - EBL-I 1515  Machining to Drill additional Holes 61-GFCX 040-SA-CH-0-24V 100% Magnet Schultz,"1597.1000.W1.ChamferShootbolt
+Stock Number: 61-GFCX 040-SA-CH-0-24V 100%
+From Cost Centre Sesame/Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.503 kg
+Volume: 201663.378 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Magnet Schultz - 1597 - Forrest Road Entire System,4,Magnet Schultz,,,,ORDER,PROJECT ORDER,1218239223936371,https://app.asana.com/0/848657415032331/1218239223936371
+Machining BOM - 1597 - Forrest Road Entire System,,ALL BOMS - 1597 - Forrest Road Entire System,,Machining,,,,,,,
+Machining - 1597 - Forrest Road Entire System,,Machining BOM - 1597 - Forrest Road Entire System,,Machining,,,,,,,
+2 off 1597. 1010.I.030 - (LargeBushing) Machining,"1597.1010.I.030
+Material: Steel, Mild
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.370 kg
+Volume: 47123.890 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Machining - 1597 - Forrest Road Entire System,2,Machining,,,,ORDER,PROJECT ORDER,1218239316804058,https://app.asana.com/0/848657415032331/1218239316804058
+4 off 1597. 1010.I.031 - Tube 31.75x7.94 (after machining 30mm OD 16mm ID) Machining,"1597.1010.I.031
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.119 kg
+Volume: 14668.096 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Machining - 1597 - Forrest Road Entire System,4,Machining,,,,ORDER,PROJECT ORDER,1218239316904025,https://app.asana.com/0/848657415032331/1218239316904025
+2 off 1597. 1010.I.062 - Rod (BRIGHT) Machining,"1597.1010.I.062
+Material: Bright Steel 80A15
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.591 kg
+Volume: 75233.061 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Machining - 1597 - Forrest Road Entire System,2,Machining,,,,ORDER,PROJECT ORDER,1218239225124253,https://app.asana.com/0/848657415032331/1218239225124253
+2 off 1597. 1010.I.063 - Rod (BRIGHT) Machining,"1597.1010.I.063
+Material: Bright Steel 80A15
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 1.082 lbmass
+Volume: 62509.610 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Machining - 1597 - Forrest Road Entire System,2,Machining,,,,ORDER,PROJECT ORDER,1218239093321561,https://app.asana.com/0/848657415032331/1218239093321561
+2 off 1597. 1010.I.065 - Bush Safety Bar Machining,"1597.1010.I.065
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.029 kg
+Volume: 3628.540 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Machining - 1597 - Forrest Road Entire System,2,Machining,,,,ORDER,PROJECT ORDER,1218239092043411,https://app.asana.com/0/848657415032331/1218239092043411
+1 off 1597. 7110.B.012 - Machined rod Machining,"1597.7110.B.012
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.041 kg
+Volume: 5128.426 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Machining - 1597 - Forrest Road Entire System,1,Machining,,,,ORDER,PROJECT ORDER,1218239316324271,https://app.asana.com/0/848657415032331/1218239316324271
+1 off 1597. 7110.B.034 - Lifting block Machining,"1597.7110.B.034
+Material: Aluminum 5152
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.040 kg
+Volume: 14669.052 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Machining - 1597 - Forrest Road Entire System,1,Machining,,,,ORDER,PROJECT ORDER,1218239091894022,https://app.asana.com/0/848657415032331/1218239091894022
+1 off 1597. 7110.B.034_MIR - Lifting block Machining,"1597.7110.B.034_MIR
+Material: Aluminum 5152
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.040 kg
+Volume: 14669.052 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Machining - 1597 - Forrest Road Entire System,1,Machining,,,,ORDER,PROJECT ORDER,1218239316826256,https://app.asana.com/0/848657415032331/1218239316826256
+1 off 1597. 7110.B.035 - Lifting block Machining,"1597.7110.B.035
+Material: Aluminum 5152
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.039 kg
+Volume: 14459.947 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Machining - 1597 - Forrest Road Entire System,1,Machining,,,,ORDER,PROJECT ORDER,1218239317256586,https://app.asana.com/0/848657415032331/1218239317256586
+1 off 1597. 7110.B.035_MIR - Lifting block Machining,"1597.7110.B.035_MIR
+Material: Aluminum 5152
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.039 kg
+Volume: 14459.947 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Machining - 1597 - Forrest Road Entire System,1,Machining,,,,ORDER,PROJECT ORDER,1218239102280652,https://app.asana.com/0/848657415032331/1218239102280652
+Plastics Supplier - 1597 - Forrest Road Entire System,,Machining BOM - 1597 - Forrest Road Entire System,,Plastics Supplier,,,,,,,
+2 off 1597. 7110.E.243 - Pad Plastics Supplier,"1597.7110.E.243
+Material: Tufnol
+Web Link: https://www.directplastics.co.uk/tufnol-sheet
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.006 kg
+Volume: 5668.224 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Plastics Supplier - 1597 - Forrest Road Entire System,2,Plastics Supplier,,,,ORDER,PROJECT ORDER,1218239404104087,https://app.asana.com/0/848657415032331/1218239404104087
+8 off 1597. 7110.J.011 - Rod Machining,"1597.7110.J.011
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.030 kg
+Volume: 3776.535 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Machining - 1597 - Forrest Road Entire System,8,Machining,,,,ORDER,PROJECT ORDER,1218239093533676,https://app.asana.com/0/848657415032331/1218239093533676
+4 off 1597. 7110.J.026 - Tube machined to 48.3mm OD x 2 mm Wall Machining,"1597.7110.J.026
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.215 kg
+Volume: 26815.097 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Machining - 1597 - Forrest Road Entire System,4,Machining,,,,ORDER,PROJECT ORDER,1218239317401684,https://app.asana.com/0/848657415032331/1218239317401684
+4 off 1597. 7110.J.027 - Acetal tube Machining,"1597.7110.J.027
+Material: Acetal Resin, Black
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.023 kg
+Volume: 16449.680 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Machining - 1597 - Forrest Road Entire System,4,Machining,,,,ORDER,PROJECT ORDER,1218253413523745,https://app.asana.com/0/848657415032331/1218253413523745
+4 off 1597. 7110.J.029 - Tube (OD 30 mm wall 2 mm) Machining,"1597.7110.J.029
+Material: Stainless Steel
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.089 kg
+Volume: 11083.539 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Machining - 1597 - Forrest Road Entire System,4,Machining,,,,ORDER,PROJECT ORDER,1218239072953667,https://app.asana.com/0/848657415032331/1218239072953667
+Welded by Sesame - 1597 - Forrest Road Entire System,,Machining BOM - 1597 - Forrest Road Entire System,,Welded by Sesame,,,,,,,
+4 off 1597. 7110.J3w - Welded assembly Welded by Sesame,"1597.7110.J3w
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.254 kg
+Volume: 31778.598 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Welded by Sesame - 1597 - Forrest Road Entire System,4,Welded by Sesame,,,,ORDER,PROJECT ORDER,1218239092854455,https://app.asana.com/0/848657415032331/1218239092854455
+4 off 1597. 7110.J6 - Assembly by Machining Machining,"1597.7110.J6
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.645 kg
+Volume: 94184.205 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Machining - 1597 - Forrest Road Entire System,4,Machining,,,,ORDER,PROJECT ORDER,1218239396140969,https://app.asana.com/0/848657415032331/1218239396140969
+4 off 1597. 7110.J8w - Welded assembly Welded by Sesame,"1597.7110.J8w
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.122 kg
+Volume: 15288.058 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Welded by Sesame - 1597 - Forrest Road Entire System,4,Welded by Sesame,,,,ORDER,PROJECT ORDER,1218239224953704,https://app.asana.com/0/848657415032331/1218239224953704
+Marine Lacquer - 1597 - Forrest Road Entire System,,Surface Finish BOM - 1597 - Forrest Road Entire System,,Marine Lacquer,,,,,,,
+2 off Marine Lacquer 1597. 7110.B.004 - TS flat,"1597.7110.B.004
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.274 kg
+Volume: 101581.435 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Marine Lacquer - 1597 - Forrest Road Entire System,2,Marine Lacquer,,,,ORDER,PROJECT ORDER,1218239404434848,https://app.asana.com/0/848657415032331/1218239404434848
+1 off Marine Lacquer 1597. 7110.B.016 - TS flat,"1597.7110.B.016
+Material: Aluminum 5152
+Thickness: 3.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.245 kg
+Volume: 90671.147 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Marine Lacquer - 1597 - Forrest Road Entire System,1,Marine Lacquer,,,,ORDER,PROJECT ORDER,1218239093017480,https://app.asana.com/0/848657415032331/1218239093017480
+1 off Marine Lacquer 1597. 7110.B.033 - PlatformTray BasePlate,"1597.7110.B.033
+Material: Aluminum 5152
+Thickness: 4.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 18.353 kg
+Volume: 6797237.963 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Marine Lacquer - 1597 - Forrest Road Entire System,1,Marine Lacquer,,,,ORDER,PROJECT ORDER,1218239225390041,https://app.asana.com/0/848657415032331/1218239225390041
+1 off Marine Lacquer 1597. 7110.B.038 - Flat,"1597.7110.B.038
+Material: Aluminum 6061
+Thickness: 20.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 2.097 kg
+Volume: 776589.310 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Marine Lacquer - 1597 - Forrest Road Entire System,1,Marine Lacquer,,,,ORDER,PROJECT ORDER,1218239396375098,https://app.asana.com/0/848657415032331/1218239396375098
+1 off Marine Lacquer 1597. 7110.I.006 - Long Side Trim,"1597.7110.I.006
+Material: Aluminum 5152
+Thickness: 5.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 3.599 kg
+Volume: 1327918.063 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Marine Lacquer - 1597 - Forrest Road Entire System,1,Marine Lacquer,,,,ORDER,PROJECT ORDER,1218239396238889,https://app.asana.com/0/848657415032331/1218239396238889
+1 off Marine Lacquer 1597. 7110.I.006_MIR - Long Side Trim,"1597.7110.I.006_MIR
+Material: Aluminum 5152
+Thickness: 5.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 3.599 kg
+Volume: 1327918.063 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Marine Lacquer - 1597 - Forrest Road Entire System,1,Marine Lacquer,,,,ORDER,PROJECT ORDER,1218239403970180,https://app.asana.com/0/848657415032331/1218239403970180
+1 off Marine Lacquer 1597. 7110.I.007 - Short Side Trim,"1597.7110.I.007
+Material: Aluminum 5152
+Thickness: 5.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 2.229 kg
+Volume: 822347.880 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Marine Lacquer - 1597 - Forrest Road Entire System,1,Marine Lacquer,,,,ORDER,PROJECT ORDER,1218239073498580,https://app.asana.com/0/848657415032331/1218239073498580
+1 off Marine Lacquer 1597. 7110.I.019 - Flat Plate,"1597.7110.I.019
+Material: Aluminium 5083
+Thickness: 10.000 mm
+From Cost Centre Finishes BOM
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 2.771 kg
+Volume: 1046183.633 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Marine Lacquer - 1597 - Forrest Road Entire System,1,Marine Lacquer,,,,ORDER,PROJECT ORDER,1218239225571130,https://app.asana.com/0/848657415032331/1218239225571130
+MayTec BOM - 1597 - Forrest Road Entire System,,ALL BOMS - 1597 - Forrest Road Entire System,,MayTec,,,,,,,
+MayTec - 1597 - Forrest Road Entire System,,MayTec BOM - 1597 - Forrest Road Entire System,,MayTec,,,,,,,
+1 off 1597. 7110.B2 - Sub Assembly MayTec,"1597.7110.B2
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 17.457 kg
+Volume: 6277306.174 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",MayTec - 1597 - Forrest Road Entire System,1,MayTec,,,,ORDER,PROJECT ORDER,1218239094301172,https://app.asana.com/0/848657415032331/1218239094301172
+1 off 1597. 7110.I1 - Side frame MayTec,"1597.7110.I1
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 4.948 kg
+Volume: 1690823.794 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",MayTec - 1597 - Forrest Road Entire System,1,MayTec,,,,ORDER,PROJECT ORDER,1218239396869525,https://app.asana.com/0/848657415032331/1218239396869525
+1 off 1597. 7110.I1_MIR - Side frame MayTec,"1597.7110.I1_MIR
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 4.948 kg
+Volume: 1690823.794 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",MayTec - 1597 - Forrest Road Entire System,1,MayTec,,,,ORDER,PROJECT ORDER,1218239094336057,https://app.asana.com/0/848657415032331/1218239094336057
+1 off 1597. 7110.I2 - Front frame MayTec,"1597.7110.I2
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 2.569 kg
+Volume: 908124.219 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",MayTec - 1597 - Forrest Road Entire System,1,MayTec,,,,ORDER,PROJECT ORDER,1218239100737063,https://app.asana.com/0/848657415032331/1218239100737063
+2 off 1597. 7110.J1 - Upper Barrier assembly MayTec,"1597.7110.J1
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 8.950 kg
+Volume: 3193331.878 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",MayTec - 1597 - Forrest Road Entire System,2,MayTec,,,,ORDER,PROJECT ORDER,1218239317474628,https://app.asana.com/0/848657415032331/1218239317474628
+2 off 1597. 7110.J11 - Upper Barrier assembly MayTec,"1597.7110.J11
+From Cost Centre MayTec
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 11.048 kg
+Volume: 3985834.977 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",MayTec - 1597 - Forrest Road Entire System,2,MayTec,,,,ORDER,PROJECT ORDER,1218239318647696,https://app.asana.com/0/848657415032331/1218239318647696
+NBSS BOM - 1597 - Forrest Road Entire System,,ALL BOMS - 1597 - Forrest Road Entire System,,NBSS,,,,,,,
+NBSS/Sesame - 1597 - Forrest Road Entire System,,NBSS BOM - 1597 - Forrest Road Entire System,,NBSS/Sesame,,,,,,,
+8 off 1597. 003 - NBSS.003 15mm Shock Mount M8 25.5mm Diameter 60daN Compression Load 3.5mm 295-1477 / 511270 NBSS/Sesame,"1597.003
+Stock Number: 295-1477 / 511270
+KAN: KAN-15
+KAN Stock Link: https://app.asana.com/0/632603478911321/1118821443005241
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/stud-mounts/2951477/
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.008 kg
+Volume: 8665.887 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",NBSS/Sesame - 1597 - Forrest Road Entire System,,NBSS/Sesame,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1218239396527706,https://app.asana.com/0/848657415032331/1218239396527706
+NBSS/Laser Cut - 1597 - Forrest Road Entire System,,NBSS BOM - 1597 - Forrest Road Entire System,,NBSS/Laser Cut,,,,,,,
+1 off 1597. 022 - NBSS 022 HydraulicBulkheadPlate 304/2B NBSS/Laser Cut,"1597.022
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.579 kg
+Volume: 71702.921 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",NBSS/Laser Cut - 1597 - Forrest Road Entire System,1,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1218239405595426,https://app.asana.com/0/848657415032331/1218239405595426
+2 off 1597. 030 - NBSS.030 JunctionBoxBracket NBSS/Laser Cut,"1597.030
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.264 kg
+Volume: 33031.962 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",NBSS/Laser Cut - 1597 - Forrest Road Entire System,2,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1218239318684838,https://app.asana.com/0/848657415032331/1218239318684838
+NBSS/Welded by Sesame - 1597 - Forrest Road Entire System,,NBSS BOM - 1597 - Forrest Road Entire System,,NBSS/Welded by Sesame,,,,,,,
+1 off 1597. 049 - NBSS.049 Dripping Tray NBSS/Welded by Sesame,"1597.049
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 7.879 kg
+Volume: 984893.994 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",NBSS/Welded by Sesame - 1597 - Forrest Road Entire System,1,NBSS/Welded by Sesame,,,,ORDER,PROJECT ORDER,1218239318526532,https://app.asana.com/0/848657415032331/1218239318526532
+4 off 1597. 050 - NBSS.050 Leveling Feet Welded Bolt NBSS/Welded by Sesame,"1597.050
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.318 kg
+Volume: 40545.057 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",NBSS/Welded by Sesame - 1597 - Forrest Road Entire System,4,NBSS/Welded by Sesame,,,,ORDER,PROJECT ORDER,1218239397737394,https://app.asana.com/0/848657415032331/1218239397737394
+4 off 1597. 129 - NBSS.129 Loading Point Washer dia 50 x 50 304/HR NBSS/Laser Cut,"1597.129
+Stock Number: 304/HR
+Material: Stainless Steel
+Thickness: 10.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.185 kg
+Volume: 23151.593 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",NBSS/Laser Cut - 1597 - Forrest Road Entire System,4,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1218239095372010,https://app.asana.com/0/848657415032331/1218239095372010
+1 off 1597. 414 - NBSS.414 Limit Switch Angle 304/2B NBSS/Laser Cut,"1597.414
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 3.000 mm
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.188 kg
+Volume: 23520.852 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",NBSS/Laser Cut - 1597 - Forrest Road Entire System,1,NBSS/Laser Cut,,,,ORDER,PROJECT ORDER,1218239095128883,https://app.asana.com/0/848657415032331/1218239095128883
+1 off 1597. 768 - NBSS.768 Machine Room Cabinet Frame NBSS/Sesame,"1597.768
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 24.659 kg
+Volume: 3141298.763 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",NBSS/Sesame - 1597 - Forrest Road Entire System,1,NBSS/Sesame,,,,ORDER,PROJECT ORDER,1218239521656170,https://app.asana.com/0/848657415032331/1218239521656170
+4 off 1597. 1000.L.WDS674-216 - Swivel Pad M16 674-216 NBSS/Sesame,"1597.1000.L.WDS674-216
+Stock Number: 674-216
+KAN: KAN-264
+KAN Stock Link: https://app.asana.com/0/632603478911321/1202312166676506
+Web Link: https://www.wdscomponents.com/en-gb/swivel-pad-steel-with-chemical-black-finish-674-216
+From Cost Centre NBSS
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.189 kg
+Volume: 24055.574 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",NBSS/Sesame - 1597 - Forrest Road Entire System,,NBSS/Sesame,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1218239406136210,https://app.asana.com/0/848657415032331/1218239406136210
+Sesame BOM - 1597 - Forrest Road Entire System,,ALL BOMS - 1597 - Forrest Road Entire System,,Sesame,,,,,,,
+RS Components - 1597 - Forrest Road Entire System,,Sesame BOM - 1597 - Forrest Road Entire System,,RS Components,,,,,,,
+4 off 1597. 1000.B.30x17_F_M8_98.6daN - M8 x 30 female vibration mount 257-8763 RS Components,"1597.1000.B.30x17_F_M8_98.6daN
+Stock Number: 257-8763
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/anti-vibration-mounts/2578763/?relevancy-data=636F3D3126696E3D4931384E525353746F636B4E756D626572266C753D656E266D6D3D6D61746368616C6C26706D3D5E2828282872737C5253295B205D3F293F285C647B337D5B5C2D5C735D3F5C647B332C347D5B705061415D3F29297C283235285C647B387D7C5C647B317D5C2D5C647B377D2929292426706F3D3126736E3D592673723D2673743D52535F53544F434B5F4E554D4245522677633D4E4F4E45267573743D3235372D38373633267374613D3235373837363326&searchHistory=%7B%22enabled%22%3Atrue%7D
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.011 kg
+Volume: 11797.192 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",RS Components - 1597 - Forrest Road Entire System,4,RS Components,,,,ORDER,PROJECT ORDER,1218239318708813,https://app.asana.com/0/848657415032331/1218239318708813
+4 off 1597. 1000.B.50x25_M_M10_300daN - Shock Mount M10 50mm Diameter 300daN Compression Load 6mm deflection 385-1586 RS Components,"1597.1000.B.50x25_M_M10_300daN
+Stock Number: 385-1586
+KAN: KAN-968
+Material: Rubber
+Web Link: https://uk.rs-online.com/web/p/stud-mounts/3851586/?sra=pstk
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.047 kg
+Volume: 51050.881 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",RS Components - 1597 - Forrest Road Entire System,4,RS Components,,,,ORDER,PROJECT ORDER,1218239406087728,https://app.asana.com/0/848657415032331/1218239406087728
+Sesame - 1597 - Forrest Road Entire System,,Sesame BOM - 1597 - Forrest Road Entire System,,Sesame,,,,,,,
+1 off 1597. 1000.C.R-Clip 2x48 - Zinc Plated Steel R-Clip 2x48 R-Clip 2x48 Sesame,"1597.1000.C.R-Clip 2x48
+Stock Number: R-Clip 2x48
+KAN: KAN-976
+Material: Stainless Steel
+Web Link: https://www.gsproducts.co.uk/2mm-x-48mm-stainless-r-clip-spring/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.003 kg
+Volume: 330.365 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Sesame - 1597 - Forrest Road Entire System,1,Sesame,,,,ORDER,PROJECT ORDER,1218239406358108,https://app.asana.com/0/848657415032331/1218239406358108
+4 off 1597. 1000.W1.ChamferShootbolt - EBL-I 1515  Machining to Drill additional Holes 61-GFCX 040-SA-CH-0-24V 100% Magnet Schultz,"1597.1000.W1.ChamferShootbolt
+Stock Number: 61-GFCX 040-SA-CH-0-24V 100%
+From Cost Centre Sesame/Machining
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.503 kg
+Volume: 201663.378 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Magnet Schultz - 1597 - Forrest Road Entire System,4,Magnet Schultz,,,,ORDER,PROJECT ORDER,1218239521342199,https://app.asana.com/0/848657415032331/1218239521342199
+4 off 1597. 1008.A3.001 - MP200701 - Magnetic Proximity Sensor N/O 765-9347 RS Components,"1597.1008.A3.001
+Stock Number: 765-9347
+KAN: KAN-373
+KAN Stock Link: https://app.asana.com/0/632603478911321/1200833896753751
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/magnetic-proximity-switches/7659347
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.003 kg
+Volume: 2845.338 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",RS Components - 1597 - Forrest Road Entire System,,RS Components,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1218239398308115,https://app.asana.com/0/848657415032331/1218239398308115
+"1 off 1597. 1008.A11.001 - Detection distance 2 m, Cable with connector M12, Laser Class 2 LR-TB2000C Sesame","1597.1008.A11.001
+Stock Number: LR-TB2000C
+Material: Generic
+Web Link: https://www.keyence.com/products/sensor/photoelectric/lr-t/models/lr-tb2000c/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.079 lbmass
+Volume: 35734.985 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Sesame - 1597 - Forrest Road Entire System,1,Sesame,,,,ORDER,PROJECT ORDER,1218239521835659,https://app.asana.com/0/848657415032331/1218239521835659
+SIKO - 1597 - Forrest Road Entire System,,Sesame BOM - 1597 - Forrest Road Entire System,,SIKO,,,,,,,
+1 off 1597. 1008.A13.2 - SG20-Wire-Actuated Encoder SG20-1750-GW-S-4/20mA-1-E12-OK-T1 SIKO,"1597.1008.A13.2
+Stock Number: SG20-1750-GW-S-4/20mA-1-E12-OK-T1
+Web Link: https://www.siko-global.com/en/product-detail-page/sg20
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.118 kg
+Volume: 117747.813 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",SIKO - 1597 - Forrest Road Entire System,1,SIKO,,,,ORDER,PROJECT ORDER,1218239398304647,https://app.asana.com/0/848657415032331/1218239398304647
+2 off 1597. 1008.A14 - Standard LimitSwitch: LRC5A54 LRC5A54 Sesame,"1597.1008.A14
+Stock Number: LRC5A54
+KAN: KAN-125
+KAN Stock Link: https://app.asana.com/0/632603478911321/1200095926382602
+Web Link: https://uk.farnell.com/imo-precision-controls/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.854 kg
+Volume: 162337.453 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Sesame - 1597 - Forrest Road Entire System,,Sesame,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1218239398325306,https://app.asana.com/0/848657415032331/1218239398325306
+1 off 1597. 1008.C.002 - E.Stop - Big 330-8587 RS Components,"1597.1008.C.002
+Stock Number: 330-8587
+KAN: KAN-919
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/emergency-stop-push-buttons/3308587/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.298 kg
+Volume: 298073.368 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",RS Components - 1597 - Forrest Road Entire System,1,RS Components,,,,ORDER,PROJECT ORDER,1218239406396159,https://app.asana.com/0/848657415032331/1218239406396159
+3 off 1597. 1008.D1.118 - Cable Mount  M12 Connector  Male  IP67  713 Series RS Stock No: 706-7476 RS Components,"1597.1008.D1.118
+Stock Number: RS Stock No: 706-7476
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/industrial-circular-connectors/7067476
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.015 kg
+Volume: 15418.632 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",RS Components - 1597 - Forrest Road Entire System,3,RS Components,,,,ORDER,PROJECT ORDER,1218239425667538,https://app.asana.com/0/848657415032331/1218239425667538
+Bes - 1597 - Forrest Road Entire System,,Sesame BOM - 1597 - Forrest Road Entire System,,Bes,,,,,,,
+"1 off 1597. 1008.D1.120 - Drain Cock Type A - 3/4"" BSP Brass 3/4"" BSP Bes","1597.1008.D1.120
+Stock Number: 3/4"" BSP
+Material: Brass, Soft Yellow
+Web Link: https://www.bes.co.uk/drain-cock-type-a-3-4in-bsp-brass-7496/?srsltid=AfmBOopiSwmvu2xg6-awSWh6goCllN-njqrkEp1XNkmdCSXU4uyE7jHg
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.316 kg
+Volume: 37283.251 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Bes - 1597 - Forrest Road Entire System,1,Bes,,,,ORDER,PROJECT ORDER,1218239398277775,https://app.asana.com/0/848657415032331/1218239398277775
+Amazon - 1597 - Forrest Road Entire System,,Sesame BOM - 1597 - Forrest Road Entire System,,Amazon,,,,,,,
+1 off 1597. 1008.D1.128 - Hexagon Locknut G3/4 Lock Nut Amazon,"1597.1008.D1.128
+Stock Number: G3/4 Lock Nut
+Material: Brass, Soft Yellow
+Web Link: https://www.amazon.co.uk/dp/B09NQ44G6X?ref=cm_sw_r_cso_cp_apin_dp_EHREW6PZASZW4VTSNFJX&ref_=cm_sw_r_cso_cp_apin_dp_EHREW6PZASZW4VTSNFJX&social_share=cm_sw_r_cso_cp_apin_dp_EHREW6PZASZW4VTSNFJX&th=1
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.106 kg
+Volume: 12511.587 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Amazon - 1597 - Forrest Road Entire System,1,Amazon,,,,ORDER,PROJECT ORDER,1218239406713922,https://app.asana.com/0/848657415032331/1218239406713922
+VUBA - 1597 - Forrest Road Entire System,,Sesame BOM - 1597 - Forrest Road Entire System,,VUBA,,,,,,,
+"2 off 1597. 1008.H8.VUBA DIN T10L - Hydraulic Adjustment Hose Burst Valve DIN 2353, VUBA 3/8"" DIN T10L, max flow 50l/min, max pressure 350 Bar V0784 VUBA","1597.1008.H8.VUBA DIN T10L
+Stock Number: V0784
+Material: Stainless Steel
+Web Link: https://www.flowfitonline.com/categories/hydraulic-cartridge-valves/hose-burst-valves/hydraulic-hose-burst-valve-vuba-3-8-to-t10l-m16x1-5-din-2353
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.052 kg
+Volume: 6490.960 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",VUBA - 1597 - Forrest Road Entire System,2,VUBA,,,,ORDER,PROJECT ORDER,1218239319720794,https://app.asana.com/0/848657415032331/1218239319720794
+47 off 1597. 1008.T.13ID_P_Clip - Rubber-lined clamp; 13mm ID 298-8097 RS Components,"1597.1008.T.13ID_P_Clip
+Stock Number: 298-8097
+KAN: KAN-1156
+Material: Generic
+Web Link: https://uk.rs-online.com/web/p/p-clips/2988097/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.002 kg
+Volume: 1949.773 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",RS Components - 1597 - Forrest Road Entire System,47,RS Components,,,,ORDER,PROJECT ORDER,1218239398820005,https://app.asana.com/0/848657415032331/1218239398820005
+3 off 1597. 1008.T.25ID_Grommet - Grommet ID 18.5mm (Hole 25mm Dia.) Sesame,"1597.1008.T.25ID_Grommet
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.005 kg
+Volume: 5276.370 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Sesame - 1597 - Forrest Road Entire System,3,Sesame,,,,ORDER,PROJECT ORDER,1218239406617183,https://app.asana.com/0/848657415032331/1218239406617183
+5 off 1597. 1008.U.01 - 85x85x51 Wiska Junction Box 700-0802 Sesame,"1597.1008.U.01
+Stock Number: 700-0802
+Material: PET Plastic
+Web Link: https://uk.rs-online.com/web/p/junction-boxes/7000802?searchId=f4dce812-75bb-4641-9814-24dc7daf85be&gb=s
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.000 kg
+Volume: 50224.921 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Sesame - 1597 - Forrest Road Entire System,5,Sesame,,,,ORDER,PROJECT ORDER,1218239425999392,https://app.asana.com/0/848657415032331/1218239425999392
+4 off 1597. 1008.U.11 - JunctionBox+Glands OB11 Sesame,"1597.1008.U.11
+Stock Number: OB11
+Material: Generic
+Web Link: http://cpc.farnell.com/velleman-sa/ob11/ip68-terminal-box-2-way/dp/CN20133
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.084 kg
+Volume: 83925.782 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Sesame - 1597 - Forrest Road Entire System,4,Sesame,,,,ORDER,PROJECT ORDER,1218239319841799,https://app.asana.com/0/848657415032331/1218239319841799
+1 off 1597. 1008.U.24 - 220x170x80 Wiska Junction Box 183-3753 Sesame,"1597.1008.U.24
+Stock Number: 183-3753
+Material: PET Plastic
+Web Link: https://uk.rs-online.com/web/p/junction-boxes/1833753
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.000 kg
+Volume: 192798.057 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Sesame - 1597 - Forrest Road Entire System,1,Sesame,,,,ORDER,PROJECT ORDER,1218239425589080,https://app.asana.com/0/848657415032331/1218239425589080
+IGUS - 1597 - Forrest Road Entire System,,Sesame BOM - 1597 - Forrest Road Entire System,,IGUS,,,,,,,
+"3 off 1597. 1008.Y.EasyChain[10,5mm]7100 - Easy chain [10 mm inner] Length: 900 mm E06.10.018.0 IGUS","1597.1008.Y.EasyChain[10,5mm]7100
+Stock Number: E06.10.018.0
+Web Link: https://www.igus.eu/product/series-06?artnr=06.10.018.0
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.248 lbmass
+Volume: 112618.564 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",IGUS - 1597 - Forrest Road Entire System,3,IGUS,,,,ORDER,PROJECT ORDER,1218239319913345,https://app.asana.com/0/848657415032331/1218239319913345
+1 off 1597. 1010.H17 - Easy chain E16 [63mm inner] width Length: 1586mm E16.5.060.0 with ends 2x 117.5.12P.A2 IGUS,"1597.1010.H17
+Stock Number: E16.5.060.0 with ends 2x 117.5.12P.A2
+Web Link: https://www.igus.eu/product/series-E16?artnr=E16.5.060.0
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 1.045 kg
+Volume: 1044765.032 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",IGUS - 1597 - Forrest Road Entire System,1,IGUS,,,,ORDER,PROJECT ORDER,1218239319795700,https://app.asana.com/0/848657415032331/1218239319795700
+Euro-Bearings - 1597 - Forrest Road Entire System,,Sesame BOM - 1597 - Forrest Road Entire System,,Euro-Bearings,,,,,,,
+"4 off 1597. 1010.I.025 - Bearing: 72 +0/-0,1 x 30 +0/-0,03 NUTR 30-72 Euro-Bearings","1597.1010.I.025
+Stock Number: NUTR 30-72
+KAN: KAN-251
+KAN Stock Link: https://app.asana.com/0/632603478911321/1202047597463751
+Material: Stainless Steel
+Web Link: http://www.euro-bearings.com/NUTR23.htm
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.779 kg
+Volume: 97358.321 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Euro-Bearings - 1597 - Forrest Road Entire System,,Euro-Bearings,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1218239406854725,https://app.asana.com/0/848657415032331/1218239406854725
+OnlineBearings - 1597 - Forrest Road Entire System,,Sesame BOM - 1597 - Forrest Road Entire System,,OnlineBearings,,,,,,,
+2 off 1597. 1010.I.026 - PlainMetricBush_30x35x25 PMB187 OnlineBearings,"1597.1010.I.026
+Stock Number: PMB187
+KAN: KAN-401
+KAN Stock Link: https://app.asana.com/0/632603478911321/958469419599703
+Material: Brass, Soft Yellow
+Web Link: http://www.onlinebearings.co.uk/Plain-Metric-Bush-21-100mm-Inside-Diameter.html
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.054 kg
+Volume: 6381.360 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",OnlineBearings - 1597 - Forrest Road Entire System,,OnlineBearings,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1218239407103661,https://app.asana.com/0/848657415032331/1218239407103661
+2 off 1597. 1010.I.027 - PlainMetricBush_(30x40x45) PMB196 OnlineBearings,"1597.1010.I.027
+Stock Number: PMB196
+KAN: KAN-202
+KAN Stock Link: https://app.asana.com/0/632603478911321/1201028213514490
+Material: Brass, Soft Yellow
+Web Link: http://www.onlinebearings.co.uk/Plain-Metric-Bush-21-100mm-Inside-Diameter.html
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.210 kg
+Volume: 24740.042 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",OnlineBearings - 1597 - Forrest Road Entire System,,OnlineBearings,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1218239522672617,https://app.asana.com/0/848657415032331/1218239522672617
+2 off 1597. 1010.I.028 - FlangedBearingBush_40x50x50 FMB405050 OnlineBearings,"1597.1010.I.028
+Stock Number: FMB405050
+KAN: KAN-399
+KAN Stock Link: https://app.asana.com/0/632603478911321/958469419599705
+Material: Brass, Soft Yellow
+Web Link: http://www.onlinebearings.co.uk/Flanged-Oilube-Bearing-Bush-22-90mm-Inside-Diameter.html
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.336 kg
+Volume: 39662.607 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",OnlineBearings - 1597 - Forrest Road Entire System,,OnlineBearings,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1218239319648303,https://app.asana.com/0/848657415032331/1218239319648303
+SimplyBearings - 1597 - Forrest Road Entire System,,Sesame BOM - 1597 - Forrest Road Entire System,,SimplyBearings,,,,,,,
+8 off 1597. 1010.I.082 - Flanged bearing bush - 16x20x16 - to be shortened AL.1620-16.FL SimplyBearings,"1597.1010.I.082
+Stock Number: AL.1620-16.FL
+Material: Brass, Soft Yellow
+Web Link: https://www.simplybearings.co.uk/products/al-1620-16-fl?_gl=1*q6wa72*_up*MQ..*_ga*MTE5OTU5ODc4My4xNzg3MDQwMDU4*_ga_HM5RZGXBJW*czE3ODcwNDAwNTgkbzEkZzEkdDE3ODcwNDAwOTEkajI3JGwwJGgw*_ga_NNP108LS6F*czE3ODcwNDAwNTgkbzEkZzEkdDE3ODcwNDAwOTEkajI3JGwwJGg0MjcwNDQ2MDI.
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.021 kg
+Volume: 2528.197 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",SimplyBearings - 1597 - Forrest Road Entire System,8,SimplyBearings,,,,ORDER,PROJECT ORDER,1218239320195229,https://app.asana.com/0/848657415032331/1218239320195229
+Bearing Supplier - 1597 - Forrest Road Entire System,,Sesame BOM - 1597 - Forrest Road Entire System,,Bearing Supplier,,,,,,,
+"8 off 1597. 1010.I.086 - Thrust washer (ID 30 mm OD >45 mm), thickness 1-1.5 mm AS3047 Bearing Supplier","1597.1010.I.086
+Stock Number: AS3047
+KAN: KAN-1216
+Material: Stainless Steel
+Web Link: https://www.bearingsrus.co.uk/review/product/list/id/23450/category/208/
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.008 kg
+Volume: 1028.086 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Bearing Supplier - 1597 - Forrest Road Entire System,8,Bearing Supplier,,,,ORDER,PROJECT ORDER,1218239426476261,https://app.asana.com/0/848657415032331/1218239426476261
+"8 off 1597. 1010.I.087 - Thrust washer (ID 17 mm OD >30 mm), thickness 1-1.5 mm AS1730 Bearing Supplier","1597.1010.I.087
+Stock Number: AS1730
+KAN: KAN-1010
+Material: Stainless Steel
+Web Link: https://www.bearingsrus.co.uk/bearings/needle-roller/needle-roller-thrust-bearings/as1730-skf
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.004 kg
+Volume: 479.878 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Bearing Supplier - 1597 - Forrest Road Entire System,8,Bearing Supplier,,,,ORDER,PROJECT ORDER,1218239320239790,https://app.asana.com/0/848657415032331/1218239320239790
+gsfslides - 1597 - Forrest Road Entire System,,Sesame BOM - 1597 - Forrest Road Entire System,,gsfslides,,,,,,,
+2 off 1597. 7110.4015.DTS080.1600 - Slide 4015.DTS080.1600 gsfslides,"1597.7110.4015.DTS080.1600
+Stock Number: 4015.DTS080.1600
+Web Link: https://gsfslides.com/4015-dts080-full-extension-slide-dts-80-90-880kg-steel-extreme-duty-100-percent-extension/#
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 6.530 lbmass
+Volume: 2961961.917 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",gsfslides - 1597 - Forrest Road Entire System,2,gsfslides,,,,ORDER,PROJECT ORDER,1218239406921516,https://app.asana.com/0/848657415032331/1218239406921516
+Weber Cox - 1597 - Forrest Road Entire System,,Sesame BOM - 1597 - Forrest Road Entire System,,Weber Cox,,,,,,,
+1 off 1597. 7110.B.013 - Custom Membrane Sensor P-0523 Weber Cox,"1597.7110.B.013
+Stock Number: P-0523
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.157 kg
+Volume: 168379.695 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Weber Cox - 1597 - Forrest Road Entire System,1,Weber Cox,,,,ORDER,PROJECT ORDER,1218239426526805,https://app.asana.com/0/848657415032331/1218239426526805
+Tape Switch - 1597 - Forrest Road Entire System,,Sesame BOM - 1597 - Forrest Road Entire System,,Tape Switch,,,,,,,
+"1 off 1597. 7110.B.014 - TS6 Sensing Edge with resistor, Black channel TS6/with resistor/+End caps/ Tape Switch","1597.7110.B.014
+Stock Number: TS6/with resistor/+End caps/
+Material: Generic
+Web Link: tapeswitch.com
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.876 kg
+Volume: 876178.022 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Tape Switch - 1597 - Forrest Road Entire System,1,Tape Switch,,,,ORDER,PROJECT ORDER,1218239655827913,https://app.asana.com/0/848657415032331/1218239655827913
+2 off 1597. 7110.B.132 - TS 6 Tape Switch without resistor TS6 without resistor Tape Switch,"1597.7110.B.132
+Stock Number: TS6 without resistor
+Material: Aluminum
+Web Link: tapeswitch.com
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.040 kg
+Volume: 14661.094 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Tape Switch - 1597 - Forrest Road Entire System,2,Tape Switch,,,,ORDER,PROJECT ORDER,1218239522968859,https://app.asana.com/0/848657415032331/1218239522968859
+Igus - 1597 - Forrest Road Entire System,,Sesame BOM - 1597 - Forrest Road Entire System,,Igus,,,,,,,
+4 off 1597. 7110.E.014 - Sleeve bearing WSM-1618-08 Igus,"1597.7110.E.014
+Stock Number: WSM-1618-08
+Material: Generic
+Web Link: https://www.igus.co.uk/iglidur-ibh/sleeve-bearings/product-details/iglidur-w300-m?artnr=WSM-1618-08#dimensions=d1%3A16-d2%3A18-b1%3A8&sortingBy=ascending-deliveryTime&quantity=1
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.000 kg
+Volume: 427.257 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Igus - 1597 - Forrest Road Entire System,4,Igus,,,,ORDER,PROJECT ORDER,1218239399509879,https://app.asana.com/0/848657415032331/1218239399509879
+selfadhesive - 1597 - Forrest Road Entire System,,Sesame BOM - 1597 - Forrest Road Entire System,,selfadhesive,,,,,,,
+4 off 1597. 7110.E.016 - Foam tape 40x1.5 Scapa 3259 selfadhesive,"1597.7110.E.016
+Stock Number: Scapa 3259
+Material: Generic
+Web Link: https://www.selfadhesive.co.uk/scapa-3259-single-sided-foam-tape-black-40mmx1-5mm-x50m
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.030 kg
+Volume: 30480.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",selfadhesive - 1597 - Forrest Road Entire System,4,selfadhesive,,,,ORDER,PROJECT ORDER,1218239523233329,https://app.asana.com/0/848657415032331/1218239523233329
+2 off 1597. 7110.E.021 - Foam tape 40x1.5 Scapa 3259 selfadhesive,"1597.7110.E.021
+Stock Number: Scapa 3259
+Material: Generic
+Web Link: https://www.selfadhesive.co.uk/scapa-3259-single-sided-foam-tape-black-40mmx1-5mm-x50m
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.016 kg
+Volume: 15840.000 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",selfadhesive - 1597 - Forrest Road Entire System,2,selfadhesive,,,,ORDER,PROJECT ORDER,1218239523025144,https://app.asana.com/0/848657415032331/1218239523025144
+1 off 1597. 7110.E.252 - TS6 Sensing Edge TS6/Without resistor/+End caps/ Tape Switch,"1597.7110.E.252
+Stock Number: TS6/Without resistor/+End caps/
+Material: Generic
+Web Link: tapeswitch.com
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.113 kg
+Volume: 112605.413 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Tape Switch - 1597 - Forrest Road Entire System,1,Tape Switch,,,,ORDER,PROJECT ORDER,1218239522774114,https://app.asana.com/0/848657415032331/1218239522774114
+Bellows Supplier - 1597 - Forrest Road Entire System,,Sesame BOM - 1597 - Forrest Road Entire System,,Bellows Supplier,,,,,,,
+2 off 1597. 7110.H.Bellows - Bellows Bellows Supplier,"1597.7110.H.Bellows
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 12.244 kg
+Volume: 1933610.437 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Bellows Supplier - 1597 - Forrest Road Entire System,2,Bellows Supplier,,,,ORDER,PROJECT ORDER,1218239426508804,https://app.asana.com/0/848657415032331/1218239426508804
+4 off 1597. 7110.J.003 - Magnet F338N-2 Sesame,"1597.7110.J.003
+Stock Number: F338N-2
+KAN: KAN-546
+KAN Stock Link: https://app.asana.com/0/632603478911321/1201650398790964
+Material: Generic
+Web Link: https://www.first4magnets.com/countersunk-c41/15mm-dia-x-2mm-thick-x-4-2mm-c-sink-neodymium-magnet-2-6kg-pull-p3055#ab_1_1|ps_2_1068
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.000 kg
+Volume: 294.721 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Sesame - 1597 - Forrest Road Entire System,,Sesame,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1218239523166392,https://app.asana.com/0/848657415032331/1218239523166392
+first4magnets - 1597 - Forrest Road Entire System,,Sesame BOM - 1597 - Forrest Road Entire System,,first4magnets,,,,,,,
+4 off 1597. 7110.J.004 - Fiber Washer (should come with magnet) first4magnets,"1597.7110.J.004
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.000 kg
+Volume: 156.687 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",first4magnets - 1597 - Forrest Road Entire System,4,first4magnets,,,,ORDER,PROJECT ORDER,1218239523429328,https://app.asana.com/0/848657415032331/1218239523429328
+"16 off 1597. 7110.J.006 - M6x16mm Slotted Head Grub Screws, SS SFA-M6-16-A1-BL Sesame","1597.7110.J.006
+Stock Number: SFA-M6-16-A1-BL
+Material: Stainless Steel
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.003 kg
+Volume: 430.871 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Sesame - 1597 - Forrest Road Entire System,16,Sesame,,,,ORDER,PROJECT ORDER,1218239656285044,https://app.asana.com/0/848657415032331/1218239656285044
+8 off 1597. 7110.J.013 - Gusket Sesame,"1597.7110.J.013
+Material: Rubber
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.007 kg
+Volume: 7077.531 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Sesame - 1597 - Forrest Road Entire System,8,Sesame,,,,ORDER,PROJECT ORDER,1218239398974020,https://app.asana.com/0/848657415032331/1218239398974020
+4 off 1597. DIN 71412 - M 6 - Greasing Nipple Sesame,"1597.DIN 71412 - M 6
+Material: Steel
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/g92rv65s4j2zprab0bbdd/AM9hYl-A0CRvWRKf4Fvynfo?rlkey=321g43csq4xvhkkvms6ac2iz0&dl=0
+Mass: 0.004 kg
+Volume: 471.462 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218222812952217",Sesame - 1597 - Forrest Road Entire System,4,Sesame,,,,ORDER,PROJECT ORDER,1218239522910595,https://app.asana.com/0/848657415032331/1218239522910595

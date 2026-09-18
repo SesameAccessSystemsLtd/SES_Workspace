@@ -51,9 +51,13 @@ ORDER_STATUS_GID    = os.getenv("ASANA_ORDER_STATUS_FIELD_GID",       "114395533
 ORDER_CONFIRMED_GID = os.getenv("ASANA_ORDER_STATUS_CONFIRMED_GID",   "1143955334207043")
 
 WORKSPACE_GID       = "357939803556123"
-GILES_USER_GID      = "369446862164512"
-GILES_PROFILE_URL   = "https://app.asana.com/1/357939803556123/profile/369446862164512"
+GILES_USER_GID      = "1142108324926610"  # REAL Giles user GID (verified 2026-09-01; old 369446862164512 was dead/Not-Found)
+GILES_EMAIL         = "giles@sesameaccess.com"
+GILES_PROFILE_URL   = "https://app.asana.com/1/357939803556123/profile/1142108324926610"
 GILES_MENTION_TAG   = f'<a data-asana-gid="{GILES_USER_GID}" data-asana-type="user">@Giles</a>'
+
+# Build Packs reference custom field (Parts Control) — set to the assembly-pack task GID.
+BUILD_PACKS_REF_GID = os.getenv("BUILD_PACKS_REF_GID", "1211660742155293")
 
 
 def parse_actions(action_text):
@@ -66,12 +70,12 @@ def parse_actions(action_text):
         ops.append({"type": "due_date", "value": m.group(1)})
 
     # Price Ex VAT — new format with inline GID
-    m = re.search(r"Update custom field 'Price Ex VAT' \(field GID: (\d+)\) to ([\d.]+)", action_text)
+    m = re.search(r"Update custom field 'Price Ex VAT' \(field GID: (\d+)\) to ([£]?[\d.]+)", action_text)
     if m:
         ops.append({"type": "custom_field_number", "gid": m.group(1), "value": float(m.group(2))})
     else:
-        # Old format without GID
-        m = re.search(r"Update 'Price Ex VAT' to ([\d.]+)", action_text)
+        # Clean human format (no GID): "Update 'Price Ex VAT' to £92.35"
+        m = re.search(r"Update 'Price Ex VAT' to £?([\d.]+)", action_text)
         if m:
             ops.append({"type": "custom_field_number", "gid": PRICE_EX_VAT_GID, "value": float(m.group(1))})
 
@@ -114,9 +118,13 @@ def asana_update_task(task_gid, due_date=None, custom_fields=None):
     return False, f"HTTP {r.status_code}: {r.text[:300]}"
 
 
-def asana_create_task(project_gid, name, description=""):
+def asana_create_task(project_gid, name, description="", assignee=None, due_on=None, section_gid=None):
     # Try adding to project first
     body = {"data": {"name": name, "projects": [project_gid], "notes": description}}
+    if assignee:
+        body["data"]["assignee"] = assignee
+    if due_on:
+        body["data"]["due_on"] = due_on
     r = requests.post(
         "https://app.asana.com/api/1.0/tasks",
         headers=ASANA_HEADERS,
@@ -125,6 +133,19 @@ def asana_create_task(project_gid, name, description=""):
     )
     if r.status_code in (200, 201):
         gid = r.json().get("data", {}).get("gid", "")
+        if section_gid and gid:
+            # Place the new task into a specific section of its project via
+            # addProject (which accepts `section` as a location argument). This is
+            # non-fatal — the task is already created, so just report the result.
+            rs = requests.post(
+                f"https://app.asana.com/api/1.0/tasks/{gid}/addProject",
+                headers=ASANA_HEADERS,
+                json={"data": {"project": project_gid, "section": section_gid}},
+                timeout=15,
+            )
+            if rs.status_code in (200, 201):
+                return True, f"task created: {gid} (section set)"
+            return True, f"task created: {gid} (section add failed: HTTP {rs.status_code})"
         return True, f"task created: {gid}"
     # 400 "not a valid object" = project_gid is a user task list (My Tasks), not a project.
     # Fall back to workspace + assignee — task lands in Giles's My Tasks automatically.
@@ -153,18 +174,16 @@ def asana_create_task(project_gid, name, description=""):
 def asana_add_comment(task_gid, text):
     text_stripped = text.strip()
 
-    # If already in Asana html_text format, post directly — no re-processing.
-    if re.match(r"(?is)^<body>.*</body>$", text_stripped):
-        payload = {"data": {"html_text": text_stripped}}
-    elif re.search(r"@giles\b", text_stripped, flags=re.IGNORECASE) or GILES_PROFILE_URL in text_stripped:
-        # Plain text with @Giles mention — convert to html_text with mention tag.
-        html_body = text_stripped.replace(GILES_PROFILE_URL, GILES_MENTION_TAG)
-        if GILES_PROFILE_URL not in text_stripped:
-            html_body = re.sub(r"(?<![>])@giles\b", GILES_MENTION_TAG, html_body, flags=re.IGNORECASE)
-        html_body = html_body.replace("\n", "<br>")
-        payload = {"data": {"html_text": f"<body>{html_body}</body>"}}
-    else:
-        payload = {"data": {"text": text_stripped}}
+    # VERIFIED 2026-09-01: posting plain `text` is the ONLY clean path for this
+    # service-account PAT. Sending html_text (even a correct <a data-asana-gid>
+    # mention wrapped in a single <body>) gets DOUBLE-ESCAPED by Asana when the
+    # producer already embeds the tag — the stored html_text becomes literal
+    # &lt;a data-asana-gid=&quot;...&gt;@Giles&lt;/a&gt; text AND mention_users stays [].
+    # The mention-tag path was a dead end for both rendering and notification.
+    # So: post clean plain text (email addresses auto-link blue as mailto; the
+    # @Giles shows as readable text), and let `asana_add_follower` (called right
+    # after by the dispatcher) be the ACTUAL notification. No HTML, no blob.
+    payload = {"data": {"text": text_stripped}}
     r = requests.post(
         f"https://app.asana.com/api/1.0/tasks/{task_gid}/stories",
         headers=ASANA_HEADERS,
@@ -259,6 +278,84 @@ def asana_reset_custom_field(task_gid, field_gid, value=0):
     return False, f"HTTP {r.status_code}: {r.text[:300]}"
 
 
+def apply_pack_assign(pack_gid, pack_name, parts):
+    """Set Build Packs reference + append pack line for each part, then mirror DB.
+
+    parts: list of {task_gid, sesame_pn, qty, part_name}. Writes:
+      * Asana: Build Packs reference custom field (BUILD_PACKS_REF_GID) = pack_gid
+      * Asana: append '{qty} off in Assembly Pack {pack_name}' to part description
+      * ops.db: parts_control.build_assembly_pack_gid = pack_gid (numeric GID,
+        NOT the pack name — the column is joined on as a GID downstream)
+        plus association_status='linked' and association_checked_at
+    Each part is verified (task exists) before writing; a part with a 404 is skipped
+    and reported, never guessed. Never overwrites an existing pack link.
+    """
+    import sqlite3 as _sq
+    msgs, errs = [], []
+    # DB mirror — same live ops.db the portal reads.
+    try:
+        conn = _sq.connect(_p("db.ops"))
+    except Exception as exc:
+        conn = None
+        errs.append(f"parts_control mirror skipped (no DB): {exc}")
+
+    for part in parts:
+        tg = str(part.get("task_gid") or "")
+        if not tg:
+            errs.append(f"part missing task_gid (sesame_pn={part.get('sesame_pn')})")
+            continue
+        qty = part.get("qty")
+        pn  = part.get("sesame_pn") or ""
+        line = f"{qty} off in Assembly Pack {pack_name}" if qty else f"in Assembly Pack {pack_name}"
+
+        # 1) set Build Packs reference field to the pack task GID
+        r = requests.put(
+            f"https://app.asana.com/api/1.0/tasks/{tg}",
+            headers=ASANA_HEADERS,
+            json={"data": {"custom_fields": {BUILD_PACKS_REF_GID: pack_gid}}},
+            timeout=15,
+        )
+        if r.status_code in (200, 201):
+            msgs.append(f"{pn or tg}: pack ref set")
+        elif r.status_code == 404:
+            errs.append(f"{pn or tg}: task not found (phantom GID?) — skipped")
+            continue
+        else:
+            errs.append(f"{pn or tg}: pack ref HTTP {r.status_code}: {r.text[:200]}")
+            continue
+
+        # 2) append the pack/QTY line to the part description
+        ok2, msg2 = asana_append_to_description(tg, line)
+        if ok2:
+            msgs.append(f"{pn or tg}: desc + '{line}'")
+        else:
+            errs.append(f"{pn or tg}: desc append {msg2}")
+
+        # 3) mirror into ops.db parts_control.
+        # build_assembly_pack_gid = the numeric pack GID, NOT the pack name.
+        # This previously wrote pack_name, which put 1239 name strings into a
+        # column the drawing pipeline joins on as a GID — 03_write_to_asana.py
+        # INNER JOINs `= bap.asana_task_gid`, so every name row was silently
+        # dropped from stage 4 (job 1575 saw 0 of 373 linked parts). Names are
+        # also mutable: renaming a pack orphans every row keyed on the old
+        # string. GID is canonical. See 06_normalise_pack_gid.py.
+        if conn is not None:
+            try:
+                conn.execute(
+                    "UPDATE parts_control SET build_assembly_pack_gid=?, "
+                    "association_status='linked', association_checked_at=? "
+                    "WHERE asana_task_gid=?",
+                    (pack_gid, datetime.now(timezone.utc).isoformat(), tg),
+                )
+                conn.commit()
+            except Exception as exc:
+                errs.append(f"{pn or tg}: DB mirror {exc}")
+
+    if conn is not None:
+        conn.close()
+    return (not errs), msgs, errs
+
+
 def asana_create_task_in_project(project_gid, section_gid, task_name,
                                   description="", tag_gids=None, custom_fields=None):
     """Create task in project, place in section, apply tags and custom fields."""
@@ -328,6 +425,25 @@ def stamp_md(md_path, status, note=""):
         f.write(content)
 
 
+def _sanitise_gid(raw):
+    """Keep only the leading numeric token of a GID field, dropping any trailing
+    comment the .md generator may glue on (e.g. ``   (Richard/Giles 1:1)``).
+
+    An Asana GID is a long integer, so we require the first whitespace-delimited
+    token to be all digits; anything else returns "" so the caller falls back to
+    the companion .json.
+    """
+    if not raw:
+        return ""
+    raw = raw.strip()
+    # Defensively cut anything after whitespace-then-`(`.
+    raw = re.split(r"\s+\(", raw, maxsplit=1)[0]
+    token = raw.split()[0] if raw.split() else ""
+    if token and token.isdigit():
+        return token
+    return ""
+
+
 def process_file(md_path):
     with open(md_path, "r", encoding="utf-8") as f:
         content = f.read()
@@ -347,13 +463,20 @@ def process_file(md_path):
         proj_m    = re.search(r"^Project GID:\s*(.+)$", content, re.MULTILINE)
         name_m    = re.search(r"^Task name:\s*(.+)$", content, re.MULTILINE)
         desc_m    = re.search(r"Description:\n(.*?)(?=\n## Context|\Z)", content, re.DOTALL)
-        project_gid = proj_m.group(1).strip() if proj_m else ""
-        task_name   = name_m.group(1).strip() if name_m else "Untitled Task"
-        description = desc_m.group(1).strip() if desc_m else ""
+        # Bug 1: strip the trailing parenthetical (e.g. `   (Richard/Giles 1:1)`).
+        project_gid = _sanitise_gid(proj_m.group(1)) if proj_m else ""
+        # Bug 2: fall back to the companion .json for fields the .md omits.
+        project_gid = project_gid or payload.get("project_gid") or payload.get("project") or ""
+        task_name   = (name_m.group(1).strip() if name_m else "") or payload.get("name") or "Untitled Task"
+        assignee    = payload.get("assignee")
+        due_on      = payload.get("due_on")
+        section_gid = payload.get("section_gid") or payload.get("section")
+        description = desc_m.group(1).strip() if desc_m else (payload.get("notes") or "")
         if not project_gid:
             stamp_md(md_path, "FAILED", "create_task: Project GID missing")
             return False, "create_task: Project GID missing"
-        ok, msg = asana_create_task(project_gid, task_name, description)
+        ok, msg = asana_create_task(project_gid, task_name, description,
+                                    assignee=assignee, due_on=due_on, section_gid=section_gid)
         if ok:
             stamp_md(md_path, "COMPLETE", msg)
             return True, msg
@@ -442,6 +565,29 @@ def process_file(md_path):
         ok, msg = asana_append_to_description(task_gid, block)
         stamp_md(md_path, "COMPLETE" if ok else "FAILED", msg)
         return ok, msg
+
+    elif action_type == "pack_assign":
+        # Link parts_control tasks to their build pack. Payload carries:
+        #   {
+        #     "pack_gid": <assembly-pack task GID>,
+        #     "pack_name": "1037.1014.M.Gate+Support.",
+        #     "parts": [ {"task_gid","sesame_pn","qty","part_name"}, ... ]
+        #   }
+        # For each part: set Build Packs reference (1211660742155293) = pack_gid AND
+        # append '{qty} off in Assembly Pack {pack_name}' to the part description,
+        # then mirror build_assembly_pack_gid into ops.db:parts_control.
+        pack_gid   = str(payload.get("pack_gid") or "")
+        pack_name  = str(payload.get("pack_name") or pack_gid)
+        parts      = payload.get("parts") or []
+        if not pack_gid or not parts:
+            stamp_md(md_path, "FAILED", "pack_assign: pack_gid or parts[] missing")
+            return False, "pack_assign: pack_gid or parts[] missing"
+        ok_all, msgs, errs = apply_pack_assign(pack_gid, pack_name, parts)
+        if errs:
+            stamp_md(md_path, "FAILED", "; ".join(errs))
+            return False, "; ".join(errs)
+        stamp_md(md_path, "COMPLETE", "; ".join(msgs))
+        return ok_all, "; ".join(msgs)
 
     elif action_type == "bom_pipeline_push":
         # Dispatched from the BOM tracker. Run bom_push to Stage 4 — NO commit,

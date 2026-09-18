@@ -1,0 +1,68 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1365 - Serjeants Inn Entire BOM,"Master task for all BOMs related to 1365 - Serjeants Inn Entire BOM
+Dropbox: https://www.dropbox.com/scl/fo/ffexwa6zm15suet93jj9v/AGP88yonzbdrgWl8gn-VC0s?rlkey=4ifbhfibf1tb3ozcgn1cwouhu&dl=0
+Project: https://app.asana.com/1/357939803556123/project/1106752876881855/task/1217161966835154?focus=true",,,,,,,,,,
+Laser Cut BOM - 1365 - Serjeants Inn Entire BOM,,ALL BOMS - 1365 - Serjeants Inn Entire BOM,,Laser Cut,,,,,,,
+Laser Cut - 1365 - Serjeants Inn Entire BOM,,Laser Cut BOM - 1365 - Serjeants Inn Entire BOM,,Laser Cut,,,,,,,
+1 off 1365. 1014.R.002 - Gate stopper flange Laser Cut,"1365.1014.R.002
+Material: Steel, Mild
+Thickness: 20.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ffexwa6zm15suet93jj9v/AGP88yonzbdrgWl8gn-VC0s?rlkey=4ifbhfibf1tb3ozcgn1cwouhu&dl=0
+Mass: 0.368 kg
+Volume: 46931.614 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1106752876881855/task/1217161966835154?focus=true",Laser Cut - 1365 - Serjeants Inn Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217546048043849,https://app.asana.com/0/848657415032331/1217546048043849
+1 off 1365. 1014.R.003 - Gate stopper clamp Laser Cut,"1365.1014.R.003
+Material: Steel, Mild
+Thickness: 20.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ffexwa6zm15suet93jj9v/AGP88yonzbdrgWl8gn-VC0s?rlkey=4ifbhfibf1tb3ozcgn1cwouhu&dl=0
+Mass: 0.149 kg
+Volume: 18919.691 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1106752876881855/task/1217161966835154?focus=true",Laser Cut - 1365 - Serjeants Inn Entire BOM,1,Laser Cut,,,,ORDER,PROJECT ORDER,1217546254744251,https://app.asana.com/0/848657415032331/1217546254744251
+2 off 1365. 1014.R.004 - Packer 304/2B Laser Cut,"1365.1014.R.004
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/ffexwa6zm15suet93jj9v/AGP88yonzbdrgWl8gn-VC0s?rlkey=4ifbhfibf1tb3ozcgn1cwouhu&dl=0
+Mass: 0.003 kg
+Volume: 332.949 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1106752876881855/task/1217161966835154?focus=true",Laser Cut - 1365 - Serjeants Inn Entire BOM,2,Laser Cut,,,,ORDER,PROJECT ORDER,1217546048100835,https://app.asana.com/0/848657415032331/1217546048100835
+Machining BOM - 1365 - Serjeants Inn Entire BOM,,ALL BOMS - 1365 - Serjeants Inn Entire BOM,,Machining,,,,,,,
+Machining - 1365 - Serjeants Inn Entire BOM,,Machining BOM - 1365 - Serjeants Inn Entire BOM,,Machining,,,,,,,
+2 off 1365. 1014.R.008 - Rubber feet bracket Machining,"1365.1014.R.008
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/ffexwa6zm15suet93jj9v/AGP88yonzbdrgWl8gn-VC0s?rlkey=4ifbhfibf1tb3ozcgn1cwouhu&dl=0
+Mass: 0.054 kg
+Volume: 6910.310 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1106752876881855/task/1217161966835154?focus=true",Machining - 1365 - Serjeants Inn Entire BOM,2,Machining,,,,ORDER,PROJECT ORDER,1217546249423036,https://app.asana.com/0/848657415032331/1217546249423036
+1 off 1365. 1014.R1 - Machined gate stopper body Machining,"1365.1014.R1
+From Cost Centre Machining
+Link to BOM: https://www.dropbox.com/scl/fo/ffexwa6zm15suet93jj9v/AGP88yonzbdrgWl8gn-VC0s?rlkey=4ifbhfibf1tb3ozcgn1cwouhu&dl=0
+Mass: 0.626 kg
+Volume: 79691.197 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1106752876881855/task/1217161966835154?focus=true",Machining - 1365 - Serjeants Inn Entire BOM,1,Machining,,,,ORDER,PROJECT ORDER,1217546429369020,https://app.asana.com/0/848657415032331/1217546429369020
+Sesame BOM - 1365 - Serjeants Inn Entire BOM,,ALL BOMS - 1365 - Serjeants Inn Entire BOM,,Sesame,,,,,,,
+Sesame - 1365 - Serjeants Inn Entire BOM,,Sesame BOM - 1365 - Serjeants Inn Entire BOM,,Sesame,,,,,,,
+2 off 1365. 1014.R.001 - Levelling foot flat non tilt Steel Zinc plated 673-702 Sesame,"1365.1014.R.001
+Stock Number: 673-702
+KAN: KAN-661
+KAN Stock Link: https://app.asana.com/0/632603478911321/1208669430714093
+Material: Generic
+Web Link: https://www.wdscomponents.com/en-gb/levelling-foot-flat-non-tilt-steel-zinc-plated
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/ffexwa6zm15suet93jj9v/AGP88yonzbdrgWl8gn-VC0s?rlkey=4ifbhfibf1tb3ozcgn1cwouhu&dl=0
+Mass: 0.008 kg
+Volume: 8243.616 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1106752876881855/task/1217161966835154?focus=true",Sesame - 1365 - Serjeants Inn Entire BOM,,Sesame,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1217546045781492,https://app.asana.com/0/848657415032331/1217546045781492
+RS Components - 1365 - Serjeants Inn Entire BOM,,Sesame BOM - 1365 - Serjeants Inn Entire BOM,,RS Components,,,,,,,
+2 off 1365. 1014.R.007 - Dowel Pin 6x24 270-647 RS Components,"1365.1014.R.007
+Stock Number: 270-647
+Material: Steel
+Web Link: https://uk.rs-online.com/web/p/dowel-pins/0270647?cm_mmc=UK-PLA-DS3A-_-google-_-CSS_UK_EN_PMAX_RS+PRO-_--_-270647&matchtype=&&gclsrc=aw.ds&gad_source=1&gad_campaignid=20690300296&gclid=EAIaIQobChMIgPzk-f73lQMVp4BQBh2vXReAEAQYAyABEgLvMfD_BwE
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/ffexwa6zm15suet93jj9v/AGP88yonzbdrgWl8gn-VC0s?rlkey=4ifbhfibf1tb3ozcgn1cwouhu&dl=0
+Mass: 0.005 kg
+Volume: 666.018 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1106752876881855/task/1217161966835154?focus=true",RS Components - 1365 - Serjeants Inn Entire BOM,2,RS Components,,,,ORDER,PROJECT ORDER,1217546431892878,https://app.asana.com/0/848657415032331/1217546431892878

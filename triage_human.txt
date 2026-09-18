@@ -1,0 +1,1007 @@
+############ PROJECT: Parts Control ############
+
+#1 [2022-07-11] task_name: SES447424   Main Lift Manifold with Gate - ORDER NOW 
+#1 project_gid=1211660707080749 task_gid=523333842528553 task_mod=2026-09-01 author=Giles
+#1 hits=['should be']
+#1 COMMENT: drawing needs to be revised - item 1 should be V-RVCOS080B 50-220Bar relief valve
+------------------------------------------------------------------------------------------
+
+#2 [2026-06-29] task_name: 21227-1130 - Royal Mail - Bentick face plates - 1243
+#2 project_gid=1211660707080749 task_gid=1216033596018959 task_mod=2026-09-01 author=Giles
+#2 hits=['process']
+#2 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 please process and ship this today
+------------------------------------------------------------------------------------------
+
+#3 [2026-07-16] task_name: 12 off 1582. 8000.A.203 - Leg Cap Machining
+#3 project_gid=1211660707080749 task_gid=1214803030808195 task_mod=2026-08-25 author=Giles
+#3 hits=['issue', 'again']
+#3 COMMENT: I see the issue - first this was supposed to be an inhouse item - and then we bought 8 more of the same item because it has the same part number  when the new order came through however the part https://app.asana.com/1/357939803556123/project/1211660707080749/task/1215446304623354?focus=true is the round disc but on this lift it is the square end block - again indicating that we can NOT easily or reliably achieve economies of scale between two projects 
+
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1216622791330498
+
+------------------------------------------------------------------------------------------
+
+#4 [2026-07-16] task_name: 12 off 1582. 8000.A.203 - Leg Cap Machining
+#4 project_gid=1211660707080749 task_gid=1214803030808195 task_mod=2026-08-25 author=Giles
+#4 hits=['fallback', 'check']
+#4 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 well done for asigning to me - we nee the PARTS STATUS To be updated correct as this wasnt updated from on order and so to me looks to be addressed unless i return to the comments - i also need the system to try and identify the correct tag so that it is pulled up in our next plastics or machining order - than can be added and checked manually as a fallback
+------------------------------------------------------------------------------------------
+
+#5 [2026-07-20] task_name: 12 off 1582. 8000.A.203 - Leg Cap Machining
+#5 project_gid=1211660707080749 task_gid=1214803030808195 task_mod=2026-08-25 author=Giles
+#5 hits=['issue']
+#5 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 the actual issue here is that 18 were ordered for this JOB because he had 18 in stock and i took the outstanding - then 6 off these were issued to a job that was flagged to be made inhouse - which were supposed to be stock parts ( i can totally see why you would do that if extra came in) but they were pulled from stock rather than made to an order and these were flagged to eb made inhouse 
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1216704913768239
+
+------------------------------------------------------------------------------------------
+
+#6 [2026-07-23] task_name: 2 off 1670. 8000.C.037 - Acetal Slider Machining
+#6 project_gid=1211660707080749 task_gid=1215446305064551 task_mod=2026-08-25 author=Giles
+#6 hits=['check']
+#6 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 please update the material rediness settings - also please be teh double check that a drawing is attached
+------------------------------------------------------------------------------------------
+
+#7 [2026-07-24] task_name: 6 off 1588. 1025.A.017 - Actuator Cam Machining
+#7 project_gid=1211660707080749 task_gid=1216242581380675 task_mod=2026-08-28 author=Giles
+#7 hits=['process']
+#7 COMMENT: Here’s the notes from your call with Phill - Delen Tooling Wire Erosion 01483 487033 on 24 July 2026 at 13:11:
+This is a preliminary call between Giles Hugo from SME Access and Phil from Delen Tooling Wire Erosion to discuss the possibility of EDM services for a cam component. They plan to exchange images and details via email to determine feasibility and pricing.
+Recap
+    Giles Hugo from SME Access inquires about EDM services from Phil at Delen Tooling Wire Erosion for a cam component measuring approximately 130mm by 80mm with a radius on one surface, made of 40mm thick mild steel, with a non-parallel, tapered surface due to water jet machining.
+    Giles explains the component's purpose in a scissor lift mechanism and the need to flatten or correct the cam surface to a normal profile, considering previous water jet modifications.
+    Phil indicates that the requested EDM process, involving sparking wire erosion, is feasible and asks for visual confirmation via photos and CAD files to assess the work.
+    Giles agrees to send photos and DXF files of the component for evaluation and requests a ballpark price estimate if the work is suitable.
+    They discuss scheduling a potential visit to the workshop, with Phil available for an hour or two in the afternoon, and plan to confirm the visit based on the assessment of the images and details.
+    Giles mentions he will be unavailable for the next couple of weeks but will coordinate to send the necessary information promptly.
+    They exchange contact details, with Giles providing the email address "info@dlentooling.co.uk" and Phil confirming he will look out for the email and respond accordingly.
+Tasks
+    Giles Hugo will send photos and DXF files of the cam component to Phil at Delen Tooling Wire Erosion for evaluation.
+    Phil will review the images and files to determine if the EDM process can be performed and provide a ballpark price estimate.
+    Giles Hugo will follow up via email with the requested information and await a response regarding feasibility and pricing.
+    If the work is feasible, Phil will coordinate a visit to the SME Access location in West Bley to discuss the project further.
+
+------------------------------------------------------------------------------------------
+
+#8 [2026-07-24] task_name: 1 off 1037. 1014.M.061.01 - Square Gate Post Machining
+#8 project_gid=1211660707080749 task_gid=1216068748287036 task_mod=2026-08-25 author=Giles
+#8 hits=['does']
+#8 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 - can you confirm that this meets the drawing at it was revised and  i dont have a record of what rev zero was - please ensure this does mee the qc drawing you have - which is rev 1
+------------------------------------------------------------------------------------------
+
+#9 [2026-08-18] task_name: 1 off 1566.1016.H5 - SWLPlate.OneWheelchairUser- Engraved  Engraving (after anodising) - ready to send 
+#9 project_gid=1211660707080749 task_gid=1211427422578875 task_mod=2026-08-18 author=Giles
+#9 hits=['duplicate']
+#9 COMMENT: We have one shown in parent task. So we have duplicated and you had recored this is lost 
+------------------------------------------------------------------------------------------
+
+#10 [2026-08-18] task_name: 1 off 1670. 1008.D.MotorPumpUnit - 1.5kw - 4.2 LPM - 4.5L Tank 16Amp
+#10 project_gid=1211660707080749 task_gid=1214740339622371 task_mod=2026-08-27 author=Giles
+#10 hits=['has been']
+#10 COMMENT: Was assigned for blackfriers from ex queen Elizabeth Street and the thread has been stripped 
+------------------------------------------------------------------------------------------
+
+#11 [2026-08-19] task_name: 1 off Anodising 1575. 1016.H.003 - SWLPlate.OneWheelchairUser
+#11 project_gid=1211660707080749 task_gid=1217545571197279 task_mod=2026-08-25 author=Giles
+#11 hits=['needs to go']
+#11 COMMENT: The aluminium faceplates that I found in the drawer yesterday for this were 105mm height aluminium, and this needs to go away for anodizing prior to being engraved.
+------------------------------------------------------------------------------------------
+
+#12 [2026-08-19] task_name: 2 off 1595. 1014.A.076 - Cast Iron small footprint pillow block USPA200 simply bearings
+#12 project_gid=1211660707080749 task_gid=1217486979924657 task_mod=2026-09-01 author=Giles
+#12 hits=['does']
+#12 COMMENT: https://app.asana.com/1/357939803556123/profile/445939052821804  - please can i clarify what we want here? 
+The Stock number saysUSPA200 which doesn't exist in the link reaches a 404 website  - however i can see in the link 212 which is 60mm id and i want to be sure that a https://www.simplybearings.co.uk/products/uspa212-snr?gad_source=4&gad_campaignid=23499746616&gclid=CjwKCAjwqJXUBhBNEiwA8BgG7lZ2c3KJcriBKq0ilFsslq5AmOh4y3h4OTY2Wah7qE7N3DN9caBPMBoCchEQAvD_BwE will be suitable?
+------------------------------------------------------------------------------------------
+
+#13 [2026-08-25] task_name: 2 off 1594. 1010.L.089.01 - Pivot block Machining
+#13 project_gid=1211660707080749 task_gid=1216623812351578 task_mod=2026-09-01 author=Giles
+#13 hits=['issue']
+#13 COMMENT: https://app.asana.com/1/357939803556123/profile/360042216871613 we had an issue with one of these were the tap broke inside and i have accepted the use of the test one which has some additional drill holes in it - see attached
+------------------------------------------------------------------------------------------
+
+#14 [2026-08-27] task_name: 1 off 1594. 1010.L.064 - Ramp 304/DP1 Laser Cut
+#14 project_gid=1211660707080749 task_gid=1216623812073748 task_mod=2026-08-27 author=Giles
+#14 hits=['has been']
+#14 COMMENT: Part has been kitted and progressed into production despite being a qc fail. 
+
+We are going to brush in house as works is done... 
+
+
+------------------------------------------------------------------------------------------
+
+#15 [2026-08-27] task_name: 1 off 1594. 1010.L.064 - Ramp 304/DP1 Laser Cut
+#15 project_gid=1211660707080749 task_gid=1216623812073748 task_mod=2026-08-27 author=Giles
+#15 hits=['supplier', 'process']
+#15 COMMENT: https://app.asana.com/0/445939052821806/445939052821806 Please be aware that in future we will need to brush in house unless we buy in bulk, as dp1 is not available on 4mm
+
+And so a extra brush process will be needed by any lasercut supplier 
+------------------------------------------------------------------------------------------
+
+#16 [2026-08-27] task_name: 1 off 1670. 1008.D.MotorPumpUnit - 1.5kw - 4.2 LPM - 4.5L Tank 16Amp
+#16 project_gid=1211660707080749 task_gid=1214740339622371 task_mod=2026-08-27 author=Giles
+#16 hits=['has been']
+#16 COMMENT: this has been resolved and i understand that https://app.asana.com/1/357939803556123/profile/360042216871613 has taped ths and cleaned it out
+------------------------------------------------------------------------------------------
+
+#17 [2026-08-28] task_name: 2 off 1037. 9991.C.002 - PTFE slider 1570x45x3 Machining INHOUSE
+#17 project_gid=1211660707080749 task_gid=1217816856508732 task_mod=2026-09-02 author=Giles
+#17 hits=['split', 'check']
+#17 COMMENT: Here’s the notes from your call with +441142560889 0114 256 0889 on 28 August 2026 at 15:38:
+This call involved Giles Hugo discussing a custom order for an oversized PTFE sheet with a contact at +441142560889, focusing on dimensions and manufacturing options. The outcome was that Giles will check internally about splitting the sheet and follow up accordingly.
+Recap
+    Giles Hugo received a request from +441142560889 for an oversized PTFE sheet measuring 1.6 meters in length, 1.2 meters in width, and 3 millimeters in thickness.
+    The sheet's dimensions are unusual, and the contact suggested sending it to manufacturers for quotes or considering splitting the sheet in-house to meet size constraints.
+    Giles indicated he would look into whether the sheet can be split and will follow up after checking internally.
+Tasks
+    Giles Hugo will check in-house to determine if the PTFE sheet can be split to meet size requirements.
+
+------------------------------------------------------------------------------------------
+
+#18 [2026-09-01] task_name: 21116-1130 - Alexander Pollock - engraving Bentick   £180
+#18 project_gid=1211660707080749 task_gid=1213591305488002 task_mod=2026-09-01 author=Giles
+#18 hits=['has been']
+#18 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 can you confirm if this has been delivered?
+------------------------------------------------------------------------------------------
+
+#19 [2026-09-01] task_name: 1	off	Engraved plate	1295.1016.E.005					Engraving
+#19 project_gid=1211660707080749 task_gid=1215997547923355 task_mod=2026-09-01 author=Giles
+#19 hits=['has been']
+#19 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 please confirm if this has been delivered?
+------------------------------------------------------------------------------------------
+
+#20 [2026-09-01] task_name: 2 off 1365. 1014.R.001 - Levelling foot flat non tilt Steel Zinc plated 673-702 Sesame
+#20 project_gid=1211660707080749 task_gid=1217546045781492 task_mod=2026-09-01 author=Giles
+#20 hits=['check']
+#20 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 pretty sure i picked these - didnt mark complete - they are in stock and 2 in teh blue bin - pls check
+------------------------------------------------------------------------------------------
+############ PROJECT: Quote Control ############
+
+#21 [2026-05-14] task_name: 1426 - 1 Leicester Square - 1190 - Hotel Indigo - Items needed for next visit
+#21 project_gid=1207766004159548 task_gid=1211159750454174 task_mod=2026-08-21 author=Giles
+#21 hits=['must ']
+#21 COMMENT: https://app.asana.com/1/357939803556123/profile/1206213741641685 PLEASE STOP assigning parts to https://app.asana.com/1/357939803556123/profile/357939803556127 - this is not your role. These pasrt are being quotes and i have provided teh quote to https://app.asana.com/1/357939803556123/profile/358766297404632 who is managing the order. Assigning to richard confirms that these are approved and removes the items from stock and triggers a replacement order -  But we dont have a PO. Any parts you need must go through sean or me unless you are certain that the client is on a full service contract and the accumulated cost of items needed has a value les than £350 inc Markup.  Total Value is £560 for these items so we need a PO for £190 https://app.asana.com/1/357939803556123/profile/358766297404632
+------------------------------------------------------------------------------------------
+
+#22 [2026-05-20] task_name: New Variation - Handrails  - Brook theatre internal and external lift plus external staircase (all handrails)
+#22 project_gid=1207766004159548 task_gid=1211100300359102 task_mod=2026-09-02 author=Giles
+#22 hits=['process', 'duplicate', 'issue', 'again']
+#22 COMMENT: https://app.asana.com/1/357939803556123/profile/445939052821804 you have changed how you provide data to me again and put teh legacy BOm in the BOm folder  which has imported 79 tasks with many duplicates rather than the 31 that is in the sub folders. - I'm pleased i spotted this before i got too far into the quoting - but all tasks have been imported and if this was a full BOM and i didnt spot it then it would have been a bigger issue.  
+Please be mindful that i am using scripts to process data and when they see more than excel sheets then expecting they will process them - I will delete the lot and start again 
+
+Also we agreed that all BOMs would be under https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903905217260?focus=true and on this occasion you have created a second tier confusing clarity as to which task confirms when order is to progress 
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1214932607006526
+
+------------------------------------------------------------------------------------------
+
+#23 [2026-05-20] task_name: New Variation - Handrails  - Brook theatre internal and external lift plus external staircase (all handrails)
+#23 project_gid=1207766004159548 task_gid=1211100300359102 task_mod=2026-09-02 author=Giles
+#23 hits=['process', 'problem', 'has been', 'again']
+#23 COMMENT: Previously in ALLLLLLLLLL revisions you have added a new URL with a comment that a new BOMM has been produced. Not a new task 
+That is my problem - everytime you do something it is different from before! I need you to be the robot and consistent in your outputs! - we have enough variations / edge cases to manage!
+
+Second point is a feedback - given  that when you were over i said by bot now imports form the dropbox url you give  me, it processes EVERYTHING that is in an excel sheet into a BOM! Well that kind throws the system when you put the legacy BOM (always previously in with the drawings) into the BOM. 
+
+Last week you added them to the drawing task in an act of randomness and again it throws out a system. 
+We discussed it and there is https://app.asana.com/1/357939803556123/task/1210881172146884for these task if needed 
+https://app.asana.com/1/357939803556123/profile/445939052821804
+------------------------------------------------------------------------------------------
+
+#24 [2026-05-28] task_name: BENDING Machining - 1535 Brook Handrails £2240 x VAT + £160 delivery
+#24 project_gid=1207766004159548 task_gid=1214966927646886 task_mod=2026-09-02 author=Giles
+#24 hits=['supplier', 'issue']
+#24 COMMENT: https://app.asana.com/1/357939803556123/profile/445939052821804 is reviewing teh spec issue from supplier: 
+
+Our former for 50.8  o/d tube produce a 190. CLR
+We do nor machine
+So if you can change the radius then we can quote
+Some of the parts would be in 2 or more pieces as we need around 180mm between bends
+
+and the other supplier "Tube bender" is offering: 
+
+ using a 2" x 3mm tube, bent on a 165.1mm CLR:
+------------------------------------------------------------------------------------------
+
+#25 [2026-08-12] task_name: 1514 - Tower of London - Warranty Service TBC- Items needed for return visit 
+#25 project_gid=1207766004159548 task_gid=1216828315921772 task_mod=2026-09-01 author=Giles
+#25 hits=['should be']
+#25 COMMENT: should be in tomorrow https://app.asana.com/1/357939803556123/profile/358766297404632
+------------------------------------------------------------------------------------------
+
+#26 [2026-09-01] task_name: IDL Powder Coating - 1037 - Langley Street Refirb
+#26 project_gid=1207766004159548 task_gid=1216068837918383 task_mod=2026-09-01 author=Giles
+#26 hits=['again']
+#26 COMMENT: chased for quote again
+------------------------------------------------------------------------------------------
+############ PROJECT: Order Numbers ############
+
+#27 [2025-11-11] task_name: 20487-211025 - Amazon - silverline knife for paul  - cancelled
+#27 project_gid=854650811917168 task_gid=1211703814845709 task_mod=2026-08-17 author=Giles
+#27 hits=['issue']
+#27 COMMENT: issues with this - not able to buy any more with ought steves passport - need to look it it further
+------------------------------------------------------------------------------------------
+
+#28 [2026-05-14] task_name: 20715-150126 - PARAGON - Fire ALARM, Extinguisher, Lighting and intruder annual servicing 2026 - 2027- 2047
+#28 project_gid=854650811917168 task_gid=1207371623571355 task_mod=2026-08-27 author=Giles
+#28 hits=['process', 'has been']
+#28 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 - please ensure the invoice is processed in thsi task as per normal, i cant see any payment details or invoice attached. and the subtasks are just to tick off what has been invoiced and paid for (and update the date)
+------------------------------------------------------------------------------------------
+
+#29 [2026-06-22] task_name: 20985-1575 - SG transmission - 1575 Jenners
+#29 project_gid=854650811917168 task_gid=1214073918288684 task_mod=2026-09-02 author=Giles
+#29 hits=['check']
+#29 COMMENT: This call involved Giles Hugo from Sesame Access inquiring about the delivery status of two orders. The representative was unable to confirm the delivery dates during the call but agreed to check with the production team and have Amanda return the call with an update.
+Recap
+    Giles Hugo from Sesame Access called to check on the delivery status of two orders, with order confirmation numbers 5569843 and 320, and previous order G 206883 scheduled for delivery on April 28th.
+    The representative was unable to confirm the delivery dates during the call, citing system discrepancies and the need to consult the production team.
+    The representative agreed to check with the production team and asked Amanda to return Giles's call with an update, promising to do so if an answer was available that day.
+    Giles provided his contact number 01784 904484 and inquired about the availability of a person named Steve, who was working from home but available for a call.
+    The call concluded with the representative confirming they would ask Amanda to call Giles back and noting Steve was working from home.
+Tasks
+    The representative will check with the production team regarding the delivery status of the orders and confirm the dates.
+    The representative will ask Amanda to return Giles's call with the updated information, if available today.
+
+------------------------------------------------------------------------------------------
+
+#30 [2026-06-22] task_name: 20985-1575 - SG transmission - 1575 Jenners
+#30 project_gid=854650811917168 task_gid=1214073918288684 task_mod=2026-09-02 author=Giles
+#30 hits=['issue', 'check']
+#30 COMMENT: Here’s the notes from your call with Steve SG Trnsmission Kew 07876 444633 on 22 June 2026 at 15:18:
+This call involved Giles Hugo discussing order delays and production issues with Steve from SG Transmission Kew. They explored options for future orders and updates on current shipments, aiming to manage expectations amid supply chain challenges.
+Recap
+    Giles Hugo contacted Steve to inquire about delays in their orders from SG Transmission Kew, which are caused by the factory's focus on large projects and a shift away from small-scale production, leading to longer lead times.
+    Steve explained that the factory is experiencing scheduling disruptions due to prioritizing large orders, which has resulted in some orders slipping through the net, and they are currently managing production to clarify delivery timelines.
+    Giles Hugo suggested placing additional orders to have contingency, as current stock is insufficient, and asked whether any off-the-shelf solutions are available; Steve confirmed all products are made to order, with no off-the-shelf options.
+    They discussed the specific orders: one from January for brake actuators used in disable access lifts, primarily for overseas projects in industries like motors, medical, and agriculture, with some conveyor belt systems involved.
+    Steve indicated that due to increased large-scale projects across Europe, the US, and India, delivery times are extended, with current estimates suggesting orders will not be fulfilled before the end of August.
+    Giles expressed frustration over the delays, especially for the order from January, which has taken longer than usual, and considered sourcing directly from China as an alternative.
+    Steve committed to providing an update on the status of the current orders and promised to inform Giles as soon as they are ready for dispatch, acknowledging the delays and the need for better communication.
+Tasks
+    Steve will check the current status of the two orders in production and provide Giles with an update on their progress.
+    Steve will inform Giles when the orders are ready for dispatch.
+
+------------------------------------------------------------------------------------------
+
+#31 [2026-06-25] task_name: 20985-1575 - SG transmission - 1575 Jenners
+#31 project_gid=854650811917168 task_gid=1214073918288684 task_mod=2026-09-02 author=Giles
+#31 hits=['again']
+#31 COMMENT: chased again
+------------------------------------------------------------------------------------------
+
+#32 [2026-07-24] task_name: 20985-1575 - SG transmission - 1575 Jenners
+#32 project_gid=854650811917168 task_gid=1214073918288684 task_mod=2026-09-02 author=Giles
+#32 hits=['again']
+#32 COMMENT: chased again
+------------------------------------------------------------------------------------------
+
+#33 [2026-08-10] task_name: 21231-1555 - Thameside Machining - 1555 - Fifth Av Tesla Handrail
+#33 project_gid=854650811917168 task_gid=1216755221876955 task_mod=2026-09-01 author=Giles
+#33 hits=['process']
+#33 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 this didn't get processed : 
+
+Processing now 
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1217325051454904
+
+------------------------------------------------------------------------------------------
+
+#34 [2026-08-11] task_name: 21240-1588 - ABCO - 1588 - America stair ram 
+#34 project_gid=854650811917168 task_gid=1216611337149396 task_mod=2026-08-28 author=Giles
+#34 hits=['why is ']
+#34 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 i've just picked up that this picking task was not picked or flagged to order 
+
+I had it out for quote in any case , but please look into why is was missed as being flagged for me to order
+------------------------------------------------------------------------------------------
+
+#35 [2026-08-17] task_name: 21569-250826 - CPS - URGENT APPROVED REPAIR — LF69 OLV clutch/flywheel — CPS £1,830 — required for Manchester
+#35 project_gid=854650811917168 task_gid=1217543513496088 task_mod=2026-08-25 author=Giles
+#35 hits=['issue']
+#35 COMMENT: https://app.asana.com/1/357939803556123/profile/650831936770575 please monitor and update if this becomes more of an issue
+------------------------------------------------------------------------------------------
+
+#36 [2026-08-17] task_name: 21243-1578 - Mercury ANODISNING - 1578 - Traversing NEW
+#36 project_gid=854650811917168 task_gid=1213212124682884 task_mod=2026-08-28 author=Giles
+#36 hits=['process']
+#36 COMMENT: https://app.asana.com/1/357939803556123/profile/360042216871613 please confirm what you have actually take down today - i have processed and order but we have no record or trace of what has gone and in what state they are in (ie if scratched) f you have an images please upload  them here also 
+
+Expected parts to be takening are: 
+
+https://app.asana.com/1/357939803556123/project/1212775618786243/task/1213212124682885
+https://app.asana.com/1/357939803556123/project/1212775618786243/task/1213212124682886
+https://app.asana.com/1/357939803556123/project/1212775618786243/task/1213212124682887
+https://app.asana.com/1/357939803556123/project/1212775618786243/task/1213212124682888
+https://app.asana.com/1/357939803556123/project/1212775618786243/task/1213212124682889
+https://app.asana.com/1/357939803556123/project/1212775618786243/task/1213212124682890
+https://app.asana.com/1/357939803556123/project/1212775618786243/task/1213212124682891
+https://app.asana.com/1/357939803556123/project/1212775618786243/task/1213212124682892
+
+and the Blackfriers - i think you said have been done? 
+https://app.asana.com/1/357939803556123/project/1211660707080749/task/1215446301909076
+https://app.asana.com/1/357939803556123/project/1211660707080749/task/1215446061024830
+https://app.asana.com/1/357939803556123/project/1211660707080749/task/1215446301796550
+------------------------------------------------------------------------------------------
+
+#37 [2026-08-18] task_name: 21213-1487 - SGP - Glass Adelaide Replacement - 1487
+#37 project_gid=854650811917168 task_gid=1217014939428772 task_mod=2026-09-02 author=Giles
+#37 hits=['process']
+#37 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 you has processed thsi order under an existing PO https://app.asana.com/1/357939803556123/task/1214073918288684
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1217584963868751
+
+------------------------------------------------------------------------------------------
+
+#38 [2026-08-24] task_name: 21562-1595 - TrandDev - Bearings 1595 - St Georges House Entire system
+#38 project_gid=854650811917168 task_gid=1217486677754857 task_mod=2026-09-01 author=Giles
+#38 hits=['split']
+#38 COMMENT: Bearing options: 
+1 off 1595.1006.G.127 – Split Bearing Bush MB6060BX    £9.99ea + vat Dunlop Brand ex stock.
+1 off 1595.1014.A.091 – Split Bearing Bush MB6030BX    £7.99ea + vat Dunlop Brand ex-stock.
+1 off 1595.1014.P.012 – Split Bearing Bush MB6060X      £9.99ea + vat Dunlop Brand ex-stock.
+1 off 1595.1014.P.004 – Split Bearing Bush MB6040X      £7.99ea + vat Dunlop Brand ex-stock.
+2 off 1595.1014.P.005 – Single Thrust Ball Bearing 51107-EU, 35 × 52 × 12 mm   £5.99ea + vat Dunlop Brand ex-stock
+1 off 1595.1014.P.009 – UCF212 Bearing Unit (also known as SF60)     £59.99ea + vat Dunlop Premium Brand ex-stock
+2 off 1595.1014.A.076 –  USPA212 60mm id   £54.99 + vat Dunlop Brand Ex - stock.
+free 1/2 day carriage
+kind regards
+terry
+------------------------------------------------------------------------------------------
+
+#39 [2026-08-24] task_name: 21562-1595 - TrandDev - Bearings 1595 - St Georges House Entire system
+#39 project_gid=854650811917168 task_gid=1217486677754857 task_mod=2026-09-01 author=Giles
+#39 hits=['does']
+#39 COMMENT: I think the parts you mean to use GGB part codes are  PM DX
+ yellow acetal liner ( similar to a golf ball)
+There is an MB DX version ,  10 times the price and each one has to be machined once pressed into the housing as they are made undersized for machining,  I am  99% certain you need our PM / WMX type as per my quote.
+    1 off MB6060BX  we offer WMX60 65 60         £6.25 ea nett
+    1 off MB6030BX  we offer WMX60 65 30         £4.81 ea nett
+    1 off MB6060X    we offer WMX60 65 60         £6.25 ea nett
+    1 off MB6040X    we offer WMX60 65 40        £5.22 ea nett
+    2 off 51107                                                                 £14.30 ea NTN
+    1 off UCF212                                                             £29.57 ea nett
+    USPA 212
+  This is where it gets a little tricky , the product you have asked for has a flat backed insert inside , does it need to be flat backed ? we can get them and I will quote below based on USPAE212 (European spec but still flat backed)
+Specs attached
+2 x USPAE212                                                          £78.00 ea nett
+There are plenty of more cost effective ones out there if you don’t need the flat back insert.
+Probably 4-5 day delivery on all.
+Regards
+Jon
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Product Manager – Rotary and Linear Bearings
+
+
+
+
+E: JBackhouse@transdev.co.uk
+M: 07568 427776
+
+------------------------------------------------------------------------------------------
+
+#40 [2026-08-25] task_name: 21569-250826 - CPS - URGENT APPROVED REPAIR — LF69 OLV clutch/flywheel — CPS £1,830 — required for Manchester
+#40 project_gid=854650811917168 task_gid=1217543513496088 task_mod=2026-08-25 author=Giles
+#40 hits=['check']
+#40 COMMENT: This call involved Giles Hugo coordinating with Steve from CPS regarding a clutch repair and tire fitting for vehicles, with scheduling and parts confirmation discussed. The repair is scheduled for Tuesday, and tire fitting will be confirmed later.
+Recap
+    Giles Hugo inquired about scheduling a clutch repair for a Toyota van, requesting to drop off the vehicle on Monday or Tuesday; Steve confirmed availability for Tuesday morning and will ensure parts are available.
+    Giles Hugo asked if three tires could be fitted on a different van; Steve indicated they can do it but need to confirm later, asking Giles to call back around 2 PM.
+    The vehicle requiring clutch repair is a Toyota van with registration LF 69, and the estimated clutch kit price is 1830.
+    Steve mentioned they are currently short-staffed, with only two technicians available this week, and are not open on Monday, but drop-off is possible then.
+    Steve advised Giles to call back at 2 PM to confirm tire fitting availability and mentioned he will try to fit the work into their schedule.
+Tasks
+    Steve will check the availability of parts and confirm the scheduling for the clutch repair and tire fitting.
+    Giles will call Steve back around 2 PM to confirm if the tire fitting can be scheduled this week.
+
+------------------------------------------------------------------------------------------
+
+#41 [2026-08-25] task_name: 21243-1578 - Mercury ANODISNING - 1578 - Traversing NEW
+#41 project_gid=854650811917168 task_gid=1213212124682884 task_mod=2026-08-28 author=Giles
+#41 hits=['should be']
+#41 COMMENT: should be ready Friday 
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1217817421829529
+
+------------------------------------------------------------------------------------------
+
+#42 [2026-08-25] task_name: 21569-250826 - CPS - URGENT APPROVED REPAIR — LF69 OLV clutch/flywheel — CPS £1,830 — required for Manchester
+#42 project_gid=854650811917168 task_gid=1217543513496088 task_mod=2026-08-25 author=Giles
+#42 hits=['has been']
+#42 COMMENT: thsi has been paused until les has been to Manchester as we were not able to get a suitable van on hire to replace this
+------------------------------------------------------------------------------------------
+
+#43 [2026-08-26] task_name: 21580-1037 - Machguard - Bellows Supplier - 1037 - Langley Entire BOM
+#43 project_gid=854650811917168 task_gid=1217816924994537 task_mod=2026-08-27 author=Giles
+#43 hits=['again']
+#43 COMMENT: chased again
+------------------------------------------------------------------------------------------
+
+#44 [2026-09-01] task_name: 21587-1037 - lasershape - large part for langley 
+#44 project_gid=854650811917168 task_gid=1217821446990991 task_mod=2026-09-01 author=Giles
+#44 hits=['again']
+#44 COMMENT: chased again for this part nobody else has a laserbed big enough for this
+------------------------------------------------------------------------------------------
+
+#45 [2026-09-01] task_name: 21590-1037 - Direct plastics - machining langley 
+#45 project_gid=854650811917168 task_gid=1217951089637201 task_mod=2026-09-01 author=Giles
+#45 hits=['process']
+#45 COMMENT: https://app.asana.com/app/asana/-/get_asset?asset_id=1218043162872448
+
+not being able to process teh order as teh OTP isnt coming through - now tried 6 time
+------------------------------------------------------------------------------------------
+
+#46 [2026-09-01] task_name: 21590-1037 - Direct plastics - machining langley 
+#46 project_gid=854650811917168 task_gid=1217951089637201 task_mod=2026-09-01 author=Giles
+#46 hits=['process', 'issue']
+#46 COMMENT: his call involved Giles Hugo attempting to resolve a payment issue with Sesame Access, discussing order processing, payment methods, and email communication to facilitate a manual transaction. The call concluded with successful receipt of the email confirmation.
+Recap
+    Giles Hugo contacted Sesame Access to resolve an issue with processing an order, specifically with verifying the transaction via OTP, which was not received.
+    Giles attempted to pay using a credit card but was advised that bank transfer was an option, requiring an email with order details and reference number for manual processing.
+    Giles provided order number 223824 and requested assistance in completing the payment, which involved sending an email with order details to the sales email address.
+    The representative confirmed receipt of the email and agreed to process the order manually, then attempted to verify the email transmission and confirmed successful receipt of the email with the order details.
+    The call ended with the successful confirmation that the email was received, and Giles Hugo expressed thanks and ended the call.
+Tasks
+    Giles Hugo will send the order details and reference number via email to the sales team at sales@directplasticcredituk.co.uk for manual processing.
+    The Sesame Access representative will process the order manually and attempt to complete the payment using the provided email and order details.
+
+------------------------------------------------------------------------------------------
+
+#47 [2026-09-01] task_name: 21587-1037 - lasershape - large part for langley 
+#47 project_gid=854650811917168 task_gid=1217821446990991 task_mod=2026-09-01 author=Giles
+#47 hits=['process', 'has been']
+#47 COMMENT: Here’s the notes from your call with Conner Lasershape 07917 792666 on 01 September 2026 at 15:05:
+Giles Hugo from Sesame and Conner Lasershape discussed the status of an overdue large plate order for Langley, confirming the quote has been approved and is progressing through processing, with delivery expected soon.
+Recap
+    Giles Hugo inquired about the overdue large plate order for Langley, which Conner Lasershape confirmed was added to the quote and has now been approved and sent for processing.
+    Conner Lasershape informed Giles that three flat pieces were added to the quote, and he has requested the processing team to expedite and see what can be done to accelerate delivery, expecting feedback by the morning.
+    Both parties confirmed that the order is now in the processing stage, with Conner promising to update Giles once he receives further information about the delivery schedule.
+Tasks
+    Conner Lasershape will follow up with the processing team and inform Giles Hugo of the expected delivery date once he receives feedback.
+
+------------------------------------------------------------------------------------------
+############ PROJECT: Build/Project Orders ############
+
+#48 [2026-03-11] task_name: BOM: 4.Button Station replacement £1,195.00
+#48 project_gid=848657415032331 task_gid=1213440530955059 task_mod=2026-09-01 author=Giles
+#48 hits=['another']
+#48 COMMENT: yes if we weave into another order we can take out £300 for lasercut parts https://app.asana.com/1/357939803556123/profile/358766297404632
+------------------------------------------------------------------------------------------
+
+#49 [2026-05-20] task_name: New Variation - Handrails  - Brook theatre internal and external lift plus external staircase (all handrails)
+#49 project_gid=848657415032331 task_gid=1211100300359102 task_mod=2026-09-02 author=Giles
+#49 hits=['process', 'duplicate', 'issue', 'again']
+#49 COMMENT: https://app.asana.com/1/357939803556123/profile/445939052821804 you have changed how you provide data to me again and put teh legacy BOm in the BOm folder  which has imported 79 tasks with many duplicates rather than the 31 that is in the sub folders. - I'm pleased i spotted this before i got too far into the quoting - but all tasks have been imported and if this was a full BOM and i didnt spot it then it would have been a bigger issue.  
+Please be mindful that i am using scripts to process data and when they see more than excel sheets then expecting they will process them - I will delete the lot and start again 
+
+Also we agreed that all BOMs would be under https://app.asana.com/1/357939803556123/project/1192686469436889/task/1210903905217260?focus=true and on this occasion you have created a second tier confusing clarity as to which task confirms when order is to progress 
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1214932607006526
+
+------------------------------------------------------------------------------------------
+
+#50 [2026-05-20] task_name: New Variation - Handrails  - Brook theatre internal and external lift plus external staircase (all handrails)
+#50 project_gid=848657415032331 task_gid=1211100300359102 task_mod=2026-09-02 author=Giles
+#50 hits=['process', 'problem', 'has been', 'again']
+#50 COMMENT: Previously in ALLLLLLLLLL revisions you have added a new URL with a comment that a new BOMM has been produced. Not a new task 
+That is my problem - everytime you do something it is different from before! I need you to be the robot and consistent in your outputs! - we have enough variations / edge cases to manage!
+
+Second point is a feedback - given  that when you were over i said by bot now imports form the dropbox url you give  me, it processes EVERYTHING that is in an excel sheet into a BOM! Well that kind throws the system when you put the legacy BOM (always previously in with the drawings) into the BOM. 
+
+Last week you added them to the drawing task in an act of randomness and again it throws out a system. 
+We discussed it and there is https://app.asana.com/1/357939803556123/task/1210881172146884for these task if needed 
+https://app.asana.com/1/357939803556123/profile/445939052821804
+------------------------------------------------------------------------------------------
+
+#51 [2026-05-28] task_name: BENDING Machining - 1535 Brook Handrails £2240 x VAT + £160 delivery
+#51 project_gid=848657415032331 task_gid=1214966927646886 task_mod=2026-09-02 author=Giles
+#51 hits=['supplier', 'issue']
+#51 COMMENT: https://app.asana.com/1/357939803556123/profile/445939052821804 is reviewing teh spec issue from supplier: 
+
+Our former for 50.8  o/d tube produce a 190. CLR
+We do nor machine
+So if you can change the radius then we can quote
+Some of the parts would be in 2 or more pieces as we need around 180mm between bends
+
+and the other supplier "Tube bender" is offering: 
+
+ using a 2" x 3mm tube, bent on a 165.1mm CLR:
+------------------------------------------------------------------------------------------
+
+#52 [2026-06-15] task_name: BOM 2. SlidersModifications
+#52 project_gid=848657415032331 task_gid=1214635677104888 task_mod=2026-08-22 author=Giles
+#52 hits=['issue', 'again']
+#52 COMMENT: i have missed that https://app.asana.com/1/357939803556123/project/1120494544424361/task/1214635545323094?focus=true was signed off and approved and need to ensure that any parts in https://app.asana.com/1/357939803556123/project/848657415032331/list/1204972043509515 that is on hold and dependent - gets assigned to me and has a date when it is no longer blocked - this was a big issue and we do not want this happening again
+------------------------------------------------------------------------------------------
+
+#53 [2026-06-22] task_name: 20985-1575 - SG transmission - 1575 Jenners
+#53 project_gid=848657415032331 task_gid=1214073918288684 task_mod=2026-09-02 author=Giles
+#53 hits=['check']
+#53 COMMENT: This call involved Giles Hugo from Sesame Access inquiring about the delivery status of two orders. The representative was unable to confirm the delivery dates during the call but agreed to check with the production team and have Amanda return the call with an update.
+Recap
+    Giles Hugo from Sesame Access called to check on the delivery status of two orders, with order confirmation numbers 5569843 and 320, and previous order G 206883 scheduled for delivery on April 28th.
+    The representative was unable to confirm the delivery dates during the call, citing system discrepancies and the need to consult the production team.
+    The representative agreed to check with the production team and asked Amanda to return Giles's call with an update, promising to do so if an answer was available that day.
+    Giles provided his contact number 01784 904484 and inquired about the availability of a person named Steve, who was working from home but available for a call.
+    The call concluded with the representative confirming they would ask Amanda to call Giles back and noting Steve was working from home.
+Tasks
+    The representative will check with the production team regarding the delivery status of the orders and confirm the dates.
+    The representative will ask Amanda to return Giles's call with the updated information, if available today.
+
+------------------------------------------------------------------------------------------
+
+#54 [2026-06-22] task_name: 20985-1575 - SG transmission - 1575 Jenners
+#54 project_gid=848657415032331 task_gid=1214073918288684 task_mod=2026-09-02 author=Giles
+#54 hits=['issue', 'check']
+#54 COMMENT: Here’s the notes from your call with Steve SG Trnsmission Kew 07876 444633 on 22 June 2026 at 15:18:
+This call involved Giles Hugo discussing order delays and production issues with Steve from SG Transmission Kew. They explored options for future orders and updates on current shipments, aiming to manage expectations amid supply chain challenges.
+Recap
+    Giles Hugo contacted Steve to inquire about delays in their orders from SG Transmission Kew, which are caused by the factory's focus on large projects and a shift away from small-scale production, leading to longer lead times.
+    Steve explained that the factory is experiencing scheduling disruptions due to prioritizing large orders, which has resulted in some orders slipping through the net, and they are currently managing production to clarify delivery timelines.
+    Giles Hugo suggested placing additional orders to have contingency, as current stock is insufficient, and asked whether any off-the-shelf solutions are available; Steve confirmed all products are made to order, with no off-the-shelf options.
+    They discussed the specific orders: one from January for brake actuators used in disable access lifts, primarily for overseas projects in industries like motors, medical, and agriculture, with some conveyor belt systems involved.
+    Steve indicated that due to increased large-scale projects across Europe, the US, and India, delivery times are extended, with current estimates suggesting orders will not be fulfilled before the end of August.
+    Giles expressed frustration over the delays, especially for the order from January, which has taken longer than usual, and considered sourcing directly from China as an alternative.
+    Steve committed to providing an update on the status of the current orders and promised to inform Giles as soon as they are ready for dispatch, acknowledging the delays and the need for better communication.
+Tasks
+    Steve will check the current status of the two orders in production and provide Giles with an update on their progress.
+    Steve will inform Giles when the orders are ready for dispatch.
+
+------------------------------------------------------------------------------------------
+
+#55 [2026-06-25] task_name: 20985-1575 - SG transmission - 1575 Jenners
+#55 project_gid=848657415032331 task_gid=1214073918288684 task_mod=2026-09-02 author=Giles
+#55 hits=['again']
+#55 COMMENT: chased again
+------------------------------------------------------------------------------------------
+
+#56 [2026-06-29] task_name: 21227-1130 - Royal Mail - Bentick face plates - 1243
+#56 project_gid=848657415032331 task_gid=1216033596018959 task_mod=2026-09-01 author=Giles
+#56 hits=['process']
+#56 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 please process and ship this today
+------------------------------------------------------------------------------------------
+
+#57 [2026-07-08] task_name: 21187-1588 - Thamside Machining - 1588 - America 1 Scissor BOM - 5876
+#57 project_gid=848657415032331 task_gid=1216242331971326 task_mod=2026-08-28 author=Giles
+#57 hits=['process', 'keeps']
+#57 COMMENT: Awaiting sign off for high cost: just about to process the America 1 machining BOM - with all the machined legs it is £7522 ex VAT - it includes 2 additional wheel brackets (£288 each) which keeps the price of these down or then go to £340ea (500 saving over two lifts on this repeating item) . - @Steven Lyons  please confirm this is within the budget
+------------------------------------------------------------------------------------------
+
+#58 [2026-07-08] task_name: 21187-1588 - Thamside Machining - 1588 - America 1 Scissor BOM - 5876
+#58 project_gid=848657415032331 task_gid=1216242331971326 task_mod=2026-08-28 author=Giles
+#58 hits=['supplier', 'procurement']
+#58 COMMENT: https://app.asana.com/1/357939803556123/profile/380748302108842 i have created a teams meeting for this on Friday at 10:30:
+
+Summary:  
+The task centers on the procurement of machined parts for the America 1 Scissor BOM, where Giles has successfully negotiated the supplier quote down from £7,522 to £6,722 ex. VAT. To optimize costs, the order includes additional wheel brackets to leverage bulk pricing, though the final purchase remains pending budget approval from Steven Lyons. While there is immediate pressure to complete the America 1 project for Ramzan, the team has initiated a parallel effort involving Karol and Andy to value engineer the scissor lift design and standardize parts to reduce future expenditures.
+
+
+Microsoft Teams meeting
+Join: https://teams.microsoft.com/meet/384388465001838?p=TGQYCY0dcBDS0DhZKJ
+Meeting ID: 384 388 465 001 838
+Passcode: Vj6a5nn7
+
+https://aka.ms/JoinTeamsMeeting?omkt=en-GB | https://teams.microsoft.com/l/meetup-join/19%3ameeting_YzgyY2YwMjItMTU5ZC00OTA5LWJjZWQtNDk4Zjg2YTU0NTcw%40thread.v2/0?context=%7b%22Tid%22%3a%223bfd9e7d-219f-48db-bd9e-e63b3b990a1a%22%2c%22Oid%22%3a%220065100a-40c4-4847-96fb-8fb369e549f2%22%7d
+For organisers: https://teams.microsoft.com/meetingOptions/?organizerId=0065100a-40c4-4847-96fb-8fb369e549f2&tenantId=3bfd9e7d-219f-48db-bd9e-e63b3b990a1a&threadId=19_meeting_YzgyY2YwMjItMTU5ZC00OTA5LWJjZWQtNDk4Zjg2YTU0NTcw@thread.v2&messageId=0&language=en-GB
+------------------------------------------------------------------------------------------
+
+#59 [2026-07-16] task_name: 21187-1588 - Thamside Machining - 1588 - America 1 Scissor BOM - 5876
+#59 project_gid=848657415032331 task_gid=1216242331971326 task_mod=2026-08-28 author=Giles
+#59 hits=['process', 'issue', 'check', 'again']
+#59 COMMENT: had the most useless response to my direct request with andy where we were speaking abou these on my screen and he wanted teh source drawing https://app.asana.com/1/357939803556123/project/1142754335688166/task/1216204278965865?focus=true to cross check against these parts 
+
+the process issue i have is that we had a meeting on this and we missed the trust, the alternative items that could be bulk ordered or lasercut, or the likes of that and they want to have raised it in our WhatsApp and at carol and andy, it hasn't been picked up and therefore I don't know which workflow is the correct way to ensure its high priority and gets addressed.
+------------------------------------------------------------------------------------------
+
+#60 [2026-07-21] task_name: 21187-1588 - Thamside Machining - 1588 - America 1 Scissor BOM - 5876
+#60 project_gid=848657415032331 task_gid=1216242331971326 task_mod=2026-08-28 author=Giles
+#60 hits=['issue']
+#60 COMMENT: Here’s the notes from your call with Adam / Nikki - Thameside 01784 449326 on 21 July 2026 at 11:02:
+This call involved Giles from Sesame discussing order volumes, pricing, and stock status with Adam from Thameside, focusing on current and upcoming manufacturing needs and cost considerations.
+Recap
+    Giles from Sesame inquired about order volumes, specifically 12 long cams, 2 short cams, 26 wheels, and various hinge blocks, with some items in stock and others to be produced via water jet or laser cutting.
+    Adam from Thameside provided current stock levels, including 12 long cams, 2 short cams, 26 wheels, 10 square-ended hinge blocks, 4 rounded-corner hinge blocks, and some brackets, noting some items are in stock and others need to be ordered or reworked.
+    Pricing discussions revealed last prices for certain items: long cams at approximately 211-248, wheels at around 42 pounds each, hinge blocks at 58 pounds for 10 units, and hinge pins are currently unavailable.
+    Giles indicated interest in purchasing 12 long cams, 2 short cams, 26 wheels, and 10 hinge blocks, with negotiations on unit prices, aiming to align costs with budget constraints and competitive market pricing.
+    Adam mentioned ongoing production and stock issues, including delays with certain parts like hinge pins and larger brackets, and plans to confirm specific part numbers and prices for future orders.
+    Both parties agreed to review and confirm prices, stock availability, and order quantities before finalizing and invoicing, with Giles planning to send additional pricing information for comparison.
+Tasks
+    Giles from Sesame will review stock and confirm availability of hinge pins and larger brackets, and provide updated pricing for items discussed.
+    Adam from Thameside will verify part numbers, current stock levels, and previous order prices, then send updated quotes for long cams, short cams, wheels, hinge blocks, and hinge pins.
+    Giles will compare the provided prices with market competitors to ensure cost competitiveness and inform Thameside of any adjustments needed.
+    Both parties will coordinate to finalize order quantities and prices before proceeding with invoicing and delivery arrangements.
+
+------------------------------------------------------------------------------------------
+
+#61 [2026-07-21] task_name: 21187-1588 - Thamside Machining - 1588 - America 1 Scissor BOM - 5876
+#61 project_gid=848657415032331 task_gid=1216242331971326 task_mod=2026-08-28 author=Giles
+#61 hits=['instead of']
+#61 COMMENT: https://app.asana.com/1/357939803556123/profile/380748302108842 i have assessed the items we need machined and can be held as stock for 3 lifts (with a couple of extra items like hing pins being 64 off instead of 16 (4 lifts) as they are used for both types 
+
+Current Volume price is £1684 → £854 per lift when ordered at volume = £3796 total 
+They also currently have 26 hardened cam wheels  which they want £42 ea for = £2532 
+
+
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1216723276906125
+
+------------------------------------------------------------------------------------------
+
+#62 [2026-07-22] task_name: 21192-1588 - Acton Bright - America 1 bright bar - 575836
+#62 project_gid=848657415032331 task_gid=1216780535641372 task_mod=2026-08-20 author=Giles
+#62 hits=['supplier', 'does']
+#62 COMMENT: Andy Easton and Giles Hugo discussed the order and specifications of a 1-meter length of material, confirming dimensions and quantities, and coordinated on delivery timelines. Giles Hugo noted the order is on track but missed the cutoff for tomorrow's delivery, aiming for next week instead.
+Recap
+    Giles Hugo confirmed that a 1-meter length of material is on order, with a thickness of 26 millimeters, and approximately 30 units can be cut from a 3-meter length based on the drawing specifications.
+    Andy Easton clarified that the order does not need to be delivered tomorrow but is scheduled for next week, as they missed the cutoff for tomorrow's delivery, and emphasized the need to plan ahead for upcoming tasks.
+Tasks
+    Giles Hugo will ensure the 1-meter order is prepared for delivery next week, coordinating with the supplier to meet the new schedule.
+
+------------------------------------------------------------------------------------------
+
+#63 [2026-07-22] task_name: 21192-1588 - Acton Bright - America 1 bright bar - 575836
+#63 project_gid=848657415032331 task_gid=1216780535641372 task_mod=2026-08-20 author=Giles
+#63 hits=['process']
+#63 COMMENT: Here’s the notes from your call with Acton bright 01784 455273 on 22 July 2026 at 15:38:
+This call involved Giles Hugo from Sesame Access requesting a quote and arranging purchase of steel material from Acton Bright. The order was confirmed for delivery on Tuesday, with payment processed during the call.
+Recap
+    Giles Hugo inquired about purchasing 50 by 50 millimeter steel, specifically about a length of approximately 1 to 2 meters, with a preference for a 3-meter piece to be cut down to 1200 mm, and requested a price quote of 95 pounds for 1.2 meters, or 81.40 pounds for 1 meter.
+    Giles Hugo provided credit card details for payment, which Acton Bright confirmed and processed, including card number, expiry date, and security code.
+    The order was for a single piece of 50 mm square steel, 1 meter long, with delivery scheduled for Tuesday, as same-day delivery was not possible due to time constraints.
+    Giles Hugo requested if a card payment could be made for tomorrow's delivery, but Acton Bright explained it was too late in the day to process such an order, and confirmed the delivery for Tuesday with order number 21192.
+Tasks
+    Acton Bright will deliver the steel order to Giles Hugo on Tuesday.
+    Acton Bright will process the payment for the order using the provided credit card details during the call.
+
+------------------------------------------------------------------------------------------
+
+#64 [2026-07-23] task_name: 21200-1594 - Fastenright - 1594 - St Mary Scissor Lift BOM - 51906
+#64 project_gid=848657415032331 task_gid=1216623913809597 task_mod=2026-08-17 author=Giles
+#64 hits=['supplier', 'procurement', 'instead of', 'issue', 'again']
+#64 COMMENT: https://app.asana.com/1/357939803556123/profile/445939052821804 please see 
+https://app.asana.com/1/357939803556123/project/848657415032331/task/1214966927980295?focus=true
+https://app.asana.com/1/357939803556123/task/1216623741078625
+
+The call involved Giles Hugo discussing procurement issues related to fasteners for handrails, including supplier constraints and potential alternatives, with Karol Porwol. The main outcome was that Giles will investigate whether 16 mm fasteners can replace 20 mm ones and will send relevant links for review.
+Recap
+    Giles Hugo inquired about the quality of reception and confirmed the audio was clearer during the call.
+    They discussed fasteners for Brooks handrails, specifically socket barrel sex bolts, which require 20 mm length instead of the standard 16 mm.
+    Giles noted that the preferred supplier, Fixings Right, has a minimum order quantity of 150 pounds, making small orders impractical.
+    Giles suggested removing Fixings Right as a supplier due to their new ordering restrictions and will provide feedback accordingly.
+    Giles will investigate whether 16 mm fasteners can be used instead of 20 mm for the specified models and will send links for review.
+    Karol will review the drawings against the models once he receives the links and will provide an answer regarding the feasibility of using 16 mm fasteners.
+Tasks
+    Giles Hugo will send the links to Karol Porwol for review of the fastener models.
+    Karol Porwol will review the drawings against the models and determine if 16 mm fasteners can replace 20 mm ones, providing feedback to Giles.
+
+------------------------------------------------------------------------------------------
+
+#65 [2026-07-24] task_name: 21200-1594 - Fastenright - 1594 - St Mary Scissor Lift BOM - 51906
+#65 project_gid=848657415032331 task_gid=1216623913809597 task_mod=2026-08-17 author=Giles
+#65 hits=['should be']
+#65 COMMENT: https://app.asana.com/1/357939803556123/profile/445939052821804 – we have ordered these before: https://app.asana.com/1/357939803556123/task/1205324345955564?focus=true. These are different from what we are currently asked to look up, and it was not easy to find the previous order: https://app.asana.com/1/357939803556123/task/1216623741078625.
+
+The reason is that we always label items as "M6 x20" so that anything x20 is findable, and anything M6 is findable (although M6 searches are massive). Previously, they were labeled as sex bolts, and now they are labeled as barrel nuts; what we ordered was "PIN TX CSK BARREL NUTS A2."
+
+I suppose we are at the point where previous orders differ because we have updated them to what they should be. However, convention would dictate using "M6 x20 barrel nut" (while keeping "sex bolt") in the description if this term was used previously.
+------------------------------------------------------------------------------------------
+
+#66 [2026-07-24] task_name: 20985-1575 - SG transmission - 1575 Jenners
+#66 project_gid=848657415032331 task_gid=1214073918288684 task_mod=2026-09-02 author=Giles
+#66 hits=['again']
+#66 COMMENT: chased again
+------------------------------------------------------------------------------------------
+
+#67 [2026-08-10] task_name: 21225-1588 - Insulation shop - 1588 - America 1 Entire - 85175
+#67 project_gid=848657415032331 task_gid=1216622543618516 task_mod=2026-09-01 author=Giles
+#67 hits=['issue', 'has been']
+#67 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 i cant see that this has been ordered?
+
+I will request alison pay the poforma and issue the order number
+------------------------------------------------------------------------------------------
+
+#68 [2026-08-10] task_name: 21225-1588 - Insulation shop - 1588 - America 1 Entire - 85175
+#68 project_gid=848657415032331 task_gid=1216622543618516 task_mod=2026-09-01 author=Giles
+#68 hits=['has been', 'amended']
+#68 COMMENT: it has been paid - how come you progressed with 3 sheets of 18mm? 
+
+I amended to 1 sheet of 18mm as that covered what is needed? 
+Was there more demand you were aware of or was this just £200 extra on contingency?
+------------------------------------------------------------------------------------------
+
+#69 [2026-08-10] task_name: 21231-1555 - Thameside Machining - 1555 - Fifth Av Tesla Handrail
+#69 project_gid=848657415032331 task_gid=1216755221876955 task_mod=2026-09-01 author=Giles
+#69 hits=['process']
+#69 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 this didn't get processed : 
+
+Processing now 
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1217325051454904
+
+------------------------------------------------------------------------------------------
+
+#70 [2026-08-11] task_name: 21202-1569 - Machguard - Brooks Roller shutter blind - 28044
+#70 project_gid=848657415032331 task_gid=1216850437678797 task_mod=2026-08-31 author=Giles
+#70 hits=['check']
+#70 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 this was received yesterday - and is being booked in now after t has ben QC'd 
+
+Can we please ensure anything arrived gets booked in and then later QC checked
+------------------------------------------------------------------------------------------
+
+#71 [2026-08-12] task_name: 21133-1580 - Exact Laser Cut BOM - 1580 - Admiralty Single Scissor BOM - SA-42
+#71 project_gid=848657415032331 task_gid=1216239283983165 task_mod=2026-08-28 author=Giles
+#71 hits=['process', 'again']
+#71 COMMENT: The Invoice had the wrong PO number on it and it had been processed in https://app.asana.com/1/357939803556123/task/1215202782923459
+
+I have now re-processed this under this PO 
+
+https://app.asana.com/1/357939803556123/profile/357939803556127 please see if you have the delivery note for this delivery to attach and tell me what you can do in your process to ensure we are logging the correct parts in against the correct order? 
+
+Thsi was a very messy email chain, with lots of adhock, but it looks like they have delivered all that we were expecting just added it to a legacy PO
+------------------------------------------------------------------------------------------
+
+#72 [2026-08-12] task_name: Laser Cut - 1591 - Traversing replacement Feet
+#72 project_gid=848657415032331 task_gid=1217374260596849 task_mod=2026-09-01 author=Giles
+#72 hits=['does']
+#72 COMMENT: Change: He has very kindly said that he will give these to us FOC and send them down. Winning next does a 5 mill stainless cut
+------------------------------------------------------------------------------------------
+
+#73 [2026-08-17] task_name: BOM: 2.Entire System
+#73 project_gid=848657415032331 task_gid=1217161966835154 task_mod=2026-08-25 author=Giles
+#73 hits=['process']
+#73 COMMENT: processed and imported today - everything is out for quote - was delays din processing as i was on holiday and then other priorities took over last week
+------------------------------------------------------------------------------------------
+
+#74 [2026-08-17] task_name: 21190-1594 - Gapp Automation - 1594 - St Mary Scissor Lift BOM
+#74 project_gid=848657415032331 task_gid=1216623739686000 task_mod=2026-08-27 author=Giles
+#74 hits=['again']
+#74 COMMENT: chased for update and delivery confirmation again
+------------------------------------------------------------------------------------------
+
+#75 [2026-08-17] task_name: 21190-1594 - Gapp Automation - 1594 - St Mary Scissor Lift BOM
+#75 project_gid=848657415032331 task_gid=1216623739686000 task_mod=2026-08-27 author=Giles
+#75 hits=['has been']
+#75 COMMENT: https://app.asana.com/1/357939803556123/profile/380748302108842 this delivery has been bought forwrad from next week to be delivered with the https://app.asana.com/1/357939803556123/task/1216754995161585order
+------------------------------------------------------------------------------------------
+
+#76 [2026-08-24] task_name: 21562-1595 - TrandDev - Bearings 1595 - St Georges House Entire system
+#76 project_gid=848657415032331 task_gid=1217486677754857 task_mod=2026-09-01 author=Giles
+#76 hits=['split']
+#76 COMMENT: Bearing options: 
+1 off 1595.1006.G.127 – Split Bearing Bush MB6060BX    £9.99ea + vat Dunlop Brand ex stock.
+1 off 1595.1014.A.091 – Split Bearing Bush MB6030BX    £7.99ea + vat Dunlop Brand ex-stock.
+1 off 1595.1014.P.012 – Split Bearing Bush MB6060X      £9.99ea + vat Dunlop Brand ex-stock.
+1 off 1595.1014.P.004 – Split Bearing Bush MB6040X      £7.99ea + vat Dunlop Brand ex-stock.
+2 off 1595.1014.P.005 – Single Thrust Ball Bearing 51107-EU, 35 × 52 × 12 mm   £5.99ea + vat Dunlop Brand ex-stock
+1 off 1595.1014.P.009 – UCF212 Bearing Unit (also known as SF60)     £59.99ea + vat Dunlop Premium Brand ex-stock
+2 off 1595.1014.A.076 –  USPA212 60mm id   £54.99 + vat Dunlop Brand Ex - stock.
+free 1/2 day carriage
+kind regards
+terry
+------------------------------------------------------------------------------------------
+
+#77 [2026-08-24] task_name: 21562-1595 - TrandDev - Bearings 1595 - St Georges House Entire system
+#77 project_gid=848657415032331 task_gid=1217486677754857 task_mod=2026-09-01 author=Giles
+#77 hits=['does']
+#77 COMMENT: I think the parts you mean to use GGB part codes are  PM DX
+ yellow acetal liner ( similar to a golf ball)
+There is an MB DX version ,  10 times the price and each one has to be machined once pressed into the housing as they are made undersized for machining,  I am  99% certain you need our PM / WMX type as per my quote.
+    1 off MB6060BX  we offer WMX60 65 60         £6.25 ea nett
+    1 off MB6030BX  we offer WMX60 65 30         £4.81 ea nett
+    1 off MB6060X    we offer WMX60 65 60         £6.25 ea nett
+    1 off MB6040X    we offer WMX60 65 40        £5.22 ea nett
+    2 off 51107                                                                 £14.30 ea NTN
+    1 off UCF212                                                             £29.57 ea nett
+    USPA 212
+  This is where it gets a little tricky , the product you have asked for has a flat backed insert inside , does it need to be flat backed ? we can get them and I will quote below based on USPAE212 (European spec but still flat backed)
+Specs attached
+2 x USPAE212                                                          £78.00 ea nett
+There are plenty of more cost effective ones out there if you don’t need the flat back insert.
+Probably 4-5 day delivery on all.
+Regards
+Jon
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Product Manager – Rotary and Linear Bearings
+
+
+
+
+E: JBackhouse@transdev.co.uk
+M: 07568 427776
+
+------------------------------------------------------------------------------------------
+
+#78 [2026-08-25] task_name: Powder Coating - 1373 - Manchester Windsor - £250 confirmed (£1500 from other suppliers)
+#78 project_gid=848657415032331 task_gid=1217361490408923 task_mod=2026-09-01 author=Giles
+#78 hits=['again']
+#78 COMMENT: chased again for a price - its been 2 weeks - last week he said it would be with me asap
+------------------------------------------------------------------------------------------
+
+#79 [2026-08-25] task_name: MERCURY ANODISING - 1670 - Blackfriars Lane - WAS POWDER COATED 
+#79 project_gid=848657415032331 task_gid=1215446038969491 task_mod=2026-08-28 author=Giles
+#79 hits=['process']
+#79 COMMENT: https://app.asana.com/1/357939803556123/profile/360042216871613 - these are the parts that you have taken back from mercury or https://app.asana.com/1/357939803556123/task/1213212124682884 and processed as powder coating within https://app.asana.com/1/357939803556123/task/1216711441649277
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1217820282635367
+
+------------------------------------------------------------------------------------------
+
+#80 [2026-08-25] task_name: 21572-1037 - Simply Bearings - Bearing Supplier - 1037 - Langley Entire BOM
+#80 project_gid=848657415032331 task_gid=1217816912698005 task_mod=2026-08-27 author=Giles
+#80 hits=['split']
+#80 COMMENT: Transdev quote: 
+2 off 1037. 1014.N.103 - UCP208 Metric Cast Iron Two Bolt Pillow UCP208/NP40                              £12.00 ea nett
+1 off 1037. 1014.N.032 - Split bearing bush - PM4050DX                                                                            £7.01 ea nett                 (small quantity)
+1 off 1037. 1014.N.004 - Split bearing bush - PM4020DX                                                                            £6.03 ea nett                 (small quantity)
+1 off 1037. 1014.N.005 - 51104 Budget Single Thrust Ball Bearing 20x35x10mm                               £6.90 ea nett                 ( NTN manufacture , budget is available but by the time I have paid carriage much more expensive)
+------------------------------------------------------------------------------------------
+
+#81 [2026-08-26] task_name: 21580-1037 - Machguard - Bellows Supplier - 1037 - Langley Entire BOM
+#81 project_gid=848657415032331 task_gid=1217816924994537 task_mod=2026-08-27 author=Giles
+#81 hits=['again']
+#81 COMMENT: chased again
+------------------------------------------------------------------------------------------
+
+#82 [2026-08-28] task_name: 21202-1569 - Machguard - Brooks Roller shutter blind - 28044
+#82 project_gid=848657415032331 task_gid=1216850437678797 task_mod=2026-08-31 author=Giles
+#82 hits=['process', 'has been']
+#82 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 the goods ina nd invoice has been processed and this is still awaiting delivery
+------------------------------------------------------------------------------------------
+
+#83 [2026-09-01] task_name: 21116-1130 - Alexander Pollock - engraving Bentick   £180
+#83 project_gid=848657415032331 task_gid=1213591305488002 task_mod=2026-09-01 author=Giles
+#83 hits=['has been']
+#83 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 can you confirm if this has been delivered?
+------------------------------------------------------------------------------------------
+
+#84 [2026-09-01] task_name: 1	off	Engraved plate	1295.1016.E.005					Engraving
+#84 project_gid=848657415032331 task_gid=1215997547923355 task_mod=2026-09-01 author=Giles
+#84 hits=['has been']
+#84 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 please confirm if this has been delivered?
+------------------------------------------------------------------------------------------
+
+#85 [2026-09-01] task_name: 21587-1037 - lasershape - large part for langley 
+#85 project_gid=848657415032331 task_gid=1217821446990991 task_mod=2026-09-01 author=Giles
+#85 hits=['again']
+#85 COMMENT: chased again for this part nobody else has a laserbed big enough for this
+------------------------------------------------------------------------------------------
+
+#86 [2026-09-01] task_name: IDL Powder Coating - 1037 - Langley Street Refirb
+#86 project_gid=848657415032331 task_gid=1216068837918383 task_mod=2026-09-01 author=Giles
+#86 hits=['again']
+#86 COMMENT: chased for quote again
+------------------------------------------------------------------------------------------
+
+#87 [2026-09-01] task_name: 21587-1037 - lasershape - large part for langley 
+#87 project_gid=848657415032331 task_gid=1217821446990991 task_mod=2026-09-01 author=Giles
+#87 hits=['process', 'has been']
+#87 COMMENT: Here’s the notes from your call with Conner Lasershape 07917 792666 on 01 September 2026 at 15:05:
+Giles Hugo from Sesame and Conner Lasershape discussed the status of an overdue large plate order for Langley, confirming the quote has been approved and is progressing through processing, with delivery expected soon.
+Recap
+    Giles Hugo inquired about the overdue large plate order for Langley, which Conner Lasershape confirmed was added to the quote and has now been approved and sent for processing.
+    Conner Lasershape informed Giles that three flat pieces were added to the quote, and he has requested the processing team to expedite and see what can be done to accelerate delivery, expecting feedback by the morning.
+    Both parties confirmed that the order is now in the processing stage, with Conner promising to update Giles once he receives further information about the delivery schedule.
+Tasks
+    Conner Lasershape will follow up with the processing team and inform Giles Hugo of the expected delivery date once he receives feedback.
+
+------------------------------------------------------------------------------------------
+############ PROJECT: QC issues / Parts Needed / Causing delays ############
+
+#88 [2026-03-25] task_name: 1 off	 Front cover	1322.2100.A.105.01		1.000 mm	Aluminum 5152	5152	Laser Cut	LC101
+#88 project_gid=737971594126804 task_gid=1210507674520853 task_mod=2026-08-24 author=Giles
+#88 hits=['has been']
+#88 COMMENT: they say it has been done, but not very well as it floated up and they say they can't guarantee 1mm sheets in the bath
+
+https://app.asana.com/1/357939803556123/profile/360042216871613 please asses - as we may not be able to provide a 1mm aluminium pannel anodised. unless we buy an anodised sheet?
+------------------------------------------------------------------------------------------
+
+#89 [2026-07-16] task_name: 12 off 1582. 8000.A.203 - Leg Cap Machining
+#89 project_gid=737971594126804 task_gid=1214803030808195 task_mod=2026-08-25 author=Giles
+#89 hits=['issue', 'again']
+#89 COMMENT: I see the issue - first this was supposed to be an inhouse item - and then we bought 8 more of the same item because it has the same part number  when the new order came through however the part https://app.asana.com/1/357939803556123/project/1211660707080749/task/1215446304623354?focus=true is the round disc but on this lift it is the square end block - again indicating that we can NOT easily or reliably achieve economies of scale between two projects 
+
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1216622791330498
+
+------------------------------------------------------------------------------------------
+
+#90 [2026-07-16] task_name: 12 off 1582. 8000.A.203 - Leg Cap Machining
+#90 project_gid=737971594126804 task_gid=1214803030808195 task_mod=2026-08-25 author=Giles
+#90 hits=['fallback', 'check']
+#90 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 well done for asigning to me - we nee the PARTS STATUS To be updated correct as this wasnt updated from on order and so to me looks to be addressed unless i return to the comments - i also need the system to try and identify the correct tag so that it is pulled up in our next plastics or machining order - than can be added and checked manually as a fallback
+------------------------------------------------------------------------------------------
+
+#91 [2026-07-20] task_name: 12 off 1582. 8000.A.203 - Leg Cap Machining
+#91 project_gid=737971594126804 task_gid=1214803030808195 task_mod=2026-08-25 author=Giles
+#91 hits=['issue']
+#91 COMMENT: https://app.asana.com/1/357939803556123/profile/357939803556127 the actual issue here is that 18 were ordered for this JOB because he had 18 in stock and i took the outstanding - then 6 off these were issued to a job that was flagged to be made inhouse - which were supposed to be stock parts ( i can totally see why you would do that if extra came in) but they were pulled from stock rather than made to an order and these were flagged to eb made inhouse 
+
+https://app.asana.com/app/asana/-/get_asset?asset_id=1216704913768239
+
+------------------------------------------------------------------------------------------
+
+#92 [2026-07-24] task_name: 6 off 1588. 1025.A.017 - Actuator Cam Machining
+#92 project_gid=737971594126804 task_gid=1216242581380675 task_mod=2026-08-28 author=Giles
+#92 hits=['process']
+#92 COMMENT: Here’s the notes from your call with Phill - Delen Tooling Wire Erosion 01483 487033 on 24 July 2026 at 13:11:
+This is a preliminary call between Giles Hugo from SME Access and Phil from Delen Tooling Wire Erosion to discuss the possibility of EDM services for a cam component. They plan to exchange images and details via email to determine feasibility and pricing.
+Recap
+    Giles Hugo from SME Access inquires about EDM services from Phil at Delen Tooling Wire Erosion for a cam component measuring approximately 130mm by 80mm with a radius on one surface, made of 40mm thick mild steel, with a non-parallel, tapered surface due to water jet machining.
+    Giles explains the component's purpose in a scissor lift mechanism and the need to flatten or correct the cam surface to a normal profile, considering previous water jet modifications.
+    Phil indicates that the requested EDM process, involving sparking wire erosion, is feasible and asks for visual confirmation via photos and CAD files to assess the work.
+    Giles agrees to send photos and DXF files of the component for evaluation and requests a ballpark price estimate if the work is suitable.
+    They discuss scheduling a potential visit to the workshop, with Phil available for an hour or two in the afternoon, and plan to confirm the visit based on the assessment of the images and details.
+    Giles mentions he will be unavailable for the next couple of weeks but will coordinate to send the necessary information promptly.
+    They exchange contact details, with Giles providing the email address "info@dlentooling.co.uk" and Phil confirming he will look out for the email and respond accordingly.
+Tasks
+    Giles Hugo will send photos and DXF files of the cam component to Phil at Delen Tooling Wire Erosion for evaluation.
+    Phil will review the images and files to determine if the EDM process can be performed and provide a ballpark price estimate.
+    Giles Hugo will follow up via email with the requested information and await a response regarding feasibility and pricing.
+    If the work is feasible, Phil will coordinate a visit to the SME Access location in West Bley to discuss the project further.
+
+------------------------------------------------------------------------------------------
+
+#93 [2026-08-18] task_name: 1 off 1670. 1008.D.MotorPumpUnit - 1.5kw - 4.2 LPM - 4.5L Tank 16Amp
+#93 project_gid=737971594126804 task_gid=1214740339622371 task_mod=2026-08-27 author=Giles
+#93 hits=['has been']
+#93 COMMENT: Was assigned for blackfriers from ex queen Elizabeth Street and the thread has been stripped 
+------------------------------------------------------------------------------------------
+
+#94 [2026-08-27] task_name: 1 off 1594. 1010.L.064 - Ramp 304/DP1 Laser Cut
+#94 project_gid=737971594126804 task_gid=1216623812073748 task_mod=2026-08-27 author=Giles
+#94 hits=['has been']
+#94 COMMENT: Part has been kitted and progressed into production despite being a qc fail. 
+
+We are going to brush in house as works is done... 
+
+
+------------------------------------------------------------------------------------------
+
+#95 [2026-08-27] task_name: 1 off 1594. 1010.L.064 - Ramp 304/DP1 Laser Cut
+#95 project_gid=737971594126804 task_gid=1216623812073748 task_mod=2026-08-27 author=Giles
+#95 hits=['supplier', 'process']
+#95 COMMENT: https://app.asana.com/0/445939052821806/445939052821806 Please be aware that in future we will need to brush in house unless we buy in bulk, as dp1 is not available on 4mm
+
+And so a extra brush process will be needed by any lasercut supplier 
+------------------------------------------------------------------------------------------
+
+#96 [2026-08-27] task_name: 0006 - QC issues with the stock engraving face plates 
+#96 project_gid=737971594126804 task_gid=1217584486894654 task_mod=2026-08-28 author=Giles
+#96 hits=['again']
+#96 COMMENT: https://app.asana.com/1/357939803556123/profile/1211123106253275 please book your time against this task
+------------------------------------------------------------------------------------------
+
+#97 [2026-08-27] task_name: 1 off 1670. 1008.D.MotorPumpUnit - 1.5kw - 4.2 LPM - 4.5L Tank 16Amp
+#97 project_gid=737971594126804 task_gid=1214740339622371 task_mod=2026-08-27 author=Giles
+#97 hits=['has been']
+#97 COMMENT: this has been resolved and i understand that https://app.asana.com/1/357939803556123/profile/360042216871613 has taped ths and cleaned it out
+------------------------------------------------------------------------------------------

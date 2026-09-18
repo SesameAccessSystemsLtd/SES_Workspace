@@ -1,0 +1,14 @@
+{
+  "request_id": "44b45cd7-0240-43a0-9f53-b3fcfde3f619",
+  "source": "email_approval_sheet",
+  "row_index": 30,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkurQnzAAA=",
+  "subject": "Your order has been shipped A28062726532. Please find your invoice attached.",
+  "task_gid": "1218534309660829",
+  "task_name": "21643-160926 - Screwfix - Pauls work boots",
+  "asana_url": "https://app.asana.com/0/0/1218534309660829",
+  "action": "(Matched via PO Number in Local DB); [SQR-ledger] no SQR match for confirmation@screwfix.com; Note added to description: Invoice from Screwfix - £44.99 (2026-09-16)",
+  "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> invoice: Your order has been shipped A28062726532. Please find your invoice attached.\n- Note added to description: Invoice from Screwfix - £44.99 (2026-09-16)\n\nReference: 21643-160926 · Received: 2026-09-16T08:22:10Z\nMatch basis: (Matched via PO Number in Local DB); [SQR-ledger] no SQR match for confirmation@screwfix.com\nTask GID: 1218534309660829 · AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkurQnzAAA=\nhttps://app.asana.com/0/0/1218534309660829\n\ngiles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-16T10:00:58.625805+00:00"
+}

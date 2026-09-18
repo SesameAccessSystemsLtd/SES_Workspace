@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  19/08/2026  10:56
+============================================================
+With:         Jordan - Tapeswitch Mobile 07398 147717
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This is a voicemail from Jordan of Tapeswitch Mobile to Giles Hugo, discussing system updates, project statuses, and upcoming deliverables. They confirm water resistance standards, pricing, and drawing timelines, and touch on ongoing automation and staffing issues.
+
+--- RECAP --------------------------------------------------
+Jordan confirms that all products are now water tested to IP67 standards and will send pricing information, with drawings expected early next week due to Neil's absence.Giles reports being busy with infrastructure upgrades, recruitment, and handling operational issues, including automating systems and replacing legacy software.Jordan mentions that lead times are currently a couple of weeks, and Giles discusses ongoing automation efforts involving Dropbox links and Asana for tracking and communication.Both discuss staffing changes, with Chris having left a few weeks ago, and Jordan now handling responsibilities previously managed by Chris.They agree to send the necessary drawings and pricing, and Jordan will follow up with the updated prices shortly.
+
+--- TASKS --------------------------------------------------
+Jordan will send the updated pricing to Giles today.Jordan will ensure the drawings are prepared and sent early next week.
+
+(Full transcript: RC web portal only — no RingSense API)

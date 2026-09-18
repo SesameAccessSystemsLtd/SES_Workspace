@@ -1,0 +1,96 @@
+STEEL PROFILE MONTHLY CHECK      2026-08-28 13:52
+Scope: 10 build packs      Materials: 34
+Need = summed BOM requirement. +20% = cut allowance.
+ORDER = shelf lengths to buy (yours to fill; may exceed need to build stock).
+
+MATERIAL                                        NEED m  +20% m  SHELF  CNT  ALC  FREE  MIN  ORDER  ROUTE
+--------------------------------------------------------------------------------------------------------------------------
+
+== ALUMINIUM 6061
+^Channel 31.75x25.4x3.175 Aluminium 6061          0.20    0.24      -    -    -     -    -  [    ]  Non-Ferrous BOM   <-- NEW MATERIAL
+                                              not in master - needs creating
+^Flat 6.35x6.35 Aluminium 6061                    0.09    0.11      -    -    -     -    -  [    ]  Non-Ferrous BOM   <-- NEW MATERIAL
+                                              not in master - needs creating
+
+== MILD STEEL
+Angle 40x40x3 Mild Steel                          3.83    4.60   3000    2    2     0    -  [    ]  Ferrous BOM
+Angle 50x50x5 Mild Steel                          1.29    1.55   3000   12    1    11    6  [    ]  Ferrous BOM
+Angle 60x30x6 Mild Steel                          0.24    0.29      -    -    -     -    -  [    ]  Ferrous BOM   <-- NEW MATERIAL
+                                              not in master - needs creating
+Angle 75x75x8 Mild Steel                          0.64    0.77      -    -    -     -    -  [    ]  Ferrous BOM   <-- SUBSTITUTE?
+                                              nearest: Angle 80x80x10 Mild Steel (oversize by 12mm)
+Box 20x20x2 Mild Steel                           12.01   14.41   3750    2    4    -2    6  [    ]  Ferrous BOM
+Box 30x30x3 Mild Steel                            1.00    1.20   3750    7    0     6    6  [    ]  Ferrous BOM
+Box 40x40x2.5 Mild Steel                          1.37    1.64      -    -    -     -    -  [    ]  Ferrous BOM   <-- SUBSTITUTE?
+                                              nearest: Box 40x40x3 Mild Steel (oversize by 0.5mm)
+Box 40x40x3 Mild Steel                            4.86    5.83   3750    8    3     5    6  [    ]  Ferrous BOM
+Box 50x50x3 Mild Steel                            1.60    1.92   3750    2    1     1    -  [    ]  Ferrous BOM
+Box 80x40x2.5 Mild Steel                          3.60    4.32      -    -    -     -    -  [    ]  Ferrous BOM   <-- NEW MATERIAL
+                                              not in master - needs creating
+Box 80x40x3 Mild Steel                            0.84    1.01      -    -    -     -    -  [    ]  Ferrous BOM   <-- NEW MATERIAL
+                                              not in master - needs creating
+Channel 100x50 Mild Steel                         3.98    4.78   3750    5    2     3    4  [    ]  Ferrous BOM
+Flat 100x3 Mild Steel                             2.14    2.57   3000    2    1     1    6  [    ]  Ferrous BOM
+^Flat 30x5 Mild Steel                             0.40    0.48      -    -    -     -    -  [    ]  Ferrous BOM   <-- SUBSTITUTE?
+                                              nearest: Flat 30x6 Mild Steel (oversize by 1mm)
+
+== STAINLESS STEEL
+Angle 20x20x3 Stainless Steel                     3.84    4.60   3000    0    2    -2    -  [    ]  Non-Ferrous BOM
+Angle 50x50x3 Stainless Steel                     0.96    1.15   3000    1    2    -1    -  [    ]  Non-Ferrous BOM
+Box 25x25x3 Stainless Steel                       4.69    5.62      -    -    -     -    -  [    ]  Non-Ferrous BOM   <-- SUBSTITUTE?
+                                              nearest: Box 25x25x3 BRUSHED Stainless Steel (exact size)
+Box BRUSHED 50x50x3 Stainless Steel               1.68    2.01      -    -    -     -    -  [    ]  Non-Ferrous BOM   <-- SUBSTITUTE?
+                                              nearest: Box 50x50x3 BRUSHED Stainless Steel (exact size)
+Flat 50x3 Stainless Steel                         0.37    0.45   3000    1    1     0    -  [    ]  Non-Ferrous BOM
+Pipe - 21,3mm OD, 1.65mm wall or similiar 21      0.06    0.07      -    -    -     -    -  [    ]  Non-Ferrous BOM   <-- NEW MATERIAL
+                                              not in master - needs creating
+Shallow slotted channel heavy gauge 21x41x2.      0.39    0.47   3000    8    1     7    2  [    ]  Non-Ferrous BOM
+Square bar 25x25 Stainless Steel                  0.22    0.27   3000    1    2    -1    -  [    ]  Non-Ferrous BOM
+Tube (OD 10mm ID 8mm) 10x1 Stainless Steel        0.22    0.26      -    -    -     -    -  [    ]  Non-Ferrous BOM   <-- SUBSTITUTE?
+                                              nearest: Tube 12.7mm OD 1.5mm wall (>8mm ID with <15mm OD) Stainless S
+Tube (OD 33.4mm ID 20.7mm) 33.4x6.35 Stainle      0.65    0.78      -    -    -     -    -  [    ]  Non-Ferrous BOM   <-- NEW MATERIAL
+                                              not in master - needs creating
+Tube (OD 50.8mm ID 44.8mm) 50.8x3 Stainless       0.83    0.99      -    -    -     -    -  [    ]  Non-Ferrous BOM   <-- SUBSTITUTE?
+                                              nearest: Tube 50.8mm OD 3mm wall BRUSHED Stainless Steel (exact OD, ex
+Tube (OD 63.5mm ID 57.5mm) 63.5x3 Stainless       0.06    0.07      -    -    -     -    -  [    ]  Non-Ferrous BOM   <-- SUBSTITUTE?
+                                              nearest: Tube 63.5mm OD 3mm wall Stainless Steel (exact OD, exact wall
+Tube (OD<15mm ID>8mm) 12.7x3 Stainless Steel      0.53    0.63      -    -    -     -    -  [    ]  Non-Ferrous BOM   <-- SUBSTITUTE?
+                                              nearest: Tube 12.7mm OD 1.5mm wall (>8mm ID with <15mm OD) Stainless S
+Tube 12.7mm OD 1.5mm wall 12.7x1.5 Stainless      3.29    3.95      -    -    -     -    -  [    ]  Non-Ferrous BOM   <-- SUBSTITUTE?
+                                              nearest: Tube 12.7mm OD 1.5mm wall (>8mm ID with <15mm OD) Stainless S
+
+== STEEL BZP
+Studding 10 Steel BZP                             2.40    2.88      -    -    -     -    -  [    ]  Orbital Fasteners - Studding   <-- SUBSTITUTE?
+                                              nearest: Studding M10 BZP (exact thread size)
+Studding 12 Steel BZP                             1.08    1.30      -    -    -     -    -  [    ]  Orbital Fasteners - Studding   <-- SUBSTITUTE?
+                                              nearest: Studding M12 BZP (exact thread size)
+Studding 16 Steel BZP                             7.87    9.45      -    -    -     -    -  [    ]  Orbital Fasteners - Studding   <-- SUBSTITUTE?
+                                              nearest: 20 off Studding M16 BZP (exact thread size)
+Studding 8 Steel BZP                              0.37    0.44      -    -    -     -    -  [    ]  Orbital Fasteners - Studding   <-- SUBSTITUTE?
+                                              nearest: 20 off Studding M8 BZP (exact thread size)
+
+--------------------------------------------------------------------------------------------------------------------------
+RESOLVED: 13    NEEDS ATTENTION: 21
+
+These will NOT produce an order line until resolved:
+  [NEW MATERIAL] ^Channel 31.75x25.4x3.175 Aluminium 6061
+  [NEW MATERIAL] ^Flat 6.35x6.35 Aluminium 6061
+  [NEW MATERIAL] Angle 60x30x6 Mild Steel
+  [SUBSTITUTE? ] Angle 75x75x8 Mild Steel
+  [SUBSTITUTE? ] Box 40x40x2.5 Mild Steel
+  [NEW MATERIAL] Box 80x40x2.5 Mild Steel
+  [NEW MATERIAL] Box 80x40x3 Mild Steel
+  [SUBSTITUTE? ] ^Flat 30x5 Mild Steel
+  [SUBSTITUTE? ] Box 25x25x3 Stainless Steel
+  [SUBSTITUTE? ] Box BRUSHED 50x50x3 Stainless Steel
+  [NEW MATERIAL] Pipe - 21,3mm OD, 1.65mm wall or similiar 21.3x1.65 Stainles
+  [SUBSTITUTE? ] Tube (OD 10mm ID 8mm) 10x1 Stainless Steel
+  [NEW MATERIAL] Tube (OD 33.4mm ID 20.7mm) 33.4x6.35 Stainless Steel
+  [SUBSTITUTE? ] Tube (OD 50.8mm ID 44.8mm) 50.8x3 Stainless Steel
+  [SUBSTITUTE? ] Tube (OD 63.5mm ID 57.5mm) 63.5x3 Stainless Steel
+  [SUBSTITUTE? ] Tube (OD<15mm ID>8mm) 12.7x3 Stainless Steel
+  [SUBSTITUTE? ] Tube 12.7mm OD 1.5mm wall 12.7x1.5 Stainless Steel
+  [SUBSTITUTE? ] Studding 10 Steel BZP
+  [SUBSTITUTE? ] Studding 12 Steel BZP
+  [SUBSTITUTE? ] Studding 16 Steel BZP
+  [SUBSTITUTE? ] Studding 8 Steel BZP

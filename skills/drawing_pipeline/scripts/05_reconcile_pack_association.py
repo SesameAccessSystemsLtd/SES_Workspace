@@ -219,9 +219,17 @@ def main():
         if args.commit:
             # last_synced_at is the mirror sync's field — do not touch it here,
             # or the liveness check above starts reading this stage's own writes.
+            #
+            # association_status MUST move with the pack link. Writing the pack
+            # but leaving the status at 'unassociated' left 170 rows contradicting
+            # themselves and made every status-filtered dashboard under-report
+            # linked parts (found 2026-09-04). chosen[1] is the numeric pack GID —
+            # GID is the canonical format for this column, never the pack name.
             cur.execute(
-                "UPDATE parts_control SET build_assembly_pack_gid = ? WHERE id = ?",
-                (chosen[1], r["id"]),
+                "UPDATE parts_control SET build_assembly_pack_gid = ?, "
+                "association_status = 'linked', association_checked_at = ? "
+                "WHERE id = ?",
+                (chosen[1], now, r["id"]),
             )
 
     if args.commit:

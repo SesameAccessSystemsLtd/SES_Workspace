@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  14/09/2026  14:09
+============================================================
+With:         Dave Burt IDL 07810 558753
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call between Giles Hugo and Dave Burt discussed the powder coating of specific panels and counters, confirming the scope, surface preparation, and scheduling for completion. The work is scheduled for tomorrow morning, with plans to batch the items due to oven capacity constraints.
+
+--- RECAP --------------------------------------------------
+Giles Hugo confirmed that only the counters on one side of the account sync panel need powder coating, including the large panel, and that the surface has been primed and prepared with DPM and matte polish for better adhesion.Dave Burt agreed to powder coat only the front side of the panel, including edges, as the other side is not visible, and noted that doing both sides would be more expensive but is not specified in the quote.The work is scheduled to be completed by tomorrow morning, but due to oven capacity limitations, the items will be batch processed in two loads.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will bring the remaining items to be powder coated in two batches due to oven capacity constraints.
+
+(Full transcript: RC web portal only — no RingSense API)

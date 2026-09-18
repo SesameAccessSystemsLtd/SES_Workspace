@@ -1,0 +1,14 @@
+{
+  "request_id": "2c4929ae-7654-4bba-9712-9643f9ae63ed",
+  "source": "email_approval_sheet",
+  "row_index": 13,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy43AAA=",
+  "subject": "Specialist Glass Products Ltd Quote: 251084 (1595 - ST GEORGES HOUSE)",
+  "task_gid": null,
+  "task_name": "NOT MATCHED",
+  "asana_url": "",
+  "action": "AMENDMENT (task not auto-matched — SAP must locate manually):\nONLY TWO LIVE TASKS AND ONE HAS THE PROJECT ID TO MATCH - https://app.asana.com/1/357939803556123/project/1157172524900534/task/1217486678215190?focus=true",
+  "comment_to_push": "NO AUTO-MATCH — manual review.\nEmail: Specialist Glass Products Ltd Quote: 251084 (1595 - ST GEORGES HOUSE)\nReceived: 2026-08-25T10:34:27Z\nFound: type=quote, price=£1251.82, vendor=specialistglass, ISSUE: Supplier notes that due to high demand and glass shortages, lead times are being affected and potential delays should be anticipated.",
+  "decision": "M",
+  "created_at": "2026-08-28T10:00:36.189232+00:00"
+}

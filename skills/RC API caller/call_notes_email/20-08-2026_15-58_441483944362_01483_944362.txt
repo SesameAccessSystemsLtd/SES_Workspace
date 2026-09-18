@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  20/08/2026  15:58
+============================================================
+With:         +441483944362 01483 944362
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This voicemail call involved Fatima Barros requesting an invoice for a recent vehicle service, providing vehicle and contact details, with the invoice expected to be sent the following day. The call was primarily about obtaining the invoice and confirming contact information.
+
+--- RECAP --------------------------------------------------
+Fatima Barros from Sesame Access called to request an invoice for a recently paid vehicle service, providing the vehicle registration number 'L F 69 O L V' and her email address 'accounts1@sesameaccess.com'.The caller confirmed the email address as 'accounts1@sesameaccess.com' after clarification, and was informed that the invoice would likely be sent the next day.The representative acknowledged the request and stated they would send the invoice to their colleague in the service admin department, who would email it to Fatima.
+
+--- TASKS --------------------------------------------------
+The service admin department colleague will send the invoice to the email address 'accounts1@sesameaccess.com' tomorrow.
+
+(Full transcript: RC web portal only — no RingSense API)

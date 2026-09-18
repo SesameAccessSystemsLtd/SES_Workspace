@@ -69,6 +69,17 @@ BASE = "https://app.asana.com/api/1.0"
 # Cost-centre -> vendor-group display name prefix. Used only to propose a new
 # vendor group parent for genuinely-new parts when no matching existing vendor
 # task is found. Extend as needed; ambiguity falls through to human review.
+# If fewer than this fraction of BOM rows carry a Notes / REV value, the column
+# is treated as UNSUPPLIED rather than as "no changes this rev". See
+# run_history/edge_cases/bom-pack-reconciliation-failures-2026-09-04.md lesson 3.
+SIGNAL_MIN_RATIO = 0.10
+
+# Title marker convention (Giles, 2026-08-11; reaffirmed 2026-09-04). The part
+# number is NEVER replaced — the marker is prepended and the task is completed.
+# Already applied by hand to 1037.1014.M.062 and 1037.1014.N.010.
+REMOVED_MARKER = "REMOVED IN REV {rev}"
+REMOVED_MARKER_NO_REV = "REMOVED FROM BOM"
+
 COST_CENTRE_VENDOR = {
     "Laser Cut": "Laser Cut",
     "Engraving": "Engraving",
@@ -202,6 +213,15 @@ def load_new_bom(xlsx_path: str) -> list[dict]:
     if notes_col is None:
         print("  WARNING: no Notes column found — fall back to qty-only heuristics")
 
+    # Signal-integrity counters (edge case 2026-09-04, lesson 3). A Notes column
+    # that EXISTS but is empty is just as fatal as a missing one: the removal
+    # signal this engine documents as authoritative is simply not being
+    # supplied by the design team. Detect it and say so loudly, rather than
+    # silently concluding "nothing was removed".
+    _rows_seen = 0
+    _notes_populated = 0
+    _rev_populated = 0
+
     parts: dict[str, dict] = {}
     for row in ws.iter_rows(min_row=2):
         pn = str(row[pn_col].value).strip() if row[pn_col].value else ""
@@ -226,6 +246,12 @@ def load_new_bom(xlsx_path: str) -> list[dict]:
         if desc_col is not None and row[desc_col].value:
             desc = str(row[desc_col].value).strip()
 
+        _rows_seen += 1
+        if notes:
+            _notes_populated += 1
+        if rev:
+            _rev_populated += 1
+
         parts[normalize(pn)] = {
             "pn": normalize(pn),
             "raw_pn": pn,
@@ -235,7 +261,33 @@ def load_new_bom(xlsx_path: str) -> list[dict]:
             "rev": rev,
             "desc": desc,
         }
-    return parts
+
+    notes_ratio = (_notes_populated / _rows_seen) if _rows_seen else 0.0
+    rev_ratio = (_rev_populated / _rows_seen) if _rows_seen else 0.0
+    # Below this, treat the column as unsupplied rather than as "no changes".
+    signal_absent = notes_ratio < SIGNAL_MIN_RATIO
+
+    meta = {
+        "rows": _rows_seen,
+        "notes_ratio": notes_ratio,
+        "rev_ratio": rev_ratio,
+        "signal_absent": signal_absent,
+        "rev_absent": rev_ratio < SIGNAL_MIN_RATIO,
+        "source": os.path.basename(xlsx_path),
+    }
+
+    if signal_absent:
+        print(f"  !! REMOVAL SIGNAL ABSENT — Notes populated on "
+              f"{_notes_populated}/{_rows_seen} rows ({notes_ratio:.0%}).")
+        print("     The Notes column is this engine's authoritative removal signal.")
+        print("     Falling back to SET-DIFFERENCE detection: parts present in Asana")
+        print("     but absent from this BOM become REMOVED_UNCONFIRMED (HITL), not")
+        print("     confirmed removals. A human must confirm each one.")
+    if meta["rev_absent"]:
+        print(f"  !! REVISION COLUMN ABSENT — populated on {_rev_populated}/{_rows_seen} "
+              f"rows ({rev_ratio:.0%}). File cannot be treated as revision-controlled.")
+
+    return parts, meta
 
 
 def propose_placement(cost_centre: str, vendor_tasks: dict[str, str]) -> tuple[str, str | None]:
@@ -279,7 +331,8 @@ def reparse_notes(notes: str) -> dict:
     return {"removed": removed, "changed": changed, "date": date, "rev": rev}
 
 
-def classify(old: list[dict], new: dict[str, dict]) -> tuple[list[dict], list[dict]]:
+def classify(old: list[dict], new: dict[str, dict],
+             meta: dict | None = None) -> tuple[list[dict], list[dict]]:
     """Diff old (Asana parts) against new (BOM parts, dict keyed on PN).
 
     Column M (Notes) is the version of truth: a part with a 'Removed <date>'
@@ -287,6 +340,9 @@ def classify(old: list[dict], new: dict[str, dict]) -> tuple[list[dict], list[di
     note is an update; the REV column + .01/.02 suffix encode a rename. QTY is
     a cross-check, never the primary signal.
     """
+    meta = meta or {}
+    signal_absent = bool(meta.get("signal_absent"))
+
     old_by_pn: dict[str, dict] = defaultdict(list)
     for o in old:
         old_by_pn[o["pn"]].append(o)
@@ -324,6 +380,16 @@ def classify(old: list[dict], new: dict[str, dict]) -> tuple[list[dict], list[di
                 else:
                     ambiguous.append(_row(o, "RENUMBER_AMBIGUOUS",
                                           f"multiple renumber candidates: {ren}", None))
+            elif signal_absent:
+                # The BOM supplied no removal markers at all, so "absent from
+                # this file" is weak evidence: the part may simply live on a
+                # different BOM in the set, or the designer may have dropped
+                # the row without recording it. Never auto-complete on this.
+                ambiguous.append(_row(
+                    o, "REMOVED_UNCONFIRMED",
+                    "absent from new BOM, but this BOM supplies NO removal "
+                    "markers (Notes column empty) — confirm before closing",
+                    None, removed=True))
             else:
                 proposed.append(_row(o, "REMOVED",
                                      "no longer in new BOM", None, removed=True))
@@ -410,7 +476,8 @@ def write_output(proposed, ambiguous, output_dir: Path) -> Path:
         counts[r["action"]] += 1
     lines = ["BOM Revision Reconciliation — proposed change-set", f"{datetime.now(timezone.utc).isoformat()}"]
     lines.append("")
-    for k in ["NO_CHANGE", "UPDATE_QTY", "RENUMBER", "REMOVED", "ADD", "RENUMBER_AMBIGUOUS"]:
+    for k in ["NO_CHANGE", "UPDATE_QTY", "RENUMBER", "REMOVED",
+              "REMOVED_UNCONFIRMED", "ADD", "RENUMBER_AMBIGUOUS"]:
         if counts[k]:
             lines.append(f"  {k:<22} {counts[k]}")
     if ambiguous:
@@ -423,15 +490,108 @@ def write_output(proposed, ambiguous, output_dir: Path) -> Path:
     return xlsx, txt
 
 
+REQUESTS_DIR = Path("C:/Users/GilesHugo/SES_Workspace/queues/REQUESTS")
+
+
+def emit_requests_file(proposed: list[dict], ambiguous: list[dict],
+                       control: str, meta: dict, output_dir: Path) -> Path:
+    """Emit a REQUESTS file for SAP to action. This engine NEVER writes to
+    Asana — hard rule 2: SAP is the sole Asana writer. All this does is put a
+    reviewed change-set on the queue.
+
+    Only actions that are safe to automate are emitted:
+      REMOVED   -> prepend marker to title, add comment, complete the task
+      UPDATE_QTY-> retitle with the new qty
+      RENUMBER  -> retitle to the new PN (part number preserved in the marker)
+
+    REMOVED_UNCONFIRMED and RENUMBER_AMBIGUOUS are NEVER emitted. They stay in
+    the xlsx for a human. ADD is not emitted either: creating tasks is the
+    importer's job, not this engine's.
+    """
+    actionable = [r for r in proposed
+                  if r.get("action") in ("REMOVED", "UPDATE_QTY", "RENUMBER")
+                  and r.get("gid")]
+    held = [r for r in (proposed + ambiguous)
+            if r.get("action") in ("REMOVED_UNCONFIRMED", "RENUMBER_AMBIGUOUS")]
+
+    if not actionable:
+        return None
+
+    stamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H-%M-%S")
+    req = REQUESTS_DIR / f"{stamp}-bom-rev-reconcile-{control}.md"
+    REQUESTS_DIR.mkdir(parents=True, exist_ok=True)
+
+    rev = meta.get("rev_label") or ""
+    marker = (REMOVED_MARKER.format(rev=rev) if rev else REMOVED_MARKER_NO_REV)
+
+    lines = [
+        "# REQUEST — BOM revision reconciliation (for SAP)",
+        "",
+        f"**Raised by:** bom_rev_reconcile.py",
+        f"**Control task:** {control}",
+        f"**Source BOM:** {meta.get('source', '?')}",
+        f"**Generated:** {datetime.now(timezone.utc).isoformat()}",
+        f"**Actionable rows:** {len(actionable)}   **Held for HITL:** {len(held)}",
+        "",
+        "## Rules for the writer",
+        "",
+        "1. NEVER replace the part number in a task title. The marker is",
+        "   PREPENDED and the existing title is preserved in full.",
+        "2. Every REMOVED row: prepend marker, add the comment, then mark the",
+        "   task complete — in that order.",
+        "3. If a task is already complete, add the comment and marker but do",
+        "   not re-open it.",
+        "4. Rows below are the ONLY rows to action. Anything not listed here is",
+        "   held for human review and must not be touched.",
+        "",
+        "## Actions",
+        "",
+    ]
+
+    for r in actionable:
+        act = r["action"]
+        lines.append(f"### {r['gid']} — {act}")
+        lines.append(f"- **Part:** `{r['pn']}`")
+        lines.append(f"- **Current title:** {r['name']}")
+        if act == "REMOVED":
+            lines.append(f"- **New title:** `{marker} {r['name']}`")
+            lines.append(f"- **Comment:** `{marker} — {r['reason']}`")
+            lines.append("- **Then:** mark complete")
+        elif act == "UPDATE_QTY":
+            lines.append(f"- **Change qty to:** {r.get('qty')}")
+            lines.append(f"- **Comment:** `Qty updated — {r['reason']}`")
+        elif act == "RENUMBER":
+            lines.append(f"- **Retitle to PN:** `{r.get('new_pn')}` "
+                         f"(keep description and qty)")
+            lines.append(f"- **Comment:** `Renumbered {r['pn']} → "
+                         f"{r.get('new_pn')} — {r['reason']}`")
+        lines.append("")
+
+    if held:
+        lines.append("## HELD — do not action (human decision required)")
+        lines.append("")
+        for r in held:
+            lines.append(f"- `{r.get('pn')}` ({r.get('action')}) — {r.get('reason')}")
+        lines.append("")
+
+    req.write_text("\n".join(lines), encoding="utf-8")
+    return req
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--control-task", required=True, help="Asana GID of the 'Karol Generate Entire BOM' control task")
     ap.add_argument("--new-bom", required=True, help="Path to the new-rev BOM xlsx (Stage 1 consolidated output)")
     ap.add_argument("--output-dir", default=None)
-    ap.add_argument("--commit", action="store_true", help="NOT IMPLEMENTED — writes require the importer + REQUESTS queue; this engine is read-only")
+    ap.add_argument("--commit", action="store_true",
+                    help="Emit a REQUESTS file for SAP to action. Still never "
+                         "writes to Asana directly (hard rule 2). Ambiguous and "
+                         "unconfirmed rows are always held back for HITL.")
+    ap.add_argument("--rev-label", default="",
+                    help="Revision this BOM represents, e.g. '3'. Used in the "
+                         "'REMOVED IN REV x' title marker. Required with "
+                         "--commit when the BOM has no REV column.")
     args = ap.parse_args()
-    if args.commit:
-        sys.exit("--commit is not implemented: writes flow through the BOM importer + REQUESTS queue -> SAP. Engine is read-only.")
 
     control = args.control_task.strip()
     new_bom_path = Path(args.new_bom).expanduser()
@@ -448,16 +608,41 @@ def main():
         sys.exit(f"new BOM file not found: {new_bom_path}")
 
     print("loading new BOM ...")
-    new = load_new_bom(str(new_bom_path))
+    new, meta = load_new_bom(str(new_bom_path))
+    meta["rev_label"] = args.rev_label.strip()
     print(f"  new BOM rows : {len(new)}")
 
     print("walking Asana vendor task tree ...")
     old = walk_task_tree(control)
     print(f"  Asana part tasks : {len(old)}")
 
-    proposed, ambiguous = classify(old, new)
+    proposed, ambiguous = classify(old, new, meta)
     xlsx, txt = write_output(proposed, ambiguous, output_dir)
-    print(f"\nREPORT ONLY — no writes ({datetime.now(timezone.utc).isoformat()})")
+
+    if not args.commit:
+        print(f"\nREPORT ONLY — no writes ({datetime.now(timezone.utc).isoformat()})")
+        print(f"  {xlsx}\n  {txt}")
+        print("\nRe-run with --commit to place the change-set on the REQUESTS "
+              "queue for SAP.")
+        return
+
+    # --commit: queue for SAP. Never writes Asana here.
+    if meta.get("signal_absent") and not meta.get("rev_label"):
+        sys.exit("refusing to commit: this BOM supplies no removal markers AND "
+                 "no --rev-label was given. Every removal would be unconfirmed "
+                 "and the title marker would have no revision. Review the xlsx "
+                 "and re-run with an explicit --rev-label.")
+
+    req = emit_requests_file(proposed, ambiguous, control, meta, output_dir)
+    if req is None:
+        print("\nNothing actionable to queue — all rows are NO_CHANGE, ADD, or "
+              "held for HITL.")
+        print(f"  {xlsx}\n  {txt}")
+        return
+    print(f"\nQUEUED FOR SAP ({datetime.now(timezone.utc).isoformat()})")
+    print(f"  request : {req}")
+    print(f"  xlsx    : {xlsx}")
+    print("  Asana is NOT written by this engine — SAP drains the queue.")
     counts = defaultdict(int)
     for r in proposed + ambiguous:
         counts[r["action"]] += 1

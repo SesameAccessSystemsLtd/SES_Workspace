@@ -1,0 +1,11 @@
+#!/bin/bash
+srcdir="/c/Users/GilesHugo/SES_Workspace"
+TOKEN=$(grep '^ASANA_PERSONAL_ACCESS_TOKEN' /c/Users/GilesHugo/.Hermes/.env | head -1 | cut -d= -f2- | tr -d '"' | tr -d " \t\r\n")
+AUTH="Authorization: Bearer $TOKEN"
+API="https://app.asana.com/api/1.0"
+echo "=== subtasks of 1216293165478983 (Service Schedule) ==="
+curl -s -H "$AUTH" "$API/tasks/1216293165478983/subtasks?limit=100&opt_fields=name"
+echo ""
+echo "=== subtasks of 1216293066702023 (QC CONTROL) ==="
+curl -s -H "$AUTH" "$API/tasks/1216293066702023/subtasks?limit=100&opt_fields=name"
+echo ""

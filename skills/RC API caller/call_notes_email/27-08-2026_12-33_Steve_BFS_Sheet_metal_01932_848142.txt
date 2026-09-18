@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  27/08/2026  12:33
+============================================================
+With:         Steve BFS Sheet metal 01932 848142
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo coordinating with Steve from BFS Sheet Metal regarding the collection of a job and invoice. The collection was scheduled before the shop's 3 PM closing, with confirmation that the invoice would be emailed after collection.
+
+--- RECAP --------------------------------------------------
+Giles Hugo informed Steve that their job is ready for collection and plans to pick it up shortly, expecting someone to be available before the shop closes at 3 PM.Steve confirmed the shop's closing time at 3 PM and asked whether Giles preferred to receive the invoice via email or in person; Giles requested the invoice to be emailed to match his previous email record.Steve instructed Giles to sign into delivery notes once the item is collected, after which he will send the invoice.The call concluded with mutual confirmation of the collection plan and invoice process.
+
+--- TASKS --------------------------------------------------
+Steve from BFS Sheet Metal will send the invoice via email after Giles collects the job.
+
+(Full transcript: RC web portal only — no RingSense API)

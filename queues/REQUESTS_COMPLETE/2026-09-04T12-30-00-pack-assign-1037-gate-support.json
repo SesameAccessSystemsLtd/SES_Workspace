@@ -1,0 +1,11 @@
+{
+  "pack_gid": "1216065135265568",
+  "pack_name": "1037.1014.M.Gate+Support.",
+  "parts": [
+    {"task_gid":"1216068688982438","sesame_pn":"1037.1014.M.062","qty":1,"part_name":"REMOVED 1 off 1037. 1014.M.062 - Striker Laser Cut"},
+    {"task_gid":"1216068551570269","sesame_pn":"1037.1014.M.114","qty":1,"part_name":"1 off 1037. 1014.M.114 - Packer 304/HR Laser Cut"},
+    {"task_gid":"1216068689133400","sesame_pn":"1037.1014.M.115","qty":1,"part_name":"1 off 1037. 1014.M.115 - Packer 304/2B Laser Cut"},
+    {"task_gid":"1216068551654581","sesame_pn":"1037.1014.M.116","qty":2,"part_name":"2 off 1037. 1014.M.116 - Packer 304/2B Laser Cut"},
+    {"task_gid":"1216068551706582","sesame_pn":"1037.1014.M.117","qty":1,"part_name":"1 off 1037. 1014.M.117 - Rubber Pad Rubber Supplier"}
+  ]
+}

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  18/08/2026  15:51
+============================================================
+With:         Graham - Steerforth 01252 333633
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call between Giles Hugo and Tom from Steerforth involved clarifying order details, quantities, pricing, and shipping costs for specific items, with confirmation of quotes and order processing instructions.
+
+--- RECAP --------------------------------------------------
+Giles Hugo and Tom discussed multiple email chains regarding order inquiries, with Giles confirming that he sent two emails containing quotes for specific items, and Tom clarifying which quotes he received.They clarified that the item with the part number 1037 (or SQR 46622) was initially sent to Adam and then posted to Tom, and that it includes 2 read switches, with the other order including 2 RAMs and 4 read switches.Both agreed that the prices for the items are the same, and they discussed processing the orders under two separate purchase orders (POs) to keep shipping costs separate, resulting in a total carriage cost of 17 rather than 12.Tom suggested splitting the carriage cost of 8.50 on each PO for clarity, which Giles agreed to, and Tom noted he would keep an eye out for the order after making a few notes.They confirmed the quote numbers: 169 for one order, and 212 for the other, with specific part numbers and quantities discussed, including a potential order of three units to save approximately 4%.Giles indicated he needed to move on to other
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

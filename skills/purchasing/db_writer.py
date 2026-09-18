@@ -75,6 +75,117 @@ def _is_stale(existing_synced_at: str | None, incoming_synced_at: str | None) ->
         return existing_synced_at > incoming_synced_at
 
 
+# Columns that never count as a change on their own — they move every run.
+_VOLATILE_COLS = {"last_synced_at", "created_at", "updated_at",
+                  "association_checked_at", "last_state_hash", "first_seen_at"}
+
+# Field changes worth emitting as a supply event, and how loud each one is.
+# Anything not listed is stored but does not raise an event.
+_EVENT_FIELDS = {
+    "parts_control": {
+        "stock_action":         "notable",
+        "order_status":         "notable",
+        "vendor_name":          "notable",
+        "arrived_qty":          "critical",
+        "procurement_task_gid": "notable",
+        "due_on":               "routine",
+        "is_completed":         "routine",
+        "rev_number":           "critical",
+    },
+    "procurement_tasks": {
+        "order_status":         "notable",
+        "due_date":             "critical",
+        "po_number":            "notable",
+        "vendor_name":          "routine",
+        "price_ex_vat":         "routine",
+        "is_completed":         "routine",
+    },
+    "build_assembly_packs": {
+        "parts_readiness":      "critical",
+        "stage_of_production":  "notable",
+        "steel_profile":        "critical",
+        "needs_from_purch":     "critical",
+        "due_on":               "critical",
+        "unplanned_hours":      "notable",
+    },
+    "stock_inventory": {
+        "stock_qty":            "routine",
+        "stock_action":         "routine",
+    },
+}
+
+_ENTITY_TYPE = {
+    "parts_control":        "part",
+    "procurement_tasks":    "order",
+    "build_assembly_packs": "pack",
+    "bom_requirements":     "requirement",
+}
+
+
+def _norm(value) -> str:
+    """Compare loosely enough that 4 and 4.0 and ' 4 ' are the same value."""
+    if value is None:
+        return ""
+    if isinstance(value, float) and value.is_integer():
+        return str(int(value))
+    return str(value).strip()
+
+
+def _changed_columns(existing, row: dict) -> list[str]:
+    keys = existing.keys() if hasattr(existing, "keys") else []
+    out = []
+    for col, new in row.items():
+        if col in _VOLATILE_COLS:
+            continue
+        if col not in keys:          # new column not yet migrated — treat as change
+            out.append(col)
+            continue
+        if _norm(existing[col]) != _norm(new):
+            out.append(col)
+    return out
+
+
+def _emit_supply_events(conn: sqlite3.Connection, table: str, gid: str,
+                        existing, row: dict, changed: list[str], source: str) -> None:
+    """Write one part_supply_events row per meaningful field change.
+
+    Silently does nothing if the table has not been migrated yet, so this is safe
+    to deploy ahead of migrate_impact_engine.py.
+    """
+    watch = _EVENT_FIELDS.get(table)
+    if not watch:
+        return
+    interesting = [c for c in changed if c in watch]
+    if not interesting:
+        return
+    observed = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    project_code = row.get("project_code")
+    keys = existing.keys() if existing is not None and hasattr(existing, "keys") else []
+    try:
+        for col in interesting:
+            old = existing[col] if (existing is not None and col in keys) else None
+            # Keep "0" distinct from empty. `_norm(x) or None` collapsed a real
+            # zero to NULL, which silently destroyed the signal on quantity
+            # fields — Arrived Stock Qty is a staging field that is written,
+            # consumed and cleared, so 0 -> NULL and NULL -> 0 are exactly the
+            # transitions worth seeing.
+            old_v = None if old is None else _norm(old)
+            new_raw = row.get(col)
+            new_v = None if new_raw is None else _norm(new_raw)
+            if old_v == new_v:
+                continue
+            conn.execute(
+                """INSERT INTO part_supply_events
+                   (entity_type, entity_gid, project_code, field, old_value,
+                    new_value, observed_at, source, significance)
+                   VALUES (?,?,?,?,?,?,?,?,?)""",
+                (_ENTITY_TYPE.get(table, "part"), gid, project_code, col,
+                 old_v, new_v, observed, source, watch[col]),
+            )
+    except sqlite3.OperationalError:
+        pass  # table not migrated yet
+
+
 def _upsert_rows(conn: sqlite3.Connection, table: str, rows: list[dict],
                  key_col: str, source: str, db_path: str) -> dict:
     written = skipped = errors = 0
@@ -86,10 +197,23 @@ def _upsert_rows(conn: sqlite3.Connection, table: str, rows: list[dict],
             continue
         try:
             existing = conn.execute(
-                f"SELECT last_synced_at FROM {table} WHERE {key_col} = ?", (gid,)
+                f"SELECT * FROM {table} WHERE {key_col} = ?", (gid,)
             ).fetchone()
             if existing and _is_stale(existing["last_synced_at"], row.get("last_synced_at")):
                 _log_write(conn, table, gid, "skip", source, None)
+                skipped += 1
+                continue
+
+            # Change detection. Previously every column of every row was logged as
+            # "changed" on all nine daily sync runs, which is why db_write_log grew
+            # to 3.8M rows and could never answer "what changed since yesterday".
+            changed = _changed_columns(existing, row) if existing else list(row.keys())
+            if existing and not changed:
+                # Refresh the sync timestamp only. No event, no write-log noise.
+                conn.execute(
+                    f"UPDATE {table} SET last_synced_at = ? WHERE {key_col} = ?",
+                    (row.get("last_synced_at"), gid),
+                )
                 skipped += 1
                 continue
 
@@ -102,7 +226,8 @@ def _upsert_rows(conn: sqlite3.Connection, table: str, rows: list[dict],
             )
             conn.execute(sql, list(row.values()))
             action = "update" if existing else "insert"
-            _log_write(conn, table, gid, action, source, cols)
+            _log_write(conn, table, gid, action, source, changed)
+            _emit_supply_events(conn, table, gid, existing, row, changed, source)
             written += 1
         except Exception as exc:
             log.error("%s gid=%s: %s", table, gid, exc)
@@ -159,6 +284,38 @@ def update_parts_pack_allocation(task_gid: str, pack_gid: str,
         if cur.rowcount:
             _log_write(conn, "parts_control", task_gid, "update", source,
                        ["build_assembly_pack_gid", "association_status", "association_checked_at"])
+            conn.commit()
+            return {"written": 1, "skipped": 0, "errors": 0}
+        conn.commit()
+        return {"written": 0, "skipped": 1, "errors": 0}
+
+
+def update_parts_control_stock_action(task_gid: str, new_stock_action: str,
+                                      source: str = "parts_control_propagator",
+                                      db_path: str = DEFAULT_DB_PATH) -> dict:
+    """Targeted UPDATE of parts_control.stock_action for one task (CHG-1A).
+
+    Sets stock_action only — never touches NOT NULL columns like part_name, and
+    never creates a phantom row. Audits via db_write_log (`_log_write`).
+    Returns {written, skipped, errors}; written=0 (skipped) if the task_gid is not
+    present in parts_control — that is NOT an error (the mirror may lag the flip).
+
+    NOTE (CHG-1B): the register sketched an `updated_source` column, but
+    parts_control has NO such column (verified against live schema). The `source`
+    argument is captured in db_write_log.source instead, which is the correct
+    audit location and avoids an unsanctioned schema migration.
+    """
+    if not task_gid:
+        raise ValueError("update_parts_control_stock_action: task_gid required")
+    if new_stock_action is None:
+        raise ValueError("update_parts_control_stock_action: new_stock_action required")
+    with _connect(db_path) as conn:
+        cur = conn.execute(
+            "UPDATE parts_control SET stock_action = ? WHERE asana_task_gid = ?",
+            (new_stock_action, task_gid),
+        )
+        if cur.rowcount:
+            _log_write(conn, "parts_control", task_gid, "update", source, ["stock_action"])
             conn.commit()
             return {"written": 1, "skipped": 0, "errors": 0}
         conn.commit()
@@ -261,11 +418,11 @@ def write_bom_requirement(row: dict, source: str = "bom_pipeline",
         conn.execute(
             """INSERT INTO bom_requirements
                (build_ref, asana_project_gid, sesame_part_no, part_description,
-                required_qty, stock_qty_at_import, status, asana_task_gid, source_bom_file)
+                required_qty, stock_qty_at_import, status, po_id, asana_task_gid, source_bom_file)
                VALUES (:build_ref, :asana_project_gid, :sesame_part_no, :part_description,
-                       :required_qty, :stock_qty_at_import, :status, :asana_task_gid,
+                       :required_qty, :stock_qty_at_import, :status, :po_id, :asana_task_gid,
                        :source_bom_file)""",
-            row,
+            {**{"po_id": None}, **row},
         )
         _log_write(conn, "bom_requirements", row.get("asana_task_gid"),
                    "insert", source, list(row.keys()))
@@ -466,6 +623,20 @@ def write_ordering_edge_case(row: dict, db_path: str = DEFAULT_DB_PATH) -> dict:
     required = {"run_timestamp", "script", "issue_type"}
     if not required.issubset(row):
         raise ValueError(f"write_ordering_edge_case: missing {required - row.keys()}")
+    # Optional columns default to NULL. Without this, any caller that omits one
+    # (every caller omitted asana_edge_case_gid) raised
+    # sqlite3.ProgrammingError mid-loop and aborted the whole run — which is why
+    # ordering_edge_cases stayed empty and the nightly routing audit exited 1.
+    row = {
+        "stage": None,
+        "asana_task_gid": None,
+        "task_name": None,
+        "vendor_name": None,
+        "description": None,
+        "raw_data": None,
+        "asana_edge_case_gid": None,
+        **row,
+    }
     with _connect(db_path) as conn:
         conn.execute(
             """INSERT INTO ordering_edge_cases

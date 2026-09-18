@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-14T09:13:03Z",
-  "record_count": 185,
+  "generated_utc": "2026-09-11T12:55:56Z",
+  "record_count": 177,
   "schema": {
     "kan": "primary key (string)",
     "stock_number": "single canonical stock number",
@@ -10,6 +10,218 @@
     "resolution_source": "'auto' (single stock) or 'conflict_resolution' (human-chosen)"
   },
   "outstanding_conflicts": [],
+  "needs_split": [
+    {
+      "kan": "KAN-175",
+      "reason": "different_parts_RED",
+      "verdict": "RED",
+      "candidate_stock_numbers": [
+        "MP SX 25/18X50 S AS",
+        "MP2518X50S"
+      ],
+      "all_raw_variants": [
+        "MP SX 25/18X50 S AS",
+        "MP2518X50S"
+      ],
+      "match_types": {
+        "description": 2,
+        "vendor": 2
+      },
+      "row_count": 4,
+      "asana_sesame_pn": [
+        "1008.V.MiniActuator[50mm]",
+        "1008.V1.1.Mi",
+        "1008.V1.1.MiniActuator[50mm]"
+      ],
+      "karol_resolution": "MP SX 25/18X50 S AS",
+      "karol_note": "V1.1 mini actuator is special option with additional connections. V1 mini actuator is standard. Stock numbers must be different. (ask about vendor in v1 \"conforti\", \"handed element\"?)"
+    },
+    {
+      "kan": "KAN-455",
+      "reason": "different_parts_RED",
+      "verdict": "RED",
+      "candidate_stock_numbers": [
+        "PMB195",
+        "PMB196"
+      ],
+      "all_raw_variants": [
+        "PMB195",
+        "PMB196"
+      ],
+      "match_types": {
+        "description": 15
+      },
+      "row_count": 15,
+      "asana_sesame_pn": [
+        "1010.A.027",
+        "1011.A.038",
+        "1011.D.038",
+        "1019.A.038",
+        "1021.A.038"
+      ],
+      "karol_resolution": "PMB195",
+      "karol_note": "All these parts are PMB196. The link don't work, no such bearing in the Remeks link."
+    },
+    {
+      "kan": "KAN-456",
+      "reason": "different_parts_RED",
+      "verdict": "RED",
+      "candidate_stock_numbers": [
+        "AL4046-40",
+        "FMB404640"
+      ],
+      "all_raw_variants": [
+        "AL4046-40",
+        "FMB404640"
+      ],
+      "match_types": {
+        "vendor": 3,
+        "description": 2
+      },
+      "row_count": 5,
+      "asana_sesame_pn": [
+        "1011.A.028",
+        "1011.D.028",
+        "1011.E.028",
+        "1019.A.028",
+        "1021.A.028",
+        "6000.A.072",
+        "6000.A.122"
+      ],
+      "karol_resolution": "FMB404640",
+      "karol_note": "6000.A bearing are 8mm ID, Scissor Lift bearings are 40mm ID so yeah. 1019.A.028 has same dimms as other, but different stock. AL4046-40 you can find, FMB404640 not."
+    },
+    {
+      "kan": "KAN-613",
+      "reason": "different_parts_RED",
+      "verdict": "RED",
+      "candidate_stock_numbers": [
+        "385-1586 / 511155",
+        "LSV-08-2NCP"
+      ],
+      "all_raw_variants": [
+        "385-1586 / 511155",
+        "LSV-08-2NCP"
+      ],
+      "match_types": {
+        "description": 4
+      },
+      "row_count": 4,
+      "asana_sesame_pn": [
+        "1008.H4.001",
+        "1014.E.088"
+      ],
+      "karol_resolution": "LSV-08-2NCP",
+      "karol_note": "one is poppet valve, one is rubber feet"
+    },
+    {
+      "kan": "KAN-930",
+      "reason": "different_parts_RED",
+      "verdict": "RED",
+      "candidate_stock_numbers": [
+        "EP1G12Z020U",
+        "EP1G12Z2U",
+        "EP1G12ZA",
+        "EP1G14Z020U",
+        "EP1G14Z2U"
+      ],
+      "all_raw_variants": [
+        "EP1G12Z020U",
+        "EP1G12Z2U",
+        "EP1G12ZA",
+        "EP1G14Z020U",
+        "EP1G14Z2U"
+      ],
+      "match_types": {
+        "name": 1,
+        "description": 6
+      },
+      "row_count": 7,
+      "asana_sesame_pn": [
+        "1008.A6.EP1G",
+        "1008.A6.EP1G12Z020U",
+        "1008.A6.EP1G12Z2U",
+        "1008.A6.EP1G12ZA - Roller",
+        "1008.A6.EP1G14Z2U",
+        "1008.D.440P-M18001",
+        "1055.A.009"
+      ],
+      "karol_resolution": "EP1G12Z020U",
+      "karol_note": "limit switches differ one to another, different stocks necessary"
+    },
+    {
+      "kan": "KAN-1345",
+      "reason": "different_parts_RED",
+      "verdict": "RED",
+      "candidate_stock_numbers": [
+        "10060610",
+        "700-0802"
+      ],
+      "all_raw_variants": [
+        "10060610",
+        "700-0802"
+      ],
+      "match_types": {
+        "description": 6,
+        "name": 1
+      },
+      "row_count": 7,
+      "asana_sesame_pn": [
+        "1008.U.01",
+        "1034.B.087"
+      ],
+      "karol_resolution": "10060610",
+      "karol_note": "no clue where the proposed stock number comes from - B.087 has no data in iproperties, U.01 has the unwanted stock number and all vendor data"
+    },
+    {
+      "kan": "KAN-1348",
+      "reason": "different_parts_RED",
+      "verdict": "RED",
+      "candidate_stock_numbers": [
+        "CN20133",
+        "OB11"
+      ],
+      "all_raw_variants": [
+        "CN20133",
+        "OB11"
+      ],
+      "match_types": {
+        "name": 1,
+        "vendor": 1
+      },
+      "row_count": 2,
+      "asana_sesame_pn": [
+        "1008.U.05",
+        "1008.U.11"
+      ],
+      "karol_resolution": "CN20133",
+      "karol_note": "one is pigtail one is not, they are not the same"
+    },
+    {
+      "kan": "KAN-1449",
+      "reason": "different_parts_RED",
+      "verdict": "RED",
+      "candidate_stock_numbers": [
+        "BF6550",
+        "PM6550DX"
+      ],
+      "all_raw_variants": [
+        "BF6550",
+        "PM6550DX"
+      ],
+      "match_types": {
+        "description": 9
+      },
+      "row_count": 9,
+      "asana_sesame_pn": [
+        "1001.D.019",
+        "1014.A.007",
+        "1014.E.104"
+      ],
+      "karol_resolution": "BF6550",
+      "karol_note": "in PL ALL those bearing have different dimensions"
+    }
+  ],
   "kans_without_stock": [
     "KAN-1031"
   ],
@@ -1286,45 +1498,6 @@
       "source_row_count": 2,
       "has_assembly_pack": true,
       "resolution_source": "auto"
-    },
-    {
-      "kan": "KAN-175",
-      "stock_number": "MP SX 25/18X50 S AS",
-      "stock_number_variants": [
-        "MP SX 25/18X50 S AS"
-      ],
-      "assembly_packs": [
-        "1008.V"
-      ],
-      "asana_sesame_part_numbers": [
-        "1008.V.MiniActuator[50mm]",
-        "1008.V1.1.Mi",
-        "1008.V1.1.MiniActuator[50mm]"
-      ],
-      "asana_vendor_part_numbers": [
-        "18x50 S AS",
-        "MP SX 25",
-        "MP2518A50S - FRONT"
-      ],
-      "asana_task_names": [
-        "10 off MP SX 25/18x50 SAS - 50cc 4 port conforti hydraulic actuators"
-      ],
-      "description": "Mini hydraulic actuator _ 50mm stroke Use loctite in pin assembly",
-      "descriptions_all": [
-        "Mini hydraulic actuator _ 50mm stroke Use loctite in pin assembly",
-        "Mini hydraulic actuator _ 50mm stroke, connectors on both sides"
-      ],
-      "vendors": [
-        "Confortinet.com",
-        "Steerforth"
-      ],
-      "match_types": {
-        "description": 2,
-        "vendor": 2
-      },
-      "source_row_count": 4,
-      "has_assembly_pack": true,
-      "resolution_source": "conflict_resolution"
     },
     {
       "kan": "KAN-194",
@@ -3386,89 +3559,6 @@
       "resolution_source": "auto"
     },
     {
-      "kan": "KAN-455",
-      "stock_number": "PMB195",
-      "stock_number_variants": [
-        "PMB195"
-      ],
-      "assembly_packs": [
-        "1011.A"
-      ],
-      "asana_sesame_part_numbers": [
-        "1010.A.027",
-        "1011.A.038",
-        "1011.D.038",
-        "1019.A.038",
-        "1021.A.038"
-      ],
-      "asana_vendor_part_numbers": [
-        "40x46x30 8 off 1011.B.043",
-        "PMB107",
-        "PMB304045"
-      ],
-      "asana_task_names": [
-        "30x40x45 2 off 1010.A.027 - Plain bearing bush PMB304045",
-        "30x40x45 4 off 1011.B.038 - Plain bearing bush - KAN-455"
-      ],
-      "description": "Plain bearing bush - 30x40x35",
-      "descriptions_all": [
-        "Plain bearing bush - 30x40x35",
-        "Plain bearing bush - 30x40x45"
-      ],
-      "vendors": [
-        "Bearing Supplier"
-      ],
-      "match_types": {
-        "description": 15
-      },
-      "source_row_count": 15,
-      "has_assembly_pack": true,
-      "resolution_source": "conflict_resolution"
-    },
-    {
-      "kan": "KAN-456",
-      "stock_number": "FMB404640",
-      "stock_number_variants": [
-        "FMB404640"
-      ],
-      "assembly_packs": [
-        "1011.A",
-        "1011.D",
-        "1021.A"
-      ],
-      "asana_sesame_part_numbers": [
-        "1011.A.028",
-        "1011.D.028",
-        "1011.E.028",
-        "1019.A.028",
-        "1021.A.028",
-        "6000.A.072",
-        "6000.A.122"
-      ],
-      "asana_vendor_part_numbers": [
-        "FMB081216",
-        "FMB404640"
-      ],
-      "asana_task_names": [
-        "40x46x40 Flanged 4 off 1011.B.028 - Flanged bearing bush - AL404640 (40 in stock) - KAN-456"
-      ],
-      "description": "Oil Filled Bronze Flanged Bush Bearing",
-      "descriptions_all": [
-        "Flanged bearing bush - 40x46x40",
-        "Oil Filled Bronze Flanged Bush Bearing"
-      ],
-      "vendors": [
-        "Bearing Supplier"
-      ],
-      "match_types": {
-        "vendor": 3,
-        "description": 2
-      },
-      "source_row_count": 5,
-      "has_assembly_pack": true,
-      "resolution_source": "conflict_resolution"
-    },
-    {
       "kan": "KAN-457",
       "stock_number": "AS2035",
       "stock_number_variants": [
@@ -4141,43 +4231,6 @@
       "source_row_count": 9,
       "has_assembly_pack": false,
       "resolution_source": "auto"
-    },
-    {
-      "kan": "KAN-613",
-      "stock_number": "LSV-08-2NCP",
-      "stock_number_variants": [
-        "LSV-08-2NCP"
-      ],
-      "assembly_packs": [
-        "1008.H"
-      ],
-      "asana_sesame_part_numbers": [
-        "1008.H4.001",
-        "1014.E.088"
-      ],
-      "asana_vendor_part_numbers": [
-        "EVC6-140-024DC",
-        "EVC6-380-024DC"
-      ],
-      "asana_task_names": [
-        "Motor pump offloading H-NC Solenoid Valve 2/2 Normally closed MANUAL (use LC2 Coil) LSV2-08-2NCP-M"
-      ],
-      "description": "Rubber feet for the motor pump",
-      "descriptions_all": [
-        "Rubber feet for the motor pump",
-        "Solenoid poppet valve"
-      ],
-      "vendors": [
-        "Flowfit",
-        "Hydraulic Supplier",
-        "RS Components"
-      ],
-      "match_types": {
-        "description": 4
-      },
-      "source_row_count": 4,
-      "has_assembly_pack": true,
-      "resolution_source": "conflict_resolution"
     },
     {
       "kan": "KAN-642",
@@ -4893,48 +4946,6 @@
       "source_row_count": 6,
       "has_assembly_pack": true,
       "resolution_source": "auto"
-    },
-    {
-      "kan": "KAN-930",
-      "stock_number": "EP1G12Z020U",
-      "stock_number_variants": [
-        "EP1G12Z020U"
-      ],
-      "assembly_packs": [
-        "1055.A"
-      ],
-      "asana_sesame_part_numbers": [
-        "1008.A6.EP1G",
-        "1008.A6.EP1G12Z020U",
-        "1008.A6.EP1G12Z2U",
-        "1008.A6.EP1G12ZA - Roller",
-        "1008.A6.EP1G14Z2U",
-        "1008.D.440P-M18001",
-        "1055.A.009"
-      ],
-      "asana_vendor_part_numbers": [
-        "440P-M18001"
-      ],
-      "asana_task_names": [
-        "1 off Roller Limit Switch (min. 2m Cable) 1008.A6.EP1G12Z020U EP1G12Z020U http://www.comepi.it LongVale SES101"
-      ],
-      "description": "Roller Limit Switch (min. 2m Cable)",
-      "descriptions_all": [
-        "EP1G12Z020U 2 m PVC cable",
-        "Roller Limit Switch (min. 2m Cable)",
-        "Roller LimitSwitch (min. 2m Cable)"
-      ],
-      "vendors": [
-        "Comepi",
-        "LongVale"
-      ],
-      "match_types": {
-        "name": 1,
-        "description": 6
-      },
-      "source_row_count": 7,
-      "has_assembly_pack": true,
-      "resolution_source": "conflict_resolution"
     },
     {
       "kan": "KAN-968",
@@ -5793,48 +5804,6 @@
       "resolution_source": "auto"
     },
     {
-      "kan": "KAN-1345",
-      "stock_number": "10060610",
-      "stock_number_variants": [
-        "10060610"
-      ],
-      "assembly_packs": [
-        "1008.U",
-        "1034.B"
-      ],
-      "asana_sesame_part_numbers": [
-        "1008.U.01",
-        "1034.B.087"
-      ],
-      "asana_vendor_part_numbers": [
-        "CN20133"
-      ],
-      "asana_task_names": [
-        "OB11 junction box",
-        "RS 455065 - Junction Box, IP65, 160 x 135 x 77mm",
-        "RS 455071 - Junction Box, IP65, 200 x 170 x 80mm",
-        "RS 700-0802 - wiska box 85x85x51"
-      ],
-      "description": "85x85x51 Wiska Junction Box",
-      "descriptions_all": [
-        "85x85x51 Wiska Junction Box",
-        "85x85x52 Junction Box"
-      ],
-      "vendors": [
-        "CPC",
-        "NBSS/ Sesame",
-        "RS Components",
-        "Sesame Stock"
-      ],
-      "match_types": {
-        "description": 6,
-        "name": 1
-      },
-      "source_row_count": 7,
-      "has_assembly_pack": true,
-      "resolution_source": "conflict_resolution"
-    },
-    {
       "kan": "KAN-1346",
       "stock_number": "526-366",
       "stock_number_variants": [
@@ -5861,41 +5830,6 @@
       "source_row_count": 1,
       "has_assembly_pack": false,
       "resolution_source": "auto"
-    },
-    {
-      "kan": "KAN-1348",
-      "stock_number": "CN20133",
-      "stock_number_variants": [
-        "CN20133"
-      ],
-      "assembly_packs": [
-        "1008.U"
-      ],
-      "asana_sesame_part_numbers": [
-        "1008.U.05",
-        "1008.U.11"
-      ],
-      "asana_vendor_part_numbers": [
-        "CN20133"
-      ],
-      "asana_task_names": [
-        "OB11 junction box"
-      ],
-      "description": "SpringCable_JunctionBox+Glands",
-      "descriptions_all": [
-        "JunctionBox+Glands",
-        "SpringCable_JunctionBox+Glands"
-      ],
-      "vendors": [
-        "CPC"
-      ],
-      "match_types": {
-        "name": 1,
-        "vendor": 1
-      },
-      "source_row_count": 2,
-      "has_assembly_pack": true,
-      "resolution_source": "conflict_resolution"
     },
     {
       "kan": "KAN-1350",
@@ -6128,39 +6062,6 @@
       "source_row_count": 6,
       "has_assembly_pack": true,
       "resolution_source": "auto"
-    },
-    {
-      "kan": "KAN-1449",
-      "stock_number": "BF6550",
-      "stock_number_variants": [
-        "BF6550"
-      ],
-      "assembly_packs": [],
-      "asana_sesame_part_numbers": [
-        "1001.D.019",
-        "1014.A.007",
-        "1014.E.104"
-      ],
-      "asana_vendor_part_numbers": [
-        "15170",
-        "PMB107"
-      ],
-      "asana_task_names": [
-        "65x70x50 split bearing WMX657050"
-      ],
-      "description": "Split bearing bush - SEND TO MACHINING",
-      "descriptions_all": [
-        "Split bearing bush - SEND TO MACHINING"
-      ],
-      "vendors": [
-        "Bearing Supplier"
-      ],
-      "match_types": {
-        "description": 9
-      },
-      "source_row_count": 9,
-      "has_assembly_pack": false,
-      "resolution_source": "conflict_resolution"
     },
     {
       "kan": "KAN-1450",

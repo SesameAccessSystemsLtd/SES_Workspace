@@ -1,0 +1,14 @@
+{
+  "request_id": "35aaf072-ffcb-4a04-b688-0452bdcb2ed4",
+  "source": "email_approval_sheet",
+  "row_index": 25,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkqC5ARAAA=",
+  "subject": "Re: 21610-1171 - Wessex Galv - St Mary Le BOW",
+  "task_gid": "1218237285026846",
+  "task_name": "21610-1171 - Wessex Galv - St Mary Le BOW",
+  "asana_url": "https://app.asana.com/0/0/1218237285026846",
+  "action": "(Matched via PO Number in Local DB); [SQR-ledger] no SQR match for wessex@wggltd.co.uk; Update delivery date to 2026-09-14; Update ORDER Status to 'On Order - Delivery Date Confirmed'",
+  "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> order_confirmation: Re: 21610-1171 - Wessex Galv - St Mary Le BOW \n- Update delivery date to 2026-09-14\n- Update ORDER Status to 'On Order - Delivery Date Confirmed'\n\nReference: 21610-1171 · Received: 2026-09-08T19:25:31Z\nMatch basis: (Matched via PO Number in Local DB); [SQR-ledger] no SQR match for wessex@wggltd.co.uk\nTask GID: 1218237285026846 · AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkqC5ARAAA=\nhttps://app.asana.com/0/0/1218237285026846\n\ngiles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-10T08:01:01.456733+00:00"
+}

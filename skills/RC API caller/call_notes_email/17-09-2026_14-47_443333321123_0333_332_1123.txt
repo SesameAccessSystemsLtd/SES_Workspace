@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  17/09/2026  14:47
+============================================================
+With:         +443333321123 0333 332 1123
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Giles Hugo inquiring about the static IP address associated with their business account with Hyperoptic. The representative confirmed that the account has a static IP, which has recently changed due to system issues, and provided the current IP address details.
+
+--- RECAP --------------------------------------------------
+Giles Hugo contacted Hyperoptic support to verify if their business connection has a static IP address, providing account details including account number 53000012 and email address sesameaccess.com.The support agent confirmed that the account does have a static IP, which has recently changed due to system-related issues, and provided the current external IP address as 137.220.100.220.The agent explained that the IP address can change when there are system problems or service disruptions, and that any change is communicated with the customer beforehand.Giles Hugo acknowledged the information and expressed understanding of the IP address change process, concluding the call.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

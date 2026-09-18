@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  18/09/2026  08:31
+============================================================
+With:         - Purchasing 07459 254703
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a call between Giles Hugo and a purchasing representative confirming delivery details and addressing concerns about the company's Google Maps listing. The delivery is scheduled for approximately half an hour, and the representative advised checking the Google Maps listing for accuracy.
+
+--- RECAP --------------------------------------------------
+The purchasing representative contacted Giles Hugo to confirm delivery details for Elden Electric, scheduled to arrive in about 30 minutes.The representative noted that Google Maps shows the company's location as permanently closed, which Giles Hugo acknowledged and agreed to verify immediately.The representative provided the correct postcode as LF 147, correcting a previous misreading of LF 14.Giles Hugo confirmed the delivery address and agreed to check the Google Maps listing for accuracy to ensure customers see the correct status.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will verify the company's Google Maps listing to confirm whether it is marked as permanently closed.
+
+(Full transcript: RC web portal only — no RingSense API)

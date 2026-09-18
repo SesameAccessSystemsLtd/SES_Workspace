@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  04/09/2026  14:59
+============================================================
+With:         +441234924324 01234 924324
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo discussing the status of a returned actuator with Holly from Gap automation. The issue is ongoing, with delays in communication and testing, and a resolution is expected by Monday.
+
+--- RECAP --------------------------------------------------
+Giles Hugo contacted Holly from Gap automation regarding a returned actuator with reference number 900581, which was sent back for repair with an order for five new units.Holly confirmed the return was not an RMA and explained the current status, including delays due to email communication and testing difficulties, with updates expected by Monday.There has been ongoing correspondence between Graeme, Danny (automation manager), and the contents team about the actuator's testing and potential return for further work.The return has been acknowledged, but the issue remains unresolved, with efforts ongoing to determine if the actuator needs to be sent back for repairs.
+
+--- TASKS --------------------------------------------------
+Holly from Gap automation will follow up with Graeme to clarify the current status of the actuator return and testing by Monday.Holly will continue to monitor email correspondence and update the team on any progress or decisions regarding the actuator.
+
+(Full transcript: RC web portal only — no RingSense API)

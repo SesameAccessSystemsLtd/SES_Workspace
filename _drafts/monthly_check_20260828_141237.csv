@@ -1,0 +1,35 @@
+﻿material_type,material,status,need_mm,need_120_m,stock_m,free_m,min_m,actual_m,order_lengths,suggest,shelf_len_mm,route,duplicate_of,note
+Aluminium 6061,^Channel 31.75x25.4x3.175 Aluminium 6061,unmapped,200.0,0.24,,,,,,,,Non-Ferrous BOM,,NEW - not in master
+Aluminium 6061,^Flat 6.35x6.35 Aluminium 6061,unmapped,88.0,0.1056,,,,,,,,Non-Ferrous BOM,,NEW - not in master
+Mild Steel,Angle 40x40x3 Mild Steel,ok,3834.0,4.6008000000000004,6.0,0.0,,,,2,3000.0,Ferrous BOM,,
+Mild Steel,Angle 50x50x5 Mild Steel,ok,1294.0,1.5528,36.0,33.0,18.0,,,,3000.0,Ferrous BOM,,
+Mild Steel,Angle 60x30x6 Mild Steel,unmapped,240.0,0.288,,,,,,,,Ferrous BOM,,NEW - not in master
+Mild Steel,Angle 75x75x8 Mild Steel,unmapped,640.0,0.768,,,,,,,,Ferrous BOM,,substitute? Angle 80x80x10 Mild Steel (oversize by 12mm)
+Mild Steel,Box 20x20x2 Mild Steel,ok,12010.0,14.412,7.5,-7.5,22.5,,,6,3750.0,Ferrous BOM,,
+Mild Steel,Box 30x30x3 Mild Steel,ok,996.0,1.1952,22.5,22.5,22.5,,,,3750.0,Ferrous BOM,,
+Mild Steel,Box 40x40x2.5 Mild Steel,unmapped,1368.0,1.6416,,,,,,,,Ferrous BOM,,substitute? Box 40x40x3 Mild Steel (oversize by 0.5mm)
+Mild Steel,Box 40x40x3 Mild Steel,ok,4860.0,5.832,30.0,18.75,22.5,,,min,3750.0,Ferrous BOM,,
+Mild Steel,Box 50x50x3 Mild Steel,ok,1600.0,1.92,7.5,3.75,,,,,3750.0,Ferrous BOM,,
+Mild Steel,Box 80x40x2.5 Mild Steel,unmapped,3604.0,4.3248,,,,,,,,Ferrous BOM,,NEW - not in master
+Mild Steel,Box 80x40x3 Mild Steel,unmapped,844.0,1.0128,,,,,,,,Ferrous BOM,,NEW - not in master
+Mild Steel,Channel 100x50 Mild Steel,ok,3980.0,4.776,18.75,11.25,15.0,,,min,3750.0,Ferrous BOM,,
+Mild Steel,Flat 100x3 Mild Steel,ok,2140.0,2.568,6.0,3.0,18.0,,,min,3000.0,Ferrous BOM,,
+Mild Steel,^Flat 30x5 Mild Steel,unmapped,400.0,0.48,,,,,,,,Ferrous BOM,,substitute? Flat 30x6 Mild Steel (oversize by 1mm)
+Stainless Steel,Angle 20x20x3 Stainless Steel,ok,3836.2,4.60344,0.0,-6.0,,,,4,3000.0,Non-Ferrous BOM,,
+Stainless Steel,Angle 50x50x3 Stainless Steel,ok,960.0,1.152,3.0,-3.0,,,,2,3000.0,Non-Ferrous BOM,,
+Stainless Steel,Box 25x25x3 Stainless Steel,unmapped,4686.0,5.6232,,,,,,,,Non-Ferrous BOM,,substitute? Box 25x25x3 BRUSHED Stainless Steel (exact size)
+Stainless Steel,Box BRUSHED 50x50x3 Stainless Steel,unmapped,1676.0,2.0111999999999997,,,,,,,,Non-Ferrous BOM,,substitute? Box 50x50x3 BRUSHED Stainless Steel (exact size)
+Stainless Steel,Flat 50x3 Stainless Steel,ok,372.0,0.44639999999999996,3.0,0.0,,,,1,3000.0,Non-Ferrous BOM,,
+Stainless Steel,"Pipe - 21,3mm OD, 1.65mm wall or similiar 21.3x1.65 Stainless Steel",unmapped,55.0,0.066,,,,,,,,Non-Ferrous BOM,,NEW - not in master
+Stainless Steel,Shallow slotted channel heavy gauge 21x41x2.5 Stainless Steel,ok,392.0,0.4704,24.0,21.0,6.0,,,,3000.0,Non-Ferrous BOM,,
+Stainless Steel,Square bar 25x25 Stainless Steel,ok,222.0,0.26639999999999997,3.0,-3.0,,,,2,3000.0,Non-Ferrous BOM,,
+Stainless Steel,Tube (OD 10mm ID 8mm) 10x1 Stainless Steel,unmapped,217.0,0.26039999999999996,,,,,,,,Non-Ferrous BOM,,"substitute? Tube 12.7mm OD 1.5mm wall (>8mm ID with <15mm OD) Stainless Steel (OD +2.7mm, wall +0.5mm)"
+Stainless Steel,Tube (OD 33.4mm ID 20.7mm) 33.4x6.35 Stainless Steel,unmapped,646.4,0.7756799999999999,,,,,,,,Non-Ferrous BOM,,NEW - not in master
+Stainless Steel,Tube (OD 50.8mm ID 44.8mm) 50.8x3 Stainless Steel,unmapped,829.0,0.9947999999999999,,,,,,,,Non-Ferrous BOM,,"substitute? Tube 50.8mm OD 3mm wall BRUSHED Stainless Steel (exact OD, exact wall)"
+Stainless Steel,Tube (OD 63.5mm ID 57.5mm) 63.5x3 Stainless Steel,unmapped,60.0,0.072,,,,,,,,Non-Ferrous BOM,,"substitute? Tube 63.5mm OD 3mm wall Stainless Steel (exact OD, exact wall)"
+Stainless Steel,Tube (OD<15mm ID>8mm) 12.7x3 Stainless Steel,unmapped,528.0,0.6336,,,,,,,,Non-Ferrous BOM,,"substitute? Tube 12.7mm OD 1.5mm wall (>8mm ID with <15mm OD) Stainless Steel (exact OD, THINNER wall (1.5 < 3.0) - check)"
+Stainless Steel,Tube 12.7mm OD 1.5mm wall 12.7x1.5 Stainless Steel,unmapped,3289.6,3.9475199999999995,,,,,,,,Non-Ferrous BOM,,"substitute? Tube 12.7mm OD 1.5mm wall (>8mm ID with <15mm OD) Stainless Steel (exact OD, exact wall)"
+Steel BZP,Studding 10 Steel BZP,unmapped,2400.0,2.88,,,,,,,,Orbital Fasteners - Studding,,substitute? Studding M10 BZP (exact thread size)
+Steel BZP,Studding 12 Steel BZP,unmapped,1080.0,1.296,,,,,,,,Orbital Fasteners - Studding,,substitute? Studding M12 BZP (exact thread size)
+Steel BZP,Studding 16 Steel BZP,unmapped,7872.0,9.446399999999999,,,,,,,,Orbital Fasteners - Studding,,substitute? 20 off Studding M16 BZP (exact thread size)
+Steel BZP,Studding 8 Steel BZP,unmapped,370.0,0.444,,,,,,,,Orbital Fasteners - Studding,,substitute? 20 off Studding M8 BZP (exact thread size)

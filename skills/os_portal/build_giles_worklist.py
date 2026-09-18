@@ -30,7 +30,7 @@ from pathlib import Path
 
 # Reuse the shared fetch logic
 from build_os_status import (
-    WS, OPS_DB, BUILD_SCHEDULE, ORDER_NUMBERS, ASANA_BASE,
+    WS, OPS_DB, BUILD_SCHEDULE, ORDER_NUMBERS, ASANA_TASK_BASE,
     asana_token, headers, paginate, esc, asana_task_link,
     fetch_build_schedule, load_open_orders, is_project_section,
     load_procurement_by_packmap,
@@ -76,10 +76,18 @@ def parts_for_order(order, parts_by_job_vendor):
 
 def load_parts_by_job_vendor():
     """Return {job: {vendor_norm: [ {pn, name, qty} ]}} from parts_control."""
+    # `done` reflects PROCUREMENT state (`stock_action`), NOT the Asana task
+    # section/completion. A part ticked off the board may still be NEED TO ORDER;
+    # conversely a part may be KITTED while its task is open. Only the terminal
+    # stock_action states mean procurement is finished.
+    TERMINAL_ACTIONS = (
+        "KITTED", "IN STOCK", "ITEM ON PREMISES", "PICKING COMPLETE",
+        "OBSOLETE", "INHOUSE", "ITEM On  Premises",
+    )
     c = sqlite3.connect(OPS_DB)
     c.row_factory = sqlite3.Row
     rows = c.execute("""
-        SELECT sesame_pn, part_name, order_qty, vendor_name, is_completed
+        SELECT sesame_pn, part_name, order_qty, vendor_name, stock_action
         FROM parts_control
     """).fetchall()
     c.close()
@@ -91,9 +99,11 @@ def load_parts_by_job_vendor():
             continue
         job = m.group(1)
         v = _norm(r["vendor_name"])
+        sa = (r["stock_action"] or "").strip().upper()
+        done = any(sa.startswith(t) for t in TERMINAL_ACTIONS)
         out[job].setdefault(v, []).append({
             "pn": pn, "name": r["part_name"], "qty": r["order_qty"],
-            "done": bool(r["is_completed"]),
+            "done": done,
         })
     return out
 

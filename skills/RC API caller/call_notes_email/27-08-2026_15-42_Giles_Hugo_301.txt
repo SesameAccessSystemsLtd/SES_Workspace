@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  27/08/2026  15:42
+============================================================
+With:         Giles Hugo 301
+Forwarded by: LesV@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Giles Hugo and Leslie Vaughn discussing the status of Adelaide wheel stop platforms, including recent modifications and outstanding visual plate work, with no immediate actions required.
+
+--- RECAP --------------------------------------------------
+Leslie Vaughn explained that all Adelaide lifts are in, and the unticked wheelsport platform for Adelaide was related to a previous issue with a post that Danny was to modify and bring back to site, pending approval from Adelaide.Danny has made the modified post, which is stored in container two, and will be taken to site once approval is received, possibly during training or the first service.A decision was made to create a spare post in the workshop using a bit of box section to allow for quick swapping if needed, as the existing spare in the container has a too-large cutout.All lifts have been commissioned; the visual issue with the plate on the Adelaide seven and eight wheel stops was identified but does not require immediate action since it is not critical or noticed by the client.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

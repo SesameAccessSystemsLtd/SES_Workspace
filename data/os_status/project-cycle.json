@@ -1,0 +1,5987 @@
+[
+  {
+    "project": "0000",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 2,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/2 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1001",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 2,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/2 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1019",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 1,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/1 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1026",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 9,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/9 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1093",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 1,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/1 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1100",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 1,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/1 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1135",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 1,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/1 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1141",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 2,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/2 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1153",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 1,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/1 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1158",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 1,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/1 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1163",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 3,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/3 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1180",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 1,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/1 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1186",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 1,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/1 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1191",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 1,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/1 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1207",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 2,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/2 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1208",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 12,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/12 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1216",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 25,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/25 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1218",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 1,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/1 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1276",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 3,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/3 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1277",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 28,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/28 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1278",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 1,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/1 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1287",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 1,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/1 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1294",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 17,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/17 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1297",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 2,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/2 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1318",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 13,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/13 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1320",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 17,
+    "packs_open": 1,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/17 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "1 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1331",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 15,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/15 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1334",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 2,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/2 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1335",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 72,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/72 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1345",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 17,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/17 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1348",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 15,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/15 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1351",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 11,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/11 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1354",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 15,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/15 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1355",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 10,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/10 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1356",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 22,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/22 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1359",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 9,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/9 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1368",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 17,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/17 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1369",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 13,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/13 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1370",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 12,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/12 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1374",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 21,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/21 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1375",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 8,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/8 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1376",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 19,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/19 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1382",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 19,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/19 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1383",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 18,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/18 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1384",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 18,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/18 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1385",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 16,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/16 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1389",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 14,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/14 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1390",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 13,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/13 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1391",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 11,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/11 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1392",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 13,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/13 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1395",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 17,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/17 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1396",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 11,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/11 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1398",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 24,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/24 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1399",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 23,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/23 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1403",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 17,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/17 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1406",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 5,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/5 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1418",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 26,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/26 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1419",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 15,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/15 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1424",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 22,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/22 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1427",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 17,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/17 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1432",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 10,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/10 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1436",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 25,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/25 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1437",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 20,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/20 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1438",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 17,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/17 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1442",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 14,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/14 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1444",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 25,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/25 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1445",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 24,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/24 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1446",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 24,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/24 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1450",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 15,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/15 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1451",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 18,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/18 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1454",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 23,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/23 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1455",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 25,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/25 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1456",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 1,
+    "packs_open": 1,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/1 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "1 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1458",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 12,
+    "packs_open": 4,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/12 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "4 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1459",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 8,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/8 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1460",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 28,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/28 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1462",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 15,
+    "packs_open": 1,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/15 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "1 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1470",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 17,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/17 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1472",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 10,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/10 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1474",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 6,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/6 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1475",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 33,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/33 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1476",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 21,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/21 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1479",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 12,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/12 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1480",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 13,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/13 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1481",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 17,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/17 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1484",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 25,
+    "packs_open": 1,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/25 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "1 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1486",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 13,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/13 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1487",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 13,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/13 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1489",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 16,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/16 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1493",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 20,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/20 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1494",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 9,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/9 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1495",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 14,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/14 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1496",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 18,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/18 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1497",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 17,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/17 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1499",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 25,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/25 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1504",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 20,
+    "packs_open": 1,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/20 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "1 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1510",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 13,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/13 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1511",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 9,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/9 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1513",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 8,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/8 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1514",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 18,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/18 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1515",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 1,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/1 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1517",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 25,
+    "packs_open": 10,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/25 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "10 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1528",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 17,
+    "packs_open": 5,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/17 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "5 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1533",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 12,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/12 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1535",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 20,
+    "packs_open": 10,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/20 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "10 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1549",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 14,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/14 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1560",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 13,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/13 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1561",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 28,
+    "packs_open": 1,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/28 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "1 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1562",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 19,
+    "packs_open": 1,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/19 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "1 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1565",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 1,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/1 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1566",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 32,
+    "packs_open": 16,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/32 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "16 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1568",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 20,
+    "packs_open": 10,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/20 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "10 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "1583",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 2,
+    "packs_open": 2,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "open",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/2 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "2 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 0
+  },
+  {
+    "project": "0006",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 11,
+    "packs_open": 11,
+    "packs_steel": 1,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "1/11 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "11 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 1
+  },
+  {
+    "project": "1054",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 8,
+    "packs_open": 1,
+    "packs_steel": 1,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "1/8 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "1 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 1
+  },
+  {
+    "project": "1144",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 2,
+    "packs_open": 0,
+    "packs_steel": 1,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "1/2 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 1
+  },
+  {
+    "project": "1148",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 1,
+    "packs_open": 0,
+    "packs_steel": 1,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "1/1 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 1
+  },
+  {
+    "project": "1182",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 4,
+    "packs_open": 0,
+    "packs_steel": 2,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "2/4 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 1
+  },
+  {
+    "project": "1321",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 19,
+    "packs_open": 0,
+    "packs_steel": 1,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "1/19 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 1
+  },
+  {
+    "project": "1322",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 17,
+    "packs_open": 0,
+    "packs_steel": 1,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "1/17 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 1
+  },
+  {
+    "project": "1364",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 23,
+    "packs_open": 3,
+    "packs_steel": 7,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "7/23 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "3 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 1
+  },
+  {
+    "project": "1409",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 20,
+    "packs_open": 0,
+    "packs_steel": 1,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "1/20 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 1
+  },
+  {
+    "project": "1425",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 22,
+    "packs_open": 0,
+    "packs_steel": 4,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "4/22 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 1
+  },
+  {
+    "project": "1435",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 34,
+    "packs_open": 0,
+    "packs_steel": 1,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "1/34 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 1
+  },
+  {
+    "project": "1467",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 18,
+    "packs_open": 0,
+    "packs_steel": 1,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "1/18 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 1
+  },
+  {
+    "project": "1469",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 15,
+    "packs_open": 0,
+    "packs_steel": 15,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "15/15 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 1
+  },
+  {
+    "project": "1485",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 13,
+    "packs_open": 1,
+    "packs_steel": 1,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "1/13 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "1 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 1
+  },
+  {
+    "project": "1501",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 18,
+    "packs_open": 9,
+    "packs_steel": 1,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "1/18 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "9 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 1
+  },
+  {
+    "project": "1519",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 13,
+    "packs_open": 0,
+    "packs_steel": 1,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "1/13 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 1
+  },
+  {
+    "project": "1553",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 16,
+    "packs_open": 0,
+    "packs_steel": 2,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "2/16 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 1
+  },
+  {
+    "project": "1557",
+    "parts": 0,
+    "parts_live": 0,
+    "parts_done": 0,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 0,
+    "packs": 16,
+    "packs_open": 0,
+    "packs_steel": 1,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "open",
+      "S2": "open",
+      "S3": "open",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "0 parts in ops.db",
+      "S2": "0/0 parts routed",
+      "S3": "0 order tasks",
+      "S4": "1/16 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S1",
+      "action": "No BOM imported for this project \u2014 chase Karol / check the Handover task"
+    },
+    "reached": 1
+  },
+  {
+    "project": "1004",
+    "parts": 1,
+    "parts_live": 1,
+    "parts_done": 0,
+    "parts_no_pack": 1,
+    "parts_no_order": 0,
+    "parts_routed": 1,
+    "packs": 0,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 1,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "open",
+      "S5": "open",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "1 parts in ops.db",
+      "S2": "1/1 parts routed",
+      "S3": "1 order tasks",
+      "S4": "0/0 packs carry steel profile",
+      "S5": "1 live parts without a pack (1 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S4",
+      "action": "Steel Profile BOM not imported \u2014 run the steel follow-up"
+    },
+    "reached": 4
+  },
+  {
+    "project": "1008",
+    "parts": 5,
+    "parts_live": 2,
+    "parts_done": 3,
+    "parts_no_pack": 1,
+    "parts_no_order": 0,
+    "parts_routed": 5,
+    "packs": 0,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 4,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "open",
+      "S5": "open",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "5 parts in ops.db",
+      "S2": "5/5 parts routed",
+      "S3": "4 order tasks",
+      "S4": "0/0 packs carry steel profile",
+      "S5": "1 live parts without a pack (2 live, 3 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S4",
+      "action": "Steel Profile BOM not imported \u2014 run the steel follow-up"
+    },
+    "reached": 4
+  },
+  {
+    "project": "1373",
+    "parts": 43,
+    "parts_live": 43,
+    "parts_done": 0,
+    "parts_no_pack": 43,
+    "parts_no_order": 0,
+    "parts_routed": 43,
+    "packs": 19,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 5,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "open",
+      "S5": "open",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "43 parts in ops.db",
+      "S2": "43/43 parts routed",
+      "S3": "5 order tasks",
+      "S4": "0/19 packs carry steel profile",
+      "S5": "43 live parts without a pack (43 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S4",
+      "action": "Steel Profile BOM not imported \u2014 run the steel follow-up"
+    },
+    "reached": 4
+  },
+  {
+    "project": "1379",
+    "parts": 1,
+    "parts_live": 1,
+    "parts_done": 0,
+    "parts_no_pack": 1,
+    "parts_no_order": 0,
+    "parts_routed": 1,
+    "packs": 16,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 1,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "open",
+      "S5": "open",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "1 parts in ops.db",
+      "S2": "1/1 parts routed",
+      "S3": "1 order tasks",
+      "S4": "0/16 packs carry steel profile",
+      "S5": "1 live parts without a pack (1 live, 0 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S4",
+      "action": "Steel Profile BOM not imported \u2014 run the steel follow-up"
+    },
+    "reached": 4
+  },
+  {
+    "project": "1588",
+    "parts": 538,
+    "parts_live": 326,
+    "parts_done": 212,
+    "parts_no_pack": 282,
+    "parts_no_order": 322,
+    "parts_routed": 538,
+    "packs": 30,
+    "packs_open": 13,
+    "packs_steel": 14,
+    "orders": 35,
+    "orders_confirmed": 7,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "done",
+      "S5": "open",
+      "S6": "open",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "538 parts in ops.db",
+      "S2": "538/538 parts routed",
+      "S3": "35 order tasks",
+      "S4": "14/30 packs carry steel profile",
+      "S5": "282 live parts without a pack (326 live, 212 done)",
+      "S6": "322 live parts without an order",
+      "S7": "13 packs still open"
+    },
+    "next": {
+      "stage": "S5",
+      "action": "282 parts unmapped \u2014 run the drawing pipeline (pack assembly ingress)"
+    },
+    "reached": 4
+  },
+  {
+    "project": "6000",
+    "parts": 1,
+    "parts_live": 0,
+    "parts_done": 1,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 1,
+    "packs": 0,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "open",
+      "S4": "open",
+      "S5": "done",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "1 parts in ops.db",
+      "S2": "1/1 parts routed",
+      "S3": "0 order tasks",
+      "S4": "0/0 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 1 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S3",
+      "action": "Stage 4 not committed to Asana \u2014 approve the commit"
+    },
+    "reached": 4
+  },
+  {
+    "project": "1000",
+    "parts": 3,
+    "parts_live": 0,
+    "parts_done": 3,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 3,
+    "packs": 0,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 3,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "open",
+      "S5": "done",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "3 parts in ops.db",
+      "S2": "3/3 parts routed",
+      "S3": "3 order tasks",
+      "S4": "0/0 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 3 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S4",
+      "action": "Steel Profile BOM not imported \u2014 run the steel follow-up"
+    },
+    "reached": 5
+  },
+  {
+    "project": "1003",
+    "parts": 2,
+    "parts_live": 0,
+    "parts_done": 2,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 2,
+    "packs": 0,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 2,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "open",
+      "S5": "done",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "2 parts in ops.db",
+      "S2": "2/2 parts routed",
+      "S3": "2 order tasks",
+      "S4": "0/0 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 2 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S4",
+      "action": "Steel Profile BOM not imported \u2014 run the steel follow-up"
+    },
+    "reached": 5
+  },
+  {
+    "project": "1010",
+    "parts": 3,
+    "parts_live": 0,
+    "parts_done": 3,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 3,
+    "packs": 2,
+    "packs_open": 1,
+    "packs_steel": 0,
+    "orders": 2,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "open",
+      "S5": "done",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "3 parts in ops.db",
+      "S2": "3/3 parts routed",
+      "S3": "2 order tasks",
+      "S4": "0/2 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 3 done)",
+      "S6": "0 live parts without an order",
+      "S7": "1 packs still open"
+    },
+    "next": {
+      "stage": "S4",
+      "action": "Steel Profile BOM not imported \u2014 run the steel follow-up"
+    },
+    "reached": 5
+  },
+  {
+    "project": "1014",
+    "parts": 1,
+    "parts_live": 0,
+    "parts_done": 1,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 1,
+    "packs": 0,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 1,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "open",
+      "S5": "done",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "1 parts in ops.db",
+      "S2": "1/1 parts routed",
+      "S3": "1 order tasks",
+      "S4": "0/0 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 1 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S4",
+      "action": "Steel Profile BOM not imported \u2014 run the steel follow-up"
+    },
+    "reached": 5
+  },
+  {
+    "project": "1016",
+    "parts": 1,
+    "parts_live": 0,
+    "parts_done": 1,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 1,
+    "packs": 0,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 1,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "open",
+      "S5": "done",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "1 parts in ops.db",
+      "S2": "1/1 parts routed",
+      "S3": "1 order tasks",
+      "S4": "0/0 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 1 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S4",
+      "action": "Steel Profile BOM not imported \u2014 run the steel follow-up"
+    },
+    "reached": 5
+  },
+  {
+    "project": "1037",
+    "parts": 113,
+    "parts_live": 11,
+    "parts_done": 102,
+    "parts_no_pack": 2,
+    "parts_no_order": 0,
+    "parts_routed": 113,
+    "packs": 30,
+    "packs_open": 16,
+    "packs_steel": 15,
+    "orders": 24,
+    "orders_confirmed": 4,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "done",
+      "S5": "open",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "113 parts in ops.db",
+      "S2": "113/113 parts routed",
+      "S3": "24 order tasks",
+      "S4": "15/30 packs carry steel profile",
+      "S5": "2 live parts without a pack (11 live, 102 done)",
+      "S6": "0 live parts without an order",
+      "S7": "16 packs still open"
+    },
+    "next": {
+      "stage": "S5",
+      "action": "2 parts unmapped \u2014 run the drawing pipeline (pack assembly ingress)"
+    },
+    "reached": 5
+  },
+  {
+    "project": "1291",
+    "parts": 1,
+    "parts_live": 0,
+    "parts_done": 1,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 1,
+    "packs": 0,
+    "packs_open": 0,
+    "packs_steel": 0,
+    "orders": 1,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "open",
+      "S5": "done",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "1 parts in ops.db",
+      "S2": "1/1 parts routed",
+      "S3": "1 order tasks",
+      "S4": "0/0 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 1 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": {
+      "stage": "S4",
+      "action": "Steel Profile BOM not imported \u2014 run the steel follow-up"
+    },
+    "reached": 5
+  },
+  {
+    "project": "1366",
+    "parts": 8,
+    "parts_live": 0,
+    "parts_done": 8,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 8,
+    "packs": 46,
+    "packs_open": 23,
+    "packs_steel": 0,
+    "orders": 2,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "open",
+      "S5": "done",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "8 parts in ops.db",
+      "S2": "8/8 parts routed",
+      "S3": "2 order tasks",
+      "S4": "0/46 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 8 done)",
+      "S6": "0 live parts without an order",
+      "S7": "23 packs still open"
+    },
+    "next": {
+      "stage": "S4",
+      "action": "Steel Profile BOM not imported \u2014 run the steel follow-up"
+    },
+    "reached": 5
+  },
+  {
+    "project": "1536",
+    "parts": 31,
+    "parts_live": 29,
+    "parts_done": 2,
+    "parts_no_pack": 29,
+    "parts_no_order": 0,
+    "parts_routed": 31,
+    "packs": 27,
+    "packs_open": 14,
+    "packs_steel": 1,
+    "orders": 7,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "done",
+      "S5": "open",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "31 parts in ops.db",
+      "S2": "31/31 parts routed",
+      "S3": "7 order tasks",
+      "S4": "1/27 packs carry steel profile",
+      "S5": "29 live parts without a pack (29 live, 2 done)",
+      "S6": "0 live parts without an order",
+      "S7": "14 packs still open"
+    },
+    "next": {
+      "stage": "S5",
+      "action": "29 parts unmapped \u2014 run the drawing pipeline (pack assembly ingress)"
+    },
+    "reached": 5
+  },
+  {
+    "project": "1569",
+    "parts": 45,
+    "parts_live": 41,
+    "parts_done": 4,
+    "parts_no_pack": 41,
+    "parts_no_order": 0,
+    "parts_routed": 45,
+    "packs": 22,
+    "packs_open": 12,
+    "packs_steel": 3,
+    "orders": 10,
+    "orders_confirmed": 1,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "done",
+      "S5": "open",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "45 parts in ops.db",
+      "S2": "45/45 parts routed",
+      "S3": "10 order tasks",
+      "S4": "3/22 packs carry steel profile",
+      "S5": "41 live parts without a pack (41 live, 4 done)",
+      "S6": "0 live parts without an order",
+      "S7": "12 packs still open"
+    },
+    "next": {
+      "stage": "S5",
+      "action": "41 parts unmapped \u2014 run the drawing pipeline (pack assembly ingress)"
+    },
+    "reached": 5
+  },
+  {
+    "project": "1572",
+    "parts": 4,
+    "parts_live": 0,
+    "parts_done": 4,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 4,
+    "packs": 31,
+    "packs_open": 15,
+    "packs_steel": 0,
+    "orders": 2,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "open",
+      "S5": "done",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "4 parts in ops.db",
+      "S2": "4/4 parts routed",
+      "S3": "2 order tasks",
+      "S4": "0/31 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 4 done)",
+      "S6": "0 live parts without an order",
+      "S7": "15 packs still open"
+    },
+    "next": {
+      "stage": "S4",
+      "action": "Steel Profile BOM not imported \u2014 run the steel follow-up"
+    },
+    "reached": 5
+  },
+  {
+    "project": "1575",
+    "parts": 449,
+    "parts_live": 13,
+    "parts_done": 436,
+    "parts_no_pack": 12,
+    "parts_no_order": 0,
+    "parts_routed": 449,
+    "packs": 32,
+    "packs_open": 15,
+    "packs_steel": 5,
+    "orders": 56,
+    "orders_confirmed": 4,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "done",
+      "S5": "open",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "449 parts in ops.db",
+      "S2": "449/449 parts routed",
+      "S3": "56 order tasks",
+      "S4": "5/32 packs carry steel profile",
+      "S5": "12 live parts without a pack (13 live, 436 done)",
+      "S6": "0 live parts without an order",
+      "S7": "15 packs still open"
+    },
+    "next": {
+      "stage": "S5",
+      "action": "12 parts unmapped \u2014 run the drawing pipeline (pack assembly ingress)"
+    },
+    "reached": 5
+  },
+  {
+    "project": "1578",
+    "parts": 1,
+    "parts_live": 0,
+    "parts_done": 1,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 1,
+    "packs": 5,
+    "packs_open": 4,
+    "packs_steel": 0,
+    "orders": 1,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "open",
+      "S5": "done",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "1 parts in ops.db",
+      "S2": "1/1 parts routed",
+      "S3": "1 order tasks",
+      "S4": "0/5 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 1 done)",
+      "S6": "0 live parts without an order",
+      "S7": "4 packs still open"
+    },
+    "next": {
+      "stage": "S4",
+      "action": "Steel Profile BOM not imported \u2014 run the steel follow-up"
+    },
+    "reached": 5
+  },
+  {
+    "project": "1580",
+    "parts": 181,
+    "parts_live": 125,
+    "parts_done": 56,
+    "parts_no_pack": 125,
+    "parts_no_order": 0,
+    "parts_routed": 181,
+    "packs": 20,
+    "packs_open": 19,
+    "packs_steel": 10,
+    "orders": 30,
+    "orders_confirmed": 1,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "done",
+      "S5": "open",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "181 parts in ops.db",
+      "S2": "181/181 parts routed",
+      "S3": "30 order tasks",
+      "S4": "10/20 packs carry steel profile",
+      "S5": "125 live parts without a pack (125 live, 56 done)",
+      "S6": "0 live parts without an order",
+      "S7": "19 packs still open"
+    },
+    "next": {
+      "stage": "S5",
+      "action": "125 parts unmapped \u2014 run the drawing pipeline (pack assembly ingress)"
+    },
+    "reached": 5
+  },
+  {
+    "project": "1582",
+    "parts": 197,
+    "parts_live": 6,
+    "parts_done": 191,
+    "parts_no_pack": 2,
+    "parts_no_order": 0,
+    "parts_routed": 197,
+    "packs": 22,
+    "packs_open": 8,
+    "packs_steel": 5,
+    "orders": 34,
+    "orders_confirmed": 2,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "done",
+      "S5": "open",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "197 parts in ops.db",
+      "S2": "197/197 parts routed",
+      "S3": "34 order tasks",
+      "S4": "5/22 packs carry steel profile",
+      "S5": "2 live parts without a pack (6 live, 191 done)",
+      "S6": "0 live parts without an order",
+      "S7": "8 packs still open"
+    },
+    "next": {
+      "stage": "S5",
+      "action": "2 parts unmapped \u2014 run the drawing pipeline (pack assembly ingress)"
+    },
+    "reached": 5
+  },
+  {
+    "project": "1591",
+    "parts": 45,
+    "parts_live": 3,
+    "parts_done": 42,
+    "parts_no_pack": 1,
+    "parts_no_order": 0,
+    "parts_routed": 45,
+    "packs": 20,
+    "packs_open": 5,
+    "packs_steel": 9,
+    "orders": 16,
+    "orders_confirmed": 1,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "done",
+      "S5": "open",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "45 parts in ops.db",
+      "S2": "45/45 parts routed",
+      "S3": "16 order tasks",
+      "S4": "9/20 packs carry steel profile",
+      "S5": "1 live parts without a pack (3 live, 42 done)",
+      "S6": "0 live parts without an order",
+      "S7": "5 packs still open"
+    },
+    "next": {
+      "stage": "S5",
+      "action": "1 parts unmapped \u2014 run the drawing pipeline (pack assembly ingress)"
+    },
+    "reached": 5
+  },
+  {
+    "project": "1597",
+    "parts": 199,
+    "parts_live": 159,
+    "parts_done": 40,
+    "parts_no_pack": 21,
+    "parts_no_order": 0,
+    "parts_routed": 199,
+    "packs": 21,
+    "packs_open": 11,
+    "packs_steel": 11,
+    "orders": 34,
+    "orders_confirmed": 6,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "done",
+      "S5": "open",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "199 parts in ops.db",
+      "S2": "199/199 parts routed",
+      "S3": "34 order tasks",
+      "S4": "11/21 packs carry steel profile",
+      "S5": "21 live parts without a pack (159 live, 40 done)",
+      "S6": "0 live parts without an order",
+      "S7": "11 packs still open"
+    },
+    "next": {
+      "stage": "S5",
+      "action": "21 parts unmapped \u2014 run the drawing pipeline (pack assembly ingress)"
+    },
+    "reached": 5
+  },
+  {
+    "project": "7100",
+    "parts": 1,
+    "parts_live": 0,
+    "parts_done": 1,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 1,
+    "packs": 18,
+    "packs_open": 7,
+    "packs_steel": 3,
+    "orders": 0,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "open",
+      "S4": "done",
+      "S5": "done",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "1 parts in ops.db",
+      "S2": "1/1 parts routed",
+      "S3": "0 order tasks",
+      "S4": "3/18 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 1 done)",
+      "S6": "0 live parts without an order",
+      "S7": "7 packs still open"
+    },
+    "next": {
+      "stage": "S3",
+      "action": "Stage 4 not committed to Asana \u2014 approve the commit"
+    },
+    "reached": 5
+  },
+  {
+    "project": "1555",
+    "parts": 38,
+    "parts_live": 0,
+    "parts_done": 38,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 38,
+    "packs": 46,
+    "packs_open": 20,
+    "packs_steel": 14,
+    "orders": 10,
+    "orders_confirmed": 4,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "done",
+      "S5": "done",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "38 parts in ops.db",
+      "S2": "38/38 parts routed",
+      "S3": "10 order tasks",
+      "S4": "14/46 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 38 done)",
+      "S6": "0 live parts without an order",
+      "S7": "20 packs still open"
+    },
+    "next": {
+      "stage": "S7",
+      "action": "Cycle closed \u2014 push the full report to Asana"
+    },
+    "reached": 6
+  },
+  {
+    "project": "1594",
+    "parts": 103,
+    "parts_live": 3,
+    "parts_done": 100,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 103,
+    "packs": 2,
+    "packs_open": 1,
+    "packs_steel": 1,
+    "orders": 20,
+    "orders_confirmed": 5,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "done",
+      "S5": "done",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "103 parts in ops.db",
+      "S2": "103/103 parts routed",
+      "S3": "20 order tasks",
+      "S4": "1/2 packs carry steel profile",
+      "S5": "0 live parts without a pack (3 live, 100 done)",
+      "S6": "0 live parts without an order",
+      "S7": "1 packs still open"
+    },
+    "next": {
+      "stage": "S7",
+      "action": "Cycle closed \u2014 push the full report to Asana"
+    },
+    "reached": 6
+  },
+  {
+    "project": "1595",
+    "parts": 234,
+    "parts_live": 21,
+    "parts_done": 213,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 234,
+    "packs": 34,
+    "packs_open": 16,
+    "packs_steel": 17,
+    "orders": 31,
+    "orders_confirmed": 2,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "done",
+      "S5": "done",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "234 parts in ops.db",
+      "S2": "234/234 parts routed",
+      "S3": "31 order tasks",
+      "S4": "17/34 packs carry steel profile",
+      "S5": "0 live parts without a pack (21 live, 213 done)",
+      "S6": "0 live parts without an order",
+      "S7": "16 packs still open"
+    },
+    "next": {
+      "stage": "S7",
+      "action": "Cycle closed \u2014 push the full report to Asana"
+    },
+    "reached": 6
+  },
+  {
+    "project": "1670",
+    "parts": 196,
+    "parts_live": 0,
+    "parts_done": 196,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 196,
+    "packs": 24,
+    "packs_open": 9,
+    "packs_steel": 5,
+    "orders": 33,
+    "orders_confirmed": 6,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "done",
+      "S5": "done",
+      "S6": "done",
+      "S7": "open"
+    },
+    "evidence": {
+      "S1": "196 parts in ops.db",
+      "S2": "196/196 parts routed",
+      "S3": "33 order tasks",
+      "S4": "5/24 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 196 done)",
+      "S6": "0 live parts without an order",
+      "S7": "9 packs still open"
+    },
+    "next": {
+      "stage": "S7",
+      "action": "Cycle closed \u2014 push the full report to Asana"
+    },
+    "reached": 6
+  },
+  {
+    "project": "1005",
+    "parts": 9,
+    "parts_live": 0,
+    "parts_done": 9,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 9,
+    "packs": 2,
+    "packs_open": 0,
+    "packs_steel": 1,
+    "orders": 3,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "done",
+      "S5": "done",
+      "S6": "done",
+      "S7": "done"
+    },
+    "evidence": {
+      "S1": "9 parts in ops.db",
+      "S2": "9/9 parts routed",
+      "S3": "3 order tasks",
+      "S4": "1/2 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 9 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": null,
+    "reached": 7
+  },
+  {
+    "project": "1365",
+    "parts": 7,
+    "parts_live": 0,
+    "parts_done": 7,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 7,
+    "packs": 2,
+    "packs_open": 0,
+    "packs_steel": 1,
+    "orders": 4,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "done",
+      "S5": "done",
+      "S6": "done",
+      "S7": "done"
+    },
+    "evidence": {
+      "S1": "7 parts in ops.db",
+      "S2": "7/7 parts routed",
+      "S3": "4 order tasks",
+      "S4": "1/2 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 7 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": null,
+    "reached": 7
+  },
+  {
+    "project": "7003",
+    "parts": 4,
+    "parts_live": 0,
+    "parts_done": 4,
+    "parts_no_pack": 0,
+    "parts_no_order": 0,
+    "parts_routed": 4,
+    "packs": 7,
+    "packs_open": 0,
+    "packs_steel": 1,
+    "orders": 3,
+    "orders_confirmed": 0,
+    "stages": {
+      "S1": "done",
+      "S2": "done",
+      "S3": "done",
+      "S4": "done",
+      "S5": "done",
+      "S6": "done",
+      "S7": "done"
+    },
+    "evidence": {
+      "S1": "4 parts in ops.db",
+      "S2": "4/4 parts routed",
+      "S3": "3 order tasks",
+      "S4": "1/7 packs carry steel profile",
+      "S5": "0 live parts without a pack (0 live, 4 done)",
+      "S6": "0 live parts without an order",
+      "S7": "0 packs still open"
+    },
+    "next": null,
+    "reached": 7
+  }
+]

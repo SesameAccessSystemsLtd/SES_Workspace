@@ -1,0 +1,14 @@
+{
+  "request_id": "fe238265-ee5b-4a74-be76-3e5c18c40371",
+  "source": "email_approval_sheet",
+  "row_index": 8,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy9uAAA=",
+  "subject": "Your RS order confirmation - 21595-30926",
+  "task_gid": "1218082551260260",
+  "task_name": "21595-30926 - RS components - Counterbore",
+  "asana_url": "https://app.asana.com/0/0/1218082551260260",
+  "action": "(Matched via PO Number in Local DB); [SQR-ledger] no SQR match for RSOnline.uk@RS-Components.com",
+  "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> order_confirmation: Your RS order confirmation - 21595-30926\n- Acknowledged order_confirmation — no field change proposed (type=order_confirmation, PO=21595-30926, vendor=RS-Components)\n\nReference: 21595-30926 · Received: 2026-09-03T07:32:50Z\nMatch basis: (Matched via PO Number in Local DB); [SQR-ledger] no SQR match for RSOnline.uk@RS-Components.com\nTask GID: 1218082551260260 · AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy9uAAA=\nhttps://app.asana.com/0/0/1218082551260260\n\ngiles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-03T10:00:08.220454+00:00"
+}

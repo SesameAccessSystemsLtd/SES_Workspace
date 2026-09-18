@@ -1,0 +1,80 @@
+1588 - America 1
+2026-08-28     10 build packs     34 materials
+
+NEED+20% = requirement incl. cut allowance.  STOCK = system, in metres.  ACTUAL = write what you actually find.
+ORDER = shelf lengths to buy (yours - may exceed need to build stock).  SUG = shortfall in lengths, guide only.
+
+MATERIAL                                        NEED m  +20% m  STOCK m  MIN m  SUG   ACTUAL m  ORDER   
+============================================================================================================
+
+ALUMINIUM 6061                                     0.3     0.3
+------------------------------------------------------------------------------------------------------------
+^Channel 31.75x25.4x3.175 Aluminium 6061 *         0.2     0.2                        [        ] [      ]
+^Flat 6.35x6.35 Aluminium 6061 *                   0.1     0.1                        [        ] [      ]
+
+MILD STEEL                                        37.8    45.4
+------------------------------------------------------------------------------------------------------------
+Angle 40x40x3 Mild Steel                           3.8     4.6      6.0           2   [        ] [      ]
+Angle 50x50x5 Mild Steel                           1.3     1.6     36.0   18.0        [        ] [      ]
+Angle 60x30x6 Mild Steel *                         0.2     0.3                        [        ] [      ]
+Angle 75x75x8 Mild Steel *                         0.6     0.8                        [        ] [      ]
+Box 20x20x2 Mild Steel                            12.0    14.4      7.5   22.5    6   [        ] [      ]
+Box 30x30x3 Mild Steel                             1.0     1.2     22.5   22.5        [        ] [      ]
+Box 40x40x2.5 Mild Steel *                         1.4     1.6                        [        ] [      ]
+Box 40x40x3 Mild Steel                             4.9     5.8     30.0   22.5  min   [        ] [      ]
+Box 50x50x3 Mild Steel                             1.6     1.9      7.5               [        ] [      ]
+Box 80x40x2.5 Mild Steel *                         3.6     4.3                        [        ] [      ]
+Box 80x40x3 Mild Steel *                           0.8     1.0                        [        ] [      ]
+Channel 100x50 Mild Steel                          4.0     4.8     18.8   15.0  min   [        ] [      ]
+Flat 100x3 Mild Steel                              2.1     2.6      6.0   18.0  min   [        ] [      ]
+^Flat 30x5 Mild Steel *                            0.4     0.5                        [        ] [      ]
+
+STAINLESS STEEL                                   17.8    21.3
+------------------------------------------------------------------------------------------------------------
+Angle 20x20x3 Stainless Steel                      3.8     4.6      0.0           4   [        ] [      ]
+Angle 50x50x3 Stainless Steel                      1.0     1.2      3.0           2   [        ] [      ]
+Box 25x25x3 Stainless Steel *                      4.7     5.6                        [        ] [      ]
+Box BRUSHED 50x50x3 Stainless Steel *              1.7     2.0                        [        ] [      ]
+Flat 50x3 Stainless Steel                          0.4     0.4      3.0           1   [        ] [      ]
+Pipe - 21,3mm OD, 1.65mm wall or similiar 21       0.1     0.1                        [        ] [      ]
+Shallow slotted channel heavy gauge 21x41x2.       0.4     0.5     24.0    6.0        [        ] [      ]
+Square bar 25x25 Stainless Steel                   0.2     0.3      3.0           2   [        ] [      ]
+Tube (OD 10mm ID 8mm) 10x1 Stainless Steel *       0.2     0.3                        [        ] [      ]
+Tube (OD 33.4mm ID 20.7mm) 33.4x6.35 Stainle       0.6     0.8                        [        ] [      ]
+Tube (OD 50.8mm ID 44.8mm) 50.8x3 Stainless        0.8     1.0                        [        ] [      ]
+Tube (OD 63.5mm ID 57.5mm) 63.5x3 Stainless        0.1     0.1                        [        ] [      ]
+Tube (OD<15mm ID>8mm) 12.7x3 Stainless Steel       0.5     0.6                        [        ] [      ]
+Tube 12.7mm OD 1.5mm wall 12.7x1.5 Stainless       3.3     3.9                        [        ] [      ]
+
+STEEL BZP                                         11.7    14.1
+------------------------------------------------------------------------------------------------------------
+Studding 10 Steel BZP *                            2.4     2.9                        [        ] [      ]
+Studding 12 Steel BZP *                            1.1     1.3                        [        ] [      ]
+Studding 16 Steel BZP *                            7.9     9.4                        [        ] [      ]
+Studding 8 Steel BZP *                             0.4     0.4                        [        ] [      ]
+
+============================================================================================================
+13 ready    21 need attention (*)    0 possible duplicates (+)
+
+* NEEDS ATTENTION — these produce NO order line until fixed:
+    ^Channel 31.75x25.4x3.175 Aluminium 6061                   NEW - not in master
+    ^Flat 6.35x6.35 Aluminium 6061                             NEW - not in master
+    Angle 60x30x6 Mild Steel                                   NEW - not in master
+    Angle 75x75x8 Mild Steel                                   substitute? Angle 80x80x10 Mild Steel (oversize by 12mm)
+    Box 40x40x2.5 Mild Steel                                   substitute? Box 40x40x3 Mild Steel (oversize by 0.5mm)
+    Box 80x40x2.5 Mild Steel                                   NEW - not in master
+    Box 80x40x3 Mild Steel                                     NEW - not in master
+    ^Flat 30x5 Mild Steel                                      substitute? Flat 30x6 Mild Steel (oversize by 1mm)
+    Box 25x25x3 Stainless Steel                                substitute? Box 25x25x3 BRUSHED Stainless Steel (exact size)
+    Box BRUSHED 50x50x3 Stainless Steel                        substitute? Box 50x50x3 BRUSHED Stainless Steel (exact size)
+    Pipe - 21,3mm OD, 1.65mm wall or similiar 21.3x1.65 Stai   NEW - not in master
+    Tube (OD 10mm ID 8mm) 10x1 Stainless Steel                 substitute? Tube 12.7mm OD 1.5mm wall (>8mm ID with <15mm OD) Stainless Steel (OD +2.7mm, wall +0.5mm)
+    Tube (OD 33.4mm ID 20.7mm) 33.4x6.35 Stainless Steel       NEW - not in master
+    Tube (OD 50.8mm ID 44.8mm) 50.8x3 Stainless Steel          substitute? Tube 50.8mm OD 3mm wall BRUSHED Stainless Steel (exact OD, exact wall)
+    Tube (OD 63.5mm ID 57.5mm) 63.5x3 Stainless Steel          substitute? Tube 63.5mm OD 3mm wall Stainless Steel (exact OD, exact wall)
+    Tube (OD<15mm ID>8mm) 12.7x3 Stainless Steel               substitute? Tube 12.7mm OD 1.5mm wall (>8mm ID with <15mm OD) Stainless Steel (exact OD, THINNER wall (1.5 < 3.0) - check)
+    Tube 12.7mm OD 1.5mm wall 12.7x1.5 Stainless Steel         substitute? Tube 12.7mm OD 1.5mm wall (>8mm ID with <15mm OD) Stainless Steel (exact OD, exact wall)
+    Studding 10 Steel BZP                                      substitute? Studding M10 BZP (exact thread size)
+    Studding 12 Steel BZP                                      substitute? Studding M12 BZP (exact thread size)
+    Studding 16 Steel BZP                                      substitute? 20 off Studding M16 BZP (exact thread size)
+    Studding 8 Steel BZP                                       substitute? 20 off Studding M8 BZP (exact thread size)

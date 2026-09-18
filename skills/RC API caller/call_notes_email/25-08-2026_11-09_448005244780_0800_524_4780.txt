@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  25/08/2026  11:09
+============================================================
+With:         +448005244780 0800 524 4780
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a call from Giles Hugo to Nationwide's call center requesting a long wheelbase fan with a maximum height of 2 meters for a rental from September 1st to September 4th. The call was to confirm availability and specifications.
+
+--- RECAP --------------------------------------------------
+Giles Hugo requested a long wheelbase fan for rental from September 1st to September 4th, specifying a maximum height of 2 meters.The Nationwide call center representative confirmed the maximum height as 2 meters externally and checked the height of their long wheelbase fan, which was 2.55 meters, exceeding the specified limit, and therefore unavailable.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

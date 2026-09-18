@@ -2,6 +2,12 @@
 """
 build_os_status.py — SAS OS portal: Andy's worklist + pack readiness (live).
 
+ASANA LINK CONVENTION (Giles, 2026-09-11): every task link MUST use the
+canonical form  https://app.asana.com/1/357939803556123/task/<task_gid>  which
+carries the workspace/org segment. The legacy  https://app.asana.com/0/...  form
+does NOT resolve in the browser. Import ASANA_TASK_BASE (or asana_task_url())
+from THIS module and append the task GID — never re-derive the base elsewhere.
+
 Pulls LIVE data from Asana (Build Schedule + Order Numbers + per-pack subtasks)
 and joins against ops.db (parts_control) to render an HTML page showing ONLY:
 
@@ -25,12 +31,17 @@ Usage:
 import os
 import re
 import json
+import time
 import sqlite3
 import argparse
 import datetime
+import hashlib
 import requests
 from collections import Counter, defaultdict
 from pathlib import Path
+
+# CHG-0B/2C: shared centre-of-truth helpers.
+from centre_of_truth import AsanaUnavailable, reconcile_ready, render_pref, flag_span
 
 # ── Config ──────────────────────────────────────────────────────────────────
 WS = Path(r"C:/Users/GilesHugo/SES_Workspace")
@@ -39,8 +50,21 @@ REQUESTS_DIR = WS / "queues" / "REQUESTS"
 
 BUILD_SCHEDULE = "852956628490855"
 ORDER_NUMBERS = "854650811917168"
+# Asana deep-link template (Giles, 2026-09-11). The working URL carries the
+# workspace/org segment, e.g. https://app.asana.com/1/357939803556123/task/<gid>
+# The legacy https://app.asana.com/0/<project>/<gid> form does NOT resolve, so
+# every builder should import ASANA_TASK_BASE from here and append /<task_gid>.
+ASANA_ORG = "357939803556123"
+ASANA_TASK_BASE = f"https://app.asana.com/1/{ASANA_ORG}/task"
+# Kept for the few legacy call-sites that still build /0/<PROJECT>/<gid>
+# project-scoped URLs; prefer ASANA_TASK_BASE for anything new.
 ASANA_BASE = "https://app.asana.com/0"
 API_BASE = "https://app.asana.com/api/1.0"
+
+
+def asana_task_url(gid) -> str:
+    """The single canonical way to link a task. Import this, don't re-derive."""
+    return f"{ASANA_TASK_BASE}/{gid}" if gid else ""
 
 # Andy's uid (from probes) and the assignee filter
 TARGET_ASSIGNEE = "Andy"          # show only this assignee's incomplete work
@@ -99,10 +123,123 @@ def headers():
     return _HEADERS
 
 
+# ── One-epoch-per-tick disk response cache ────────────────────────────────
+# The cron wrapper runs the 5 generator scripts back-to-back in ONE refresh
+# tick, each as its own fresh Python subprocess that independently refetches
+# the SAME Asana URLs. That redundancy is why the job flirted with the 300s
+# cron kill. This cache is the single chokepoint (inside api_get) so every
+# Asana GET — across ALL 5 subprocesses of a tick — is made over the network
+# at most once per refresh cycle.
+#
+# Isolation guarantees (correctness trumps speed):
+#   * The wrapper stamps a per-tick epoch (OS_ASANA_EPOCH, e.g. YYYYMMDDHHMM)
+#     into every child env. api_get shares a disk entry ONLY when the child's
+#     epoch equals the epoch written onto disk, so two separate cron ticks at
+#     12:00 and 15:00 NEVER share data.
+#   * Even on an epoch match, an entry older than ~10 minutes is never served.
+#   * If anything in the cache path raises, we simply fall back to the network
+#     (correctness first).
+_ASANA_CACHE_DIR = Path(r"C:/Users/GilesHugo/SES_Workspace/run_history/asana_cache")
+_CACHE_TTL_SECONDS = 600         # never serve an entry older than 10 min
+_inproc_cache = {}               # {(epoch, key): body} memo to skip repeated disk reads
+
+
+def _cache_epoch():
+    return (os.environ.get("OS_ASANA_EPOCH") or "").strip()
+
+
+def _cache_key(path, params):
+    canon = []
+    for k in sorted((dict(params or {})).keys()):
+        canon.append(f"{k}={params[k]}")
+    raw = f"{path}|{'&'.join(canon)}"
+    return hashlib.md5(raw.encode("utf-8")).hexdigest()
+
+
+def _cache_path(key):
+    return _ASANA_CACHE_DIR / f"{key}.json"
+
+
+def _read_cache(key):
+    """Return cached body for key if it is safe (epoch matches + fresh), else None."""
+    epoch = _cache_epoch()
+    if not epoch:
+        return None
+    body = _inproc_cache.get((epoch, key))
+    if body is not None:
+        return body
+    p = _cache_path(key)
+    try:
+        if not p.exists():
+            return None
+        if time.time() - p.stat().st_mtime > _CACHE_TTL_SECONDS:
+            return None
+        with p.open("r", encoding="utf-8") as f:
+            rec = json.load(f)
+        if (rec.get("epoch") or "") != epoch:
+            return None
+        body = rec.get("body")
+        _inproc_cache[(epoch, key)] = body
+        return body
+    except Exception:
+        return None
+
+
+def _write_cache(key, path, params, body):
+    epoch = _cache_epoch()
+    try:
+        if not epoch:
+            return
+        _ASANA_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        rec = {
+            "path": path, "params": dict(params or {}),
+            "epoch": epoch, "body": body,
+        }
+        with _cache_path(key).open("w", encoding="utf-8") as f:
+            json.dump(rec, f)
+        _inproc_cache[(epoch, key)] = body
+        # keep the dir bounded: drop anything older than 30 min
+        try:
+            cutoff = time.time() - 1800
+            for fp in _ASANA_CACHE_DIR.glob("*.json"):
+                try:
+                    if fp.stat().st_mtime < cutoff:
+                        fp.unlink()
+                except Exception:
+                    pass
+        except Exception:
+            pass
+    except Exception:
+        pass
+
+
+# 2026-09-15: this call had NO timeout= while every other Asana caller in the
+# portal does (build_orders_by_pack uses timeout=20). api_get is the SHARED fetch
+# layer imported by build_bom_tracker + build_ops_oversight, and paginate() loops
+# on it — so ONE stalled socket blocked those builds indefinitely. Under cron they
+# blew the wrapper's per-child budget and the whole tick errored. A bounded
+# connect/read timeout turns an infinite hang into a normal AsanaUnavailable,
+# which every caller already degrades from (cache -> DB -> flag).
+_ASANA_TIMEOUT = (10, 30)  # (connect, read) seconds
+
+
 def api_get(path, params=None):
-    r = requests.get(f"{API_BASE}{path}", headers=headers(), params=params)
-    r.raise_for_status()
-    return r.json()
+    key = _cache_key(path, params)
+    cached = _read_cache(key)
+    if cached is not None:
+        return cached
+    try:
+        r = requests.get(f"{API_BASE}{path}", headers=headers(), params=params,
+                         timeout=_ASANA_TIMEOUT)
+        r.raise_for_status()
+        body = r.json()
+    except Exception as e:
+        # CHG-0B: an Asana outage degrades to cache+DB+flag, never a raw crash.
+        # The epoch disk cache / TTL / in-proc memo above are untouched — a warm
+        # cache hit still short-circuits before we ever reach the network here.
+        raise AsanaUnavailable(f"Asana GET {path} failed: {e}") from e
+    _write_cache(key, path, params, body)
+    return body
 
 
 def paginate(path, params=None):
@@ -194,17 +331,31 @@ def orders_by_job(orders):
 
 # ── ops.db joins ────────────────────────────────────────────────────────────
 def load_procurement_by_packmap():
-    """Return {packkey: {stock_action: count}} for ACTIVE parts, plus set of pack keys."""
+    """Return {packkey: {stock_action: count}} for ACTIVE parts, plus set of pack keys.
+
+    "Active" is determined by PROCUREMENT state (`stock_action`), NOT by the
+    Asana task section/completion (`is_completed`). A task can be ticked off the
+    board yet still "NEED TO ORDER" (wrongly dropped if we filter on is_completed),
+    or sit open yet already KITTED/IN STOCK (wrongly counted as in-flux).
+    The authoritative classifier for "no procurement action needed" is the
+    terminal stock_action set; everything else is genuinely in-work.
+    """
+    TERMINAL_ACTIONS = (
+        "KITTED", "IN STOCK", "ITEM ON PREMISES", "PICKING COMPLETE",
+        "OBSOLETE", "INHOUSE", "ITEM On  Premises",
+    )
     c = sqlite3.connect(OPS_DB)
     c.row_factory = sqlite3.Row
     rows = c.execute("""
-        SELECT sesame_pn, stock_action, vendor_name, is_completed
+        SELECT sesame_pn, stock_action, vendor_name
         FROM parts_control
     """).fetchall()
     c.close()
     rmap = defaultdict(Counter)
     for r in rows:
-        if r["is_completed"]:
+        sa = (r["stock_action"] or "").strip().upper()
+        # skip procurement-terminal states -> not active work
+        if any(sa.startswith(t) for t in TERMINAL_ACTIONS):
             continue
         pn = r["sesame_pn"] or ""
         # pack key = first two components e.g. 1588.1025
@@ -307,6 +458,82 @@ def parts_readiness(pack_job, pack_name, procurement, orders):
             "latest_arrival": latest_arrival}
 
 
+# ── CHG-2C: arrived / QC-issue signal (additive to the per-pack view) ────────
+def load_pack_arrival_qc(token_h=None):
+    """Read-only signals for the per-pack arrived/QC view (CHG-2C).
+
+    Returns (arrived_by_pack, qc_issues, qc_unreconciled):
+      arrived_by_pack : {pack_key: count} parts physically on premises (arrived),
+                        derived from parts_control.stock_action 'ITEM ...' states.
+      qc_issues       : [{"gid","name"}] OPEN QC issues. Live-reconciled — a
+                        'completed' issue is dropped (legacy), matching Pane-2.
+      qc_unreconciled : True when the live check was skipped/failed (DB-only).
+    """
+    c = sqlite3.connect(OPS_DB)
+    c.row_factory = sqlite3.Row
+    arrived_by_pack = Counter()
+    for r in c.execute("SELECT sesame_pn, stock_action FROM parts_control"):
+        sa = (r["stock_action"] or "").strip().upper()
+        if sa.startswith("ITEM"):  # 'ITEM On Premises' / 'ITEM ON PREMISES' …
+            pn = r["sesame_pn"] or ""
+            m = re.match(r"^(\d{4}\.\d{1,4})", pn)
+            if m:
+                arrived_by_pack[m.group(1).rstrip(".").lower()] += 1
+    qc_rows = [
+        {"gid": r["asana_task_gid"], "name": r["issue_name"] or ""}
+        for r in c.execute(
+            "SELECT asana_task_gid, issue_name FROM qc_issues "
+            "WHERE signed_off_status IS NULL OR signed_off_status = ''")
+    ]
+    c.close()
+
+    def _fetch(r):
+        if not r.get("gid"):
+            return None
+        try:
+            j = api_get(f"/tasks/{r['gid']}", {"opt_fields": "completed,name"})
+            t = j.get("data") if isinstance(j, dict) and "data" in j else (j or {})
+            return {"completed": bool(t.get("completed")), "name": t.get("name") or r["name"]}
+        except Exception:
+            return None
+
+    qc_issues = []
+    qc_unreconciled = False
+    for r, live in reconcile_ready(qc_rows, _fetch, key="gid", token_h=token_h, cap=200):
+        if live is not None and live.get("completed"):
+            continue  # legacy/completed QC issue — drop
+        if live is None:
+            qc_unreconciled = True
+        name = (live.get("name") if live else None) or r["name"]
+        qc_issues.append({"gid": r["gid"], "name": name})
+    return arrived_by_pack, qc_issues, qc_unreconciled
+
+
+def _arrival_qc_html(job, pack_key, arrived_by_pack, qc_issues, qc_unreconciled):
+    """CHG-2C: additive 'Arrived / QC' signal line for one pack (or '' if none)."""
+    parts = []
+    here = arrived_by_pack.get(pack_key, 0)
+    if here:
+        parts.append(f'<span class="pill ok">🟢 {here} part'
+                     f'{"s" if here != 1 else ""} on premises</span>')
+    issues = ([q for q in qc_issues
+               if job and re.search(rf"-{re.escape(job)}\b", q["name"])]
+              if job else [])
+    if issues:
+        links = " · ".join(
+            f'<a href="{ASANA_TASK_BASE}/{q["gid"]}" target="_blank">QC issue ↗</a>'
+            for q in issues[:4])
+        parts.append(f'<span class="pill over">⚠ {len(issues)} open QC issue'
+                     f'{"s" if len(issues) != 1 else ""} — delay risk</span> {links}')
+        if len(issues) > 4:
+            parts.append(f'<span class="muted">+{len(issues) - 4} more</span>')
+    if qc_unreconciled:
+        parts.append(flag_span(True))
+    if not parts:
+        return ""
+    return '<div style="margin-top:4px">' + " ".join(parts) + "</div>"
+
+
 # ── HTML ────────────────────────────────────────────────────────────────────
 CSS = """
 :root{--bg:#f4f6fa;--card:#fff;--ink:#1a1a2e;--muted:#6b7280;--line:#e5e7eb;
@@ -364,6 +591,7 @@ a:hover{text-decoration:underline}
 .pill.ok{background:color-mix(in srgb,var(--green) 15%,transparent);color:var(--green)}
 .pill.warn{background:color-mix(in srgb,var(--amber) 18%,transparent);color:var(--amber)}
 .muted{color:var(--muted);font-size:12.5px}
+.unrec{display:inline-block;margin-left:4px;padding:0 6px;border-radius:8px;background:color-mix(in srgb,var(--amber) 20%,transparent);color:var(--amber);font-size:10.5px}
 .fb{color:var(--muted);font-size:11px;text-align:right;margin-top:8px}
 .callout{border-left:5px solid var(--red);background:color-mix(in srgb,var(--red) 8%,transparent);padding:12px 16px;border-radius:0 10px 10px 0;margin-bottom:16px}
 .callout .t{font-weight:700;color:var(--red);margin-bottom:4px;font-size:14px}
@@ -399,7 +627,7 @@ def esc(s):
 def asana_task_link(gid, label):
     if not gid:
         return esc(label)
-    return f'<a href="{ASANA_BASE}/{BUILD_SCHEDULE}/{gid}">{esc(label)}</a>'
+    return f'<a href="{ASANA_TASK_BASE}/{gid}">{esc(label)}</a>'
 
 
 def render(project_section_html, orders_chipnote, today):
@@ -479,10 +707,13 @@ PROJECT_PAGES = {
 }
 
 
-def render_project_sections(projects, procurement, orders, orders_by_job):
+def render_project_sections(projects, procurement, orders, orders_by_job,
+                            arrived_by_pack=None, qc_issues=None, qc_unreconciled=False):
     """Cards per project (header = section/project name), rows carry the rich
     layout: vendor-orders dropdown, subtask dropdown, parts-arrive / advised-due,
     Accept button. Project title links to a project-specific page when one exists."""
+    arrived_by_pack = arrived_by_pack or {}
+    qc_issues = qc_issues or []
     today = datetime.date.today().isoformat()
     out = []
     for job in sorted(projects.keys()):
@@ -514,7 +745,7 @@ def render_project_sections(projects, procurement, orders, orders_by_job):
                     odue = o.get("due_on")
                     o_over = odue and odue < today
                     vrow = f"""<tr>
-                      <td style="min-width:180px"><a href="{ASANA_BASE}/{ORDER_NUMBERS}/{o['gid']}">{esc(o['po'] or '')}</a> · {esc(o['vendor'] or '—')}</td>
+                      <td style="min-width:180px"><a href="{ASANA_TASK_BASE}/{o['gid']}">{esc(o['po'] or '')}</a> · {esc(o['vendor'] or '—')}</td>
                       <td>{esc(o['name'])[:70]}</td>
                       <td>{esc(odue or 'no due')}{' <span class="vorder over">overdue</span>' if o_over else ''}</td>
                     </tr>"""
@@ -577,12 +808,14 @@ def render_project_sections(projects, procurement, orders, orders_by_job):
                 arrive_html = esc(pr["latest_arrival"]) if pr["latest_arrival"] else "—"
             proc_html = (f'<span class="muted">{pr["lasercut"]} lasercut · {pr["need_order"]} need-order · '
                          f'{pr["on_order"]} on-order · {pr["pick"]} pick</span>' if pr["key"] else "—")
+            # CHG-2C: additive arrived/QC signal (HERE + QC-issue delay flag).
+            arrival_qc_html = _arrival_qc_html(job, pr["key"], arrived_by_pack, qc_issues, qc_unreconciled)
             rows.append(f"""<tr>
               <td style="min-width:220px">{asana_task_link(t['gid'], t['name'])}<br>
                 <span class="muted">{esc(due) or 'no due'}{' · <span class="pill over">overdue</span>' if over else ''}</span>
                 {vend_html}</td>
               <td>{sub_html}</td>
-              <td>{arrive_html}<br>{proc_html}</td>
+              <td>{arrive_html}<br>{proc_html}{arrival_qc_html}</td>
               <td>{accept}</td></tr>""")
         out.append(f"""
         <div class="card" id="{job}">
@@ -612,7 +845,14 @@ def main():
                     os.environ[k] = line.split("=", 1)[1].strip()
 
     print("Fetching Build Schedule…")
-    tasks = fetch_build_schedule()
+    asana_down = False
+    try:
+        tasks = fetch_build_schedule()
+    except AsanaUnavailable as e:
+        # CHG-0B fallback: degrade to DB + visible flag rather than crash.
+        print(f"  Asana unavailable: {e} — rendering with empty build schedule + DB only")
+        tasks = []
+        asana_down = True
     projects = aggregate_andy(tasks)
     print(f"  {len(tasks)} raw tasks → {len(projects)} projects with Andy open work")
 
@@ -632,10 +872,19 @@ def main():
     if args.project:
         projects = {k: v for k, v in projects.items() if k == args.project}
 
-    sec_html = render_project_sections(projects, procurement, orders, orders_by_job(orders))
+    # CHG-2C: arrived/QC signals (live-reconciled, DB+flag fallback).
+    token_h = headers() if asana_token() else None
+    arrived_by_pack, qc_issues, qc_unreconciled = load_pack_arrival_qc(token_h)
+
+    sec_html = render_project_sections(projects, procurement, orders, orders_by_job(orders),
+                                       arrived_by_pack, qc_issues, qc_unreconciled)
 
     # chip note about orders
     orders_chipnote = f'<div class="note">📦 {len(orders)} open supplier orders tracked · delivery = Order Numbers due_on (expected, not confirmed).</div>'
+    if asana_down:
+        orders_chipnote += ('<div class="callout"><span class="t">⚠ Asana unreachable — '
+                            'showing DB snapshot where available.</span> '
+                            'Live checks failed; figures may be stale.</div>')
 
     html = render(sec_html, orders_chipnote, today)
     out_dir = Path(args.out)

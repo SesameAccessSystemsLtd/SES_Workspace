@@ -1,0 +1,29 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1580 - Admiralty House 1.Long Leading BOM,"Master task for all BOMs related to 1580 - Admiralty House 1.Long Leading BOM
+Dropbox: https://www.dropbox.com/scl/fo/lpevpmext2t5ew6xk4wdn/AFkF0G_q82VX_YURw36uSQs?rlkey=o96iukyjtqepxuicl5dl2fle9&dl=0
+Project: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1218503682400442?focus=true",,,,,,,,,,
+Long Leading BOM - 1580 - Admiralty House 1.Long Leading BOM,,ALL BOMS - 1580 - Admiralty House 1.Long Leading BOM,,Long Leading,,,,,,,
+JAJO - 1580 - Admiralty House 1.Long Leading BOM,,Long Leading BOM - 1580 - Admiralty House 1.Long Leading BOM,,JAJO,,,,,,,
+1 off 1580. 1008.D1.MachineRoomCabinet - Machine Room Cabinet JAJO,"1580.1008.D1.MachineRoomCabinet
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/lpevpmext2t5ew6xk4wdn/AFkF0G_q82VX_YURw36uSQs?rlkey=o96iukyjtqepxuicl5dl2fle9&dl=0
+Mass: 64.910 kg
+Volume: 32556680.185 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1218503682400442?focus=true",JAJO - 1580 - Admiralty House 1.Long Leading BOM,1,JAJO,,,,ORDER,PROJECT ORDER,1218495313993476,https://app.asana.com/0/848657415032331/1218495313993476
+Hydraulics Supplier - 1580 - Admiralty House 1.Long Leading BOM,,Long Leading BOM - 1580 - Admiralty House 1.Long Leading BOM,,Hydraulics Supplier,,,,,,,
+1 off 1580. 1008.D1.MotorPumpUnit - TBC by Karol - Spec as per PLC BOM Hydraulics Supplier,"1580.1008.D1.MotorPumpUnit
+Material: Generic
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/lpevpmext2t5ew6xk4wdn/AFkF0G_q82VX_YURw36uSQs?rlkey=o96iukyjtqepxuicl5dl2fle9&dl=0
+Mass: 14.000 kg
+Volume: 14000247.356 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1218503682400442?focus=true",Hydraulics Supplier - 1580 - Admiralty House 1.Long Leading BOM,1,Hydraulics Supplier,,,,ORDER,PROJECT ORDER,1218496176091943,https://app.asana.com/0/848657415032331/1218496176091943
+Related Fluid - 1580 - Admiralty House 1.Long Leading BOM,,Long Leading BOM - 1580 - Admiralty House 1.Long Leading BOM,,Related Fluid,,,,,,,
+1 off 1580. 1008.H6(RF SES447424) - Valve Block (2 function) RF SES447424 Related Fluid,"1580.1008.H6(RF SES447424)
+Stock Number: RF SES447424
+Material: Generic
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/lpevpmext2t5ew6xk4wdn/AFkF0G_q82VX_YURw36uSQs?rlkey=o96iukyjtqepxuicl5dl2fle9&dl=0
+Mass: 1.927 kg
+Volume: 1927464.015 mm^3
+Project Task: https://app.asana.com/1/357939803556123/project/1213862344086973/task/1218503682400442?focus=true",Related Fluid - 1580 - Admiralty House 1.Long Leading BOM,1,Related Fluid,,,,ORDER,PROJECT ORDER,1218495313065821,https://app.asana.com/0/848657415032331/1218495313065821

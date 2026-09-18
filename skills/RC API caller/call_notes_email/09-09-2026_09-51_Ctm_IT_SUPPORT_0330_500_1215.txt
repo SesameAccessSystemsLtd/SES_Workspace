@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  09/09/2026  09:51
+============================================================
+With:         Ctm IT SUPPORT 0330 500 1215
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo from Sesame Access discussing email delivery issues with Michael from ctm IT support. The investigation revealed delayed email delivery, particularly from Brad, with a potential ongoing Microsoft-related problem affecting email flow. Giles agreed to send a screenshot of a bounce-back message for further analysis.
+
+--- RECAP --------------------------------------------------
+Giles Hugo reported to Michael that inbound emails, especially from Brad, were delayed or not received, with some emails from Brad sent yesterday arriving late today, indicating approximately a 12-hour delay.Michael confirmed that emails are generally flowing but noted a delay in emails from Brad, possibly due to a hold or issue with specific email addresses, and mentioned an ongoing problem with searching in Outlook Web App (OWA) that might be affecting email delivery.Giles observed that recent emails from Allison and others are arriving without delay, but some emails from Brad sent yesterday are delayed, arriving hours later, suggesting a possible issue with Brad's emails or a specific routing problem.Giles received a bounce-back message from Allison indicating that an email to sesame.com was delayed due to recipient servers being unavailable or busy, and he agreed to send a screenshot of this message to support for further investigation.Michael indicated he would continue investigating on his side, considering the possibility of an ongoing Microsoft issue affecting email delivery, and requested Giles to send the screenshot for further analysis.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will forward a screenshot of the bounce-back email from Allison to Michael via email for further investigation.Michael from ctm IT support will continue to investigate the email delays, considering the ongoing Microsoft issues, and will contact Giles once he has more information.
+
+(Full transcript: RC web portal only — no RingSense API)

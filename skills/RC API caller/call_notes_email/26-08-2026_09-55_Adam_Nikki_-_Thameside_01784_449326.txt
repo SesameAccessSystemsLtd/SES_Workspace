@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  26/08/2026  09:55
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Adam/Nikki from Thameside discussing technical details with Giles Hugo regarding the alignment of holes in a gate drive shaft for a project, aiming to determine the proper configuration for assembly.
+
+--- RECAP --------------------------------------------------
+Adam/Nikki inquired whether the holes in the small shaft need to be aligned with those in the larger shaft, considering different assembly options.Giles Hugo expressed uncertainty about the specifics and indicated he would review the details further before providing guidance.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will review the technical details of the shaft assembly to determine if the holes need to be in line, and get back to Adam/Nikki.
+
+(Full transcript: RC web portal only — no RingSense API)

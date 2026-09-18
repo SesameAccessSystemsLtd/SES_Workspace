@@ -1,0 +1,14 @@
+{
+  "request_id": "58a9349b-cbc2-4068-9f6d-59de8065b050",
+  "source": "email_approval_sheet",
+  "row_index": 34,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAABnJ7JfAACfKjgQkWRhS42xGA6fMW2cAAkdCCRfAAA=",
+  "subject": "Ordered: ‘Castrol EDGE 0W-20 V...’",
+  "task_gid": "1209401888431263",
+  "task_name": "21575-260826 - Amazon - Need engine oil for ours toyota vans 0W-20",
+  "asana_url": "https://app.asana.com/0/0/1209401888431263",
+  "action": "(Matched via PO Number in Local DB); Update delivery date to 2026-08-27; Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043); Note added to description: Order_Confirmation from Amazon - £51.37 (2026-08-26)",
+  "comment_to_push": "https://app.asana.com/1/357939803556123/profile/369446862164512 Purchasing update\nEmail received: 2026-08-26T10:23:56Z\nEmail: Ordered: ‘Castrol EDGE 0W-20 V...’\nMatch basis: (Matched via PO Number in Local DB)\n- Update delivery date to 2026-08-27\n- Update ORDER Status custom field (field GID: 1143955334207040) to 'On Order - Delivery Date Confirmed' (option GID: 1143955334207043)\n- Note added to description: Order_Confirmation from Amazon - £51.37 (2026-08-26)",
+  "decision": "A",
+  "created_at": "2026-08-28T10:00:36.268996+00:00"
+}

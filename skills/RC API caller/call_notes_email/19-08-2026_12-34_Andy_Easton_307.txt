@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  19/08/2026  12:34
+============================================================
+With:         Andy Easton 307
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo and Andy Easton discussing the status of button stations and plates for Jenna's project, including details about plating, engraving, and measurements, with plans to ship components and verify plate sizes.
+
+--- RECAP --------------------------------------------------
+Andy Easton inquired if Giles Hugo had sent button stations for Jenna's project; Giles confirmed they were not sent yet and discussed the status of the button stations, including plating and engraving details.Giles Hugo mentioned that one button station needs to be gold-plated after infill, and they plan to ship them once the plating is complete, with Danny responsible for gold plating this week.They discussed the safe working load (SWL) plates, specifically a small plate intended for anodizing, and identified discrepancies in plate sizes, noting that the plates in the drawer are 105mm by 93mm, not 95mm by 93mm as required.Giles Hugo is investigating the correct plate size for Jenna's project, as one of the plates measured was not the expected 95mm height, and plans to confirm the dimensions with Andy Easton.Andy Easton offered to double-check the dimensions of Jenna's plates and provide feedback to Giles Hugo, aiming to ship the components by the next day.Giles Hugo assigned Andy Easton the task of verifying the plate dimensions and reporting back with findings, to ensure correct plates are used and components are shipped promptly.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will check the drawing to confirm whether the plate size needs to be 95mm in height for Jenna's project.Andy Easton will double-check the width and height of Jenna's plates and inform Giles Hugo of the correct dimensions, aiming to facilitate the shipment of components tomorrow.Andy Easton will review the plates in Jenna's drawer and confirm if the current plates meet the specifications.
+
+(Full transcript: RC web portal only — no RingSense API)

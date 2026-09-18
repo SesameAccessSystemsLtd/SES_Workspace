@@ -1,0 +1,96 @@
+# Daily Memory — 2026-08-17 (Monday)
+
+## Giles's spoken work log (voice capture, EOD)
+
+Full-on day covering purchasing, production, invoices, and recruitment. Captured verbatim items:
+
+### BOMs & Orders
+- **Agenda Bender meeting with Naxmi/Noxmi** to do today.
+- **Nice number of BOMs pulled into the system** — all the bombs (BOMs).
+- **GAP automation chasing + placing a new order** for GAP automation items covering outstanding BOMs and service tasks.
+
+### Invoices & Payments (Procurement)
+- **Sorting invoices to Fatima**.
+- **CPS payment for MOT**.
+- **Addressing the clutch purchase**.
+- **Payment made on the CB library**.
+- Decided to post and check what can be pulled/crawled for different employees.
+
+### Production & Drawings
+- Sorting the **corridor and planning items**.
+- A number of **updates for production and quotes for people**.
+- **Laser cut orders**.
+- **Revised drawings in production** — found there's no material for the **new Kamepi switch for the handheld post** (e.g. no BOM material for it).
+- Had **four production drawings to check, qualify, update, and distribute** into the workshop today.
+- **Machining items found this morning** — tasks issued to Andy for machining were **not correctly issued into production**, had to sort them out.
+- Machine shop **hydraulics chasing**.
+
+### Recruitment & Misc
+- **Recruitment** activity.
+- Production asked where to find things, how to find clever spins, where items are, why items not on the BOM.
+
+### Research requested (separate tasks below)
+- Research tasks changed on Asana today.
+- Research all recent BOMs pulled into Project Orders.
+- Reversing-lift edge case: vendors imported with **no items kitted for a reversing lift** — investigate why + how to resolve.
+
+*(This is the EOD voice capture; structured account of Asana changes + recent BOMs appended below from research.)*
+
+---
+
+## Research findings — Asana changes today (2026-08-17)
+
+Checked live Asana workspace search for open tasks modified today. Confirmed many of the voice-noted items:
+
+### Orders / Suppliers
+- **21244-170826 — Gapp Automation — URGENT FOR CITI GATE** (Order Numbers) — the GAP automation order/clutch chasing
+- **21190-1594 — Gapp Automation — 1594 St Mary Scissor Lift** (Order Numbers)
+- **21237-120826 — CV Library — 2 week access Sales recruitment** (Order Numbers) — the CV Library payment
+- **21234-110826 — Underwood — CEMBRE labels** (Order Numbers)
+- **21243-1578 — ANODISING — 1578 Traversing NEW** + a batch of anodising tasks (1578 Traversing Lift New, R&D Manufacturing) — machine-shop hydraulics/surface treatment
+- **Gapp Automation Ltd — Account** supplier task updated (Supplier List)
+
+### Production / Parts
+- **2 off 1364.1005.C.Actuator — Ram stroke 525mm** (QC issues) — hydraulics related
+- **2 off 1594.1000.N.Linear Actuator + conXion DIN Driver** (Parts Control / Picking) — St Mary lift
+- **CC-971-06 … conXion DIN STOCK**, **CON 35 Linear actuators** (Picking / stock) — stock control
+- **RFQ/ORDER — 5 off Concens CON35 linear actuator** (Service / hidden automation)
+
+### Sales / Recruitment / Meetings
+- **Agenda Bender Meeting 17.08.26** created (the meeting to-do)
+- **Renew SC 26/27**, **We Maintain Ltd quotation**, various quote/service RFQs
+- **CRM — Contacts**: Angel Cagasan (Ardmore), Aryaman Garg (Junior Designer, BIG) — recruitment CRM adds
+- **New College Oxford — Sesame Lift** (Sales, Steven Lyons)
+- SIS Development programme tasks (QUEUED HURDLE, QUEUED PILOT Charlie)
+
+---
+
+## Research findings — Recent BOMs pulled into Project Orders
+
+5 new **ALL BOMS roots created TODAY (17 Aug)** in Project Orders (`848657415032331`):
+| Project | Root | BOM lines today |
+|---|---|---|
+| 1591 | ALL BOMS - 1591 - Uni Cambridge 5. Safety Matt replacement | 4 |
+| 1365 | ALL BOMS - 1365 - Serjeants Inn Entire BOM | 10 |
+| 1575 | ALL BOMS - 1575 - Jenners Finishers BOM | 14 |
+| 1595 | ALL BOMS - 1595 - Long Lead BOM St Georges | 10 (today) / 235 (since 08-14) |
+| 1037 | ALL BOMS - 1037 - 1.Long Leading Time | 3 (today) |
+
+Prior roots still open this week: 1595 St Georges House Entire system (08-14, 225 lines), 1037 5.Button Stations (08-12), 1591 Traversing replacement Feet + 1373 Manchester Windsor (08-11).
+
+---
+
+## ⚠️ Edge case — reversing lift BOM kitted gap (WHY + how to resolve)
+
+**Finding (named):** several recent BOM imports have parts in `parts_control` but **0 build-pack GIDs assigned** (not kitted):
+
+| Project | BOM lines | parts_control | open | with pack GID |
+|---|---|---|---|---|
+| **1595 St Georges** | 235 | 225 | 189 | **0** ← worst |
+| **1365 Serjeants Inn** | 10 | **0** | — | **0** ← parts absent |
+| **1037 (Long/Lower)** | 3 | 52 | 24 | **0** |
+
+**Likely root cause:** the BOM import (Stage 5) creates Project-Order/vendor tasks, but the **build-pack association step never ran** — `parts_control.build_assembly_pack_gid` stays NULL and `association_status` unlinked. This is the same family as the 1588 phantom-GID / kitting gap. Whether it's specifically the "reversing lift" (1578 Traversing / a reversing-drive scissor) needs Giles's confirmation — the imported projects with zero kit are clearly 1595/1365/1037.
+
+**How to resolve:** run the **`legacy_bom_pack_allocation`** flow (`legacy_bom_pack_ingest.py --scan` then reviewed `--commit`) to assign each imported part's verified Build Schedule pack GID to `parts_control` + the Asana Build Packs reference field. This is exactly the same pipeline as the *legacy BOM push* flagged for tomorrow morning — the un-kitted parts ARE the "no items kitted" edge case.
+

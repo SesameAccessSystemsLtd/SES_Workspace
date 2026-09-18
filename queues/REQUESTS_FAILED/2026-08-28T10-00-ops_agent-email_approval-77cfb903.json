@@ -1,0 +1,14 @@
+{
+  "request_id": "a3a3f02d-3200-40c5-ad38-c0d8f3673979",
+  "source": "email_approval_sheet",
+  "row_index": 40,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkdBy6MAAA=",
+  "subject": "Delivered: ‘Rust-Oleum 400ml Universal...’",
+  "task_gid": null,
+  "task_name": "NOT MATCHED",
+  "asana_url": "",
+  "action": "AMENDMENT (task not auto-matched — SAP must locate manually):\nOrder number or match was in teh task description https://app.asana.com/1/357939803556123/project/1122520870313888/task/1217770225935589?focus=true",
+  "comment_to_push": "NO AUTO-MATCH — manual review.\nEmail: Delivered: ‘Rust-Oleum 400ml Universal...’\nReceived: 2026-08-26T14:26:55Z\nFound: type=dispatch_note, delivery=2026-08-26, vendor=amazon",
+  "decision": "M",
+  "created_at": "2026-08-28T10:00:36.380027+00:00"
+}

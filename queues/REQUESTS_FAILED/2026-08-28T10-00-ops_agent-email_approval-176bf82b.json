@@ -1,0 +1,14 @@
+{
+  "request_id": "2bb5c4cd-7ce6-4fa5-8f55-3ebc3fcb5bc2",
+  "source": "email_approval_sheet",
+  "row_index": 36,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkdCADoAAA=",
+  "subject": "Notes from your call with Dave Burt IDL 07810 558753 on 26/08/2026 11:50",
+  "task_gid": null,
+  "task_name": "NOT MATCHED",
+  "asana_url": "",
+  "action": "AMENDMENT (task not auto-matched — SAP must locate manually):\nNeed to be able to lookup teh quote taht is being discussed by the tag or the name. always unticked tasks - https://app.asana.com/1/357939803556123/project/1192317963229861/task/1216068837918383?focus=true",
+  "comment_to_push": "NO AUTO-MATCH — manual review.\nEmail: Notes from your call with Dave Burt IDL 07810 558753 on 26/08/2026 11:50\nReceived: 2026-08-26T11:06:53Z\nFound: type=other, vendor=ringcentral, ISSUE: Confusion over multiple quotes and parts for the Langley Street project, with outdated drawings and additional panels causing order processing issues.",
+  "decision": "M",
+  "created_at": "2026-08-28T10:00:36.306437+00:00"
+}

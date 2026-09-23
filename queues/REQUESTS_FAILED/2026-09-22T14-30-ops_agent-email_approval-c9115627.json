@@ -1,0 +1,14 @@
+{
+  "request_id": "89adf78d-fa89-4630-b2f8-46d49e1f58f9",
+  "source": "email_approval_sheet",
+  "row_index": 42,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAABnJ7JfAACfKjgQkWRhS42xGA6fMW2cAAkxw5CvAAA=",
+  "subject": "Order B4H#7598 confirmed",
+  "task_gid": null,
+  "task_name": "NOT MATCHED",
+  "asana_url": "",
+  "action": "Task not found — no task found. Doc: order_confirmation. PO: None. SQR: None. Supplier: best4headsets.co.uk",
+  "comment_to_push": "NO AUTO-MATCH — Order confirmation from Best4Headsets — 22 Sep 2026\nSubject: Order B4H#7598 confirmed\n\nBest4Headsets has confirmed an order (their ref B4H#7598) placed by Giles Hugo for one refurbished Jabra Evolve2 30 USB MS Stereo headset at £40.00, plus £5.99 shipping and £9.20 VAT, total £55.19. They are preparing the order for dispatch and will notify when it has been sent. No Sesame PO or job number is referenced.\nKey facts: £40.00 ex VAT + carriage £5.99 · their order B4H#7598\n\nEmail gateway · no task found · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-22T14:30:55.515218+00:00"
+}

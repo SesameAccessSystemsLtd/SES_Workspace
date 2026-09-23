@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  22/09/2026  15:55
+============================================================
+With:         Martin | Gemac 01753 686464
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo confirming and clarifying his recent order with Martin from Gemac, specifically regarding feral hoses, and discussing a potential past issue with hose leaks. Giles plans to verify a detail before the order leaves.
+
+--- RECAP --------------------------------------------------
+Giles Hugo and Martin from Gemac discussed Giles's recent order, which includes feral hoses with the code 4212 04, specifically a quarter hose with one wire.Martin mentioned a previous issue about a year ago where Giles experienced hose leaks due to ordering the wrong feral (4212 instead of 4211), which might have caused the problem.Giles confirmed that he ordered a 3811 feral, and he plans to verify this detail before the order departs at 4:00, intending to update Martin if needed.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will verify the feral type (3811) before the order leaves at 4:00 and will update Martin if any changes are necessary.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -1,0 +1,14 @@
+{
+  "request_id": "7dc95176-247c-470a-b61c-dedb07cd5793",
+  "source": "email_approval_sheet",
+  "row_index": 32,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkxwysGAAA=",
+  "subject": "RE: 21641-1569 - Magnet Schultz - 1569 - Brook Stage 6.UL MT Barrier - SQR-47077",
+  "task_gid": "1218498313138548",
+  "task_name": "21641-1569 - Magnet Schultz - 1569 - Brook Stage 6.UL MT Barrier",
+  "asana_url": "https://app.asana.com/0/0/1218498313138548",
+  "action": "(SQR-47077 (exact SQR)); Comment only",
+  "comment_to_push": "Order confirmation from Magnet Schultz (Emma Thomas) — 21 Sep 2026\nSubject: RE: 21641-1569 - Magnet Schultz - 1569 - Brook Stage 6.UL MT Barrier - SQR-47077\n\nEmma Thomas of Magnet Schultz confirms receipt of Sesame's order 21641-1569 for one off unit for the Brook Stage 6 UL MT Barrier job (1569), sent against SQR-47077. She previously attached the Sales Order Acknowledgement and standard conditions, and now simply replies 'Perfect' to Giles' acknowledgement that the order was received. No further action appears to be needed from Sesame.\n\nAction for Giles: none — information only\nKey facts: PO 21641-1569 · SQR-47077\nProposed: no field change\n\nEmail gateway · matched via SQR-47077 (exact SQR) · received 2026-09-21 10:30 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-21T14:30:19.720490+00:00"
+}

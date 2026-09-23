@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  23/09/2026  09:24
+============================================================
+With:         Fatima Barros 305
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a voicemail exchange where Fatima Barros sought assistance from Giles Hugo regarding accessing an online platform, but they could not locate the login details or account information. The call concluded with Fatima planning to contact the relevant person for clarification.
+
+--- RECAP --------------------------------------------------
+Fatima Barros asked Giles Hugo for help accessing an online platform, mentioning she couldn't find the login details on Keeper and was unsure if she was logged into the correct account.Fatima provided the account name as 'cibse' with the spelling C, I, B, S, E, but neither she nor Giles Hugo could find any login or account associated with that name.Giles Hugo confirmed that he did not see any account or login matching 'cibse' or similar variations in their system.Fatima decided to contact the person responsible for the account to clarify the login details, as she preferred not to bother Giles Hugo further.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

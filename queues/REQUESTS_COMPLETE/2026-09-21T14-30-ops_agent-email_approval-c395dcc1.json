@@ -1,0 +1,14 @@
+{
+  "request_id": "168ef453-bf37-4107-988c-a44e85bb402f",
+  "source": "email_approval_sheet",
+  "row_index": 57,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAABnJ7JfAACfKjgQkWRhS42xGA6fMW2cAAkxw5CuAAA=",
+  "subject": "Ordered: ‘Silvine 9x7 Red Exercise...’",
+  "task_gid": "1218699861339047",
+  "task_name": "21668-210926 - Amazon - Monday stock",
+  "asana_url": "https://app.asana.com/0/0/1218699861339047",
+  "action": "(PO 21668-210926 (exact)); Update delivery date to 2026-09-22; Note added to description: Order confirmation: £5.95 ex VAT (21 Sep 2026); Note added to description: Supplier order ref 203-4900256-4959544; Note: Status already Delivery Date CONFIRMED; Note: Task already has Price Ex VAT £86.73 — supplier states £5.95; recorded in description, field not overwritten",
+  "comment_to_push": "Order confirmation from Amazon (Amazon.co.uk) — 21 Sep 2026\nSubject: Ordered: ‘Silvine 9x7 Red Exercise...’\n\nAmazon has acknowledged receipt of an order placed by Sesame – West Byfleet on behalf of Sesame Access, quoting PO number 21668-210926. The order is for 1 x Silvine 9x7 Red Exercise Books, sold by ABEU SARL UK, totalling £5.95, and is due to arrive tomorrow. This is only an acknowledgement; the contract is not complete until a dispatch confirmation is sent.\n\nAction for Giles: none — information only\nKey facts: delivery 22 Sep 2026 · £5.95 ex VAT · their order 203-4900256-4959544 · PO 21668-210926\nProposed: Update delivery date to 2026-09-22; note Order confirmation: £5.95 ex VAT (21 Sep 2026); note Supplier order ref 203-4900256-4959544\n\nEmail gateway · matched via PO 21668-210926 (exact) · received 2026-09-21 13:34 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-21T14:30:19.810714+00:00"
+}

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  18/09/2026  12:09
+============================================================
+With:         Alison Lyons 306
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call was an introductory discussion between Alison Lyons from Glassworks and Giles Hugo from Sesame Access, focusing on potential collaboration for hydraulic and electric actuator components. They discussed the company's capabilities, including recent acquisitions, and planned to exchange emails to arrange a follow-up meeting to assess specifications and pricing.
+
+--- RECAP --------------------------------------------------
+Alison Lyons from Glassworks introduced their company, which recently acquired Electric Actuator UK, and highlighted their capabilities in precision engineering, electric actuators, hydraulics, and bespoke hydraulic systems.Giles Hugo from Sesame Access inquired about their use of hydraulic cylinders and electric actuators, and expressed interest in evaluating whether Glassworks' offerings meet their specifications and pricing needs.Alison Lyons proposed to send an introductory email to Giles Hugo's purchasing email address, and suggested scheduling a 15-30 minute follow-up call next week to discuss specifications, pricing, and market competitiveness.Giles Hugo agreed to receive the email and consider a meeting, emphasizing the need to verify if Glassworks' products meet their technical requirements before proceeding.
+
+--- TASKS --------------------------------------------------
+Alison Lyons will send an introductory email to purchasing@sesameaccess.com with details of Glassworks' capabilities and a list of products Giles Hugo purchases.Giles Hugo will review the email, send a reply with available dates next week, and assess whether Glassworks' products meet their specifications and pricing expectations.
+
+(Full transcript: RC web portal only — no RingSense API)

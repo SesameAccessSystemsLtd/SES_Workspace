@@ -1,0 +1,14 @@
+{
+  "request_id": "b6c23077-dea5-479b-92c4-8fafeef15eae",
+  "source": "email_approval_sheet",
+  "row_index": 58,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkxwjyKAAA=",
+  "subject": "Notes from your call with Dave Burt IDL 07810 558753 on 22/09/2026 14:11",
+  "task_gid": "1216068837918383",
+  "task_name": "21598-1037 - IDL Powder Coating - 1037 - Langley Street Refirb",
+  "asana_url": "https://app.asana.com/0/0/1216068837918383",
+  "action": "(learned rule (Giles: Need to be able to lookup teh quote taht is being discussed by the tag or the name. always unticked tasks - https://app.)); Comment only",
+  "comment_to_push": "Call with Dave Burt IDL — 22/09/2026 14:11\n\nDave Burt confirmed he is currently picking up the pad parts, and that Andy has already organised the pickup. No further action is needed from Giles as the arrangements are in place.\n\nAction for Giles: none — information only\nProposed: no field change\n\nEmail gateway · matched via learned rule (Giles: Need to be able to lookup teh quote taht is being discussed by the tag or the name. always unticked tasks - https://app.) · received 2026-09-22 13:11 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-22T14:30:55.646767+00:00"
+}

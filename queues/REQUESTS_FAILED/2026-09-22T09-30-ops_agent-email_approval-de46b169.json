@@ -1,0 +1,14 @@
+{
+  "request_id": "072efba1-4a82-412e-93b5-471412f97fe8",
+  "source": "email_approval_sheet",
+  "row_index": 26,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkxwjw1AAA=",
+  "subject": "RE: Product Enquiry From Heskins.com | Purchasing@sesameaccess.com",
+  "task_gid": null,
+  "task_name": "NOT MATCHED",
+  "asana_url": "",
+  "action": "AMENDMENT (task not auto-matched — SAP must locate manually):\nOnly just added but good to link this supplier going forward : https://app.asana.com/1/357939803556123/project/1207766004159548/task/1218732774265597?focus=true",
+  "comment_to_push": "NO AUTO-MATCH — Update from Heskins — 21 Sep 2026\nSubject: RE: Product Enquiry From Heskins.com | Purchasing@sesameaccess.com\n\nColin from Heskins is replying to Giles's web enquiry about corrosion protection tape (separation barrier for aluminium in contact with 304 stainless steel). He is asking for a delivery address for the sample and what width size is wanted. No pricing or lead time has been provided yet.\n\nAction for Giles:\n- Reply to Colin with the delivery address for the sample\n- Confirm the width size required for the corrosion protection tape\n\nEmail gateway · no task found · giles@sesameaccess.com",
+  "decision": "M",
+  "created_at": "2026-09-22T09:30:47.668492+00:00"
+}

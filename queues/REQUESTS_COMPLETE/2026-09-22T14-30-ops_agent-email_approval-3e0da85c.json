@@ -1,0 +1,14 @@
+{
+  "request_id": "5d191d3c-b1a1-44f5-8523-3bfde044b11c",
+  "source": "email_approval_sheet",
+  "row_index": 46,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkxwysRAAA=",
+  "subject": "Undeliverable: Quote for Export - Kiran Nadar Museum  - SQR-47313",
+  "task_gid": "1218732774265584",
+  "task_name": "Quote for Export - Kiran Nadar Museum",
+  "asana_url": "https://app.asana.com/0/0/1218732774265584",
+  "action": "(SQR-47313 (exact SQR)); Flag issue: Sesame's quote request SQR-47313 to Blaiklock bounced — the recipient address james.thorntonhayes@blaiklock.uk.com does not exist, so the quote was never delivered.",
+  "comment_to_push": "Email from Blaiklock Shipping (postmaster@blaiklock.uk.com) — 22 Sep 2026\nSubject: Undeliverable: Quote for Export - Kiran Nadar Museum  - SQR-47313\n\nThis is an automated bounce-back (NDR) from Microsoft/Office 365, not a supplier email. Sesame's own outgoing message 'Quote for Export - Kiran Nadar Museum - SQR-47313' to james.thorntonhayes@blaiklock.uk.com was rejected because that address does not exist at blaiklock.uk.com (550 5.1.10). The quote request therefore never reached the intended recipient.\n\nAction for Giles:\n- Find the correct email address for the Blaiklock contact (phone them to confirm) and resend the quote request SQR-47313 for the Kiran Nadar Museum export job\n- Check/clear the Outlook Auto-Complete entry for james.thorntonhayes@blaiklock.uk.com so the bad address is not reused\nIssue: Sesame's quote request SQR-47313 to Blaiklock bounced — the recipient address james.thorntonhayes@blaiklock.uk.com does not exist, so the quote was never delivered.\nKey facts: SQR-47313\nProposed: Flag issue: Sesame's quote request SQR-47313 to Blaiklock bounced — the recipient address james.thorntonhayes@blaiklock.uk.com does not exist, so the quote was never delivered.\n\nEmail gateway · matched via SQR-47313 (exact SQR) · received 2026-09-22 08:23 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-22T14:30:55.529154+00:00"
+}

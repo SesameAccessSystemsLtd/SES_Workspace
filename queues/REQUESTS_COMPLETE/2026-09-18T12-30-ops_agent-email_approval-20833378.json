@@ -1,0 +1,14 @@
+{
+  "request_id": "98b64ad3-545c-41b2-a333-e6523dbe1dc0",
+  "source": "email_approval_sheet",
+  "row_index": 59,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkvlromAAA=",
+  "subject": "Re: Your e-Quotation: O366145 from Goodmans Steel Services Ltd",
+  "task_gid": "1218458851380847",
+  "task_name": "21636-1597 - Goodman - Ferrous BOM  1597 - Forrest Road",
+  "asana_url": "https://app.asana.com/0/0/1218458851380847",
+  "action": "(Matched via PO Number in Local DB); Update delivery date to 2026-09-21; Update ORDER Status to 'On Order - Delivery Date Confirmed'; Flag issue: One of the sizes has been delayed, so the supplier is asking whether delivery can be taken on Tuesday instead.",
+  "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> update: Re: Your e-Quotation: O366145 from Goodmans Steel Services Ltd\n- Update delivery date to 2026-09-21\n- Update ORDER Status to 'On Order - Delivery Date Confirmed'\n- Flag issue: One of the sizes has been delayed, so the supplier is asking whether delivery can be taken on Tuesday instead.\n\nReference: 21636-1597 · Received: 2026-09-17T14:50:58Z\nMatch basis: (Matched via PO Number in Local DB)\nTask GID: 1218458851380847 · AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkvlromAAA=\nhttps://app.asana.com/0/0/1218458851380847\n\ngiles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-18T12:30:16.561024+00:00"
+}

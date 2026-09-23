@@ -1,0 +1,14 @@
+{
+  "request_id": "9f8e6a63-977c-49cd-b82c-7b5c84b8e95f",
+  "source": "email_approval_sheet",
+  "row_index": 18,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDgujAAA=",
+  "subject": "Your Keyence Order# 1000347421 has been dispatched",
+  "task_gid": "1218514539381751",
+  "task_name": "21658-170826 - keyence - distance sensor cable",
+  "asana_url": "https://app.asana.com/0/0/1218514539381751",
+  "action": "(PO 21658-170826 (exact)); Note added to description: Supplier order ref 1000347421; Note: Delivery 18 Sep 2026 is earlier than task due 21 Sep 2026 — left as is; Note: Status already Delivery Date CONFIRMED",
+  "comment_to_push": "Dispatch note from Keyence (Keyence (UK) Ltd) — 18 Sep 2026\nSubject: Your Keyence Order# 1000347421 has been dispatched \n\nKeyence (UK) Ltd has dispatched Sesame's order 21658-170826 via UPS today (18 September 2026) to the Unit 1 Cumberland Walks address. The email gives a UPS tracking number (1ZJ9A5726858924419) and notes tracking status may take time to appear. No action is requested beyond tracking the parcel if desired.\n\nAction for Giles: none — information only\nKey facts: delivery 18 Sep 2026 · their order 1000347421 · PO 21658-170826\nProposed: note Supplier order ref 1000347421\n\nEmail gateway · matched via PO 21658-170826 (exact) · received 2026-09-18 19:00 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-21T10:30:12.336180+00:00"
+}

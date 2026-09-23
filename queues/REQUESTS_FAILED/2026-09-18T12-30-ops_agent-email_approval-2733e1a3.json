@@ -1,0 +1,14 @@
+{
+  "request_id": "8c20bb28-7da8-4f70-b738-83cec5bd81f3",
+  "source": "email_approval_sheet",
+  "row_index": 113,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkwDtIEAAA=",
+  "subject": "Notes from your call with +441294313104 01294 313104 on 18/09/2026 12:32",
+  "task_gid": null,
+  "task_name": "NOT MATCHED",
+  "asana_url": "",
+  "action": "AMENDMENT (task not auto-matched — SAP must locate manually):\nThese notes are hard to find and need to be linked with https://app.asana.com/1/357939803556123/project/358712037553303/task/1218574976405492?focus=true",
+  "comment_to_push": "NO AUTO-MATCH — Call notes from ringcentral.com — 18 Sep 2026\nSubject: Notes from your call with +441294313104 01294 313104 on 18/09/2026 12:32\n\nGiles discussed a large printed electronics component (approx. 610mm to 1200mm) with Stephen Moore, who confirmed he can produce the required size and advised on sealing with a 5-8mm minimum seal width. Stephen will send quotes for materials and frames by Tuesday, with a follow-up call planned for Thursday or Friday to review and possibly include the design team.\n\nAction for Giles:\n- Stephen Moore to obtain and send quotes for materials and frames by Tuesday\n- Stephen Moore to confirm availability and cost of flood coat and squeegee equipment, including longer lengths, by Tuesday\n- Giles to prepare and bring project details to the Monday morning meeting for internal review\n- Giles to coordinate with Stephen Moore to schedule a conference call with the design team on Thursday or Friday\n\nEmail gateway · no task found · giles@sesameaccess.com",
+  "decision": "M",
+  "created_at": "2026-09-18T12:30:16.822762+00:00"
+}

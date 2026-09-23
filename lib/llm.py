@@ -24,6 +24,33 @@ DEEPSEEK_API_KEY  = os.getenv("DEEPSEEK_API_KEY")
 GEMINI_API_KEY    = os.getenv("GEMINI_API_KEY")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 
+# Local usage telemetry (these providers are called OUTSIDE Hermes, so their tokens
+# are invisible to Hermes state.db — this JSONL makes their cost measurable).
+USAGE_LOG = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                         "data", "llm_usage_log.jsonl")
+
+
+def _log_usage(provider, model, usage):
+    """Append one usage record. Best-effort — never break a call over logging."""
+    try:
+        import json as _json, datetime as _dt
+        rec = {
+            "ts": _dt.datetime.now(_dt.timezone.utc).isoformat(),
+            "provider": provider,
+            "model": model,
+            "prompt_tokens": (usage or {}).get("prompt_tokens")
+                or (usage or {}).get("input_tokens") or 0,
+            "completion_tokens": (usage or {}).get("completion_tokens")
+                or (usage or {}).get("output_tokens") or 0,
+            "cache_hit_tokens": (usage or {}).get("prompt_cache_hit_tokens") or 0,
+            "cache_miss_tokens": (usage or {}).get("prompt_cache_miss_tokens") or 0,
+        }
+        os.makedirs(os.path.dirname(USAGE_LOG), exist_ok=True)
+        with open(USAGE_LOG, "a", encoding="utf-8") as f:
+            f.write(_json.dumps(rec) + "\n")
+    except Exception as e:
+        log.warning("llm: usage log failed: %s", e)
+
 # Default models per provider
 DEEPSEEK_MODEL   = "deepseek-chat"
 GEMINI_MODEL     = "gemini-2.0-flash"
@@ -52,7 +79,9 @@ def _try_deepseek(prompt: str, system: str, max_tokens: int, temperature: float)
         timeout=60,
     )
     resp.raise_for_status()
-    return resp.json()["choices"][0]["message"]["content"]
+    data = resp.json()
+    _log_usage("deepseek", DEEPSEEK_MODEL, data.get("usage"))
+    return data["choices"][0]["message"]["content"]
 
 
 def _try_gemini(prompt: str, system: str, max_tokens: int, temperature: float) -> str:
@@ -71,6 +100,14 @@ def _try_gemini(prompt: str, system: str, max_tokens: int, temperature: float) -
             temperature=temperature,
         ),
     )
+    try:
+        um = response.usage_metadata
+        _log_usage("gemini", GEMINI_MODEL, {
+            "prompt_tokens": getattr(um, "prompt_token_count", 0),
+            "completion_tokens": getattr(um, "candidates_token_count", 0),
+        })
+    except Exception:
+        pass
     return response.text.strip()
 
 
@@ -87,6 +124,7 @@ def _try_anthropic(prompt: str, system: str, max_tokens: int, temperature: float
         messages=[{"role": "user", "content": prompt}],
         temperature=temperature,
     )
+    _log_usage("anthropic", ANTHROPIC_MODEL, getattr(response, "usage", None))
     return response.content[0].text.strip()
 
 

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  22/09/2026  12:49
+============================================================
+With:         Exact lasercut main line 0115 666 0551
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Giles Hugo discussing aluminum denomination codes with Exact lasercut main line, and a brief mention of Jamie returning Giles's call. The main focus was on clarifying whether the '5 XXX' code indicates 5,000 series aluminum.
+
+--- RECAP --------------------------------------------------
+Giles Hugo inquired whether using the denomination '5 XXX' for aluminum would be considered 5,000 series aluminum or cause confusion, seeking clarification on industry coding standards.Exact lasercut main line responded to Giles Hugo's question, but the transcript does not specify their answer.Giles Hugo mentioned that Jamie was calling back and planned to pick up the call, indicating a follow-up action.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will follow up with Jamie to discuss the call back when available.
+
+(Full transcript: RC web portal only — no RingSense API)

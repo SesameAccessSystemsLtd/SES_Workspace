@@ -1,90 +1,266 @@
 [
   {
-    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDguLAAA=",
-    "subject": "Re: 1597 - Forrest Road Machine Room Cabinet PLC -  SQR-46885",
+    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkzq0ynAAA=",
+    "internet_message_id": "<b00da72b2dad47c8b5b4226f9ef6bee6@alexander-pollock.co.uk>",
+    "conversation_id": "AAQkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NAAQAB0v3sKW6AVLipSs2zJC8tI=",
+    "subject": "RE: Engraving - 1580 - Admiralty House 2.Entire System BOM - SQR-47291",
+    "sender": "BRussell@alexander-pollock.co.uk",
+    "sender_domain": "alexander-pollock.co.uk",
+    "received_at": "2026-09-23T11:06:11Z",
+    "folder": "inbox",
+    "insights": {
+      "document_type": "update",
+      "summary": "Brian Russell of Alexander Pollock is replying to Giles's request for a quote (SQR-47291) on engraving for job 1580 (Admiralty House 2). He asks a single clarification question: whether the SWL plate should have the lift ID number only. No pricing or lead time has been provided yet.",
+      "action_required": true,
+      "action_items": [
+        "Answer Brian's question: confirm whether the SWL plate engraving should show the lift ID number only (no deadline stated)"
+      ],
+      "requested_by": "Brian Russell",
+      "company_name": "Alexander Pollock Ltd",
+      "po_number": null,
+      "sqr_number": "SQR-47291",
+      "job_numbers": [
+        "1580",
+        "1016"
+      ],
+      "supplier_quote_ref": null,
+      "supplier_order_ref": null,
+      "supplier_invoice_ref": null,
+      "total_price": null,
+      "carriage": null,
+      "delivery_date": null,
+      "lead_time": null,
+      "has_issues": true,
+      "issue_summary": "Supplier is querying the engraving content for the SWL plate (lift ID number only?) before quoting.",
+      "is_noise": false,
+      "noise_reason": null,
+      "line_items": [
+        {
+          "part_ref": "1580.1016.H1",
+          "description": "SWLPlate.OneWheelchairUser - Engraved",
+          "qty": 1,
+          "unit_price": null,
+          "notes": "Query: lift ID number only?"
+        },
+        {
+          "part_ref": "1580.1016.E3",
+          "description": "Call For Assistance Plate Engraved",
+          "qty": 1,
+          "unit_price": null,
+          "notes": null
+        },
+        {
+          "part_ref": "1580.1016.1.1",
+          "description": "6 Buttons Face Plate - Engraving",
+          "qty": 1,
+          "unit_price": null,
+          "notes": null
+        }
+      ]
+    },
+    "triage": "supplier_doc",
+    "triage_reason": "update",
+    "supplier_name": "Alexander Pollock",
+    "supplier_gid": "995677805512502",
+    "supplier_how": "domain alexander-pollock.co.uk",
+    "task_vendor": "Engraving",
+    "sender_name": "Brian Russell",
+    "attachment_names": [
+      "image001.jpg"
+    ],
+    "asana_task_gid": "1218503775308839",
+    "asana_task_name": "ALEXANDER POLLOCK - Engraving - 1580 - Admiralty House 2.Entire System BOM",
+    "asana_task_url": "https://app.asana.com/0/0/1218503775308839",
+    "task_status": "Quote - Auto Email ",
+    "confidence": "HIGH",
+    "matched_by": "SQR-47291 (exact SQR)",
+    "match_reasons": [
+      "supplier: domain alexander-pollock.co.uk",
+      "matched: SQR-47291 (exact SQR)"
+    ],
+    "alternatives": [],
+    "proposed_action": "(SQR-47291 (exact SQR)); Flag issue: Supplier is querying the engraving content for the SWL plate (lift ID number only?) before quoting.",
+    "actions": [
+      "Flag issue: Supplier is querying the engraving content for the SWL plate (lift ID number only?) before quoting."
+    ],
+    "comment_to_push": "Update from Alexander Pollock (Brian Russell) — 23 Sep 2026\nSubject: RE: Engraving - 1580 - Admiralty House 2.Entire System BOM - SQR-47291\n\nBrian Russell of Alexander Pollock is replying to Giles's request for a quote (SQR-47291) on engraving for job 1580 (Admiralty House 2). He asks a single clarification question: whether the SWL plate should have the lift ID number only. No pricing or lead time has been provided yet.\n\nAction for Giles:\n- Answer Brian's question: confirm whether the SWL plate engraving should show the lift ID number only (no deadline stated)\nIssue: Supplier is querying the engraving content for the SWL plate (lift ID number only?) before quoting.\nKey facts: SQR-47291 · job 1580 · job 1016\nProposed: Flag issue: Supplier is querying the engraving content for the SWL plate (lift ID number only?) before quoting.\n\nEmail gateway · matched via SQR-47291 (exact SQR) · received 2026-09-23 11:06 UTC · giles@sesameaccess.com",
+    "summary": "Brian Russell of Alexander Pollock is replying to Giles's request for a quote (SQR-47291) on engraving for job 1580 (Admiralty House 2). He asks a single clarification question: whether the SWL plate should have the lift ID number only. No pricing or lead time has been provided yet.",
+    "action_required": true,
+    "action_items": [
+      "Answer Brian's question: confirm whether the SWL plate engraving should show the lift ID number only (no deadline stated)"
+    ],
+    "suggested_decision": "A",
+    "suggested_reason": "matched (high) — comment carries an action/issue for you",
+    "status": "pending_review"
+  },
+  {
+    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkzq0yoAAA=",
+    "internet_message_id": "<edfa581b4323c8f484e71bead737d9a3@jajoautomation.co.uk>",
+    "conversation_id": "AAQkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NAAQANKxU8bIoc1Lnrg6tqqC3Yg=",
+    "subject": "Re: 1578 - New Traversing PLC BOM",
+    "sender": "anna.henslok@jajoautomation.co.uk",
     "sender_domain": "jajoautomation.co.uk",
-    "received_at": "2026-09-18T10:59:21Z",
+    "received_at": "2026-09-23T11:28:50Z",
+    "folder": "inbox",
     "insights": {
+      "document_type": "update",
+      "summary": "Anna at JAJO has sent the revised drawing for panel JAS262431 revA3 (Traversing Platform), listing the modified sheets and the added/modified component references. She also asks for a PO number for the extra parts Sesame needs, and asks whether this elevator has a name or reference for where it goes. No pricing or delivery information is given.",
+      "action_required": true,
+      "action_items": [
+        "Send JAJO the PO number covering the extra parts requested",
+        "Answer Anna's question about the elevator's name/reference and location",
+        "Review the attached revA3 drawing (sheets 2, 3, 8-14, 16, 20, 23, 26) and note adds -11E01, -12Y21, -12Y41 and mods to -3F91, 16T81"
+      ],
+      "requested_by": "Anna Henslok",
+      "company_name": "JAJO Automation Services",
       "po_number": null,
+      "sqr_number": null,
+      "job_numbers": [
+        "1578"
+      ],
+      "supplier_quote_ref": null,
+      "supplier_order_ref": null,
+      "supplier_invoice_ref": null,
       "total_price": null,
+      "carriage": null,
       "delivery_date": null,
+      "lead_time": null,
+      "has_issues": true,
+      "issue_summary": "JAJO cannot proceed with the extra parts until Sesame provides a PO number, and they have an open query about the elevator's name/reference.",
+      "is_noise": false,
+      "noise_reason": null,
+      "line_items": []
+    },
+    "triage": "supplier_doc",
+    "triage_reason": "update",
+    "supplier_name": "JAJO Automation",
+    "supplier_gid": "552233361530966",
+    "supplier_how": "domain jajoautomation.co.uk",
+    "task_vendor": null,
+    "sender_name": "Anna Henslok",
+    "attachment_names": [
+      "JAS262431, revA3 - Traversing Platform, pump 1.5kW, Type white cabinet logo8.4.pdf"
+    ],
+    "asana_task_gid": null,
+    "asana_task_name": null,
+    "asana_task_url": null,
+    "task_status": null,
+    "confidence": "LOW",
+    "matched_by": "2 candidate(s), none certain",
+    "match_reasons": [
+      "learned rule points at task 1213520809965779 which is not in ops.db — ignored",
+      "supplier: domain jajoautomation.co.uk",
+      "skipped 12475-1364  - Applied Automation - MayTe — closed",
+      "skipped 16059-1418 - MayTec - 1418  - LONG ACRE  — closed",
+      "skipped 15664-120422 - maytec - black channel in — closed",
+      "skipped 15393-210322 - Serenata - Flowers to JAJ — closed",
+      "JAJO Automation has 2 open orders — needs a pick"
+    ],
+    "alternatives": [
+      {
+        "gid": "1217541351569552",
+        "name": "21244-170826 - Gapp Automation - URGENT FOR CITI GATE",
+        "status": "🚚On Order - Delivery Date CONFIRMED",
+        "url": "https://app.asana.com/0/0/1217541351569552",
+        "how": "JAJO Automation open order"
+      },
+      {
+        "gid": "1213631387420717",
+        "name": "20995-210426 - JAJO - Stock 8 core cables",
+        "status": "⏰On Order - Awaiting CONFIRMATION",
+        "url": "https://app.asana.com/0/0/1213631387420717",
+        "how": "JAJO Automation open order"
+      }
+    ],
+    "proposed_action": "Task not found — 2 candidate(s), none certain. Doc: update. PO: None. SQR: None. Supplier: JAJO Automation",
+    "actions": [],
+    "comment_to_push": "NO AUTO-MATCH — Update from JAJO Automation — 23 Sep 2026\nSubject: Re: 1578 - New Traversing PLC BOM\n\nAnna at JAJO has sent the revised drawing for panel JAS262431 revA3 (Traversing Platform), listing the modified sheets and the added/modified component references. She also asks for a PO number for the extra parts Sesame needs, and asks whether this elevator has a name or reference for where it goes. No pricing or delivery information is given.\n\nAction for Giles:\n- Send JAJO the PO number covering the extra parts requested\n- Answer Anna's question about the elevator's name/reference and location\n- Review the attached revA3 drawing (sheets 2, 3, 8-14, 16, 20, 23, 26) and note adds -11E01, -12Y21, -12Y41 and mods to -3F91, 16T81\nKey facts: job 1578\nCould be:\n- 21244-170826 - Gapp Automation - URGENT FOR CITI GATE [🚚On Order - Delivery Date CONFIRMED] https://app.asana.com/0/0/1217541351569552\n- 20995-210426 - JAJO - Stock 8 core cables [⏰On Order - Awaiting CONFIRMATION] https://app.asana.com/0/0/1213631387420717\n\nEmail gateway · 2 candidate(s), none certain · giles@sesameaccess.com",
+    "summary": "Anna at JAJO has sent the revised drawing for panel JAS262431 revA3 (Traversing Platform), listing the modified sheets and the added/modified component references. She also asks for a PO number for the extra parts Sesame needs, and asks whether this elevator has a name or reference for where it goes. No pricing or delivery information is given.",
+    "action_required": true,
+    "action_items": [
+      "Send JAJO the PO number covering the extra parts requested",
+      "Answer Anna's question about the elevator's name/reference and location",
+      "Review the attached revA3 drawing (sheets 2, 3, 8-14, 16, 20, 23, 26) and note adds -11E01, -12Y21, -12Y41 and mods to -3F91, 16T81"
+    ],
+    "suggested_decision": "CHECK",
+    "suggested_reason": "2 candidate task(s) — pick one (paste its link into Asana Link, decision M)",
+    "status": "pending_review"
+  },
+  {
+    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkzq0ypAAA=",
+    "internet_message_id": "<1398740580.62105.1790163672728@czchols5231.prg-dc.dhl.com>",
+    "conversation_id": "AAQkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NAAQAICQweSMG-JBjsfh7gU51lM=",
+    "subject": "DHL Express Shipment Confirmation",
+    "sender": "noreply@dhl.com",
+    "sender_domain": "dhl.com",
+    "received_at": "2026-09-23T11:41:34Z",
+    "folder": "inbox",
+    "insights": {
+      "document_type": "dispatch_note",
+      "summary": "DHL Express shipment notification confirming a 2.5 kg domestic express package has been created and collected from Stephenson Gobin Limited, addressed to Sesame Access Systems. Contents are listed as ATD 7654 x 1 (twice), with estimated delivery by 24 September 2026. The shipment reference quotes Sesame job 1569 and PO 20985-1575.",
+      "action_required": false,
+      "action_items": [],
+      "requested_by": null,
+      "company_name": "DHL Express",
+      "po_number": "20985-1575",
+      "sqr_number": null,
+      "job_numbers": [
+        "1569",
+        "1575"
+      ],
+      "supplier_quote_ref": null,
+      "supplier_order_ref": null,
+      "supplier_invoice_ref": null,
+      "total_price": null,
+      "carriage": null,
+      "delivery_date": "2026-09-24",
+      "lead_time": null,
       "has_issues": false,
       "issue_summary": null,
-      "sqr_number": "SQR-46885",
-      "document_type": "other",
-      "line_items": []
+      "is_noise": false,
+      "noise_reason": null,
+      "line_items": [
+        {
+          "part_ref": "ATD 7654",
+          "description": null,
+          "qty": 1,
+          "unit_price": null,
+          "notes": "Listed twice on the shipment documentation"
+        }
+      ]
     },
-    "asana_task_gid": "1218240883811118",
-    "asana_task_name": "JAJO - 1597 - Forrest Road PLC BOM",
-    "asana_task_url": "https://app.asana.com/0/0/1218240883811118",
-    "proposed_action": "(Matched via SQR in Local DB)",
-    "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> other: Re: 1597 - Forrest Road Machine Room Cabinet PLC -  SQR-46885\n- Acknowledged other \u2014 no field change proposed (type=other, SQR=SQR-46885, vendor=jajoautomation)\n\nReference: SQR-46885 \u00b7 Received: 2026-09-18T10:59:21Z\nMatch basis: (Matched via SQR in Local DB)\nTask GID: 1218240883811118 \u00b7 AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDguLAAA=\nhttps://app.asana.com/0/0/1218240883811118\n\ngiles@sesameaccess.com",
-    "status": "pending_review"
-  },
-  {
-    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDguIAAA=",
-    "subject": "We are expecting your parcel from Warren Machine Tools (Guildfor",
-    "sender_domain": "dhlecommerce.co.uk",
-    "received_at": "2026-09-18T10:06:19Z",
-    "insights": {
-      "po_number": null,
-      "total_price": null,
-      "delivery_date": null,
-      "has_issues": false,
-      "issue_summary": null,
-      "sqr_number": null,
-      "document_type": "other",
-      "line_items": []
-    },
-    "asana_task_gid": null,
-    "asana_task_name": null,
-    "asana_task_url": null,
-    "proposed_action": "Manual review \u2014 no task/id extracted. Subject: 'We are expecting your parcel from Warren Machine Tools (Guildfor' (doc type: other, sender: dhlecommerce.co.uk)",
-    "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> NO AUTO-MATCH - manual review.\nEmail: We are expecting your parcel from Warren Machine Tools (Guildfor\nSender: notifications@dhlecommerce.co.uk\nReceived: 2026-09-18T10:06:19Z\nFound: type=other, vendor=dhlecommerce\nEmail ID: AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDguIAAA=\n\ngiles@sesameaccess.com",
-    "status": "pending_review"
-  },
-  {
-    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkwDtIBAAA=",
-    "subject": "Notes from your call with Richard Purch 309 on 18/09/2026 11:15",
-    "sender_domain": "ringcentral.com",
-    "received_at": "2026-09-18T10:15:57Z",
-    "insights": {
-      "po_number": null,
-      "total_price": null,
-      "delivery_date": null,
-      "has_issues": true,
-      "issue_summary": "Giles Hugo needs to confirm with IDL whether the powder coating for Langley has been completed before Richard Purch can collect it.",
-      "sqr_number": null,
-      "document_type": "other",
-      "line_items": []
-    },
-    "asana_task_gid": null,
-    "asana_task_name": null,
-    "asana_task_url": null,
-    "proposed_action": "Manual review \u2014 no task/id extracted. Subject: 'Notes from your call with Richard Purch 309 on 18/09/2026 11:15' (doc type: other, sender: ringcentral.com)",
-    "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> NO AUTO-MATCH - manual review.\nEmail: Notes from your call with Richard Purch 309 on 18/09/2026 11:15\nSender: service-uk@ringcentral.com\nReceived: 2026-09-18T10:15:57Z\nFound: type=other, vendor=ringcentral, ISSUE: Giles Hugo needs to confirm with IDL whether the powder coating for Langley has been completed before Richard Purch can collect it.\nEmail ID: AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkwDtIBAAA=\n\ngiles@sesameaccess.com",
-    "status": "pending_review"
-  },
-  {
-    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkwDtIAAAA=",
-    "subject": "Notes from your call with Dave Burt IDL 07810 558753 on 18/09/2026 11:25",
-    "sender_domain": "ringcentral.com",
-    "received_at": "2026-09-18T10:27:08Z",
-    "insights": {
-      "po_number": null,
-      "total_price": null,
-      "delivery_date": null,
-      "has_issues": true,
-      "issue_summary": "No powder coating is currently available, with new powder expected to be ready by early next week (Monday or Tuesday).",
-      "sqr_number": null,
-      "document_type": "other",
-      "line_items": []
-    },
-    "asana_task_gid": null,
-    "asana_task_name": null,
-    "asana_task_url": null,
-    "proposed_action": "Manual review \u2014 no task/id extracted. Subject: 'Notes from your call with Dave Burt IDL 07810 558753 on 18/09/2026 11:25' (doc type: other, sender: ringcentral.com)",
-    "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> NO AUTO-MATCH - manual review.\nEmail: Notes from your call with Dave Burt IDL 07810 558753 on 18/09/2026 11:25\nSender: service-uk@ringcentral.com\nReceived: 2026-09-18T10:27:08Z\nFound: type=other, vendor=ringcentral, ISSUE: No powder coating is currently available, with new powder expected to be ready by early next week (Monday or Tuesday).\nEmail ID: AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkwDtIAAAA=\n\ngiles@sesameaccess.com",
+    "triage": "supplier_doc",
+    "triage_reason": "dispatch_note",
+    "supplier_name": "DHL",
+    "supplier_gid": "1201940540512617",
+    "supplier_how": "domain dhl.com",
+    "task_vendor": "SG transmission",
+    "sender_name": "noreply@dhl.com",
+    "attachment_names": [
+      "TransportLabel_2396580406.pdf",
+      "WaybillDoc_2396580406.pdf"
+    ],
+    "asana_task_gid": "1214073918288684",
+    "asana_task_name": "20985-1575 - SG transmission - 1575 Jenners - G207203",
+    "asana_task_url": "https://app.asana.com/0/0/1214073918288684",
+    "task_status": "⏰On Order - Awaiting CONFIRMATION",
+    "confidence": "HIGH",
+    "matched_by": "PO 20985-1575 (exact)",
+    "match_reasons": [
+      "supplier: domain dhl.com",
+      "matched: PO 20985-1575 (exact)"
+    ],
+    "alternatives": [],
+    "proposed_action": "(PO 20985-1575 (exact)); Update ORDER Status to 'On Order - Delivery Date Confirmed'; Note: Task due date already 24 Sep 2026",
+    "actions": [
+      "Update ORDER Status to 'On Order - Delivery Date Confirmed'"
+    ],
+    "comment_to_push": "Dispatch note from DHL (noreply@dhl.com) — 23 Sep 2026\nSubject: DHL Express Shipment Confirmation\n\nDHL Express shipment notification confirming a 2.5 kg domestic express package has been created and collected from Stephenson Gobin Limited, addressed to Sesame Access Systems. Contents are listed as ATD 7654 x 1 (twice), with estimated delivery by 24 September 2026. The shipment reference quotes Sesame job 1569 and PO 20985-1575.\n\nAction for Giles: none — information only\nKey facts: delivery 24 Sep 2026 · PO 20985-1575 · job 1569\nProposed: Update ORDER Status to 'On Order - Delivery Date Confirmed'\n\nEmail gateway · matched via PO 20985-1575 (exact) · received 2026-09-23 11:41 UTC · giles@sesameaccess.com",
+    "summary": "DHL Express shipment notification confirming a 2.5 kg domestic express package has been created and collected from Stephenson Gobin Limited, addressed to Sesame Access Systems. Contents are listed as ATD 7654 x 1 (twice), with estimated delivery by 24 September 2026. The shipment reference quotes Sesame job 1569 and PO 20985-1575.",
+    "action_required": false,
+    "action_items": [],
+    "suggested_decision": "A",
+    "suggested_reason": "matched (high) — field changes proposed",
     "status": "pending_review"
   }
 ]

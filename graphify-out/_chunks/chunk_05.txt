@@ -1,0 +1,22 @@
+C:\Users\GilesHugo\SES_Workspace\Claude outputs\invoice_gate_trial_2026-09-18.md
+C:\Users\GilesHugo\SES_Workspace\data\audit\appendix_a.md
+C:\Users\GilesHugo\SES_Workspace\data\audit\asana_audit_summary.txt
+C:\Users\GilesHugo\SES_Workspace\data\audit\live_projects.txt
+C:\Users\GilesHugo\SES_Workspace\data\email_archive\2026-09\MzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDguXAAA_\Quotation 306017597.PDF
+C:\Users\GilesHugo\SES_Workspace\data\os_portal_preview_20260911\bom-tracker.html
+C:\Users\GilesHugo\SES_Workspace\data\os_portal_preview_20260911\deployment-tracker.html
+C:\Users\GilesHugo\SES_Workspace\data\os_status\bom-tracker-2026-09-07.html
+C:\Users\GilesHugo\SES_Workspace\data\os_status\bom-tracker-2026-09-08.html
+C:\Users\GilesHugo\SES_Workspace\data\os_status\bom-tracker-2026-09-09.html
+C:\Users\GilesHugo\SES_Workspace\data\os_status\bom-tracker-2026-09-10.html
+C:\Users\GilesHugo\SES_Workspace\data\os_status\bom-tracker-2026-09-11.html
+C:\Users\GilesHugo\SES_Workspace\data\os_status\bom-tracker-2026-09-15.html
+C:\Users\GilesHugo\SES_Workspace\data\os_status\bom-tracker-2026-09-16.html
+C:\Users\GilesHugo\SES_Workspace\data\os_status\bom-tracker-2026-09-17.html
+C:\Users\GilesHugo\SES_Workspace\data\os_status\bom-tracker-2026-09-18.html
+C:\Users\GilesHugo\SES_Workspace\data\os_status\bom-tracker.html
+C:\Users\GilesHugo\SES_Workspace\data\os_status\deployment-tracker-2026-09-01.html
+C:\Users\GilesHugo\SES_Workspace\data\os_status\deployment-tracker-2026-09-02.html
+C:\Users\GilesHugo\SES_Workspace\data\os_status\deployment-tracker-2026-09-03.html
+C:\Users\GilesHugo\SES_Workspace\data\os_status\deployment-tracker-2026-09-04.html
+C:\Users\GilesHugo\SES_Workspace\data\os_status\deployment-tracker-2026-09-07.html

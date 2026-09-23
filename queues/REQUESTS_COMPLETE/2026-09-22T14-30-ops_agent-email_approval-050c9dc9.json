@@ -1,0 +1,14 @@
+{
+  "request_id": "0c098ce5-f6b9-48e8-b2ac-de417827861c",
+  "source": "email_approval_sheet",
+  "row_index": 33,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkxwjxhAAA=",
+  "subject": "Re: Brook Wellington PLC Components  SQR-46807",
+  "task_gid": "1218087642379362",
+  "task_name": "Brook-reference control panel pilot — order all one-off parts now",
+  "asana_url": "https://app.asana.com/0/0/1218087642379362",
+  "action": "(SQR-46807 (exact SQR)); Comment only",
+  "comment_to_push": "Update from Mouser Electronics (Lakshmi D) — 22 Sep 2026\nSubject: Re: Brook Wellington PLC Components  SQR-46807\n\nMouser has acknowledged Sesame's quote request SQR-46807 for the listed PLC/panel components (1 set and 5 sets). They say they are obtaining price and availability, which may take 1-2 business days. No pricing or lead times have been provided yet.\n\nAction for Giles: none — information only\nKey facts: SQR-46807\nProposed: no field change\n\nEmail gateway · matched via SQR-46807 (exact SQR) · received 2026-09-22 06:23 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-22T14:30:55.465872+00:00"
+}

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  21/09/2026  15:39
+============================================================
+With:         +441494427500 01494 427500
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo requesting to cancel a misordered item and arrange a refund, which the representative confirmed would be processed after shipment. They also discussed placing a new order for the correct item and inquired about panel components and quoting options. The call concluded with Giles Hugo thanking the representative, ABS, for their assistance.
+
+--- RECAP --------------------------------------------------
+Giles Hugo requested to cancel order 282105502 before shipment due to a misread of the product color, and inquired about white lenses; the representative explained the order was already in the warehouse and being prepared for dispatch, so cancellation was not possible, but the order would be shipped today with a full refund issued the next morning, including shipping costs of approximately 93.24 GBP, and the goods should arrive within 2-3 working days.Giles Hugo agreed to dispose of the shipped items responsibly and asked about placing a new order for the correct product, which the representative advised could be done online after reviewing the datasheet and stock availability; the refund would be processed automatically once the return is received.Giles Hugo inquired about panel components and requested a quote for a bill of materials, seeking assistance in obtaining the best price for a single unit and 10 sets; the representative explained that quotes could be requested via the UK website, with prices reflecting market rates, and offered to process the quote manually if needed.The call ended with Giles Hugo thanking ABS for their help and confirming their name, and both parties exchanging good wishes.
+
+--- TASKS --------------------------------------------------
+ABS will process the refund for order 282105502 tomorrow morning and ensure the amount, including shipping, is credited to the original payment method.Giles Hugo will review the datasheet and stock availability online before placing a new order for the correct item.Giles Hugo will send the bill of materials to UK maza.com for a quote on the panel components, requesting assistance in obtaining the best price for one unit and ten sets.
+
+(Full transcript: RC web portal only — no RingSense API)

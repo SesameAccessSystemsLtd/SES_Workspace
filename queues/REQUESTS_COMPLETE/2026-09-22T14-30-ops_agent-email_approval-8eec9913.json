@@ -1,0 +1,14 @@
+{
+  "request_id": "622ebb56-c14c-4923-8a63-5cf1432129c7",
+  "source": "email_approval_sheet",
+  "row_index": 30,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkxwjxdAAA=",
+  "subject": "Proof for 1591-7003-G-013 rev-0",
+  "task_gid": "1217538511443634",
+  "task_name": "21574-1591 - Weber Cox - Cambridge sensitive membrain URGENT (chasing)",
+  "asana_url": "https://app.asana.com/0/0/1217538511443634",
+  "action": "(PO 21574-1591 (exact)); Comment only",
+  "comment_to_push": "Update from Weber Precision Graphics (Ryam Magpantay) — 21 Sep 2026\nSubject: Proof for 1591-7003-G-013 rev-0\n\nRyam Magpantay of Weber Precision Graphics has sent a switch proof for part 1591-7003-G-013 REV-0 and asks Sesame to review all dimensions. If the proof is approved, Sesame should sign it and email it back as confirmation. Any questions or concerns should be raised with the sender.\n\nAction for Giles:\n- Review all dimensions on the attached proof 1591-7003-G-013 REV-0\n- If approved, sign the proof and email it back to rmagpantay@weberpg.com with confirmation\n- Raise any questions or concerns with Ryam Magpantay\nKey facts: PO 21574-1591\nProposed: no field change\n\nEmail gateway · matched via PO 21574-1591 (exact) · received 2026-09-21 18:46 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-22T14:30:55.435663+00:00"
+}

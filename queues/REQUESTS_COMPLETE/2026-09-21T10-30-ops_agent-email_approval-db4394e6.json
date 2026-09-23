@@ -1,0 +1,14 @@
+{
+  "request_id": "8ec0cabf-347d-4072-8e98-acd10a2e145f",
+  "source": "email_approval_sheet",
+  "row_index": 19,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDgukAAA=",
+  "subject": "Orbital Fasteners Invoice No 00012948950 Your Ref: 21649-1597",
+  "task_gid": "1217900175707334",
+  "task_name": "21581-270826 - Orbital - Studding Jenners and drill bits",
+  "asana_url": "https://app.asana.com/0/0/1217900175707334",
+  "action": "(learned rule (Giles: should be finding and updating https://app.asana.com/1/357939803556123/project/358790955858777/task/1217900175707334?foc)); Update 'Price Ex VAT' to £226.03; Note added to description: Invoice: £226.03 ex VAT (18 Sep 2026); Note added to description: Supplier invoice 00012948950",
+  "comment_to_push": "Invoice from Orbital Fastenings (accounts@orbitalfasteners.co.uk) — 18 Sep 2026\nSubject: Orbital Fasteners Invoice No 00012948950 Your Ref: 21649-1597\n\nOrbital Fasteners has sent invoice 00012948950 dated 18/09/2026 against your ref 21649-1597, covering studding and resin anchors despatched on 16/09/2026 under advice note 000770700/001. Goods total £226.03 ex VAT, VAT £45.20, invoice total £271.23. Payment terms are 30 days from the end of the month of invoice.\n\nAction for Giles:\n- Pay invoice 00012948950 (£271.23 inc VAT) by 31/10/2026 (30 days from end of September 2026)\n- Check the invoice against PO 21649-1597 and the advice note 000770700/001 for correct quantities and pricing\nKey facts: delivery 16 Sep 2026 · £226.03 ex VAT · invoice 00012948950 · PO 21649-1597\nProposed: Update 'Price Ex VAT' to £226.03; note Invoice: £226.03 ex VAT (18 Sep 2026); note Supplier invoice 00012948950\n\nEmail gateway · matched via learned rule (Giles: should be finding and updating https://app.asana.com/1/357939803556123/project/358790955858777/task/1217900175707334?foc) · received 2026-09-18 20:00 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-21T10:30:12.348934+00:00"
+}

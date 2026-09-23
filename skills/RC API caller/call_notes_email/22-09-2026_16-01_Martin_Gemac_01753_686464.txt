@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  22/09/2026  16:01
+============================================================
+With:         Martin | Gemac 01753 686464
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a brief call between Giles Hugo and Martin from Gemac to confirm and update the order quantity for a product, adjusting from 100 to 50 units due to stock availability.
+
+--- RECAP --------------------------------------------------
+Giles Hugo confirmed with Martin that they want to see the 'why' (context or reason) for the order adjustment.Giles Hugo proposed updating the order quantity from 100 to 50 units, citing stock availability of 50 units in the tub and the need for an additional 50 units.Martin agreed to change the order quantity from 150 to 50 units.The call concluded with mutual thanks and goodbyes.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

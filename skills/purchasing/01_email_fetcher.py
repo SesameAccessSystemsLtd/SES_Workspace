@@ -5,6 +5,17 @@ Scans multiple mailbox folders for supplier emails.
 Uses processed_email_ids.json to skip anything already run through the pipeline.
 Fully idempotent -- safe to run as many times as needed.
 
+2026-09-18 rebuild:
+  * Inbox is fetched by a receivedDateTime WINDOW from a durable watermark
+    (data/fetch_state.json), not by "unread". Opening an email in Outlook before
+    the hourly run no longer hides it from the pipeline. Named folders use the
+    same watermark instead of a fixed 24h, so Friday-evening / weekend mail is
+    picked up on Monday. First run (no watermark) looks back FIRST_RUN_HOURS.
+  * Every fetched email is archived to data/email_archive/YYYY-MM/<id>.json
+    (body, text, PDF text, metadata) so it can be re-parsed after a fix.
+  * Extra metadata for the parser/matcher: sender display name, To, conversationId,
+    attachment names, readable body_text, source folder.
+
 Folders scanned:
   - Inbox (Focused)
   - 1.3 Confirmations
@@ -25,6 +36,9 @@ import requests
 from pathlib import Path
 from dotenv import load_dotenv
 import msal
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from gateway_common import ARCHIVE_DIR, FETCH_STATE_PATH, archive_email, html_to_text, load_json, safe_id, save_json
 
 try:
     import sys
@@ -47,8 +61,11 @@ INTERNAL_DOMAINS = {"sesameaccess.com", "sesame-access.com"}
 # Folders to scan. "inbox-focused" is handled specially.
 EXTRA_FOLDERS = ["1.3 Confirmations", "INVOICES TO PROCESS", "Archive"]
 
-# Lookback for named folders (hours). Inbox uses unread filter instead.
-FOLDER_LOOKBACK_HOURS = 24
+# Overlap added behind the watermark so a message that landed while the previous
+# run was mid-flight is still seen (dedup by id makes the overlap harmless).
+WATERMARK_OVERLAP_MINUTES = 90
+# With no watermark at all (first run / state file lost) look back this far.
+FIRST_RUN_HOURS = 72
 
 OUTPUT_PATH      = r"C:\Users\GilesHugo\SES_Workspace\data\raw_purchasing_emails.json"
 PROCESSED_IDS_PATH = r"C:\Users\GilesHugo\SES_Workspace\data\processed_email_ids.json"
@@ -183,57 +200,84 @@ def fetch_from_url(url, headers):
     return messages
 
 
-def fetch_inbox_focused(token):
-    """Fetch unread inbox emails."""
+def window_since() -> str:
+    """ISO start of this run's fetch window, from the durable watermark."""
+    from datetime import timedelta
+    state = load_json(FETCH_STATE_PATH, {}) or {}
+    wm = state.get("last_success_at_utc")
+    if wm:
+        try:
+            t = datetime.strptime(wm, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+            return (t - timedelta(minutes=WATERMARK_OVERLAP_MINUTES)).strftime("%Y-%m-%dT%H:%M:%SZ")
+        except ValueError:
+            pass
+    return (datetime.now(timezone.utc) - timedelta(hours=FIRST_RUN_HOURS)).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+SELECT_FIELDS = ("id,internetMessageId,conversationId,subject,sender,from,toRecipients,ccRecipients,"
+                 "receivedDateTime,body,bodyPreview,hasAttachments,isRead")
+
+
+def fetch_inbox_focused(token, since):
+    """Fetch inbox emails received since the watermark (read or unread)."""
     headers = {"Authorization": f"Bearer {token}"}
     url = (
         f"https://graph.microsoft.com/v1.0/users/{MAILBOX}/mailFolders/inbox/messages"
-        f"?$filter=isRead eq false"
-        f"&$expand=attachments&$top=50"
+        f"?$filter=receivedDateTime ge {since}"
+        f"&$select={SELECT_FIELDS}&$expand=attachments($select=id,name,contentType,size)&$top=50"
     )
     msgs = fetch_from_url(url, headers)
-    print(f"  Inbox (unread): {len(msgs)} email(s)")
+    print(f"  Inbox since {since}: {len(msgs)} email(s)")
     return msgs
 
 
-def fetch_from_folder(token, folder_name, folder_id):
-    """Fetch recent emails from a named folder (last FOLDER_LOOKBACK_HOURS hours)."""
-    from datetime import datetime, timedelta, timezone
-    since = (datetime.now(timezone.utc) - timedelta(hours=FOLDER_LOOKBACK_HOURS)).strftime("%Y-%m-%dT%H:%M:%SZ")
+def fetch_from_folder(token, folder_name, folder_id, since):
+    """Fetch emails from a named folder received since the watermark."""
     headers = {"Authorization": f"Bearer {token}"}
     url = (
         f"https://graph.microsoft.com/v1.0/users/{MAILBOX}"
         f"/mailFolders/{folder_id}/messages"
         f"?$filter=receivedDateTime ge {since}"
-        f"&$expand=attachments&$top=50"
+        f"&$select={SELECT_FIELDS}&$expand=attachments($select=id,name,contentType,size)&$top=50"
     )
     msgs = fetch_from_url(url, headers)
-    print(f"  Folder '{folder_name}': {len(msgs)} email(s) in last {FOLDER_LOOKBACK_HOURS}h")
+    print(f"  Folder '{folder_name}' since {since}: {len(msgs)} email(s)")
     return msgs
 
 
-def extract_email_data(email, token):
+def extract_email_data(email, token, source="inbox"):
     """Parse a Graph message object into our pipeline format."""
     email_id   = email["id"]
     subject    = email.get("subject", "No Subject")
-    sender     = email["sender"]["emailAddress"]["address"]
+    sender_obj = (email.get("sender") or email.get("from") or {}).get("emailAddress", {})
+    sender     = sender_obj.get("address", "")
     received   = email["receivedDateTime"]
     body       = email.get("body", {}).get("content", "")
     internet_message_id = email.get("internetMessageId", email_id)  # stable across folders
+    attachments = email.get("attachments", []) or []
 
     email_data = {
         "id":                   email_id,
         "internetMessageId":    internet_message_id,
+        "conversationId":       email.get("conversationId"),
+        "folder":               source,
         "subject":              subject,
         "sender":               sender,
+        "sender_name":          sender_obj.get("name", ""),
+        "to":                   [r.get("emailAddress", {}).get("address", "") for r in email.get("toRecipients", []) or []],
+        "cc":                   [r.get("emailAddress", {}).get("address", "") for r in email.get("ccRecipients", []) or []],
         "date":                 received,
         "body_content":         body,
+        "body_text":            html_to_text(body),
         "full_text":            body,
         "pdf_text":             "",
+        "attachment_names":     [a.get("name", "") for a in attachments],
+        "attachment_paths":     [],   # PDFs saved to the archive (needed to file invoices into Dropbox)
+        "fetched_at":           datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
     }
 
     pdf_texts = []
-    for attachment in email.get("attachments", []):
+    for attachment in attachments:
         if attachment.get("name", "").lower().endswith(".pdf") and pdf_extractor_skill:
             print(f"    Downloading PDF: {attachment['name']}")
             try:
@@ -243,6 +287,16 @@ def extract_email_data(email, token):
                 )
                 r = requests.get(att_url, headers={"Authorization": f"Bearer {token}"}, timeout=60)
                 r.raise_for_status()
+                # keep the bytes: the invoice gate files the PDF into Dropbox later
+                try:
+                    att_dir = ARCHIVE_DIR / (received or "")[:7] / safe_id(email_id)
+                    att_dir.mkdir(parents=True, exist_ok=True)
+                    safe_name = "".join(ch if ch not in '\\/:*?"<>|' else "_" for ch in attachment["name"])[:150]
+                    att_path = att_dir / safe_name
+                    att_path.write_bytes(r.content)
+                    email_data["attachment_paths"].append(str(att_path))
+                except Exception as e:
+                    print(f"    (attachment not archived: {e})")
                 result = pdf_extractor_skill.extract_from_bytes(r.content)
                 pdf_texts.append(result.get("raw_text", ""))
             except Exception as e:
@@ -255,7 +309,7 @@ def extract_email_data(email, token):
     return email_data
 
 
-def mark_as_read(token, email_id):
+def mark_as_read(token, email_id):  # retained for manual use only — not called by the pipeline
     headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
     url = f"https://graph.microsoft.com/v1.0/users/{MAILBOX}/messages/{email_id}"
     try:
@@ -294,10 +348,13 @@ def main():
 
     # Collect all messages from all sources
     all_messages = []
+    since = window_since()
+    run_started = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    print(f"Fetch window starts {since} (watermark {load_json(FETCH_STATE_PATH, {}).get('last_success_at_utc', 'none')})")
 
-    # 1. Focused inbox (unread)
+    # 1. Inbox (by window, read or unread)
     try:
-        inbox_msgs = fetch_inbox_focused(token)
+        inbox_msgs = fetch_inbox_focused(token, since)
         all_messages.extend(("inbox", m) for m in inbox_msgs)
     except Exception as e:
         print(f"  Inbox fetch error: {e}")
@@ -317,7 +374,7 @@ def main():
         if not folder_id:
             continue
         try:
-            folder_msgs = fetch_from_folder(token, folder_name, folder_id)
+            folder_msgs = fetch_from_folder(token, folder_name, folder_id, since)
             all_messages.extend((folder_name, m) for m in folder_msgs)
         except Exception as e:
             print(f"  Folder '{folder_name}' fetch error: {e}")
@@ -352,23 +409,23 @@ def main():
         sender = email.get("sender", {}).get("emailAddress", {}).get("address", "")
         sender_domain = sender.split("@")[-1].lower() if "@" in sender else ""
 
-        # Skip internal emails
+        # Skip internal emails (left unread — the gateway never touches read state)
         if sender_domain in INTERNAL_DOMAINS:
-            if source == "inbox":
-                mark_as_read(token, email_id)
             new_processed_ids.add(email_id)
             continue
 
         # Only print subject, not the email ID (noise in cron output)
         safe_subj = email.get('subject', '')[:60].encode('ascii', 'ignore').decode()
         print(f"  [{source}] {safe_subj}")
-        email_data = extract_email_data(email, token)
+        email_data = extract_email_data(email, token, source)
         fetched_emails_data.append(email_data)
+        try:
+            archive_email(email_data)
+        except Exception as e:
+            print(f"    (archive skipped: {e})")
 
-        # Mark inbox emails as read; leave folder emails untouched
-        if source == "inbox":
-            mark_as_read(token, email_id)
-
+        # 2026-09-18 (Giles): processing must NOT mark the email as read. Read/unread
+        # stays a human signal in Outlook; dedup is by id + internetMessageId.
         new_processed_ids.add(email_id)
         new_internet_ids.add(internet_id)
 
@@ -377,6 +434,15 @@ def main():
         json.dump(fetched_emails_data, f, indent=4)
 
     save_processed_ids(new_processed_ids, internet_ids=new_internet_ids)
+
+    # Watermark = when THIS run started (not when it finished), so a message that
+    # arrived during the run is inside the next window. Written only on success.
+    if not folder_failures:
+        save_json(FETCH_STATE_PATH, {"last_success_at_utc": run_started,
+                                     "last_run_fetched": len(fetched_emails_data),
+                                     "window_since": since})
+    else:
+        print(f"  Watermark NOT advanced — folder failures: {folder_failures}")
 
     _clear_error_log()
     print(f"\nDone: {len(fetched_emails_data)} email(s) to process. "

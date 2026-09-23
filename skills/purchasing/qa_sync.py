@@ -246,7 +246,14 @@ def generate_portal(data_dir=DATA_DIR):
 
 
 def push_actions(data_dir=DATA_DIR):
-    """Push any saved decisions/notes in qa_actions.json back to the sheet."""
+    """RETIRED 2026-09-18 — decisions are made in the sheet itself (see qa_server.py)."""
+    print("qa_sync --push is retired: decisions are made directly in the Email Gateway sheet "
+          "(DECISION / Amendment Notes / Feedback). Nothing pushed.")
+    return 0
+
+
+def _push_actions_legacy(data_dir=DATA_DIR):
+    """Kept for reference only — row-number keyed pushes were unsafe."""
     try:
         with open(os.path.join(data_dir, ACT_JSON), encoding="utf-8") as f:
             actions = json.load(f)

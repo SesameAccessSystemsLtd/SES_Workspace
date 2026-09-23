@@ -1,0 +1,396 @@
+part_number,raw_pn,pack_reference,qty,description,vendor,reason
+1580.1002.I.017,1580.1002.I.017,1580.1002.I,16,Studding,Steel Profile,not_in_parts_control
+1580.1002.I.017,1580.1002.I.017,1580.1002.I,1,Studding,Steel Profile,not_in_parts_control
+1580.1002.I.026,1580.1002.I.026,1580.1002.I,1,Angle,Steel Profile,not_in_parts_control
+1580.1002.I.026,1580.1002.I.026,1580.1002.I,1,Angle,teel Profile,not_in_parts_control
+1580.1002.I.036,1580.1002.I.036,1580.1002.I,8,"Tube 3 8"" schedule 40
+(OD17.1mm ID 12.5mm)",Steel Profile,not_in_parts_control
+1580.1002.I.036,1580.1002.I.036,1580.1002.I,6,,,not_in_parts_control
+1580.1002.I.036,1580.1002.I.036,1580.1002.I,2,"Tube 3 8"" schedule 40
+(OD17.1mm ID 12.5mm)",Steel Profile,not_in_parts_control
+1580.1.32.4FM4,1580.1.32.4FM4,1580.1002.I,14,T-nut M4,MayTec,not_in_parts_control
+1580.1.32.4FM4,1580.1.32.4FM4,1580.1002.I,5,T-nut M4,MayTec,not_in_parts_control
+1580.1.32.4FM4,1580.1.32.4FM4,1580.1002.I,18,T-nut M4,MayTec,not_in_parts_control
+1580.1.32.4FM6,1580.1.32.4FM6,1580.1002.I,38,T-Nut M6,MayTec,not_in_parts_control
+1580.1.32.4FM6,1580.1.32.4FM6,1580.1002.I,10,T-Nut M6,MayTec,not_in_parts_control
+1580.1.32.4FM8,1580.1.32.4FM8,1580.1002.I,1,T-nut M8,MayTec,not_in_parts_control
+1580.1002.I.001,1580.1002.I.001,1580.1002.I,1,Maytec Box,Maytec,not_in_parts_control
+1580.1002.I.002,1580.1002.I.002,1580.1002.I,3,Maytec Box,Maytec,not_in_parts_control
+1580.1002.I.003,1580.1002.I.003,1580.1002.I,1,Maytec Box,Maytec,not_in_parts_control
+1580.1002.I.004,1580.1002.I.004,1580.1002.I,1,Maytec Box,Maytec,not_in_parts_control
+1580.1002.I.005,1580.1002.I.005,1580.1002.I,1,Maytec Box,Maytec,not_in_parts_control
+1580.1002.I.008,1580.1002.I.008,1580.1002.I,1,Maytec Box,Maytec,not_in_parts_control
+1580.1002.I.033,1580.1002.I.033,1580.1002.I,2,Maytec Box,Maytec,not_in_parts_control
+1580.1002.I.035,1580.1002.I.035,1580.1002.I,1,Maytec Box,Maytec,not_in_parts_control
+1580.1.21.3F0,1580.1.21.3F0,1580.1002.I,20,Connector,MayTec,not_in_parts_control
+1580.1.21.3F0,1580.1.21.3F0,1580.1002.I,6,Connector,MayTec,not_in_parts_control
+1580.1.21.3F0,1580.1.21.3F0,1580.1002.I,8,Connector,MayTec,not_in_parts_control
+1580.1002.I.011,1580.1002.I.011,1580.1002.I,2,Maytec Box,MayTec,not_in_parts_control
+1580.1002.I.012,1580.1002.I.012,1580.1002.I,3,Maytec Box,MayTec,not_in_parts_control
+1580.1002.I.030,1580.1002.I.030,1580.1002.I,4,Maytec Box,MayTec,not_in_parts_control
+1580.DIN,1580.DIN,1580.1002.I,7,,,not_in_parts_control
+1580.DIN,1580.DIN,1580.8000.A,7,,,not_in_parts_control
+1580.ISO,1580.ISO,1580.1002.I,8,,,not_in_parts_control
+1580.ISO,1580.ISO,1580.1002.I,9,,,not_in_parts_control
+1580.ISO,1580.ISO,1580.1016.E,6,,,not_in_parts_control
+1580.ISO,1580.ISO,1580.1016.E,7,,,not_in_parts_control
+1580.ISO,1580.ISO,1580.8000.A,8,,,not_in_parts_control
+1580.ISO,1580.ISO,1580.8000.A,9,,,not_in_parts_control
+1580.DIN128-A6,1580.DIN 128 - A6,1580.1002.I,1,Spring Washer,,not_in_parts_control
+1580.ISO4762-M6x8ISO,1580.ISO 4762 - M6 x 8ISO,1580.1002.I,1,Socket Head Screw,,not_in_parts_control
+1580.ISO7089-6-140HV,1580.ISO 7089 - 6 - 140 HV,1580.1002.I,1,Plain washers,,not_in_parts_control
+1580.ISO7089-6-140HV,1580.ISO 7089 - 6 - 140 HV,1580.1010.A,4,Plain washer,,not_in_parts_control
+1580.ISO7089-6-140HV,1580.ISO 7089 - 6 - 140 HV,1580.1010.A,22,Plain washer,,not_in_parts_control
+1580.ISO7089-6-140HV,1580.ISO 7089 - 6 - 140 HV,1580.1010.A,4,Plain washer S,,not_in_parts_control
+1580.ISO7089-6-140HV,1580.ISO 7089 - 6 - 140 HV,1580.8000.A,6,Plain washers,,not_in_parts_control
+1580.1002.I3,1580.1002.I3,1580.1002.I,16,Assembly,ssembly by Sesame,not_in_parts_control
+1580.1002.I5,1580.1002.I5,1580.1002.I,4,Sub Assembly,ssembly by Sesame,not_in_parts_control
+1580.1008.D1.019,1580.1008.D1.019,1580.1008.D1,2,Angle,Steel Profile,not_in_parts_control
+1580.1008.D1.069,1580.1008.D1.069,1580.1008.D1,4,Studding,Steel Profile,not_in_parts_control
+1580.1008.D1.116,1580.1008.D1.116,1580.1008.D1,2,Flat,Steel Profile,not_in_parts_control
+1580.1008.D1.5w,1580.1008.D1.5w,1580.1008.D1,1,Welded assembly,Welded by Sesame,not_in_parts_control
+1580.1008.D1.6,1580.1008.D1.6,1580.1008.D1,1,Tank Support,Assembly by Sesame,not_in_parts_control
+1580.1008.D1.022,1580.1008.D1.022,1580.1008.D1,1,CEE Socket,,not_in_parts_control
+1580.1008.D1.EldonCabinetFull_1mX1mX0.3m,"1580.1008.D1.EldonCabinetFull_1mX1
+mX0.3m",1580.1008.D1,1,Machine Room Cabinet + PLC,JAJO,not_in_parts_control
+1580.1008.J.SL.001.MurrBase,1580.1008.J.SL.001.Murr Base,1580.1008.D1,1,Murr Base,Sesame,not_in_parts_control
+1580.1008.J.SL.001.MurrBase,1580.1008.J.SL.001.Murr Base,1580.8000.B,2,Murr Base,Sesame,not_in_parts_control
+1580.ISO4762-M8x70ISO,1580.ISO 4762 - M8 x 70ISO,1580.1008.D1,2,Cap Head Screw,,not_in_parts_control
+1580.1008.Q.001,1580.1008.Q.001,1580.1008.Q1,2,Channel,Steel Profile,not_in_parts_control
+1580.1008.Q.004,1580.1008.Q.004,1580.1008.Q1,2,Studding,Steel Profile,not_in_parts_control
+1580.1008.Q.006,1580.1008.Q.006,1580.1008.Q1,2,Channel,Steel Profile,not_in_parts_control
+1580.1008.Q.007,1580.1008.Q.007,1580.1008.Q1,4,Studding,Steel Profile,not_in_parts_control
+1580.1008.Q.011,1580.1008.Q.011,1580.1008.Q1,4,Box,Steel Profile,not_in_parts_control
+1580.1008.Q.016,1580.1008.Q.016,1580.1008.Q1,6,Box,Steel Profile,not_in_parts_control
+1580.1008.Q.002,1580.1008.Q.002,1580.1008.Q1,2,Flat Plate,Laser Cut,not_in_parts_control
+1580.1008.Q.003,1580.1008.Q.003,1580.1008.Q1,2,Flat Plate,Laser Cut,not_in_parts_control
+1580.18-631-12,1580.18-631-12,1580.1008.Q1,1,Lifting Shackle,Sesame,not_in_parts_control
+1580.ISO4017-M12x40-ISO,1580.ISO 4017 - M12 x 40 - ISO,1580.1008.Q1,8,Hexagon head screws,,not_in_parts_control
+1580.ISO4017-M12x55-ISO,1580.ISO 4017 - M12 x 55 - ISO,1580.1008.Q1,2,Hexagon head screws,,not_in_parts_control
+1580.ISO4032-M12-ISO,1580.ISO 4032 - M12 - ISO,1580.1008.Q1,10,Hexagon nut,,not_in_parts_control
+1580.ISO4032-M16-ISO,1580.ISO 4032 - M16 - ISO,1580.1008.Q1,8,Hexagon nuts,,not_in_parts_control
+1580.ISO7089-12-140HV(1),1580.ISO 7089 - 12 - 140 HV(1),1580.1008.Q1,20,Plain washer,,not_in_parts_control
+1580.ISO7089-16-140HV(1),1580.ISO 7089 - 16 - 140 HV(1),1580.1008.Q1,8,Plain washers,,not_in_parts_control
+1580.1010.A.001,1580.1010.A.001,1580.1010.A,1,Angle,Steel Profile,not_in_parts_control
+1580.1010.A.003,1580.1010.A.003,1580.1010.A,1,Angle,Steel Profile,not_in_parts_control
+1580.1010.A.004,1580.1010.A.004,1580.1010.A,1,Angle,Steel Profile,not_in_parts_control
+1580.1010.A.004_MIR,1580.1010.A.004_MIR,1580.1010.A,1,Angle,Steel Profile,not_in_parts_control
+1580.1010.A.019,1580.1010.A.019,1580.1010.A,1,Box,Steel Profile,not_in_parts_control
+1580.1010.A.020,1580.1010.A.020,1580.1010.A,1,Box,Steel Profile,not_in_parts_control
+1580.1010.A.021,1580.1010.A.021,1580.1010.A,1,Box,Steel Profile,not_in_parts_control
+1580.1010.A.022,1580.1010.A.022,1580.1010.A,1,Rod (BRIGHT),Steel Profile,not_in_parts_control
+1580.1010.A.023,1580.1010.A.023,1580.1010.A,1,Rod,Steel Profile,not_in_parts_control
+1580.1010.A.024,1580.1010.A.024,1580.1010.A,1,Rod,Steel Profile,not_in_parts_control
+1580.1010.A.046,1580.1010.A.046,1580.1010.A,2,Tube (OD 20mm ID 8mm),Steel Profile,not_in_parts_control
+1580.1010.A.086,1580.1010.A.086,1580.1010.A,2,Box,Steel Profile,not_in_parts_control
+1580.1010.A.096,1580.1010.A.096,1580.1010.A,2,Flat,Steel Profile,not_in_parts_control
+1580.DIN933-M16x90,1580.DIN 933 - M16 x 90,1580.1010.A,2,"Hexagon head bolt (High tensile
+grade 12.9) with extra drilled M5 hole",Steel Profile,not_in_parts_control
+1580.DIN933-M16x90,1580.DIN 933 - M16 x 90,1580.1010.A,2,"Hexagon head bolt (High tensile grade 12.9)
+with extra drilled M5 hole",Steel Profile,not_in_parts_control
+1580.DIN933-M16x90,1580.DIN 933 - M16 x 90,1580.1010.A,2,"Hexagon head bolt (High tensile grade 12.9) with extra
+drilled M5 hole",Steel Profile,not_in_parts_control
+1580.1010.A.078.01,1580.1010.A.078.01,1580.1010.A,2,Bottom Hinge Template,Laser Cut,not_in_parts_control
+1580.1010.A.006.04,1580.1010.A.006.04,1580.1010.A,4,(Bott_Clip_Part),Laser Cut,not_in_parts_control
+1580.1010.A.030,1580.1010.A.030,1580.1010.A,2,(LargeBushing),Machining,not_in_parts_control
+1580.1010.A.035.05,1580.1010.A.035.05,1580.1010.A,2,(Lift_Leg_Medial),Laser Cut,not_in_parts_control
+1580.1010.A.073.03,1580.1010.A.073.03,1580.1010.A,4,(Actuator_Hung_Top),Laser Cut,not_in_parts_control
+1580.1010.A.034.05,1580.1010.A.034.05,1580.1010.A,2,(Lift_Leg_Lateral),Laser Cut,not_in_parts_control
+1580.1010.A.072.02,1580.1010.A.072.02,1580.1010.A,4,(Actuator_Hung_Bott),Laser Cut,not_in_parts_control
+1580.1010.A.011.02,1580.1010.A.011.02,1580.1010.A,1,,,not_in_parts_control
+1580.1010.A.011.02,1580.1010.A.011.02,1580.1010.A,1,Hinge_Plate S,Laser Cut,not_in_parts_control
+1580.1010.A.043.02,1580.1010.A.043.02,1580.1010.A,1,Scissor Lift Washer,Laser Cut,not_in_parts_control
+1580.1010.A.012.04,1580.1010.A.012.04,1580.1010.A,2,(Top_Clip_Part) S,Laser Cut,not_in_parts_control
+1580.1010.A.079.01,1580.1010.A.079.01,1580.1010.A,1,Top Hinge Template S,Laser Cut,not_in_parts_control
+1580.1010.A.036.02,1580.1010.A.036.02,1580.1010.A,1,Bottom_WheelTrack,,not_in_parts_control
+1580.1010.A.036.02,1580.1010.A.036.02,1580.1010.A,1,Bottom_WheelTrack,Laser Cut,not_in_parts_control
+1580.1010.A.036_MIR.02,1580.1010.A.036_MIR.02,1580.1010.A,1,Bottom_WheelTrack,,not_in_parts_control
+1580.1010.A.036_MIR.02,1580.1010.A.036_MIR.02,1580.1010.A,1,Bottom_WheelTrack,Laser Cut,not_in_parts_control
+1580.ISO4017-M6x16ISO,1580.ISO 4017 - M6 x 16ISO,1580.1010.A,4,Hexagon head screws,,not_in_parts_control
+1580.ISO4017-M6x16ISO,1580.ISO 4017 - M6 x 16ISO,1580.8000.A,6,Hexagon head screws,,not_in_parts_control
+1580.1010.A.010,1580.1010.A.010,1580.1010.A,2,Top_WheelTrack,Laser Cut,not_in_parts_control
+1580.1010.A.013.03,1580.1010.A.013.03,1580.1010.A,2,Folded Spine,Laser Cut,not_in_parts_control
+1580.1010.A.068,1580.1010.A.068,1580.1010.A,1,Bend Plate,Laser Cut,not_in_parts_control
+1580.1010.A6w,1580.1010.A6w,1580.1010.A,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1580.ISO4017-M6x12ISO,1580.ISO 4017 - M6 x 12ISO,1580.1010.A,14,Hexagon head screws,,not_in_parts_control
+1580.ISO4017-M6x12ISO,1580.ISO 4017 - M6 x 12ISO,1580.1010.A,4,Hexagon head screws S,,not_in_parts_control
+1580.ISO4017-M6x12ISO,1580.ISO 4017 - M6 x 12ISO,1580.1010.A,4,Hexagon head screws,,not_in_parts_control
+1580.ISO4018-M6x12,1580.ISO 4018 - M6 x 12,1580.1010.A,2,Hexagon head screw,,not_in_parts_control
+1580.ISO4018-M6x16,1580.ISO 4018 - M6 x 16,1580.1010.A,2,Hexagon head screws.,,not_in_parts_control
+1580.ISO4018-M6x16,1580.ISO 4018 - M6 x 16,1580.1010.A,2,"Hexagon head
+screws.",,not_in_parts_control
+1580.ISO4762-M6x12ISO,1580.ISO 4762 - M6 x 12ISO,1580.1010.A,14,"Hexagon Socket Head
+Cap Screw",,not_in_parts_control
+1580.ISO4762-M6x12ISO,1580.ISO 4762 - M6 x 12ISO,1580.1010.A,14,"Hexagon Socket
+Head Cap Screw",,not_in_parts_control
+1580.ISO7093A-ST6-140HV,1580.ISO 7093 A - ST 6 - 140 HV,1580.1010.A,14,Plain washers,,not_in_parts_control
+1580.1010.A.025,1580.1010.A.025,1580.1010.A,4,"Bearing: 72 +0 -0,1 x 30 +0 -0,03",Euro-Bearings,not_in_parts_control
+1580.1010.A.028,1580.1010.A.028,1580.1010.A,2,FlangedBearingBush_40x50x50,OnlineBearings,not_in_parts_control
+1580.1010.A.031,1580.1010.A.031,1580.1010.A,4,"Tube 31.75x7.94 (after machining 30mm OD
+16mm ID)",Machining,not_in_parts_control
+1580.1010.A.031,1580.1010.A.031,1580.1010.A,4,Tube 31.75x7.94 (after machining 30mm OD 16mm ID),Machining,not_in_parts_control
+1580.1010.A.061.01,1580.1010.A.061.01,1580.1010.A,2,LiftStopperBar - Paint it RED,Laser Cut,not_in_parts_control
+1580.1010.A.062.02,1580.1010.A.062.02,1580.1010.A,2,Rod (BRIGHT),Machining,not_in_parts_control
+1580.1010.A.063.02,1580.1010.A.063.02,1580.1010.A,2,Rod (BRIGHT),Machining,not_in_parts_control
+1580.1010.A.064.01,1580.1010.A.064.01,1580.1010.A,"12
+2","Bottom Packer for Bearing Yellow Zinc Plated
+Bush Safety Bar","Laser Cut
+Machining",not_in_parts_control
+1580.1010.A.064.01,1580.1010.A.064.01,1580.1010.A,12,Bottom Packer for Bearing Yellow Zinc Plated,Laser Cut,not_in_parts_control
+1580.1010.A.065,1580.1010.A.065,1580.1010.A,"12
+2","Bottom Packer for Bearing Yellow Zinc Plated
+Bush Safety Bar","Laser Cut
+Machining",not_in_parts_control
+1580.1010.A.065,1580.1010.A.065,1580.1010.A,2,Bush Safety Bar,Machining,not_in_parts_control
+1580.1010.A.077.02,1580.1010.A.077.02,1580.1010.A,4,Plain washer,Laser Cut,not_in_parts_control
+1580.1010.A.081,1580.1010.A.081,1580.1010.A,8,"Flanged bearing bush - 16x20x16 - to be
+shortened",OnlineBearings,not_in_parts_control
+1580.1010.A.081,1580.1010.A.081,1580.1010.A,8,Flanged bearing bush - 16x20x16 - to be shortened,OnlineBearings,not_in_parts_control
+1580.1010.A.087,1580.1010.A.087,1580.1010.A,2,Striker washer,Laser Cut,not_in_parts_control
+1580.1010.A2w,1580.1010.A2w,1580.1010.A,"1
+1","Welded Assembly
+Welded Assembly","Welded by Sesame
+Welded by Sesame",not_in_parts_control
+1580.1010.A2w,1580.1010.A2w,1580.1010.A,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1580.1010.A5w,1580.1010.A5w,1580.1010.A,"1
+1","Welded Assembly
+Welded Assembly","Welded by Sesame
+Welded by Sesame",not_in_parts_control
+1580.1010.A5w,1580.1010.A5w,1580.1010.A,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1580.DIN912-M6x1x10x7.5,1580.DIN 912 - M6 x 1 x 10 x 7.5,1580.1010.A,16,Cylinder Head Cap Screw 10.9 grade,,not_in_parts_control
+1580.DIN912-M6x1x20x17.5,1580.DIN 912 - M6 x 1 x 20 x 17.5,1580.1010.A,"4
+4","Cylinder Head Cap Screw 10.9 grade
+Cylinder Head Cap Screw 10.9 grade",,not_in_parts_control
+1580.DIN912-M6x1x20x17.5,1580.DIN 912 - M6 x 1 x 20 x 17.5,1580.1010.A,4,Cylinder Head Cap Screw 10.9 grade,,not_in_parts_control
+1580.DIN912-M6x1x25x22.5,1580.DIN 912 - M6 x 1 x 25 x 22.5,1580.1010.A,"4
+4","Cylinder Head Cap Screw 10.9 grade
+Cylinder Head Cap Screw 10.9 grade",,not_in_parts_control
+1580.DIN912-M6x1x25x22.5,1580.DIN 912 - M6 x 1 x 25 x 22.5,1580.1010.A,4,Cylinder Head Cap Screw 10.9 grade,,not_in_parts_control
+1580.DIN933-M16x75,1580.DIN 933 - M16 x 75,1580.1010.A,2,Hexagon head bolt (High tensile - grade 12.9),,not_in_parts_control
+1580.ISO10642-M5x16,1580.ISO 10642 - M5x16,1580.1010.A,2,Hexagon socket countersunk head cap screws,,not_in_parts_control
+1580.ISO4017-M8x35-ISO,1580.ISO 4017 - M8 x 35 - ISO,1580.1010.A,2,Hexagon head screws,,not_in_parts_control
+1580.ISO4032-M16ISO,1580.ISO 4032 - M16ISO,1580.1010.A,4,Hexagon nut,,not_in_parts_control
+1580.ISO4032-M16ISO,1580.ISO 4032 - M16ISO,1580.8000.B,1,Hexagon nuts,,not_in_parts_control
+1580.ISO4032-M16ISO,1580.ISO 4032 - M16ISO,1580.8000.B,4,Hexagon nuts,,not_in_parts_control
+1580.ISO7089-16-140HV,1580.ISO 7089 - 16 - 140 HV,1580.1010.A,2,Plain washer,,not_in_parts_control
+1580.ISO7089-30-140HV(1),1580.ISO 7089 - 30 - 140 HV(1),1580.1010.A,4,Plain washers - Normal series - Product grade A,,not_in_parts_control
+1580.ISO7093A-ST8-140HV,1580.ISO 7093 A - ST 8 - 140 HV,1580.1010.A,2,Plain washer,,not_in_parts_control
+1580.1010.A.026.01,1580.1010.A.026.01,1580.1010.A,2,PlainMetricBush_30x35x25 B,OnlineBearings,not_in_parts_control
+1580.1010.A.026.01,1580.1010.A.026.01,1580.1010.A,2,PlainMetricBush_30x35x25,OnlineBearings,not_in_parts_control
+1580.1010.A.027.01,1580.1010.A.027.01,1580.1010.A,2,PlainMetricBush_30x40x45 B,OnlineBearings,not_in_parts_control
+1580.1010.A.027.01,1580.1010.A.027.01,1580.1010.A,2,PlainMetricBush_30x40x45,OnlineBearings,not_in_parts_control
+1580.1010.A.Bottom_Frame,1580.1010.A.Bottom_Frame,1580.1010.A,1,Sub Assembly,Assembly by Sesame,not_in_parts_control
+1580.1010.A.Top_Frame,1580.1010.A.Top_Frame,1580.1010.A,1,Sub Assembly,Assembly by Sesame,not_in_parts_control
+1580.1010.A10,1580.1010.A10,1580.1010.A,1,Scissors Sub Assembly,Assembly by Sesame,not_in_parts_control
+1580.1010.A13,1580.1010.A13,1580.1010.A,1,Actuator assembly,Assembly by Sesame,not_in_parts_control
+1580.1010.A13_MIR1,1580.1010.A13_MIR1,1580.1010.A,1,Actuator assembly,Assembly by Sesame,not_in_parts_control
+1580.1010.A16w.01,1580.1010.A16w.01,1580.1010.A,2,Welded assembly,Welded by Sesame,not_in_parts_control
+1580.1010.A17w.01,1580.1010.A17w.01,1580.1010.A,2,Welded assembly,Welded by Sesame,not_in_parts_control
+1580.ISO4032-M6-ISO,1580.ISO 4032 - M6 - ISO,1580.1010.A,"4
+2","Hexagon nuts S
+Hexagon Socket Head Cap Screw S",,not_in_parts_control
+1580.ISO4032-M6-ISO,1580.ISO 4032 - M6 - ISO,1580.1010.A,4,Hexagon nuts,,not_in_parts_control
+1580.ISO4762-M6x25ISO,1580.ISO 4762 - M6 x 25ISO,1580.1010.A,"4
+2","Hexagon nuts S
+Hexagon Socket Head Cap Screw S",,not_in_parts_control
+1580.ISO4762-M6x25ISO,1580.ISO 4762 - M6 x 25ISO,1580.1010.A,2,Hexagon Socket Head Cap Screw,,not_in_parts_control
+1580.ISO4762-M6x35ISO,1580.ISO 4762 - M6 x 35ISO,1580.1010.A,"2
+12","Hexagon Socket Head Cap Screw S
+Hexagon Socket Head Cap Screw S",,not_in_parts_control
+1580.ISO4762-M6x35ISO,1580.ISO 4762 - M6 x 35ISO,1580.1010.A,2,Hexagon Socket Head Cap Screw,,not_in_parts_control
+1580.ISO4762-M8x25ISO,1580.ISO 4762 - M8 x 25ISO,1580.1010.A,"2
+12","Hexagon Socket Head Cap Screw S
+Hexagon Socket Head Cap Screw S",,not_in_parts_control
+1580.ISO4762-M8x25ISO,1580.ISO 4762 - M8 x 25ISO,1580.1010.A,12,Hexagon Socket Head Cap Screw,,not_in_parts_control
+1580.ISO7089-8-140HV(1),1580.ISO 7089 - 8 - 140 HV(1),1580.1010.A,12,Plain washers - Normal series - S,,not_in_parts_control
+1580.ISO7089-8-140HV(1),1580.ISO 7089 - 8 - 140 HV(1),1580.1010.A,12,"Plain washers - Normal series -
+Product grade A",,not_in_parts_control
+1580.ISO7089-8-140HV(1),1580.ISO 7089 - 8 - 140 HV(1),1580.8000.A,40,Plain washers,,not_in_parts_control
+1580.ISO7089-8-140HV(1),1580.ISO 7089 - 8 - 140 HV(1),1580.8000.C,4,Plain washer,,not_in_parts_control
+1580.1016.2.1w,1 1580.1016.2.1w,1580.1016.BS,2,Welded part,Welded by Sesame,not_in_parts_control
+1580.1016.2.1w,1580.1016.2.1w,1580.1016.BS,1580,,,not_in_parts_control
+1580.SecurityScrew-M4x8,4 1580.SecurityScrew - M4 x 8,1580.1016.BS,7,CS M4x8 Countersunk Security Screw,Orbital Fasteners,not_in_parts_control
+1580.1016.3.010,1580.1016.3.010,1580.1016.BS,1580,,,not_in_parts_control
+1580.SecurityScrew,1580.SecurityScrew,1580.1016.BS,1580,,,not_in_parts_control
+1580.SecurityScrew,1580.SecurityScrew,1580.1016.E,9,,,not_in_parts_control
+1580.1016.E2,1580.1016.E2,1580.1016.E,1,Sub Assembly,Assembly by Sesame,not_in_parts_control
+1580.ISO10642-M5x12,1580.ISO 10642 - M5 x 12,1580.1016.E,4,Hexagon socket countersunk head cap screws,,not_in_parts_control
+1580.ISO10642-M5x12,1580.ISO 10642 - M5x12,1580.8000.A,2,"Hexagon socket countersunk head
+cap screws",,not_in_parts_control
+1580.ISO4032-M5-ISO,1580.ISO 4032 - M5 - ISO,1580.1016.E,4,Hexagon nuts,,not_in_parts_control
+1580.ISO7089-5-140HV(1),1580.ISO 7089 - 5 - 140 HV(1),1580.1016.E,4,Plain washers,,not_in_parts_control
+1580.SecurityScrew-M4x8CS,1580.SecurityScrew - M4 x 8 CS,1580.1016.E,4,M4x10 Countersunk Security Screw,Orbital Fasteners,not_in_parts_control
+1580.8000.A.001,1580.8000.A.001,1580.8000.A,1,Angle,Steel Profile,not_in_parts_control
+1580.8000.A.001_MIR,1580.8000.A.001_MIR,1580.8000.A,1,Angle,Steel Profile,not_in_parts_control
+1580.8000.A.003,1580.8000.A.003,1580.8000.A,4,Angle,Steel Profile,not_in_parts_control
+1580.8000.A.003,1580.8000.A.003,1580.8000.A,2,Angle,Steel Profile,not_in_parts_control
+1580.8000.A.004,1580.8000.A.004,1580.8000.A,1,Flat,Steel Profile,not_in_parts_control
+1580.8000.A.004_MIR,1580.8000.A.004_MIR,1580.8000.A,1,Flat,Steel Profile,not_in_parts_control
+1580.8000.A.048,1580.8000.A.048,1580.8000.A,4,Angle,Steel Profile,not_in_parts_control
+1580.8000.A.048,1580.8000.A.048,1580.8000.A,2,Angle,Steel Profile,not_in_parts_control
+1580.8000.A.096,1580.8000.A.096,1580.8000.A,2,Angle,Steel Profile,not_in_parts_control
+1580.8000.A.098,1580.8000.A.098,1580.8000.A,1,Angle,Steel Profile,not_in_parts_control
+1580.8000.A.098_MIR,1580.8000.A.098_MIR,1580.8000.A,1,Angle,Steel Profile,not_in_parts_control
+1580.8000.A.149,1580.8000.A.149,1580.8000.A,2,Angle,Steel Profile,not_in_parts_control
+1580.8000.A.150,1580.8000.A.150,1580.8000.A,2,Flat,Steel Profile,not_in_parts_control
+1580.8000.A.210,1580.8000.A.210,1580.8000.A,2,Angle,Steel Profile,not_in_parts_control
+1580.8000.A.211,1580.8000.A.211,1580.8000.A,2,Flat,Steel Profile,not_in_parts_control
+1580.8000.A.218,1580.8000.A.218,1580.8000.A,16,Flat,Steel Profile,not_in_parts_control
+1580.8000.A.218,1580.8000.A.218,1580.8000.A,2,Flat,Steel Profile,not_in_parts_control
+1580.8000.A.220,1580.8000.A.220,1580.8000.A,10,Tube,Steel Profile,not_in_parts_control
+1580.8000.A.220,1580.8000.A.220,1580.8000.A,1,Tube,Steel Profile,not_in_parts_control
+1580.8000.A.221,1580.8000.A.221,1580.8000.A,10,Tube,Steel Profile,not_in_parts_control
+1580.8000.A.221,1580.8000.A.221,1580.8000.A,1,Tube,Steel Profile,not_in_parts_control
+1580.1000.C.R-Clip2.5x45Zinc,1580.1000.C.R-Clip 2.5x45 Zinc,1580.8000.A,1,Plated Steel R-Clip 2.5x45,NBSS Sesame,not_in_parts_control
+1580.1000.C.ClevisPin12x35mmClevi,1580.1000.C.ClevisPin 12x35mm Clevi,1580.8000.A,1,s Pin Stainless Steel,Boneham,not_in_parts_control
+1580.8000.A.059Whe,1580.8000.A.059 Whe,1580.8000.A,1,el Bracket,Laser Cut,not_in_parts_control
+1580.8000.A.144Guid,1580.8000.A.144 Guid,1580.8000.A,1,e roller,Blickle,not_in_parts_control
+1580.8000.A.145Thru,1580.8000.A.145 Thru,1580.8000.A,4,st washer,IGUS,not_in_parts_control
+1580.DIN128-A6Sprin,1580.DIN 128 - A6 Sprin,1580.8000.A,1,g Washer,,not_in_parts_control
+1580.ISO4762-M6x8ISOSock,1580.ISO 4762 - M6 x 8ISO Sock,1580.8000.A,1,et Head Screw,,not_in_parts_control
+1580.ISO7089-6-140HVPlain,1580.ISO 7089 - 6 - 140 HV Plain,1580.8000.A,1,washers,,not_in_parts_control
+1580.ISO4032-M8-ISO,1580.ISO 4032 - M8 - ISO,1580.8000.A,4,Hexagon nuts,,not_in_parts_control
+1580.8000.A1w,1580.8000.A1w,1580.8000.A,"4
+1","Leg Cap
+Top Step Frame","Machining
+Welded by Sesame",not_in_parts_control
+1580.8000.A1w,1580.8000.A1w,1580.8000.A,1,Top Step Frame,Welded by Sesame,not_in_parts_control
+1580.8000.A12,1580.8000.A12,1580.8000.A,2,Sub Assembly,Assembly by Sesame,not_in_parts_control
+1580.8000.A15w,1580.8000.A15w,1580.8000.A,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1580.ISO4035-M10-ISO,1580.ISO 4035 - M10 - ISO,1580.8000.A,8,Hexagon thin nuts (chamfered),,not_in_parts_control
+1580.ISO4035-M10-ISO,1580.ISO 4035 - M10 - ISO,1580.8000.A,8,Hexagon thin nuts (chamfered) S,,not_in_parts_control
+1580.ISO4762-M10x100ISO,1580.ISO 4762 - M10 x 100ISO,1580.8000.A,4,Hexagon Socket Head Cap Screw,,not_in_parts_control
+1580.ISO4762-M10x100ISO,1580.ISO 4762 - M10 x 100ISO,1580.8000.A,4,Hexagon Socket Head Cap Screw S,,not_in_parts_control
+1580.ISO10642-M4x16,1580.ISO 10642 - M4x16,1580.8000.A,14,"Hexagon socket countersunk
+head cap screws",,not_in_parts_control
+1580.ISO10642-M4x16,1580.ISO 10642 - M4x16,1580.8000.A,18,"Hexagon socket countersunk
+head cap screws",,not_in_parts_control
+1580.ISO10642-M4x16,1580.ISO 10642 - M4x16,1580.8000.A,16,"Hexagon socket countersunk
+head cap screws",,not_in_parts_control
+1580.8000.A10w,1580.8000.A10w,1580.8000.A,1,Middle Step Frame,"Welded by
+Sesame",not_in_parts_control
+1580.8000.A11w,1580.8000.A11w,1580.8000.A,1,Welded Assembly,"Welded by
+Sesame",not_in_parts_control
+1580.8000.A23w,1580.8000.A23w,1580.8000.A,1,Middle Step Frame,Welded by Sesame,not_in_parts_control
+1580.8000.A24w,1580.8000.A24w,1580.8000.A,1,Welded Assembly,Welded by Sesame,not_in_parts_control
+1580.030NBSS.,1580.030 NBSS.,1580.8000.A,1,030 JunctionBoxBracket,NBSS Laser Cut,not_in_parts_control
+1580.044.01NBSS.,1580.044.01 NBSS.,1580.8000.A,10,044.01 Bearing Rubber Gasket,NBSS Sesame,not_in_parts_control
+1580.1008.A3.001MP200,1580.1008.A3.001 MP200,1580.8000.A,1,701 - Magnetic Proximity Sensor N O,RS Components,not_in_parts_control
+1580.1008.A3.002Hexag,1580.1008.A3.002 Hexag,1580.8000.A,1,on thin nut,"Comes with
+proximity switch",not_in_parts_control
+1580.1008.A14Standa,1580.1008.A14 Standa,1580.8000.A,3,rd LimitSwitch: LRC5A54,Sesame,not_in_parts_control
+1580.1008.T.8ID_Grommet8mmI,1580.1008.T.8ID_Grommet 8mm I,1580.8000.A,1,D Grommet,NBSS Sesame,not_in_parts_control
+1580.1008.T.13ID_P_ClipRubbe,1580.1008.T.13ID_P_Clip Rubbe,1580.8000.A,6,r-lined clamp; 13mm ID,RS Components,not_in_parts_control
+1580.1008.T.25ID_GrommetGromm,1580.1008.T.25ID_Grommet Gromm,1580.8000.A,"1
+1",et ID 18.5mm (Hole 25mm Dia.),"Sesame
+Sesame",not_in_parts_control
+1580.8000.A.078Proxy,"85x85x
+1580.8000.A.078 Proxy",1580.8000.A,1,"51 Wiska Junction Box
+Switch Bracket",Laser Cut,not_in_parts_control
+1580.8000.A.092LimitS,1580.8000.A.092 Limit S,1580.8000.A,3,witch Angle,Laser Cut,not_in_parts_control
+1580.8000.A.177LimitS,1580.8000.A.177 Limit S,1580.8000.A,3,witch Angle,Laser Cut,not_in_parts_control
+1580.8000.A.183Angle,1580.8000.A.183 Angle,1580.8000.A,2,,Laser Cut,not_in_parts_control
+1580.8000.A.198Fronts,1580.8000.A.198 Front s,1580.8000.A,1,kirt,Laser Cut,not_in_parts_control
+1580.8000.A.205Sidesk,1580.8000.A.205 Side sk,1580.8000.A,1,irt,Laser Cut,not_in_parts_control
+1580.8000.A.208Bearin,1580.8000.A.208 Bearin,1580.8000.A,2,g template,Laser Cut,not_in_parts_control
+1580.8000.A.215Stiffen,1580.8000.A.215 Stiffen,1580.8000.A,2,er,Laser Cut,not_in_parts_control
+1580.8000.A.FJUM_02_40_1Bearin,1580.8000.A.FJUM_02_40_1 Bearin,1580.8000.A,10,g fi 40,IGUS,not_in_parts_control
+1580.8000.A7wWheel,1580.8000.A7w Wheel,1580.8000.A,1,Stop Assembly,"Welded by
+Sesame",not_in_parts_control
+1580.DIN580-M8x13x1.25x1Lifting,1580.DIN 580 - M8 x 13 x 1.25 x 1 Lifting,1580.8000.A,4,Eyebolt,,not_in_parts_control
+1580.ISO4017-M6x16ISOHexag,1580.ISO 4017 - M6 x 16ISO Hexag,1580.8000.A,"6
+40","on head screws
+on nuts nyloc",,not_in_parts_control
+1580.ISO4032-M8-ISONylocHexag,1580.ISO 4032 - M8 - ISO Nyloc Hexag,1580.8000.A,"6
+40","on head screws
+on nuts nyloc",,not_in_parts_control
+1580.ISO4762-M8x30ISOHexag,1580.ISO 4762 - M8 x 30ISO Hexag,1580.8000.A,40,on Socket Head Cap Screw,,not_in_parts_control
+1580.ISO7089-6-140HVPlainw,1580.ISO 7089 - 6 - 140 HV Plain w,1580.8000.A,"6
+40","ashers
+ashers",,not_in_parts_control
+1580.ISO7089-8-140HV(1)Plainw,1580.ISO 7089 - 8 - 140 HV(1) Plain w,1580.8000.A,"6
+40","ashers
+ashers",,not_in_parts_control
+1580.ISO10642-M5x12Hexagscrews,"1580.ISO 10642 - M5x12 Hexag
+screws",1580.8000.A,2,on socket countersunk head cap,,not_in_parts_control
+1580.8000.A.StepsPlatform.dwg,1580.8000.A.StepsPlatform.dwg,1580.8000.A,44,"SesameACCESSFORALL Drawin
+Unit1,CumberlandWorks
+WintersellBusinessPark
+Surrey,KT147LF
+Tel:+44(0)1784440088 Proces
+Fax:+44(0)8707053252
+Email:forall@sesameaccess.com
+Web:www.sesameaccess.com",,not_in_parts_control
+1580.1008.A3.002,1580.1008.A3.002,1580.8000.A,1,Hexagon thin nut,"Comes with
+proximity switch",not_in_parts_control
+1580.8000.A7w,1580.8000.A7w,1580.8000.A,1,Wheel Stop Assembly,Welded by Sesame,not_in_parts_control
+1580.DIN580-M8x13x1.25x1,1580.DIN 580 - M8 x 13 x 1.25 x 1,1580.8000.A,4,Lifting Eyebolt,,not_in_parts_control
+1580.ISO4032-M8-ISONyloc,1580.ISO 4032 - M8 - ISO Nyloc,1580.8000.A,40,Hexagon nuts nyloc,,not_in_parts_control
+1580.ISO4762-M8x30ISO,1580.ISO 4762 - M8 x 30ISO,1580.8000.A,40,Hexagon Socket Head Cap Screw,,not_in_parts_control
+1580.8000.A2,1580.8000.A2,1580.8000.A,1,Top Step Assembly,Assembly by Sesame,not_in_parts_control
+1580.8000.A8,1580.8000.A8,1580.8000.A,1,Sub Assembly,Assembly by Sesame,not_in_parts_control
+1580.8000.A9,1580.8000.A9,1580.8000.A,1,Middle Step Assembly,Assembly by Sesame,not_in_parts_control
+1580.8000.A22,1580.8000.A22,1580.8000.A,1,Middle Step Assembly,Assembly by Sesame,not_in_parts_control
+1580.8000.A27w,1580.8000.A27w,1580.8000.A,8,Step holder,Welded by Sesame,not_in_parts_control
+1580.8000.A28w,1580.8000.A28w,1580.8000.A,10,Welded tubes,Welded by Sesame,not_in_parts_control
+1580.8000.B.001,1580.8000.B.001,1580.8000.B,2,Channel,Steel Profile,not_in_parts_control
+1580.8000.B.002,1580.8000.B.002,1580.8000.B,1,Channel,Steel Profile,not_in_parts_control
+1580.8000.B.005,1580.8000.B.005,1580.8000.B,4,Flat,Steel Profile,not_in_parts_control
+1580.8000.B.024,1580.8000.B.024,1580.8000.B,1,Channel,Steel Profile,not_in_parts_control
+1580.8000.B.035,1580.8000.B.035,1580.8000.B,1,Angle,Steel Profile,not_in_parts_control
+1580.8000.B.035_MIR,1580.8000.B.035_MIR,1580.8000.B,1,Angle,Steel Profile,not_in_parts_control
+1580.8000.B.036,1580.8000.B.036,1580.8000.B,4,I-Beam,Steel Profile,not_in_parts_control
+1580.8000.B.036,1580.8000.B.036,1580.8000.B,1,I-Beam,Steel Profile,not_in_parts_control
+1580.8000.B.042,1580.8000.B.042,1580.8000.B,4,Flat,Steel Profile,not_in_parts_control
+1580.8000.B.054,1580.8000.B.054,1580.8000.B,2,Angle,Steel Profile,not_in_parts_control
+1580.8000.B.054,1580.8000.B.054,1580.8000.B,1,Angle,Steel Profile,not_in_parts_control
+1580.8000.B.054_MIR,1580.8000.B.054_MIR,1580.8000.B,2,Angle,Steel Profile,not_in_parts_control
+1580.1000.L.LevellingFootL,1580.1000.L.LevellingFoot L,1580.8000.B,4,eveling foot M16 - 50mm dia.,Sesame,not_in_parts_control
+1580.1008.C.E.Stop.UnderLiftE,1580.1008.C.E.Stop.UnderLift E,1580.8000.B,1,.Stop - Big,Assembly by Sesame,not_in_parts_control
+1580.1008.J.SL.001.MurrBaseM,1580.1008.J.SL.001.Murr Base M,1580.8000.B,2,urr Base PP,Sesame,not_in_parts_control
+1580.1008.U.018,1580.1008.U.01 8,1580.8000.B,1,5x85x51 Wiska Junction Box PE,Sesame,not_in_parts_control
+1580.8000.B3wW,1580.8000.B3w W,1580.8000.B,1,elded Assembly,Welded by Sesame,not_in_parts_control
+1580.8000.B6wW,1580.8000.B6w W,1580.8000.B,1,elded Assembly,Welded by Sesame,not_in_parts_control
+1580.8000.B7wW,1580.8000.B7w W,1580.8000.B,2,elded Assembly,Welded by Sesame,not_in_parts_control
+1580.1000.L.LevellingFoot,1580.1000.L.LevellingFoot,1580.8000.B,4,Leveling foot M16 - 50mm dia.,Sesame,not_in_parts_control
+1580.1008.C.E.Stop.UnderLift,1580.1008.C.E.Stop.UnderLift,1580.8000.B,1,E.Stop - Big,Assembly by Sesame,not_in_parts_control
+1580.8000.C.027,1580.8000.C.027,1580.8000.C,16,Rod,Steel Profile,not_in_parts_control
+1580.8000.C.027,1580.8000.C.027,1580.8000.C,1,Rod,Steel Profile,not_in_parts_control
+1580.8000.C.028,1580.8000.C.028,1580.8000.C,2,Tube OD 15.8 mm ID 10,Steel Profile,not_in_parts_control
+1580.8000.C.028,1580.8000.C.028,1580.8000.C,1,Tube OD 15.8 mm ID 10,Steel Profile,not_in_parts_control
+1580.8000.C.029,1580.8000.C.029,1580.8000.C,4,Box,Steel Profile,not_in_parts_control
+1580.8000.C.029,1580.8000.C.029,1580.8000.C,2,Box,Steel Profile,not_in_parts_control
+1580.8000.C.033,1580.8000.C.033,1580.8000.C,4,Box,Steel Profile,not_in_parts_control
+1580.8000.C.033,1580.8000.C.033,1580.8000.C,2,Box,Steel Profile,not_in_parts_control
+1580.8000.C.036,1580.8000.C.036,1580.8000.C,1,Box,Steel Profile,not_in_parts_control
+1580.8000.C.036_MIR,1580.8000.C.036_MIR,1580.8000.C,1,Box,Steel Profile,not_in_parts_control
+1580.1008.V1.1.MiniActuator50mm,"1580.1008.V1.1.MiniActuator 50
+mm",1580.8000.C,1,"Mini hydraulic actuator _
+50mm stroke, connectors
+on both sides",Steerforth,not_in_parts_control
+1580.1008.V1.1.MiniActuator50mm,"1580.1008.V1.1.MiniActuator 50
+mm",1580.8000.C,1,"Mini hydraulic actuator _ 50mm
+stroke, connectors on both sides",Steerforth,not_in_parts_control
+1580.8000.C3w,1580.8000.C3w,1580.8000.C,1,Welded Assembly,"Welded by
+Sesame",not_in_parts_control
+1580.8000.C6w,1580.8000.C6w,1580.8000.C,8,Welded Assembly,"Welded by
+Sesame",not_in_parts_control
+1580.ISO4017-M8x70-ISO,1580.ISO 4017 - M8 x 70 - ISO,1580.8000.C,2,Hexagon head screws,,not_in_parts_control
+1580.ISO4017-M10x50-ISO,1580.ISO 4017 - M10 x 50 - ISO,1580.8000.C,1,Hexagon head screws,,not_in_parts_control
+1580.ISO4032-M8ISO,1580.ISO 4032 - M8ISO,1580.8000.C,2,Hexagon nut,,not_in_parts_control
+1580.ISO4762-M6x10ISO,1580.ISO 4762 - M6 x 10ISO,1580.8000.C,8,"Hexagon Socket Head Cap
+Screw",,not_in_parts_control
+1580.ISO4762-M6x10ISO,1580.ISO 4762 - M6 x 10ISO,1580.8000.C,8,Hexagon Socket Head Cap Screw,,not_in_parts_control
+1580.ISO7089-10-140HV(1),1580.ISO 7089 - 10 - 140 HV(1),1580.8000.C,1,Plain washers,,not_in_parts_control
+1580.AdmiraltyHouse_EngineeringDrawing.dwg,1580.AdmiraltyHouse_EngineeringDrawing.dwg,1580.Admiralty House_EngineeringDrawing.,44,,,not_in_parts_control
+1580.8000.B.ScissorLiftFrame,1580.8000.B.ScissorLiftFrame,1580.Admiralty House_EngineeringDrawing.,1,Lift Frame,Sesame,not_in_parts_control
+1580.8000.C2,1580.8000.C2,1580.Admiralty House_EngineeringDrawing.,1,Sliders Assembly,Sesame,not_in_parts_control
+1580.8000.C2_MIR,1580.8000.C2_MIR,1580.Admiralty House_EngineeringDrawing.,1,Sliders Assembly,Sesame,not_in_parts_control
+1580.8000.A.StepsPlatform,1580.8000.A.StepsPlatform,1580.Admiralty House_EngineeringDrawing.,1,Steps Platform,esame,not_in_parts_control
+1580.8000.A.StepsPlatform,1580.8000.A.StepsPlatform,1580.Admiralty House_EngineeringDrawing.,1,Steps Platform,Sesame,not_in_parts_control
+1580.AdmiraltyHouse,1580.Admiralty House,1580.Admiralty House_EngineeringDrawing.,1,Stage 1,esame,not_in_parts_control
+1580.AdmiraltyHouse,1580.Admiralty House,1580.Admiralty House_EngineeringDrawing.,1,Stage 1,Sesame,not_in_parts_control
+1580.AdmiraltyHouse,1580.Admiralty House,1580.Admiralty House_EngineeringDrawing.,1,Stage 2,Sesame,not_in_parts_control
+1580.1008.Q1.DoubleLiftingJigF,1580.1008.Q1.DoubleLiftingJig F,1580.Admiralty House_EngineeringDrawing.,1,our points lifting jig,esame,not_in_parts_control
+1580.AdmiraltyHouseS,1580.Admiralty House S,1580.Admiralty House_EngineeringDrawing.,1,tage 2,esame,not_in_parts_control
+1580.1008.Q1.DoubleLiftingJig,1580.1008.Q1.DoubleLiftingJig,1580.Admiralty House_EngineeringDrawing.,1,Four points lifting jig,Sesame,not_in_parts_control

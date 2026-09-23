@@ -1,0 +1,14 @@
+{
+  "request_id": "f93b568f-a8c2-4f7b-8445-75c60aae5295",
+  "source": "email_approval_sheet",
+  "row_index": 47,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkxwysQAAA=",
+  "subject": "Undeliverable: Quote for Export - Kiran Nadar Museum  - SQR-47313",
+  "task_gid": "1218732774265584",
+  "task_name": "Quote for Export - Kiran Nadar Museum",
+  "asana_url": "https://app.asana.com/0/0/1218732774265584",
+  "action": "(SQR-47313 (exact SQR)); Flag issue: The quote request SQR-47313 for the Kiran Nadar Museum export could not be delivered because David.castellano@zencargo.com does not exist at zencargo.com.",
+  "comment_to_push": "Email from sesameaccess.onmicrosoft.com (Microsoft Outlook) — 22 Sep 2026\nSubject: Undeliverable: Quote for Export - Kiran Nadar Museum  - SQR-47313\n\nThis is an automated bounce-back (NDR) from Microsoft Exchange: Sesame's own outgoing email 'Quote for Export - Kiran Nadar Museum - SQR-47313' to David.castellano@zencargo.com was rejected because that address does not exist at zencargo.com (550 5.1.1). No supplier has replied; the quote request never reached the intended recipient.\n\nAction for Giles:\n- Find the correct email address for the contact at Zencargo (David Castellano) and resend the quote request SQR-47313 for the Kiran Nadar Museum export\n- Clear the incorrect David.castellano@zencargo.com entry from the Outlook Auto-Complete list before resending\nIssue: The quote request SQR-47313 for the Kiran Nadar Museum export could not be delivered because David.castellano@zencargo.com does not exist at zencargo.com.\nKey facts: SQR-47313\nProposed: Flag issue: The quote request SQR-47313 for the Kiran Nadar Museum export could not be delivered because David.castellano@zencargo.com does not exist at zencargo.com.\n\nEmail gateway · matched via SQR-47313 (exact SQR) · received 2026-09-22 08:25 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-22T14:30:55.542575+00:00"
+}

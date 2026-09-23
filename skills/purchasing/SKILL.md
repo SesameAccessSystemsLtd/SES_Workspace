@@ -16,37 +16,94 @@ Auth: `C:\Users\GilesHugo\.hermes\.env` (MS Graph, Gemini, Elastic Email) + `goo
 
 ---
 
-## Pipeline Flow
+## Pipeline Flow (rebuilt 2026-09-18)
 
 ```
-MS Graph inbox
+MS Graph purchasing@ mailbox (Inbox + 1.3 Confirmations + INVOICES TO PROCESS + Archive)
+      ↓  window from data/fetch_state.json watermark (read OR unread; weekend-safe)
+01_email_fetcher.py     — fetch + PDF text; archive every email to data/email_archive/YYYY-MM/
       ↓
-01_email_fetcher.py     — fetch unread emails + PDF attachments
+02_llm_parser.py        — readable text → LLM: summary, action for Giles, refs (Sesame PO/SQR/job,
+                          supplier quote/order/invoice ref), price, carriage, delivery, issues, noise.
+                          RingCentral call notes parsed first (label, phone, summary, recap, tasks).
       ↓
-02_llm_parser.py        — Gemini extracts PO numbers, supplier, dates → parsed_insights.json
+03_proposal_engine.py   — matcher.py (supplier directory + learned rules + closed-task guard)
+                          → proposals + plain-text comment + Suggested decision → pending_approval_queue.json
       ↓
-03_proposal_engine.py   — match against ops.db → pending_approval_queue.json
+04_sheet_writer.py      — Pending tab (header-addressed; new review columns)
       ↓
-04_sheet_writer.py      — write proposals to Google Sheet (HITL gate)
+    [Giles: DECISION = A / M / R / S(=take Suggested); Amendment Notes; Feedback; corrected Asana Link]
       ↓
-    [Giles reviews rows in sheet — marks A / M / R]
+05_sheet_approver.py    — REQUESTS/ files for SAP  →  learn.py turns the decision into rules
+                          → row archived to Processed with what was learned
       ↓
-05_sheet_approver.py    — reads decisions → creates REQUESTS/ files for SAP
-      ↓
-SAP (asana_agent)       — processes REQUESTS/ → writes to Asana
+SAP (asana_agent)       — processes REQUESTS/ → writes to Asana (still the ONLY Asana writer)
 ```
 
----
+Shared modules: `gateway_common.py` (text cleaning, RingCentral parsing, supplier directory,
+rules store, archive), `matcher.py` (task resolution), `sheet_common.py` (header-addressed sheet
+access), `learn.py` (feedback → rules, Rules tab, scorecard). Regression test: `test_gateway.py`
+(offline; run it after touching any of these).
+
+### How matching works now
+1. **Who** — sender domain → `data/suppliers.json` (412 suppliers, all domains); RingCentral calls →
+   phone / contact-label rules, else fuzzy label → supplier name. No more guessing a company from a
+   word in the domain.
+2. **Which task** — SQR → PO (full, then base) → supplier + job number → supplier's own ref found on a
+   task → the supplier's single open order → subject reference. Learned `sender→task` / `phone→task`
+   rules short-circuit all of this.
+3. **Never** a closed / arrived / cancelled task for quotes, confirmations, dispatch notes or updates
+   (invoices may land on ARRIVED). Tasks Giles has blocked are skipped. Every result carries
+   `Match Reasons` and up to 5 `Alternatives` with status.
+
+### Sheet columns (Pending)
+Original A–O unchanged. Added: **Triage** (supplier_doc / supplier_call / non_supplier_call / noise),
+**Supplier**, **Confidence** (HIGH / MEDIUM / LOW / NONE), **Suggested** (A / R / CHECK), **Why**,
+**Summary**, **Action Required**, **Alternatives**, **Feedback** (free text — teach the gateway),
+**Proposed Task GID** (so a corrected Asana Link is detected), **Match Reasons**, **Sender**.
+Processed = the same + Outcome, Request ID, Request Status, Final Task GID, **Learned**.
+A **Rules** tab mirrors `data/gateway_rules.json`.
+
+### What teaches the gateway (learn.py)
+| You do this in the sheet | It learns |
+|---|---|
+| Paste the right task link into **Asana Link** (with A or M) | that sender / phone → that task (90 days); domain → supplier if new |
+| **R** + Feedback saying noise / ignore / tracking / marketing | that domain is noise (never for a directory supplier) |
+| Feedback saying closed / wrong task / already arrived / cancelled | the proposed task is blocked from future matches |
+| Any other Feedback text | kept as a note in the Rules tab |
+Backfill from history: `python learn.py --backfill`. Trend: `python learn.py --scorecard`.
+
+### Local data model (ops.db, written only via db_writer.py) — added 2026-09-18
+| Table | One row per | What it gives you |
+|---|---|---|
+| `email_documents` | inbound email / call | sender, resolved supplier **vs** the task's Vendor field, doc type, summary, action items, Sesame PO/SQR/job refs, the supplier's **quote / order / invoice numbers**, price, carriage, delivery date, lead time, proposed task + confidence + alternatives, then Giles' decision, final task and what was learned |
+| `email_line_items` | extracted line | part_ref, description, qty, unit price, line total, linked task/PO/supplier; `sesame_part_no` / `parts_control_gid` reserved for the line→part mapping |
+The matcher reads `email_documents` back: an invoice quoting a supplier order number lands on
+the task the confirmation with that number went to. `02 --reparse` + `03` over the archive rebuilds
+these tables after a prompt change. Mailbox read/unread state is never touched by the pipeline.
+
+### RingCentral call notes
+Every "Notes from your call with …" email is parsed: contact label + phone from the subject, the AI
+summary / recap / tasks from the body. Supplier calls are matched like any email and the comment
+carries the summary and the follow-ups; non-supplier calls (IT, utilities, internal extensions) get
+Suggested = R with the reason. Nothing is posted without a sheet decision.
 
 ## Scripts
 
 | Script | Layer | Input | Output |
 |--------|-------|-------|--------|
 | `01_email_fetcher.py` | Ingest | MS Graph API | raw email text + PDF bytes |
-| `02_llm_parser.py` | Parse | raw email | `data/parsed_insights.json` |
+| `02_llm_parser.py` | Parse | raw email (text) | `data/parsed_insights.json` + archive |
+| `matcher.py` | Match (lib) | refs + supplier + rules + ops.db | MatchResult |
 | `03_proposal_engine.py` | Match | parsed_insights.json + ops.db | `data/pending_approval_queue.json` |
 | `04_sheet_writer.py` | HITL write | pending_approval_queue.json | Google Sheet rows |
-| `05_sheet_approver.py` | HITL read | Google Sheet decisions | `workspace/REQUESTS/` files |
+| `05_sheet_approver.py` | HITL read | Google Sheet decisions | `queues/REQUESTS/` files + Processed + feedback log |
+| `learn.py` | Learn | feedback records / Processed tab | `data/gateway_rules.json`, Rules tab |
+| `invoice_gate.py` | Gate (lib) | invoice text + PO index + live task | GateResult (7 conditions, hard stops) |
+| `06_invoice_processor.py` | Intake/file/HITL | archive PDFs + Dropbox drop folder | Dropbox filing, Invoices tab, REQUESTS/ |
+| `07_invoice_mover.py` | Nightly | invoice_documents + live Signed OFF | moves PDF to Signed Off, REQUESTS/ |
+| `asana_read.py` | Read-only Asana | task gid | live custom fields (GET only) |
+| `test_gateway.py` | Test | — | offline regression (no LLM / sheet / Asana) |
 
 ---
 
@@ -58,6 +115,8 @@ Giles marks each row:
 - `A` — Approve: SAP executes as proposed
 - `M` — Modify: SAP executes with manual override (Giles edits the row first)
 - `R` — Reject: no action taken
+- `S` — Same as Suggested: takes the gateway's A or R (a CHECK suggestion needs a real decision)
+Sort/filter on **Suggested** and **Confidence**: bulk-S the R's, read the CHECKs.
 
 `05_sheet_approver.py` runs every 30 min (09–17 Mon–Fri). Converts approved/modified rows into REQUESTS/ files. SAP processes REQUESTS/ at its 08:30 heartbeat and on-demand.
 
@@ -117,18 +176,56 @@ No Asana writes occur without a decision in the sheet.
 
 ---
 
-## QA Portal (built 2026-08-13)
+## Invoice gate (built 2026-09-18) — invoices → Dropbox filing → Asana comment
 
-Interactive **Live QA Action Portal** for the parser decisions + notes, replacing the static report for day-to-day action.
+```
+invoice PDF  (email attachment archived by 01  |  dropped at top level of 'Invoices - to be signed off')
+      ↓  06_invoice_processor.py run   (hourly, after 03)
+seven-condition gate (invoice_gate.py) with LIVE task fields (asana_read.py, GET only)
+   1 PO recognised in document text → one task   2 ORDER Status = ARRIVED   3 Signed OFF empty & not completed
+   4 Invoice Number empty   5 supplier ≈ task Vendor   6 invoice number fits supplier's learned shape
+   7 (Price Ex VAT + Carriage) × 1.2 printed on the document
+   hard stops: PROFORMA · DEPOSIT · STATEMENT · CREDIT NOTE · DUPLICATE (supplier+number) · value > £2,000
+      ↓
+AUTO  → copied/moved to 'AI SIGNED OFF/<PO> - <Vendor> - <description> - <invoice no>.pdf'
+CHECK → '2. invoice queries/…'  (+ a SUGGESTED task when a confirmation carried the same supplier ref)
+      ↓  row on the sheet's **Invoices** tab (conditions, flags, Dropbox link, proposed comment)
+Giles: DECISION A / M / R / S   →  06 approve (every 30 min)  →  REQUESTS/  →  SAP posts the COMMENT + link
+      ↓  human sets Signed OFF in Asana
+07_invoice_mover.py (nightly) → moves the PDF to '3. INVOICES - Signed Off', queues a follow-up comment with the new link
+```
 
-**Files:**
-- `qa_scorecard.py` — weekly static HTML report (`data/qa/latest.html` + dated copies) — precision/recall/F1 + error taxonomy + surfaced FP/FN from `Processed` tab.
-- `qa_sync.py` — gateway: `--portal` generates interactive `data/qa/qa_portal.html` (inline live+history data, confidence-coloured); `--push` writes saved actions to the Google Sheet; default writes `qa_live.json` + `qa_history.json`.
-- `qa_server.py` — tiny localhost HTTP server (`127.0.0.1:8611`) to serve the portal + accept `POST /save` → `data/qa/qa_actions.json`.
-- `qa_portal_template.html` — source template the sync embeds data into.
+Phase 1 rule: the machine never sets Invoice Number or Signed OFF. Comment + link only. The PDF no longer
+needs attaching to the task — the Dropbox link (`https://www.dropbox.com/home/<folder>?preview=<file>`,
+works for any signed-in team member, no API token) is the attachment.
+`INVOICE_FILING_ENABLED=1` in `.hermes/.env` turns Dropbox filing on; without it 06/07 run dry.
+Local record: `invoice_documents` in ops.db (via db_writer) — duplicate guard, multi-invoice running
+total, mover state. Trial + risk register: `INVOICE_GATE_TRIAL_2026-09-18.md`.
 
-**Confidence model** (in `qa_sync.py`): HIGH = task matched; MEDIUM = NOT MATCHED on quote/order_confirmation (actionable, needs human pick); LOW = NOT MATCHED on dispatch/invoice/update/other (noise). DONE = decision made.
+Cron (proposed): `06 run` hourly at :20 (after 03) · `06 approve` every 30 min with 05 · `07` nightly 01:30.
+One-off: `python 06_invoice_processor.py init-sheet` writes the headings on the Invoices and RULES tabs.
 
-**Key constraint — browser can't write files over file:///**: notes/decisions require the small server (`python qa_server.py`). A static file:// open of `qa_portal.html` can render/filter but Save falls back to a download. Nav tile intentionally points at the server URL. Start the server, pick a row, A/M/R + note, Save → `qa_actions.json` → `qa_sync.py --push` → sheet (DECISION col K, notes col L, Processed At col M).
+### Shadow mode (go-live state from 2026-09-18)
+`GATEWAY_SHADOW=1` in `.hermes/.env`: every stage runs into the **sheet only**. No ops.db writes, no
+Dropbox filing, and REQUESTS files go to `queues/REQUESTS_SHADOW/` (SAP never sees them), so nothing
+reaches Asana. Learned rules still update. Decisions made in shadow are stamped "(shadow)" in Processed
+At. Remove the flag when trusted; `06` keeps `invoice_gate_shadow_rows.json` so the invoice history can
+be replayed into ops.db then.
 
-**Ground truth:** `Processed` tab cols E=Document Type, G=Matched Task, K=DECISION (A/M/R).
+## QA Portal — RETIRED 2026-09-18
+
+`qa_server.py` / `qa_sync.py --push` no longer save decisions. The portal keyed saves on the sheet
+ROW NUMBER while `05` deleted rows every 30 minutes, so a saved decision could land on the wrong
+email; it also needed a hand-started server and a manual push. Review and feedback are in the
+sheet only. `qa_scorecard.py` / `qa_sync.py` (read-only) remain for history; `learn.py --scorecard`
+is the live measure.
+
+## Rules (additions 2026-09-18)
+
+- Comments are plain text, summary-first, no HTML / mention tags (they post as literal text).
+- `gateway_common.py`, `matcher.py`, `sheet_common.py`, `learn.py` are the single implementations —
+  do not re-implement domain→vendor guessing, header positions or rule handling in a stage script.
+- `03` must not propose "Delivery Date CONFIRMED" on an arrived/closed task, must not overwrite an
+  existing Price Ex VAT, and must record supplier quote/order refs on the description.
+- Run `test_gateway.py` before and after changes. Raw emails live in `data/email_archive/` —
+  `02_llm_parser.py --reparse YYYY-MM` re-parses a month into a side file after a prompt change.

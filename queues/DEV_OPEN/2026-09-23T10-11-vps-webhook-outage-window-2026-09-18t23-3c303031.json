@@ -1,0 +1,30 @@
+{
+  "id": "3c303031",
+  "objective": "VPS webhook outage window 2026-09-18T23:56Z..2026-09-21T07:17Z attributed to a specific culprit (host reboot / ingress restart / neither) with exact times, current delivery path verified off-box; rollback receiver on :8088 proven unrequired (no Traefik route, no supervisor) and cleanly stopped with autostart disabled, files retained for cold rollback",
+  "where": [
+    "/opt/ses/webhook-receiver/receiver.py",
+    "/etc/systemd/system/sas-webhook-receiver.service",
+    "/docker/traefik/dynamic/hooks.yml",
+    "vps:srv1903976"
+  ],
+  "channel": "hermes:cli",
+  "area": "VPS / Webhooks",
+  "effort": "M",
+  "priority": "High",
+  "created_at": "2026-09-23T10:11:19.864889+00:00",
+  "asana_gid": null,
+  "events": [
+    {
+      "at": "2026-09-23T10:11:19.864900+00:00",
+      "status": "open",
+      "by": "hermes:cli",
+      "note": "thread opened"
+    },
+    {
+      "at": "2026-09-23T10:11:19.948935+00:00",
+      "status": "awaiting_signoff",
+      "by": "agent",
+      "note": "TASK1: NO reboot and NO ingress restart in window - host up since 2026-08-14 14:31:15Z (39d), traefik started 2026-09-11T08:47:38Z restarts=0, hermes-gateway 2026-09-11T14:48:35Z restarts=0, no reboot/shutdown lines in window journal, cert valid Sep11-Dec10, ufw unchanged. Events stopped 2026-09-18T23:55:54Z resumed 2026-09-21T07:17:49Z (55.36h) - gap is deliveries, not host/ingress. TASK2: nothing routed to :8088 (hooks.yml -> 172.17.0.2:8099; only ref was the unit's own RECV_PORT) so STOP not triggered; stopped+disabled sas-webhook-receiver.service, files+backup kept at /opt/ses/webhook-receiver/rollback-20260923/. Post-change: public /health 200 (off-box), local 8099 200, live traffic events_received 8036->8056, Asana webhook active=true last_success_at=2026-09-23T10:10:22Z retries=0. One side observation NOT acted on: sas-hooks-route-sync.timer last fired 2026-09-11, no next elapse."
+    }
+  ]
+}

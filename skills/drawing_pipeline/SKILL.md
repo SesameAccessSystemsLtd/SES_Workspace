@@ -39,6 +39,36 @@ C:\Users\GilesHugo\.openclaw\venv\Scripts\python.exe ^
 | 3 | `02_map_parts_to_packs.py` | Reads drawing_boms.csv → applies 9-rule PN normalizer → matches to `parts_control.sesame_pn` → writes `build_assembly_pack_gid` to ops.db |
 | 4 | `03_write_to_asana.py` | For each matched PC task: PUTs Build Packs reference GID, appends pack note to task notes, prepends `*` to task name if multi-pack. **SAP only.** |
 
+## 🔴 The "Assembly Pack" description line — ONE shared contract (all mapping paths)
+
+The pack link is written to TWO places, and the description line is the human/report-readable
+half. **Every** path that maps a part to a pack MUST write the identical line, or downstream
+reports that read the description see a **false link** (field set, description silent).
+
+| Path | Writes the line? |
+|---|---|
+| Pipeline (`drawing_pipeline/scripts/03_write_to_asana.py`) | ✅ |
+| `apply_pack_assign` (`purchasing/execute_requests.py`) | ✅ |
+| Legacy BOM ingress (`legacy_bom_pack_allocation/legacy_bom_pack_ingest.py`) | ✅ |
+| **Manual mapping in the Asana UI** (field/drag) | ❌ — **THIS IS THE GAP** |
+
+**Canonical format (copy verbatim — do not vary):**
+```
+{qty} off in Assembly Pack {pack_reference}
+```
+e.g. `2 off in Assembly Pack 1037.1014.M.Gate+Support.`
+- Uses the pack **reference/name** (`pack_reference`), NOT the GID.
+- **Idempotency:** skip if `f"Assembly Pack {pack_reference}"` is already a substring of `notes`.
+- **Multi-pack:** join lines with ` | `; prepend `*` to the task name when 2+ packs.
+- **Separator** before an appended block: `"\n---\n"` (only if notes already non-empty).
+- Helpers to reuse: `_note_line(qty, pack_name)` + `_already_has_pack_note(notes, pack_reference)`
+  in `legacy_bom_pack_ingest.py`.
+
+**Requirement:** a reconcile step must run so any part whose pack link is known but whose
+description lacks the line gets it written — closing the manual-mapping gap. See
+`SES_Workspace/docs/manual-pack-mapping-false-link-2026-09-21.md`.
+
+
 ## Run Protocol
 
 ### Step 1 — Dry-run stages 1+2 (check PDF discovery)

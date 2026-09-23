@@ -1,0 +1,14 @@
+{
+  "request_id": "76480824-66f9-4ba0-9d33-9c6cb3f7e2df",
+  "source": "email_approval_sheet",
+  "row_index": 28,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkxwjwlAAA=",
+  "subject": "RE: Laser Cut BOM - 1597 - Forrest Road Entire System - SQR-47003",
+  "task_gid": "1218238770702796",
+  "task_name": "21622-1597 - Exact - Laser Cut BOM - 1597 - Forrest Road Entire System",
+  "asana_url": "https://app.asana.com/0/0/1218238770702796",
+  "action": "(SQR-47003 (exact SQR)); Update delivery date to 2026-09-22; Flag issue: The pallet missed the hub delivery over the weekend and delivery has been rescheduled to tomorrow (2026-09-22).; Note: Status already Delivery Date CONFIRMED",
+  "comment_to_push": "Update from Exact Lasercut (Brad) — 21 Sep 2026\nSubject: RE: Laser Cut BOM - 1597 - Forrest Road Entire System - SQR-47003\n\nBrad at Exact Precision is letting Giles know that the pallet of laser cut parts for job 1597 (Forrest Road Entire System, SQR-47003) missed the hub delivery over the weekend. It has been rescheduled and should be delivered tomorrow (2026-09-22). He apologises for the delay.\n\nAction for Giles: none — information only\nIssue: The pallet missed the hub delivery over the weekend and delivery has been rescheduled to tomorrow (2026-09-22).\nKey facts: delivery 22 Sep 2026 · PO 21622-1597 · SQR-47003\nProposed: Update delivery date to 2026-09-22; Flag issue: The pallet missed the hub delivery over the weekend and delivery has been rescheduled to tomorrow (2026-09-22).\n\nEmail gateway · matched via SQR-47003 (exact SQR) · received 2026-09-21 06:39 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-21T10:30:12.401258+00:00"
+}

@@ -59,6 +59,80 @@ def job_of(name):
     m = re.search(r"(?:^|[-\s_])(\d{3,4})(?=[\s\-:._]|$)", name or "")
     return m.group(1) if m else None
 
+# ── vendor-group detection (D1) ──────────────────────────────────────────────
+TREATMENT_PREFIXES = ("laser cut","machining","powder coating","engraving","anodising","finish",
+                      "nbss","sesame","marine lacquer","cement board","glass","bellows")
+
+# Names that look like vendor groups but are actually roots / controls / material
+# cost-centre lines and must NOT be surfaced as outstanding vendor work.
+NON_VENDOR_PREFIXES = ("all boms","karol generate entire bom","handover legacy bom",
+                       "issue plc bom","bom:","rfq bom","long lead","long leading",
+                       "steel profile bom","ferrous bom","non-ferrous bom")
+
+# vendor-first: 'Galvanising - 1580 …' and 'ALEXANDER POLLOCK - Engraving - 1580 …'.
+_VENDOR_FIRST_RE = re.compile(
+    r"^[A-Za-z][A-Za-z0-9&/\.' ]{2,30}\s*-\s*"
+    r"(?:[A-Za-z][A-Za-z0-9&/\.' ]{1,30}\s*-\s*)?"
+    r"\d{3,4}\s*[-: ]")
+
+def is_vendor_group_name(nm):
+    """True if a Build/Project-Orders task name denotes a vendor group (not a root
+    or control line). Accepts treatment-prefixed, PO-prefixed and vendor-first
+    names; always excludes the ALL BOMS roots + known control/cost-centre lines."""
+    if not nm:
+        return False
+    s = nm.strip()
+    low = s.lower()
+    if any(low.startswith(p) for p in NON_VENDOR_PREFIXES):
+        return False
+    if any(low.startswith(p) for p in TREATMENT_PREFIXES):
+        return bool(re.search(r"\d{3,4}", nm))
+    if re.match(r"^\d{4,6}-\d{3,4}\s*[-:]", s):
+        return bool(re.search(r"\d{3,4}", nm))
+    if _VENDOR_FIRST_RE.match(s):
+        return bool(re.search(r"\d{3,4}", nm))
+    return False
+
+# ── recency / parts helpers (read-only ops.db) ────────────────────────────────
+def _sortable_ts(ts):
+    """Normalize an ISO-ish timestamp to a sortable 'YYYY-MM-DD HH:MM:SS' string."""
+    if not ts:
+        return ""
+    s = str(ts).strip().replace("T", " ").replace("Z", "").replace("z", "")
+    return s.split(".")[0][:19]
+
+def _within_days(ts, days):
+    try:
+        d = datetime.datetime.strptime(str(ts or "")[:10], "%Y-%m-%d").date()
+        return (datetime.date.today() - d).days <= days
+    except Exception:
+        return False
+
+def _parts_max_created_at(job, unmapped_only=False):
+    """Newest parts_control.created_at for a job, read-only."""
+    if not job:
+        return ""
+    try:
+        con = sqlite3.connect("file:%s?mode=ro" % OPS_DB, uri=True)
+        con.row_factory = sqlite3.Row
+        sql = ("SELECT MAX(created_at) AS m FROM parts_control "
+               "WHERE (project_code = ? OR sesame_pn LIKE ?)")
+        params = [job, job + ".%"]
+        if unmapped_only:
+            sql += (" AND (build_assembly_pack_gid IS NULL OR build_assembly_pack_gid = '' "
+                    "OR LOWER(build_assembly_pack_gid) IN ('-','null','none'))")
+        row = con.execute(sql, params).fetchone()
+        con.close()
+        return (row["m"] or "") if row else ""
+    except Exception:
+        return ""
+
+_DONE_STOCK = {"kitted","item on premises","in stock","inhouse",
+               "please pick","picking","subcon tasks"}
+
+def _stock_done(stock_action):
+    return " ".join((stock_action or "").lower().split()) in _DONE_STOCK
+
 FILLER = {"entire","bom","generated","replacement","new","task","to","giles","the","for",
           "rev","single","traversing","scissor","lift","street","house","church"}
 def bom_family(control_name):
@@ -139,7 +213,7 @@ def load_jajo_by_job(build_tasks):
 
 def load_project_tasks(gid):
     return paginate(f"/projects/{gid}/tasks", {
-        "opt_fields": "name,gid,completed,due_on,assignee.name,notes,parent.name,"
+        "opt_fields": "name,gid,completed,due_on,assignee.name,notes,parent.name,created_at,"
                       "custom_fields.name,custom_fields.gid,custom_fields.enum_value.name,custom_fields.display_value"})
 
 def subtask_list(gid, fields="name,gid,completed,due_on,assignee.name,notes,parent.name"):
@@ -197,8 +271,9 @@ def load_ops_pack_links():
     Lumping these together hid 9 Langley parts that no amount of re-running
     could ever resolve behind a '▶ Stage drawing' button.
     """
-    c = sqlite3.connect(OPS_DB); c.row_factory = sqlite3.Row
-    rows = c.execute("SELECT sesame_pn, build_assembly_pack_gid FROM parts_control").fetchall()
+    c = sqlite3.connect("file:%s?mode=ro" % OPS_DB, uri=True); c.row_factory = sqlite3.Row
+    rows = c.execute("SELECT sesame_pn, build_assembly_pack_gid, is_completed, stock_action "
+                     "FROM parts_control").fetchall()
     # Pack codes that actually exist, so we can tell 'not linked yet' from
     # 'nothing to link to'.
     code_counts = defaultdict(set)
@@ -215,15 +290,21 @@ def load_ops_pack_links():
         pn = (r["sesame_pn"] or "").strip(); bp = (r["build_assembly_pack_gid"] or "").strip()
         m = re.match(r"^(\d{4})", pn); job = m.group(1) if m else "?"
         linked = bool(bp) and bp.lower() not in ("", "-", "null", "none")
-        per[job].append((pn, linked))
+        done = bool(r["is_completed"]) or _stock_done(r["stock_action"])
+        per[job].append((pn, linked, done))
 
     out = {}
     for job, items in per.items():
         bypn = defaultdict(list)
-        for pn, ln in items: bypn[pn].append(ln)
-        parts = {pn: any(bypn[pn]) for pn in bypn}
-        no_pack = [pn for pn, ln in parts.items()
-                   if pn and (pn[0].isdigit() or '.' in pn) and not ln]
+        for pn, ln, done in items: bypn[pn].append((ln, done))
+        # a part is linked if any row linked; "done" only if every row is satisfied
+        # (is_completed=1 or a present/picked stock_action).
+        parts = {pn: (any(l for l, d in bypn[pn]), all(d for l, d in bypn[pn]))
+                 for pn in bypn}
+        no_pack = [pn for pn, (ln, done) in parts.items()
+                   if pn and (pn[0].isdigit() or '.' in pn) and not ln and not done]
+        done_unmapped = [pn for pn, (ln, done) in parts.items()
+                         if pn and (pn[0].isdigit() or '.' in pn) and not ln and done]
 
         resolvable, ambiguous, blocked, short_pn = [], [], [], []
         for pn in no_pack:
@@ -242,6 +323,7 @@ def load_ops_pack_links():
         out[job] = {
             "total": len(parts),
             "no_pack": len(no_pack),
+            "done_unmapped": len(done_unmapped),
             "resolvable": len(resolvable),
             "ambiguous": len(ambiguous),
             "blocked": len(blocked),
@@ -361,12 +443,10 @@ def build_dataset(purch_tasks, build_tasks, open_orders):
 
     # vendor groups open (from Build/Project Orders) with open unticked parts
     vendor_open = []
-    prefixes = ("laser cut","machining","powder coating","engraving","anodising","finish",
-                "nbss","sesame","marine lacquer","cement board","glass","bellows")
     for t in build_tasks:
         if t.get("completed"): continue
-        nm = t.get("name") or ""; low = nm.strip().lower()
-        if not (any(low.startswith(p) for p in prefixes) and re.search(r"\d{3,4}", nm)):
+        nm = t.get("name") or ""
+        if not is_vendor_group_name(nm):
             continue
         os_ = [s for s in subtask_list(t["gid"], "name,gid,completed,due_on") if not s.get("completed")]
         if os_:
@@ -409,6 +489,13 @@ def build_dataset(purch_tasks, build_tasks, open_orders):
                     break
         roots = roots_by_job.get(job, [])
         root = roots[0] if roots else None
+        # recency: newest of open ALL BOMS root created_at vs newest parts_control.created_at
+        recency = ""
+        for r in roots:
+            if not r.get("completed"):
+                recency = max(recency, _sortable_ts(r.get("created_at")))
+        recency = max(recency, _sortable_ts(_parts_max_created_at(job)))
+        is_new = bool(root and root.get("created_at") and _within_days(root.get("created_at"), 14))
         # open vendor total + overdue count
         issues = []
         overdue = 0
@@ -421,28 +508,42 @@ def build_dataset(purch_tasks, build_tasks, open_orders):
             "job": job, "project": proj,
             "root": root, "roots": roots, "groups": issues, "overdue": overdue,
             "total_groups": len(issues),
+            "recency": recency, "is_new": is_new,
             # Giles's parts-control search link, per job
             "pc_url": f"https://app.asana.com/0/search?q={job}&sort=last_modified&searched_type=task&completion=incomplete&deleted=no_trashed&locatedIn=inAnyOfTheseProjects&any_projects.ids={PARTS_CONTROL}",
         })
+    # newest-first; jobs with no timestamp sort last
+    issued_rows_vg.sort(key=lambda r: r["recency"], reverse=True)
 
     pack_links = load_ops_pack_links()
     no_pack_jobs = []
-    for job, info in sorted(pack_links.items(), key=lambda kv: (kv[1]["no_pack"], kv[0])):
+    _np_items = []
+    for job, info in pack_links.items():
         if job in ("?",) or job not in BUILD_JOBS: continue
         # The <=3 threshold hides small tails of unlinked parts, which is fine
         # for parts a re-run would fix. It is NOT fine for parts that are
         # permanently stuck: a job with 2 blocked parts would never appear at
-        # all. Blocked and ambiguous always surface, whatever the count.
-        if info["no_pack"] <= 3 and not (info["blocked"] or info["ambiguous"]):
+        # all. Blocked and ambiguous always surface, whatever the count. Done-but-
+        # unmapped parts (a finished part whose pack link is genuinely missing)
+        # are also worth showing, so a job with only done_unmapped parts surfaces.
+        if info["no_pack"] <= 3 and not (info["blocked"] or info["ambiguous"] or info["done_unmapped"]):
             continue
+        newest_created = _parts_max_created_at(job, unmapped_only=True)
+        _np_items.append((job, info, newest_created))
+    # newest-first by unmapped-part creation date, then job number (stable sort)
+    _np_items.sort(key=lambda x: x[0])
+    _np_items.sort(key=lambda x: x[2] or "", reverse=True)
+    for job, info, newest_created in _np_items:
         hand = next((h for h in handover if job_of(h.get("name") or "") == job), None)
         no_pack_jobs.append({"job": job, "no_pack": info["no_pack"],
+                             "done_unmapped": info["done_unmapped"],
                              "resolvable": info["resolvable"],
                              "ambiguous": info["ambiguous"],
                              "blocked": info["blocked"],
                              "short_pn": info["short_pn"],
                              "blocked_pns": info["blocked_pns"],
                              "ambiguous_pns": info["ambiguous_pns"],
+                             "newest_created": newest_created,
                              "handover": hand, "anchor": hand["name"] if hand else None})
 
     counts = {
@@ -469,6 +570,7 @@ details.sec .cnt{color:var(--brand)}
 .steelbox{border-radius:8px;padding:7px 12px;font-size:12.5px;margin-top:8px;font-weight:600}
 .steelbox.ok{background:color-mix(in srgb,var(--green) 12%,transparent);border:1px solid var(--green);color:var(--green)}
 .steelbox.open{background:color-mix(in srgb,var(--amber) 12%,transparent);border:1px solid var(--amber);color:var(--amber)}
+.pill.new{background:color-mix(in srgb,var(--brand) 18%,transparent);color:var(--brand);border:1px solid var(--brand)}
 """
 BTN_JS = """
 <script>
@@ -713,6 +815,8 @@ Open sub-BOMs: {esc(', '.join(s['name'] for s in next((k['subtasks'] for k in da
                 bits.append(f'<span class="pill over">{j["blocked"]} blocked</span>')
             if j["short_pn"]:
                 bits.append(f'<span class="muted">{j["short_pn"]} short PN</span>')
+            if j.get("done_unmapped"):
+                bits.append(f'<span class="muted">{j["done_unmapped"]} done·unmapped</span>')
             state = " ".join(bits) or '<span class="muted">—</span>'
 
             detail = ""
@@ -731,7 +835,7 @@ Open sub-BOMs: {esc(', '.join(s['name'] for s in next((k['subtasks'] for k in da
                               'guess.</p><p>'
                               + ", ".join(f'<code>{esc(p)}</code>' for p in j["ambiguous_pns"])
                               + "</p>")
-                detail = (f'<tr><td colspan="5"><details class="vendor">'
+                detail = (f'<tr><td colspan="6"><details class="vendor">'
                           f'<summary>{j["blocked"] + j["ambiguous"]} part(s) needing '
                           f'reconciliation — job {esc(j["job"])}</summary>{lines}'
                           f'</details></td></tr>')
@@ -743,7 +847,11 @@ Open sub-BOMs: {esc(', '.join(s['name'] for s in next((k['subtasks'] for k in da
             else:
                 action = '<span class="muted">nothing to stage</span>'
 
+            created = j.get("newest_created") or ""
+            created_cell = (f'<span class="muted">{esc(created[:10])}</span>'
+                            if created else '<span class="muted">—</span>')
             return (f'<tr><td><b>{esj(j["job"])}</b></td><td>{j["no_pack"]}</td>'
+                    f'<td>{created_cell}</td>'
                     f'<td>{state}</td>'
                     f'<td>{esc(j["anchor"] or "no Handover — fallback drawing")}</td>'
                     f'<td>{action}</td></tr>{detail}')
@@ -757,7 +865,7 @@ Open sub-BOMs: {esc(', '.join(s['name'] for s in next((k['subtasks'] for k in da
                    f'<b>ambiguous</b> = 2+ packs claim the code, needs your ruling. '
                    f'<b>blocked</b> = no pack exists for the code — the BOM never said which pack the '
                    f'part belongs to, so no re-run can fix it.</p>'
-                   f'<table><tr><th>Job</th><th>No-pack</th><th>Reconciliation state</th>'
+                   f'<table><tr><th>Job</th><th>No-pack</th><th>Created</th><th>Reconciliation state</th>'
                    f'<th>Anchor</th><th>Action</th></tr>{rows}</table></details>')
 
     # ── Issued BOMs section — REVERSE-DERIVED from open vendor groups ──────────
@@ -786,7 +894,10 @@ Open sub-BOMs: {esc(', '.join(s['name'] for s in next((k['subtasks'] for k in da
                            f' ({len(g["open_subs"])} open)</td><td>{due_txt}</td><td>{st_txt}</td></tr>')
         overdue_badge = (f'<span class="pill over">{v["overdue"]} overdue</span>' if v["overdue"]
                          else '<span class="pill ok">0 overdue</span>')
-        cards += f"""<div class="card"><h2><span class="num">{esj(v['job'])}</span> {proj} <span class="pill open">{v['total_groups']} open vendor group(s)</span> {overdue_badge}</h2>
+        new_pill = '<span class="pill new">NEW</span>' if v.get("is_new") else ""
+        recency_txt = (f'<span class="muted"> · since {esc(v["recency"][:10])}</span>'
+                       if v.get("recency") else "")
+        cards += f"""<div class="card"><h2><span class="num">{esj(v['job'])}</span> {proj} {new_pill} <span class="pill open">{v['total_groups']} open vendor group(s)</span> {overdue_badge}{recency_txt}</h2>
 <table>
 <tr><th style="width:150px">ALL BOMS root</th><td>{root_cell}</td></tr>
 <tr><th>Parts Control</th><td><a href="{esc(v['pc_url'])}" target="_blank">🔍 Outstanding parts for job {esj(v['job'])} →</a></td></tr>

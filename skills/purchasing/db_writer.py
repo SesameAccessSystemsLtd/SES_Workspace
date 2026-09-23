@@ -651,3 +651,239 @@ def write_ordering_edge_case(row: dict, db_path: str = DEFAULT_DB_PATH) -> dict:
                    "insert", row["script"], list(row.keys()))
         conn.commit()
     return {"written": 1, "skipped": 0, "errors": 0}
+
+
+# ---------------------------------------------------------------------------
+# Public API — Email gateway documents + line items (added 2026-09-18)
+#
+# One row per inbound email / call (email_documents) and one row per extracted
+# line item (email_line_items). This is the local, queryable memory of what each
+# supplier told us: their quote / order / invoice numbers, prices, carriage,
+# delivery dates, who actually sent it, which task it was matched to and what
+# Giles decided. matcher.py reads it so an invoice quoting a supplier's order
+# number can be matched to the confirmation that carried the same number, and
+# it is the raw material for line-level cost mapping and price-over-time.
+# ---------------------------------------------------------------------------
+
+EMAIL_GATEWAY_DDL = [
+    """CREATE TABLE IF NOT EXISTS email_documents (
+        email_message_id      TEXT PRIMARY KEY,      -- Graph message id (stable)
+        internet_message_id   TEXT,                  -- RFC message id (stable across folders)
+        conversation_id       TEXT,
+        received_at           TEXT,
+        folder                TEXT,
+        sender_email          TEXT,
+        sender_name           TEXT,
+        sender_domain         TEXT,
+        subject               TEXT,
+        document_type         TEXT,                  -- quote / order_confirmation / invoice / dispatch_note / update / call_notes / other
+        triage                TEXT,                  -- supplier_doc / supplier_call / non_supplier_call / noise
+        summary               TEXT,
+        action_required       INTEGER,
+        action_items          TEXT,                  -- JSON list
+        has_issues            INTEGER,
+        issue_summary         TEXT,
+        -- references
+        po_number             TEXT,                  -- Sesame PO as stated by the supplier
+        sqr_number            TEXT,
+        job_numbers           TEXT,                  -- JSON list
+        supplier_quote_ref    TEXT,                  -- THEIR quote number
+        supplier_order_ref    TEXT,                  -- THEIR order / acknowledgement number
+        supplier_invoice_ref  TEXT,                  -- THEIR invoice number
+        -- money / dates
+        total_price_ex_vat    REAL,
+        carriage_ex_vat       REAL,
+        delivery_date         TEXT,
+        lead_time             TEXT,
+        -- who we think it is vs who the task says
+        resolved_supplier_gid TEXT,                  -- from data/suppliers.json
+        resolved_supplier     TEXT,
+        supplier_how          TEXT,
+        task_vendor_name      TEXT,                  -- Vendor field on the matched task at match time
+        -- match
+        proposed_task_gid     TEXT,
+        proposed_task_name    TEXT,
+        match_confidence      TEXT,
+        matched_by            TEXT,
+        alternatives          TEXT,                  -- JSON list of {gid,name,status}
+        -- decision (filled by 05)
+        decision              TEXT,                  -- A / M / R
+        outcome               TEXT,                  -- APPROVED / AMENDED / REJECTED
+        final_task_gid        TEXT,
+        feedback              TEXT,
+        learned               TEXT,
+        decided_at            TEXT,
+        -- call notes
+        call_contact_label    TEXT,
+        call_phone            TEXT,
+        call_tasks            TEXT,                  -- JSON list
+        attachment_names      TEXT,                  -- JSON list
+        archive_path          TEXT,
+        parser_version        TEXT,
+        last_synced_at        TEXT
+    )""",
+    "CREATE INDEX IF NOT EXISTS ix_email_documents_task ON email_documents(proposed_task_gid)",
+    "CREATE INDEX IF NOT EXISTS ix_email_documents_final ON email_documents(final_task_gid)",
+    "CREATE INDEX IF NOT EXISTS ix_email_documents_sup_order ON email_documents(supplier_order_ref)",
+    "CREATE INDEX IF NOT EXISTS ix_email_documents_sup_quote ON email_documents(supplier_quote_ref)",
+    "CREATE INDEX IF NOT EXISTS ix_email_documents_sender ON email_documents(sender_email)",
+    "CREATE INDEX IF NOT EXISTS ix_email_documents_received ON email_documents(received_at)",
+    """CREATE TABLE IF NOT EXISTS email_line_items (
+        line_key              TEXT PRIMARY KEY,      -- <email_message_id>#<line_no>
+        email_message_id      TEXT NOT NULL,
+        line_no               INTEGER NOT NULL,
+        received_at           TEXT,
+        document_type         TEXT,
+        supplier_gid          TEXT,
+        supplier              TEXT,
+        task_gid              TEXT,                  -- order task the email was matched to (final if decided, else proposed)
+        po_number             TEXT,
+        part_ref              TEXT,                  -- supplier's part number / code as written
+        description           TEXT,
+        qty                   REAL,
+        unit_price            REAL,
+        line_total            REAL,
+        notes                 TEXT,
+        sesame_part_no        TEXT,                  -- filled later by line→part mapping
+        parts_control_gid     TEXT,                  -- filled later by line→part mapping
+        mapping_confidence    TEXT,
+        last_synced_at        TEXT
+    )""",
+    "CREATE INDEX IF NOT EXISTS ix_email_line_items_email ON email_line_items(email_message_id)",
+    "CREATE INDEX IF NOT EXISTS ix_email_line_items_task ON email_line_items(task_gid)",
+    "CREATE INDEX IF NOT EXISTS ix_email_line_items_part ON email_line_items(part_ref)",
+]
+
+
+def ensure_email_gateway_schema(db_path: str = DEFAULT_DB_PATH) -> None:
+    """Additive, idempotent. Safe to call at the top of every gateway run."""
+    with _connect(db_path) as conn:
+        for ddl in EMAIL_GATEWAY_DDL:
+            conn.execute(ddl)
+        conn.commit()
+
+
+def upsert_email_documents(rows: list[dict], source: str = "email_pipeline",
+                           db_path: str = DEFAULT_DB_PATH) -> dict:
+    """One row per email. Re-running a stage over the same email updates it (change-detected)."""
+    ensure_email_gateway_schema(db_path)
+    with _connect(db_path) as conn:
+        return _upsert_rows(conn, "email_documents", rows, "email_message_id", source, db_path)
+
+
+def replace_email_line_items(email_message_id: str, lines: list[dict],
+                             source: str = "email_pipeline", db_path: str = DEFAULT_DB_PATH) -> dict:
+    """Line items are replaced as a set per email (a re-parse should not leave stale lines)."""
+    ensure_email_gateway_schema(db_path)
+    with _connect(db_path) as conn:
+        conn.execute("DELETE FROM email_line_items WHERE email_message_id = ?", (email_message_id,))
+        rows = []
+        for i, ln in enumerate(lines, start=1):
+            r = dict(ln)
+            r["line_key"] = f"{email_message_id}#{i}"
+            r["email_message_id"] = email_message_id
+            r["line_no"] = i
+            rows.append(r)
+        res = _upsert_rows(conn, "email_line_items", rows, "line_key", source, db_path) if rows else \
+            {"written": 0, "skipped": 0, "errors": 0}
+        conn.commit()
+        return res
+
+
+def update_email_document_decision(email_message_id: str, decision: str, outcome: str,
+                                   final_task_gid: str | None, feedback: str = "", learned: str = "",
+                                   source: str = "sheet_approver", db_path: str = DEFAULT_DB_PATH) -> dict:
+    """Record Giles' decision against the email and re-point its line items at the final task."""
+    ensure_email_gateway_schema(db_path)
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    with _connect(db_path) as conn:
+        cur = conn.execute(
+            """UPDATE email_documents SET decision = ?, outcome = ?, final_task_gid = ?, feedback = ?,
+                      learned = ?, decided_at = ?, last_synced_at = ?
+               WHERE email_message_id = ?""",
+            (decision, outcome, final_task_gid or None, feedback or None, learned or None, now, now, email_message_id))
+        if final_task_gid:
+            conn.execute("UPDATE email_line_items SET task_gid = ?, last_synced_at = ? WHERE email_message_id = ?",
+                         (final_task_gid, now, email_message_id))
+        _log_write(conn, "email_documents", email_message_id, "update", source,
+                   ["decision", "outcome", "final_task_gid"])
+        conn.commit()
+        return {"written": cur.rowcount, "skipped": 0, "errors": 0}
+
+
+# ---------------------------------------------------------------------------
+# Public API — Invoice gate documents (added 2026-09-18)
+# One row per invoice PDF the gate has seen, whatever its source (email attachment
+# or a file dropped into the Dropbox 'to be signed off' folder). Keyed on the file's
+# SHA-256 so the same PDF arriving twice is recognised. This is also the duplicate
+# guard: (supplier, invoice number) must never be filed twice.
+# ---------------------------------------------------------------------------
+
+INVOICE_DDL = [
+    """CREATE TABLE IF NOT EXISTS invoice_documents (
+        file_sha256           TEXT PRIMARY KEY,
+        source                TEXT,                  -- email | dropbox
+        source_ref            TEXT,                  -- email_message_id or original dropbox path
+        original_name         TEXT,
+        seen_at               TEXT,
+        sender_domain         TEXT,
+        supplier              TEXT,
+        po_number             TEXT,
+        task_gid              TEXT,
+        task_name             TEXT,
+        invoice_number        TEXT,
+        invoice_date          TEXT,
+        doc_gross             REAL,                  -- largest total printed on the document
+        expected_gross        REAL,                  -- (Price Ex VAT + Carriage) x 1.2 from Asana
+        verdict               TEXT,                  -- AUTO | CHECK
+        conditions            TEXT,                  -- JSON {name: [pass, reason]}
+        flags                 TEXT,                  -- JSON list
+        suggested_task_gid    TEXT,                  -- when no PO in text but a confirmation ref points somewhere
+        filed_folder          TEXT,                  -- 'AI SIGNED OFF' | '2. invoice queries' | '3. INVOICES - Signed Off'
+        filed_name            TEXT,
+        filed_at              TEXT,
+        dropbox_url           TEXT,
+        sheet_decision        TEXT,                  -- A / M / R
+        request_id            TEXT,                  -- REQUESTS/ id of the Asana comment
+        human_signed_off_at   TEXT,                  -- when the nightly mover saw Signed OFF = 'Signed Off '
+        moved_to_signed_off_at TEXT,
+        gate_version          TEXT,
+        last_synced_at        TEXT
+    )""",
+    "CREATE INDEX IF NOT EXISTS ix_invoice_documents_task ON invoice_documents(task_gid)",
+    "CREATE INDEX IF NOT EXISTS ix_invoice_documents_inv ON invoice_documents(supplier, invoice_number)",
+    "CREATE INDEX IF NOT EXISTS ix_invoice_documents_state ON invoice_documents(filed_folder, moved_to_signed_off_at)",
+]
+
+
+def ensure_invoice_schema(db_path: str = DEFAULT_DB_PATH) -> None:
+    with _connect(db_path) as conn:
+        for ddl in INVOICE_DDL:
+            conn.execute(ddl)
+        conn.commit()
+
+
+def upsert_invoice_documents(rows: list[dict], source: str = "invoice_gate",
+                             db_path: str = DEFAULT_DB_PATH) -> dict:
+    ensure_invoice_schema(db_path)
+    with _connect(db_path) as conn:
+        return _upsert_rows(conn, "invoice_documents", rows, "file_sha256", source, db_path)
+
+
+def update_invoice_document(file_sha256: str, fields: dict, source: str = "invoice_gate",
+                            db_path: str = DEFAULT_DB_PATH) -> dict:
+    """Partial update by primary key (decision, request id, mover timestamps)."""
+    ensure_invoice_schema(db_path)
+    allowed = {"sheet_decision", "request_id", "human_signed_off_at", "moved_to_signed_off_at",
+               "filed_folder", "filed_name", "filed_at", "dropbox_url", "task_gid", "task_name"}
+    fields = {k: v for k, v in fields.items() if k in allowed}
+    if not fields:
+        return {"written": 0, "skipped": 1, "errors": 0}
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    sets = ", ".join(f"{k} = ?" for k in fields) + ", last_synced_at = ?"
+    with _connect(db_path) as conn:
+        cur = conn.execute(f"UPDATE invoice_documents SET {sets} WHERE file_sha256 = ?",
+                           list(fields.values()) + [now, file_sha256])
+        _log_write(conn, "invoice_documents", file_sha256, "update", source, list(fields.keys()))
+        conn.commit()
+        return {"written": cur.rowcount, "skipped": 0, "errors": 0}

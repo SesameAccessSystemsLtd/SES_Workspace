@@ -1,0 +1,14 @@
+{
+  "request_id": "c915c76f-5c95-4abb-b926-1a8e3a4a2001",
+  "source": "email_approval_sheet",
+  "row_index": 50,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkvlxihAAA=",
+  "subject": "RE: Engraving Harley Street",
+  "task_gid": "1218446216023732",
+  "task_name": "21631-1420 - Alexander Pollock - Harley Street",
+  "asana_url": "https://app.asana.com/0/0/1218446216023732",
+  "action": "(Matched via PO Number in Local DB); Skipped date update: Asana date is later.",
+  "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> update: RE: Engraving Harley Street \n- Acknowledged update — no field change proposed (type=update, PO=21631-1420, delivery=2026-09-22, vendor=alexander-pollock)\n\nReference: 21631-1420 · Received: 2026-09-17T12:57:11Z\nMatch basis: (Matched via PO Number in Local DB)\nTask GID: 1218446216023732 · AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkvlxihAAA=\nhttps://app.asana.com/0/0/1218446216023732\n\ngiles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-18T12:30:16.513879+00:00"
+}

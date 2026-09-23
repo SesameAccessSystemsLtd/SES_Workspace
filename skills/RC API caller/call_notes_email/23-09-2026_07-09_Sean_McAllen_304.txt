@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  23/09/2026  07:09
+============================================================
+With:         Sean McAllen 304
+Forwarded by: LesV@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved Leslie Vaughn and Sean McAllen discussing recent installation issues, communication challenges, and scheduling delays affecting their project. They also addressed client concerns about the Sesame lift and logistical problems encountered during the installation process.
+
+--- RECAP --------------------------------------------------
+Leslie Vaughn received a call from the main contractor regarding a client complaint about the Sesame lift, with the contractor seeking clarification on the issues raised in a lengthy email; Sean McAllen explained that the client was concerned about watering, drainage, and component parts, but no specific actions were confirmed.Sean McAllen mentioned that the drain in the installed pit differs from the drawings and that the gate hatch was sealed without drainage, which led to modifications; he also noted that some owner parts are made of mild steel, including the RAM component.The team discussed the possibility that the client might be seeking to retrieve money or make a claim, but it was unclear if any action was required from their side; Sean McAllen indicated he provided only basic information about the installation history.Leslie Vaughn inquired about a note on the MS for Cambridge stating 'bottom 75 mil masco down first', which Sean McAllen explained was related to an instruction about drilling and packing procedures, stemming from a disagreement between Leslie and Andy.They reviewed logistical issues caused by delays: the lift was not ready on day one, causing a two-day delay in installation; Leslie expressed frustration over last-minute scheduling and insufficient preparation time, emphasising the need for better planning in future projects.Leslie Vaughn highlighted that Pete's team used inadequate lifting equipment at Language Street, which was unsuitable for the size of the lift, and discussed the challenge of transporting and setting up the lift due to limited access and equipment availability, including the need for larger A-frames.
+
+--- TASKS --------------------------------------------------
+Leslie Vaughn to review and improve scheduling procedures to prevent last-minute planning and ensure adequate preparation time for future installations.Sean McAllen to confirm whether any further actions are required regarding the client’s concerns about the Sesame lift and communicate any updates to Leslie Vaughn.
+
+(Full transcript: RC web portal only — no RingSense API)

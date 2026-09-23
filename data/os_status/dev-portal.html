@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAS OS — Development Work</title>
+<script>window.SAS_PAGE_ID="default";(function(){try{var k='sas_os_theme::'+window.SAS_PAGE_ID;var t=localStorage.getItem(k)||localStorage.getItem('sas_os_theme:last');if(t&&t!=='light')document.documentElement.classList.add('theme-'+t);}catch(e){}})();</script>
+<style>
+/* Seven themes. Each page remembers its own, so colour becomes wayfinding:
+   you learn "the amber one is BOM tracker" and recognise it before reading. */
+:root{--bg:#f4f6fa;--card:#fff;--ink:#1a1a2e;--muted:#6b7280;--line:#e5e7eb;
+--brand:#0f766e;--amber:#d97706;--red:#dc2626;--green:#16a34a;--blue:#2563eb;
+--brand2:#0f766e;--hero-grad:linear-gradient(135deg,#0f172a 0%,#134e4a 100%);
+--hover:#f9fafb;--subbg:#f8fafc;--accbg:#ecfdf5;--accink:#065f46;--onbrand:#fff}
+
+:root.theme-sand{--bg:#faf6f0;--card:#fffdfa;--ink:#2b2118;--muted:#8a7660;--line:#e8dcc9;
+--brand:#a8651f;--amber:#b45309;--red:#b91c1c;--green:#4d7c0f;--blue:#1d4ed8;
+--brand2:#7c4a12;--hero-grad:linear-gradient(135deg,#3b2a17 0%,#7c4a12 100%);
+--hover:#f5efe4;--subbg:#f7f2e9;--accbg:#fdf3e3;--accink:#7c4a12;--onbrand:#fff}
+
+:root.theme-slate{--bg:#1b1f24;--card:#242a31;--ink:#e6edf3;--muted:#9099a6;--line:#343b44;
+--brand:#58a6ff;--amber:#e3b341;--red:#f85149;--green:#3fb950;--blue:#58a6ff;
+--brand2:#79c0ff;--hero-grad:linear-gradient(135deg,#12161a 0%,#2d3742 100%);
+--hover:#2b323a;--subbg:#20262d;--accbg:#10243a;--accink:#79c0ff;--onbrand:#0d1117}
+
+:root.theme-ocean{--bg:#0f1117;--card:#1a1d27;--ink:#e2e8f0;--muted:#94a3b8;--line:#2d3250;
+--brand:#6c8ef7;--amber:#fbbf24;--red:#f87171;--green:#34d399;--blue:#6c8ef7;
+--brand2:#a78bfa;--hero-grad:linear-gradient(135deg,#1e2a5e 0%,#2d1f6e 100%);
+--hover:#21253a;--subbg:#1f2436;--accbg:#0c2b22;--accink:#34d399;--onbrand:#0f1117}
+
+:root.theme-forest{--bg:#0d1512;--card:#15241f;--ink:#dcefe6;--muted:#7fa091;--line:#234034;
+--brand:#2ea87e;--amber:#d9a441;--red:#e05c5c;--green:#3fc98f;--blue:#4d9de0;
+--brand2:#6ddba8;--hero-grad:linear-gradient(135deg,#07140f 0%,#14452f 100%);
+--hover:#1a2f27;--subbg:#112019;--accbg:#0a2a1e;--accink:#6ddba8;--onbrand:#07140f}
+
+:root.theme-plum{--bg:#14101c;--card:#1e1830;--ink:#ece6f7;--muted:#9b8fb5;--line:#352a4d;
+--brand:#b478ff;--amber:#f0a63c;--red:#ff6b81;--green:#4ad9a4;--blue:#7c93ff;
+--brand2:#e0a3ff;--hero-grad:linear-gradient(135deg,#1a0b2e 0%,#4a1d6b 100%);
+--hover:#271f3d;--subbg:#1a1428;--accbg:#2a1240;--accink:#e0a3ff;--onbrand:#14101c}
+
+:root.theme-neon{--bg:#05060f;--card:#0d101f;--ink:#e6f1ff;--muted:#8a93b8;--line:#1e2a4a;
+--brand:#00f0ff;--amber:#ffd100;--red:#ff3b6b;--green:#00ff9d;--blue:#5f7cff;
+--brand2:#b14aff;--hero-grad:linear-gradient(135deg,#060014 0%,#1a0040 60%,#004b73 100%);
+--hover:#131a33;--subbg:#0b0f24;--accbg:#001a1f;--accink:#00ff9d;--onbrand:#05060f}
+
+*{box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+background:var(--bg);color:var(--ink);margin:0;line-height:1.5;
+transition:background .4s,color .4s}
+.wrap{max-width:1200px;margin:0 auto;padding:32px 24px 80px}
+a{color:var(--brand)}
+
+header.hero{background:var(--hero-grad);color:#fff;border-radius:16px;padding:30px;
+margin-bottom:24px;transition:background .4s}
+header.hero h1{margin:0 0 6px;font-size:28px}
+header.hero .sub{opacity:.85;font-size:14px;margin-bottom:16px}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.badge{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);
+color:#fff;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:600}
+.navbtn{display:inline-block;color:#fff;opacity:.85;text-decoration:none;font-size:13px}
+.navbtn:hover{opacity:1}
+
+.thememenu{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.tbtn{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff;
+border-radius:20px;padding:5px 14px;font-size:12.5px;cursor:pointer;font-weight:600}
+.tbtn.on{background:var(--brand);border-color:var(--brand);color:var(--onbrand)}
+.tbtn .dot{display:inline-block;width:9px;height:9px;border-radius:50%;
+margin-right:6px;vertical-align:middle}
+
+/* ONE button component. No inline styles in any builder, ever. */
+.btn{font:inherit;font-size:13px;font-weight:600;border-radius:8px;padding:6px 14px;
+cursor:pointer;border:1px solid transparent;background:var(--brand);color:var(--onbrand);
+transition:filter .15s,opacity .15s}
+.btn:hover:not(:disabled){filter:brightness(1.12)}
+.btn:disabled{opacity:.55;cursor:not-allowed}
+.btn.ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn.ghost:hover:not(:disabled){background:var(--hover)}
+.btn.ok{background:var(--green)}
+.btn.warn{background:var(--amber)}
+.btn.danger{background:var(--red)}
+.btn.sm{font-size:12px;padding:4px 10px}
+.btnrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.acc{font:inherit;font-size:12.5px;font-weight:600;border-radius:8px;padding:4px 10px;
+cursor:pointer;border:1px solid var(--brand);background:transparent;color:var(--brand)}
+.acc:hover:not(:disabled){background:var(--accbg)}
+.acc:disabled{opacity:.55;cursor:not-allowed}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:18px;margin-bottom:14px;transition:background .4s,border-color .4s}
+.cat{margin-top:28px}
+.cat h2{font-size:15px;text-transform:uppercase;letter-spacing:.6px;
+color:var(--muted);margin:0 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;
+display:block;text-decoration:none;color:var(--ink);
+transition:transform .12s,border-color .2s,background .4s}
+.tile:hover{transform:translateY(-2px);border-color:var(--brand)}
+.tile .ico{font-size:22px;margin-bottom:8px}
+.tile h3{margin:0 0 4px;font-size:15px;color:var(--ink)}
+.tile p{margin:0;font-size:12.5px;color:var(--muted)}
+.tile .tag,.tag{display:inline-block;background:color-mix(in srgb,var(--brand) 14%,transparent);
+color:var(--brand);border-radius:6px;padding:2px 8px;font-size:11px;font-weight:600;margin-top:8px}
+
+.muted{color:var(--muted)}
+.note{background:var(--subbg);border:1px solid var(--line);border-left:3px solid var(--brand);
+border-radius:8px;padding:10px 14px;font-size:13px;margin:12px 0}
+.note.warn{border-left-color:var(--amber)}
+.pill{display:inline-block;border-radius:20px;padding:2px 10px;font-size:11.5px;font-weight:600}
+.pill.open{background:color-mix(in srgb,var(--blue) 15%,transparent);color:var(--blue)}
+.pill.warn{background:color-mix(in srgb,var(--amber) 15%,transparent);color:var(--amber)}
+.pill.over{background:color-mix(in srgb,var(--red) 15%,transparent);color:var(--red)}
+.pill.ok{background:color-mix(in srgb,var(--green) 15%,transparent);color:var(--green)}
+.stack{display:flex;flex-direction:column;gap:10px}
+.steelbox{border-radius:8px;padding:7px 12px;font-size:12.5px;margin-top:8px;font-weight:600}
+.steelbox.ok{background:color-mix(in srgb,var(--green) 12%,transparent);
+border:1px solid var(--green);color:var(--green)}
+.steelbox.open{background:color-mix(in srgb,var(--amber) 12%,transparent);
+border:1px solid var(--amber);color:var(--amber)}
+
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+th{text-align:left;color:var(--muted);font-weight:600;font-size:11.5px;
+text-transform:uppercase;letter-spacing:.4px;padding:8px 10px;border-bottom:1px solid var(--line)}
+td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:hover td{background:var(--hover)}
+code{background:var(--subbg);border:1px solid var(--line);border-radius:4px;
+padding:1px 5px;font-size:12px}
+
+details.sec{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:14px 18px;margin-bottom:12px;transition:background .4s}
+details.sec summary{cursor:pointer;font-size:14.5px;font-weight:700;
+color:var(--ink);user-select:none}
+details.sec .cnt{color:var(--brand)}
+details.vendor{margin-top:6px}
+details.vendor summary{cursor:pointer;font-size:13px;color:var(--ink)}
+@media(max-width:640px){.wrap{padding:20px 16px 60px}header.hero{padding:20px}}
+</style>
+<script>
+var SAS_THEMES = ["light", "sand", "slate", "ocean", "forest", "plum", "neon"];
+function sasThemeKey(){ return 'sas_os_theme::' + (window.SAS_PAGE_ID || 'default'); }
+function setTheme(t){
+  if(SAS_THEMES.indexOf(t) < 0) t = 'light';
+  var r = document.documentElement;
+  for(var i=0;i<SAS_THEMES.length;i++) r.classList.remove('theme-'+SAS_THEMES[i]);
+  if(t !== 'light') r.classList.add('theme-'+t);
+  try{ localStorage.setItem(sasThemeKey(), t);
+       localStorage.setItem('sas_os_theme:last', t); }catch(e){}
+  var b = document.querySelectorAll('.tbtn');
+  for(var i=0;i<b.length;i++) b[i].classList.toggle('on', b[i].dataset.theme === t);
+}
+function initTheme(){
+  var t = 'light';
+  try{ t = localStorage.getItem(sasThemeKey())
+           || localStorage.getItem('sas_os_theme:last') || 'light'; }catch(e){}
+  setTheme(t);
+}
+
+var SAS_LIVE = (location.protocol !== 'file:');
+var SAS_DISPATCH = '/dispatch';
+function sasDisableOffline(){
+  if(SAS_LIVE) return;
+  var b=document.querySelectorAll('[data-action]');
+  for(var i=0;i<b.length;i++){
+    b[i].disabled=true;
+    b[i].title='Open this page at http://127.0.0.1:8765/ to use the action buttons '
+      + '(a file:// page has no server to post to).';
+  }
+  var n=document.getElementById('offline-note');
+  if(n) n.style.display='block';
+}
+function sasTrigger(el, payload, kind, done){
+  if(!SAS_LIVE){ return; }
+  var label = el ? el.textContent : '';
+  if(el){ el.disabled=true; el.textContent='Working…'; }
+  fetch(SAS_DISPATCH, {method:'POST', headers:{'Content-Type':'application/json'},
+                       body: (typeof payload==='string'?payload:JSON.stringify(payload))})
+    .then(function(r){ return r.json().then(function(j){ return {ok:r.ok, j:j}; }); })
+    .then(function(res){
+      if(res.ok && res.j && res.j.ok){
+        if(el){ el.textContent = done || 'Done \u2713'; }
+        if(typeof sasOnSuccess==='function') sasOnSuccess(kind,res.j,payload);
+      } else {
+        if(el){ el.disabled=false; el.textContent='\u21ba retry'; }
+        alert((kind||'Action')+' FAILED: '+((res.j&&res.j.error)||'unexpected response'));
+      }
+    })
+    .catch(function(e){
+      if(el){ el.disabled=false; el.textContent='\u21ba retry'; }
+      alert('Server unreachable \u2014 is bom_dispatch_server.py running?\n'+e);
+    });
+}
+
+function sasSignoff(el, id, status){
+  if(status==='closed' || status==='cancelled'){
+    if(!confirm('This is final and only you can do it.\n\nSet '+id+' to '+status+'?')) return;
+  }
+  sasTrigger(el, {action:'dev_signoff', id:id, status:status}, 'Sign-off', '\u2713 saved');
+}
+function sasOnSuccess(kind, res){
+  // The register changed on disk; the page is a generated snapshot, so say so
+  // rather than pretending the DOM is now authoritative.
+  var n=document.getElementById('rebuild-note');
+  if(n){ n.style.display='block'; }
+}
+</script>
+</head>
+<body onload="initTheme();sasDisableOffline();"><div class="wrap">
+<header class="hero">
+<h1>🧭 Development Work in Progress</h1>
+<div class="sub">Every thread an agent has opened across Hermes, Claude and Codex — what is running, what is waiting on you. Sign-off is yours alone.</div>
+<a href="nav.html" class="navbtn">&larr; SAS OS portal</a>
+<div class="thememenu"><button class="tbtn" data-theme="light" onclick="setTheme('light')" title="Remembered for this page only"><span class="dot" style="background:#f4f6fa"></span>Light</button><button class="tbtn" data-theme="sand" onclick="setTheme('sand')" title="Remembered for this page only"><span class="dot" style="background:#d8a55f"></span>Sand</button><button class="tbtn" data-theme="slate" onclick="setTheme('slate')" title="Remembered for this page only"><span class="dot" style="background:#58a6ff"></span>Slate</button><button class="tbtn" data-theme="ocean" onclick="setTheme('ocean')" title="Remembered for this page only"><span class="dot" style="background:#6c8ef7"></span>Ocean</button><button class="tbtn" data-theme="forest" onclick="setTheme('forest')" title="Remembered for this page only"><span class="dot" style="background:#2ea87e"></span>Forest</button><button class="tbtn" data-theme="plum" onclick="setTheme('plum')" title="Remembered for this page only"><span class="dot" style="background:#b478ff"></span>Plum</button><button class="tbtn" data-theme="neon" onclick="setTheme('neon')" title="Remembered for this page only"><span class="dot" style="background:#00f0ff"></span>Neon</button></div>
+<div class="badges"><span class="badge">live: 11</span><span class="badge">awaiting sign-off: 7</span><span class="badge">stale &gt;48h: 6</span><span class="badge">not in Asana: 4</span></div>
+
+</header>
+<div class="note warn" id="offline-note" style="display:none">
+Opened as a local file, so the action buttons are disabled. Open
+<code>http://127.0.0.1:8765/data/os_status/</code> to use them.</div>
+<div class="note" id="rebuild-note" style="display:none">Saved. This page is a generated snapshot — re-run <code>build_dev_portal.py</code> (or wait for the next refresh) to see it move lane.</div>
+<div class="cat"><h2>Waiting on you · 7</h2><p class="muted" style="font-size:12.5px;margin:-4px 0 12px">Signed-off work leaves the list. Nothing here is finished until you say so.</p>
+<div class="card" id="t-fed3cca4">
+<div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+  <div style="flex:1;min-width:280px">
+    <div style="font-weight:600;font-size:14.5px">Dev-work logging rule is live in SOUL.md, CLAUDE.md and AGENTS.md so every channel logs before writing code</div>
+    <div class="muted" style="font-size:12.5px;margin-top:4px">
+      hermes:default · 6d since last event · <a href="https://app.asana.com/1/357939803556123/task/1218595253311904" target="_blank">Asana</a>
+    </div>
+    <div style="margin-top:8px"><span class="tag">Documentation</span> <span class="pill warn">High</span> <span class="pill open">S</span> <span class="pill over">stale 6d</span></div>
+  </div>
+  <div class="btnrow" style="align-items:flex-start"><button class="btn ok sm" onclick="sasSignoff(this,'fed3cca4','closed')" data-action="1" title="Closes the thread. Only you can do this.">✓ Sign off</button><button class="btn ghost sm" onclick="sasSignoff(this,'fed3cca4','open')" data-action="1" title="Not done — reopen it.">↩ Send back</button></div>
+</div>
+<details class="vendor" style="margin-top:10px">
+  <summary class="muted">touching <code>C:/Users/GilesHugo/AppData/Local/hermes/SOUL.md</code> <code>C:/Users/GilesHugo/CLAUDE.md</code> <code>C:/Users/GilesHugo/AGENTS.md</code>  · 3 events</summary>
+  <table><tr><th>when</th><th>state</th><th>by</th><th>note</th></tr><tr><td class='muted'>2026-09-17 14:46</td><td>open</td><td class='muted'>hermes:default</td><td>thread opened</td></tr><tr><td class='muted'>2026-09-17 14:46</td><td>awaiting_signoff</td><td class='muted'>agent</td><td>Rule is deployed in all 3 channel context files (SOUL.md/CLAUDE.md/AGENTS.md); verify wording reads correctly in each.</td></tr><tr><td class='muted'>2026-09-17 15:31</td><td>awaiting_signoff</td><td class='muted'>dev_register.sync</td><td>created Asana task 1218595253311904</td></tr></table>
+</details>
+</div>
+<div class="card" id="t-e2b7cabd">
+<div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+  <div style="flex:1;min-width:280px">
+    <div style="font-weight:600;font-size:14.5px">project_cycle.py joined parts_control on sesame_pn prefix instead of project_code — inflated 1588 parts 538 vs 219 and S5 blockers 282 vs 6; fixed, needs sign-off</div>
+    <div class="muted" style="font-size:12.5px;margin-top:4px">
+      cli-hermes · 6d since last event · <a href="https://app.asana.com/1/357939803556123/task/1218595394746231" target="_blank">Asana</a>
+    </div>
+    <div style="margin-top:8px"><span class="tag">Data Health</span> <span class="pill warn">High</span> <span class="pill open">S</span> <span class="pill over">stale 6d</span></div>
+  </div>
+  <div class="btnrow" style="align-items:flex-start"><button class="btn ok sm" onclick="sasSignoff(this,'e2b7cabd','closed')" data-action="1" title="Closes the thread. Only you can do this.">✓ Sign off</button><button class="btn ghost sm" onclick="sasSignoff(this,'e2b7cabd','open')" data-action="1" title="Not done — reopen it.">↩ Send back</button></div>
+</div>
+<details class="vendor" style="margin-top:10px">
+  <summary class="muted">touching <code>C:/Users/GilesHugo/SES_Workspace/skills/os_portal/project_cycle.py</code>  · 4 events</summary>
+  <table><tr><th>when</th><th>state</th><th>by</th><th>note</th></tr><tr><td class='muted'>2026-09-17 15:06</td><td>open</td><td class='muted'>cli-hermes</td><td>thread opened</td></tr><tr><td class='muted'>2026-09-17 15:28</td><td>open</td><td class='muted'>agent</td><td>resolved by prompt 2b; fix shipped</td></tr><tr><td class='muted'>2026-09-17 15:28</td><td>awaiting_signoff</td><td class='muted'>agent</td><td>join key corrected, --reconcile added</td></tr><tr><td class='muted'>2026-09-17 15:31</td><td>awaiting_signoff</td><td class='muted'>dev_register.sync</td><td>created Asana task 1218595394746231</td></tr></table>
+</details>
+</div>
+<div class="card" id="t-d2183136">
+<div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+  <div style="flex:1;min-width:280px">
+    <div style="font-weight:600;font-size:14.5px">Test thread — confirm dev_register writes, lists and syncs correctly</div>
+    <div class="muted" style="font-size:12.5px;margin-top:4px">
+      cli-hermes · 6d since last event · <a href="https://app.asana.com/1/357939803556123/task/1218595137842217" target="_blank">Asana</a>
+    </div>
+    <div style="margin-top:8px"><span class="tag">Documentation</span> <span class="pill ok">Low</span> <span class="pill open">S</span> <span class="pill over">stale 6d</span></div>
+  </div>
+  <div class="btnrow" style="align-items:flex-start"><button class="btn ok sm" onclick="sasSignoff(this,'d2183136','closed')" data-action="1" title="Closes the thread. Only you can do this.">✓ Sign off</button><button class="btn ghost sm" onclick="sasSignoff(this,'d2183136','open')" data-action="1" title="Not done — reopen it.">↩ Send back</button></div>
+</div>
+<details class="vendor" style="margin-top:10px">
+  <summary class="muted">touching <code>C:/Users/GilesHugo/SES_Workspace/skills/os_portal/dev_register.py</code>  · 3 events</summary>
+  <table><tr><th>when</th><th>state</th><th>by</th><th>note</th></tr><tr><td class='muted'>2026-09-17 15:06</td><td>open</td><td class='muted'>cli-hermes</td><td>thread opened</td></tr><tr><td class='muted'>2026-09-17 15:06</td><td>awaiting_signoff</td><td class='muted'>agent</td><td>test — ready for review</td></tr><tr><td class='muted'>2026-09-17 15:32</td><td>awaiting_signoff</td><td class='muted'>dev_register.sync</td><td>created Asana task 1218595137842217</td></tr></table>
+</details>
+</div>
+<div class="card" id="t-ec5d9cf5">
+<div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+  <div style="flex:1;min-width:280px">
+    <div style="font-weight:600;font-size:14.5px">One shared hourly Graph fetch lands Inbox+Sent+categories+conversationId into ops.db, and a 07:00 read-only morning report (rules A orders / B outbound-no-reply / C portal confirmations) replaces the parked Eisenhower brief, silent when clean</div>
+    <div class="muted" style="font-size:12.5px;margin-top:4px">
+      hermes:purchasing · 3h since last event · <span class="muted">not in Asana yet</span>
+    </div>
+    <div style="margin-top:8px"><span class="tag">Data Health</span> <span class="pill warn">High</span> <span class="pill open">L</span></div>
+  </div>
+  <div class="btnrow" style="align-items:flex-start"><button class="btn ok sm" onclick="sasSignoff(this,'ec5d9cf5','closed')" data-action="1" title="Closes the thread. Only you can do this.">✓ Sign off</button><button class="btn ghost sm" onclick="sasSignoff(this,'ec5d9cf5','open')" data-action="1" title="Not done — reopen it.">↩ Send back</button></div>
+</div>
+<details class="vendor" style="margin-top:10px">
+  <summary class="muted">touching <code>C:/Users/GilesHugo/SES_Workspace/skills/purchasing</code> <code>C:/Users/GilesHugo/SES_Workspace/db/ops.db</code> <code>C:/Users/GilesHugo/AppData/Local/hermes/scripts</code>  · 2 events</summary>
+  <table><tr><th>when</th><th>state</th><th>by</th><th>note</th></tr><tr><td class='muted'>2026-09-23 09:06</td><td>open</td><td class='muted'>hermes:purchasing</td><td>thread opened</td></tr><tr><td class='muted'>2026-09-23 09:50</td><td>awaiting_signoff</td><td class='muted'>agent</td><td>Shared fetch + rules A/B/C + 07:00 report built and verified (2605 touchpoints/1485 threads; A=11 B=64 C=15). Crons e5afe528769c (hourly) + 50cd0e9d1887 (07:00 topic4) registered. OPEN: rotate leaked creds/history rewrite blocked; 01_email_fetcher coexistence; auto-push proposal not written.</td></tr></table>
+</details>
+</div>
+<div class="card" id="t-3c303031">
+<div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+  <div style="flex:1;min-width:280px">
+    <div style="font-weight:600;font-size:14.5px">VPS webhook outage window 2026-09-18T23:56Z..2026-09-21T07:17Z attributed to a specific culprit (host reboot / ingress restart / neither) with exact times, current delivery path verified off-box; rollback receiver on :8088 proven unrequired (no Traefik route, no supervisor) and cleanly stopped with autostart disabled, files retained for cold rollback</div>
+    <div class="muted" style="font-size:12.5px;margin-top:4px">
+      hermes:cli · 2h since last event · <span class="muted">not in Asana yet</span>
+    </div>
+    <div style="margin-top:8px"><span class="tag">VPS / Webhooks</span> <span class="pill warn">High</span> <span class="pill open">M</span></div>
+  </div>
+  <div class="btnrow" style="align-items:flex-start"><button class="btn ok sm" onclick="sasSignoff(this,'3c303031','closed')" data-action="1" title="Closes the thread. Only you can do this.">✓ Sign off</button><button class="btn ghost sm" onclick="sasSignoff(this,'3c303031','open')" data-action="1" title="Not done — reopen it.">↩ Send back</button></div>
+</div>
+<details class="vendor" style="margin-top:10px">
+  <summary class="muted">touching <code>/opt/ses/webhook-receiver/receiver.py</code> <code>/etc/systemd/system/sas-webhook-receiver.service</code> <code>/docker/traefik/dynamic/hooks.yml</code> <code>vps:srv1903976</code>  · 2 events</summary>
+  <table><tr><th>when</th><th>state</th><th>by</th><th>note</th></tr><tr><td class='muted'>2026-09-23 10:11</td><td>open</td><td class='muted'>hermes:cli</td><td>thread opened</td></tr><tr><td class='muted'>2026-09-23 10:11</td><td>awaiting_signoff</td><td class='muted'>agent</td><td>TASK1: NO reboot and NO ingress restart in window - host up since 2026-08-14 14:31:15Z (39d), traefik started 2026-09-11T08:47:38Z restarts=0, hermes-gateway 2026-09-11T14:48:35Z restarts=0, no reboot/shutdown lines in window journal, cert valid Sep11-Dec10, ufw unchanged. Events stopped 2026-09-18T23:55:54Z resumed 2026-09-21T07:17:49Z (55.36h) - gap is deliveries, not host/ingress. TASK2: nothing routed to :8088 (hooks.yml -&gt; 172.17.0.2:8099; only ref was the unit&#x27;s own RECV_PORT) so STOP not triggered; stopped+disabled sas-webhook-receiver.service, files+backup kept at /opt/ses/webhook-receiver/rollback-20260923/. Post-change: public /health 200 (off-box), local 8099 200, live traffic events_received 8036-&gt;8056, Asana webhook active=true last_success_at=2026-09-23T10:10:22Z retries=0. One side observation NOT acted on: sas-hooks-route-sync.timer last fired 2026-09-11, no next elapse.</td></tr></table>
+</details>
+</div>
+<div class="card" id="t-9c5f0738">
+<div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+  <div style="flex:1;min-width:280px">
+    <div style="font-weight:600;font-size:14.5px">Host-side facts for the 2026-09-18..21 webhook outage window stated as verified (reboot? container recreate? stale upstream? what restored it); sas-hooks-route-sync timer re-armed with a real NEXT elapse and proven firing on schedule; an out-of-container host cron heartbeat on the public endpoint installed, logging timestamped lines and validated in both the OK and FAIL(alert) directions</div>
+    <div class="muted" style="font-size:12.5px;margin-top:4px">
+      hermes:cli · 40m since last event · <span class="muted">not in Asana yet</span>
+    </div>
+    <div style="margin-top:8px"><span class="tag">VPS / Webhooks</span> <span class="pill warn">High</span> <span class="pill open">M</span></div>
+  </div>
+  <div class="btnrow" style="align-items:flex-start"><button class="btn ok sm" onclick="sasSignoff(this,'9c5f0738','closed')" data-action="1" title="Closes the thread. Only you can do this.">✓ Sign off</button><button class="btn ghost sm" onclick="sasSignoff(this,'9c5f0738','open')" data-action="1" title="Not done — reopen it.">↩ Send back</button></div>
+</div>
+<details class="vendor" style="margin-top:10px">
+  <summary class="muted">touching <code>/etc/systemd/system/sas-hooks-route-sync.{timer</code> <code>service}</code> <code>/usr/local/bin/sas-hooks-heartbeat.sh</code> <code>/etc/cron.d/sas-hooks-heartbeat</code> <code>/var/log/sas-hooks-heartbeat.log</code> <code>vps:srv1903976</code>  · 2 events</summary>
+  <table><tr><th>when</th><th>state</th><th>by</th><th>note</th></tr><tr><td class='muted'>2026-09-23 11:40</td><td>open</td><td class='muted'>hermes:cli</td><td>thread opened</td></tr><tr><td class='muted'>2026-09-23 11:40</td><td>awaiting_signoff</td><td class='muted'>agent</td><td>ITEM1: NO host reboot (up since 2026-08-14 14:31:15Z), NO hermes-gateway recreate (started 2026-09-11T14:48:35Z restarts=0, IP still 172.17.0.2), NO stale upstream (hooks.yml written 2026-09-11 15:22:32Z, unchanged, points 172.17.0.2:8099), no docker/network events in window, Traefik logs in window = 3 routine release-notice lines. Nothing host-side restored service at 07:17Z 21 Sep - deliveries resumed upstream. ITEM2: root cause = RemainAfterExit=yes on the oneshot service kept it active(exited) forever, so OnUnitActiveSec could never re-arm; timer fired once at boot 2026-09-11 and went inert (NextElapse=infinity). Fixed by rewriting timer to OnCalendar=*:0/5 + Persistent=true AND removing RemainAfterExit=yes. Proven: fired 11:30:01, re-armed, fired 11:35:01, NEXT=11:40:00, SubState=waiting, service inactive between runs. Pre-fix units backed up to /opt/ses/webhook-receiver/rollback-20260923/. ITEM3: /usr/local/bin/sas-hooks-heartbeat.sh + /etc/cron.d/sas-hooks-heartbeat (*/5, root) curls the PUBLIC endpoint from the HOST, appends timestamped line to /var/log/sas-hooks-heartbeat.log, alerts to Telegram chat 855...62 via @SES_Production_bot on failure (30-min rate limit). Validated OK path (exit 0) and FAIL path (exit 1, alert delivered). Cron-driven line observed unprompted at 11:40:01Z. SIDE OBSERVATION not actioned: /root/vps-env-watch.sh logs stopped 2026-09-11 12:55 - possibly also silent; its ALERT lines only reach cron-mail, no Telegram path.</td></tr></table>
+</details>
+</div>
+<div class="card" id="t-242b6d5f">
+<div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+  <div style="flex:1;min-width:280px">
+    <div style="font-weight:600;font-size:14.5px">/root/vps-env-watch.sh either has a working alert path or is deliberately retired, with its true state (alive vs dead) established from evidence and stated plainly</div>
+    <div class="muted" style="font-size:12.5px;margin-top:4px">
+      hermes:cli · 16m since last event · <span class="muted">not in Asana yet</span>
+    </div>
+    <div style="margin-top:8px"><span class="tag">VPS / Webhooks</span> <span class="pill open">Medium</span> <span class="pill open">S</span></div>
+  </div>
+  <div class="btnrow" style="align-items:flex-start"><button class="btn ok sm" onclick="sasSignoff(this,'242b6d5f','closed')" data-action="1" title="Closes the thread. Only you can do this.">✓ Sign off</button><button class="btn ghost sm" onclick="sasSignoff(this,'242b6d5f','open')" data-action="1" title="Not done — reopen it.">↩ Send back</button></div>
+</div>
+<details class="vendor" style="margin-top:10px">
+  <summary class="muted">touching <code>/root/vps-env-watch.sh</code> <code>/var/log/vps-env-watch.log</code> <code>vps:srv1903976</code>  · 2 events</summary>
+  <table><tr><th>when</th><th>state</th><th>by</th><th>note</th></tr><tr><td class='muted'>2026-09-23 12:05</td><td>open</td><td class='muted'>hermes:cli</td><td>thread opened</td></tr><tr><td class='muted'>2026-09-23 12:05</td><td>awaiting_signoff</td><td class='muted'>agent</td><td>KEPT + GIVEN A REAL ALERT PATH (not retired) - evidence showed it is ALIVE and useful, not dead. CORRECTION to prior report: my &#x27;second silent watchdog&#x27; call was half wrong - cron is scheduled and DOES fire */5 (cron journal confirms runs incl. through the outage window), and the reconcile works (ran as the watcher does: rc=0, &#x27;no change - env already current&#x27;). Doppler CLI present+authed. The log silence since 2026-09-11 was the script&#x27;s DESIGNED silent-success path (it only logged on ERROR or CHANGE), not death. What WAS wrong: (1) no alert path - alert text went to stdout only and no MTA is installed (/var/mail empty, no sendmail/postfix), so a real failure would be invisible; (2) misleading delta text - the dry-run branch printed &#x27;REMOVED (would drop): [SAS_CONTROL_TOKEN]&#x27; while the apply branch prints &#x27;ABSENT from doppler (PRESERVED)&#x27; for the same condition, which is why 2026-09-11 looked like a dropped credential. INVESTIGATED that: SAS_CONTROL_TOKEN IS in the apply path order list and the preserve loop copies unmanaged keys forward; token is present in live .env (len=48) and container .env. No credential was ever at risk. FIX (additive, backed up to /opt/ses/webhook-receiver/rollback-20260923/): added Telegram alert() on both failure branches, log a timestamped line EVERY run (OK no change / OK applied) so silence now means not-running, dropped REMOVED from the change-trigger grep (false positive), added jitter. Unchanged: reconcile logic and the .env written. VERIFIED: happy path exit=0 logged &#x27;OK no change&#x27;; failure path exit=1 &#x27;ALERT delivered&#x27;; alert delivery confirmed via Telegram API (msg_id 1400); cron-driven line observed unprompted 12:05:02Z. Rollback = cp backup over /root/vps-env-watch.sh. SEPARATE ISSUE I CAUSED: a `cat /root/.doppler/.doppler.yaml` printed a live Doppler service token (dp.ct.*) into the transcript - recommend rotating that token in Doppler.</td></tr></table>
+</details>
+</div>
+</div>
+<div class="cat"><h2>In progress · 4</h2><p class="muted" style="font-size:12.5px;margin:-4px 0 12px">Opened by an agent and still being worked.</p>
+<div class="card" id="t-b173ec53">
+<div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+  <div style="flex:1;min-width:280px">
+    <div style="font-weight:600;font-size:14.5px">~400 build_assembly_packs rows carry project_code=NULL and are invisible to every project-keyed view - decide whether to backfill or exclude</div>
+    <div class="muted" style="font-size:12.5px;margin-top:4px">
+      cli-hermes · 6d since last event · <a href="https://app.asana.com/1/357939803556123/task/1218595476935759" target="_blank">Asana</a>
+    </div>
+    <div style="margin-top:8px"><span class="tag">Data Health</span> <span class="pill warn">High</span> <span class="pill open">M</span> <span class="pill over">stale 6d</span></div>
+  </div>
+  <div class="btnrow" style="align-items:flex-start"><button class="btn ghost sm" onclick="sasSignoff(this,'b173ec53','awaiting_signoff')" data-action="1">Mark for sign-off</button><button class="btn ghost sm" onclick="sasSignoff(this,'b173ec53','cancelled')" data-action="1" title="Abandon this thread.">✕ Cancel</button></div>
+</div>
+<details class="vendor" style="margin-top:10px">
+  <summary class="muted">touching <code>C:/Users/GilesHugo/SES_Workspace/db/ops.db</code>  · 2 events</summary>
+  <table><tr><th>when</th><th>state</th><th>by</th><th>note</th></tr><tr><td class='muted'>2026-09-17 15:06</td><td>open</td><td class='muted'>cli-hermes</td><td>thread opened</td></tr><tr><td class='muted'>2026-09-17 15:31</td><td>open</td><td class='muted'>dev_register.sync</td><td>created Asana task 1218595476935759</td></tr></table>
+</details>
+</div>
+<div class="card" id="t-2d330fe6">
+<div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+  <div style="flex:1;min-width:280px">
+    <div style="font-weight:600;font-size:14.5px">Confirm whether packs are ever marked is_completed in practice, or accumulate - S7 depends on it</div>
+    <div class="muted" style="font-size:12.5px;margin-top:4px">
+      cli-hermes · 6d since last event · <a href="https://app.asana.com/1/357939803556123/task/1218595196518997" target="_blank">Asana</a>
+    </div>
+    <div style="margin-top:8px"><span class="tag">Data Health</span> <span class="pill open">Medium</span> <span class="pill open">S</span> <span class="pill over">stale 6d</span></div>
+  </div>
+  <div class="btnrow" style="align-items:flex-start"><button class="btn ghost sm" onclick="sasSignoff(this,'2d330fe6','awaiting_signoff')" data-action="1">Mark for sign-off</button><button class="btn ghost sm" onclick="sasSignoff(this,'2d330fe6','cancelled')" data-action="1" title="Abandon this thread.">✕ Cancel</button></div>
+</div>
+<details class="vendor" style="margin-top:10px">
+  <summary class="muted">touching <code>C:/Users/GilesHugo/SES_Workspace/skills/os_portal/project_cycle.py</code>  · 2 events</summary>
+  <table><tr><th>when</th><th>state</th><th>by</th><th>note</th></tr><tr><td class='muted'>2026-09-17 15:06</td><td>open</td><td class='muted'>cli-hermes</td><td>thread opened</td></tr><tr><td class='muted'>2026-09-17 15:31</td><td>open</td><td class='muted'>dev_register.sync</td><td>created Asana task 1218595196518997</td></tr></table>
+</details>
+</div>
+<div class="card" id="t-a01958ec">
+<div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+  <div style="flex:1;min-width:280px">
+    <div style="font-weight:600;font-size:14.5px">project_cycle.py pn-prefix fallback re-inflates the join it was meant to fix - 534 rows attributed by prefix; 1588 S5 blocker still 284 vs true 6; 355 rows have no project_code, 182+ have no sesame_pn at all; project 0000 (orphan bucket) has vanished from the view</div>
+    <div class="muted" style="font-size:12.5px;margin-top:4px">
+      cli-hermes · 6d since last event · <a href="https://app.asana.com/1/357939803556123/task/1218595137825853" target="_blank">Asana</a>
+    </div>
+    <div style="margin-top:8px"><span class="tag">Data Health</span> <span class="pill warn">High</span> <span class="pill open">M</span> <span class="pill over">stale 6d</span></div>
+  </div>
+  <div class="btnrow" style="align-items:flex-start"><button class="btn ghost sm" onclick="sasSignoff(this,'a01958ec','awaiting_signoff')" data-action="1">Mark for sign-off</button><button class="btn ghost sm" onclick="sasSignoff(this,'a01958ec','cancelled')" data-action="1" title="Abandon this thread.">✕ Cancel</button></div>
+</div>
+<details class="vendor" style="margin-top:10px">
+  <summary class="muted">touching <code>C:/Users/GilesHugo/SES_Workspace/skills/os_portal/project_cycle.py</code>  · 2 events</summary>
+  <table><tr><th>when</th><th>state</th><th>by</th><th>note</th></tr><tr><td class='muted'>2026-09-17 15:31</td><td>open</td><td class='muted'>cli-hermes</td><td>thread opened</td></tr><tr><td class='muted'>2026-09-17 15:32</td><td>open</td><td class='muted'>dev_register.sync</td><td>created Asana task 1218595137825853</td></tr></table>
+</details>
+</div>
+<div class="card" id="t-e6933b1e">
+<div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+  <div style="flex:1;min-width:280px">
+    <div style="font-weight:600;font-size:14.5px">Rebuild the QC project data model so issues map part-&gt;order-&gt;supplier-&gt;build pack, chase automation is draft-only, and legacy history is preserved (staged, no big-bang)</div>
+    <div class="muted" style="font-size:12.5px;margin-top:4px">
+      hermes:purchasing · 0m since last event · <a href="https://app.asana.com/1/357939803556123/task/1218777741354899" target="_blank">Asana</a>
+    </div>
+    <div style="margin-top:8px"><span class="tag">Data Health</span> <span class="pill warn">High</span> <span class="pill open">XL</span></div>
+  </div>
+  <div class="btnrow" style="align-items:flex-start"><button class="btn ghost sm" onclick="sasSignoff(this,'e6933b1e','awaiting_signoff')" data-action="1">Mark for sign-off</button><button class="btn ghost sm" onclick="sasSignoff(this,'e6933b1e','cancelled')" data-action="1" title="Abandon this thread.">✕ Cancel</button></div>
+</div>
+<details class="vendor" style="margin-top:10px">
+  <summary class="muted">touching <code>skills/sql_db/scripts/sync_qc_issues.py</code> <code>skills/purchasing/overdue_order_chase.py</code> <code>reports/QC_PROJECT_CLAUDE_HANDOFF.md</code> <code>reports/QC_ISSUES_DESIGN_REVIEW.md</code>  · 3 events</summary>
+  <table><tr><th>when</th><th>state</th><th>by</th><th>note</th></tr><tr><td class='muted'>2026-09-23 12:06</td><td>open</td><td class='muted'>hermes:purchasing</td><td>thread opened</td></tr><tr><td class='muted'>2026-09-23 12:06</td><td>open</td><td class='muted'>hermes:purchasing</td><td>linked to pre-created Asana task 1218777741354899 (created directly with section + custom fields the REQUESTS processor cannot set); sync will now skip this record</td></tr><tr><td class='muted'>2026-09-23 12:21</td><td>open</td><td class='muted'>hermes:purchasing</td><td>Stage 0 COMPLETE + verified: sync_qc_issues.py repointed to 737971594126804, stub task_to_row() replaced with 20-field real mapping, qc_issues schema rebuilt (32 cols, 8 indexes, backed up), open-only filter default, max_pages 50-&gt;200. First real sync: 1906 fetched / 10 open written / 0 errors. Full nightly chain EXIT=0. Stage 1 next: supplier_email 2/5, po_task_gid 0/5, needed_by 0/5 are the gaps.</td></tr></table>
+</details>
+</div>
+</div>
+<p class="muted" style="margin-top:32px;font-size:12px">Generated 2026-09-23 12:21 UTC from <code>queues/DEV_OPEN/</code> · 11 threads total</p>
+</div></body></html>

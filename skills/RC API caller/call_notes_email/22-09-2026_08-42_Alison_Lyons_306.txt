@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  22/09/2026  08:42
+============================================================
+With:         Alison Lyons 306
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This is a voicemail message from Alison Lyons requesting Giles Hugo to ask Fatima to give her a call when she arrives at the office. Giles confirms he will relay the message.
+
+--- RECAP --------------------------------------------------
+Alison Lyons calls Giles Hugo to request that when Fatima arrives at the office, Giles asks her to give Alison a quick call, as Alison is currently driving in.Giles Hugo confirms he will pass the message to Fatima once she arrives.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will ask Fatima to give Alison Lyons a quick call when she gets to the office.
+
+(Full transcript: RC web portal only — no RingSense API)

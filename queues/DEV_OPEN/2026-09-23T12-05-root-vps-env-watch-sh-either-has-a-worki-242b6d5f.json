@@ -1,0 +1,29 @@
+{
+  "id": "242b6d5f",
+  "objective": "/root/vps-env-watch.sh either has a working alert path or is deliberately retired, with its true state (alive vs dead) established from evidence and stated plainly",
+  "where": [
+    "/root/vps-env-watch.sh",
+    "/var/log/vps-env-watch.log",
+    "vps:srv1903976"
+  ],
+  "channel": "hermes:cli",
+  "area": "VPS / Webhooks",
+  "effort": "S",
+  "priority": "Medium",
+  "created_at": "2026-09-23T12:05:13.015259+00:00",
+  "asana_gid": null,
+  "events": [
+    {
+      "at": "2026-09-23T12:05:13.015273+00:00",
+      "status": "open",
+      "by": "hermes:cli",
+      "note": "thread opened"
+    },
+    {
+      "at": "2026-09-23T12:05:13.103894+00:00",
+      "status": "awaiting_signoff",
+      "by": "agent",
+      "note": "KEPT + GIVEN A REAL ALERT PATH (not retired) - evidence showed it is ALIVE and useful, not dead. CORRECTION to prior report: my 'second silent watchdog' call was half wrong - cron is scheduled and DOES fire */5 (cron journal confirms runs incl. through the outage window), and the reconcile works (ran as the watcher does: rc=0, 'no change - env already current'). Doppler CLI present+authed. The log silence since 2026-09-11 was the script's DESIGNED silent-success path (it only logged on ERROR or CHANGE), not death. What WAS wrong: (1) no alert path - alert text went to stdout only and no MTA is installed (/var/mail empty, no sendmail/postfix), so a real failure would be invisible; (2) misleading delta text - the dry-run branch printed 'REMOVED (would drop): [SAS_CONTROL_TOKEN]' while the apply branch prints 'ABSENT from doppler (PRESERVED)' for the same condition, which is why 2026-09-11 looked like a dropped credential. INVESTIGATED that: SAS_CONTROL_TOKEN IS in the apply path order list and the preserve loop copies unmanaged keys forward; token is present in live .env (len=48) and container .env. No credential was ever at risk. FIX (additive, backed up to /opt/ses/webhook-receiver/rollback-20260923/): added Telegram alert() on both failure branches, log a timestamped line EVERY run (OK no change / OK applied) so silence now means not-running, dropped REMOVED from the change-trigger grep (false positive), added jitter. Unchanged: reconcile logic and the .env written. VERIFIED: happy path exit=0 logged 'OK no change'; failure path exit=1 'ALERT delivered'; alert delivery confirmed via Telegram API (msg_id 1400); cron-driven line observed unprompted 12:05:02Z. Rollback = cp backup over /root/vps-env-watch.sh. SEPARATE ISSUE I CAUSED: a `cat /root/.doppler/.doppler.yaml` printed a live Doppler service token (dp.ct.*) into the transcript - recommend rotating that token in Doppler."
+    }
+  ]
+}

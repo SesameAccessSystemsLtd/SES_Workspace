@@ -1,0 +1,14 @@
+{
+  "request_id": "e56e777a-83c3-4b9f-ae6b-ea73497ca299",
+  "source": "email_approval_sheet",
+  "row_index": 27,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAABnJ7JfAACfKjgQkWRhS42xGA6fMW2cAAkvl0lsAAA=",
+  "subject": "Sales order confirmation for your order 21617-1597 S000437701",
+  "task_gid": "1218239425962514",
+  "task_name": "21617-1597 - IGUS - 1597 - Forrest Road Entire System",
+  "asana_url": "https://app.asana.com/0/0/1218239425962514",
+  "action": "(Matched via PO Number in Local DB); [SQR-ledger] no SQR match for sales@igus.co.uk; Skipped date update: Asana date is later.; Note added to description: Order_Confirmation from Igus - £31.06 (2026-09-17)",
+  "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> order_confirmation: Sales order confirmation for your order 21617-1597 S000437701\n- Note added to description: Order_Confirmation from Igus - £31.06 (2026-09-17)\n\nReference: 21617-1597 · Received: 2026-09-17T10:50:18Z\nMatch basis: (Matched via PO Number in Local DB); [SQR-ledger] no SQR match for sales@igus.co.uk\nTask GID: 1218239425962514 · AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAABnJ7JfAACfKjgQkWRhS42xGA6fMW2cAAkvl0lsAAA=\nhttps://app.asana.com/0/0/1218239425962514\n\ngiles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-18T12:30:16.408436+00:00"
+}

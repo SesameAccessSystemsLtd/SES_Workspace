@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  22/09/2026  14:14
+============================================================
+With:         Amanda - Stephenson Gobin 01388 770360
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo from Sesame Access discussing shipment delays due to missing purchase order numbers on invoices, which prevented payment and shipment. Amanda from Stephenson Gobin's team explained the issue and confirmed the process for attaching PO numbers to invoices. Giles agreed to process payments once the correct documentation was provided.
+
+--- RECAP --------------------------------------------------
+Giles Hugo from Sesame Access inquired about the shipment status and confirmed that shipment was delayed due to missing purchase order (PO) numbers on invoices, which are required for payment processing.Amanda from Stephenson Gobin explained that the PO numbers are not appearing on the invoices because of a technical issue with their system, and she is checking with their IT department to resolve it.Amanda provided specific order numbers and PO references, including G207 203, PO 20985 1575, and PO 20717 1569, to assist Giles in processing payments manually.Giles agreed to download the relevant invoices, manually add PO numbers if necessary, and process payments accordingly, then send payment receipts to Amanda for confirmation.Amanda requested that Giles send payment receipts directly to her so she can forward them to their accounts department to release the orders for shipment.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will download the invoices for orders G207 203, PO 20985 1575, and PO 20717 1569, and process the payments manually.Giles Hugo will send payment receipts to Amanda so she can forward them to their accounts department for order release.Amanda will check with their IT department to resolve the issue preventing PO numbers from printing on invoices.
+
+(Full transcript: RC web portal only — no RingSense API)

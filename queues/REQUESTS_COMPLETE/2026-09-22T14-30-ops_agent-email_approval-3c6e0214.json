@@ -1,0 +1,14 @@
+{
+  "request_id": "26da8752-a0e4-497a-aa6d-946284917ee8",
+  "source": "email_approval_sheet",
+  "row_index": 41,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkxwjx6AAA=",
+  "subject": "RE: Product Enquiry From Heskins.com | Purchasing@sesameaccess.com",
+  "task_gid": "1218732774265597",
+  "task_name": "21669-220926 - Heskins - Buy anti corrosion tape from Heskins / Heskins.com",
+  "asana_url": "https://app.asana.com/0/0/1218732774265597",
+  "action": "(learned rule (Giles: Only just added but good to link this supplier going forward : https://app.asana.com/1/357939803556123/project/120776600)); Note added to description: Lead time 2-3 Days",
+  "comment_to_push": "Update from Heskins Ltd (Colin) — 22 Sep 2026\nSubject: RE: Product Enquiry From Heskins.com | Purchasing@sesameaccess.com\n\nColin of Heskins has confirmed that their office will send a pro forma invoice with a payment link for the 5 rolls of corrosion protection tape ordered by Giles. This follows Giles placing the order on PO 21669-220926 for 5 rolls of H3453N Black Corrosion Protection Tape 50mm x 18.3m at £15.82 per roll plus £11.50 shipping. No action is needed from Giles until the pro forma arrives.\n\nAction for Giles: none — information only\nKey facts: lead time 2-3 Days · £79.10 ex VAT + carriage £11.50 · PO 21669-220926\nProposed: note Lead time 2-3 Days\n\nEmail gateway · matched via learned rule (Giles: Only just added but good to link this supplier going forward : https://app.asana.com/1/357939803556123/project/120776600) · received 2026-09-22 09:57 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-22T14:30:55.500651+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "request_id": "759b54be-0a6c-418a-b711-038bc2f407c8",
+  "source": "email_approval_sheet",
+  "row_index": 11,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDgufAAA=",
+  "subject": "Delivery update: 4 ‘Araldite® Rapid 15ml x 2...’ and 5 more items",
+  "task_gid": null,
+  "task_name": "NOT MATCHED",
+  "asana_url": "",
+  "action": "AMENDMENT (task not auto-matched — SAP must locate manually):\napply to 21637-150926 - Amazon - Monday stock order - GB602VXUT1MLLI [🔜PARTIAL DELIVERY] https://app.asana.com/0/0/1218498273286310",
+  "comment_to_push": "NO AUTO-MATCH — Update from Amazon — 18 Sep 2026\nSubject: Delivery update: 4 ‘Araldite® Rapid 15ml x 2...’ and 5 more items\n\nAmazon is notifying that an order placed on behalf of Sesame Access (West Byfleet) has been delayed. The package was previously expected on 18 September but is now arriving Monday. The order contains Gorilla Super Glue XL 25g (qty 5) and Araldite Rapid 15ml x 2 Tubes (qty 4).\nKey facts: delivery 21 Sep 2026 · their order 203-6499113-0831541\nCould be:\n- 21637-150926 - Amazon - Monday stock order - GB602VXUT1MLLI [🔜PARTIAL DELIVERY] https://app.asana.com/0/0/1218498273286310\n- 21605-70926 - Amazon - Monday stock and Needs - GB6019050FKRVI [🔜PARTIAL DELIVERY] https://app.asana.com/0/0/1218240935027288\n- 21619-100926 - Amazon - needs pick up [🔜PARTIAL DELIVERY] https://app.asana.com/0/0/1218349014786982\n- 21614-90926 - Amazon - Doorbell restock [🔜PARTIAL DELIVERY] https://app.asana.com/0/0/1218314467966661\n- 21592-10926 - Amazon - Monday Order - GB6000C4Y20KXI [🔜PARTIAL DELIVERY] https://app.asana.com/0/0/1218048087055301\n\nEmail gateway · 5 candidate(s), none certain · giles@sesameaccess.com",
+  "decision": "M",
+  "created_at": "2026-09-22T09:30:47.654856+00:00"
+}

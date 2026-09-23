@@ -1,0 +1,22 @@
+C:\Users\GilesHugo\SES_Workspace\queues\REQUESTS_COMPLETE\2026-09-18T12-30-ops_agent-email_approval-f5c907b4.md
+C:\Users\GilesHugo\SES_Workspace\queues\REQUESTS_COMPLETE\2026-09-18T13-00-ops_agent-email_approval-cf6949cf.md
+C:\Users\GilesHugo\SES_Workspace\queues\REQUESTS_COMPLETE\2026-09-18T15-00-ops_agent-email_approval-2eac0f2a.md
+C:\Users\GilesHugo\SES_Workspace\queues\REQUESTS_FAILED\2026-09-18T11-30-ops_agent-email_approval-2c7181c4.md
+C:\Users\GilesHugo\SES_Workspace\queues\REQUESTS_FAILED\2026-09-18T12-30-ops_agent-email_approval-00451507.md
+C:\Users\GilesHugo\SES_Workspace\queues\REQUESTS_FAILED\2026-09-18T12-30-ops_agent-email_approval-2733e1a3.md
+C:\Users\GilesHugo\SES_Workspace\queues\REQUESTS_FAILED\2026-09-18T12-30-ops_agent-email_approval-3205652a.md
+C:\Users\GilesHugo\SES_Workspace\queues\REQUESTS_FAILED\2026-09-18T12-30-ops_agent-email_approval-3e861958.md
+C:\Users\GilesHugo\SES_Workspace\skills\RC API caller\call_notes_email\01-09-2026_13-04_441455244630_-_Accounts_01455_244630.txt
+C:\Users\GilesHugo\SES_Workspace\skills\RC API caller\call_notes_email\01-09-2026_14-10_0114_256_0889.txt
+C:\Users\GilesHugo\SES_Workspace\skills\RC API caller\call_notes_email\01-09-2026_15-17_0114_256_0889.txt
+C:\Users\GilesHugo\SES_Workspace\skills\RC API caller\call_notes_email\01-09-2026_15-27_01455_272505.txt
+C:\Users\GilesHugo\SES_Workspace\skills\RC API caller\call_notes_email\01-09-2026_15-53_-_Fwd_Steven_Lyons_Ext_302_07375_930274.txt
+C:\Users\GilesHugo\SES_Workspace\skills\RC API caller\call_notes_email\01-09-2026_16-06_Alison_Lyons_306.txt
+C:\Users\GilesHugo\SES_Workspace\skills\RC API caller\call_notes_email\02-09-2026_11-35_-_Purchasing_07481_353627.txt
+C:\Users\GilesHugo\SES_Workspace\skills\RC API caller\call_notes_email\02-09-2026_13-58_Matthew_Marc_Bloomfield_BA_0345_760_6060.txt
+C:\Users\GilesHugo\SES_Workspace\skills\RC API caller\call_notes_email\02-09-2026_13-59_Matthew_Marc_Bloomfield_BA_0345_760_6060.txt
+C:\Users\GilesHugo\SES_Workspace\skills\RC API caller\call_notes_email\02-09-2026_15-47_Daniel_Irons_07872_935158.txt
+C:\Users\GilesHugo\SES_Workspace\skills\RC API caller\call_notes_email\02-09-2026_15-49_Daniel_Irons_07872_935158.txt
+C:\Users\GilesHugo\SES_Workspace\skills\RC API caller\call_notes_email\07-09-2026_13-42_441722510105_-_Accounts_01722_510105.txt
+C:\Users\GilesHugo\SES_Workspace\skills\RC API caller\call_notes_email\10-09-2026_10-34_447572164943_07572_164943.txt
+C:\Users\GilesHugo\SES_Workspace\skills\RC API caller\call_notes_email\10-09-2026_10-42_Paul_Barker_07552_363776.txt

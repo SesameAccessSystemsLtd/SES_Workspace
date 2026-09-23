@@ -1,0 +1,14 @@
+{
+  "request_id": "1de5890d-d28a-4002-9924-0bb0bcf26aaf",
+  "source": "email_approval_sheet",
+  "row_index": 61,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkxwjyNAAA=",
+  "subject": "Notes from your call with Amanda - Stephenson Gobin 01388 770360 on 22/09/2026 14:25",
+  "task_gid": null,
+  "task_name": "NOT MATCHED",
+  "asana_url": "",
+  "action": "Task not found — no task found. Doc: call_notes. PO: None. SQR: None. Supplier: Stephenson Gobin",
+  "comment_to_push": "NO AUTO-MATCH — Call notes from Stephenson Gobin — 22 Sep 2026\nSubject: Notes from your call with Amanda - Stephenson Gobin 01388 770360 on 22/09/2026 14:25\n\nGiles chased Stephenson Gobin about magnetic locks (ATD 5654) that arrived without a valid invoice number or PO details, which is blocking payment approval. Amanda asked him to email the order details to their CEO (currently out of office) and said she would raise it with Sherry, who handles purchase orders.\n\nAction for Giles:\n- Email all order details, including purchase information and the invoice issue, to Amanda at Karen.Karen@stevensongobain.com\n- Await Amanda's follow-up after she discusses the invoice issue with Sherry and their CEO\nKey facts: their order ATD 5654\n\nEmail gateway · no task found · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-22T14:30:55.683377+00:00"
+}

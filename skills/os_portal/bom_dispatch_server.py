@@ -266,6 +266,40 @@ def dispatch(pl: dict, send: bool = True) -> dict:
             "topic_sent": sent, "prompt": prompt}
 
 
+
+# ── trigger log ─────────────────────────────────────────────────────────────
+# Every button press is recorded here BEFORE we know whether it worked, and the
+# outcome is resolved later from where execute_requests.py filed the request.
+# Append-only JSONL, one file per month. Never fails a request: a logging error
+# is printed and swallowed, because losing a dispatch to a logging bug would be
+# worse than losing the log line.
+TRIGGER_LOG_DIR = _WS / "queues" / "TRIGGER_LOG"
+
+
+def log_trigger(path, payload, result, actor=""):
+    try:
+        TRIGGER_LOG_DIR.mkdir(parents=True, exist_ok=True)
+        now = datetime.now(timezone.utc)
+        rec = {
+            "trigger_id": uuid.uuid4().hex[:10],
+            "at": now.isoformat(),
+            "endpoint": path,
+            "action": (payload or {}).get("action") or "",
+            "actor": actor or "local",
+            "accepted": bool((result or {}).get("ok")),
+            "error": (result or {}).get("error") or "",
+            "request_file": (result or {}).get("request_file") or "",
+            "topic_sent": (result or {}).get("topic_sent"),
+            "summary": {k: v for k, v in (payload or {}).items()
+                        if k in ("job", "id", "status", "control_gid",
+                                 "no_pack_parts", "sub_bom", "project_name")},
+        }
+        with (TRIGGER_LOG_DIR / f"{now:%Y-%m}.jsonl").open("a", encoding="utf-8") as f:
+            f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+    except Exception as e:  # noqa: BLE001 - logging must never break a dispatch
+        print(f"[warn] trigger log write failed: {e}", file=sys.stderr)
+
+
 # ── HTTP layer ───────────────────────────────────────────────────────────────
 class Handler(BaseHTTPRequestHandler):
     def _cors(self):
@@ -322,8 +356,51 @@ class Handler(BaseHTTPRequestHandler):
                 return
         self._json(404, {"ok": False, "error": "not found"})
 
+    def _dev_signoff(self, pl):
+        """Append a state change to the dev register on behalf of the dev portal.
+
+        ADDITIVE, 2026-09-18. Deliberately NOT routed through /dispatch: that path
+        writes a queues/REQUESTS file which execute_requests.py would then try to
+        process as an Asana action and fail. Sign-off belongs to dev_register.py
+        alone, so this shells out to it and nothing else changes.
+        """
+        import subprocess
+        rid = str(pl.get("id") or "").strip()
+        status = str(pl.get("status") or "").strip()
+        if not rid or status not in ("open", "awaiting_signoff", "blocked",
+                                     "closed", "cancelled"):
+            return {"ok": False, "error": "bad id or status"}
+        reg = str(Path(__file__).resolve().parent / "dev_register.py")
+        py = sys.executable
+        cmd = [py, reg, "event", rid, "--status", status,
+               "--by", "dev-portal", "--note", "via OS portal"]
+        # closed/cancelled are human-only in dev_register; the portal IS Giles at a
+        # keyboard, so it passes --human. Nothing else may.
+        if status in ("closed", "cancelled"):
+            cmd.append("--human")
+        try:
+            r = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+        except Exception as e:  # noqa: BLE001 - never take the listener down
+            return {"ok": False, "error": f"register call failed: {e}"}
+        if r.returncode != 0:
+            return {"ok": False, "error": (r.stderr or r.stdout or "").strip()[:300]}
+        return {"ok": True, "id": rid, "status": status}
+
     def do_POST(self):
-        if self.path.rstrip("/") != "/dispatch":
+        p = self.path.rstrip("/")
+        if p == "/dev/signoff":
+            try:
+                n = int(self.headers.get("Content-Length", 0))
+                pl = json.loads(self.rfile.read(n) or b"{}")
+            except Exception as e:
+                return self._json(400, {"ok": False, "error": f"bad payload: {e}"})
+            res = self._dev_signoff(pl)
+            log_trigger("/dev/signoff", pl, res,
+                        self.headers.get("Cf-Access-Authenticated-User-Email", ""))
+            return self._json(200 if res.get("ok") else 400, res)
+        # /api/dispatch is an alias so a page served from a reverse proxy that
+        # namespaces app routes under /api/ works with the same relative URL.
+        if p not in ("/dispatch", "/api/dispatch"):
             return self._json(404, {"ok": False, "error": "not found"})
         # Auth gate: POST /dispatch triggers writes + Telegram. If PORTAL_AUTH_TOKEN
         # is set (the LAN-exposed case), require it as a Bearer token. Loopback with
@@ -340,9 +417,16 @@ class Handler(BaseHTTPRequestHandler):
         except Exception as e:
             return self._json(400, {"ok": False, "error": f"bad payload: {e}"})
         try:
-            res = dispatch(pl)
+            if pl.get("action") == "dev_signoff":
+                res = self._dev_signoff(pl)
+            else:
+                res = dispatch(pl)
+            log_trigger(p, pl, res,
+                        self.headers.get("Cf-Access-Authenticated-User-Email", ""))
             self._json(200 if res.get("ok") else 400, res)
         except Exception as e:
+            log_trigger(p, pl, {"ok": False, "error": str(e)},
+                        self.headers.get("Cf-Access-Authenticated-User-Email", ""))
             self._json(500, {"ok": False, "error": str(e)})
 
     def log_message(self, *a):  # quiet

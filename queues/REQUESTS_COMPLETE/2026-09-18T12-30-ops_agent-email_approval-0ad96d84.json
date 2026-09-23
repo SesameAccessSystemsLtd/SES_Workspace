@@ -1,0 +1,14 @@
+{
+  "request_id": "0f6ab2f1-df31-48f6-9132-4f834bae4b70",
+  "source": "email_approval_sheet",
+  "row_index": 69,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDgt6AAA=",
+  "subject": "Sales Invoice from Kempston Controls IN1992560",
+  "task_gid": "1218357848663271",
+  "task_name": "21626-1600 - Kempston Controls (Subtotal: £348.18)",
+  "asana_url": "https://app.asana.com/0/0/1218357848663271",
+  "action": "(Matched via PO Number in Local DB); [SQR-ledger] no SQR match for accounts.receivable@kempstoncontrols.co.uk; Update 'Price Ex VAT' to £874.89; Note added to description: Invoice from Kempstoncontrols - £874.89 (2026-09-18)",
+  "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> invoice: Sales Invoice from Kempston Controls IN1992560\n- Update 'Price Ex VAT' to £874.89\n- Note added to description: Invoice from Kempstoncontrols - £874.89 (2026-09-18)\n\nReference: 21626-1600 · Received: 2026-09-18T07:48:17Z\nMatch basis: (Matched via PO Number in Local DB); [SQR-ledger] no SQR match for accounts.receivable@kempstoncontrols.co.uk\nTask GID: 1218357848663271 · AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDgt6AAA=\nhttps://app.asana.com/0/0/1218357848663271\n\ngiles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-18T12:30:16.600795+00:00"
+}

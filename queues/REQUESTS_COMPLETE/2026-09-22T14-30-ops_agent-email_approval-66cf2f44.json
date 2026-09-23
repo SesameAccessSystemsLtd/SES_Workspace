@@ -1,0 +1,14 @@
+{
+  "request_id": "19a5d461-919b-4f53-9928-1cad36e1db46",
+  "source": "email_approval_sheet",
+  "row_index": 54,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAABnJ7JfAACfKjgQkWRhS42xGA6fMW2cAAkxw5C1AAA=",
+  "subject": "Farnell Order Confirmation - Order  21016437  - PO  21671-220926",
+  "task_gid": "1218699861339044",
+  "task_name": "21671-220926 - Farnell - Receptacle housing 2way",
+  "asana_url": "https://app.asana.com/0/0/1218699861339044",
+  "action": "(PO 21671-220926 (exact)); Update delivery date to 2026-09-23; Note added to description: Supplier order ref 21016437; Note: Status already Delivery Date CONFIRMED; Note: Price £45.60 already on task",
+  "comment_to_push": "Order confirmation from Farnell (MISS DERRICK BURGES) — 22 Sep 2026\nSubject: Farnell Order Confirmation - Order  21016437  - PO  21671-220926\n\nFarnell has acknowledged Sesame's order 21016437 against PO 21671-220926, dated 22 Sep 2026. It covers 100 off 02R-JWPF-VSLE-S receptacle housings at £0.456 each, goods total £45.60 plus £9.12 VAT (£54.72), with standard carriage at £0.00. Estimated delivery is 23 Sep 2026.\n\nAction for Giles: none — information only\nKey facts: delivery 23 Sep 2026 · £45.60 ex VAT + carriage £0.00 · their order 21016437 · PO 21671-220926\nProposed: Update delivery date to 2026-09-23; note Supplier order ref 21016437\n\nEmail gateway · matched via PO 21671-220926 (exact) · received 2026-09-22 10:13 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-22T14:30:55.603769+00:00"
+}

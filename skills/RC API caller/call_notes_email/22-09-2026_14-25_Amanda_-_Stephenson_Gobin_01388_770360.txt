@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  22/09/2026  14:25
+============================================================
+With:         Amanda - Stephenson Gobin 01388 770360
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo discussing a delayed order and invoice issues with Amanda from Stephenson Gobain's purchasing department. Amanda advised Giles to email the order details to their CEO for further assistance and promised to follow up with their staff.
+
+--- RECAP --------------------------------------------------
+Giles Hugo contacted Amanda from Stephenson Gobain's purchasing department regarding an order of magnetic locks (ATD 5654) that arrived without a proper invoice number, which is required for payment processing.Giles explained that the invoice provided lacked an invoice number and purchase order details, causing delays in payment approval by their accounts payable department.Amanda confirmed that the invoice must include an invoice number and advised Giles to send an email with all order details to their CEO, who is currently out of the office but has his laptop with him, for further assistance.Giles provided his company's name, Sesame Access Systems, and their location in Durham, and agreed to send the order details via email to Amanda's email address, which she will forward to the CEO.Amanda mentioned she would discuss the issue with Sherry, who is responsible for purchase orders, to see if more can be done to resolve the invoice issue.Giles expressed concern about the delay affecting their inventory and potential financial impact, noting they had two orders on the shelf that could have been missed if the delays continued.
+
+--- TASKS --------------------------------------------------
+Giles Hugo will send an email with all order details, including purchase information and invoice issues, to Amanda at Karen.Karen@stevensongobain.com.Amanda will discuss the invoice issue with Sherry and follow up with their CEO regarding the order and invoice status.
+
+(Full transcript: RC web portal only — no RingSense API)

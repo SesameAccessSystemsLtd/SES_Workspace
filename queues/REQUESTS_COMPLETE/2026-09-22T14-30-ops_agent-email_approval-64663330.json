@@ -1,0 +1,14 @@
+{
+  "request_id": "cea8e7d4-8aa1-495f-ade6-246bf1f5515b",
+  "source": "email_approval_sheet",
+  "row_index": 31,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkxwjxeAAA=",
+  "subject": "Shipment Notification on Your Purchase Order 21666-1582 from Mouser Electronics, Inc. Invoice Attached",
+  "task_gid": "1218691097965425",
+  "task_name": "21666-1582 - Mouser - EAO Black Lenses",
+  "asana_url": "https://app.asana.com/0/0/1218691097965425",
+  "action": "(PO 21666-1582 (exact)); Update delivery date to 2026-09-24; Update ORDER Status to 'On Order - Delivery Date Confirmed'; Note added to description: Supplier invoice 92627276",
+  "comment_to_push": "Dispatch note from Mouser Electronics, Inc. (Mouser Order Update) — 21 Sep 2026\nSubject: Shipment Notification on Your Purchase Order 21666-1582 from Mouser Electronics, Inc. Invoice Attached\n\nMouser Electronics has shipped Sesame's order against PO 21666-1582 (invoice 92627276). The goods went out on 21 Sep 2026 via FedEx International Priority with an estimated arrival of 24 Sep 2026, tracking 544282994371. The attached credit-card receipt shows the order was already paid, GBP 93.24 total.\n\nAction for Giles: none — information only\nKey facts: delivery 24 Sep 2026 · £55.70 ex VAT + carriage £22.00 · invoice 92627276 · PO 21666-1582\nProposed: Update delivery date to 2026-09-24; Update ORDER Status to 'On Order - Delivery Date Confirmed'; note Supplier invoice 92627276\n\nEmail gateway · matched via PO 21666-1582 (exact) · received 2026-09-21 19:51 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-22T14:30:55.455335+00:00"
+}

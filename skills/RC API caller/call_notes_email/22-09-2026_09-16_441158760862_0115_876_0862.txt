@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  22/09/2026  09:16
+============================================================
+With:         +441158760862 0115 876 0862
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Fatima Barros inquiring about a billing issue and refund process for a guest booking, with Courtney from bedroom reservations confirming investigation and refund procedures. The overall outcome was that Courtney would verify the payment details and process a refund if appropriate.
+
+--- RECAP --------------------------------------------------
+Fatima Barros requested clarification on a charge made to Mr Brandon Stanbury's credit card during his stay, which was unexpected as the card was supposed to be charged upon booking; she also sent an email with booking details earlier that morning.Courtney from bedroom reservations acknowledged the issue, explained that the discrepancy may be due to notes not being updated regarding the change from guarantee to the university rate, and confirmed that they would investigate the payment and process a refund if the card details are provided by the guest.Courtney advised that the guest can visit reception to add their card details to the system, which would enable the refund to be processed within 7 to 10 working days, depending on the bank.Fatima confirmed that she would ensure the guest contacts reception with the correct card details and requested that Courtney review all four bookings for the students to ensure credit card details are correctly associated with each reservation.
+
+--- TASKS --------------------------------------------------
+Courtney will investigate the payment discrepancy and verify the card details associated with Mr Brandon Stanbury's booking.Courtney will review the email sent by Fatima to confirm all bookings and ensure credit card details are correctly linked to each reservation.Fatima will advise the guest to contact reception to add their card details for refund processing.
+
+(Full transcript: RC web portal only — no RingSense API)

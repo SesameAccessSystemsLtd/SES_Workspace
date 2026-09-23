@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  18/09/2026  12:32
+============================================================
+With:         +441294313104 01294 313104
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles from Sesame Access discussing project specifications, material options, and timelines with Stephen Moore, a supplier representative, to develop a printed electronics component. They agreed to proceed with a quote and plan a follow-up conference call.
+
+--- RECAP --------------------------------------------------
+Giles from Sesame Access and Stephen Moore discussed a project involving large printed electronics, with a size of approximately 610mm to 1200mm, requiring custom printing and assembly processes.Stephen Moore confirmed capability to produce the required size, with standard sheet dimensions around 610mm, and mentioned the need for specialized frames and equipment for the project.They discussed the sealing approach, including adhesive gasket placement and edge sealing, with a recommended minimum of 5mm to 8mm seal width to ensure durability and environmental resistance.Giles expressed interest in obtaining samples or test materials, noting difficulty in sourcing files from current suppliers and considering bonding sheet material locally.Timelines for quotes are targeted for Tuesday, with subsequent discussions planned for Thursday or Friday to review and possibly schedule a conference call with the design team.Additional considerations include the need for custom frames, longer flood coat and squeegee equipment, and ensuring the process can accommodate the large panel size, potentially up to 1.2 meters wide.
+
+--- TASKS --------------------------------------------------
+Stephen Moore will obtain and send quotes for materials and frames by Tuesday.Stephen Moore will confirm the availability and cost of flood coat and squeegee equipment, including longer lengths, by Tuesday.Giles will prepare and bring project details to the Monday morning meeting for internal review.Giles will coordinate with Stephen Moore to schedule a conference call with the design team on Thursday or Friday to discuss project specifics and next steps.
+
+(Full transcript: RC web portal only — no RingSense API)

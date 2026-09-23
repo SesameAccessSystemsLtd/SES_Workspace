@@ -1,87 +1,225 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SAS OS — Portal Home</title>
+<script>window.SAS_PAGE_ID="nav";(function(){try{var k='sas_os_theme::'+window.SAS_PAGE_ID;var t=localStorage.getItem(k)||localStorage.getItem('sas_os_theme:last');if(t&&t!=='light')document.documentElement.classList.add('theme-'+t);}catch(e){}})();</script>
 <style>
+/* Seven themes. Each page remembers its own, so colour becomes wayfinding:
+   you learn "the amber one is BOM tracker" and recognise it before reading. */
 :root{--bg:#f4f6fa;--card:#fff;--ink:#1a1a2e;--muted:#6b7280;--line:#e5e7eb;
 --brand:#0f766e;--amber:#d97706;--red:#dc2626;--green:#16a34a;--blue:#2563eb;
 --brand2:#0f766e;--hero-grad:linear-gradient(135deg,#0f172a 0%,#134e4a 100%);
---hover:#f9fafb;--subbg:#f8fafc;--accbg:#ecfdf5;--accink:#065f46}
-:root.theme-stock{--bg:#0f1117;--card:#1a1d27;--ink:#e2e8f0;--muted:#94a3b8;
---line:#2d3250;--brand:#6c8ef7;--amber:#fbbf24;--red:#f87171;--green:#34d399;--blue:#6c8ef7;
+--hover:#f9fafb;--subbg:#f8fafc;--accbg:#ecfdf5;--accink:#065f46;--onbrand:#fff}
+
+:root.theme-sand{--bg:#faf6f0;--card:#fffdfa;--ink:#2b2118;--muted:#8a7660;--line:#e8dcc9;
+--brand:#a8651f;--amber:#b45309;--red:#b91c1c;--green:#4d7c0f;--blue:#1d4ed8;
+--brand2:#7c4a12;--hero-grad:linear-gradient(135deg,#3b2a17 0%,#7c4a12 100%);
+--hover:#f5efe4;--subbg:#f7f2e9;--accbg:#fdf3e3;--accink:#7c4a12;--onbrand:#fff}
+
+:root.theme-slate{--bg:#1b1f24;--card:#242a31;--ink:#e6edf3;--muted:#9099a6;--line:#343b44;
+--brand:#58a6ff;--amber:#e3b341;--red:#f85149;--green:#3fb950;--blue:#58a6ff;
+--brand2:#79c0ff;--hero-grad:linear-gradient(135deg,#12161a 0%,#2d3742 100%);
+--hover:#2b323a;--subbg:#20262d;--accbg:#10243a;--accink:#79c0ff;--onbrand:#0d1117}
+
+:root.theme-ocean{--bg:#0f1117;--card:#1a1d27;--ink:#e2e8f0;--muted:#94a3b8;--line:#2d3250;
+--brand:#6c8ef7;--amber:#fbbf24;--red:#f87171;--green:#34d399;--blue:#6c8ef7;
 --brand2:#a78bfa;--hero-grad:linear-gradient(135deg,#1e2a5e 0%,#2d1f6e 100%);
---hover:#21253a;--subbg:#1f2436;--accbg:#0c2b22;--accink:#34d399}
-:root.theme-neon{--bg:#05060f;--card:#0d101f;--ink:#e6f1ff;--muted:#8a93b8;
---line:#1e2a4a;--brand:#00f0ff;--amber:#ffd100;--red:#ff3b6b;--green:#00ff9d;--blue:#5f7cff;
+--hover:#21253a;--subbg:#1f2436;--accbg:#0c2b22;--accink:#34d399;--onbrand:#0f1117}
+
+:root.theme-forest{--bg:#0d1512;--card:#15241f;--ink:#dcefe6;--muted:#7fa091;--line:#234034;
+--brand:#2ea87e;--amber:#d9a441;--red:#e05c5c;--green:#3fc98f;--blue:#4d9de0;
+--brand2:#6ddba8;--hero-grad:linear-gradient(135deg,#07140f 0%,#14452f 100%);
+--hover:#1a2f27;--subbg:#112019;--accbg:#0a2a1e;--accink:#6ddba8;--onbrand:#07140f}
+
+:root.theme-plum{--bg:#14101c;--card:#1e1830;--ink:#ece6f7;--muted:#9b8fb5;--line:#352a4d;
+--brand:#b478ff;--amber:#f0a63c;--red:#ff6b81;--green:#4ad9a4;--blue:#7c93ff;
+--brand2:#e0a3ff;--hero-grad:linear-gradient(135deg,#1a0b2e 0%,#4a1d6b 100%);
+--hover:#271f3d;--subbg:#1a1428;--accbg:#2a1240;--accink:#e0a3ff;--onbrand:#14101c}
+
+:root.theme-neon{--bg:#05060f;--card:#0d101f;--ink:#e6f1ff;--muted:#8a93b8;--line:#1e2a4a;
+--brand:#00f0ff;--amber:#ffd100;--red:#ff3b6b;--green:#00ff9d;--blue:#5f7cff;
 --brand2:#b14aff;--hero-grad:linear-gradient(135deg,#060014 0%,#1a0040 60%,#004b73 100%);
---hover:#131a33;--subbg:#0b0f24;--accbg:#001a1f;--accink:#00ff9d}
+--hover:#131a33;--subbg:#0b0f24;--accbg:#001a1f;--accink:#00ff9d;--onbrand:#05060f}
+
 *{box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);margin:0;line-height:1.5;transition:background .4s,color .4s}
-.wrap{max-width:1000px;margin:0 auto;padding:32px 24px 80px}
-header.hero{background:var(--hero-grad);color:#fff;border-radius:16px;padding:30px;margin-bottom:24px;transition:background .4s}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+background:var(--bg);color:var(--ink);margin:0;line-height:1.5;
+transition:background .4s,color .4s}
+.wrap{max-width:1200px;margin:0 auto;padding:32px 24px 80px}
+a{color:var(--brand)}
+
+header.hero{background:var(--hero-grad);color:#fff;border-radius:16px;padding:30px;
+margin-bottom:24px;transition:background .4s}
 header.hero h1{margin:0 0 6px;font-size:28px}
 header.hero .sub{opacity:.85;font-size:14px;margin-bottom:16px}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.badge{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);
+color:#fff;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:600}
+.navbtn{display:inline-block;color:#fff;opacity:.85;text-decoration:none;font-size:13px}
+.navbtn:hover{opacity:1}
+
 .thememenu{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.tbtn{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:20px;padding:5px 14px;font-size:12.5px;cursor:pointer;font-weight:600}
-.tbtn.on{background:var(--brand);border-color:var(--brand)}
-.tbtn .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.tbtn{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff;
+border-radius:20px;padding:5px 14px;font-size:12.5px;cursor:pointer;font-weight:600}
+.tbtn.on{background:var(--brand);border-color:var(--brand);color:var(--onbrand)}
+.tbtn .dot{display:inline-block;width:9px;height:9px;border-radius:50%;
+margin-right:6px;vertical-align:middle}
+
+/* ONE button component. No inline styles in any builder, ever. */
+.btn{font:inherit;font-size:13px;font-weight:600;border-radius:8px;padding:6px 14px;
+cursor:pointer;border:1px solid transparent;background:var(--brand);color:var(--onbrand);
+transition:filter .15s,opacity .15s}
+.btn:hover:not(:disabled){filter:brightness(1.12)}
+.btn:disabled{opacity:.55;cursor:not-allowed}
+.btn.ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn.ghost:hover:not(:disabled){background:var(--hover)}
+.btn.ok{background:var(--green)}
+.btn.warn{background:var(--amber)}
+.btn.danger{background:var(--red)}
+.btn.sm{font-size:12px;padding:4px 10px}
+.btnrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.acc{font:inherit;font-size:12.5px;font-weight:600;border-radius:8px;padding:4px 10px;
+cursor:pointer;border:1px solid var(--brand);background:transparent;color:var(--brand)}
+.acc:hover:not(:disabled){background:var(--accbg)}
+.acc:disabled{opacity:.55;cursor:not-allowed}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:18px;margin-bottom:14px;transition:background .4s,border-color .4s}
 .cat{margin-top:28px}
-.cat h2{font-size:15px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin:0 0 12px}
+.cat h2{font-size:15px;text-transform:uppercase;letter-spacing:.6px;
+color:var(--muted);margin:0 0 12px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
-.tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;display:block;text-decoration:none;color:var(--ink);transition:transform .12s,border-color .2s,background .4s}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;
+display:block;text-decoration:none;color:var(--ink);
+transition:transform .12s,border-color .2s,background .4s}
 .tile:hover{transform:translateY(-2px);border-color:var(--brand)}
 .tile .ico{font-size:22px;margin-bottom:8px}
 .tile h3{margin:0 0 4px;font-size:15px;color:var(--ink)}
 .tile p{margin:0;font-size:12.5px;color:var(--muted)}
-.tile .tag{display:inline-block;background:color-mix(in srgb,var(--brand) 14%,transparent);color:var(--brand);border-radius:6px;padding:2px 8px;font-size:11px;font-weight:600;margin-top:8px}
-</style></head>
-<body onload="initTheme()"><div class="wrap">
-<header class="hero">
-  <h1>SAS OS — Portal Home</h1>
-  <div class="sub">Central navigation · every live HTML page in one place · theme persists per browser</div>
-  <div class="thememenu">
-    <button class="tbtn" data-theme="light" onclick="setTheme('light')"><span class="dot" style="background:#fff"></span>Light</button>
-    <button class="tbtn" data-theme="stock" onclick="setTheme('stock')"><span class="dot" style="background:#6c8ef7"></span>Stock</button>
-    <button class="tbtn" data-theme="neon" onclick="setTheme('neon')"><span class="dot" style="background:#00f0ff"></span>Neon</button>
-  </div>
-</header>
+.tile .tag,.tag{display:inline-block;background:color-mix(in srgb,var(--brand) 14%,transparent);
+color:var(--brand);border-radius:6px;padding:2px 8px;font-size:11px;font-weight:600;margin-top:8px}
 
-<div class="cat"><h2>Operations</h2><div class="grid">
-  <a class="tile" href="orders-by-pack.html"><div class="ico">📦</div><h3>Orders by Pack — build impact</h3><p>Seeded by live build pack: build due date, steel-profile status, readiness rollup (ready / kitted parts missing / waiting delivery), the orders impacting each build with order due-in + confirmation state, and the parts still outstanding. Nudge-build files a REQUESTS draft.</p><span class="tag">Live · build impact</span></a>
-  <a class="tile" href="ops-oversight.html"><div class="ico">📊</div><h3>Ops Oversight &amp; QA</h3><p>Read-only validation of the whole automation: order lifecycle heat-map, outstanding confirmations, emails to chase, unmapped emails, per-order supplier-email ledger.</p><span class="tag">Live · QA</span></a>
-  <a class="tile" href="http://127.0.0.1:8611/qa_portal.html"><div class="ico">📋</div><h3>Live QA Action Portal</h3><p>Purchasing parser — live actionable emails: filter by group/match/confidence, add notes, decide A/M/R, saved back to the sheet. (Requires qa_server running: <code>pythonw skills/purchasing/qa_server.py</code>)</p><span class="tag">Live · decisions</span></a>
-  <a class="tile" href="bom-tracker.html"><div class="ico">🗂</div><h3>Karol BOM-processing Tracker</h3><p>Every inbound BOM (Karol · BOM: · Issue PLC · Long Lead) with live pipeline stage, matched ALL BOMS root, open-parts picking signal &amp; orders.</p><span class="tag">Live · pipeline</span></a>
-  <a class="tile" href="deployment-tracker.html"><div class="ico">🚀</div><h3>Procurement &amp; BOM Deployment Tracker</h3><p>Full-deployment status of the procurement/BOM platform (P1-P8): what's ready / in-progress / blocked, outstanding items, edge-case ledger + sign-off. Reference any stage by ID in chat, e.g. "address P3".</p><span class="tag">Deployment · P1-P8</span></a>
-  <a class="tile" href="index.html"><div class="ico">🧑‍🏭</div><h3>Andy's Worklist &amp; Pack Readiness</h3><p>Live Asana — Andy's open packs, subtasks, vendor orders, advised due dates.</p><span class="tag">Live · build_schedule</span></a>
-  <a class="tile" href="giles-worklist.html"><div class="ico">🛒</div><h3>Giles's Worklist (Order-centric)</h3><p>Open supplier orders → parts → build packs they feed → impact + nudge/push actions.</p><span class="tag">Live · orders</span></a>
-  <a class="tile" href="america-one-production-report-2026-08-03.html"><div class="ico">🇺🇸</div><h3>America One (1588) Production Report</h3><p>Project-specific: build packs, supplier orders, parts impact, blockers.</p><span class="tag">Project · 1588</span></a>
-</div></div>
+.muted{color:var(--muted)}
+.note{background:var(--subbg);border:1px solid var(--line);border-left:3px solid var(--brand);
+border-radius:8px;padding:10px 14px;font-size:13px;margin:12px 0}
+.note.warn{border-left-color:var(--amber)}
+.pill{display:inline-block;border-radius:20px;padding:2px 10px;font-size:11.5px;font-weight:600}
+.pill.open{background:color-mix(in srgb,var(--blue) 15%,transparent);color:var(--blue)}
+.pill.warn{background:color-mix(in srgb,var(--amber) 15%,transparent);color:var(--amber)}
+.pill.over{background:color-mix(in srgb,var(--red) 15%,transparent);color:var(--red)}
+.pill.ok{background:color-mix(in srgb,var(--green) 15%,transparent);color:var(--green)}
+.stack{display:flex;flex-direction:column;gap:10px}
+.steelbox{border-radius:8px;padding:7px 12px;font-size:12.5px;margin-top:8px;font-weight:600}
+.steelbox.ok{background:color-mix(in srgb,var(--green) 12%,transparent);
+border:1px solid var(--green);color:var(--green)}
+.steelbox.open{background:color-mix(in srgb,var(--amber) 12%,transparent);
+border:1px solid var(--amber);color:var(--amber)}
 
-<div class="cat"><h2>Systems &amp; Knowledge</h2><div class="grid">
-  <a class="tile" href="../../views/stock_management.html"><div class="ico">📦</div><h3>Stock Management System</h3><p>Stock &amp; inventory overview.</p><span class="tag">Inventory</span></a>
-  <a class="tile" href="../../views/memory_architecture.html"><div class="ico">🧠</div><h3>Memory Architecture</h3><p>Agent memory &amp; knowledge architecture.</p><span class="tag">Knowledge</span></a>
-  <a class="tile" href="../../views/roadblock_map.html"><div class="ico">🧱</div><h3>Roadblock Map</h3><p>Operational blockers &amp; gaps.</p><span class="tag">Blockers</span></a>
-  <a class="tile" href="../../views/graph.html"><div class="ico">🕸️</div><h3>Knowledge Graph</h3><p>Graphify workspace graph.</p><span class="tag">Graph</span></a>
-</div></div>
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+th{text-align:left;color:var(--muted);font-weight:600;font-size:11.5px;
+text-transform:uppercase;letter-spacing:.4px;padding:8px 10px;border-bottom:1px solid var(--line)}
+td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:hover td{background:var(--hover)}
+code{background:var(--subbg);border:1px solid var(--line);border-radius:4px;
+padding:1px 5px;font-size:12px}
 
-<div class="cat"><h2>Reports</h2><div class="grid">
-  <a class="tile" href="file:///C:/Users/GilesHugo/Downloads/Production_Delay_Analysis_Report.html"><div class="ico">⏳</div><h3>Production Delay Analysis</h3><p>Delay-root-cause &amp; analysis.</p><span class="tag">Report</span></a>
-  <a class="tile" href="../qa/latest.html"><div class="ico">🎯</div><h3>Parser QA Scorecard</h3><p>Purchasing email-parser accuracy — precision/recall, error taxonomy, surfaced FP/FN rows for review. Weekly regeneration.</p><span class="tag">Report · weekly</span></a>
-</div></div>
-
-<footer style="color:var(--muted);font-size:12px;text-align:center;margin-top:36px">SAS OS · central navigation · add pages to nav.html as new views land</footer>
-</div>
+details.sec{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:14px 18px;margin-bottom:12px;transition:background .4s}
+details.sec summary{cursor:pointer;font-size:14.5px;font-weight:700;
+color:var(--ink);user-select:none}
+details.sec .cnt{color:var(--brand)}
+details.vendor{margin-top:6px}
+details.vendor summary{cursor:pointer;font-size:13px;color:var(--ink)}
+@media(max-width:640px){.wrap{padding:20px 16px 60px}header.hero{padding:20px}}
+</style>
 <script>
-function setTheme(name){
-  document.documentElement.classList.remove('theme-stock','theme-neon');
-  if (name && name!=='light') document.documentElement.classList.add('theme-'+name);
-  localStorage.setItem('os_theme', name || 'light');
-  var b=document.querySelectorAll('.tbtn');
-  for (var i=0;i<b.length;i++) b[i].classList.toggle('on', b[i].getAttribute('data-theme')===name);
+var SAS_THEMES = ["light", "sand", "slate", "ocean", "forest", "plum", "neon"];
+function sasThemeKey(){ return 'sas_os_theme::' + (window.SAS_PAGE_ID || 'default'); }
+function setTheme(t){
+  if(SAS_THEMES.indexOf(t) < 0) t = 'light';
+  var r = document.documentElement;
+  for(var i=0;i<SAS_THEMES.length;i++) r.classList.remove('theme-'+SAS_THEMES[i]);
+  if(t !== 'light') r.classList.add('theme-'+t);
+  try{ localStorage.setItem(sasThemeKey(), t);
+       localStorage.setItem('sas_os_theme:last', t); }catch(e){}
+  var b = document.querySelectorAll('.tbtn');
+  for(var i=0;i<b.length;i++) b[i].classList.toggle('on', b[i].dataset.theme === t);
 }
 function initTheme(){
-  var t=localStorage.getItem('os_theme') || 'stock';
-  if (t==='light') t='';
-  setTheme(t==='stock'?'stock':(t==='neon'?'neon':'light'));
+  var t = 'light';
+  try{ t = localStorage.getItem(sasThemeKey())
+           || localStorage.getItem('sas_os_theme:last') || 'light'; }catch(e){}
+  setTheme(t);
+}
+
+var SAS_LIVE = (location.protocol !== 'file:');
+var SAS_DISPATCH = '/dispatch';
+function sasDisableOffline(){
+  if(SAS_LIVE) return;
+  var b=document.querySelectorAll('[data-action]');
+  for(var i=0;i<b.length;i++){
+    b[i].disabled=true;
+    b[i].title='Open this page at http://127.0.0.1:8765/ to use the action buttons '
+      + '(a file:// page has no server to post to).';
+  }
+  var n=document.getElementById('offline-note');
+  if(n) n.style.display='block';
+}
+function sasTrigger(el, payload, kind, done){
+  if(!SAS_LIVE){ return; }
+  var label = el ? el.textContent : '';
+  if(el){ el.disabled=true; el.textContent='Working…'; }
+  fetch(SAS_DISPATCH, {method:'POST', headers:{'Content-Type':'application/json'},
+                       body: (typeof payload==='string'?payload:JSON.stringify(payload))})
+    .then(function(r){ return r.json().then(function(j){ return {ok:r.ok, j:j}; }); })
+    .then(function(res){
+      if(res.ok && res.j && res.j.ok){
+        if(el){ el.textContent = done || 'Done \u2713'; }
+        if(typeof sasOnSuccess==='function') sasOnSuccess(kind,res.j,payload);
+      } else {
+        if(el){ el.disabled=false; el.textContent='\u21ba retry'; }
+        alert((kind||'Action')+' FAILED: '+((res.j&&res.j.error)||'unexpected response'));
+      }
+    })
+    .catch(function(e){
+      if(el){ el.disabled=false; el.textContent='\u21ba retry'; }
+      alert('Server unreachable \u2014 is bom_dispatch_server.py running?\n'+e);
+    });
 }
 </script>
-</body></html>
+</head>
+<body onload="initTheme();sasDisableOffline();"><div class="wrap">
+<header class="hero">
+<h1>SAS OS — Portal Home</h1>
+<div class="sub">Every live page, named for what you do there. Each page remembers its own colour, so you can tell them apart at a glance.</div>
+
+<div class="thememenu"><button class="tbtn" data-theme="light" onclick="setTheme('light')" title="Remembered for this page only"><span class="dot" style="background:#f4f6fa"></span>Light</button><button class="tbtn" data-theme="sand" onclick="setTheme('sand')" title="Remembered for this page only"><span class="dot" style="background:#d8a55f"></span>Sand</button><button class="tbtn" data-theme="slate" onclick="setTheme('slate')" title="Remembered for this page only"><span class="dot" style="background:#58a6ff"></span>Slate</button><button class="tbtn" data-theme="ocean" onclick="setTheme('ocean')" title="Remembered for this page only"><span class="dot" style="background:#6c8ef7"></span>Ocean</button><button class="tbtn" data-theme="forest" onclick="setTheme('forest')" title="Remembered for this page only"><span class="dot" style="background:#2ea87e"></span>Forest</button><button class="tbtn" data-theme="plum" onclick="setTheme('plum')" title="Remembered for this page only"><span class="dot" style="background:#b478ff"></span>Plum</button><button class="tbtn" data-theme="neon" onclick="setTheme('neon')" title="Remembered for this page only"><span class="dot" style="background:#00f0ff"></span>Neon</button></div>
+<div class="badges"><span class="badge">14 pages</span><span class="badge">4 with actions</span></div>
+
+</header>
+<div class="note warn" id="offline-note" style="display:none">
+Opened as a local file, so the action buttons are disabled. Open
+<code>http://127.0.0.1:8765/data/os_status/</code> to use them.</div>
+<div class="cat"><h2>Act on it — these pages change something</h2><div class="grid">
+<a class="tile" href="bom-tracker.html"><div class="ico">🗂</div><h3>Push a BOM through the pipeline</h3><p>Every inbound BOM with its live stage. Stage a BOM to run to Stage 4, or stage the drawing pipeline to map parts to packs. Buttons dispatch to Telegram and file a request.</p><span class="tag">BOM · dispatch</span> <span class="tag" style="background:color-mix(in srgb,var(--green) 16%,transparent);color:var(--green)">has actions</span></a>
+<a class="tile" href="giles-worklist.html"><div class="ico">🛒</div><h3>Chase your open supplier orders</h3><p>Your orders → the parts they cover → the build packs waiting on them, with nudge actions.</p><span class="tag">orders · nudge</span> <span class="tag" style="background:color-mix(in srgb,var(--green) 16%,transparent);color:var(--green)">has actions</span></a>
+<a class="tile" href="orders-by-pack.html"><div class="ico">📦</div><h3>Unblock a build that is waiting on parts</h3><p>Seeded by build pack: due date, readiness, which orders are holding it up and how late. Nudge-build files a request.</p><span class="tag">packs · nudge</span> <span class="tag" style="background:color-mix(in srgb,var(--green) 16%,transparent);color:var(--green)">has actions</span></a>
+<a class="tile" href="dev-portal.html"><div class="ico">🧭</div><h3>Sign off development work</h3><p>Every thread an agent has opened across Hermes, Claude and Codex — what is running, what is blocked, what is waiting on you. Only you can close one.</p><span class="tag">dev · sign-off</span> <span class="tag" style="background:color-mix(in srgb,var(--green) 16%,transparent);color:var(--green)">has actions</span></a>
+</div></div>
+<div class="cat"><h2>Check it — read-only</h2><div class="grid">
+<a class="tile" href="trigger-log.html"><div class="ico">🎛</div><h3>Check every button press actually worked</h3><p>The audit trail for every action button: what was pressed, whether it was accepted, and whether it completed, failed or went missing. Read back from the queues, not from what the page claimed at the time.</p><span class="tag">audit · outcomes</span> </a>
+<a class="tile" href="ops-oversight.html"><div class="ico">📊</div><h3>Verify the automation is behaving</h3><p>Order lifecycle heat-map, outstanding confirmations, emails to chase, unmapped emails, per-order supplier-email ledger.</p><span class="tag">QA</span> </a>
+<a class="tile" href="index.html"><div class="ico">🧑‍🏭</div><h3>See what Andy can build now</h3><p>Live Asana — open packs, subtasks, vendor orders and advised dates.</p><span class="tag">build schedule</span> </a>
+<a class="tile" href="steel-profile-by-pack.html"><div class="ico">🏗</div><h3>See steel profile status per pack</h3><p>Which packs have their steel profile BOM imported and which are waiting.</p><span class="tag">steel</span> </a>
+<a class="tile" href="deployment-tracker.html"><div class="ico">🚀</div><h3>Track the platform rollout (P1–P8)</h3><p>What is ready, in progress or blocked across the procurement/BOM platform, plus the edge-case ledger. Reference a stage by ID in chat, e.g. &#x27;address P3&#x27;.</p><span class="tag">deployment</span> </a>
+<a class="tile" href="token-spend.html"><div class="ico">💸</div><h3>See where the AI token spend goes</h3><p>Per-day / week / month AI token usage and estimated cost, projected month and year, and which background jobs cost the most — with a watch list of high-cost, low-value processes.</p><span class="tag">cost · tokens</span> </a>
+</div></div>
+<div class="cat"><h2>Reference</h2><div class="grid">
+<a class="tile" href="america-one-production-report-2026-08-03.html"><div class="ico">🇺🇸</div><h3>America One (1588) production report</h3><p>Project-specific snapshot: packs, orders, parts impact, blockers.</p><span class="tag">project · 1588</span> </a>
+<a class="tile" href="../../views/stock_management.html"><div class="ico">📦</div><h3>Stock management</h3><p>Stock and inventory overview.</p><span class="tag">inventory</span> </a>
+<a class="tile" href="../../views/roadblock_map.html"><div class="ico">🚧</div><h3>Roadblock map</h3><p>Where work is getting stuck across the system.</p><span class="tag">systems</span> </a>
+<a class="tile" href="../../views/memory_architecture.html"><div class="ico">🧠</div><h3>Memory architecture</h3><p>How the agent estate stores and retrieves what it knows.</p><span class="tag">systems</span> </a>
+</div></div>
+<div class="cat"><h2>Retired</h2><div class="card"><table><tr><th>page</th><th>why it is gone</th></tr><tr><td>Live QA Action Portal (qa_portal.html on :8611)</td><td class='muted'>Removed 2026-09-18 at Giles&#x27;s request. It needed a second local server (qa_server.py) running on a different port, which was one more thing to remember and one more thing to be down.</td></tr></table></div></div>
+<p class="muted" style="margin-top:28px;font-size:12px">Generated by <code>build_nav.py</code> 2026-09-21 10:19 UTC — edit the PAGES manifest, not this file.</p>
+</div></body></html>

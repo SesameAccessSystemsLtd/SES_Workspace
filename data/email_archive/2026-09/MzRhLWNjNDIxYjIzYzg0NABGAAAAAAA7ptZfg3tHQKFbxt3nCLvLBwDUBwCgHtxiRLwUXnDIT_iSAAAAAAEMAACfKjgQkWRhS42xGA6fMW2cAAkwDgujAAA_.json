@@ -1,0 +1,48 @@
+{
+  "id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDgujAAA=",
+  "internetMessageId": "<599100bc-b962-4855-b9ef-5b990fab40ea@CPH1EPF00000522.eurprd05.prod.outlook.com>",
+  "conversationId": "AAQkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NAAQAJFD_TQapw9FuVLj4lozKtA=",
+  "folder": "inbox",
+  "subject": "Your Keyence Order# 1000347421 has been dispatched ",
+  "sender": "CSM@keyence.co.uk",
+  "sender_name": "Keyence (UK) Ltd",
+  "to": [
+    "purchasing@sesameaccess.com"
+  ],
+  "cc": [
+    "harry.brewerton@keyence.co.uk",
+    "CSM@keyence.co.uk"
+  ],
+  "date": "2026-09-18T19:00:25Z",
+  "body_content": "[You don't often get email from csm@keyence.co.uk. Learn why this is important at https://aka.ms/LearnAboutSenderIdentification ]\r\n\r\nGood evening,\r\n\r\nYour order with Order # 21658-170826 has been dispatched with UPS today.\r\n\r\nThe delivery address is:\r\nSESAME ACCESS SYSTEMS LIMITED\r\nUNIT 1 CUMBERLAND WALKS\r\nKT14 7LF\r\nSURREY\r\nUnited Kingdom\r\n\r\nFor your reference you can check the actual status of your parcel with the tracking number\r\n1ZJ9A5726858924419\r\nunder https://www.ups.com/track?loc=en_GB&requester=ST/\r\n\r\nPlease note that it may take some time until status information on your shipment will be available on https://www.ups.com/track?loc=en_GB&requester=ST/\r\nWe hope that our products meet your approval and we are looking forward to receiving your next order.\r\n\r\nPlease do not hesitate to contact us in case of further questions.\r\n\r\nBest regards,\r\n\r\nCustomer Support Management\r\n\r\nKeyence (UK) Ltd\r\n",
+  "body_text": "[You don't often get email from csm@keyence.co.uk. Learn why this is important at https://aka.ms/LearnAboutSenderIdentification ]\r\n\r\nGood evening,\r\n\r\nYour order with Order # 21658-170826 has been dispatched with UPS today.\r\n\r\nThe delivery address is:\r\nSESAME ACCESS SYSTEMS LIMITED\r\nUNIT 1 CUMBERLAND WALKS\r\nKT14 7LF\r\nSURREY\r\nUnited Kingdom\r\n\r\nFor your reference you can check the actual status of your parcel with the tracking number\r\n1ZJ9A5726858924419\r\nunder https://www.ups.com/track?loc=en_GB&requester=ST/\r\n\r\nPlease note that it may take some time until status information on your shipment will be available on https://www.ups.com/track?loc=en_GB&requester=ST/\r\nWe hope that our products meet your approval and we are looking forward to receiving your next order.\r\n\r\nPlease do not hesitate to contact us in case of further questions.\r\n\r\nBest regards,\r\n\r\nCustomer Support Management\r\n\r\nKeyence (UK) Ltd",
+  "full_text": "[You don't often get email from csm@keyence.co.uk. Learn why this is important at https://aka.ms/LearnAboutSenderIdentification ]\r\n\r\nGood evening,\r\n\r\nYour order with Order # 21658-170826 has been dispatched with UPS today.\r\n\r\nThe delivery address is:\r\nSESAME ACCESS SYSTEMS LIMITED\r\nUNIT 1 CUMBERLAND WALKS\r\nKT14 7LF\r\nSURREY\r\nUnited Kingdom\r\n\r\nFor your reference you can check the actual status of your parcel with the tracking number\r\n1ZJ9A5726858924419\r\nunder https://www.ups.com/track?loc=en_GB&requester=ST/\r\n\r\nPlease note that it may take some time until status information on your shipment will be available on https://www.ups.com/track?loc=en_GB&requester=ST/\r\nWe hope that our products meet your approval and we are looking forward to receiving your next order.\r\n\r\nPlease do not hesitate to contact us in case of further questions.\r\n\r\nBest regards,\r\n\r\nCustomer Support Management\r\n\r\nKeyence (UK) Ltd\r\n",
+  "pdf_text": "",
+  "attachment_names": [],
+  "attachment_paths": [],
+  "fetched_at": "2026-09-21T08:01:03Z",
+  "insights": {
+    "document_type": "dispatch_note",
+    "summary": "Keyence (UK) Ltd has dispatched Sesame's order 21658-170826 via UPS today (18 September 2026) to the Unit 1 Cumberland Walks address. The email gives a UPS tracking number (1ZJ9A5726858924419) and notes tracking status may take time to appear. No action is requested beyond tracking the parcel if desired.",
+    "action_required": false,
+    "action_items": [],
+    "requested_by": null,
+    "company_name": "Keyence (UK) Ltd",
+    "po_number": "21658-170826",
+    "sqr_number": null,
+    "job_numbers": [],
+    "supplier_quote_ref": null,
+    "supplier_order_ref": "1000347421",
+    "supplier_invoice_ref": null,
+    "total_price": null,
+    "carriage": null,
+    "delivery_date": "2026-09-18",
+    "lead_time": null,
+    "has_issues": false,
+    "issue_summary": null,
+    "is_noise": false,
+    "noise_reason": null,
+    "line_items": []
+  },
+  "parsed_at": "2026-09-21T08:01:20Z"
+}

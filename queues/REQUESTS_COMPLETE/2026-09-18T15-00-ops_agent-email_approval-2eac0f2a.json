@@ -1,0 +1,14 @@
+{
+  "request_id": "fe34833f-7fe8-48cc-8a5f-beda7512c1f8",
+  "source": "email_approval_sheet",
+  "row_index": 8,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDguXAAA=",
+  "subject": "RE: Fabory - Fixing order -  - SQR-47299",
+  "task_gid": "1217445321943191",
+  "task_name": "Fabory - Fixing order",
+  "asana_url": "https://app.asana.com/0/0/1217445321943191",
+  "action": "(SQR-47299 (exact SQR)); Update 'Price Ex VAT' to £90.13; Note added to description: Quote: £90.13 ex VAT + carriage £13.50 (18 Sep 2026); Note added to description: Supplier quote ref 306017597",
+  "comment_to_push": "Quote from Fabory UK (Christopher Kalsi) — 18 Sep 2026\nSubject: RE: Fabory - Fixing order -  - SQR-47299\n\nChristopher Kalsi at Fabory UK has sent a quotation (offer 306017597) in response to Sesame's request SQR-47299 for a fixing/fastener order. The quote covers seven line items of stainless and zinc-plated screws and washers totalling £90.13 ex VAT, plus £13.50 carriage, giving £103.63 ex VAT. Delivery times vary from 1 day to 2 weeks, and the quote is valid until 18.10.2026.\n\nAction for Giles:\n- Review the quotation and confirm whether to proceed with an order (quote valid until 2026-10-18)\n- Note the £13.50 ex VAT delivery charge applies to orders under £175 ex VAT\n- Note the CBAM tax caveat: prices may be adjusted for fasteners manufactured outside the EU\nKey facts: £90.13 ex VAT + carriage £13.50 · their quote 306017597 · SQR-47299\nProposed: Update 'Price Ex VAT' to £90.13; note Quote: £90.13 ex VAT + carriage £13.50 (18 Sep 2026); note Supplier quote ref 306017597\n\nEmail gateway · matched via SQR-47299 (exact SQR) · received 2026-09-18 13:28 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-18T15:00:18.845496+00:00"
+}

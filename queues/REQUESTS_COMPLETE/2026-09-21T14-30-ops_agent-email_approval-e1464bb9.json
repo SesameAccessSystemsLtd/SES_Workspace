@@ -1,0 +1,14 @@
+{
+  "request_id": "29ff6ad5-90a2-4496-ac93-79d921a91b23",
+  "source": "email_approval_sheet",
+  "row_index": 40,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkxwjxGAAA=",
+  "subject": "Sales order confirmation for your order 21665-1580 S000437995",
+  "task_gid": "1218496174174233",
+  "task_name": "21665-1580 - IGUS - 1580 - Admiralty House 2.Entire System BOM",
+  "asana_url": "https://app.asana.com/0/0/1218496174174233",
+  "action": "(PO 21665-1580 (exact)); Update delivery date to 2026-10-05; Update ORDER Status to 'On Order - Delivery Date Confirmed'; Note added to description: Supplier order ref S000437995; Lead time Usually dispatched within 10 working days; Note: Price £1,102.60 already on task",
+  "comment_to_push": "Order confirmation from IGUS (sales@igus.co.uk) — 21 Sep 2026\nSubject: Sales order confirmation for your order 21665-1580 S000437995\n\nigus UK has acknowledged Sesame's order 21665-1580 (their sales order S000437995) and attached a sales order confirmation. One line of 10 off FJUM-02-40 DryLin R flange bearings is confirmed at £110.26 each, £1,102.60 plus £13.50 carriage, ex VAT. igus estimates dispatch on 05/10/2026 (usually within 10 working days) and asks Sesame to check the prices and query any discrepancies immediately.\n\nAction for Giles:\n- Check the prices and order details on the attached confirmation S000437995 and contact igus immediately if there are any discrepancies (no stated deadline).\nKey facts: delivery 5 Oct 2026 · lead time Usually dispatched within 10 working days · £1,102.60 ex VAT + carriage £13.50 · their order S000437995 · PO 21665-1580\nProposed: Update delivery date to 2026-10-05; Update ORDER Status to 'On Order - Delivery Date Confirmed'; note Supplier order ref S000437995; Lead time Usually dispatched within 10 working days\n\nEmail gateway · matched via PO 21665-1580 (exact) · received 2026-09-21 11:58 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-21T14:30:19.746919+00:00"
+}

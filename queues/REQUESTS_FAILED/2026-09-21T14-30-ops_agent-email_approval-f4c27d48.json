@@ -1,0 +1,14 @@
+{
+  "request_id": "3154bcfb-708a-44a6-919d-e7087a1d4788",
+  "source": "email_approval_sheet",
+  "row_index": 52,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkxwjxTAAA=",
+  "subject": "Re: Laser Cut BOM - 1595 - St Georges House Entire system - SQR-46446",
+  "task_gid": null,
+  "task_name": "NOT MATCHED",
+  "asana_url": "",
+  "action": "AMENDMENT (task not auto-matched — SAP must locate manually):\nif there is only 1 \"could be\" then update that - this was correct 21242-1595 - Lasershape Laser Cut BOM - 1595 - St Georges House Entire [🔥ARRIVED - NEED TO QC] https://app.asana.com/0/0/1217486647101746",
+  "comment_to_push": "NO AUTO-MATCH — Update from Lasershape — 21 Sep 2026\nSubject: Re: Laser Cut BOM - 1595 - St Georges House Entire system - SQR-46446\n\nConnor Davis of Lasershape confirms that a free-of-charge replacement part has been booked in and will arrive at Sesame within the next few days. He apologises again for the earlier problem. No action is needed from Sesame at this stage.\nKey facts: PO 21242-1595 · SQR-46446 · job 1006 · job 1014 · job 1016\nCould be:\n- 21242-1595 - Lasershape Laser Cut BOM - 1595 - St Georges House Entire [🔥ARRIVED - NEED TO QC] https://app.asana.com/0/0/1217486647101746\n\nEmail gateway · 1 candidate(s), none certain · giles@sesameaccess.com",
+  "decision": "M",
+  "created_at": "2026-09-21T14:30:19.789364+00:00"
+}

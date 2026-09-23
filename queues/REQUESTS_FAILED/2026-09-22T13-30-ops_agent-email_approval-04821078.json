@@ -1,0 +1,14 @@
+{
+  "request_id": "3bb85b6c-2a9f-4f0a-96d8-b5cd8e65e4ed",
+  "source": "email_approval_sheet",
+  "row_index": 63,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkxwjyIAAA=",
+  "subject": "RE: Cathedral Sq, Bristol Tapeswitch for servicing",
+  "task_gid": null,
+  "task_name": "NOT MATCHED",
+  "asana_url": "",
+  "action": "AMENDMENT (task not auto-matched — SAP must locate manually):\nMap this to https://app.asana.com/1/357939803556123/project/1207766004159548/task/1218272157862993?focus=true\n\nnote this is a bind quoet and so we need to look inside the project quotes for a match, not in order numbers or invoices",
+  "comment_to_push": "NO AUTO-MATCH — Quote from Tapeswitch — 22 Sep 2026\nSubject: RE: Cathedral Sq, Bristol Tapeswitch for servicing \n\nJordan Holmes at Tapeswitch is replying to a request for a TS6 special part for the Cathedral Sq, Bristol job, assuming it is the TS6 again. He quotes £140.00 each for one unit (P/N TBC, 1210.1017.001, with resistor, IP67 rated) plus £30.00 carriage, with a 2-week delivery. No Sesame PO or job number is quoted back, so this is pricing only and awaits Giles's instruction.\n\nAction for Giles:\n- Confirm the part number (currently TBC) and place the order if the £140.00 each + £30.00 carriage quote is acceptable\n- Confirm whether this is for the Cathedral Sq, Bristol job and supply the relevant job/PO reference to Tapeswitch\nKey facts: lead time 2 weeks · £140.00 ex VAT + carriage £30.00\nCould be:\n- 21054-1554 - Tapeswitch - Emory Hotel replacement [🚚On Order - Delivery Date CONFIRMED] https://app.asana.com/0/0/1215196899454310\n- 21032-140526 - Tapeswitch - Stock and service [🚚On Order - Delivery Date CONFIRMED] https://app.asana.com/0/0/1214800111619950\n- 21013-1324 - Tapeswitch - chelsea barracks [⏰On Order - Awaiting CONFIRMATION] https://app.asana.com/0/0/1214176023566331\n\nEmail gateway · 3 candidate(s), none certain · giles@sesameaccess.com",
+  "decision": "M",
+  "created_at": "2026-09-22T13:30:55.707034+00:00"
+}

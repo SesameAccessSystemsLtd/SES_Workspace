@@ -39,3 +39,8 @@ db/*.db-shm
 db/*.bak
 db/*.bak_*
 db/.fuse_hidden*
+
+# --- Password file accidentally tracked (untracked 2026-09-21; local file kept) ---
+plans/_vps_sasops_pw.txt
+*_pw.txt
+*_password*.txt

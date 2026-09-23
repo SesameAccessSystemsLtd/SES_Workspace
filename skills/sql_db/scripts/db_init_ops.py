@@ -320,21 +320,48 @@ CREATE INDEX IF NOT EXISTS idx_pt_vendor     ON procurement_tasks(vendor_gid);
 CREATE TABLE IF NOT EXISTS qc_issues (
     id                      INTEGER PRIMARY KEY AUTOINCREMENT,
     asana_task_gid          TEXT UNIQUE NOT NULL,
+    ncr_id                  TEXT,
     issue_name              TEXT NOT NULL,
+    sesame_part_no          TEXT,
+    build_pack_reference    TEXT,
+    linked_to_buildpack     TEXT,
+    parts_control_gid       TEXT,
+    po_task_gid             TEXT,
+    associated_po_number    TEXT,
+    vendor                  TEXT,
+    supplier_email          TEXT,
+    associated_sqr_number   TEXT,
+    qc_status               TEXT,
+    order_status            TEXT,
+    build_impact            TEXT,
     impact                  TEXT,
-    signed_off_status       TEXT,
+    reason_for_issue        TEXT,
+    qc_issue_reason         TEXT,
+    needs_from_purch        TEXT,
+    project_name            TEXT,
+    date_raised             TEXT,
+    needed_by               TEXT,
+    days_since_raised       TEXT,
     order_qty               REAL,
     order_value             REAL,
-    order_date              TEXT,
-    date_out_of_project     TEXT,
-    associated_po_number    TEXT,
-    associated_sqr_number   TEXT,
-    parts_control_gid       TEXT,
+    completed               INTEGER DEFAULT 0,
+    asana_completed_at      TEXT,
+    asana_created_at        TEXT,
+    asana_modified_at       TEXT,
     last_synced_at          TEXT,
     created_at              TEXT DEFAULT (datetime('now'))
 );
-CREATE INDEX IF NOT EXISTS idx_qc_po  ON qc_issues(associated_po_number);
-CREATE INDEX IF NOT EXISTS idx_qc_sqr ON qc_issues(associated_sqr_number);
+-- Source: Asana QC project 737971594126804 ("1.0 - QC issues / Parts Needed / Causing delays").
+-- NOTE: previously this table was populated from the WRONG project (902269769783650 = the
+-- purchasing PO log). Repointed 2026-09-23; see skills/sql_db/scripts/sync_qc_issues.py.
+CREATE INDEX IF NOT EXISTS idx_qc_ncr   ON qc_issues(ncr_id);
+CREATE INDEX IF NOT EXISTS idx_qc_part  ON qc_issues(sesame_part_no);
+CREATE INDEX IF NOT EXISTS idx_qc_pack  ON qc_issues(build_pack_reference);
+CREATE INDEX IF NOT EXISTS idx_qc_po    ON qc_issues(associated_po_number);
+CREATE INDEX IF NOT EXISTS idx_qc_sqr   ON qc_issues(associated_sqr_number);
+CREATE INDEX IF NOT EXISTS idx_qc_status ON qc_issues(qc_status);
+CREATE INDEX IF NOT EXISTS idx_qc_vendor ON qc_issues(vendor);
+CREATE INDEX IF NOT EXISTS idx_qc_completed ON qc_issues(completed);
 
 -- =========================================================================
 -- AUDIT TABLE — written by db_writer.py, append-only

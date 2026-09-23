@@ -1,117 +1,89 @@
 """
-05_sheet_approver.py — Email Approval Sheet Processor
+05_sheet_approver.py — Email Gateway sheet processor (Pending → REQUESTS/ → Processed).
 
-Reads rows from the Google Sheet Pending tab where Giles has set
-the DECISION column. Creates REQUESTS/ files for SAP to act on,
-then archives the rows to the Processed tab.
+Reads Pending rows where Giles has set DECISION, creates REQUESTS/ files for SAP
+(the only Asana writer), archives the rows to Processed, and — new in 2026-09-18 —
+records every decision as FEEDBACK and lets learn.py turn corrections into rules.
 
-Decision values:
+Decision values (case-insensitive):
   A = Approve   — use proposed action as-is
-  M = Amend     — use Amendment Notes column content instead
+  M = Amend     — use Amendment Notes (and/or a corrected Asana Link) instead
   R = Reject    — no Asana action, just archive
+  S = Same as Suggested — take the gateway's suggestion (A or R; a CHECK suggestion is skipped)
 
-Requires: C:/Users/GilesHugo/.hermes/Google_Service_Account.json
-See: workspace/skills/purchasing/GOOGLE_SHEETS_SETUP.md
+What teaches the gateway (see learn.py):
+  * a corrected Asana Link (differs from Proposed Task GID)  → sender/phone → task rule,
+    and domain/label → supplier rule when the task's vendor is known
+  * R with Feedback/Amendment mentioning noise / stop / ignore  → noise-domain rule
+  * Feedback mentioning "closed" / "wrong task"                 → blocked-task rule
+  * any Feedback text                                          → kept as a note and logged
+Columns are addressed by header name; Processed gets the same columns + Outcome,
+Request ID, Request Status, Final Task GID, Learned.
 """
+from __future__ import annotations
 
+import json
 import os
 import sys
-from datetime import datetime, timezone
 import uuid
-import json
+from datetime import datetime, timezone
+from pathlib import Path
 
 from dotenv import load_dotenv
 
 load_dotenv(r"C:\Users\GilesHugo\.hermes\.env", override=True)
+sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "lib"))
 
-SERVICE_ACCOUNT_PATH = r"C:\Users\GilesHugo\.hermes\Google_Service_Account.json"
-SHEET_ID = "1fvoSKnvH0vdM_aZbo2_seY6AU3SZaXABaxRUKSxWVlo"
-PENDING_TAB = "Pending"
-PROCESSED_TAB = "Processed"
-from pathlib import Path as _Path
-sys.path.insert(0, str(_Path(__file__).resolve().parents[2] / "lib"))
-from path_config import p as _p
+from gateway_common import FEEDBACK_LOG, append_jsonl, now_utc, shadow_mode  # noqa: E402
+from sheet_common import (PENDING_HEADERS, PENDING_TAB, PROCESSED_HEADERS, PROCESSED_TAB,  # noqa: E402
+                          Tab, get_spreadsheet)
 
-REQUESTS_DIR = _p("queues.requests")
-
-HEADERS = [
-    "Email ID", "Received", "Subject", "Sender Domain", "Document Type",
-    "PO Number", "Matched Task", "Asana Link", "Proposed Action", "Comments",
-    "DECISION", "Amendment Notes",
-]
-COL = {h: i for i, h in enumerate(HEADERS)}
-
-PROCESSED_HEADERS = HEADERS + ["Outcome", "Request ID", "Request Status"]
+try:
+    from path_config import p as _p
+    REQUESTS_DIR = _p("queues.requests")
+except Exception:
+    REQUESTS_DIR = str(Path(__file__).resolve().parents[2] / "queues" / "REQUESTS")
 
 
-def get_spreadsheet():
-    try:
-        import gspread
-    except ImportError:
-        print("ERROR: gspread not installed.")
-        sys.exit(1)
-
-    if not os.path.exists(SERVICE_ACCOUNT_PATH):
-        print(f"ERROR: Google credentials not found at {SERVICE_ACCOUNT_PATH}")
-        print("See workspace/skills/purchasing/GOOGLE_SHEETS_SETUP.md")
-        sys.exit(1)
-
-    gc = gspread.service_account(filename=SERVICE_ACCOUNT_PATH)
-    return gc.open_by_key(SHEET_ID)
-
-
-def get_or_create_tab(spreadsheet, tab_name, headers):
-    try:
-        return spreadsheet.worksheet(tab_name)
-    except Exception:
-        ws = spreadsheet.add_worksheet(title=tab_name, rows=1000, cols=len(headers))
-        ws.append_row(headers, value_input_option="RAW")
-        return ws
-
-
-def _extract_task_gid(asana_url):
-    """Extract task GID from Asana permalink URL."""
+def _extract_task_gid(asana_url: str) -> str | None:
+    """Task GID from any Asana permalink form (…/0/0/GID, …/project/P/task/GID?focus=true)."""
     if not asana_url:
         return None
-    asana_url = asana_url.split("?")[0]  # strip query params e.g. ?focus=true
-    parts = asana_url.rstrip("/").split("/")
-    if len(parts) >= 2:
-        candidate = parts[-1]
-        if candidate.isdigit():
-            return candidate
-    return None
+    u = asana_url.split("?")[0].rstrip("/")
+    parts = u.split("/")
+    if "task" in parts:
+        cand = parts[parts.index("task") + 1] if parts.index("task") + 1 < len(parts) else ""
+        return cand if cand.isdigit() else None
+    return parts[-1] if parts and parts[-1].isdigit() else None
 
 
-def already_has_request(email_id):
-    """Return True if a REQUESTS/ JSON already exists for this email_id (prevents duplicates on re-run)."""
+def already_has_request(email_id: str) -> bool:
     if not os.path.isdir(REQUESTS_DIR):
         return False
     for fname in os.listdir(REQUESTS_DIR):
         if not fname.endswith(".json"):
             continue
-        fpath = os.path.join(REQUESTS_DIR, fname)
         try:
-            with open(fpath, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            if data.get("email_id") == email_id:
-                return True
+            with open(os.path.join(REQUESTS_DIR, fname), "r", encoding="utf-8") as f:
+                if json.load(f).get("email_id") == email_id:
+                    return True
         except Exception:
             continue
     return False
 
 
 def create_request_file(email_id, subject, task_gid, task_name, asana_url, action_text, comment_text=""):
-    """Write a REQUESTS/ file for SAP to process."""
+    """Write a REQUESTS/ file for SAP to process (format unchanged — SAP parses it).
+    In shadow mode the file goes to queues/REQUESTS_SHADOW/ instead, so SAP never sees it."""
+    global REQUESTS_DIR
+    if shadow_mode() and not REQUESTS_DIR.rstrip("\\/").endswith("REQUESTS_SHADOW"):
+        REQUESTS_DIR = os.path.join(os.path.dirname(REQUESTS_DIR.rstrip("\\/")), "REQUESTS_SHADOW")
     os.makedirs(REQUESTS_DIR, exist_ok=True)
     ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H-%M")
     unique_id = str(uuid.uuid4())[:8]
-    filename = f"{ts}-ops_agent-email_approval-{unique_id}.md"
-    filepath = os.path.join(REQUESTS_DIR, filename)
-
-    comment_section = ""
-    if comment_text:
-        comment_section = f"Comment To Push:\n{comment_text}\n\n"
-
+    filepath = os.path.join(REQUESTS_DIR, f"{ts}-ops_agent-email_approval-{unique_id}.md")
+    comment_section = f"Comment To Push:\n{comment_text}\n\n" if comment_text else ""
     content = f"""---
 From: ops_agent
 To: asana_agent
@@ -138,7 +110,6 @@ Email ID: {email_id}
 If Task GID is NOT_MATCHED, SAP must locate the correct task manually using
 the subject line and proposed action context before applying any updates.
 """
-
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(content)
     return filepath
@@ -151,160 +122,169 @@ def create_json_request_file(md_filepath, payload):
     return json_path
 
 
-def main():
-    spreadsheet = get_spreadsheet()
-    pending_ws = get_or_create_tab(spreadsheet, PENDING_TAB, HEADERS)
-    processed_ws = get_or_create_tab(spreadsheet, PROCESSED_TAB, PROCESSED_HEADERS)
+def _feedback_record(row: dict, decision: str, outcome: str, final_gid: str | None) -> dict:
+    return {
+        "logged_at": now_utc(),
+        "email_id": row.get("Email ID", ""),
+        "received": row.get("Received", ""),
+        "subject": row.get("Subject", ""),
+        "sender": row.get("Sender", ""),
+        "sender_domain": row.get("Sender Domain", ""),
+        "doc_type": row.get("Document Type", ""),
+        "triage": row.get("Triage", ""),
+        "supplier": row.get("Supplier", ""),
+        "confidence": row.get("Confidence", ""),
+        "suggested": row.get("Suggested", ""),
+        "proposed_task_gid": row.get("Proposed Task GID", "") or _extract_task_gid(row.get("Asana Link", "")) or "",
+        "matched_task": row.get("Matched Task", ""),
+        "decision": decision,
+        "outcome": outcome,
+        "final_task_gid": final_gid or "",
+        "amendment_notes": row.get("Amendment Notes", ""),
+        "feedback": row.get("Feedback", ""),
+        "proposed_action": row.get("Proposed Action", ""),
+    }
 
-    all_rows = pending_ws.get_all_values()
-    if len(all_rows) <= 1:
+
+def main():
+    try:
+        sh = get_spreadsheet()
+    except RuntimeError as e:  # credentials / library missing: stop and say so, never retry silently
+        print(f"ERROR: {e}")
+        sys.exit(1)
+    pending = Tab(sh, PENDING_TAB, PENDING_HEADERS)
+    processed = Tab(sh, PROCESSED_TAB, PROCESSED_HEADERS)
+
+    rows = pending.read_rows()
+    if not rows:
         print("Pending tab is empty — nothing to process.")
         return
 
-    # Build column map from actual sheet header row — handles old/new column layouts
-    actual_header = all_rows[0]
-    col = {h: i for i, h in enumerate(actual_header)}
-    required = ["Email ID", "Subject", "Matched Task", "Asana Link",
-                "Proposed Action", "DECISION", "Amendment Notes"]
-    missing = [h for h in required if h not in col]
-    if missing:
-        print(f"ERROR: Sheet missing required columns: {missing}")
-        print(f"Actual headers: {actual_header}")
-        return
+    to_archive = []   # (row dict, outcome, request_id, final_gid)
+    feedback = []
+    created = rejected = skipped = 0
 
-    data_rows = all_rows[1:]  # skip header
-
-    to_archive = []   # list of (1-based row index, row list, outcome string)
-    requests_created = 0
-    rejected = 0
-    skipped = 0
-
-    for row_num, row in enumerate(data_rows, start=2):
-        row = list(row) + [""] * (len(actual_header) - len(row))
-
-        email_id    = row[col["Email ID"]].strip()
-        subject     = row[col["Subject"]].strip()
-        task_name   = row[col["Matched Task"]].strip()
-        asana_url   = row[col["Asana Link"]].strip()
-        proposed    = row[col["Proposed Action"]].strip()
-        decision    = row[col["DECISION"]].strip().upper()
-        amendment   = row[col["Amendment Notes"]].strip()
-        comment_to_push = row[col["Comments"]].strip() if "Comments" in col else ""
-        processed_at = row[col["Processed At"]].strip() if "Processed At" in col else ""
-
+    for row in rows:
+        email_id = row.get("Email ID", "")
+        if not email_id:
+            continue
+        decision = (row.get("DECISION") or "").strip().upper()[:1]
         if not decision:
-            continue  # not yet decided
-        if processed_at:
-            continue  # already processed (shouldn't be in Pending but guard anyway)
+            continue
+        if row.get("Processed At"):
+            continue
+        if decision == "S":
+            sugg = (row.get("Suggested") or "").strip().upper()
+            if sugg not in ("A", "R"):
+                print(f"  Row {row['_row']}: S but suggestion is '{sugg}' — needs a real decision. Subject: {row.get('Subject','')[:60]}")
+                skipped += 1
+                continue
+            decision = sugg
         if decision not in ("A", "M", "R"):
-            print(f"  Row {row_num}: unknown DECISION '{decision}' — skipping.")
+            print(f"  Row {row['_row']}: unknown DECISION '{decision}' — skipping.")
             skipped += 1
             continue
 
+        subject = row.get("Subject", "")
+        task_name = row.get("Matched Task", "")
+        asana_url = row.get("Asana Link", "")
+        proposed = row.get("Proposed Action", "")
+        amendment = row.get("Amendment Notes", "")
+        comment = row.get("Comments", "")
         task_gid = _extract_task_gid(asana_url)
-        now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+        proposed_gid = row.get("Proposed Task GID", "")
+        corrected = bool(task_gid and proposed_gid and task_gid != proposed_gid) or bool(task_gid and not proposed_gid and task_name == "NOT MATCHED")
 
         if decision == "R":
             rejected += 1
-            outcome = "REJECTED"
             request_id = str(uuid.uuid4())
-            to_archive.append((row_num, row, outcome, now_str, request_id))
+            to_archive.append((row, "REJECTED", request_id, task_gid if corrected else ""))
+            feedback.append(_feedback_record(row, "R", "REJECTED", task_gid if corrected else None))
+            continue
 
-        elif decision == "A":
-            if already_has_request(email_id):
-                print(f"  Row {row_num}: APPROVED and a prior REQUESTS/ file exists for this email — creating a new request anyway. Subject: {subject}")
-            if not task_gid:
-                print(f"  Row {row_num}: APPROVED but task not matched — SAP will need to locate manually. Subject: {subject}")
-            request_id = str(uuid.uuid4())
-            filepath = create_request_file(
-                email_id, subject, task_gid, task_name, asana_url, proposed, comment_to_push
-            )
-            # write companion JSON with structured fields
-            payload = {
-                "request_id": request_id,
-                "source": "email_approval_sheet",
-                "row_index": row_num,
-                "email_id": email_id,
-                "subject": subject,
-                "task_gid": task_gid,
-                "task_name": task_name,
-                "asana_url": asana_url,
-                "action": proposed,
-                "comment_to_push": comment_to_push,
-                "decision": decision,
-                "created_at": datetime.now(timezone.utc).isoformat(),
-            }
-            create_json_request_file(filepath, payload)
-            requests_created += 1
+        if decision == "A":
+            action = proposed
+            if corrected:
+                action = f"(Giles corrected the task link — original proposal was for task {proposed_gid or 'none'})\n{proposed}"
             outcome = "APPROVED"
-            print(f"  APPROVED row {row_num}: REQUESTS file -> {os.path.basename(filepath)}")
-            to_archive.append((row_num, row, outcome, now_str, request_id))
-
-        elif decision == "M":
+        else:  # M
             if not amendment and not task_gid:
-                # No override text and no usable link — nothing to act on
-                print(f"  Row {row_num}: AMEND decision but Amendment Notes is empty and no Asana link — skipping. Subject: {subject}")
+                print(f"  Row {row['_row']}: AMEND but no Amendment Notes and no Asana link — skipping. Subject: {subject[:60]}")
                 skipped += 1
                 continue
             if not amendment and task_gid:
-                # Giles corrected the Asana Link in the sheet — approve with original action against new link
-                print(f"  Row {row_num}: AMEND with corrected Asana link (no amendment text) — using proposed action.")
-                action = proposed
+                action = f"(Giles corrected the task link)\n{proposed}" if corrected else proposed
             elif not task_gid:
-                print(f"  Row {row_num}: AMENDED but task not matched — SAP will need to locate manually.")
                 action = f"AMENDMENT (task not auto-matched — SAP must locate manually):\n{amendment}"
             else:
                 action = f"AMENDMENT (Giles overrode proposed action):\nOriginal: {proposed}\nAmendment: {amendment}"
-            if already_has_request(email_id):
-                print(f"  Row {row_num}: AMENDED and a prior REQUESTS/ file exists for this email — creating a new request anyway. Subject: {subject}")
-            request_id = str(uuid.uuid4())
-            filepath = create_request_file(
-                email_id, subject, task_gid, task_name, asana_url, action, comment_to_push
-            )
-            payload = {
-                "request_id": request_id,
-                "source": "email_approval_sheet",
-                "row_index": row_num,
-                "email_id": email_id,
-                "subject": subject,
-                "task_gid": task_gid,
-                "task_name": task_name,
-                "asana_url": asana_url,
-                "action": action,
-                "comment_to_push": comment_to_push,
-                "decision": decision,
-                "created_at": datetime.now(timezone.utc).isoformat(),
-            }
-            create_json_request_file(filepath, payload)
-            requests_created += 1
             outcome = "AMENDED"
-            print(f"  AMENDED row {row_num}: REQUESTS file -> {os.path.basename(filepath)}")
-            to_archive.append((row_num, row, outcome, now_str, request_id))
+
+        if already_has_request(email_id):
+            print(f"  Row {row['_row']}: a prior REQUESTS/ file exists for this email — creating a new request anyway. Subject: {subject[:60]}")
+        if not task_gid:
+            print(f"  Row {row['_row']}: {outcome} but task not matched — SAP will need to locate manually. Subject: {subject[:60]}")
+        request_id = str(uuid.uuid4())
+        filepath = create_request_file(email_id, subject, task_gid, task_name, asana_url, action, comment)
+        create_json_request_file(filepath, {
+            "request_id": request_id, "source": "email_approval_sheet", "row_index": row["_row"],
+            "email_id": email_id, "subject": subject, "task_gid": task_gid, "task_name": task_name,
+            "asana_url": asana_url, "action": action, "comment_to_push": comment, "decision": decision,
+            "created_at": datetime.now(timezone.utc).isoformat(),
+        })
+        created += 1
+        print(f"  {outcome} row {row['_row']}: REQUESTS file -> {os.path.basename(filepath)}")
+        to_archive.append((row, outcome, request_id, task_gid or ""))
+        feedback.append(_feedback_record(row, decision, outcome, task_gid))
 
     if not to_archive:
         print("No decided rows found. Nothing to process.")
         return
 
-    # Batch-write to Processed tab (single API call)
-    processed_rows = []
-    for row_num, row, outcome, now_str, request_id in to_archive:
-        archived_row = list(row)
-        if "Processed At" in col:
-            archived_row[col["Processed At"]] = now_str
-        processed_rows.append(archived_row + [outcome, request_id, "PENDING"])
+    # Learn from the decisions BEFORE archiving so the 'Learned' column can say what changed.
+    learned_by_email = {}
+    try:
+        import learn
+        learned_by_email = learn.apply_feedback(feedback)
+    except Exception as e:
+        print(f"  (learning step skipped: {type(e).__name__}: {e})")
 
-    if processed_rows:
-        processed_ws.append_rows(processed_rows, value_input_option="RAW")
+    db_writer = None
+    if shadow_mode():
+        print("  SHADOW: REQUESTS files written to queues/REQUESTS_SHADOW (SAP will not act); ops.db not written")
+    else:
+        try:
+            import db_writer
+        except Exception as e:
+            print(f"  (ops.db decisions not recorded: {type(e).__name__}: {e})")
 
-    # Delete processed rows from Pending — reverse order to avoid index shift
-    for row_num in sorted([r[0] for r in to_archive], reverse=True):
-        pending_ws.delete_rows(row_num)
+    now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    archived = []
+    for row, outcome, request_id, final_gid in to_archive:
+        r = {h: row.get(h, "") for h in processed.header}
+        r["Processed At"] = now_str
+        r["Outcome"] = outcome
+        r["Request ID"] = request_id
+        r["Request Status"] = "PENDING" if outcome != "REJECTED" else ""
+        r["Final Task GID"] = final_gid
+        r["Learned"] = "; ".join(learned_by_email.get(row.get("Email ID", ""), []))
+        archived.append(r)
+        if db_writer:
+            try:
+                db_writer.update_email_document_decision(
+                    row.get("Email ID", ""), (row.get("DECISION") or "").strip().upper()[:1], outcome,
+                    final_gid or None, feedback=row.get("Feedback", ""), learned=r["Learned"])
+            except Exception as e:
+                print(f"  (ops.db decision not recorded for row {row['_row']}: {e})")
+    processed.append_rows(archived)
+    for fb in feedback:
+        fb["learned"] = learned_by_email.get(fb["email_id"], [])
+        append_jsonl(FEEDBACK_LOG, fb)
+    pending.delete_rows([row["_row"] for row, *_ in to_archive])
 
-    print(
-        f"\nDone: {requests_created} REQUESTS file(s) created, "
-        f"{rejected} rejected, {skipped} skipped, "
-        f"{len(to_archive)} rows deleted from Pending and archived to Processed tab."
-    )
+    n_learned = sum(1 for v in learned_by_email.values() if v)
+    print(f"\nDone: {created} REQUESTS file(s) created, {rejected} rejected, {skipped} skipped, "
+          f"{len(to_archive)} rows archived to Processed. Rules learned from {n_learned} row(s).")
 
 
 if __name__ == "__main__":

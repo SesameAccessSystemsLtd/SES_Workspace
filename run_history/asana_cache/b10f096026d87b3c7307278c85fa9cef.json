@@ -1,0 +1,1 @@
+{"path": "/tasks/1216623853462049", "params": {"opt_fields": "parent.gid,parent.name,completed"}, "epoch": "202609231206", "body": {"data": {"gid": "1216623853462049", "completed": true, "parent": {"gid": "1216623740798517", "name": "21180-1594 - Tape Switch - 1594 - St Mary Scissor Lift BOM - INV46191"}}}}

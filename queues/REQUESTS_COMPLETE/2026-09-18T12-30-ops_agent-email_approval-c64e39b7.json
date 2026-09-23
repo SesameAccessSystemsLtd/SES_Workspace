@@ -1,0 +1,14 @@
+{
+  "request_id": "a8b41743-7f34-4449-a105-5e5bee41852b",
+  "source": "email_approval_sheet",
+  "row_index": 54,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAABnJ7JfAACfKjgQkWRhS42xGA6fMW2cAAkvl0luAAA=",
+  "subject": "Order #61894 confirmed",
+  "task_gid": "1209043051438460",
+  "task_name": "21660-170926 - Warco - 20mm boring bar",
+  "asana_url": "https://app.asana.com/0/0/1209043051438460",
+  "action": "(Domain Fallback: 'warco'); [SQR-ledger] no SQR match for orders@warco.co.uk; Skipped price update: Extracted price matches Asana 'Price Ex VAT'.",
+  "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> order_confirmation: Order #61894 confirmed\n- Acknowledged order_confirmation — no field change proposed (type=order_confirmation, price=£32.0, vendor=warco)\n\nReference: n/a · Received: 2026-09-17T13:13:40Z\nMatch basis: (Domain Fallback: 'warco'); [SQR-ledger] no SQR match for orders@warco.co.uk\nTask GID: 1209043051438460 · AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAABnJ7JfAACfKjgQkWRhS42xGA6fMW2cAAkvl0luAAA=\nhttps://app.asana.com/0/0/1209043051438460\n\ngiles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-18T12:30:16.530281+00:00"
+}

@@ -1,0 +1,112 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1597 - Forest Road 4. Button Stations,"Master task for all BOMs related to 1597 - Forest Road 4. Button Stations
+Dropbox: https://www.dropbox.com/scl/fo/stpdpj1l37fflxm40k0sa/AAwz8DVNtfij-QAIBDtVAuE?rlkey=l767cz3urrotyfvisv0jgn86i&dl=0
+Project: https://app.asana.com/1/357939803556123/task/1218730164686973?focus=true",,,,,,,,,,
+Engraving BOM - 1597 - Forest Road 4. Button Stations,,ALL BOMS - 1597 - Forest Road 4. Button Stations,,Engraving,,,,,,,
+NBSS/Engraving - 1597 - Forest Road 4. Button Stations,,Engraving BOM - 1597 - Forest Road 4. Button Stations,,NBSS/Engraving,,,,,,,
+1 off 034. 003 - NBSS.034.003 SWLP Sitting&Standing NBSS/Engraving,"034.003
+From Cost Centre Engraving
+Link to BOM: https://www.dropbox.com/scl/fo/stpdpj1l37fflxm40k0sa/AAwz8DVNtfij-QAIBDtVAuE?rlkey=l767cz3urrotyfvisv0jgn86i&dl=0
+Mass: 0.154 kg
+Volume: 19400.336 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218730164686973?focus=true",NBSS/Engraving - 1597 - Forest Road 4. Button Stations,1,NBSS/Engraving,,,,ORDER,PROJECT ORDER,1218774651528007,https://app.asana.com/0/848657415032331/1218774651528007
+Engraving - 1597 - Forest Road 4. Button Stations,,Engraving BOM - 1597 - Forest Road 4. Button Stations,,Engraving,,,,,,,
+1 off 1597. 1016.1.2 - Vertical 4 Buttons Face Plate Engraving,"1597.1016.1.2
+From Cost Centre Engraving
+Link to BOM: https://www.dropbox.com/scl/fo/stpdpj1l37fflxm40k0sa/AAwz8DVNtfij-QAIBDtVAuE?rlkey=l767cz3urrotyfvisv0jgn86i&dl=0
+Mass: 0.327 kg
+Volume: 40979.315 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218730164686973?focus=true",Engraving - 1597 - Forest Road 4. Button Stations,1,Engraving,,,,ORDER,PROJECT ORDER,1218774651444004,https://app.asana.com/0/848657415032331/1218774651444004
+1 off 1597. 1016.1.4 - Vertical 5 Buttons Face Plate Engraving,"1597.1016.1.4
+From Cost Centre Engraving
+Link to BOM: https://www.dropbox.com/scl/fo/stpdpj1l37fflxm40k0sa/AAwz8DVNtfij-QAIBDtVAuE?rlkey=l767cz3urrotyfvisv0jgn86i&dl=0
+Mass: 0.380 kg
+Volume: 47574.616 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218730164686973?focus=true",Engraving - 1597 - Forest Road 4. Button Stations,1,Engraving,,,,ORDER,PROJECT ORDER,1218774860451438,https://app.asana.com/0/848657415032331/1218774860451438
+Laser Cut BOM - 1597 - Forest Road 4. Button Stations,,ALL BOMS - 1597 - Forest Road 4. Button Stations,,Laser Cut,,,,,,,
+Laser Cut - 1597 - Forest Road 4. Button Stations,,Laser Cut BOM - 1597 - Forest Road 4. Button Stations,,Laser Cut,,,,,,,
+1 off 1597. 1016.1.007 - Vertical 4 Buttons - Laser Cut 304/DP1 Laser Cut,"1597.1016.1.007
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/stpdpj1l37fflxm40k0sa/AAwz8DVNtfij-QAIBDtVAuE?rlkey=l767cz3urrotyfvisv0jgn86i&dl=0
+Mass: 0.328 kg
+Volume: 40990.918 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218730164686973?focus=true",Laser Cut - 1597 - Forest Road 4. Button Stations,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218774684475491,https://app.asana.com/0/848657415032331/1218774684475491
+1 off 1597. 1016.1.008 - Vertical 5 Buttons - Laser Cut 304/DP1 Laser Cut,"1597.1016.1.008
+Stock Number: 304/DP1
+Material: Stainless Steel
+Thickness: 2.000 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/stpdpj1l37fflxm40k0sa/AAwz8DVNtfij-QAIBDtVAuE?rlkey=l767cz3urrotyfvisv0jgn86i&dl=0
+Mass: 0.381 kg
+Volume: 47573.502 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218730164686973?focus=true",Laser Cut - 1597 - Forest Road 4. Button Stations,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218774651486994,https://app.asana.com/0/848657415032331/1218774651486994
+1 off 1597. 1016.2.002 - BackingBox 304/2B Laser Cut,"1597.1016.2.002
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.500 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/stpdpj1l37fflxm40k0sa/AAwz8DVNtfij-QAIBDtVAuE?rlkey=l767cz3urrotyfvisv0jgn86i&dl=0
+Mass: 0.578 kg
+Volume: 72205.807 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218730164686973?focus=true",Laser Cut - 1597 - Forest Road 4. Button Stations,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218774684180927,https://app.asana.com/0/848657415032331/1218774684180927
+1 off 1597. 1016.2.007 - BackingBox 304/2B Laser Cut,"1597.1016.2.007
+Stock Number: 304/2B
+Material: Stainless Steel
+Thickness: 1.500 mm
+From Cost Centre Laser Cut
+Link to BOM: https://www.dropbox.com/scl/fo/stpdpj1l37fflxm40k0sa/AAwz8DVNtfij-QAIBDtVAuE?rlkey=l767cz3urrotyfvisv0jgn86i&dl=0
+Mass: 0.677 kg
+Volume: 84611.120 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218730164686973?focus=true",Laser Cut - 1597 - Forest Road 4. Button Stations,1,Laser Cut,,,,ORDER,PROJECT ORDER,1218774684620138,https://app.asana.com/0/848657415032331/1218774684620138
+Sesame BOM - 1597 - Forest Road 4. Button Stations,,ALL BOMS - 1597 - Forest Road 4. Button Stations,,Sesame,,,,,,,
+EAO - 1597 - Forest Road 4. Button Stations,,Sesame BOM - 1597 - Forest Road 4. Button Stations,,EAO,,,,,,,
+4 off 1597. 1016.3.001 - Lift UP.Down Button 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066 EAO,"1597.1016.3.001
+Stock Number: 51-151.0252F / 61-9933.0 / 61-9642.6 / 10-2j09.1066
+KAN: KAN-131
+KAN Stock Link: https://app.asana.com/0/632603478911321/1199599450492469
+Material: Generic
+Web Link: http://eao.com/en
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/stpdpj1l37fflxm40k0sa/AAwz8DVNtfij-QAIBDtVAuE?rlkey=l767cz3urrotyfvisv0jgn86i&dl=0
+Mass: 0.014 kg
+Volume: 13547.123 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218730164686973?focus=true",EAO - 1597 - Forest Road 4. Button Stations,,EAO,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1218774684250775,https://app.asana.com/0/848657415032331/1218774684250775
+2 off 1597. 1016.3.003 - E-Stop Mushroom Head 61-3440.4/5 EAO,"1597.1016.3.003
+Stock Number: 61-3440.4/5
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/stpdpj1l37fflxm40k0sa/AAwz8DVNtfij-QAIBDtVAuE?rlkey=l767cz3urrotyfvisv0jgn86i&dl=0
+Mass: 0.014 kg
+Volume: 13538.346 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218730164686973?focus=true",EAO - 1597 - Forest Road 4. Button Stations,2,EAO,,,,ORDER,PROJECT ORDER,1218774849342104,https://app.asana.com/0/848657415032331/1218774849342104
+3 off 1597. 1016.3.010(2Way-Spr) - Key Switch. 2PositionSpringReturn 51-141.025D2F EAO,"1597.1016.3.010(2Way-Spr)
+Stock Number: 51-141.025D2F
+KAN: KAN-134
+KAN Stock Link: https://app.asana.com/0/632603478911321/1198507094515477
+Material: Generic
+Web Link: http://eao.com/en
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/stpdpj1l37fflxm40k0sa/AAwz8DVNtfij-QAIBDtVAuE?rlkey=l767cz3urrotyfvisv0jgn86i&dl=0
+Mass: 0.011 kg
+Volume: 10542.114 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218730164686973?focus=true",EAO - 1597 - Forest Road 4. Button Stations,,EAO,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1218774860769889,https://app.asana.com/0/848657415032331/1218774860769889
+Sesame - 1597 - Forest Road 4. Button Stations,,Sesame BOM - 1597 - Forest Road 4. Button Stations,,Sesame,,,,,,,
+1 off 1597. 1016.J.RemoteControll_RF.Sol.1(4B).04 - Remote Control Sesame,"1597.1016.J.RemoteControll_RF.Sol.1(4B).04
+Material: Generic
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/stpdpj1l37fflxm40k0sa/AAwz8DVNtfij-QAIBDtVAuE?rlkey=l767cz3urrotyfvisv0jgn86i&dl=0
+Mass: 0.013 kg
+Volume: 12671.486 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218730164686973?focus=true",Sesame - 1597 - Forest Road 4. Button Stations,1,Sesame,,,,ORDER,PROJECT ORDER,1218774862272492,https://app.asana.com/0/848657415032331/1218774862272492
+4 off 1597. BRH-M4-16-GS (RivetBush) - Round M4 rivet bush BRH-M4-16-GS Sesame,"1597.BRH-M4-16-GS (RivetBush)
+Stock Number: BRH-M4-16-GS
+Material: Stainless Steel
+Web Link: http://www.npfasteners.com/rivetbush/brh.htm
+From Cost Centre Sesame
+Link to BOM: https://www.dropbox.com/scl/fo/stpdpj1l37fflxm40k0sa/AAwz8DVNtfij-QAIBDtVAuE?rlkey=l767cz3urrotyfvisv0jgn86i&dl=0
+Mass: 0.002 kg
+Volume: 212.110 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218730164686973?focus=true",Sesame - 1597 - Forest Road 4. Button Stations,4,Sesame,,,,ORDER,PROJECT ORDER,1218774684862311,https://app.asana.com/0/848657415032331/1218774684862311

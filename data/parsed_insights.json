@@ -1,66 +1,170 @@
 [
   {
-    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDguLAAA=",
-    "subject": "Re: 1597 - Forrest Road Machine Room Cabinet PLC -  SQR-46885",
-    "sender": "karl.ellis@jajoautomation.co.uk",
-    "receivedDateTime": "2026-09-18T10:59:21Z",
+    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkzq0ynAAA=",
+    "internet_message_id": "<b00da72b2dad47c8b5b4226f9ef6bee6@alexander-pollock.co.uk>",
+    "conversation_id": "AAQkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NAAQAB0v3sKW6AVLipSs2zJC8tI=",
+    "subject": "RE: Engraving - 1580 - Admiralty House 2.Entire System BOM - SQR-47291",
+    "sender": "BRussell@alexander-pollock.co.uk",
+    "sender_name": "Brian Russell",
+    "to": [
+      "purchasing@sesameaccess.com"
+    ],
+    "folder": "inbox",
+    "receivedDateTime": "2026-09-23T11:06:11Z",
+    "attachment_names": [
+      "image001.jpg"
+    ],
+    "body_text": "Good morning Giles\n\nIs the SWL plate add the lift ID number only?\n\nRegards\n\nBrian Russell\n\nAlexander Pollock Ltd\n\nTel. 01620 823344\n\nwww.cncengravers.com\n\nwww.fishinggauges.com\n\nFrom: Giles Hugo [mailto:giles@sesameaccess.com]\nSent: 17 September 2026 12:40\nTo: Purchasing - Sesame Access <purchasing@sesameaccess.com>\nCc: Brian Russell <BRussell@alexander-pollock.co.uk>\nSubject: Engraving - 1580 - Admiralty House 2.Entire System BOM - SQR-47291\n\nHello Brian\n\nPlease can i have a quote for:\n\n1 off 1580. 1016.H1 - SWLPlate.OneWheelchairUser- Engraved Engraving\n1 off 1580. 1016.E3 - Call For Assistance Plate Engraved Engraving\n1 off 1580. 1016.1.1 - 6 Buttons Face Plate - Engraving Engraving\n\nusing the drawings in the link below\n\nhttps://www.dropbox.com/scl/fo/zwjfzymqrmer8zear80co/AKTn_eHtXNFolWkRacz0VRI?rlkey=ehiriyew1fo9qjksuh3iudpfp&st=3gjeh62c&dl=0\n\nMany Thanks,\n\nGiles\nPurchasing Manager\n\nSesame Access Systems Ltd\nUnit 1, Cumberland Works\nWintersells Business Park\nWest Byfleet\nSurrey\nUnited Kingdom\nKT14 7LF\n\nOffice: 01784 440088\nDIRECT LINE : 01784 904484\nEmail: purchasing@sesameaccess.com\nWeb: www.sesameaccess.com\nYouTube: www.youtube.com/sesameaccess\n\nSent from Asana: https://app.asana.com/1/357939803556123/project/358790955858777/task/1218503775308839.",
     "insights": {
+      "document_type": "update",
+      "summary": "Brian Russell of Alexander Pollock is replying to Giles's request for a quote (SQR-47291) on engraving for job 1580 (Admiralty House 2). He asks a single clarification question: whether the SWL plate should have the lift ID number only. No pricing or lead time has been provided yet.",
+      "action_required": true,
+      "action_items": [
+        "Answer Brian's question: confirm whether the SWL plate engraving should show the lift ID number only (no deadline stated)"
+      ],
+      "requested_by": "Brian Russell",
+      "company_name": "Alexander Pollock Ltd",
       "po_number": null,
+      "sqr_number": "SQR-47291",
+      "job_numbers": [
+        "1580",
+        "1016"
+      ],
+      "supplier_quote_ref": null,
+      "supplier_order_ref": null,
+      "supplier_invoice_ref": null,
       "total_price": null,
+      "carriage": null,
       "delivery_date": null,
+      "lead_time": null,
+      "has_issues": true,
+      "issue_summary": "Supplier is querying the engraving content for the SWL plate (lift ID number only?) before quoting.",
+      "is_noise": false,
+      "noise_reason": null,
+      "line_items": [
+        {
+          "part_ref": "1580.1016.H1",
+          "description": "SWLPlate.OneWheelchairUser - Engraved",
+          "qty": 1,
+          "unit_price": null,
+          "notes": "Query: lift ID number only?"
+        },
+        {
+          "part_ref": "1580.1016.E3",
+          "description": "Call For Assistance Plate Engraved",
+          "qty": 1,
+          "unit_price": null,
+          "notes": null
+        },
+        {
+          "part_ref": "1580.1016.1.1",
+          "description": "6 Buttons Face Plate - Engraving",
+          "qty": 1,
+          "unit_price": null,
+          "notes": null
+        }
+      ]
+    }
+  },
+  {
+    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkzq0yoAAA=",
+    "internet_message_id": "<edfa581b4323c8f484e71bead737d9a3@jajoautomation.co.uk>",
+    "conversation_id": "AAQkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NAAQANKxU8bIoc1Lnrg6tqqC3Yg=",
+    "subject": "Re: 1578 - New Traversing PLC BOM",
+    "sender": "anna.henslok@jajoautomation.co.uk",
+    "sender_name": "Anna Henslok",
+    "to": [
+      "karolp@sesameaccess.com",
+      "andye@sesameaccess.com",
+      "purchasing@sesameaccess.com",
+      "stevenl@sesameaccess.com"
+    ],
+    "folder": "inbox",
+    "receivedDateTime": "2026-09-23T11:28:50Z",
+    "attachment_names": [
+      "JAS262431, revA3 - Traversing Platform, pump 1.5kW, Type white cabinet logo8.4.pdf"
+    ],
+    "body_text": "Hi Andy\n\n1) Please see attached dwg for JAS262431, revA3 - Traversing Platform.\n\nThe mods are on sheet : 2, 3 ,8-14, 16, 20, 23, 26\n\nADD; -11E01, -12Y21, -12Y41\n\nMODS TO; -3F91, 16T81\n\n2) Regarding the extra parts can we have PO number for the items you need?\n\n3) Does this elevator have a name or reference like where it goes?\n\nBest Regards Anna\n\n-------------------------------------------------------------------------------------------------------------------\nAnna Henslok | JAJO Automation Services\nUnit 36 Union Street | Springvale Industrial Estate|\nBilston | WV14 0QT\n\nTel: 01902 408674\nwww.jajoautomation.co.uk\n-------------------------------------------------------------------------------------------------------------------\nJAJO Automation Services is a trading style of JAJO Automated Software Ltd\n-------------------------------------------------------------------------------------------------------------------\n\nThis email, and any attachment is confidential. If you are not the intended recipient of the email, please delete it from your system. Do not disclose the information in any way, and notify us immediately. The contents of this message may contain personal views that are not the views of JAJO Automation Services, unless specifically stated.\n\nJAJO Automation Services have taken reasonable precautions to ensure that any attachment to this email has been swept for viruses. However, it cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.\n\nOn 17/09/2026 13:21, Andy Easton wrote:\n\nOk.\nCan we go with that then.\n\nWe will need to source this. Is this something you can provide. ?\n\nRegards,\n\nAndrew Easton\n\nSesame Access Systems Ltd\n\nUnit 1, Cumberland Works\n\nWintersells Business Park\n\nWest Byfleet\n\nSurrey\n\nUnited Kingdom\n\nKT14 7LF\n\nTel: 01784 440088\n\nMobile: 07808241792\n\nWeb: www.sesameaccess.com\n\nYouTube:www.youtube.com/sesameaccess\n\nProduct Range: http://data.axmag.com/data/201305/U99907_F215399/FLASH/index.html\n\nReg. in England, UK No.3259843\n\nVisit: http://sesameaccess.com Like: http://facebook.com/sesameaccess Follow: http://twitter.com/sesameaccess\n\nThis email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you have received this email in error please notify the system manager. Please note that any views or opinions presented in this email are solely those of the author and do not necessarily represent those of the company. Finally, the recipient should check this email and any attachments for the presence of viruses. The company accepts no liability for any damage caused by any virus transmitted by this email.\n\nRegistered in England: 3259843\n\nOn 17 Sep 2026, at 08:30, Anna Henslok <anna.henslok@jajoautomation.co.uk> wrote:\n\nHi Andy\n\nThe transformer (TRA12UN100) recommends T32mA fuse on power input.\n\nBest Regards\n\nAnna\n\n---\n\n<9f0635df.png>\n\n-------------------------------------------------------------------------------------------------------------------\nAnna Henslok | JAJO Automation Services\nUnit 36 Union Street | Springvale Industrial Estate|\nBilston | WV14 0QT\n\nTel: 01902 408674\nwww.jajoautomation.co.uk\n-------------------------------------------------------------------------------------------------------------------\nJAJO Automation Services is a trading style of JAJO Automated Software Ltd\n-------------------------------------------------------------------------------------------------------------------\n\nThis email, and any attachment is confidential. If you are not the intended recipient of the email, please delete it from your system. Do not disclose the information in any way, and notify us immediately. The contents of this message may contain personal views that are not the views of JAJO Automation Services, unless specifically stated.\n\nJAJO Automation Services have taken reasonable precautions to ensure that any attachment to this email has been swept for viruses. However, it cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.\n\nOn 17/09/2026 08:07, Andy Easton wrote:\n\nAnna,\n\nWe have wired the transformer to 3Q-21\n\nRegards,\n\nAndrew Easton\n\nSesame Access Systems Ltd\n\nUnit 1, Cumberland Works\n\nWintersells Business Park\n\nWest Byfleet\n\nSurrey\n\nUnited Kingdom\n\nKT14 7LF\n\nTel: 01784 440088\n\nMobile: 07808241792\n\nWeb: www.sesameaccess.com\n\nYouTube:www.youtube.com/sesameaccess\n\nProduct Range: http://data.axmag.com/data/201305/U99907_F215399/FLASH/index.html\n\nReg. in England, UK No.3259843\n\nVisit: http://sesameaccess.com Like: http://facebook.com/sesameaccess Follow: http://twitter.com/sesameaccess\n\nThis email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you have received this email in error please notify the system manager. Please note that any views or opinions presented in this email are solely those of the author and do not necessarily represent those of the company. Finally, the recipient should check this email and any attachments for the presence of viruses. The company accepts no liability for any damage caused by any virus transmitted by this email.\n\nRegistered in England: 3259843\n\nFrom: Anna Henslok <anna.henslok@jajoautomation.co.uk>\nSent: 16 September 2026 15:32\nTo: Karol Porwol <karolp@sesameaccess.com>; Andy Easton <andye@sesameaccess.com>; Purchasing - Sesame Access <purchasing@sesameaccess.com>; Steven Lyons <stevenl@sesameaccess.com>\nCc: Karl Ellis <karl.ellis@jajoautomation.co.uk>\nSubject: Re: Fwd: Re: Fwd: 1578 - New Traversing PLC BOM\n\nHi Andy\n\nCan you mark where and hat size is the fuse (-3F91) feeding this new transformer, please?\n\nBest Regards\n\nAnna\n\n---\n\n-------------------------------------------------------------------------------------------------------------------\nAnna Henslok | JAJO Automation Services\nUnit 36 Union Street | Springvale Industrial Estate|\nBilston | WV14 0QT\n\nTel: 01902 408674\nwww.jajoautomation.co.uk\n-------------------------------------------------------------------------------------------------------------------\nJAJO Automation Services is a trading style of JAJO Automated Software Ltd\n-------------------------------------------------------------------------------------------------------------------\n\nThis email, and any attachment is confidential. If you are not the intended recipient of the email, please delete it from your system. Do not disclose the information in any way, and notify us immediately. The contents of this message may contain personal views that are not the views of JAJO Automation Services, unless specifically stated.\n\nJAJO Automation Services have taken reasonable precautions to ensure that any attachment to this email has been swept for viruses. However, it cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.\n\nOn 16/09/2026 10:52, Andy Easton wrote:\n\nHi Anna,\n\nWe have had to make some additional changes to this panel.(see photos)\n\nCan I ask you add Q-13 Off-loading valve and Q-14 Lift lower Poppet valve.\n\nYou will see from the photos we have added the call for assistance transformer,relay and additional terminals for the linear actuators.\n\nCan we look to add some terminals for the Poppet valve and wire Non safety. I would also like to be able to Emergency lower the lift with the poppet valve and lower solenoid.\n\nRegards,\n\nAndrew Easton\n\nSesame Access Systems Ltd\n\nUnit 1, Cumberland Works\n\nWintersells Business Park\n\nWest Byfleet\n\nSurrey\n\nUnited Kingdom\n\nKT14 7LF\n\nTel: 01784 440088\n\nMobile: 07808241792\n\nWeb: www.sesameaccess.com\n\nYouTube:www.youtube.com/sesameaccess\n\nProduct Range: http://data.axmag.com/data/201305/U99907_F215399/FLASH/index.html\n\nReg. in England, UK No.3259843\n\nVisit: http://sesameaccess.com Like: http://facebook.com/sesameaccess Follow: http://twitter.com/sesameaccess\n\nThis email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you have received this email in error please notify the system manager. Please note that any views or opinions presented in this email are solely those of the author and do not necessarily represent those of the company. Finally, the recipient should check this email and any attachments for the presence of viruses. The company accepts no liability for any damage caused by any virus transmitted by this email.\n\nRegistered in England: 3259843\n\nFrom: Anna Henslok <anna.henslok@jajoautomation.co.uk>\nSent: 16 September 2026 09:59\nTo: Karol Porwol <karolp@sesameaccess.com>; Andy Easton <andye@sesameaccess.com>; Purchasing - Sesame Access <purchasing@sesameaccess.com>; Steven Lyons <stevenl@sesameaccess.com>\nCc: Karl Ellis <karl.ellis@jajoautomation.co.uk>\nSubject: Re: Fwd: Re: Fwd: 1578 - New Traversing PLC BOM\n\nHi Andy\n\nPlease see attached dwg for JAS262431, revA2 - Traversing Platform - .Single\n\nThe mods are on sheet : 1, 10\n\nMODS TO -10K21, LIFT NAME\n\nBest Regards\n\nAnna\n\n---\n\n-------------------------------------------------------------------------------------------------------------------\nAnna Henslok | JAJO Automation Services\nUnit 36 Union Street | Springvale Industrial Estate|\nBilston | WV14 0QT\n\nTel: 01902 408674\nwww.jajoautomation.co.uk\n-------------------------------------------------------------------------------------------------------------------\nJAJO Automation Services is a trading style of JAJO Automated Software Ltd\n-------------------------------------------------------------------------------------------------------------------\n\nThis email, and any attachment is confidential. If you are not the intended recipient of the email, please delete it from your system. Do not disclose the information in any way, and notify us immediately. The contents of this message may contain personal views that are not the views of JAJO Automation Services, unless specifically stated.\n\nJAJO Automation Services have taken reasonable precautions to ensure that any attachment to this email has been swept for viruses. However, it cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.\n\nOn 21/08/2026 10:44, Karol Porwol wrote:\n\nHi Anna,\n\nThis mod is for traversing lift single, that mean can you update the title box and name of the file to 7100.TraversingSingle please ?\n\nKarol Porwol MEng (Hons), BEng.\n\nSesame Access Systems Ltd\n\nUnit 1, Cumberland Works\n\nWintersells Business Park\n\nWest Byfleet\n\nKT14 7LF - Surrey\n\nUnited Kingdom\n\nOffice: 01784 440088\n\nEmail: karolp@sesameaccess.com\n\nWeb: www.sesameaccess.com\n\nYouTube: www.youtube.com/sesameaccess\n\nFrom: Karol Porwol <karolp@sesameaccess.com>\nSent: 21 August 2026 08:57\nTo: Anna Henslok <anna.henslok@jajoautomation.co.uk>; Andy Easton <andye@sesameaccess.com>; Purchasing - Sesame Access <purchasing@sesameaccess.com>; Steven Lyons <stevenl@sesameaccess.com>\nCc: Karl Ellis <karl.ellis@jajoautomation.co.uk>\nSubject: Re: Fwd: Re: Fwd: 1578 - New Traversing PLC BOM\n\nHi Andy,\n\nIs the attached wire diagram for single and low-profile ones ?\n\nKarol Porwol MEng (Hons), BEng.\n\nSesame Access Systems Ltd\n\nUnit 1, Cumberland Works\n\nWintersells Business Park\n\nWest Byfleet\n\nKT14 7LF - Surrey\n\nUnited Kingdom\n\nOffice: 01784 440088\n\nEmail: karolp@sesameaccess.com\n\nWeb: www.sesameaccess.com\n\nYouTube: www.youtube.com/sesameaccess\n\nFrom: Anna Henslok <anna.henslok@jajoautomation.co.uk>\nSent: 20 August 2026 17:26\nTo: Karol Porwol <karolp@sesameaccess.com>; Andy Easton <andye@sesameaccess.com>; Purchasing - Sesame Access <purchasing@sesameaccess.com>; Steven Lyons <stevenl@sesameaccess.com>\nCc: Karl Ellis <karl.ellis@jajoautomation.co.uk>\nSubject: Re: Fwd: Re: Fwd: 1578 - New Traversing PLC BOM\n\nHi Andy\n\nPlease see attached dwg for JAS262431, revA0 - Traversing Platform.\n\nThe mods are on sheet : 3, 7, 10, 13, 15, 16, 23, 26\n\nADD; -3F91, -10K21, -13K63, -13K64, -16S31, -16K61, -16T81, -16S92\n\nREMOVE; -7K61, -13K22, -13K23, -13K24, -13K25, -13K26, -15K81\n\nBest Regards\n\nAnna\n\n---\n\n-------------------------------------------------------------------------------------------------------------------\nAnna Henslok | JAJO Automation Services\nUnit 36 Union Street | Springvale Industrial Estate|\nBilston | WV14 0QT\n\nTel: 01902 408674\nwww.jajoautomation.co.uk\n-------------------------------------------------------------------------------------------------------------------\nJAJO Automation Services is a trading style of JAJO Automated Software Ltd\n-------------------------------------------------------------------------------------------------------------------\n\nThis email, and any attachment is confidential. If you are not the intended recipient of the email, please delete it from your system. Do not disclose the information in any way, and notify us immediately. The contents of this message may contain personal views that are not the views of JAJO Automation Services, unless specifically stated.\n\nJAJO Automation Services have taken reasonable precautions to ensure that any attachment to this email has been swept for viruses. However, it cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.\n\nOn 20/08/2026 16:02, Adam Henslok wrote:\n\nTypo fix:\n\nPage 7:\n I14 - Lift Up - N/C (not connected)\n I15 - Lift Down - Standard L/S\nPage 10:\n AI2 - Lift Position (white from laser sensor to I2, sensor set to 4..20mA)\n\nOn 20/08/2026 16:01, Adam Henslok wrote:\n\nAnna,\n\nPage 7:\n I14 - Lift Up - N/C\n I14 - Lift Down - Standard L/S\nPage 10:\n AI2 - Lift Position (white from laser sensor to I2, sensor set to 4..20mA)\n\nRegards,\nAdam.\n\nOn 20/08/2026 15:17, Anna Henslok wrote:\n\n---\n\n-------------------------------------------------------------------------------------------------------------------\nAnna Henslok | JAJO Automation Services\nUnit 36 Union Street | Springvale Industrial Estate|\nBilston | WV14 0QT\n\nTel: 01902 408674\nwww.jajoautomation.co.uk\n-------------------------------------------------------------------------------------------------------------------\nJAJO Automation Services is a trading style of JAJO Automated Software Ltd\n-------------------------------------------------------------------------------------------------------------------\n\nThis email, and any attachment is confidential. If you are not the intended recipient of the email, please delete it from your system. Do not disclose the information in any way, and notify us immediately. The contents of this message may contain personal views that are not the views of JAJO Automation Services, unless specifically stated.\n\nJAJO Automation Services have taken reasonable precautions to ensure that any attachment to this email has been swept for viruses. However, it cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.\n\n-------- Original Message --------\n\nSubject:\n\nRe: Fwd: 1578 - New Traversing PLC BOM\n\nDate:\n\n20/08/2026 13:47\n\nFrom:\n\nAndy Easton <andye@sesameaccess.com>\n\nTo:\n\nAnna Henslok <anna.henslok@jajoautomation.co.uk>, Karol Porwol <karolp@sesameaccess.com>, Purchasing - Sesame Access <purchasing@sesameaccess.com>, Steven Lyons <stevenl@sesameaccess.com>\n\nCopy:\n\nKarl Ellis <karl.ellis@jajoautomation.co.uk>\n\nHi Anna,\n\nCan you take a look at this and update accordingly. We will need to make adjustments to the panel. I will send details once they have been completed.\n\nRegards,\n\nAndrew Easton\n\nSesame Access Systems Ltd\n\nUnit 1, Cumberland Works\n\nWintersells Business Park\n\nWest Byfleet\n\nSurrey\n\nUnited Kingdom\n\nKT14 7LF\n\nTel: 01784 440088\n\nMobile: 07808241792\n\nWeb: www.sesameaccess.com\n\nYouTube:www.youtube.com/sesameaccess\n\nProduct Range: http://data.axmag.com/data/201305/U99907_F215399/FLASH/index.html\n\nReg. in England, UK No.3259843\n\nVisit: http://sesameaccess.com Like: http://facebook.com/sesameaccess Follow: http://twitter.com/sesameaccess\n\nThis email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you have received this email in error please notify the system manager. Please note that any views or opinions presented in this email are solely those of the author and do not necessarily represent those of the company. Finally, the recipient should check this email and any attachments for the presence of viruses. The company accepts no liability for any damage caused by any virus transmitted by this email.\n\nRegistered in England: 3259843\n\nFrom: Anna Henslok <anna.henslok@jajoautomation.co.uk>\nSent: 21 April 2026 09:57\nTo: Karol Porwol <karolp@sesameaccess.com>; Andy Easton <andye@sesameaccess.com>; Purchasing - Sesame Access <purchasing@sesameaccess.com>; Steven Lyons <stevenl@sesameaccess.com>\nCc: Karl Ellis <karl.ellis@jajoautomation.co.uk>\nSubject: Re: Fwd: 1578 - New Traversing PLC BOM\n\nHi Andy\n\nPlease see attached dwg for JAS262431, revA0 - Traversing Platform, pump 1.5kW, Type white cabinet logo8.4\n\nBest Regards\n\nAnna\n\n---\n\n-------------------------------------------------------------------------------------------------------------------\nAnna Henslok | JAJO Automation Services\nUnit 36 Union Street | Springvale Industrial Estate|\nBilston | WV14 0QT\n\nTel: 01902 408674\nwww.jajoautomation.co.uk\n-------------------------------------------------------------------------------------------------------------------\nJAJO Automation Services is a trading style of JAJO Automated Software Ltd\n-------------------------------------------------------------------------------------------------------------------\n\nThis email, and any attachment is confidential. If you are not the intended recipient of the email, please delete it from your system. Do not disclose the information in any way, and notify us immediately. The contents of this message may contain personal views that are not the views of JAJO Automation Services, unless specifically stated.\n\nJAJO Automation Services have taken reasonable precautions to ensure that any attachment to this email has been swept for viruses. However, it cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.\n\nOn 11/03/2026 13:40, Andy Easton wrote:\n\nHi Anna,\n\nAll cables to be 15mtrs.\n\nRegards,\n\nAndrew Easton\n\nSesame Access Systems Ltd\n\nUnit 1, Cumberland Works\n\nWintersells Business Park\n\nWest Byfleet\n\nSurrey\n\nUnited Kingdom\n\nKT14 7LF\n\nTel: 01784 440088\n\nMobile: 07808241792\n\nWeb: www.sesameaccess.com\n\nYouTube:www.youtube.com/sesameaccess\n\nProduct Range: http://data.axmag.com/data/201305/U99907_F215399/FLASH/index.html\n\nReg. in England, UK No.3259843\n\nVisit: http://sesameaccess.com Like: http://facebook.com/sesameaccess Follow: http://twitter.com/sesameaccess\n\nThis email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you have received this email in error please notify the system manager. Please note that any views or opinions presented in this email are solely those of the author and do not necessarily represent those of the company. Finally, the recipient should check this email and any attachments for the presence of viruses. The company accepts no liability for any damage caused by any virus transmitted by this email.\n\nRegistered in England: 3259843\n\nFrom: Anna Henslok <anna.henslok@jajoautomation.co.uk>\nSent: 11 March 2026 09:06\nTo: Karol Porwol <karolp@sesameaccess.com>; Andy Easton <and",
+    "insights": {
+      "document_type": "update",
+      "summary": "Anna at JAJO has sent the revised drawing for panel JAS262431 revA3 (Traversing Platform), listing the modified sheets and the added/modified component references. She also asks for a PO number for the extra parts Sesame needs, and asks whether this elevator has a name or reference for where it goes. No pricing or delivery information is given.",
+      "action_required": true,
+      "action_items": [
+        "Send JAJO the PO number covering the extra parts requested",
+        "Answer Anna's question about the elevator's name/reference and location",
+        "Review the attached revA3 drawing (sheets 2, 3, 8-14, 16, 20, 23, 26) and note adds -11E01, -12Y21, -12Y41 and mods to -3F91, 16T81"
+      ],
+      "requested_by": "Anna Henslok",
+      "company_name": "JAJO Automation Services",
+      "po_number": null,
+      "sqr_number": null,
+      "job_numbers": [
+        "1578"
+      ],
+      "supplier_quote_ref": null,
+      "supplier_order_ref": null,
+      "supplier_invoice_ref": null,
+      "total_price": null,
+      "carriage": null,
+      "delivery_date": null,
+      "lead_time": null,
+      "has_issues": true,
+      "issue_summary": "JAJO cannot proceed with the extra parts until Sesame provides a PO number, and they have an open query about the elevator's name/reference.",
+      "is_noise": false,
+      "noise_reason": null,
+      "line_items": []
+    }
+  },
+  {
+    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkzq0ypAAA=",
+    "internet_message_id": "<1398740580.62105.1790163672728@czchols5231.prg-dc.dhl.com>",
+    "conversation_id": "AAQkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NAAQAICQweSMG-JBjsfh7gU51lM=",
+    "subject": "DHL Express Shipment Confirmation",
+    "sender": "noreply@dhl.com",
+    "sender_name": "noreply@dhl.com",
+    "to": [
+      "purchasing@sesameaccess.com"
+    ],
+    "folder": "inbox",
+    "receivedDateTime": "2026-09-23T11:41:34Z",
+    "attachment_names": [
+      "TransportLabel_2396580406.pdf",
+      "WaybillDoc_2396580406.pdf"
+    ],
+    "body_text": "Help and Support\n\nThis shipment has been created with DHL Express.\n\nWaybill Tracking Number\n\n2396580406\n\nShipment documentation for shipments from Stephenson Gobin Limited\n\nShip From\n\nSTEPHENSON GOBIN LIMITED\nLONGFIELD ROAD 20\nSOUTH CHURCH ENTERPRISE PARK\nSOUTH CHURCH ENTERPRISE PARK\nDL14 6XB\nUnited Kingdom\n\nShip To\n\nSESAME ACCESS SYSTEMS LTD\nUnit 1, Cumberland Works\n Wintersells Business Park\nWest Byfleet, Surrey\nBYFLEET\nKT14 7LF\nUnited Kingdom\n\nShipment Details\n\nDelivery Option: EXPRESS DOMESTIC\nShipment Type: PACKAGE\nPiece ID: [JD014600012759915267]\nTotal Weight: 2.5 kg\nDescription of Contents: ATD 7654 x 1; ATD 7654 x 1\nShipment Reference: SHIP ID 471631 471456 SESAME ACCESS SYSTEMS 20717-1569 & PO20985-1575 G206883 G207203\n\nOptional Services:\nFuel Surcharge\n\nEstimated Delivery Date\nBy: September 24, 2026\n\nPlease do not reply to this email – inbox is not monitored\n\nTerms of Use | Privacy Notice | Terms and Conditions of Carriage 2026 © DHL Group",
+    "insights": {
+      "document_type": "dispatch_note",
+      "summary": "DHL Express shipment notification confirming a 2.5 kg domestic express package has been created and collected from Stephenson Gobin Limited, addressed to Sesame Access Systems. Contents are listed as ATD 7654 x 1 (twice), with estimated delivery by 24 September 2026. The shipment reference quotes Sesame job 1569 and PO 20985-1575.",
+      "action_required": false,
+      "action_items": [],
+      "requested_by": null,
+      "company_name": "DHL Express",
+      "po_number": "20985-1575",
+      "sqr_number": null,
+      "job_numbers": [
+        "1569",
+        "1575"
+      ],
+      "supplier_quote_ref": null,
+      "supplier_order_ref": null,
+      "supplier_invoice_ref": null,
+      "total_price": null,
+      "carriage": null,
+      "delivery_date": "2026-09-24",
+      "lead_time": null,
       "has_issues": false,
       "issue_summary": null,
-      "sqr_number": "SQR-46885",
-      "document_type": "other",
-      "line_items": []
-    }
-  },
-  {
-    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDguIAAA=",
-    "subject": "We are expecting your parcel from Warren Machine Tools (Guildfor",
-    "sender": "notifications@dhlecommerce.co.uk",
-    "receivedDateTime": "2026-09-18T10:06:19Z",
-    "insights": {
-      "po_number": null,
-      "total_price": null,
-      "delivery_date": null,
-      "has_issues": false,
-      "issue_summary": null,
-      "sqr_number": null,
-      "document_type": "other",
-      "line_items": []
-    }
-  },
-  {
-    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkwDtIBAAA=",
-    "subject": "Notes from your call with Richard Purch 309 on 18/09/2026 11:15",
-    "sender": "service-uk@ringcentral.com",
-    "receivedDateTime": "2026-09-18T10:15:57Z",
-    "insights": {
-      "po_number": null,
-      "total_price": null,
-      "delivery_date": null,
-      "has_issues": true,
-      "issue_summary": "Giles Hugo needs to confirm with IDL whether the powder coating for Langley has been completed before Richard Purch can collect it.",
-      "sqr_number": null,
-      "document_type": "other",
-      "line_items": []
-    }
-  },
-  {
-    "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkwDtIAAAA=",
-    "subject": "Notes from your call with Dave Burt IDL 07810 558753 on 18/09/2026 11:25",
-    "sender": "service-uk@ringcentral.com",
-    "receivedDateTime": "2026-09-18T10:27:08Z",
-    "insights": {
-      "po_number": null,
-      "total_price": null,
-      "delivery_date": null,
-      "has_issues": true,
-      "issue_summary": "No powder coating is currently available, with new powder expected to be ready by early next week (Monday or Tuesday).",
-      "sqr_number": null,
-      "document_type": "other",
-      "line_items": []
+      "is_noise": false,
+      "noise_reason": null,
+      "line_items": [
+        {
+          "part_ref": "ATD 7654",
+          "description": null,
+          "qty": 1,
+          "unit_price": null,
+          "notes": "Listed twice on the shipment documentation"
+        }
+      ]
     }
   }
 ]

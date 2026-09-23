@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  21/09/2026  10:59
+============================================================
+With:         Sean McAllen 304
+Forwarded by: LesV@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Leslie Vaughn and Sean McAllen discussing safety modifications on equipment at St John Street and addressing a call for assistance issue on a sauna, with plans to resolve the latter before Friday. Leslie also mentioned a previous task for Andy regarding a sub pump.
+
+--- RECAP --------------------------------------------------
+Leslie Vaughn explained that a safety modification on equipment at St John Street involves removing the front panel and installing safety bars, which does not require sacrificing an installation or traveling to London.Leslie Vaughn identified a task for Andy to develop a solution or discuss the call for assistance problem on a sauna, with a deadline before Friday.Leslie Vaughn noted that the call for assistance issue at Adelaide 10 is more complex due to distance, and suggested using two controllers or a spare cable to improve signal, with testing to determine if PLC signals are better than button station signals.Leslie Vaughn mentioned a previous task for Andy related to a sub pump, completed about a month ago.
+
+--- TASKS --------------------------------------------------
+Leslie Vaughn will ensure someone installs safety bars and removes the front panel at St John Street equipment.Andy will come up with a solution or discuss the call for assistance issue on the sauna before Friday.Leslie Vaughn will test the remote signal setup at Adelaide 10 using the spare cable and compare PLC signal quality to button station signals.
+
+(Full transcript: RC web portal only — no RingSense API)

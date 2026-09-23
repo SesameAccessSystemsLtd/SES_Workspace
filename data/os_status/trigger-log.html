@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAS OS — Button &amp; Trigger Log</title>
+<script>window.SAS_PAGE_ID="trigger-log";(function(){try{var k='sas_os_theme::'+window.SAS_PAGE_ID;var t=localStorage.getItem(k)||localStorage.getItem('sas_os_theme:last');if(t&&t!=='light')document.documentElement.classList.add('theme-'+t);}catch(e){}})();</script>
+<style>
+/* Seven themes. Each page remembers its own, so colour becomes wayfinding:
+   you learn "the amber one is BOM tracker" and recognise it before reading. */
+:root{--bg:#f4f6fa;--card:#fff;--ink:#1a1a2e;--muted:#6b7280;--line:#e5e7eb;
+--brand:#0f766e;--amber:#d97706;--red:#dc2626;--green:#16a34a;--blue:#2563eb;
+--brand2:#0f766e;--hero-grad:linear-gradient(135deg,#0f172a 0%,#134e4a 100%);
+--hover:#f9fafb;--subbg:#f8fafc;--accbg:#ecfdf5;--accink:#065f46;--onbrand:#fff}
+
+:root.theme-sand{--bg:#faf6f0;--card:#fffdfa;--ink:#2b2118;--muted:#8a7660;--line:#e8dcc9;
+--brand:#a8651f;--amber:#b45309;--red:#b91c1c;--green:#4d7c0f;--blue:#1d4ed8;
+--brand2:#7c4a12;--hero-grad:linear-gradient(135deg,#3b2a17 0%,#7c4a12 100%);
+--hover:#f5efe4;--subbg:#f7f2e9;--accbg:#fdf3e3;--accink:#7c4a12;--onbrand:#fff}
+
+:root.theme-slate{--bg:#1b1f24;--card:#242a31;--ink:#e6edf3;--muted:#9099a6;--line:#343b44;
+--brand:#58a6ff;--amber:#e3b341;--red:#f85149;--green:#3fb950;--blue:#58a6ff;
+--brand2:#79c0ff;--hero-grad:linear-gradient(135deg,#12161a 0%,#2d3742 100%);
+--hover:#2b323a;--subbg:#20262d;--accbg:#10243a;--accink:#79c0ff;--onbrand:#0d1117}
+
+:root.theme-ocean{--bg:#0f1117;--card:#1a1d27;--ink:#e2e8f0;--muted:#94a3b8;--line:#2d3250;
+--brand:#6c8ef7;--amber:#fbbf24;--red:#f87171;--green:#34d399;--blue:#6c8ef7;
+--brand2:#a78bfa;--hero-grad:linear-gradient(135deg,#1e2a5e 0%,#2d1f6e 100%);
+--hover:#21253a;--subbg:#1f2436;--accbg:#0c2b22;--accink:#34d399;--onbrand:#0f1117}
+
+:root.theme-forest{--bg:#0d1512;--card:#15241f;--ink:#dcefe6;--muted:#7fa091;--line:#234034;
+--brand:#2ea87e;--amber:#d9a441;--red:#e05c5c;--green:#3fc98f;--blue:#4d9de0;
+--brand2:#6ddba8;--hero-grad:linear-gradient(135deg,#07140f 0%,#14452f 100%);
+--hover:#1a2f27;--subbg:#112019;--accbg:#0a2a1e;--accink:#6ddba8;--onbrand:#07140f}
+
+:root.theme-plum{--bg:#14101c;--card:#1e1830;--ink:#ece6f7;--muted:#9b8fb5;--line:#352a4d;
+--brand:#b478ff;--amber:#f0a63c;--red:#ff6b81;--green:#4ad9a4;--blue:#7c93ff;
+--brand2:#e0a3ff;--hero-grad:linear-gradient(135deg,#1a0b2e 0%,#4a1d6b 100%);
+--hover:#271f3d;--subbg:#1a1428;--accbg:#2a1240;--accink:#e0a3ff;--onbrand:#14101c}
+
+:root.theme-neon{--bg:#05060f;--card:#0d101f;--ink:#e6f1ff;--muted:#8a93b8;--line:#1e2a4a;
+--brand:#00f0ff;--amber:#ffd100;--red:#ff3b6b;--green:#00ff9d;--blue:#5f7cff;
+--brand2:#b14aff;--hero-grad:linear-gradient(135deg,#060014 0%,#1a0040 60%,#004b73 100%);
+--hover:#131a33;--subbg:#0b0f24;--accbg:#001a1f;--accink:#00ff9d;--onbrand:#05060f}
+
+*{box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+background:var(--bg);color:var(--ink);margin:0;line-height:1.5;
+transition:background .4s,color .4s}
+.wrap{max-width:1200px;margin:0 auto;padding:32px 24px 80px}
+a{color:var(--brand)}
+
+header.hero{background:var(--hero-grad);color:#fff;border-radius:16px;padding:30px;
+margin-bottom:24px;transition:background .4s}
+header.hero h1{margin:0 0 6px;font-size:28px}
+header.hero .sub{opacity:.85;font-size:14px;margin-bottom:16px}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.badge{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);
+color:#fff;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:600}
+.navbtn{display:inline-block;color:#fff;opacity:.85;text-decoration:none;font-size:13px}
+.navbtn:hover{opacity:1}
+
+.thememenu{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.tbtn{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff;
+border-radius:20px;padding:5px 14px;font-size:12.5px;cursor:pointer;font-weight:600}
+.tbtn.on{background:var(--brand);border-color:var(--brand);color:var(--onbrand)}
+.tbtn .dot{display:inline-block;width:9px;height:9px;border-radius:50%;
+margin-right:6px;vertical-align:middle}
+
+/* ONE button component. No inline styles in any builder, ever. */
+.btn{font:inherit;font-size:13px;font-weight:600;border-radius:8px;padding:6px 14px;
+cursor:pointer;border:1px solid transparent;background:var(--brand);color:var(--onbrand);
+transition:filter .15s,opacity .15s}
+.btn:hover:not(:disabled){filter:brightness(1.12)}
+.btn:disabled{opacity:.55;cursor:not-allowed}
+.btn.ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn.ghost:hover:not(:disabled){background:var(--hover)}
+.btn.ok{background:var(--green)}
+.btn.warn{background:var(--amber)}
+.btn.danger{background:var(--red)}
+.btn.sm{font-size:12px;padding:4px 10px}
+.btnrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.acc{font:inherit;font-size:12.5px;font-weight:600;border-radius:8px;padding:4px 10px;
+cursor:pointer;border:1px solid var(--brand);background:transparent;color:var(--brand)}
+.acc:hover:not(:disabled){background:var(--accbg)}
+.acc:disabled{opacity:.55;cursor:not-allowed}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:18px;margin-bottom:14px;transition:background .4s,border-color .4s}
+.cat{margin-top:28px}
+.cat h2{font-size:15px;text-transform:uppercase;letter-spacing:.6px;
+color:var(--muted);margin:0 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;
+display:block;text-decoration:none;color:var(--ink);
+transition:transform .12s,border-color .2s,background .4s}
+.tile:hover{transform:translateY(-2px);border-color:var(--brand)}
+.tile .ico{font-size:22px;margin-bottom:8px}
+.tile h3{margin:0 0 4px;font-size:15px;color:var(--ink)}
+.tile p{margin:0;font-size:12.5px;color:var(--muted)}
+.tile .tag,.tag{display:inline-block;background:color-mix(in srgb,var(--brand) 14%,transparent);
+color:var(--brand);border-radius:6px;padding:2px 8px;font-size:11px;font-weight:600;margin-top:8px}
+
+.muted{color:var(--muted)}
+.note{background:var(--subbg);border:1px solid var(--line);border-left:3px solid var(--brand);
+border-radius:8px;padding:10px 14px;font-size:13px;margin:12px 0}
+.note.warn{border-left-color:var(--amber)}
+.pill{display:inline-block;border-radius:20px;padding:2px 10px;font-size:11.5px;font-weight:600}
+.pill.open{background:color-mix(in srgb,var(--blue) 15%,transparent);color:var(--blue)}
+.pill.warn{background:color-mix(in srgb,var(--amber) 15%,transparent);color:var(--amber)}
+.pill.over{background:color-mix(in srgb,var(--red) 15%,transparent);color:var(--red)}
+.pill.ok{background:color-mix(in srgb,var(--green) 15%,transparent);color:var(--green)}
+.stack{display:flex;flex-direction:column;gap:10px}
+.steelbox{border-radius:8px;padding:7px 12px;font-size:12.5px;margin-top:8px;font-weight:600}
+.steelbox.ok{background:color-mix(in srgb,var(--green) 12%,transparent);
+border:1px solid var(--green);color:var(--green)}
+.steelbox.open{background:color-mix(in srgb,var(--amber) 12%,transparent);
+border:1px solid var(--amber);color:var(--amber)}
+
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+th{text-align:left;color:var(--muted);font-weight:600;font-size:11.5px;
+text-transform:uppercase;letter-spacing:.4px;padding:8px 10px;border-bottom:1px solid var(--line)}
+td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:hover td{background:var(--hover)}
+code{background:var(--subbg);border:1px solid var(--line);border-radius:4px;
+padding:1px 5px;font-size:12px}
+
+details.sec{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:14px 18px;margin-bottom:12px;transition:background .4s}
+details.sec summary{cursor:pointer;font-size:14.5px;font-weight:700;
+color:var(--ink);user-select:none}
+details.sec .cnt{color:var(--brand)}
+details.vendor{margin-top:6px}
+details.vendor summary{cursor:pointer;font-size:13px;color:var(--ink)}
+@media(max-width:640px){.wrap{padding:20px 16px 60px}header.hero{padding:20px}}
+</style>
+<script>
+var SAS_THEMES = ["light", "sand", "slate", "ocean", "forest", "plum", "neon"];
+function sasThemeKey(){ return 'sas_os_theme::' + (window.SAS_PAGE_ID || 'default'); }
+function setTheme(t){
+  if(SAS_THEMES.indexOf(t) < 0) t = 'light';
+  var r = document.documentElement;
+  for(var i=0;i<SAS_THEMES.length;i++) r.classList.remove('theme-'+SAS_THEMES[i]);
+  if(t !== 'light') r.classList.add('theme-'+t);
+  try{ localStorage.setItem(sasThemeKey(), t);
+       localStorage.setItem('sas_os_theme:last', t); }catch(e){}
+  var b = document.querySelectorAll('.tbtn');
+  for(var i=0;i<b.length;i++) b[i].classList.toggle('on', b[i].dataset.theme === t);
+}
+function initTheme(){
+  var t = 'light';
+  try{ t = localStorage.getItem(sasThemeKey())
+           || localStorage.getItem('sas_os_theme:last') || 'light'; }catch(e){}
+  setTheme(t);
+}
+
+var SAS_LIVE = (location.protocol !== 'file:');
+var SAS_DISPATCH = '/dispatch';
+function sasDisableOffline(){
+  if(SAS_LIVE) return;
+  var b=document.querySelectorAll('[data-action]');
+  for(var i=0;i<b.length;i++){
+    b[i].disabled=true;
+    b[i].title='Open this page at http://127.0.0.1:8765/ to use the action buttons '
+      + '(a file:// page has no server to post to).';
+  }
+  var n=document.getElementById('offline-note');
+  if(n) n.style.display='block';
+}
+function sasTrigger(el, payload, kind, done){
+  if(!SAS_LIVE){ return; }
+  var label = el ? el.textContent : '';
+  if(el){ el.disabled=true; el.textContent='Working…'; }
+  fetch(SAS_DISPATCH, {method:'POST', headers:{'Content-Type':'application/json'},
+                       body: (typeof payload==='string'?payload:JSON.stringify(payload))})
+    .then(function(r){ return r.json().then(function(j){ return {ok:r.ok, j:j}; }); })
+    .then(function(res){
+      if(res.ok && res.j && res.j.ok){
+        if(el){ el.textContent = done || 'Done \u2713'; }
+        if(typeof sasOnSuccess==='function') sasOnSuccess(kind,res.j,payload);
+      } else {
+        if(el){ el.disabled=false; el.textContent='\u21ba retry'; }
+        alert((kind||'Action')+' FAILED: '+((res.j&&res.j.error)||'unexpected response'));
+      }
+    })
+    .catch(function(e){
+      if(el){ el.disabled=false; el.textContent='\u21ba retry'; }
+      alert('Server unreachable \u2014 is bom_dispatch_server.py running?\n'+e);
+    });
+}
+</script>
+</head>
+<body onload="initTheme();sasDisableOffline();"><div class="wrap">
+<header class="hero">
+<h1>🎛 Button &amp; Trigger Log</h1>
+<div class="sub">Every action button press, and whether it actually completed. Outcome is read back from where the request was filed — not from what the page said at the time.</div>
+<a href="nav.html" class="navbtn">&larr; SAS OS portal</a>
+<div class="thememenu"><button class="tbtn" data-theme="light" onclick="setTheme('light')" title="Remembered for this page only"><span class="dot" style="background:#f4f6fa"></span>Light</button><button class="tbtn" data-theme="sand" onclick="setTheme('sand')" title="Remembered for this page only"><span class="dot" style="background:#d8a55f"></span>Sand</button><button class="tbtn" data-theme="slate" onclick="setTheme('slate')" title="Remembered for this page only"><span class="dot" style="background:#58a6ff"></span>Slate</button><button class="tbtn" data-theme="ocean" onclick="setTheme('ocean')" title="Remembered for this page only"><span class="dot" style="background:#6c8ef7"></span>Ocean</button><button class="tbtn" data-theme="forest" onclick="setTheme('forest')" title="Remembered for this page only"><span class="dot" style="background:#2ea87e"></span>Forest</button><button class="tbtn" data-theme="plum" onclick="setTheme('plum')" title="Remembered for this page only"><span class="dot" style="background:#b478ff"></span>Plum</button><button class="tbtn" data-theme="neon" onclick="setTheme('neon')" title="Remembered for this page only"><span class="dot" style="background:#00f0ff"></span>Neon</button></div>
+<div class="badges"><span class="badge">last 14d: 0</span><span class="badge">completed: 0</span><span class="badge">pending: 0</span><span class="badge">not succeeded: 0</span></div>
+
+</header>
+<div class="note warn" id="offline-note" style="display:none">
+Opened as a local file, so the action buttons are disabled. Open
+<code>http://127.0.0.1:8765/data/os_status/</code> to use them.</div>
+<div class="note">No presses logged yet. The log starts filling the first time anyone clicks an action button.</div>
+<div class="card"><table><tr><th>when</th><th>action</th><th>detail</th><th>outcome</th><th>note</th><th>who</th></tr></table></div>
+<div class="cat"><h2>How outcome is decided</h2><div class="card"><table><tr><th>shown as</th><th>means</th></tr><tr><td><span class="pill ok">completed</span></td><td>request file is in <code>REQUESTS_COMPLETE/</code> — it ran and succeeded</td></tr><tr><td><span class="pill open">queued</span></td><td>still in <code>REQUESTS/</code> — accepted but nothing has run it yet</td></tr><tr><td><span class="pill warn">held</span></td><td>parked in <code>REQUESTS_HELD/</code></td></tr><tr><td><span class="pill over">FAILED</span></td><td>in <code>REQUESTS_FAILED/</code> — reason taken from the file's Note:</td></tr><tr><td><span class="pill over">rejected</span></td><td>the server refused the press; no request was ever created</td></tr><tr><td><span class="pill over">LOST</span></td><td>accepted, a file was named, and it is in none of the queue directories. Never treated as success.</td></tr></table></div></div>
+<p class="muted" style="margin-top:28px;font-size:12px">Generated 2026-09-18 14:30 UTC from <code>queues/TRIGGER_LOG/</code> · resolved against the REQUESTS queues</p>
+</div></body></html>

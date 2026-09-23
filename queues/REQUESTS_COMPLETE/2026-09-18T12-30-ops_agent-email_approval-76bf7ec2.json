@@ -1,0 +1,14 @@
+{
+  "request_id": "fa50a484-0279-4c01-8569-f193c8b23f2d",
+  "source": "email_approval_sheet",
+  "row_index": 33,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkvlxiNAAA=",
+  "subject": "Automatic reply: PO 20985-1575",
+  "task_gid": "1214073918288684",
+  "task_name": "20985-1575 - SG transmission - 1575 Jenners",
+  "asana_url": "https://app.asana.com/0/0/1214073918288684",
+  "action": "(Matched via PO Number in Local DB)",
+  "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> other: Automatic reply: PO 20985-1575\n- Acknowledged other — no field change proposed (type=other, PO=20985-1575, vendor=stephensongobin)\n\nReference: 20985-1575 · Received: 2026-09-17T10:48:03Z\nMatch basis: (Matched via PO Number in Local DB)\nTask GID: 1214073918288684 · AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkvlxiNAAA=\nhttps://app.asana.com/0/0/1214073918288684\n\ngiles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-18T12:30:16.424255+00:00"
+}

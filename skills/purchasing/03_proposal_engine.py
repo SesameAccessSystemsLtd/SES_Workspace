@@ -1,423 +1,471 @@
-import os
-import json
-import requests
+"""
+03_proposal_engine.py — turn parsed emails into reviewable proposals.
+
+Rebuilt 2026-09-18. For every parsed email/call it produces ONE queue item with:
+  * triage      — supplier_doc | supplier_call | non_supplier_call | noise | unknown
+  * a match     — via matcher.py (supplier directory + learned rules + closed-task guard),
+                  with confidence, basis, reasons and alternatives
+  * proposed field changes, guarded: never "Delivery Date CONFIRMED" on an
+    arrived/closed task; never overwrite an existing price; supplier quote/order
+    refs are recorded on the task description so they can be tracked (Giles 2026-08-24)
+  * a clean, plain-text Asana comment written for a reader who has NOT seen the
+    email: what it says, what Giles must do, the key facts, then the audit line.
+    No HTML mention tags (they post as literal text — see execute_requests.py).
+  * a suggested decision (A / R / CHECK) with the reason, so Giles can bulk-accept
+    the obvious rows and spend his attention on the CHECKs.
+
+Rules kept from the estate: every email goes to the sheet (no pre-sifting);
+no Asana writes from here; ops.db is written ONLY through db_writer.py
+(email_documents + email_line_items — the local memory the matcher reads back).
+Input : data/parsed_insights.json     Output: data/pending_approval_queue.json
+"""
+from __future__ import annotations
+
 import re
+import sys
 from datetime import datetime
-
-# Asana @Giles mention tag — renders as a live user chip in Asana story comments.
-# Same value as GILES_MENTION_TAG in execute_requests.py so comment content that
-# flows through asana_add_comment() posts cleanly (never the raw profile URL).
-GILES_USER_GID      = "1142108324926610"  # REAL Giles user GID (verified 2026-09-01; old 369446862164512 was dead)
-GILES_EMAIL         = "giles@sesameaccess.com"  # typed at end of comments; Asana auto-links it as a mailto address
-GILES_MENTION_TAG   = f'<a data-asana-gid="{GILES_USER_GID}" data-asana-type="user">@Giles</a>'
-
-def extract_domain_from_sender(sender_email):
-    match = re.search(r"@([a-zA-Z0-9.-]+)", sender_email)
-    if match: return match.group(1)
-    return None
-
-def extract_email_and_name(sender):
-    """Pull the actual email address + display name from a raw sender string.
-    Handles 'Name <email>', bare 'email', and 'Name/email' forms."""
-    email = None
-    name = ""
-    m = re.search(r"([A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+)", sender or "")
-    if m:
-        email = m.group(1)
-        # Name = the part before '<' if present, else before '@'-domain, else empty.
-        pre = (sender or "").split("<")[0].strip()
-        if pre and "@" not in pre:
-            name = pre.strip()
-    return email, name
-
-def extract_company_name_from_domain(domain):
-    # Strip TLD suffixes and subdomain prefixes — e.g. noreply.aalco.co.uk → aalco
-    skip = {'co', 'com', 'org', 'net', 'uk', 'io', 'eu', 'gov', 'edu', 'biz', 'info'}
-    parts = domain.split('.')
-    meaningful = [p for p in parts if p.lower() not in skip and len(p) > 2]
-    return meaningful[-1] if meaningful else parts[0]
-
-def normalise_ref(value):
-    """Canonicalise order/quote refs for matching: keep alnum, uppercase.
-    'SQR 46386' / 'SQR-46386' / 'sqr46386' → SQR46386."""
-    if not value:
-        return ''
-    return ''.join(ch for ch in str(value).upper() if ch.isalnum())
-
-
-def _findings_summary(insights, sender_domain):
-    """One-line summary of what the parser extracted, for human review.
-    Populated on every row so Giles can judge match quality even when no task
-    was found or no field change is proposed (2026-08-17)."""
-    parts = []
-    if insights.get("document_type"): parts.append(f"type={insights['document_type']}")
-    if insights.get("po_number"):      parts.append(f"PO={insights['po_number']}")
-    if insights.get("sqr_number"):     parts.append(f"SQR={insights['sqr_number']}")
-    if insights.get("total_price") is not None: parts.append(f"price=£{insights['total_price']}")
-    if insights.get("delivery_date"):  parts.append(f"delivery={insights['delivery_date']}")
-    if sender_domain:                  parts.append(f"vendor={extract_company_name_from_domain(sender_domain)}")
-    if insights.get("has_issues"):     parts.append(f"ISSUE: {insights.get('issue_summary','')}")
-    return ", ".join(parts) if parts else "no identifiers extracted"
-
-
-# ---- P4 auto-hook: attach inbound quotes/confirmations/invoices to our SQR ledger ----
-# (Giles 2026-08-27) Returned quotes arrive in a SEPARATE chain; match by domain/ref to
-# the SQR we issued and hold the supplier's quote/confirmation/invoice + sender in ops.db.
-SQR_DOC_TYPES = {"quote": "quote_ref", "order_confirmation": "confirmation", "invoice": "invoice"}
-
-def _hook_quote_ledger(item, insights, sender_email):
-    """Auto-call match_quote_to_sqr.process_quote when an inbound email is a
-    quote, order_confirmation or invoice. Best-effort — never blocks the mail flow.
-    Returns a short human note ('' if nothing to route)."""
-    try:
-        doc_type = insights.get("document_type")
-        if doc_type not in SQR_DOC_TYPES:
-            return ""
-        import sys as _sys, os as _os
-        _sys.path.insert(0, _os.path.dirname(os.path.abspath(__file__)))
-        from match_quote_to_sqr import process_quote
-
-        ref = insights.get("po_number") or ""
-        explicit_sqr = insights.get("sqr_number") or ""
-        _, sender_name = extract_email_and_name(item.get("sender") or sender_email or "")
-        result = process_quote(
-            sender_email=sender_email or "", sender_name=sender_name,
-            quote_ref=(ref if doc_type == "quote" else ""),
-            confirmation=(ref if doc_type == "order_confirmation" else ""),
-            invoice=(ref if doc_type == "invoice" else ""),
-            explicit_sqr=explicit_sqr)
-        if result.get("matched"):
-            return f"[SQR-ledger] {result['note']}"
-        return f"[SQR-ledger] no SQR match for {sender_email}"
-    except Exception as exc:  # pragma: no cover - hook must never break the pipeline
-        return f"[SQR-ledger] hook error: {exc}"
-
-
+from pathlib import Path
 
 from dotenv import load_dotenv
 
 load_dotenv(r"C:\Users\GilesHugo\.hermes\.env", override=True)
-load_dotenv(r"C:\Users\GilesHugo\.hermes\.env", override=True)
+sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(Path(__file__).parents[2] / "lib"))
 
-ASANA_PERSONAL_ACCESS_TOKEN = os.getenv("ASANA_PERSONAL_ACCESS_TOKEN")
-ASANA_WORKSPACE_GID = os.getenv("ASANA_WORKSPACE_GID", "357939803556123")
-# Placeholder GID for "0 - Order Numbers" project. THIS NEEDS TO BE CONFIGURED.
-ASANA_ORDER_NUMBERS_PROJECT_GID = os.getenv("ASANA_ORDER_NUMBERS_PROJECT_GID", "854650811917168") 
-# Placeholder GID for "ORDER Status" custom field. THIS NEEDS TO BE CONFIGURED.
-ASANA_ORDER_STATUS_FIELD_GID = os.getenv("ASANA_ORDER_STATUS_FIELD_GID", "1143955334207040")
-ASANA_ORDER_STATUS_CONFIRMED_GID = os.getenv("ASANA_ORDER_STATUS_CONFIRMED_GID", "1143955334207043")
-ASANA_PRICE_EX_VAT_FIELD_GID = os.getenv("ASANA_PRICE_EX_VAT_FIELD_GID", "854330340727040")
+from gateway_common import (DATA, GILES_EMAIL, RuleStore, SupplierDirectory, fmt_date,  # noqa: E402
+                            load_json, save_json, shadow_mode)
+from matcher import ARRIVED_STATUSES, CLOSED_STATUSES, Matcher  # noqa: E402
+
+PARSED_INSIGHTS_PATH = DATA / "parsed_insights.json"
+PENDING_APPROVAL_QUEUE_PATH = DATA / "pending_approval_queue.json"
+
+DOC_LABEL = {"quote": "Quote", "order_confirmation": "Order confirmation", "invoice": "Invoice",
+             "dispatch_note": "Dispatch note", "update": "Update", "call_notes": "Call notes", "other": "Email"}
+
+CONFIRMED_STATUS = "🚚On Order - Delivery Date CONFIRMED"
 
 
-HEADERS = {"Authorization": f"Bearer {ASANA_PERSONAL_ACCESS_TOKEN}", "Accept": "application/json"}
+def extract_domain_from_sender(sender_email):
+    m = re.search(r"@([a-zA-Z0-9.-]+)", sender_email or "")
+    return m.group(1).lower() if m else None
 
-PARSED_INSIGHTS_PATH = r"C:\Users\GilesHugo\SES_Workspace\data\parsed_insights.json"
-PENDING_APPROVAL_QUEUE_PATH = r"C:\Users\GilesHugo\SES_Workspace\data\pending_approval_queue.json"
 
-def search_asana_task(workspace_gid, document_type, po_number, sqr_number, sender_domain, subject=""):
-    import sys as _sys
-    _sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "lib")))
-    from path_config import p as _p
-    db_path = os.environ.get("OPENCLAW_OPS_DB_PATH") or _p("db.ops")
-    import sqlite3
-    if not os.path.exists(db_path): return None, None
-    conn = sqlite3.connect(db_path)
-    conn.row_factory = sqlite3.Row
-    c = conn.cursor()
+def extract_email_and_name(sender):
+    email, name = None, ""
+    m = re.search(r"([A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+)", sender or "")
+    if m:
+        email = m.group(1)
+        pre = (sender or "").split("<")[0].strip()
+        if pre and "@" not in pre:
+            name = pre
+    return email, name
 
-    matched_by = None
-    row = None
 
-    # Step 1: SQR match — applies to any document type
-    if sqr_number:
-        norm_sqr = normalise_ref(sqr_number)
-        if norm_sqr:
-            c.execute(
-                # Compare on canonical form so 'SQR-46386' (DB) == 'SQR 46386' (email)
-                "SELECT * FROM procurement_tasks "
-                "WHERE UPPER(REPLACE(REPLACE(REPLACE(REPLACE(sqr_number,'-',''),' ',''),'#',''),'/','')) = ? "
-                "AND sqr_number IS NOT NULL AND sqr_number != '' "
-                "ORDER BY is_subtask ASC LIMIT 1",
-                (norm_sqr,)
-            )
-            row = c.fetchone()
-            if row: matched_by = "(Matched via SQR in Local DB)"
+def normalise_ref(value):
+    return "".join(ch for ch in str(value or "").upper() if ch.isalnum())
 
-    # Step 2: Exact PO match
-    if not row and po_number:
-        c.execute("SELECT * FROM procurement_tasks WHERE po_number = ? ORDER BY is_subtask ASC", (po_number,))
-        row = c.fetchone()
-        if row: matched_by = "(Matched via PO Number in Local DB)"
 
-    # Step 3: Base PO match — handles full "28883-1555" or bare "28883" (supplier often omits suffix)
-    if not row and po_number:
-        base_po = po_number.split('-')[0] if '-' in po_number else po_number
-        c.execute(
-            "SELECT * FROM procurement_tasks WHERE po_number LIKE ? ORDER BY is_subtask ASC LIMIT 1",
-            (base_po + '-%',)
-        )
-        row = c.fetchone()
-        if row: matched_by = f"(Matched via Base PO '{base_po}' in Local DB)"
+# --------------------------------------------------------------- SQR ledger hook (kept)
+SQR_DOC_TYPES = {"quote": "quote_ref", "order_confirmation": "confirmation", "invoice": "invoice"}
 
-    # Step 4: Job-number + vendor keyword — extract 4-digit job from PO suffix or subject
-    if not row:
-        job_num = None
-        if po_number and '-' in po_number:
-            m = re.search(r'-(\d{4})$', po_number)
-            if m: job_num = m.group(1)
-        if not job_num and subject:
-            m = re.search(r'\b(1\d{3})\b', subject)
-            if m: job_num = m.group(1)
-        if job_num and sender_domain:
-            company_name = extract_company_name_from_domain(sender_domain)
-            c.execute(
-                """SELECT * FROM procurement_tasks
-                   WHERE task_name LIKE ?
-                     AND (vendor_name LIKE ? OR task_name LIKE ?)
-                     AND is_subtask = 0
-                   ORDER BY last_synced_at DESC LIMIT 1""",
-                ('%' + job_num + '%', '%' + company_name + '%', '%' + company_name + '%')
-            )
-            row = c.fetchone()
-            if row: matched_by = f"(Job# '{job_num}' + Vendor '{company_name}' keyword match)"
 
-    # Step 5: Vendor domain fallback — with multi-match guardrail
-    if not row and sender_domain:
-        company_name = extract_company_name_from_domain(sender_domain)
-        # Exclude completed/arrived/cancelled tasks unless the email is specifically about that order
-        c.execute("""
-            SELECT * FROM procurement_tasks
-            WHERE (vendor_name LIKE ? OR task_name LIKE ?) AND is_subtask = 0
-              AND (order_status IS NULL OR order_status NOT IN (
-                  '✅ARRIVED - MOVES TO INVOICES!!',
-                  '🔥ARRIVED - NEED TO QC',
-                  'CANCELLED ORDER ',
-                  'ALL PICKED / No Further action ',
-                  'No Further action required'
-              ))
-            ORDER BY last_synced_at DESC LIMIT 5
-        """, ('%' + company_name + '%', '%' + company_name + '%'))
-        results = c.fetchall()
-        if results:
-            if len(results) > 1:
-                # Multiple candidates — don't auto-assign, flag for manual review
-                task_names = [f"https://app.asana.com/0/0/{r['asana_task_gid']}" for r in results[:3]]
-                matched_by = f"(Domain Fallback: '{company_name}', {len(results)} candidate(s)) Manual review needed: {'; '.join(task_names)}"
-                row = None  # Don't auto-pick
-            else:
-                row = results[0]
-                matched_by = f"(Domain Fallback: '{company_name}')"
-
-    # Step 6: Subject reference fallback — some suppliers quote order refs in subject not body
-    if not row and subject:
-        # Try extracting order/quote numbers from subject (e.g. "Order #20256", "Quote 12345")
-        ref_match = re.search(r'(?:Order|Quote|Ref|PO)\s*[#:]\s*([A-Za-z0-9_-]+)', subject, re.IGNORECASE)
-        if ref_match:
-            ref = ref_match.group(1)
-            c.execute(
-                "SELECT * FROM procurement_tasks WHERE (task_name LIKE ? OR po_number LIKE ?) AND is_subtask = 0 ORDER BY last_synced_at DESC LIMIT 1",
-                ('%' + ref + '%', '%' + ref + '%')
-            )
-            row = c.fetchone()
-            if row: matched_by = f"(Matched via Subject Reference '{ref}')"
-
-    conn.close()
-
-    if row:
-        task = {
-            "gid": row["asana_task_gid"],
-            "name": row["task_name"],
-            "permalink_url": f"https://app.asana.com/0/0/{row['asana_task_gid']}",
-            "due_on": row["due_date"]
-        }
-        task['custom_fields'] = [{"name": "Price Ex VAT", "number_value": row["price_ex_vat"]}]
-        return task, matched_by
-    return None, None
-
-def main():
+def _hook_quote_ledger(item, insights, sender_email):
     try:
-        with open(PARSED_INSIGHTS_PATH, 'r') as f:
-            data = json.load(f)
-    except FileNotFoundError:
+        doc_type = insights.get("document_type")
+        if doc_type not in SQR_DOC_TYPES:
+            return ""
+        from match_quote_to_sqr import process_quote
+        ref = insights.get("supplier_quote_ref") or insights.get("supplier_order_ref") or insights.get("po_number") or ""
+        _, sender_name = extract_email_and_name(item.get("sender") or sender_email or "")
+        result = process_quote(
+            sender_email=sender_email or "", sender_name=sender_name or item.get("sender_name") or "",
+            quote_ref=(ref if doc_type == "quote" else ""),
+            confirmation=(ref if doc_type == "order_confirmation" else ""),
+            invoice=(insights.get("supplier_invoice_ref") or ref if doc_type == "invoice" else ""),
+            explicit_sqr=insights.get("sqr_number") or "")
+        return f"[SQR-ledger] {result['note']}" if result.get("matched") else ""
+    except Exception as exc:  # hook must never break the flow
+        return f"[SQR-ledger] hook error: {exc}"
+
+
+# --------------------------------------------------------------- proposals
+def _money(v):
+    try:
+        return f"£{float(v):,.2f}"
+    except (TypeError, ValueError):
+        return None
+
+
+def propose_changes(insights: dict, task: dict | None, doc_type: str) -> tuple[list[str], list[str]]:
+    """→ (action_lines for SAP/executor, notes for the human). Action phrases are the exact
+    strings execute_requests.parse_actions understands — do not reword them."""
+    actions, notes = [], []
+    if not task:
+        return actions, notes
+    status = (task.get("task_status") or "").strip()
+    closed = bool(task.get("task_completed")) or status in {s.strip() for s in CLOSED_STATUSES}
+    arrived = status in {s.strip() for s in ARRIVED_STATUSES}
+
+    # delivery date + status
+    dd = insights.get("delivery_date")
+    due = task.get("task_due") or ""
+    if dd and doc_type in ("order_confirmation", "dispatch_note", "update", "call_notes"):
+        if closed or arrived:
+            notes.append(f"Task is already {status or 'closed'} — no date/status change proposed (delivery {fmt_date(dd)} noted)")
+        else:
+            try:
+                d_new = datetime.strptime(dd, "%Y-%m-%d").date()
+                d_cur = datetime.strptime(due[:10], "%Y-%m-%d").date() if due else None
+            except ValueError:
+                d_new, d_cur = None, None
+            if d_new and d_cur and d_cur == d_new:
+                notes.append(f"Task due date already {fmt_date(dd)}")
+            elif d_new and d_cur and d_cur > d_new and doc_type == "dispatch_note":
+                notes.append(f"Delivery {fmt_date(dd)} is earlier than task due {fmt_date(due)} — left as is")
+            else:
+                actions.append(f"Update delivery date to {dd}")
+            if status != CONFIRMED_STATUS.strip() and doc_type in ("order_confirmation", "dispatch_note"):
+                actions.append("Update ORDER Status to 'On Order - Delivery Date Confirmed'")
+            elif status == CONFIRMED_STATUS.strip():
+                notes.append("Status already Delivery Date CONFIRMED")
+
+    # price
+    price = insights.get("total_price")
+    if price is not None and doc_type in ("quote", "order_confirmation", "invoice"):
+        cur = task.get("task_price_ex_vat")
+        label = DOC_LABEL.get(doc_type, "Price")
+        line = f"{label}: {_money(price)} ex VAT"
+        if insights.get("carriage") is not None:
+            line += f" + carriage {_money(insights['carriage'])}"
+        if cur is not None and abs(float(cur) - float(price)) < 0.01:
+            notes.append(f"Price {_money(price)} already on task")
+        elif cur is not None:
+            notes.append(f"Task already has Price Ex VAT {_money(cur)} — supplier states {_money(price)}; recorded in description, field not overwritten")
+            actions.append(f"Note added to description: {line} ({fmt_date(insights.get('_received', ''))})")
+        else:
+            actions.append(f"Update 'Price Ex VAT' to £{float(price):.2f}")  # no thousands separator: the executor regex reads it
+            actions.append(f"Note added to description: {line} ({fmt_date(insights.get('_received', ''))})")
+
+    # supplier references — tracked on the description (Giles 2026-08-24)
+    refs = []
+    if insights.get("supplier_quote_ref"):
+        refs.append(f"Supplier quote ref {insights['supplier_quote_ref']}")
+    if insights.get("supplier_order_ref"):
+        refs.append(f"Supplier order ref {insights['supplier_order_ref']}")
+    if insights.get("supplier_invoice_ref"):
+        refs.append(f"Supplier invoice {insights['supplier_invoice_ref']}")
+    if insights.get("lead_time"):
+        refs.append(f"Lead time {insights['lead_time']}")
+    if refs:
+        actions.append("Note added to description: " + "; ".join(refs))
+
+    if insights.get("has_issues") and insights.get("issue_summary"):
+        actions.append(f"Flag issue: {insights['issue_summary']}")
+    return actions, notes
+
+
+# --------------------------------------------------------------- comment
+def key_facts(insights: dict, match: dict) -> list[str]:
+    f = []
+    if insights.get("delivery_date"):
+        f.append(f"delivery {fmt_date(insights['delivery_date'])}")
+    if insights.get("lead_time"):
+        f.append(f"lead time {insights['lead_time']}")
+    if insights.get("total_price") is not None:
+        f.append(f"{_money(insights['total_price'])} ex VAT" + (f" + carriage {_money(insights['carriage'])}" if insights.get("carriage") is not None else ""))
+    for k, lab in (("supplier_quote_ref", "their quote"), ("supplier_order_ref", "their order"), ("supplier_invoice_ref", "invoice")):
+        if insights.get(k):
+            f.append(f"{lab} {insights[k]}")
+    if insights.get("po_number"):
+        f.append(f"PO {insights['po_number']}")
+    if insights.get("sqr_number"):
+        f.append(insights["sqr_number"])
+    for j in insights.get("job_numbers") or []:
+        if not any(j in x for x in f):
+            f.append(f"job {j}")
+    return f
+
+
+def build_comment(item: dict, insights: dict, match: dict, actions: list[str], notes: list[str]) -> str:
+    doc_type = insights.get("document_type") or "other"
+    received = item.get("receivedDateTime") or ""
+    supplier = match.get("supplier_name") or insights.get("company_name") or (item.get("sender_domain") or "unknown sender")
+    who = insights.get("requested_by") or insights.get("contact_name") or item.get("sender_name") or ""
+    call = insights.get("call") or {}
+
+    if doc_type == "call_notes":
+        when = f"{call.get('call_date')} {call.get('call_time')}".strip() if call.get("call_date") else fmt_date(received)
+        contact = call.get("contact_label") or who or (", ".join(call.get("phones") or []) or "unknown number")
+        head = f"Call with {contact}" + (f" ({supplier})" if supplier and supplier.lower() not in contact.lower() else "") + f" — {when}"
+    else:
+        head = f"{DOC_LABEL.get(doc_type, 'Email')} from {supplier}" + (f" ({who})" if who else "") + f" — {fmt_date(received)}"
+
+    lines = [head]
+    if doc_type != "call_notes":
+        lines.append(f"Subject: {item.get('subject', '')}")
+    lines.append("")
+    lines.append((insights.get("summary") or "").strip() or "(no summary extracted)")
+    items = [a for a in (insights.get("action_items") or []) if a]
+    if items:
+        lines.append("")
+        lines.append("Action for Giles:")
+        lines += [f"- {a}" for a in items]
+    elif insights.get("action_required"):
+        lines.append("")
+        lines.append("Action for Giles: reply needed (see summary)")
+    else:
+        lines.append("")
+        lines.append("Action for Giles: none — information only")
+    if insights.get("has_issues") and insights.get("issue_summary"):
+        lines.append(f"Issue: {insights['issue_summary']}")
+    facts = key_facts(insights, match)
+    if facts:
+        lines.append("Key facts: " + " · ".join(facts))
+    if actions:
+        lines.append("Proposed: " + "; ".join(a.replace("Note added to description: ", "note ") for a in actions))
+    elif notes:
+        lines.append("Proposed: no field change (" + "; ".join(notes) + ")")
+    else:
+        lines.append("Proposed: no field change")
+    lines.append("")
+    basis = match.get("matched_by") or "no match"
+    lines.append(f"Email gateway · matched via {basis} · received {received[:16].replace('T', ' ')} UTC · {GILES_EMAIL}")
+    return "\n".join(lines)
+
+
+def build_unmatched_comment(item: dict, insights: dict, match: dict, triage: str) -> str:
+    doc_type = insights.get("document_type") or "other"
+    supplier = match.get("supplier_name") or insights.get("company_name") or item.get("sender_domain") or "unknown"
+    lines = [f"NO AUTO-MATCH — {DOC_LABEL.get(doc_type, 'Email')} from {supplier} — {fmt_date(item.get('receivedDateTime', ''))}",
+             f"Subject: {item.get('subject', '')}", ""]
+    lines.append((insights.get("summary") or "").strip() or "(no summary extracted)")
+    items = [a for a in (insights.get("action_items") or []) if a]
+    if items:
+        lines += ["", "Action for Giles:"] + [f"- {a}" for a in items]
+    facts = key_facts(insights, match)
+    if facts:
+        lines.append("Key facts: " + " · ".join(facts))
+    alts = match.get("alternatives") or []
+    if alts:
+        lines.append("Could be:")
+        lines += [f"- {a['name'][:70]} [{(a.get('status') or 'no status').strip()}] {a['url']}" for a in alts]
+    lines.append("")
+    lines.append(f"Email gateway · {match.get('matched_by') or 'no task found'} · {GILES_EMAIL}")
+    return "\n".join(lines)
+
+
+# --------------------------------------------------------------- triage + suggestion
+def triage_item(item: dict, insights: dict, rules: RuleStore) -> tuple[str, str]:
+    """→ (triage, reason)."""
+    domain = item.get("sender_domain") or ""
+    subject = item.get("subject") or ""
+    why = rules.noise_reason(domain, subject)
+    if why:
+        return "noise", why
+    if insights.get("document_type") == "call_notes":
+        call = insights.get("call") or {}
+        if call.get("is_internal"):
+            return "non_supplier_call", "internal call (Sesame extension / colleague)"
+        if insights.get("is_noise"):
+            return "non_supplier_call", insights.get("noise_reason") or "not a supplier call"
+        return "supplier_call", "call notes"
+    if insights.get("is_noise"):
+        return "noise", insights.get("noise_reason") or "noise"
+    if insights.get("document_type") in ("quote", "order_confirmation", "invoice", "dispatch_note", "update"):
+        return "supplier_doc", insights["document_type"]
+    return "unknown", "unclassified"
+
+
+def suggest(triage: str, match: dict, actions: list[str], insights: dict) -> tuple[str, str]:
+    """→ (suggested decision A|R|CHECK, reason). Giles still decides; this orders his attention."""
+    if triage == "noise":
+        return "R", f"noise — {insights.get('noise_reason') or 'tracking/marketing'}"
+    if triage == "non_supplier_call":
+        return "R", "not a supplier call"
+    conf = match.get("confidence")
+    if match.get("task_gid") and conf == "HIGH":
+        if insights.get("has_issues") or insights.get("action_required"):
+            return "A", "matched (high) — comment carries an action/issue for you"
+        return "A", "matched (high)" + (" — field changes proposed" if actions else " — comment only")
+    if match.get("task_gid") and conf == "MEDIUM":
+        return "CHECK", f"probable match — {match.get('matched_by')}; confirm the task"
+    if match.get("alternatives"):
+        return "CHECK", f"{len(match['alternatives'])} candidate task(s) — pick one (paste its link into Asana Link, decision M)"
+    if triage == "supplier_call":
+        return "CHECK", "supplier call but no open order found — paste the task link, or R if nothing to record"
+    return "CHECK", "no task found — paste the task link (M) or reject (R); a Feedback note teaches the gateway"
+
+
+# --------------------------------------------------------------- ops.db persistence
+PARSER_VERSION = "2026-09-18.1"
+
+
+def _json(v):
+    import json
+    return json.dumps(v, ensure_ascii=False) if v not in (None, "", []) else None
+
+
+def persist_to_db(queue: list[dict]) -> str:
+    """Write every queue item to email_documents (+ line items) via db_writer — the sole
+    ops.db write gateway. Best effort: a DB problem is reported, never blocks the sheet."""
+    try:
+        import db_writer
+    except Exception as e:
+        return f"ops.db not written ({type(e).__name__}: {e})"
+    docs, n_lines = [], 0
+    from gateway_common import now_utc, safe_id, ARCHIVE_DIR
+    now = now_utc()
+    for q in queue:
+        ins = q.get("insights") or {}
+        call = ins.get("call") or {}
+        docs.append({
+            "email_message_id": q.get("email_id"), "internet_message_id": q.get("internet_message_id"),
+            "conversation_id": q.get("conversation_id"), "received_at": q.get("received_at"), "folder": q.get("folder"),
+            "sender_email": (extract_email_and_name(q.get("sender") or "")[0] or "").lower() or None,
+            "sender_name": q.get("sender_name"), "sender_domain": q.get("sender_domain"), "subject": q.get("subject"),
+            "document_type": ins.get("document_type"), "triage": q.get("triage"), "summary": ins.get("summary"),
+            "action_required": int(bool(q.get("action_required"))), "action_items": _json(ins.get("action_items")),
+            "has_issues": int(bool(ins.get("has_issues"))), "issue_summary": ins.get("issue_summary"),
+            "po_number": ins.get("po_number"), "sqr_number": ins.get("sqr_number"), "job_numbers": _json(ins.get("job_numbers")),
+            "supplier_quote_ref": ins.get("supplier_quote_ref"), "supplier_order_ref": ins.get("supplier_order_ref"),
+            "supplier_invoice_ref": ins.get("supplier_invoice_ref"),
+            "total_price_ex_vat": ins.get("total_price"), "carriage_ex_vat": ins.get("carriage"),
+            "delivery_date": ins.get("delivery_date"), "lead_time": ins.get("lead_time"),
+            "resolved_supplier_gid": q.get("supplier_gid"), "resolved_supplier": q.get("supplier_name") or None,
+            "supplier_how": q.get("supplier_how"), "task_vendor_name": q.get("task_vendor"),
+            "proposed_task_gid": q.get("asana_task_gid"), "proposed_task_name": q.get("asana_task_name"),
+            "match_confidence": q.get("confidence"), "matched_by": q.get("matched_by"),
+            "alternatives": _json([{"gid": a.get("gid"), "name": a.get("name"), "status": a.get("status")} for a in q.get("alternatives") or []]),
+            "call_contact_label": call.get("contact_label"), "call_phone": ",".join(call.get("phones") or []) or None,
+            "call_tasks": _json(call.get("tasks")), "attachment_names": _json(q.get("attachment_names")),
+            "archive_path": str(ARCHIVE_DIR / (q.get("received_at") or "")[:7] / f"{safe_id(q.get('email_id'))}.json"),
+            "parser_version": PARSER_VERSION, "last_synced_at": now,
+        })
+    try:
+        res = db_writer.upsert_email_documents(docs)
+        for q in queue:
+            ins = q.get("insights") or {}
+            lines = []
+            for li in ins.get("line_items") or []:
+                if not isinstance(li, dict):
+                    continue
+                qty, up = li.get("qty"), li.get("unit_price")
+                try:
+                    total = float(qty) * float(up) if qty not in (None, "") and up not in (None, "") else None
+                except (TypeError, ValueError):
+                    total = None
+                lines.append({"received_at": q.get("received_at"), "document_type": ins.get("document_type"),
+                              "supplier_gid": q.get("supplier_gid"), "supplier": q.get("supplier_name") or None,
+                              "task_gid": q.get("asana_task_gid"), "po_number": ins.get("po_number"),
+                              "part_ref": li.get("part_ref"), "description": li.get("description"),
+                              "qty": qty, "unit_price": up, "line_total": total, "notes": li.get("notes"),
+                              "last_synced_at": now})
+            if lines:
+                db_writer.replace_email_line_items(q.get("email_id"), lines)
+                n_lines += len(lines)
+        return f"ops.db: {res['written']} email_documents written, {res['skipped']} unchanged, {n_lines} line items"
+    except Exception as e:
+        return f"ops.db write failed ({type(e).__name__}: {e})"
+
+
+# --------------------------------------------------------------- main
+def main():
+    data = load_json(PARSED_INSIGHTS_PATH, None)
+    if data is None:
         print("No insights found.")
         return
-
-    # ALL emails flow through for review (Giles 2026-08-13: do NOT pre-sift by
-    # whether an identifier was extracted — the confidence model + portal views
-    # handle filtering. Dropping unmatched emails silently hid real quotes/notes.)
-    valid = list(data)
-
-    if not valid:
+    if not data:
         print("No emails to process.")
-        with open(PENDING_APPROVAL_QUEUE_PATH, 'w') as f: json.dump([], f)
+        save_json(PENDING_APPROVAL_QUEUE_PATH, [])
         return
 
+    rules = RuleStore()
+    suppliers = SupplierDirectory(rules=rules)
+    matcher = Matcher(suppliers=suppliers, rules=rules)
+    if not matcher.conn:
+        print(f"WARNING: ops.db not readable at {matcher.db_path} — matching will find nothing")
+
     queue = []
-    for item in valid:
-        insights = item.get("insights", {})
+    for item in data:  # ALL emails flow through (Giles 2026-08-13) — never pre-sift
+        insights = dict(item.get("insights") or {})
+        insights["_received"] = item.get("receivedDateTime") or ""
+        sender_email, _ = extract_email_and_name(item.get("sender", "") or "")
         sender_domain = extract_domain_from_sender(item.get("sender", ""))
-        document_type = insights.get("document_type")
-        sqr = insights.get("sqr_number")
+        item["sender_domain"] = sender_domain
+        doc_type = insights.get("document_type") or "other"
 
-        task, matched_by = search_asana_task(ASANA_WORKSPACE_GID, document_type, insights.get("po_number"), insights.get("sqr_number"), sender_domain, subject=item.get("subject", ""))
-
-        # P4 auto-hook: attach inbound quote/confirmation/invoice to the SQR ledger.
-        sender_email, _ = extract_email_and_name(item.get("sender", ""))
-        sqr_hook_note = _hook_quote_ledger(item, insights, sender_email)
-        if sqr_hook_note:
-            if not matched_by:
-                matched_by = sqr_hook_note
-            else:
-                matched_by = f"{matched_by}; {sqr_hook_note}"
-        
-        action_text = []
-        comment_to_push = ""
-
-        if task:
-            if matched_by: action_text.append(matched_by)
-
-            # Date Comparison Rule
-            extracted_delivery_date_str = insights.get("delivery_date")
-            asana_due_date_str = task.get("due_on")
-            
-            proposed_date_update = True
-            if extracted_delivery_date_str and asana_due_date_str:
-                try:
-                    extracted_date = datetime.strptime(extracted_delivery_date_str, "%Y-%m-%d").date()
-                    asana_date = datetime.strptime(asana_due_date_str, "%Y-%m-%d").date()
-                    if asana_date > extracted_date:
-                        proposed_date_update = False
-                        action_text.append("Skipped date update: Asana date is later.")
-                except ValueError as e:
-                    print(f"Error parsing date for task {task.get('gid')}: {e}")
-                    # If dates can't be parsed, proceed with update proposal
-            
-            if proposed_date_update and extracted_delivery_date_str:
-                action_text.append(f"Update delivery date to {extracted_delivery_date_str}")
-                # Status Rule: If a firm delivery date is extracted, propose changing ORDER Status.
-                # Written in plain English for the human review comment — the executor resolves
-                # this exact value to the ORDER Status custom field + option GID in code
-                # (execute_requests.parse_actions). No raw GIDs leak into Giles' view.
-                action_text.append("Update ORDER Status to 'On Order - Delivery Date Confirmed'")
-
-            # Price Rule
-            extracted_total_price = insights.get("total_price")
-            asana_price_ex_vat = None
-            for cf in task.get("custom_fields", []):
-                if cf.get("name") == "Price Ex VAT" or cf.get("gid") == ASANA_PRICE_EX_VAT_FIELD_GID:
-                    raw = cf.get("display_value") or cf.get("number_value")
-                    if raw is not None:
-                        try:
-                            cleaned = re.sub(r'[^\d.]', '', str(raw))
-                            if cleaned:
-                                asana_price_ex_vat = float(cleaned)
-                        except (ValueError, TypeError):
-                            pass
-                    break
-
-            if extracted_total_price is not None:
-                doc_type_label = (insights.get("document_type") or "Price update").title()
-                company = extract_company_name_from_domain(sender_domain).title() if sender_domain else "Supplier"
-                date_str = (item.get("receivedDateTime") or "")[:10]
-                note_line = f"{doc_type_label} from {company} - £{extracted_total_price:.2f} ({date_str})"
-                if asana_price_ex_vat is not None and abs(extracted_total_price - asana_price_ex_vat) < 0.01:
-                    action_text.append("Skipped price update: Extracted price matches Asana 'Price Ex VAT'.")
-                elif asana_price_ex_vat is not None:
-                    # Field already has value — never overwrite; append to description instead
-                    action_text.append(f"Note added to description: {note_line}")
-                else:
-                    # First price — set the custom field and record in description.
-                    # Plain-English for the review comment; the executor maps the exact
-                    # 'Price Ex VAT' phrase to the custom-field GID in code.
-                    action_text.append(f"Update 'Price Ex VAT' to £{extracted_total_price:.2f}")
-                    action_text.append(f"Note added to description: {note_line}")
-
-            if insights.get("has_issues"): action_text.append(f"Flag issue: {insights['issue_summary']}")
-
-            comment_items = [a for a in action_text if not a.startswith("(Matched") and not a.startswith("(Job#") and not a.startswith("(Domain Fallback:") and not a.startswith("Skipped")]
-            if insights.get("has_issues") and not any(a.startswith("Flag issue:") for a in comment_items):
-                comment_items.append(f"Flag issue: {insights['issue_summary']}")
-            # Always build a comment for review — even when no field change is
-            # proposed. A blank Comments cell left Giles nothing to evaluate or
-            # push (2026-08-17). When there is no action, surface an
-            # acknowledgement plus the findings so match quality is still visible.
-            if not comment_items:
-                comment_items = [
-                    f"Acknowledged {document_type or 'email'} — no field change proposed "
-                    f"({_findings_summary(insights, sender_domain)})"
-                ]
-            email_subject = item.get("subject", "")
-            received_timestamp = item.get("receivedDateTime", "")
-            email_id = item.get("email_id", "")
-            sender_email, _ = extract_email_and_name(item.get("sender", "") or "")
-            task_ref = f"Task GID: {task.get('gid') if task else 'n/a'}"
-            task_url = (task.get("permalink_url") or "") if task else ""
-            # Content-first layout (Giles 2026-09-01): lead with the substance
-            # (document type + subject + proposed action bullets), then tracking
-            # (reference / match / GID / URL), then giles@sesameaccess.com at the
-            # very bottom (Asana auto-links it as a mailto address).
-            tracking_lines = [
-                f"Reference: {insights.get('po_number') or insights.get('sqr_number') or 'n/a'} · "
-                f"Received: {received_timestamp}",
-                f"Match basis: {matched_by or 'n/a'}",
-                f"{task_ref} · {email_id}",
-            ]
-            if task_url:
-                tracking_lines.append(f"{task_url}")
-            comment_to_push = (
-                f"{GILES_MENTION_TAG} {document_type or 'Email'}: {email_subject}\n"
-                + "\n".join(f"- {a}" for a in comment_items)
-                + "\n\n"
-                + "\n".join(tracking_lines)
-                + f"\n\n{GILES_EMAIL}"
-            )
+        triage, triage_why = triage_item(item, insights, rules)
+        if triage in ("noise", "non_supplier_call"):
+            match = {"confidence": "NONE", "matched_by": "not attempted (" + triage_why + ")", "alternatives": [], "reasons": []}
         else:
-            # Unmatched — still surface it (Giles 2026-08-13): no identifier, manual review.
-            has_id = any([insights.get("po_number"), insights.get("sqr_number"),
-                         insights.get("total_price"), insights.get("delivery_date")])
-            if has_id:
-                action_text.append(
-                    f"Task not found. Document Type: {document_type}. "
-                    f"PO: {insights.get('po_number')}. SQR: {insights.get('sqr_number')}. "
-                    f"Sender Domain: {sender_domain}")
-            else:
-                action_text.append(
-                    f"Manual review — no task/id extracted. Subject: '{item.get('subject','')[:90]}' "
-                    f"(doc type: {document_type or 'unknown'}, sender: {sender_domain or 'unknown'})")
-            # Populate a review comment for unmatched rows too. matched_by can
-            # carry domain-fallback candidate links even when no task was auto-
-            # picked — surface that so Giles can locate the right task by hand.
-            # Content-first + email-at-bottom, same as the matched branch.
-            email_id_u = item.get("email_id", "")
-            sender_email_u, _ = extract_email_and_name(item.get("sender", "") or "")
-            comment_to_push = (
-                f"{GILES_MENTION_TAG} NO AUTO-MATCH - manual review.\n"
-                f"Email: {item.get('subject','')}\n"
-                f"Sender: {sender_email_u or sender_domain or 'unknown'}\n"
-                f"Received: {item.get('receivedDateTime','')}\n"
-                f"Found: {_findings_summary(insights, sender_domain)}"
-                + (f"\nMatch attempt: {matched_by}" if matched_by else "")
-                + f"\nEmail ID: {email_id_u}"
-                + f"\n\n{GILES_EMAIL}"
-            )
+            res = matcher.match(sender_email=sender_email or "", sender_domain=sender_domain or "",
+                                subject=item.get("subject") or "", body_text=item.get("body_text") or "",
+                                insights=insights, doc_type=doc_type)
+            match = res.to_dict()
+
+        ledger_note = _hook_quote_ledger(item, insights, sender_email) if triage == "supplier_doc" else ""
+        if ledger_note:
+            match["reasons"].append(ledger_note)
+
+        task = match if match.get("task_gid") else None
+        actions, notes = propose_changes(insights, task, doc_type)
+        if task:
+            comment = build_comment(item, insights, match, actions, notes)
+            proposed_action = "; ".join([f"({match['matched_by']})"] + actions + [f"Note: {n}" for n in notes]) if (actions or notes) else f"({match['matched_by']}); Comment only"
+        elif triage in ("noise", "non_supplier_call"):
+            comment = ""
+            proposed_action = f"No action — {triage_why}"
+        else:
+            comment = build_unmatched_comment(item, insights, match, triage)
+            proposed_action = "Task not found — " + (match.get("matched_by") or "no candidates") + \
+                (f". Doc: {doc_type}. PO: {insights.get('po_number')}. SQR: {insights.get('sqr_number')}. Supplier: {match.get('supplier_name') or sender_domain}")
+        suggestion, why = suggest(triage, match, actions, insights)
 
         queue.append({
             "email_id": item.get("email_id"),
+            "internet_message_id": item.get("internet_message_id"),
+            "conversation_id": item.get("conversation_id"),
             "subject": item.get("subject"),
+            "sender": item.get("sender"),
             "sender_domain": sender_domain,
             "received_at": item.get("receivedDateTime") or "",
-            "insights": insights,
-            "asana_task_gid": task.get("gid") if task else None,
-            "asana_task_name": task.get("name") if task else None,
-            "asana_task_url": task.get("permalink_url") if task else None,
-            "proposed_action": "; ".join(action_text),
-            "comment_to_push": comment_to_push,
-            "status": "pending_review"
+            "folder": item.get("folder"),
+            "insights": {k: v for k, v in insights.items() if not k.startswith("_")},
+            "triage": triage,
+            "triage_reason": triage_why,
+            "supplier_name": match.get("supplier_name") or "",
+            "supplier_gid": match.get("supplier_gid"),
+            "supplier_how": match.get("supplier_how"),
+            "task_vendor": match.get("task_vendor"),
+            "sender_name": item.get("sender_name"),
+            "attachment_names": item.get("attachment_names") or [],
+            "asana_task_gid": match.get("task_gid"),
+            "asana_task_name": match.get("task_name"),
+            "asana_task_url": match.get("task_url"),
+            "task_status": match.get("task_status"),
+            "confidence": match.get("confidence"),
+            "matched_by": match.get("matched_by"),
+            "match_reasons": match.get("reasons") or [],
+            "alternatives": match.get("alternatives") or [],
+            "proposed_action": proposed_action,
+            "actions": actions,
+            "comment_to_push": comment,
+            "summary": insights.get("summary") or "",
+            "action_required": bool(insights.get("action_required")) or bool(insights.get("action_items")),
+            "action_items": insights.get("action_items") or [],
+            "suggested_decision": suggestion,
+            "suggested_reason": why,
+            "status": "pending_review",
         })
 
-    with open(PENDING_APPROVAL_QUEUE_PATH, 'w') as f:
-        json.dump(queue, f, indent=2)
-    print(f"Staged {len(queue)} items for approval.")
+    save_json(PENDING_APPROVAL_QUEUE_PATH, queue)
+    print("  " + ("SHADOW: ops.db not written" if shadow_mode() else persist_to_db(queue)))
+    counts = {}
+    for q in queue:
+        counts[q["triage"]] = counts.get(q["triage"], 0) + 1
+    print(f"Staged {len(queue)} items for approval. Triage: {counts}. "
+          f"Matched: {sum(1 for q in queue if q['asana_task_gid'])}.")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

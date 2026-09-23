@@ -1,0 +1,14 @@
+{
+  "request_id": "31ffd8f1-7920-4da0-88a3-6f266a08c5e4",
+  "source": "email_approval_sheet",
+  "row_index": 112,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkwDtIFAAA=",
+  "subject": "RE: Laser Cut BOM - 1597 - Forrest Road Entire System - SQR-47003",
+  "task_gid": "1218238770702796",
+  "task_name": "21622-1597 - Exact - Laser Cut BOM - 1597 - Forrest Road Entire System",
+  "asana_url": "https://app.asana.com/0/0/1218238770702796",
+  "action": "(SQR-47003 (exact SQR)); Note: Task due date already 21 Sep 2026; Note: Status already Delivery Date CONFIRMED",
+  "comment_to_push": "Update from Exact Lasercut (Brad) — 18 Sep 2026\nSubject: RE: Laser Cut BOM - 1597 - Forrest Road Entire System - SQR-47003\n\nBrad at Exact Precision is giving dispatch dates for laser cut parts on job 1597 (Forrest Road Entire System, SQR-47003). One order leaves him today for delivery to Sesame on Monday; the other two leave Wednesday and Friday next week. He notes he avoids Thursday collections into London because the hub is unreliable on Fridays.\n\nAction for Giles: none — information only\nKey facts: delivery 21 Sep 2026 · PO 21622-1597 · SQR-47003\nProposed: no field change (Task due date already 21 Sep 2026; Status already Delivery Date CONFIRMED)\n\nEmail gateway · matched via SQR-47003 (exact SQR) · received 2026-09-18 11:34 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-18T12:30:16.811043+00:00"
+}

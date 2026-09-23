@@ -1,0 +1,14 @@
+{
+  "request_id": "07f5d06b-e03f-480b-afc5-42eeef4217e8",
+  "source": "email_approval_sheet",
+  "row_index": 53,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkvlrobAAA=",
+  "subject": "Invoice",
+  "task_gid": "1218239396667507",
+  "task_name": "21615-1597 - MayTec - 1597 - Forrest Road Entire System",
+  "asana_url": "https://app.asana.com/0/0/1218239396667507",
+  "action": "(Matched via PO Number in Local DB); [SQR-ledger] no SQR match for TraceySpear@appliedautomation.co.uk; Note added to description: Invoice from Appliedautomation - £1767.53 (2026-09-17)",
+  "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> invoice: Invoice\n- Note added to description: Invoice from Appliedautomation - £1767.53 (2026-09-17)\n\nReference: 21615-1597 · Received: 2026-09-17T13:44:45Z\nMatch basis: (Matched via PO Number in Local DB); [SQR-ledger] no SQR match for TraceySpear@appliedautomation.co.uk\nTask GID: 1218239396667507 · AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkvlrobAAA=\nhttps://app.asana.com/0/0/1218239396667507\n\ngiles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-18T12:30:16.521918+00:00"
+}

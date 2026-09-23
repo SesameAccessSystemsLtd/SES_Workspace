@@ -1,0 +1,14 @@
+{
+  "request_id": "77a1d8d4-daef-42c5-940b-19080c1aad18",
+  "source": "email_approval_sheet",
+  "row_index": 25,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkvlxh-AAA=",
+  "subject": "1597 - Forrest Road Entire System - SQR-46913..... JMK32765",
+  "task_gid": "1218239396667507",
+  "task_name": "21615-1597 - MayTec - 1597 - Forrest Road Entire System",
+  "asana_url": "https://app.asana.com/0/0/1218239396667507",
+  "action": "(Matched via SQR in Local DB); Skipped date update: Asana date is later.",
+  "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> update: 1597 - Forrest Road Entire System - SQR-46913..... JMK32765\n- Acknowledged update — no field change proposed (type=update, SQR=SQR-46913, delivery=2026-09-18, vendor=appliedautomation)\n\nReference: SQR-46913 · Received: 2026-09-17T09:42:50Z\nMatch basis: (Matched via SQR in Local DB)\nTask GID: 1218239396667507 · AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkvlxh-AAA=\nhttps://app.asana.com/0/0/1218239396667507\n\ngiles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-18T12:30:16.399175+00:00"
+}

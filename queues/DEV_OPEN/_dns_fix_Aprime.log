@@ -1,0 +1,68 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260923130913
+Username: AzureAD\GilesHugo
+RunAs User: AzureAD\GilesHugo
+Configuration Name: 
+Machine: GILES_NEW (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\GilesHugo\SES_Workspace\queues\DEV_OPEN\_dns_fix_Aprime.ps1
+Process ID: 27076
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+### BEFORE ###
+
+
+InterfaceAlias  : Ethernet
+ServerAddresses : {8.8.8.8, 1.1.1.1}
+
+
+
+### APPLYING: static DNS 192.168.0.1 then 1.1.1.1 ###
+Set-DnsClientServerAddress: OK
+### FLUSHING DNS CACHE ###
+### AFTER ###
+
+
+InterfaceAlias  : Ethernet
+ServerAddresses : {192.168.0.1, 1.1.1.1}
+
+
+
+### RESOLUTION TEST after change ###
+  outlook.office.com             -> 52.97.212.114, 52.98.207.178, 40.99.202.66
+  login.microsoftonline.com      -> 20.190.160.2, 20.190.160.14, 40.126.32.140
+  www.google.com                 -> 142.251.157.119, 142.251.153.119, 142.251.154.119
+### INTEGRITY CHECKS ###
+-- Local gateway reachable --
+  ping 192.168.0.1 : True
+-- Tailscale routes --
+
+DestinationPrefix  NextHop
+-----------------  -------
+100.103.163.5/32   0.0.0.0
+100.100.100.100/32 0.0.0.0
+
+
+-- Default route --
+
+DestinationPrefix NextHop     InterfaceAlias
+----------------- -------     --------------
+0.0.0.0/0         192.168.0.1 Ethernet
+
+
+-- Dropbox procs --
+Dropbox = 8
+-- Tailscale VPS reachable (100.103.163.5) --
+  ping 100.103.163.5 : True
+### DONE ###
+**********************
+Windows PowerShell transcript end
+End time: 20260923130918
+**********************

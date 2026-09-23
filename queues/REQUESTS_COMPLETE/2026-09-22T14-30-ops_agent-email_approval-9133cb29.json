@@ -1,0 +1,14 @@
+{
+  "request_id": "2c84e825-484a-4788-a628-a5807f4d4e07",
+  "source": "email_approval_sheet",
+  "row_index": 55,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkxwys6AAA=",
+  "subject": "Your Farnell order 21016437 has been received",
+  "task_gid": "1218699861339044",
+  "task_name": "21671-220926 - Farnell - Receptacle housing 2way",
+  "asana_url": "https://app.asana.com/0/0/1218699861339044",
+  "action": "(PO 21671-220926 (exact)); Note added to description: Supplier order ref 21016437",
+  "comment_to_push": "Order confirmation from Farnell (Premier Farnell Ltd / Avnet) (support@farnell.com) — 22 Sep 2026\nSubject: Your Farnell order 21016437 has been received\n\nFarnell has received and is processing Sesame's order, quoting their reference 21016437 against PO 21671-220926. No prices, carriage or delivery date are given yet; a detailed confirmation with tax, shipping and expected delivery will follow once stock is allocated, and the invoice will be emailed on despatch. One line item: 100 off JST 02R-JWPF-VSLE-S waterproof connector housings.\n\nAction for Giles: none — information only\nKey facts: their order 21016437 · PO 21671-220926\nProposed: note Supplier order ref 21016437\n\nEmail gateway · matched via PO 21671-220926 (exact) · received 2026-09-22 10:12 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-22T14:30:55.617861+00:00"
+}

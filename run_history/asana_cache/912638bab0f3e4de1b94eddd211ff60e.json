@@ -1,0 +1,1 @@
+{"path": "/tasks/1218239319439320/subtasks", "params": {"opt_fields": "name,gid,completed,due_on", "limit": 100}, "epoch": "202609231203", "body": {"data": [{"gid": "1218239398304647", "completed": false, "due_on": "2026-10-26", "name": "1 off 1597. 1008.A13.2 - SG20-Wire-Actuated Encoder SG20-1750-GW-S-4/20mA-1-E12-OK-T1 SIKO"}], "next_page": null}}

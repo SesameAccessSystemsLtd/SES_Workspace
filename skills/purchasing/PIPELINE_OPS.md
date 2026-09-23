@@ -249,7 +249,10 @@ correct-looking output that is wrong.
 - SAP is the only Asana writer. Everything else files a request in
   `queues/REQUESTS` and the REQUESTS Processor drains it.
 - `db_writer.py` is the sole write gateway for ops.db. No raw sqlite3 writes.
-- `SAS Dropbox\` is read-only source data.
+- `SAS Dropbox\` is read-only source data — with ONE bounded exception agreed by Giles 2026-09-18:
+  `06_invoice_processor.py` / `07_invoice_mover.py` may copy or move invoice PDFs between
+  `…\Invoices - to be signed off\{top level, AI SIGNED OFF, 2. invoice queries, 3. INVOICES - Signed Off}`.
+  Never delete, never write anywhere else in Dropbox, and only when `INVOICE_FILING_ENABLED=1`.
 - PO number assignment stays a human act. The ledger issues the number; a person
   applies it.
 - Never set "Needs Met" on an active order — use ADDRESSING.

@@ -1,0 +1,312 @@
+{
+  "version": 8,
+  "domain_supplier": {},
+  "phone_supplier": {
+    "01784449326": {
+      "supplier_gid": "560422659108501",
+      "label": "Adam / Nikki - Thameside",
+      "learned_from": "2026-09-21 Notes from your call with Adam / Nikki - Thameside 01784 449",
+      "learned_at": "2026-09-21T14:30:19Z"
+    }
+  },
+  "sender_task": {
+    "cdavis@lasershape.com": {
+      "task_gid": "1217486647101746",
+      "note": "Giles: if there is only 1 \"could be\" then update that - this was correct 21242-1595 - Lasershape Laser Cut BOM - 1595 - St Geor",
+      "until": "2026-12-20",
+      "learned_from": "2026-09-21 Re: Laser Cut BOM - 1595 - St Georges House Entire system -",
+      "learned_at": "2026-09-21T14:30:19Z"
+    },
+    "order-update@amazon.co.uk": {
+      "task_gid": "1218498273286310",
+      "note": "Giles: apply to 21637-150926 - Amazon - Monday stock order - GB602VXUT1MLLI [🔜PARTIAL DELIVERY] https://app.asana.com/0/0/12184",
+      "until": "2026-12-21",
+      "learned_from": "2026-09-18 Delivery update: 4 ‘Araldite® Rapid 15ml x 2...’ and 5 more",
+      "learned_at": "2026-09-22T09:30:47Z"
+    },
+    "colin@heskins.com": {
+      "task_gid": "1218732774265597",
+      "note": "Giles: Only just added but good to link this supplier going forward : https://app.asana.com/1/357939803556123/project/120776600",
+      "until": "2026-12-21",
+      "learned_from": "2026-09-21 RE: Product Enquiry From Heskins.com | Purchasing@sesameacce",
+      "learned_at": "2026-09-22T09:30:47Z"
+    },
+    "jordan.holmes@tapeswitch.co.uk": {
+      "task_gid": "1218272157862993",
+      "note": "Giles: Map this to https://app.asana.com/1/357939803556123/project/1207766004159548/task/1218272157862993?focus=true\n\nnote this",
+      "until": "2026-12-21",
+      "learned_from": "2026-09-22 RE: Cathedral Sq, Bristol Tapeswitch for servicing",
+      "learned_at": "2026-09-22T13:30:55Z"
+    },
+    "sales@gemac-hydraulics.co.uk": {
+      "task_gid": "1218742854105707",
+      "note": "Giles: Have just added this to order 21672-220926\nhttps://app.asana.com/1/357939803556123/project/358790955858777/task/12187428",
+      "until": "2026-12-21",
+      "learned_from": "2026-09-22 Invoice 055048",
+      "learned_at": "2026-09-22T14:30:55Z"
+    }
+  },
+  "phone_task": {
+    "07810558753": {
+      "task_gid": "1216068837918383",
+      "note": "Giles: Need to be able to lookup teh quote taht is being discussed by the tag or the name. always unticked tasks - https://app.",
+      "until": "2026-12-17",
+      "learned_from": "2026-08-26 Notes from your call with Dave Burt IDL 07810 558753 on 26/0",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    "01294313104": {
+      "task_gid": "1218574976405492",
+      "note": "Giles: These notes are hard to find and need to be linked with https://app.asana.com/1/357939803556123/project/358712037553303/",
+      "until": "2026-12-17",
+      "learned_from": "2026-09-18 Notes from your call with +441294313104 01294 313104 on 18/0",
+      "learned_at": "2026-09-18T12:30:16Z"
+    },
+    "01784449326": {
+      "task_gid": "1218496124554457",
+      "note": "Giles: Yes mentioned a shear pin and so iss mapped to  21655-1594 - Thameside - machining Linear Actuator sheer pin stock par [",
+      "until": "2026-12-20",
+      "learned_from": "2026-09-21 Notes from your call with Adam / Nikki - Thameside 01784 449",
+      "learned_at": "2026-09-21T14:30:19Z"
+    }
+  },
+  "domain_task": {
+    "trfastenings.com": {
+      "task_gid": "369446862164512",
+      "note": "Giles: https://app.asana.com/1/357939803556123/profile/369446862164512  THE PARTS ARE VERY LONG LEAD WITH 14 WEEKS FOR DELOVERY",
+      "until": "2026-12-17",
+      "learned_from": "2026-05-26 RE: SOGB020281154 : Sesame Access",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    "flowfitonline.com": {
+      "task_gid": "1217627747121222",
+      "note": "Giles: NEED TO BE FINDING THE OPEN ORDER https://app.asana.com/1/357939803556123/project/358790955858777/task/1217627747121222?",
+      "until": "2026-12-17",
+      "learned_from": "2026-08-21 Invoice   473198",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    "specialistglass.co.uk": {
+      "task_gid": "1217486678215190",
+      "note": "Giles: ONLY TWO LIVE TASKS AND ONE HAS THE PROJECT ID TO MATCH - https://app.asana.com/1/357939803556123/project/11571725249005",
+      "until": "2026-12-17",
+      "learned_from": "2026-08-25 Specialist Glass Products Ltd Quote: 251084 (1595 - ST GEORG",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    "erodatoolsltd.co.uk": {
+      "task_gid": "1217231283319709",
+      "note": "Giles: SHOUDL BE AN EASY DOMAIN LOOKUP AGAINST THE SUPPLIER AND OR TAG - https://app.asana.com/1/357939803556123/project/902269",
+      "until": "2026-12-17",
+      "learned_from": "2026-08-25 RE: Actuator Cam",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    "idluk.com": {
+      "task_gid": "1217361490408923",
+      "note": "Giles: Need to find this task - but note this is a quote provided as an invoice https://app.asana.com/1/357939803556123/project",
+      "until": "2026-12-17",
+      "learned_from": "2026-08-26 Sales Order 32589 from IDL Colour Coating Limited - 26/08/20",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    "machguard.co.uk": {
+      "task_gid": "1217816924994537",
+      "note": "Giles: Wrong task - this 21202 is already closed out and correct task is https://app.asana.com/1/357939803556123/project/112965",
+      "until": "2026-12-17",
+      "learned_from": "2026-08-27 RE: Bellows - Langley Steet",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    "bfssheetmetal.co.uk": {
+      "task_gid": "1211640013782594",
+      "note": "Giles: Hard to spot as an adhock order - but BFS email shoudl find the order https://app.asana.com/1/357939803556123/project/35",
+      "until": "2026-12-17",
+      "learned_from": "2026-08-27 Sesame Invoice",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    "orbitalfasteners.co.uk": {
+      "task_gid": "1217900175707334",
+      "note": "Giles: should be finding and updating https://app.asana.com/1/357939803556123/project/358790955858777/task/1217900175707334?foc",
+      "until": "2026-12-17",
+      "learned_from": "2026-08-27 Acknowledgement of order 000759386  your ref  PO21581 270826",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    "jajoautomation.co.uk": {
+      "task_gid": "1213520809965779",
+      "note": "Giles: USing 1578 find this task from JAJO - https://app.asana.com/1/357939803556123/project/848657415032331/task/1213520809965",
+      "until": "2026-12-20",
+      "learned_from": "2026-09-16 Re: Fwd: Re: Fwd: 1578 - New Traversing PLC BOM",
+      "learned_at": "2026-09-21T10:30:12Z"
+    }
+  },
+  "blocked_tasks": {
+    "1214104687061274": {
+      "reason": "This needs to stop coming up as this task has been closed out and we are looking for a domain fallback and this is not the correct task for ",
+      "learned_from": "2026-07-09 Shipped: ⁦2⁩ \"Faithfull AHPMAROON Very...\"",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    "1216449778693262": {
+      "reason": "This has been confirmed as a cancelled order and this is a note through the email gateway.",
+      "learned_from": "2026-07-10 RE: BOM - 4.Front skirt replacement - 1487 - Adelaide House",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    "1217412323428358": {
+      "reason": "THIS  ORDER HAS NOW BEEN CENCELLED ",
+      "learned_from": "2026-08-12 Specialist Glass Products Ltd New Order Acknowledgement: 187",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    "1216946791201146": {
+      "reason": "NO THIS IS CONFIRMING THAT THIS IS NOW RECEIVED AND SO I HAVE UPDATE DTHIS - JUST COMMENT AND WE NED TO FLAG A TASK IS ALREADY ARRIVED AND N",
+      "learned_from": "2026-08-18 TNT Shipment 146914501 - We are about to deliver your shipme",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    "1216850437678797": {
+      "reason": "Wrong task - this 21202 is already closed out and correct task is https://app.asana.com/1/357939803556123/project/1129657506061421/task/1217",
+      "learned_from": "2026-08-27 RE: Bellows - Langley Steet",
+      "learned_at": "2026-09-18T11:17:22Z"
+    }
+  },
+  "noise_domains": {
+    "bookingplatform.apc-overnight.com": {
+      "reason": "APC tracking — no action (Giles 2026-08-11)",
+      "learned_from": "seed"
+    },
+    "royalmail.com": {
+      "reason": "Royal Mail tracking",
+      "learned_from": "seed"
+    },
+    "thedx.co.uk": {
+      "reason": "DX tracking",
+      "learned_from": "seed"
+    },
+    "members.ebay.com": {
+      "reason": "eBay / Packlink tracking",
+      "learned_from": "seed"
+    },
+    "best4systems.co.uk": {
+      "reason": "marketing",
+      "learned_from": "seed"
+    }
+  },
+  "label_supplier": {
+    "adam / nikki - thameside": {
+      "supplier_gid": "560422659108501",
+      "learned_from": "2026-09-21 Notes from your call with Adam / Nikki - Thameside 01784 449",
+      "learned_at": "2026-09-21T14:30:19Z"
+    }
+  },
+  "noise_subject_patterns": [],
+  "notes": [
+    {
+      "text": "[metals4u.co.uk] M: confirm price ex VAT is 20.25 and that the carriage is 10 and if not, update these and comment @giles \" Valuation updated\" ",
+      "source": "2026-05-15 Your metals4U order confirmation",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[directplastics.co.uk] M: Propose changing ORDER Status to 'On Order - Delivery Date Confirmed'; Update 'Price Ex VAT' to 162.99   and update giles with comment in task ",
+      "source": "2026-05-15 Your Direct Plastics Limited order confirmation",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[amazon.co.uk] M: @giles Proposed Asana task update:",
+      "source": "2026-05-20 Your Amazon.co.uk order of \"Salted Spreadable Anchors...\" an",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[drill-service.co.uk] M: - Propose changing ORDER Status to 'On Order - Delivery Date Confirmed'",
+      "source": "2026-05-20 Please find attached Sales Order Acknowledgement from Drill",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[toolstation.com] M: ALL DELIVERED",
+      "source": "2026-05-26 Toolstation order YWW413315214 confirmed",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[jajoautomation.co.uk] A: Delivery due Start of July ",
+      "source": "2026-06-08 Re: PLC BOM - 1582 - Russel Square No. 50",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[bes.co.uk] R: this is a very old email - a signfnificant missmatch of task ",
+      "source": "2026-07-07 B.E.S. LTD - Invoice# 3535277",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[dqr.co.uk] M: Delivery is now due August 15th.",
+      "source": "2026-07-09 Automatic reply: Bellows Supplier - 1575 Jenners - SQR-44467",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[amazon.co.uk] R: This needs to stop coming up as this task has been closed out and we are looking for a domain fallback and this is not the correct task for ",
+      "source": "2026-07-09 Shipped: ⁦2⁩ \"Faithfull AHPMAROON Very...\"",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[bookingplatform.apc-overnight.com] R: (Matched via PO Number in Local DB); Update custom field 'Price Ex VAT' (field GID: 854330340727040) to 379.19; Note added to description: Order_Confirmation from Specialistglass - £379.19 (2026-08-12",
+      "source": "2026-08-12 Consignment 0020109 Status: Delivered",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[mail.tnt.com] A:  needs to be assedd to our supplier database when an email like this comes in ",
+      "source": "2026-08-13 TNT shipment notification for 146914501",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[appliedautomation.co.uk] M: Quotation Reference Number: QMK26KO0737\nYour Primary Contact: Kane Osborne\nTarget Quotation Date: 24/08/2026",
+      "source": "2026-08-14 Automatic reply: MayTec - 1595 - St Georges House Entire sys",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[jajoautomation.co.uk] M:  any emails from @jajoautomation.co.uk are to do with a JAJO plc ordaer and this is a quote and we have one quote outstanding for st george and so we need to handle this correctly  to match ",
+      "source": "2026-08-14 Re: PLC BOM - 1595 - St George’s House",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[lasershape.com] M: AWAITING CONFIRMATION ",
+      "source": "2026-08-17 Re: Laser Cut BOM - 1595 - St Georges House Entire system -",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[aalco.co.uk] M: this is 21565-1555 - Aalco - steel profile tube order and we need to be identifying the sales quote number form suppliers so that we can track that also - along with supplier order number ",
+      "source": "2026-08-24 Re: Urgent Stainless brushed",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[gmail.com] M: Subject is \"Kerry Way - 1595 - St Georges House Entire system\" and email is kerrywayltd@gmail.com and so we need to find the task with tag, that is out for quote https://app.asana.com/1/35793980355612",
+      "source": "2026-08-25 Re: Kerry Way - 1595 - St Georges House Entire system",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[amazon.co.uk] M: Order number or match was in teh task description https://app.asana.com/1/357939803556123/project/1122520870313888/task/1217770225935589?focus=true",
+      "source": "2026-08-26 Delivered: ‘Rust-Oleum 400ml Universal...’",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[amazon.co.uk] M: order number or match was in teh task description https://app.asana.com/1/357939803556123/project/1122520870313888/task/1209401888431263?focus=true",
+      "source": "2026-08-27 Delivered: ‘Castrol EDGE 0W-20 V...’",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[jajoautomation.co.uk] M: NEED TO NOTE THAT THIS IS A REQUEST FOR ACTION AND KARL WANTS ME TO CONFRM WHEN THIS IS NEEDED AND DO WE WANT BOTH ST GEORGES AND AMERICA TO COME TOGTHER - THE ACTION IS THAT WE STILL NEED A QC OF THE",
+      "source": "2026-09-02 Re: Chasing order 21584-1588 - overdue confirmation",
+      "learned_at": "2026-09-18T11:17:22Z"
+    },
+    {
+      "text": "[magnetschultz.co.uk] M: This should update order awaiting confrimation to order date confirmed",
+      "source": "2026-09-17 RE: 21641-1569 - Magnet Schultz - 1569 - Brook Stage 6.UL MT",
+      "learned_at": "2026-09-18T12:30:16Z"
+    },
+    {
+      "text": "[warco.co.uk] A: Well done",
+      "source": "2026-09-17 Order #61894 confirmed",
+      "learned_at": "2026-09-18T12:30:16Z"
+    },
+    {
+      "text": "[members.ebay.com] M: Update to last ebay order that is incomplete - thsi one has 11-15176-75513 as a refrenec number - a similar format will be for most ebay orders",
+      "source": "2026-09-17 Your Packlink delivery time has been updated",
+      "learned_at": "2026-09-18T12:30:16Z"
+    },
+    {
+      "text": "[romanselfdrive.co.uk] M: we need to start logging any emails like this and findong what orders are live and not yet with an order reference and we need to add both the order reference #8153845 and the vehicle registration CK7",
+      "source": "2026-09-22 Vehicle Inspection Report SESAME ACCESS SYSTEMS LTD  : 51285",
+      "learned_at": "2026-09-22T14:30:55Z"
+    }
+  ],
+  "updated_at": "2026-09-22T14:30:55Z"
+}

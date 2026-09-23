@@ -1,0 +1,14 @@
+{
+  "request_id": "054f9457-a9de-4081-a433-34db2a84b46e",
+  "source": "email_approval_sheet",
+  "row_index": 19,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkvlxh_AAA=",
+  "subject": "Re: Laser Cut BOM - 1580 - Admiralty House 2.Entire System BOM - SQR-47253",
+  "task_gid": "1218494798712124",
+  "task_name": "21651-1580 - Exact Laser Cut BOM - 1580 - Admiralty House 2.Entire System BOM",
+  "asana_url": "https://app.asana.com/0/0/1218494798712124",
+  "action": "(Matched via SQR in Local DB)",
+  "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> update: Re: Laser Cut BOM - 1580 - Admiralty House 2.Entire System BOM - SQR-47253\n- Acknowledged update — no field change proposed (type=update, SQR=SQR-47253, vendor=lasershape)\n\nReference: SQR-47253 · Received: 2026-09-17T08:56:07Z\nMatch basis: (Matched via SQR in Local DB)\nTask GID: 1218494798712124 · AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkvlxh_AAA=\nhttps://app.asana.com/0/0/1218494798712124\n\ngiles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-18T12:30:16.390448+00:00"
+}

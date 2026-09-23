@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  23/09/2026  09:49
+============================================================
+With:         Adam / Nikki - Thameside 01784 449326
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved coordination between Giles Hugo and Adam/Nikki from Thameside regarding upcoming collection schedules, machine repairs, and order statuses. They discussed timing for shear pin replacements, pending material deliveries, and production plans for Forest Road components, with some uncertainty about delivery dates. Giles emphasized the need for more orders to justify holding stock, and they touched on laser-cut cams versus stock, as well as pricing and scheduling for shear pin replacements.
+
+--- RECAP --------------------------------------------------
+Giles Hugo inquired about scheduling a collection at Thameside for a GMAC collection at hydraulics, which is nearby, and was informed that shear pins on a machine are expected to be ready in about an hour, with the machine repair starting yesterday and finishing this morning.The order for Step legs at Admiralty House is pending material delivery, which is not guaranteed to arrive tomorrow as it is coming from up North, with next week being a possible delivery window.Thameside is working on an order called Forest Road, which is starting production, but the workshop has not yet received the materials or drawings, and the schedule is uncertain, possibly mid-next week.There is a discussion about stock levels of cams and wheels, with Giles noting that they are hesitant to hold stock without sufficient orders coming through, and Thameside confirming they have a stock of cams and wheels but are awaiting more orders.Pricing for shear pins is being discussed, with Giles requesting a quote before invoicing, and Thameside planning to check the cost based on the time taken for the job.Giles emphasized the importance of increasing order flow to justify holding stock and requested Thameside to look into the Forest Road order and provide an update.
+
+--- TASKS --------------------------------------------------
+Thameside to confirm the exact timing and cost of shear pin replacements and provide a quote to Giles Hugo.Thameside to review the Forest Road order, check the drawings and materials needed, and aim to start production possibly by mid-next week, providing an update to Giles Hugo.
+
+(Full transcript: RC web portal only — no RingSense API)

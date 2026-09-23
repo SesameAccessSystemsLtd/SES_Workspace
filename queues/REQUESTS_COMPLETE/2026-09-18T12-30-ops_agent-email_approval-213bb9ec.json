@@ -1,0 +1,14 @@
+{
+  "request_id": "fd0522af-70ec-4cdd-901d-2dc8aea18ecb",
+  "source": "email_approval_sheet",
+  "row_index": 72,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDgt2AAA=",
+  "subject": "Automatic reply: Gapp Automation - 1594 - St Mary Scissor Lift BOM - PO 21190-1594 Confirmation 250499",
+  "task_gid": "1216623739686000",
+  "task_name": "21190-1594 - Gapp Automation - 1594 - St Mary Scissor Lift BOM",
+  "asana_url": "https://app.asana.com/0/0/1216623739686000",
+  "action": "(Matched via PO Number in Local DB)",
+  "comment_to_push": "<a data-asana-gid=\"1142108324926610\" data-asana-type=\"user\">@Giles</a> other: Automatic reply: Gapp Automation - 1594 - St Mary Scissor Lift BOM - PO 21190-1594 Confirmation 250499\n- Acknowledged other — no field change proposed (type=other, PO=21190-1594, vendor=gapp)\n\nReference: 21190-1594 · Received: 2026-09-18T07:19:41Z\nMatch basis: (Matched via PO Number in Local DB)\nTask GID: 1216623739686000 · AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkwDgt2AAA=\nhttps://app.asana.com/0/0/1216623739686000\n\ngiles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-18T12:30:16.628001+00:00"
+}

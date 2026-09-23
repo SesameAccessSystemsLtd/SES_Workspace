@@ -1,0 +1,1259 @@
+{
+  "generated_at": "2026-09-21 12:56",
+  "db": "C:\\Users\\GilesHugo\\AppData\\Local\\hermes\\state.db",
+  "range": {
+    "start": "2026-06-29",
+    "end": "2026-09-21",
+    "days": 84
+  },
+  "pricing_note": "Token counts are real (Hermes state.db). $ = modelled from DeepSeek's official peak/off-peak rates (api-docs.deepseek.com/quick_start/pricing), applied at each session's actual UTC timestamp. deepseek-chat is billed at Flash rates (legacy name routes to the Flash line). Cache-read tokens billed at the cache-hit rate.",
+  "pricing": {
+    "deepseek-chat (Flash rates)": {
+      "offpeak_cache_miss": 0.15,
+      "offpeak_cache_hit": 0.003,
+      "offpeak_output": 0.6,
+      "peak_multiplier": 2.0
+    },
+    "deepseek-v4-pro": {
+      "offpeak_cache_miss": 0.66,
+      "offpeak_cache_hit": 0.022,
+      "offpeak_output": 1.98,
+      "peak_multiplier": 2.0
+    }
+  },
+  "totals": {
+    "in": 28564310,
+    "out": 7054171,
+    "cr": 1288673561,
+    "cw": 24297,
+    "cost": 17.3389,
+    "sessions": 352,
+    "calls": 11960,
+    "cost_per_day": 0.2064,
+    "proj_month": 6.28,
+    "proj_year": 75.34
+  },
+  "day": [
+    {
+      "k": "2026-06-29",
+      "in": 1953854,
+      "out": 416032,
+      "cr": 123554432,
+      "cw": 0,
+      "cost": 0.9134,
+      "sessions": 5,
+      "calls": 1122
+    },
+    {
+      "k": "2026-07-02",
+      "in": 30655,
+      "out": 2183,
+      "cr": 207872,
+      "cw": 0,
+      "cost": 0.0065,
+      "sessions": 1,
+      "calls": 10
+    },
+    {
+      "k": "2026-07-03",
+      "in": 87415,
+      "out": 7181,
+      "cr": 787200,
+      "cw": 0,
+      "cost": 0.0274,
+      "sessions": 3,
+      "calls": 35
+    },
+    {
+      "k": "2026-07-04",
+      "in": 39028,
+      "out": 4481,
+      "cr": 425216,
+      "cw": 0,
+      "cost": 0.0098,
+      "sessions": 2,
+      "calls": 20
+    },
+    {
+      "k": "2026-07-05",
+      "in": 72352,
+      "out": 5536,
+      "cr": 634496,
+      "cw": 0,
+      "cost": 0.0161,
+      "sessions": 3,
+      "calls": 29
+    },
+    {
+      "k": "2026-07-06",
+      "in": 50833,
+      "out": 3499,
+      "cr": 413056,
+      "cw": 0,
+      "cost": 0.0183,
+      "sessions": 2,
+      "calls": 20
+    },
+    {
+      "k": "2026-07-07",
+      "in": 4976466,
+      "out": 682720,
+      "cr": 244928000,
+      "cw": 0,
+      "cost": 1.9275,
+      "sessions": 8,
+      "calls": 1690
+    },
+    {
+      "k": "2026-07-08",
+      "in": 3828122,
+      "out": 580936,
+      "cr": 197084288,
+      "cw": 0,
+      "cost": 3.0232,
+      "sessions": 4,
+      "calls": 1255
+    },
+    {
+      "k": "2026-07-09",
+      "in": 28925,
+      "out": 4705,
+      "cr": 408448,
+      "cw": 0,
+      "cost": 0.0142,
+      "sessions": 2,
+      "calls": 24
+    },
+    {
+      "k": "2026-07-10",
+      "in": 80941,
+      "out": 8528,
+      "cr": 1348352,
+      "cw": 0,
+      "cost": 0.0238,
+      "sessions": 3,
+      "calls": 41
+    },
+    {
+      "k": "2026-07-11",
+      "in": 63372,
+      "out": 9879,
+      "cr": 984576,
+      "cw": 0,
+      "cost": 0.0184,
+      "sessions": 2,
+      "calls": 37
+    },
+    {
+      "k": "2026-07-12",
+      "in": 939799,
+      "out": 212467,
+      "cr": 59377792,
+      "cw": 0,
+      "cost": 0.4466,
+      "sessions": 4,
+      "calls": 472
+    },
+    {
+      "k": "2026-07-13",
+      "in": 53991,
+      "out": 5031,
+      "cr": 509312,
+      "cw": 0,
+      "cost": 0.0185,
+      "sessions": 2,
+      "calls": 22
+    },
+    {
+      "k": "2026-07-14",
+      "in": 119292,
+      "out": 16863,
+      "cr": 2441216,
+      "cw": 0,
+      "cost": 0.0404,
+      "sessions": 4,
+      "calls": 74
+    },
+    {
+      "k": "2026-07-15",
+      "in": 50114,
+      "out": 4468,
+      "cr": 416128,
+      "cw": 0,
+      "cost": 0.0163,
+      "sessions": 2,
+      "calls": 22
+    },
+    {
+      "k": "2026-07-16",
+      "in": 45556,
+      "out": 6750,
+      "cr": 429184,
+      "cw": 0,
+      "cost": 0.0165,
+      "sessions": 2,
+      "calls": 25
+    },
+    {
+      "k": "2026-07-17",
+      "in": 31991,
+      "out": 5807,
+      "cr": 361728,
+      "cw": 0,
+      "cost": 0.0138,
+      "sessions": 2,
+      "calls": 19
+    },
+    {
+      "k": "2026-07-18",
+      "in": 37412,
+      "out": 2851,
+      "cr": 289664,
+      "cw": 0,
+      "cost": 0.0082,
+      "sessions": 2,
+      "calls": 13
+    },
+    {
+      "k": "2026-07-19",
+      "in": 95149,
+      "out": 22380,
+      "cr": 3028096,
+      "cw": 0,
+      "cost": 0.0368,
+      "sessions": 3,
+      "calls": 72
+    },
+    {
+      "k": "2026-07-20",
+      "in": 30142,
+      "out": 3379,
+      "cr": 248960,
+      "cw": 0,
+      "cost": 0.0109,
+      "sessions": 2,
+      "calls": 14
+    },
+    {
+      "k": "2026-07-21",
+      "in": 16993,
+      "out": 1913,
+      "cr": 109440,
+      "cw": 0,
+      "cost": 0.0081,
+      "sessions": 2,
+      "calls": 7
+    },
+    {
+      "k": "2026-07-22",
+      "in": 45720,
+      "out": 8072,
+      "cr": 621568,
+      "cw": 0,
+      "cost": 0.0172,
+      "sessions": 2,
+      "calls": 28
+    },
+    {
+      "k": "2026-07-23",
+      "in": 40594,
+      "out": 12050,
+      "cr": 869632,
+      "cw": 0,
+      "cost": 0.02,
+      "sessions": 2,
+      "calls": 39
+    },
+    {
+      "k": "2026-07-24",
+      "in": 14724,
+      "out": 1309,
+      "cr": 87424,
+      "cw": 0,
+      "cost": 0.0065,
+      "sessions": 2,
+      "calls": 6
+    },
+    {
+      "k": "2026-07-25",
+      "in": 0,
+      "out": 0,
+      "cr": 0,
+      "cw": 0,
+      "cost": 0.0,
+      "sessions": 2,
+      "calls": 0
+    },
+    {
+      "k": "2026-07-26",
+      "in": 34572,
+      "out": 3408,
+      "cr": 193920,
+      "cw": 0,
+      "cost": 0.0078,
+      "sessions": 3,
+      "calls": 9
+    },
+    {
+      "k": "2026-07-27",
+      "in": 28556,
+      "out": 4896,
+      "cr": 284800,
+      "cw": 0,
+      "cost": 0.0111,
+      "sessions": 2,
+      "calls": 17
+    },
+    {
+      "k": "2026-07-28",
+      "in": 37549,
+      "out": 8333,
+      "cr": 744192,
+      "cw": 0,
+      "cost": 0.0173,
+      "sessions": 2,
+      "calls": 35
+    },
+    {
+      "k": "2026-07-29",
+      "in": 48308,
+      "out": 6969,
+      "cr": 606208,
+      "cw": 0,
+      "cost": 0.0166,
+      "sessions": 2,
+      "calls": 21
+    },
+    {
+      "k": "2026-07-30",
+      "in": 37554,
+      "out": 5053,
+      "cr": 368384,
+      "cw": 0,
+      "cost": 0.014,
+      "sessions": 2,
+      "calls": 20
+    },
+    {
+      "k": "2026-07-31",
+      "in": 53089,
+      "out": 8350,
+      "cr": 970496,
+      "cw": 0,
+      "cost": 0.0187,
+      "sessions": 2,
+      "calls": 35
+    },
+    {
+      "k": "2026-08-01",
+      "in": 47880,
+      "out": 10429,
+      "cr": 610048,
+      "cw": 0,
+      "cost": 0.0153,
+      "sessions": 2,
+      "calls": 28
+    },
+    {
+      "k": "2026-08-02",
+      "in": 98971,
+      "out": 24479,
+      "cr": 2691968,
+      "cw": 0,
+      "cost": 0.0376,
+      "sessions": 3,
+      "calls": 76
+    },
+    {
+      "k": "2026-08-03",
+      "in": 875097,
+      "out": 79161,
+      "cr": 22365184,
+      "cw": 0,
+      "cost": 0.2504,
+      "sessions": 3,
+      "calls": 199
+    },
+    {
+      "k": "2026-08-04",
+      "in": 59724,
+      "out": 11091,
+      "cr": 714496,
+      "cw": 0,
+      "cost": 0.0225,
+      "sessions": 2,
+      "calls": 24
+    },
+    {
+      "k": "2026-08-05",
+      "in": 43676,
+      "out": 9841,
+      "cr": 555392,
+      "cw": 0,
+      "cost": 0.0189,
+      "sessions": 2,
+      "calls": 23
+    },
+    {
+      "k": "2026-08-06",
+      "in": 37787,
+      "out": 9058,
+      "cr": 416000,
+      "cw": 0,
+      "cost": 0.0172,
+      "sessions": 2,
+      "calls": 19
+    },
+    {
+      "k": "2026-08-07",
+      "in": 36291,
+      "out": 7137,
+      "cr": 288256,
+      "cw": 0,
+      "cost": 0.0142,
+      "sessions": 2,
+      "calls": 14
+    },
+    {
+      "k": "2026-08-08",
+      "in": 56186,
+      "out": 10211,
+      "cr": 608256,
+      "cw": 0,
+      "cost": 0.0164,
+      "sessions": 2,
+      "calls": 19
+    },
+    {
+      "k": "2026-08-09",
+      "in": 771469,
+      "out": 285102,
+      "cr": 7427072,
+      "cw": 0,
+      "cost": 0.3091,
+      "sessions": 25,
+      "calls": 232
+    },
+    {
+      "k": "2026-08-10",
+      "in": 53989,
+      "out": 10434,
+      "cr": 604416,
+      "cw": 0,
+      "cost": 0.0204,
+      "sessions": 2,
+      "calls": 22
+    },
+    {
+      "k": "2026-08-11",
+      "in": 1997805,
+      "out": 457027,
+      "cr": 133254784,
+      "cw": 0,
+      "cost": 0.9783,
+      "sessions": 3,
+      "calls": 1024
+    },
+    {
+      "k": "2026-08-12",
+      "in": 2217519,
+      "out": 723951,
+      "cr": 219934976,
+      "cw": 0,
+      "cost": 1.4329,
+      "sessions": 3,
+      "calls": 1355
+    },
+    {
+      "k": "2026-08-13",
+      "in": 670944,
+      "out": 133000,
+      "cr": 22662912,
+      "cw": 0,
+      "cost": 0.3108,
+      "sessions": 8,
+      "calls": 249
+    },
+    {
+      "k": "2026-08-14",
+      "in": 197138,
+      "out": 79341,
+      "cr": 8067840,
+      "cw": 0,
+      "cost": 0.1067,
+      "sessions": 3,
+      "calls": 88
+    },
+    {
+      "k": "2026-08-15",
+      "in": 67507,
+      "out": 11327,
+      "cr": 544384,
+      "cw": 0,
+      "cost": 0.0186,
+      "sessions": 2,
+      "calls": 20
+    },
+    {
+      "k": "2026-08-16",
+      "in": 716198,
+      "out": 267219,
+      "cr": 9960576,
+      "cw": 0,
+      "cost": 0.2976,
+      "sessions": 23,
+      "calls": 292
+    },
+    {
+      "k": "2026-08-17",
+      "in": 180543,
+      "out": 76764,
+      "cr": 4091904,
+      "cw": 0,
+      "cost": 0.1341,
+      "sessions": 5,
+      "calls": 148
+    },
+    {
+      "k": "2026-08-18",
+      "in": 313126,
+      "out": 154197,
+      "cr": 21201536,
+      "cw": 0,
+      "cost": 0.212,
+      "sessions": 6,
+      "calls": 249
+    },
+    {
+      "k": "2026-08-19",
+      "in": 59334,
+      "out": 12065,
+      "cr": 640000,
+      "cw": 0,
+      "cost": 0.0229,
+      "sessions": 2,
+      "calls": 22
+    },
+    {
+      "k": "2026-08-20",
+      "in": 155059,
+      "out": 80309,
+      "cr": 7348992,
+      "cw": 0,
+      "cost": 0.1725,
+      "sessions": 3,
+      "calls": 93
+    },
+    {
+      "k": "2026-08-21",
+      "in": 57992,
+      "out": 11974,
+      "cr": 724352,
+      "cw": 0,
+      "cost": 0.0237,
+      "sessions": 2,
+      "calls": 24
+    },
+    {
+      "k": "2026-08-22",
+      "in": 53702,
+      "out": 7531,
+      "cr": 373401,
+      "cw": 24297,
+      "cost": 0.0137,
+      "sessions": 2,
+      "calls": 17
+    },
+    {
+      "k": "2026-08-23",
+      "in": 339417,
+      "out": 106099,
+      "cr": 4184832,
+      "cw": 0,
+      "cost": 0.1271,
+      "sessions": 12,
+      "calls": 110
+    },
+    {
+      "k": "2026-08-24",
+      "in": 257181,
+      "out": 109699,
+      "cr": 9057536,
+      "cw": 0,
+      "cost": 0.2084,
+      "sessions": 6,
+      "calls": 184
+    },
+    {
+      "k": "2026-08-25",
+      "in": 98562,
+      "out": 19074,
+      "cr": 877824,
+      "cw": 0,
+      "cost": 0.0322,
+      "sessions": 3,
+      "calls": 27
+    },
+    {
+      "k": "2026-08-26",
+      "in": 61781,
+      "out": 13407,
+      "cr": 765568,
+      "cw": 0,
+      "cost": 0.0262,
+      "sessions": 2,
+      "calls": 25
+    },
+    {
+      "k": "2026-08-27",
+      "in": 67584,
+      "out": 12602,
+      "cr": 659200,
+      "cw": 0,
+      "cost": 0.025,
+      "sessions": 2,
+      "calls": 20
+    },
+    {
+      "k": "2026-08-28",
+      "in": 222201,
+      "out": 61115,
+      "cr": 4695168,
+      "cw": 0,
+      "cost": 0.0923,
+      "sessions": 5,
+      "calls": 114
+    },
+    {
+      "k": "2026-08-29",
+      "in": 72368,
+      "out": 12588,
+      "cr": 716928,
+      "cw": 0,
+      "cost": 0.0206,
+      "sessions": 2,
+      "calls": 21
+    },
+    {
+      "k": "2026-08-30",
+      "in": 522285,
+      "out": 181377,
+      "cr": 7729536,
+      "cw": 0,
+      "cost": 0.2104,
+      "sessions": 15,
+      "calls": 169
+    },
+    {
+      "k": "2026-08-31",
+      "in": 73362,
+      "out": 14849,
+      "cr": 841856,
+      "cw": 0,
+      "cost": 0.0271,
+      "sessions": 2,
+      "calls": 23
+    },
+    {
+      "k": "2026-09-01",
+      "in": 170545,
+      "out": 45254,
+      "cr": 2781312,
+      "cw": 0,
+      "cost": 0.0703,
+      "sessions": 4,
+      "calls": 81
+    },
+    {
+      "k": "2026-09-02",
+      "in": 159195,
+      "out": 38348,
+      "cr": 2230912,
+      "cw": 0,
+      "cost": 0.0606,
+      "sessions": 3,
+      "calls": 63
+    },
+    {
+      "k": "2026-09-03",
+      "in": 149364,
+      "out": 54905,
+      "cr": 4158080,
+      "cw": 0,
+      "cost": 0.0742,
+      "sessions": 3,
+      "calls": 82
+    },
+    {
+      "k": "2026-09-04",
+      "in": 712037,
+      "out": 242256,
+      "cr": 21644800,
+      "cw": 0,
+      "cost": 0.8721,
+      "sessions": 15,
+      "calls": 292
+    },
+    {
+      "k": "2026-09-05",
+      "in": 78161,
+      "out": 14558,
+      "cr": 815616,
+      "cw": 0,
+      "cost": 0.0229,
+      "sessions": 2,
+      "calls": 21
+    },
+    {
+      "k": "2026-09-06",
+      "in": 522033,
+      "out": 166096,
+      "cr": 6298880,
+      "cw": 0,
+      "cost": 0.1969,
+      "sessions": 17,
+      "calls": 194
+    },
+    {
+      "k": "2026-09-07",
+      "in": 162011,
+      "out": 54919,
+      "cr": 3849088,
+      "cw": 0,
+      "cost": 0.1163,
+      "sessions": 3,
+      "calls": 72
+    },
+    {
+      "k": "2026-09-08",
+      "in": 92427,
+      "out": 18621,
+      "cr": 1093504,
+      "cw": 0,
+      "cost": 0.0338,
+      "sessions": 2,
+      "calls": 24
+    },
+    {
+      "k": "2026-09-09",
+      "in": 85277,
+      "out": 20990,
+      "cr": 1439360,
+      "cw": 0,
+      "cost": 0.0351,
+      "sessions": 2,
+      "calls": 32
+    },
+    {
+      "k": "2026-09-10",
+      "in": 111731,
+      "out": 14399,
+      "cr": 1188096,
+      "cw": 0,
+      "cost": 0.0383,
+      "sessions": 2,
+      "calls": 24
+    },
+    {
+      "k": "2026-09-11",
+      "in": 357171,
+      "out": 255522,
+      "cr": 73376512,
+      "cw": 0,
+      "cost": 0.9717,
+      "sessions": 5,
+      "calls": 340
+    },
+    {
+      "k": "2026-09-12",
+      "in": 91180,
+      "out": 11051,
+      "cr": 763520,
+      "cw": 0,
+      "cost": 0.0226,
+      "sessions": 2,
+      "calls": 18
+    },
+    {
+      "k": "2026-09-13",
+      "in": 628427,
+      "out": 292074,
+      "cr": 5589632,
+      "cw": 0,
+      "cost": 0.8811,
+      "sessions": 19,
+      "calls": 162
+    },
+    {
+      "k": "2026-09-14",
+      "in": 90016,
+      "out": 12947,
+      "cr": 926976,
+      "cw": 0,
+      "cost": 0.0303,
+      "sessions": 2,
+      "calls": 22
+    },
+    {
+      "k": "2026-09-15",
+      "in": 267595,
+      "out": 119321,
+      "cr": 17399168,
+      "cw": 0,
+      "cost": 0.1695,
+      "sessions": 3,
+      "calls": 125
+    },
+    {
+      "k": "2026-09-16",
+      "in": 84312,
+      "out": 14077,
+      "cr": 821376,
+      "cw": 0,
+      "cost": 0.0291,
+      "sessions": 2,
+      "calls": 20
+    },
+    {
+      "k": "2026-09-17",
+      "in": 107927,
+      "out": 16561,
+      "cr": 1375360,
+      "cw": 0,
+      "cost": 0.0372,
+      "sessions": 2,
+      "calls": 29
+    },
+    {
+      "k": "2026-09-18",
+      "in": 104056,
+      "out": 15685,
+      "cr": 1138176,
+      "cw": 0,
+      "cost": 0.0359,
+      "sessions": 2,
+      "calls": 21
+    },
+    {
+      "k": "2026-09-19",
+      "in": 104515,
+      "out": 13109,
+      "cr": 834432,
+      "cw": 0,
+      "cost": 0.026,
+      "sessions": 2,
+      "calls": 20
+    },
+    {
+      "k": "2026-09-20",
+      "in": 975981,
+      "out": 555077,
+      "cr": 3212288,
+      "cw": 0,
+      "cost": 1.6352,
+      "sessions": 21,
+      "calls": 134
+    },
+    {
+      "k": "2026-09-21",
+      "in": 54603,
+      "out": 9914,
+      "cr": 387200,
+      "cw": 0,
+      "cost": 0.0212,
+      "sessions": 2,
+      "calls": 21
+    }
+  ],
+  "week": [
+    {
+      "k": "2026-W27",
+      "in": 2183304,
+      "out": 435413,
+      "cr": 125609216,
+      "cw": 0,
+      "cost": 0.9731,
+      "sessions": 14,
+      "calls": 1216
+    },
+    {
+      "k": "2026-W28",
+      "in": 9968458,
+      "out": 1502734,
+      "cr": 504544512,
+      "cw": 0,
+      "cost": 5.472,
+      "sessions": 25,
+      "calls": 3539
+    },
+    {
+      "k": "2026-W29",
+      "in": 433505,
+      "out": 64150,
+      "cr": 7475328,
+      "cw": 0,
+      "cost": 0.1504,
+      "sessions": 17,
+      "calls": 247
+    },
+    {
+      "k": "2026-W30",
+      "in": 182745,
+      "out": 30131,
+      "cr": 2130944,
+      "cw": 0,
+      "cost": 0.0705,
+      "sessions": 15,
+      "calls": 103
+    },
+    {
+      "k": "2026-W31",
+      "in": 351907,
+      "out": 68509,
+      "cr": 6276096,
+      "cw": 0,
+      "cost": 0.1306,
+      "sessions": 15,
+      "calls": 232
+    },
+    {
+      "k": "2026-W32",
+      "in": 1880230,
+      "out": 411601,
+      "cr": 32374656,
+      "cw": 0,
+      "cost": 0.6486,
+      "sessions": 38,
+      "calls": 530
+    },
+    {
+      "k": "2026-W33",
+      "in": 5921100,
+      "out": 1682299,
+      "cr": 395029888,
+      "cw": 0,
+      "cost": 3.1653,
+      "sessions": 44,
+      "calls": 3050
+    },
+    {
+      "k": "2026-W34",
+      "in": 1159173,
+      "out": 448939,
+      "cr": 38565017,
+      "cw": 24297,
+      "cost": 0.7059,
+      "sessions": 32,
+      "calls": 663
+    },
+    {
+      "k": "2026-W35",
+      "in": 1301962,
+      "out": 409862,
+      "cr": 24501760,
+      "cw": 0,
+      "cost": 0.6151,
+      "sessions": 35,
+      "calls": 560
+    },
+    {
+      "k": "2026-W36",
+      "in": 1864697,
+      "out": 576266,
+      "cr": 38771456,
+      "cw": 0,
+      "cost": 1.3241,
+      "sessions": 46,
+      "calls": 756
+    },
+    {
+      "k": "2026-W37",
+      "in": 1528224,
+      "out": 667576,
+      "cr": 87299712,
+      "cw": 0,
+      "cost": 2.0988,
+      "sessions": 35,
+      "calls": 672
+    },
+    {
+      "k": "2026-W38",
+      "in": 1734402,
+      "out": 746777,
+      "cr": 25707776,
+      "cw": 0,
+      "cost": 1.9632,
+      "sessions": 34,
+      "calls": 371
+    },
+    {
+      "k": "2026-W39",
+      "in": 54603,
+      "out": 9914,
+      "cr": 387200,
+      "cw": 0,
+      "cost": 0.0212,
+      "sessions": 2,
+      "calls": 21
+    }
+  ],
+  "month": [
+    {
+      "k": "2026-06",
+      "in": 1953854,
+      "out": 416032,
+      "cr": 123554432,
+      "cw": 0,
+      "cost": 0.9134,
+      "sessions": 5,
+      "calls": 1122
+    },
+    {
+      "k": "2026-07",
+      "in": 11019214,
+      "out": 1649997,
+      "cr": 519179648,
+      "cw": 0,
+      "cost": 5.8304,
+      "sessions": 76,
+      "calls": 4111
+    },
+    {
+      "k": "2026-08",
+      "in": 10482678,
+      "out": 3002458,
+      "cr": 494615193,
+      "cw": 24297,
+      "cost": 5.2149,
+      "sessions": 156,
+      "calls": 4930
+    },
+    {
+      "k": "2026-09",
+      "in": 5108564,
+      "out": 1985684,
+      "cr": 151324288,
+      "cw": 0,
+      "cost": 5.3802,
+      "sessions": 115,
+      "calls": 1797
+    }
+  ],
+  "by_source": [
+    {
+      "k": "telegram",
+      "label": "Interactive (Telegram)",
+      "in": 16748556,
+      "out": 3117741,
+      "cr": 1011596928,
+      "cw": 0,
+      "cost": 8.9235,
+      "sessions": 14
+    },
+    {
+      "k": "subagent",
+      "label": "Sub-agents (delegation)",
+      "in": 4484297,
+      "out": 1948988,
+      "cr": 37566976,
+      "cw": 0,
+      "cost": 4.0063,
+      "sessions": 137
+    },
+    {
+      "k": "cron",
+      "label": "Background (cron)",
+      "in": 5885184,
+      "out": 1223170,
+      "cr": 100052121,
+      "cw": 24297,
+      "cost": 2.6808,
+      "sessions": 180
+    },
+    {
+      "k": "cli",
+      "label": "CLI",
+      "in": 1445271,
+      "out": 763084,
+      "cr": 139452928,
+      "cw": 0,
+      "cost": 1.7274,
+      "sessions": 21
+    },
+    {
+      "k": "workspace-llm",
+      "label": "Workspace scripts (email parser, brief)",
+      "in": 1002,
+      "out": 1188,
+      "cr": 4608,
+      "cw": 0,
+      "cost": 0.0009,
+      "sessions": 5
+    }
+  ],
+  "by_model": [
+    {
+      "k": "deepseek-chat",
+      "in": 27033037,
+      "out": 6136953,
+      "cr": 1275033625,
+      "cw": 24297,
+      "cost": 14.1181,
+      "sessions": 315
+    },
+    {
+      "k": "deepseek-v4-pro",
+      "in": 1531273,
+      "out": 917218,
+      "cr": 13639936,
+      "cw": 0,
+      "cost": 3.2207,
+      "sessions": 40
+    },
+    {
+      "k": "gemini-3.1-pro-preview",
+      "in": 0,
+      "out": 0,
+      "cr": 0,
+      "cw": 0,
+      "cost": 0.0,
+      "sessions": 1
+    },
+    {
+      "k": "unknown",
+      "in": 0,
+      "out": 0,
+      "cr": 0,
+      "cw": 0,
+      "cost": 0.0,
+      "sessions": 1
+    }
+  ],
+  "by_job": [
+    {
+      "job_id": "4133be14b0f8",
+      "name": "Nightly Memory Log",
+      "runs": 81,
+      "in": 3084565,
+      "out": 631866,
+      "cr": 39467008,
+      "cw": 0,
+      "tokens": 3716431,
+      "cost": 0.9602,
+      "cost_per_run": 0.01185,
+      "cost_per_month": 0.348,
+      "last": 1789938046.5175407,
+      "flag": "Runs daily, highest cron token use \u2014 verify the memory log is actually read/used."
+    },
+    {
+      "job_id": "ceed0bf46bec",
+      "name": "Nightly System Maintenance",
+      "runs": 82,
+      "in": 1832321,
+      "out": 206366,
+      "cr": 14674713,
+      "cw": 24297,
+      "tokens": 2038687,
+      "cost": 0.7408,
+      "cost_per_run": 0.00903,
+      "cost_per_month": 0.268,
+      "last": 1789952454.319642,
+      "flag": "Runs daily; review whether nightly maintenance needs a full LLM pass."
+    },
+    {
+      "job_id": "17ba09f7af52",
+      "name": "(retired/one-off cron)",
+      "runs": 1,
+      "in": 146102,
+      "out": 107521,
+      "cr": 10895488,
+      "cw": 0,
+      "tokens": 253623,
+      "cost": 0.549,
+      "cost_per_run": 0.54902,
+      "cost_per_month": 0.199,
+      "last": 1788517193.83655,
+      "flag": ""
+    },
+    {
+      "job_id": "082ad1e02501",
+      "name": "Weekly Graph Rebuild",
+      "runs": 14,
+      "in": 783461,
+      "out": 260563,
+      "cr": 34230912,
+      "cw": 0,
+      "tokens": 1044024,
+      "cost": 0.3942,
+      "cost_per_run": 0.02816,
+      "cost_per_month": 0.143,
+      "last": 1789869610.294581,
+      "flag": "Weekly graph rebuild \u2014 heavy cache reads; confirm value vs cost."
+    },
+    {
+      "job_id": "072f444a0e5c",
+      "name": "(retired/one-off cron)",
+      "runs": 1,
+      "in": 26353,
+      "out": 14110,
+      "cr": 696192,
+      "cw": 0,
+      "tokens": 40463,
+      "cost": 0.029,
+      "cost_per_run": 0.02902,
+      "cost_per_month": 0.011,
+      "last": 1783415356.2871566,
+      "flag": ""
+    },
+    {
+      "job_id": "62f77518792d",
+      "name": "(retired/one-off cron)",
+      "runs": 1,
+      "in": 12382,
+      "out": 2744,
+      "cr": 87808,
+      "cw": 0,
+      "tokens": 15126,
+      "cost": 0.0075,
+      "cost_per_run": 0.00753,
+      "cost_per_month": 0.003,
+      "last": 1787036441.5192962,
+      "flag": ""
+    }
+  ],
+  "assessment": {
+    "headline": "Total AI spend is ~$6.28/month. Interactive Telegram usage is the single biggest lever (51% of spend); background cron is only 15%.",
+    "email_parser": {
+      "usd_per_email": 0.000176,
+      "emails_per_day": 30,
+      "usd_per_month": 0.161,
+      "note": "Email parsing runs via lib/llm.py OUTSIDE Hermes, so it never touched state.db until instrumented. Per-email cost is near-zero; only volume matters."
+    },
+    "nightly": {
+      "jobs": [
+        "Nightly Memory Log",
+        "Nightly System Maintenance"
+      ],
+      "monthly": 0.616,
+      "note": "Nightly summarisers run daily and are the highest cron token users, BUT nothing reads their output \u2014 value is human-read-only. Cheap enough to keep, strongest review candidate if the logs are never opened."
+    },
+    "workspace_llm_month": 0.0003
+  },
+  "reconciliation": {
+    "export_file": "cost-2026-09-01_2026-09-21.csv",
+    "window": "2026-09-01..2026-09-21",
+    "days": 21,
+    "actual_billed": 17.1212,
+    "actual_by_model": {
+      "deepseek-v4-flash": 7.3656,
+      "deepseek-flash": 6.2408,
+      "deepseek-v4-pro": 3.5149
+    },
+    "modelled_same_window": 5.3802,
+    "coverage_pct": 31.4,
+    "actual_per_day": 0.8153,
+    "actual_month": 24.78,
+    "actual_year": 297.58,
+    "gap_note": "state.db sees only LOCAL Hermes sessions; the billed total also includes the VPS fleet, workspace scripts, and other clients on the same API key. Treat 'actual' as the true spend and 'modelled' as the local-coverage subset."
+  }
+}

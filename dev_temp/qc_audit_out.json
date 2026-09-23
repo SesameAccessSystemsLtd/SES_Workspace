@@ -1,0 +1,2124 @@
+{
+ "tables_like_qc": [
+  {
+   "name": "qc_issues_backup_20260921_101733"
+  },
+  {
+   "name": "qc_issues_pre_stage0_20260923_121800"
+  },
+  {
+   "name": "qc_issues"
+  },
+  {
+   "name": "qc_issues_pre_notepurge_20260923_124738"
+  }
+ ],
+ "qc_schema": [
+  {
+   "cid": 0,
+   "name": "id",
+   "type": "INTEGER",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 1
+  },
+  {
+   "cid": 1,
+   "name": "asana_task_gid",
+   "type": "TEXT",
+   "notnull": 1,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 2,
+   "name": "ncr_id",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 3,
+   "name": "issue_name",
+   "type": "TEXT",
+   "notnull": 1,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 4,
+   "name": "sesame_part_no",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 5,
+   "name": "build_pack_reference",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 6,
+   "name": "linked_to_buildpack",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 7,
+   "name": "parts_control_gid",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 8,
+   "name": "po_task_gid",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 9,
+   "name": "associated_po_number",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 10,
+   "name": "vendor",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 11,
+   "name": "supplier_email",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 12,
+   "name": "associated_sqr_number",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 13,
+   "name": "qc_status",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 14,
+   "name": "order_status",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 15,
+   "name": "build_impact",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 16,
+   "name": "impact",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 17,
+   "name": "reason_for_issue",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 18,
+   "name": "qc_issue_reason",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 19,
+   "name": "needs_from_purch",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 20,
+   "name": "project_name",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 21,
+   "name": "date_raised",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 22,
+   "name": "needed_by",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 23,
+   "name": "days_since_raised",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 24,
+   "name": "order_qty",
+   "type": "REAL",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 25,
+   "name": "order_value",
+   "type": "REAL",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 26,
+   "name": "completed",
+   "type": "INTEGER",
+   "notnull": 0,
+   "dflt_value": "0",
+   "pk": 0
+  },
+  {
+   "cid": 27,
+   "name": "asana_completed_at",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 28,
+   "name": "asana_created_at",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 29,
+   "name": "asana_modified_at",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 30,
+   "name": "last_synced_at",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 31,
+   "name": "created_at",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": "datetime('now')",
+   "pk": 0
+  }
+ ],
+ "qc_indexes": [
+  {
+   "seq": 0,
+   "name": "idx_qc_completed",
+   "unique": 0,
+   "origin": "c",
+   "partial": 0
+  },
+  {
+   "seq": 1,
+   "name": "idx_qc_vendor",
+   "unique": 0,
+   "origin": "c",
+   "partial": 0
+  },
+  {
+   "seq": 2,
+   "name": "idx_qc_status",
+   "unique": 0,
+   "origin": "c",
+   "partial": 0
+  },
+  {
+   "seq": 3,
+   "name": "idx_qc_sqr",
+   "unique": 0,
+   "origin": "c",
+   "partial": 0
+  },
+  {
+   "seq": 4,
+   "name": "idx_qc_po",
+   "unique": 0,
+   "origin": "c",
+   "partial": 0
+  },
+  {
+   "seq": 5,
+   "name": "idx_qc_pack",
+   "unique": 0,
+   "origin": "c",
+   "partial": 0
+  },
+  {
+   "seq": 6,
+   "name": "idx_qc_part",
+   "unique": 0,
+   "origin": "c",
+   "partial": 0
+  },
+  {
+   "seq": 7,
+   "name": "idx_qc_ncr",
+   "unique": 0,
+   "origin": "c",
+   "partial": 0
+  },
+  {
+   "seq": 8,
+   "name": "sqlite_autoindex_qc_issues_1",
+   "unique": 1,
+   "origin": "u",
+   "partial": 0
+  }
+ ],
+ "qc_rows": [
+  {
+   "asana_task_gid": "1217816714660528",
+   "ncr_id": "NCR-5033",
+   "issue_name": "1 off Powder Coating 1037. 9990.A.004 - Front cover",
+   "sesame_part_no": "1037.9990.A.004",
+   "build_pack_reference": "1037.9990.A.Cover.",
+   "po_task_gid": null,
+   "associated_po_number": null,
+   "vendor": "Powder Coating",
+   "supplier_email": null,
+   "associated_sqr_number": "SQR-46714",
+   "qc_status": "AWAITING DELIVERY",
+   "order_status": "\ud83d\udca2 Quote / Order (check BOM Status)",
+   "build_impact": "DIDNT IMPACT BUILD",
+   "needed_by": null,
+   "date_raised": "2026-09-15",
+   "completed": 0,
+   "asana_modified_at": "2026-09-23T09:49:02.062Z",
+   "last_synced_at": "2026-09-23T12:47:40Z",
+   "created_at": "2026-09-23 12:18:30"
+  },
+  {
+   "asana_task_gid": "1216625039286575",
+   "ncr_id": "NCR-5034",
+   "issue_name": "1 off 1591. 1020.A1.1 - 6 buttons plate - Engraving Engraving",
+   "sesame_part_no": "1591.1020.A1.1",
+   "build_pack_reference": "1591.1020.A.FreeStandingButtonPost.",
+   "po_task_gid": null,
+   "associated_po_number": null,
+   "vendor": "Engraving",
+   "supplier_email": "BRussell@alexander-pollock.co.uk",
+   "associated_sqr_number": "SQR-46799",
+   "qc_status": "AWAITING DELIVERY",
+   "order_status": null,
+   "build_impact": "IMPACTED BUILD ",
+   "needed_by": null,
+   "date_raised": "2026-09-17",
+   "completed": 0,
+   "asana_modified_at": "2026-09-23T09:22:31.277Z",
+   "last_synced_at": "2026-09-23T12:47:40Z",
+   "created_at": "2026-09-23 12:18:30"
+  },
+  {
+   "asana_task_gid": "1216623814251397",
+   "ncr_id": "NCR-5035",
+   "issue_name": "1 off 1594. 1010.L.045.01 - Roller Shutter Blind Aluflex(ASS 100 travel) Hennig",
+   "sesame_part_no": "1594.1010.L.045",
+   "build_pack_reference": "1594.1010.L.ScissorLift_Single_LowProfile 1600.",
+   "po_task_gid": null,
+   "associated_po_number": null,
+   "vendor": "Hennig",
+   "supplier_email": "Sales@Henniguk.com",
+   "associated_sqr_number": "SQR-46053",
+   "qc_status": "Approved to progress",
+   "order_status": "ALL PICKED / No Further action ",
+   "build_impact": "IMPACTED BUILD ",
+   "needed_by": null,
+   "date_raised": "2026-09-18",
+   "completed": 0,
+   "asana_modified_at": "2026-09-23T11:32:06.123Z",
+   "last_synced_at": "2026-09-23T12:47:40Z",
+   "created_at": "2026-09-23 12:18:30"
+  },
+  {
+   "asana_task_gid": "1217486568187917",
+   "ncr_id": "NCR-5036",
+   "issue_name": "1 off 1595. 1006.G.001 - Platform Plate 304/HR Laser Cut",
+   "sesame_part_no": "1595.1006.G.001",
+   "build_pack_reference": "1595.1006.G.GlassPlatform.",
+   "po_task_gid": null,
+   "associated_po_number": null,
+   "vendor": "Laser Cut",
+   "supplier_email": null,
+   "associated_sqr_number": "SQR-46578",
+   "qc_status": "AWAITING DELIVERY",
+   "order_status": "\u23f0On Order - Awaiting CONFIRMATION",
+   "build_impact": "IMPACTED BUILD ",
+   "needed_by": null,
+   "date_raised": "2026-09-18",
+   "completed": 0,
+   "asana_modified_at": "2026-09-23T09:48:19.254Z",
+   "last_synced_at": "2026-09-23T12:47:40Z",
+   "created_at": "2026-09-23 12:18:30"
+  },
+  {
+   "asana_task_gid": "1218239001658089",
+   "ncr_id": "NCR-5037",
+   "issue_name": "2 off 1597. 7110.I.010 - Pit Trim Front Panel Laser Cut",
+   "sesame_part_no": "1597.7110.I.010",
+   "build_pack_reference": "1597.7110.I.MT.PitTrimPlatform.",
+   "po_task_gid": null,
+   "associated_po_number": null,
+   "vendor": "Laser Cut",
+   "supplier_email": null,
+   "associated_sqr_number": "SQR-46962",
+   "qc_status": "Approved to progress",
+   "order_status": "\u23f0On Order - Awaiting CONFIRMATION",
+   "build_impact": "DIDNT IMPACT BUILD",
+   "needed_by": null,
+   "date_raised": "2026-09-23",
+   "completed": 0,
+   "asana_modified_at": "2026-09-23T09:47:36.682Z",
+   "last_synced_at": "2026-09-23T12:47:40Z",
+   "created_at": "2026-09-23 12:18:30"
+  }
+ ],
+ "qc_counts": [
+  {
+   "n": 5,
+   "completed": 0,
+   "no_status": 0,
+   "distinct_ncr": 5,
+   "null_ncr": 0,
+   "empty_str_reason": 1,
+   "empty_str_needs": 5,
+   "min_sync": "2026-09-23T12:47:40Z",
+   "max_sync": "2026-09-23T12:47:40Z"
+  }
+ ],
+ "backup_counts": [
+  {
+   "name": "qc_issues_backup_20260921_101733"
+  },
+  {
+   "name": "qc_issues_pre_stage0_20260923_121800"
+  },
+  {
+   "name": "qc_issues_pre_notepurge_20260923_124738"
+  }
+ ],
+ "count_qc_issues_backup_20260921_101733": [
+  {
+   "n": 9109
+  }
+ ],
+ "count_qc_issues_pre_stage0_20260923_121800": [
+  {
+   "n": 57
+  }
+ ],
+ "count_qc_issues_pre_notepurge_20260923_124738": [
+  {
+   "n": 10
+  }
+ ],
+ "write_log_qc": [
+  {
+   "id": 3821249,
+   "table_name": "qc_issues",
+   "row_gid": "1200129571733540",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"ncr_id\", \"issue_name\", \"sesame_part_no\", \"build_pack_reference\", \"linked_to_buildpack\", \"parts_control_gid\", \"po_task_gid\", \"associated_po_number\", \"vendor\", \"supplier_email\", \"associated_sqr_number\", \"qc_status\", \"order_status\", \"build_impact\", \"impact\", \"reason_for_issue\", \"qc_issue_reason\", \"needs_from_purch\", \"project_name\", \"date_raised\", \"needed_by\", \"days_since_raised\", \"order_qty\", \"order_value\", \"completed\", \"asana_completed_at\", \"asana_created_at\", \"asana_modified_at\", \"last_synced_at\"]",
+   "written_at": "2026-09-23 12:18:30"
+  },
+  {
+   "id": 3821248,
+   "table_name": "qc_issues",
+   "row_gid": "1200129571733538",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"ncr_id\", \"issue_name\", \"sesame_part_no\", \"build_pack_reference\", \"linked_to_buildpack\", \"parts_control_gid\", \"po_task_gid\", \"associated_po_number\", \"vendor\", \"supplier_email\", \"associated_sqr_number\", \"qc_status\", \"order_status\", \"build_impact\", \"impact\", \"reason_for_issue\", \"qc_issue_reason\", \"needs_from_purch\", \"project_name\", \"date_raised\", \"needed_by\", \"days_since_raised\", \"order_qty\", \"order_value\", \"completed\", \"asana_completed_at\", \"asana_created_at\", \"asana_modified_at\", \"last_synced_at\"]",
+   "written_at": "2026-09-23 12:18:30"
+  },
+  {
+   "id": 3821247,
+   "table_name": "qc_issues",
+   "row_gid": "1200129571733532",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"ncr_id\", \"issue_name\", \"sesame_part_no\", \"build_pack_reference\", \"linked_to_buildpack\", \"parts_control_gid\", \"po_task_gid\", \"associated_po_number\", \"vendor\", \"supplier_email\", \"associated_sqr_number\", \"qc_status\", \"order_status\", \"build_impact\", \"impact\", \"reason_for_issue\", \"qc_issue_reason\", \"needs_from_purch\", \"project_name\", \"date_raised\", \"needed_by\", \"days_since_raised\", \"order_qty\", \"order_value\", \"completed\", \"asana_completed_at\", \"asana_created_at\", \"asana_modified_at\", \"last_synced_at\"]",
+   "written_at": "2026-09-23 12:18:30"
+  },
+  {
+   "id": 3821246,
+   "table_name": "qc_issues",
+   "row_gid": "1130005160952380",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"ncr_id\", \"issue_name\", \"sesame_part_no\", \"build_pack_reference\", \"linked_to_buildpack\", \"parts_control_gid\", \"po_task_gid\", \"associated_po_number\", \"vendor\", \"supplier_email\", \"associated_sqr_number\", \"qc_status\", \"order_status\", \"build_impact\", \"impact\", \"reason_for_issue\", \"qc_issue_reason\", \"needs_from_purch\", \"project_name\", \"date_raised\", \"needed_by\", \"days_since_raised\", \"order_qty\", \"order_value\", \"completed\", \"asana_completed_at\", \"asana_created_at\", \"asana_modified_at\", \"last_synced_at\"]",
+   "written_at": "2026-09-23 12:18:30"
+  },
+  {
+   "id": 3821245,
+   "table_name": "qc_issues",
+   "row_gid": "1202403794565384",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"ncr_id\", \"issue_name\", \"sesame_part_no\", \"build_pack_reference\", \"linked_to_buildpack\", \"parts_control_gid\", \"po_task_gid\", \"associated_po_number\", \"vendor\", \"supplier_email\", \"associated_sqr_number\", \"qc_status\", \"order_status\", \"build_impact\", \"impact\", \"reason_for_issue\", \"qc_issue_reason\", \"needs_from_purch\", \"project_name\", \"date_raised\", \"needed_by\", \"days_since_raised\", \"order_qty\", \"order_value\", \"completed\", \"asana_completed_at\", \"asana_created_at\", \"asana_modified_at\", \"last_synced_at\"]",
+   "written_at": "2026-09-23 12:18:30"
+  },
+  {
+   "id": 3821244,
+   "table_name": "qc_issues",
+   "row_gid": "1216623814251397",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"ncr_id\", \"issue_name\", \"sesame_part_no\", \"build_pack_reference\", \"linked_to_buildpack\", \"parts_control_gid\", \"po_task_gid\", \"associated_po_number\", \"vendor\", \"supplier_email\", \"associated_sqr_number\", \"qc_status\", \"order_status\", \"build_impact\", \"impact\", \"reason_for_issue\", \"qc_issue_reason\", \"needs_from_purch\", \"project_name\", \"date_raised\", \"needed_by\", \"days_since_raised\", \"order_qty\", \"order_value\", \"completed\", \"asana_completed_at\", \"asana_created_at\", \"asana_modified_at\", \"last_synced_at\"]",
+   "written_at": "2026-09-23 12:18:30"
+  },
+  {
+   "id": 3821243,
+   "table_name": "qc_issues",
+   "row_gid": "1217816714660528",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"ncr_id\", \"issue_name\", \"sesame_part_no\", \"build_pack_reference\", \"linked_to_buildpack\", \"parts_control_gid\", \"po_task_gid\", \"associated_po_number\", \"vendor\", \"supplier_email\", \"associated_sqr_number\", \"qc_status\", \"order_status\", \"build_impact\", \"impact\", \"reason_for_issue\", \"qc_issue_reason\", \"needs_from_purch\", \"project_name\", \"date_raised\", \"needed_by\", \"days_since_raised\", \"order_qty\", \"order_value\", \"completed\", \"asana_completed_at\", \"asana_created_at\", \"asana_modified_at\", \"last_synced_at\"]",
+   "written_at": "2026-09-23 12:18:30"
+  },
+  {
+   "id": 3821242,
+   "table_name": "qc_issues",
+   "row_gid": "1216625039286575",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"ncr_id\", \"issue_name\", \"sesame_part_no\", \"build_pack_reference\", \"linked_to_buildpack\", \"parts_control_gid\", \"po_task_gid\", \"associated_po_number\", \"vendor\", \"supplier_email\", \"associated_sqr_number\", \"qc_status\", \"order_status\", \"build_impact\", \"impact\", \"reason_for_issue\", \"qc_issue_reason\", \"needs_from_purch\", \"project_name\", \"date_raised\", \"needed_by\", \"days_since_raised\", \"order_qty\", \"order_value\", \"completed\", \"asana_completed_at\", \"asana_created_at\", \"asana_modified_at\", \"last_synced_at\"]",
+   "written_at": "2026-09-23 12:18:30"
+  },
+  {
+   "id": 3821241,
+   "table_name": "qc_issues",
+   "row_gid": "1217486568187917",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"ncr_id\", \"issue_name\", \"sesame_part_no\", \"build_pack_reference\", \"linked_to_buildpack\", \"parts_control_gid\", \"po_task_gid\", \"associated_po_number\", \"vendor\", \"supplier_email\", \"associated_sqr_number\", \"qc_status\", \"order_status\", \"build_impact\", \"impact\", \"reason_for_issue\", \"qc_issue_reason\", \"needs_from_purch\", \"project_name\", \"date_raised\", \"needed_by\", \"days_since_raised\", \"order_qty\", \"order_value\", \"completed\", \"asana_completed_at\", \"asana_created_at\", \"asana_modified_at\", \"last_synced_at\"]",
+   "written_at": "2026-09-23 12:18:30"
+  },
+  {
+   "id": 3821240,
+   "table_name": "qc_issues",
+   "row_gid": "1218239001658089",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"ncr_id\", \"issue_name\", \"sesame_part_no\", \"build_pack_reference\", \"linked_to_buildpack\", \"parts_control_gid\", \"po_task_gid\", \"associated_po_number\", \"vendor\", \"supplier_email\", \"associated_sqr_number\", \"qc_status\", \"order_status\", \"build_impact\", \"impact\", \"reason_for_issue\", \"qc_issue_reason\", \"needs_from_purch\", \"project_name\", \"date_raised\", \"needed_by\", \"days_since_raised\", \"order_qty\", \"order_value\", \"completed\", \"asana_completed_at\", \"asana_created_at\", \"asana_modified_at\", \"last_synced_at\"]",
+   "written_at": "2026-09-23 12:18:30"
+  },
+  {
+   "id": 3821187,
+   "table_name": "qc_issues",
+   "row_gid": "1218498273286310",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"completed\", \"last_synced_at\"]",
+   "written_at": "2026-09-23 00:03:56"
+  },
+  {
+   "id": 3821186,
+   "table_name": "qc_issues",
+   "row_gid": "1217486678215190",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"completed\", \"last_synced_at\"]",
+   "written_at": "2026-09-23 00:03:56"
+  },
+  {
+   "id": 3821185,
+   "table_name": "qc_issues",
+   "row_gid": "1218701127739635",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"completed\", \"last_synced_at\"]",
+   "written_at": "2026-09-23 00:03:56"
+  },
+  {
+   "id": 3821184,
+   "table_name": "qc_issues",
+   "row_gid": "1218458851380847",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"completed\", \"last_synced_at\"]",
+   "written_at": "2026-09-23 00:03:56"
+  },
+  {
+   "id": 3821183,
+   "table_name": "qc_issues",
+   "row_gid": "1218451064081396",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"completed\", \"last_synced_at\"]",
+   "written_at": "2026-09-23 00:03:56"
+  },
+  {
+   "id": 3821182,
+   "table_name": "qc_issues",
+   "row_gid": "1218238770702796",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"completed\", \"last_synced_at\"]",
+   "written_at": "2026-09-23 00:03:56"
+  },
+  {
+   "id": 3821181,
+   "table_name": "qc_issues",
+   "row_gid": "1216068837918383",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"completed\", \"last_synced_at\"]",
+   "written_at": "2026-09-23 00:03:56"
+  },
+  {
+   "id": 3820877,
+   "table_name": "qc_issues",
+   "row_gid": "1218574862004300",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"completed\", \"last_synced_at\"]",
+   "written_at": "2026-09-22 00:04:16"
+  },
+  {
+   "id": 3820876,
+   "table_name": "qc_issues",
+   "row_gid": "1217770447982581",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"completed\", \"last_synced_at\"]",
+   "written_at": "2026-09-22 00:04:16"
+  },
+  {
+   "id": 3820875,
+   "table_name": "qc_issues",
+   "row_gid": "1218578549964212",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"completed\", \"last_synced_at\"]",
+   "written_at": "2026-09-22 00:04:16"
+  },
+  {
+   "id": 3820550,
+   "table_name": "qc_issues",
+   "row_gid": "1217816924994537",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"completed\", \"last_synced_at\"]",
+   "written_at": "2026-09-21 10:19:49"
+  },
+  {
+   "id": 3820549,
+   "table_name": "qc_issues",
+   "row_gid": "1218458851380849",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"completed\", \"last_synced_at\"]",
+   "written_at": "2026-09-21 10:19:49"
+  },
+  {
+   "id": 3820548,
+   "table_name": "qc_issues",
+   "row_gid": "1218239425962514",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"completed\", \"last_synced_at\"]",
+   "written_at": "2026-09-21 10:19:49"
+  },
+  {
+   "id": 3820547,
+   "table_name": "qc_issues",
+   "row_gid": "1218357848663271",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"completed\", \"last_synced_at\"]",
+   "written_at": "2026-09-21 10:19:49"
+  },
+  {
+   "id": 3820546,
+   "table_name": "qc_issues",
+   "row_gid": "1218239396667507",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"completed\", \"last_synced_at\"]",
+   "written_at": "2026-09-21 10:19:49"
+  },
+  {
+   "id": 3820545,
+   "table_name": "qc_issues",
+   "row_gid": "1218239398212045",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"completed\", \"last_synced_at\"]",
+   "written_at": "2026-09-21 10:19:49"
+  },
+  {
+   "id": 3820544,
+   "table_name": "qc_issues",
+   "row_gid": "1218514539381751",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"completed\", \"last_synced_at\"]",
+   "written_at": "2026-09-21 10:19:49"
+  },
+  {
+   "id": 3820543,
+   "table_name": "qc_issues",
+   "row_gid": "1209043051438460",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"completed\", \"last_synced_at\"]",
+   "written_at": "2026-09-21 10:19:49"
+  },
+  {
+   "id": 3820427,
+   "table_name": "qc_issues",
+   "row_gid": "1218458851380849",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"last_synced_at\"]",
+   "written_at": "2026-09-19 00:03:18"
+  },
+  {
+   "id": 3820426,
+   "table_name": "qc_issues",
+   "row_gid": "1218239425962514",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"last_synced_at\"]",
+   "written_at": "2026-09-19 00:03:18"
+  },
+  {
+   "id": 3820425,
+   "table_name": "qc_issues",
+   "row_gid": "1218357848663271",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"last_synced_at\"]",
+   "written_at": "2026-09-19 00:03:18"
+  },
+  {
+   "id": 3820424,
+   "table_name": "qc_issues",
+   "row_gid": "1218239396667507",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"last_synced_at\"]",
+   "written_at": "2026-09-19 00:03:18"
+  },
+  {
+   "id": 3820423,
+   "table_name": "qc_issues",
+   "row_gid": "1218239398212045",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"last_synced_at\"]",
+   "written_at": "2026-09-19 00:03:18"
+  },
+  {
+   "id": 3820139,
+   "table_name": "qc_issues",
+   "row_gid": "1215446072625510",
+   "action": "update",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"issue_name\"]",
+   "written_at": "2026-09-18 00:03:32"
+  },
+  {
+   "id": 3820138,
+   "table_name": "qc_issues",
+   "row_gid": "1218048087055301",
+   "action": "update",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"issue_name\"]",
+   "written_at": "2026-09-18 00:03:32"
+  },
+  {
+   "id": 3820137,
+   "table_name": "qc_issues",
+   "row_gid": "1217770225935589",
+   "action": "update",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"issue_name\"]",
+   "written_at": "2026-09-18 00:03:32"
+  },
+  {
+   "id": 3820136,
+   "table_name": "qc_issues",
+   "row_gid": "1218178706235890",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"last_synced_at\"]",
+   "written_at": "2026-09-18 00:03:32"
+  },
+  {
+   "id": 3820135,
+   "table_name": "qc_issues",
+   "row_gid": "1218227225119457",
+   "action": "insert",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"asana_task_gid\", \"issue_name\", \"impact\", \"signed_off_status\", \"order_qty\", \"order_value\", \"order_date\", \"date_out_of_project\", \"associated_po_number\", \"associated_sqr_number\", \"parts_control_gid\", \"last_synced_at\"]",
+   "written_at": "2026-09-18 00:03:32"
+  },
+  {
+   "id": 3820134,
+   "table_name": "qc_issues",
+   "row_gid": "1213591305488002",
+   "action": "update",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"issue_name\"]",
+   "written_at": "2026-09-18 00:03:32"
+  },
+  {
+   "id": 3820133,
+   "table_name": "qc_issues",
+   "row_gid": "1218389060819325",
+   "action": "update",
+   "source": "sync_qc_issues",
+   "fields_changed": "[\"issue_name\"]",
+   "written_at": "2026-09-18 00:03:32"
+  }
+ ],
+ "field_registry": [
+  {
+   "id": 1,
+   "field_name": "price_ex_vat",
+   "field_gid": "854330340727040",
+   "field_type": "number",
+   "applies_to": "procurement_tasks",
+   "enum_options": null,
+   "notes": "Price Ex VAT on order/quote tasks."
+  },
+  {
+   "id": 2,
+   "field_name": "delivery_date",
+   "field_gid": "1208706270294053",
+   "field_type": "date",
+   "applies_to": "procurement_tasks",
+   "enum_options": null,
+   "notes": "Expected/confirmed delivery date."
+  },
+  {
+   "id": 3,
+   "field_name": "order_status",
+   "field_gid": "1143955334207040",
+   "field_type": "enum",
+   "applies_to": "procurement_tasks",
+   "enum_options": null,
+   "notes": "ORDER Status field. Confirmed enum GID: 1143955334207043"
+  },
+  {
+   "id": 4,
+   "field_name": "sesame_part_no",
+   "field_gid": "1213228090549470",
+   "field_type": "text",
+   "applies_to": "stock_inventory, parts_control",
+   "enum_options": null,
+   "notes": "Full part number e.g. 1234.1008.h.234. Never strip when writing to Asana."
+  },
+  {
+   "id": 5,
+   "field_name": "stock_qty",
+   "field_gid": "1126782469949969",
+   "field_type": "number",
+   "applies_to": "stock_inventory (KANBAN)",
+   "enum_options": null,
+   "notes": "Current physical stock quantity."
+  },
+  {
+   "id": 6,
+   "field_name": "trigger_order_qty",
+   "field_gid": "1198179728033183",
+   "field_type": "number",
+   "applies_to": "stock_inventory (KANBAN)",
+   "enum_options": null,
+   "notes": "Reorder threshold quantity."
+  },
+  {
+   "id": 7,
+   "field_name": "min_stock_qty",
+   "field_gid": "1205084645800516",
+   "field_type": "number",
+   "applies_to": "stock_inventory (Consumables)",
+   "enum_options": null,
+   "notes": "Minimum stock threshold \u2014 Consumables project only."
+  },
+  {
+   "id": 8,
+   "field_name": "order_qty",
+   "field_gid": "1201447044882111",
+   "field_type": "number",
+   "applies_to": "parts_control",
+   "enum_options": null,
+   "notes": "Quantity on order for this part."
+  },
+  {
+   "id": 9,
+   "field_name": "vendor",
+   "field_gid": "854127216887083",
+   "field_type": "text",
+   "applies_to": "parts_control, stock_inventory",
+   "enum_options": null,
+   "notes": "Vendor name text field."
+  },
+  {
+   "id": 10,
+   "field_name": "stock_action",
+   "field_gid": "1199111659373956",
+   "field_type": "enum",
+   "applies_to": "parts_control, stock_inventory",
+   "enum_options": null,
+   "notes": "Stock action enum: IN STOCK / ORDER FOR STOCK etc."
+  },
+  {
+   "id": 11,
+   "field_name": "build_packs_reference",
+   "field_gid": "1211660742155293",
+   "field_type": "reference",
+   "applies_to": "parts_control",
+   "enum_options": null,
+   "notes": "Links a part to its build assembly pack. Requires a task GID."
+  },
+  {
+   "id": 12,
+   "field_name": "sqr_number",
+   "field_gid": "1211774738554014",
+   "field_type": "text",
+   "applies_to": "procurement_tasks (Quote Control)",
+   "enum_options": null,
+   "notes": "Supplier Quote Request number e.g. SQR-44513. Custom field on Quote Control project."
+  }
+ ],
+ "count_purchase_orders": [
+  {
+   "n": 7
+  }
+ ],
+ "count_po_lines": [
+  {
+   "n": 0
+  }
+ ],
+ "count_supplier_deliveries": [
+  {
+   "n": 0
+  }
+ ],
+ "count_supplier_contacts": [
+  {
+   "n": 210
+  }
+ ],
+ "count_suppliers": [
+  {
+   "n": 433
+  }
+ ],
+ "count_overdue_chase_log": [
+  {
+   "n": 14
+  }
+ ],
+ "count_procurement_tasks": [
+  {
+   "n": 4164
+  }
+ ],
+ "count_parts_control": [
+  {
+   "n": 2989
+  }
+ ],
+ "count_part_supply_events": [
+  {
+   "n": 18576
+  }
+ ],
+ "parts_control_cols": [
+  {
+   "cid": 0,
+   "name": "id",
+   "type": "INTEGER",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 1
+  },
+  {
+   "cid": 1,
+   "name": "asana_task_gid",
+   "type": "TEXT",
+   "notnull": 1,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 2,
+   "name": "sesame_pn",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 3,
+   "name": "part_name",
+   "type": "TEXT",
+   "notnull": 1,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 4,
+   "name": "order_qty",
+   "type": "REAL",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 5,
+   "name": "stock_action",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 6,
+   "name": "vendor_name",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 7,
+   "name": "build_assembly_pack_gid",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 8,
+   "name": "procurement_task_gid",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 9,
+   "name": "is_subtask",
+   "type": "INTEGER",
+   "notnull": 1,
+   "dflt_value": "0",
+   "pk": 0
+  },
+  {
+   "cid": 10,
+   "name": "project_name",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 11,
+   "name": "last_synced_at",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 12,
+   "name": "created_at",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": "datetime('now')",
+   "pk": 0
+  },
+  {
+   "cid": 13,
+   "name": "is_completed",
+   "type": "INTEGER",
+   "notnull": 1,
+   "dflt_value": "0",
+   "pk": 0
+  },
+  {
+   "cid": 14,
+   "name": "vendor_name_normalised",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 15,
+   "name": "association_status",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 16,
+   "name": "association_checked_at",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 17,
+   "name": "order_status",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 18,
+   "name": "arrived_qty",
+   "type": "REAL",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 19,
+   "name": "unit_price",
+   "type": "REAL",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 20,
+   "name": "rev_number",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 21,
+   "name": "po_task_gid",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 22,
+   "name": "stock_link_gid",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 23,
+   "name": "build_pack_ref_name",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 24,
+   "name": "due_on",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 25,
+   "name": "completed_at",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 26,
+   "name": "project_code",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 27,
+   "name": "supply_route",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 28,
+   "name": "first_seen_at",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 29,
+   "name": "last_state_hash",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  }
+ ],
+ "procurement_cols": [
+  {
+   "cid": 0,
+   "name": "id",
+   "type": "INTEGER",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 1
+  },
+  {
+   "cid": 1,
+   "name": "asana_task_gid",
+   "type": "TEXT",
+   "notnull": 1,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 2,
+   "name": "task_name",
+   "type": "TEXT",
+   "notnull": 1,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 3,
+   "name": "document_type",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 4,
+   "name": "po_number",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 5,
+   "name": "sqr_number",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 6,
+   "name": "price_ex_vat",
+   "type": "REAL",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 7,
+   "name": "order_date",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 8,
+   "name": "due_date",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 9,
+   "name": "order_status",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 10,
+   "name": "vendor_name",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 11,
+   "name": "vendor_gid",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 12,
+   "name": "source_project",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 13,
+   "name": "is_subtask",
+   "type": "INTEGER",
+   "notnull": 1,
+   "dflt_value": "0",
+   "pk": 0
+  },
+  {
+   "cid": 14,
+   "name": "last_synced_at",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 15,
+   "name": "created_at",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": "datetime('now')",
+   "pk": 0
+  },
+  {
+   "cid": 16,
+   "name": "vendor_name_normalised",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 17,
+   "name": "days_for_delivery",
+   "type": "REAL",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 18,
+   "name": "impact",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 19,
+   "name": "po_task_gid",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 20,
+   "name": "is_completed",
+   "type": "INTEGER",
+   "notnull": 1,
+   "dflt_value": "0",
+   "pk": 0
+  },
+  {
+   "cid": 21,
+   "name": "project_code",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 22,
+   "name": "scope",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 23,
+   "name": "last_state_hash",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  }
+ ],
+ "overdue_chase_log_cols": [
+  {
+   "cid": 0,
+   "name": "id",
+   "type": "INTEGER",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 1
+  },
+  {
+   "cid": 1,
+   "name": "po_number",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 2,
+   "name": "vendor_name",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 3,
+   "name": "due_date",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 4,
+   "name": "asana_task_gid",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 5,
+   "name": "matched_message_id",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 6,
+   "name": "conversation_id",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 7,
+   "name": "certainty",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 8,
+   "name": "to_email",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 9,
+   "name": "subject",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 10,
+   "name": "body_text",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 11,
+   "name": "draft_message_id",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 12,
+   "name": "draft_web_link",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 13,
+   "name": "status",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": "'draft'",
+   "pk": 0
+  },
+  {
+   "cid": 14,
+   "name": "created_by",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": "'hermes_overdue_chase'",
+   "pk": 0
+  },
+  {
+   "cid": 15,
+   "name": "created_at",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  }
+ ],
+ "suppliers_cols": [
+  {
+   "cid": 0,
+   "name": "id",
+   "type": "INTEGER",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 1
+  },
+  {
+   "cid": 1,
+   "name": "asana_task_gid",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 2,
+   "name": "vendor_name",
+   "type": "TEXT",
+   "notnull": 1,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 3,
+   "name": "primary_domain",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 4,
+   "name": "contact_name",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 5,
+   "name": "contact_email",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 6,
+   "name": "contact_phone",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 7,
+   "name": "payment_type",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 8,
+   "name": "risk_profile",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 9,
+   "name": "typical_lead_times_days",
+   "type": "INTEGER",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 10,
+   "name": "supplier_type",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 11,
+   "name": "asana_tag_gid",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 12,
+   "name": "last_synced_at",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 13,
+   "name": "created_at",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": "datetime('now')",
+   "pk": 0
+  },
+  {
+   "cid": 14,
+   "name": "vendor_name_normalised",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  }
+ ],
+ "po_lines_cols": [
+  {
+   "cid": 0,
+   "name": "id",
+   "type": "INTEGER",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 1
+  },
+  {
+   "cid": 1,
+   "name": "po_id",
+   "type": "INTEGER",
+   "notnull": 1,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 2,
+   "name": "sesame_part_no",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 3,
+   "name": "description",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 4,
+   "name": "ordered_qty",
+   "type": "INTEGER",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 5,
+   "name": "unit_price",
+   "type": "REAL",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 6,
+   "name": "line_status",
+   "type": "TEXT",
+   "notnull": 1,
+   "dflt_value": "'ordered'",
+   "pk": 0
+  },
+  {
+   "cid": 7,
+   "name": "asana_task_gid",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 8,
+   "name": "bom_req_id",
+   "type": "INTEGER",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 9,
+   "name": "confirmed_at",
+   "type": "TIMESTAMP",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 10,
+   "name": "received_at",
+   "type": "TIMESTAMP",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 11,
+   "name": "notes",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 12,
+   "name": "created_at",
+   "type": "TIMESTAMP",
+   "notnull": 0,
+   "dflt_value": "CURRENT_TIMESTAMP",
+   "pk": 0
+  },
+  {
+   "cid": 13,
+   "name": "updated_at",
+   "type": "TIMESTAMP",
+   "notnull": 0,
+   "dflt_value": "CURRENT_TIMESTAMP",
+   "pk": 0
+  },
+  {
+   "cid": 14,
+   "name": "allocated_qty",
+   "type": "INTEGER",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  }
+ ],
+ "supplier_contacts_cols": [
+  {
+   "cid": 0,
+   "name": "id",
+   "type": "INTEGER",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 1
+  },
+  {
+   "cid": 1,
+   "name": "supplier_gid",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 2,
+   "name": "supplier_name",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 3,
+   "name": "contact_name",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 4,
+   "name": "email",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 5,
+   "name": "phone",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 6,
+   "name": "is_primary",
+   "type": "INTEGER",
+   "notnull": 0,
+   "dflt_value": "0",
+   "pk": 0
+  },
+  {
+   "cid": 7,
+   "name": "source",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": "'project'",
+   "pk": 0
+  },
+  {
+   "cid": 8,
+   "name": "created_at",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  },
+  {
+   "cid": 9,
+   "name": "last_synced_at",
+   "type": "TEXT",
+   "notnull": 0,
+   "dflt_value": null,
+   "pk": 0
+  }
+ ],
+ "parts_control_part_col": null,
+ "chain_probe": [
+  {
+   "ncr": "NCR-5033",
+   "part": "1037.9990.A.004",
+   "vendor": "Powder Coating",
+   "suppliers_match": [
+    {
+     "id": 288,
+     "asana_task_gid": "1197058537672681",
+     "vendor_name": "Paul Waite Powder coating - New supplier",
+     "primary_domain": null,
+     "contact_name": null,
+     "contact_email": null,
+     "contact_phone": null,
+     "payment_type": null,
+     "risk_profile": null,
+     "typical_lead_times_days": null,
+     "supplier_type": "Surface Finish BOM *5033",
+     "asana_tag_gid": "1127128407130156",
+     "last_synced_at": "2026-09-23T12:19:13Z",
+     "created_at": "2026-05-11 07:31:45",
+     "vendor_name_normalised": "paul waite powder coating new supplier"
+    },
+    {
+     "id": 289,
+     "asana_task_gid": "1192317963229860",
+     "vendor_name": "IDL   Ltd - Powder coating",
+     "primary_domain": "idluk.com",
+     "contact_name": null,
+     "contact_email": "david.burt@idluk.com",
+     "contact_phone": null,
+     "payment_type": "Account",
+     "risk_profile": null,
+     "typical_lead_times_days": null,
+     "supplier_type": "Surface Finish BOM *5033",
+     "asana_tag_gid": "1127128407130157",
+     "last_synced_at": "2026-09-23T12:19:13Z",
+     "created_at": "2026-05-11 07:31:45",
+     "vendor_name_normalised": "idl"
+    },
+    {
+     "id": 297,
+     "asana_task_gid": "1146160126600499",
+     "vendor_name": "John Desmond - PVD / Powder Coating/ V-notching",
+     "primary_domain": null,
+     "contact_name": null,
+     "contact_email": null,
+     "contact_phone": null,
+     "payment_type": null,
+     "risk_profile": null,
+     "typical_lead_times_days": null,
+     "supplier_type": "Surface Finish BOM *5033",
+     "asana_tag_gid": "1205467895178834",
+     "last_synced_at": "2026-09-23T12:19:13Z",
+     "created_at": "2026-05-11 07:31:45",
+     "vendor_name_normalised": "john desmond pvd powder coating vnotching"
+    },
+    {
+     "id": 299,
+     "asana_task_gid": "1138993447170273",
+     "vendor_name": "Medway Joseph Ash Ltd - galvanising - Zinc + powder coating",
+     "primary_domain": "medgalv.co.uk",
+     "contact_name": "Martin Coleman",
+     "contact_email": " info@medgalv.co.uk",
+     "contact_phone": "01795 479489  ext 2",
+     "payment_type": "Account",
+     "risk_profile": "LOW - Good capacity / Low dependency ",
+     "typical_lead_times_days": null,
+     "supplier_type": "Surface Finish BOM *5033",
+     "asana_tag_gid": "1136673218825027",
+     "last_synced_at": "2026-09-23T12:19:13Z",
+     "created_at": "2026-05-11 07:31:45",
+     "vendor_name_normalised": "medway joseph ash ltd galvanising zinc powder coating"
+    },
+    {
+     "id": 307,
+     "asana_task_gid": "798883934700976",
+     "vendor_name": "WSB Powder coating - Imran -",
+     "primary_domain": null,
+     "contact_name": null,
+     "contact_email": null,
+     "contact_phone": null,
+     "payment_type": null,
+     "risk_profile": null,
+     "typical_lead_times_days": null,
+     "supplier_type": "Surface Finish BOM *5033",
+     "asana_tag_gid": "954138430192867",
+     "last_synced_at": "2026-09-23T12:19:13Z",
+     "created_at": "2026-05-11 07:31:45",
+     "vendor_name_normalised": "wsb powder coating imran"
+    }
+   ],
+   "supplier_contacts_match": []
+  },
+  {
+   "ncr": "NCR-5034",
+   "part": "1591.1020.A1.1",
+   "vendor": "Engraving",
+   "suppliers_match": [
+    {
+     "id": 169,
+     "asana_task_gid": "1187975092730885",
+     "vendor_name": "Ashbee Engraving Ltd - Local engravers",
+     "primary_domain": "ashbee-engraving.com",
+     "contact_name": "Nikki, ",
+     "contact_email": "enquiries@ashbee-engraving.com",
+     "contact_phone": "01483760832",
+     "payment_type": "Proforma",
+     "risk_profile": null,
+     "typical_lead_times_days": null,
+     "supplier_type": "Sesame BOM *5006",
+     "asana_tag_gid": "1187975092730884",
+     "last_synced_at": "2026-09-23T12:19:13Z",
+     "created_at": "2026-05-11 07:31:45",
+     "vendor_name_normalised": "ashbee engraving ltd local engravers"
+    },
+    {
+     "id": 182,
+     "asana_task_gid": "798319581510504",
+     "vendor_name": "Brunel bought Adams Engraving Ltd - Engravers,",
+     "primary_domain": null,
+     "contact_name": null,
+     "contact_email": null,
+     "contact_phone": null,
+     "payment_type": "Credit card",
+     "risk_profile": null,
+     "typical_lead_times_days": null,
+     "supplier_type": "Sesame BOM *5006",
+     "asana_tag_gid": "1125679172894803",
+     "last_synced_at": "2026-09-23T12:19:13Z",
+     "created_at": "2026-05-11 07:31:45",
+     "vendor_name_normalised": "brunel bought adams engraving ltd engravers"
+    },
+    {
+     "id": 392,
+     "asana_task_gid": "660402000410991",
+     "vendor_name": "Alexander Pollock - Engraving - 9904/1275",
+     "primary_domain": null,
+     "contact_name": null,
+     "contact_email": null,
+     "contact_phone": null,
+     "payment_type": null,
+     "risk_profile": null,
+     "typical_lead_times_days": null,
+     "supplier_type": "Utilities &  Facilities & Other *7803",
+     "asana_tag_gid": "1120692246662796",
+     "last_synced_at": "2026-09-23T12:19:13Z",
+     "created_at": "2026-05-11 07:31:45",
+     "vendor_name_normalised": "alexander pollock engraving 99041275"
+    }
+   ],
+   "supplier_contacts_match": []
+  },
+  {
+   "ncr": "NCR-5035",
+   "part": "1594.1010.L.045",
+   "vendor": "Hennig",
+   "suppliers_match": [
+    {
+     "id": 1,
+     "asana_task_gid": "1214559858838153",
+     "vendor_name": "Hennig Uk - Aluminium roller shutter",
+     "primary_domain": "henniguk.com",
+     "contact_name": "Julian ",
+     "contact_email": "Sales@Henniguk.com",
+     "contact_phone": null,
+     "payment_type": "Proforma",
+     "risk_profile": "LOW - Good capacity / Low dependency ",
+     "typical_lead_times_days": null,
+     "supplier_type": "Automation *5008",
+     "asana_tag_gid": "1203280252621386",
+     "last_synced_at": "2026-09-23T12:19:13Z",
+     "created_at": "2026-05-11 07:31:45",
+     "vendor_name_normalised": "hennig uk aluminium roller shutter"
+    }
+   ],
+   "supplier_contacts_match": []
+  },
+  {
+   "ncr": "NCR-5036",
+   "part": "1595.1006.G.001",
+   "vendor": "Laser Cut",
+   "suppliers_match": [
+    {
+     "id": 20178,
+     "asana_task_gid": "1216763728138819",
+     "vendor_name": "PP Group - Water Jet Cutting and Laser Cut services",
+     "primary_domain": "ppgroupltd.co.uk",
+     "contact_name": "Darren",
+     "contact_email": "darren.wallace@ppgroupltd.co.uk",
+     "contact_phone": "07803 241 134",
+     "payment_type": "Proforma",
+     "risk_profile": "LOW - Good capacity / Low dependency ",
+     "typical_lead_times_days": null,
+     "supplier_type": null,
+     "asana_tag_gid": "1216763728138818",
+     "last_synced_at": "2026-09-23T12:19:13Z",
+     "created_at": "2026-07-22 00:01:05",
+     "vendor_name_normalised": null
+    }
+   ],
+   "supplier_contacts_match": []
+  },
+  {
+   "ncr": "NCR-5037",
+   "part": "1597.7110.I.010",
+   "vendor": "Laser Cut",
+   "suppliers_match": [
+    {
+     "id": 20178,
+     "asana_task_gid": "1216763728138819",
+     "vendor_name": "PP Group - Water Jet Cutting and Laser Cut services",
+     "primary_domain": "ppgroupltd.co.uk",
+     "contact_name": "Darren",
+     "contact_email": "darren.wallace@ppgroupltd.co.uk",
+     "contact_phone": "07803 241 134",
+     "payment_type": "Proforma",
+     "risk_profile": "LOW - Good capacity / Low dependency ",
+     "typical_lead_times_days": null,
+     "supplier_type": null,
+     "asana_tag_gid": "1216763728138818",
+     "last_synced_at": "2026-09-23T12:19:13Z",
+     "created_at": "2026-07-22 00:01:05",
+     "vendor_name_normalised": null
+    }
+   ],
+   "supplier_contacts_match": []
+  }
+ ]
+}

@@ -284,7 +284,7 @@ Opened as a local file, so the action buttons are disabled. Open
   <div style="flex:1;min-width:280px">
     <div style="font-weight:600;font-size:14.5px">VPS webhook outage window 2026-09-18T23:56Z..2026-09-21T07:17Z attributed to a specific culprit (host reboot / ingress restart / neither) with exact times, current delivery path verified off-box; rollback receiver on :8088 proven unrequired (no Traefik route, no supervisor) and cleanly stopped with autostart disabled, files retained for cold rollback</div>
     <div class="muted" style="font-size:12.5px;margin-top:4px">
-      hermes:cli · 2h since last event · <span class="muted">not in Asana yet</span>
+      hermes:cli · 3h since last event · <span class="muted">not in Asana yet</span>
     </div>
     <div style="margin-top:8px"><span class="tag">VPS / Webhooks</span> <span class="pill warn">High</span> <span class="pill open">M</span></div>
   </div>
@@ -300,7 +300,7 @@ Opened as a local file, so the action buttons are disabled. Open
   <div style="flex:1;min-width:280px">
     <div style="font-weight:600;font-size:14.5px">Host-side facts for the 2026-09-18..21 webhook outage window stated as verified (reboot? container recreate? stale upstream? what restored it); sas-hooks-route-sync timer re-armed with a real NEXT elapse and proven firing on schedule; an out-of-container host cron heartbeat on the public endpoint installed, logging timestamped lines and validated in both the OK and FAIL(alert) directions</div>
     <div class="muted" style="font-size:12.5px;margin-top:4px">
-      hermes:cli · 40m since last event · <span class="muted">not in Asana yet</span>
+      hermes:cli · 1h since last event · <span class="muted">not in Asana yet</span>
     </div>
     <div style="margin-top:8px"><span class="tag">VPS / Webhooks</span> <span class="pill warn">High</span> <span class="pill open">M</span></div>
   </div>
@@ -316,7 +316,7 @@ Opened as a local file, so the action buttons are disabled. Open
   <div style="flex:1;min-width:280px">
     <div style="font-weight:600;font-size:14.5px">/root/vps-env-watch.sh either has a working alert path or is deliberately retired, with its true state (alive vs dead) established from evidence and stated plainly</div>
     <div class="muted" style="font-size:12.5px;margin-top:4px">
-      hermes:cli · 16m since last event · <span class="muted">not in Asana yet</span>
+      hermes:cli · 43m since last event · <span class="muted">not in Asana yet</span>
     </div>
     <div style="margin-top:8px"><span class="tag">VPS / Webhooks</span> <span class="pill open">Medium</span> <span class="pill open">S</span></div>
   </div>
@@ -389,10 +389,10 @@ Opened as a local file, so the action buttons are disabled. Open
   <div class="btnrow" style="align-items:flex-start"><button class="btn ghost sm" onclick="sasSignoff(this,'e6933b1e','awaiting_signoff')" data-action="1">Mark for sign-off</button><button class="btn ghost sm" onclick="sasSignoff(this,'e6933b1e','cancelled')" data-action="1" title="Abandon this thread.">✕ Cancel</button></div>
 </div>
 <details class="vendor" style="margin-top:10px">
-  <summary class="muted">touching <code>skills/sql_db/scripts/sync_qc_issues.py</code> <code>skills/purchasing/overdue_order_chase.py</code> <code>reports/QC_PROJECT_CLAUDE_HANDOFF.md</code> <code>reports/QC_ISSUES_DESIGN_REVIEW.md</code>  · 3 events</summary>
-  <table><tr><th>when</th><th>state</th><th>by</th><th>note</th></tr><tr><td class='muted'>2026-09-23 12:06</td><td>open</td><td class='muted'>hermes:purchasing</td><td>thread opened</td></tr><tr><td class='muted'>2026-09-23 12:06</td><td>open</td><td class='muted'>hermes:purchasing</td><td>linked to pre-created Asana task 1218777741354899 (created directly with section + custom fields the REQUESTS processor cannot set); sync will now skip this record</td></tr><tr><td class='muted'>2026-09-23 12:21</td><td>open</td><td class='muted'>hermes:purchasing</td><td>Stage 0 COMPLETE + verified: sync_qc_issues.py repointed to 737971594126804, stub task_to_row() replaced with 20-field real mapping, qc_issues schema rebuilt (32 cols, 8 indexes, backed up), open-only filter default, max_pages 50-&gt;200. First real sync: 1906 fetched / 10 open written / 0 errors. Full nightly chain EXIT=0. Stage 1 next: supplier_email 2/5, po_task_gid 0/5, needed_by 0/5 are the gaps.</td></tr></table>
+  <summary class="muted">touching <code>skills/sql_db/scripts/sync_qc_issues.py</code> <code>skills/purchasing/overdue_order_chase.py</code> <code>reports/QC_PROJECT_CLAUDE_HANDOFF.md</code> <code>reports/QC_ISSUES_DESIGN_REVIEW.md</code>  · 4 events</summary>
+  <table><tr><th>when</th><th>state</th><th>by</th><th>note</th></tr><tr><td class='muted'>2026-09-23 12:06</td><td>open</td><td class='muted'>hermes:purchasing</td><td>thread opened</td></tr><tr><td class='muted'>2026-09-23 12:06</td><td>open</td><td class='muted'>hermes:purchasing</td><td>linked to pre-created Asana task 1218777741354899 (created directly with section + custom fields the REQUESTS processor cannot set); sync will now skip this record</td></tr><tr><td class='muted'>2026-09-23 12:21</td><td>open</td><td class='muted'>hermes:purchasing</td><td>Stage 0 COMPLETE + verified: sync_qc_issues.py repointed to 737971594126804, stub task_to_row() replaced with 20-field real mapping, qc_issues schema rebuilt (32 cols, 8 indexes, backed up), open-only filter default, max_pages 50-&gt;200. First real sync: 1906 fetched / 10 open written / 0 errors. Full nightly chain EXIT=0. Stage 1 next: supplier_email 2/5, po_task_gid 0/5, needed_by 0/5 are the gaps.</td></tr><tr><td class='muted'>2026-09-23 12:48</td><td>open</td><td class='muted'>hermes:purchasing</td><td>Scope rule added per Giles directive: mirror only OPEN tasks WITH QC STATUS (5 real issues). 5 process/reference notes omitted + purged (backup qc_issues_pre_notepurge_20260923_124738). Table now 5 rows, 0 statusless. Idempotent. Stage 1 gaps: supplier_email 2/5, po_task_gid 0/5, needed_by 0/5.</td></tr></table>
 </details>
 </div>
 </div>
-<p class="muted" style="margin-top:32px;font-size:12px">Generated 2026-09-23 12:21 UTC from <code>queues/DEV_OPEN/</code> · 11 threads total</p>
+<p class="muted" style="margin-top:32px;font-size:12px">Generated 2026-09-23 12:48 UTC from <code>queues/DEV_OPEN/</code> · 11 threads total</p>
 </div></body></html>

@@ -31,6 +31,12 @@
       "status": "open",
       "by": "hermes:purchasing",
       "note": "Stage 0 COMPLETE + verified: sync_qc_issues.py repointed to 737971594126804, stub task_to_row() replaced with 20-field real mapping, qc_issues schema rebuilt (32 cols, 8 indexes, backed up), open-only filter default, max_pages 50->200. First real sync: 1906 fetched / 10 open written / 0 errors. Full nightly chain EXIT=0. Stage 1 next: supplier_email 2/5, po_task_gid 0/5, needed_by 0/5 are the gaps."
+    },
+    {
+      "at": "2026-09-23T12:48:26.490020+00:00",
+      "status": "open",
+      "by": "hermes:purchasing",
+      "note": "Scope rule added per Giles directive: mirror only OPEN tasks WITH QC STATUS (5 real issues). 5 process/reference notes omitted + purged (backup qc_issues_pre_notepurge_20260923_124738). Table now 5 rows, 0 statusless. Idempotent. Stage 1 gaps: supplier_email 2/5, po_task_gid 0/5, needed_by 0/5."
     }
   ]
 }

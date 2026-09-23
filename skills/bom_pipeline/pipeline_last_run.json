@@ -1,8 +1,7 @@
 {
-  "project_name": "1597 - Forest Road 4. Button Stations",
-  "stage4_file": "C:\\Users\\GilesHugo\\SES_Workspace\\skills\\bom_pipeline\\1.BOM IMPORT into Asana\\pipeline_runs\\1597_-_Forest_Road_4__Button_Stations_20260923_1054\\stage4_staging_review.xlsx",
-  "run_dir": "C:\\Users\\GilesHugo\\SES_Workspace\\skills\\bom_pipeline\\1.BOM IMPORT into Asana\\pipeline_runs\\1597_-_Forest_Road_4__Button_Stations_20260923_1054",
-  "timestamp": "20260923_1054",
-  "status": "committed",
-  "commit_timestamp": "20260923_110100"
+  "project_name": "1573 - Kings Road 2.Entire System",
+  "stage4_file": "C:\\Users\\GilesHugo\\SES_Workspace\\skills\\bom_pipeline\\1.BOM IMPORT into Asana\\pipeline_runs\\1573_-_Kings_Road_2_Entire_System_20260923_1400\\stage4_staging_review.xlsx",
+  "run_dir": "C:\\Users\\GilesHugo\\SES_Workspace\\skills\\bom_pipeline\\1.BOM IMPORT into Asana\\pipeline_runs\\1573_-_Kings_Road_2_Entire_System_20260923_1400",
+  "timestamp": "20260923_1400",
+  "status": "awaiting_commit"
 }

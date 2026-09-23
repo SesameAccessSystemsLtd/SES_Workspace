@@ -1,0 +1,598 @@
+{
+ "issues": [
+  {
+   "asana_task_gid": "1218239001658089",
+   "ncr_id": "NCR-5037",
+   "sesame_part_no": "1597.7110.I.010",
+   "vendor": "Laser Cut",
+   "associated_sqr_number": "SQR-46962",
+   "qc_status": "Approved to progress"
+  },
+  {
+   "asana_task_gid": "1217486568187917",
+   "ncr_id": "NCR-5036",
+   "sesame_part_no": "1595.1006.G.001",
+   "vendor": "Laser Cut",
+   "associated_sqr_number": "SQR-46578",
+   "qc_status": "AWAITING DELIVERY"
+  },
+  {
+   "asana_task_gid": "1216625039286575",
+   "ncr_id": "NCR-5034",
+   "sesame_part_no": "1591.1020.A1.1",
+   "vendor": "Engraving",
+   "associated_sqr_number": "SQR-46799",
+   "qc_status": "AWAITING DELIVERY"
+  },
+  {
+   "asana_task_gid": "1217816714660528",
+   "ncr_id": "NCR-5033",
+   "sesame_part_no": "1037.9990.A.004",
+   "vendor": "Powder Coating",
+   "associated_sqr_number": "SQR-46714",
+   "qc_status": "AWAITING DELIVERY"
+  },
+  {
+   "asana_task_gid": "1216623814251397",
+   "ncr_id": "NCR-5035",
+   "sesame_part_no": "1594.1010.L.045",
+   "vendor": "Hennig",
+   "associated_sqr_number": "SQR-46053",
+   "qc_status": "Approved to progress"
+  }
+ ],
+ "probes": [
+  {
+   "ncr": "NCR-5037",
+   "sqr": "SQR-46962",
+   "part": "1597.7110.I.010",
+   "vendor": "Laser Cut",
+   "procurement_by_sqr": [],
+   "parts_control_by_pn": [
+    {
+     "asana_task_gid": "1218238999602154",
+     "sesame_pn": "1597.7110.I.010",
+     "part_name": "2 off Anodising 1597. 7110.I.010 - Pit Trim Front Panel",
+     "vendor_name": "Anodising",
+     "procurement_task_gid": "1218238842687501",
+     "po_task_gid": null,
+     "order_status": "\ud83d\udca2 Quote / Order (check BOM Status)",
+     "due_on": null,
+     "is_completed": 0,
+     "association_status": "linked_by_name",
+     "supply_route": "subcon",
+     "project_code": "1597"
+    },
+    {
+     "asana_task_gid": "1218239001658089",
+     "sesame_pn": "1597.7110.I.010",
+     "part_name": "2 off 1597. 7110.I.010 - Pit Trim Front Panel Laser Cut",
+     "vendor_name": "Laser Cut",
+     "procurement_task_gid": "1218238915516955",
+     "po_task_gid": null,
+     "order_status": "\u23f0On Order - Awaiting CONFIRMATION",
+     "due_on": "2026-09-23",
+     "is_completed": 0,
+     "association_status": "linked_by_name",
+     "supply_route": "lasercut",
+     "project_code": "1597"
+    }
+   ],
+   "po_lines_by_pn": [],
+   "supplier_lookup": {
+    "Anodising": {
+     "suppliers": [
+      {
+       "vendor_name": "The Anodising Company Ltd - Small tank low cost",
+       "contact_email": " info@theanodisingco.co.uk",
+       "supplier_type": "Surface Finish BOM *5033",
+       "asana_task_gid": "1210460761673168"
+      },
+      {
+       "vendor_name": "Mercury Plating Ltd - Zinc Plating & Anodising supplier",
+       "contact_email": "\u00a0info@mercuryelectroplating.com",
+       "supplier_type": "Surface Finish BOM *5033",
+       "asana_task_gid": "1199243213142386"
+      },
+      {
+       "vendor_name": "ACORN Plating - Anodising",
+       "contact_email": null,
+       "supplier_type": "Surface Finish BOM *5033",
+       "asana_task_gid": "1149320960321079"
+      },
+      {
+       "vendor_name": "Piniqu Plating - Now only Anodising",
+       "contact_email": null,
+       "supplier_type": "Surface Finish BOM *5033",
+       "asana_task_gid": "552233361530963"
+      }
+     ],
+     "contacts": [
+      {
+       "supplier_name": "The Anodising Company Ltd - Small tank low cost",
+       "contact_name": "Andy",
+       "email": " info@theanodisingco.co.uk",
+       "is_primary": 1
+      },
+      {
+       "supplier_name": "Mercury Plating Ltd - Zinc Plating & Anodising supplier",
+       "contact_name": "Mark",
+       "email": "\u00a0info@mercuryelectroplating.com",
+       "is_primary": 1
+      }
+     ]
+    },
+    "Laser Cut": {
+     "suppliers": [
+      {
+       "vendor_name": "PP Group - Water Jet Cutting and Laser Cut services",
+       "contact_email": "darren.wallace@ppgroupltd.co.uk",
+       "supplier_type": null,
+       "asana_task_gid": "1216763728138819"
+      }
+     ],
+     "contacts": [
+      {
+       "supplier_name": "PP Group - Water Jet Cutting and Laser Cut services",
+       "contact_name": "Darren",
+       "email": "darren.wallace@ppgroupltd.co.uk",
+       "is_primary": 1
+      }
+     ]
+    }
+   }
+  },
+  {
+   "ncr": "NCR-5036",
+   "sqr": "SQR-46578",
+   "part": "1595.1006.G.001",
+   "vendor": "Laser Cut",
+   "procurement_by_sqr": [],
+   "parts_control_by_pn": [
+    {
+     "asana_task_gid": "1217486568187917",
+     "sesame_pn": "1595.1006.G.001",
+     "part_name": "1 off 1595. 1006.G.001 - Platform Plate 304/HR Laser Cut",
+     "vendor_name": "Laser Cut",
+     "procurement_task_gid": "1217486388686956",
+     "po_task_gid": null,
+     "order_status": "\u23f0On Order - Awaiting CONFIRMATION",
+     "due_on": "2026-09-24",
+     "is_completed": 0,
+     "association_status": "linked_by_name",
+     "supply_route": "lasercut",
+     "project_code": "1595"
+    }
+   ],
+   "po_lines_by_pn": [],
+   "supplier_lookup": {
+    "Laser Cut": {
+     "suppliers": [
+      {
+       "vendor_name": "PP Group - Water Jet Cutting and Laser Cut services",
+       "contact_email": "darren.wallace@ppgroupltd.co.uk",
+       "supplier_type": null,
+       "asana_task_gid": "1216763728138819"
+      }
+     ],
+     "contacts": [
+      {
+       "supplier_name": "PP Group - Water Jet Cutting and Laser Cut services",
+       "contact_name": "Darren",
+       "email": "darren.wallace@ppgroupltd.co.uk",
+       "is_primary": 1
+      }
+     ]
+    }
+   }
+  },
+  {
+   "ncr": "NCR-5034",
+   "sqr": "SQR-46799",
+   "part": "1591.1020.A1.1",
+   "vendor": "Engraving",
+   "procurement_by_sqr": [],
+   "parts_control_by_pn": [
+    {
+     "asana_task_gid": "1216625039286575",
+     "sesame_pn": "1591.1020.A1.1",
+     "part_name": "1 off 1591. 1020.A1.1 - 6 buttons plate - Engraving Engraving",
+     "vendor_name": "Engraving",
+     "procurement_task_gid": "1216624793077165",
+     "po_task_gid": null,
+     "order_status": null,
+     "due_on": "2026-10-09",
+     "is_completed": 0,
+     "association_status": "linked_by_name",
+     "supply_route": "subcon",
+     "project_code": "1591"
+    }
+   ],
+   "po_lines_by_pn": [],
+   "supplier_lookup": {
+    "Engraving": {
+     "suppliers": [
+      {
+       "vendor_name": "Ashbee Engraving Ltd - Local engravers",
+       "contact_email": "enquiries@ashbee-engraving.com",
+       "supplier_type": "Sesame BOM *5006",
+       "asana_task_gid": "1187975092730885"
+      },
+      {
+       "vendor_name": "Alexander Pollock Ltd - Engravers",
+       "contact_email": "BRussell@alexander-pollock.co.uk",
+       "supplier_type": "Sesame BOM *5006",
+       "asana_task_gid": "995677805512502"
+      },
+      {
+       "vendor_name": "Brunel bought Adams Engraving Ltd - Engravers,",
+       "contact_email": null,
+       "supplier_type": "Sesame BOM *5006",
+       "asana_task_gid": "798319581510504"
+      },
+      {
+       "vendor_name": "Alexander Pollock - Engraving - 9904/1275",
+       "contact_email": null,
+       "supplier_type": "Utilities &  Facilities & Other *7803",
+       "asana_task_gid": "660402000410991"
+      }
+     ],
+     "contacts": [
+      {
+       "supplier_name": "Ashbee Engraving Ltd - Local engravers",
+       "contact_name": "Nikki, ",
+       "email": "enquiries@ashbee-engraving.com",
+       "is_primary": 1
+      }
+     ]
+    }
+   }
+  },
+  {
+   "ncr": "NCR-5033",
+   "sqr": "SQR-46714",
+   "part": "1037.9990.A.004",
+   "vendor": "Powder Coating",
+   "procurement_by_sqr": [],
+   "parts_control_by_pn": [
+    {
+     "asana_task_gid": "1217816924574844",
+     "sesame_pn": "1037.9990.A.004",
+     "part_name": "1 off 1037. 9990.A.004 - Front cover Laser Cut",
+     "vendor_name": "Laser Cut",
+     "procurement_task_gid": "1217816714811868",
+     "po_task_gid": null,
+     "order_status": "\u23f0On Order - Awaiting CONFIRMATION",
+     "due_on": null,
+     "is_completed": 1,
+     "association_status": "linked_by_name",
+     "supply_route": "lasercut",
+     "project_code": "1037"
+    },
+    {
+     "asana_task_gid": "1217816714660528",
+     "sesame_pn": "1037.9990.A.004",
+     "part_name": "1 off Powder Coating 1037. 9990.A.004 - Front cover",
+     "vendor_name": "Powder Coating",
+     "procurement_task_gid": "1217816714512054",
+     "po_task_gid": null,
+     "order_status": "\ud83d\udca2 Quote / Order (check BOM Status)",
+     "due_on": "2026-09-25",
+     "is_completed": 0,
+     "association_status": "linked_by_name",
+     "supply_route": "subcon",
+     "project_code": "1037"
+    }
+   ],
+   "po_lines_by_pn": [],
+   "supplier_lookup": {
+    "Powder Coating": {
+     "suppliers": [
+      {
+       "vendor_name": "Paul Waite Powder coating - New supplier",
+       "contact_email": null,
+       "supplier_type": "Surface Finish BOM *5033",
+       "asana_task_gid": "1197058537672681"
+      },
+      {
+       "vendor_name": "IDL   Ltd - Powder coating",
+       "contact_email": "david.burt@idluk.com",
+       "supplier_type": "Surface Finish BOM *5033",
+       "asana_task_gid": "1192317963229860"
+      },
+      {
+       "vendor_name": "John Desmond - PVD / Powder Coating/ V-notching",
+       "contact_email": null,
+       "supplier_type": "Surface Finish BOM *5033",
+       "asana_task_gid": "1146160126600499"
+      },
+      {
+       "vendor_name": "Medway Joseph Ash Ltd - galvanising - Zinc + powder coating",
+       "contact_email": " info@medgalv.co.uk",
+       "supplier_type": "Surface Finish BOM *5033",
+       "asana_task_gid": "1138993447170273"
+      },
+      {
+       "vendor_name": "WSB Powder coating - Imran -",
+       "contact_email": null,
+       "supplier_type": "Surface Finish BOM *5033",
+       "asana_task_gid": "798883934700976"
+      }
+     ],
+     "contacts": [
+      {
+       "supplier_name": "IDL   Ltd - Powder coating",
+       "contact_name": null,
+       "email": "david.burt@idluk.com",
+       "is_primary": 1
+      },
+      {
+       "supplier_name": "Medway Joseph Ash Ltd - galvanising - Zinc + powder coating",
+       "contact_name": "Martin Coleman",
+       "email": " info@medgalv.co.uk",
+       "is_primary": 1
+      }
+     ]
+    },
+    "Laser Cut": {
+     "suppliers": [
+      {
+       "vendor_name": "PP Group - Water Jet Cutting and Laser Cut services",
+       "contact_email": "darren.wallace@ppgroupltd.co.uk",
+       "supplier_type": null,
+       "asana_task_gid": "1216763728138819"
+      }
+     ],
+     "contacts": [
+      {
+       "supplier_name": "PP Group - Water Jet Cutting and Laser Cut services",
+       "contact_name": "Darren",
+       "email": "darren.wallace@ppgroupltd.co.uk",
+       "is_primary": 1
+      }
+     ]
+    }
+   }
+  },
+  {
+   "ncr": "NCR-5035",
+   "sqr": "SQR-46053",
+   "part": "1594.1010.L.045",
+   "vendor": "Hennig",
+   "procurement_by_sqr": [],
+   "parts_control_by_pn": [
+    {
+     "asana_task_gid": "1216623814251397",
+     "sesame_pn": "1594.1010.L.045",
+     "part_name": "1 off 1594. 1010.L.045.01 - Roller Shutter Blind Aluflex(ASS 100 travel) Hennig",
+     "vendor_name": "Hennig",
+     "procurement_task_gid": "1216623913644209",
+     "po_task_gid": null,
+     "order_status": "ALL PICKED / No Further action ",
+     "due_on": "2026-09-22",
+     "is_completed": 0,
+     "association_status": "linked_by_name",
+     "supply_route": "stock",
+     "project_code": "1594"
+    }
+   ],
+   "po_lines_by_pn": [],
+   "supplier_lookup": {
+    "Hennig": {
+     "suppliers": [
+      {
+       "vendor_name": "Hennig Uk - Aluminium roller shutter",
+       "contact_email": "Sales@Henniguk.com",
+       "supplier_type": "Automation *5008",
+       "asana_task_gid": "1214559858838153"
+      }
+     ],
+     "contacts": [
+      {
+       "supplier_name": "Hennig Uk - Aluminium roller shutter",
+       "contact_name": "Julian ",
+       "email": "Sales@Henniguk.com",
+       "is_primary": 1
+      }
+     ]
+    }
+   }
+  },
+  {
+   "ncr": "NCR-5040",
+   "sqr": null,
+   "part": "1597.7110.B.004",
+   "vendor": "Laser Cut",
+   "parts_control_by_pn": [
+    {
+     "asana_task_gid": "1218239404434848",
+     "sesame_pn": "1597.7110.B.004",
+     "part_name": "2 off Marine Lacquer 1597. 7110.B.004 - TS flat",
+     "vendor_name": "Marine Lacquer",
+     "procurement_task_gid": "1218239225599907",
+     "po_task_gid": null,
+     "order_status": null,
+     "due_on": "2026-09-21",
+     "is_completed": 0,
+     "association_status": "linked_by_name",
+     "supply_route": "inhouse",
+     "project_code": "1597"
+    },
+    {
+     "asana_task_gid": "1218239070558869",
+     "sesame_pn": "1597.7110.B.004",
+     "part_name": "2 off 1597. 7110.B.004 - TS flat Laser Cut",
+     "vendor_name": "Laser Cut",
+     "procurement_task_gid": "1218238915516955",
+     "po_task_gid": null,
+     "order_status": "\u23f0On Order - Awaiting CONFIRMATION",
+     "due_on": null,
+     "is_completed": 0,
+     "association_status": "linked_by_name",
+     "supply_route": "lasercut",
+     "project_code": "1597"
+    }
+   ],
+   "po_lines_by_pn": [],
+   "supplier_lookup": {
+    "Marine Lacquer": {
+     "suppliers": [
+      {
+       "vendor_name": "Everbrite UK - Marine Lacquer supplier",
+       "contact_email": null,
+       "supplier_type": "Surface Finish BOM *5033",
+       "asana_task_gid": "1133837189686551"
+      }
+     ],
+     "contacts": []
+    },
+    "Laser Cut": {
+     "suppliers": [
+      {
+       "vendor_name": "PP Group - Water Jet Cutting and Laser Cut services",
+       "contact_email": "darren.wallace@ppgroupltd.co.uk",
+       "supplier_type": null,
+       "asana_task_gid": "1216763728138819"
+      }
+     ],
+     "contacts": [
+      {
+       "supplier_name": "PP Group - Water Jet Cutting and Laser Cut services",
+       "contact_name": "Darren",
+       "email": "darren.wallace@ppgroupltd.co.uk",
+       "is_primary": 1
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "procurement_sqr_coverage": [
+  {
+   "n": 4164,
+   "with_sqr": 1078,
+   "with_po": 1595
+  }
+ ],
+ "parts_control_link_coverage": [
+  {
+   "n": 2989,
+   "with_proc": 2653,
+   "with_po_task": 0
+  }
+ ],
+ "process_vendors_in_suppliers": [
+  {
+   "vendor_name": "Laser 24 - NEVER HAVE TO WAIT MORE THAN 5 DAYS",
+   "contact_email": "Lewis.Brabender@laser24.co.uk",
+   "supplier_type": "Lasercut BOM *5001"
+  },
+  {
+   "vendor_name": "ADS Laser Ltd - New to trial",
+   "contact_email": "info@adslaser.co.uk",
+   "supplier_type": "Lasercut BOM *5001"
+  },
+  {
+   "vendor_name": "Midtherm Laser - WANTS MORE BUSINESS",
+   "contact_email": "sales@midthermlaser.co.uk, emily.hughes@midthermlaser.co.uk \u00a0\nquality@midthermlaser.co.uk",
+   "supplier_type": null
+  },
+  {
+   "vendor_name": "Steel Express Ltd - Lasercut - metal stock - billets Brights steel - ON TRIAL",
+   "contact_email": "Steph@steelexpress.co.uk",
+   "supplier_type": null
+  },
+  {
+   "vendor_name": "Onesite-Laser Ltd - TRIAL NEW SUPPLIER",
+   "contact_email": "enquiries@onesite-laser.co.uk",
+   "supplier_type": "Lasercut BOM *5001"
+  },
+  {
+   "vendor_name": "HighSpeed Lasers Ltd -",
+   "contact_email": "sales@highspeedlasers.co.uk, emily.harvey@highspeedlasers.co.uk",
+   "supplier_type": "Lasercut BOM *5001"
+  },
+  {
+   "vendor_name": "Laser Profiles Ltd - New Ian Coltman - ISSUES",
+   "contact_email": "icoltman@laserprofiles.co.uk",
+   "supplier_type": "Lasercut BOM *5001"
+  },
+  {
+   "vendor_name": "Exact Lasercut Ltd - Josh, Jamie and Abby",
+   "contact_email": "\u00a0jamie@exactprecision.co.uk, josh@exactprecision.co.uk",
+   "supplier_type": "Lasercut BOM *5001"
+  },
+  {
+   "vendor_name": "HTA Lasercuting Ltd - ISSUES",
+   "contact_email": null,
+   "supplier_type": "Lasercut BOM *5001"
+  },
+  {
+   "vendor_name": "F1 Lasercutting Ltd",
+   "contact_email": "sean.cousins@f1laser.co.uk",
+   "supplier_type": "Lasercut BOM *5001"
+  },
+  {
+   "vendor_name": "Lasershape Ltd - PRIMARY SUPPLIER",
+   "contact_email": "cdavis@lasershape.com",
+   "supplier_type": "Lasercut BOM *5001"
+  },
+  {
+   "vendor_name": "FC Laser Ltd",
+   "contact_email": "charles@fclaser.co.uk\u00a0",
+   "supplier_type": "Lasercut BOM *5001"
+  },
+  {
+   "vendor_name": "SCC Laser Ltd",
+   "contact_email": "neil.davey@ssclaser.co.uk",
+   "supplier_type": "Lasercut BOM *5001"
+  },
+  {
+   "vendor_name": "DMS Laser",
+   "contact_email": null,
+   "supplier_type": "Lasercut BOM *5001"
+  },
+  {
+   "vendor_name": "Lasered components - NEW TO FOLDING",
+   "contact_email": null,
+   "supplier_type": "Lasercut BOM *5001"
+  },
+  {
+   "vendor_name": "Steven Rowsell - Lasercut - NBSS 011 - 9431/300118",
+   "contact_email": null,
+   "supplier_type": "Lasercut BOM *5001"
+  },
+  {
+   "vendor_name": "Countersinking Step Profile (from Laser Shape)",
+   "contact_email": null,
+   "supplier_type": "Lasercut BOM *5001"
+  },
+  {
+   "vendor_name": "Innovation Lasercut Ltd",
+   "contact_email": "daniel@innovation-laser.com, aleksandra@innovation-laser.com",
+   "supplier_type": "Lasercut BOM *5001"
+  },
+  {
+   "vendor_name": "Klockner Metals - Lasercut and steel profile materials",
+   "contact_email": "keith.wilde@kloeckner.com",
+   "supplier_type": "Lasercut BOM *5001"
+  },
+  {
+   "vendor_name": "Other potential Lasercutting companies",
+   "contact_email": null,
+   "supplier_type": "Lasercut BOM *5001"
+  }
+ ],
+ "recent_qc_write_log_actions": [
+  {
+   "action": "insert",
+   "n": 9137,
+   "last": "2026-09-23 12:18:30"
+  },
+  {
+   "action": "update",
+   "n": 490122,
+   "last": "2026-09-18 00:03:32"
+  }
+ ]
+}

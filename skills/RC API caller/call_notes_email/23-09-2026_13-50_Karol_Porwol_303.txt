@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  23/09/2026  13:50
+============================================================
+With:         Karol Porwol 303
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a brief call where Giles Hugo informed Karol Porwol about a design issue encountered on site during a pit inspection, involving Daniel Irons.
+
+--- RECAP --------------------------------------------------
+Giles Hugo reported to Karol Porwol that there is a design problem on site during a pit inspection, involving Daniel Irons.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

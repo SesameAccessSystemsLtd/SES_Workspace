@@ -120,25 +120,64 @@ Extracted live from the correct project:
 
 ## 2.4 Mapping chain health — BROKEN
 
+### ⚠️ SCOPE RULE (Giles directive, 2026-09-23) — read before sizing anything
+
+**A task is only in scope if it is OPEN *and* carries a QC STATUS.**
+
+| Condition | Meaning | Action |
+|---|---|---|
+| OPEN + has QC STATUS | a real QC issue | **mirror** ✅ |
+| OPEN, **no** QC STATUS | **standing process/reference note** documenting how QC is run with certain suppliers | **omit** |
+| completed | 8 years of history | omit by default |
+
+**Why:** the project carries non-issue notes that are NOT problems — e.g. "QC Serapid
+system", "QC Lasercut deliveries - Process and supplier notes", "QC Machining
+deliveries", "QC Maytec Materials". These exist to record supplier QC *procedure*.
+Giles: *"just ignore any task that doesn't have a QC status."*
+
+**Measured effect:** open tasks = 10; **in scope after the QC STATUS filter = 5**.
+
+> This filter is implemented in `sync_qc_issues.py::main()` and documented in the module
+> docstring as the single place to change scope. Do NOT re-widen it without a directive.
+
 The chain required for chasing is:
 
 ```
 part → which ORDER → which SUPPLIER → which BUILD PACK → EDD
 ```
 
+**Measured on the 5 in-scope issues:**
+
 | Link | Populated | Verdict |
 |---|---|---|
-| Part number | 3% | ⚠️ broken |
-| → Build pack | 2% | ⚠️ broken |
-| → Build pack (`Linked to Buildpack`) | **0%** | ❌ dead |
-| → Order (`PO TASK`) | **0%** | ❌ dead |
-| → Supplier (`Vendor`) | 35% | ⚠️ partial |
-| → Chaser email (`Email`) | **1%** | ❌ dead |
-| → EDD (`Needed by`) | **0%** | ❌ dead |
+| NCR id | **5/5** | ✅ |
+| Part number (`Sesame Part No`) | 5/5 | ✅ |
+| Build pack (`Build Packs reference`) | 5/5 | ✅ |
+| Supplier (`Vendor`) | 5/5 | ✅ |
+| SQR | 5/5 | ✅ |
+| → Chaser email (`Email`) | **2/5** | ⚠️ |
+| → Order (`PO TASK`) | **0/5** | ❌ |
+| → EDD (`Needed by`) | **0/5** | ❌ |
 
-**Only 27 of 1,905 tasks have BOTH `Vendor` and `Email`; only 2 of those are open.**
+**⇒ The part/pack/vendor spine is healthy. The three real gaps are
+`supplier_email`, `po_task_gid`, and `needed_by` (EDD).**
 
-**⇒ Automated daily chasing is NOT buildable on current data. The mapping must be fixed first.**
+**Historical context (all 1,905 tasks, for reference — legacy rows are sparsely populated):**
+
+| Link | Populated | Verdict |
+|---|---|---|
+| Part number | 3% | ⚠️ |
+| → Build pack | 2% | ⚠️ |
+| → Build pack (`Linked to Buildpack`) | 0% | ❌ |
+| → Order (`PO TASK`) | 0% | ❌ |
+| → Supplier (`Vendor`) | 35% | ⚠️ |
+| → Chaser email (`Email`) | 1% | ❌ |
+| → EDD (`Needed by`) | 0% | ❌ |
+
+**Note:** `supplier_email` being 2/5 is NOT a dead end — `suppliers` (203 emails) and
+`supplier_contacts` (204 emails) already hold vendor→email mappings. Resolve by **vendor
+lookup**, never by asking a human to type. "Laser Cut" and "Powder Coating" are
+process-type vendors, so this may need a vendor-alias step.
 
 ## 2.5 Field and section sprawl
 

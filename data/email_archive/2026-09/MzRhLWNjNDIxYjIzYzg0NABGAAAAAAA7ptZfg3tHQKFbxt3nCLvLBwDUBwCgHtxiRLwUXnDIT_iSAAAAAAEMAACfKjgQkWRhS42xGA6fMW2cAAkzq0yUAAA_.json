@@ -48,24 +48,23 @@
   ],
   "fetched_at": "2026-09-23T09:01:11Z",
   "insights": {
-    "document_type": "invoice",
-    "summary": "Heskins has sent a pro forma invoice (0000049044) for 5 rolls of 50mm x 18.3m H3453N black corrosion protection tape plus a £11.50 delivery charge, total net £90.60 ex VAT (£108.72 inc VAT). Expected dispatch is 30/09/2026. Payment is required before dispatch — under £500 can be paid by card link, but this order is under £500 so card payment is possible; they ask to be told if the products are no longer required.",
-    "action_required": true,
-    "action_items": [
-      "Pay the pro forma invoice 0000049044 (£108.72 gross) via the card payment link or BACs before dispatch on 30/09/2026",
-      "Notify Heskins if the products are no longer required so they can remove the order from their system"
-    ],
-    "requested_by": "Chantelle",
-    "company_name": "Heskins Ltd",
+    "document_type": "update",
+    "summary": "Anna at JAJO Automation is replying about the new traversing PLC BOM for job 1578. She confirms JAJO has only built two units so far: a prototype (JAS252153, traversing platform, 1.5kW pump, white cabinet with logo 8.4, PO 7003) and JAS262431 (traversing platform single, 1.5kW pump, white cabinet with logo 8.4, PO 7100). She has already added 'single' to the name on revA2, sheet 1.",
+    "action_required": false,
+    "action_items": [],
+    "requested_by": "Anna Henslok",
+    "company_name": "JAJO Automation Services",
     "po_number": null,
     "sqr_number": null,
-    "job_numbers": [],
+    "job_numbers": [
+      "1578"
+    ],
     "supplier_quote_ref": null,
     "supplier_order_ref": null,
-    "supplier_invoice_ref": "0000049044",
-    "total_price": 90.6,
-    "carriage": 11.5,
-    "delivery_date": "2026-09-30",
+    "supplier_invoice_ref": null,
+    "total_price": null,
+    "carriage": null,
+    "delivery_date": null,
     "lead_time": null,
     "has_issues": false,
     "issue_summary": null,
@@ -73,20 +72,20 @@
     "noise_reason": null,
     "line_items": [
       {
-        "part_ref": "H3453N",
-        "description": "50MMX18.3M H3453N BLACK CORROSION PROTECTION TAPE",
-        "qty": 5,
-        "unit_price": 15.82,
-        "notes": null
+        "part_ref": "JAS252153",
+        "description": "Traversing Platform, pump 1.5kW, Type white cabinet logo8.4 (prototype)",
+        "qty": 1,
+        "unit_price": null,
+        "notes": "PO no 7003"
       },
       {
-        "part_ref": null,
-        "description": "Supplier Delivery",
+        "part_ref": "JAS262431",
+        "description": "Traversing Platform - single, pump 1.5kW, Type white cabinet logo8.4",
         "qty": 1,
-        "unit_price": 11.5,
-        "notes": "carriage"
+        "unit_price": null,
+        "notes": "PO no 7100"
       }
     ]
   },
-  "parsed_at": "2026-09-23T09:01:15Z"
+  "parsed_at": "2026-09-23T13:01:26Z"
 }

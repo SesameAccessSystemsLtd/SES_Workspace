@@ -21,12 +21,14 @@
   "attachment_paths": [],
   "fetched_at": "2026-09-23T08:01:13Z",
   "insights": {
-    "document_type": "dispatch_note",
-    "summary": "DPD Local is notifying that a BEST4SYSTEMS parcel will be delivered today, 23rd September, between 13:26 and 14:26 on an all-electric vehicle. The driver is DOLSHY and the parcel reference is 1597 6968 508 717. No action is needed beyond being available to receive the delivery.",
-    "action_required": false,
-    "action_items": [],
-    "requested_by": null,
-    "company_name": "DPD Local",
+    "document_type": "other",
+    "summary": "This is a post-rental vehicle inspection report from BLVH Ltd (trading as Badshot Lea Self Drive & Roman Self Drive) for a Ford Transit 350 Leader hired by Sesame Access Systems Ltd, rental no 5128542. The vehicle FE76 ESO was returned and inspected on 23 Sep 2026 at Byfleet, Surrey, with fuel at 1/4 and odometer reading 729. No charges, damage or queries are mentioned; it simply asks the customer to sign to confirm the recorded condition.",
+    "action_required": true,
+    "action_items": [
+      "Sign and return the inspection report to confirm agreement with the recorded vehicle condition (no deadline stated)"
+    ],
+    "requested_by": "Liam Holley",
+    "company_name": "BLVH LTD, Trading as Badshot Lea Self Drive & Roman Self Drive",
     "po_number": null,
     "sqr_number": null,
     "job_numbers": [],
@@ -35,13 +37,13 @@
     "supplier_invoice_ref": null,
     "total_price": null,
     "carriage": null,
-    "delivery_date": "2026-09-23",
+    "delivery_date": null,
     "lead_time": null,
     "has_issues": false,
     "issue_summary": null,
-    "is_noise": true,
-    "noise_reason": "Automated courier delivery notification with no purchasing content.",
+    "is_noise": false,
+    "noise_reason": null,
     "line_items": []
   },
-  "parsed_at": "2026-09-23T08:01:22Z"
+  "parsed_at": "2026-09-23T13:01:24Z"
 }

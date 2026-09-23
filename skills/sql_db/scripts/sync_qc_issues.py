@@ -12,16 +12,23 @@ Writer:  db_writer.upsert_qc_issues()
     the correct QC project below, and the stub task_to_row() replaced with a real
     field mapping.
 
-SCOPE — COMPLETED vs OPEN
-    The project holds ~1,900 tasks, of which ~1,890 are completed history spanning
-    8 years. Only OPEN tasks are mirrored. Rationale: the chase/automation workflows
-    only consume live QC issues; mirroring completed history bloats the table and is
-    not consumed by anything. Completed rows are excluded CLIENT-SIDE on the
-    per-task `completed` flag because Asana IGNORES the `completed=false` query
-    param on /projects/{gid}/tasks (verified 2026-09-17).
+SCOPE — WHAT IS MIRRORED
+    A row is mirrored only if it is an OPEN task that carries a QC STATUS.
+      * OPEN ONLY    — the project holds ~1,900 tasks, ~1,890 completed over 8 years.
+                       Chase/automation workflows consume live issues only. Completed
+                       rows are excluded CLIENT-SIDE on the per-task `completed` flag
+                       because Asana IGNORES `completed=false` on
+                       /projects/{gid}/tasks (verified 2026-09-17).
+      * QC STATUS    — the project also holds standing process/reference notes that
+                       document HOW QC is run with certain suppliers (e.g. "QC Serapid
+                       system", "QC Lasercut deliveries - Process and supplier notes",
+                       "QC Machining deliveries", "QC Maytec Materials"). These are NOT
+                       issues and never carry a QC STATUS. Anything without a QC STATUS
+                       is omitted. (Giles directive, 2026-09-23.)
 
-    ⚠️ If reporting later needs completed QC history, this filter is the single
-    place to change — do NOT bulk-import 8 years of history by default.
+    ⚠️ Both filters are the single place to change scope — do NOT bulk-import
+    completed or note-type tasks by default. `--include-completed` is the explicit
+    opt-in for completed history.
 
 Records are permanent — a task that disappears from Asana is NOT deleted.
 Its last_synced_at stops updating, which flags staleness. (Deletion is a separate,
@@ -187,7 +194,19 @@ def main() -> None:
         log.info("Open tasks: %d  (skipped completed: %d)",
                  len(selected), len(tasks) - len(selected))
 
-    rows = [task_to_row(t, sync_ts) for t in selected if t.get("name")]
+    # QC STATUS filter (Giles, 2026-09-23): the project also carries standing
+    # process/reference notes ("QC Serapid system", "QC Lasercut deliveries -
+    # Process and supplier notes", "QC Machining deliveries", "QC Maytec
+    # Materials"). Those exist to document HOW QC is run with certain suppliers
+    # and are NOT issues — they never carry a QC STATUS. Omit anything without one.
+    #   has QC STATUS    -> a real issue, mirror it
+    #   no  QC STATUS    -> a process/reference note, omit
+    with_status = [t for t in selected if get_custom_field(t, F_QC_STATUS)]
+    omitted = len(selected) - len(with_status)
+    if omitted:
+        log.info("Omitted %d task(s) with no QC STATUS (process/reference notes)", omitted)
+
+    rows = [task_to_row(t, sync_ts) for t in with_status if t.get("name")]
 
     if args.dry_run:
         import json

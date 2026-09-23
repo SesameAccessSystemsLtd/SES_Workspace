@@ -1,0 +1,91 @@
+Loading staging Excel: C:\Users\GilesHugo\SES_Workspace\skills\bom_pipeline\1.BOM IMPORT into Asana\pipeline_runs\1573_-_Kings_Road_2_Entire_System_20260923_1400\stage4_staging_review.xlsx
+  402 rows loaded from sheet 'BOM Review'
+  38 KAN stock URL(s) extracted
+
+Rows to import: 402 of 402 total
+    [CREATED] 'ALL BOMS - 1573 - Kings Road 2.Entire System' -> GID 1218780446082608
+    [CREATED] 'Engraving BOM - 1573 - Kings Road 2.Entire System' -> GID 1218780565789367
+    [CREATED] 'Engraving - 1573 - Kings Road 2.Entire System' -> GID 1218780529181795
+    [CREATED] '1 off 1573. 1016.1.1 - 6 Buttons Face Plate - Engraving Engr' -> https://app.asana.com/0/848657415032331/1218780718704099
+    [DB] bom_requirements: 1573.1016.1.1 (needs_order)
+    [CREATED] '1 off 1573. 1016.H1 - SWLPlate.OneWheelchairUser- Engraved E' -> https://app.asana.com/0/848657415032331/1218780413514849
+    [DB] bom_requirements: 1573.1016.H1 (needs_order)
+    [CREATED] 'Surface Finish BOM - 1573 - Kings Road 2.Entire System' -> GID 1218780447023166
+    [CREATED] 'Galvanising - 1573 - Kings Road 2.Entire System' -> GID 1218780411047146
+    [CREATED] '1 off Galvanising 1573. 768 - NBSS.768 Machine Room Cabinet ' -> https://app.asana.com/0/848657415032331/1218780413614515
+    [DB] bom_requirements: 1573.768 (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1001.A.024 - Box' -> https://app.asana.com/0/848657415032331/1218780718961088
+    [DB] bom_requirements: 1573.1001.A.024 (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1001.A.032 - Box' -> https://app.asana.com/0/848657415032331/1218780611679597
+    [DB] bom_requirements: 1573.1001.A.032 (needs_order)
+    [CREATED] '2 off Galvanising 1573. 1001.A11w - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218780611222487
+    [DB] bom_requirements: 1573.1001.A11w (needs_order)
+    [CREATED] '4 off Galvanising 1573. 1001.A13w - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218780530789952
+    [DB] bom_requirements: 1573.1001.A13w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1001.A14w - Support' -> https://app.asana.com/0/848657415032331/1218780566622274
+    [DB] bom_requirements: 1573.1001.A14w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.A1w - Welded Frame' -> https://app.asana.com/0/848657415032331/1218780566475017
+    [DB] bom_requirements: 1573.1004.A1w (needs_order)
+    [CREATED] '2 off Galvanising 1573. 1004.B.022 - Angle' -> https://app.asana.com/0/848657415032331/1218780530890928
+    [DB] bom_requirements: 1573.1004.B.022 (needs_order)
+    [CREATED] '2 off Galvanising 1573. 1004.B.038 - Flat' -> https://app.asana.com/0/848657415032331/1218780413804047
+    [DB] bom_requirements: 1573.1004.B.038 (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B.110 - Pin Locking Handle' -> https://app.asana.com/0/848657415032331/1218780530485845
+    [DB] bom_requirements: 1573.1004.B.110 (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B1_MIR - LeftSideFrame_MIR' -> https://app.asana.com/0/848657415032331/1218780719667349
+    [DB] bom_requirements: 1573.1004.B1_MIR (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B1w - LeftSideFrame' -> https://app.asana.com/0/848657415032331/1218780719889195
+    [DB] bom_requirements: 1573.1004.B1w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B2w - MiddleBottom' -> https://app.asana.com/0/848657415032331/1218780530521740
+    [DB] bom_requirements: 1573.1004.B2w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B3w - WheelTrack' -> https://app.asana.com/0/848657415032331/1218780564525816
+    [DB] bom_requirements: 1573.1004.B3w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B4w - TracksSupport' -> https://app.asana.com/0/848657415032331/1218780566221970
+    [DB] bom_requirements: 1573.1004.B4w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B5w - TopStepSupport' -> https://app.asana.com/0/848657415032331/1218780720008304
+    [DB] bom_requirements: 1573.1004.B5w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B6w - TracksSupport.Rear' -> https://app.asana.com/0/848657415032331/1218780567207842
+    [DB] bom_requirements: 1573.1004.B6w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B7w - TracksSupport.Middle' -> https://app.asana.com/0/848657415032331/1218780567202959
+    [DB] bom_requirements: 1573.1004.B7w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B8w - TracksSupport.MiddleBotto' -> https://app.asana.com/0/848657415032331/1218780720444428
+    [DB] bom_requirements: 1573.1004.B8w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B13w - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218780612912880
+    [DB] bom_requirements: 1573.1004.B13w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B21w - Gusset' -> https://app.asana.com/0/848657415032331/1218780531408399
+    [DB] bom_requirements: 1573.1004.B21w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B21w_MIR - Gusset' -> https://app.asana.com/0/848657415032331/1218780612800993
+    [DB] bom_requirements: 1573.1004.B21w_MIR (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B25w - Track' -> https://app.asana.com/0/848657415032331/1218780566486542
+    [DB] bom_requirements: 1573.1004.B25w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B25w_MIR - Track' -> https://app.asana.com/0/848657415032331/1218780719683252
+    [DB] bom_requirements: 1573.1004.B25w_MIR (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B29w - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218780567313640
+    [DB] bom_requirements: 1573.1004.B29w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B30w - TracksSupport.Middle' -> https://app.asana.com/0/848657415032331/1218798816023547
+    [DB] bom_requirements: 1573.1004.B30w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B31w - MiddleBottom' -> https://app.asana.com/0/848657415032331/1218780531198078
+    [DB] bom_requirements: 1573.1004.B31w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B35w - WheelTrack' -> https://app.asana.com/0/848657415032331/1218780531911266
+    [DB] bom_requirements: 1573.1004.B35w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.B36w - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218780566781722
+    [DB] bom_requirements: 1573.1004.B36w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.F1w - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218780753524076
+    [DB] bom_requirements: 1573.1004.F1w (needs_order)
+    [CREATED] '2 off Galvanising 1573. 1004.F2w - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218780754143492
+    [DB] bom_requirements: 1573.1004.F2w (needs_order)
+    [CREATED] '2 off Galvanising 1573. 1004.F3w - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218780720834985
+    [DB] bom_requirements: 1573.1004.F3w (needs_order)
+    [CREATED] '2 off Galvanising 1573. 1004.F4w - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218780613808176
+    [DB] bom_requirements: 1573.1004.F4w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.F5w - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218780532468543
+    [DB] bom_requirements: 1573.1004.F5w (needs_order)
+    [CREATED] '2 off Galvanising 1573. 1004.F6w - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218780613744976
+    [DB] bom_requirements: 1573.1004.F6w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1004.F10w - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218780613238525
+    [DB] bom_requirements: 1573.1004.F10w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1011.B1w - Welded assembly' -> https://app.asana.com/0/848657415032331/1218780754556162
+    [DB] bom_requirements: 1573.1011.B1w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1011.B9w - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218780721603192
+    [DB] bom_requirements: 1573.1011.B9w (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1011.B9w_MIR - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218780721573422

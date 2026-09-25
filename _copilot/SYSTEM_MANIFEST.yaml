@@ -236,6 +236,24 @@ integrations:
     writer: sap_agent_only
     reader: any_agent_via_ops_db
     protocol: requests_queue_for_writes
+    ai_teammates:
+      status: available
+      logged: "2026-09-24"
+      cost_note: "Expensive per-use — reserve for high-value moments, not bulk work"
+      capabilities:
+        - "Evaluate supplier prices on a task and compile a summary into the task description"
+        - "Draft a reply/quote email from the purchasing account, ready to send"
+        - "Re-draft / refresh that draft each time a new quote arrives on the same task"
+      integration_pattern: |
+        Emails arrive via the purchasing gateway (skills/purchasing, Mailbox
+        purchasing@sesameaccess.com) and are pushed into the Asana 'control system'.
+        Once a task lands in Asana, this is the BEST moment to assess + surface
+        information directly inside that task (rather than only in the workspace).
+      triage_pattern: |
+        Inbound Asana scripts (rules) triage / chase / trigger. A trigger is then
+        handled either INTERNALLY by an AI teammate, or EXTERNALLY by the workspace
+        (REQUESTS queue -> SAP agent). Use AI-teammate context to decide which path.
+      detail_doc: "SES_Workspace/docs/asana-ai-teammates-2026-09-24.md"
 
   microsoft_graph:
     mailbox: purchasing@sesameaccess.com

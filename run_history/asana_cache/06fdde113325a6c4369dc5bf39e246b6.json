@@ -1,1 +1,1 @@
-{"path": "/tasks/1152474092624182", "params": {"opt_fields": "parent.gid,parent.name,completed"}, "epoch": "202609231206", "body": {"data": {"gid": "1152474092624182", "completed": false, "parent": {"gid": "1152474146114711", "name": "Stock Control Machining BOM - Double Scissor Rev8"}}}}
+{"path": "/tasks/1152474092624182", "params": {"opt_fields": "parent.gid,parent.name,completed"}, "epoch": "202609251506", "body": {"data": {"gid": "1152474092624182", "completed": false, "parent": {"gid": "1152474146114711", "name": "Stock Control Machining BOM - Double Scissor Rev8"}}}}

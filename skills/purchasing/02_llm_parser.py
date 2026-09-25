@@ -31,7 +31,7 @@ sys.path.insert(0, str(Path(__file__).parents[2] / "lib"))
 sys.path.insert(0, str(Path(__file__).parent))
 
 from llm import complete  # noqa: E402
-from gateway_common import (ARCHIVE_DIR, DATA, archive_parse, extract_refs, html_to_text,  # noqa: E402
+from gateway_common import (ARCHIVE_DIR, DATA, RuleStore, archive_parse, extract_refs, html_to_text,  # noqa: E402
                             load_json, parse_ringcentral, save_json, strip_quoted_history)
 
 INPUT_FILE = DATA / "raw_purchasing_emails.json"
@@ -82,6 +82,8 @@ Decide whether it is about purchasing/suppliers and extract references. Return e
  "company_name": "the external company on the call if identifiable else null",
  "contact_name": "the person spoken to if named else null",
  "summary": "2 sentences for Giles: what was agreed / where it stands",
+ "key_inference": "ONE line: what this call means for an open order, quote or delivery (e.g. 'MayTec 1597 frames slipping to 2 Oct'), or 'nothing actionable'",
+ "worth_tracking": true/false (false for short calls with no decision, date, price, reference or follow-up),
  "action_items": ["each follow-up Sesame must do, with dates if said"],
  "action_required": true/false,
  "po_number": "Sesame PO mentioned else null", "sqr_number": "SQR-nnnnn else null",
@@ -144,7 +146,7 @@ def _clean(result: dict, email: dict) -> dict:
     dd = out.get("delivery_date")
     if dd and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(dd)):
         out["delivery_date"] = None
-    for k in ("summary", "issue_summary", "noise_reason", "requested_by", "company_name",
+    for k in ("summary", "issue_summary", "noise_reason", "requested_by", "company_name", "key_inference",
               "supplier_quote_ref", "supplier_order_ref", "supplier_invoice_ref", "lead_time", "contact_name"):
         if out.get(k) in ("", "null", "None"):
             out[k] = None
@@ -184,7 +186,9 @@ def parse_one(email: dict) -> dict | None:
     if domain == "ringcentral.com":
         rc = parse_ringcentral(subject, email["body_text"])
         if rc:
-            prompt = (f"Call date: {rc.get('call_date')} {rc.get('call_time')}\nContact label from phonebook: {rc.get('contact_label') or '(none)'}\n"
+            ctx = RuleStore().call_context(rc.get("phones"), rc.get("contact_label") or "")
+            steer = f"GILES HAS SAID ABOUT THIS CALLER: {ctx['note']}\n\n" if ctx else ""
+            prompt = steer + (f"Call date: {rc.get('call_date')} {rc.get('call_time')}\nContact label from phonebook: {rc.get('contact_label') or '(none)'}\n"
                       f"Phone: {', '.join(rc.get('phones') or []) or rc.get('extension') or '?'}\n\n"
                       f"SUMMARY:\n{rc.get('summary')}\n\nRECAP:\n{rc.get('recap')}\n\nTASKS:\n" + ("\n".join(rc.get('tasks') or []) or "None"))
             raw = complete(prompt=prompt, system=CALL_SYSTEM, max_tokens=1200, temperature=0.1)
@@ -193,6 +197,8 @@ def parse_one(email: dict) -> dict | None:
             r["is_noise"] = not r.get("is_supplier_call", False) if r else False
             r["noise_reason"] = None if r.get("is_supplier_call") else "call not about a supplier / order"
             r.setdefault("summary", rc.get("summary"))
+            if ctx:
+                r["giles_context"] = ctx
             r["call"] = rc
             return _clean(r, email)
 

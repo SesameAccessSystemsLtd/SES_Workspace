@@ -279,7 +279,7 @@ Clear picture now. Answering all questions:
   - C:\Users\GilesHugo\.openclaw\agents\asana_agent\agent\auth-profiles.json:7
   - C:\Users\GilesHugo\.openclaw\agents\personal_planner\agent\auth-profiles.json:7
 
-  Value: AIzaSyDe4hbYiIsjaQu9_fTkoECeviCj5x6IH2I
+  Value: [REDACTED - API key removed 2026-09-25]
 
   We already pushed this to Doppler dev. Copy it into prd manually. However — this key cannot be hidden from those JSON
   files. OpenClaw reads auth-profiles.json directly at startup. Doppler holds it as a reference record only.

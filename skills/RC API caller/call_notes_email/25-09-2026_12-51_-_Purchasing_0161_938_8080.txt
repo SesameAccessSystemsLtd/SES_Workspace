@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  25/09/2026  12:51
+============================================================
+With:         - Purchasing 0161 938 8080
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo and Darren from Purchasing discussing the progress and delivery timeline of a set of drawings, with Darren confirming he will send the completed drawings by the end of the day for delivery within 10 days.
+
+--- RECAP --------------------------------------------------
+Darren from Purchasing is working on a set of drawings, having completed stainless steel parts and now working on carbon steel parts, aiming to send them by the end of the day.Giles Hugo inquired about the delivery timeframe, and Darren confirmed a feasible delivery within 10 days due to the need for drilling, tapping, and folding processes.They discussed the working hours, noting the office closes around 3:30 to 4:00 PM, and Darren plans to dedicate the afternoon to completing the drawings.Giles Hugo clarified that the initial drawing numbers (up to 1 003) are all stainless steel, but the list can change, especially lower down, as the project details evolve.Darren assured Giles that he will send the drawings before the end of the day, so they are available for Monday morning, even if not exactly on time.
+
+--- TASKS --------------------------------------------------
+Darren from Purchasing will complete and send the drawings to Giles Hugo by the end of the day.Giles Hugo will review the received drawings once they arrive, likely on Monday morning.
+
+(Full transcript: RC web portal only — no RingSense API)

@@ -37,6 +37,18 @@
       "status": "open",
       "by": "hermes:purchasing",
       "note": "Scope rule added per Giles directive: mirror only OPEN tasks WITH QC STATUS (5 real issues). 5 process/reference notes omitted + purged (backup qc_issues_pre_notepurge_20260923_124738). Table now 5 rows, 0 statusless. Idempotent. Stage 1 gaps: supplier_email 2/5, po_task_gid 0/5, needed_by 0/5."
+    },
+    {
+      "at": "2026-09-23T13:23:34.676405+00:00",
+      "status": "open",
+      "by": "hermes:purchasing",
+      "note": "Peer review r1: accepted 3 corrections (rows[:3] was MY bug, table=5 rows not 6, part->order route is name-guess not hard link). Backfilled both purges to db_write_log as backfill_delete. Brief corrected; 2.7+Stage1 marked ROUTE UNVERIFIED. Blocker: resolved issues still look open (sync excludes rather than sets completed=1)."
+    },
+    {
+      "at": "2026-09-25T14:22:44.519823+00:00",
+      "status": "open",
+      "by": "hermes:purchasing",
+      "note": "Assigned parent to Giles (was unassigned - why he couldn't see it). Created DECISION subtask 1218869924357805: process->supplier mapping source, assigned Giles, Priority High, Effort S. Session change log posted (D1-D15). Blocker: closure sweep (completed=1)."
     }
   ]
 }

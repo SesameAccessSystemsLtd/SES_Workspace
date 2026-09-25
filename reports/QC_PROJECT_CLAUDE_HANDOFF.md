@@ -59,7 +59,9 @@ All confirmed by direct API/DB inspection on 2026-09-21.
 | **Correct name** | *"1.0 - QC issues / Parts Needed / Causing delays"* |
 | **Workspace** | `357939803556123` (sesameaccess.com) |
 | **Created** | **2018-07-10** — 8+ years of history |
-| **Task count** | **1,905** (1,896 complete, **9 open**) |
+| **Task count** | **1,905** (1,896 complete, **9 open**) at time of writing 2026-09-21 |
+| **Live counts 2026-09-23** | **1,907 tasks** total; **1,896 complete, 11 open**; **6 in scope** after the QC STATUS filter |
+| **Table state now** | `qc_issues` holds **5 rows** (NCR-5033…5037) — NCR-5040 was seen in a dry run only, not yet written |
 | **URL** | https://app.asana.com/1/357939803556123/project/737971594126804 |
 
 **A live bug exists:** `skills/sql_db/scripts/sync_qc_issues.py` has
@@ -174,10 +176,15 @@ part → which ORDER → which SUPPLIER → which BUILD PACK → EDD
 | → Chaser email (`Email`) | 1% | ❌ |
 | → EDD (`Needed by`) | 0% | ❌ |
 
-**Note:** `supplier_email` being 2/5 is NOT a dead end — `suppliers` (203 emails) and
-`supplier_contacts` (204 emails) already hold vendor→email mappings. Resolve by **vendor
-lookup**, never by asking a human to type. "Laser Cut" and "Powder Coating" are
-process-type vendors, so this may need a vendor-alias step.
+**Note:** `supplier_email` being 2/5 is NOT resolvable by a name search. `suppliers` (203
+emails) and `supplier_contacts` (204 emails) hold vendor→email mappings, but the QC `Vendor`
+value is frequently a **process type, not a company** — "Laser Cut", "Powder Coating",
+"Engraving", "Anodising". A `LIKE '%Laser Cut%'` search returns **PP Group (a water-jet firm)**,
+which is a wrong match that looks clean; "Powder Coating" fuzz-matches 5 candidates; there are
+~18 laser-cutting suppliers in the table. **A process→supplier mapping must be decided once by
+a human** (per project or per order) and stored. Where the QC task already carries an email
+(e.g. NCR-5034 → `BRussell@alexander-pollock.co.uk`), that value is authoritative — prefer the
+task's own email over any lookup.
 
 ## 2.5 Field and section sprawl
 
@@ -208,6 +215,9 @@ Real part examples (showing the chain works when populated):
 
 ## 2.7 Existing infrastructure in `ops.db` — LARGELY BUILT, BARELY USED
 
+> ⚠️ **`po_lines` IS EMPTY (0 rows).** The "part → order" join column exists but carries no
+> data. `purchase_orders` holds only 7 rows. See §2.9 for what this means for Stage 1.
+
 This is the most important finding for planning. **Do not rebuild what exists.**
 
 | Table | Rows | Relevant columns | Status |
@@ -227,7 +237,6 @@ This is the most important finding for planning. **Do not rebuild what exists.**
 email-coverage problem** — no need to ask humans to type addresses.
 
 ## 2.8 The chase mechanism ALREADY EXISTS
-
 `skills/purchasing/overdue_order_chase.py` (confirmed read):
 
 - **`--scan`** (default, read-only): finds orders `Awaiting CONFIRMATION` past due date.
@@ -244,10 +253,118 @@ email-coverage problem** — no need to ask humans to type addresses.
 
 ---
 
+## 2.9 ⚠️ ROUTE UNVERIFIED — the part → order link is a name-guess, not a hard link
+
+**Read this before sizing Stage 1.** An earlier version of this brief claimed the part→order
+route "closes all three Stage 1 gaps". That was **overstated**. Verified corrections:
+
+### (a) `po_task_gid` is empty on EVERY part row
+```
+parts_control: 2,989 rows | po_task_gid populated = 0
+```
+The dedicated PO-link column carries **no data at all**.
+
+### (b) The links that DO exist are name matches, not hard links
+`parts_control.association_status` distribution:
+
+| Status | Rows | Meaning |
+|---|---|---|
+| **`linked_by_name`** | **1,471** | matched **by name** — a guess |
+| `unassociated` | 1,244 | no link |
+| `NULL` | 230 | — |
+| **`linked`** | **44 (1.5%)** | genuine hard link |
+
+**⇒ Only 44 of 2,989 rows (1.5%) carry a real link.** Any PO/due-date resolution via
+`procurement_task_gid` is therefore **provisional** until the links are hardened.
+
+### (c) The SQR route is DEAD
+- QC SQRs: `46053, 46578, 46714, 46799, 46962`
+- `procurement_tasks.sqr_number`: 1,078 values, range 1908–47334
+- **Overlap: 0 of 5.** Same format, inside range — but they are simply different SQRs.
+
+### (d) It does NOT give the real supplier company
+For process-type vendors the route returns the **process again**, not the company:
+- NCR-5034 resolves to **"Engraving"**, not *Alexander Pollock* (which the QC task itself names).
+
+### (e) Process-vendor name search is actively misleading
+There are roughly **18 laser-cutting suppliers**; "Laser Cut" is a *process type*, not a
+company. A `LIKE '%Laser Cut%'` search returns only **PP Group — a water-jet firm**, i.e. a
+**wrong match that looks clean**. Similarly "Powder Coating" fuzz-matches 5 candidates.
+
+### (f) One part can link to MULTIPLE orders — the lookup must pick by process
+| NCR | Links to |
+|---|---|
+| NCR-5033 | a **completed** laser-cut order **and** an **open** powder-coating order (due 2026-09-25) |
+| NCR-5040 | a laser-cut order **and** a Marine Lacquer order |
+
+Any automated lookup must select the order **whose process matches the QC issue**, not simply
+the first/best match.
+
+### (g) Useful find — shared order task
+**NCR-5037 and NCR-5040 share laser-cut order task `1218238915516955`** (96 parts, all
+`linked_by_name`). **One chase could cover both** — a real efficiency, and a hint that
+chases should group by *order task*, not by *issue*.
+
+### What this means for Stage 1 (revised)
+| Goal | Status |
+|---|---|
+| PO + due date | ⚠️ **Only reliable once each open part links to its order by an actual task link**, not a name match |
+| Supplier email | ❌ **Needs a process→supplier mapping decided once by a human** (per project or per order). **Cannot be a name search.** |
+| Two dates | ✅ Confirmed: `Needed by` = our internal date; procurement `due_date` = supplier's promise |
+
+**Stage 1.3 (`populate po_lines`) is therefore a prerequisite, not a nice-to-have** — and the
+`linked_by_name` problem must be resolved before any chase relies on the link.
+
+---
+
 # 3. THE REAL PROBLEM
 
-## 3.1 Two processes are being conflated
+## 3.1 The TWO dates — do not conflate them
 
+An earlier draft treated these as one field. **They are different things and both are needed.**
+
+| Date | Field | Owner | Meaning |
+|---|---|---|---|
+| **`Needed by`** | QC custom field `1205496988611293` | **Us (SAS)** | our internal required-by date |
+| **supplier due date** | `due_date` on `procurement_tasks` (`due_on` on `parts_control`) | **The supplier** | the supplier's promised date |
+
+**Chase logic (recommended):**
+- **Chase against the SUPPLIER's date** — that is the promise being chased.
+- **Escalate against `Needed by`** — that is our deadline, and the point at which production
+  impact becomes real.
+
+`Needed by` is currently **0/5 populated** on the open issues, so the escalation half of this
+has no data yet — another Stage 1 input to fill.
+
+---
+
+## 3.2 ⚠️ BLOCKER — resolved issues will still look open
+
+**This is the main risk to close before any chase is built.**
+
+The current sync filters at **sync time**: completed tasks are *excluded* from the write set.
+It does **not** write `completed = 1` for rows already mirrored. Consequences:
+
+1. A row whose task completes in Asana **stays in `qc_issues` with `completed = 0`** — it looks
+   open forever.
+2. Because it is no longer returned by the sync, its `last_synced_at` **stops updating** — so
+   the only signal that it closed is *staleness*, which is indirect and easy to miss.
+3. A chase built on "rows where `completed = 0`" would therefore **chase closed issues**.
+
+**Fix direction (Stage 1 / before Stage 2):** the sync must **write `completed = 1`** for
+mirrored rows whose Asana task has completed, rather than dropping them from the write set.
+Options:
+- (a) Mirror a small open-set + update pass: write `completed` for any existing row whose task
+  now reports complete.
+- (b) Retain the open-only fetch but add a separate "closure sweep" that marks stale rows.
+
+Note the tension with the current scope rule (§2.4): the scope filter decides what *enters* the
+table; the closure sweep decides what *leaves the active set*. Both are needed and they are
+different mechanisms.
+
+---
+
+## 3.3 Two processes are being conflated
 Giles's description contains **two distinct processes**. Conflating them is why the problem
 feels intractable:
 
@@ -266,7 +383,7 @@ feels intractable:
 - **Giles's own verdict: "Where the automation can come in is chasing on those parts."**
 - **AGREE — AUTOMATE THIS.** This is where the value is.
 
-## 3.2 The genuinely hard problem (name it honestly)
+## 3.4 The genuinely hard problem (name it honestly)
 
 Giles's insight, quoted:
 
@@ -279,7 +396,8 @@ Giles's insight, quoted:
 
 - The email pipeline today matches **email → PO/order task** (`email_po_matches`).
 - QC chases are **NOT replies** to the original order thread — they are **separate chaser
-  emails** carrying the same PO + SQR.
+  emails** carrying the same PO **and a QC-unique NCR** (see §3.5 — the NCR, not the SQR,
+  is the discriminator).
 - Therefore the parser must **classify message intent**, not match a PO:
   - `order` intent → update the PO/order task
   - `qc` intent → update the **QC task**
@@ -290,7 +408,7 @@ marker** (SQR + QC tag) in the chaser subject/body. Inbound replies then classif
 match — **no ML guesswork required.** This converts a hard ML problem into a deterministic
 one. Strongly recommended.
 
-## 3.3 The NCR field — EXISTING, AUTO-GENERATED, and the CORRECT ANCHOR
+## 3.5 The NCR field — EXISTING, AUTO-GENERATED, and the CORRECT ANCHOR
 
 **⚠️ This section REVISES an earlier recommendation. Read carefully.**
 
@@ -341,7 +459,7 @@ Not a blocker for joining; note and move on.
 context). Inbound replies matching an `NCR-\d+` token route to the QC task; everything else
 follows existing order handling.
 
-## 3.4 The single-select vs multi-select conflict — GENUINE, UNSOLVED
+## 3.6 The single-select vs multi-select conflict — GENUINE, UNSOLVED
 
 Giles, verbatim:
 
@@ -440,8 +558,11 @@ Done — written: 10  skipped: 0  errors: 0
 | `needed_by` (EDD) | **0/5** ❌ |
 | `associated_sqr_number` | 5/5 ✅ |
 
-**This is the precise Stage 1 agenda.** Part+pack+vendor already resolve; **email resolution,
-PO linkage, and EDD are the three real gaps.**
+**This is the precise Stage 1 agenda.** ⚠️ **ROUTE UNVERIFIED — see §2.9.** Part+pack+vendor
+populate on the QC task itself, but the **part→order link is a name-guess** (`linked_by_name`
+on 1,471 of 2,989 rows; only 44 are hard-linked) and `po_task_gid` is empty on every row. So
+email resolution, PO linkage, and EDD are the three gaps — **and they cannot be closed by a
+name lookup.**
 
 ### Stage 1 actions
 | # | Action | Notes |
@@ -460,7 +581,9 @@ PO linkage, and EDD are the three real gaps.**
 | # | Action | Notes |
 |---|---|---|
 | 2.1 | Build `qc_chase.py` modelled on `overdue_order_chase.py` | **Draft-only, asserted** |
-| 2.2 | Anchor on **PO + SQR**; embed a **QC marker** in the chaser for reply classification | Deterministic classification |
+| 2.2 | Anchor on **NCR** (primary, QC-unique) **+ PO** (secondary, order context); embed the NCR in the chaser for deterministic reply classification | NCR-classify; PO joins the order thread |
+| 2.2a | **Group chases by ORDER TASK, not by issue** | NCR-5037 + NCR-5040 share order task `1218238915516955` — one chase can cover both (§2.9g) |
+| 2.2b | **Chase against the supplier `due_date`; escalate against `Needed by`** | Two distinct dates (§2.9 / §3.1) |
 | 2.3 | Log to `overdue_chase_log` (or a QC-specific ledger) | Audit |
 | 2.4 | Cadence: **business days only**; escalate after N days (Giles to set N) | — |
 | 2.5 | Write **EDD + status to the build pack** → production view | The "percolate" requirement |
@@ -535,7 +658,7 @@ A written plan + working Stage 0/1 code, with each stage **independently verifia
 4. **Creating an in-house NCR number** (recommended against — see §3.3).
    ⚠️ **SUPERSEDED:** an NCR field already exists, auto-generated and sequential
    (`QC Issue ID - NCR` = `1218774119815824`, NCR-1 → NCR-5037, 99.9% coverage). It is
-   now the **recommended PRIMARY anchor**. See the revised §3.3.
+   now the **recommended PRIMARY anchor**. See the revised §3.5.
 5. **Sending email automatically.** Drafts only, always.
 6. **Direct Asana writes bypassing the REQUESTS queue.**
 7. **Assigning or suggesting PO numbers.**
@@ -571,7 +694,7 @@ A written plan + working Stage 0/1 code, with each stage **independently verifia
 3. **NCR:** ~~drop in favour of PO anchor, or required for supplier defect counts?~~
    **RESOLVED — no decision needed.** The NCR field already exists, is auto-generated and
    sequential (NCR-1 → NCR-5037, 99.9% coverage), and is now the **recommended primary
-   anchor**, with PO number as the secondary key. See §3.3.
+   anchor**, with PO number as the secondary key. See §3.5.
 4. **Chase cadence:** daily stated — business days only? Escalate after N days (what N)?
    Draft-only *(recommended)* or auto-send *(not recommended)*?
 5. **Dual-field REASON:** acceptable, or change dashboards instead?
@@ -614,13 +737,22 @@ the 2026-09-21 purge. This backup contains **PO-log data**, not QC data.
 
 # 10. IMMEDIATE NEXT STEP
 
-The only thing that should happen *before* Giles decides anything else:
+**Stage 0 is COMPLETE** (see §5). The only outstanding pre-decision action was Stage 0.1 —
+repointing `sync_qc_issues.py` to `737971594126804` — which has been **done and verified**.
 
-**Stage 0.1 — repoint `sync_qc_issues.py` to `737971594126804`.**
+**Stage 0 also completed:**
+- Stub `task_to_row()` replaced with a real 20-field mapping
+- `qc_issues` schema rebuilt (32 cols, 8 indexes)
+- Open-only mirror + **QC STATUS scope filter** (omits process/reference notes)
+- Two raw-SQL purges backfilled into `db_write_log` as honest `backfill_delete` entries
 
-Everything else is design and requires Giles's decisions in §8.
+**⇒ There is no immediate blocking action.** Everything remaining is design and requires
+Giles's decisions in §8. **Stage 1 is the next build**, with the caveat in §2.9 that the
+part→order route is **unverified** until the links are hardened.
 
 ---
 
-*Prepared from direct inspection of live systems on 2026-09-21. Every figure in §2 is
-reproducible. No changes have been made to Asana, the database, or any automation.*
+*Prepared from direct inspection of live systems. Original draft 2026-09-21; revised
+2026-09-23 after Stage 0 completion and peer review. Every figure in §2 is reproducible.
+Counts in §2.1/§2.3 were taken on 2026-09-21 and will drift as new issues arrive — re-read
+the live table before relying on them.*

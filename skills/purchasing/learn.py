@@ -46,6 +46,7 @@ MULTI_ORDER_DOMAINS = {"amazon.co.uk", "amazon.com", "ebay.com", "ebay.co.uk", "
 NOISE_WORDS = re.compile(r"\b(noise|no action|ignore|stop (coming|sending)|unsubscribe|tracking|marketing|newsletter|spam|junk|not (a |an )?(supplier|order)|nothing to do)\b", re.I)
 BLOCK_WORDS = re.compile(r"\b(closed(?: out)?|wrong task|already (arrived|closed|delivered|received)|cancelled|cencelled|this task has been closed|not the correct task)\b", re.I)
 ASANA_URL = re.compile(r"https?://app\.asana\.com/\S+")
+CALL_DROP_WORDS = re.compile(r"\b(irrelevant|not relevant|ignore|drop|no action|nothing to do|personal|internal|IT\b|broadband|utilit|spam|sales call|cold call|wrong number|not purchasing|not a supplier)", re.I)
 
 
 def _gid_from_url(u: str) -> str | None:
@@ -133,6 +134,16 @@ def learn_from_record(rec: dict, rules: RuleStore, suppliers: SupplierDirectory)
         if rules.put("blocked_tasks", proposed_gid, {"reason": text[:140], "learned_from": src}):
             learned.append(f"task {proposed_gid} blocked ({text[:40]})")
 
+    # 3b. steering on a phone call (Giles 2026-09-24): whatever he writes about a call becomes the
+    #     context for that number — 'drop' if it says the call is irrelevant, otherwise 'keep' with
+    #     his note, which 02 feeds to the call parser next time the number rings.
+    if is_call and text:
+        rc = parse_ringcentral(rec.get("subject", ""), "")
+        action = "drop" if CALL_DROP_WORDS.search(text) else "keep"
+        if rules.put_call_context(rc.get("phones"), rc.get("contact_label") or "",
+                                  {"action": action, "note": text[:200], "learned_from": src}):
+            learned.append(f"call context for {', '.join(rc.get('phones') or []) or rc.get('contact_label') or 'caller'}: {action}")
+
     # 4. everything else Giles wrote is kept
     if text and not learned:
         if rules.add_note(f"[{domain or 'call'}] {rec.get('decision', '')}: {text[:200]}", src):
@@ -209,7 +220,7 @@ def backfill(rows: list[dict]) -> None:
 # ------------------------------------------------------------------ publish
 def rules_as_rows(rules: RuleStore) -> list[dict]:
     rows = []
-    for bucket, target_key in (("sender_task", "task_gid"), ("phone_task", "task_gid"), ("domain_task", "task_gid"),
+    for bucket, target_key in (("sender_task", "task_gid"), ("phone_task", "task_gid"), ("domain_task", "task_gid"), ("call_context", "action"),
                                ("domain_supplier", "supplier_gid"), ("phone_supplier", "supplier_gid"),
                                ("label_supplier", "supplier_gid"), ("blocked_tasks", None), ("noise_domains", None)):
         for k, v in sorted(rules.data.get(bucket, {}).items()):

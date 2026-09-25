@@ -89,3 +89,809 @@ Rows to import: 402 of 402 total
     [CREATED] '1 off Galvanising 1573. 1011.B9w - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218780721603192
     [DB] bom_requirements: 1573.1011.B9w (needs_order)
     [CREATED] '1 off Galvanising 1573. 1011.B9w_MIR - Welded Assembly' -> https://app.asana.com/0/848657415032331/1218780721573422
+    [DB] bom_requirements: 1573.1011.B9w_MIR (needs_order)
+    [CREATED] 'Yellow Zinc Plating - 1573 - Kings Road 2.Entire System' -> GID 1218798866753507
+    [CREATED] '3 off Yellow Zinc Plating 1573. 1011.B19w - Welded assembly' -> https://app.asana.com/0/848657415032331/1218780614186629
+    [DB] bom_requirements: 1573.1011.B19w (needs_order)
+    [CREATED] '4 off Yellow Zinc Plating 1573. 1022.024 - Compress spring 7' -> https://app.asana.com/0/848657415032331/1218780721985044
+    [DB] bom_requirements: 1573.1022.024 (needs_order)
+    [CREATED] '4 off Galvanising 1573. 1040.A.062 - Flat' -> https://app.asana.com/0/848657415032331/1218780532383629
+    [DB] bom_requirements: 1573.1040.A.062 (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1040.A.065 - Flat' -> https://app.asana.com/0/848657415032331/1218781094799294
+    [DB] bom_requirements: 1573.1040.A.065 (needs_order)
+    [CREATED] '1 off Galvanising 1573. 1040.A14w - Welded Angle' -> https://app.asana.com/0/848657415032331/1218780722246710
+    [DB] bom_requirements: 1573.1040.A14w (needs_order)
+    [CREATED] 'Laser Cut BOM - 1573 - Kings Road 2.Entire System' -> GID 1218781094869611
+    [CREATED] 'Laser Cut - 1573 - Kings Road 2.Entire System' -> GID 1218780531501817
+    [CREATED] '1 off 1573. 1001.A.001 - BarrierDogLegTrim 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218780754935262
+    [DB] bom_requirements: 1573.1001.A.001 (needs_order)
+    [CREATED] '1 off 1573. 1001.A.002 - BarrierDogLeg.EarFront 304/HR Laser' -> https://app.asana.com/0/848657415032331/1218780567682696
+    [DB] bom_requirements: 1573.1001.A.002 (needs_order)
+    [CREATED] '1 off 1573. 1001.A.003 - BarrierDogLeg.EarSite 304/HR Laser ' -> https://app.asana.com/0/848657415032331/1218781053796870
+    [DB] bom_requirements: 1573.1001.A.003 (needs_order)
+    [CREATED] '1 off 1573. 1001.A.003_MIR - BarrierDogLeg.EarSite 304/HR La' -> https://app.asana.com/0/848657415032331/1218780754663474
+    [DB] bom_requirements: 1573.1001.A.003_MIR (needs_order)
+    [CREATED] '1 off 1573. 1001.A.004 - UpperBarrierChannelWidthEndCap 304/' -> https://app.asana.com/0/848657415032331/1218781053973996
+    [DB] bom_requirements: 1573.1001.A.004 (needs_order)
+    [CREATED] '1 off 1573. 1001.A.004_MIR - UpperBarrierChannelWidthEndCap ' -> https://app.asana.com/0/848657415032331/1218781053808306
+    [DB] bom_requirements: 1573.1001.A.004_MIR (needs_order)
+    [CREATED] '1 off 1573. 1001.A.005 - UpperBarrierChannelDogLeg 304/HR La' -> https://app.asana.com/0/848657415032331/1218781053413699
+    [DB] bom_requirements: 1573.1001.A.005 (needs_order)
+    [CREATED] '1 off 1573. 1001.A.005_MIR - UpperBarrierChannelDogLeg 304/H' -> https://app.asana.com/0/848657415032331/1218780614483536
+    [DB] bom_requirements: 1573.1001.A.005_MIR (needs_order)
+    [CREATED] '1 off 1573. 1001.A.006 - (ServiceHatches_1) 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218780447072838
+    [DB] bom_requirements: 1573.1001.A.006 (needs_order)
+    [CREATED] '1 off 1573. 1001.A.008 - (ServiceTrimS) 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218780755283742
+    [DB] bom_requirements: 1573.1001.A.008 (needs_order)
+    [CREATED] '1 off 1573. 1001.A.008_MIR - (ServiceTrimS) 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218780755658284
+    [DB] bom_requirements: 1573.1001.A.008_MIR (needs_order)
+    [CREATED] '1 off 1573. 1001.A.009 - (ServiceTrimL) 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218780755835909
+    [DB] bom_requirements: 1573.1001.A.009 (needs_order)
+    [CREATED] '2 off 1573. 1001.A.011 - (ServiceHatches_2) 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781095973083
+    [DB] bom_requirements: 1573.1001.A.011 (needs_order)
+    [CREATED] '1 off 1573. 1001.A.012 - (ServiceTrim_Spine) 304/2B Laser Cu' -> https://app.asana.com/0/848657415032331/1218781258374786
+    [DB] bom_requirements: 1573.1001.A.012 (needs_order)
+    [CREATED] '1 off 1573. 1001.A.013 - (ServiceTrim_Spine.L) 304/2B Laser ' -> https://app.asana.com/0/848657415032331/1218781054688603
+    [DB] bom_requirements: 1573.1001.A.013 (needs_order)
+    [CREATED] '1 off 1573. 1001.A.013_MIR - (ServiceTrim_Spine.L) 304/2B La' -> https://app.asana.com/0/848657415032331/1218781054652919
+    [DB] bom_requirements: 1573.1001.A.013_MIR (needs_order)
+    [CREATED] '6 off 1573. 1001.A.014 - Channel 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218780756249149
+    [DB] bom_requirements: 1573.1001.A.014 (needs_order)
+    [CREATED] '2 off 1573. 1001.A.016 - Channel 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218780568326140
+    [DB] bom_requirements: 1573.1001.A.016 (needs_order)
+    [CREATED] '4 off 1573. 1001.A.018 - BarrierTray_DogLeg_BracketPlate 304' -> https://app.asana.com/0/848657415032331/1218781054233498
+    [DB] bom_requirements: 1573.1001.A.018 (needs_order)
+    [CREATED] '1 off 1573. 1001.A.019 - BarrierTray_DogLeg_Channel 304/2B L' -> https://app.asana.com/0/848657415032331/1218781054988316
+    [DB] bom_requirements: 1573.1001.A.019 (needs_order)
+    [CREATED] '1 off 1573. 1001.A.021 - Top step support 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218780755707253
+    [DB] bom_requirements: 1573.1001.A.021 (needs_order)
+    [CREATED] '1 off 1573. 1001.A.022 - Support Channel 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781055223530
+    [DB] bom_requirements: 1573.1001.A.022 (needs_order)
+    [CREATED] '1 off 1573. 1002.G.013 - Pit Trim Side Panel 304/DP1 Laser C' -> https://app.asana.com/0/848657415032331/1218781139191196
+    [DB] bom_requirements: 1573.1002.G.013 (needs_order)
+    [CREATED] '1 off 1573. 1002.G.014 - Pit Trim Side Panel 304/2B Laser Cu' -> https://app.asana.com/0/848657415032331/1218781095567917
+    [DB] bom_requirements: 1573.1002.G.014 (needs_order)
+    [CREATED] '1 off 1573. 1002.G.014_MIR - Pit Trim Side Panel 304/2B Lase' -> https://app.asana.com/0/848657415032331/1218781096768323
+    [DB] bom_requirements: 1573.1002.G.014_MIR (needs_order)
+    [CREATED] '1 off 1573. 1002.G.015 - Pit Trim Front Panel 304/2B Laser C' -> https://app.asana.com/0/848657415032331/1218781139413192
+    [DB] bom_requirements: 1573.1002.G.015 (needs_order)
+    [CREATED] '1 off 1573. 1002.G.017 - Pit Trim Side Panel 304/DP1 Laser C' -> https://app.asana.com/0/848657415032331/1218781138806979
+    [DB] bom_requirements: 1573.1002.G.017 (needs_order)
+    [CREATED] '12 off 1573. 1002.G.018 - Corner bracket 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781258479827
+    [DB] bom_requirements: 1573.1002.G.018 (needs_order)
+    [CREATED] '2 off 1573. 1002.G.027 - Track 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781237064033
+    [DB] bom_requirements: 1573.1002.G.027 (needs_order)
+    [CREATED] '1 off 1573. 1002.G.028 - Fixing plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218780756301483
+    [DB] bom_requirements: 1573.1002.G.028 (needs_order)
+    [CREATED] '3 off 1573. 1003.A.004 - Mid step riser plate 304/HR Laser C' -> https://app.asana.com/0/848657415032331/1218781055643889
+    [DB] bom_requirements: 1573.1003.A.004 (needs_order)
+    [CREATED] '1 off 1573. 1003.A.005 - Bott step riser plate 304/HR Laser ' -> https://app.asana.com/0/848657415032331/1218781139989386
+    [DB] bom_requirements: 1573.1003.A.005 (needs_order)
+    [CREATED] '1 off 1573. 1003.A.007 - Side Stairs Channel 304/HR Laser Cu' -> https://app.asana.com/0/848657415032331/1218781097385954
+    [DB] bom_requirements: 1573.1003.A.007 (needs_order)
+    [CREATED] '1 off 1573. 1003.A.007_MIR - Side Stairs Channel 304/HR Lase' -> https://app.asana.com/0/848657415032331/1218781259499846
+    [DB] bom_requirements: 1573.1003.A.007_MIR (needs_order)
+    [CREATED] '1 off 1573. 1003.A.009 - Main Bottom Channel 304/HR Laser Cu' -> https://app.asana.com/0/848657415032331/1218781139853086
+    [DB] bom_requirements: 1573.1003.A.009 (needs_order)
+    [CREATED] '2 off 1573. 1003.A.010 - Bottom step spine 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781097534945
+    [DB] bom_requirements: 1573.1003.A.010 (needs_order)
+    [CREATED] '6 off 1573. 1003.A.011 - Middle step spine 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781056188155
+    [DB] bom_requirements: 1573.1003.A.011 (needs_order)
+    [CREATED] '1 off 1573. 1003.A.014 - Cylinder bracket 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781140388762
+    [WARN] bom_requirements write failed for '1573.1003.A.014': database is locked
+    [CREATED] '1 off 1573. 1003.A.014_MIR - Cylinder bracket 304/HR Laser C' -> https://app.asana.com/0/848657415032331/1218781139021760
+    [DB] bom_requirements: 1573.1003.A.014_MIR (needs_order)
+    [CREATED] '16 off 1573. 1003.A.017 - Thread spine 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781055589484
+    [DB] bom_requirements: 1573.1003.A.017 (needs_order)
+    [CREATED] '4 off 1573. 1003.A.018 - Thread plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781097720905
+    [DB] bom_requirements: 1573.1003.A.018 (needs_order)
+    [CREATED] '4 off 1573. 1003.A.019 - Folded angle 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781238469632
+    [DB] bom_requirements: 1573.1003.A.019 (needs_order)
+    [CREATED] '2 off 1573. 1003.A.020 - Folded angle 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781056012963
+    [DB] bom_requirements: 1573.1003.A.020 (needs_order)
+    [CREATED] '2 off 1573. 1003.A.021 - Gusset 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781056303435
+    [DB] bom_requirements: 1573.1003.A.021 (needs_order)
+    [CREATED] '8 off 1573. 1003.A.024 - Wheel Bracket 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781097936149
+    [DB] bom_requirements: 1573.1003.A.024 (needs_order)
+    [CREATED] '8 off 1573. 1003.A.025 - Wheel Bracket 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781238382599
+    [DB] bom_requirements: 1573.1003.A.025 (needs_order)
+    [CREATED] '3 off 1573. 1003.A.031 - Rear plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781056644700
+    [DB] bom_requirements: 1573.1003.A.031 (needs_order)
+    [CREATED] '1 off 1573. 1003.A.049 - Stabilisation bracket 304/HR Laser ' -> https://app.asana.com/0/848657415032331/1218781141006794
+    [DB] bom_requirements: 1573.1003.A.049 (needs_order)
+    [CREATED] '1 off 1573. 1003.A.049_MIR - Stabilisation bracket 304/HR La' -> https://app.asana.com/0/848657415032331/1218781140958663
+    [DB] bom_requirements: 1573.1003.A.049_MIR (needs_order)
+    [CREATED] '8 off 1573. 1003.A.050 - Folded angle 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781141553876
+    [DB] bom_requirements: 1573.1003.A.050 (needs_order)
+    [CREATED] '4 off 1573. 1003.A.051 - Wheel plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781260433420
+    [DB] bom_requirements: 1573.1003.A.051 (needs_order)
+    [CREATED] '16 off 1573. 1003.A.056 - Packer 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781239198294
+    [DB] bom_requirements: 1573.1003.A.056 (needs_order)
+    [CREATED] '2 off 1573. 1003.A.060 - Slottet bracket 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781141027176
+    [DB] bom_requirements: 1573.1003.A.060 (needs_order)
+    [CREATED] '2 off 1573. 1003.A.063 - Rear plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781368465290
+    [DB] bom_requirements: 1573.1003.A.063 (needs_order)
+    [CREATED] '1 off 1573. 1003.A.064 - Side Channel Track 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781239430779
+    [DB] bom_requirements: 1573.1003.A.064 (needs_order)
+    [CREATED] '1 off 1573. 1003.A.064_MIR - Side Channel Track 304/HR Laser' -> https://app.asana.com/0/848657415032331/1218781239482852
+    [DB] bom_requirements: 1573.1003.A.064_MIR (needs_order)
+    [CREATED] '3 off 1573. 1003.A.066 - Side Channel 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781391254681
+    [DB] bom_requirements: 1573.1003.A.066 (needs_order)
+    [CREATED] '3 off 1573. 1003.A.066_MIR - Side Channel 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781439509673
+    [DB] bom_requirements: 1573.1003.A.066_MIR (needs_order)
+    [CREATED] '1 off 1573. 1003.A.082 - Easy chain bracket 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781239712303
+    [DB] bom_requirements: 1573.1003.A.082 (needs_order)
+    [CREATED] '1 off 1573. 1003.A.083 - Packer 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781239887402
+    [DB] bom_requirements: 1573.1003.A.083 (needs_order)
+    [CREATED] '1 off 1573. 1003.A.099 - Top ram cover 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781439898912
+    [DB] bom_requirements: 1573.1003.A.099 (needs_order)
+    [CREATED] '1 off 1573. 1003.A.100 - Bottom ram cover 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781439682281
+    [DB] bom_requirements: 1573.1003.A.100 (needs_order)
+    [CREATED] '1 off 1573. 1003.A.108 - Proxy Sensor Bracket 304/2B Laser C' -> https://app.asana.com/0/848657415032331/1218781141915996
+    [DB] bom_requirements: 1573.1003.A.108 (needs_order)
+    [CREATED] '1 off 1573. 1003.A.113 - Rear plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781239397922
+    [DB] bom_requirements: 1573.1003.A.113 (needs_order)
+    [CREATED] '1 off 1573. 1003.A.114 - Mid step riser plate 304/HR Laser C' -> https://app.asana.com/0/848657415032331/1218781439674810
+    [DB] bom_requirements: 1573.1003.A.114 (needs_order)
+    [CREATED] '1 off 1573. 1003.A.115 - Bulkhead plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781584927821
+    [DB] bom_requirements: 1573.1003.A.115 (needs_order)
+    [CREATED] '8 off 1573. 1003.A.123 - Packer replacing washers in B.012 3' -> https://app.asana.com/0/848657415032331/1218781239158112
+    [DB] bom_requirements: 1573.1003.A.123 (needs_order)
+    [CREATED] '2 off 1573. 1003.A.125 - Gusset 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781261759440
+    [DB] bom_requirements: 1573.1003.A.125 (needs_order)
+    [CREATED] '1 off 1573. 1003.A.127 - Cap 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781584965951
+    [DB] bom_requirements: 1573.1003.A.127 (needs_order)
+    [CREATED] '8 off 1573. 1003.A.128 - Packer 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781369410009
+    [DB] bom_requirements: 1573.1003.A.128 (needs_order)
+    [CREATED] '4 off 1573. 1004.A.024 - Loading and Leveling Plate Laser Cu' -> https://app.asana.com/0/848657415032331/1218781392097884
+    [DB] bom_requirements: 1573.1004.A.024 (needs_order)
+    [CREATED] '2 off 1573. 1004.B.055 - Teethed plate Laser Cut' -> https://app.asana.com/0/848657415032331/1218781585444626
+    [DB] bom_requirements: 1573.1004.B.055 (needs_order)
+    [CREATED] '2 off 1573. 1004.B.056 - Teethed plate Laser Cut' -> https://app.asana.com/0/848657415032331/1218781440170336
+    [DB] bom_requirements: 1573.1004.B.056 (needs_order)
+    [CREATED] '2 off 1573. 1004.B.057 - TriangularGusset Laser Cut' -> https://app.asana.com/0/848657415032331/1218799282619832
+    [DB] bom_requirements: 1573.1004.B.057 (needs_order)
+    [CREATED] '1 off 1573. 1004.B.059 - Guide Track Plate Laser Cut' -> https://app.asana.com/0/848657415032331/1218781391797021
+    [DB] bom_requirements: 1573.1004.B.059 (needs_order)
+    [CREATED] '1 off 1573. 1004.B.059_MIR - Guide Track Plate Laser Cut' -> https://app.asana.com/0/848657415032331/1218781391960606
+    [DB] bom_requirements: 1573.1004.B.059_MIR (needs_order)
+    [CREATED] '4 off 1573. 1004.B.060 - Gusset Laser Cut' -> https://app.asana.com/0/848657415032331/1218781370343661
+    [DB] bom_requirements: 1573.1004.B.060 (needs_order)
+    [CREATED] '2 off 1573. 1004.B.061 - Guide Track Base Laser Cut' -> https://app.asana.com/0/848657415032331/1218781441068313
+    [DB] bom_requirements: 1573.1004.B.061 (needs_order)
+    [CREATED] '2 off 1573. 1004.B.066 - Folded Channel Laser Cut' -> https://app.asana.com/0/848657415032331/1218781369795072
+    [DB] bom_requirements: 1573.1004.B.066 (needs_order)
+    [CREATED] '1 off 1573. 1004.B.079 - Hydraulic Hoses Base Plate 304/HR L' -> https://app.asana.com/0/848657415032331/1218781240313799
+    [DB] bom_requirements: 1573.1004.B.079 (needs_order)
+    [CREATED] '1 off 1573. 1004.B.085 - Hoseses Bracket 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781441309449
+    [DB] bom_requirements: 1573.1004.B.085 (needs_order)
+    [CREATED] '1 off 1573. 1004.B.086 - Packer 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781585803662
+    [DB] bom_requirements: 1573.1004.B.086 (needs_order)
+    [CREATED] '1 off 1573. 1004.B.087 - Angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781585490961
+    [DB] bom_requirements: 1573.1004.B.087 (needs_order)
+    [CREATED] '6 off 1573. 1004.B.091 - Packers 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781441479522
+    [DB] bom_requirements: 1573.1004.B.091 (needs_order)
+    [CREATED] '1 off 1573. 1004.B.101 - Murr Bases Plate 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781541151795
+    [DB] bom_requirements: 1573.1004.B.101 (needs_order)
+    [CREATED] '1 off 1573. 1004.B.106 - plate for H7 valve 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781586300640
+    [DB] bom_requirements: 1573.1004.B.106 (needs_order)
+    [CREATED] '2 off 1573. 1004.B.107 - Packers 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781393142334
+    [DB] bom_requirements: 1573.1004.B.107 (needs_order)
+    [CREATED] '1 off 1573. 1004.B.110 - Pin Locking Handle Laser Cut' -> https://app.asana.com/0/848657415032331/1218781541398969
+    [DB] bom_requirements: 1573.1004.B.110 (needs_order)
+    [CREATED] '4 off 1573. 1004.B.114 - Pit trim mounting bracket Laser Cut' -> https://app.asana.com/0/848657415032331/1218781393080539
+    [DB] bom_requirements: 1573.1004.B.114 (needs_order)
+    [CREATED] '2 off 1573. 1004.B.115 - Packers 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781541097807
+    [DB] bom_requirements: 1573.1004.B.115 (needs_order)
+    [CREATED] '4 off 1573. 1004.F.004 - (Plate.Top) Laser Cut' -> https://app.asana.com/0/848657415032331/1218781370938812
+    [DB] bom_requirements: 1573.1004.F.004 (needs_order)
+    [CREATED] '4 off 1573. 1004.F.005 - (Plate.Bot) Laser Cut' -> https://app.asana.com/0/848657415032331/1218781586722709
+    [DB] bom_requirements: 1573.1004.F.005 (needs_order)
+    [CREATED] '4 off 1573. 1004.F.008 - (Box.Spine.Side.Plate) Laser Cut' -> https://app.asana.com/0/848657415032331/1218781393552239
+    [DB] bom_requirements: 1573.1004.F.008 (needs_order)
+    [CREATED] '4 off 1573. 1004.F.009 - (I-Beam.BasePlate) Laser Cut' -> https://app.asana.com/0/848657415032331/1218781393289486
+    [DB] bom_requirements: 1573.1004.F.009 (needs_order)
+    [CREATED] '4 off 1573. 1004.F.014 - (Box.Spine.Plate) Laser Cut' -> https://app.asana.com/0/848657415032331/1218781393961127
+    [DB] bom_requirements: 1573.1004.F.014 (needs_order)
+    [CREATED] '8 off 1573. 1004.F.019 - Bracket Laser Cut' -> https://app.asana.com/0/848657415032331/1218781586798836
+    [DB] bom_requirements: 1573.1004.F.019 (needs_order)
+    [CREATED] '4 off 1573. 1004.F.022 - Flat Bar Laser Cut' -> https://app.asana.com/0/848657415032331/1218781371469400
+    [DB] bom_requirements: 1573.1004.F.022 (needs_order)
+    [CREATED] '1 off 1573. 1004.F.029 - Flat Plate 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781586464461
+    [DB] bom_requirements: 1573.1004.F.029 (needs_order)
+    [CREATED] '4 off 1573. 1004.F.032 - Gusset Laser Cut' -> https://app.asana.com/0/848657415032331/1218781371468201
+    [DB] bom_requirements: 1573.1004.F.032 (needs_order)
+    [CREATED] '1 off 1573. 1004.F.038 - Hose Plate 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781542072997
+    [DB] bom_requirements: 1573.1004.F.038 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.006 - (HarkenAngle) 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781371379371
+    [DB] bom_requirements: 1573.1005.A.006 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.007 - (HarkenCarPlate) 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781541814666
+    [DB] bom_requirements: 1573.1005.A.007 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.017 - (MagLockAngle.L) 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781394445979
+    [DB] bom_requirements: 1573.1005.A.017 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.023 - (ReachAroundB) 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781587144899
+    [DB] bom_requirements: 1573.1005.A.023 (needs_order)
+    [CREATED] '2 off 1573. 1005.A.024 - (ClampWasher) 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781371670746
+    [DB] bom_requirements: 1573.1005.A.024 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.025 - (ReachAround.Hepco) 304/HR Laser Cu' -> https://app.asana.com/0/848657415032331/1218781442333345
+    [DB] bom_requirements: 1573.1005.A.025 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.027 - (SlottedTopPlate) 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781371278125
+    [DB] bom_requirements: 1573.1005.A.027 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.030 - (MotorBracket) 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781394388695
+    [DB] bom_requirements: 1573.1005.A.030 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.031 - Mag Lock plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781443047932
+    [DB] bom_requirements: 1573.1005.A.031 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.034 - BarrierClampPacker 10 mm 304/HR Las' -> https://app.asana.com/0/848657415032331/1218781587064172
+    [DB] bom_requirements: 1573.1005.A.034 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.035 - (MagLockTopPacker) 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781542164570
+    [DB] bom_requirements: 1573.1005.A.035 (needs_order)
+    [CREATED] '2 off 1573. 1005.A.036 - (MagLockTopPacker) 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781880166220
+    [DB] bom_requirements: 1573.1005.A.036 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.042 - Connection Gusset 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781854247858
+    [DB] bom_requirements: 1573.1005.A.042 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.043 - Support Plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781880231702
+    [DB] bom_requirements: 1573.1005.A.043 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.057 - Flange Washer 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781854374339
+    [DB] bom_requirements: 1573.1005.A.057 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.060 - Sprocket Pin Support 304/HR Laser C' -> https://app.asana.com/0/848657415032331/1218781854274606
+    [DB] bom_requirements: 1573.1005.A.060 (needs_order)
+    [CREATED] '5 off 1573. 1005.A.062 - Packer 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781442973884
+    [DB] bom_requirements: 1573.1005.A.062 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.063 - Packer 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781542990914
+    [DB] bom_requirements: 1573.1005.A.063 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.065 - Flat 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781543291010
+    [DB] bom_requirements: 1573.1005.A.065 (needs_order)
+    [CREATED] '3 off 1573. 1005.A.066 - BarrierClampPacker 1 mm 304/2B Lase' -> https://app.asana.com/0/848657415032331/1218781854186887
+    [DB] bom_requirements: 1573.1005.A.066 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.067 - Flat 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781880166304
+    [DB] bom_requirements: 1573.1005.A.067 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.068 - Flat 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781443077227
+    [DB] bom_requirements: 1573.1005.A.068 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.069 - Flat 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781880607545
+    [DB] bom_requirements: 1573.1005.A.069 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.070 - Stopper bracket 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781880651338
+    [DB] bom_requirements: 1573.1005.A.070 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.071 - Car Stop Angle Bottom 304/HR Laser ' -> https://app.asana.com/0/848657415032331/1218781588071782
+    [DB] bom_requirements: 1573.1005.A.071 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.072 - BarrierClampPacker 1.5mm 304/2B Las' -> https://app.asana.com/0/848657415032331/1218781588292427
+    [DB] bom_requirements: 1573.1005.A.072 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.073 - Hose Bracket 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781854811855
+    [DB] bom_requirements: 1573.1005.A.073 (needs_order)
+    [CREATED] '1 off 1573. 1005.A.074 - Hose Bracket 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781881119151
+    [DB] bom_requirements: 1573.1005.A.074 (needs_order)
+    [CREATED] '1 off 1573. 1005.B.006 - RisingBarrierSection 304/HR Laser C' -> https://app.asana.com/0/848657415032331/1218781936514436
+    [DB] bom_requirements: 1573.1005.B.006 (needs_order)
+    [CREATED] '1 off 1573. 1005.B.006_MIR - RisingBarrierSection 304/HR Las' -> https://app.asana.com/0/848657415032331/1218781936704311
+    [DB] bom_requirements: 1573.1005.B.006_MIR (needs_order)
+    [CREATED] '1 off 1573. 1005.B.012 - Harken Chain Comb 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781543813704
+    [DB] bom_requirements: 1573.1005.B.012 (needs_order)
+    [CREATED] '1 off 1573. 1005.B.013 - Harken Chain Comb B 304/HR Laser Cu' -> https://app.asana.com/0/848657415032331/1218781881451407
+    [DB] bom_requirements: 1573.1005.B.013 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.014 - Barrier Clamp 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781881526128
+    [DB] bom_requirements: 1573.1005.B.014 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.015 - Mag Lock Plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781855692854
+    [DB] bom_requirements: 1573.1005.B.015 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.016 - BarrierClampPacker10 mm 304/HR Lase' -> https://app.asana.com/0/848657415032331/1218781543773161
+    [DB] bom_requirements: 1573.1005.B.016 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.017 - BarrierClampPacker1.5 mm 304/2B Las' -> https://app.asana.com/0/848657415032331/1218781543813716
+    [DB] bom_requirements: 1573.1005.B.017 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.019 - Angle 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218782060336352
+    [DB] bom_requirements: 1573.1005.B.019 (needs_order)
+    [CREATED] '1 off 1573. 1005.B.025 - Reach Around Left Hand 304/HR Laser' -> https://app.asana.com/0/848657415032331/1218781855954044
+    [DB] bom_requirements: 1573.1005.B.025 (needs_order)
+    [CREATED] '1 off 1573. 1005.B.025_MIR - Reach Around Right Hand 304/HR ' -> https://app.asana.com/0/848657415032331/1218781544574617
+    [DB] bom_requirements: 1573.1005.B.025_MIR (needs_order)
+    [CREATED] '4 off 1573. 1005.B.026 - Clamp Washer 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218799575260106
+    [DB] bom_requirements: 1573.1005.B.026 (needs_order)
+    [CREATED] '1 off 1573. 1005.B.027 - Main Barrier Channel 304/HR Laser C' -> https://app.asana.com/0/848657415032331/1218781855642653
+    [DB] bom_requirements: 1573.1005.B.027 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.028 - Motor Section Joining Plate 304/HR ' -> https://app.asana.com/0/848657415032331/1218781856480185
+    [DB] bom_requirements: 1573.1005.B.028 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.035 - Harken Car Plate Front 304/HR Laser' -> https://app.asana.com/0/848657415032331/1218781936824168
+    [DB] bom_requirements: 1573.1005.B.035 (needs_order)
+    [CREATED] '1 off 1573. 1005.B.037 - Horizontal Cover Bespoke Width 304/' -> https://app.asana.com/0/848657415032331/1218781881611427
+    [DB] bom_requirements: 1573.1005.B.037 (needs_order)
+    [CREATED] '1 off 1573. 1005.B.048 - Sprocket Plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781937283284
+    [DB] bom_requirements: 1573.1005.B.048 (needs_order)
+    [CREATED] '4 off 1573. 1005.B.050 - SafetyStrip Top Stopper 304/2B Lase' -> https://app.asana.com/0/848657415032331/1218781544562495
+    [DB] bom_requirements: 1573.1005.B.050 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.052 - SafetyStrip Cover 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781937248152
+    [DB] bom_requirements: 1573.1005.B.052 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.053 - SafetyStrip Middle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781881969775
+    [DB] bom_requirements: 1573.1005.B.053 (needs_order)
+    [CREATED] '4 off 1573. 1005.B.055 - SafetyStrip Bottom 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782044195718
+    [DB] bom_requirements: 1573.1005.B.055 (needs_order)
+    [CREATED] '4 off 1573. 1005.B.056 - SafetyStrip Top 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782061664690
+    [DB] bom_requirements: 1573.1005.B.056 (needs_order)
+    [CREATED] '1 off 1573. 1005.B.081 - Tension Plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781882515402
+    [DB] bom_requirements: 1573.1005.B.081 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.084 - Z-bracket 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781882765606
+    [DB] bom_requirements: 1573.1005.B.084 (needs_order)
+    [CREATED] '1 off 1573. 1005.B.090 - Flange Washer 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781856905553
+    [DB] bom_requirements: 1573.1005.B.090 (needs_order)
+    [CREATED] '1 off 1573. 1005.B.102 - Sprocket Pin Support 304/HR Laser C' -> https://app.asana.com/0/848657415032331/1218781855798808
+    [DB] bom_requirements: 1573.1005.B.102 (needs_order)
+    [CREATED] '1 off 1573. 1005.B.102_MIR - Sprocket Pin Support 304/HR Las' -> https://app.asana.com/0/848657415032331/1218781882985429
+    [DB] bom_requirements: 1573.1005.B.102_MIR (needs_order)
+    [CREATED] '2 off 1573. 1005.B.109 - Flat Plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781882436334
+    [DB] bom_requirements: 1573.1005.B.109 (needs_order)
+    [CREATED] '6 off 1573. 1005.B.110 - BarrierClampPacker 1 mm 304/2B Lase' -> https://app.asana.com/0/848657415032331/1218781937907552
+    [DB] bom_requirements: 1573.1005.B.110 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.111 - Flat 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781857206053
+    [DB] bom_requirements: 1573.1005.B.111 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.112 - Flat 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218782045100645
+    [DB] bom_requirements: 1573.1005.B.112 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.119 - Car Stop Angle Bottom 304/HR Laser ' -> https://app.asana.com/0/848657415032331/1218781857387677
+    [DB] bom_requirements: 1573.1005.B.119 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.120 - Top plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781883047585
+    [DB] bom_requirements: 1573.1005.B.120 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.127 - Rising Barrier Easy Chain Bracket 3' -> https://app.asana.com/0/848657415032331/1218782045053806
+    [DB] bom_requirements: 1573.1005.B.127 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.137 - Wheel bracket 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782062407101
+    [DB] bom_requirements: 1573.1005.B.137 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.139 - Bracket 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781937877918
+    [DB] bom_requirements: 1573.1005.B.139 (needs_order)
+    [CREATED] '1 off 1573. 1005.B.143 - Reach Around A 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781857892962
+    [DB] bom_requirements: 1573.1005.B.143 (needs_order)
+    [CREATED] '1 off 1573. 1005.B.143_MIR - Reach Around A 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781938815705
+    [DB] bom_requirements: 1573.1005.B.143_MIR (needs_order)
+    [CREATED] '2 off 1573. 1005.B.144 - Flat 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781939246569
+    [DB] bom_requirements: 1573.1005.B.144 (needs_order)
+    [CREATED] '1 off 1573. 1005.B.151 - Limit switch bracket 304/2B Laser C' -> https://app.asana.com/0/848657415032331/1218782061512703
+    [DB] bom_requirements: 1573.1005.B.151 (needs_order)
+    [CREATED] '1 off 1573. 1005.B.152 - Limit switch bracket 304/2B Laser C' -> https://app.asana.com/0/848657415032331/1218781939025610
+    [DB] bom_requirements: 1573.1005.B.152 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.153 - Flat 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218782062696460
+    [DB] bom_requirements: 1573.1005.B.153 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.154 - Flat 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218782128807178
+    [DB] bom_requirements: 1573.1005.B.154 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.155 - Latch packers 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782129124575
+    [DB] bom_requirements: 1573.1005.B.155 (needs_order)
+    [CREATED] '4 off 1573. 1005.B.156 - Latch packers 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782062713448
+    [DB] bom_requirements: 1573.1005.B.156 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.157 - Flat 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218781939754450
+    [DB] bom_requirements: 1573.1005.B.157 (needs_order)
+    [CREATED] '6 off 1573. 1005.B.158 - Packers 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218781938905776
+    [DB] bom_requirements: 1573.1005.B.158 (needs_order)
+    [CREATED] '2 off 1573. 1005.C.003 - Tapped plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218782129208725
+    [DB] bom_requirements: 1573.1005.C.003 (needs_order)
+    [CREATED] '10 off 1573. 1005.C.009 - EndCap 304/DP1 Laser Cut' -> https://app.asana.com/0/848657415032331/1218782150192149
+    [DB] bom_requirements: 1573.1005.C.009 (needs_order)
+    [CREATED] '2 off 1573. 1005.C.017 - Striker 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782063298605
+    [DB] bom_requirements: 1573.1005.C.017 (needs_order)
+    [CREATED] '2 off 1573. 1005.C.019 - Channel 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782046469139
+    [DB] bom_requirements: 1573.1005.C.019 (needs_order)
+    [CREATED] '1 off 1573. 1006.A.001 - WheelStop BasePlate 304/HR Laser Cu' -> https://app.asana.com/0/848657415032331/1218782150001147
+    [DB] bom_requirements: 1573.1006.A.001 (needs_order)
+    [CREATED] '1 off 1573. 1006.A.002 - WheelStop Front 304/DP2 Laser Cut' -> https://app.asana.com/0/848657415032331/1218782129837843
+    [DB] bom_requirements: 1573.1006.A.002 (needs_order)
+    [CREATED] '1 off 1573. 1006.A.003 - WheelStop Side 304/DP2 Laser Cut' -> https://app.asana.com/0/848657415032331/1218782150509896
+    [DB] bom_requirements: 1573.1006.A.003 (needs_order)
+    [CREATED] '1 off 1573. 1006.A.003_MIR - WheelStop Side 304/DP2 Laser Cu' -> https://app.asana.com/0/848657415032331/1218782063559668
+    [DB] bom_requirements: 1573.1006.A.003_MIR (needs_order)
+    [CREATED] '1 off 1573. 1006.A.004 - PlatformTray BasePlate 304/HR Laser' -> https://app.asana.com/0/848657415032331/1218782046635719
+    [DB] bom_requirements: 1573.1006.A.004 (needs_order)
+    [CREATED] '2 off 1573. 1006.A.005 - PlatformTray FrontTrim 304/2B Laser' -> https://app.asana.com/0/848657415032331/1218782130094522
+    [DB] bom_requirements: 1573.1006.A.005 (needs_order)
+    [CREATED] '2 off 1573. 1006.A.006 - PlatformTray SideTrim 304/2B Laser ' -> https://app.asana.com/0/848657415032331/1218782063687396
+    [DB] bom_requirements: 1573.1006.A.006 (needs_order)
+    [CREATED] '1 off 1573. 1006.A.013 - WheelStop FrontSkirt 304/DP1 Laser ' -> https://app.asana.com/0/848657415032331/1218799792732907
+    [DB] bom_requirements: 1573.1006.A.013 (needs_order)
+    [CREATED] '1 off 1573. 1006.A.014 - WheelStop SideSkirt 304/DP1 Laser C' -> https://app.asana.com/0/848657415032331/1218782225266966
+    [DB] bom_requirements: 1573.1006.A.014 (needs_order)
+    [CREATED] '1 off 1573. 1006.A.014_MIR - WheelStop SideSkirt 304/DP1 Las' -> https://app.asana.com/0/848657415032331/1218782047173994
+    [DB] bom_requirements: 1573.1006.A.014_MIR (needs_order)
+    [CREATED] '1 off 1573. 1006.A.015 - WheelStop FrontConnector 304/2B Las' -> https://app.asana.com/0/848657415032331/1218782350828309
+    [DB] bom_requirements: 1573.1006.A.015 (needs_order)
+    [CREATED] '2 off 1573. 1006.A.016 - WheelStop SideConnector 304/2B Lase' -> https://app.asana.com/0/848657415032331/1218782350764285
+    [DB] bom_requirements: 1573.1006.A.016 (needs_order)
+    [CREATED] '2 off 1573. 1006.A.017 - WheelStop - Angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782130640310
+    [DB] bom_requirements: 1573.1006.A.017 (needs_order)
+    [CREATED] '1 off 1573. 1006.A.028 - Wheel Track - SS Brush 304/DP1 Lase' -> https://app.asana.com/0/848657415032331/1218782130745363
+    [DB] bom_requirements: 1573.1006.A.028 (needs_order)
+    [CREATED] '1 off 1573. 1006.A.044 - Channel 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218782130568062
+    [DB] bom_requirements: 1573.1006.A.044 (needs_order)
+    [CREATED] '1 off 1573. 1006.A.048 - Wheel Bracket 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218799792725590
+    [DB] bom_requirements: 1573.1006.A.048 (needs_order)
+    [CREATED] '1 off 1573. 1006.A.048_MIR - Wheel Bracket 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782151507336
+    [DB] bom_requirements: 1573.1006.A.048_MIR (needs_order)
+    [CREATED] '2 off 1573. 1006.A.049 - Gusset 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782225803796
+    [DB] bom_requirements: 1573.1006.A.049 (needs_order)
+    [CREATED] '2 off 1573. 1006.A.050 - Wheel Bracket 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782047793106
+    [DB] bom_requirements: 1573.1006.A.050 (needs_order)
+    [CREATED] '1 off 1573. 1006.A.054 - Channel 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218782151324257
+    [DB] bom_requirements: 1573.1006.A.054 (needs_order)
+    [CREATED] '1 off 1573. 1006.A.055 - Wheel Track - SS Brush 304/DP1 Lase' -> https://app.asana.com/0/848657415032331/1218782047535043
+    [DB] bom_requirements: 1573.1006.A.055 (needs_order)
+    [CREATED] '1 off 1573. 1006.A.056 - Cable bracket base plate 304/HR Las' -> https://app.asana.com/0/848657415032331/1218782351465443
+    [DB] bom_requirements: 1573.1006.A.056 (needs_order)
+    [CREATED] '4 off 1573. 1006.A.059 - Wheel Track packer 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782340314030
+    [DB] bom_requirements: 1573.1006.A.059 (needs_order)
+    [CREATED] '2 off 1573. 1006.A.060 - Wheel Track packer 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782226284951
+    [DB] bom_requirements: 1573.1006.A.060 (needs_order)
+    [CREATED] '2 off 1573. 1006.A.098 - Angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782151936749
+    [DB] bom_requirements: 1573.1006.A.098 (needs_order)
+    [CREATED] '2 off 1573. 1006.A.099 - Angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782131681285
+    [DB] bom_requirements: 1573.1006.A.099 (needs_order)
+    [CREATED] '1 off 1573. 1006.A.114 - Wheelstop Stiffner Plate 304/HR Las' -> https://app.asana.com/0/848657415032331/1218782226528449
+    [DB] bom_requirements: 1573.1006.A.114 (needs_order)
+    [CREATED] '4 off 1573. 1006.A.117 - Lift Rod plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218782351964687
+    [DB] bom_requirements: 1573.1006.A.117 (needs_order)
+    [CREATED] '1 off 1573. 1008.A3.003 - Proximity Switch Cover 304/DP1 Las' -> https://app.asana.com/0/848657415032331/1218782151913358
+    [DB] bom_requirements: 1573.1008.A3.003 (needs_order)
+    [CREATED] '1 off 1573. 1008.A3.004 - Ring, to be tapped inside for 15/3' -> https://app.asana.com/0/848657415032331/1218782132095947
+    [DB] bom_requirements: 1573.1008.A3.004 (needs_order)
+    [CREATED] '1 off 1573. 1008.C.003 - Plate to E-stop under lift 304/HR L' -> https://app.asana.com/0/848657415032331/1218782151913376
+    [DB] bom_requirements: 1573.1008.C.003 (needs_order)
+    [CREATED] '1 off 1573. 1008.D1.114 - Valve Plate 2 Ext. 304/HR Laser Cu' -> https://app.asana.com/0/848657415032331/1218782340975357
+    [DB] bom_requirements: 1573.1008.D1.114 (needs_order)
+    [CREATED] '1 off 1573. 1008.U.12.1 - Speaker Template (DO NOT ORDER) 30' -> https://app.asana.com/0/848657415032331/1218782132153488
+    [DB] bom_requirements: 1573.1008.U.12.1 (needs_order)
+    [CREATED] '1 off 1573. 1011.B.030 - TopPlate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218782132163138
+    [DB] bom_requirements: 1573.1011.B.030 (needs_order)
+    [CREATED] '1 off 1573. 1011.B.031 - TopPlate.Side 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218782226777694
+    [DB] bom_requirements: 1573.1011.B.031 (needs_order)
+    [CREATED] '1 off 1573. 1011.B.032 - TopPlate.Front 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218782132067881
+    [DB] bom_requirements: 1573.1011.B.032 (needs_order)
+    [CREATED] '1 off 1573. 1011.B.040 - SupportPlate Laser Cut' -> https://app.asana.com/0/848657415032331/1218782132483205
+    [DB] bom_requirements: 1573.1011.B.040 (needs_order)
+    [CREATED] '1 off 1573. 1011.B.058 - SupportPlate Laser Cut' -> https://app.asana.com/0/848657415032331/1218782340965853
+    [DB] bom_requirements: 1573.1011.B.058 (needs_order)
+    [CREATED] '1 off 1573. 1011.B.086 - TopPlate.Front 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218782341407816
+    [DB] bom_requirements: 1573.1011.B.086 (needs_order)
+    [CREATED] '1 off 1573. 1011.B.109 - Limit Switch Angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782352548690
+    [DB] bom_requirements: 1573.1011.B.109 (needs_order)
+    [CREATED] '1 off 1573. 1011.B.119 - TopPlate.Side 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218782227606749
+    [DB] bom_requirements: 1573.1011.B.119 (needs_order)
+    [CREATED] '1 off 1573. 1022.001 - (TopCap) 304/DP1 Laser Cut' -> https://app.asana.com/0/848657415032331/1218782352897685
+    [DB] bom_requirements: 1573.1022.001 (needs_order)
+    [CREATED] '1 off 1573. 1022.003 - (TopCap.Block) 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218782131751237
+    [DB] bom_requirements: 1573.1022.003 (needs_order)
+    [CREATED] '1 off 1573. 1022.004 - (SwitchTray) 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782227806398
+    [DB] bom_requirements: 1573.1022.004 (needs_order)
+    [CREATED] '1 off 1573. 1022.006 - Tape switch bracket 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218799917933683
+    [DB] bom_requirements: 1573.1022.006 (needs_order)
+    [CREATED] '1 off 1573. 1022.013 - RisingButtonPlate.Back 304/2B Laser C' -> https://app.asana.com/0/848657415032331/1218782227614110
+    [DB] bom_requirements: 1573.1022.013 (needs_order)
+    [CREATED] '1 off 1573. 1022.020 - Post Base Plate 304/HR Laser Cut' -> https://app.asana.com/0/848657415032331/1218782341886380
+    [DB] bom_requirements: 1573.1022.020 (needs_order)
+    [CREATED] '1 off 1573. 1022.021 - Rising Button Post Template Laser Cut' -> https://app.asana.com/0/848657415032331/1218782353116903
+    [DB] bom_requirements: 1573.1022.021 (needs_order)
+    [CREATED] '1 off 1573. 1022.023 - Easy chain bracket 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782419802414
+    [DB] bom_requirements: 1573.1022.023 (needs_order)
+    [CREATED] '1 off 1573. 1022.025 - Angle 304/2B Laser Cut' -> https://app.asana.com/0/848657415032331/1218782342108625
+    [DB] bom_requirements: 1573.1022.025 (needs_order)
+    [CREATED] 'Machining BOM - 1573 - Kings Road 2.Entire System' -> GID 1218782403006972
+    [CREATED] 'Plastics Supplier - 1573 - Kings Road 2.Entire System' -> GID 1218782227902890
+    [CREATED] '1 off 1573. 1003.A.085 - Tufnol Sheet this tufnol can only b' -> https://app.asana.com/0/848657415032331/1218782403711591
+    [DB] bom_requirements: 1573.1003.A.085 (needs_order)
+    [CREATED] 'Machining - 1573 - Kings Road 2.Entire System' -> GID 1218782227347191
+    [CREATED] '1 off 1573. 1005.B.149 - Tension Pin Central Machining' -> https://app.asana.com/0/848657415032331/1218782342011412
+    [DB] bom_requirements: 1573.1005.B.149 (needs_order)
+    [CREATED] 'Sesame - 1573 - Kings Road 2.Entire System' -> GID 1218782403177463
+    [CREATED] '1 off 1573. 1005.B33 - NBSS.121 Single sprocket- Machine len' -> https://app.asana.com/0/848657415032331/1218782227822088
+    [DB] bom_requirements: 1573.1005.B33 (needs_order)
+    [CREATED] 'Welded by Sesame - 1573 - Kings Road 2.Entire System' -> GID 1218782352929714
+    [CREATED] '1 off 1573. 1008.A3.1w - Welded Assembly Welded by Sesame' -> https://app.asana.com/0/848657415032331/1218782228045572
+    [DB] bom_requirements: 1573.1008.A3.1w (needs_order)
+    [CREATED] 'MayTec BOM - 1573 - Kings Road 2.Entire System' -> GID 1218782342174498
+    [CREATED] 'MayTec - 1573 - Kings Road 2.Entire System' -> GID 1218782227679121
+    [CREATED] '1 off 1573. 1002.G1 - Side frame MayTec' -> https://app.asana.com/0/848657415032331/1218782404113904
+    [DB] bom_requirements: 1573.1002.G1 (needs_order)
+    [CREATED] '1 off 1573. 1002.G1_MIR - Side frame MayTec' -> https://app.asana.com/0/848657415032331/1218782420421450
+    [DB] bom_requirements: 1573.1002.G1_MIR (needs_order)
+    [CREATED] '1 off 1573. 1002.G2 - Front frame MayTec' -> https://app.asana.com/0/848657415032331/1218782910104214
+    [DB] bom_requirements: 1573.1002.G2 (needs_order)
+    [CREATED] 'NBSS BOM - 1573 - Kings Road 2.Entire System' -> GID 1218782420312992
+    [CREATED] 'NBSS/Sesame - 1573 - Kings Road 2.Entire System' -> GID 1218782227822110
+    [CREATED] '10 off 1573. 003 - NBSS.003 15mm Shock Mount M8 25.5mm Diame' -> https://app.asana.com/0/848657415032331/1218782353813629
+    [DB] bom_requirements: 1573.003 (in_stock)
+    [CREATED] 'NBSS/Machining - 1573 - Kings Road 2.Entire System' -> GID 1218782227348206
+    [CREATED] '20 off 1573. 008 - NBSS.008 AcetalStairWheel NBSS/Machining' -> https://app.asana.com/0/848657415032331/1218782910719231
+    [DB] bom_requirements: 1573.008 (needs_order)
+    [CREATED] 'NBSS/Laser Cut - 1573 - Kings Road 2.Entire System' -> GID 1218782420455611
+    [CREATED] '1 off 1573. 011 - NBSS.011 Button station -  Back Box 140x14' -> https://app.asana.com/0/848657415032331/1218782420694351
+    [DB] bom_requirements: 1573.011 (needs_order)
+    [CREATED] '1 off 1573. 012 - NBSS.012 Call for Assistance BackingBox NB' -> https://app.asana.com/0/848657415032331/1218782343498142
+    [DB] bom_requirements: 1573.012 (needs_order)
+    [CREATED] '55 off 1573. 014 - NBSS.014 Bearing Bush (14X16X15) (MB1415D' -> https://app.asana.com/0/848657415032331/1218783020591739
+    [DB] bom_requirements: 1573.014 (needs_order)
+    [CREATED] '3 off 1573. 015 - NBSS.015 Sproket Plate NBSS/Laser Cut' -> https://app.asana.com/0/848657415032331/1218782343600265
+    [DB] bom_requirements: 1573.015 (needs_order)
+    [CREATED] '4 off 1573. 017 - NBSS.017 Lift Rod Acetal NBSS/Machining' -> https://app.asana.com/0/848657415032331/1218782343395852
+    [DB] bom_requirements: 1573.017 (needs_order)
+    [CREATED] '4 off 1573. 018 - NBSS.018 Wheel Pin (Bespoke part - no stoc' -> https://app.asana.com/0/848657415032331/1218782404563200
+    [DB] bom_requirements: 1573.018 (needs_order)
+    [CREATED] '1 off 1573. 022 - NBSS 022 HydraulicBulkheadPlate 304/2B NBS' -> https://app.asana.com/0/848657415032331/1218782404555780
+    [DB] bom_requirements: 1573.022 (needs_order)
+    [CREATED] '5 off 1573. 023 - NBSS.023 Bearing Bush (14X16X12) (MB1412DU' -> https://app.asana.com/0/848657415032331/1218782343462527
+    [DB] bom_requirements: 1573.023 (needs_order)
+    [CREATED] '16 off 1573. 025 - NBSS.025 Metric DU Washers (14x26x1,5) TF' -> https://app.asana.com/0/848657415032331/1218782343673469
+    [DB] bom_requirements: 1573.025 (needs_order)
+    [CREATED] '4 off 1573. 026 - NBSS.026 Tapped Bar NBSS/Machining' -> https://app.asana.com/0/848657415032331/1218782405081410
+    [DB] bom_requirements: 1573.026 (needs_order)
+    [CREATED] '4 off 1573. 027 - NBSS.027 Tapped Bar Short NBSS/Machining' -> https://app.asana.com/0/848657415032331/1218783020293508
+    [DB] bom_requirements: 1573.027 (needs_order)
+    [CREATED] '1 off 1573. 030 - NBSS.030 JunctionBoxBracket NBSS/Laser Cut' -> https://app.asana.com/0/848657415032331/1218782421536395
+    [DB] bom_requirements: 1573.030 (needs_order)
+    [CREATED] '1 off 1573. 033 - NBSS.033 Button Plate dia 160 x 160 304/DP' -> https://app.asana.com/0/848657415032331/1218782910338920
+    [DB] bom_requirements: 1573.033 (needs_order)
+    [CREATED] '1 off 1573. 034.001 - NBSS.034.001 SafeWorkingLoadPlate: Bla' -> https://app.asana.com/0/848657415032331/1218782404896407
+    [DB] bom_requirements: 1573.034.001 (needs_order)
+    [CREATED] '6 off 1573. 036 - NBSS.036 Sprocket Washer 304/HR NBSS/Laser' -> https://app.asana.com/0/848657415032331/1218782343828684
+    [DB] bom_requirements: 1573.036 (needs_order)
+    [CREATED] '1 off 1573. 039 - NBSS.039 RBP.Button Post.Plate NBSS/Sesame' -> https://app.asana.com/0/848657415032331/1218782405608302
+    [DB] bom_requirements: 1573.039 (needs_order)
+    [CREATED] 'NBSS/Welded by Sesame - 1573 - Kings Road 2.Entire System' -> GID 1218782421546130
+    [CREATED] '13 off 1573. 040.02 - NBSS 040 Welded Assembly NBSS/Welded b' -> https://app.asana.com/0/848657415032331/1218782422109428
+    [DB] bom_requirements: 1573.040.02 (needs_order)
+    [CREATED] '1 off 1573. 041 - NBSS.041 CallForAssistance Plate Narrow En' -> https://app.asana.com/0/848657415032331/1218782343462558
+    [DB] bom_requirements: 1573.041 (needs_order)
+    [CREATED] '12 off 1573. 045.2 - NBSS.045.2 (3RBarrier TS Packers) 304/2' -> https://app.asana.com/0/848657415032331/1218782422252618
+    [DB] bom_requirements: 1573.045.2 (needs_order)
+    [CREATED] '4 off 1573. 046 - NBSS.046 TS3 (TYPE D) (Sesame to add resis' -> https://app.asana.com/0/848657415032331/1218783012082956
+    [DB] bom_requirements: 1573.046 (needs_order)
+    [CREATED] '1 off 1573. 049.01 - NBSS.049 Dripping Tray NBSS/Welded by S' -> https://app.asana.com/0/848657415032331/1218783012256598
+    [DB] bom_requirements: 1573.049.01 (needs_order)
+    [CREATED] '1 off 1573. 052 - NBSS.052 Hydraulic Tank Support dia.200 NB' -> https://app.asana.com/0/848657415032331/1218782422109225
+    [DB] bom_requirements: 1573.052 (needs_order)
+    [CREATED] '35 off 1573. 098 - NBSS.098 Plastic insert Bifix Caps NBSS/S' -> https://app.asana.com/0/848657415032331/1218782422262051
+    [DB] bom_requirements: 1573.098 (needs_order)
+    [CREATED] '4 off 1573. 105 - NBSS.105 OrangeWheel_Rod 20mm NBSS/Machini' -> https://app.asana.com/0/848657415032331/1218782911915016
+    [DB] bom_requirements: 1573.105 (needs_order)
+    [CREATED] '3 off 1573. 121 - NBSS.121 Single Sprocket ST4SR14 NBSS/Sesa' -> https://app.asana.com/0/848657415032331/1218782422885410
+    [DB] bom_requirements: 1573.121 (in_stock)
+    [CREATED] '3 off 1573. 123 - NBSS.123 Double Sprocket NBSS/Sesame' -> https://app.asana.com/0/848657415032331/1218782406790008
+    [DB] bom_requirements: 1573.123 (needs_order)
+    [CREATED] '1 off 1573. 124 - NBSS.124 Triple Sprocket NBSS/Sesame' -> https://app.asana.com/0/848657415032331/1218783021875276
+    [DB] bom_requirements: 1573.124 (needs_order)
+    [CREATED] '2 off 1573. 125 - NBSS.125 Tripple Sprocket with keyway NBSS' -> https://app.asana.com/0/848657415032331/1218782913118133
+    [DB] bom_requirements: 1573.125 (needs_order)
+    [CREATED] '2 off 1573. 126 - NBSS.126 Sprocket Pin Motor NBSS/Machining' -> https://app.asana.com/0/848657415032331/1218782406362214
+    [DB] bom_requirements: 1573.126 (needs_order)
+    [CREATED] '3 off 1573. 127 - NBSS.127 Sprocket Pin B NBSS/Machining' -> https://app.asana.com/0/848657415032331/1218782913133707
+    [DB] bom_requirements: 1573.127 (needs_order)
+    [CREATED] '1 off 1573. 128 - NBSS.128 Sprocket Pin C NBSS/Machining' -> https://app.asana.com/0/848657415032331/1218783022569572
+    [DB] bom_requirements: 1573.128 (needs_order)
+    [CREATED] '12 off 1573. 129 - NBSS.129 Loading Point Washer dia 50 x 50' -> https://app.asana.com/0/848657415032331/1218782912759729
+    [DB] bom_requirements: 1573.129 (needs_order)
+    [CREATED] '2 off 1573. 132 - NBSS.132 Tension Pin NBSS/Machining' -> https://app.asana.com/0/848657415032331/1218783013439950
+    [DB] bom_requirements: 1573.132 (needs_order)
+    [CREATED] '5 off 1573. 414 - NBSS.414 Limit Switch Angle 304/2B NBSS/La' -> https://app.asana.com/0/848657415032331/1218782913492064
+    [DB] bom_requirements: 1573.414 (needs_order)
+    [CREATED] '1 off 1573. 767 - NBSS.767 Stair Ram Double Stroke: 1555mm 3' -> https://app.asana.com/0/848657415032331/1218782423082275
+    [DB] bom_requirements: 1573.767 (needs_order)
+    [CREATED] '1 off 1573. 768 - NBSS.768 Machine Room Cabinet Frame NBSS/S' -> https://app.asana.com/0/848657415032331/1218783013529624
+    [DB] bom_requirements: 1573.768 (needs_order)
+    [CREATED] '1 off 1573. 770 - 220 mm x 170 mm Junction Box plate 304/2B-' -> https://app.asana.com/0/848657415032331/1218783180517883
+    [DB] bom_requirements: 1573.770 (needs_order)
+    [CREATED] '16 off 1573. 774 - NBSS.774 (Stairs Wheel Bracket) NBSS/Sesa' -> https://app.asana.com/0/848657415032331/1218783013493995
+    [DB] bom_requirements: 1573.774 (needs_order)
+    [CREATED] '8 off 1573. 776 - NBSS.776 Spring -  rising barrier jam devi' -> https://app.asana.com/0/848657415032331/1218783012974585
+    [DB] bom_requirements: 1573.776 (in_stock)
+    [CREATED] '8 off 1573. 777 - NBSS.777 Spring -  rising barrier jam devi' -> https://app.asana.com/0/848657415032331/1218783105034175
+    [DB] bom_requirements: 1573.777 (in_stock)
+    [CREATED] '4 off 1573. 778 - NBSS.778 SQ 100 MCBKI box cap NBSS/Sesame' -> https://app.asana.com/0/848657415032331/1218782913548653
+    [DB] bom_requirements: 1573.778 (needs_order)
+    [CREATED] '6 off 1573. 1000.C.R-Clip 2.5x45 - Zinc Plated Steel R-Clip ' -> https://app.asana.com/0/848657415032331/1218783023356568
+    [DB] bom_requirements: 1573.1000.C.R-Clip 2.5x45 (needs_order)
+    [CREATED] '1 off 1573. 1000.C.R-Clip 3.0x72 - R-Clip 3.0x75 RC3.0SS NBS' -> https://app.asana.com/0/848657415032331/1218782913546643
+    [DB] bom_requirements: 1573.1000.C.R-Clip 3.0x72 (needs_order)
+    [CREATED] '8 off 1573. 1000.L.WDS674-216 - Swivel Pad M16 674-216 NBSS/' -> https://app.asana.com/0/848657415032331/1218783023250203
+    [DB] bom_requirements: 1573.1000.L.WDS674-216 (in_stock)
+    [CREATED] '1 off 1573. 1008.T.8ID_Grommet - 8mm ID Grommet 666-4603 NBS' -> https://app.asana.com/0/848657415032331/1218783013809634
+    [DB] bom_requirements: 1573.1008.T.8ID_Grommet (needs_order)
+    [CREATED] '6 off 1573. 1008.T.PG9 - PG9 CableGland / or M16 NBSS/Sesame' -> https://app.asana.com/0/848657415032331/1218783105641367
+    [DB] bom_requirements: 1573.1008.T.PG9 (needs_order)
+    [CREATED] 'Sesame BOM - 1573 - Kings Road 2.Entire System' -> GID 1218782423153909
+    [CREATED] 'Blickle - 1573 - Kings Road 2.Entire System' -> GID 1218783024016411
+    [CREATED] '4 off 1573. 1000.A2.001 - Guide roller FTH 50x15/12-12K Blic' -> https://app.asana.com/0/848657415032331/1218783181431588
+    [DB] bom_requirements: 1573.1000.A2.001 (in_stock)
+    [CREATED] 'Misumi - 1573 - Kings Road 2.Entire System' -> GID 1218783023414737
+    [CREATED] '4 off 1573. 1000.A4.001 - Polyurethane roller D=20 L=30 UMJ2' -> https://app.asana.com/0/848657415032331/1218783023693237
+    [DB] bom_requirements: 1573.1000.A4.001 (in_stock)
+    [CREATED] 'RS Components - 1573 - Kings Road 2.Entire System' -> GID 1218782406419566
+    [CREATED] '4 off 1573. 1000.B.30x17_F_M8_98.6daN - M8 x 30 female vibra' -> https://app.asana.com/0/848657415032331/1218783106024024
+    [DB] bom_requirements: 1573.1000.B.30x17_F_M8_98.6daN (needs_order)
+    [CREATED] '2 off 1573. 1000.B.30x30_M_M8_70daN - Rubber Buffer 295-2470' -> https://app.asana.com/0/848657415032331/1218783225196419
+    [DB] bom_requirements: 1573.1000.B.30x30_M_M8_70daN (needs_order)
+    [CREATED] '4 off 1573. 1000.B.40x30_M_M8_120daN - 40x30mm Shock Mount M' -> https://app.asana.com/0/848657415032331/1218783014782934
+    [DB] bom_requirements: 1573.1000.B.40x30_M_M8_120daN (in_stock)
+    [CREATED] '4 off 1573. 1000.B.50x25_M_M10_300daN - Shock Mount M10 50mm' -> https://app.asana.com/0/848657415032331/1218783182156362
+    [DB] bom_requirements: 1573.1000.B.50x25_M_M10_300daN (needs_order)
+    [CREATED] 'Boneham - 1573 - Kings Road 2.Entire System' -> GID 1218783344192713
+    [CREATED] '2 off 1573. 1000.C.ClevisPin 12x60mm - Clevis Pin Stainless ' -> https://app.asana.com/0/848657415032331/1218783224550784
+    [DB] bom_requirements: 1573.1000.C.ClevisPin 12x60mm (needs_order)
+    [CREATED] '1 off 1573. 1000.C.ClevisPin 16x50mm - Clevis Pin Stainless ' -> https://app.asana.com/0/848657415032331/1218783225376006
+    [DB] bom_requirements: 1573.1000.C.ClevisPin 16x50mm (needs_order)
+    [CREATED] 'Securitron - 1573 - Kings Road 2.Entire System' -> GID 1218783105458079
+    [CREATED] '2 off 1573. 1000.W.Lock - GL1 Electromechanical Gate Lock  1' -> https://app.asana.com/0/848657415032331/1218783182492574
+    [DB] bom_requirements: 1573.1000.W.Lock (needs_order)
+    [CREATED] 'Technica wheels - 1573 - Kings Road 2.Entire System' -> GID 1218783106478476
+    [CREATED] '4 off 1573. 1003.A.013 - Bottom Step Wheel (85mm OD 60mm Wid' -> https://app.asana.com/0/848657415032331/1218783182652083
+    [DB] bom_requirements: 1573.1003.A.013 (in_stock)
+    [CREATED] 'Orbital Fasteners - 1573 - Kings Road 2.Entire System' -> GID 1218783106543027
+    [CREATED] '8 off 1573. 1003.A.071 - Unistrut endcap 21mm x 41mm 2261250' -> https://app.asana.com/0/848657415032331/1218783181533002
+    [DB] bom_requirements: 1573.1003.A.071 (needs_order)
+    [CREATED] '16 off 1573. 1003.A.087 - M14 Form A Nylon Washer White 2921' -> https://app.asana.com/0/848657415032331/1218783225936065
+    [DB] bom_requirements: 1573.1003.A.087 (needs_order)
+    [CREATED] '1 off 1573. 1003.A.109 - Brush Strip - 72mm long NO.1/180 15' -> https://app.asana.com/0/848657415032331/1218783106797748
+    [DB] bom_requirements: 1573.1003.A.109 (needs_order)
+    [CREATED] 'Bearing Supplier - 1573 - Kings Road 2.Entire System' -> GID 1218783182537094
+    [CREATED] '8 off 1573. 1003.A.124 - Thrust Washer 20x36x1.5mm TFW203601' -> https://app.asana.com/0/848657415032331/1218783344594080
+    [DB] bom_requirements: 1573.1003.A.124 (in_stock)
+    [CREATED] '1 off 1573. 1003.A.130 - RS PRO Vulcanised Fibre Tap Washers' -> https://app.asana.com/0/848657415032331/1218783015461759
+    [DB] bom_requirements: 1573.1003.A.130 (needs_order)
+    [CREATED] '2 off 1573. 1004.B.028 - M8 Levelling Foot A040/013 RS Compo' -> https://app.asana.com/0/848657415032331/1218783107049757
+    [DB] bom_requirements: 1573.1004.B.028 (needs_order)
+    [CREATED] 'Transmission Development - 1573 - Kings Road 2.Entire System' -> GID 1218783106867200
+    [CREATED] '1 off 1573. 1005.A.039.Double - Sprocket Chain - Double X2 (' -> https://app.asana.com/0/848657415032331/1218783106797762
+    [DB] bom_requirements: 1573.1005.A.039.Double (in_stock)
+    [CREATED] 'IGUS - 1573 - Kings Road 2.Entire System' -> GID 1218783183056744
+    [CREATED] '2 off 1573. 1005.A.075 - Thrust washer iglide G300 GTM-1630-' -> https://app.asana.com/0/848657415032331/1218783226579350
+    [DB] bom_requirements: 1573.1005.A.075 (in_stock)
+    [CREATED] 'MS Hydraulic - 1573 - Kings Road 2.Entire System' -> GID 1218783226316198
+    [CREATED] '1 off 1573. 1005.A17 - BarrierMotor - 32CC MMFS32C MS Hydrau' -> https://app.asana.com/0/848657415032331/1218783183337931
+    [DB] bom_requirements: 1573.1005.A17 (in_stock)
+    [CREATED] 'Hydraulic Supplier - 1573 - Kings Road 2.Entire System' -> GID 1218783015135153
+    [CREATED] '1 off 1573. 1005.B.005 - BarrierMotor - 50CC MHM50A0L Hydrau' -> https://app.asana.com/0/848657415032331/1218783329606604
+    [DB] bom_requirements: 1573.1005.B.005 (in_stock)
+    [CREATED] '1 off 1573. 1005.B.030 - M70 2 bolt flange (for MHM50A0L mot' -> https://app.asana.com/0/848657415032331/1218783344162976
+    [DB] bom_requirements: 1573.1005.B.030 (in_stock)
+    [CREATED] '1 off 1573. 1005.B.059 - Middle Chain - Single X1 (Length = ' -> https://app.asana.com/0/848657415032331/1218783182656799
+    [DB] bom_requirements: 1573.1005.B.059 (in_stock)
+    [CREATED] '2 off 1573. 1005.B.134 - Raytech Happy Gel Box IPX8 41 x 28 ' -> https://app.asana.com/0/848657415032331/1218783183533775
+    [DB] bom_requirements: 1573.1005.B.134 (needs_order)
+    [CREATED] '2 off 1573. 1005.B.135 - Thrust washer iglide G300 GTM-1630-' -> https://app.asana.com/0/848657415032331/1218783226579375
+    [DB] bom_requirements: 1573.1005.B.135 (in_stock)
+    [CREATED] '1 off 1573. 1005.B.140 - Rubber strip Sesame' -> https://app.asana.com/0/848657415032331/1218783107497230
+    [DB] bom_requirements: 1573.1005.B.140 (needs_order)
+    [CREATED] '4 off 1573. 1005.B.141 - M6 Nord-lock Washer 5023530 Orbital' -> https://app.asana.com/0/848657415032331/1218783346135326
+    [DB] bom_requirements: 1573.1005.B.141 (needs_order)
+    [CREATED] '1 off 1573. 1005.B.147 - Black Thermoplastic Multiple Lobes ' -> https://app.asana.com/0/848657415032331/1218783227050215
+    [DB] bom_requirements: 1573.1005.B.147 (needs_order)
+    [CREATED] '1 off 1573. 1005.B.150 - Bearing Bush (14X16X10) MB1410DU Se' -> https://app.asana.com/0/848657415032331/1218783225788540
+    [DB] bom_requirements: 1573.1005.B.150 (needs_order)
+    [CREATED] 'Hepco - 1573 - Kings Road 2.Entire System' -> GID 1218783182993296
+    [CREATED] '2 off 1573. 1005.B.Hepco-LinearGuide - Simple select 441-125' -> https://app.asana.com/0/848657415032331/1218783330434425
+    [DB] bom_requirements: 1573.1005.B.Hepco-LinearGuide (needs_order)
+    [CREATED] '2 off 1573. 1005.B34.Double - Sprocket Chain - Double X2 (Le' -> https://app.asana.com/0/848657415032331/1218783329652869
+    [DB] bom_requirements: 1573.1005.B34.Double (in_stock)
+    [CREATED] 'Polymax - 1573 - Kings Road 2.Entire System' -> GID 1218783227741210
+    [CREATED] '2 off 1573. 1005.C.014 - Rubber Stopper 6001200 Polymax' -> https://app.asana.com/0/848657415032331/1218783227740760
+    [DB] bom_requirements: 1573.1005.C.014 (in_stock)
+    [CREATED] 'Sinclair & Rush - 1573 - Kings Road 2.Entire System' -> GID 1218783330644100
+    [CREATED] '8 off 1573. 1005.C.021 - Push in feet PF16 Sinclair & Rush' -> https://app.asana.com/0/848657415032331/1218783330507724
+    [DB] bom_requirements: 1573.1005.C.021 (needs_order)
+    [CREATED] '1 off 1573. 1008.A3.001 - MP200701 - Magnetic Proximity Sens' -> https://app.asana.com/0/848657415032331/1218783411648446
+    [DB] bom_requirements: 1573.1008.A3.001 (in_stock)
+    [CREATED] '1 off 1573. 1008.A3.005 - Neodymium Magnet - 1.2kg Pull F102' -> https://app.asana.com/0/848657415032331/1218783479854706
+    [DB] bom_requirements: 1573.1008.A3.005 (in_stock)
+    [CREATED] '4 off 1573. 1008.A10.002 - Female 4 way M8 to Unterminated S' -> https://app.asana.com/0/848657415032331/1218783479887301
+    [DB] bom_requirements: 1573.1008.A10.002 (needs_order)
+    [CREATED] '2 off 1573. 1008.A10.Magnet - Magnetic Non-Contact Safety Sw' -> https://app.asana.com/0/848657415032331/1218783228234510
+    [DB] bom_requirements: 1573.1008.A10.Magnet (in_stock)
+    [CREATED] '2 off 1573. 1008.A10.Sensor - Magnetic Non-Contact Safety Sw' -> https://app.asana.com/0/848657415032331/1218783108284821
+    [DB] bom_requirements: 1573.1008.A10.Sensor (in_stock)
+    [CREATED] '2 off 1573. 1008.A14 - Standard LimitSwitch: LRC5A54 LRC5A54' -> https://app.asana.com/0/848657415032331/1218783480295597
+    [DB] bom_requirements: 1573.1008.A14 (in_stock)
+    [CREATED] '1 off 1573. 1008.C.002 - E.Stop - Big 330-8587 RS Components' -> https://app.asana.com/0/848657415032331/1218783480447776
+    [DB] bom_requirements: 1573.1008.C.002 (needs_order)
+    [CREATED] 'Bes - 1573 - Kings Road 2.Entire System' -> GID 1218783228387881
+    [CREATED] '1 off 1573. 1008.D1.120 - Drain Cock Type A - 3/4" BSP Brass' -> https://app.asana.com/0/848657415032331/1218783331215364
+    [DB] bom_requirements: 1573.1008.D1.120 (needs_order)
+    [CREATED] 'Amazon - 1573 - Kings Road 2.Entire System' -> GID 1218783480445093
+    [CREATED] '1 off 1573. 1008.D1.128 - Hexagon Locknut G3/4 Lock Nut Amaz' -> https://app.asana.com/0/848657415032331/1218783527547147
+    [DB] bom_requirements: 1573.1008.D1.128 (needs_order)
+    [CREATED] '6 off 1573. 1008.N1 - Standard LimitSwitch: LRC5A54 LRC5A54 ' -> https://app.asana.com/0/848657415032331/1218783412425911
+    [DB] bom_requirements: 1573.1008.N1 (in_stock)
+    [CREATED] '47 off 1573. 1008.T.13ID_P_Clip - Rubber-lined clamp; 13mm I' -> https://app.asana.com/0/848657415032331/1218783331450228
+    [DB] bom_requirements: 1573.1008.T.13ID_P_Clip (needs_order)
+    [CREATED] '2 off 1573. 1008.T.25ID_Grommet - Grommet ID 18.5mm (Hole 25' -> https://app.asana.com/0/848657415032331/1218783411988014
+    [DB] bom_requirements: 1573.1008.T.25ID_Grommet (needs_order)
+    [CREATED] '1 off 1573. 1008.U.01 - 85x85x51 Wiska Junction Box 700-0802' -> https://app.asana.com/0/848657415032331/1218783412710388
+    [DB] bom_requirements: 1573.1008.U.01 (needs_order)
+    [CREATED] 'KenTec - 1573 - Kings Road 2.Entire System' -> GID 1218783331670122
+    [CREATED] '1 off 1573. 1008.U.12 - Speaker Driver, 2W, 8Ω KenTec' -> https://app.asana.com/0/848657415032331/1218783528139651
+    [DB] bom_requirements: 1573.1008.U.12 (needs_order)
+    [CREATED] '1 off 1573. 1008.U.15 - Junction Box 220x170 Sesame' -> https://app.asana.com/0/848657415032331/1218783412969404
+    [DB] bom_requirements: 1573.1008.U.15 (needs_order)
+    [CREATED] '2 off 1573. 1008.Y.EasyChain[15mm] DoubleRB - Easy Chain [15' -> https://app.asana.com/0/848657415032331/1218783412319101
+    [DB] bom_requirements: 1573.1008.Y.EasyChain[15mm] DoubleRB (in_stock)
+    [CREATED] '1 off 1573. 1008.Y.EasyChain[25mm] RisingButtonPost - Easy C' -> https://app.asana.com/0/848657415032331/1218783412810596
+    [DB] bom_requirements: 1573.1008.Y.EasyChain[25mm] RisingButtonPost (in_stock)
+    [CREATED] '1 off 1573. 1008.Y.EasyChain[38mm] SingleRB - Easy Chain [38' -> https://app.asana.com/0/848657415032331/1218783412631589
+    [DB] bom_requirements: 1573.1008.Y.EasyChain[38mm] SingleRB (in_stock)
+    [CREATED] '1 off 1573. 1008.Y.EasyChain[38mm] Stairs_A - Easy Chain [38' -> https://app.asana.com/0/848657415032331/1218783528528262
+    [DB] bom_requirements: 1573.1008.Y.EasyChain[38mm] Stairs_A (needs_order)
+    [CREATED] '8 off 1573. 1011.B.105 - Thrust washer 40x60x1 INA AS4060 Be' -> https://app.asana.com/0/848657415032331/1218783668928081
+    [DB] bom_requirements: 1573.1011.B.105 (in_stock)
+    [CREATED] '24 off 1573. 1011.B.106 - Thrust washer (ID 30 mm OD >45 mm)' -> https://app.asana.com/0/848657415032331/1218783481412785
+    [DB] bom_requirements: 1573.1011.B.106 (needs_order)
+    [CREATED] '8 off 1573. 1011.B.111 - Thrust washer (ID 20 mm OD >35 mm),' -> https://app.asana.com/0/848657415032331/1218783669218182
+    [DB] bom_requirements: 1573.1011.B.111 (in_stock)
+    [CREATED] 'Rubber Supplier - 1573 - Kings Road 2.Entire System' -> GID 1218783528733727
+    [CREATED] '1 off 1573. 1016.2.005 - Ruber Gasket Rubber Supplier' -> https://app.asana.com/0/848657415032331/1218783332585082
+    [DB] bom_requirements: 1573.1016.2.005 (needs_order)
+    [CREATED] 'EAO - 1573 - Kings Road 2.Entire System' -> GID 1218783332782619
+    [CREATED] '4 off 1573. 1016.3.001 - Lift UP.Down Button 51-151.0252F / ' -> https://app.asana.com/0/848657415032331/1218783528900832
+    [DB] bom_requirements: 1573.1016.3.001 (in_stock)
+    [CREATED] '1 off 1573. 1016.3.002 - Call for assistance (Bell), CFA + D' -> https://app.asana.com/0/848657415032331/1218783529123885
+    [DB] bom_requirements: 1573.1016.3.002 (in_stock)
+    [CREATED] '1 off 1573. 1016.3.003 - E-Stop Mushroom Head 61-3440.4/5 EA' -> https://app.asana.com/0/848657415032331/1218783481664617
+    [DB] bom_requirements: 1573.1016.3.003 (needs_order)
+    [CREATED] '1 off 1573. 1016.3.006 - Stairs push button 51-151.0252F / 6' -> https://app.asana.com/0/848657415032331/1218783669776092
+    [DB] bom_requirements: 1573.1016.3.006 (in_stock)
+    [CREATED] '1 off 1573. 1016.3.007 - Flush E.Stop Button 51-151.0252F / ' -> https://app.asana.com/0/848657415032331/1218783332782513
+    [DB] bom_requirements: 1573.1016.3.007 (in_stock)
+    [CREATED] '1 off 1573. 1016.3.008 - Stainless Call for Assistance butto' -> https://app.asana.com/0/848657415032331/1218783482318797
+    [DB] bom_requirements: 1573.1016.3.008 (needs_order)
+    [CREATED] '1 off 1573. 1016.3.009(3Way-Spr) - Key Switch. 3PositionSpri' -> https://app.asana.com/0/848657415032331/1218783669836287
+    [DB] bom_requirements: 1573.1016.3.009(3Way-Spr) (in_stock)
+    [CREATED] '1 off 1573. 1016.3.010(2Way-Spr) - Key Switch. 2PositionSpri' -> https://app.asana.com/0/848657415032331/1218783642479412
+    [DB] bom_requirements: 1573.1016.3.010(2Way-Spr) (in_stock)
+    [CREATED] '1 off 1573. 1016.F.007 - Ruber Gasket Rubber Supplier' -> https://app.asana.com/0/848657415032331/1218783413902479
+    [DB] bom_requirements: 1573.1016.F.007 (needs_order)
+    [CREATED] '1 off 1573. 1016.F.010 - Honeywell Doorbell DCP311G - USE ON' -> https://app.asana.com/0/848657415032331/1218783482764210
+    [DB] bom_requirements: 1573.1016.F.010 (in_stock)
+    [CREATED] '1 off 1573. 1016.J.RemoteControll_RF.Sol.1(4B).04 - Remote C' -> https://app.asana.com/0/848657415032331/1218783482600216
+    [DB] bom_requirements: 1573.1016.J.RemoteControll_RF.Sol.1(4B).04 (needs_order)
+    [CREATED] 'Tape Switch - 1573 - Kings Road 2.Entire System' -> GID 1218783414542479
+    [CREATED] '1 off 1573. 1022.005 - Ribbon switch TYPE 101BE with resisto' -> https://app.asana.com/0/848657415032331/1218783529668716
+    [DB] bom_requirements: 1573.1022.005 (needs_order)
+    [CREATED] 'Flexo Spring - 1573 - Kings Road 2.Entire System' -> GID 1218783482592945
+    [CREATED] '4 off 1573. 1022.024 - Compress spring 7,62N/mm - PLATED B4-' -> https://app.asana.com/0/848657415032331/1218783482859274
+    [DB] bom_requirements: 1573.1022.024 (needs_order)
+    [CREATED] '8 off 1573. BRH-M4-16-GS (RivetBush) - Round M4 rivet bush B' -> https://app.asana.com/0/848657415032331/1218783670394699
+    [DB] bom_requirements: 1573.BRH-M4-16-GS (RivetBush) (needs_order)
+    [CREATED] '16 off 1573. DIN 6799.6mm Shaft.5mm Groove - E - Clip 6mm Sh' -> https://app.asana.com/0/848657415032331/1218783642774783
+    [DB] bom_requirements: 1573.DIN 6799.6mm Shaft.5mm Groove (needs_order)
+    [CREATED] '4 off 1573. DIN 71412 - M 6 - Greasing Nipple Sesame' -> https://app.asana.com/0/848657415032331/1218783670108415
+    [DB] bom_requirements: 1573.DIN 71412 - M 6 (needs_order)
+    [CREATED] '1 off 1573. linear_guide_441-1076 - Linear guide 441-1076 He' -> https://app.asana.com/0/848657415032331/1218783530010498
+    [DB] bom_requirements: 1573.linear_guide_441-1076 (needs_order)
+
+============================================================
+  Total CSV rows : 445  (43 hierarchy + 402 parts)
+  ORDER parts    : 365
+  PICK parts     : 37
+  Manifest saved : C:\Users\GilesHugo\SES_Workspace\skills\bom_pipeline\1.BOM IMPORT into Asana\pipeline_runs\1573_-_Kings_Road_2_Entire_System_20260923_1412\stage5_import_manifest_20260923_1412.csv
+============================================================
+
+============================================================
+  BOM PIPELINE — 1573 - Kings Road 2.Entire System
+============================================================
+  Parts folder : C:\Users\GilesHugo\SAS Dropbox\3. Projects\Kings Road 60 - 62 - Paloma\#Order\2.Entire System
+  Dropbox URL  : https://www.dropbox.com/scl/fo/t246u1wz9mv44lqy9en9x/AJndF6ZznpjyUb2nAk_Q_vc?rlkey=kxo9dfnxvd9k69faszfhedr6t&dl=0
+  Asana URL    : https://app.asana.com/1/357939803556123/task/1218768500597782?focus=true
+  Project GID  : 848657415032331 (Build Orders — default)
+  Stop after   : Stage 5
+  Commit mode  : COMMIT — WRITING TO ASANA
+  Outputs      : C:\Users\GilesHugo\SES_Workspace\skills\bom_pipeline\1.BOM IMPORT into Asana\pipeline_runs\1573_-_Kings_Road_2_Entire_System_20260923_1412
+============================================================
+
+Skipping Stages 1-4. Using: C:\Users\GilesHugo\SES_Workspace\skills\bom_pipeline\1.BOM IMPORT into Asana\pipeline_runs\1573_-_Kings_Road_2_Entire_System_20260923_1400\stage4_staging_review.xlsx
+  [IDEMPOTENCY CHECK] No existing 'ALL BOMS - 1573 - Kings Road 2.Entire System' found — safe to proceed.
+
+============================================================
+  STAGE 4.5 - Revision Log
+============================================================
+[STAGE 4.5] Revision log written: GI_revision_pending_20260923_1412.xlsx — review and run update_golden_index.py to apply.
+
+============================================================
+  STAGE 5 — Asana Import (COMMIT)
+============================================================
+
+============================================================
+  POST-COMMIT COMPLETENESS CHECK (Stage 5)
+============================================================
+  [CC-CHECK] OK — 402 part task(s) found, matching the 402 expected.
+  [CC-CHECK] Vendor group tasks present: 35 of 35 expected.
+============================================================
+  State updated: C:\Users\GilesHugo\SES_Workspace\skills\bom_pipeline\pipeline_last_run.json (status: committed)
+
+============================================================
+  Pipeline complete — 1573 - Kings Road 2.Entire System
+  Manifest CSV : C:\Users\GilesHugo\SES_Workspace\skills\bom_pipeline\1.BOM IMPORT into Asana\pipeline_runs\1573_-_Kings_Road_2_Entire_System_20260923_1412\stage5_import_manifest_20260923_1412.csv
+============================================================
+

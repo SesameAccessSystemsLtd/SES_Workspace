@@ -1,0 +1,14 @@
+{
+  "request_id": "8825fe8e-6fac-4313-a15d-b2b771617ef2",
+  "source": "email_approval_sheet",
+  "row_index": 35,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkxwjx5AAA=",
+  "subject": "RE: PO 20985-1575",
+  "task_gid": "1212720024267080",
+  "task_name": "20717-1569 - SG transmission - 1569 - Brook Stage",
+  "asana_url": "https://app.asana.com/0/0/1212720024267080",
+  "action": "(PO 20717-1569 (exact)); Flag issue: Goods are ready and packed but are being held by Stephenson Gobin's accounts department pending payment, and they need Sesame to confirm when payment will be made.",
+  "comment_to_push": "Update from Stephenson Gobin (Sherry Parish) — 22 Sep 2026\nSubject: RE: PO 20985-1575\n\nSherry Parish of Stephenson Gobin apologises for a delay and says Sesame's orders against PO 20985-1575 are now ready and packed. However, their accounts department will not release the goods until payment is received, and she is asking Giles to advise when Sesame will pay.\n\nAction for Giles:\n- Advise Sherry Parish when Sesame will pay for the orders so they can be released\n- Check with accounts whether payment can be made / has been made against PO 20985-1575\nIssue: Goods are ready and packed but are being held by Stephenson Gobin's accounts department pending payment, and they need Sesame to confirm when payment will be made.\nKey facts: PO 20985-1575 · job 1569\nProposed: Flag issue: Goods are ready and packed but are being held by Stephenson Gobin's accounts department pending payment, and they need Sesame to confirm when payment will be made.\n\nEmail gateway · matched via PO 20717-1569 (exact) · received 2026-09-22 09:35 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-23T14:30:32.607139+00:00"
+}

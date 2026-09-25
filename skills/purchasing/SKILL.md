@@ -103,6 +103,7 @@ Suggested = R with the reason. Nothing is posted without a sheet decision.
 | `06_invoice_processor.py` | Intake/file/HITL | archive PDFs + Dropbox drop folder | Dropbox filing, Invoices tab, REQUESTS/ |
 | `07_invoice_mover.py` | Nightly | invoice_documents + live Signed OFF | moves PDF to Signed Off, REQUESTS/ |
 | `asana_read.py` | Read-only Asana | task gid | live custom fields (GET only) |
+| `08_call_sweep.py` | Daily 18:30 | unmapped RingCentral rows on Pending | Processed (CLEARED-EOD), call_context rules |
 | `test_gateway.py` | Test | — | offline regression (no LLM / sheet / Asana) |
 
 ---
@@ -204,6 +205,37 @@ total, mover state. Trial + risk register: `INVOICE_GATE_TRIAL_2026-09-18.md`.
 
 Cron (proposed): `06 run` hourly at :20 (after 03) · `06 approve` every 30 min with 05 · `07` nightly 01:30.
 One-off: `python 06_invoice_processor.py init-sheet` writes the headings on the Invoices and RULES tabs.
+
+### Auto-push (from 2026-09-24) — Giles handles edge cases only
+`GATEWAY_AUTO_APPROVE=1`: a Pending row with **Suggested = A** and **Confidence = HIGH**, whose Asana Link
+still points at the proposed task and on which nobody has typed a DECISION / Amendment Notes / Feedback,
+is pushed by `05` after sitting on Pending for `GATEWAY_AUTO_GRACE_MINUTES` (default 30). Processed shows
+DECISION `A (auto)`, Outcome `AUTO-APPROVED`. To stop one row: type anything in its Feedback or DECISION
+within the grace window. Cap `GATEWAY_AUTO_MAX_PER_RUN` (default 40) per run.
+`INVOICE_AUTO_COMMENT=1`: an Invoices-tab row with Verdict AUTO and **no flags** gets its gate comment +
+Dropbox link posted the same way (comment only — Invoice Number / Signed OFF still never set by the machine).
+Everything still goes through REQUESTS → SAP, so `GATEWAY_SHADOW=1` still wins and keeps it all dry.
+Comment format is stable (heading · Subject · From: name <email> · summary · Action · Key facts · Proposed ·
+"Email gateway · …" audit line) — the Asana inbound bot reads these, so change the layout deliberately.
+
+### Division of labour with the Asana AI teammate (Giles 2026-09-24)
+Hermes (this pipeline) processes what comes in from OUTSIDE — email, calls, invoices — and writes
+**comments and fields only**. The Asana AI teammate owns the task **description** (it compiles the quote
+summary there) and drafts the outbound email. So `03` no longer appends to the description
+(`DESCRIPTION_NOTES = False`); supplier refs, lead time and price context ride in the comment's
+**Key facts** line instead. The **Contact:** line is written for that bot: the person who sent it
+(`Contact: Tracey Spear <TraceySpear@…>`); for noreply senders the supplier's email on file; for calls
+the name, number and the supplier's email on file. Supplier history / lead-time context is held by the
+Asana teammate itself, not pushed from here — comments stay short.
+
+### RingCentral call notes — end-of-day sweep and steering
+Calls are parsed into a summary plus a one-line **Key inference** (shown first in the Summary column and in the
+comment). Calls with nothing in them (no ref, date, price, follow-up) are triaged as "short call, nothing
+actionable". `08_call_sweep.py` runs daily ~18:30 and moves every undecided, unmapped RingCentral row to
+Processed (`CLEARED-EOD`). **To steer**, write in the row's Feedback before the sweep: what the call is
+about. "ignore / irrelevant / IT / personal…" → that number is dropped in future; anything else → kept, and
+your note is handed to the call parser the next time that number rings; a pasted task link → future calls
+from that number go to that task. Rules show in the RULES tab as `call_context`.
 
 ### Shadow mode (go-live state from 2026-09-18)
 `GATEWAY_SHADOW=1` in `.hermes/.env`: every stage runs into the **sheet only**. No ops.db writes, no

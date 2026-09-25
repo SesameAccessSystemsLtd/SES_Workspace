@@ -1,0 +1,3837 @@
+{
+  "generated_at": "2026-09-25 14:33 UTC",
+  "field_gid": "1143955334207040",
+  "field_name": "ORDER Status",
+  "awaiting": {
+    "gid": "1143955334207043",
+    "label": "⏰On Order - Awaiting CONFIRMATION"
+  },
+  "confirmed": {
+    "gid": "1203944084697376",
+    "label": "🚚On Order - Delivery Date CONFIRMED"
+  },
+  "requests": [
+    {
+      "file": "2026-07-10T13-00-ops_agent-email_approval-47f29c4a.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1216298898397328",
+      "task_name": "21139-60726 - Amazon - Steves plug socket",
+      "created": "2026-07-10T13:00:07.591397+00:00",
+      "completed": "2026-07-10T13:30:18.805889+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "2026-07-06T13:27:58Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-07-10T13-00-ops_agent-email_approval-6837b06a.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1216239416435365",
+      "task_name": "21151-1580 - Wessex Galvanising - 1580 - Admiralty Single Scissor BOM",
+      "created": "2026-07-10T13:00:07.742274+00:00",
+      "completed": "2026-07-10T13:30:26.111337+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "2026-07-08T13:06:03Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-07-10T13-00-ops_agent-email_approval-6e3add02.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1216293347892218",
+      "task_name": "21148-1578 - Tapeswitch - reorder Tapeswitch Traversing Mod",
+      "created": "2026-07-10T13:00:07.694991+00:00",
+      "completed": "2026-07-10T13:30:32.476250+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-07-09T06:50:12Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-07-10T13-00-ops_agent-email_approval-74e419c3.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1216293347892218",
+      "task_name": "21148-1578 - Tapeswitch - reorder Tapeswitch Traversing Mod",
+      "created": "2026-07-10T13:00:07.718929+00:00",
+      "completed": "2026-07-10T13:30:38.890729+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-07-09T06:50:12Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-07-10T13-00-ops_agent-email_approval-8713d37f.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1215969777794699",
+      "task_name": "21132-1670 - Aalco Non-Ferrous BOM  1670 -  Blackfriers",
+      "created": "2026-07-10T13:00:07.624275+00:00",
+      "completed": "2026-07-10T13:30:43.100634+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "2026-07-07T05:54:00Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-07-10T13-00-ops_agent-email_approval-90f2ea30.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1216242580440488",
+      "task_name": "21147-1588 - Keyence - 1588 - America 1 Scissor BOM",
+      "created": "2026-07-10T13:00:07.730211+00:00",
+      "completed": "2026-07-10T13:30:49.457295+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-07-09T08:25:41Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-07-10T13-00-ops_agent-email_approval-96abf9e2.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1216242582077298",
+      "task_name": "21144-1588 - RS Components - 1588 - America 1 Scissor BOM -  3019042629",
+      "created": "2026-07-10T13:00:07.613538+00:00",
+      "completed": "2026-07-10T13:30:55.826471+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-07-07T11:59:34Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-07-10T13-00-ops_agent-email_approval-97999c4c.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1216242580440488",
+      "task_name": "21147-1588 - Keyence - 1588 - America 1 Scissor BOM",
+      "created": "2026-07-10T13:00:07.646531+00:00",
+      "completed": "2026-07-10T13:31:01.799217+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-07-07T14:50:00Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-07-10T13-00-ops_agent-email_approval-d315da3d.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1215969777794699",
+      "task_name": "21132-1670 - Aalco Non-Ferrous BOM  1670 -  Blackfriers",
+      "created": "2026-07-10T13:00:07.634403+00:00",
+      "completed": "2026-07-10T13:31:07.670795+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "2026-07-07T12:03:06Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-07-10T13-00-ops_agent-email_approval-e8c9a9c0.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1216242580440488",
+      "task_name": "21147-1588 - Keyence - 1588 - America 1 Scissor BOM",
+      "created": "2026-07-10T13:00:07.807283+00:00",
+      "completed": "2026-07-10T13:31:18.776696+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-07-10T07:00:39Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-07-10T13-00-ops_agent-email_approval-f552ac27.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1215139006291660",
+      "task_name": "21120-1373 - Broadway brass - 1373 Plating Manchester",
+      "created": "2026-07-10T13:00:07.793388+00:00",
+      "completed": "2026-07-10T13:31:28.344934+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-07-10T07:13:37Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-07-10T13-30-ops_agent-email_approval-439b4982.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1216298898397328",
+      "task_name": "21139-60726 - Amazon - Steves plug socket",
+      "created": "2026-07-10T13:30:08.579227+00:00",
+      "completed": "2026-07-10T15:30:17.177177+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "2026-07-06T13:27:58Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-08-17T09-30-ops_agent-email_approval-93f38bc1.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1216946791201146",
+      "task_name": "21207-1575 - Tape switch - replacements - 1575 -",
+      "created": "2026-08-17T09:30:13.470920+00:00",
+      "completed": "2026-08-17T10:30:22.715817+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "2026-08-13T14:32:46Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-08-18T12-30-ops_agent-email_approval-826b92ca.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1214073918288684",
+      "task_name": "20985-1575 - SG transmission - 1575 Jenners",
+      "created": "2026-08-18T12:30:54.899144+00:00",
+      "completed": "2026-08-18T13:30:59.871934+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "2026-08-18T11:59:36Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-08-18T12-30-ops_agent-email_approval-f0294df7.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1216946791201146",
+      "task_name": "21207-1575 - Tape switch - replacements - 1575 -",
+      "created": "2026-08-18T12:30:54.876954+00:00",
+      "completed": "2026-08-18T13:31:04.642602+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "M",
+      "email_received": "2026-08-18T07:04:52Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-08-18T13-00-ops_agent-email_approval-c0106d12.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1217486647101746",
+      "task_name": "21242-1595 - Lasershape Laser Cut BOM - 1595 - St Georges House Entire system",
+      "created": "2026-08-18T13:00:55.799360+00:00",
+      "completed": "2026-08-18T13:31:10.164434+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "2026-08-18T11:06:57Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-08-19T11-00-ops_agent-email_approval-1c8d8956.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1217546337614415",
+      "task_name": "21250-1365 - RS Components - 1365 - Serjeants Inn Entire BOM",
+      "created": "2026-08-19T11:00:26.565941+00:00",
+      "completed": "2026-08-19T11:30:30.911069+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-08-19T09:44:52Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-08-19T11-00-ops_agent-email_approval-c33c38d7.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1217542110017557",
+      "task_name": "21248-1595 - Steerforth - 1595 - Long Lead BOM St Georges",
+      "created": "2026-08-19T11:00:26.546959+00:00",
+      "completed": "2026-08-19T11:30:38.905395+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-08-19T07:19:51Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-08-19T11-00-ops_agent-email_approval-ff088750.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1217541497709661",
+      "task_name": "21247-1037 - Steerforth - 1037 - 1.Long Leading Time",
+      "created": "2026-08-19T11:00:26.525504+00:00",
+      "completed": "2026-08-19T11:30:45.148972+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-08-19T07:20:12Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-08-20T10-00-ops_agent-email_approval-c90dcfb9.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1217630015875025",
+      "task_name": "21253-190826 - Keyence - 5 mtr. Analogue X2 output position sensor",
+      "created": "2026-08-20T10:00:56.894143+00:00",
+      "completed": "2026-08-20T10:31:01.509872+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-08-19T12:36:46Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-08-25T09-30-ops_agent-email_approval-34e5af7d.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1217769361544570",
+      "task_name": "21565-1555 - Aalco - steel profile tube",
+      "created": "2026-08-25T09:30:57.560524+00:00",
+      "completed": "2026-08-25T10:31:04.779666+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-08-24T13:55:24Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-08-25T09-30-ops_agent-email_approval-d0d60f02.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1217769361544570",
+      "task_name": "21565-1555 - Aalco - steel profile tube",
+      "created": "2026-08-25T09:30:57.602706+00:00",
+      "completed": "2026-08-25T10:31:11.253399+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "2026-08-25T04:40:00Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-08-25T09-30-ops_agent-email_approval-f3031a67.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1217769361544570",
+      "task_name": "21565-1555 - Aalco - steel profile tube",
+      "created": "2026-08-25T09:30:57.617863+00:00",
+      "completed": "2026-08-25T10:31:20.832612+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-08-24T16:21:27Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-08-28T10-00-ops_agent-email_approval-cff5abf5.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1217419605998000",
+      "task_name": "21559-1434 - Hydraulic Megastore - Salisbury Motor pump",
+      "created": "2026-08-28T10:00:36.552536+00:00",
+      "completed": "2026-08-28T10:31:03.964905+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-08-27T18:48:11Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-08-28T10-00-ops_agent-email_approval-dc85710f.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1209401888431263",
+      "task_name": "21575-260826 - Amazon - Need engine oil for ours toyota vans 0W-20",
+      "created": "2026-08-28T10:00:36.268522+00:00",
+      "completed": "2026-08-28T10:31:11.796618+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-08-26T10:23:56Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-09-01T12-30-ops_agent-email_approval-41ac78c8.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1216611730862632",
+      "task_name": "21584-1588 - JAJO - 1588 - America Long Lead",
+      "created": "2026-09-01T12:30:32.643723+00:00",
+      "completed": "2026-09-01T13:30:34.784767+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "2026-08-28T17:29:57Z",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-09-03T10-00-ops_agent-email_approval-cc24ebd2.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1216611730862632",
+      "task_name": "21584-1588 - JAJO - 1588 - America Long Lead",
+      "created": "2026-09-03T10:00:08.227728+00:00",
+      "completed": "2026-09-03T10:30:11.115969+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "M",
+      "email_received": "",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-09-03T10-00-ops_agent-email_approval-d37b787a.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1218082551260260",
+      "task_name": "21595-30926 - RS components - Counterbore",
+      "created": "2026-09-03T10:00:08.209782+00:00",
+      "completed": "2026-09-03T10:30:16.978783+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-09-03T10-00-ops_agent-email_approval-e7233b42.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1217530130097546",
+      "task_name": "21245-180826 - Cromwell - OMRON Relay 230 v AC",
+      "created": "2026-09-03T10:00:08.192151+00:00",
+      "completed": "2026-09-03T10:30:23.701252+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "",
+      "format": "inline option GID 1143955334207043",
+      "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+    },
+    {
+      "file": "2026-09-10T08-01-ops_agent-email_approval-00e53610.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1218237285026846",
+      "task_name": "21610-1171 - Wessex Galv - St Mary Le BOW",
+      "created": "2026-09-10T08:01:01.456234+00:00",
+      "completed": "2026-09-10T08:32:24.721128+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-10T08-01-ops_agent-email_approval-85906bf6.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1217486980895664",
+      "task_name": "21578-1595 - Kerry Way Rubber Supplier - 1595 - St Georges House Entire system",
+      "created": "2026-09-10T08:01:01.420326+00:00",
+      "completed": "2026-09-10T08:32:28.579219+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-16T10-00-ops_agent-email_approval-7b42b52a.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1218534309660829",
+      "task_name": "21643-160926 - Screwfix - Pauls work boots",
+      "created": "2026-09-16T10:00:58.607578+00:00",
+      "completed": "2026-09-16T10:31:13.961421+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-16T11-31-ops_agent-email_approval-5b7ebaf7.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1217486678215190",
+      "task_name": "21573-1595 - SPG Glass - 1595 - St Georges House Entire system",
+      "created": "2026-09-16T11:31:00.971574+00:00",
+      "completed": "2026-09-16T12:31:05.280977+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-17T12-30-ops_agent-email_approval-49e99c83.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1218495046058513",
+      "task_name": "21646-1580 - Maytec - 1580 - Admiralty House 2.Entire System BOM",
+      "created": "2026-09-17T12:30:39.502252+00:00",
+      "completed": "2026-09-17T13:30:59.195125+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-17T12-30-ops_agent-email_approval-5a94afc4.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1218572072080032",
+      "task_name": "21650-1591 - Romans flatback for Uni of Cambridge",
+      "created": "2026-09-17T12:30:39.524959+00:00",
+      "completed": "2026-09-17T13:31:05.882239+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-17T12-30-ops_agent-email_approval-af9662c3.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1218357848663271",
+      "task_name": "21626-1600 - Kempston Controls (Subtotal: £348.18)",
+      "created": "2026-09-17T12:30:39.514948+00:00",
+      "completed": "2026-09-17T14:30:45.736174+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-18T12-30-ops_agent-email_approval-20833378.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1218458851380847",
+      "task_name": "21636-1597 - Goodman - Ferrous BOM  1597 - Forrest Road",
+      "created": "2026-09-18T12:30:16.560634+00:00",
+      "completed": "2026-09-18T13:30:39.999579+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-18T12-30-ops_agent-email_approval-2adb9bf5.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1218506382593681",
+      "task_name": "21663-1597 - Accu fixings - grub screws",
+      "created": "2026-09-18T12:30:16.727682+00:00",
+      "completed": "2026-09-18T14:30:18.584862+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-18T12-30-ops_agent-email_approval-6b79e9e9.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1218506382593681",
+      "task_name": "21663-1597 - Accu fixings - grub screws",
+      "created": "2026-09-18T12:30:16.739800+00:00",
+      "completed": "2026-09-18T14:30:34.312925+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-18T12-30-ops_agent-email_approval-81771b3c.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1218357848663271",
+      "task_name": "21626-1600 - Kempston Controls (Subtotal: £348.18)",
+      "created": "2026-09-18T12:30:16.580797+00:00",
+      "completed": "2026-09-18T14:30:51.727725+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-18T12-30-ops_agent-email_approval-ade6c09e.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1217542236607134",
+      "task_name": "21583-1595 - JAJO - 1595 - Long Lead BOM St Georges",
+      "created": "2026-09-18T12:30:16.457496+00:00",
+      "completed": "2026-09-18T14:31:05.427321+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-18T12-30-ops_agent-email_approval-d528f4c1.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1218495343837320",
+      "task_name": "21662-1580 - MISUMI - 1580 - Admiralty House 2.Entire System BOM",
+      "created": "2026-09-18T12:30:16.708548+00:00",
+      "completed": "2026-09-18T14:31:38.555975+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-18T12-30-ops_agent-email_approval-debd120e.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1218458851380847",
+      "task_name": "21636-1597 - Goodman - Ferrous BOM  1597 - Forrest Road",
+      "created": "2026-09-18T12:30:16.609950+00:00",
+      "completed": "2026-09-18T14:31:47.241983+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-18T12-30-ops_agent-email_approval-f3b65c64.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1217816924994537",
+      "task_name": "21580-1037 - Machguard - Bellows Supplier - 1037 - Langley Entire BOM",
+      "created": "2026-09-18T12:30:16.673553+00:00",
+      "completed": "2026-09-18T14:31:54.044279+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-18T12-30-ops_agent-email_approval-f5c907b4.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1218458851380847",
+      "task_name": "21636-1597 - Goodman - Ferrous BOM  1597 - Forrest Road",
+      "created": "2026-09-18T12:30:16.505782+00:00",
+      "completed": "2026-09-18T14:31:58.352628+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-21T14-30-ops_agent-email_approval-d6fd0c84.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1218691097965425",
+      "task_name": "21666-1582 - Mouser - EAO Black Lenses",
+      "created": "2026-09-21T14:30:19.762715+00:00",
+      "completed": "2026-09-21T15:30:45.793538+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-09-21 12:41",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-21T14-30-ops_agent-email_approval-e1464bb9.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1218496174174233",
+      "task_name": "21665-1580 - IGUS - 1580 - Admiralty House 2.Entire System BOM",
+      "created": "2026-09-21T14:30:19.746541+00:00",
+      "completed": "2026-09-21T15:30:52.829736+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-09-21 11:58",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-22T09-30-ops_agent-email_approval-e42a9015.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1218503780562318",
+      "task_name": "21667-1580 - Blickle - 1580 - Admiralty House 2.Entire System BOM",
+      "created": "2026-09-22T09:30:47.683862+00:00",
+      "completed": "2026-09-22T10:30:54.272632+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-09-22 05:47",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-22T14-30-ops_agent-email_approval-64663330.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1218691097965425",
+      "task_name": "21666-1582 - Mouser - EAO Black Lenses",
+      "created": "2026-09-22T14:30:55.454870+00:00",
+      "completed": "2026-09-22T15:31:32.874791+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-09-21 19:51",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-23T14-30-ops_agent-email_approval-3726fc99.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1214073918288684",
+      "task_name": "20985-1575 - SG transmission - 1575 Jenners - G207203",
+      "created": "2026-09-23T14:30:32.752530+00:00",
+      "completed": "2026-09-23T15:30:41.211852+00:00",
+      "note": "task fields updated; comment posted",
+      "decision": "A",
+      "email_received": "2026-09-23 11:41",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    },
+    {
+      "file": "2026-09-24T08-00-ops_agent-email_approval-a8ef42ee.md",
+      "outcome": "COMPLETE",
+      "task_gid": "1218701127739635",
+      "task_name": "21669-1582 - RS components - white EAO lenses",
+      "created": "2026-09-24T08:00:59.752644+00:00",
+      "completed": "2026-09-24T08:31:11.452499+00:00",
+      "note": "task fields updated; note appended to description; comment posted",
+      "decision": "A",
+      "email_received": "2026-09-21 14:59",
+      "format": "label only",
+      "fixed_executor": "would write 1203944084697376"
+    }
+  ],
+  "tasks": [
+    {
+      "task_gid": "1209401888431263",
+      "group": "B",
+      "reason": "Giles moved it to '✅ARRIVED - MOVES TO INVOICES!!' on 2026-08-27 after the email arrived; the stale approval overwrote it on 2026-08-28",
+      "name": "21575-260826 - Amazon - Need engine oil for ours toyota vans 0W-20 - GB623L1HABEY",
+      "url": "https://app.asana.com/1/357939803556123/project/902269769783650/task/1209401888431263",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "Invoices"
+      ],
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "✅ARRIVED - MOVES TO INVOICES!!",
+      "target_gid": "1149418840110590",
+      "due_on": "2026-08-31",
+      "mirror_status": "🚚On Order - Delivery Date CONFIRMED",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-08-28T10-00-ops_agent-email_approval-dc85710f.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-08-28T10:31:11.796618+00:00",
+          "email_received": "2026-08-26T10:23:56Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-08-26T10:02:59.168Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-08-26T10:05:15.557Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-08-27T09:07:04.850Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        },
+        {
+          "at": "2026-08-28T10:31:07.550Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "✅ARRIVED - MOVES TO INVOICES!!",
+          "old_gid": "1149418840110590",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        }
+      ]
+    },
+    {
+      "task_gid": "1214073918288684",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "20985-1575 - SG transmission - 1575 Jenners - CD970010288",
+      "url": "https://app.asana.com/1/357939803556123/project/358790955858777/task/1214073918288684",
+      "completed": false,
+      "in_order_numbers": false,
+      "projects": [
+        "1.3 Project Orders",
+        "1.2 - Goods in / Order Requests",
+        "1575 - Jenners Edinburgh - Mayfair Lift - Internal - Sales Task Manufacturing",
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-09-24",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": true,
+      "requests": [
+        {
+          "file": "2026-08-18T12-30-ops_agent-email_approval-826b92ca.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-08-18T13:30:59.871934+00:00",
+          "email_received": "2026-08-18T11:59:36Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        },
+        {
+          "file": "2026-09-23T14-30-ops_agent-email_approval-3726fc99.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-23T15:30:41.211852+00:00",
+          "email_received": "2026-09-23 11:41",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-04-15T17:08:19.190Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-04-16T13:11:54.405Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "💢 Quote / Order (check BOM Status)",
+          "new_gid": "1143955334207041"
+        },
+        {
+          "at": "2026-04-20T12:45:46.825Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "💢 Quote / Order (check BOM Status)",
+          "old_gid": "1143955334207041",
+          "new": "Quote - Auto Email ",
+          "new_gid": "1144696382567993"
+        },
+        {
+          "at": "2026-04-20T13:35:54.181Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": "Quote - Auto Email ",
+          "old_gid": "1144696382567993",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-06-02T14:31:27.820Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-08-10T10:38:15.298Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-24T12:04:51.813Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1215139006291660",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21120-1373 - Broadway brass - 1373 Plating Manchester - 39123",
+      "url": "https://app.asana.com/1/357939803556123/project/848657415032331/task/1215139006291660",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "1.3 Project Orders",
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-07-16",
+      "mirror_status": "🚚On Order - Delivery Date CONFIRMED",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-07-10T13-00-ops_agent-email_approval-f552ac27.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-07-10T13:31:28.344934+00:00",
+          "email_received": "2026-07-10T07:13:37Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-05-26T15:09:51.934Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-06-29T10:39:01.201Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-07-15T09:27:41.058Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-08-06T08:09:43.121Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1215969777794699",
+      "group": "B",
+      "reason": "Richard moved it to '✅ARRIVED - MOVES TO INVOICES!!' on 2026-07-07 after the email arrived; the stale approval overwrote it on 2026-07-10",
+      "name": "21132-1670 - Aalco Non-Ferrous BOM  1670 -  Blackfriers - ARD0298103UE",
+      "url": "https://app.asana.com/1/357939803556123/project/848657415032331/task/1215969777794699",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "1670 - Blackfriars Lane, No.20 - Wellington Lift - External - Sales Task Manufacturing",
+        "1.3 Project Orders",
+        "Invoices",
+        "Metal Stock / Order Control / Steel Profile",
+        "1.1- Picking / Order control "
+      ],
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "✅ARRIVED - MOVES TO INVOICES!!",
+      "target_gid": "1149418840110590",
+      "due_on": "2026-07-07",
+      "mirror_status": "🚚On Order - Delivery Date CONFIRMED",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-07-10T13-00-ops_agent-email_approval-8713d37f.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-07-10T13:30:43.100634+00:00",
+          "email_received": "2026-07-07T05:54:00Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        },
+        {
+          "file": "2026-07-10T13-00-ops_agent-email_approval-d315da3d.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-07-10T13:31:07.670795+00:00",
+          "email_received": "2026-07-07T12:03:06Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-06-23T15:09:49.411Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": null,
+          "old_gid": null,
+          "new": "Quote - Manual ",
+          "new_gid": "1208935736248203"
+        },
+        {
+          "at": "2026-07-02T13:50:01.409Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": "Quote - Manual ",
+          "old_gid": "1208935736248203",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-07-02T14:02:15.405Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-07-07T12:32:21.797Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        },
+        {
+          "at": "2026-07-10T13:30:40.144Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "✅ARRIVED - MOVES TO INVOICES!!",
+          "old_gid": "1149418840110590",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        }
+      ]
+    },
+    {
+      "task_gid": "1216239416435365",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21151-1580 - Wessex Galvanising - 1580 - Admiralty Single Scissor BOM - WE00305394",
+      "url": "https://app.asana.com/1/357939803556123/project/848657415032331/task/1216239416435365",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "1.3 Project Orders",
+        "1580 - Admiralty House - Wellington Lift - External - Sales Task Manufacturing",
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-05-22",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": true,
+      "requests": [
+        {
+          "file": "2026-07-10T13-00-ops_agent-email_approval-6837b06a.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-07-10T13:30:26.111337+00:00",
+          "email_received": "2026-07-08T13:06:03Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-07-02T14:11:36.371Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-07-08T11:47:19.085Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-07-09T10:39:36.834Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-07-10T13:30:22.499Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-07-14T09:33:52.190Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1216242580440488",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21147-1588 - Keyence - 1588 - America 1 Scissor BOM - 1000340965",
+      "url": "https://app.asana.com/1/357939803556123/project/848657415032331/task/1216242580440488",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "1588 - America Street, No.1 - Internal - Kensington Low Profile cs@solosglasses.com - Sales  Manufacturing",
+        "1.3 Project Orders",
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-07-09",
+      "mirror_status": "🚚On Order - Delivery Date CONFIRMED",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-07-10T13-00-ops_agent-email_approval-90f2ea30.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-07-10T13:30:49.457295+00:00",
+          "email_received": "2026-07-09T08:25:41Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        },
+        {
+          "file": "2026-07-10T13-00-ops_agent-email_approval-97999c4c.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-07-10T13:31:01.799217+00:00",
+          "email_received": "2026-07-07T14:50:00Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        },
+        {
+          "file": "2026-07-10T13-00-ops_agent-email_approval-e8c9a9c0.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-07-10T13:31:18.776696+00:00",
+          "email_received": "2026-07-10T07:00:39Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-07-02T15:39:00.542Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-07-03T11:45:42.597Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "PICKING  / checking ",
+          "new_gid": "1207797437150231"
+        },
+        {
+          "at": "2026-07-07T11:59:32.778Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": "PICKING  / checking ",
+          "old_gid": "1207797437150231",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-07-09T10:39:42.555Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-07-10T13:30:44.238Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-07-10T13:56:40.861Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1216242582077298",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21144-1588 - RS Components - 1588 - America 1 Scissor BOM -  2223325434",
+      "url": "https://app.asana.com/1/357939803556123/project/848657415032331/task/1216242582077298",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "1588 - America Street, No.1 - Internal - Kensington Low Profile cs@solosglasses.com - Sales  Manufacturing",
+        "1.3 Project Orders",
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-09-14",
+      "mirror_status": "🚚On Order - Delivery Date CONFIRMED",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-07-10T13-00-ops_agent-email_approval-96abf9e2.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-07-10T13:30:55.826471+00:00",
+          "email_received": "2026-07-07T11:59:34Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-07-02T15:38:41.481Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-07-03T11:46:21.599Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "PICKING  / checking ",
+          "new_gid": "1207797437150231"
+        },
+        {
+          "at": "2026-07-07T10:50:31.966Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": "PICKING  / checking ",
+          "old_gid": "1207797437150231",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-07-07T10:54:30.615Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-07-09T11:50:06.255Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        },
+        {
+          "at": "2026-07-09T11:51:55.794Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "✅ARRIVED - MOVES TO INVOICES!!",
+          "old_gid": "1149418840110590",
+          "new": "🔜PARTIAL DELIVERY",
+          "new_gid": "1143996800235967"
+        },
+        {
+          "at": "2026-07-10T13:30:50.284Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "🔜PARTIAL DELIVERY",
+          "old_gid": "1143996800235967",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-07-15T08:19:13.784Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🔜PARTIAL DELIVERY",
+          "new_gid": "1143996800235967"
+        },
+        {
+          "at": "2026-09-11T08:56:07.985Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "🔜PARTIAL DELIVERY",
+          "old_gid": "1143996800235967",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1216293347892218",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21148-1578 - Tapeswitch - reorder Tapeswitch Traversing Mod - INV46162",
+      "url": "https://app.asana.com/1/357939803556123/project/848657415032331/task/1216293347892218",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "1.3 Project Orders",
+        "1578 - Traversing Lift New - Single Scissor Lift - R&D Manufacturing",
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-07-20",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": true,
+      "requests": [
+        {
+          "file": "2026-07-10T13-00-ops_agent-email_approval-6e3add02.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-07-10T13:30:32.476250+00:00",
+          "email_received": "2026-07-09T06:50:12Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        },
+        {
+          "file": "2026-07-10T13-00-ops_agent-email_approval-74e419c3.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-07-10T13:30:38.890729+00:00",
+          "email_received": "2026-07-09T06:50:12Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-07-07T10:21:52.538Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-07-07T10:54:37.824Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "💢 Quote / Order (check BOM Status)",
+          "new_gid": "1143955334207041"
+        },
+        {
+          "at": "2026-07-07T12:26:11.500Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": "💢 Quote / Order (check BOM Status)",
+          "old_gid": "1143955334207041",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-07-09T12:11:05.755Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-07-10T13:30:27.179Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-07-21T08:53:54.547Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1216298898397328",
+      "group": "B",
+      "reason": "Richard moved it to '✅ARRIVED - MOVES TO INVOICES!!' on 2026-07-08 after the email arrived; the stale approval overwrote it on 2026-07-10",
+      "name": "21139-60726 - Amazon - Steves plug socket - GB61PPIRABEY",
+      "url": "https://app.asana.com/1/357939803556123/project/902269769783650/task/1216298898397328",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "Invoices"
+      ],
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "✅ARRIVED - MOVES TO INVOICES!!",
+      "target_gid": "1149418840110590",
+      "due_on": "2026-07-07",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": true,
+      "requests": [
+        {
+          "file": "2026-07-10T13-00-ops_agent-email_approval-47f29c4a.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-07-10T13:30:18.805889+00:00",
+          "email_received": "2026-07-06T13:27:58Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        },
+        {
+          "file": "2026-07-10T13-30-ops_agent-email_approval-439b4982.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-07-10T15:30:17.177177+00:00",
+          "email_received": "2026-07-06T13:27:58Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-07-06T13:28:09.020Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-07-08T06:43:33.909Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        },
+        {
+          "at": "2026-07-10T13:30:16.069Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "✅ARRIVED - MOVES TO INVOICES!!",
+          "old_gid": "1149418840110590",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        }
+      ]
+    },
+    {
+      "task_gid": "1216611730862632",
+      "group": "E",
+      "reason": "already Delivery Date CONFIRMED",
+      "name": "21584-1588 - JAJO - 1588 - America Longan Lead",
+      "url": "https://app.asana.com/1/357939803556123/project/358790955858777/task/1216611730862632",
+      "completed": false,
+      "in_order_numbers": true,
+      "projects": [
+        "1588 - America Street, No.1 - Internal - Kensington Low Profile cs@solosglasses.com - Sales  Manufacturing",
+        "1.2 - Goods in / Order Requests",
+        "0 - Order Numbers"
+      ],
+      "live_status": "🚚On Order - Delivery Date CONFIRMED",
+      "live_status_gid": "1203944084697376",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-09-30",
+      "mirror_status": "🚚On Order - Delivery Date CONFIRMED",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-09-01T12-30-ops_agent-email_approval-41ac78c8.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-01T13:30:34.784767+00:00",
+          "email_received": "2026-08-28T17:29:57Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        },
+        {
+          "file": "2026-09-03T10-00-ops_agent-email_approval-cc24ebd2.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-03T10:30:11.115969+00:00",
+          "email_received": "",
+          "format": "inline option GID 1143955334207043",
+          "decision": "M",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-07-16T10:53:57.988Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": null,
+          "old_gid": null,
+          "new": "💢 Quote / Order (check BOM Status)",
+          "new_gid": "1143955334207041"
+        },
+        {
+          "at": "2026-07-21T12:20:34.245Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "💢 Quote / Order (check BOM Status)",
+          "old_gid": "1143955334207041",
+          "new": "Quote - Manual ",
+          "new_gid": "1208935736248203"
+        },
+        {
+          "at": "2026-08-28T12:18:43.081Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": "Quote - Manual ",
+          "old_gid": "1208935736248203",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-17T10:53:13.930Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        }
+      ]
+    },
+    {
+      "task_gid": "1216946791201146",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21207-1575 - Tape switch - replacements - 1575 - INV46252",
+      "url": "https://app.asana.com/1/357939803556123/project/848657415032331/task/1216946791201146",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "1.3 Project Orders",
+        "1575 - Jenners Edinburgh - Mayfair Lift - Internal - Sales Task Manufacturing",
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-09-06",
+      "mirror_status": "🔥ARRIVED - NEED TO QC",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-08-17T09-30-ops_agent-email_approval-93f38bc1.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-08-17T10:30:22.715817+00:00",
+          "email_received": "2026-08-13T14:32:46Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        },
+        {
+          "file": "2026-08-18T12-30-ops_agent-email_approval-f0294df7.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-08-18T13:31:04.642602+00:00",
+          "email_received": "2026-08-18T07:04:52Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "M",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-07-29T09:07:43.704Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-07-29T09:09:11.271Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-08-17T10:30:16.769Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-08-18T09:59:47.832Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🔥ARRIVED - NEED TO QC",
+          "new_gid": "1171789515832142"
+        },
+        {
+          "at": "2026-08-18T10:01:45.915Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "🔥ARRIVED - NEED TO QC",
+          "old_gid": "1171789515832142",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        },
+        {
+          "at": "2026-08-18T13:31:00.827Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "✅ARRIVED - MOVES TO INVOICES!!",
+          "old_gid": "1149418840110590",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-03T08:55:22.366Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        },
+        {
+          "at": "2026-09-03T08:56:00.538Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "✅ARRIVED - MOVES TO INVOICES!!",
+          "old_gid": "1149418840110590",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-03T08:56:37.412Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1217419605998000",
+      "group": "B",
+      "reason": "'TO BE RETURNED ' was already past confirmation; the stale approval overwrote it on 2026-08-28",
+      "name": "21559-1434 - Hydraulic Megastore - Salisbury Motor pump - 328521",
+      "url": "https://app.asana.com/1/357939803556123/project/902269769783650/task/1217419605998000",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "Invoices"
+      ],
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "TO BE RETURNED ",
+      "target_gid": "1173950368279562",
+      "due_on": "2026-08-27",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": true,
+      "requests": [
+        {
+          "file": "2026-08-28T10-00-ops_agent-email_approval-cff5abf5.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-08-28T10:31:03.964905+00:00",
+          "email_received": "2026-08-27T18:48:11Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-08-24T09:07:17.263Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-08-25T12:32:25.256Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        },
+        {
+          "at": "2026-08-25T12:37:01.830Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "✅ARRIVED - MOVES TO INVOICES!!",
+          "old_gid": "1149418840110590",
+          "new": "TO BE RETURNED ",
+          "new_gid": "1173950368279562"
+        },
+        {
+          "at": "2026-08-28T10:30:56.883Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "TO BE RETURNED ",
+          "old_gid": "1173950368279562",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        }
+      ]
+    },
+    {
+      "task_gid": "1217486647101746",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21242-1595 - Lasershape Laser Cut BOM - 1595 - St Georges House Entire system - 4067028",
+      "url": "https://app.asana.com/1/357939803556123/project/848657415032331/task/1217486647101746",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "1595 - St George’s House (SGH) - Windsor lift - Sales Task Manufacturing",
+        "1.3 Project Orders",
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-09-21",
+      "mirror_status": "🔥ARRIVED - NEED TO QC",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-08-18T13-00-ops_agent-email_approval-c0106d12.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-08-18T13:31:10.164434+00:00",
+          "email_received": "2026-08-18T11:06:57Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-08-14T11:49:55.239Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": null,
+          "old_gid": null,
+          "new": "Quote - Auto Email ",
+          "new_gid": "1144696382567993"
+        },
+        {
+          "at": "2026-08-17T11:40:07.052Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": "Quote - Auto Email ",
+          "old_gid": "1144696382567993",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-08-18T13:03:11.152Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-08-18T13:31:05.627Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-08-25T13:03:12.841Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-09-08T13:01:20.728Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "🔥ARRIVED - NEED TO QC",
+          "new_gid": "1171789515832142"
+        },
+        {
+          "at": "2026-09-09T09:36:03.594Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "🔥ARRIVED - NEED TO QC",
+          "old_gid": "1171789515832142",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1217486678215190",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21573-1595 - SPG Glass - 1595 - St Georges House Entire system",
+      "url": "https://app.asana.com/1/357939803556123/project/358790955858777/task/1217486678215190",
+      "completed": false,
+      "in_order_numbers": false,
+      "projects": [
+        "1.3 Project Orders",
+        "1595 - St George’s House (SGH) - Windsor lift - Sales Task Manufacturing",
+        "1.2 - Goods in / Order Requests",
+        "1.1- Picking / Order control ",
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-09-22",
+      "mirror_status": "🚚On Order - Delivery Date CONFIRMED",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-09-16T11-31-ops_agent-email_approval-5b7ebaf7.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-16T12:31:05.280977+00:00",
+          "email_received": "",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-08-14T10:44:44.199Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-08-18T10:50:59.910Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "Quote - Auto Email ",
+          "new_gid": "1144696382567993"
+        },
+        {
+          "at": "2026-08-25T16:04:38.386Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": "Quote - Auto Email ",
+          "old_gid": "1144696382567993",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-08-28T13:15:13.523Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-09-16T12:31:02.325Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-21T12:57:17.853Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-09-22T08:21:31.966Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "🔥ARRIVED - NEED TO QC",
+          "new_gid": "1171789515832142"
+        },
+        {
+          "at": "2026-09-22T08:40:25.834Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "🔥ARRIVED - NEED TO QC",
+          "old_gid": "1171789515832142",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1217486980895664",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21578-1595 - Kerry Way Rubber Supplier - 1595 - St Georges House Entire system - SI-10927",
+      "url": "https://app.asana.com/1/357939803556123/project/848657415032331/task/1217486980895664",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "1.3 Project Orders",
+        "1595 - St George’s House (SGH) - Windsor lift - Sales Task Manufacturing",
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-09-10",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": true,
+      "requests": [
+        {
+          "file": "2026-09-10T08-01-ops_agent-email_approval-85906bf6.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-10T08:32:28.579219+00:00",
+          "email_received": "",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-08-14T10:48:18.822Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-08-14T12:51:36.931Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "PICKING  / checking ",
+          "new_gid": "1207797437150231"
+        },
+        {
+          "at": "2026-08-25T11:09:05.910Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "PICKING  / checking ",
+          "old_gid": "1207797437150231",
+          "new": "💢 Quote / Order (check BOM Status)",
+          "new_gid": "1143955334207041"
+        },
+        {
+          "at": "2026-08-25T11:09:16.708Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "💢 Quote / Order (check BOM Status)",
+          "old_gid": "1143955334207041",
+          "new": "Quote - Manual ",
+          "new_gid": "1208935736248203"
+        },
+        {
+          "at": "2026-08-26T13:44:35.963Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": "Quote - Manual ",
+          "old_gid": "1208935736248203",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-10T10:43:46.232Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1217530130097546",
+      "group": "E",
+      "reason": "moved on since - now '🔜PARTIAL DELIVERY'",
+      "name": "21245-180826 - Cromwell - OMRON Relay 230 v AC - 0016594062",
+      "url": "https://app.asana.com/1/357939803556123/project/902269769783650/task/1217530130097546",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "Invoices"
+      ],
+      "live_status": "🔜PARTIAL DELIVERY",
+      "live_status_gid": "1143996800235967",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-09-06",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": true,
+      "requests": [
+        {
+          "file": "2026-09-03T10-00-ops_agent-email_approval-e7233b42.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-03T10:30:23.701252+00:00",
+          "email_received": "",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-08-18T14:43:29.246Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-08-20T12:15:29.171Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🔜PARTIAL DELIVERY",
+          "new_gid": "1143996800235967"
+        },
+        {
+          "at": "2026-09-03T10:30:20.193Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "🔜PARTIAL DELIVERY",
+          "old_gid": "1143996800235967",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-04T10:56:39.085Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        },
+        {
+          "at": "2026-09-10T06:15:21.602Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "✅ARRIVED - MOVES TO INVOICES!!",
+          "old_gid": "1149418840110590",
+          "new": "🔜PARTIAL DELIVERY",
+          "new_gid": "1143996800235967"
+        }
+      ]
+    },
+    {
+      "task_gid": "1217541497709661",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21247-1037 - Steerforth - 1037 - 1.Long Leading Time - INV202216",
+      "url": "https://app.asana.com/1/357939803556123/project/848657415032331/task/1217541497709661",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "1.3 Project Orders",
+        "1037 - Langley Street, 7A. Existing Lift Refurbishment - Internal - Portobello Lift Manufacturing",
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-09-16",
+      "mirror_status": "🚚On Order - Delivery Date CONFIRMED",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-08-19T11-00-ops_agent-email_approval-ff088750.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-08-19T11:30:45.148972+00:00",
+          "email_received": "2026-08-19T07:20:12Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-08-17T11:11:09.742Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-08-17T13:44:23.013Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "Quote - Auto Email ",
+          "new_gid": "1144696382567993"
+        },
+        {
+          "at": "2026-08-18T10:55:26.096Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": "Quote - Auto Email ",
+          "old_gid": "1144696382567993",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-15T12:03:17.164Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-09-16T08:46:57.459Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1217542110017557",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21248-1595 - Steerforth - 1595 - Long Lead BOM St Georges - INV202215",
+      "url": "https://app.asana.com/1/357939803556123/project/848657415032331/task/1217542110017557",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "1.3 Project Orders",
+        "1595 - St George’s House (SGH) - Windsor lift - Sales Task Manufacturing",
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-09-16",
+      "mirror_status": "🚚On Order - Delivery Date CONFIRMED",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-08-19T11-00-ops_agent-email_approval-c33c38d7.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-08-19T11:30:38.905395+00:00",
+          "email_received": "2026-08-19T07:19:51Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-08-17T11:36:59.551Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-08-17T13:45:30.748Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "Quote - Auto Email ",
+          "new_gid": "1144696382567993"
+        },
+        {
+          "at": "2026-08-18T11:02:43.558Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": "Quote - Auto Email ",
+          "old_gid": "1144696382567993",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-15T12:03:47.795Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-09-16T08:52:53.990Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1217542236607134",
+      "group": "A",
+      "reason": "approved confirmation never landed",
+      "name": "21583-1595 - JAJO - 1595 - Long Lead BOM St Georges",
+      "url": "https://app.asana.com/1/357939803556123/project/848657415032331/task/1217542236607134",
+      "completed": false,
+      "in_order_numbers": true,
+      "projects": [
+        "1.3 Project Orders",
+        "0 - Order Numbers",
+        "1.1- Picking / Order control "
+      ],
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "🚚On Order - Delivery Date CONFIRMED",
+      "target_gid": "1203944084697376",
+      "due_on": "2026-09-30",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-09-18T12-30-ops_agent-email_approval-ade6c09e.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-18T14:31:05.427321+00:00",
+          "email_received": "",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-08-17T11:36:07.779Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-08-28T10:05:14.019Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        }
+      ]
+    },
+    {
+      "task_gid": "1217546337614415",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21250-1365 - RS Components - 1365 - Serjeants Inn Entire BOM -2223118396",
+      "url": "https://app.asana.com/1/357939803556123/project/848657415032331/task/1217546337614415",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "1.3 Project Orders",
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-08-20",
+      "mirror_status": "🔜PARTIAL DELIVERY",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-08-19T11-00-ops_agent-email_approval-1c8d8956.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-08-19T11:30:30.911069+00:00",
+          "email_received": "2026-08-19T09:44:52Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-08-17T13:36:43.943Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-08-17T14:44:15.171Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "PICKING  / checking ",
+          "new_gid": "1207797437150231"
+        },
+        {
+          "at": "2026-08-19T09:26:38.211Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": "PICKING  / checking ",
+          "old_gid": "1207797437150231",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-08-20T12:16:23.507Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🔜PARTIAL DELIVERY",
+          "new_gid": "1143996800235967"
+        },
+        {
+          "at": "2026-09-03T08:16:58.789Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "🔜PARTIAL DELIVERY",
+          "old_gid": "1143996800235967",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1217630015875025",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21253-190826 - Keyence - 5 mtr. Analogue X2 output position sensor - 1000344824",
+      "url": "https://app.asana.com/1/357939803556123/project/902269769783650/task/1217630015875025",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-08-19",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": true,
+      "requests": [
+        {
+          "file": "2026-08-20T10-00-ops_agent-email_approval-c90dcfb9.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-08-20T10:31:01.509872+00:00",
+          "email_received": "2026-08-19T12:36:46Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-08-19T09:18:51.322Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": null,
+          "old_gid": null,
+          "new": "Quote - Manual ",
+          "new_gid": "1208935736248203"
+        },
+        {
+          "at": "2026-08-19T09:21:06.884Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": "Quote - Manual ",
+          "old_gid": "1208935736248203",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-08-20T12:17:41.018Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1217769361544570",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21565-1555 - Aalco - steel profile tube - ARD0302115UE",
+      "url": "https://app.asana.com/1/357939803556123/project/902269769783650/task/1217769361544570",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-08-25",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": true,
+      "requests": [
+        {
+          "file": "2026-08-25T09-30-ops_agent-email_approval-34e5af7d.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-08-25T10:31:04.779666+00:00",
+          "email_received": "2026-08-24T13:55:24Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        },
+        {
+          "file": "2026-08-25T09-30-ops_agent-email_approval-d0d60f02.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-08-25T10:31:11.253399+00:00",
+          "email_received": "2026-08-25T04:40:00Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        },
+        {
+          "file": "2026-08-25T09-30-ops_agent-email_approval-f3031a67.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-08-25T10:31:20.832612+00:00",
+          "email_received": "2026-08-24T16:21:27Z",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-08-24T13:48:43.860Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-08-24T14:18:54.798Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-08-25T10:30:59.662Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-08-25T12:31:36.290Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1217816924994537",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21580-1037 - Machguard - Bellows Supplier - 1037 - Langley Entire BOM - 28114",
+      "url": "https://app.asana.com/1/357939803556123/project/848657415032331/task/1217816924994537",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "1.3 Project Orders",
+        "1037 - Langley Street, 7A. Existing Lift Refurbishment - Internal - Portobello Lift Manufacturing",
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-09-17",
+      "mirror_status": "🚚On Order - Delivery Date CONFIRMED",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-09-18T12-30-ops_agent-email_approval-f3b65c64.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-18T14:31:54.044279+00:00",
+          "email_received": "",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-08-25T08:24:22.178Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-08-25T08:35:19.919Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "💢 Quote / Order (check BOM Status)",
+          "new_gid": "1143955334207041"
+        },
+        {
+          "at": "2026-08-25T08:48:53.429Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "💢 Quote / Order (check BOM Status)",
+          "old_gid": "1143955334207041",
+          "new": "Quote - Manual ",
+          "new_gid": "1208935736248203"
+        },
+        {
+          "at": "2026-08-27T10:46:09.957Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": "Quote - Manual ",
+          "old_gid": "1208935736248203",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-17T10:34:34.349Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-09-17T13:48:14.492Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "🔥ARRIVED - NEED TO QC",
+          "new_gid": "1171789515832142"
+        },
+        {
+          "at": "2026-09-17T13:54:42.510Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "🔥ARRIVED - NEED TO QC",
+          "old_gid": "1171789515832142",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        },
+        {
+          "at": "2026-09-18T14:31:50.211Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "✅ARRIVED - MOVES TO INVOICES!!",
+          "old_gid": "1149418840110590",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-24T08:29:34.209Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1218082551260260",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21595-30926 - RS components - Counterbore - 2223259101",
+      "url": "https://app.asana.com/1/357939803556123/project/902269769783650/task/1218082551260260",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "Tool Control",
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-09-04",
+      "mirror_status": "🚚On Order - Delivery Date CONFIRMED",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-09-03T10-00-ops_agent-email_approval-d37b787a.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-03T10:30:16.978783+00:00",
+          "email_received": "",
+          "format": "inline option GID 1143955334207043",
+          "decision": "A",
+          "fixed_executor": "would FAIL, nothing written: ORDER Status: request names option 1143955334207043 but 'On Order - Delivery Date Confirmed' is 1203944084697376 ('On Order - Delivery Date CONFIRMED') - label and GID disagree"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-09-02T14:41:57.617Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "💢 Quote / Order (check BOM Status)",
+          "new_gid": "1143955334207041"
+        },
+        {
+          "at": "2026-09-03T07:30:15.938Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": "💢 Quote / Order (check BOM Status)",
+          "old_gid": "1143955334207041",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-03T07:34:30.246Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-09-03T10:30:11.958Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-03T11:32:41.100Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-09-09T07:34:31.237Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1218237285026846",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21610-1171 - Wessex Galv - St Mary Le BOW - WE00307459",
+      "url": "https://app.asana.com/1/357939803556123/project/902269769783650/task/1218237285026846",
+      "completed": false,
+      "in_order_numbers": false,
+      "projects": [
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-09-14",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": true,
+      "requests": [
+        {
+          "file": "2026-09-10T08-01-ops_agent-email_approval-00e53610.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-10T08:32:24.721128+00:00",
+          "email_received": "",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-09-08T10:43:38.291Z",
+          "by_gid": null,
+          "by": "Asana rule",
+          "old": null,
+          "old_gid": null,
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-09T11:00:10.529Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-09-10T08:32:21.955Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-14T10:44:49.559Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1218357848663271",
+      "group": "E",
+      "reason": "moved on since - now '🔜PARTIAL DELIVERY'",
+      "name": "21626-1600 - Kempston Controls (Subtotal: £348.18) - IN1992560",
+      "url": "https://app.asana.com/1/357939803556123/project/848657415032333/task/1218357848663271",
+      "completed": false,
+      "in_order_numbers": false,
+      "projects": [
+        "1.1- Picking / Order control ",
+        "Invoices"
+      ],
+      "live_status": "🔜PARTIAL DELIVERY",
+      "live_status_gid": "1143996800235967",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-10-23",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-09-17T12-30-ops_agent-email_approval-af9662c3.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-17T14:30:45.736174+00:00",
+          "email_received": "",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        },
+        {
+          "file": "2026-09-18T12-30-ops_agent-email_approval-81771b3c.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-18T14:30:51.727725+00:00",
+          "email_received": "",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-09-10T12:40:18.309Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": null,
+          "old_gid": null,
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-17T10:51:58.339Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-09-17T13:31:11.773Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-18T08:44:17.637Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🔥ARRIVED - NEED TO QC",
+          "new_gid": "1171789515832142"
+        },
+        {
+          "at": "2026-09-18T08:52:03.030Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "🔥ARRIVED - NEED TO QC",
+          "old_gid": "1171789515832142",
+          "new": "🔜PARTIAL DELIVERY",
+          "new_gid": "1143996800235967"
+        },
+        {
+          "at": "2026-09-18T14:30:46.717Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "🔜PARTIAL DELIVERY",
+          "old_gid": "1143996800235967",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-21T14:15:38.063Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        },
+        {
+          "at": "2026-09-24T07:41:49.148Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "✅ARRIVED - MOVES TO INVOICES!!",
+          "old_gid": "1149418840110590",
+          "new": "🔜PARTIAL DELIVERY",
+          "new_gid": "1143996800235967"
+        }
+      ]
+    },
+    {
+      "task_gid": "1218458851380847",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21636-1597 - Goodman - Ferrous BOM  1597 - Forrest Road - 00626765",
+      "url": "https://app.asana.com/1/357939803556123/project/848657415032331/task/1218458851380847",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "1.3 Project Orders",
+        "Invoices",
+        "Metal Stock / Order Control / Steel Profile"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-09-24",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": true,
+      "requests": [
+        {
+          "file": "2026-09-18T12-30-ops_agent-email_approval-20833378.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-18T13:30:39.999579+00:00",
+          "email_received": "",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        },
+        {
+          "file": "2026-09-18T12-30-ops_agent-email_approval-debd120e.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-18T14:31:47.241983+00:00",
+          "email_received": "",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        },
+        {
+          "file": "2026-09-18T12-30-ops_agent-email_approval-f5c907b4.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-18T14:31:58.352628+00:00",
+          "email_received": "",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-09-14T13:41:49.136Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": null,
+          "old_gid": null,
+          "new": "💢 Quote / Order (check BOM Status)",
+          "new_gid": "1143955334207041"
+        },
+        {
+          "at": "2026-09-14T15:10:43.270Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "💢 Quote / Order (check BOM Status)",
+          "old_gid": "1143955334207041",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-15T12:04:47.580Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-09-18T13:30:34.580Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-22T09:45:49.336Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🔥ARRIVED - NEED TO QC",
+          "new_gid": "1171789515832142"
+        },
+        {
+          "at": "2026-09-22T10:00:18.790Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "🔥ARRIVED - NEED TO QC",
+          "old_gid": "1171789515832142",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1218495046058513",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21646-1580 - Maytec - 1580 - Admiralty House 2.Entire System BOM",
+      "url": "https://app.asana.com/1/357939803556123/project/358790955858777/task/1218495046058513",
+      "completed": false,
+      "in_order_numbers": false,
+      "projects": [
+        "1.3 Project Orders",
+        "1580 - Admiralty House - Wellington Lift - External - Sales Task Manufacturing",
+        "1.2 - Goods in / Order Requests",
+        "1.1- Picking / Order control ",
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-09-25",
+      "mirror_status": "🔥ARRIVED - NEED TO QC",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-09-17T12-30-ops_agent-email_approval-49e99c83.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-17T13:30:59.195125+00:00",
+          "email_received": "",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-09-15T09:48:29.751Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": null,
+          "old_gid": null,
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-09-15T10:25:27.003Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "💢 Quote / Order (check BOM Status)",
+          "new_gid": "1143955334207041"
+        },
+        {
+          "at": "2026-09-15T12:44:26.067Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "💢 Quote / Order (check BOM Status)",
+          "old_gid": "1143955334207041",
+          "new": "Quote - Auto Email ",
+          "new_gid": "1144696382567993"
+        },
+        {
+          "at": "2026-09-16T11:25:47.637Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "Quote - Auto Email ",
+          "old_gid": "1144696382567993",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-17T10:53:03.358Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-09-17T13:30:46.511Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-25T10:10:53.644Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🔥ARRIVED - NEED TO QC",
+          "new_gid": "1171789515832142"
+        },
+        {
+          "at": "2026-09-25T11:26:57.752Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "🔥ARRIVED - NEED TO QC",
+          "old_gid": "1171789515832142",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1218495343837320",
+      "group": "A",
+      "reason": "approved confirmation never landed",
+      "name": "21662-1580 - MISUMI - 1580 - Admiralty House 2.Entire System BOM",
+      "url": "https://app.asana.com/1/357939803556123/project/358790955858777/task/1218495343837320",
+      "completed": false,
+      "in_order_numbers": true,
+      "projects": [
+        "1.3 Project Orders",
+        "1580 - Admiralty House - Wellington Lift - External - Sales Task Manufacturing",
+        "1.2 - Goods in / Order Requests",
+        "0 - Order Numbers",
+        "1.1- Picking / Order control "
+      ],
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "🚚On Order - Delivery Date CONFIRMED",
+      "target_gid": "1203944084697376",
+      "due_on": "2026-10-13",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-09-18T12-30-ops_agent-email_approval-d528f4c1.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-18T14:31:38.555975+00:00",
+          "email_received": "",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-09-15T09:54:16.493Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": null,
+          "old_gid": null,
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-09-15T10:24:21.460Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "PICKING  / checking ",
+          "new_gid": "1207797437150231"
+        },
+        {
+          "at": "2026-09-17T08:52:36.732Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "PICKING  / checking ",
+          "old_gid": "1207797437150231",
+          "new": "💢 Quote / Order (check BOM Status)",
+          "new_gid": "1143955334207041"
+        },
+        {
+          "at": "2026-09-17T09:45:49.269Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "💢 Quote / Order (check BOM Status)",
+          "old_gid": "1143955334207041",
+          "new": "Quote - Manual ",
+          "new_gid": "1208935736248203"
+        },
+        {
+          "at": "2026-09-18T08:40:42.351Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "Quote - Manual ",
+          "old_gid": "1208935736248203",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        }
+      ]
+    },
+    {
+      "task_gid": "1218496174174233",
+      "group": "A",
+      "reason": "approved confirmation never landed",
+      "name": "21665-1580 - IGUS - 1580 - Admiralty House 2.Entire System BOM",
+      "url": "https://app.asana.com/1/357939803556123/project/358790955858777/task/1218496174174233",
+      "completed": false,
+      "in_order_numbers": true,
+      "projects": [
+        "1.3 Project Orders",
+        "1580 - Admiralty House - Wellington Lift - External - Sales Task Manufacturing",
+        "1.2 - Goods in / Order Requests",
+        "0 - Order Numbers",
+        "1.1- Picking / Order control "
+      ],
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "🚚On Order - Delivery Date CONFIRMED",
+      "target_gid": "1203944084697376",
+      "due_on": "2026-10-05",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-09-21T14-30-ops_agent-email_approval-e1464bb9.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-21T15:30:52.829736+00:00",
+          "email_received": "2026-09-21 11:58",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-09-15T09:54:07.373Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": null,
+          "old_gid": null,
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-09-15T10:24:21.236Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "PICKING  / checking ",
+          "new_gid": "1207797437150231"
+        },
+        {
+          "at": "2026-09-16T08:48:28.776Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "PICKING  / checking ",
+          "old_gid": "1207797437150231",
+          "new": "💢 Quote / Order (check BOM Status)",
+          "new_gid": "1143955334207041"
+        },
+        {
+          "at": "2026-09-17T11:38:22.279Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "💢 Quote / Order (check BOM Status)",
+          "old_gid": "1143955334207041",
+          "new": "Quote - Auto Email ",
+          "new_gid": "1144696382567993"
+        },
+        {
+          "at": "2026-09-21T11:03:52.506Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "Quote - Auto Email ",
+          "old_gid": "1144696382567993",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        }
+      ]
+    },
+    {
+      "task_gid": "1218503780562318",
+      "group": "A",
+      "reason": "approved confirmation never landed",
+      "name": "21667-1580 - Blickle - 1580 - Admiralty House 2.Entire System BOM - 901117077",
+      "url": "https://app.asana.com/1/357939803556123/project/358790955858777/task/1218503780562318",
+      "completed": false,
+      "in_order_numbers": true,
+      "projects": [
+        "1.3 Project Orders",
+        "1580 - Admiralty House - Wellington Lift - External - Sales Task Manufacturing",
+        "1.2 - Goods in / Order Requests",
+        "0 - Order Numbers",
+        "1.1- Picking / Order control "
+      ],
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "🚚On Order - Delivery Date CONFIRMED",
+      "target_gid": "1203944084697376",
+      "due_on": "2026-09-23",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": true,
+      "requests": [
+        {
+          "file": "2026-09-22T09-30-ops_agent-email_approval-e42a9015.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-22T10:30:54.272632+00:00",
+          "email_received": "2026-09-22 05:47",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-09-15T09:50:44.348Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": null,
+          "old_gid": null,
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-09-15T10:24:21.359Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "PICKING  / checking ",
+          "new_gid": "1207797437150231"
+        },
+        {
+          "at": "2026-09-17T08:52:05.084Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "PICKING  / checking ",
+          "old_gid": "1207797437150231",
+          "new": "💢 Quote / Order (check BOM Status)",
+          "new_gid": "1143955334207041"
+        },
+        {
+          "at": "2026-09-21T12:39:24.588Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "💢 Quote / Order (check BOM Status)",
+          "old_gid": "1143955334207041",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        }
+      ]
+    },
+    {
+      "task_gid": "1218506382593681",
+      "group": "A",
+      "reason": "approved confirmation never landed",
+      "name": "21663-1597 - Accu fixings - grub screws - IN1815527",
+      "url": "https://app.asana.com/1/357939803556123/project/358790955858777/task/1218506382593681",
+      "completed": false,
+      "in_order_numbers": true,
+      "projects": [
+        "1597 - Forrest Road - Manufacturing - Traversing Lift - Internal",
+        "1.3 Project Orders",
+        "1.2 - Goods in / Order Requests",
+        "Stock Fixings Control",
+        "0 - Order Numbers",
+        "1.1- Picking / Order control "
+      ],
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "🚚On Order - Delivery Date CONFIRMED",
+      "target_gid": "1203944084697376",
+      "due_on": "2026-10-05",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-09-18T12-30-ops_agent-email_approval-2adb9bf5.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-18T14:30:18.584862+00:00",
+          "email_received": "",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        },
+        {
+          "file": "2026-09-18T12-30-ops_agent-email_approval-6b79e9e9.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-18T14:30:34.312925+00:00",
+          "email_received": "",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-09-15T15:49:47.458Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": null,
+          "old_gid": null,
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-09-18T09:18:25.565Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        }
+      ]
+    },
+    {
+      "task_gid": "1218534309660829",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21643-160926 - Screwfix - Pauls work boots - A28062726532",
+      "url": "https://app.asana.com/1/357939803556123/project/902269769783650/task/1218534309660829",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-09-17",
+      "mirror_status": "🚚On Order - Delivery Date CONFIRMED",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-09-16T10-00-ops_agent-email_approval-7b42b52a.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-16T10:31:13.961421+00:00",
+          "email_received": "",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-09-16T07:14:25.102Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": null,
+          "old_gid": null,
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-16T07:17:25.910Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-09-16T10:31:08.560Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-17T10:34:40.751Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-09-17T11:53:01.978Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1218572072080032",
+      "group": "A",
+      "reason": "approved confirmation never landed",
+      "name": "21650-1591 - Romans flatback for Uni of Cambridge",
+      "url": "https://app.asana.com/1/357939803556123/project/854650811917168/task/1218572072080032",
+      "completed": false,
+      "in_order_numbers": true,
+      "projects": [
+        "0 - Order Numbers",
+        "1591 - University of Cambridge, Department Geography - Internal - Single Traversing Lift - Sales Task Manufacturing"
+      ],
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "🚚On Order - Delivery Date CONFIRMED",
+      "target_gid": "1203944084697376",
+      "due_on": "2026-09-21",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": true,
+      "requests": [
+        {
+          "file": "2026-09-17T12-30-ops_agent-email_approval-5a94afc4.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-17T13:31:05.882239+00:00",
+          "email_received": "",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-09-17T07:24:54.280Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": null,
+          "old_gid": null,
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-17T10:34:44.712Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "🚚On Order - Delivery Date CONFIRMED",
+          "new_gid": "1203944084697376"
+        },
+        {
+          "at": "2026-09-17T13:31:00.659Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "🚚On Order - Delivery Date CONFIRMED",
+          "old_gid": "1203944084697376",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        }
+      ]
+    },
+    {
+      "task_gid": "1218691097965425",
+      "group": "E",
+      "reason": "moved on since - now '✅ARRIVED - MOVES TO INVOICES!!'",
+      "name": "21666-1582 - Mouser - EAO Black Lenses - 92627276",
+      "url": "https://app.asana.com/1/357939803556123/project/848657415032331/task/1218691097965425",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "1582 - Russell Square No.50-51 - External - Wellington Stairlift - Sales Task Manufacturing",
+        "1.3 Project Orders",
+        "Invoices"
+      ],
+      "live_status": "✅ARRIVED - MOVES TO INVOICES!!",
+      "live_status_gid": "1149418840110590",
+      "target_label": null,
+      "target_gid": null,
+      "due_on": "2026-09-24",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": true,
+      "requests": [
+        {
+          "file": "2026-09-21T14-30-ops_agent-email_approval-d6fd0c84.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-21T15:30:45.793538+00:00",
+          "email_received": "2026-09-21 12:41",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        },
+        {
+          "file": "2026-09-22T14-30-ops_agent-email_approval-64663330.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-22T15:31:32.874791+00:00",
+          "email_received": "2026-09-21 19:51",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-09-21T12:29:19.457Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": null,
+          "old_gid": null,
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-21T12:29:20.344Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "TO BE ASSESSED",
+          "new_gid": "1208159308935089"
+        },
+        {
+          "at": "2026-09-21T12:34:15.398Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": "TO BE ASSESSED",
+          "old_gid": "1208159308935089",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-24T10:01:41.978Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        }
+      ]
+    },
+    {
+      "task_gid": "1218701127739635",
+      "group": "B",
+      "reason": "Richard moved it to '✅ARRIVED - MOVES TO INVOICES!!' on 2026-09-22 after the email arrived; the stale approval overwrote it on 2026-09-24",
+      "name": "21669-1582 - RS components - white EAO lenses - 2223425111",
+      "url": "https://app.asana.com/1/357939803556123/project/902269769783650/task/1218701127739635",
+      "completed": true,
+      "in_order_numbers": false,
+      "projects": [
+        "1582 - Russell Square No.50-51 - External - Wellington Stairlift - Sales Task Manufacturing",
+        "Invoices"
+      ],
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "✅ARRIVED - MOVES TO INVOICES!!",
+      "target_gid": "1149418840110590",
+      "due_on": "2026-09-22",
+      "mirror_status": "⏰On Order - Awaiting CONFIRMATION",
+      "chased_by_rule_a": false,
+      "requests": [
+        {
+          "file": "2026-09-24T08-00-ops_agent-email_approval-a8ef42ee.md",
+          "outcome": "COMPLETE",
+          "completed": "2026-09-24T08:31:11.452499+00:00",
+          "email_received": "2026-09-21 14:59",
+          "format": "label only",
+          "decision": "A",
+          "fixed_executor": "would write 1203944084697376"
+        }
+      ],
+      "status_history": [
+        {
+          "at": "2026-09-21T14:53:33.237Z",
+          "by_gid": "1142108324926610",
+          "by": "Giles",
+          "old": null,
+          "old_gid": null,
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        },
+        {
+          "at": "2026-09-22T08:48:02.181Z",
+          "by_gid": "357614200440807",
+          "by": "Richard",
+          "old": "⏰On Order - Awaiting CONFIRMATION",
+          "old_gid": "1143955334207043",
+          "new": "✅ARRIVED - MOVES TO INVOICES!!",
+          "new_gid": "1149418840110590"
+        },
+        {
+          "at": "2026-09-24T08:31:06.815Z",
+          "by_gid": "1210751448247658",
+          "by": "Giles's Service Account",
+          "old": "✅ARRIVED - MOVES TO INVOICES!!",
+          "old_gid": "1149418840110590",
+          "new": "⏰On Order - Awaiting CONFIRMATION",
+          "new_gid": "1143955334207043"
+        }
+      ]
+    }
+  ],
+  "proposed_batch": [
+    {
+      "task_gid": "1209401888431263",
+      "name": "21575-260826 - Amazon - Need engine oil for ours toyota vans 0W-20 - GB623L1HABEY",
+      "group": "B",
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "✅ARRIVED - MOVES TO INVOICES!!",
+      "target_gid": "1149418840110590",
+      "reason": "Giles moved it to '✅ARRIVED - MOVES TO INVOICES!!' on 2026-08-27 after the email arrived; the stale approval overwrote it on 2026-08-28"
+    },
+    {
+      "task_gid": "1215969777794699",
+      "name": "21132-1670 - Aalco Non-Ferrous BOM  1670 -  Blackfriers - ARD0298103UE",
+      "group": "B",
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "✅ARRIVED - MOVES TO INVOICES!!",
+      "target_gid": "1149418840110590",
+      "reason": "Richard moved it to '✅ARRIVED - MOVES TO INVOICES!!' on 2026-07-07 after the email arrived; the stale approval overwrote it on 2026-07-10"
+    },
+    {
+      "task_gid": "1216298898397328",
+      "name": "21139-60726 - Amazon - Steves plug socket - GB61PPIRABEY",
+      "group": "B",
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "✅ARRIVED - MOVES TO INVOICES!!",
+      "target_gid": "1149418840110590",
+      "reason": "Richard moved it to '✅ARRIVED - MOVES TO INVOICES!!' on 2026-07-08 after the email arrived; the stale approval overwrote it on 2026-07-10"
+    },
+    {
+      "task_gid": "1217419605998000",
+      "name": "21559-1434 - Hydraulic Megastore - Salisbury Motor pump - 328521",
+      "group": "B",
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "TO BE RETURNED ",
+      "target_gid": "1173950368279562",
+      "reason": "'TO BE RETURNED ' was already past confirmation; the stale approval overwrote it on 2026-08-28"
+    },
+    {
+      "task_gid": "1217542236607134",
+      "name": "21583-1595 - JAJO - 1595 - Long Lead BOM St Georges",
+      "group": "A",
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "🚚On Order - Delivery Date CONFIRMED",
+      "target_gid": "1203944084697376",
+      "reason": "approved confirmation never landed"
+    },
+    {
+      "task_gid": "1218495343837320",
+      "name": "21662-1580 - MISUMI - 1580 - Admiralty House 2.Entire System BOM",
+      "group": "A",
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "🚚On Order - Delivery Date CONFIRMED",
+      "target_gid": "1203944084697376",
+      "reason": "approved confirmation never landed"
+    },
+    {
+      "task_gid": "1218496174174233",
+      "name": "21665-1580 - IGUS - 1580 - Admiralty House 2.Entire System BOM",
+      "group": "A",
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "🚚On Order - Delivery Date CONFIRMED",
+      "target_gid": "1203944084697376",
+      "reason": "approved confirmation never landed"
+    },
+    {
+      "task_gid": "1218503780562318",
+      "name": "21667-1580 - Blickle - 1580 - Admiralty House 2.Entire System BOM - 901117077",
+      "group": "A",
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "🚚On Order - Delivery Date CONFIRMED",
+      "target_gid": "1203944084697376",
+      "reason": "approved confirmation never landed"
+    },
+    {
+      "task_gid": "1218506382593681",
+      "name": "21663-1597 - Accu fixings - grub screws - IN1815527",
+      "group": "A",
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "🚚On Order - Delivery Date CONFIRMED",
+      "target_gid": "1203944084697376",
+      "reason": "approved confirmation never landed"
+    },
+    {
+      "task_gid": "1218572072080032",
+      "name": "21650-1591 - Romans flatback for Uni of Cambridge",
+      "group": "A",
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "🚚On Order - Delivery Date CONFIRMED",
+      "target_gid": "1203944084697376",
+      "reason": "approved confirmation never landed"
+    },
+    {
+      "task_gid": "1218701127739635",
+      "name": "21669-1582 - RS components - white EAO lenses - 2223425111",
+      "group": "B",
+      "live_status": "⏰On Order - Awaiting CONFIRMATION",
+      "live_status_gid": "1143955334207043",
+      "target_label": "✅ARRIVED - MOVES TO INVOICES!!",
+      "target_gid": "1149418840110590",
+      "reason": "Richard moved it to '✅ARRIVED - MOVES TO INVOICES!!' on 2026-09-22 after the email arrived; the stale approval overwrote it on 2026-09-24"
+    }
+  ]
+}

@@ -322,6 +322,38 @@ def update_parts_control_stock_action(task_gid: str, new_stock_action: str,
         return {"written": 0, "skipped": 1, "errors": 0}
 
 
+def update_field_registry_notes(field_name: str, notes: str,
+                                source: str = "manual_correction",
+                                db_path: str = DEFAULT_DB_PATH) -> dict:
+    """Targeted UPDATE of asana_field_registry.notes for one field.
+
+    Agents read these notes to pick field / option GIDs, so a wrong note is a wrong
+    Asana write waiting to happen (2026-09-25: the order_status note named the
+    Awaiting CONFIRMATION option as 'Confirmed'). db_init_ops.py seeds the table
+    with INSERT OR IGNORE, so fixing the seed never reaches an existing database —
+    live rows are corrected here. Sets notes only; never inserts a row. Audits via
+    db_write_log with row_gid = the field's Asana GID.
+    Returns {written, skipped, errors}; skipped if field_name is not in the
+    registry or the note is already identical.
+    """
+    if not field_name:
+        raise ValueError("update_field_registry_notes: field_name required")
+    if not notes:
+        raise ValueError("update_field_registry_notes: notes required")
+    with _connect(db_path) as conn:
+        row = conn.execute(
+            "SELECT field_gid, notes FROM asana_field_registry WHERE field_name = ?",
+            (field_name,),
+        ).fetchone()
+        if row is None or row["notes"] == notes:
+            return {"written": 0, "skipped": 1, "errors": 0}
+        conn.execute("UPDATE asana_field_registry SET notes = ? WHERE field_name = ?",
+                     (notes, field_name))
+        _log_write(conn, "asana_field_registry", row["field_gid"], "update", source, ["notes"])
+        conn.commit()
+        return {"written": 1, "skipped": 0, "errors": 0}
+
+
 def upsert_suppliers(rows: list[dict], source: str = "sync",
                      db_path: str = DEFAULT_DB_PATH) -> dict:
     with _connect(db_path) as conn:

@@ -32,7 +32,7 @@ load_dotenv(r"C:\Users\GilesHugo\.hermes\.env", override=True)
 sys.path.insert(0, str(Path(__file__).parent))
 sys.path.insert(0, str(Path(__file__).parents[2] / "lib"))
 
-from gateway_common import (DATA, GILES_EMAIL, RuleStore, SupplierDirectory, fmt_date,  # noqa: E402
+from gateway_common import (DATA, RuleStore, SupplierDirectory, fmt_date,  # noqa: E402
                             load_json, save_json, shadow_mode)
 from matcher import ARRIVED_STATUSES, CLOSED_STATUSES, Matcher  # noqa: E402
 
@@ -43,6 +43,13 @@ DOC_LABEL = {"quote": "Quote", "order_confirmation": "Order confirmation", "invo
              "dispatch_note": "Dispatch note", "update": "Update", "call_notes": "Call notes", "other": "Email"}
 
 CONFIRMED_STATUS = "🚚On Order - Delivery Date CONFIRMED"
+
+# Giles 2026-09-24: the task DESCRIPTION belongs to the Asana AI teammate (it compiles the quote summary
+# there and drafts the outbound email). Hermes writes COMMENTS and FIELDS only; supplier refs, lead time
+# and price context travel in the comment's Key facts line. Set True to restore the old description notes.
+DESCRIPTION_NOTES = False
+NOREPLY = re.compile(r"^(no-?reply|do-?not-?reply|donotreply|mailer-daemon|notifications?|alerts?|bounce)", re.I)
+_SUPPLIERS = None   # set in main() so contact_line can look up the supplier's email on file
 
 
 def extract_domain_from_sender(sender_email):
@@ -140,11 +147,13 @@ def propose_changes(insights: dict, task: dict | None, doc_type: str) -> tuple[l
         if cur is not None and abs(float(cur) - float(price)) < 0.01:
             notes.append(f"Price {_money(price)} already on task")
         elif cur is not None:
-            notes.append(f"Task already has Price Ex VAT {_money(cur)} — supplier states {_money(price)}; recorded in description, field not overwritten")
-            actions.append(f"Note added to description: {line} ({fmt_date(insights.get('_received', ''))})")
+            notes.append(f"Task already has Price Ex VAT {_money(cur)} — supplier states {_money(price)}; field not overwritten")
+            if DESCRIPTION_NOTES:
+                actions.append(f"Note added to description: {line} ({fmt_date(insights.get('_received', ''))})")
         else:
             actions.append(f"Update 'Price Ex VAT' to £{float(price):.2f}")  # no thousands separator: the executor regex reads it
-            actions.append(f"Note added to description: {line} ({fmt_date(insights.get('_received', ''))})")
+            if DESCRIPTION_NOTES:
+                actions.append(f"Note added to description: {line} ({fmt_date(insights.get('_received', ''))})")
 
     # supplier references — tracked on the description (Giles 2026-08-24)
     refs = []
@@ -156,7 +165,7 @@ def propose_changes(insights: dict, task: dict | None, doc_type: str) -> tuple[l
         refs.append(f"Supplier invoice {insights['supplier_invoice_ref']}")
     if insights.get("lead_time"):
         refs.append(f"Lead time {insights['lead_time']}")
-    if refs:
+    if refs and DESCRIPTION_NOTES:
         actions.append("Note added to description: " + "; ".join(refs))
 
     if insights.get("has_issues") and insights.get("issue_summary"):
@@ -186,6 +195,35 @@ def key_facts(insights: dict, match: dict) -> list[str]:
     return f
 
 
+def _supplier_email(match: dict | None) -> str:
+    if not match or not match.get("supplier_gid") or _SUPPLIERS is None:
+        return ""
+    s = _SUPPLIERS.by_gid.get(str(match["supplier_gid"])) or {}
+    return (s.get("email") or "").split(",")[0].strip()
+
+
+def contact_line(item: dict, insights: dict, match: dict | None = None) -> str:
+    """ONE line telling the Asana AI teammate who to write back to (Giles 2026-09-24).
+       email  → 'Contact: Tracey Spear <TraceySpear@appliedautomation.co.uk>'
+       noreply sender → the supplier's email on file instead, saying so
+       call   → 'Contact: Amanda · 01388 770360 · sales@stephensongobin.com (on file)'"""
+    call = insights.get("call") or {}
+    on_file = _supplier_email(match)
+    if call:
+        who = insights.get("contact_name") or ""
+        phones = ", ".join(f"{p[:5]} {p[5:]}" if len(p) == 11 else p for p in (call.get("phones") or []))
+        phones = phones or (f"ext {call['extension']}" if call.get("extension") else "")
+        bits = [b for b in (who, phones, f"{on_file} (on file)" if on_file else "") if b]
+        return "Contact: " + " · ".join(bits) if bits else ""
+    email, name = extract_email_and_name(item.get("sender") or "")
+    name = insights.get("requested_by") or item.get("sender_name") or name or ""
+    if email and NOREPLY.match(email.split("@")[0]):
+        return f"Contact: {on_file} (on file — sender was {email})" if on_file else f"Contact: none usable (sender was {email})"
+    if name and email and name.lower() != email.lower():
+        return f"Contact: {name} <{email}>"
+    return f"Contact: {email}" if email else ""
+
+
 def build_comment(item: dict, insights: dict, match: dict, actions: list[str], notes: list[str]) -> str:
     doc_type = insights.get("document_type") or "other"
     received = item.get("receivedDateTime") or ""
@@ -203,8 +241,13 @@ def build_comment(item: dict, insights: dict, match: dict, actions: list[str], n
     lines = [head]
     if doc_type != "call_notes":
         lines.append(f"Subject: {item.get('subject', '')}")
+    cl = contact_line(item, insights, match)
+    if cl:
+        lines.append(cl)
     lines.append("")
     lines.append((insights.get("summary") or "").strip() or "(no summary extracted)")
+    if doc_type == "call_notes" and insights.get("key_inference") and "nothing actionable" not in insights["key_inference"].lower():
+        lines.append(f"Key inference: {insights['key_inference']}")
     items = [a for a in (insights.get("action_items") or []) if a]
     if items:
         lines.append("")
@@ -229,7 +272,7 @@ def build_comment(item: dict, insights: dict, match: dict, actions: list[str], n
         lines.append("Proposed: no field change")
     lines.append("")
     basis = match.get("matched_by") or "no match"
-    lines.append(f"Email gateway · matched via {basis} · received {received[:16].replace('T', ' ')} UTC · {GILES_EMAIL}")
+    lines.append(f"Email gateway · matched via {basis} · received {received[:16].replace('T', ' ')} UTC")
     return "\n".join(lines)
 
 
@@ -237,8 +280,14 @@ def build_unmatched_comment(item: dict, insights: dict, match: dict, triage: str
     doc_type = insights.get("document_type") or "other"
     supplier = match.get("supplier_name") or insights.get("company_name") or item.get("sender_domain") or "unknown"
     lines = [f"NO AUTO-MATCH — {DOC_LABEL.get(doc_type, 'Email')} from {supplier} — {fmt_date(item.get('receivedDateTime', ''))}",
-             f"Subject: {item.get('subject', '')}", ""]
+             f"Subject: {item.get('subject', '')}"]
+    cl = contact_line(item, insights, match)
+    if cl:
+        lines.append(cl)
+    lines.append("")
     lines.append((insights.get("summary") or "").strip() or "(no summary extracted)")
+    if doc_type == "call_notes" and insights.get("key_inference"):
+        lines.append(f"Key inference: {insights['key_inference']}")
     items = [a for a in (insights.get("action_items") or []) if a]
     if items:
         lines += ["", "Action for Giles:"] + [f"- {a}" for a in items]
@@ -250,7 +299,7 @@ def build_unmatched_comment(item: dict, insights: dict, match: dict, triage: str
         lines.append("Could be:")
         lines += [f"- {a['name'][:70]} [{(a.get('status') or 'no status').strip()}] {a['url']}" for a in alts]
     lines.append("")
-    lines.append(f"Email gateway · {match.get('matched_by') or 'no task found'} · {GILES_EMAIL}")
+    lines.append(f"Email gateway · {match.get('matched_by') or 'no task found'}")
     return "\n".join(lines)
 
 
@@ -264,11 +313,18 @@ def triage_item(item: dict, insights: dict, rules: RuleStore) -> tuple[str, str]
         return "noise", why
     if insights.get("document_type") == "call_notes":
         call = insights.get("call") or {}
+        ctx = rules.call_context(call.get("phones"), call.get("contact_label") or "")
+        if ctx and ctx.get("action") == "drop":
+            return "non_supplier_call", f"Giles: {ctx.get('note', 'drop')[:80]}"
         if call.get("is_internal"):
             return "non_supplier_call", "internal call (Sesame extension / colleague)"
         if insights.get("is_noise"):
             return "non_supplier_call", insights.get("noise_reason") or "not a supplier call"
-        return "supplier_call", "call notes"
+        has_substance = any(insights.get(k) for k in ("po_number", "sqr_number", "delivery_date", "total_price",
+                                                      "supplier_order_ref", "supplier_quote_ref", "action_items", "has_issues"))
+        if insights.get("worth_tracking") is False and not has_substance and not ctx:
+            return "non_supplier_call", "short call, nothing actionable"
+        return "supplier_call", "call notes" + (f" · Giles: {ctx['note'][:60]}" if ctx else "")
     if insights.get("is_noise"):
         return "noise", insights.get("noise_reason") or "noise"
     if insights.get("document_type") in ("quote", "order_confirmation", "invoice", "dispatch_note", "update"):
@@ -379,8 +435,10 @@ def main():
         save_json(PENDING_APPROVAL_QUEUE_PATH, [])
         return
 
+    global _SUPPLIERS
     rules = RuleStore()
     suppliers = SupplierDirectory(rules=rules)
+    _SUPPLIERS = suppliers
     matcher = Matcher(suppliers=suppliers, rules=rules)
     if not matcher.conn:
         print(f"WARNING: ops.db not readable at {matcher.db_path} — matching will find nothing")
@@ -450,7 +508,7 @@ def main():
             "proposed_action": proposed_action,
             "actions": actions,
             "comment_to_push": comment,
-            "summary": insights.get("summary") or "",
+            "summary": ((f"[{insights['key_inference']}] " if insights.get("key_inference") else "") + (insights.get("summary") or "")),
             "action_required": bool(insights.get("action_required")) or bool(insights.get("action_items")),
             "action_items": insights.get("action_items") or [],
             "suggested_decision": suggestion,

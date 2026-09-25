@@ -1,0 +1,14 @@
+{
+  "request_id": "0abf8e63-534e-431b-b8ea-3582f65dc596",
+  "source": "email_approval_sheet",
+  "row_index": 35,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAk0Neh0AAA=",
+  "subject": "Sales Quote - SQ0250832UE  Your ref:",
+  "task_gid": "1217769361544570",
+  "task_name": "21565-1555 - Aalco - steel profile tube",
+  "asana_url": "https://app.asana.com/0/0/1217769361544570",
+  "action": "(Aalco's only open order); Note: Task already has Price Ex VAT £84.00 — supplier states £1,103.30; field not overwritten",
+  "comment_to_push": "Quote from Aalco (Amy Goddard) — 25 Sep 2026\nSubject: Sales Quote - SQ0250832UE  Your ref:\nContact: Amy Goddard <agoddard@aalco.co.uk>\n\nAmy Goddard at Aalco Aylesbury has sent a quotation (SQ0250832UE) in response to Sesame's enquiry, covering 11 lines of stainless steel angle, tube, flat, round and pipe plus a £25 freight charge, totalling £1,103.30 ex VAT. Lead times are mostly 1 day, with one item at 3 days. She notes prices are valid only for the day of quotation and subject to stock, and offers to help if the material is needed for Monday, though she leaves the office at 3pm.\n\nAction for Giles:\n- Review the quotation and confirm whether to place an order, particularly if material is needed for Monday 28/09/2026 - reply to Amy before 3pm\n- Note prices are only valid for the day of quotation (25/09/2026) and subject to stock remaining unsold\nKey facts: lead time 1 Day(s) (3 Days for line 1) · £1,103.30 ex VAT + carriage £25.00 · their quote SQ0250832UE\nProposed: no field change (Task already has Price Ex VAT £84.00 — supplier states £1,103.30; field not overwritten)\n\nEmail gateway · matched via Aalco's only open order · received 2026-09-25 13:38 UTC",
+  "decision": "A",
+  "created_at": "2026-09-25T14:30:44.370691+00:00"
+}

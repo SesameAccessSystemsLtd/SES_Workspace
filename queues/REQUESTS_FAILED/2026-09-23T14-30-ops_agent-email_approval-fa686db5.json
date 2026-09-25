@@ -1,0 +1,14 @@
+{
+  "request_id": "d9fa9b6f-3a50-4fcc-bb04-e858771c6070",
+  "source": "email_approval_sheet",
+  "row_index": 45,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkxwjySAAA=",
+  "subject": "Notes from your call with Martin | Gemac 01753 686464 on 22/09/2026 15:55",
+  "task_gid": null,
+  "task_name": "NOT MATCHED",
+  "asana_url": "",
+  "action": "Task not found — no task found. Doc: call_notes. PO: None. SQR: None. Supplier: ringcentral.com",
+  "comment_to_push": "NO AUTO-MATCH — Call notes from Gemac — 22 Sep 2026\nSubject: Notes from your call with Martin | Gemac 01753 686464 on 22/09/2026 15:55\n\nGiles confirmed his recent order with Martin at Gemac, covering feral hoses (code 4212 04, quarter hose with one wire). Martin flagged a past leak issue from ordering the wrong feral (4212 instead of 4211); Giles believes he ordered a 3811 feral and will verify before the order leaves at 4:00.\n\nAction for Giles:\n- Verify the feral type (3811) before the order departs at 4:00 today (22/09/2026)\n- Update Martin if any changes to the feral type are needed\n\nEmail gateway · no task found · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-23T14:30:32.645270+00:00"
+}

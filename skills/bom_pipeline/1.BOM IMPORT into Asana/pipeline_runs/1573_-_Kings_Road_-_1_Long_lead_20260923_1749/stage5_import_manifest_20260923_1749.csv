@@ -1,0 +1,77 @@
+Name,Description,Subtask of,ORDER QTY,Vendor,Assignee,Email,Due Date,ORDER_PICK,Stock Action,Asana Task GID,Asana Task URL
+ALL BOMS - 1573 - Kings Road - 1.Long lead,"Master task for all BOMs related to 1573 - Kings Road - 1.Long lead
+Dropbox: https://www.dropbox.com/scl/fo/bgwpe52bpf63e91pyinz6/AAdTGI7HxbVSD-HkNZYpfyI?rlkey=p1rmoscf1heuhacoc9qm971he&dl=0
+Project: https://app.asana.com/1/357939803556123/task/1218768500597787?focus=true",,,,,,,,,,
+Long Leading BOM - 1573 - Kings Road - 1.Long lead,,ALL BOMS - 1573 - Kings Road - 1.Long lead,,Long Leading,,,,,,,
+Magnetic Solutions - 1573 - Kings Road - 1.Long lead,,Long Leading BOM - 1573 - Kings Road - 1.Long lead,,Magnetic Solutions,,,,,,,
+1 off 1573. 1005.A.032 - 100mm long maglock MS5SSU-24v-10m + Extra Plating Magnetic Solutions,"1573.1005.A.032
+Stock Number: MS5SSU-24v-10m + Extra Plating
+Material: Steel, Mild
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/bgwpe52bpf63e91pyinz6/AAdTGI7HxbVSD-HkNZYpfyI?rlkey=p1rmoscf1heuhacoc9qm971he&dl=0
+Mass: 0.586 kg
+Volume: 74639.163 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218768500597787?focus=true",Magnetic Solutions - 1573 - Kings Road - 1.Long lead,1,Magnetic Solutions,,,,ORDER,PROJECT ORDER,1218795058349992,https://app.asana.com/0/848657415032331/1218795058349992
+JAJO - 1573 - Kings Road - 1.Long lead,,Long Leading BOM - 1573 - Kings Road - 1.Long lead,,JAJO,,,,,,,
+1 off 1573. 1008.D1.MachineRoomCabinet - Machine Room Cabinet JAJO,"1573.1008.D1.MachineRoomCabinet
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/bgwpe52bpf63e91pyinz6/AAdTGI7HxbVSD-HkNZYpfyI?rlkey=p1rmoscf1heuhacoc9qm971he&dl=0
+Mass: 67.933 kg
+Volume: 34810316.355 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218768500597787?focus=true",JAJO - 1573 - Kings Road - 1.Long lead,1,JAJO,,,,ORDER,PROJECT ORDER,1218794838598201,https://app.asana.com/0/848657415032331/1218794838598201
+Hydraulic Supplier - 1573 - Kings Road - 1.Long lead,,Long Leading BOM - 1573 - Kings Road - 1.Long lead,,Hydraulic Supplier,,,,,,,
+1 off 1573. 1008.D1.MotorPumpUnit - TBC by Karol - Spec as per PLC BOM Hydraulic Supplier,"1573.1008.D1.MotorPumpUnit
+Material: Generic
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/bgwpe52bpf63e91pyinz6/AAdTGI7HxbVSD-HkNZYpfyI?rlkey=p1rmoscf1heuhacoc9qm971he&dl=0
+Mass: 14.000 kg
+Volume: 14000247.356 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218768500597787?focus=true",Hydraulic Supplier - 1573 - Kings Road - 1.Long lead,1,Hydraulic Supplier,,,,ORDER,PROJECT ORDER,1218794570767524,https://app.asana.com/0/848657415032331/1218794570767524
+Related Fluid - 1573 - Kings Road - 1.Long lead,,Long Leading BOM - 1573 - Kings Road - 1.Long lead,,Related Fluid,,,,,,,
+1 off 1573. 1008.H1.1(RF SES44742402) - Valve Block - 2 function RF SES44742402 Related Fluid,"1573.1008.H1.1(RF SES44742402)
+Stock Number: RF SES44742402
+KAN: KAN-120
+KAN Stock Link: https://app.asana.com/0/632603478911321/1200067442654473
+Material: Generic
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/bgwpe52bpf63e91pyinz6/AAdTGI7HxbVSD-HkNZYpfyI?rlkey=p1rmoscf1heuhacoc9qm971he&dl=0
+Mass: 1.935 kg
+Volume: 1935050.725 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218768500597787?focus=true",Related Fluid - 1573 - Kings Road - 1.Long lead,,Related Fluid,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1218794972983734,https://app.asana.com/0/848657415032331/1218794972983734
+2 off 1573. 1008.H2 - Valve Block Extension RF SES44752401 Related Fluid,"1573.1008.H2
+Stock Number: RF SES44752401
+Material: Generic
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/bgwpe52bpf63e91pyinz6/AAdTGI7HxbVSD-HkNZYpfyI?rlkey=p1rmoscf1heuhacoc9qm971he&dl=0
+Mass: 1.048 kg
+Volume: 1048264.588 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218768500597787?focus=true",Related Fluid - 1573 - Kings Road - 1.Long lead,2,Related Fluid,,,,ORDER,PROJECT ORDER,1218794746745557,https://app.asana.com/0/848657415032331/1218794746745557
+1 off 1573. 1008.H3(RF SES4473) - Emergency barrier lower valve assembly RF SES4473 Related Fluid,"1573.1008.H3(RF SES4473)
+Stock Number: RF SES4473
+KAN: KAN-41
+KAN Stock Link: https://app.asana.com/0/632603478911321/523333842528555
+Material: Generic
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/bgwpe52bpf63e91pyinz6/AAdTGI7HxbVSD-HkNZYpfyI?rlkey=p1rmoscf1heuhacoc9qm971he&dl=0
+Mass: 0.646 kg
+Volume: 646085.064 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218768500597787?focus=true",Related Fluid - 1573 - Kings Road - 1.Long lead,,Related Fluid,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1218795058306048,https://app.asana.com/0/848657415032331/1218795058306048
+Hydraulics Supplier - 1573 - Kings Road - 1.Long lead,,Long Leading BOM - 1573 - Kings Road - 1.Long lead,,Hydraulics Supplier,,,,,,,
+1 off 1573. 1008.H7.(CV88 VRSP1220) - Regenerative Valve CV88 VRSP1220 Hydraulics Supplier,"1573.1008.H7.(CV88 VRSP1220)
+Stock Number: CV88 VRSP1220
+KAN: KAN-252
+KAN Stock Link: https://app.asana.com/0/632603478911321/1202107004806481
+Material: Steel
+Web Link: https://www.flowfitonline.com/uploads/PDFproducts//CV88.pdf
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/bgwpe52bpf63e91pyinz6/AAdTGI7HxbVSD-HkNZYpfyI?rlkey=p1rmoscf1heuhacoc9qm971he&dl=0
+Mass: 2.145 kg
+Volume: 273287.105 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218768500597787?focus=true",Hydraulics Supplier - 1573 - Kings Road - 1.Long lead,,Hydraulics Supplier,purchasing@sesameaccess.com,,,PICK,PLEASE PICK,1218795058291791,https://app.asana.com/0/848657415032331/1218795058291791
+Sesame - 1573 - Kings Road - 1.Long lead,,Long Leading BOM - 1573 - Kings Road - 1.Long lead,,Sesame,,,,,,,
+1 off 1573. 1011.B.ScissorLift Double - Double Scissor Lift Sesame,"1573.1011.B.ScissorLift Double
+From Cost Centre Long Leading
+Link to BOM: https://www.dropbox.com/scl/fo/bgwpe52bpf63e91pyinz6/AAdTGI7HxbVSD-HkNZYpfyI?rlkey=p1rmoscf1heuhacoc9qm971he&dl=0
+Mass: 425.330 kg
+Volume: 59123512.811 mm^3
+Project Task: https://app.asana.com/1/357939803556123/task/1218768500597787?focus=true",Sesame - 1573 - Kings Road - 1.Long lead,1,Sesame,,,,ORDER,PROJECT ORDER,1218795059166241,https://app.asana.com/0/848657415032331/1218795059166241

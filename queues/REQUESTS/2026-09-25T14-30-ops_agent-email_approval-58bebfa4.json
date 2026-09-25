@@ -1,0 +1,14 @@
+{
+  "request_id": "7db182ac-9592-4f2a-b98e-6ac012e9966d",
+  "source": "email_approval_sheet",
+  "row_index": 34,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAk0NehzAAA=",
+  "subject": "RE: BP heritage balustrades, - SQR-45921",
+  "task_gid": "1216385848759179",
+  "task_name": "BP heritage Spindle copy quotes",
+  "asana_url": "https://app.asana.com/0/0/1216385848759179",
+  "action": "(SQR-45921 (exact SQR)); Flag issue: Supplier cannot locate the original email and attachments for SQR-45921 and needs them resent before he can respond.",
+  "comment_to_push": "Update from British Spirals & Castings (Ben Harding) — 25 Sep 2026\nSubject: RE: BP heritage balustrades, - SQR-45921\nContact: Ben Harding <ben@britishsc.co.uk>\n\nBen Harding of British Spirals & Castings replies to Giles's email about BP heritage balustrades (SQR-45921). He says he cannot find the original email with the relevant attachments and asks Giles to resend it so he can look into it. No pricing, dates or technical detail is given.\n\nAction for Giles:\n- Resend the original email and attachments relating to BP heritage balustrades / SQR-45921 to Ben Harding (ben@britishsc.co.uk)\nIssue: Supplier cannot locate the original email and attachments for SQR-45921 and needs them resent before he can respond.\nKey facts: SQR-45921\nProposed: Flag issue: Supplier cannot locate the original email and attachments for SQR-45921 and needs them resent before he can respond.\n\nEmail gateway · matched via SQR-45921 (exact SQR) · received 2026-09-25 13:31 UTC",
+  "decision": "A",
+  "created_at": "2026-09-25T14:30:44.361172+00:00"
+}

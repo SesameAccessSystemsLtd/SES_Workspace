@@ -1,0 +1,25 @@
+{
+  "id": "30485af0",
+  "objective": "ops.db asana_field_registry order_status note (live row, written via db_writer.py with a db_write_log entry) and its db_init_ops.py seed identify 1203944084697376 as Delivery Date CONFIRMED and 1143955334207043 as Awaiting CONFIRMATION; data/asana_custom_fields_schema.json is regenerated read-only (GET) from live Asana by a re-runnable script and carries a dated-snapshot header; no Asana writes",
+  "where": [
+    "C:/Users/GilesHugo/SES_Workspace/skills/purchasing/db_writer.py",
+    "C:/Users/GilesHugo/SES_Workspace/skills/sql_db/scripts/db_init_ops.py",
+    "C:/Users/GilesHugo/SES_Workspace/skills/sql_db/scripts/snapshot_asana_field_schema.py",
+    "C:/Users/GilesHugo/SES_Workspace/data/asana_custom_fields_schema.json",
+    "C:/Users/GilesHugo/SES_Workspace/db/ops.db (asana_field_registry row order_status)"
+  ],
+  "channel": "claude-desktop",
+  "area": "Data Health",
+  "effort": "S",
+  "priority": "Medium",
+  "created_at": "2026-09-25T14:29:23.367882+00:00",
+  "asana_gid": null,
+  "events": [
+    {
+      "at": "2026-09-25T14:29:23.367894+00:00",
+      "status": "open",
+      "by": "claude-desktop",
+      "note": "thread opened"
+    }
+  ]
+}

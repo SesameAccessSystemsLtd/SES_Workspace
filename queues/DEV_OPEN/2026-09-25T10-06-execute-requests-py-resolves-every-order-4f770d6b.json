@@ -1,0 +1,30 @@
+{
+  "id": "4f770d6b",
+  "objective": "execute_requests.py resolves every ORDER Status option by label from live Asana field settings (unresolvable label = loud FAILED, no hard-coded fallback) and read-back-verifies the written label; a read-only list of tasks whose approved confirmation left ORDER Status at Awaiting CONFIRMATION is staged and presented to Giles, with no Asana write until he approves",
+  "where": [
+    "C:/Users/GilesHugo/SES_Workspace/skills/purchasing/execute_requests.py",
+    "C:/Users/GilesHugo/SES_Workspace/skills/purchasing/03_proposal_engine.py",
+    "C:/Users/GilesHugo/SES_Workspace/skills/purchasing/test_execute_requests_order_status.py",
+    "C:/Users/GilesHugo/SES_Workspace/reports/"
+  ],
+  "channel": "claude-desktop",
+  "area": "Ordering / Inventory",
+  "effort": "M",
+  "priority": "High",
+  "created_at": "2026-09-25T10:06:13.668047+00:00",
+  "asana_gid": null,
+  "events": [
+    {
+      "at": "2026-09-25T10:06:13.668058+00:00",
+      "status": "open",
+      "by": "claude-desktop",
+      "note": "thread opened"
+    },
+    {
+      "at": "2026-09-25T10:30:52.625278+00:00",
+      "status": "awaiting_signoff",
+      "by": "agent",
+      "note": "Executor fix live: ORDER Status resolved by label from live field 1143955334207040, unresolvable/contradicting label = FAILED with nothing written, read-back after PUT; test_execute_requests_order_status.py 27/27; 11:30 cron ran clean. Read-only audit reports/order_status_confirmed_audit_2026-09-25.md: 11 corrections proposed (6 open -> CONFIRMED, 5 completed -> restore ARRIVED/TO BE RETURNED) AWAITING GILES APPROVAL - no Asana writes made. Check: diff of skills/purchasing/execute_requests.py + the audit tables."
+    }
+  ]
+}

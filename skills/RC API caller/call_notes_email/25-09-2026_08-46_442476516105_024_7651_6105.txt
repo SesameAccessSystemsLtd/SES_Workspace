@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  25/09/2026  08:46
+============================================================
+With:         +442476516105 024 7651 6105
+Forwarded by: purchasing@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This call involved Giles Hugo from an unspecified company discussing DXF data processing and quoting procedures with a representative from HCA Group, focusing on order status, data preparation challenges, and potential collaboration for faster quoting.
+
+--- RECAP --------------------------------------------------
+Giles Hugo confirmed that the current order is live and in process, with quotes being prepared.The HCA Group representative is manually cleaning DXF files to input into their quoting system, which is slow and labor-intensive, with about 100 of 229 parts processed so far.Giles Hugo indicated that their company does not provide additional data processing services beyond PDFs for quoting and nesting, and emphasized the importance of fast quoting and reliable delivery for future orders.The HCA Group representative is attempting to automate DXF processing similarly to a competitor who uses a nesting program that directly inputs DXF files for quick material and cost estimation.There is a discussion about the timing of quotes, with the HCA Group representative seeking to understand if their current process is sufficient and whether their quote will be competitive.Giles Hugo mentioned that they are considering other suppliers and are leaning away from HCA Group due to concerns about quoting speed, but are still evaluating options as the order is currently in progress.The conversation included logistical details about the order, such as the parts being cut and tapped in-house, and the need for lead times.Both parties agreed that the order is active and that the HCA Group representative will continue working on DXF data to improve processing speed.
+
+--- TASKS --------------------------------------------------
+HCA Group representative will continue cleaning DXF files to input into their nesting system, aiming to improve processing speed.Giles Hugo will monitor the progress of the current order and evaluate the competitiveness of HCA Group's quotes based on the data provided.
+
+(Full transcript: RC web portal only — no RingSense API)

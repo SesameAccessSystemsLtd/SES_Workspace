@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  25/09/2026  14:15
+============================================================
+With:         +443432222222 0343 222 2222
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+The call involved multiple topics: a notification about increased tunnel charges effective from September 2026, a discussion about a potential code for handicapped equipment, and a payment process for congestion charges via phone. The caller sought clarity on charges and attempted to make a payment for the congestion charge for a rented van.
+
+--- RECAP --------------------------------------------------
+The TfL call centre informed the caller that tunnel user charges for the Black Wall and Silvertown tunnels will increase from 21st September 2026, with discounts for eligible residents, businesses, and blue badge holders remaining available.The caller, Fatima Barros, discussed a specific issue related to a 'trump' in the corner and mentioned researching a potential code for handicapped equipment that might reduce or negate a tariff, intending to seek further clarity from a consultant.The caller attempted to pay the London congestion charge over the phone for a rented white Vauxhall Combo, registration K74VAY, for a single day, between 7:00 a.m. and 6:00 p.m., but encountered difficulties with the website and was advised that payments cannot be made over the phone directly, only via the automated line.The caller was transferred to the payment line, where they successfully completed a payment of £18 for the congestion charge, received a receipt number (Z0), and requested to receive the receipt via text message.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

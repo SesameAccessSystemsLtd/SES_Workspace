@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAS OS — Procurement &amp; BOM Deployment Tracker</title>
+<style>
+:root{--bg:#f4f6fa;--card:#fff;--ink:#1a1a2e;--muted:#6b7280;--line:#e5e7eb;
+--brand:#0f766e;--amber:#d97706;--red:#dc2626;--green:#16a34a;--blue:#2563eb;
+--brand2:#0f766e;--hero-grad:linear-gradient(135deg,#0f172a 0%,#134e4a 100%);
+--hover:#f9fafb;--subbg:#f8fafc;--accbg:#ecfdf5;--accink:#065f46}
+:root.theme-stock{--bg:#0f1117;--card:#1a1d27;--ink:#e2e8f0;--muted:#94a3b8;
+--line:#2d3250;--brand:#6c8ef7;--amber:#fbbf24;--red:#f87171;--green:#34d399;--blue:#6c8ef7;
+--brand2:#a78bfa;--hero-grad:linear-gradient(135deg,#1e2a5e 0%,#2d1f6e 100%);
+--hover:#21253a;--subbg:#1f2436;--accbg:#0c2b22;--accink:#34d399}
+:root.theme-neon{--bg:#05060f;--card:#0d101f;--ink:#e6f1ff;--muted:#8a93b8;
+--line:#1e2a4a;--brand:#00f0ff;--amber:#ffd100;--red:#ff3b6b;--green:#00ff9d;--blue:#5f7cff;
+--brand2:#b14aff;--hero-grad:linear-gradient(135deg,#060014 0%,#1a0040 60%,#004b73 100%);
+--hover:#131a33;--subbg:#0b0f24;--accbg:#001a1f;--accink:#00ff9d}
+*{box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);margin:0;line-height:1.5;transition:background .4s,color .4s}
+.wrap{max-width:1000px;margin:0 auto;padding:32px 24px 80px}
+header.hero{background:var(--hero-grad);color:#fff;border-radius:16px;padding:30px;margin-bottom:24px;transition:background .4s}
+header.hero h1{margin:0 0 6px;font-size:28px}
+header.hero .sub{opacity:.85;font-size:14px;margin-bottom:16px}
+.thememenu{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.tbtn{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:20px;padding:5px 14px;font-size:12.5px;cursor:pointer;font-weight:600}
+.tbtn.on{background:var(--brand);border-color:var(--brand)}
+.tbtn .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.navbtn{position:fixed;top:16px;right:16px;z-index:9999;background:#0f172a;color:#fff;text-decoration:none;border-radius:20px;padding:8px 16px;font-size:13px;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.summary{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.pill{display:inline-block;border-radius:14px;padding:4px 12px;font-size:12px;font-weight:600;vertical-align:middle}
+.pill.ready{background:color-mix(in srgb,var(--green) 15%,transparent);color:var(--green);border:1px solid var(--green)}
+.pill.progress{background:color-mix(in srgb,var(--blue) 15%,transparent);color:var(--blue);border:1px solid var(--blue)}
+.pill.blocked{background:color-mix(in srgb,var(--red) 15%,transparent);color:var(--red);border:1px solid var(--red)}
+.pill.done{background:color-mix(in srgb,var(--green) 18%,transparent);color:var(--green);border:1px solid var(--green)}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 16px;font-size:13px}
+.stat b{font-size:20px;display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px;transition:background .4s}
+.card .row1{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.refid{font-family:ui-monospace,Menlo,Consolas,monospace;letter-spacing:.5px;background:color-mix(in srgb,var(--brand) 15%,transparent);color:var(--brand);border:1px solid var(--brand);border-radius:8px;padding:3px 10px;font-size:13px;font-weight:700}
+.card h2{margin:0;font-size:17px;flex:1;min-width:220px}
+.card .summary{margin:6px 0 0;color:var(--muted);font-size:13px}
+.block{margin-top:14px}
+.block h4{margin:0 0 6px;font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
+.block ul{margin:0;padding-left:18px}
+.block li{margin:2px 0;font-size:13.5px}
+.mark{font-size:13px;line-height:1.7}
+.mark b{color:var(--brand)}
+.routing{font-size:13px;color:var(--muted);border-left:3px solid var(--line);padding-left:10px;margin-top:10px}
+.ec{display:flex;gap:10px;align-items:flex-start;font-size:13px;padding:7px 10px;border-radius:8px;margin-top:5px;background:var(--subbg)}
+.ec .ecid{font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:700;white-space:nowrap}
+.ec.open .ecid{color:var(--red)}
+.ec.done .ecid{color:var(--green)}
+.ec .ett{flex:1}
+.ec .est{white-space:nowrap;font-size:11px;font-weight:600}
+.ec .est.open{color:var(--red)}
+.ec .est.done{color:var(--green)}
+.signed{margin-top:12px;font-size:13px;font-weight:600}
+.signed.no{color:var(--amber)}
+.signed.yes{color:var(--green)}
+footer{color:var(--muted);font-size:12px;text-align:center;margin-top:30px}
+h3.sec{font-size:15px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin:26px 0 12px}
+</style></head>
+<body onload="initTheme()"><a class="navbtn" href="nav.html">&larr; SAS OS portal</a><div class="wrap">
+
+<header class="hero">
+  <h1>🚀 Procurement &amp; BOM Platform — Deployment Tracker</h1>
+  <div class="sub">Full-deployment status · reference any process by ID in chat (e.g. "address P3" or "EC-P4-1") · verification + sign-off ledger. · Generated 2026-09-24 · state: data/os_status/deployment-state.json</div>
+  <div class="thememenu">
+    <button class="tbtn" data-theme="light" onclick="setTheme('light')"><span class="dot" style="background:#fff"></span>Light</button>
+    <button class="tbtn" data-theme="stock" onclick="setTheme('stock')"><span class="dot" style="background:#6c8ef7"></span>Stock</button>
+    <button class="tbtn" data-theme="neon" onclick="setTheme('neon')"><span class="dot" style="background:#00f0ff"></span>Neon</button>
+  </div>
+</header>
+
+<div class="summary">
+  <div class="stat"><b style="color:var(--blue)">8</b>8 pipeline process(es)</div>
+  <div class="stat"><b style="color:var(--green)">0</b>ready</div>
+  <div class="stat"><b style="color:var(--blue)">7</b>in progress</div>
+  <div class="stat"><b style="color:var(--red)">1</b>blocked</div>
+  <div class="stat"><b style="color:var(--green)">0</b>signed off</div>
+  <div class="stat"><b style="color:var(--red)">14</b>open edge case(s)</div>
+</div>
+
+<h3 class="sec">Pipeline stages — deploy, verify, sign off</h3>
+
+<div class="card" id="P1">
+  <div class="row1">
+    <span class="refid">P1</span>
+    <h2>Drawing-to-Part Assignment</h2>
+    <span class="pill progress">IN PROGRESS</span>
+  </div>
+  <p class="summary">Map each part to its parent assembly drawing / build pack</p>
+  <div class="block">
+    <h4>Outstanding</h4>
+    <ul><li>DONE 2026-08-27: added 'pack_assign' action type to execute_requests.py (sets Build Packs reference 1211660742155293 + appends '{qty} off in Assembly Pack {pack}' + mirrors parts_control.build_assembly_pack_gid, REQUESTS-gated, phantom-GID-safe).</li><li>DONE 2026-08-27: unassigned_parts_net.py built - found 256 unassigned parts across build jobs, wrote CSV. This is the missing-metadata detector.</li><li>DONE 2026-08-27: stage_pack_proposals.py (overnight chain orchestrator) built - computes part-&gt;pack candidates, stages REQUESTS for UNAMBIGUOUS only, flags ambiguous/no-pack to review CSV. Dry-run: 1 confirmed / 109 ambiguous / 148 no-pack - validates the skill warning that prefix-based auto-assign over-infers (pack writes must stay REQUESTS-gated).</li><li>SCHEDULE PENDING: wire ~02:00 cron (stage_pack_proposals.py) AFTER the 01:00 mirror sync; resolve legacy per-project Dropbox folders.</li></ul>
+  </div>
+  <div class="block routing"><b>Data routing: </b>Asana: Build Packs reference field + description append. ops.db: parts_control.build_assembly_pack_gid mirror.</div>
+  <div class="block">
+    <h4>Verification / validation criteria (Hermes + Giles)<span style="color:var(--muted)"> · 3 edge case(s), 2 open</span></h4>
+    <div class="mark">Legacy scan on one project (e.g. 1037) -&gt; confirm pack GIDs; run --stop-after 3, confirm build_assembly_pack_gid populated; confirm execute_requests handles pack_assign.</div>
+    <div class="ec open"><span class="ecid">EC-P1-1</span><span class="ett">'+' and _revN in pack filenames break resolve_pack -&gt; file skipped as not_found <span style="color:var(--muted)">(e.g. 1037.1014.M.Gate+Support_rev2 fails to match the Build Schedule pack. Patch resolve_pack to strip '+' and _revN.)</span></span><span class="est open">OPEN</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes</div><div class="ec open"><span class="ecid">EC-P1-2</span><span class="ett">Phantom GIDs cause 'could not fetch task' 404s on pack write <span style="color:var(--muted)">(From BOM commit Stage-5 timeout. Recovery = Giles finds real GIDs, patch parts_control.asana_task_gid, re-run drawing Stage 4. DO NOT re-run BOM commit. pack_assign handler now skips 404s safely.)</span></span><span class="est open">OPEN</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes</div><div class="ec done"><span class="ecid">EC-P1-3</span><span class="ett">No automatic flag when a parts_control row lacks any pack link after sync <span style="color:var(--muted)">(RESOLVED 2026-08-27: unassigned_parts_net.py flags unassigned parts per job + stage_pack_proposals.py classifies unique/ambiguous/no-pack. 109 ambiguous + 148 no-pack flagged for review (never auto-assigned).)</span></span><span class="est done">SIGNED OFF</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes · verified by Hermes</div>
+  </div>
+  <div class="signed no">⛔ NOT SIGNED OFF</div>
+</div>
+
+<div class="card" id="P2">
+  <div class="row1">
+    <span class="refid">P2</span>
+    <h2>Picking, Verification &amp; Requisition</h2>
+    <span class="pill progress">IN PROGRESS</span>
+  </div>
+  <p class="summary">Verify inventory, confirm quantities, mark items for purchase</p>
+  <div class="block">
+    <h4>Outstanding</h4>
+    <ul><li>Add dedupe guard on ordering_queue (sesame_pn + project + vendor) - duplicate part requests</li><li>Populate lead times (suppliers.typical_lead_times_days) - currently NULL</li><li>Add 'spec_verified' + confidence flag so unmatchable/spec-unverified parts surface before RFQ</li></ul>
+  </div>
+  <div class="block routing"><b>Data routing: </b>Asana: parts_control stock ACTION enum (PICK/ORDER), vendor assignment, Order Numbers task. ops.db: ordering_queue, stock_inventory.</div>
+  <div class="block">
+    <h4>Verification / validation criteria (Hermes + Giles)<span style="color:var(--muted)"> · 2 edge case(s), 2 open</span></h4>
+    <div class="mark">Run ordering_compile twice -&gt; no duplicate rows. Pick a low-stock part -&gt; 08:00 compile proposes + REQUESTS stages (not direct write). arrived_stock_processor re-run is idempotent.</div>
+    <div class="ec open"><span class="ecid">EC-P2-1</span><span class="ett">Duplicate part request appears in ordering_queue across passes <span style="color:var(--muted)">(No unique index / confirmed-vs-proposed status.)</span></span><span class="est open">OPEN</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes</div><div class="ec open"><span class="ecid">EC-P2-2</span><span class="ett">Unmatchable PN (parenthesised key suffixes) silently goes to ORDER <span style="color:var(--muted)">(e.g. (2Way-Spr), (RivetBush). Expected but should carry a spec-unverified flag.)</span></span><span class="est open">OPEN</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes</div>
+  </div>
+  <div class="signed no">⛔ NOT SIGNED OFF</div>
+</div>
+
+<div class="card" id="P3">
+  <div class="row1">
+    <span class="refid">P3</span>
+    <h2>Supplier Discovery &amp; Historical Lookup</h2>
+    <span class="pill progress">IN PROGRESS</span>
+  </div>
+  <p class="summary">Match parts to historical supplier performance + catalog data</p>
+  <div class="block">
+    <h4>Outstanding</h4>
+    <ul><li>DONE 2026-08-27: sync_suppliers.py extended to pull Email/Phone/Payment/Lead-time/Supplier-type (matched by CF GID) -&gt; 201 emails, 157 phones, 287 payment, 382 supplier-type populated (from 0). Thameside phone+email now resolve for RC-call inference.</li><li>DONE 2026-08-27: dropped UNIQUE on suppliers.primary_domain (schema migration - multiple suppliers/contacts share a domain). Now 201 domains populate (was 188). New supplier_contacts table models many contacts per company (primary + quote_sender).</li><li>Add vendor_pn_map table (Sesame-PN -&gt; supplier PN -&gt; supplier GID) for ambiguous part numbers</li><li>Add quote_history table (SQR -&gt; price -&gt; date -&gt; selected) for supplier response-time scoring</li></ul>
+  </div>
+  <div class="block routing"><b>Data routing: </b>OFFLINE ops.db by default: supplier scores, history, lead-time, price variance. Asana gets high-level status tag only.</div>
+  <div class="block">
+    <h4>Verification / validation criteria (Hermes + Giles)<span style="color:var(--muted)"> · 2 edge case(s), 1 open</span></h4>
+    <div class="mark">Run extended sync_suppliers -&gt; contact_email/phone counts jump. Probe RC note 'Thameside 01784 449326' resolves to Thameside supplier + its open orders.</div>
+    <div class="ec done"><span class="ecid">EC-P3-1</span><span class="ett">suppliers.email/phone/domain NULL for most of 430 rows <span style="color:var(--muted)">(RESOLVED 2026-08-27: extended sync_suppliers.py to map custom fields by GID. 430/430 written. UNIQUE on primary_domain dropped (Giles-approved schema fix) so shared domains (gmail.com x3 etc.) now populate.)</span></span><span class="est done">SIGNED OFF</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes · verified by Giles</div><div class="ec open"><span class="ecid">EC-P3-2</span><span class="ett">13+ vendor-name spellings for one supplier historically <span style="color:var(--muted)">(vendor_name_normalised exists; needs grouping before trusting vendor fallback.)</span></span><span class="est open">OPEN</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes</div>
+  </div>
+  <div class="signed no">⛔ NOT SIGNED OFF</div>
+</div>
+
+<div class="card" id="P4">
+  <div class="row1">
+    <span class="refid">P4</span>
+    <h2>RFQ Dispatch &amp; SQR Tracking</h2>
+    <span class="pill progress">IN PROGRESS</span>
+  </div>
+  <p class="summary">Generate + track RFQs tied to a unique SQR number</p>
+  <div class="block">
+    <h4>Outstanding</h4>
+    <ul><li>DONE 2026-08-27: create_rfq_draft.py builds Outlook Draft (never sends) + issues next SQR (SQR-46787 tested) + rfq_outbox ledger table; safety-verified isDraft=True/sent=False before logging.</li><li>DONE 2026-08-27: rfq_tracker.py marks sent/received + reports counts per SQR/supplier (verified).</li><li>DONE 2026-08-27: match_quote_to_sqr.py matches returned quotes by EXPLICIT SQR or by DOMAIN (separate-chain quotes) -&gt; fills supplier_quote_ref + confirmation_number + invoice_number + captures quote_sender into supplier_contacts (per-contact reply routing). Verified on SQR-46787.</li><li>HOOK PENDING: wire 03_proposal_engine.py inbound matcher to auto-call match_quote_to_sqr on every inbound quote/confirmation/invoice</li></ul>
+  </div>
+  <div class="block routing"><b>Data routing: </b>Emails = OUTLOOK DRAFTS (never auto-send). Asana: SQR link + status tag. ops.db: rfq_outbox ledger (sent/received per SQR).</div>
+  <div class="block">
+    <h4>Verification / validation criteria (Hermes + Giles)<span style="color:var(--muted)"> · 4 edge case(s), 1 open</span></h4>
+    <div class="mark">Drive RFQ-needed task -&gt; Outlook Draft appears (NOT sent) with part list + SQR. Simulate returned quote -&gt; 01-&gt;03 -&gt; QA sheet HITL + rfq_outbox received tick. Assert no code path auto-sends.</div>
+    <div class="ec done"><span class="ecid">EC-P4-1</span><span class="ett">No outbound email capability at all - the email pipeline is inbound-only <span style="color:var(--muted)">(RESOLVED 2026-08-27: create_rfq_draft.py creates Outlook Drafts via Graph, issues next SQR, logs to rfq_outbox. Test draft [TEST - Hermes P4] created for Giles to review in Drafts. Never auto-sends.)</span></span><span class="est done">SIGNED OFF</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes · verified by Hermes</div><div class="ec done"><span class="ecid">EC-P4-2</span><span class="ett">SQR issuance not modelled - SQR only appears when a supplier quotes back <span style="color:var(--muted)">(RESOLVED 2026-08-27: rfq_outbox issues outbound SQRs; match_quote_to_sqr.py links returned quotes back to the issued SQR by domain/explicit-ref, holding supplier quote + confirmation + invoice numbers.)</span></span><span class="est done">SIGNED OFF</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes · verified by Hermes</div><div class="ec done"><span class="ecid">EC-P4-3</span><span class="ett">Quotes arrive in a separate chain from the RFQ request - no direct thread link <span style="color:var(--muted)">(RESOLVED 2026-08-27: domain-based matching in match_quote_to_sqr.py links a separate-chain quote to the issued SQR. Quote sender captured for per-contact reply routing.)</span></span><span class="est done">SIGNED OFF</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes · verified by Giles</div><div class="ec open"><span class="ecid">EC-P4-4</span><span class="ett">Multiple contacts per company - a quote often comes from a different person than the generic inbox <span style="color:var(--muted)">(supplier_contacts table now models many contacts/company (source=project vs quote_sender). Email-scrape for bulk reverse-engineering deferred by Hermes recommendation (mess risk); quote-sender capture is the organic safe path.)</span></span><span class="est open">OPEN</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes</div>
+  </div>
+  <div class="signed no">⛔ NOT SIGNED OFF</div>
+</div>
+
+<div class="card" id="P5">
+  <div class="row1">
+    <span class="refid">P5</span>
+    <h2>Cost Push &amp; Selection Logic</h2>
+    <span class="pill blocked">BLOCKED</span>
+  </div>
+  <p class="summary">Evaluate returned quotes, select preferred vendor, update part costs</p>
+  <div class="block">
+    <h4>Outstanding</h4>
+    <ul><li>Populate po_lines from parsed quote line-items (0 rows today)</li><li>Build quote_comparison view: per part all returned quotes, ranked</li><li>Compute weighted cost offline; push only chosen vendor + 'cost ok' status</li></ul>
+  </div>
+  <div class="block routing"><b>Data routing: </b>Itemized unit costs stay OFFLINE in ops.db po_lines + analytics portal. Asana: selected vendor task + canonical Price Ex VAT + status only.</div>
+  <div class="block">
+    <h4>Verification / validation criteria (Hermes + Giles)<span style="color:var(--muted)"> · 2 edge case(s), 2 open</span></h4>
+    <div class="mark">Parse a returned quote -&gt; po_lines row per line (unit price + PN). 2+ quotes for a part -&gt; comparator ranks + surfaces recommendation (never auto-selects). Assert no Asana field holds the full matrix.</div>
+    <div class="ec open"><span class="ecid">EC-P5-1</span><span class="ett">purchase_orders (7) and po_lines (0) empty - no unit-cost storage layer <span style="color:var(--muted)">(The whole cost/pricing layer is unbuilt.)</span></span><span class="est open">OPEN</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes</div><div class="ec open"><span class="ecid">EC-P5-2</span><span class="ett">Risk of polluting Asana with full cost matrix <span style="color:var(--muted)">(Decision locked: keep unit costs offline; Asana carries canonical value only.)</span></span><span class="est open">OPEN</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes</div>
+  </div>
+  <div class="signed no">⛔ NOT SIGNED OFF</div>
+</div>
+
+<div class="card" id="P6">
+  <div class="row1">
+    <span class="refid">P6</span>
+    <h2>Order Lifecycle &amp; Delivery Pre-flight</h2>
+    <span class="pill progress">IN PROGRESS</span>
+  </div>
+  <p class="summary">Track live orders; proactive supplier check-ins near delivery dates</p>
+  <div class="block">
+    <h4>Outstanding</h4>
+    <ul><li>Populate supplier_deliveries + confirmed_delivery from Order Numbers + dispatch confirmations</li><li>Add pre-flight watcher: orders due in N days + no confirmation -&gt; draft follow-up (Outlook Draft)</li><li>Distinguish expected vs confirmed delivery signals</li></ul>
+  </div>
+  <div class="block routing"><b>Data routing: </b>Asana: Order Numbers due_on (expected) + confirmed-delivery status. ops.db: supplier_deliveries variance, purchase_orders.confirmed_delivery.</div>
+  <div class="block">
+    <h4>Verification / validation criteria (Hermes + Giles)<span style="color:var(--muted)"> · 2 edge case(s), 2 open</span></h4>
+    <div class="mark">Open Order Number due in 3 days, no confirmation -&gt; pre-flight drafts a check-in. Re-run idempotent. Draft reviews PO + parts + SQR, not auto-sent.</div>
+    <div class="ec open"><span class="ecid">EC-P6-1</span><span class="ett">expected-vs-confirmed confusion: due_on is expected, not confirmed <span style="color:var(--muted)">(No confirmed_delivery signal pipeline.)</span></span><span class="est open">OPEN</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes</div><div class="ec open"><span class="ecid">EC-P6-2</span><span class="ett">supplier_deliveries table empty; purchase_orders.expected_delivery empty <span style="color:var(--muted)">(Delivery analytics mirror unpopulated.)</span></span><span class="est open">OPEN</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes</div>
+  </div>
+  <div class="signed no">⛔ NOT SIGNED OFF</div>
+</div>
+
+<div class="card" id="P7">
+  <div class="row1">
+    <span class="refid">P7</span>
+    <h2>QC Exception &amp; Issue Tracking</h2>
+    <span class="pill progress">IN PROGRESS</span>
+  </div>
+  <p class="summary">Handle failed inspections / damaged parts with grouped follow-up</p>
+  <div class="block">
+    <h4>Outstanding</h4>
+    <ul><li>Build grouped follow-up email: select flagged parts -&gt; ONE Outlook Draft (with attachments) linking thread history to parent part/task</li><li>Add portal view of un-signed-off QC issues grouped by supplier with select-draft button</li><li>Dedupe qc_issues by asana_task_gid + last_synced_at</li></ul>
+  </div>
+  <div class="block routing"><b>Data routing: </b>Asana: signed_off_status, associated_po_number, parts_control_gid (source of truth). ops.db qc_issues: dedupe + analytics (impact, order_value, date_out_of_project).</div>
+  <div class="block">
+    <h4>Verification / validation criteria (Hermes + Giles)<span style="color:var(--muted)"> · 2 edge case(s), 2 open</span></h4>
+    <div class="mark">QC portal view -&gt; select 3 issues same supplier -&gt; Draft -&gt; ONE Outlook Draft with 3 parts + links + attachments, no auto-send. Each row links to parent task. Re-select idempotent.</div>
+    <div class="ec open"><span class="ecid">EC-P7-1</span><span class="ett">Grouped follow-up email not built <span style="color:var(--muted)">(Manual-trigger HITL grouping + drafting is the right pattern (never auto-send).)</span></span><span class="est open">OPEN</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes</div><div class="ec open"><span class="ecid">EC-P7-2</span><span class="ett">qc_issues duplicates mask real counts <span style="color:var(--muted)">(9,020 rows; dedupe by asana_task_gid + last_synced_at.)</span></span><span class="est open">OPEN</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes</div>
+  </div>
+  <div class="signed no">⛔ NOT SIGNED OFF</div>
+</div>
+
+<div class="card" id="P8">
+  <div class="row1">
+    <span class="refid">P8</span>
+    <h2>Architecture &amp; VPS Migration Readiness</h2>
+    <span class="pill progress">IN PROGRESS</span>
+  </div>
+  <p class="summary">Move local scripts to a permanent always-on VPS with persistent webhooks</p>
+  <div class="block">
+    <h4>Outstanding</h4>
+    <ul><li>Define + deploy public webhook receiver on VPS behind Tailscale/SSH (NEVER public) for Asana X-Hook-Signature-verified events</li><li>Consolidate VPS env-var set (D4: DEEPSEEK, ASANA_PAT, PURCHASING_*, HUBSPOT, GEMINI, DROPBOX, DOPPLER + Graph-send secret for RFQ drafts)</li><li>Define fallback logging: webhook events to VPS log + asana_write_log; error to System Updates on failure; scheduler retry</li></ul>
+  </div>
+  <div class="block routing"><b>Data routing: </b>Webhooks -&gt; REQUESTS -&gt; SAP (writes unchanged). ops.db shadow on VPS (/opt/ses/workspace/db/ops.db). Portal HTML served from VPS (kills file:// + PNA caveats).</div>
+  <div class="block">
+    <h4>Verification / validation criteria (Hermes + Giles)<span style="color:var(--muted)"> · 2 edge case(s), 2 open</span></h4>
+    <div class="mark">Verify ops.db no WAL/SHM -&gt; scp to VPS. Stand up public receiver behind Tailscale -&gt; confirm X-Hook-Secret handshake. Test Asana event -&gt; REQUESTS file -&gt; execute_requests picks up. Confirm cron ownership + asana_write_log shows each GID written once by one actor.</div>
+    <div class="ec open"><span class="ecid">EC-P8-1</span><span class="ett">No public webhook receiver exists yet (only localhost bom_dispatch_server) <span style="color:var(--muted)">(os-portal skill documents hookdeck/webhook-skills + Asana HMAC protocol; not deployed.)</span></span><span class="est open">OPEN</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes</div><div class="ec open"><span class="ecid">EC-P8-2</span><span class="ett">D6 one-live-writer: must not run same purchasing/Asana cron on BOTH local + VPS <span style="color:var(--muted)">(VPS owns always-on watchers + cron (shadow DB); local stays interactive/dev.)</span></span><span class="est open">OPEN</span></div><div style="font-size:11px;color:var(--muted);margin:2px 0 6px 4px">owner Hermes</div>
+  </div>
+  <div class="signed no">⛔ NOT SIGNED OFF</div>
+</div>
+<footer>SAS OS · Procurement &amp; BOM deployment tracker · reference IDs: P1-P8 stages · EC-Pn-N edge cases · read-only · every item hyperlinks to its source</footer>
+</div>
+<script>
+function setTheme(name){
+  document.documentElement.classList.remove('theme-stock','theme-neon');
+  if (name && name!=='light') document.documentElement.classList.add('theme-'+name);
+  localStorage.setItem('os_theme', name || 'light');
+  var b=document.querySelectorAll('.tbtn');
+  for (var i=0;i<b.length;i++) b[i].classList.toggle('on', b[i].getAttribute('data-theme')===name);
+}
+function initTheme(){
+  var t=localStorage.getItem('os_theme') || 'stock';
+  if (t==='light') t='';
+  if (t) document.documentElement.classList.add('theme-'+t);
+  var b=document.querySelectorAll('.tbtn');
+  for (var i=0;i<b.length;i++) b[i].classList.toggle('on', b[i].getAttribute('data-theme')===t);
+}
+</script>
+</body></html>

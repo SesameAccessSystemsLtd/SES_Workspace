@@ -1,0 +1,14 @@
+{
+  "request_id": "720796fb-a8d3-4f6e-8c14-35a129fbcf93",
+  "source": "email_approval_sheet",
+  "row_index": 4,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAk0NegWAAA=",
+  "subject": "Sesame Access quote 26-0389 Engraving - 1580 - Admiralty House 2.Entire System BOM - SQR-47291",
+  "task_gid": "1218503775308839",
+  "task_name": "ALEXANDER POLLOCK - Engraving - 1580 - Admiralty House 2.Entire System BOM",
+  "asana_url": "https://app.asana.com/0/0/1218503775308839",
+  "action": "(SQR-47291 (exact SQR)); Update 'Price Ex VAT' to £246.00; Note added to description: Quote: £246.00 ex VAT (24 Sep 2026); Note added to description: Supplier quote ref 26-0389",
+  "comment_to_push": "Quote from Alexander Pollock (Brian Russell) — 24 Sep 2026\nSubject: Sesame Access quote 26-0389 Engraving - 1580 - Admiralty House 2.Entire System BOM - SQR-47291\n\nBrian Russell of Alexander Pollock Ltd has sent the requested engraving quote (their ref 26-0389) for three engraved plates on job 1580 (Admiralty House), quoting against SQR-47291. Total is £246.00 ex carriage and VAT, with item C quoted free of charge. No carriage charge or delivery date is stated on the quote.\n\nAction for Giles:\n- Review the quote and raise a purchase order if acceptable (no deadline stated)\n- Confirm carriage cost and delivery date with Alexander Pollock, as neither is given on the quote\nKey facts: £246.00 ex VAT · their quote 26-0389 · SQR-47291 · job 1580 · job 1016\nProposed: Update 'Price Ex VAT' to £246.00; note Quote: £246.00 ex VAT (24 Sep 2026); note Supplier quote ref 26-0389\n\nEmail gateway · matched via SQR-47291 (exact SQR) · received 2026-09-24 09:06 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-24T11:54:18.026602+00:00"
+}

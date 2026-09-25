@@ -3,6 +3,8 @@ execute_requests.py — Process PENDING REQUESTS/ files and execute Asana writes
 
 Reads all PENDING .md files in the root REQUESTS/ directory (not subfolders),
 parses the companion .json, calls Asana API directly, marks files COMPLETE/FAILED.
+ORDER Status is requested by label, resolved against the live field before anything
+is written, and read back afterwards (test: test_execute_requests_order_status.py).
 
 Run: venv/Scripts/python.exe execute_requests.py
 """
@@ -48,7 +50,14 @@ ASANA_HEADERS = {
 # Known custom field GIDs — fallback for old-format files without inline GIDs
 PRICE_EX_VAT_GID    = os.getenv("ASANA_PRICE_EX_VAT_FIELD_GID",      "854330340727040")
 ORDER_STATUS_GID    = os.getenv("ASANA_ORDER_STATUS_FIELD_GID",       "1143955334207040")
-ORDER_CONFIRMED_GID = os.getenv("ASANA_ORDER_STATUS_CONFIRMED_GID",   "1143955334207043")
+ORDER_STATUS_NAME   = "ORDER Status"
+
+# ORDER Status OPTIONS are never hard-coded. A request carries the option LABEL; it is resolved
+# against the live field definition (resolve_enum_option) and every write is read back
+# (verify_enum_written). Until 2026-09-25 a hard-coded fallback here, 1143955334207043, was sent
+# for every 'Delivery Date Confirmed' request — but that option is '⏰On Order - Awaiting
+# CONFIRMATION', so 51 approved confirmations landed as Awaiting and stayed chaseable. The real
+# '🚚On Order - Delivery Date CONFIRMED' option is 1203944084697376.
 
 WORKSPACE_GID       = "357939803556123"
 GILES_USER_GID      = "1142108324926610"  # REAL Giles user GID (verified 2026-09-01; old 369446862164512 was dead/Not-Found)
@@ -58,6 +67,121 @@ GILES_MENTION_TAG   = f'<a data-asana-gid="{GILES_USER_GID}" data-asana-type="us
 
 # Build Packs reference custom field (Parts Control) — set to the assembly-pack task GID.
 BUILD_PACKS_REF_GID = os.getenv("BUILD_PACKS_REF_GID", "1211660742155293")
+
+
+ORDER_STATUS_RE = re.compile(
+    r"ORDER Status(?: custom field \(field GID: (\d+)\))? to '([^']+)'(?: \(option GID: (\d+)\))?",
+    re.IGNORECASE,  # hand-typed sheet amendments; the LABEL itself is still resolved strictly
+)
+
+
+class EnumResolutionError(Exception):
+    """A requested enum label did not map to exactly one live, enabled option. The request
+    must FAIL with nothing written — never fall back to a guessed option GID."""
+
+
+def _norm_label(label):
+    """Words only, lower case — emoji, punctuation, case and spacing never decide a match:
+    'On Order - Delivery Date Confirmed' == '🚚On Order - Delivery Date CONFIRMED'."""
+    return " ".join(re.findall(r"[a-z0-9]+", (label or "").lower()))
+
+
+def _plain(text):
+    """ASCII-only copy for notes and stdout. The Hermes cron wrapper pipes stdout through
+    cp1252, where printing an emoji label raises UnicodeEncodeError mid-queue."""
+    return (text or "").encode("ascii", "ignore").decode().strip()
+
+
+_ENUM_FIELDS = {}  # field_gid -> (field name, [enum options]); one live read per run
+
+
+def fetch_enum_field(field_gid):
+    """Live definition of an enum custom field -> (name, [{gid, name, enabled}])."""
+    if field_gid in _ENUM_FIELDS:
+        return _ENUM_FIELDS[field_gid]
+    try:
+        r = requests.get(
+            f"https://app.asana.com/api/1.0/custom_fields/{field_gid}",
+            headers=ASANA_HEADERS,
+            params={"opt_fields": "name,resource_subtype,enum_options.gid,enum_options.name,enum_options.enabled"},
+            timeout=15,
+        )
+    except requests.RequestException as exc:
+        raise EnumResolutionError(f"could not read field {field_gid}: {exc}") from exc
+    if r.status_code != 200:
+        raise EnumResolutionError(f"could not read field {field_gid}: HTTP {r.status_code}")
+    data = r.json().get("data") or {}
+    if data.get("resource_subtype") != "enum":
+        raise EnumResolutionError(f"field {field_gid} is not an enum field")
+    _ENUM_FIELDS[field_gid] = (data.get("name") or "", data.get("enum_options") or [])
+    return _ENUM_FIELDS[field_gid]
+
+
+def resolve_enum_option(field_gid, label, field_name=None):
+    """Map a label to exactly one live, enabled option -> (option_gid, live_label).
+    No match, several matches, a disabled option, or a field that is not `field_name`
+    all raise EnumResolutionError."""
+    name, options = fetch_enum_field(field_gid)
+    if field_name and _norm_label(name) != _norm_label(field_name):
+        raise EnumResolutionError(f"field {field_gid} is '{_plain(name)}', not '{field_name}'")
+    want = _norm_label(label)
+    hits = [o for o in options if want and _norm_label(o.get("name")) == want]
+    if not hits:
+        raise EnumResolutionError(f"{field_name or field_gid}: '{_plain(label)}' matches no live option")
+    if len(hits) > 1:
+        raise EnumResolutionError(f"{field_name or field_gid}: '{_plain(label)}' matches {len(hits)} options ("
+                                  + ", ".join(o.get("gid", "") for o in hits) + ")")
+    opt = hits[0]
+    if opt.get("enabled") is False:
+        raise EnumResolutionError(f"{field_name or field_gid}: '{_plain(opt.get('name'))}' ({opt.get('gid')}) is disabled")
+    return opt["gid"], opt.get("name") or ""
+
+
+def resolve_enum_ops(ops):
+    """Swap each enum_label op for the concrete live option GID. Runs BEFORE any write, so an
+    unresolvable label fails the whole request with nothing written."""
+    out = []
+    for op in ops:
+        if op["type"] == "invalid":
+            raise EnumResolutionError(op["reason"])
+        if op["type"] != "enum_label":
+            out.append(op)
+            continue
+        enum_gid, live_label = resolve_enum_option(op["gid"], op["label"], op.get("field_name"))
+        wrong = [c for c in op.get("claimed_enum_gids") or [] if c != enum_gid]
+        if wrong:
+            raise EnumResolutionError(
+                f"{op.get('field_name') or op['gid']}: request names option {', '.join(wrong)} but "
+                f"'{_plain(op['label'])}' is {enum_gid} ('{_plain(live_label)}') - label and GID disagree")
+        out.append({"type": "custom_field_enum", "gid": op["gid"], "enum_gid": enum_gid,
+                    "label": live_label, "field_name": op.get("field_name") or op["gid"]})
+    return out
+
+
+def verify_enum_written(task_gid, field_gid, enum_gid, label, field_name=""):
+    """Read the task back; pass only if the enum field now holds `enum_gid` AND its label
+    still matches `label`."""
+    field_name = field_name or field_gid
+    try:
+        r = requests.get(
+            f"https://app.asana.com/api/1.0/tasks/{task_gid}",
+            headers=ASANA_HEADERS,
+            params={"opt_fields": "custom_fields.gid,custom_fields.enum_value.gid,custom_fields.enum_value.name"},
+            timeout=15,
+        )
+    except requests.RequestException as exc:
+        return False, f"{field_name} read-back failed: {exc}"
+    if r.status_code != 200:
+        return False, f"{field_name} read-back failed: HTTP {r.status_code}"
+    for cf in (r.json().get("data") or {}).get("custom_fields") or []:
+        if cf.get("gid") != field_gid:
+            continue
+        got = cf.get("enum_value") or {}
+        if got.get("gid") == enum_gid and _norm_label(got.get("name")) == _norm_label(label):
+            return True, f"{field_name} read back '{_plain(label)}'"
+        return False, (f"{field_name} read-back MISMATCH: wanted '{_plain(label)}' ({enum_gid}), "
+                       f"task shows '{_plain(got.get('name'))}' ({got.get('gid')})")
+    return False, f"{field_name} read-back failed: field {field_gid} not on task"
 
 
 def parse_actions(action_text):
@@ -84,17 +208,25 @@ def parse_actions(action_text):
     if m:
         ops.append({"type": "append_notes", "text": m.group(1).strip()})
 
-    # ORDER Status — new format with inline option GID
-    m = re.search(
-        r"Update ORDER Status custom field \(field GID: (\d+)\) to .+\(option GID: (\d+)\)",
-        action_text,
-    )
-    if m:
-        ops.append({"type": "custom_field_enum", "gid": m.group(1), "enum_gid": m.group(2)})
-    else:
-        # Old format: "Propose changing ORDER Status to 'On Order - Delivery Date Confirmed'"
-        if "On Order - Delivery Date Confirmed" in action_text:
-            ops.append({"type": "custom_field_enum", "gid": ORDER_STATUS_GID, "enum_gid": ORDER_CONFIRMED_GID})
+    # ORDER Status — carried as a LABEL, mapped to the live option by resolve_enum_ops().
+    # Both formats seen in the queue:
+    #   "Update ORDER Status to 'On Order - Delivery Date Confirmed'"                (03_proposal_engine)
+    #   "Update ORDER Status custom field (field GID: F) to '<label>' (option GID: O)"  (pre-Sep)
+    # An inline option GID is kept only as a claim to cross-check — the pre-Sep generator baked
+    # the wrong GID (1143955334207043) into all 29 of its 'Confirmed' requests.
+    found = ORDER_STATUS_RE.findall(action_text)
+    if found:
+        targets = {(f or ORDER_STATUS_GID, _norm_label(label)) for f, label, _ in found}
+        if len(targets) > 1:
+            ops.append({"type": "invalid", "reason": "ORDER Status requested more than once with different labels: "
+                        + " / ".join(sorted(_plain(label) for _, label, _ in found))})
+        else:
+            field_gid, label, _ = found[0]
+            ops.append({"type": "enum_label", "gid": field_gid or ORDER_STATUS_GID,
+                        "field_name": ORDER_STATUS_NAME, "label": label,
+                        "claimed_enum_gids": sorted({c for _, _, c in found if c})})
+    elif re.search(r"ORDER Status", action_text, re.IGNORECASE):
+        ops.append({"type": "invalid", "reason": "ORDER Status change mentioned but no quoted label to resolve"})
 
     return ops
 
@@ -670,6 +802,14 @@ def process_file(md_path):
         comment_text = m.group(1).strip() if m else ""
 
     ops = parse_actions(action_text)
+    # Enum labels -> live option GIDs BEFORE anything is written: a label that cannot be
+    # resolved fails the whole request (no date, price, note or comment half-applied).
+    try:
+        ops = resolve_enum_ops(ops)
+    except EnumResolutionError as exc:
+        msg = f"nothing written - {exc}"
+        stamp_md(md_path, "FAILED", msg)
+        return False, msg
     results = []
     errors = []
 
@@ -688,6 +828,14 @@ def process_file(md_path):
         ok, msg = asana_update_task(task_gid, due_date=due_date, custom_fields=custom_fields or None)
         if ok:
             results.append(msg)
+            # A 200 only proves Asana accepted the PUT — read each enum back and compare labels.
+            for op in ops:
+                if op["type"] == "custom_field_enum":
+                    ok, msg = verify_enum_written(task_gid, op["gid"], op["enum_gid"], op["label"], op["field_name"])
+                    if ok:
+                        results.append(msg)
+                    else:
+                        errors.append(msg)
         else:
             errors.append(msg)
 
@@ -722,6 +870,11 @@ def process_file(md_path):
 
 
 def main():
+    # The cron wrapper reads stdout as cp1252; never let an odd character in an Asana
+    # error body crash the loop between a write and its archive move.
+    if hasattr(_sys.stdout, "reconfigure"):
+        _sys.stdout.reconfigure(errors="replace")
+
     if not ASANA_TOKEN:
         print("ERROR: ASANA_PERSONAL_ACCESS_TOKEN not set in .env")
         return

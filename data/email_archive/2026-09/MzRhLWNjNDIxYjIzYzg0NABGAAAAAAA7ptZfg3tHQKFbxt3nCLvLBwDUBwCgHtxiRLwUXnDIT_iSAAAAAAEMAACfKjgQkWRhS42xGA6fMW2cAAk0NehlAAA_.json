@@ -1,0 +1,49 @@
+{
+  "id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAk0NehlAAA=",
+  "internetMessageId": "<LO3P123MB31306F9388E93FF4F6988FD8C6802@LO3P123MB3130.GBRP123.PROD.OUTLOOK.COM>",
+  "conversationId": "AAQkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NAAQAJSh5L6v30lCnViqFbl7ra8=",
+  "folder": "inbox",
+  "subject": "055060",
+  "sender": "sales@gemac-hydraulics.co.uk",
+  "sender_name": "Gemac Hydraulics",
+  "to": [
+    "purchasing@sesameaccess.com"
+  ],
+  "cc": [],
+  "date": "2026-09-25T09:39:04Z",
+  "body_content": "<html><head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><meta name=\"Generator\" content=\"Microsoft Word 15 (filtered medium)\"><style>\r\n<!--\r\n@font-face\r\n\t{font-family:\"Cambria Math\"}\r\n@font-face\r\n\t{font-family:Aptos}\r\np.MsoNormal, li.MsoNormal, div.MsoNormal\r\n\t{margin:0cm;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Aptos\",sans-serif}\r\nspan.EmailStyle17\r\n\t{font-family:\"Aptos\",sans-serif;\r\n\tcolor:windowtext}\r\n.MsoChpDefault\r\n\t{font-size:11.0pt}\r\n@page WordSection1\r\n\t{margin:72.0pt 72.0pt 72.0pt 72.0pt}\r\ndiv.WordSection1\r\n\t{}\r\n-->\r\n</style></head><body lang=\"EN-GB\" link=\"#467886\" vlink=\"#96607D\" style=\"word-wrap:break-word\"><div class=\"WordSection1\"><p class=\"MsoNormal\">Good Morning</p><p class=\"MsoNormal\">&nbsp;</p><p class=\"MsoNormal\">Please find the attached Gemac invoice </p><p class=\"MsoNormal\">&nbsp;</p><p class=\"MsoNormal\">Regards Salvatore</p><p class=\"MsoNormal\">&nbsp;</p></div></body></html>",
+  "body_text": "Good Morning\n\nPlease find the attached Gemac invoice\n\nRegards Salvatore",
+  "full_text": "<html><head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><meta name=\"Generator\" content=\"Microsoft Word 15 (filtered medium)\"><style>\r\n<!--\r\n@font-face\r\n\t{font-family:\"Cambria Math\"}\r\n@font-face\r\n\t{font-family:Aptos}\r\np.MsoNormal, li.MsoNormal, div.MsoNormal\r\n\t{margin:0cm;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Aptos\",sans-serif}\r\nspan.EmailStyle17\r\n\t{font-family:\"Aptos\",sans-serif;\r\n\tcolor:windowtext}\r\n.MsoChpDefault\r\n\t{font-size:11.0pt}\r\n@page WordSection1\r\n\t{margin:72.0pt 72.0pt 72.0pt 72.0pt}\r\ndiv.WordSection1\r\n\t{}\r\n-->\r\n</style></head><body lang=\"EN-GB\" link=\"#467886\" vlink=\"#96607D\" style=\"word-wrap:break-word\"><div class=\"WordSection1\"><p class=\"MsoNormal\">Good Morning</p><p class=\"MsoNormal\">&nbsp;</p><p class=\"MsoNormal\">Please find the attached Gemac invoice </p><p class=\"MsoNormal\">&nbsp;</p><p class=\"MsoNormal\">Regards Salvatore</p><p class=\"MsoNormal\">&nbsp;</p></div></body></html>\n\n--- PDF Attachments ---\n\n",
+  "pdf_text": "",
+  "attachment_names": [
+    "Gemac_25_09_2026_001.pdf"
+  ],
+  "attachment_paths": [
+    "C:\\Users\\GilesHugo\\SES_Workspace\\data\\email_archive\\2026-09\\MzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAk0NehlAAA_\\Gemac_25_09_2026_001.pdf"
+  ],
+  "fetched_at": "2026-09-25T10:01:28Z",
+  "insights": {
+    "document_type": "invoice",
+    "summary": "Salvatore from Gemac Hydraulics has sent an invoice, attached as Gemac_25_09_2026_001.pdf. The email body contains no figures, PO or job references, so the invoice details are only in the attachment. No action is requested beyond processing the invoice.",
+    "action_required": false,
+    "action_items": [],
+    "requested_by": "Salvatore",
+    "company_name": "Gemac",
+    "po_number": null,
+    "sqr_number": null,
+    "job_numbers": [],
+    "supplier_quote_ref": null,
+    "supplier_order_ref": null,
+    "supplier_invoice_ref": null,
+    "total_price": null,
+    "carriage": null,
+    "delivery_date": null,
+    "lead_time": null,
+    "has_issues": false,
+    "issue_summary": null,
+    "is_noise": false,
+    "noise_reason": null,
+    "line_items": []
+  },
+  "parsed_at": "2026-09-25T10:01:44Z"
+}

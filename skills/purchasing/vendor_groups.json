@@ -1,22 +1,55 @@
 {
-  "compiled_at": "2026-09-17T07:00:29.525429+00:00",
-  "total_items": 1,
+  "compiled_at": "2026-09-25T07:00:28.975905+00:00",
+  "total_items": 4,
   "vendor_groups": [
     {
-      "vendor_name": "Keyence",
-      "vendor_name_normalised": "keyence",
+      "vendor_name": "Machining BOM",
+      "vendor_name_normalised": "machining bom",
       "vendor_is_fallback": false,
       "fallback_tag_gid": null,
       "items": [
         {
-          "asana_task_gid": "1205906654192360",
-          "task_name": "STOCK Keyence - distance detector- LR-TB2000C = £212",
+          "asana_task_gid": "928895539267439",
+          "task_name": "100 off NBSS008 Rev 1 (Stair Wheels)",
+          "sesame_pn": "1003.008, 1003.B.008",
+          "item_type": "stock",
+          "order_qty": 100.0,
+          "unit_price": 6.5,
+          "stock_qty_at_detection": 16.0,
+          "parts_control_task_gid": "928895539267439",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "928895539267473",
+          "task_name": "16 off NBSS026 (RisingBarrierStuddings) (odd pairing) ",
+          "sesame_pn": "026",
+          "item_type": "stock",
+          "order_qty": 10.0,
+          "unit_price": 14.0,
+          "stock_qty_at_detection": 5.0,
+          "parts_control_task_gid": "928895539267473",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "925288811338897",
+          "task_name": "16 off NBSS027 (RisingBarrierStuddings)",
           "sesame_pn": null,
           "item_type": "stock",
-          "order_qty": 1.0,
-          "unit_price": 212.0,
-          "stock_qty_at_detection": 1.0,
-          "parts_control_task_gid": "1205906654192360",
+          "order_qty": 16.0,
+          "unit_price": 12.0,
+          "stock_qty_at_detection": 3.0,
+          "parts_control_task_gid": "925288811338897",
+          "vendor_is_fallback": false
+        },
+        {
+          "asana_task_gid": "928895539267501",
+          "task_name": "20 off NBSS128 Rev 2 (SprocketPlatePinC)",
+          "sesame_pn": "1005.A.010, 1005.B.011",
+          "item_type": "stock",
+          "order_qty": 20.0,
+          "unit_price": 12.5,
+          "stock_qty_at_detection": 3.0,
+          "parts_control_task_gid": "928895539267501",
           "vendor_is_fallback": false
         }
       ]

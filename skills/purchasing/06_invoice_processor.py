@@ -43,7 +43,7 @@ load_dotenv(Path(__file__).parents[3] / ".hermes" / ".env", override=True)
 sys.path.insert(0, str(Path(__file__).parent))
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "lib"))
 
-from gateway_common import (ARCHIVE_DIR, DATA, GILES_EMAIL, SupplierDirectory, fmt_date, load_json,  # noqa: E402
+from gateway_common import (ARCHIVE_DIR, DATA, SupplierDirectory, fmt_date, load_json,  # noqa: E402
                             now_utc, save_json, shadow_mode)
 from invoice_gate import (ARRIVED, InvoiceHistory, POIndex, SupplierProfiles, find_invoice_numbers,  # noqa: E402
                           run_gate)
@@ -130,6 +130,8 @@ def intake_email(state: dict) -> list[dict]:
                     continue
                 items.append({"sha": sha, "path": p, "source": "email", "source_ref": doc.get("id"),
                               "sender_domain": (doc.get("sender") or "").split("@")[-1].lower(),
+                              "sender_email": (doc.get("sender") or "").strip(),
+                              "sender_name": (ins.get("requested_by") or doc.get("sender_name") or "").strip(),
                               "original": p.name, "text": None, "email_id": doc.get("id")})
     return items
 
@@ -207,6 +209,11 @@ def build_comment(res, item: dict, url: str | None, filed: str) -> str:
     passed = sum(1 for v in res.conditions.values() if v[0])
     head = f"Invoice {inv} from {sup} — {gross} inc VAT — gate: {'PASS' if res.auto else 'CHECK'} ({passed}/7)"
     lines = [head]
+    who, mail = (item.get("sender_name") or "").strip(), (item.get("sender_email") or "").strip()
+    if mail:
+        lines.append(f"From: {who} <{mail}>" if who and who.lower() != mail.lower() else f"From: {mail}")
+    elif item.get("source") == "dropbox":
+        lines.append(f"From: dropped in '{item.get('original', '')}' (no email on record)")
     for k, (ok, why) in res.conditions.items():
         lines.append(f"- {'✓' if ok else '✗'} {k.split('_', 1)[1].replace('_', ' ')}: {why}")
     for h in res.hard_stops:
@@ -222,7 +229,7 @@ def build_comment(res, item: dict, url: str | None, filed: str) -> str:
     else:
         lines.append("Next: resolve the ✗ items above; the PDF is in 2. invoice queries.")
     lines.append("")
-    lines.append(f"Email gateway · invoice gate {GATE_VERSION} · {GILES_EMAIL}")
+    lines.append(f"Email gateway · invoice gate {GATE_VERSION}")
     return "\n".join(lines)
 
 
@@ -324,13 +331,42 @@ def cmd_run(dry_run: bool) -> None:
 
 
 # ------------------------------------------------------------------ approve
+# Auto-comment (Giles 2026-09-24): an invoice that PASSED all seven conditions with no hard stop has its
+# gate comment + Dropbox link posted without waiting for a decision. Comment only — Invoice Number and
+# Signed OFF are still never set by the machine. Same grace period and cap as the email gateway.
+INVOICE_AUTO_COMMENT = os.environ.get("INVOICE_AUTO_COMMENT", "0") == "1"
+AUTO_GRACE_MINUTES = int(os.environ.get("GATEWAY_AUTO_GRACE_MINUTES", "30"))
+AUTO_MAX_PER_RUN = int(os.environ.get("GATEWAY_AUTO_MAX_PER_RUN", "40"))
+
+
+def _invoice_auto_ok(row: dict, now: datetime) -> bool:
+    if row.get("Verdict") != "AUTO" or row.get("Flags"):
+        return False
+    if not (row.get("Asana Link") or "").rstrip("/").split("/")[-1].isdigit():
+        return False
+    if any((row.get(k) or "").strip() for k in ("Amendment Notes", "Feedback")):
+        return False
+    try:
+        seen = datetime.strptime(row.get("Seen", ""), "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+    except ValueError:
+        return False
+    return (now - seen).total_seconds() / 60 >= AUTO_GRACE_MINUTES
+
+
 def cmd_approve() -> None:
     from sheet_common import Tab, get_spreadsheet
     tab = Tab(get_spreadsheet(), INVOICES_TAB, INVOICE_HEADERS)
     rows = tab.read_rows()
-    done = 0
+    done = auto_done = 0
+    now = datetime.now(timezone.utc)
     for row in rows:
         dec = (row.get("DECISION") or "").strip().upper()[:1]
+        auto = False
+        if (not dec and INVOICE_AUTO_COMMENT and not row.get("Processed At") and row.get("File SHA")
+                and auto_done < AUTO_MAX_PER_RUN and _invoice_auto_ok(row, now)):
+            dec, auto = "A", True
+            auto_done += 1
+            tab.ws.update_cell(row["_row"], tab.col("DECISION"), "A (auto)")
         if not dec or row.get("Processed At") or not row.get("File SHA"):
             continue
         if dec == "S":
@@ -376,7 +412,7 @@ Comment To Push:
 {comment}
 
 ## Context
-Invoice gate decision {dec} by Giles via the Email Gateway sheet (Invoices tab).
+Invoice gate decision {'AUTO (all seven conditions passed, no hard stop)' if auto else dec + ' by Giles'} via the Email Gateway sheet (Invoices tab).
 File: {row.get('Filed To','')}
 """)
             with open(md[:-3] + ".json", "w", encoding="utf-8") as jf:
@@ -397,7 +433,7 @@ File: {row.get('Filed To','')}
             print(f"  (ops.db decision not recorded: {e})")
         done += 1
         print(f"  row {row['_row']}: {dec} → {'REQUESTS file' if dec != 'R' else 'rejected'}")
-    print(f"Done: {done} decision(s) processed.")
+    print(f"Done: {done} decision(s) processed ({auto_done} auto-commented).")
 
 
 def cmd_init_sheet() -> None:

@@ -326,7 +326,7 @@ class RuleStore:
         # resolved at call time so tests / env overrides (GATEWAY_RULES_PATH) take effect
         self.path = Path(path or os.environ.get("GATEWAY_RULES_PATH") or RULES_PATH)
         self.data = load_json(self.path, None) or {"version": 0}
-        for k in ("domain_supplier", "phone_supplier", "sender_task", "phone_task", "domain_task",
+        for k in ("domain_supplier", "phone_supplier", "sender_task", "phone_task", "domain_task", "call_context",
                   "blocked_tasks", "noise_domains", "label_supplier"):
             self.data.setdefault(k, {})
         self.data.setdefault("noise_subject_patterns", [])
@@ -354,6 +354,29 @@ class RuleStore:
     def domain_task(self, domain: str) -> dict | None:
         r = self.data["domain_task"].get((domain or "").lower())
         return r if r and not _expired(r) else None
+
+    def call_context(self, phones: list[str] | None, label: str = "") -> dict | None:
+        """Giles's steering for a caller: {"action": "drop"|"keep", "note": "...", "label": "..."}.
+        Keyed by normalised phone, falling back to the phonebook label."""
+        cc = self.data.get("call_context", {})
+        for ph in phones or []:
+            r = cc.get(normalise_phone(ph))
+            if r:
+                return r
+        return cc.get("label:" + (label or "").strip().lower()) if label else None
+
+    def put_call_context(self, phones: list[str] | None, label: str, value: dict) -> bool:
+        keys = [normalise_phone(p) for p in (phones or []) if normalise_phone(p)]
+        if not keys and label:
+            keys = ["label:" + label.strip().lower()]
+        changed = False
+        for k in keys:
+            v = dict(value, label=label or value.get("label", ""))
+            v.setdefault("learned_at", now_utc())
+            if self.data.setdefault("call_context", {}).get(k, {}).get("note") != v.get("note"):
+                self.data["call_context"][k] = v
+                changed = True
+        return changed
 
     def phone_task(self, phone: str) -> dict | None:
         r = self.data["phone_task"].get(normalise_phone(phone))

@@ -1,5 +1,5 @@
 {
-  "version": 8,
+  "version": 12,
   "domain_supplier": {},
   "phone_supplier": {
     "01784449326": {
@@ -44,6 +44,20 @@
       "until": "2026-12-21",
       "learned_from": "2026-09-22 Invoice 055048",
       "learned_at": "2026-09-22T14:30:55Z"
+    },
+    "orders@heskins.com": {
+      "task_gid": "1218732774265597",
+      "note": "Giles: it never went into project orders and was a need created and ordered - https://app.asana.com/1/357939803556123/project/8",
+      "until": "2026-12-22",
+      "learned_from": "2026-09-23 Sales Order 0000257976",
+      "learned_at": "2026-09-23T16:30:35Z"
+    },
+    "pkginfo@ups.com": {
+      "task_gid": "1218239426597875",
+      "note": "Giles: Shoudl be ading this tracking number or teh URL to https://app.asana.com/1/357939803556123/project/848657415032331/task/",
+      "until": "2026-12-23",
+      "learned_from": "2026-09-24 UPS Delivery Notification, Tracking Number 1Z0CG866683906539",
+      "learned_at": "2026-09-24T09:31:00Z"
     }
   },
   "phone_task": {
@@ -306,7 +320,38 @@
       "text": "[romanselfdrive.co.uk] M: we need to start logging any emails like this and findong what orders are live and not yet with an order reference and we need to add both the order reference #8153845 and the vehicle registration CK7",
       "source": "2026-09-22 Vehicle Inspection Report SESAME ACCESS SYSTEMS LTD  : 51285",
       "learned_at": "2026-09-22T14:30:55Z"
+    },
+    {
+      "text": "[romanselfdrive.co.uk] R: so hard to match these as the confirmations need to map to a rental number 8153291 that is refernced on an order confirmation - see email subject Booking Confirmation for #8153291",
+      "source": "2026-09-23 Vehicle Inspection Report SESAME ACCESS SYSTEMS LTD  : 51285",
+      "learned_at": "2026-09-23T16:30:35Z"
+    },
+    {
+      "text": "[bel.co.uk] M: it never went into project orders and was a need created and ordered - https://app.asana.com/1/357939803556123/project/854650811917168/task/1218732774265597?focus=true",
+      "source": "2026-09-23 Invoice - PO Number: PO20985-1575 -  Invoice Number: CD97001",
+      "learned_at": "2026-09-23T16:30:35Z"
+    },
+    {
+      "text": "[appliedautomation.co.uk] M: Quote from Applied Automation (Conal Stubbs) — 24 Sep 2026\nSubject: QMK26KO0859 - 1573 - Kings Road 2.Entire System - SQR-47337\n\nConal Stubbs of Applied Automation (MayTec) has sent the quotation Gile",
+      "source": "2026-09-24 QMK26KO0859 - 1573 - Kings Road 2.Entire System - SQR-47337",
+      "learned_at": "2026-09-24T11:54:18Z"
+    },
+    {
+      "text": "[digital.metamail.com] R: never interested in these",
+      "source": "2026-09-24 🎬 Live today: the Meta Connect developer state of the union",
+      "learned_at": "2026-09-25T14:30:44Z"
+    },
+    {
+      "text": "[worksmarter.co.uk] R: never interested in these",
+      "source": "2026-09-24 Giles Hugo has requested a new holiday",
+      "learned_at": "2026-09-25T14:30:44Z"
+    },
+    {
+      "text": "[status.hubspot.com] R: never interested in these",
+      "source": "2026-09-24 HubSpot Incident - The Salesforce integration is unavailable",
+      "learned_at": "2026-09-25T14:30:44Z"
     }
   ],
-  "updated_at": "2026-09-22T14:30:55Z"
+  "updated_at": "2026-09-25T14:30:44Z",
+  "call_context": {}
 }

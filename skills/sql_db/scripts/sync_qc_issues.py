@@ -210,7 +210,10 @@ def main() -> None:
 
     if args.dry_run:
         import json
-        print(json.dumps(rows[:3], indent=2, default=str))
+        # Print ALL prepared rows — previously rows[:3], which silently truncated the
+        # dry-run output and made a 6-row scope look like 3. Never slice here again:
+        # a dry run is a verification tool and must show the full write set.
+        print(json.dumps(rows, indent=2, default=str))
         log.info("Dry run — %d rows prepared, not written", len(rows))
         return
 

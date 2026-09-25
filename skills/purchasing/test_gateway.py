@@ -174,6 +174,40 @@ def main():
     ok &= check(autos == 7, f"invoice gate: {autos} AUTO of {len(recs)} labelled invoices (expected 7: proforma stopped, 4 no-PO, 1 multi-invoice)")
     ok &= check(any("PROFORMA" in h for h in ig.run_gate(recs[1]["text"], recs[1]["sender_domain"], idx, ig.SupplierProfiles(), sup).hard_stops), "proforma is a hard stop")
 
+    # 13. auto-approve eligibility (pure function)
+    import importlib as _il
+    ap = _il.import_module("05_sheet_approver")
+    from datetime import datetime as _dt, timedelta as _td, timezone as _tz
+    _now = _dt.now(_tz.utc); _old = (_now - _td(minutes=45)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    base = {"Email ID": "Z1", "Suggested": "A", "Confidence": "HIGH", "Proposed Task GID": "7", "Asana Link": "https://app.asana.com/0/0/7"}
+    ok &= check(ap._auto_eligible(base, {"Z1": _old}, _now)[0], "auto: HIGH + A + grace elapsed → push")
+    ok &= check(not ap._auto_eligible(base, {}, _now)[0], "auto: first sighting → wait")
+    ok &= check(not ap._auto_eligible({**base, "Feedback": "hold"}, {"Z1": _old}, _now)[0], "auto: human note → wait")
+    ok &= check(not ap._auto_eligible({**base, "Asana Link": "https://app.asana.com/0/0/8"}, {"Z1": _old}, _now)[0], "auto: link changed → wait")
+    ok &= check(not ap._auto_eligible({**base, "Confidence": "MEDIUM"}, {"Z1": _old}, _now)[0], "auto: MEDIUM → wait")
+
+    # 14. call steering: Giles's note becomes call context; drop words drop, others keep + reach triage
+    rs = gc.RuleStore(gc.RULES_PATH)
+    learn.learn_from_record({"email_id": "c1", "received": "2026-09-24", "subject": "Notes from your call with +443333321123 0333 332 1123 on 17/09/2026 14:47",
+                             "sender_domain": "ringcentral.com", "decision": "R", "feedback": "Hyperoptic broadband - IT, ignore"}, rs, sup)
+    learn.learn_from_record({"email_id": "c2", "received": "2026-09-24", "subject": "Notes from your call with Keith Interfluid 01822 833111 on 18/09/2026 10:53",
+                             "sender_domain": "ringcentral.com", "decision": "R", "feedback": "Keith chasing the 1575 rams - keep"}, rs, sup)
+    t1 = pe.triage_item({"sender_domain": "ringcentral.com", "subject": "x"}, {"document_type": "call_notes", "call": {"phones": ["03333321123"]}, "worth_tracking": True}, rs)
+    t2 = pe.triage_item({"sender_domain": "ringcentral.com", "subject": "x"}, {"document_type": "call_notes", "call": {"phones": ["01822833111"]}, "worth_tracking": False}, rs)
+    t3 = pe.triage_item({"sender_domain": "ringcentral.com", "subject": "x"}, {"document_type": "call_notes", "call": {"phones": ["07000000001"]}, "worth_tracking": False}, rs)
+    ok &= check(t1[0] == "non_supplier_call" and "Hyperoptic" in t1[1], "steered 'ignore' → future calls from that number dropped")
+    ok &= check(t2[0] == "supplier_call", "steered 'keep' → kept even when the parser thinks it is a short call")
+    ok &= check(t3 == ("non_supplier_call", "short call, nothing actionable"), "unknown short call with no substance → dropped")
+
+    # 15. Asana-bot hand-off: description left alone; contact line falls back to supplier email for noreply
+    acts, _ = pe.propose_changes({"document_type": "quote", "total_price": 80, "supplier_quote_ref": "11160", "lead_time": "5 days", "_received": ""},
+                                 {"task_gid": "6", "task_status": "Quote - Manual ", "task_completed": False}, "quote")
+    ok &= check(not any("description" in a for a in acts), "no description writes (the Asana teammate owns the description)")
+    pe._SUPPLIERS = sup
+    aa = [x for x in sup.rows if x.get("domain") == "appliedautomation.co.uk"][0]
+    cl = pe.contact_line({"sender": "noreply@appliedautomation.co.uk"}, {}, {"supplier_gid": aa["gid"]})
+    ok &= check(cl.startswith("Contact: ") and "on file" in cl and "noreply" in cl, f"noreply sender → supplier email on file ({cl})")
+
     print("\nALL PASS" if ok else "\nSOME CHECKS FAILED")
     sys.exit(0 if ok else 1)
 

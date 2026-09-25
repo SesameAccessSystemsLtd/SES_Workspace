@@ -202,7 +202,7 @@ CREATE TABLE IF NOT EXISTS asana_field_registry (
 INSERT OR IGNORE INTO asana_field_registry (field_name, field_gid, field_type, applies_to, notes) VALUES
     ('price_ex_vat',        '854330340727040',  'number',    'procurement_tasks',               'Price Ex VAT on order/quote tasks.'),
     ('delivery_date',       '1208706270294053', 'date',      'procurement_tasks',               'Expected/confirmed delivery date.'),
-    ('order_status',        '1143955334207040', 'enum',      'procurement_tasks',               'ORDER Status field. Confirmed enum GID: 1143955334207043'),
+    ('order_status',        '1143955334207040', 'enum',      'procurement_tasks',               'ORDER Status field. Delivery Date CONFIRMED = 1203944084697376 ("On Order - Delivery Date CONFIRMED"). 1143955334207043 is "On Order - Awaiting CONFIRMATION", NOT confirmed. Options get renamed/added/disabled: resolve by label from the live field before writing (execute_requests.py does).'),
     ('sesame_part_no',      '1213228090549470', 'text',      'stock_inventory, parts_control',  'Full part number e.g. 1234.1008.h.234. Never strip when writing to Asana.'),
     ('kan_number',          '1206590288351824', 'text',      'stock_inventory, bom_pipeline',   'KAN reference number e.g. KAN-330. Set from golden_index mapping. Central to stock identity — must not be guessed or inferred from description.'),
     ('stock_qty',           '1126782469949969', 'number',    'stock_inventory (KANBAN)',         'Current physical stock quantity.'),

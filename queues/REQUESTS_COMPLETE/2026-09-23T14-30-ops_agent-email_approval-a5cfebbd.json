@@ -1,0 +1,14 @@
+{
+  "request_id": "b903cb9a-171b-430b-ace2-eaa97d3fa01a",
+  "source": "email_approval_sheet",
+  "row_index": 47,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkxwjyWAAA=",
+  "subject": "RE: Proof for 1591-7003-G-013 rev-0",
+  "task_gid": "1217538511443634",
+  "task_name": "21574-1591 - Weber Cox - Cambridge sensitive membrain URGENT (chasing)",
+  "asana_url": "https://app.asana.com/0/0/1217538511443634",
+  "action": "(SQR-46632 (exact SQR)); Note: Task due date already 9 Oct 2026",
+  "comment_to_push": "Update from Weber Precision Graphics (Manny Estrada) — 22 Sep 2026\nSubject: RE: Proof for 1591-7003-G-013 rev-0\n\nManny Estrada of Weber Precision Graphics is treating Giles's email as formal approval of the switch proof for 1591-7003-G-013 rev-0 and is moving the job into production. This follows Karol's earlier note that the drawings met expectations but were not formal approval, and Jeff's update that custom material was still awaited with shipping hoped for Oct 9. No new question or request is put to Sesame in this message.\n\nAction for Giles: none — information only\nKey facts: delivery 9 Oct 2026 · PO 21574-1591 · SQR-46632\nProposed: no field change (Task due date already 9 Oct 2026)\n\nEmail gateway · matched via SQR-46632 (exact SQR) · received 2026-09-22 18:14 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-23T14:30:32.659836+00:00"
+}

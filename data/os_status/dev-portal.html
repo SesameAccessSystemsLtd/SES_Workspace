@@ -207,22 +207,22 @@ function sasOnSuccess(kind, res){
 <div class="sub">Every thread an agent has opened across Hermes, Claude and Codex — what is running, what is waiting on you. Sign-off is yours alone.</div>
 <a href="nav.html" class="navbtn">&larr; SAS OS portal</a>
 <div class="thememenu"><button class="tbtn" data-theme="light" onclick="setTheme('light')" title="Remembered for this page only"><span class="dot" style="background:#f4f6fa"></span>Light</button><button class="tbtn" data-theme="sand" onclick="setTheme('sand')" title="Remembered for this page only"><span class="dot" style="background:#d8a55f"></span>Sand</button><button class="tbtn" data-theme="slate" onclick="setTheme('slate')" title="Remembered for this page only"><span class="dot" style="background:#58a6ff"></span>Slate</button><button class="tbtn" data-theme="ocean" onclick="setTheme('ocean')" title="Remembered for this page only"><span class="dot" style="background:#6c8ef7"></span>Ocean</button><button class="tbtn" data-theme="forest" onclick="setTheme('forest')" title="Remembered for this page only"><span class="dot" style="background:#2ea87e"></span>Forest</button><button class="tbtn" data-theme="plum" onclick="setTheme('plum')" title="Remembered for this page only"><span class="dot" style="background:#b478ff"></span>Plum</button><button class="tbtn" data-theme="neon" onclick="setTheme('neon')" title="Remembered for this page only"><span class="dot" style="background:#00f0ff"></span>Neon</button></div>
-<div class="badges"><span class="badge">live: 11</span><span class="badge">awaiting sign-off: 7</span><span class="badge">stale &gt;48h: 6</span><span class="badge">not in Asana: 4</span></div>
+<div class="badges"><span class="badge">live: 12</span><span class="badge">awaiting sign-off: 8</span><span class="badge">stale &gt;48h: 10</span><span class="badge">not in Asana: 5</span></div>
 
 </header>
 <div class="note warn" id="offline-note" style="display:none">
 Opened as a local file, so the action buttons are disabled. Open
 <code>http://127.0.0.1:8765/data/os_status/</code> to use them.</div>
 <div class="note" id="rebuild-note" style="display:none">Saved. This page is a generated snapshot — re-run <code>build_dev_portal.py</code> (or wait for the next refresh) to see it move lane.</div>
-<div class="cat"><h2>Waiting on you · 7</h2><p class="muted" style="font-size:12.5px;margin:-4px 0 12px">Signed-off work leaves the list. Nothing here is finished until you say so.</p>
+<div class="cat"><h2>Waiting on you · 8</h2><p class="muted" style="font-size:12.5px;margin:-4px 0 12px">Signed-off work leaves the list. Nothing here is finished until you say so.</p>
 <div class="card" id="t-fed3cca4">
 <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
   <div style="flex:1;min-width:280px">
     <div style="font-weight:600;font-size:14.5px">Dev-work logging rule is live in SOUL.md, CLAUDE.md and AGENTS.md so every channel logs before writing code</div>
     <div class="muted" style="font-size:12.5px;margin-top:4px">
-      hermes:default · 6d since last event · <a href="https://app.asana.com/1/357939803556123/task/1218595253311904" target="_blank">Asana</a>
+      hermes:default · 8d since last event · <a href="https://app.asana.com/1/357939803556123/task/1218595253311904" target="_blank">Asana</a>
     </div>
-    <div style="margin-top:8px"><span class="tag">Documentation</span> <span class="pill warn">High</span> <span class="pill open">S</span> <span class="pill over">stale 6d</span></div>
+    <div style="margin-top:8px"><span class="tag">Documentation</span> <span class="pill warn">High</span> <span class="pill open">S</span> <span class="pill over">stale 8d</span></div>
   </div>
   <div class="btnrow" style="align-items:flex-start"><button class="btn ok sm" onclick="sasSignoff(this,'fed3cca4','closed')" data-action="1" title="Closes the thread. Only you can do this.">✓ Sign off</button><button class="btn ghost sm" onclick="sasSignoff(this,'fed3cca4','open')" data-action="1" title="Not done — reopen it.">↩ Send back</button></div>
 </div>
@@ -236,9 +236,9 @@ Opened as a local file, so the action buttons are disabled. Open
   <div style="flex:1;min-width:280px">
     <div style="font-weight:600;font-size:14.5px">project_cycle.py joined parts_control on sesame_pn prefix instead of project_code — inflated 1588 parts 538 vs 219 and S5 blockers 282 vs 6; fixed, needs sign-off</div>
     <div class="muted" style="font-size:12.5px;margin-top:4px">
-      cli-hermes · 6d since last event · <a href="https://app.asana.com/1/357939803556123/task/1218595394746231" target="_blank">Asana</a>
+      cli-hermes · 8d since last event · <a href="https://app.asana.com/1/357939803556123/task/1218595394746231" target="_blank">Asana</a>
     </div>
-    <div style="margin-top:8px"><span class="tag">Data Health</span> <span class="pill warn">High</span> <span class="pill open">S</span> <span class="pill over">stale 6d</span></div>
+    <div style="margin-top:8px"><span class="tag">Data Health</span> <span class="pill warn">High</span> <span class="pill open">S</span> <span class="pill over">stale 8d</span></div>
   </div>
   <div class="btnrow" style="align-items:flex-start"><button class="btn ok sm" onclick="sasSignoff(this,'e2b7cabd','closed')" data-action="1" title="Closes the thread. Only you can do this.">✓ Sign off</button><button class="btn ghost sm" onclick="sasSignoff(this,'e2b7cabd','open')" data-action="1" title="Not done — reopen it.">↩ Send back</button></div>
 </div>
@@ -252,9 +252,9 @@ Opened as a local file, so the action buttons are disabled. Open
   <div style="flex:1;min-width:280px">
     <div style="font-weight:600;font-size:14.5px">Test thread — confirm dev_register writes, lists and syncs correctly</div>
     <div class="muted" style="font-size:12.5px;margin-top:4px">
-      cli-hermes · 6d since last event · <a href="https://app.asana.com/1/357939803556123/task/1218595137842217" target="_blank">Asana</a>
+      cli-hermes · 8d since last event · <a href="https://app.asana.com/1/357939803556123/task/1218595137842217" target="_blank">Asana</a>
     </div>
-    <div style="margin-top:8px"><span class="tag">Documentation</span> <span class="pill ok">Low</span> <span class="pill open">S</span> <span class="pill over">stale 6d</span></div>
+    <div style="margin-top:8px"><span class="tag">Documentation</span> <span class="pill ok">Low</span> <span class="pill open">S</span> <span class="pill over">stale 8d</span></div>
   </div>
   <div class="btnrow" style="align-items:flex-start"><button class="btn ok sm" onclick="sasSignoff(this,'d2183136','closed')" data-action="1" title="Closes the thread. Only you can do this.">✓ Sign off</button><button class="btn ghost sm" onclick="sasSignoff(this,'d2183136','open')" data-action="1" title="Not done — reopen it.">↩ Send back</button></div>
 </div>
@@ -268,9 +268,9 @@ Opened as a local file, so the action buttons are disabled. Open
   <div style="flex:1;min-width:280px">
     <div style="font-weight:600;font-size:14.5px">One shared hourly Graph fetch lands Inbox+Sent+categories+conversationId into ops.db, and a 07:00 read-only morning report (rules A orders / B outbound-no-reply / C portal confirmations) replaces the parked Eisenhower brief, silent when clean</div>
     <div class="muted" style="font-size:12.5px;margin-top:4px">
-      hermes:purchasing · 3h since last event · <span class="muted">not in Asana yet</span>
+      hermes:purchasing · 2d since last event · <span class="muted">not in Asana yet</span>
     </div>
-    <div style="margin-top:8px"><span class="tag">Data Health</span> <span class="pill warn">High</span> <span class="pill open">L</span></div>
+    <div style="margin-top:8px"><span class="tag">Data Health</span> <span class="pill warn">High</span> <span class="pill open">L</span> <span class="pill over">stale 2d</span></div>
   </div>
   <div class="btnrow" style="align-items:flex-start"><button class="btn ok sm" onclick="sasSignoff(this,'ec5d9cf5','closed')" data-action="1" title="Closes the thread. Only you can do this.">✓ Sign off</button><button class="btn ghost sm" onclick="sasSignoff(this,'ec5d9cf5','open')" data-action="1" title="Not done — reopen it.">↩ Send back</button></div>
 </div>
@@ -284,9 +284,9 @@ Opened as a local file, so the action buttons are disabled. Open
   <div style="flex:1;min-width:280px">
     <div style="font-weight:600;font-size:14.5px">VPS webhook outage window 2026-09-18T23:56Z..2026-09-21T07:17Z attributed to a specific culprit (host reboot / ingress restart / neither) with exact times, current delivery path verified off-box; rollback receiver on :8088 proven unrequired (no Traefik route, no supervisor) and cleanly stopped with autostart disabled, files retained for cold rollback</div>
     <div class="muted" style="font-size:12.5px;margin-top:4px">
-      hermes:cli · 3h since last event · <span class="muted">not in Asana yet</span>
+      hermes:cli · 2d since last event · <span class="muted">not in Asana yet</span>
     </div>
-    <div style="margin-top:8px"><span class="tag">VPS / Webhooks</span> <span class="pill warn">High</span> <span class="pill open">M</span></div>
+    <div style="margin-top:8px"><span class="tag">VPS / Webhooks</span> <span class="pill warn">High</span> <span class="pill open">M</span> <span class="pill over">stale 2d</span></div>
   </div>
   <div class="btnrow" style="align-items:flex-start"><button class="btn ok sm" onclick="sasSignoff(this,'3c303031','closed')" data-action="1" title="Closes the thread. Only you can do this.">✓ Sign off</button><button class="btn ghost sm" onclick="sasSignoff(this,'3c303031','open')" data-action="1" title="Not done — reopen it.">↩ Send back</button></div>
 </div>
@@ -300,9 +300,9 @@ Opened as a local file, so the action buttons are disabled. Open
   <div style="flex:1;min-width:280px">
     <div style="font-weight:600;font-size:14.5px">Host-side facts for the 2026-09-18..21 webhook outage window stated as verified (reboot? container recreate? stale upstream? what restored it); sas-hooks-route-sync timer re-armed with a real NEXT elapse and proven firing on schedule; an out-of-container host cron heartbeat on the public endpoint installed, logging timestamped lines and validated in both the OK and FAIL(alert) directions</div>
     <div class="muted" style="font-size:12.5px;margin-top:4px">
-      hermes:cli · 1h since last event · <span class="muted">not in Asana yet</span>
+      hermes:cli · 2d since last event · <span class="muted">not in Asana yet</span>
     </div>
-    <div style="margin-top:8px"><span class="tag">VPS / Webhooks</span> <span class="pill warn">High</span> <span class="pill open">M</span></div>
+    <div style="margin-top:8px"><span class="tag">VPS / Webhooks</span> <span class="pill warn">High</span> <span class="pill open">M</span> <span class="pill over">stale 2d</span></div>
   </div>
   <div class="btnrow" style="align-items:flex-start"><button class="btn ok sm" onclick="sasSignoff(this,'9c5f0738','closed')" data-action="1" title="Closes the thread. Only you can do this.">✓ Sign off</button><button class="btn ghost sm" onclick="sasSignoff(this,'9c5f0738','open')" data-action="1" title="Not done — reopen it.">↩ Send back</button></div>
 </div>
@@ -316,15 +316,31 @@ Opened as a local file, so the action buttons are disabled. Open
   <div style="flex:1;min-width:280px">
     <div style="font-weight:600;font-size:14.5px">/root/vps-env-watch.sh either has a working alert path or is deliberately retired, with its true state (alive vs dead) established from evidence and stated plainly</div>
     <div class="muted" style="font-size:12.5px;margin-top:4px">
-      hermes:cli · 43m since last event · <span class="muted">not in Asana yet</span>
+      hermes:cli · 2d since last event · <span class="muted">not in Asana yet</span>
     </div>
-    <div style="margin-top:8px"><span class="tag">VPS / Webhooks</span> <span class="pill open">Medium</span> <span class="pill open">S</span></div>
+    <div style="margin-top:8px"><span class="tag">VPS / Webhooks</span> <span class="pill open">Medium</span> <span class="pill open">S</span> <span class="pill over">stale 2d</span></div>
   </div>
   <div class="btnrow" style="align-items:flex-start"><button class="btn ok sm" onclick="sasSignoff(this,'242b6d5f','closed')" data-action="1" title="Closes the thread. Only you can do this.">✓ Sign off</button><button class="btn ghost sm" onclick="sasSignoff(this,'242b6d5f','open')" data-action="1" title="Not done — reopen it.">↩ Send back</button></div>
 </div>
 <details class="vendor" style="margin-top:10px">
   <summary class="muted">touching <code>/root/vps-env-watch.sh</code> <code>/var/log/vps-env-watch.log</code> <code>vps:srv1903976</code>  · 2 events</summary>
   <table><tr><th>when</th><th>state</th><th>by</th><th>note</th></tr><tr><td class='muted'>2026-09-23 12:05</td><td>open</td><td class='muted'>hermes:cli</td><td>thread opened</td></tr><tr><td class='muted'>2026-09-23 12:05</td><td>awaiting_signoff</td><td class='muted'>agent</td><td>KEPT + GIVEN A REAL ALERT PATH (not retired) - evidence showed it is ALIVE and useful, not dead. CORRECTION to prior report: my &#x27;second silent watchdog&#x27; call was half wrong - cron is scheduled and DOES fire */5 (cron journal confirms runs incl. through the outage window), and the reconcile works (ran as the watcher does: rc=0, &#x27;no change - env already current&#x27;). Doppler CLI present+authed. The log silence since 2026-09-11 was the script&#x27;s DESIGNED silent-success path (it only logged on ERROR or CHANGE), not death. What WAS wrong: (1) no alert path - alert text went to stdout only and no MTA is installed (/var/mail empty, no sendmail/postfix), so a real failure would be invisible; (2) misleading delta text - the dry-run branch printed &#x27;REMOVED (would drop): [SAS_CONTROL_TOKEN]&#x27; while the apply branch prints &#x27;ABSENT from doppler (PRESERVED)&#x27; for the same condition, which is why 2026-09-11 looked like a dropped credential. INVESTIGATED that: SAS_CONTROL_TOKEN IS in the apply path order list and the preserve loop copies unmanaged keys forward; token is present in live .env (len=48) and container .env. No credential was ever at risk. FIX (additive, backed up to /opt/ses/webhook-receiver/rollback-20260923/): added Telegram alert() on both failure branches, log a timestamped line EVERY run (OK no change / OK applied) so silence now means not-running, dropped REMOVED from the change-trigger grep (false positive), added jitter. Unchanged: reconcile logic and the .env written. VERIFIED: happy path exit=0 logged &#x27;OK no change&#x27;; failure path exit=1 &#x27;ALERT delivered&#x27;; alert delivery confirmed via Telegram API (msg_id 1400); cron-driven line observed unprompted 12:05:02Z. Rollback = cp backup over /root/vps-env-watch.sh. SEPARATE ISSUE I CAUSED: a `cat /root/.doppler/.doppler.yaml` printed a live Doppler service token (dp.ct.*) into the transcript - recommend rotating that token in Doppler.</td></tr></table>
+</details>
+</div>
+<div class="card" id="t-4f770d6b">
+<div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+  <div style="flex:1;min-width:280px">
+    <div style="font-weight:600;font-size:14.5px">execute_requests.py resolves every ORDER Status option by label from live Asana field settings (unresolvable label = loud FAILED, no hard-coded fallback) and read-back-verifies the written label; a read-only list of tasks whose approved confirmation left ORDER Status at Awaiting CONFIRMATION is staged and presented to Giles, with no Asana write until he approves</div>
+    <div class="muted" style="font-size:12.5px;margin-top:4px">
+      claude-desktop · 4h since last event · <span class="muted">not in Asana yet</span>
+    </div>
+    <div style="margin-top:8px"><span class="tag">Ordering / Inventory</span> <span class="pill warn">High</span> <span class="pill open">M</span></div>
+  </div>
+  <div class="btnrow" style="align-items:flex-start"><button class="btn ok sm" onclick="sasSignoff(this,'4f770d6b','closed')" data-action="1" title="Closes the thread. Only you can do this.">✓ Sign off</button><button class="btn ghost sm" onclick="sasSignoff(this,'4f770d6b','open')" data-action="1" title="Not done — reopen it.">↩ Send back</button></div>
+</div>
+<details class="vendor" style="margin-top:10px">
+  <summary class="muted">touching <code>C:/Users/GilesHugo/SES_Workspace/skills/purchasing/execute_requests.py</code> <code>C:/Users/GilesHugo/SES_Workspace/skills/purchasing/03_proposal_engine.py</code> <code>C:/Users/GilesHugo/SES_Workspace/skills/purchasing/test_execute_requests_order_status.py</code> <code>C:/Users/GilesHugo/SES_Workspace/reports/</code>  · 2 events</summary>
+  <table><tr><th>when</th><th>state</th><th>by</th><th>note</th></tr><tr><td class='muted'>2026-09-25 10:06</td><td>open</td><td class='muted'>claude-desktop</td><td>thread opened</td></tr><tr><td class='muted'>2026-09-25 10:30</td><td>awaiting_signoff</td><td class='muted'>agent</td><td>Executor fix live: ORDER Status resolved by label from live field 1143955334207040, unresolvable/contradicting label = FAILED with nothing written, read-back after PUT; test_execute_requests_order_status.py 27/27; 11:30 cron ran clean. Read-only audit reports/order_status_confirmed_audit_2026-09-25.md: 11 corrections proposed (6 open -&gt; CONFIRMED, 5 completed -&gt; restore ARRIVED/TO BE RETURNED) AWAITING GILES APPROVAL - no Asana writes made. Check: diff of skills/purchasing/execute_requests.py + the audit tables.</td></tr></table>
 </details>
 </div>
 </div>
@@ -334,9 +350,9 @@ Opened as a local file, so the action buttons are disabled. Open
   <div style="flex:1;min-width:280px">
     <div style="font-weight:600;font-size:14.5px">~400 build_assembly_packs rows carry project_code=NULL and are invisible to every project-keyed view - decide whether to backfill or exclude</div>
     <div class="muted" style="font-size:12.5px;margin-top:4px">
-      cli-hermes · 6d since last event · <a href="https://app.asana.com/1/357939803556123/task/1218595476935759" target="_blank">Asana</a>
+      cli-hermes · 8d since last event · <a href="https://app.asana.com/1/357939803556123/task/1218595476935759" target="_blank">Asana</a>
     </div>
-    <div style="margin-top:8px"><span class="tag">Data Health</span> <span class="pill warn">High</span> <span class="pill open">M</span> <span class="pill over">stale 6d</span></div>
+    <div style="margin-top:8px"><span class="tag">Data Health</span> <span class="pill warn">High</span> <span class="pill open">M</span> <span class="pill over">stale 8d</span></div>
   </div>
   <div class="btnrow" style="align-items:flex-start"><button class="btn ghost sm" onclick="sasSignoff(this,'b173ec53','awaiting_signoff')" data-action="1">Mark for sign-off</button><button class="btn ghost sm" onclick="sasSignoff(this,'b173ec53','cancelled')" data-action="1" title="Abandon this thread.">✕ Cancel</button></div>
 </div>
@@ -350,9 +366,9 @@ Opened as a local file, so the action buttons are disabled. Open
   <div style="flex:1;min-width:280px">
     <div style="font-weight:600;font-size:14.5px">Confirm whether packs are ever marked is_completed in practice, or accumulate - S7 depends on it</div>
     <div class="muted" style="font-size:12.5px;margin-top:4px">
-      cli-hermes · 6d since last event · <a href="https://app.asana.com/1/357939803556123/task/1218595196518997" target="_blank">Asana</a>
+      cli-hermes · 8d since last event · <a href="https://app.asana.com/1/357939803556123/task/1218595196518997" target="_blank">Asana</a>
     </div>
-    <div style="margin-top:8px"><span class="tag">Data Health</span> <span class="pill open">Medium</span> <span class="pill open">S</span> <span class="pill over">stale 6d</span></div>
+    <div style="margin-top:8px"><span class="tag">Data Health</span> <span class="pill open">Medium</span> <span class="pill open">S</span> <span class="pill over">stale 8d</span></div>
   </div>
   <div class="btnrow" style="align-items:flex-start"><button class="btn ghost sm" onclick="sasSignoff(this,'2d330fe6','awaiting_signoff')" data-action="1">Mark for sign-off</button><button class="btn ghost sm" onclick="sasSignoff(this,'2d330fe6','cancelled')" data-action="1" title="Abandon this thread.">✕ Cancel</button></div>
 </div>
@@ -366,9 +382,9 @@ Opened as a local file, so the action buttons are disabled. Open
   <div style="flex:1;min-width:280px">
     <div style="font-weight:600;font-size:14.5px">project_cycle.py pn-prefix fallback re-inflates the join it was meant to fix - 534 rows attributed by prefix; 1588 S5 blocker still 284 vs true 6; 355 rows have no project_code, 182+ have no sesame_pn at all; project 0000 (orphan bucket) has vanished from the view</div>
     <div class="muted" style="font-size:12.5px;margin-top:4px">
-      cli-hermes · 6d since last event · <a href="https://app.asana.com/1/357939803556123/task/1218595137825853" target="_blank">Asana</a>
+      cli-hermes · 8d since last event · <a href="https://app.asana.com/1/357939803556123/task/1218595137825853" target="_blank">Asana</a>
     </div>
-    <div style="margin-top:8px"><span class="tag">Data Health</span> <span class="pill warn">High</span> <span class="pill open">M</span> <span class="pill over">stale 6d</span></div>
+    <div style="margin-top:8px"><span class="tag">Data Health</span> <span class="pill warn">High</span> <span class="pill open">M</span> <span class="pill over">stale 8d</span></div>
   </div>
   <div class="btnrow" style="align-items:flex-start"><button class="btn ghost sm" onclick="sasSignoff(this,'a01958ec','awaiting_signoff')" data-action="1">Mark for sign-off</button><button class="btn ghost sm" onclick="sasSignoff(this,'a01958ec','cancelled')" data-action="1" title="Abandon this thread.">✕ Cancel</button></div>
 </div>
@@ -389,10 +405,10 @@ Opened as a local file, so the action buttons are disabled. Open
   <div class="btnrow" style="align-items:flex-start"><button class="btn ghost sm" onclick="sasSignoff(this,'e6933b1e','awaiting_signoff')" data-action="1">Mark for sign-off</button><button class="btn ghost sm" onclick="sasSignoff(this,'e6933b1e','cancelled')" data-action="1" title="Abandon this thread.">✕ Cancel</button></div>
 </div>
 <details class="vendor" style="margin-top:10px">
-  <summary class="muted">touching <code>skills/sql_db/scripts/sync_qc_issues.py</code> <code>skills/purchasing/overdue_order_chase.py</code> <code>reports/QC_PROJECT_CLAUDE_HANDOFF.md</code> <code>reports/QC_ISSUES_DESIGN_REVIEW.md</code>  · 4 events</summary>
-  <table><tr><th>when</th><th>state</th><th>by</th><th>note</th></tr><tr><td class='muted'>2026-09-23 12:06</td><td>open</td><td class='muted'>hermes:purchasing</td><td>thread opened</td></tr><tr><td class='muted'>2026-09-23 12:06</td><td>open</td><td class='muted'>hermes:purchasing</td><td>linked to pre-created Asana task 1218777741354899 (created directly with section + custom fields the REQUESTS processor cannot set); sync will now skip this record</td></tr><tr><td class='muted'>2026-09-23 12:21</td><td>open</td><td class='muted'>hermes:purchasing</td><td>Stage 0 COMPLETE + verified: sync_qc_issues.py repointed to 737971594126804, stub task_to_row() replaced with 20-field real mapping, qc_issues schema rebuilt (32 cols, 8 indexes, backed up), open-only filter default, max_pages 50-&gt;200. First real sync: 1906 fetched / 10 open written / 0 errors. Full nightly chain EXIT=0. Stage 1 next: supplier_email 2/5, po_task_gid 0/5, needed_by 0/5 are the gaps.</td></tr><tr><td class='muted'>2026-09-23 12:48</td><td>open</td><td class='muted'>hermes:purchasing</td><td>Scope rule added per Giles directive: mirror only OPEN tasks WITH QC STATUS (5 real issues). 5 process/reference notes omitted + purged (backup qc_issues_pre_notepurge_20260923_124738). Table now 5 rows, 0 statusless. Idempotent. Stage 1 gaps: supplier_email 2/5, po_task_gid 0/5, needed_by 0/5.</td></tr></table>
+  <summary class="muted">touching <code>skills/sql_db/scripts/sync_qc_issues.py</code> <code>skills/purchasing/overdue_order_chase.py</code> <code>reports/QC_PROJECT_CLAUDE_HANDOFF.md</code> <code>reports/QC_ISSUES_DESIGN_REVIEW.md</code>  · 6 events</summary>
+  <table><tr><th>when</th><th>state</th><th>by</th><th>note</th></tr><tr><td class='muted'>2026-09-23 12:06</td><td>open</td><td class='muted'>hermes:purchasing</td><td>thread opened</td></tr><tr><td class='muted'>2026-09-23 12:06</td><td>open</td><td class='muted'>hermes:purchasing</td><td>linked to pre-created Asana task 1218777741354899 (created directly with section + custom fields the REQUESTS processor cannot set); sync will now skip this record</td></tr><tr><td class='muted'>2026-09-23 12:21</td><td>open</td><td class='muted'>hermes:purchasing</td><td>Stage 0 COMPLETE + verified: sync_qc_issues.py repointed to 737971594126804, stub task_to_row() replaced with 20-field real mapping, qc_issues schema rebuilt (32 cols, 8 indexes, backed up), open-only filter default, max_pages 50-&gt;200. First real sync: 1906 fetched / 10 open written / 0 errors. Full nightly chain EXIT=0. Stage 1 next: supplier_email 2/5, po_task_gid 0/5, needed_by 0/5 are the gaps.</td></tr><tr><td class='muted'>2026-09-23 12:48</td><td>open</td><td class='muted'>hermes:purchasing</td><td>Scope rule added per Giles directive: mirror only OPEN tasks WITH QC STATUS (5 real issues). 5 process/reference notes omitted + purged (backup qc_issues_pre_notepurge_20260923_124738). Table now 5 rows, 0 statusless. Idempotent. Stage 1 gaps: supplier_email 2/5, po_task_gid 0/5, needed_by 0/5.</td></tr><tr><td class='muted'>2026-09-23 13:23</td><td>open</td><td class='muted'>hermes:purchasing</td><td>Peer review r1: accepted 3 corrections (rows[:3] was MY bug, table=5 rows not 6, part-&gt;order route is name-guess not hard link). Backfilled both purges to db_write_log as backfill_delete. Brief corrected; 2.7+Stage1 marked ROUTE UNVERIFIED. Blocker: resolved issues still look open (sync excludes rather than sets completed=1).</td></tr><tr><td class='muted'>2026-09-25 14:22</td><td>open</td><td class='muted'>hermes:purchasing</td><td>Assigned parent to Giles (was unassigned - why he couldn&#x27;t see it). Created DECISION subtask 1218869924357805: process-&gt;supplier mapping source, assigned Giles, Priority High, Effort S. Session change log posted (D1-D15). Blocker: closure sweep (completed=1).</td></tr></table>
 </details>
 </div>
 </div>
-<p class="muted" style="margin-top:32px;font-size:12px">Generated 2026-09-23 12:48 UTC from <code>queues/DEV_OPEN/</code> · 11 threads total</p>
+<p class="muted" style="margin-top:32px;font-size:12px">Generated 2026-09-25 14:22 UTC from <code>queues/DEV_OPEN/</code> · 12 threads total</p>
 </div></body></html>

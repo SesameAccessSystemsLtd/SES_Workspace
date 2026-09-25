@@ -1,0 +1,14 @@
+{
+  "request_id": "a717651b-57f8-40d3-9990-cea9a08bf3b2",
+  "source": "email_approval_sheet",
+  "row_index": 55,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAABjjAACfKjgQkWRhS42xGA6fMW2cAAkzq6GqAAA=",
+  "subject": "UPS Shipping Notification, Tracking Number 1Z0CG8666839065395",
+  "task_gid": "1218239426597875",
+  "task_name": "21611-1597 - Tape Switch - 1597 - Forrest Road Entire System",
+  "asana_url": "https://app.asana.com/0/0/1218239426597875",
+  "action": "(PO 21611-1597 (exact)); Note: Task due date already 24 Sep 2026; Note: Status already Delivery Date CONFIRMED",
+  "comment_to_push": "Dispatch note from UPS (UPS) — 23 Sep 2026\nSubject: UPS Shipping Notification, Tracking Number 1Z0CG8666839065395\n\nUPS shipping notification for a 3.2 kg parcel from World Options to Sesame Access Systems in Byfleet. Estimated delivery is Thursday 24/09/2026 by end of day, tracking number 1Z0CG8666839065395. The shipment references 21611-1597 and UK4041510A.\n\nAction for Giles: none — information only\nKey facts: delivery 24 Sep 2026 · PO 21611-1597\nProposed: no field change (Task due date already 24 Sep 2026; Status already Delivery Date CONFIRMED)\n\nEmail gateway · matched via PO 21611-1597 (exact) · received 2026-09-23 08:27 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-23T14:30:32.722028+00:00"
+}

@@ -1,0 +1,17 @@
+============================================================
+  RINGCENTRAL AI CALL NOTES
+  25/09/2026  14:10
+============================================================
+With:         +443432221234 0343 222 1234
+Forwarded by: Accounts1@sesameaccess.com
+
+--- SUMMARY ------------------------------------------------
+This was a call where Fatima Barros attempted to navigate the automated phone menu for Transport for London, but the call was cut off before reaching a representative. No specific outcomes or follow-up actions were established.
+
+--- RECAP --------------------------------------------------
+The caller, Fatima Barros, contacted the TfL customer service line and was presented with an automated menu offering options related to Oyster cards, journey planning, lost property, feedback, safety issues, congestion charges, and taxi services.Fatima expressed uncertainty about the purpose of the call and attempted to select options but the call was disconnected or incomplete before any specific assistance was provided.The automated system indicated that staff on this line cannot assist with congestion charge or ultra low emissions zone inquiries and directed the caller to the website for further information.
+
+--- TASKS --------------------------------------------------
+None
+
+(Full transcript: RC web portal only — no RingSense API)

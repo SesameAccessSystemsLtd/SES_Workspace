@@ -1,0 +1,33 @@
+# execute_requests.py — add a generic `set_custom_field` action (string value passed through).
+# Needed by 07_invoice_mover.py to set Invoice Number (text), Signed OFF and MAPPED USING AI (enum option GID).
+# `reset_custom_field` cannot be reused: it coerces the value to float.
+# Apply by hand (two insertions), then run test_gateway.py.
+
+# --- 1. next to asana_reset_custom_field() ---------------------------------------------------
+def asana_set_custom_field(task_gid, field_gid, value):
+    """Set any custom field. Pass a string for text fields, an enum OPTION GID (string) for dropdowns,
+    a number for number fields. Value is sent as given — no coercion."""
+    r = requests.put(
+        f"https://app.asana.com/api/1.0/tasks/{task_gid}",
+        headers=ASANA_HEADERS,
+        json={"data": {"custom_fields": {field_gid: value}}},
+        timeout=15,
+    )
+    if r.status_code in (200, 201):
+        return True, f"field {field_gid} set"
+    return False, f"HTTP {r.status_code}: {r.text[:300]}"
+
+# --- 2. in process_file(), before `elif action_type == "reset_custom_field":` ------------------
+    elif action_type == "set_custom_field":
+        task_gid_m = re.search(r"^Task GID:\s*(.+)$", content, re.MULTILINE)
+        field_m    = re.search(r"^Field GID:\s*(.+)$", content, re.MULTILINE)
+        value_m    = re.search(r"^Value:\s*(.+)$", content, re.MULTILINE)
+        task_gid   = (payload.get("task_gid") or (task_gid_m.group(1).strip() if task_gid_m else ""))
+        field_gid  = payload.get("field_gid") or (field_m.group(1).strip() if field_m else "")
+        value      = payload.get("value") if "value" in payload else (value_m.group(1).strip() if value_m else None)
+        if not task_gid or not field_gid or value is None:
+            stamp_md(md_path, "FAILED", "set_custom_field: Task GID, Field GID or Value missing")
+            return False, "set_custom_field: Task GID, Field GID or Value missing"
+        ok, msg = asana_set_custom_field(task_gid, field_gid, value)
+        stamp_md(md_path, "COMPLETE" if ok else "FAILED", msg)
+        return ok, msg

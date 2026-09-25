@@ -1,0 +1,14 @@
+{
+  "request_id": "738400e2-0f64-43e9-a858-1709415aaf0a",
+  "source": "email_approval_sheet",
+  "row_index": 22,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAk0NehlAAA=",
+  "subject": "055060",
+  "task_gid": "1218742854105707",
+  "task_name": "21672-220926 - GEMAC - Hydraulics 22.09.26",
+  "asana_url": "https://app.asana.com/0/0/1218742854105707",
+  "action": "(learned rule (Giles: Have just added this to order 21672-220926\nhttps://app.asana.com/1/357939803556123/project/358790955858777/task/12187428)); Comment only",
+  "comment_to_push": "Invoice from Gemac Hydraulics (Salvatore) — 25 Sep 2026\nSubject: 055060\nContact: Salvatore <sales@gemac-hydraulics.co.uk>\n\nSalvatore from Gemac Hydraulics has sent an invoice, attached as Gemac_25_09_2026_001.pdf. The email body contains no figures, PO or job references, so the invoice details are only in the attachment. No action is requested beyond processing the invoice.\n\nAction for Giles: none — information only\nProposed: no field change\n\nEmail gateway · matched via learned rule (Giles: Have just added this to order 21672-220926\nhttps://app.asana.com/1/357939803556123/project/358790955858777/task/12187428) · received 2026-09-25 09:39 UTC",
+  "decision": "A",
+  "created_at": "2026-09-25T14:30:44.325391+00:00"
+}

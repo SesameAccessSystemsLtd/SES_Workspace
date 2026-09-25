@@ -10,6 +10,8 @@ Decision values (case-insensitive):
   M = Amend     — use Amendment Notes (and/or a corrected Asana Link) instead
   R = Reject    — no Asana action, just archive
   S = Same as Suggested — take the gateway's suggestion (A or R; a CHECK suggestion is skipped)
+  (blank) + GATEWAY_AUTO_APPROVE=1 — HIGH-confidence rows suggested A are pushed automatically after a
+  grace period; Outcome = AUTO-APPROVED, DECISION = "A (auto)". See _auto_eligible().
 
 What teaches the gateway (see learn.py):
   * a corrected Asana Link (differs from Proposed Task GID)  → sender/phone → task rule,
@@ -35,7 +37,38 @@ load_dotenv(r"C:\Users\GilesHugo\.hermes\.env", override=True)
 sys.path.insert(0, str(Path(__file__).parent))
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "lib"))
 
-from gateway_common import FEEDBACK_LOG, append_jsonl, now_utc, shadow_mode  # noqa: E402
+from gateway_common import DATA, FEEDBACK_LOG, append_jsonl, load_json, now_utc, save_json, shadow_mode  # noqa: E402
+
+# ---- auto-approve (Giles 2026-09-24: "items with a match can be pushed automatically; I handle edge cases")
+# A row is pushed without a human decision only when ALL hold:
+#   GATEWAY_AUTO_APPROVE=1 · Suggested = A · Confidence = HIGH · a task is matched and the Asana Link
+#   still points at the proposed task · nobody has typed in DECISION / Amendment Notes / Feedback ·
+#   the row has sat on Pending for at least AUTO_GRACE_MINUTES (so there is always a window to stop it).
+# At most AUTO_MAX_PER_RUN rows per run (runaway guard). Everything else waits for Giles as before.
+AUTO_APPROVE = os.environ.get("GATEWAY_AUTO_APPROVE", "0") == "1"
+AUTO_GRACE_MINUTES = int(os.environ.get("GATEWAY_AUTO_GRACE_MINUTES", "30"))
+AUTO_MAX_PER_RUN = int(os.environ.get("GATEWAY_AUTO_MAX_PER_RUN", "40"))
+AUTO_SEEN_PATH = DATA / "auto_approve_seen.json"      # email_id -> first time 05 saw the row undecided
+
+
+def _auto_eligible(row: dict, seen: dict, now: datetime) -> tuple[bool, str]:
+    if (row.get("Suggested") or "").strip().upper() != "A":
+        return False, "suggestion not A"
+    if (row.get("Confidence") or "").strip().upper() != "HIGH":
+        return False, "confidence not HIGH"
+    link_gid = _extract_task_gid(row.get("Asana Link", ""))
+    prop_gid = (row.get("Proposed Task GID") or "").strip()
+    if not link_gid or not prop_gid or link_gid != prop_gid:
+        return False, "no task, or link changed by a human"
+    if any((row.get(k) or "").strip() for k in ("Amendment Notes", "Feedback")):
+        return False, "human has written on the row"
+    first = seen.get(row.get("Email ID", ""))
+    if not first:
+        return False, "first sighting — grace period starts"
+    age_min = (now - datetime.strptime(first, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)).total_seconds() / 60
+    if age_min < AUTO_GRACE_MINUTES:
+        return False, f"in grace period ({age_min:.0f}/{AUTO_GRACE_MINUTES} min)"
+    return True, "HIGH match, suggested A, grace elapsed"
 from sheet_common import (PENDING_HEADERS, PENDING_TAB, PROCESSED_HEADERS, PROCESSED_TAB,  # noqa: E402
                           Tab, get_spreadsheet)
 
@@ -162,13 +195,24 @@ def main():
 
     to_archive = []   # (row dict, outcome, request_id, final_gid)
     feedback = []
-    created = rejected = skipped = 0
+    created = rejected = skipped = auto_done = 0
+    now = datetime.now(timezone.utc)
+    seen = load_json(AUTO_SEEN_PATH, {}) or {}
+    live_ids = set()
 
     for row in rows:
         email_id = row.get("Email ID", "")
         if not email_id:
             continue
+        live_ids.add(email_id)
         decision = (row.get("DECISION") or "").strip().upper()[:1]
+        auto = False
+        if not decision and AUTO_APPROVE and not row.get("Processed At"):
+            seen.setdefault(email_id, now.strftime("%Y-%m-%dT%H:%M:%SZ"))
+            ok, _why = _auto_eligible(row, seen, now)
+            if ok and auto_done < AUTO_MAX_PER_RUN:
+                decision, auto = "A", True
+                auto_done += 1
         if not decision:
             continue
         if row.get("Processed At"):
@@ -206,7 +250,9 @@ def main():
             action = proposed
             if corrected:
                 action = f"(Giles corrected the task link — original proposal was for task {proposed_gid or 'none'})\n{proposed}"
-            outcome = "APPROVED"
+            outcome = "AUTO-APPROVED" if auto else "APPROVED"
+            if auto:
+                row["DECISION"] = "A (auto)"
         else:  # M
             if not amendment and not task_gid:
                 print(f"  Row {row['_row']}: AMEND but no Amendment Notes and no Asana link — skipping. Subject: {subject[:60]}")
@@ -236,6 +282,12 @@ def main():
         print(f"  {outcome} row {row['_row']}: REQUESTS file -> {os.path.basename(filepath)}")
         to_archive.append((row, outcome, request_id, task_gid or ""))
         feedback.append(_feedback_record(row, decision, outcome, task_gid))
+
+    if AUTO_APPROVE:
+        archived_ids = {r.get("Email ID", "") for r, *_ in to_archive}
+        save_json(AUTO_SEEN_PATH, {k: v for k, v in seen.items() if k in live_ids and k not in archived_ids})
+        waiting = sum(1 for k in live_ids if k in seen and k not in archived_ids)
+        print(f"  auto-approve: {auto_done} pushed this run (cap {AUTO_MAX_PER_RUN}); {waiting} undecided row(s) being watched")
 
     if not to_archive:
         print("No decided rows found. Nothing to process.")
@@ -284,7 +336,7 @@ def main():
 
     n_learned = sum(1 for v in learned_by_email.values() if v)
     print(f"\nDone: {created} REQUESTS file(s) created, {rejected} rejected, {skipped} skipped, "
-          f"{len(to_archive)} rows archived to Processed. Rules learned from {n_learned} row(s).")
+          f"{len(to_archive)} rows archived to Processed ({auto_done} auto-approved). Rules learned from {n_learned} row(s).")
 
 
 if __name__ == "__main__":

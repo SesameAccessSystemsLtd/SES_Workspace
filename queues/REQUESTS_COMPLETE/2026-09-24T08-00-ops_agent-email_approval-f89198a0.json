@@ -1,0 +1,14 @@
+{
+  "request_id": "071984fa-1745-4828-aecf-6f304aac1e6a",
+  "source": "email_approval_sheet",
+  "row_index": 26,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAkxwjxYAAA=",
+  "subject": "Your RS order confirmation - 21669-1582",
+  "task_gid": "1218701127739635",
+  "task_name": "21669-1582 - RS components - white EAO lenses",
+  "asana_url": "https://app.asana.com/0/0/1218701127739635",
+  "action": "(PO 21669-1582 (exact)); Note added to description: Supplier order ref 21669-1582",
+  "comment_to_push": "Order confirmation from RS Components (RSOnline.uk@RS-Components.com) — 21 Sep 2026\nSubject: Your RS order confirmation - 21669-1582\n\nRS Components acknowledges receipt of Sesame's order 21669-1582, placed by Giles Hugo on 21 Sept 2026 on the RS credit account. The order is for 5 x EAO colourless modular switch lenses (RS stock no. 1760207), to be delivered to the West Byfleet address. RS says it will email again to confirm prices and delivery dates, so no pricing or lead time is given yet.\n\nAction for Giles: none — information only\nKey facts: their order 21669-1582 · PO 21669-1582\nProposed: note Supplier order ref 21669-1582\n\nEmail gateway · matched via PO 21669-1582 (exact) · received 2026-09-21 14:54 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-24T08:00:59.740906+00:00"
+}

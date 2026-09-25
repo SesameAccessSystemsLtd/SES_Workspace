@@ -295,6 +295,32 @@ Keeping it updated means future imports auto-route those parts to PICK rather th
 
 ---
 
+## Future enhancement — Stage 5 write ORDER: non-laser vendors first, Laser Cut parts LAST (Giles, 2026-09-23)
+
+**Requirement (Giles directive):** when Stage 5 pushes the task hierarchy to Asana, the write order should be:
+
+1. **Root** `ALL BOMS - {project}` first (mandatory — a child cannot be added before its parent exists in Asana).
+2. **Cost-centre + vendor parent/group tasks** next, and the **vendor part-bearing tasks pushed early** — vendors should get their tasks first so long-lead procurement starts immediately.
+3. **Laser Cut parts pushed LAST.** Laser-cut items take the **longest** to produce, so pushing them last means they don't hold up the faster vendor tasks in the queue/portal view.
+
+**Hard constraint that bounds any reordering:** Asana requires the **parent task to exist before a child can be added**. So order can only be reordered *within* a level — you cannot push a vendor's part children before its vendor group task, nor a vendor group before the root. Correct shape:
+
+```
+root → (cost-centre/authority groups) → (vendor group tasks, non-laser first … laser last) → (part children, same grouping order)
+```
+
+**Current behaviour (as of 2026-09-23):** Stage 5 (`BOM_IMPORT_4_Asana_v4.py`) writes rows in **staging-CSV order** — there is **no explicit "laser last" sort**. The `HierarchyManager` creates parent/group tasks on demand before their children, so parent-before-child is already correct, but vendor-vs-laser ordering follows consolidation order, not the desired priority.
+
+**What to implement when actioned:** add a deterministic sort of the Stage 5 write sequence by an ordering key:
+- primary: hierarchy level (root=0, cost-centre=1, vendor group=2, part=3) — never violate parent-before-child
+- secondary within vendor-group + part levels: a vendor priority where **`Laser Cut` sorts LAST**; all other vendors ahead in a stable order (alphabetical or a configured vendor priority list).
+
+**Ordering key source:** the `vendor` / `cost center` columns already in `stage4_staging_review.xlsx`. "Laser Cut" appears as both a cost-centre (for lasercut sub-parts) and a vendor label — match case-insensitively on the vendor/authority field. Verify against a real staging file before shipping.
+
+**Not yet built — captured requirement, not current behaviour.** Confirm with Giles before changing the write order (it's a change to the write-execution path), and re-verify parent-before-child still holds after any sort.
+
+---
+
 ## Known edge cases
 
 | Issue | Impact | Fix |

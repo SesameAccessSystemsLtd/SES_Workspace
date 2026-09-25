@@ -44,3 +44,6 @@ db/.fuse_hidden*
 plans/_vps_sasops_pw.txt
 *_pw.txt
 *_password*.txt
+
+# secret-scan backups - never commit
+*.bak-secretscan

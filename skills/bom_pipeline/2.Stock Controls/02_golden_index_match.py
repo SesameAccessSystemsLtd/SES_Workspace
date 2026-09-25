@@ -13,6 +13,21 @@ Usage:
 
 Output adds columns: Mapped KAN, Asana Stock Name, Asana Task GID,
                      Asana URL (Golden), Match Confidence, Match Type, Index Match Status
+
+Matching order per BOM line:
+  1. PRIMARY  — the wired match column (default: `stock number`, the vendor
+     stock value) via exact stock-key -> substring -> fuzzy.
+  2. FALLBACK — if the primary column is blank or finds nothing, recover an
+     in-house NBSS stock code and match it EXACTLY (no fuzzy). Two sources,
+     tried in order:
+       (a) cost centre == 'NBSS' -> strip the project prefix off the structured
+           `part number` and prepend 'NBSS.' ('1573.008' -> 'NBSS.008').
+           Preferred: gated on a structured column, robust, no false triggers.
+       (b) otherwise recover an 'NBSS.<n>' code from the description text.
+     In-house Sesame parts leave `stock number` blank but are identifiable this
+     way. Rows recovered are tagged Match Type '... (nbss-fallback)'.
+The fallback is a safety net; design BOMs should still populate `stock number`
+(see DESIGN_TEAM_BOM_DATA_GUIDE.md).
 """
 
 import argparse
@@ -80,6 +95,57 @@ def stock_key(s: str) -> str:
     v = str(s or '').upper().replace('\xa0', ' ').strip()
     v = _RS_PREFIX.sub('', v)
     return re.sub(r'[^A-Z0-9]', '', v)
+
+
+_NBSS_RE = re.compile(r'\bNBSS[\s:._-]*(\d{1,4})', re.I)
+
+
+def extract_nbss_code(text: str) -> str:
+    """
+    Recover an in-house NBSS stock code from free text (BOM description / item /
+    part number). In-house Sesame parts leave the `stock number` column blank
+    but carry 'NBSS.126 ...' in their description; the Golden Index stores these
+    as 'NBSS.126'. Returns a normalised 'NBSS.<3-digit>' code, or '' if none.
+      'NBSS.126 Sprocket Pin Motor' -> 'NBSS.126'
+      'NBSS008 Stair Wheel'          -> 'NBSS.008'
+    Zero-pads to the 3-digit NBSS convention so 'NBSS.8' / 'NBSS8' / 'NBSS.008'
+    all resolve to the same stock code.
+    """
+    m = _NBSS_RE.search(str(text or ''))
+    return f"NBSS.{m.group(1).zfill(3)}" if m else ''
+
+
+_PROJECT_PREFIX = re.compile(r'^\d{4}[.\-_ ](.+)$')
+
+
+def nbss_from_costcentre(row, col_lc: dict) -> str:
+    """
+    Robust in-house recovery (primary fallback). When the BOM line's cost
+    centre is 'NBSS', derive the generic stock code from the structured
+    `part number` by stripping the 4-digit project prefix (e.g. '1573.') and
+    prepending 'NBSS.'. This maps straight onto the Golden Index NBSS keys.
+      cost centre 'NBSS' + part number '1573.008' -> 'NBSS.008'
+      cost centre 'NBSS' + part number '1573.105' -> 'NBSS.105'
+    Preferred over description parsing: gated on a structured column, uses the
+    clean part number, and won't fire on non-NBSS-cost-centre lines (e.g. a
+    machined-to-length 'NBSS.121' whose cost centre is 'Machining').
+    Returns the candidate code, or '' if the row is not an NBSS cost-centre line.
+    """
+    cc_col = (col_lc.get('cost center') or col_lc.get('cost centre')
+              or col_lc.get('cost_center'))
+    pn_col = col_lc.get('part number') or col_lc.get('part_number')
+    if not cc_col or not pn_col:
+        return ''
+    if str(row.get(cc_col, '') or '').strip().upper() != 'NBSS':
+        return ''
+    pn = str(row.get(pn_col, '') or '').strip()
+    m = _PROJECT_PREFIX.match(pn)
+    tail = (m.group(1) if m else pn).strip('. ')
+    if not tail:
+        return ''
+    if tail.isdigit():          # keep the 3-digit NBSS convention (8 -> 008)
+        tail = tail.zfill(3)
+    return f"NBSS.{tail}"
 
 
 def similarity(a: str, b: str) -> int:
@@ -204,6 +270,21 @@ def match_part(part_number: str, golden: pd.DataFrame, threshold: int):
     return None
 
 
+def match_exact_key(candidate: str, golden: pd.DataFrame):
+    """
+    EXACT stock-key match only (no substring / no fuzzy). Used by the fallback
+    for recovered codes (e.g. an NBSS code pulled from the description) so the
+    fallback can only ever produce a precise hit, never a loose false positive.
+    """
+    k = stock_key(candidate)
+    if not k:
+        return None
+    for _, row in golden.iterrows():
+        if row.get('_stock_key') and row['_stock_key'] == k:
+            return _build_match(row, 100, 'Exact')
+    return None
+
+
 def _build_match(row, score: int, match_type: str) -> dict:
     return {
         'Matched Stock_Number': row.get('Stock_Number', ''),  # Rev4 col C — cross-ref key
@@ -286,13 +367,42 @@ def main():
         golden = load_golden_index(golden_path)
     print(f"  {len(golden)} index entries loaded.\n")
 
+    # Text columns used to recover an in-house NBSS stock code when the
+    # `stock number` column is blank (design BOMs leave it empty for
+    # Sesame-made parts; the NBSS code lives in the description instead).
+    col_lc = {c.lower(): c for c in bom.columns}
+    text_cols = [col_lc[c] for c in ('description', 'item', 'part number', 'part_number')
+                 if c in col_lc]
+
     results = []
     matched = 0
+    fallback = 0
     unmatched = 0
 
     for idx, row in bom.iterrows():
         part_number = str(row[part_col]).strip()
-        match = match_part(part_number, golden, args.threshold)
+        # Primary: the vendor stock value (the wired match column).
+        match = match_part(part_number, golden, args.threshold) if part_number else None
+
+        # Fallback (when the primary column is blank or found nothing): recover
+        # an in-house NBSS stock code and match it EXACTLY (precise — no fuzzy),
+        # so it can only ever produce a correct hit. Two sources, in order:
+        #   1. cost centre == 'NBSS' -> derive from the structured part number
+        #      (robust, preferred; see nbss_from_costcentre)
+        #   2. otherwise recover an 'NBSS.<n>' code from the description text
+        #      (safety net for NBSS references outside an NBSS cost centre)
+        if not match:
+            nbss = nbss_from_costcentre(row, col_lc)
+            if not nbss:
+                nbss = extract_nbss_code(' '.join(str(row[c]) for c in text_cols))
+            if nbss:
+                m2 = match_exact_key(nbss, golden)
+                if m2:
+                    m2['Match Type'] = f"{m2['Match Type']} (nbss-fallback)"
+                    m2['Matched Stock_Number'] = m2.get('Matched Stock_Number') or nbss
+                    match = m2
+                    fallback += 1
+
         if match:
             matched += 1
         else:
@@ -306,7 +416,7 @@ def main():
     output_df.to_csv(output_path, index=False)
 
     print(f"\n{'='*55}")
-    print(f"  Matched:   {matched}")
+    print(f"  Matched:   {matched}  (of which via NBSS fallback: {fallback})")
     print(f"  Unmatched: {unmatched}")
     print(f"  Total:     {len(bom)}")
     print(f"  Output:    {output_path}")

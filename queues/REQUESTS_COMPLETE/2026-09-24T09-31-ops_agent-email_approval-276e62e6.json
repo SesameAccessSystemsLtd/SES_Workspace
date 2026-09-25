@@ -1,0 +1,14 @@
+{
+  "request_id": "2658f172-2992-4d3a-a9ab-04963ece3b51",
+  "source": "email_approval_sheet",
+  "row_index": 7,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAk0NegMAAA=",
+  "subject": "Applied Automation (UK) Ltd Enquiry Confirmation",
+  "task_gid": "1217541351569552",
+  "task_name": "21244-170826 - Gapp Automation - URGENT FOR CITI GATE",
+  "asana_url": "https://app.asana.com/0/0/1217541351569552",
+  "action": "(Applied Automation's only open order); Note added to description: Supplier quote ref QMK26KO0859",
+  "comment_to_push": "Email from Applied Automation (Kane Osborne) — 24 Sep 2026\nSubject: Applied Automation (UK) Ltd Enquiry Confirmation\n\nThis is an automated acknowledgement from Applied Automation (UK) Ltd confirming that Sesame's recent enquiry has been received and registered. It gives a quotation reference QMK26KO0859 and states a target quotation date of 01/10/2026. No pricing or technical content is included yet; the actual quote is still to follow.\n\nAction for Giles: none — information only\nKey facts: their quote QMK26KO0859\nProposed: note Supplier quote ref QMK26KO0859\n\nEmail gateway · matched via Applied Automation's only open order · received 2026-09-24 06:05 UTC · giles@sesameaccess.com",
+  "decision": "A",
+  "created_at": "2026-09-24T09:31:00.302710+00:00"
+}

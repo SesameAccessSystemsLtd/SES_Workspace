@@ -1,0 +1,14 @@
+{
+  "request_id": "07e7e9fd-b8a4-4c11-8fbd-9eec3421af83",
+  "source": "email_approval_sheet",
+  "row_index": 18,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAk0NehdAAA=",
+  "subject": "RE: Laser Cut BOM - 1597 - Forest Road 4. Button Stations - SQR-47334",
+  "task_gid": "1218774849079792",
+  "task_name": "Laser Cut BOM - 1597 - Forest Road 4. Button Stations",
+  "asana_url": "https://app.asana.com/0/0/1218774849079792",
+  "action": "(SQR-47334 (exact SQR)); Update 'Price Ex VAT' to £197.39",
+  "comment_to_push": "Quote from Exact Lasercut (Jamie Craske) — 25 Sep 2026\nSubject: RE: Laser Cut BOM - 1597 - Forest Road 4. Button Stations - SQR-47334\nContact: Jamie Craske <jamie@exactprecision.co.uk>\n\nJamie Craske of Exact Precision Engineering has sent the laser-cut quotation requested for job 1597 (Forest Road 4 Button Stations), quoting against SQR-47334. The quote covers four folded/laser-cut 304 stainless steel parts totalling £197.39 ex VAT, with delivery included and validity of 20 days or to the end of the working month. No action is needed unless the interpretation of the enquiry is wrong.\n\nAction for Giles: none — information only\nKey facts: £197.39 ex VAT + carriage £0.00 · their quote SA 25-09-2026 Q1 · SQR-47334 · job 1597\nProposed: Update 'Price Ex VAT' to £197.39\n\nEmail gateway · matched via SQR-47334 (exact SQR) · received 2026-09-25 08:41 UTC",
+  "decision": "A",
+  "created_at": "2026-09-25T14:30:44.310509+00:00"
+}

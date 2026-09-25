@@ -28,6 +28,8 @@ FIELD = {  # custom field GIDs (Order Numbers project)
     "vendor": "854127216887083",
     "inc_vat": "1204759087326205",
     "sqr": "1211774738554014",
+    "payment": "854977725253177",            # Account (DEFAULT) / Credit Card / Pro-Forma Invoice / PayPal ...
+    "mapped_using_ai": "1218748889949686",   # 100% / Requires HITL / NOT MAPPED  (Invoices project only)
 }
 SIGNED_OFF_HUMAN = "Signed Off "
 SIGNED_OFF_AI = "Signed off by AI - AWAITING APPROVAL "

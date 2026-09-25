@@ -1,0 +1,14 @@
+{
+  "request_id": "2041f77f-e22e-4f36-8342-72a49bfc7ce6",
+  "source": "email_approval_sheet",
+  "row_index": 4,
+  "email_id": "AAMkADM3MDNmMTk0LTljNmMtNGVlYS1iMzRhLWNjNDIxYjIzYzg0NABGAAAAAAA7ptZfg3tHQKFbxt3nCLvLBwDUBwCgHtxiRLwUXnDIT_iSAAAAAAEMAACfKjgQkWRhS42xGA6fMW2cAAk0NehVAAA=",
+  "subject": "RE: Laser Cut BOM - 1597 - Forrest Road Entire System - SQR-47003",
+  "task_gid": "1214379412114741",
+  "task_name": "21012-1582 - Exact - scissor russel",
+  "asana_url": "https://app.asana.com/0/0/1214379412114741",
+  "action": "(Exact Lasercut's only open order); Flag issue: Two non-conforming laser-cut items on job 1597 (NBSS.052 folded wrong way, NCR-5041; 2 off 1597.7110.B.004 with poor cuts, NCR-5040) are being replaced by Exact Precision, but no replacement date has been given.",
+  "comment_to_push": "Update from Exact Lasercut (Jamie Craske) — 25 Sep 2026\nSubject: RE: Laser Cut BOM - 1597 - Forrest Road Entire System - SQR-47003\nContact: Jamie Craske <jamie@exactprecision.co.uk>\n\nJamie Craske of Exact Precision replies to Giles's QC complaint about two non-conforming laser-cut parts on job 1597 (Forrest Road Entire System, SQR-47003): NBSS.052 Hydraulic Tank Support dia.200 (NCR-5041, folded wrong way) and 2 off 1597.7110.B.004 TS flat Laser Cut (NCR-5040, poor cuts, 22mm and 16mm wide). He says he is sorting it and replacements will be sent ASAP, but gives no date or detail.\n\nAction for Giles:\n- Await Exact Precision's replacement parts for NBSS.052 (NCR-5041) and 2 off 1597.7110.B.004 (NCR-5040) and chase a firm delivery date if not confirmed shortly\n- Close out NCR-5040 and NCR-5041 once replacements are received and inspected\nIssue: Two non-conforming laser-cut items on job 1597 (NBSS.052 folded wrong way, NCR-5041; 2 off 1597.7110.B.004 with poor cuts, NCR-5040) are being replaced by Exact Precision, but no replacement date has been given.\nKey facts: PO 21622-1597 · SQR-47003\nProposed: Flag issue: Two non-conforming laser-cut items on job 1597 (NBSS.052 folded wrong way, NCR-5041; 2 off 1597.7110.B.004 with poor cuts, NCR-5040) are being replaced by Exact Precision, but no replacement date has been given.\n\nEmail gateway · matched via Exact Lasercut's only open order · received 2026-09-25 07:21 UTC",
+  "decision": "A",
+  "created_at": "2026-09-25T14:30:44.293128+00:00"
+}

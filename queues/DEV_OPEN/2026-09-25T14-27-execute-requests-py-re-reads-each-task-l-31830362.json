@@ -1,0 +1,22 @@
+{
+  "id": "31830362",
+  "objective": "execute_requests.py re-reads each task live before writing ORDER Status and never writes it when the task is completed, its live status is arrived/closed/TO BE RETURNED, or a person changed ORDER Status after the email arrived; every such skip is named in the request Note and the ASCII stdout COMPLETE/FAILED line, proven by fake-Asana tests in test_execute_requests_order_status.py",
+  "where": [
+    "C:/Users/GilesHugo/SES_Workspace/skills/purchasing/execute_requests.py",
+    "C:/Users/GilesHugo/SES_Workspace/skills/purchasing/test_execute_requests_order_status.py"
+  ],
+  "channel": "claude-desktop",
+  "area": "Ordering / Inventory",
+  "effort": "M",
+  "priority": "High",
+  "created_at": "2026-09-25T14:27:16.226013+00:00",
+  "asana_gid": null,
+  "events": [
+    {
+      "at": "2026-09-25T14:27:16.226024+00:00",
+      "status": "open",
+      "by": "claude-desktop",
+      "note": "thread opened"
+    }
+  ]
+}

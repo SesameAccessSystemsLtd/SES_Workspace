@@ -81,18 +81,23 @@ def send_email(subject: str, body: str, dry_run: bool = False):
 def check_skills_registry() -> list[str]:
     """
     Compare skills/ directories against SKILLS_REGISTRY.md.
-    Flag any skill directory that has no entry in the registry.
+    Flag any *real* skill directory (one containing SKILL.md) that has no registry entry.
+    Skips non-skill dirs (output caches, scratch) that legitimately live under skills/.
     """
     issues = []
     registry_text = read_file(SKILLS_REGISTRY)
     if not registry_text:
         return ["SKILLS_REGISTRY.md missing or empty — cannot validate skill entries."]
 
+    # Directories that are NOT skills and should never be registered.
+    non_skill_dirs = {"graphify-out", "_tmp", "__pycache__", ".pytest_cache"}
+
     for skill_dir in SKILLS_DIR.iterdir():
         if not skill_dir.is_dir():
             continue
         skill_name = skill_dir.name
-        # Look for the skill name mentioned in the registry
+        if skill_name in non_skill_dirs:
+            continue
         if skill_name.lower() not in registry_text.lower():
             issues.append(
                 f"Skill directory `skills/{skill_name}/` has no entry in SKILLS_REGISTRY.md"
@@ -123,14 +128,18 @@ def check_agent_tools_vs_registry() -> list[str]:
 def check_datamap_freshness() -> list[str]:
     """
     Parse DATAMAP.md for STALE or ERROR status entries.
+    Counts only STATUS CELLS in the markdown tables (e.g. `| ... | STALE | ... |`),
+    NOT every mention of the word "STALE"/"ERROR" in rules/headers/prose.
     """
     issues = []
     datamap_text = read_file(DATAMAP)
     if not datamap_text:
         return ["DATAMAP.md missing or empty."]
 
-    stale_count = datamap_text.upper().count("STALE")
-    error_count = datamap_text.upper().count("ERROR")
+    # Match a status cell: a table cell whose entire content is STALE or ERROR.
+    # Handles variable column position by matching the cell in isolation.
+    stale_count = len(re.findall(r"\|\s*STALE\s*\|", datamap_text, re.IGNORECASE))
+    error_count = len(re.findall(r"\|\s*ERROR\s*\|", datamap_text, re.IGNORECASE))
 
     if stale_count > 0:
         issues.append(f"DATAMAP.md has {stale_count} STALE dataset(s) — check before next agent run.")
@@ -322,7 +331,10 @@ def check_workspace_layout() -> list[str]:
     # Check for unexpected directories that might indicate clutter
     known_extra = {"_copilot", "golden_index", "graphify-out", "personal",
                    "reference", "run_history", "test_scripts", "dev_temp", ".venv",
-                   "_drafts", "scripts", "views"}
+                   "_drafts", "scripts", "views", ".git", "docs", "reports",
+                   "maintenance", "tmp", "__pycache__", ".pytest_cache",
+                   "Claude outputs", "_archived_steel_dupes_20261008", ".claude",
+                   "_archive", "logs", "node_modules"}
     unexpected = actual_dirs - expected_dirs - known_extra
     for unexp_dir in sorted(unexpected):
         if not unexp_dir.startswith("1575_"):

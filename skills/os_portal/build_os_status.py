@@ -479,11 +479,17 @@ def load_pack_arrival_qc(token_h=None):
             m = re.match(r"^(\d{4}\.\d{1,4})", pn)
             if m:
                 arrived_by_pack[m.group(1).rstrip(".").lower()] += 1
+    # Outstanding QC issues = raised but NOT yet cleared. There is no 'signed_off_status'
+    # column in qc_issues (that was a paste bug — the table carries `qc_status`). The QC STATUS
+    # enum clears an issue via 'QC PASSED' or 'Approved to progress' (verified live 2026-10-14);
+    # everything else (ISSUE RAISED / BEING ADDRESSED / AWAITING … / FAILED …) is still open.
     qc_rows = [
         {"gid": r["asana_task_gid"], "name": r["issue_name"] or ""}
         for r in c.execute(
             "SELECT asana_task_gid, issue_name FROM qc_issues "
-            "WHERE signed_off_status IS NULL OR signed_off_status = ''")
+            "WHERE qc_status IS NULL OR TRIM(qc_status) = '' "
+            "   OR (TRIM(qc_status) NOT LIKE 'QC PASSED%' "
+            "       AND TRIM(qc_status) NOT LIKE 'Approved to progress%')")
     ]
     c.close()
 

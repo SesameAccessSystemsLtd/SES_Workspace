@@ -158,13 +158,47 @@ def test_time_sync_maps_and_reconciles():
     assert ("activity", "Rework") in j.calls
     plus = {c[1]: c[2] for c in a.calls if c[0] == "entry+"}
     assert plus["s-weld"]["duration_minutes"] == 120 and plus["s-weld"]["assignee"] == "u-adam"
-    assert plus["s-weld"]["attributable_to"] == "m1"
+    assert plus["s-weld"]["attributable_to"] == CFG["asana"]["beta_project"]  # subtask is not in the job project
+    assert plus["p1"]["attributable_to"] == "m1"
     assert plus["p1"]["duration_minutes"] == 60  # CALLOUT has no subtask -> part task
     assert ("entry-", "old") in a.calls
     assert ("addProject", "p1", CFG["asana"]["beta_project"]) in a.calls
     seeded = [c for c in a.calls if c[0] == "update" and F["estimated_time"] in c[2]["custom_fields"]]
     assert {c[1]: c[2]["custom_fields"][F["estimated_time"]] for c in seeded} == {"p1": 120, "s-weld": 90}
     assert stats["unmatched_segments"] == 1 and ts.exceptions
+
+
+def test_time_sync_safety_rules():
+    j, a = FakeJibble(), FakeAsana()
+    pid = jibble_project_id("p1")
+    cfg = {**CFG, "asana": {**CFG["asana"], "monitored_parts": ["p1"]}}
+    day = D(1)
+    # A Jibble person with no Asana user, and a read that lost every segment.
+    j.people_rows.append({"id": "p-x", "fullName": "X", "email": "nobody@x"})
+    j.entries = [
+        {"id": "1", "personId": "p-x", "type": "In", "time": f"{day}T08:00:00Z", "belongsToDate": day, "projectId": pid, "activityId": "a-weld"},
+        {"id": "2", "personId": "p-x", "type": "Out", "time": f"{day}T09:00:00Z", "belongsToDate": day},
+    ]
+    a.entries["s-weld"] = [{"gid": f"e{i}", "created_by": {"gid": "me"}, "assignee": {"gid": "u-adam"},
+                            "entered_on": D(i + 1), "duration_minutes": 60} for i in range(12)]
+    ts = TimeSync(cfg, a, j, print)
+    stats = ts.run(a.users_by_email(""))
+    assert not [c for c in a.calls if c[0] in ("entry+", "entry-")]  # nobody credited, nothing mass-deleted
+    assert stats["segments_without_worker"] == 1 and stats["deletes_held_back"] == 12
+
+
+def test_holiday_missing_request_flagged():
+    cfg = {**CFG, "asana": {**CFG["asana"], "monitored_parts": []}}
+    j, a = FakeJibble(), FakeAsana()
+    j.time_off_rows = [_iv(), _iv(id="iv2")]
+    HolidaySync(cfg, a, j, print).run(a.users_by_email(""))
+    for t in a.tasks.values():
+        t["due_on"] = D(-5)
+    j.time_off_rows = [_iv()]  # iv2 deleted in Jibble
+    a.calls.clear()
+    HolidaySync(cfg, a, j, print).run(a.users_by_email(""))
+    assert [c[2] for c in a.calls if c[0] == "comment"] and any(
+        c[0] == "update" and c[2]["custom_fields"].get(F["holiday_status"]) == OPT["MODIFIED"] for c in a.calls)
 
 
 def test_reports_write_everhour_layout(tmp_path):

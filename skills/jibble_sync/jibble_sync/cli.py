@@ -17,6 +17,7 @@ from pathlib import Path
 
 from .asana import Asana
 from .holiday import HolidaySync
+from .http import safe_err
 from .jibble import Jibble
 from .reports import Reports
 from .timesync import TimeSync
@@ -110,7 +111,7 @@ def main(argv=None) -> int:
             failed |= hs.get("errors", 0) > 0
         except Exception as e:
             failed = True
-            lines.append(f"**Holiday failed:** {type(e).__name__}: {str(e)[:300]}")
+            lines.append(f"**Holiday failed:** {safe_err(e)}")
     if args.only in (None, "time"):
         ts = TimeSync(cfg, asana, jibble, log)
         try:
@@ -119,7 +120,7 @@ def main(argv=None) -> int:
             failed |= st.get("task_errors", 0) > 0
         except Exception as e:
             failed = True
-            lines.append(f"**Time failed:** {type(e).__name__}: {str(e)[:300]}")
+            lines.append(f"**Time failed:** {safe_err(e)}")
         if ts.exceptions:
             lines.append("**Exceptions:**")
             lines += [f"- {x}" for x in ts.exceptions[:50]]

@@ -71,9 +71,11 @@ def test_segments_pair_switches_and_skip_open():
         {"id": "4", "personId": "p", "type": "In", "time": "2026-10-30T13:00:00Z", "belongsToDate": "2026-10-30", "projectId": "B"},
         {"id": "5", "personId": "x", "type": "Out", "time": "2026-10-30T12:00:00Z", "status": "Archived"},
     ]
-    segs, open_count = build_segments(entries)
+    entries.append({"id": "6", "personId": "z", "type": "In", "time": "2026-10-28T08:00:00Z", "belongsToDate": "2026-10-28"})
+    entries.append({"id": "7", "personId": "z", "type": "Out", "time": "2026-10-29T08:00:00Z", "belongsToDate": "2026-10-29"})
+    segs, skipped = build_segments(entries)
     assert [(s.activity_id, s.minutes) for s in segs] == [("w", 150.0), ("q", 90.0)]
-    assert open_count == 1
+    assert skipped == {"open": 1, "too_long": 1}
 
 
 # -- holiday decisions ----------------------------------------------------------
@@ -139,9 +141,58 @@ def test_diff_entries_create_update_delete_and_ignore_others():
         {"gid": "e3", "created_by": {"gid": "someone"}, "assignee": {"gid": "w"}, "entered_on": "2026-10-29", "duration_minutes": 99},
         {"gid": "e4", "created_by": {"gid": "me"}, "assignee": {"gid": "w"}, "entered_on": "2026-09-01", "duration_minutes": 10},
         {"gid": "e5", "created_by": {"gid": "me"}, "assignee": {"gid": "w"}, "entered_on": "2026-10-29", "duration_minutes": 5},
+        {"gid": "e6", "created_by": {"gid": "me"}, "assignee": {"gid": "me"}, "entered_on": "2026-10-29", "duration_minutes": 20},
+        {"gid": "e7", "created_by": {"gid": "me"}, "assignee": None, "entered_on": "2026-10-29", "duration_minutes": 20},
     ]
     desired = {("w", "2026-10-29"): 90, ("w", "2026-10-30"): 45}
     creates, updates, deletes = diff_entries(existing, desired, "me", "2026-10-09")
     assert creates == [("w", "2026-10-30", 45)]
     assert updates == [("e1", 90)]
-    assert sorted(deletes) == ["e2", "e5"]  # e3 is a person's own entry, e4 is outside the window
+    # e3 is someone's own entry, e4 is outside the window, e6/e7 are the sync account's own time
+    assert sorted(deletes) == ["e2", "e5"]
+
+
+def test_choose_keeps_time_on_the_subtask_that_holds_it():
+    part = "P."
+    subs = [_sub("1", "Weld - P.", True), _sub("2", "Weld - P.", False)]
+    assert choose_subtask("Welding / Fabrication", subs, part, "w")["gid"] == "2"
+    assert choose_subtask("Welding / Fabrication", subs, part, "w", prefer={"1"})["gid"] == "1"
+
+
+def test_jibble_paging_stops_on_repeated_page_and_sorts():
+    from jibble_sync.jibble import Jibble
+    calls = []
+
+    def http(method, url, **kw):
+        if "connect/token" in url:
+            return {"access_token": "t"}
+        calls.append(kw.get("params"))
+        return {"value": [{"id": "a"}, {"id": "b"}]}  # ignores $skip
+
+    rows = Jibble("i", "s", http=http).get_all("https://x/v1/People")
+    assert rows == [{"id": "a"}, {"id": "b"}]
+    assert calls[0]["$orderby"] == "id"
+
+
+def test_post_is_not_retried_on_server_error(monkeypatch):
+    import urllib.error
+    from jibble_sync import http as h
+    attempts = []
+
+    def boom(req, timeout):
+        attempts.append(req.get_method())
+        raise urllib.error.HTTPError(req.full_url, 502, "bad", {}, None)
+
+    monkeypatch.setattr(h.urllib.request, "urlopen", boom)
+    monkeypatch.setattr(h.time, "sleep", lambda s: None)
+    try:
+        h.request("POST", "https://x/tasks", json_body={})
+    except h.HttpError as e:
+        assert h.safe_err(e) == "HTTP 502 on POST /tasks"
+    assert attempts == ["POST"]
+    attempts.clear()
+    try:
+        h.request("GET", "https://x/tasks")
+    except h.HttpError:
+        pass
+    assert len(attempts) == 5

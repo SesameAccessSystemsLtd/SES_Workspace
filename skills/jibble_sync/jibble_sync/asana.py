@@ -53,7 +53,8 @@ class Asana:
         return self._pages(f"/tasks/{gid}/subtasks", {"opt_fields": fields})
 
     def project_tasks_modified_since(self, project: str, since_iso: str, fields: str) -> list[dict]:
-        return self._pages(f"/projects/{project}/tasks", {"opt_fields": fields, "modified_since": since_iso})
+        # GET /tasks documents modified_since; /projects/{gid}/tasks does not.
+        return self._pages("/tasks", {"project": project, "opt_fields": fields, "modified_since": since_iso})
 
     def search_tasks(self, workspace: str, params: dict, fields: str) -> list[dict]:
         """Workspace search, paged backwards by created_at (search has no offset)."""

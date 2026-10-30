@@ -37,6 +37,8 @@ class Reports:
         self.default_hours = float(people_cfg.get("default_hours_per_day", 9))
         self.hours_by_name = {k.lower(): float(v) for k, v in (people_cfg.get("hours_per_day") or {}).items()}
         self.leave_codes = cfg["jibble"].get("payroll_leave_codes", {})
+        self.bank_holidays = set(cfg.get("bank_holidays", []))
+        self.bank_holiday_label = cfg["jibble"].get("payroll_bank_holiday_label", "0014 Bank Holiday")
         self.fallback_client = cfg["jibble"].get("fallback_client", "Jibble trial")
 
     # -- shared loading ------------------------------------------------------
@@ -61,6 +63,10 @@ class Reports:
             part["_top"] = ((part.get("parent") or {}).get("name") or part["name"]).strip()
             out[jibble_project_id(gid)] = part
         return out
+
+    def _est_hours(self, task) -> float:
+        e_min = self._num(task, self.f_est_time)
+        return float(e_min) / 60 if e_min else float(self._num(task, self.f_est_hours) or 0)
 
     def _segments(self, d0: str, d1: str):
         fetch_from = (date.fromisoformat(d0) - timedelta(days=1)).isoformat()
@@ -96,28 +102,44 @@ class Reports:
                 task_col = f"{act} < {parent}" if act else parent
             rows[(member, s.date, parent, task_col)] += s.minutes
 
-        # Approved time off, converted from days to hours.
+        # Approved time off, converted from days to hours. Weekends and bank
+        # holidays are not leave days; Jibble's duration (in days) scales part days.
         policies = {p["id"]: p.get("name", "") for p in self.jibble.time_off_policies()}
+        people_in_period = {k[0] for k in rows}
         for iv in self.jibble.time_offs(d0):
             if iv.get("status") != "Approved":
                 continue
             member = (people.get(iv.get("personId")) or {}).get("fullName") or (iv.get("person") or {}).get("fullName", "")
+            people_in_period.add(member)
             pol = policies.get(iv.get("policyId")) or (iv.get("policy") or {}).get("name", "")
             label = self.leave_codes.get(pol, pol)
-            start, end = iv["startDate"][:10], iv["endDate"][:10]
+            start, end = date.fromisoformat(iv["startDate"][:10]), date.fromisoformat(iv["endDate"][:10])
+            working = [start + timedelta(days=i) for i in range((end - start).days + 1)]
+            working = [d for d in working if d.weekday() < 5 and d.isoformat() not in self.bank_holidays]
+            if not working:
+                continue
             hourly = iv.get("startTime") and iv.get("endTime")
-            day = max(date.fromisoformat(start), date.fromisoformat(d0))
-            last = min(date.fromisoformat(end), date.fromisoformat(d1))
-            while day <= last:
-                if day.weekday() < 5:
-                    if hourly:
-                        t0 = datetime.strptime(str(iv["startTime"])[:5], "%H:%M")
-                        t1 = datetime.strptime(str(iv["endTime"])[:5], "%H:%M")
-                        minutes = max((t1 - t0).total_seconds() / 60, 0)
-                    else:
-                        minutes = self._hours_per_day(member) * 60
-                    rows[(member, day.isoformat(), label, label)] += minutes
-                day += timedelta(days=1)
+            if hourly:
+                t0 = datetime.strptime(str(iv["startTime"])[:5], "%H:%M")
+                t1 = datetime.strptime(str(iv["endTime"])[:5], "%H:%M")
+                per_day = max((t1 - t0).total_seconds() / 60, 0)
+            else:
+                fraction = 1.0
+                try:
+                    if iv.get("duration") is not None:
+                        fraction = min(float(iv["duration"]) / len(working), 1.0)
+                except (TypeError, ValueError):
+                    pass
+                per_day = self._hours_per_day(member) * 60 * fraction
+            for day in working:
+                if d0 <= day.isoformat() <= d1:
+                    rows[(member, day.isoformat(), label, label)] += per_day
+
+        # Bank holidays, as Everhour recorded them, for everyone with time in the period.
+        for bh in sorted(self.bank_holidays):
+            if d0 <= bh <= d1 and date.fromisoformat(bh).weekday() < 5:
+                for member in people_in_period:
+                    rows[(member, bh, self.bank_holiday_label, self.bank_holiday_label)] += self._hours_per_day(member) * 60
 
         ordered = sorted(rows.items(), key=lambda kv: (kv[0][2].lower(), kv[0][0].lower(), kv[0][1]))
         with open(out_path, "w", newline="", encoding="utf-8") as fh:
@@ -140,12 +162,13 @@ class Reports:
         est: dict[str, float] = defaultdict(float)
         cost: dict[str, float] = defaultdict(float)
         for part in parts.values():
+            top = part["_top"]
+            sub_est = [self._est_hours(t) for t in part["_subtasks"]]
+            # A part's own estimate usually sums its subtasks: use it only when no subtask has one.
+            est[top] += sum(sub_est) if any(sub_est) else self._est_hours(part)
             for t in [part, *part["_subtasks"]]:
-                e_min = self._num(t, self.f_est_time)
-                e_hrs = (e_min / 60) if e_min else (self._num(t, self.f_est_hours) or 0)
-                est[part["_top"]] += float(e_hrs or 0)
-                cost[part["_top"]] += float(self._num(t, self.f_cost) or 0)
-            minutes.setdefault(part["_top"], defaultdict(float))
+                cost[top] += float(self._num(t, self.f_cost) or 0)
+            minutes.setdefault(top, defaultdict(float))
         for s in self._segments(d0, d1):
             if s.project_id in parts:
                 member = (people.get(s.person_id) or {}).get("fullName", s.person_id)

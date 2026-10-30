@@ -51,11 +51,25 @@
       "Work From Home": "Work from home"
     },
     "payroll_leave_codes": {
-      "Paid Holiday Request": "0010 Annual Leave"
+      "Paid Holiday Request": "0010 Annual Leave",
+      "Work From Home": "0006 - work from home"
     },
-    "engineer_groups": ["Site Team", "Workshop"],
+    "engineer_groups": [
+      "Site Team",
+      "Workshop"
+    ],
     "fallback_client": "Jibble trial",
-    "activities": ["Welding / Fabrication", "Assembly", "QC", "Wiring", "Cut", "Paint", "Drill", "Rework"]
+    "activities": [
+      "Welding / Fabrication",
+      "Assembly",
+      "QC",
+      "Wiring",
+      "Cut",
+      "Paint",
+      "Drill",
+      "Rework"
+    ],
+    "payroll_bank_holiday_label": "0014 Bank Holiday"
   },
   "people": {
     "default_hours_per_day": 9,
@@ -63,5 +77,23 @@
   },
   "holiday_window_days": 60,
   "time_window_days": 21,
-  "seed_estimated_time_from_estimated_hours": true
+  "seed_estimated_time_from_estimated_hours": true,
+  "bank_holidays": [
+    "2026-01-01",
+    "2026-04-03",
+    "2026-04-06",
+    "2026-05-04",
+    "2026-05-25",
+    "2026-08-31",
+    "2026-12-25",
+    "2026-12-28",
+    "2027-01-01",
+    "2027-03-26",
+    "2027-03-29",
+    "2027-05-03",
+    "2027-05-31",
+    "2027-08-30",
+    "2027-12-27",
+    "2027-12-28"
+  ]
 }

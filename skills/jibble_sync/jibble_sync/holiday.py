@@ -11,6 +11,8 @@ import hashlib
 from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta, timezone
 
+from .http import safe_err
+
 # Asana status codes used internally
 REVIEW, ACC_OFFICE, ACC_ENG, MODIFIED, CANCELLED, REJECTED, NONE = (
     "REVIEW", "ACC_OFFICE", "ACC_ENG", "MODIFIED", "CANCELLED", "REJECTED", "NONE",
@@ -106,8 +108,8 @@ def decide(j_status: str, h: str, task: dict | None, engineer: bool) -> Decision
             d.final_j = want
         if a_now == CANCELLED:
             d.move_to_cancelled = True
-        # Record who approved, once, at the moment the approval is seen.
-        if a_now in ACCEPTED and not task.get("approved_by_set"):
+        # Record who approved at the moment the approval is seen (a re-approval refreshes it).
+        if a_now in ACCEPTED:
             d.fill_approved_by = True
     elif j_status != uid.get("j"):
         # Changed in the Jibble app (e.g. approved there): mirror into Asana.
@@ -248,13 +250,18 @@ class HolidaySync:
         policies = {p["id"]: p.get("name", "") for p in self.jibble.time_off_policies()}
         existing = self._existing_tasks()
 
-        for iv in self.jibble.time_offs(since):
+        requests = self.jibble.time_offs(since)
+        seen: set[str] = set()
+        for iv in requests:
             self.stats["requests"] += 1
+            seen.add(iv.get("id"))
             try:
                 self._one(iv, people, group_names, policies, existing, users_by_email, me_gid)
             except Exception as e:  # keep going; one bad request must not stop the rest
                 self.stats["errors"] += 1
-                self.log(f"holiday request {iv.get('id')}: {type(e).__name__}: {str(e)[:200]}")
+                self.log(f"holiday request {iv.get('id')}: {safe_err(e)}")
+        if requests:  # never treat an empty read as "everything was deleted"
+            self.flag_missing(existing, seen, since)
         return self.stats
 
     def _one(self, iv, people, group_names, policies, existing, users_by_email, me_gid):
@@ -276,6 +283,7 @@ class HolidaySync:
                 "status": self._status_code(task),
                 "uid": parse_uid(self._cf(task, self.f_uid, "text_value")),
                 "approved_by_set": bool(self._cf(task, self.f_approved, "people_value")),
+                "approved_by": [p.get("gid") for p in (self._cf(task, self.f_approved, "people_value") or [])],
             }
         d = decide(j_status, h, state, engineer)
         if d is None:
@@ -309,7 +317,15 @@ class HolidaySync:
             return
 
         gid = task["gid"]
-        fields: dict = {self.f_uid: uid_text}
+        # Order matters: Jibble first, then Asana changes, and the UID (the record
+        # of what was synced) last. If any step fails the UID is left unchanged,
+        # so the next run sees the same difference and retries instead of
+        # undoing a decision.
+        if d.jibble_status:
+            self.jibble.set_time_off_status(iid, d.jibble_status)
+            self.stats["jibble_updates"] += 1
+
+        fields: dict = {}
         data: dict = {}
         if d.asana_status:
             fields[self.f_status] = self.opt[d.asana_status]
@@ -324,15 +340,39 @@ class HolidaySync:
                 fields[self.f_days] = remaining
         if d.fill_approved_by:
             approver = self._approver_from_history(gid, me_gid)
-            if approver:
+            if approver and approver not in state.get("approved_by", []):
                 fields[self.f_approved] = [approver]
-        data["custom_fields"] = fields
-        self.asana.update_task(gid, data, "holiday sync")
-        self.stats["asana_updates"] += 1
-        for text in d.comments:
-            self.asana.comment(gid, text)
-        if d.move_to_cancelled and self.cancelled_section:
-            self.asana.add_to_section(gid, self.cancelled_section)
-        if d.jibble_status:
-            self.jibble.set_time_off_status(iid, d.jibble_status)
-            self.stats["jibble_updates"] += 1
+        steps_after = bool(d.comments) or (d.move_to_cancelled and self.cancelled_section)
+        if not steps_after:
+            fields[self.f_uid] = uid_text  # nothing can fail after this write: save the UID with it
+        if fields:
+            data["custom_fields"] = fields
+        if data:
+            self.asana.update_task(gid, data, "holiday sync")
+            self.stats["asana_updates"] += 1
+        if steps_after:
+            for text in d.comments:
+                self.asana.comment(gid, text)
+            if d.move_to_cancelled and self.cancelled_section:
+                self.asana.add_to_section(gid, self.cancelled_section)
+            self.asana.update_task(gid, {"custom_fields": {self.f_uid: uid_text}}, "holiday sync state")
+
+    def flag_missing(self, existing: dict[str, dict], seen: set[str], since: str):
+        """A linked request that vanished from Jibble (deleted there) is flagged once for review."""
+        for iid, task in existing.items():
+            if iid in seen or (task.get("due_on") or "") < since:
+                continue
+            uid = parse_uid(self._cf(task, self.f_uid, "text_value")) or {}
+            code = self._status_code(task)
+            if uid.get("j") == "Missing" or code in (CANCELLED, REJECTED):
+                continue
+            try:
+                self.asana.update_task(task["gid"], {"custom_fields": {self.f_status: self.opt[MODIFIED]}}, "missing in Jibble")
+                self.asana.comment(task["gid"], "This request is no longer in Jibble (it may have been deleted there). "
+                                                "Check it and cancel the holiday if it is no longer needed.")
+                self.asana.update_task(task["gid"], {"custom_fields": {self.f_uid: make_uid(iid, uid.get("h", ""), "Missing", MODIFIED)}},
+                                       "holiday sync state")
+                self.stats["missing_in_jibble"] = self.stats.get("missing_in_jibble", 0) + 1
+            except Exception as e:
+                self.stats["errors"] += 1
+                self.log(f"holiday task {task.get('gid')}: {safe_err(e)}")

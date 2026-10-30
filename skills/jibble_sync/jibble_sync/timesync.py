@@ -17,6 +17,7 @@ import uuid
 from collections import defaultdict
 from datetime import date, timedelta
 
+from .http import HttpError, safe_err
 from .mapping import canonical_activity, choose_subtask
 from .segments import build_segments
 
@@ -40,25 +41,32 @@ def jibble_client_id(name: str) -> str:
     return str(uuid.uuid5(ID_NAMESPACE, f"client:{name.strip().lower()}"))
 
 
-def diff_entries(existing: list[dict], desired: dict[tuple[str, str], int], me_gid: str, window_start: str):
-    """Plan creates/updates/deletes for one task.
-
-    existing: Asana entries on the task. Only entries created by the sync
-              account and dated inside the window are touched.
-    desired:  {(assignee_gid, 'YYYY-MM-DD'): minutes}
-    Returns (creates, updates, deletes): creates = [(assignee, date, minutes)],
-    updates = [(entry_gid, minutes)], deletes = [entry_gid].
-    """
+def owned_entries(existing: list[dict], me_gid: str, window_start: str) -> dict[tuple[str, str], list[dict]]:
+    """Entries the sync is allowed to change: created by the sync account, credited
+    to another person, dated inside the window. Entries anyone logs for
+    themselves (including the sync account's own user) are never touched."""
     owned: dict[tuple[str, str], list[dict]] = defaultdict(list)
     for e in existing:
         if (e.get("created_by") or {}).get("gid") != me_gid:
             continue
+        who = (e.get("assignee") or {}).get("gid")
+        if not who or who == me_gid:
+            continue
         day = (e.get("entered_on") or "")[:10]
         if day < window_start:
             continue
-        who = (e.get("assignee") or {}).get("gid") or me_gid
         owned[(who, day)].append(e)
+    return owned
 
+
+def diff_entries(existing: list[dict], desired: dict[tuple[str, str], int], me_gid: str, window_start: str):
+    """Plan creates/updates/deletes for one task.
+
+    desired:  {(assignee_gid, 'YYYY-MM-DD'): minutes}
+    Returns (creates, updates, deletes): creates = [(assignee, date, minutes)],
+    updates = [(entry_gid, minutes)], deletes = [entry_gid].
+    """
+    owned = owned_entries(existing, me_gid, window_start)
     creates, updates, deletes = [], [], []
     for key, minutes in desired.items():
         rows = owned.pop(key, [])
@@ -130,25 +138,34 @@ class TimeSync:
         """Read every monitored part with its subtasks; make sure they sit in the beta project."""
         loaded = []
         for gid in self.parts:
-            part = self.asana.task(gid, PART_FIELDS)
-            part["gid"] = gid
-            subs = self.asana.subtasks(gid, SUB_FIELDS)
-            for t in [part, *subs]:
-                added = self._ensure_beta(t)
-                self._seed_estimate(t, True if added else self.beta in {(m.get("project") or {}).get("gid") for m in t.get("memberships") or []})
-            part["_subtasks"] = subs
-            part["_client"] = self._display(part, self.f_project_name) or self.fallback_client
-            part["_attrib"] = self._attribution_project(part)
-            loaded.append(part)
+            try:
+                part = self.asana.task(gid, PART_FIELDS)
+                part["gid"] = gid
+                subs = self.asana.subtasks(gid, SUB_FIELDS)
+                manufacturing = self._manufacturing_project(part)
+                for t in [part, *subs]:
+                    t["gid"] = t.get("gid") or gid
+                    projects = {(m.get("project") or {}).get("gid") for m in t.get("memberships") or []}
+                    added = self._ensure_beta(t)
+                    self._seed_estimate(t, added or self.beta in projects)
+                    # Time counts against the job's manufacturing project when the
+                    # task is in it, otherwise against the beta project it was added to.
+                    t["_attrib"] = manufacturing if manufacturing in projects else self.beta
+                part["_subtasks"] = subs
+                part["_client"] = self._display(part, self.f_project_name) or self.fallback_client
+                loaded.append(part)
+            except Exception as e:  # a deleted or unreadable part must not stop the others
+                self.stats["part_errors"] += 1
+                self.exceptions.append(f"Part {gid}: {safe_err(e)}")
         return loaded
 
-    def _attribution_project(self, part: dict) -> str:
-        """Count time against the job's manufacturing project when there is one."""
+    @staticmethod
+    def _manufacturing_project(part: dict) -> str | None:
         for m in part.get("memberships") or []:
             p = m.get("project") or {}
             if "manufacturing" in (p.get("name") or "").lower():
                 return p["gid"]
-        return self.beta
+        return None
 
     # -- Jibble side ---------------------------------------------------------
     def ensure_jibble(self, parts: list[dict]) -> dict[str, dict]:
@@ -160,30 +177,49 @@ class TimeSync:
 
         mapping: dict[str, dict] = {}
         for part in parts:
-            cname = part["_client"].strip()
-            cid = clients.get(cname.lower())
-            if not cid:
-                cid = jibble_client_id(cname)
-                self.jibble.create_client(cid, cname)
-                clients[cname.lower()] = cid
-                self.stats["jibble_clients_created"] += 1
             pid = jibble_project_id(part["gid"])
             pname = part["name"].strip()
             if pid in by_id:
                 mapping[pid] = part
-            elif pname.lower() in by_name:
+                continue
+            if pname.lower() in by_name:
                 mapping[by_name[pname.lower()]["id"]] = part  # adopt an existing project of the same name
-            else:
-                self.jibble.create_project(pid, pname, cid)
-                mapping[pid] = part
+                continue
+            try:
+                cname = part["_client"].strip()
+                cid = clients.get(cname.lower())
+                if not cid:
+                    cid = jibble_client_id(cname)
+                    self._create(self.jibble.create_client, cid, cname)
+                    clients[cname.lower()] = cid
+                    self.stats["jibble_clients_created"] += 1
+                self._create(self.jibble.create_project, pid, pname, cid)
                 self.stats["jibble_projects_created"] += 1
+            except Exception as e:
+                self.exceptions.append(f"Jibble project for part {part['gid']}: {safe_err(e)}")
+            # The id is deterministic, so time clocked against it maps even if
+            # the project was archived or the create was refused as a duplicate.
+            mapping[pid] = part
 
         have = {(a.get("name") or "").strip().lower() for a in self.jibble.activities()}
         for name in self.activity_list:
             if name.lower() not in have:
-                self.jibble.create_activity(name)
-                self.stats["jibble_activities_created"] += 1
+                try:
+                    self._create(self.jibble.create_activity, name)
+                    self.stats["jibble_activities_created"] += 1
+                except Exception as e:
+                    self.exceptions.append(f"Jibble activity '{name}': {safe_err(e)}")
         return mapping
+
+    @staticmethod
+    def _create(fn, *args):
+        """Create something in Jibble; a 409 means it already exists, which is fine."""
+        try:
+            return fn(*args)
+        except HttpError as e:
+            if e.status == 409:
+                return None
+            raise
 
     # -- time ----------------------------------------------------------------
     def run(self, users_by_email: dict[str, str]):
@@ -196,10 +232,27 @@ class TimeSync:
         fetch_from = (today - timedelta(days=self.window_days + 1)).isoformat()
         people = {p["id"]: p for p in self.jibble.people()}
         activities = {a["id"]: a.get("name", "") for a in self.jibble.activities()}
-        segments, open_count = build_segments(self.jibble.time_entries(fetch_from, today.isoformat()))
-        self.stats["open_clock_ins_skipped"] = open_count
+        segments, skipped = build_segments(self.jibble.time_entries(fetch_from, today.isoformat()))
+        self.stats["open_clock_ins_skipped"] = skipped["open"]
+        if skipped["too_long"]:
+            self.stats["blocks_over_16h_skipped"] = skipped["too_long"]
+            self.exceptions.append(f"{skipped['too_long']} clocked block(s) over 16 h skipped (check for a missed clock-out in Jibble)")
 
-        # desired[task_gid][(assignee, day)] = minutes (float until rounded)
+        # Read what Asana already holds before mapping, so time already synced
+        # stays on the subtask it was booked to.
+        tasks = {t["gid"]: t for part in parts for t in [part, *part["_subtasks"]]}
+        existing: dict[str, list[dict]] = {}
+        held: dict[tuple[str, str], set[str]] = defaultdict(set)  # (worker, day) -> task gids
+        for gid in tasks:
+            try:
+                existing[gid] = self.asana.time_entries(gid)
+            except Exception as e:
+                self.stats["task_errors"] += 1
+                self.exceptions.append(f"Task {gid}: {safe_err(e)} (left unchanged)")
+                continue
+            for key in owned_entries(existing[gid], me_gid, start):
+                held[key].add(gid)
+
         desired: dict[str, dict[tuple[str, str], float]] = defaultdict(lambda: defaultdict(float))
         for seg in segments:
             if seg.date < start or seg.project_id not in project_map:
@@ -207,13 +260,18 @@ class TimeSync:
             part = project_map[seg.project_id]
             email = (people.get(seg.person_id, {}).get("email") or "").lower()
             worker = users_by_email.get(email)
-            if not worker:
-                self.exceptions.append(f"Jibble person {seg.person_id} has no Asana user; time credited to the sync account")
+            if not worker or worker == me_gid:
+                self.stats["segments_without_worker"] += 1
+                self.exceptions.append(
+                    f"Jibble person {seg.person_id}: no Asana user other than the sync account; time not written"
+                )
+                continue
             act_name = activities.get(seg.activity_id, "")
             canon = canonical_activity(act_name) if act_name else None
             target = None
             if canon:
-                target = choose_subtask(canon, part["_subtasks"], part["name"], worker)
+                target = choose_subtask(canon, part["_subtasks"], part["name"], worker,
+                                        prefer=held.get((worker, seg.date)))
             if target is None:
                 target_gid = part["gid"]
                 self.exceptions.append(
@@ -222,34 +280,39 @@ class TimeSync:
                 self.stats["unmatched_segments"] += 1
             else:
                 target_gid = target["gid"]
-            desired[target_gid][(worker or me_gid, seg.date)] += seg.minutes
+            desired[target_gid][(worker, seg.date)] += seg.minutes
             self.stats["segments_mapped"] += 1
 
-        # Reconcile every task the sync owns, so removed time is removed in Asana too.
-        attrib = {}
-        for part in parts:
-            for t in [part, *part["_subtasks"]]:
-                attrib[t["gid"]] = part["_attrib"]
-        for task_gid in attrib:
-            want = {k: int(round(v)) for k, v in desired.get(task_gid, {}).items()}
+        plans = {}
+        owned_total = 0
+        for gid in existing:
+            want = {k: int(round(v)) for k, v in desired.get(gid, {}).items()}
+            plans[gid] = diff_entries(existing[gid], want, me_gid, start)
+            owned_total += sum(len(v) for v in owned_entries(existing[gid], me_gid, start).values())
+        delete_total = sum(len(p[2]) for p in plans.values())
+        allow_deletes = delete_total <= max(10, owned_total // 2)
+        if not allow_deletes:
+            self.stats["deletes_held_back"] = delete_total
+            self.exceptions.append(
+                f"Delete guard: {delete_total} of {owned_total} synced entries would be removed; "
+                "deletes held back this run (check Jibble data)"
+            )
+
+        for gid, (creates, updates, deletes) in plans.items():
             try:
-                existing = self.asana.time_entries(task_gid)
-                creates, updates, deletes = diff_entries(existing, want, me_gid, start)
                 for who, day, minutes in creates:
-                    body = {"duration_minutes": minutes, "entered_on": day, "attributable_to": attrib[task_gid]}
-                    if who != me_gid:
-                        body["assignee"] = who
-                    self.asana.create_time_entry(task_gid, body)
+                    self.asana.create_time_entry(gid, {"duration_minutes": minutes, "entered_on": day,
+                                                       "attributable_to": tasks[gid]["_attrib"], "assignee": who})
                     self.stats["entries_created"] += 1
                 for entry_gid, minutes in updates:
                     self.asana.update_time_entry(entry_gid, minutes)
                     self.stats["entries_updated"] += 1
-                for entry_gid in deletes:
-                    self.asana.delete_time_entry(entry_gid)
-                    self.stats["entries_deleted"] += 1
+                if allow_deletes:
+                    for entry_gid in deletes:
+                        self.asana.delete_time_entry(entry_gid)
+                        self.stats["entries_deleted"] += 1
             except Exception as e:  # one task failing must not stop the rest
                 self.stats["task_errors"] += 1
-                self.exceptions.append(f"Task {task_gid}: {type(e).__name__}: {str(e)[:200]}")
-        # De-duplicate repeated exception lines
+                self.exceptions.append(f"Task {gid}: {safe_err(e)}")
         self.exceptions = sorted(set(self.exceptions))
         return dict(self.stats)

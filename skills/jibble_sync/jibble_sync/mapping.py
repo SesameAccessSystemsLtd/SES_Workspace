@@ -67,10 +67,13 @@ def choose_subtask(
     part_name: str,
     worker_gid: str | None,
     aliases: dict[str, list[str]] | None = None,
+    prefer: set[str] | None = None,
 ) -> dict | None:
     """Pick the subtask a block of time belongs to, or None when nothing matches.
 
-    Preference when several match: open and assigned to this worker, then open,
+    Preference when several match: a subtask that already holds this worker's
+    synced time for the day (so past time never moves when subtasks are
+    completed or reassigned), then open and assigned to this worker, then open,
     then named in the standard 'Activity - <part code>' form, then newest.
     """
     code = part_code(part_name)
@@ -78,12 +81,15 @@ def choose_subtask(
     if not candidates:
         return None
 
+    prefer = prefer or set()
+
     def score(s: dict):
+        held = s.get("gid") in prefer
         is_open = not s.get("completed")
         mine = bool(worker_gid) and (s.get("assignee") or {}).get("gid") == worker_gid
         standard = bool(code) and code in _norm(s.get("name", ""))
         gid = str(s.get("gid") or "")
         newest = int(gid) if gid.isdigit() else 0  # Asana gids grow over time
-        return (is_open and mine, is_open, standard, newest)
+        return (held, is_open and mine, is_open, standard, newest)
 
     return max(candidates, key=score)

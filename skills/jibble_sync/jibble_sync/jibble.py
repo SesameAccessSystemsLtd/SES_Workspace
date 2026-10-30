@@ -1,6 +1,8 @@
 """Jibble API client (client-credentials auth, OData collections)."""
 from __future__ import annotations
 
+import json
+
 from .http import HttpError, request
 
 IDENTITY_URL = "https://identity.prod.jibble.io/connect/token"
@@ -46,34 +48,46 @@ class Jibble:
         return self._call(method, url, json_body=body)
 
     def get_all(self, url: str, params: dict | None = None) -> list[dict]:
-        """Read every page of an OData collection."""
+        """Read every page of an OData collection, in a stable order.
+
+        Sorting by id keeps $skip paging consistent between pages. If an
+        endpoint refuses $orderby the read is retried without it. A read that
+        cannot be completed raises instead of returning partial data, because
+        the time sync would treat missing rows as deleted time.
+        """
+        try:
+            return self._read_pages(url, {**(params or {}), "$orderby": "id"})
+        except HttpError as e:
+            if e.status != 400:
+                raise
+            return self._read_pages(url, dict(params or {}))
+
+    def _read_pages(self, url: str, params: dict) -> list[dict]:
         out: list[dict] = []
-        params = dict(params or {})
         page_size = 200
         skip = 0
         next_url = None
-        seen_first: set = set()
-        for _ in range(500):  # hard stop if an endpoint ignores $skip
+        seen_pages: set[str] = set()
+        for _ in range(500):
             if next_url:
                 resp = self._call("GET", next_url)
             else:
                 resp = self._call("GET", url, params={**params, "$top": page_size, "$skip": skip})
             rows = (resp or {}).get("value", [])
-            first = rows[0].get("id") if rows and isinstance(rows[0], dict) else None
-            if first is not None and first in seen_first:
-                break  # same page again: the endpoint is not paging
-            if first is not None:
-                seen_first.add(first)
+            fingerprint = json.dumps(rows, sort_keys=True, default=str)
+            if rows and fingerprint in seen_pages:
+                return out  # the same page again: the endpoint does not page
+            seen_pages.add(fingerprint)
             out.extend(rows)
             next_url = (resp or {}).get("@odata.nextLink")
             if next_url:
                 continue
             if not rows:
-                break
+                return out
             # The server may cap pages below page_size, so a short page is not
             # proof of the end: keep skipping until a page comes back empty.
             skip += len(rows)
-        return out
+        raise RuntimeError("Jibble paging did not finish within 500 pages")
 
     # -- people -----------------------------------------------------------
     def people(self) -> list[dict]:

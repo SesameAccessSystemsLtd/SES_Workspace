@@ -1,0 +1,67 @@
+{
+  "asana": {
+    "workspace": "357939803556123",
+    "holiday_project": "852956628490871",
+    "holiday_cancelled_section": "1206381093075873",
+    "beta_project": "1202196173874070",
+    "fields": {
+      "holiday_status": "1196037240816768",
+      "leave_type": "1201636636021184",
+      "uid": "1202361238538127",
+      "approved_by": "1208179284319236",
+      "days_remaining": "1198966893077054",
+      "project_name": "1202882645384174",
+      "estimated_hours": "1155021669124711",
+      "estimated_time": "1203433325150067",
+      "actual_cost": "1155021669124674"
+    },
+    "holiday_status_options": {
+      "REVIEW": "1196037240816770",
+      "ACC_OFFICE": "1196037240816769",
+      "ACC_ENG": "1199891960261773",
+      "MODIFIED": "1203457049445199",
+      "CANCELLED": "1203457031634502",
+      "REJECTED": "1220026961278852"
+    },
+    "leave_type_options": {
+      "Holiday": "1201636636021185",
+      "Sick Leave / Work Absence": "1201636636021186",
+      "Work from home": "1201636636021187",
+      "TRAINING DAY": "1203850091949177",
+      "OTHER - UPDATE": "1203993714881593"
+    },
+    "monitored_parts": [
+      "1220026961278842",
+      "1216745444710063",
+      "1213299484413967",
+      "1213299484413957",
+      "1213299484413962",
+      "1213299484413952",
+      "1213299484413947",
+      "1213299484467968",
+      "1209854002969066",
+      "1209854006573940",
+      "1209854006573950"
+    ]
+  },
+  "jibble": {
+    "policy_leave_type": {
+      "Paid Holiday Request": "Holiday",
+      "Sick Leave": "Sick Leave / Work Absence",
+      "Work From Home": "Work from home"
+    },
+    "payroll_leave_codes": {
+      "Paid Holiday Request": "0010 Annual Leave"
+    },
+    "engineer_groups": ["Site Team", "Workshop"],
+    "fallback_client": "Jibble trial",
+    "activities": ["Welding / Fabrication", "Assembly", "QC", "Wiring", "Cut", "Paint", "Drill", "Rework"]
+  },
+  "people": {
+    "default_hours_per_day": 9,
+    "hours_per_day": {}
+  },
+  "holiday_window_days": 60,
+  "time_window_days": 21,
+  "seed_estimated_time_from_estimated_hours": true
+}

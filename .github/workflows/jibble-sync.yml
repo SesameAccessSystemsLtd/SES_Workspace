@@ -1,0 +1,49 @@
+name: Jibble sync
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "full writes to Asana and Jibble; dry-run only prints"
+        type: choice
+        options: [full, dry-run]
+        default: full
+
+concurrency:
+  group: jibble-sync
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Only fetch the sync's own folder: the repo root holds files of 100 MB+.
+          filter: blob:none
+          sparse-checkout: |
+            /skills/jibble_sync/
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Sync
+        working-directory: skills/jibble_sync
+        env:
+          JIBBLE_KEY_ID: ${{ secrets.JIBBLE_KEY_ID }}
+          JIBBLE_API_KEY: ${{ secrets.JIBBLE_API_KEY }}
+          ASANA_TOKEN: ${{ secrets.ASANA_TOKEN }}
+          JIBBLE_SYNC_PEOPLE_JSON: ${{ secrets.JIBBLE_SYNC_PEOPLE_JSON }}
+          MODE: ${{ github.event.inputs.mode || vars.JIBBLE_SYNC_MODE || 'full' }}
+        run: |
+          if [ "$MODE" = "dry-run" ]; then
+            python -m jibble_sync run --dry-run
+          else
+            python -m jibble_sync run
+          fi

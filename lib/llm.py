@@ -14,7 +14,29 @@ Usage:
     )
 """
 
+# Must run before any provider SDK import (google.genai / anthropic pull
+# pydantic_core). If the launching interpreter can't load pydantic_core, this
+# re-execs the whole command under the SES_Workspace venv.
+#
+# Coverage is scoped to scripts that import `llm`: today the gateway parser
+# (skills/purchasing/02_llm_parser.py) and the daily brief
+# (skills/daily_brief/daily_brief.py), plus any future importer automatically.
+# Scripts that call providers WITHOUT importing `llm` are NOT covered here and
+# must guard themselves.
 import os
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0, str(_Path(__file__).resolve().parent))
+# Guard the IMPORT only — a missing venv_guard must not break importing llm. The
+# guard CALL is intentionally left OUTSIDE the except so its errors (including a
+# failed re-exec) surface rather than being silently swallowed.
+try:
+    from venv_guard import ensure_venv_interpreter as _ensure_venv_interpreter
+except Exception:
+    _ensure_venv_interpreter = None
+if _ensure_venv_interpreter is not None:
+    _ensure_venv_interpreter()
+
 import logging
 import requests as _requests
 
@@ -53,7 +75,7 @@ def _log_usage(provider, model, usage):
 
 # Default models per provider
 DEEPSEEK_MODEL   = "deepseek-chat"
-GEMINI_MODEL     = "gemini-2.0-flash"
+GEMINI_MODEL     = "gemini-2.5-flash"   # gemini-2.0-flash was retired (404) — verified live 2026-11-03
 ANTHROPIC_MODEL  = "claude-haiku-4-5-20251001"
 
 

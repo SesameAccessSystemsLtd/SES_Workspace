@@ -52,7 +52,8 @@ Do not edit that field by hand.
   postcodes.io and only sites in `works.regions` are kept (`["*"]` = anywhere in the UK; `["London"]` to narrow).
   Installs with no address of their own take the site of the one 4.0 record whose name carries the same job number
   (e.g. "1037 - Langley Street - Install MS" -> "1087 - Langley St KPF - 1037"). Holidays, uni days and other tasks with no site are ignored.
-- In Jibble each site gets a **Location** with a 300 m radius (Jibble's minimum for geofence automation) and each job a
+- In Jibble each site gets a **Location** with a geofence radius of `works.radius_m` (50 m; Jibble accepted and stored
+  50 m on 9 Nov 2026, but whether its geofence automation behaves at 50 m is unconfirmed) and each job a
   **Project** at that location, under the client "Service & Repairs". IDs are derived from the postcode and the job's
   Asana ID, so re-runs never duplicate them. Existing projects are never adopted by name; a clash is reported.
   The sync does not add locations to work schedules: with "restrict members to locations" on, a schedule's location
@@ -92,8 +93,9 @@ time in the period (dates in `config.json`, England and Wales, 2026-2027). Sick 
 
 The API keys live only in Doppler. GitHub holds a single secret, `DOPPLER_TOKEN`: a **read-only service token**
 for a Doppler config that contains just the secrets below (best as a dedicated config, e.g. project `jibble_sync`,
-config `prd`, whose values are Doppler references to the existing keys such as `${vps_hermes.prd.JIBBLE_KEY_ID}`,
-so each key is stored once). At run time `cli.load_doppler` downloads that config over HTTPS, keeps the values in
+config `prd`, whose values are Doppler references to the existing keys such as `${openclaw.prd.JIBBLE_KEY_ID}`,
+so each key is stored once). The working Jibble keys are in `openclaw/prd`; the copies in `vps_hermes/prd` are old and
+Jibble rejects them. At run time `cli.load_doppler` downloads that config over HTTPS, keeps the values in
 memory, and masks each one in the Actions log. Locally, `doppler run -- python -m jibble_sync ...` works as before.
 
 | Name (in Doppler) | What |

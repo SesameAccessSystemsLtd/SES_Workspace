@@ -1,4 +1,4 @@
-# Jibble ↔ Asana trial: handover (9 Nov 2026)
+# Jibble ↔ Asana trial: handover (9 Nov 2026, updated after the import)
 
 Branch `jibble-asana-sync`, PR #1 (open, unmerged; the user merges). Read `SKILL.md` for the design.
 
@@ -8,7 +8,8 @@ Pull TeamUp/4.0 Service Schedule tasks and UK lift locations into Jibble, log wh
 (holiday test), Andy (TeamUp tasks only), Danny (same as Andy).
 
 ## Rules (non-negotiable)
-- Secrets live in Doppler only (project `vps_hermes`, config `prd`). GitHub holds one read-only `DOPPLER_TOKEN`.
+- Secrets live in Doppler only: project **`openclaw`**, config **`prd`**. GitHub holds one read-only `DOPPLER_TOKEN`.
+  Do **not** use `vps_hermes/prd` for Jibble: its Jibble keys are old and Jibble rejects them (`invalid_client`).
   Never print or commit keys; repo is public, so logs show counts and IDs only. Client addresses are never committed
   (`data/Sesame_Lift_Locations/` is gitignored; the location plan JSON is local-only).
 - Doppler names: JIBBLE_KEY_ID, JIBBLE_API_KEY, ASANA_TOKEN (still to add), JIBBLE_SYNC_PEOPLE_JSON (private scope and email aliases).
@@ -18,24 +19,31 @@ Pull TeamUp/4.0 Service Schedule tasks and UK lift locations into Jibble, log wh
 ## State
 Done: sync code, 39 tests passing, workflow `.github/workflows/jibble-sync.yml` (cron */15), Andy and Danny added to Jibble
 Site Team (a member can be in only one group), Doppler JIBBLE_SYNC_PEOPLE_JSON saved.
-**Not done: nothing has been imported into Jibble.** 203 locations and 37 projects are planned (local `jibble_plan.json`,
-UK-wide, retired postcodes geocoded). The Windows PowerShell importer failed on the token request: first a 400, then a blank
-error body. Cause unknown and unverified. Candidates: TLS 1.2 not forced in PowerShell 5.1, proxy, key formatting.
-Key lengths look right (id 36, secret 48). Do not continue with PowerShell or .bat files.
+
+**Imported into Jibble (9 Nov):** 203 locations, 37 projects and the client "Service & Repairs", 0 errors; a re-run of the
+dry run finds nothing left to create (Jibble now 205 locations, 41 projects, 3 clients). Geofence radius 50 m; the first
+location was read back and Jibble stored 50.0 m.
+
+The earlier token failure was not TLS, proxy or key formatting: the importer was pointed at `vps_hermes`, whose Jibble keys
+are dead. With `openclaw/prd` the token request returns 200. Do not use the PowerShell or .bat importers.
+
+## Re-running the import (only if the plan changes)
+`doppler run -p openclaw -c prd -- python jibble_push_plan.py jibble_plan.json --radius=50` (dry run), then add `--apply`.
+The plan file still says `radius_m: 300`; always pass `--radius`. The importer stops after the first location if Jibble
+stores a different radius, and creates no projects if the location check stops the run. Existing ids are skipped, so
+changing the radius of locations already in Jibble needs a separate update, not a re-run.
 
 ## Next steps
-1. Add a manual (`workflow_dispatch`) import mode to the Actions workflow, or run `jibble_push_plan.py` in a terminal with
-   `doppler run -p vps_hermes -c prd -- python jibble_push_plan.py jibble_plan.json` (dry run first, then `--apply`).
-   Print the HTTP status and Jibble's error body on failure (never the keys).
-2. Token: POST https://identity.prod.jibble.io/connect/token, client_credentials. API base https://workspace.prod.jibble.io/v1.
-3. Create ONE location, read it back, check the stored geofence radius, then load the rest; then client, then projects.
-   Skip anything within 50 m of an existing location.
-4. Radius: `radius_m` is now 50 (was 300). Risks: indoor GPS error of 20-50 m will cause missed clock-ins, and Jibble may require
-   at least 300 m for geofence automation. If the readback shows otherwise, fall back to 100 m. Site Team signs in without
-   geofence enforcement but still receives the locations.
-5. Switch-on needs the user: ASANA_TOKEN (dedicated admin) in Doppler, read-only `DOPPLER_TOKEN` in GitHub, merge PR #1,
-   optional dry run. Until then Asana won't update from clock-ins.
-6. Then: Giles holiday end-to-end test; confirm Danny sees this week's projects (Wingate House / 25 Sackville St Tue 10 Nov,
+1. Switch-on needs the user:
+   - `ASANA_TOKEN` (dedicated Asana admin account) in `openclaw/prd`. `cli.py` falls back to
+     `ASANA_PERSONAL_ACCESS_TOKEN`, which already exists there; do not rely on it unless it is confirmed to be the admin
+     sync account (a person who tracks their own time must not be the sync user).
+   - GitHub secret `DOPPLER_TOKEN`: a read-only service token for **`openclaw/prd`** (or a dedicated config that
+     references it), not `vps_hermes`.
+   - Merge PR #1, then an optional `workflow_dispatch` dry run. Until then Asana won't update from clock-ins.
+2. Watch the 50 m radius. Coordinates are postcode centroids, not buildings; with indoor GPS error, clock-ins may miss
+   their site. If they do, move to 100 m. Site Team signs in without geofence enforcement but still receives the locations.
+3. Giles holiday end-to-end test; confirm Danny sees this week's projects (Wingate House / 25 Sackville St Tue 10 Nov,
    Hotel Indigo Wed 11, British Library Pigott Thu 13).
 
 ## Open questions for the user

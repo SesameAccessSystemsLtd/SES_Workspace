@@ -245,17 +245,27 @@ class ServiceWorks:
             self.by_project[pid] = job
 
     # -- mapping -------------------------------------------------------------
-    def jobs_for(self, project_id: str | None, location: str | None, coords: tuple | None) -> tuple[list[dict], str]:
+    def jobs_for(self, project_id: str | None, location: str | None, coords: tuple | None):
+        """(jobs at the matched site, jobs at every site whose geofence covers it, how).
+
+        Central London geofences overlap (300 m), so a visit is looked for at every
+        site near the matched one; the job fallback only uses the matched site.
+        """
         if project_id and project_id in self.by_project:
-            return [self.by_project[project_id]], "project"
+            job = self.by_project[project_id]
+            return [job], [job], "project"
         if location and location in self.by_location:
-            return self.by_location[location], "location"
+            here = self.sites[location]["coords"]
+            return self.by_location[location], self._near(here), "location"
         if coords:
-            near = [(metres(coords, s["coords"]), lid) for lid, s in self.sites.items()]
+            near = sorted((metres(coords, s["coords"]), lid) for lid, s in self.sites.items())
             near = [x for x in near if x[0] <= self.radius]
             if near:
-                return self.by_location[min(near)[1]], "gps"
-        return [], ""
+                return self.by_location[near[0][1]], self._near(coords), "gps"
+        return [], [], ""
+
+    def _near(self, here: tuple) -> list[dict]:
+        return [j for lid, s in self.sites.items() if metres(here, s["coords"]) <= self.radius for j in self.by_location[lid]]
 
     @staticmethod
     def choose_visit(jobs: list[dict], day: str, worker: str | None) -> dict | None:
@@ -280,12 +290,12 @@ class ServiceWorks:
 
     def resolve(self, project_id, location, coords, day: str, worker: str | None):
         """(task dict, how) for a clocked block, or (None, reason)."""
-        jobs, how = self.jobs_for(project_id, location, coords)
-        if not jobs:
+        here, nearby, how = self.jobs_for(project_id, location, coords)
+        if not here:
             return None, ""
-        visit = self.choose_visit(jobs, day, worker)
+        visit = self.choose_visit(nearby, day, worker)
         if visit:
             return visit, how
-        if len(jobs) == 1:
-            return jobs[0], how + "-job"
+        if len(here) == 1:
+            return here[0], how + "-job"
         return None, "ambiguous"

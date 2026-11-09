@@ -142,3 +142,36 @@ def test_everhour_target_only_touches_listed_people():
         tgt.create("T1", u, d, m, None)
     assert ("set", 11, 5400) in eh.calls and ("add", "as:T1", 7, D(2), 1800) in eh.calls and not deletes
     assert plan(owned, {}) == ([], [], [{"id": 11, "minutes": 60}])
+
+
+def test_lookup_falls_back_to_terminated_postcodes():
+    from jibble_sync import geo
+    from jibble_sync.http import HttpError
+
+    def http(method, url, json_body=None, params=None, **kw):
+        if method == "POST":
+            return {"result": [{"query": "SW1A 2EU", "result": None}, {"query": "ZZ1 1ZZ", "result": None}]}
+        if url.endswith("SW1A%202EU"):
+            return {"result": {"latitude": 51.5056, "longitude": -0.1254}}
+        if url.startswith(geo.TERMINATED):
+            raise HttpError(404, "", "GET", url)
+        assert params["lat"] == 51.5056
+        return {"result": [{"region": "London", "admin_district": "Westminster"}]}
+
+    out = geo.lookup(["SW1A 2EU", "ZZ1 1ZZ"], http=http)
+    assert out == {"SW1A 2EU": {"latitude": 51.5056, "longitude": -0.1254, "region": "London",
+                                "admin_district": "Westminster", "terminated": True}}
+
+
+def test_overlapping_geofences_find_the_workers_visit_next_door():
+    w = ServiceWorks.__new__(ServiceWorks)
+    w.radius = 300
+    a = {"gid": "JA", "_visits": []}
+    b = {"gid": "JB", "_visits": [{"gid": "VB", "due_on": "2026-11-10", "assignee": {"gid": "u-adam"}}]}
+    w.sites = {"LA": {"coords": (51.510052, -0.13899)}, "LB": {"coords": (51.510106, -0.139016)}}
+    w.by_location = {"LA": [a], "LB": [b]}
+    w.by_project = {}
+    # Jibble tagged the clock-in with the neighbouring site's location
+    assert w.resolve(None, "LA", None, "2026-11-10", "u-adam") == (b["_visits"][0], "location")
+    # No visit anywhere that day: the matched site's job
+    assert w.resolve(None, "LA", None, "2026-11-12", "u-adam") == (a, "location-job")

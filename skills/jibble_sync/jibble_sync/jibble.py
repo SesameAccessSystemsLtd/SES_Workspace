@@ -141,6 +141,27 @@ class Jibble:
             body["clientId"] = client_id
         return self._write("POST", f"{WORKSPACE}/Projects", body, f"create project {project_id}")
 
+    def locations(self) -> list[dict]:
+        return self.get_all(f"{WORKSPACE}/Locations")
+
+    def create_location(self, location_id: str, name: str, address: str, lat: float, lng: float, radius_m: int):
+        body = {
+            "id": location_id,
+            "name": name,
+            "address": address,
+            "geoFence": {"radius": radius_m, "units": "Meters"},
+            "coordinates": {"latitude": lat, "longitude": lng},
+        }
+        return self._write("POST", f"{WORKSPACE}/Locations", body, f"create location {location_id}")
+
+    def create_project_at(self, project_id: str, name: str, client_id: str | None, location_id: str | None):
+        body = {"id": project_id, "name": name}
+        if client_id:
+            body["clientId"] = client_id
+        if location_id:
+            body["locationId"] = location_id
+        return self._write("POST", f"{WORKSPACE}/Projects", body, f"create project {project_id}")
+
     def activities(self) -> list[dict]:
         return self.get_all(f"{WORKSPACE}/Activities")
 

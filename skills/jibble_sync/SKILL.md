@@ -44,6 +44,29 @@ Do not edit that field by hand.
 - Safety: if a run would delete more than half of the synced entries (and more than 10), deletes are held back
   and reported, in case Jibble returned incomplete data. Clocked blocks over 16 h (a missed clock-out) are skipped and reported.
 
+**Service works (TeamUp visits -> Jibble sites -> Asana time)**
+
+- Every TeamUp task due in the next 30 days (and back over the 21-day time window) is a candidate visit. Its job is
+  the nearest parent in **4.0 Service Schedule**; the site postcode comes from the job's "Lift Address" (or an install's
+  "Site Address" / a T-Card's "Address", or a `SITE ADDRESS:` line in the notes). Postcodes are geocoded with
+  postcodes.io and only sites in `works.regions` (London) are kept. Holidays, uni days and other tasks with no site are ignored.
+- In Jibble each site gets a **Location** with a 300 m geofence (Jibble's minimum for geofence automation) and each job a
+  **Project** at that location, under the client "Service & Repairs". IDs are derived from the postcode and the job's
+  Asana ID, so re-runs never duplicate them; an existing location or project with the same name is adopted.
+- A clocked block is matched to the job by the Jibble project picked, else by the Jibble location, else by GPS within
+  the geofence radius; then to the visit task due that day, preferring the one assigned to the worker (each engineer on
+  a two-person visit has their own task). A visit a day either side counts only for the worker's own task.
+  No visit that day -> booked to the job task and listed under Exceptions. Visits and jobs used are added to the beta project.
+- Missing postcodes on 4.0 records are listed under Exceptions (by task ID) so they can be fixed in Asana.
+
+**Where time is written** (`time_target` in `config.json`)
+
+| Value | Result |
+| --- | --- |
+| `asana` (default) | Asana native Actual time, as above |
+| `everhour` | Everhour time records on the same Asana tasks (`as:<task id>`), for the people listed in `everhour.users` only. Needs `EVERHOUR_API_KEY` (an Everhour admin's key). Everhour keeps one record per person, task and day, so those people must stop logging the same tasks in Everhour by hand. |
+| `both` | Both of the above (for side-by-side comparison) |
+
 **Reports (read-only, Everhour layout)** - run locally, never in Actions (the repo is public):
 
 ```bash
@@ -64,6 +87,7 @@ time in the period (dates in `config.json`, England and Wales, 2026-2027). Sick 
 | `JIBBLE_API_KEY` | Jibble API key secret |
 | `ASANA_TOKEN` | Personal access token of the Asana **admin** account the sync acts as |
 | `JIBBLE_SYNC_PEOPLE_JSON` | Optional per-person contracted hours |
+| `EVERHOUR_API_KEY` | Only when `time_target` is `everhour` or `both` |
 
 Without the three required secrets the workflow logs "Secrets not configured" and exits cleanly.
 

@@ -3,6 +3,7 @@
 Secrets come from the environment (Doppler / GitHub secrets):
   JIBBLE_KEY_ID, JIBBLE_API_KEY           Jibble API key ID and secret
   ASANA_TOKEN                             personal access token of the admin sync account
+  EVERHOUR_API_KEY                        only when config time_target is everhour or both
 Logs carry counts and IDs only (no names, dates or leave types), because the
 GitHub Actions logs for this repository are public.
 """
@@ -20,7 +21,9 @@ from .holiday import HolidaySync
 from .http import safe_err
 from .jibble import Jibble
 from .reports import Reports
+from .targets import AsanaTarget, Everhour, EverhourTarget
 from .timesync import TimeSync
+from .works import ServiceWorks
 
 HERE = Path(__file__).resolve().parent.parent
 
@@ -49,6 +52,23 @@ def clients(dry_run: bool, log):
     if missing:
         return None, None, missing
     return Asana(token, dry_run=dry_run, log=log), Jibble(jid, jsecret, dry_run=dry_run, log=log), []
+
+
+def time_targets(cfg: dict, asana, users: dict, dry_run: bool, log) -> list:
+    """Where Jibble time is written: config time_target = asana (default), everhour or both."""
+    kind = (cfg.get("time_target") or "asana").lower()
+    targets = []
+    if kind in ("asana", "both"):
+        targets.append(AsanaTarget(asana, asana.me()["gid"], users))
+    if kind in ("everhour", "both"):
+        key = _env("EVERHOUR_API_KEY")
+        if not key:
+            raise RuntimeError("time_target needs EVERHOUR_API_KEY, which is not set")
+        eh = Everhour(key, dry_run=dry_run, log=log)
+        targets.append(EverhourTarget(eh, (cfg.get("everhour") or {}).get("users", []), date.today().isoformat()))
+    if not targets:
+        raise RuntimeError(f"Unknown time_target '{kind}'")
+    return targets
 
 
 def summary(lines: list[str]):
@@ -115,9 +135,11 @@ def main(argv=None) -> int:
     if args.only in (None, "time"):
         ts = TimeSync(cfg, asana, jibble, log)
         try:
-            st = ts.run(users)
+            targets = time_targets(cfg, asana, users, dry, log)
+            works = ServiceWorks(cfg, asana, log) if (cfg.get("works") or {}).get("enabled") else None
+            st = ts.run(users, targets=targets, works=works)
             lines.append("**Time:** " + ", ".join(f"{k} {v}" for k, v in sorted(st.items())))
-            failed |= st.get("task_errors", 0) > 0
+            failed |= any(v for k, v in st.items() if k.endswith("task_errors"))
         except Exception as e:
             failed = True
             lines.append(f"**Time failed:** {safe_err(e)}")

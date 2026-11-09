@@ -42,6 +42,13 @@ class FakeJibble:
     def activities(self): return self.activity_rows
     def create_activity(self, name): self.calls.append(("activity", name)); self.activity_rows.append({"id": "a-" + name, "name": name})
     def time_entries(self, d0, d1): return self.entries
+    def locations(self): return getattr(self, "location_rows", [])
+
+    def create_location(self, lid, name, address, lat, lng, radius):
+        self.calls.append(("location", lid, radius)); self.location_rows = [*self.locations(), {"id": lid, "name": name}]
+
+    def create_project_at(self, pid, name, cid, lid):
+        self.calls.append(("project_at", pid, lid)); self.project_rows.append({"id": pid, "name": name})
 
 
 class FakeAsana:
@@ -184,7 +191,7 @@ def test_time_sync_safety_rules():
     ts = TimeSync(cfg, a, j, print)
     stats = ts.run(a.users_by_email(""))
     assert not [c for c in a.calls if c[0] in ("entry+", "entry-")]  # nobody credited, nothing mass-deleted
-    assert stats["segments_without_worker"] == 1 and stats["deletes_held_back"] == 12
+    assert stats["asana_people_not_written"] == 1 and stats["asana_deletes_held_back"] == 12
 
 
 def test_holiday_missing_request_flagged():

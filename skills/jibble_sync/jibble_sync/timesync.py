@@ -20,6 +20,7 @@ from datetime import date, timedelta
 from .http import HttpError, safe_err
 from .mapping import canonical_activity, choose_subtask
 from .segments import build_segments
+from .targets import plan
 
 ID_NAMESPACE = uuid.UUID("3f6b7c1e-9a52-4f0e-8c2d-5b1e7a9d4c30")
 
@@ -222,10 +223,28 @@ class TimeSync:
             raise
 
     # -- time ----------------------------------------------------------------
-    def run(self, users_by_email: dict[str, str]):
+    def run(self, users_by_email: dict[str, str], targets: list | None = None, works=None):
+        """targets: where time is written (default: Asana native). works: optional
+        ServiceWorks loader for site visits (job + dated visit tasks + location)."""
         me_gid = self.asana.me()["gid"]
+        if targets is None:
+            from .targets import AsanaTarget
+            targets = [AsanaTarget(self.asana, me_gid, users_by_email)]
         parts = self.load_parts()
+        jobs = works.load() if works else []
+        for job in jobs:
+            for t in [job, *job["_visits"]]:
+                try:
+                    self._ensure_beta(t)
+                except Exception as e:
+                    self.exceptions.append(f"Task {t['gid']}: not added to the beta project ({safe_err(e)})")
+                t["_attrib"] = self.beta
         project_map = self.ensure_jibble(parts)
+        if works:
+            try:
+                works.ensure_jibble(self.jibble)
+            except Exception as e:
+                self.exceptions.append(f"Service works Jibble setup: {safe_err(e)}")
 
         today = date.today()
         start = (today - timedelta(days=self.window_days)).isoformat()
@@ -238,81 +257,106 @@ class TimeSync:
             self.stats["blocks_over_16h_skipped"] = skipped["too_long"]
             self.exceptions.append(f"{skipped['too_long']} clocked block(s) over 16 h skipped (check for a missed clock-out in Jibble)")
 
-        # Read what Asana already holds before mapping, so time already synced
-        # stays on the subtask it was booked to.
         tasks = {t["gid"]: t for part in parts for t in [part, *part["_subtasks"]]}
-        existing: dict[str, list[dict]] = {}
-        held: dict[tuple[str, str], set[str]] = defaultdict(set)  # (worker, day) -> task gids
-        for gid in tasks:
-            try:
-                existing[gid] = self.asana.time_entries(gid)
-            except Exception as e:
-                self.stats["task_errors"] += 1
-                self.exceptions.append(f"Task {gid}: {safe_err(e)} (left unchanged)")
-                continue
-            for key in owned_entries(existing[gid], me_gid, start):
+        tasks.update({t["gid"]: t for job in jobs for t in [job, *job["_visits"]]})
+
+        # Read what each target already holds, so time already synced stays put.
+        owned: dict[str, dict[str, dict]] = {}
+        for tgt in targets:
+            owned[tgt.name] = {}
+            for gid in tasks:
+                try:
+                    owned[tgt.name][gid] = tgt.owned(gid, start)
+                except Exception as e:
+                    self.stats[f"{tgt.name}_task_errors"] += 1
+                    self.exceptions.append(f"{tgt.name} task {gid}: {safe_err(e)} (left unchanged)")
+        primary = targets[0]
+        held: dict[tuple, set[str]] = defaultdict(set)
+        for gid, recs in owned[primary.name].items():
+            for key in recs:
                 held[key].add(gid)
 
-        desired: dict[str, dict[tuple[str, str], float]] = defaultdict(lambda: defaultdict(float))
+        # Map each clocked block to (Asana task, person email)
+        mapped: dict[tuple[str, str, str], float] = defaultdict(float)  # (task, email, day) -> minutes
         for seg in segments:
-            if seg.date < start or seg.project_id not in project_map:
+            if seg.date < start:
                 continue
-            part = project_map[seg.project_id]
+            part = project_map.get(seg.project_id)
+            if not part and not (works and jobs and works.jobs_for(seg.project_id, seg.location_id, seg.coords)[0]):
+                continue  # not a monitored part and not at a monitored site
             email = (people.get(seg.person_id, {}).get("email") or "").lower()
             worker = users_by_email.get(email)
-            if not worker or worker == me_gid:
-                self.stats["segments_without_worker"] += 1
-                self.exceptions.append(
-                    f"Jibble person {seg.person_id}: no Asana user other than the sync account; time not written"
-                )
+            if not email:
+                self.exceptions.append(f"Jibble person {seg.person_id}: no email; time not written")
                 continue
-            act_name = activities.get(seg.activity_id, "")
-            canon = canonical_activity(act_name) if act_name else None
-            target = None
-            if canon:
-                target = choose_subtask(canon, part["_subtasks"], part["name"], worker,
-                                        prefer=held.get((worker, seg.date)))
-            if target is None:
-                target_gid = part["gid"]
-                self.exceptions.append(
-                    f"No subtask for activity '{act_name or 'none'}' on part {part['gid']}; booked to the part task"
-                )
-                self.stats["unmatched_segments"] += 1
+            if part:
+                act_name = activities.get(seg.activity_id, "")
+                canon = canonical_activity(act_name) if act_name else None
+                prefer = held.get((primary.user_for(email), seg.date))
+                target = choose_subtask(canon, part["_subtasks"], part["name"], worker, prefer=prefer) if canon else None
+                if target is None:
+                    self.exceptions.append(f"No subtask for activity '{act_name or 'none'}' on part {part['gid']}; booked to the part task")
+                    self.stats["unmatched_segments"] += 1
+                task_gid = (target or part)["gid"]
             else:
-                target_gid = target["gid"]
-            desired[target_gid][(worker, seg.date)] += seg.minutes
+                site_task, how = works.resolve(seg.project_id, seg.location_id, seg.coords, seg.date, worker)
+                if site_task is None:
+                    self.exceptions.append("Site time matched more than one job and no visit that day; not written")
+                    self.stats["site_segments_ambiguous"] += 1
+                    continue
+                self.stats[f"site_segments_by_{how}"] += 1
+                if how.endswith("-job"):
+                    self.exceptions.append(f"No visit that day for job {site_task['gid']}; booked to the job task")
+                task_gid = site_task["gid"]
+            mapped[(task_gid, email, seg.date)] += seg.minutes
             self.stats["segments_mapped"] += 1
 
-        plans = {}
-        owned_total = 0
-        for gid in existing:
-            want = {k: int(round(v)) for k, v in desired.get(gid, {}).items()}
-            plans[gid] = diff_entries(existing[gid], want, me_gid, start)
-            owned_total += sum(len(v) for v in owned_entries(existing[gid], me_gid, start).values())
+        for tgt in targets:
+            self._apply(tgt, owned[tgt.name], mapped, tasks)
+        if works:
+            self.exceptions += works.exceptions
+            for k, v in works.stats.items():
+                self.stats[k] += v
+        self.exceptions = sorted(set(self.exceptions))
+        return dict(self.stats)
+
+    def _apply(self, tgt, owned: dict[str, dict], mapped: dict, tasks: dict):
+        desired: dict[str, dict[tuple, int]] = defaultdict(dict)
+        acc: dict[str, dict[tuple, float]] = defaultdict(lambda: defaultdict(float))
+        skipped_people = set()
+        for (task_gid, email, day), minutes in mapped.items():
+            user = tgt.user_for(email)
+            if user is None:
+                skipped_people.add(email)
+                continue
+            acc[task_gid][(user, day)] += minutes
+        for task_gid, rows in acc.items():
+            desired[task_gid] = {k: int(round(v)) for k, v in rows.items()}
+        if skipped_people:
+            self.stats[f"{tgt.name}_people_not_written"] = len(skipped_people)
+            self.exceptions.append(f"{tgt.name}: {len(skipped_people)} person(s) with Jibble time have no {tgt.name} user the sync may write for")
+
+        plans = {gid: plan(owned[gid], desired.get(gid, {})) for gid in owned}
+        owned_total = sum(len(v) for recs in owned.values() for v in recs.values())
         delete_total = sum(len(p[2]) for p in plans.values())
         allow_deletes = delete_total <= max(10, owned_total // 2)
         if not allow_deletes:
-            self.stats["deletes_held_back"] = delete_total
+            self.stats[f"{tgt.name}_deletes_held_back"] = delete_total
             self.exceptions.append(
-                f"Delete guard: {delete_total} of {owned_total} synced entries would be removed; "
-                "deletes held back this run (check Jibble data)"
-            )
-
+                f"{tgt.name} delete guard: {delete_total} of {owned_total} synced records would be removed; "
+                "deletes held back this run (check Jibble data)")
         for gid, (creates, updates, deletes) in plans.items():
             try:
-                for who, day, minutes in creates:
-                    self.asana.create_time_entry(gid, {"duration_minutes": minutes, "entered_on": day,
-                                                       "attributable_to": tasks[gid]["_attrib"], "assignee": who})
-                    self.stats["entries_created"] += 1
-                for entry_gid, minutes in updates:
-                    self.asana.update_time_entry(entry_gid, minutes)
-                    self.stats["entries_updated"] += 1
+                for user, day, minutes in creates:
+                    tgt.create(gid, user, day, minutes, tasks[gid].get("_attrib"))
+                    self.stats[f"{tgt.name}_created"] += 1
+                for record, user, day, minutes in updates:
+                    tgt.update(gid, record, user, day, minutes)
+                    self.stats[f"{tgt.name}_updated"] += 1
                 if allow_deletes:
-                    for entry_gid in deletes:
-                        self.asana.delete_time_entry(entry_gid)
-                        self.stats["entries_deleted"] += 1
+                    for record in deletes:
+                        tgt.delete(gid, record)
+                        self.stats[f"{tgt.name}_deleted"] += 1
             except Exception as e:  # one task failing must not stop the rest
-                self.stats["task_errors"] += 1
-                self.exceptions.append(f"Task {gid}: {safe_err(e)}")
-        self.exceptions = sorted(set(self.exceptions))
-        return dict(self.stats)
+                self.stats[f"{tgt.name}_task_errors"] += 1
+                self.exceptions.append(f"{tgt.name} task {gid}: {safe_err(e)}")

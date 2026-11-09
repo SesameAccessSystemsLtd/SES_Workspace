@@ -95,5 +95,26 @@
     "2027-08-30",
     "2027-12-27",
     "2027-12-28"
-  ]
+  ],
+  "time_target": "asana",
+  "everhour": {
+    "users": [],
+    "_note": "Emails of people whose Jibble time is written to Everhour when time_target is everhour or both. Those people must stop logging the same tasks in Everhour by hand."
+  },
+  "works": {
+    "enabled": true,
+    "teamup_project": "1148673682094567",
+    "service_schedule_project": "946830737759624",
+    "address_fields": [
+      "1123371493504891",
+      "1204646933897257",
+      "1205149775492190"
+    ],
+    "regions": [
+      "London"
+    ],
+    "days_ahead": 30,
+    "radius_m": 300,
+    "jibble_client": "Service & Repairs"
+  }
 }

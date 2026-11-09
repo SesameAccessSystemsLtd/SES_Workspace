@@ -15,6 +15,17 @@ class Segment:
     activity_id: str | None
     minutes: float
     entry_id: str
+    location_id: str | None = None
+    coords: tuple[float, float] | None = None  # where the clock-in happened, if Jibble recorded it
+
+
+def _coords(e: dict) -> tuple[float, float] | None:
+    c = e.get("coordinates") or {}
+    lat, lng = c.get("latitude", e.get("latitude")), c.get("longitude", e.get("longitude"))
+    try:
+        return (float(lat), float(lng)) if lat is not None and lng is not None else None
+    except (TypeError, ValueError):
+        return None
 
 
 def _ts(value: str) -> datetime:
@@ -51,5 +62,6 @@ def build_segments(entries: list[dict]) -> tuple[list[Segment], dict]:
                 skipped["too_long"] += 1
                 continue
             date = (e.get("belongsToDate") or e["time"])[:10]
-            segments.append(Segment(person, date, e.get("projectId"), e.get("activityId"), minutes, e.get("id", "")))
+            segments.append(Segment(person, date, e.get("projectId"), e.get("activityId"), minutes, e.get("id", ""),
+                                    e.get("locationId"), _coords(e)))
     return segments, skipped

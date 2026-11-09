@@ -40,6 +40,7 @@ jobs:
           JIBBLE_API_KEY: ${{ secrets.JIBBLE_API_KEY }}
           ASANA_TOKEN: ${{ secrets.ASANA_TOKEN }}
           JIBBLE_SYNC_PEOPLE_JSON: ${{ secrets.JIBBLE_SYNC_PEOPLE_JSON }}
+          EVERHOUR_API_KEY: ${{ secrets.EVERHOUR_API_KEY }}
           MODE: ${{ github.event.inputs.mode || vars.JIBBLE_SYNC_MODE || 'full' }}
         run: |
           if [ "$MODE" = "dry-run" ]; then

@@ -115,6 +115,8 @@
     ],
     "days_ahead": 30,
     "radius_m": 300,
-    "jibble_client": "Service & Repairs"
+    "jibble_client": "Service & Repairs",
+    "generic_projects": [],
+    "_note": "generic_projects: names of catch-all Jibble projects (e.g. a general 'Servicing' project) whose time may still be matched to a site by location or GPS. Time on any other project is never moved to a site."
   }
 }

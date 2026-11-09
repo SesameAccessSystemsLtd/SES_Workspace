@@ -92,6 +92,9 @@ class FakeAsana:
                 {"gid": "s-qc", "name": "QC  - 1555.1009.P1.", "completed": False, "memberships": [], "custom_fields": []}]
 
     def time_entries(self, gid): return self.entries.get(gid, [])
+
+    def time_entries_attributed(self, project, start):
+        return [{**e, "task": {"gid": gid}} for gid, rows in self.entries.items() for e in rows]
     def create_time_entry(self, gid, body): self.calls.append(("entry+", gid, body))
     def update_time_entry(self, egid, minutes): self.calls.append(("entry~", egid, minutes))
     def delete_time_entry(self, egid): self.calls.append(("entry-", egid))
@@ -191,7 +194,7 @@ def test_time_sync_safety_rules():
     ts = TimeSync(cfg, a, j, print)
     stats = ts.run(a.users_by_email(""))
     assert not [c for c in a.calls if c[0] in ("entry+", "entry-")]  # nobody credited, nothing mass-deleted
-    assert stats["asana_people_not_written"] == 1 and stats["asana_deletes_held_back"] == 12
+    assert stats["asana_people_not_written"] == 1 and stats["asana_writes_held_back"] == 12
 
 
 def test_holiday_missing_request_flagged():

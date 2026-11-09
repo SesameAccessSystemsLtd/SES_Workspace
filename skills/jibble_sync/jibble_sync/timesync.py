@@ -20,7 +20,7 @@ from datetime import date, timedelta
 from .http import HttpError, safe_err
 from .mapping import canonical_activity, choose_subtask
 from .segments import build_segments
-from .targets import plan
+from .targets import NotInTarget, plan
 
 ID_NAMESPACE = uuid.UUID("3f6b7c1e-9a52-4f0e-8c2d-5b1e7a9d4c30")
 
@@ -231,7 +231,18 @@ class TimeSync:
             from .targets import AsanaTarget
             targets = [AsanaTarget(self.asana, me_gid, users_by_email)]
         parts = self.load_parts()
-        jobs = works.load() if works else []
+        today = date.today()
+        start = (today - timedelta(days=self.window_days)).isoformat()
+        jobs = []
+        if works:
+            part_tasks = {t["gid"] for part in parts for t in [part, *part["_subtasks"]]}
+            try:
+                # Tasks already holding synced site time are always reconciled (see works.load).
+                held_works = set().union(*(t.held_tasks(self.beta, start) for t in targets)) - part_tasks
+                jobs = works.load(held_works)
+            except Exception as e:
+                self.exceptions.append(f"Service works skipped this run: {safe_err(e)}")
+                works, jobs = None, []
         for job in jobs:
             for t in [job, *job["_visits"]]:
                 try:
@@ -242,12 +253,10 @@ class TimeSync:
         project_map = self.ensure_jibble(parts)
         if works:
             try:
-                works.ensure_jibble(self.jibble)
+                works.ensure_jibble(self.jibble)  # mapping uses deterministic ids, so a failure here only delays setup
             except Exception as e:
                 self.exceptions.append(f"Service works Jibble setup: {safe_err(e)}")
 
-        today = date.today()
-        start = (today - timedelta(days=self.window_days)).isoformat()
         fetch_from = (today - timedelta(days=self.window_days + 1)).isoformat()
         people = {p["id"]: p for p in self.jibble.people()}
         activities = {a["id"]: a.get("name", "") for a in self.jibble.activities()}
@@ -267,6 +276,8 @@ class TimeSync:
             for gid in tasks:
                 try:
                     owned[tgt.name][gid] = tgt.owned(gid, start)
+                except NotInTarget:
+                    self.stats[f"{tgt.name}_tasks_not_found"] += 1
                 except Exception as e:
                     self.stats[f"{tgt.name}_task_errors"] += 1
                     self.exceptions.append(f"{tgt.name} task {gid}: {safe_err(e)} (left unchanged)")
@@ -299,7 +310,8 @@ class TimeSync:
                     self.stats["unmatched_segments"] += 1
                 task_gid = (target or part)["gid"]
             else:
-                site_task, how = works.resolve(seg.project_id, seg.location_id, seg.coords, seg.date, worker)
+                prefer = held.get((primary.user_for(email), seg.date))
+                site_task, how = works.resolve(seg.project_id, seg.location_id, seg.coords, seg.date, worker, prefer)
                 if site_task is None:
                     self.exceptions.append("Site time matched more than one job and no visit that day; not written")
                     self.stats["site_segments_ambiguous"] += 1
@@ -339,24 +351,28 @@ class TimeSync:
         plans = {gid: plan(owned[gid], desired.get(gid, {})) for gid in owned}
         owned_total = sum(len(v) for recs in owned.values() for v in recs.values())
         delete_total = sum(len(p[2]) for p in plans.values())
-        allow_deletes = delete_total <= max(10, owned_total // 2)
-        if not allow_deletes:
-            self.stats[f"{tgt.name}_deletes_held_back"] = delete_total
+        if delete_total > max(10, owned_total // 2):
+            # Probably incomplete data: creating the new records while keeping the old would double count.
+            self.stats[f"{tgt.name}_writes_held_back"] = delete_total
             self.exceptions.append(
-                f"{tgt.name} delete guard: {delete_total} of {owned_total} synced records would be removed; "
-                "deletes held back this run (check Jibble data)")
+                f"{tgt.name} safety stop: {delete_total} of {owned_total} synced records would be removed; "
+                "no changes written this run (check Jibble data)")
+            return
         for gid, (creates, updates, deletes) in plans.items():
             try:
                 for user, day, minutes in creates:
+                    if tgt.blocked(gid, user, day):
+                        self.stats[f"{tgt.name}_skipped_hand_logged"] += 1
+                        self.exceptions.append(f"{tgt.name} task {gid}: time already logged by hand for that person and day; not added")
+                        continue
                     tgt.create(gid, user, day, minutes, tasks[gid].get("_attrib"))
                     self.stats[f"{tgt.name}_created"] += 1
                 for record, user, day, minutes in updates:
                     tgt.update(gid, record, user, day, minutes)
                     self.stats[f"{tgt.name}_updated"] += 1
-                if allow_deletes:
-                    for record in deletes:
-                        tgt.delete(gid, record)
-                        self.stats[f"{tgt.name}_deleted"] += 1
+                for record in deletes:
+                    tgt.delete(gid, record)
+                    self.stats[f"{tgt.name}_deleted"] += 1
             except Exception as e:  # one task failing must not stop the rest
                 self.stats[f"{tgt.name}_task_errors"] += 1
                 self.exceptions.append(f"{tgt.name} task {gid}: {safe_err(e)}")

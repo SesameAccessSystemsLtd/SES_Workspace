@@ -13,9 +13,14 @@ from __future__ import annotations
 
 from collections import defaultdict
 
-from .http import request
+from .http import HttpError, request
 
 EVERHOUR = "https://api.everhour.com"
+SYNC_COMMENT = "Jibble"
+
+
+class NotInTarget(Exception):
+    """The task does not exist in this target (e.g. Everhour has not imported it)."""
 
 
 class AsanaTarget:
@@ -39,6 +44,19 @@ class AsanaTarget:
                 continue
             owned[(who, day)].append({"id": e["gid"], "minutes": int(e.get("duration_minutes") or 0)})
         return owned
+
+    def held_tasks(self, project: str, window_start: str) -> set[str]:
+        """Tasks holding entries the sync wrote, attributed to `project`, inside the window."""
+        out = set()
+        for e in self.asana.time_entries_attributed(project, window_start):
+            who = (e.get("assignee") or {}).get("gid")
+            if (e.get("created_by") or {}).get("gid") == self.me and who and who != self.me \
+                    and (e.get("entered_on") or "")[:10] >= window_start and (e.get("task") or {}).get("gid"):
+                out.add(e["task"]["gid"])
+        return out
+
+    def blocked(self, task_gid: str, user, day: str) -> bool:
+        return False
 
     def create(self, task_gid: str, user: str, day: str, minutes: int, attributable_to: str | None):
         body = {"duration_minutes": minutes, "entered_on": day, "assignee": user}
@@ -75,6 +93,9 @@ class Everhour:
     def task_time(self, task_id: str, date_from: str, date_to: str) -> list[dict]:
         return self._get_pages(f"/tasks/{task_id}/time", {"from": date_from, "to": date_to})
 
+    def user_time(self, user_id, date_from: str, date_to: str) -> list[dict]:
+        return self._get_pages(f"/users/{user_id}/time", {"from": date_from, "to": date_to})
+
     def _write(self, method: str, path: str, body, what: str):
         if self.dry_run:
             self.log(f"[dry-run] Everhour {what}")
@@ -83,11 +104,11 @@ class Everhour:
 
     def add_time(self, task_id: str, user_id: int, day: str, seconds: int):
         return self._write("POST", "/time", {"task": task_id, "user": user_id, "date": day, "time": seconds,
-                                             "comment": "Jibble"}, f"add {seconds}s to {task_id}")
+                                             "comment": SYNC_COMMENT}, f"add {seconds}s to {task_id}")
 
     def set_time(self, record_id, task_id: str, user_id: int, day: str, seconds: int):
-        return self._write("PUT", f"/time/{record_id}", {"task": task_id, "user": user_id, "date": day, "time": seconds},
-                           f"set record {record_id} to {seconds}s")
+        return self._write("PUT", f"/time/{record_id}", {"task": task_id, "user": user_id, "date": day, "time": seconds,
+                                                         "comment": SYNC_COMMENT}, f"set record {record_id} to {seconds}s")
 
     def delete_time(self, record_id):
         return self._write("DELETE", f"/time/{record_id}", None, f"delete record {record_id}")
@@ -102,6 +123,7 @@ class EverhourTarget:
         self.users = {u["email"].lower(): u["id"] for u in everhour.users()
                       if u.get("email") and u["email"].lower() in allowed and u.get("status", "active") != "removed"}
         self.allowed_ids = set(self.users.values())
+        self._foreign: set[tuple] = set()
 
     @staticmethod
     def task_id(task_gid: str) -> str:
@@ -110,15 +132,47 @@ class EverhourTarget:
     def user_for(self, email: str) -> int | None:
         return self.users.get((email or "").lower())
 
+    @staticmethod
+    def _user(r: dict):
+        u = r.get("user")
+        return u.get("id") if isinstance(u, dict) else u
+
+    @staticmethod
+    def _ours(r: dict) -> bool:
+        return (r.get("comment") or "").strip() == SYNC_COMMENT
+
     def owned(self, task_gid: str, window_start: str) -> dict[tuple, list[dict]]:
+        """Records the sync wrote (comment 'Jibble') for listed people. Anything else is
+        hand-logged: never changed, and no record is added beside it (Everhour would merge them)."""
+        try:
+            rows = self.eh.task_time(self.task_id(task_gid), window_start, self.today)
+        except HttpError as e:
+            if e.status == 404:
+                raise NotInTarget(task_gid) from e
+            raise
         owned: dict[tuple, list[dict]] = defaultdict(list)
-        for r in self.eh.task_time(self.task_id(task_gid), window_start, self.today):
-            user = r.get("user")
-            user = user.get("id") if isinstance(user, dict) else user
-            day = (r.get("date") or "")[:10]
-            if user in self.allowed_ids and day >= window_start and int(r.get("time") or 0) > 0:
+        for r in rows:
+            user, day = self._user(r), (r.get("date") or "")[:10]
+            if user not in self.allowed_ids or day < window_start or int(r.get("time") or 0) <= 0:
+                continue
+            if self._ours(r):
                 owned[(user, day)].append({"id": r["id"], "minutes": int(round(int(r["time"]) / 60))})
+            else:
+                self._foreign.add((task_gid, user, day))
         return owned
+
+    def held_tasks(self, project: str, window_start: str) -> set[str]:
+        out = set()
+        for uid in self.allowed_ids:
+            for r in self.eh.user_time(uid, window_start, self.today):
+                task = r.get("task")
+                tid = task.get("id") if isinstance(task, dict) else task
+                if self._ours(r) and isinstance(tid, str) and tid.startswith("as:"):
+                    out.add(tid[3:])
+        return out
+
+    def blocked(self, task_gid: str, user, day: str) -> bool:
+        return (task_gid, user, day) in self._foreign
 
     def create(self, task_gid: str, user, day: str, minutes: int, attributable_to: str | None):
         self.eh.add_time(self.task_id(task_gid), user, day, minutes * 60)

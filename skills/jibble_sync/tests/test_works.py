@@ -30,7 +30,8 @@ class WorksAsana(FakeAsana):
 
     def search_tasks(self, ws, params, fields):
         assert params["projects.any"] == W["teamup_project"]
-        return [dict(t) for t in self.rows.values() if W["teamup_project"] in {m["project"]["gid"] for m in t["memberships"]}]
+        return [dict(t) for t in self.rows.values() if W["teamup_project"] in {m["project"]["gid"] for m in t["memberships"]}
+                and t["gid"] not in getattr(self, "hidden", ())]
 
 
 def geocode(pcs):
@@ -118,7 +119,7 @@ class FakeEverhour:
     def __init__(self):
         self.calls = []
         self.records = {"as:T1": [
-            {"id": 11, "user": 7, "date": D(1), "time": 3600},     # synced earlier for Adam
+            {"id": 11, "user": 7, "date": D(1), "time": 3600, "comment": "Jibble"},  # synced earlier for Adam
             {"id": 12, "user": {"id": 9}, "date": D(1), "time": 1800},  # someone not moved to Jibble
         ]}
 
@@ -142,6 +143,9 @@ def test_everhour_target_only_touches_listed_people():
         tgt.create("T1", u, d, m, None)
     assert ("set", 11, 5400) in eh.calls and ("add", "as:T1", 7, D(2), 1800) in eh.calls and not deletes
     assert plan(owned, {}) == ([], [], [{"id": 11, "minutes": 60}])
+    # Adam's own timer entry on another day is not ours, and nothing is added beside it.
+    eh.records["as:T1"].append({"id": 13, "user": 7, "date": D(3), "time": 600, "comment": "fixed hinge"})
+    assert (7, D(3)) not in tgt.owned("T1", D(21)) and tgt.blocked("T1", 7, D(3))
 
 
 def test_lookup_falls_back_to_terminated_postcodes():
@@ -175,3 +179,59 @@ def test_overlapping_geofences_find_the_workers_visit_next_door():
     assert w.resolve(None, "LA", None, "2026-11-10", "u-adam") == (b["_visits"][0], "location")
     # No visit anywhere that day: the matched site's job
     assert w.resolve(None, "LA", None, "2026-11-12", "u-adam") == (a, "location-job")
+
+
+def _adam_at_site(j, day, minutes=120, **extra):
+    j.entries += [
+        {"id": f"in{day}{len(j.entries)}", "personId": "p-adam", "type": "In", "time": f"{day}T08:00:00Z", "belongsToDate": day, **extra},
+        {"id": f"out{day}{len(j.entries)}", "personId": "p-adam", "type": "Out", "time": f"{day}T{8 + minutes // 60:02d}:00:00Z", "belongsToDate": day},
+    ]
+
+
+def _run(a, j):
+    cfg = {**CFG, "asana": {**CFG["asana"], "monitored_parts": []}}
+    ts = TimeSync(cfg, a, j, print)
+    return ts, ts.run(a.users_by_email(""), works=ServiceWorks(cfg, a, print, geocode=geocode))
+
+
+def test_visit_missing_from_search_keeps_its_time_and_no_duplicate():
+    a, j = _setup()
+    _adam_at_site(j, D(1), locationId=location_id("EC3V 0BG"))
+    a.entries["V1"] = [{"gid": "e1", "created_by": {"gid": "me"}, "assignee": {"gid": "u-adam"}, "entered_on": D(1), "duration_minutes": 120}]
+    a.hidden = {"V1"}  # search lags behind an edit
+    ts, stats = _run(a, j)
+    assert not [c for c in a.calls if c[0] in ("entry+", "entry-", "entry~")]
+    assert stats["held_visits_added_back"] == 1
+
+
+def test_jibble_setup_failure_does_not_remove_site_time():
+    a, j = _setup()
+    _adam_at_site(j, D(1), locationId=location_id("EC3V 0BG"))
+    a.entries["V1"] = [{"gid": "e1", "created_by": {"gid": "me"}, "assignee": {"gid": "u-adam"}, "entered_on": D(1), "duration_minutes": 120}]
+
+    def down():
+        from jibble_sync.http import HttpError
+        raise HttpError(503, "", "GET", "https://workspace.prod.jibble.io/v1/Locations")
+    j.locations = down
+    ts, stats = _run(a, j)
+    assert not [c for c in a.calls if c[0] in ("entry+", "entry-", "entry~")]
+    assert any("Jibble setup" in x for x in ts.exceptions)
+
+
+def test_time_on_another_project_is_not_taken_by_location():
+    a, j = _setup()
+    _adam_at_site(j, D(1), locationId=location_id("EC3V 0BG"), projectId="some-other-project")
+    ts, stats = _run(a, j)
+    assert not [c for c in a.calls if c[0] == "entry+"]
+
+
+def test_failed_held_lookup_skips_site_work():
+    a, j = _setup()
+    _adam_at_site(j, D(1), locationId=location_id("EC3V 0BG"))
+
+    def broken(project, start):
+        raise RuntimeError("boom")
+    a.time_entries_attributed = broken
+    ts, stats = _run(a, j)
+    assert not [c for c in a.calls if c[0] in ("entry+", "entry-", "addProject")]
+    assert any("Service works skipped" in x for x in ts.exceptions)

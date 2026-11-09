@@ -41,8 +41,8 @@ Do not edit that field by hand.
 - Time for Jibble people with no Asana user (or whose Asana user is the sync account) is not written; it is listed
   under Exceptions. Use a dedicated admin account for `ASANA_TOKEN`, not a person who tracks their own time.
 - Once time is booked to a subtask it stays there, even if subtasks are later completed or reassigned.
-- Safety: if a run would delete more than half of the synced entries (and more than 10), deletes are held back
-  and reported, in case Jibble returned incomplete data. Clocked blocks over 16 h (a missed clock-out) are skipped and reported.
+- Safety: if a run would delete more than half of the synced entries (and more than 10), nothing is written for
+  that target that run (no creates either, so nothing is double counted) and it is reported, in case Jibble returned incomplete data. Clocked blocks over 16 h (a missed clock-out) are skipped and reported.
 
 **Service works (TeamUp visits -> Jibble sites -> Asana time)**
 
@@ -50,13 +50,20 @@ Do not edit that field by hand.
   the nearest parent in **4.0 Service Schedule**; the site postcode comes from the job's "Lift Address" (or an install's
   "Site Address" / a T-Card's "Address", or a `SITE ADDRESS:` line in the notes). Postcodes are geocoded with
   postcodes.io and only sites in `works.regions` (London) are kept. Holidays, uni days and other tasks with no site are ignored.
-- In Jibble each site gets a **Location** with a 300 m geofence (Jibble's minimum for geofence automation) and each job a
+- In Jibble each site gets a **Location** with a 300 m radius (Jibble's minimum for geofence automation) and each job a
   **Project** at that location, under the client "Service & Repairs". IDs are derived from the postcode and the job's
-  Asana ID, so re-runs never duplicate them; an existing location or project with the same name is adopted.
-- A clocked block is matched to the job by the Jibble project picked, else by the Jibble location, else by GPS within
-  the geofence radius; then to the visit task due that day, preferring the one assigned to the worker (each engineer on
-  a two-person visit has their own task). A visit a day either side counts only for the worker's own task.
-  No visit that day -> booked to the job task and listed under Exceptions. Visits and jobs used are added to the beta project.
+  Asana ID, so re-runs never duplicate them. Existing projects are never adopted by name; a clash is reported.
+  The sync does not add locations to work schedules: with "restrict members to locations" on, a schedule's location
+  list limits where its members can clock in, so add sites there only on purpose (and keep the workshop on it).
+  Retired postcodes (common on older buildings) are geocoded from postcodes.io's terminated list.
+- A clocked block is matched to the job by the Jibble project picked, else (only when no project, or a project listed in
+  `works.generic_projects`, was picked) by the Jibble location, else by GPS within the radius. Then to the visit task
+  due that day: one already holding that time first, then the worker's own task (each engineer on a two-person visit has
+  their own), across every site whose radius covers the clock-in, as central London sites overlap. A visit a day either
+  side counts only for the worker's own task. No visit that day -> booked to the job task and listed under Exceptions.
+  Visits and jobs used are added to the beta project.
+- Tasks that already hold synced site time are always reconciled, even when Asana search misses them or they move out
+  of the window, so time is moved rather than duplicated. If that lookup fails, site time is skipped for the run.
 - Missing postcodes on 4.0 records are listed under Exceptions (by task ID) so they can be fixed in Asana.
 
 **Where time is written** (`time_target` in `config.json`)
@@ -64,7 +71,7 @@ Do not edit that field by hand.
 | Value | Result |
 | --- | --- |
 | `asana` (default) | Asana native Actual time, as above |
-| `everhour` | Everhour time records on the same Asana tasks (`as:<task id>`), for the people listed in `everhour.users` only. Needs `EVERHOUR_API_KEY` (an Everhour admin's key). Everhour keeps one record per person, task and day, so those people must stop logging the same tasks in Everhour by hand. |
+| `everhour` | Everhour time records on the same Asana tasks (`as:<task id>`), for the people listed in `everhour.users` only. Needs `EVERHOUR_API_KEY` (an Everhour admin's key). The sync owns only records it wrote (comment "Jibble"); where someone already logged time by hand for that task and day, nothing is added and it is reported, because Everhour merges records per person, task and day. |
 | `both` | Both of the above (for side-by-side comparison) |
 
 **Reports (read-only, Everhour layout)** - run locally, never in Actions (the repo is public):

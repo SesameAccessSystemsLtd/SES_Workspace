@@ -1,6 +1,8 @@
 """Asana REST client covering what the sync needs."""
 from __future__ import annotations
 
+from datetime import datetime, timedelta
+
 from .http import request
 
 BASE = "https://app.asana.com/api/1.0"
@@ -57,19 +59,26 @@ class Asana:
         return self._pages("/tasks", {"project": project, "opt_fields": fields, "modified_since": since_iso})
 
     def search_tasks(self, workspace: str, params: dict, fields: str) -> list[dict]:
-        """Workspace search, paged backwards by created_at (search has no offset)."""
-        out: list[dict] = []
+        """Workspace search, paged backwards by created_at (search has no offset).
+
+        created_at.before is exclusive, so each page asks for 1 ms past the last
+        row's time and rows already seen are dropped; tasks created in the same
+        millisecond across a page break are not lost.
+        """
+        out: dict[str, dict] = {}
         before = None
         for _ in range(50):
             p = {**params, "opt_fields": fields + ",created_at", "sort_by": "created_at", "sort_ascending": "false", "limit": 100}
             if before:
                 p["created_at.before"] = before
             rows = self._call("GET", f"/workspaces/{workspace}/tasks/search", params=p) or []
-            out.extend(rows)
-            if len(rows) < 100:
-                break
-            before = rows[-1]["created_at"]
-        return out
+            new = [r for r in rows if r["gid"] not in out]
+            out.update((r["gid"], r) for r in rows)
+            if len(rows) < 100 or not new:
+                return list(out.values())
+            last = datetime.fromisoformat(rows[-1]["created_at"].replace("Z", "+00:00")) + timedelta(milliseconds=1)
+            before = last.isoformat(timespec="milliseconds").replace("+00:00", "Z")
+        raise RuntimeError("Asana search did not finish within 50 pages")
 
     def create_task(self, data: dict, what: str):
         return self._write("POST", "/tasks", data, f"create task ({what})")
@@ -97,6 +106,13 @@ class Asana:
         return self._pages(
             f"/tasks/{task_gid}/time_tracking_entries",
             {"opt_fields": "duration_minutes,entered_on,created_by.gid,assignee.gid,attributable_to.gid"},
+        )
+
+    def time_entries_attributed(self, project: str, start_date: str) -> list[dict]:
+        return self._pages(
+            "/time_tracking_entries",
+            {"attributable_to": project, "entered_on_start_date": start_date,
+             "opt_fields": "task.gid,entered_on,created_by.gid,assignee.gid,duration_minutes"},
         )
 
     def create_time_entry(self, task_gid: str, body: dict):

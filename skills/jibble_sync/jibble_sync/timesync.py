@@ -101,6 +101,9 @@ class TimeSync:
         # Private per-person rules (JIBBLE_SYNC_PEOPLE_JSON), e.g. {"scope": {"name@x": "teamup"}}:
         # "teamup" = time is written only to TeamUp visit tasks, never to build tasks or job tasks.
         self.scopes = {k.lower(): v for k, v in ((cfg.get("people") or {}).get("scope") or {}).items()}
+        for jibble_email, work_email in ((cfg.get("people") or {}).get("email_aliases") or {}).items():
+            if work_email.lower() in self.scopes:  # a rule set on the work email also covers the Jibble login
+                self.scopes.setdefault(jibble_email.lower(), self.scopes[work_email.lower()])
         self.fallback_client = cfg["jibble"].get("fallback_client", "Jibble trial")
         self.activity_list = cfg["jibble"].get("activities", [])
         self.stats = defaultdict(int)

@@ -83,6 +83,19 @@ def clients(dry_run: bool, log):
     return Asana(token, dry_run=dry_run, log=log), Jibble(jid, jsecret, dry_run=dry_run, log=log), []
 
 
+def email_aliases(cfg: dict) -> dict[str, str]:
+    """Private map {jibble email: work email} for people whose Jibble login is a personal address."""
+    return {k.strip().lower(): v.strip().lower() for k, v in ((cfg.get("people") or {}).get("email_aliases") or {}).items()}
+
+
+def with_aliases(users: dict[str, str], cfg: dict) -> dict[str, str]:
+    out = dict(users)
+    for jibble_email, work_email in email_aliases(cfg).items():
+        if work_email in users and jibble_email not in users:
+            out[jibble_email] = users[work_email]
+    return out
+
+
 def time_targets(cfg: dict, asana, users: dict, dry_run: bool, log) -> list:
     """Where Jibble time is written: config time_target = asana (default), everhour or both."""
     kind = (cfg.get("time_target") or "asana").lower()
@@ -94,7 +107,8 @@ def time_targets(cfg: dict, asana, users: dict, dry_run: bool, log) -> list:
         if not key:
             raise RuntimeError("time_target needs EVERHOUR_API_KEY, which is not set")
         eh = Everhour(key, dry_run=dry_run, log=log)
-        targets.append(EverhourTarget(eh, (cfg.get("everhour") or {}).get("users", []), date.today().isoformat()))
+        targets.append(EverhourTarget(eh, (cfg.get("everhour") or {}).get("users", []), date.today().isoformat(),
+                                      aliases=email_aliases(cfg)))
     if not targets:
         raise RuntimeError(f"Unknown time_target '{kind}'")
     return targets
@@ -151,14 +165,14 @@ def main(argv=None) -> int:
     if args.cmd == "report":
         rep = Reports(cfg, asana, jibble, log)
         if args.kind == "payroll":
-            users = asana.users_by_email(cfg["asana"]["workspace"])
+            users = with_aliases(asana.users_by_email(cfg["asana"]["workspace"]), cfg)
             n = rep.payroll(args.d0, args.d1, args.out, users)
         else:
             n = rep.manufacturing(args.d0, args.d1, args.out, args.client)
         log(f"Wrote {n} rows to {args.out}")
         return 0
 
-    users = asana.users_by_email(cfg["asana"]["workspace"])
+    users = with_aliases(asana.users_by_email(cfg["asana"]["workspace"]), cfg)
     lines = [f"## Jibble sync ({'dry run' if dry else 'full'})"]
     failed = False
     if args.only in (None, "holiday"):

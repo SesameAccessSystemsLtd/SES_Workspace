@@ -299,3 +299,15 @@ def test_doppler_secrets_loaded_and_masked():
     assert env["JIBBLE_KEY_ID"] == "kid" and env["ASANA_TOKEN"] == "already-set" and "UNRELATED" not in env
     assert printed == ["::add-mask::kid", "::add-mask::ksecret"]
     assert load_doppler(http=http, environ={}, out=printed.append) == 0
+
+
+def test_personal_jibble_email_maps_to_work_account():
+    from jibble_sync.cli import with_aliases
+    cfg = {"people": {"email_aliases": {"DannyB@icloud.com": "dannycox@x"}}}
+    users = with_aliases({"dannycox@x": "u-danny", "adam@x": "u-adam"}, cfg)
+    assert users["dannyb@icloud.com"] == "u-danny" and users["adam@x"] == "u-adam"
+    assert with_aliases({"adam@x": "u-adam"}, cfg) == {"adam@x": "u-adam"}  # unknown work email: nothing added
+    eh = FakeEverhour()
+    eh.users = lambda: [{"id": 5, "email": "dannycox@x"}]
+    tgt = EverhourTarget(eh, ["dannycox@x"], TODAY.isoformat(), aliases={"dannyb@icloud.com": "dannycox@x"})
+    assert tgt.user_for("DannyB@icloud.com") == 5

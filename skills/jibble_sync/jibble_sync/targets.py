@@ -117,8 +117,9 @@ class Everhour:
 class EverhourTarget:
     name = "everhour"
 
-    def __init__(self, everhour: Everhour, allowed_emails: list[str], today: str):
+    def __init__(self, everhour: Everhour, allowed_emails: list[str], today: str, aliases: dict | None = None):
         self.eh, self.today = everhour, today
+        self.aliases = aliases or {}
         allowed = {e.lower() for e in allowed_emails}
         self.users = {u["email"].lower(): u["id"] for u in everhour.users()
                       if u.get("email") and u["email"].lower() in allowed and u.get("status", "active") != "removed"}
@@ -130,7 +131,8 @@ class EverhourTarget:
         return f"as:{task_gid}"
 
     def user_for(self, email: str) -> int | None:
-        return self.users.get((email or "").lower())
+        email = (email or "").lower()
+        return self.users.get(email) or self.users.get(self.aliases.get(email, ""))
 
     @staticmethod
     def _user(r: dict):

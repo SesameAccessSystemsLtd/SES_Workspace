@@ -101,10 +101,11 @@ memory, and masks each one in the Actions log. Locally, `doppler run -- python -
 | `JIBBLE_KEY_ID` | Jibble API key ID |
 | `JIBBLE_API_KEY` | Jibble API key secret |
 | `ASANA_TOKEN` | Personal access token of the Asana **admin** account the sync acts as |
-| `JIBBLE_SYNC_PEOPLE_JSON` | Optional private per-person settings, kept out of the public repo, e.g. `{"hours_per_day": {"Name": 8}, "scope": {"name@sesameaccess.com": "teamup"}}` |
+| `JIBBLE_SYNC_PEOPLE_JSON` | Optional private per-person settings, kept out of the public repo, e.g. `{"hours_per_day": {"Name": 8}, "scope": {"name@sesameaccess.com": "teamup"}, "email_aliases": {"personal@icloud.com": "name@sesameaccess.com"}}` |
 | `EVERHOUR_API_KEY` | Only when `time_target` is `everhour` or `both` |
 
-`scope: "teamup"` makes a person's Jibble time go **only** to TeamUp visit tasks (used for the foreman, who has many
+`email_aliases` links a Jibble login on a personal address to the person's Asana (work) account, so their holidays
+and time still land on their own Asana user. `scope: "teamup"` makes a person's Jibble time go **only** to TeamUp visit tasks (used for the foreman, who has many
 other tasks assigned): never to build subtasks, and never to a job task on a day with no TeamUp visit.
 
 Without the required secrets the workflow logs "Secrets not configured" and exits cleanly. The workflow has

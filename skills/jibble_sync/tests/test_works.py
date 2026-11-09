@@ -7,6 +7,7 @@ from jibble_sync.works import ServiceWorks, job_project_id, location_id, metres
 
 from test_flows import CFG, FakeAsana, FakeJibble
 
+CFG = {**CFG, "works": {**CFG["works"], "regions": ["London"]}}  # the live config covers the whole UK
 TODAY = date.today()
 D = lambda n: (TODAY - timedelta(days=n)).isoformat()  # noqa: E731
 W = CFG["works"]
@@ -235,3 +236,66 @@ def test_failed_held_lookup_skips_site_work():
     ts, stats = _run(a, j)
     assert not [c for c in a.calls if c[0] in ("entry+", "entry-", "addProject")]
     assert any("Service works skipped" in x for x in ts.exceptions)
+
+
+def test_teamup_only_person_never_books_to_build_or_job_tasks():
+    a, j = _setup()
+    j.people_rows.append({"id": "p-andy", "fullName": "Andy", "email": "andy@x"})
+    a.users_by_email = lambda ws: {"adam@x": "u-adam", "josh@x": "u-josh", "andy@x": "u-andy"}
+    d1, d3 = D(1), D(3)
+    lid = location_id("EC3V 0BG")
+    j.entries = [
+        {"id": "1", "personId": "p-andy", "type": "In", "time": f"{d1}T08:00:00Z", "belongsToDate": d1, "locationId": lid},
+        {"id": "2", "personId": "p-andy", "type": "Out", "time": f"{d1}T09:00:00Z", "belongsToDate": d1},
+        {"id": "3", "personId": "p-andy", "type": "In", "time": f"{d3}T08:00:00Z", "belongsToDate": d3, "locationId": lid},
+        {"id": "4", "personId": "p-andy", "type": "Out", "time": f"{d3}T09:00:00Z", "belongsToDate": d3},
+    ]
+    cfg = {**CFG, "asana": {**CFG["asana"], "monitored_parts": []}, "people": {"scope": {"Andy@x": "teamup"}}}
+    ts = TimeSync(cfg, a, j, print)
+    stats = ts.run(a.users_by_email(""), works=ServiceWorks(cfg, a, print, geocode=geocode))
+    plus = {(c[1], c[2]["assignee"]) for c in a.calls if c[0] == "entry+"}
+    assert plus == {("V1", "u-andy")}  # the visit that day; the no-visit day is not booked to the job
+    assert stats["site_segments_no_visit_out_of_scope"] == 1
+
+
+def test_install_without_address_takes_the_site_of_the_matching_4_0_record():
+    S, T = W["service_schedule_project"], W["teamup_project"]
+    rows = [
+        _task("I1", "1037 - Langley Street - Install MS ", ["install-project"]),
+        _task("VI", "1037 - Langley Street Install wk9", [T], parent="I1", assignee="u-adam", due=D(1)),
+        _task("R1", "1087 - Langley St KPF - 1037", [S], address="7a Langley Street, EC3V 0BG"),
+        _task("R2", "10370 - Other - 999", [S], address="M4 1AA"),
+    ]
+    a = WorksAsana(rows)
+    base = a.search_tasks
+
+    def search(ws, params, fields):
+        if params.get("text"):
+            return [dict(t) for t in rows if params["text"] in t["name"]]
+        return base(ws, params, fields)
+    a.search_tasks = search
+    works = ServiceWorks(CFG, a, print, geocode=geocode)
+    jobs = works.load()
+    assert [j["gid"] for j in jobs] == ["I1"] and jobs[0]["_postcode"] == "EC3V 0BG"
+    assert works.stats["sites_by_job_number"] == 1
+
+
+def test_all_uk_regions():
+    a, j = _setup()
+    cfg = {**CFG, "works": {**W, "regions": ["*"]}}
+    jobs = ServiceWorks(cfg, a, print, geocode=geocode).load()
+    assert {x["gid"] for x in jobs} == {"J1", "J2"}
+
+
+def test_doppler_secrets_loaded_and_masked():
+    from jibble_sync.cli import load_doppler
+    env = {"DOPPLER_TOKEN": "dp.st.x", "GITHUB_ACTIONS": "true", "ASANA_TOKEN": "already-set"}
+    printed = []
+
+    def http(method, url, headers=None, params=None, **kw):
+        assert headers["Authorization"] == "Bearer dp.st.x" and params == {"format": "json"}
+        return {"JIBBLE_KEY_ID": "kid", "JIBBLE_API_KEY": "ksecret", "ASANA_TOKEN": "other", "UNRELATED": "nope"}
+    assert load_doppler(http=http, environ=env, out=printed.append) == 2
+    assert env["JIBBLE_KEY_ID"] == "kid" and env["ASANA_TOKEN"] == "already-set" and "UNRELATED" not in env
+    assert printed == ["::add-mask::kid", "::add-mask::ksecret"]
+    assert load_doppler(http=http, environ={}, out=printed.append) == 0

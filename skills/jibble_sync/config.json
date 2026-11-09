@@ -111,7 +111,7 @@
       "1205149775492190"
     ],
     "regions": [
-      "London"
+      "*"
     ],
     "days_ahead": 30,
     "radius_m": 300,

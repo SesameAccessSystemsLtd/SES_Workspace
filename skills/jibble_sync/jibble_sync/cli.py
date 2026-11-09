@@ -18,7 +18,7 @@ from pathlib import Path
 
 from .asana import Asana
 from .holiday import HolidaySync
-from .http import safe_err
+from .http import request, safe_err
 from .jibble import Jibble
 from .reports import Reports
 from .targets import AsanaTarget, Everhour, EverhourTarget
@@ -26,6 +26,35 @@ from .timesync import TimeSync
 from .works import ServiceWorks
 
 HERE = Path(__file__).resolve().parent.parent
+
+
+DOPPLER_DOWNLOAD = "https://api.doppler.com/v3/configs/config/secrets/download"
+SECRET_NAMES = ("JIBBLE_KEY_ID", "JIBBLE_CLIENT_ID", "JIBBLE_API_KEY", "JIBBLE_CLIENT_SECRET", "ASANA_TOKEN",
+                "ASANA_PERSONAL_ACCESS_TOKEN", "ASANA_PAT_MCP_KEY", "EVERHOUR_API_KEY", "JIBBLE_SYNC_PEOPLE_JSON")
+
+
+def load_doppler(http=request, environ=os.environ, out=print) -> int:
+    """Fetch the sync's secrets from Doppler at run time when DOPPLER_TOKEN is set.
+
+    The token should be a read-only service token for a config holding only these
+    secrets, so the API keys themselves live in Doppler alone. Values stay in this
+    process; in GitHub Actions each one is masked so it can never appear in a log.
+    """
+    token = environ.get("DOPPLER_TOKEN")
+    if not token:
+        return 0
+    data = http("GET", DOPPLER_DOWNLOAD, headers={"Authorization": f"Bearer {token}"}, params={"format": "json"}) or {}
+    loaded = 0
+    for name in SECRET_NAMES:
+        value = data.get(name)
+        if isinstance(value, str) and value and not environ.get(name):
+            if environ.get("GITHUB_ACTIONS") == "true":
+                for line in value.splitlines():
+                    if line.strip():
+                        out(f"::add-mask::{line}")
+            environ[name] = value
+            loaded += 1
+    return loaded
 
 
 def _env(*names: str) -> str | None:
@@ -95,6 +124,14 @@ def main(argv=None) -> int:
     args = ap.parse_args(argv)
 
     log = lambda msg: print(msg, flush=True)  # noqa: E731
+    try:
+        n = load_doppler()
+        if n:
+            log(f"Loaded {n} secret(s) from Doppler")
+    except Exception as e:  # never print the response: it would hold the secrets
+        log(f"Doppler secrets unavailable: {safe_err(e)}")
+        summary([f"**Jibble sync failed:** Doppler secrets unavailable ({safe_err(e)})"])
+        return 1
     cfg = load_config(args.config)
     dry = getattr(args, "dry_run", False) or args.cmd != "run"
     asana, jibble, missing = clients(dry, log)

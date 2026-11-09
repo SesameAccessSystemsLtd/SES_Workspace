@@ -98,6 +98,9 @@ class TimeSync:
         self.f_est_time = f["estimated_time"]
         self.seed_estimates = cfg.get("seed_estimated_time_from_estimated_hours", True)
         self.window_days = cfg.get("time_window_days", 21)
+        # Private per-person rules (JIBBLE_SYNC_PEOPLE_JSON), e.g. {"scope": {"name@x": "teamup"}}:
+        # "teamup" = time is written only to TeamUp visit tasks, never to build tasks or job tasks.
+        self.scopes = {k.lower(): v for k, v in ((cfg.get("people") or {}).get("scope") or {}).items()}
         self.fallback_client = cfg["jibble"].get("fallback_client", "Jibble trial")
         self.activity_list = cfg["jibble"].get("activities", [])
         self.stats = defaultdict(int)
@@ -300,6 +303,10 @@ class TimeSync:
             if not email:
                 self.exceptions.append(f"Jibble person {seg.person_id}: no email; time not written")
                 continue
+            scope = self.scopes.get(email)
+            if part and scope == "teamup":
+                self.stats["segments_out_of_scope"] += 1  # this person's time goes to TeamUp visits only
+                continue
             if part:
                 act_name = activities.get(seg.activity_id, "")
                 canon = canonical_activity(act_name) if act_name else None
@@ -315,6 +322,10 @@ class TimeSync:
                 if site_task is None:
                     self.exceptions.append("Site time matched more than one job and no visit that day; not written")
                     self.stats["site_segments_ambiguous"] += 1
+                    continue
+                if how.endswith("-job") and scope == "teamup":
+                    self.stats["site_segments_no_visit_out_of_scope"] += 1
+                    self.exceptions.append("Site time for a TeamUp-only person with no TeamUp visit that day; not written")
                     continue
                 self.stats[f"site_segments_by_{how}"] += 1
                 if how.endswith("-job"):

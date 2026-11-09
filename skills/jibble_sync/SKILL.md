@@ -49,7 +49,9 @@ Do not edit that field by hand.
 - Every TeamUp task due in the next 30 days (and back over the 21-day time window) is a candidate visit. Its job is
   the nearest parent in **4.0 Service Schedule**; the site postcode comes from the job's "Lift Address" (or an install's
   "Site Address" / a T-Card's "Address", or a `SITE ADDRESS:` line in the notes). Postcodes are geocoded with
-  postcodes.io and only sites in `works.regions` (London) are kept. Holidays, uni days and other tasks with no site are ignored.
+  postcodes.io and only sites in `works.regions` are kept (`["*"]` = anywhere in the UK; `["London"]` to narrow).
+  Installs with no address of their own take the site of the one 4.0 record whose name carries the same job number
+  (e.g. "1037 - Langley Street - Install MS" -> "1087 - Langley St KPF - 1037"). Holidays, uni days and other tasks with no site are ignored.
 - In Jibble each site gets a **Location** with a 300 m radius (Jibble's minimum for geofence automation) and each job a
   **Project** at that location, under the client "Service & Repairs". IDs are derived from the postcode and the job's
   Asana ID, so re-runs never duplicate them. Existing projects are never adopted by name; a clash is reported.
@@ -86,17 +88,27 @@ e.g. `{"hours_per_day": {"Michał Jurczykowski": 8}}`), skipping weekends and ba
 Jibble's duration. Labels: `0010 Annual Leave`, `0006 - work from home`, and `0014 Bank Holiday` rows for everyone with
 time in the period (dates in `config.json`, England and Wales, 2026-2027). Sick leave keeps its Jibble policy name.
 
-## Secrets
+## Secrets (Doppler only)
 
-| Name | What |
+The API keys live only in Doppler. GitHub holds a single secret, `DOPPLER_TOKEN`: a **read-only service token**
+for a Doppler config that contains just the secrets below (best as a dedicated config, e.g. project `jibble_sync`,
+config `prd`, whose values are Doppler references to the existing keys such as `${vps_hermes.prd.JIBBLE_KEY_ID}`,
+so each key is stored once). At run time `cli.load_doppler` downloads that config over HTTPS, keeps the values in
+memory, and masks each one in the Actions log. Locally, `doppler run -- python -m jibble_sync ...` works as before.
+
+| Name (in Doppler) | What |
 | --- | --- |
-| `JIBBLE_KEY_ID` | Jibble API key ID (Doppler `vps_hermes/prd`) |
+| `JIBBLE_KEY_ID` | Jibble API key ID |
 | `JIBBLE_API_KEY` | Jibble API key secret |
 | `ASANA_TOKEN` | Personal access token of the Asana **admin** account the sync acts as |
-| `JIBBLE_SYNC_PEOPLE_JSON` | Optional per-person contracted hours |
+| `JIBBLE_SYNC_PEOPLE_JSON` | Optional private per-person settings, kept out of the public repo, e.g. `{"hours_per_day": {"Name": 8}, "scope": {"name@sesameaccess.com": "teamup"}}` |
 | `EVERHOUR_API_KEY` | Only when `time_target` is `everhour` or `both` |
 
-Without the three required secrets the workflow logs "Secrets not configured" and exits cleanly.
+`scope: "teamup"` makes a person's Jibble time go **only** to TeamUp visit tasks (used for the foreman, who has many
+other tasks assigned): never to build subtasks, and never to a job task on a day with no TeamUp visit.
+
+Without the required secrets the workflow logs "Secrets not configured" and exits cleanly. The workflow has
+read-only repo permissions, runs only on schedule or by hand (never on pull requests), and does not keep the git token.
 
 ## Commands
 

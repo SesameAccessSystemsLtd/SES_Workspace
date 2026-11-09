@@ -27,6 +27,7 @@ jobs:
         with:
           # Only fetch the sync's own folder: the repo root holds files of 100 MB+.
           filter: blob:none
+          persist-credentials: false
           sparse-checkout: |
             /skills/jibble_sync/
           sparse-checkout-cone-mode: false
@@ -36,11 +37,9 @@ jobs:
       - name: Sync
         working-directory: skills/jibble_sync
         env:
-          JIBBLE_KEY_ID: ${{ secrets.JIBBLE_KEY_ID }}
-          JIBBLE_API_KEY: ${{ secrets.JIBBLE_API_KEY }}
-          ASANA_TOKEN: ${{ secrets.ASANA_TOKEN }}
-          JIBBLE_SYNC_PEOPLE_JSON: ${{ secrets.JIBBLE_SYNC_PEOPLE_JSON }}
-          EVERHOUR_API_KEY: ${{ secrets.EVERHOUR_API_KEY }}
+          # The only GitHub secret: a read-only Doppler service token. The API keys live in Doppler alone
+          # and are fetched at run time (jibble_sync/cli.py: load_doppler), masked in the log.
+          DOPPLER_TOKEN: ${{ secrets.DOPPLER_TOKEN }}
           MODE: ${{ github.event.inputs.mode || vars.JIBBLE_SYNC_MODE || 'full' }}
         run: |
           if [ "$MODE" = "dry-run" ]; then

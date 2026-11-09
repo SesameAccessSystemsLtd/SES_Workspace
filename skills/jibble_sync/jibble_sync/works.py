@@ -5,8 +5,9 @@ task with a due date is a candidate visit. Its job is the nearest ancestor in
 the 4.0 Service Schedule (falling back to the top of its parent chain). The
 site postcode comes from the job's address fields ("Lift Address", "Site
 Address", "Address") or a "SITE ADDRESS:" line in its notes, and is turned into
-coordinates with postcodes.io. Only sites in the configured regions (London)
-are kept.
+coordinates with postcodes.io. Only sites in the configured regions are kept
+("*" = anywhere in the UK). Jobs with no address of their own (installs) take
+the site of the one 4.0 record whose name carries the same job number.
 
 In Jibble each site gets a Location with a geofence and each job a Project at
 that location. A clocked block is matched to a job by its project, else by the
@@ -63,7 +64,7 @@ class ServiceWorks:
         self.teamup = w["teamup_project"]
         self.schedule = w["service_schedule_project"]
         self.address_fields = w.get("address_fields", [])
-        self.regions = {r.lower() for r in w.get("regions", ["London"])}
+        self.regions = {r.lower() for r in w.get("regions", ["London"])}  # "*" = anywhere postcodes.io knows (UK)
         self.radius = int(w.get("radius_m", 300))
         self.client_name = w.get("jibble_client", "Service & Repairs")
         self.generic_names = {n.strip().lower() for n in w.get("generic_projects", [])}
@@ -75,6 +76,7 @@ class ServiceWorks:
         self.stats: dict[str, int] = defaultdict(int)
         self.exceptions: list[str] = []
         self._cache: dict[str, dict] = {}
+        self._by_number: dict[str, list[dict]] = {}
         self.jobs: list[dict] = []
         self.by_project: dict[str, dict] = {}
         self.by_location: dict[str, list[dict]] = defaultdict(list)
@@ -118,6 +120,29 @@ class ServiceWorks:
                 if pc:
                     return pc
         return None
+
+    def _address_by_job_number(self, job: dict) -> str | None:
+        """Installs and other jobs outside 4.0 often carry no address. Their name starts with the
+        job number ("1037 - Langley Street - Install MS"); the 4.0 record for that lift carries the
+        same number as one of its name parts ("1087 - Langley St KPF - 1037"). Used only when
+        exactly one 4.0 record matches."""
+        if self.schedule in self._projects(job):
+            return None
+        m = re.match(r"\s*(\d{3,5}(?:\.\d+)?)\s*-", job.get("name") or "")
+        if not m:
+            return None
+        num = m.group(1)
+        if num not in self._by_number:
+            rows = self.asana.search_tasks(self.workspace, {"projects.any": self.schedule, "text": num}, TASK_FIELDS)
+            self._by_number[num] = [r for r in rows if self.schedule in self._projects(r) and r.get("gid") != job["gid"]
+                                    and num in [part.strip() for part in (r.get("name") or "").split(" - ")]]
+        hits = self._by_number[num]
+        if len(hits) != 1:
+            return None
+        pc = self._address([hits[0]])
+        if pc:
+            self.stats["sites_by_job_number"] += 1
+        return pc
 
     def candidate_visits(self) -> list[dict]:
         # due_on.after/before are exclusive, so widen by a day and filter here.
@@ -190,7 +215,7 @@ class ServiceWorks:
                 continue
             if job["gid"] not in postcodes:
                 # Only the job and what sits above it decide the site, so it never depends on which visits are loaded.
-                postcodes[job["gid"]] = self._address([job, *above])
+                postcodes[job["gid"]] = self._address([job, *above]) or self._address_by_job_number(job)
                 if not postcodes[job["gid"]] and self.schedule in self._projects(job):
                     self.exceptions.append(f"Job {job['gid']}: no postcode in its address fields; its visits are not mapped")
             if not postcodes[job["gid"]]:
@@ -212,7 +237,7 @@ class ServiceWorks:
             if not g or g.get("latitude") is None:
                 self.exceptions.append(f"Job {gid}: postcode not recognised; not mapped")
                 continue
-            if (g.get("region") or "").lower() not in self.regions:
+            if "*" not in self.regions and (g.get("region") or "").lower() not in self.regions:
                 self.stats["jobs_outside_region"] += 1
                 continue
             job["_postcode"], job["_coords"] = pc, (g["latitude"], g["longitude"])

@@ -83,7 +83,7 @@ def test_service_visits_map_by_location_gps_and_project():
     ts = TimeSync(cfg, a, j, print)
     stats = ts.run(a.users_by_email(""), works=works)
 
-    assert ("location", lid, 300) in j.calls and ("project_at", pid, lid) in j.calls
+    assert ("location", lid, 50) in j.calls and ("project_at", pid, lid) in j.calls
     assert ("client", "Service & Repairs") in j.calls
     assert len([c for c in j.calls if c[0] == "location"]) == 1  # Manchester is out of region
     plus = {(c[1], c[2]["assignee"]): c[2] for c in a.calls if c[0] == "entry+"}

@@ -41,10 +41,12 @@ changing the radius of locations already in Jibble needs a separate update, not 
 ## Next steps
 1. Local testing first: `python -m jibble_sync check`, then `run --dry-run`, then a real run when Giles agrees.
 2. Before Actions runs it (on merge, every 15 min, full mode by default):
-   - GitHub secret `DOPPLER_TOKEN` is set (10 Nov) but is a Doppler **personal** token, which can read and write every
-     Doppler project. Giles believed read-only tokens need the Team plan; the CLI offers
-     `doppler configs tokens create <name> -p <project> -c prd --access read`, untested on this plan. If it works, add
-     `DOPPLER_TOKEN_OPENCLAW` and `DOPPLER_TOKEN_VPS_HERMES` as GitHub secrets and delete `DOPPLER_TOKEN`.
+   - Done 10 Nov: read-only Doppler service tokens in GitHub as `DOPPLER_TOKEN_LOCAL` (openclaw/prd) and
+     `DOPPLER_TOKEN_VPS_HERMES` (vps_hermes/prd); the personal-token secret `DOPPLER_TOKEN` was deleted.
+   - Asana: the key first stored as `ASANA_SERVICE_KEY` (`SESAME_BOT_VPS`) has only SCIM / Workspace Events / AI Studio
+     scopes, so every read fails with 403. Scopes cannot be changed after creation: a new service account is needed with
+     Users, Workspaces, Projects read; Tasks read + create/modify; Stories read + create; Time tracking entries read +
+     create/modify + delete. Its key replaces `ASANA_SERVICE_KEY` in vps_hermes/prd.
    - Merge PR #1, then a `workflow_dispatch` dry run before the first scheduled full run.
 3. Watch the 50 m radius. Coordinates are postcode centroids, not buildings; with indoor GPS error, clock-ins may miss
    their site. If they do, move to 100 m. Site Team signs in without geofence enforcement but still receives the locations.

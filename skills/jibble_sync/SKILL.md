@@ -99,10 +99,11 @@ The API keys live only in Doppler, in two places (`cli.DOPPLER_SOURCES`), and ea
 - `vps_hermes/prd`: `ASANA_SERVICE_KEY`, the Asana service account the sync writes as.
 
 At run time `cli.load_doppler` downloads each config over HTTPS, keeps only the listed values in memory, and masks
-each one in the Actions log. In GitHub each source uses its own secret (`DOPPLER_TOKEN_OPENCLAW`,
-`DOPPLER_TOKEN_VPS_HERMES`, ideally read-only service tokens: `doppler configs tokens create <name> -p <project>
--c prd --access read`) or else `DOPPLER_TOKEN`, which today is a personal token. A personal token can read and
-write every Doppler project, so replace it with the two service tokens when you can.
+each one in the Actions log. In GitHub each source has its own read-only Doppler service token (created with
+`doppler configs tokens create jibble-sync-gha -p <project> -c prd --access read`): GitHub secret
+`DOPPLER_TOKEN_LOCAL` (openclaw/prd) and `DOPPLER_TOKEN_VPS_HERMES` (vps_hermes/prd). The workflow maps them to
+the environment names the code reads, `DOPPLER_TOKEN_OPENCLAW` and `DOPPLER_TOKEN_VPS_HERMES`. Never put a Doppler
+personal token in GitHub: it can read and write every Doppler project.
 
 Locally, run `python -m jibble_sync ...` without `doppler run`: with no token set, it reads both sources through
 the logged-in Doppler CLI. (`doppler run -p vps_hermes` would inject the dead Jibble keys, and values already in the

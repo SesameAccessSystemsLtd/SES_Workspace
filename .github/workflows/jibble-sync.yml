@@ -39,11 +39,10 @@ jobs:
         env:
           # The API keys live in Doppler alone and are fetched at run time (jibble_sync/cli.py: load_doppler),
           # masked in the log: Jibble from openclaw/prd, Asana (ASANA_SERVICE_KEY) from vps_hermes/prd.
-          # Preferred: one read-only service token per config. DOPPLER_TOKEN (today a personal token) is
-          # the fallback for any source without its own token; delete it once both service tokens are set.
-          DOPPLER_TOKEN_OPENCLAW: ${{ secrets.DOPPLER_TOKEN_OPENCLAW }}
+          # One read-only Doppler service token per config (GitHub secret names on the right).
+          # DOPPLER_TOKEN_LOCAL is the token for openclaw/prd. No personal token is used.
+          DOPPLER_TOKEN_OPENCLAW: ${{ secrets.DOPPLER_TOKEN_LOCAL }}
           DOPPLER_TOKEN_VPS_HERMES: ${{ secrets.DOPPLER_TOKEN_VPS_HERMES }}
-          DOPPLER_TOKEN: ${{ secrets.DOPPLER_TOKEN }}
           MODE: ${{ github.event.inputs.mode || vars.JIBBLE_SYNC_MODE || 'full' }}
         run: |
           if [ "$MODE" = "dry-run" ]; then

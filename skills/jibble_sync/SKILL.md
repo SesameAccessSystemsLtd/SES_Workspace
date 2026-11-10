@@ -39,7 +39,8 @@ Do not edit that field by hand.
   Entries the sync created for other people in the last 21 days are reconciled every run, so edits and deletions in
   Jibble flow through. Entries anyone logs for themselves are never touched, including the sync account's own.
 - Time for Jibble people with no Asana user (or whose Asana user is the sync account) is not written; it is listed
-  under Exceptions. Use a dedicated admin account for `ASANA_TOKEN`, not a person who tracks their own time.
+  under Exceptions. The sync acts as the Asana service account (`ASANA_SERVICE_KEY`), never a person who tracks
+  their own time; personal tokens (`ASANA_PERSONAL_ACCESS_TOKEN`, `ASANA_PAT_MCP_KEY`) are deliberately not read.
 - Once time is booked to a subtask it stays there, even if subtasks are later completed or reassigned.
 - Safety: if a run would delete more than half of the synced entries (and more than 10), nothing is written for
   that target that run (no creates either, so nothing is double counted) and it is reported, in case Jibble returned incomplete data. Clocked blocks over 16 h (a missed clock-out) are skipped and reported.
@@ -80,8 +81,8 @@ Do not edit that field by hand.
 **Reports (read-only, Everhour layout)** - run locally, never in Actions (the repo is public):
 
 ```bash
-doppler run -- python -m jibble_sync report payroll --from 2026-10-26 --to 2026-11-25 --out payroll.csv
-doppler run -- python -m jibble_sync report manufacturing --client "1555 - Fifth Ave 854" --from 2026-10-29 --out mfg.csv
+python -m jibble_sync report payroll --from 2026-10-26 --to 2026-11-25 --out payroll.csv
+python -m jibble_sync report manufacturing --client "1555 - Fifth Ave 854" --from 2026-10-29 --out mfg.csv
 ```
 
 Payroll adds approved time off as hours (default 9 h a day; per-person hours via the `JIBBLE_SYNC_PEOPLE_JSON` secret,
@@ -91,18 +92,27 @@ time in the period (dates in `config.json`, England and Wales, 2026-2027). Sick 
 
 ## Secrets (Doppler only)
 
-The API keys live only in Doppler. GitHub holds a single secret, `DOPPLER_TOKEN`: a **read-only service token**
-for a Doppler config that contains just the secrets below (best as a dedicated config, e.g. project `jibble_sync`,
-config `prd`, whose values are Doppler references to the existing keys such as `${openclaw.prd.JIBBLE_KEY_ID}`,
-so each key is stored once). The working Jibble keys are in `openclaw/prd`; the copies in `vps_hermes/prd` are old and
-Jibble rejects them. At run time `cli.load_doppler` downloads that config over HTTPS, keeps the values in
-memory, and masks each one in the Actions log. Locally, `doppler run -- python -m jibble_sync ...` works as before.
+The API keys live only in Doppler, in two places (`cli.DOPPLER_SOURCES`), and each secret is read only from its own:
+
+- `openclaw/prd`: the Jibble keys, `JIBBLE_SYNC_PEOPLE_JSON`, `EVERHOUR_API_KEY`. The Jibble keys in `vps_hermes/prd`
+  are old and Jibble rejects them (`invalid_client`), so they are never read.
+- `vps_hermes/prd`: `ASANA_SERVICE_KEY`, the Asana service account the sync writes as.
+
+At run time `cli.load_doppler` downloads each config over HTTPS, keeps only the listed values in memory, and masks
+each one in the Actions log. In GitHub each source uses its own secret (`DOPPLER_TOKEN_OPENCLAW`,
+`DOPPLER_TOKEN_VPS_HERMES`, ideally read-only service tokens: `doppler configs tokens create <name> -p <project>
+-c prd --access read`) or else `DOPPLER_TOKEN`, which today is a personal token. A personal token can read and
+write every Doppler project, so replace it with the two service tokens when you can.
+
+Locally, run `python -m jibble_sync ...` without `doppler run`: with no token set, it reads both sources through
+the logged-in Doppler CLI. (`doppler run -p vps_hermes` would inject the dead Jibble keys, and values already in the
+environment win.)
 
 | Name (in Doppler) | What |
 | --- | --- |
 | `JIBBLE_KEY_ID` | Jibble API key ID |
 | `JIBBLE_API_KEY` | Jibble API key secret |
-| `ASANA_TOKEN` | Personal access token of the Asana **admin** account the sync acts as |
+| `ASANA_SERVICE_KEY` | Asana service account (admin) the sync acts as; in `vps_hermes/prd`. `ASANA_TOKEN` in the environment is accepted as an override for testing |
 | `JIBBLE_SYNC_PEOPLE_JSON` | Optional private per-person settings, kept out of the public repo, e.g. `{"hours_per_day": {"Name": 8}, "scope": {"name@sesameaccess.com": "teamup"}, "email_aliases": {"personal@icloud.com": "name@sesameaccess.com"}}` |
 | `EVERHOUR_API_KEY` | Only when `time_target` is `everhour` or `both` |
 

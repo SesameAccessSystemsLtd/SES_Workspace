@@ -301,6 +301,66 @@ def test_doppler_secrets_loaded_and_masked():
     assert load_doppler(http=http, environ={}, out=printed.append) == 0
 
 
+DOPPLER_DATA = {
+    "openclaw": {"JIBBLE_KEY_ID": "good-kid", "JIBBLE_API_KEY": "good-secret", "ASANA_SERVICE_KEY": "wrong-source"},
+    "vps_hermes": {"JIBBLE_KEY_ID": "dead-kid", "JIBBLE_API_KEY": "dead-secret", "ASANA_SERVICE_KEY": "svc"},
+}
+
+
+def test_doppler_personal_token_names_each_source_and_takes_only_its_secrets():
+    from jibble_sync.cli import load_doppler
+    env = {"DOPPLER_TOKEN": "dp.pt.x"}
+    asked = []
+
+    def http(method, url, headers=None, params=None, **kw):
+        asked.append(params)
+        return DOPPLER_DATA[params["project"]]
+    assert load_doppler(http=http, environ=env, out=print) == 3
+    assert asked == [{"format": "json", "project": "openclaw", "config": "prd"},
+                     {"format": "json", "project": "vps_hermes", "config": "prd"}]
+    # Jibble keys only from openclaw (the vps_hermes copies are dead); Asana only from vps_hermes
+    assert env["JIBBLE_KEY_ID"] == "good-kid" and env["JIBBLE_API_KEY"] == "good-secret" and env["ASANA_SERVICE_KEY"] == "svc"
+
+
+def test_doppler_per_source_service_tokens():
+    from jibble_sync.cli import load_doppler
+    env = {"DOPPLER_TOKEN_OPENCLAW": "dp.st.oc", "DOPPLER_TOKEN_VPS_HERMES": "dp.st.vh"}
+    by_token = {"Bearer dp.st.oc": DOPPLER_DATA["openclaw"], "Bearer dp.st.vh": DOPPLER_DATA["vps_hermes"]}
+
+    def http(method, url, headers=None, params=None, **kw):
+        assert params == {"format": "json"}  # a service token is bound to its own config
+        return by_token[headers["Authorization"]]
+    assert load_doppler(http=http, environ=env, out=print) == 3
+    assert env["JIBBLE_KEY_ID"] == "good-kid" and env["ASANA_SERVICE_KEY"] == "svc"
+
+
+def test_doppler_local_cli_when_no_token():
+    from jibble_sync.cli import load_doppler
+    env = {"JIBBLE_API_KEY": "from-env"}
+    called = []
+
+    def cli(project, config):
+        called.append((project, config))
+        return DOPPLER_DATA[project]
+
+    def http(*a, **kw):
+        raise AssertionError("no token: the HTTP API must not be called")
+    assert load_doppler(http=http, environ=env, out=print, cli=cli) == 2
+    assert called == [("openclaw", "prd"), ("vps_hermes", "prd")]
+    assert env["JIBBLE_API_KEY"] == "from-env" and env["JIBBLE_KEY_ID"] == "good-kid" and env["ASANA_SERVICE_KEY"] == "svc"
+
+
+def test_sync_never_writes_to_asana_with_a_personal_token(monkeypatch):
+    from jibble_sync.cli import clients
+    for name in ("ASANA_SERVICE_KEY", "ASANA_TOKEN"):
+        monkeypatch.delenv(name, raising=False)
+    monkeypatch.setenv("JIBBLE_KEY_ID", "kid")
+    monkeypatch.setenv("JIBBLE_API_KEY", "ksecret")
+    monkeypatch.setenv("ASANA_PERSONAL_ACCESS_TOKEN", "someone")
+    monkeypatch.setenv("ASANA_PAT_MCP_KEY", "someone-else")
+    assert clients(True, print) == (None, None, ["ASANA_SERVICE_KEY"])
+
+
 def test_personal_jibble_email_maps_to_work_account():
     from jibble_sync.cli import with_aliases
     cfg = {"people": {"email_aliases": {"DannyB@icloud.com": "dannycox@x"}}}

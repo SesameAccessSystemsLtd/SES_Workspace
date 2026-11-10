@@ -37,8 +37,12 @@ jobs:
       - name: Sync
         working-directory: skills/jibble_sync
         env:
-          # The only GitHub secret: a read-only Doppler service token. The API keys live in Doppler alone
-          # and are fetched at run time (jibble_sync/cli.py: load_doppler), masked in the log.
+          # The API keys live in Doppler alone and are fetched at run time (jibble_sync/cli.py: load_doppler),
+          # masked in the log: Jibble from openclaw/prd, Asana (ASANA_SERVICE_KEY) from vps_hermes/prd.
+          # Preferred: one read-only service token per config. DOPPLER_TOKEN (today a personal token) is
+          # the fallback for any source without its own token; delete it once both service tokens are set.
+          DOPPLER_TOKEN_OPENCLAW: ${{ secrets.DOPPLER_TOKEN_OPENCLAW }}
+          DOPPLER_TOKEN_VPS_HERMES: ${{ secrets.DOPPLER_TOKEN_VPS_HERMES }}
           DOPPLER_TOKEN: ${{ secrets.DOPPLER_TOKEN }}
           MODE: ${{ github.event.inputs.mode || vars.JIBBLE_SYNC_MODE || 'full' }}
         run: |

@@ -1,8 +1,8 @@
 """Command line: python -m jibble_sync <run|check|report> ...
 
-Secrets come from the environment (Doppler / GitHub secrets):
-  JIBBLE_KEY_ID, JIBBLE_API_KEY           Jibble API key ID and secret
-  ASANA_TOKEN                             personal access token of the admin sync account
+Secrets come from Doppler (see DOPPLER_SOURCES), or from the environment if already set:
+  JIBBLE_KEY_ID, JIBBLE_API_KEY           Jibble API key ID and secret (openclaw/prd)
+  ASANA_SERVICE_KEY                       Asana service account the sync writes as (vps_hermes/prd)
   EVERHOUR_API_KEY                        only when config time_target is everhour or both
 Logs carry counts and IDs only (no names, dates or leave types), because the
 GitHub Actions logs for this repository are public.
@@ -29,31 +29,65 @@ HERE = Path(__file__).resolve().parent.parent
 
 
 DOPPLER_DOWNLOAD = "https://api.doppler.com/v3/configs/config/secrets/download"
-SECRET_NAMES = ("JIBBLE_KEY_ID", "JIBBLE_CLIENT_ID", "JIBBLE_API_KEY", "JIBBLE_CLIENT_SECRET", "ASANA_TOKEN",
-                "ASANA_PERSONAL_ACCESS_TOKEN", "ASANA_PAT_MCP_KEY", "EVERHOUR_API_KEY", "JIBBLE_SYNC_PEOPLE_JSON")
+# Where each secret comes from. A secret is taken only from its own source: the Jibble keys in
+# vps_hermes/prd are old and rejected by Jibble, and the Asana service account key lives only there.
+DOPPLER_SOURCES = (
+    {"project": "openclaw", "config": "prd", "token_env": "DOPPLER_TOKEN_OPENCLAW",
+     "names": ("JIBBLE_KEY_ID", "JIBBLE_CLIENT_ID", "JIBBLE_API_KEY", "JIBBLE_CLIENT_SECRET",
+               "JIBBLE_SYNC_PEOPLE_JSON", "EVERHOUR_API_KEY")},
+    {"project": "vps_hermes", "config": "prd", "token_env": "DOPPLER_TOKEN_VPS_HERMES",
+     "names": ("ASANA_SERVICE_KEY",)},
+)
 
 
-def load_doppler(http=request, environ=os.environ, out=print) -> int:
-    """Fetch the sync's secrets from Doppler at run time when DOPPLER_TOKEN is set.
+def doppler_cli():
+    """Local runs: read secrets through the logged-in Doppler CLI (None when it is not installed)."""
+    import shutil
+    import subprocess
+    exe = shutil.which("doppler")
+    if not exe:
+        return None
 
-    The token should be a read-only service token for a config holding only these
-    secrets, so the API keys themselves live in Doppler alone. Values stay in this
-    process; in GitHub Actions each one is masked so it can never appear in a log.
+    def fetch(project: str, config: str) -> dict:
+        r = subprocess.run([exe, "secrets", "download", "--no-file", "--format", "json", "-p", project, "-c", config],
+                           capture_output=True, text=True, timeout=60)
+        if r.returncode != 0:  # never echo stdout: it would hold the secrets
+            raise RuntimeError(f"doppler CLI could not read {project}/{config} (exit {r.returncode})")
+        return json.loads(r.stdout or "{}")
+    return fetch
+
+
+def load_doppler(http=request, environ=os.environ, out=print, cli=None, sources=DOPPLER_SOURCES) -> int:
+    """Fetch the sync's secrets from Doppler at run time.
+
+    Each source is read with its own token (token_env) or else DOPPLER_TOKEN. A service token
+    (dp.st.) is bound to one config, so it is sent without project/config; a personal or CLI
+    token must name them. With no token, `cli` (local runs only) reads through the Doppler CLI.
+    Only the names listed for a source are taken, and a value already in the environment wins.
+    Values stay in this process; in GitHub Actions each one is masked so it can never appear in a log.
     """
-    token = environ.get("DOPPLER_TOKEN")
-    if not token:
-        return 0
-    data = http("GET", DOPPLER_DOWNLOAD, headers={"Authorization": f"Bearer {token}"}, params={"format": "json"}) or {}
     loaded = 0
-    for name in SECRET_NAMES:
-        value = data.get(name)
-        if isinstance(value, str) and value and not environ.get(name):
-            if environ.get("GITHUB_ACTIONS") == "true":
-                for line in value.splitlines():
-                    if line.strip():
-                        out(f"::add-mask::{line}")
-            environ[name] = value
-            loaded += 1
+    for src in sources:
+        # strip: a token piped or pasted into a GitHub secret often carries a trailing newline
+        token = (environ.get(src["token_env"]) or "").strip() or (environ.get("DOPPLER_TOKEN") or "").strip()
+        if token:
+            params = {"format": "json"}
+            if not token.startswith("dp.st."):
+                params.update(project=src["project"], config=src["config"])
+            data = http("GET", DOPPLER_DOWNLOAD, headers={"Authorization": f"Bearer {token}"}, params=params) or {}
+        elif cli:
+            data = cli(src["project"], src["config"])
+        else:
+            continue
+        for name in src["names"]:
+            value = data.get(name)
+            if isinstance(value, str) and value and not environ.get(name):
+                if environ.get("GITHUB_ACTIONS") == "true":
+                    for line in value.splitlines():
+                        if line.strip():
+                            out(f"::add-mask::{line}")
+                environ[name] = value
+                loaded += 1
     return loaded
 
 
@@ -76,8 +110,9 @@ def load_config(path: str | None) -> dict:
 def clients(dry_run: bool, log):
     jid = _env("JIBBLE_KEY_ID", "JIBBLE_CLIENT_ID")
     jsecret = _env("JIBBLE_API_KEY", "JIBBLE_CLIENT_SECRET")
-    token = _env("ASANA_TOKEN", "ASANA_PERSONAL_ACCESS_TOKEN", "ASANA_PAT_MCP_KEY")
-    missing = [n for n, v in (("JIBBLE_KEY_ID", jid), ("JIBBLE_API_KEY", jsecret), ("ASANA_TOKEN", token)) if not v]
+    # The sync writes as the Asana service account only; personal tokens are deliberately not read.
+    token = _env("ASANA_SERVICE_KEY", "ASANA_TOKEN")
+    missing = [n for n, v in (("JIBBLE_KEY_ID", jid), ("JIBBLE_API_KEY", jsecret), ("ASANA_SERVICE_KEY", token)) if not v]
     if missing:
         return None, None, missing
     return Asana(token, dry_run=dry_run, log=log), Jibble(jid, jsecret, dry_run=dry_run, log=log), []
@@ -139,7 +174,7 @@ def main(argv=None) -> int:
 
     log = lambda msg: print(msg, flush=True)  # noqa: E731
     try:
-        n = load_doppler()
+        n = load_doppler(cli=None if os.environ.get("GITHUB_ACTIONS") == "true" else doppler_cli())
         if n:
             log(f"Loaded {n} secret(s) from Doppler")
     except Exception as e:  # never print the response: it would hold the secrets

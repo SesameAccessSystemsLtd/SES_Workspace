@@ -8,11 +8,16 @@ Pull TeamUp/4.0 Service Schedule tasks and UK lift locations into Jibble, log wh
 (holiday test), Andy (TeamUp tasks only), Danny (same as Andy).
 
 ## Rules (non-negotiable)
-- Secrets live in Doppler only: project **`openclaw`**, config **`prd`**. GitHub holds one read-only `DOPPLER_TOKEN`.
-  Do **not** use `vps_hermes/prd` for Jibble: its Jibble keys are old and Jibble rejects them (`invalid_client`).
+- Secrets live in Doppler only, in two places:
+  - **`openclaw/prd`**: `JIBBLE_KEY_ID`, `JIBBLE_API_KEY`, `JIBBLE_SYNC_PEOPLE_JSON` (private scope and email aliases).
+    Do **not** take Jibble keys from `vps_hermes/prd`: they are old and Jibble rejects them (`invalid_client`).
+  - **`vps_hermes/prd`**: `ASANA_SERVICE_KEY`, the Asana service account. Giles's decision (10 Nov): all Jibble→Asana
+    sync and monitoring writes as this account, never a personal token.
+  `cli.DOPPLER_SOURCES` enforces this: each secret is read only from its own source.
   Never print or commit keys; repo is public, so logs show counts and IDs only. Client addresses are never committed
   (`data/Sesame_Lift_Locations/` is gitignored; the location plan JSON is local-only).
-- Doppler names: JIBBLE_KEY_ID, JIBBLE_API_KEY, ASANA_TOKEN (still to add), JIBBLE_SYNC_PEOPLE_JSON (private scope and email aliases).
+- Phase (10 Nov): testing, run locally with `python -m jibble_sync run --dry-run` (no `doppler run`; the CLI reads
+  both sources itself). GitHub Actions comes later.
 - Before any write, reconcile against the live system (ids are deterministic uuid5, so re-runs are safe).
 - SIS-first: Sesame requests start from the SIS-CURRENT pointer (SharePoint) via the M365 connector.
 
@@ -34,16 +39,16 @@ stores a different radius, and creates no projects if the location check stops t
 changing the radius of locations already in Jibble needs a separate update, not a re-run.
 
 ## Next steps
-1. Switch-on needs the user:
-   - `ASANA_TOKEN` (dedicated Asana admin account) in `openclaw/prd`. `cli.py` falls back to
-     `ASANA_PERSONAL_ACCESS_TOKEN`, which already exists there; do not rely on it unless it is confirmed to be the admin
-     sync account (a person who tracks their own time must not be the sync user).
-   - GitHub secret `DOPPLER_TOKEN`: a read-only service token for **`openclaw/prd`** (or a dedicated config that
-     references it), not `vps_hermes`.
-   - Merge PR #1, then an optional `workflow_dispatch` dry run. Until then Asana won't update from clock-ins.
-2. Watch the 50 m radius. Coordinates are postcode centroids, not buildings; with indoor GPS error, clock-ins may miss
+1. Local testing first: `python -m jibble_sync check`, then `run --dry-run`, then a real run when Giles agrees.
+2. Before Actions runs it (on merge, every 15 min, full mode by default):
+   - GitHub secret `DOPPLER_TOKEN` is set (10 Nov) but is a Doppler **personal** token, which can read and write every
+     Doppler project. Giles believed read-only tokens need the Team plan; the CLI offers
+     `doppler configs tokens create <name> -p <project> -c prd --access read`, untested on this plan. If it works, add
+     `DOPPLER_TOKEN_OPENCLAW` and `DOPPLER_TOKEN_VPS_HERMES` as GitHub secrets and delete `DOPPLER_TOKEN`.
+   - Merge PR #1, then a `workflow_dispatch` dry run before the first scheduled full run.
+3. Watch the 50 m radius. Coordinates are postcode centroids, not buildings; with indoor GPS error, clock-ins may miss
    their site. If they do, move to 100 m. Site Team signs in without geofence enforcement but still receives the locations.
-3. Giles holiday end-to-end test; confirm Danny sees this week's projects (Wingate House / 25 Sackville St Tue 10 Nov,
+4. Giles holiday end-to-end test; confirm Danny sees this week's projects (Wingate House / 25 Sackville St Tue 10 Nov,
    Hotel Indigo Wed 11, British Library Pigott Thu 13).
 
 ## Open questions for the user

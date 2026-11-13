@@ -1,0 +1,149 @@
+# Skill: jibble_sync
+
+Two-way sync between Jibble and Asana for the Jibble trial (replacing WorkSmarter, ClockRite and Everhour).
+It runs every 15 minutes on GitHub Actions (`.github/workflows/jibble-sync.yml`) in full mode, alongside the existing systems.
+
+## What it does
+
+**Holidays (Jibble time off <-> Asana "Holiday for Employees")**
+
+| Event | Result |
+| --- | --- |
+| New request in Jibble | Task created in Holiday for Employees, named `Name - Fri Nov 20th 2026 to Fri Nov 20th 2026`, Holiday STATUS = BEING REVIEWED, Leave Type from the policy, Days remaining from the Jibble balance |
+| Holiday STATUS set to ACCEPTED (office or engineers) | Jibble request set to Approved; "Approved By" filled with whoever changed the status (from the task history) |
+| Holiday STATUS set to REJECTED | Jibble request set to Rejected |
+| Holiday STATUS set to CANCELLED HOLIDAY | Jibble request set to Cancelled; task moved to the Cancelled section |
+| Request changed in Jibble (dates, times, policy) | Task renamed and re-dated, Holiday STATUS = MODIFIED - REQUIRES REVIEW, comment added, Jibble request back to Pending |
+| Request cancelled in Jibble | Holiday STATUS = CANCELLED HOLIDAY, moved to Cancelled |
+| Request approved directly in the Jibble app | Mirrored into Holiday STATUS |
+| Request deleted in Jibble | Holiday STATUS = MODIFIED - REQUIRES REVIEW with a comment asking someone to check it (once) |
+
+Writes happen in a safe order: Jibble first, then Asana, and the UID last. If any step fails the UID is left as it was,
+so the next run retries rather than undoing a decision.
+
+State between runs lives in the task's **UID for automation** field: `JIBBLE:<id>|h=<content hash>|j=<last Jibble status>|a=<last Asana status>`.
+Do not edit that field by hand.
+
+**Time (Jibble clock-ins -> Asana Actual time on build subtasks)**
+
+- Monitored parts are listed in `config.json` (`asana.monitored_parts`). Each one, with its subtasks, is added to
+  **Annual Production Scheduling (BETA TESTING)**, which carries Asana's Estimated time / Actual time fields.
+- Estimated time is seeded from Estimated Hours where it is still empty. Actual Cost is left alone: it stays the place to log wasted time.
+- In Jibble: Client = job (PROJECT NAME), Project = part, Activity = labour type. The sync creates missing clients,
+  projects and the activities Cut, Paint, Drill and Rework.
+- Each clocked block is matched to a subtask by activity (`jibble_sync/mapping.py`): Weld -> Welding / Fabrication,
+  Assemble -> Assembly, QC -> QC, Electrics / Re-Wire -> Wiring, re-work or Modify -> Rework. When several subtasks match:
+  open and assigned to that worker, then open, then the standard `Activity - <part>` name, then newest.
+  No match -> booked to the part task and listed under Exceptions in the run summary.
+- Asana gets one entry per worker, per task, per day, credited to the worker (the sync account is an Asana admin).
+  Entries the sync created for other people in the last 21 days are reconciled every run, so edits and deletions in
+  Jibble flow through. Entries anyone logs for themselves are never touched, including the sync account's own.
+- Time for Jibble people with no Asana user (or whose Asana user is the sync account) is not written; it is listed
+  under Exceptions. The sync acts as the Asana service account (`ASANA_SERVICE_KEY`), never a person who tracks
+  their own time; personal tokens (`ASANA_PERSONAL_ACCESS_TOKEN`, `ASANA_PAT_MCP_KEY`) are deliberately not read.
+- Once time is booked to a subtask it stays there, even if subtasks are later completed or reassigned.
+- Safety: if a run would delete more than half of the synced entries (and more than 10), nothing is written for
+  that target that run (no creates either, so nothing is double counted) and it is reported, in case Jibble returned incomplete data. Clocked blocks over 16 h (a missed clock-out) are skipped and reported.
+
+**Service works (TeamUp visits -> Jibble sites -> Asana time)**
+
+- Every TeamUp task due in the next 30 days (and back over the 21-day time window) is a candidate visit. Its job is
+  the nearest parent in **4.0 Service Schedule**; the site postcode comes from the job's "Lift Address" (or an install's
+  "Site Address" / a T-Card's "Address", or a `SITE ADDRESS:` line in the notes). Postcodes are geocoded with
+  postcodes.io and only sites in `works.regions` are kept (`["*"]` = anywhere in the UK; `["London"]` to narrow).
+  Installs with no address of their own take the site of the one 4.0 record whose name carries the same job number
+  (e.g. "1037 - Langley Street - Install MS" -> "1087 - Langley St KPF - 1037"). Holidays, uni days and other tasks with no site are ignored.
+- In Jibble each site gets a **Location** with a geofence radius of `works.radius_m` (50 m; Jibble accepted and stored
+  50 m on 9 Nov 2026, but whether its geofence automation behaves at 50 m is unconfirmed) and each job a
+  **Project** at that location, under the client "Service & Repairs". IDs are derived from the postcode and the job's
+  Asana ID, so re-runs never duplicate them. Existing projects are never adopted by name; a clash is reported.
+  The sync does not add locations to work schedules: with "restrict members to locations" on, a schedule's location
+  list limits where its members can clock in, so add sites there only on purpose (and keep the workshop on it).
+  Retired postcodes (common on older buildings) are geocoded from postcodes.io's terminated list.
+- A clocked block is matched to the job by the Jibble project picked, else (only when no project, or a project listed in
+  `works.generic_projects`, was picked) by the Jibble location, else by GPS within the radius. Then to the visit task
+  due that day: one already holding that time first, then the worker's own task (each engineer on a two-person visit has
+  their own), across every site whose radius covers the clock-in, as central London sites overlap. A visit a day either
+  side counts only for the worker's own task. No visit that day -> booked to the job task and listed under Exceptions.
+  Visits and jobs used are added to the beta project.
+- Tasks that already hold synced site time are always reconciled, even when Asana search misses them or they move out
+  of the window, so time is moved rather than duplicated. If that lookup fails, site time is skipped for the run.
+- Missing postcodes on 4.0 records are listed under Exceptions (by task ID) so they can be fixed in Asana.
+
+**Where time is written** (`time_target` in `config.json`)
+
+| Value | Result |
+| --- | --- |
+| `asana` (default) | Asana native Actual time, as above |
+| `everhour` | Everhour time records on the same Asana tasks (`as:<task id>`), for the people listed in `everhour.users` only. Needs `EVERHOUR_API_KEY` (an Everhour admin's key). The sync owns only records it wrote (comment "Jibble"); where someone already logged time by hand for that task and day, nothing is added and it is reported, because Everhour merges records per person, task and day. |
+| `both` | Both of the above (for side-by-side comparison) |
+
+**Reports (read-only, Everhour layout)** - run locally, never in Actions (the repo is public):
+
+```bash
+python -m jibble_sync report payroll --from 2026-10-26 --to 2026-11-25 --out payroll.csv
+python -m jibble_sync report manufacturing --client "1555 - Fifth Ave 854" --from 2026-10-29 --out mfg.csv
+```
+
+Payroll adds approved time off as hours (default 9 h a day; per-person hours via the `JIBBLE_SYNC_PEOPLE_JSON` secret,
+e.g. `{"hours_per_day": {"Michał Jurczykowski": 8}}`), skipping weekends and bank holidays and scaling part days by
+Jibble's duration. Labels: `0010 Annual Leave`, `0006 - work from home`, and `0014 Bank Holiday` rows for everyone with
+time in the period (dates in `config.json`, England and Wales, 2026-2027). Sick leave keeps its Jibble policy name.
+
+## Secrets (Doppler only)
+
+The API keys live only in Doppler, in two places (`cli.DOPPLER_SOURCES`), and each secret is read only from its own:
+
+- `openclaw/prd`: the Jibble keys, `JIBBLE_SYNC_PEOPLE_JSON`, `EVERHOUR_API_KEY`. The Jibble keys in `vps_hermes/prd`
+  are old and Jibble rejects them (`invalid_client`), so they are never read.
+- `vps_hermes/prd`: `ASANA_SERVICE_KEY`, the Asana service account the sync writes as.
+
+At run time `cli.load_doppler` downloads each config over HTTPS, keeps only the listed values in memory, and masks
+each one in the Actions log. In GitHub each source has its own read-only Doppler service token (created with
+`doppler configs tokens create jibble-sync-gha -p <project> -c prd --access read`): GitHub secret
+`DOPPLER_TOKEN_LOCAL` (openclaw/prd) and `DOPPLER_TOKEN_VPS_HERMES` (vps_hermes/prd). The workflow maps them to
+the environment names the code reads, `DOPPLER_TOKEN_OPENCLAW` and `DOPPLER_TOKEN_VPS_HERMES`. Never put a Doppler
+personal token in GitHub: it can read and write every Doppler project.
+
+Locally, run `python -m jibble_sync ...` without `doppler run`: with no token set, it reads both sources through
+the logged-in Doppler CLI. (`doppler run -p vps_hermes` would inject the dead Jibble keys, and values already in the
+environment win.)
+
+| Name (in Doppler) | What |
+| --- | --- |
+| `JIBBLE_KEY_ID` | Jibble API key ID |
+| `JIBBLE_API_KEY` | Jibble API key secret |
+| `ASANA_SERVICE_KEY` | Asana service account (admin) the sync acts as; in `vps_hermes/prd`. `ASANA_TOKEN` in the environment is accepted as an override for testing |
+| `JIBBLE_SYNC_PEOPLE_JSON` | Optional private per-person settings, kept out of the public repo, e.g. `{"hours_per_day": {"Name": 8}, "scope": {"name@sesameaccess.com": "teamup"}, "email_aliases": {"personal@icloud.com": "name@sesameaccess.com"}}` |
+| `EVERHOUR_API_KEY` | Only when `time_target` is `everhour` or `both` |
+
+`email_aliases` links a Jibble login on a personal address to the person's Asana (work) account, so their holidays
+and time still land on their own Asana user. `scope: "teamup"` makes a person's Jibble time go **only** to TeamUp visit tasks (used for the foreman, who has many
+other tasks assigned): never to build subtasks, and never to a job task on a day with no TeamUp visit.
+
+Without the required secrets the workflow logs "Secrets not configured" and exits cleanly. The workflow has
+read-only repo permissions, runs only on schedule or by hand (never on pull requests), and does not keep the git token.
+
+## Commands
+
+```bash
+cd skills/jibble_sync
+python -m jibble_sync check              # read-only: both APIs answer
+python -m jibble_sync run --dry-run      # print what would change
+python -m jibble_sync run                # full mode
+python -m jibble_sync run --only holiday # or --only time
+python -m pytest tests                   # unit and flow tests
+```
+
+The Actions run can be switched to dry run from the Run workflow button, or for every run by setting the
+repository variable `JIBBLE_SYNC_MODE` to `dry-run`.
+
+## Keeping it running
+
+GitHub turns off scheduled workflows in a public repository after 60 days without a commit. If the sync stops,
+re-enable it from the Actions tab (or push any commit).
+
+## Logs are public
+
+This repository is public, so the run log and summary contain counts and IDs only: no names, dates or leave types,
+and errors are logged as status and path without response bodies (`http.safe_err`). Keep it that way when changing the code.

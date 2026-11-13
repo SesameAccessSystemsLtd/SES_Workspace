@@ -47,3 +47,6 @@ plans/_vps_sasops_pw.txt
 
 # secret-scan backups - never commit
 *.bak-secretscan
+
+# Client site addresses (Google Maps export, Jibble import plans) must never reach this public repo
+data/Sesame_Lift_Locations/

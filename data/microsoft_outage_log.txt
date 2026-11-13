@@ -1,0 +1,4 @@
+=== MICROSOFT OUTAGE — 2026-11-13T10:46:03Z ===
+Graph root: 200 | mailFolders: 502 | messages: 502 | rc-notes: 502
+Auth (client_credentials token): OK, 2220 chars
+Verdict: Exchange Online mail-plane outage. Not credentials, not config.

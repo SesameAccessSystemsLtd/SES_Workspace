@@ -125,7 +125,13 @@ class ServiceWorks:
         """Installs and other jobs outside 4.0 often carry no address. Their name starts with the
         job number ("1037 - Langley Street - Install MS"); the 4.0 record for that lift carries the
         same number as one of its name parts ("1087 - Langley St KPF - 1037"). Used only when
-        exactly one 4.0 record matches."""
+        exactly one 4.0 record matches.
+
+        Job numbers change with the stage: in build the job is its 4-digit build number; once it is a
+        service contract a new service number goes first and the build number moves to the end. So the
+        number at the front of a 4.0 name is the SERVICE number, never the build number. Known gap: a
+        part such as "1359 (1393 on Sage)" (a Sage number in brackets) does not equal "1359" and is
+        missed. See TASK_MAPPING.md section 1."""
         if self.schedule in self._projects(job):
             return None
         m = re.match(r"\s*(\d{3,5}(?:\.\d+)?)\s*-", job.get("name") or "")

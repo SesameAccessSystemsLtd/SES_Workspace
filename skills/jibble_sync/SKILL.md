@@ -70,6 +70,14 @@ Do not edit that field by hand.
   of the window, so time is moved rather than duplicated. If that lookup fails, site time is skipped for the run.
 - Missing postcodes on 4.0 records are listed under Exceptions (by task ID) so they can be fixed in Asana.
 
+**Job numbers change between build and service.** In build, a job is its 4-digit build number (`1573 ...`,
+parts `1573.1004.B...`). When it becomes a service contract, a new service number goes to the front of the name
+and the build number moves to the end (`1087 - Langley St KPF - 1037`), sometimes with a Sage number in brackets.
+So the build and service Jibble projects for one lift have different leading numbers.
+
+**Workshop scope (parts discovery, machining, general and uni work):** see `TASK_MAPPING.md`, the reference for what
+is planned, the live data shapes and the open decisions. Jibble API docs: https://docs.api.jibble.io/
+
 **Where time is written** (`time_target` in `config.json`)
 
 | Value | Result |

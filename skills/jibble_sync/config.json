@@ -1,0 +1,122 @@
+{
+  "asana": {
+    "workspace": "357939803556123",
+    "holiday_project": "852956628490871",
+    "holiday_cancelled_section": "1206381093075873",
+    "beta_project": "1202196173874070",
+    "fields": {
+      "holiday_status": "1196037240816768",
+      "leave_type": "1201636636021184",
+      "uid": "1202361238538127",
+      "approved_by": "1208179284319236",
+      "days_remaining": "1198966893077054",
+      "project_name": "1202882645384174",
+      "estimated_hours": "1155021669124711",
+      "estimated_time": "1203433325150067",
+      "actual_cost": "1155021669124674"
+    },
+    "holiday_status_options": {
+      "REVIEW": "1196037240816770",
+      "ACC_OFFICE": "1196037240816769",
+      "ACC_ENG": "1199891960261773",
+      "MODIFIED": "1203457049445199",
+      "CANCELLED": "1203457031634502",
+      "REJECTED": "1220026961278852"
+    },
+    "leave_type_options": {
+      "Holiday": "1201636636021185",
+      "Sick Leave / Work Absence": "1201636636021186",
+      "Work from home": "1201636636021187",
+      "TRAINING DAY": "1203850091949177",
+      "OTHER - UPDATE": "1203993714881593"
+    },
+    "monitored_parts": [
+      "1220026961278842",
+      "1216745444710063",
+      "1213299484413967",
+      "1213299484413957",
+      "1213299484413962",
+      "1213299484413952",
+      "1213299484413947",
+      "1213299484467968",
+      "1209854002969066",
+      "1209854006573940",
+      "1209854006573950"
+    ]
+  },
+  "jibble": {
+    "policy_leave_type": {
+      "Paid Holiday Request": "Holiday",
+      "Sick Leave": "Sick Leave / Work Absence",
+      "Work From Home": "Work from home"
+    },
+    "payroll_leave_codes": {
+      "Paid Holiday Request": "0010 Annual Leave",
+      "Work From Home": "0006 - work from home"
+    },
+    "engineer_groups": [
+      "Site Team",
+      "Workshop"
+    ],
+    "fallback_client": "Jibble trial",
+    "activities": [
+      "Welding / Fabrication",
+      "Assembly",
+      "QC",
+      "Wiring",
+      "Cut",
+      "Paint",
+      "Drill",
+      "Rework"
+    ],
+    "payroll_bank_holiday_label": "0014 Bank Holiday"
+  },
+  "people": {
+    "default_hours_per_day": 9,
+    "hours_per_day": {}
+  },
+  "holiday_window_days": 60,
+  "time_window_days": 21,
+  "seed_estimated_time_from_estimated_hours": true,
+  "bank_holidays": [
+    "2026-01-01",
+    "2026-04-03",
+    "2026-04-06",
+    "2026-05-04",
+    "2026-05-25",
+    "2026-08-31",
+    "2026-12-25",
+    "2026-12-28",
+    "2027-01-01",
+    "2027-03-26",
+    "2027-03-29",
+    "2027-05-03",
+    "2027-05-31",
+    "2027-08-30",
+    "2027-12-27",
+    "2027-12-28"
+  ],
+  "time_target": "asana",
+  "everhour": {
+    "users": [],
+    "_note": "Emails of people whose Jibble time is written to Everhour when time_target is everhour or both. Those people must stop logging the same tasks in Everhour by hand."
+  },
+  "works": {
+    "enabled": true,
+    "teamup_project": "1148673682094567",
+    "service_schedule_project": "946830737759624",
+    "address_fields": [
+      "1123371493504891",
+      "1204646933897257",
+      "1205149775492190"
+    ],
+    "regions": [
+      "*"
+    ],
+    "days_ahead": 30,
+    "radius_m": 50,
+    "jibble_client": "Service & Repairs",
+    "generic_projects": [],
+    "_note": "generic_projects: names of catch-all Jibble projects (e.g. a general 'Servicing' project) whose time may still be matched to a site by location or GPS. Time on any other project is never moved to a site."
+  }
+}
